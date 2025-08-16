@@ -18,6 +18,8 @@ OAH is a cheat made using Dumper7 SDK and kiero hook. It provides small, but pow
   <img src="https://img.shields.io/badge/code%20style-chaotic-orange?style=flat-square" alt="Code Style: Chaotic">
 </div>
 
+---
+
 ## 🚀 Features
 ### 👁️ ESP:
 - **Police**
