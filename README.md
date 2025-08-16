@@ -1,9 +1,22 @@
 # 🔥 One Armed Hacker
-OAH is a cheat made using Dumper7 SDK and kiero hook. It provides small, but powerful cheats to make your OAR experience as fun as possible. The code is pretty messy, but it's not that bad and it's sustainable
 
 <p align="center">
   <img src="./images/logo.png" alt="OAH Logo">
 </p>
+
+OAH is a cheat made using Dumper7 SDK and kiero hook. It provides small, but powerful cheats to make your OAR experience as fun as possible. The code is pretty messy, but it's not that bad and it's sustainable
+
+<div align="center">
+  <!-- Status Badges -->
+  <a href="https://github.com/fluffysnaff/oah/releases"><img src="https://img.shields.io/github/v/release/fluffysnaff/oah?style=for-the-badge&label=Release" alt="release"></a>
+  <img src="https://img.shields.io/badge/maintenance-community%20needed-yellow?style=for-the-badge" alt="Maintenance">
+  <a href="https://github.com/fluffysnaff/oah/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge" alt="PRs Welcome"></a>
+  <!-- Tech & Fun Badges -->
+  <br/>
+  <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" alt="C++">
+  <img src="https://img.shields.io/badge/Platform-Windows-0078D6?style=flat-square&logo=windows" alt="Platform">
+  <img src="https://img.shields.io/badge/code%20style-chaotic-orange?style=flat-square" alt="Code Style: Chaotic">
+</div>
 
 ## 🚀 Features
 ### 👁️ ESP:
