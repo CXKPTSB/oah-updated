@@ -33,32 +33,29 @@ public:
 	bool                                          Dead_;                                             // 0x04EC(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
-	void OnFail_0484E22F4AB33247A63833A3CC3FE8A3(EPathFollowingResult MovementResult);
-	void OnSuccess_0484E22F4AB33247A63833A3CC3FE8A3(EPathFollowingResult MovementResult);
-	void ReceiveBeginPlay();
-	void RatMove();
-	void RatDie();
-	void BndEvt__RatCharacter_DamageComponent_K2Node_ComponentBoundEvent_0_Damage__DelegateSignature(int32 Amount, class FName Bone, const struct FVector& HitLocation, const struct FVector& StartLocation, class AActor* Instigator_0);
 	void ExecuteUbergraph_RatCharacter(int32 EntryPoint);
+	void BndEvt__RatCharacter_DamageComponent_K2Node_ComponentBoundEvent_0_Damage__DelegateSignature(int32 Amount, class FName Bone, const struct FVector& HitLocation, const struct FVector& StartLocation, class AActor* Instigator_0);
+	void RatDie();
+	void RatMove();
+	void ReceiveBeginPlay();
+	void OnSuccess_0484E22F4AB33247A63833A3CC3FE8A3(EPathFollowingResult MovementResult);
+	void OnFail_0484E22F4AB33247A63833A3CC3FE8A3(EPathFollowingResult MovementResult);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RatCharacter_C">();
+		BP_STATIC_CLASS_IMPL("RatCharacter_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RatCharacter_C")
 	}
 	static class ARatCharacter_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ARatCharacter_C>();
 	}
 };
-static_assert(alignof(ARatCharacter_C) == 0x000010, "Wrong alignment on ARatCharacter_C");
-static_assert(sizeof(ARatCharacter_C) == 0x0004F0, "Wrong size on ARatCharacter_C");
-static_assert(offsetof(ARatCharacter_C, UberGraphFrame) == 0x0004C0, "Member 'ARatCharacter_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ARatCharacter_C, Audio) == 0x0004C8, "Member 'ARatCharacter_C::Audio' has a wrong offset!");
-static_assert(offsetof(ARatCharacter_C, SteamAchievementComponent) == 0x0004D0, "Member 'ARatCharacter_C::SteamAchievementComponent' has a wrong offset!");
-static_assert(offsetof(ARatCharacter_C, DamageComponent) == 0x0004D8, "Member 'ARatCharacter_C::DamageComponent' has a wrong offset!");
-static_assert(offsetof(ARatCharacter_C, RatStart) == 0x0004E0, "Member 'ARatCharacter_C::RatStart' has a wrong offset!");
-static_assert(offsetof(ARatCharacter_C, Dead_) == 0x0004EC, "Member 'ARatCharacter_C::Dead_' has a wrong offset!");
+DUMPER7_ASSERTS_ARatCharacter_C;
 
 }
 

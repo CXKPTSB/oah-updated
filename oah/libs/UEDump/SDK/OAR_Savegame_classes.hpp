@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "AttachmentArrayStructure_structs.hpp"
-#include "Engine_classes.hpp"
-#include "InputSettingStruct_structs.hpp"
 #include "SettingsStruct_structs.hpp"
+#include "InputSettingStruct_structs.hpp"
 #include "SkillProgressStruct_structs.hpp"
+#include "Engine_classes.hpp"
 #include "SkillSaveStruct_structs.hpp"
 
 
@@ -59,42 +59,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"OAR_Savegame_C">();
+		BP_STATIC_CLASS_IMPL("OAR_Savegame_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OAR_Savegame_C")
 	}
 	static class UOAR_Savegame_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOAR_Savegame_C>();
 	}
 };
-static_assert(alignof(UOAR_Savegame_C) == 0x000008, "Wrong alignment on UOAR_Savegame_C");
-static_assert(sizeof(UOAR_Savegame_C) == 0x000278, "Wrong size on UOAR_Savegame_C");
-static_assert(offsetof(UOAR_Savegame_C, InventoryItemsSave) == 0x000028, "Member 'UOAR_Savegame_C::InventoryItemsSave' has a wrong offset!");
-static_assert(offsetof(UOAR_Savegame_C, Tools_EquippedSave) == 0x000038, "Member 'UOAR_Savegame_C::Tools_EquippedSave' has a wrong offset!");
-static_assert(offsetof(UOAR_Savegame_C, Weapons_EquippedSave) == 0x000048, "Member 'UOAR_Savegame_C::Weapons_EquippedSave' has a wrong offset!");
-static_assert(offsetof(UOAR_Savegame_C, WeaponMods_EquippedSave) == 0x000058, "Member 'UOAR_Savegame_C::WeaponMods_EquippedSave' has a wrong offset!");
-static_assert(offsetof(UOAR_Savegame_C, Masks_equippedSave) == 0x000068, "Member 'UOAR_Savegame_C::Masks_equippedSave' has a wrong offset!");
-static_assert(offsetof(UOAR_Savegame_C, Outfits_Equipped_Save) == 0x000078, "Member 'UOAR_Savegame_C::Outfits_Equipped_Save' has a wrong offset!");
-static_assert(offsetof(UOAR_Savegame_C, Emote_Equipped_Save) == 0x000088, "Member 'UOAR_Savegame_C::Emote_Equipped_Save' has a wrong offset!");
-static_assert(offsetof(UOAR_Savegame_C, Armor_EquippedSave) == 0x000098, "Member 'UOAR_Savegame_C::Armor_EquippedSave' has a wrong offset!");
-static_assert(offsetof(UOAR_Savegame_C, CashSave) == 0x0000A8, "Member 'UOAR_Savegame_C::CashSave' has a wrong offset!");
-static_assert(offsetof(UOAR_Savegame_C, LevelSave) == 0x0000AC, "Member 'UOAR_Savegame_C::LevelSave' has a wrong offset!");
-static_assert(offsetof(UOAR_Savegame_C, EXPSave) == 0x0000B0, "Member 'UOAR_Savegame_C::EXPSave' has a wrong offset!");
-static_assert(offsetof(UOAR_Savegame_C, SettingsSave) == 0x0000B4, "Member 'UOAR_Savegame_C::SettingsSave' has a wrong offset!");
-static_assert(offsetof(UOAR_Savegame_C, SkinColorSave) == 0x0000E0, "Member 'UOAR_Savegame_C::SkinColorSave' has a wrong offset!");
-static_assert(offsetof(UOAR_Savegame_C, MapsSave) == 0x0000E8, "Member 'UOAR_Savegame_C::MapsSave' has a wrong offset!");
-static_assert(offsetof(UOAR_Savegame_C, LoadoutEquipped) == 0x0000F8, "Member 'UOAR_Savegame_C::LoadoutEquipped' has a wrong offset!");
-static_assert(offsetof(UOAR_Savegame_C, LoadoutSteamID) == 0x000100, "Member 'UOAR_Savegame_C::LoadoutSteamID' has a wrong offset!");
-static_assert(offsetof(UOAR_Savegame_C, SecureCashSave) == 0x000110, "Member 'UOAR_Savegame_C::SecureCashSave' has a wrong offset!");
-static_assert(offsetof(UOAR_Savegame_C, SecureLevelSave) == 0x000160, "Member 'UOAR_Savegame_C::SecureLevelSave' has a wrong offset!");
-static_assert(offsetof(UOAR_Savegame_C, SecureSteamID) == 0x0001B0, "Member 'UOAR_Savegame_C::SecureSteamID' has a wrong offset!");
-static_assert(offsetof(UOAR_Savegame_C, SkinRotation) == 0x000200, "Member 'UOAR_Savegame_C::SkinRotation' has a wrong offset!");
-static_assert(offsetof(UOAR_Savegame_C, UnlockedSetupsSave) == 0x000208, "Member 'UOAR_Savegame_C::UnlockedSetupsSave' has a wrong offset!");
-static_assert(offsetof(UOAR_Savegame_C, CompletedSetupsSave) == 0x000218, "Member 'UOAR_Savegame_C::CompletedSetupsSave' has a wrong offset!");
-static_assert(offsetof(UOAR_Savegame_C, InputSettingsSave) == 0x000228, "Member 'UOAR_Savegame_C::InputSettingsSave' has a wrong offset!");
-static_assert(offsetof(UOAR_Savegame_C, ResearchingSkillsSave) == 0x000238, "Member 'UOAR_Savegame_C::ResearchingSkillsSave' has a wrong offset!");
-static_assert(offsetof(UOAR_Savegame_C, UnlockedSkillsSave) == 0x000248, "Member 'UOAR_Savegame_C::UnlockedSkillsSave' has a wrong offset!");
-static_assert(offsetof(UOAR_Savegame_C, PlaySetupsSave) == 0x000258, "Member 'UOAR_Savegame_C::PlaySetupsSave' has a wrong offset!");
-static_assert(offsetof(UOAR_Savegame_C, SavedBytes) == 0x000268, "Member 'UOAR_Savegame_C::SavedBytes' has a wrong offset!");
+DUMPER7_ASSERTS_UOAR_Savegame_C;
 
 }
 

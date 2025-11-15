@@ -99,49 +99,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HUDUI_C">();
+		BP_STATIC_CLASS_IMPL("HUDUI_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HUDUI_C")
 	}
 	static class UHUDUI_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHUDUI_C>();
 	}
 };
-static_assert(alignof(UHUDUI_C) == 0x000008, "Wrong alignment on UHUDUI_C");
-static_assert(sizeof(UHUDUI_C) == 0x000378, "Wrong size on UHUDUI_C");
-static_assert(offsetof(UHUDUI_C, UberGraphFrame) == 0x000260, "Member 'UHUDUI_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UHUDUI_C, InstructionSwitch) == 0x000268, "Member 'UHUDUI_C::InstructionSwitch' has a wrong offset!");
-static_assert(offsetof(UHUDUI_C, ExitWarningAreaAnim) == 0x000270, "Member 'UHUDUI_C::ExitWarningAreaAnim' has a wrong offset!");
-static_assert(offsetof(UHUDUI_C, EnterWarningAreaAnim) == 0x000278, "Member 'UHUDUI_C::EnterWarningAreaAnim' has a wrong offset!");
-static_assert(offsetof(UHUDUI_C, HitmarkerAnim) == 0x000280, "Member 'UHUDUI_C::HitmarkerAnim' has a wrong offset!");
-static_assert(offsetof(UHUDUI_C, ArmorHealth) == 0x000288, "Member 'UHUDUI_C::ArmorHealth' has a wrong offset!");
-static_assert(offsetof(UHUDUI_C, Border_41) == 0x000290, "Member 'UHUDUI_C::Border_41' has a wrong offset!");
-static_assert(offsetof(UHUDUI_C, DownedBlur) == 0x000298, "Member 'UHUDUI_C::DownedBlur' has a wrong offset!");
-static_assert(offsetof(UHUDUI_C, GunSlot1) == 0x0002A0, "Member 'UHUDUI_C::GunSlot1' has a wrong offset!");
-static_assert(offsetof(UHUDUI_C, GunSlot2) == 0x0002A8, "Member 'UHUDUI_C::GunSlot2' has a wrong offset!");
-static_assert(offsetof(UHUDUI_C, Gunslot3) == 0x0002B0, "Member 'UHUDUI_C::Gunslot3' has a wrong offset!");
-static_assert(offsetof(UHUDUI_C, HitmarkerImage) == 0x0002B8, "Member 'UHUDUI_C::HitmarkerImage' has a wrong offset!");
-static_assert(offsetof(UHUDUI_C, Image) == 0x0002C0, "Member 'UHUDUI_C::Image' has a wrong offset!");
-static_assert(offsetof(UHUDUI_C, Image_96) == 0x0002C8, "Member 'UHUDUI_C::Image_96' has a wrong offset!");
-static_assert(offsetof(UHUDUI_C, Image_171) == 0x0002D0, "Member 'UHUDUI_C::Image_171' has a wrong offset!");
-static_assert(offsetof(UHUDUI_C, Image_467) == 0x0002D8, "Member 'UHUDUI_C::Image_467' has a wrong offset!");
-static_assert(offsetof(UHUDUI_C, ImmunityVignette) == 0x0002E0, "Member 'UHUDUI_C::ImmunityVignette' has a wrong offset!");
-static_assert(offsetof(UHUDUI_C, PowerBoxProgressUI) == 0x0002E8, "Member 'UHUDUI_C::PowerBoxProgressUI' has a wrong offset!");
-static_assert(offsetof(UHUDUI_C, PowerboxText) == 0x0002F0, "Member 'UHUDUI_C::PowerboxText' has a wrong offset!");
-static_assert(offsetof(UHUDUI_C, ProgressBar_144) == 0x0002F8, "Member 'UHUDUI_C::ProgressBar_144' has a wrong offset!");
-static_assert(offsetof(UHUDUI_C, RestrictedAreaText) == 0x000300, "Member 'UHUDUI_C::RestrictedAreaText' has a wrong offset!");
-static_assert(offsetof(UHUDUI_C, TextBlock_0) == 0x000308, "Member 'UHUDUI_C::TextBlock_0' has a wrong offset!");
-static_assert(offsetof(UHUDUI_C, TextBlock_1) == 0x000310, "Member 'UHUDUI_C::TextBlock_1' has a wrong offset!");
-static_assert(offsetof(UHUDUI_C, TextBlock_3) == 0x000318, "Member 'UHUDUI_C::TextBlock_3' has a wrong offset!");
-static_assert(offsetof(UHUDUI_C, TextBlock_48) == 0x000320, "Member 'UHUDUI_C::TextBlock_48' has a wrong offset!");
-static_assert(offsetof(UHUDUI_C, TextBlock_63) == 0x000328, "Member 'UHUDUI_C::TextBlock_63' has a wrong offset!");
-static_assert(offsetof(UHUDUI_C, VerticalBox_0) == 0x000330, "Member 'UHUDUI_C::VerticalBox_0' has a wrong offset!");
-static_assert(offsetof(UHUDUI_C, OwnerPlayer) == 0x000338, "Member 'UHUDUI_C::OwnerPlayer' has a wrong offset!");
-static_assert(offsetof(UHUDUI_C, TotalTake) == 0x000340, "Member 'UHUDUI_C::TotalTake' has a wrong offset!");
-static_assert(offsetof(UHUDUI_C, Truck) == 0x000348, "Member 'UHUDUI_C::Truck' has a wrong offset!");
-static_assert(offsetof(UHUDUI_C, WarningArea) == 0x000350, "Member 'UHUDUI_C::WarningArea' has a wrong offset!");
-static_assert(offsetof(UHUDUI_C, WarningOnScreen_) == 0x000358, "Member 'UHUDUI_C::WarningOnScreen_' has a wrong offset!");
-static_assert(offsetof(UHUDUI_C, InstructionText) == 0x000360, "Member 'UHUDUI_C::InstructionText' has a wrong offset!");
-static_assert(offsetof(UHUDUI_C, Powerbox) == 0x000370, "Member 'UHUDUI_C::Powerbox' has a wrong offset!");
+DUMPER7_ASSERTS_UHUDUI_C;
 
 }
 

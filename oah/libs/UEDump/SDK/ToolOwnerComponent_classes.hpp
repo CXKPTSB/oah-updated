@@ -33,18 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ToolOwnerComponent_C">();
+		BP_STATIC_CLASS_IMPL("ToolOwnerComponent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ToolOwnerComponent_C")
 	}
 	static class UToolOwnerComponent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UToolOwnerComponent_C>();
 	}
 };
-static_assert(alignof(UToolOwnerComponent_C) == 0x000008, "Wrong alignment on UToolOwnerComponent_C");
-static_assert(sizeof(UToolOwnerComponent_C) == 0x0000D0, "Wrong size on UToolOwnerComponent_C");
-static_assert(offsetof(UToolOwnerComponent_C, UberGraphFrame) == 0x0000B0, "Member 'UToolOwnerComponent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UToolOwnerComponent_C, Open) == 0x0000B8, "Member 'UToolOwnerComponent_C::Open' has a wrong offset!");
-static_assert(offsetof(UToolOwnerComponent_C, Health) == 0x0000C8, "Member 'UToolOwnerComponent_C::Health' has a wrong offset!");
+DUMPER7_ASSERTS_UToolOwnerComponent_C;
 
 }
 

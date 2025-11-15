@@ -41,23 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GunInfoPanel_C">();
+		BP_STATIC_CLASS_IMPL("GunInfoPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GunInfoPanel_C")
 	}
 	static class UGunInfoPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGunInfoPanel_C>();
 	}
 };
-static_assert(alignof(UGunInfoPanel_C) == 0x000008, "Wrong alignment on UGunInfoPanel_C");
-static_assert(sizeof(UGunInfoPanel_C) == 0x0002A0, "Wrong size on UGunInfoPanel_C");
-static_assert(offsetof(UGunInfoPanel_C, UberGraphFrame) == 0x000260, "Member 'UGunInfoPanel_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGunInfoPanel_C, Accuracy) == 0x000268, "Member 'UGunInfoPanel_C::Accuracy' has a wrong offset!");
-static_assert(offsetof(UGunInfoPanel_C, Capacity) == 0x000270, "Member 'UGunInfoPanel_C::Capacity' has a wrong offset!");
-static_assert(offsetof(UGunInfoPanel_C, Damage) == 0x000278, "Member 'UGunInfoPanel_C::Damage' has a wrong offset!");
-static_assert(offsetof(UGunInfoPanel_C, Firerate) == 0x000280, "Member 'UGunInfoPanel_C::Firerate' has a wrong offset!");
-static_assert(offsetof(UGunInfoPanel_C, Recoil) == 0x000288, "Member 'UGunInfoPanel_C::Recoil' has a wrong offset!");
-static_assert(offsetof(UGunInfoPanel_C, ReloadTime) == 0x000290, "Member 'UGunInfoPanel_C::ReloadTime' has a wrong offset!");
-static_assert(offsetof(UGunInfoPanel_C, GunInfo) == 0x000298, "Member 'UGunInfoPanel_C::GunInfo' has a wrong offset!");
+DUMPER7_ASSERTS_UGunInfoPanel_C;
 
 }
 

@@ -23,15 +23,18 @@ class AShopItem_Mask_base_C : public AShopItem_Base_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ShopItem_Mask_base_C">();
+		BP_STATIC_CLASS_IMPL("ShopItem_Mask_base_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ShopItem_Mask_base_C")
 	}
 	static class AShopItem_Mask_base_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AShopItem_Mask_base_C>();
 	}
 };
-static_assert(alignof(AShopItem_Mask_base_C) == 0x000008, "Wrong alignment on AShopItem_Mask_base_C");
-static_assert(sizeof(AShopItem_Mask_base_C) == 0x000270, "Wrong size on AShopItem_Mask_base_C");
+DUMPER7_ASSERTS_AShopItem_Mask_base_C;
 
 }
 

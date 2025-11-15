@@ -39,20 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GameOverUI_C">();
+		BP_STATIC_CLASS_IMPL("GameOverUI_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GameOverUI_C")
 	}
 	static class UGameOverUI_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGameOverUI_C>();
 	}
 };
-static_assert(alignof(UGameOverUI_C) == 0x000008, "Wrong alignment on UGameOverUI_C");
-static_assert(sizeof(UGameOverUI_C) == 0x000288, "Wrong size on UGameOverUI_C");
-static_assert(offsetof(UGameOverUI_C, UberGraphFrame) == 0x000260, "Member 'UGameOverUI_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGameOverUI_C, Button_2) == 0x000268, "Member 'UGameOverUI_C::Button_2' has a wrong offset!");
-static_assert(offsetof(UGameOverUI_C, RestartButton) == 0x000270, "Member 'UGameOverUI_C::RestartButton' has a wrong offset!");
-static_assert(offsetof(UGameOverUI_C, restartText) == 0x000278, "Member 'UGameOverUI_C::restartText' has a wrong offset!");
-static_assert(offsetof(UGameOverUI_C, TextBlock_2) == 0x000280, "Member 'UGameOverUI_C::TextBlock_2' has a wrong offset!");
+DUMPER7_ASSERTS_UGameOverUI_C;
 
 }
 

@@ -93,63 +93,7 @@ public:
 	class UAudioComponent*                        CallFunc_SpawnSound2D_ReturnValue;                 // 0x0100(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent) == 0x000008, "Wrong alignment on SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent");
-static_assert(sizeof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent) == 0x000110, "Wrong size on SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, EntryPoint) == 0x000000, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::EntryPoint' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable) == 0x000004, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, Temp_float_Variable) == 0x000008, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, Temp_bool_Variable) == 0x00000C, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, CallFunc_GetOwner_ReturnValue) == 0x000010, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, CallFunc_Create_ReturnValue) == 0x000018, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable_1) == 0x000021, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable_1' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, Temp_bool_Has_Been_Initd_Variable) == 0x000022, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, Temp_bool_IsClosed_Variable) == 0x000023, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, Temp_bool_IsClosed_Variable_1) == 0x000024, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::Temp_bool_IsClosed_Variable_1' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, Temp_bool_Has_Been_Initd_Variable_1) == 0x000025, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::Temp_bool_Has_Been_Initd_Variable_1' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, K2Node_CustomEvent_Pawn) == 0x000028, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::K2Node_CustomEvent_Pawn' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, K2Node_CustomEvent_Alert_time) == 0x000030, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::K2Node_CustomEvent_Alert_time' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, K2Node_CustomEvent_Update_time) == 0x000034, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::K2Node_CustomEvent_Update_time' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, K2Node_CustomEvent_Min_time) == 0x000038, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::K2Node_CustomEvent_Min_time' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, K2Node_CustomEvent_Max_time) == 0x00003C, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::K2Node_CustomEvent_Max_time' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, CallFunc_IsValid_ReturnValue_1) == 0x000040, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, K2Node_DynamicCast_AsPlayer_Character) == 0x000048, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::K2Node_DynamicCast_AsPlayer_Character' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, K2Node_DynamicCast_bSuccess) == 0x000050, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, CallFunc_GetDistanceTo_ReturnValue) == 0x000054, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::CallFunc_GetDistanceTo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, CallFunc_IsLocallyControlled_ReturnValue) == 0x000058, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::CallFunc_IsLocallyControlled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, CallFunc_Divide_FloatFloat_ReturnValue) == 0x00005C, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue) == 0x000060, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, CallFunc_IsLocallyControlled_ReturnValue_1) == 0x000064, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::CallFunc_IsLocallyControlled_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x000068, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, CallFunc_FClamp_ReturnValue) == 0x00006C, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::CallFunc_FClamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, CallFunc_GetOwner_ReturnValue_1) == 0x000070, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::CallFunc_GetOwner_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000078, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, CallFunc_GetComponentByClass_ReturnValue) == 0x000080, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, CallFunc_IsValid_ReturnValue_2) == 0x000088, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, Temp_bool_IsClosed_Variable_2) == 0x000089, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::Temp_bool_IsClosed_Variable_2' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, CallFunc_IsValid_ReturnValue_3) == 0x00008A, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, CallFunc_GetOwner_ReturnValue_2) == 0x000090, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::CallFunc_GetOwner_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, CallFunc_GetComponentByClass_ReturnValue_1) == 0x000098, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::CallFunc_GetComponentByClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, CallFunc_IsValid_ReturnValue_4) == 0x0000A0, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, Temp_bool_Has_Been_Initd_Variable_2) == 0x0000A1, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::Temp_bool_Has_Been_Initd_Variable_2' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, CallFunc_EqualEqual_ObjectObject_ReturnValue_1) == 0x0000A2, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::CallFunc_EqualEqual_ObjectObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, K2Node_CustomEvent_WarningTime) == 0x0000A4, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::K2Node_CustomEvent_WarningTime' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, K2Node_CustomEvent_UpdateTime) == 0x0000A8, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::K2Node_CustomEvent_UpdateTime' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, K2Node_CustomEvent_AttachComponent) == 0x0000B0, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::K2Node_CustomEvent_AttachComponent' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, K2Node_CustomEvent_Question_) == 0x0000B8, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::K2Node_CustomEvent_Question_' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, K2Node_CreateDelegate_OutputDelegate) == 0x0000BC, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x0000D0, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, CallFunc_K2_GetTimerRemainingTimeHandle_ReturnValue) == 0x0000D8, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::CallFunc_K2_GetTimerRemainingTimeHandle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, CallFunc_Less_FloatFloat_ReturnValue) == 0x0000DC, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, CallFunc_GetOwner_ReturnValue_3) == 0x0000E0, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::CallFunc_GetOwner_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, Temp_bool_Has_Been_Initd_Variable_3) == 0x0000E8, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::Temp_bool_Has_Been_Initd_Variable_3' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x0000EC, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, CallFunc_Subtract_FloatFloat_ReturnValue_1) == 0x0000F0, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::CallFunc_Subtract_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, Temp_bool_IsClosed_Variable_3) == 0x0000F4, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::Temp_bool_IsClosed_Variable_3' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, CallFunc_FClamp_ReturnValue_1) == 0x0000F8, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::CallFunc_FClamp_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, K2Node_Select_Default) == 0x0000FC, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, CallFunc_SpawnSound2D_ReturnValue) == 0x000100, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::CallFunc_SpawnSound2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent, CallFunc_IsValid_ReturnValue_5) == 0x000108, "Member 'SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
+DUMPER7_ASSERTS_SpotPlayerComponent_C_ExecuteUbergraph_SpotPlayerComponent;
 
 // Function SpotPlayerComponent.SpotPlayerComponent_C.FloatingWarning
 // 0x0018 (0x0018 - 0x0000)
@@ -161,12 +105,7 @@ public:
 	class UPrimitiveComponent*                    AttachComponent;                                   // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Question_;                                         // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SpotPlayerComponent_C_FloatingWarning) == 0x000008, "Wrong alignment on SpotPlayerComponent_C_FloatingWarning");
-static_assert(sizeof(SpotPlayerComponent_C_FloatingWarning) == 0x000018, "Wrong size on SpotPlayerComponent_C_FloatingWarning");
-static_assert(offsetof(SpotPlayerComponent_C_FloatingWarning, WarningTime) == 0x000000, "Member 'SpotPlayerComponent_C_FloatingWarning::WarningTime' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_FloatingWarning, UpdateTime) == 0x000004, "Member 'SpotPlayerComponent_C_FloatingWarning::UpdateTime' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_FloatingWarning, AttachComponent) == 0x000008, "Member 'SpotPlayerComponent_C_FloatingWarning::AttachComponent' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_FloatingWarning, Question_) == 0x000010, "Member 'SpotPlayerComponent_C_FloatingWarning::Question_' has a wrong offset!");
+DUMPER7_ASSERTS_SpotPlayerComponent_C_FloatingWarning;
 
 // Function SpotPlayerComponent.SpotPlayerComponent_C.SpotPlayer
 // 0x0018 (0x0018 - 0x0000)
@@ -179,13 +118,7 @@ public:
 	float                                         Min_time;                                          // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Max_time;                                          // 0x0014(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SpotPlayerComponent_C_SpotPlayer) == 0x000008, "Wrong alignment on SpotPlayerComponent_C_SpotPlayer");
-static_assert(sizeof(SpotPlayerComponent_C_SpotPlayer) == 0x000018, "Wrong size on SpotPlayerComponent_C_SpotPlayer");
-static_assert(offsetof(SpotPlayerComponent_C_SpotPlayer, Pawn) == 0x000000, "Member 'SpotPlayerComponent_C_SpotPlayer::Pawn' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_SpotPlayer, Alert_time) == 0x000008, "Member 'SpotPlayerComponent_C_SpotPlayer::Alert_time' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_SpotPlayer, Update_time) == 0x00000C, "Member 'SpotPlayerComponent_C_SpotPlayer::Update_time' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_SpotPlayer, Min_time) == 0x000010, "Member 'SpotPlayerComponent_C_SpotPlayer::Min_time' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_SpotPlayer, Max_time) == 0x000014, "Member 'SpotPlayerComponent_C_SpotPlayer::Max_time' has a wrong offset!");
+DUMPER7_ASSERTS_SpotPlayerComponent_C_SpotPlayer;
 
 // Function SpotPlayerComponent.SpotPlayerComponent_C.SpotTimeDistance
 // 0x0020 (0x0020 - 0x0000)
@@ -201,14 +134,7 @@ public:
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SpotPlayerComponent_C_SpotTimeDistance) == 0x000008, "Wrong alignment on SpotPlayerComponent_C_SpotTimeDistance");
-static_assert(sizeof(SpotPlayerComponent_C_SpotTimeDistance) == 0x000020, "Wrong size on SpotPlayerComponent_C_SpotTimeDistance");
-static_assert(offsetof(SpotPlayerComponent_C_SpotTimeDistance, ReturnValue) == 0x000000, "Member 'SpotPlayerComponent_C_SpotTimeDistance::ReturnValue' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_SpotTimeDistance, CallFunc_GetOwner_ReturnValue) == 0x000008, "Member 'SpotPlayerComponent_C_SpotTimeDistance::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_SpotTimeDistance, CallFunc_GetDistanceTo_ReturnValue) == 0x000010, "Member 'SpotPlayerComponent_C_SpotTimeDistance::CallFunc_GetDistanceTo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_SpotTimeDistance, CallFunc_IsValid_ReturnValue) == 0x000014, "Member 'SpotPlayerComponent_C_SpotTimeDistance::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_SpotTimeDistance, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000018, "Member 'SpotPlayerComponent_C_SpotTimeDistance::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SpotPlayerComponent_C_SpotTimeDistance, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00001C, "Member 'SpotPlayerComponent_C_SpotTimeDistance::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SpotPlayerComponent_C_SpotTimeDistance;
 
 }
 

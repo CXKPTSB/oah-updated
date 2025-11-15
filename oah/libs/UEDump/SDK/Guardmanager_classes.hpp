@@ -39,19 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Guardmanager_C">();
+		BP_STATIC_CLASS_IMPL("Guardmanager_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Guardmanager_C")
 	}
 	static class AGuardmanager_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGuardmanager_C>();
 	}
 };
-static_assert(alignof(AGuardmanager_C) == 0x000008, "Wrong alignment on AGuardmanager_C");
-static_assert(sizeof(AGuardmanager_C) == 0x000250, "Wrong size on AGuardmanager_C");
-static_assert(offsetof(AGuardmanager_C, UberGraphFrame) == 0x000220, "Member 'AGuardmanager_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AGuardmanager_C, DefaultSceneRoot) == 0x000228, "Member 'AGuardmanager_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AGuardmanager_C, TriggerAlarm) == 0x000230, "Member 'AGuardmanager_C::TriggerAlarm' has a wrong offset!");
-static_assert(offsetof(AGuardmanager_C, DeadNPCS) == 0x000240, "Member 'AGuardmanager_C::DeadNPCS' has a wrong offset!");
+DUMPER7_ASSERTS_AGuardmanager_C;
 
 }
 

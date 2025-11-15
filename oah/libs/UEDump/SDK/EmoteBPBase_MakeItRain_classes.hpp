@@ -27,17 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EmoteBPBase_MakeItRain_C">();
+		BP_STATIC_CLASS_IMPL("EmoteBPBase_MakeItRain_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EmoteBPBase_MakeItRain_C")
 	}
 	static class AEmoteBPBase_MakeItRain_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AEmoteBPBase_MakeItRain_C>();
 	}
 };
-static_assert(alignof(AEmoteBPBase_MakeItRain_C) == 0x000008, "Wrong alignment on AEmoteBPBase_MakeItRain_C");
-static_assert(sizeof(AEmoteBPBase_MakeItRain_C) == 0x000250, "Wrong size on AEmoteBPBase_MakeItRain_C");
-static_assert(offsetof(AEmoteBPBase_MakeItRain_C, ParticleSystem) == 0x000240, "Member 'AEmoteBPBase_MakeItRain_C::ParticleSystem' has a wrong offset!");
-static_assert(offsetof(AEmoteBPBase_MakeItRain_C, StaticMesh) == 0x000248, "Member 'AEmoteBPBase_MakeItRain_C::StaticMesh' has a wrong offset!");
+DUMPER7_ASSERTS_AEmoteBPBase_MakeItRain_C;
 
 }
 

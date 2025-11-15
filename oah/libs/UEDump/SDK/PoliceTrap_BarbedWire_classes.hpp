@@ -48,30 +48,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PoliceTrap_BarbedWire_C">();
+		BP_STATIC_CLASS_IMPL("PoliceTrap_BarbedWire_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PoliceTrap_BarbedWire_C")
 	}
 	static class APoliceTrap_BarbedWire_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APoliceTrap_BarbedWire_C>();
 	}
 };
-static_assert(alignof(APoliceTrap_BarbedWire_C) == 0x000008, "Wrong alignment on APoliceTrap_BarbedWire_C");
-static_assert(sizeof(APoliceTrap_BarbedWire_C) == 0x000298, "Wrong size on APoliceTrap_BarbedWire_C");
-static_assert(offsetof(APoliceTrap_BarbedWire_C, UberGraphFrame) == 0x000220, "Member 'APoliceTrap_BarbedWire_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(APoliceTrap_BarbedWire_C, SteamAchievementComponent) == 0x000228, "Member 'APoliceTrap_BarbedWire_C::SteamAchievementComponent' has a wrong offset!");
-static_assert(offsetof(APoliceTrap_BarbedWire_C, BarbedWireMovementSound) == 0x000230, "Member 'APoliceTrap_BarbedWire_C::BarbedWireMovementSound' has a wrong offset!");
-static_assert(offsetof(APoliceTrap_BarbedWire_C, LookatInfoComponent) == 0x000238, "Member 'APoliceTrap_BarbedWire_C::LookatInfoComponent' has a wrong offset!");
-static_assert(offsetof(APoliceTrap_BarbedWire_C, DamageComponent) == 0x000240, "Member 'APoliceTrap_BarbedWire_C::DamageComponent' has a wrong offset!");
-static_assert(offsetof(APoliceTrap_BarbedWire_C, Box) == 0x000248, "Member 'APoliceTrap_BarbedWire_C::Box' has a wrong offset!");
-static_assert(offsetof(APoliceTrap_BarbedWire_C, StaticMesh6) == 0x000250, "Member 'APoliceTrap_BarbedWire_C::StaticMesh6' has a wrong offset!");
-static_assert(offsetof(APoliceTrap_BarbedWire_C, StaticMesh5) == 0x000258, "Member 'APoliceTrap_BarbedWire_C::StaticMesh5' has a wrong offset!");
-static_assert(offsetof(APoliceTrap_BarbedWire_C, StaticMesh4) == 0x000260, "Member 'APoliceTrap_BarbedWire_C::StaticMesh4' has a wrong offset!");
-static_assert(offsetof(APoliceTrap_BarbedWire_C, StaticMesh3) == 0x000268, "Member 'APoliceTrap_BarbedWire_C::StaticMesh3' has a wrong offset!");
-static_assert(offsetof(APoliceTrap_BarbedWire_C, StaticMesh2) == 0x000270, "Member 'APoliceTrap_BarbedWire_C::StaticMesh2' has a wrong offset!");
-static_assert(offsetof(APoliceTrap_BarbedWire_C, StaticMesh1) == 0x000278, "Member 'APoliceTrap_BarbedWire_C::StaticMesh1' has a wrong offset!");
-static_assert(offsetof(APoliceTrap_BarbedWire_C, StaticMesh) == 0x000280, "Member 'APoliceTrap_BarbedWire_C::StaticMesh' has a wrong offset!");
-static_assert(offsetof(APoliceTrap_BarbedWire_C, DefaultSceneRoot) == 0x000288, "Member 'APoliceTrap_BarbedWire_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(APoliceTrap_BarbedWire_C, Health) == 0x000290, "Member 'APoliceTrap_BarbedWire_C::Health' has a wrong offset!");
+DUMPER7_ASSERTS_APoliceTrap_BarbedWire_C;
 
 }
 

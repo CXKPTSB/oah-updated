@@ -17,28 +17,6 @@
 namespace SDK::Params
 {
 
-// Function RatAnimBP.RatAnimBP_C.AnimGraph
-// 0x0010 (0x0010 - 0x0000)
-struct RatAnimBP_C_AnimGraph final
-{
-public:
-	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
-};
-static_assert(alignof(RatAnimBP_C_AnimGraph) == 0x000008, "Wrong alignment on RatAnimBP_C_AnimGraph");
-static_assert(sizeof(RatAnimBP_C_AnimGraph) == 0x000010, "Wrong size on RatAnimBP_C_AnimGraph");
-static_assert(offsetof(RatAnimBP_C_AnimGraph, AnimGraph_0) == 0x000000, "Member 'RatAnimBP_C_AnimGraph::AnimGraph_0' has a wrong offset!");
-
-// Function RatAnimBP.RatAnimBP_C.BlueprintUpdateAnimation
-// 0x0004 (0x0004 - 0x0000)
-struct RatAnimBP_C_BlueprintUpdateAnimation final
-{
-public:
-	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(RatAnimBP_C_BlueprintUpdateAnimation) == 0x000004, "Wrong alignment on RatAnimBP_C_BlueprintUpdateAnimation");
-static_assert(sizeof(RatAnimBP_C_BlueprintUpdateAnimation) == 0x000004, "Wrong size on RatAnimBP_C_BlueprintUpdateAnimation");
-static_assert(offsetof(RatAnimBP_C_BlueprintUpdateAnimation, DeltaTimeX) == 0x000000, "Member 'RatAnimBP_C_BlueprintUpdateAnimation::DeltaTimeX' has a wrong offset!");
-
 // Function RatAnimBP.RatAnimBP_C.ExecuteUbergraph_RatAnimBP
 // 0x0030 (0x0030 - 0x0000)
 struct RatAnimBP_C_ExecuteUbergraph_RatAnimBP final
@@ -52,14 +30,25 @@ public:
 	float                                         K2Node_Event_DeltaTimeX;                           // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Dot_VectorVector_ReturnValue;             // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RatAnimBP_C_ExecuteUbergraph_RatAnimBP) == 0x000008, "Wrong alignment on RatAnimBP_C_ExecuteUbergraph_RatAnimBP");
-static_assert(sizeof(RatAnimBP_C_ExecuteUbergraph_RatAnimBP) == 0x000030, "Wrong size on RatAnimBP_C_ExecuteUbergraph_RatAnimBP");
-static_assert(offsetof(RatAnimBP_C_ExecuteUbergraph_RatAnimBP, EntryPoint) == 0x000000, "Member 'RatAnimBP_C_ExecuteUbergraph_RatAnimBP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(RatAnimBP_C_ExecuteUbergraph_RatAnimBP, CallFunc_TryGetPawnOwner_ReturnValue) == 0x000008, "Member 'RatAnimBP_C_ExecuteUbergraph_RatAnimBP::CallFunc_TryGetPawnOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RatAnimBP_C_ExecuteUbergraph_RatAnimBP, CallFunc_GetActorForwardVector_ReturnValue) == 0x000010, "Member 'RatAnimBP_C_ExecuteUbergraph_RatAnimBP::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RatAnimBP_C_ExecuteUbergraph_RatAnimBP, CallFunc_GetVelocity_ReturnValue) == 0x00001C, "Member 'RatAnimBP_C_ExecuteUbergraph_RatAnimBP::CallFunc_GetVelocity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RatAnimBP_C_ExecuteUbergraph_RatAnimBP, K2Node_Event_DeltaTimeX) == 0x000028, "Member 'RatAnimBP_C_ExecuteUbergraph_RatAnimBP::K2Node_Event_DeltaTimeX' has a wrong offset!");
-static_assert(offsetof(RatAnimBP_C_ExecuteUbergraph_RatAnimBP, CallFunc_Dot_VectorVector_ReturnValue) == 0x00002C, "Member 'RatAnimBP_C_ExecuteUbergraph_RatAnimBP::CallFunc_Dot_VectorVector_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_RatAnimBP_C_ExecuteUbergraph_RatAnimBP;
+
+// Function RatAnimBP.RatAnimBP_C.BlueprintUpdateAnimation
+// 0x0004 (0x0004 - 0x0000)
+struct RatAnimBP_C_BlueprintUpdateAnimation final
+{
+public:
+	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_RatAnimBP_C_BlueprintUpdateAnimation;
+
+// Function RatAnimBP.RatAnimBP_C.AnimGraph
+// 0x0010 (0x0010 - 0x0000)
+struct RatAnimBP_C_AnimGraph final
+{
+public:
+	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
+};
+DUMPER7_ASSERTS_RatAnimBP_C_AnimGraph;
 
 }
 

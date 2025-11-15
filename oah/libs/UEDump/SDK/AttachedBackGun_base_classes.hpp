@@ -38,24 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AttachedBackGun_base_C">();
+		BP_STATIC_CLASS_IMPL("AttachedBackGun_base_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AttachedBackGun_base_C")
 	}
 	static class AAttachedBackGun_base_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAttachedBackGun_base_C>();
 	}
 };
-static_assert(alignof(AAttachedBackGun_base_C) == 0x000008, "Wrong alignment on AAttachedBackGun_base_C");
-static_assert(sizeof(AAttachedBackGun_base_C) == 0x000268, "Wrong size on AAttachedBackGun_base_C");
-static_assert(offsetof(AAttachedBackGun_base_C, Attachment_Mag) == 0x000220, "Member 'AAttachedBackGun_base_C::Attachment_Mag' has a wrong offset!");
-static_assert(offsetof(AAttachedBackGun_base_C, Attachment_Grip) == 0x000228, "Member 'AAttachedBackGun_base_C::Attachment_Grip' has a wrong offset!");
-static_assert(offsetof(AAttachedBackGun_base_C, Attachment_light) == 0x000230, "Member 'AAttachedBackGun_base_C::Attachment_light' has a wrong offset!");
-static_assert(offsetof(AAttachedBackGun_base_C, Attachment_scope) == 0x000238, "Member 'AAttachedBackGun_base_C::Attachment_scope' has a wrong offset!");
-static_assert(offsetof(AAttachedBackGun_base_C, Attachment_barrel) == 0x000240, "Member 'AAttachedBackGun_base_C::Attachment_barrel' has a wrong offset!");
-static_assert(offsetof(AAttachedBackGun_base_C, Box) == 0x000248, "Member 'AAttachedBackGun_base_C::Box' has a wrong offset!");
-static_assert(offsetof(AAttachedBackGun_base_C, Arrow) == 0x000250, "Member 'AAttachedBackGun_base_C::Arrow' has a wrong offset!");
-static_assert(offsetof(AAttachedBackGun_base_C, SkeletalMesh) == 0x000258, "Member 'AAttachedBackGun_base_C::SkeletalMesh' has a wrong offset!");
-static_assert(offsetof(AAttachedBackGun_base_C, Back_) == 0x000260, "Member 'AAttachedBackGun_base_C::Back_' has a wrong offset!");
+DUMPER7_ASSERTS_AAttachedBackGun_base_C;
 
 }
 

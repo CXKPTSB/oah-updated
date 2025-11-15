@@ -11,58 +11,12 @@
 #include "Basic.hpp"
 
 #include "ShopItemCategory_structs.hpp"
-#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
 {
-
-// Function AppearancePreview.AppearancePreview_C.ChangeCategory
-// 0x0001 (0x0001 - 0x0000)
-struct AppearancePreview_C_ChangeCategory final
-{
-public:
-	EShopItemCategory                             Category;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(AppearancePreview_C_ChangeCategory) == 0x000001, "Wrong alignment on AppearancePreview_C_ChangeCategory");
-static_assert(sizeof(AppearancePreview_C_ChangeCategory) == 0x000001, "Wrong size on AppearancePreview_C_ChangeCategory");
-static_assert(offsetof(AppearancePreview_C_ChangeCategory, Category) == 0x000000, "Member 'AppearancePreview_C_ChangeCategory::Category' has a wrong offset!");
-
-// Function AppearancePreview.AppearancePreview_C.DragItemFromCategory
-// 0x0001 (0x0001 - 0x0000)
-struct AppearancePreview_C_DragItemFromCategory final
-{
-public:
-	EShopItemCategory                             Category;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(AppearancePreview_C_DragItemFromCategory) == 0x000001, "Wrong alignment on AppearancePreview_C_DragItemFromCategory");
-static_assert(sizeof(AppearancePreview_C_DragItemFromCategory) == 0x000001, "Wrong size on AppearancePreview_C_DragItemFromCategory");
-static_assert(offsetof(AppearancePreview_C_DragItemFromCategory, Category) == 0x000000, "Member 'AppearancePreview_C_DragItemFromCategory::Category' has a wrong offset!");
-
-// Function AppearancePreview.AppearancePreview_C.PreviewItem
-// 0x0010 (0x0010 - 0x0000)
-struct AppearancePreview_C_PreviewItem final
-{
-public:
-	class UClass*                                 ItemInfo;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         SalePrice;                                         // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(AppearancePreview_C_PreviewItem) == 0x000008, "Wrong alignment on AppearancePreview_C_PreviewItem");
-static_assert(sizeof(AppearancePreview_C_PreviewItem) == 0x000010, "Wrong size on AppearancePreview_C_PreviewItem");
-static_assert(offsetof(AppearancePreview_C_PreviewItem, ItemInfo) == 0x000000, "Member 'AppearancePreview_C_PreviewItem::ItemInfo' has a wrong offset!");
-static_assert(offsetof(AppearancePreview_C_PreviewItem, SalePrice) == 0x000008, "Member 'AppearancePreview_C_PreviewItem::SalePrice' has a wrong offset!");
-
-// Function AppearancePreview.AppearancePreview_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct AppearancePreview_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(AppearancePreview_C_ReceiveTick) == 0x000004, "Wrong alignment on AppearancePreview_C_ReceiveTick");
-static_assert(sizeof(AppearancePreview_C_ReceiveTick) == 0x000004, "Wrong size on AppearancePreview_C_ReceiveTick");
-static_assert(offsetof(AppearancePreview_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'AppearancePreview_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
 
 // Function AppearancePreview.AppearancePreview_C.ExecuteUbergraph_AppearancePreview
 // 0x0168 (0x0168 - 0x0000)
@@ -117,46 +71,44 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0161(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AppearancePreview_C_ExecuteUbergraph_AppearancePreview) == 0x000008, "Wrong alignment on AppearancePreview_C_ExecuteUbergraph_AppearancePreview");
-static_assert(sizeof(AppearancePreview_C_ExecuteUbergraph_AppearancePreview) == 0x000168, "Wrong size on AppearancePreview_C_ExecuteUbergraph_AppearancePreview");
-static_assert(offsetof(AppearancePreview_C_ExecuteUbergraph_AppearancePreview, EntryPoint) == 0x000000, "Member 'AppearancePreview_C_ExecuteUbergraph_AppearancePreview::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AppearancePreview_C_ExecuteUbergraph_AppearancePreview, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'AppearancePreview_C_ExecuteUbergraph_AppearancePreview::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AppearancePreview_C_ExecuteUbergraph_AppearancePreview, Temp_bool_IsClosed_Variable) == 0x000005, "Member 'AppearancePreview_C_ExecuteUbergraph_AppearancePreview::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(AppearancePreview_C_ExecuteUbergraph_AppearancePreview, K2Node_Event_Category_1) == 0x000006, "Member 'AppearancePreview_C_ExecuteUbergraph_AppearancePreview::K2Node_Event_Category_1' has a wrong offset!");
-static_assert(offsetof(AppearancePreview_C_ExecuteUbergraph_AppearancePreview, K2Node_Event_Category) == 0x000007, "Member 'AppearancePreview_C_ExecuteUbergraph_AppearancePreview::K2Node_Event_Category' has a wrong offset!");
-static_assert(offsetof(AppearancePreview_C_ExecuteUbergraph_AppearancePreview, K2Node_Event_ItemInfo) == 0x000008, "Member 'AppearancePreview_C_ExecuteUbergraph_AppearancePreview::K2Node_Event_ItemInfo' has a wrong offset!");
-static_assert(offsetof(AppearancePreview_C_ExecuteUbergraph_AppearancePreview, K2Node_Event_SalePrice) == 0x000010, "Member 'AppearancePreview_C_ExecuteUbergraph_AppearancePreview::K2Node_Event_SalePrice' has a wrong offset!");
-static_assert(offsetof(AppearancePreview_C_ExecuteUbergraph_AppearancePreview, CallFunc_GetPlayerController_ReturnValue) == 0x000018, "Member 'AppearancePreview_C_ExecuteUbergraph_AppearancePreview::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AppearancePreview_C_ExecuteUbergraph_AppearancePreview, K2Node_DynamicCast_AsRobber_Controller) == 0x000020, "Member 'AppearancePreview_C_ExecuteUbergraph_AppearancePreview::K2Node_DynamicCast_AsRobber_Controller' has a wrong offset!");
-static_assert(offsetof(AppearancePreview_C_ExecuteUbergraph_AppearancePreview, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'AppearancePreview_C_ExecuteUbergraph_AppearancePreview::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(AppearancePreview_C_ExecuteUbergraph_AppearancePreview, CallFunc_IsValid_ReturnValue_1) == 0x000029, "Member 'AppearancePreview_C_ExecuteUbergraph_AppearancePreview::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AppearancePreview_C_ExecuteUbergraph_AppearancePreview, CallFunc_IsLocalController_ReturnValue) == 0x00002A, "Member 'AppearancePreview_C_ExecuteUbergraph_AppearancePreview::CallFunc_IsLocalController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AppearancePreview_C_ExecuteUbergraph_AppearancePreview, CallFunc_IsValid_ReturnValue_2) == 0x00002B, "Member 'AppearancePreview_C_ExecuteUbergraph_AppearancePreview::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(AppearancePreview_C_ExecuteUbergraph_AppearancePreview, CallFunc_Array_Get_Item) == 0x000030, "Member 'AppearancePreview_C_ExecuteUbergraph_AppearancePreview::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(AppearancePreview_C_ExecuteUbergraph_AppearancePreview, CallFunc_Array_Get_Item_1) == 0x000038, "Member 'AppearancePreview_C_ExecuteUbergraph_AppearancePreview::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(AppearancePreview_C_ExecuteUbergraph_AppearancePreview, CallFunc_Array_Get_Item_2) == 0x000040, "Member 'AppearancePreview_C_ExecuteUbergraph_AppearancePreview::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(AppearancePreview_C_ExecuteUbergraph_AppearancePreview, CallFunc_IsValidClass_ReturnValue) == 0x000048, "Member 'AppearancePreview_C_ExecuteUbergraph_AppearancePreview::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AppearancePreview_C_ExecuteUbergraph_AppearancePreview, K2Node_ClassDynamicCast_AsArmor_Light) == 0x000050, "Member 'AppearancePreview_C_ExecuteUbergraph_AppearancePreview::K2Node_ClassDynamicCast_AsArmor_Light' has a wrong offset!");
-static_assert(offsetof(AppearancePreview_C_ExecuteUbergraph_AppearancePreview, K2Node_ClassDynamicCast_bSuccess) == 0x000058, "Member 'AppearancePreview_C_ExecuteUbergraph_AppearancePreview::K2Node_ClassDynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(AppearancePreview_C_ExecuteUbergraph_AppearancePreview, CallFunc_Array_Get_Item_3) == 0x000060, "Member 'AppearancePreview_C_ExecuteUbergraph_AppearancePreview::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(AppearancePreview_C_ExecuteUbergraph_AppearancePreview, K2Node_Event_DeltaSeconds) == 0x000068, "Member 'AppearancePreview_C_ExecuteUbergraph_AppearancePreview::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(AppearancePreview_C_ExecuteUbergraph_AppearancePreview, CallFunc_GetPlayerController_ReturnValue_1) == 0x000070, "Member 'AppearancePreview_C_ExecuteUbergraph_AppearancePreview::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AppearancePreview_C_ExecuteUbergraph_AppearancePreview, CallFunc_GetInputMouseDelta_DeltaX) == 0x000078, "Member 'AppearancePreview_C_ExecuteUbergraph_AppearancePreview::CallFunc_GetInputMouseDelta_DeltaX' has a wrong offset!");
-static_assert(offsetof(AppearancePreview_C_ExecuteUbergraph_AppearancePreview, CallFunc_GetInputMouseDelta_DeltaY) == 0x00007C, "Member 'AppearancePreview_C_ExecuteUbergraph_AppearancePreview::CallFunc_GetInputMouseDelta_DeltaY' has a wrong offset!");
-static_assert(offsetof(AppearancePreview_C_ExecuteUbergraph_AppearancePreview, CallFunc_IsInputKeyDown_ReturnValue) == 0x000080, "Member 'AppearancePreview_C_ExecuteUbergraph_AppearancePreview::CallFunc_IsInputKeyDown_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AppearancePreview_C_ExecuteUbergraph_AppearancePreview, CallFunc_MakeLiteralFloat_ReturnValue) == 0x000084, "Member 'AppearancePreview_C_ExecuteUbergraph_AppearancePreview::CallFunc_MakeLiteralFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AppearancePreview_C_ExecuteUbergraph_AppearancePreview, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000088, "Member 'AppearancePreview_C_ExecuteUbergraph_AppearancePreview::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AppearancePreview_C_ExecuteUbergraph_AppearancePreview, Temp_bool_Has_Been_Initd_Variable) == 0x00008C, "Member 'AppearancePreview_C_ExecuteUbergraph_AppearancePreview::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(AppearancePreview_C_ExecuteUbergraph_AppearancePreview, CallFunc_MakeRotator_ReturnValue) == 0x000090, "Member 'AppearancePreview_C_ExecuteUbergraph_AppearancePreview::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AppearancePreview_C_ExecuteUbergraph_AppearancePreview, CallFunc_K2_AddWorldRotation_SweepHitResult) == 0x00009C, "Member 'AppearancePreview_C_ExecuteUbergraph_AppearancePreview::CallFunc_K2_AddWorldRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(AppearancePreview_C_ExecuteUbergraph_AppearancePreview, CallFunc_Array_Get_Item_4) == 0x000128, "Member 'AppearancePreview_C_ExecuteUbergraph_AppearancePreview::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(AppearancePreview_C_ExecuteUbergraph_AppearancePreview, CallFunc_GetDisplayName_ReturnValue) == 0x000130, "Member 'AppearancePreview_C_ExecuteUbergraph_AppearancePreview::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AppearancePreview_C_ExecuteUbergraph_AppearancePreview, K2Node_CreateDelegate_OutputDelegate) == 0x000140, "Member 'AppearancePreview_C_ExecuteUbergraph_AppearancePreview::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AppearancePreview_C_ExecuteUbergraph_AppearancePreview, CallFunc_NotEqual_ClassClass_ReturnValue) == 0x000150, "Member 'AppearancePreview_C_ExecuteUbergraph_AppearancePreview::CallFunc_NotEqual_ClassClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AppearancePreview_C_ExecuteUbergraph_AppearancePreview, CallFunc_GetPlayLength_ReturnValue) == 0x000154, "Member 'AppearancePreview_C_ExecuteUbergraph_AppearancePreview::CallFunc_GetPlayLength_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AppearancePreview_C_ExecuteUbergraph_AppearancePreview, K2Node_DynamicCast_AsEmote_BPBase) == 0x000158, "Member 'AppearancePreview_C_ExecuteUbergraph_AppearancePreview::K2Node_DynamicCast_AsEmote_BPBase' has a wrong offset!");
-static_assert(offsetof(AppearancePreview_C_ExecuteUbergraph_AppearancePreview, K2Node_DynamicCast_bSuccess_1) == 0x000160, "Member 'AppearancePreview_C_ExecuteUbergraph_AppearancePreview::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(AppearancePreview_C_ExecuteUbergraph_AppearancePreview, CallFunc_IsValid_ReturnValue_3) == 0x000161, "Member 'AppearancePreview_C_ExecuteUbergraph_AppearancePreview::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
+DUMPER7_ASSERTS_AppearancePreview_C_ExecuteUbergraph_AppearancePreview;
+
+// Function AppearancePreview.AppearancePreview_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct AppearancePreview_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_AppearancePreview_C_ReceiveTick;
+
+// Function AppearancePreview.AppearancePreview_C.PreviewItem
+// 0x0010 (0x0010 - 0x0000)
+struct AppearancePreview_C_PreviewItem final
+{
+public:
+	class UClass*                                 ItemInfo;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         SalePrice;                                         // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_AppearancePreview_C_PreviewItem;
+
+// Function AppearancePreview.AppearancePreview_C.DragItemFromCategory
+// 0x0001 (0x0001 - 0x0000)
+struct AppearancePreview_C_DragItemFromCategory final
+{
+public:
+	EShopItemCategory                             Category;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_AppearancePreview_C_DragItemFromCategory;
+
+// Function AppearancePreview.AppearancePreview_C.ChangeCategory
+// 0x0001 (0x0001 - 0x0000)
+struct AppearancePreview_C_ChangeCategory final
+{
+public:
+	EShopItemCategory                             Category;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_AppearancePreview_C_ChangeCategory;
 
 }
 

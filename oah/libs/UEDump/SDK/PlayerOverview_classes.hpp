@@ -32,17 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerOverview_C">();
+		BP_STATIC_CLASS_IMPL("PlayerOverview_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerOverview_C")
 	}
 	static class UPlayerOverview_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayerOverview_C>();
 	}
 };
-static_assert(alignof(UPlayerOverview_C) == 0x000008, "Wrong alignment on UPlayerOverview_C");
-static_assert(sizeof(UPlayerOverview_C) == 0x000270, "Wrong size on UPlayerOverview_C");
-static_assert(offsetof(UPlayerOverview_C, UberGraphFrame) == 0x000260, "Member 'UPlayerOverview_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPlayerOverview_C, PlayersBox) == 0x000268, "Member 'UPlayerOverview_C::PlayersBox' has a wrong offset!");
+DUMPER7_ASSERTS_UPlayerOverview_C;
 
 }
 

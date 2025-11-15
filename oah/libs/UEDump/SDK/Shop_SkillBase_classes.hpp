@@ -27,17 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Shop_SkillBase_C">();
+		BP_STATIC_CLASS_IMPL("Shop_SkillBase_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Shop_SkillBase_C")
 	}
 	static class AShop_SkillBase_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AShop_SkillBase_C>();
 	}
 };
-static_assert(alignof(AShop_SkillBase_C) == 0x000008, "Wrong alignment on AShop_SkillBase_C");
-static_assert(sizeof(AShop_SkillBase_C) == 0x000288, "Wrong size on AShop_SkillBase_C");
-static_assert(offsetof(AShop_SkillBase_C, SkillComponent) == 0x000270, "Member 'AShop_SkillBase_C::SkillComponent' has a wrong offset!");
-static_assert(offsetof(AShop_SkillBase_C, RequiredProgress) == 0x000280, "Member 'AShop_SkillBase_C::RequiredProgress' has a wrong offset!");
+DUMPER7_ASSERTS_AShop_SkillBase_C;
 
 }
 

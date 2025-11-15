@@ -42,22 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GarageDoor_C">();
+		BP_STATIC_CLASS_IMPL("GarageDoor_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GarageDoor_C")
 	}
 	static class AGarageDoor_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGarageDoor_C>();
 	}
 };
-static_assert(alignof(AGarageDoor_C) == 0x000008, "Wrong alignment on AGarageDoor_C");
-static_assert(sizeof(AGarageDoor_C) == 0x000250, "Wrong size on AGarageDoor_C");
-static_assert(offsetof(AGarageDoor_C, UberGraphFrame) == 0x000220, "Member 'AGarageDoor_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AGarageDoor_C, NavModifier) == 0x000228, "Member 'AGarageDoor_C::NavModifier' has a wrong offset!");
-static_assert(offsetof(AGarageDoor_C, OpenLocation) == 0x000230, "Member 'AGarageDoor_C::OpenLocation' has a wrong offset!");
-static_assert(offsetof(AGarageDoor_C, StaticMesh) == 0x000238, "Member 'AGarageDoor_C::StaticMesh' has a wrong offset!");
-static_assert(offsetof(AGarageDoor_C, DefaultSceneRoot) == 0x000240, "Member 'AGarageDoor_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AGarageDoor_C, Open_) == 0x000248, "Member 'AGarageDoor_C::Open_' has a wrong offset!");
-static_assert(offsetof(AGarageDoor_C, Opening_) == 0x000249, "Member 'AGarageDoor_C::Opening_' has a wrong offset!");
+DUMPER7_ASSERTS_AGarageDoor_C;
 
 }
 

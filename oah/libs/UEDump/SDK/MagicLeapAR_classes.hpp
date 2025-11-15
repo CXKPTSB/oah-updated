@@ -31,15 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LuminARSessionFunctionLibrary">();
+		STATIC_CLASS_IMPL("LuminARSessionFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LuminARSessionFunctionLibrary")
 	}
 	static class ULuminARSessionFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULuminARSessionFunctionLibrary>();
 	}
 };
-static_assert(alignof(ULuminARSessionFunctionLibrary) == 0x000008, "Wrong alignment on ULuminARSessionFunctionLibrary");
-static_assert(sizeof(ULuminARSessionFunctionLibrary) == 0x000028, "Wrong size on ULuminARSessionFunctionLibrary");
+DUMPER7_ASSERTS_ULuminARSessionFunctionLibrary;
 
 // Class MagicLeapAR.LuminARFrameFunctionLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -52,15 +55,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LuminARFrameFunctionLibrary">();
+		STATIC_CLASS_IMPL("LuminARFrameFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LuminARFrameFunctionLibrary")
 	}
 	static class ULuminARFrameFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULuminARFrameFunctionLibrary>();
 	}
 };
-static_assert(alignof(ULuminARFrameFunctionLibrary) == 0x000008, "Wrong alignment on ULuminARFrameFunctionLibrary");
-static_assert(sizeof(ULuminARFrameFunctionLibrary) == 0x000028, "Wrong size on ULuminARFrameFunctionLibrary");
+DUMPER7_ASSERTS_ULuminARFrameFunctionLibrary;
 
 // Class MagicLeapAR.LuminARLightEstimate
 // 0x0010 (0x0050 - 0x0040)
@@ -75,16 +81,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LuminARLightEstimate">();
+		STATIC_CLASS_IMPL("LuminARLightEstimate")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LuminARLightEstimate")
 	}
 	static class ULuminARLightEstimate* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULuminARLightEstimate>();
 	}
 };
-static_assert(alignof(ULuminARLightEstimate) == 0x000008, "Wrong alignment on ULuminARLightEstimate");
-static_assert(sizeof(ULuminARLightEstimate) == 0x000050, "Wrong size on ULuminARLightEstimate");
-static_assert(offsetof(ULuminARLightEstimate, AmbientIntensityNits) == 0x000040, "Member 'ULuminARLightEstimate::AmbientIntensityNits' has a wrong offset!");
+DUMPER7_ASSERTS_ULuminARLightEstimate;
 
 // Class MagicLeapAR.LuminARImageTrackingFunctionLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -97,15 +105,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LuminARImageTrackingFunctionLibrary">();
+		STATIC_CLASS_IMPL("LuminARImageTrackingFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LuminARImageTrackingFunctionLibrary")
 	}
 	static class ULuminARImageTrackingFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULuminARImageTrackingFunctionLibrary>();
 	}
 };
-static_assert(alignof(ULuminARImageTrackingFunctionLibrary) == 0x000008, "Wrong alignment on ULuminARImageTrackingFunctionLibrary");
-static_assert(sizeof(ULuminARImageTrackingFunctionLibrary) == 0x000028, "Wrong size on ULuminARImageTrackingFunctionLibrary");
+DUMPER7_ASSERTS_ULuminARImageTrackingFunctionLibrary;
 
 // Class MagicLeapAR.LuminAROrigin
 // 0x00C0 (0x02E0 - 0x0220)
@@ -120,18 +131,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LuminAROrigin">();
+		STATIC_CLASS_IMPL("LuminAROrigin")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LuminAROrigin")
 	}
 	static class ALuminAROrigin* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ALuminAROrigin>();
 	}
 };
-static_assert(alignof(ALuminAROrigin) == 0x000008, "Wrong alignment on ALuminAROrigin");
-static_assert(sizeof(ALuminAROrigin) == 0x0002E0, "Wrong size on ALuminAROrigin");
-static_assert(offsetof(ALuminAROrigin, MRMeshComponent) == 0x000220, "Member 'ALuminAROrigin::MRMeshComponent' has a wrong offset!");
-static_assert(offsetof(ALuminAROrigin, PlaneSurfaceMaterial) == 0x000228, "Member 'ALuminAROrigin::PlaneSurfaceMaterial' has a wrong offset!");
-static_assert(offsetof(ALuminAROrigin, WireframeMaterial) == 0x000230, "Member 'ALuminAROrigin::WireframeMaterial' has a wrong offset!");
+DUMPER7_ASSERTS_ALuminAROrigin;
 
 // Class MagicLeapAR.LuminARSessionConfig
 // 0x0090 (0x01A0 - 0x0110)
@@ -152,23 +163,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LuminARSessionConfig">();
+		STATIC_CLASS_IMPL("LuminARSessionConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LuminARSessionConfig")
 	}
 	static class ULuminARSessionConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULuminARSessionConfig>();
 	}
 };
-static_assert(alignof(ULuminARSessionConfig) == 0x000010, "Wrong alignment on ULuminARSessionConfig");
-static_assert(sizeof(ULuminARSessionConfig) == 0x0001A0, "Wrong size on ULuminARSessionConfig");
-static_assert(offsetof(ULuminARSessionConfig, PlanesQuery) == 0x000110, "Member 'ULuminARSessionConfig::PlanesQuery' has a wrong offset!");
-static_assert(offsetof(ULuminARSessionConfig, MaxPlaneQueryResults) == 0x000170, "Member 'ULuminARSessionConfig::MaxPlaneQueryResults' has a wrong offset!");
-static_assert(offsetof(ULuminARSessionConfig, MinPlaneArea) == 0x000174, "Member 'ULuminARSessionConfig::MinPlaneArea' has a wrong offset!");
-static_assert(offsetof(ULuminARSessionConfig, bArbitraryOrientationPlaneDetection) == 0x000178, "Member 'ULuminARSessionConfig::bArbitraryOrientationPlaneDetection' has a wrong offset!");
-static_assert(offsetof(ULuminARSessionConfig, PlaneSearchExtents) == 0x00017C, "Member 'ULuminARSessionConfig::PlaneSearchExtents' has a wrong offset!");
-static_assert(offsetof(ULuminARSessionConfig, PlaneQueryFlags) == 0x000188, "Member 'ULuminARSessionConfig::PlaneQueryFlags' has a wrong offset!");
-static_assert(offsetof(ULuminARSessionConfig, bDiscardZeroExtentPlanes) == 0x000198, "Member 'ULuminARSessionConfig::bDiscardZeroExtentPlanes' has a wrong offset!");
-static_assert(offsetof(ULuminARSessionConfig, bDefaultUseUnreliablePose) == 0x000199, "Member 'ULuminARSessionConfig::bDefaultUseUnreliablePose' has a wrong offset!");
+DUMPER7_ASSERTS_ULuminARSessionConfig;
 
 // Class MagicLeapAR.LuminARCandidateImage
 // 0x0008 (0x0060 - 0x0058)
@@ -188,18 +194,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LuminARCandidateImage">();
+		STATIC_CLASS_IMPL("LuminARCandidateImage")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LuminARCandidateImage")
 	}
 	static class ULuminARCandidateImage* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULuminARCandidateImage>();
 	}
 };
-static_assert(alignof(ULuminARCandidateImage) == 0x000008, "Wrong alignment on ULuminARCandidateImage");
-static_assert(sizeof(ULuminARCandidateImage) == 0x000060, "Wrong size on ULuminARCandidateImage");
-static_assert(offsetof(ULuminARCandidateImage, bUseUnreliablePose) == 0x000058, "Member 'ULuminARCandidateImage::bUseUnreliablePose' has a wrong offset!");
-static_assert(offsetof(ULuminARCandidateImage, bImageIsStationary) == 0x000059, "Member 'ULuminARCandidateImage::bImageIsStationary' has a wrong offset!");
-static_assert(offsetof(ULuminARCandidateImage, AxisOrientation) == 0x00005A, "Member 'ULuminARCandidateImage::AxisOrientation' has a wrong offset!");
+DUMPER7_ASSERTS_ULuminARCandidateImage;
 
 }
 

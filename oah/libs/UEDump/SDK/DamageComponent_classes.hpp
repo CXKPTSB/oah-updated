@@ -22,23 +22,24 @@ namespace SDK
 class UDamageComponent_C final : public UActorComponent
 {
 public:
-	TMulticastInlineDelegate<void(int32 Amount, class FName Bone, const struct FVector& HitLocation, const struct FVector& StartLocation, class AActor* Instigator)> Damage;                                            // 0x00B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(int32 Amount, class FName Bone, const struct FVector& HitLocation, const struct FVector& StartLocation, class AActor* Instigator)> Damage; // 0x00B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          Hitmarker_;                                        // 0x00C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DamageComponent_C">();
+		BP_STATIC_CLASS_IMPL("DamageComponent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DamageComponent_C")
 	}
 	static class UDamageComponent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDamageComponent_C>();
 	}
 };
-static_assert(alignof(UDamageComponent_C) == 0x000008, "Wrong alignment on UDamageComponent_C");
-static_assert(sizeof(UDamageComponent_C) == 0x0000C8, "Wrong size on UDamageComponent_C");
-static_assert(offsetof(UDamageComponent_C, Damage) == 0x0000B0, "Member 'UDamageComponent_C::Damage' has a wrong offset!");
-static_assert(offsetof(UDamageComponent_C, Hitmarker_) == 0x0000C0, "Member 'UDamageComponent_C::Hitmarker_' has a wrong offset!");
+DUMPER7_ASSERTS_UDamageComponent_C;
 
 }
 

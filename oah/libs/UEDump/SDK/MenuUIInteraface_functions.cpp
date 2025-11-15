@@ -25,9 +25,9 @@ void ImenuUIInteraface_C::Remove()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("menuUIInteraface_C", "Remove");
+		Func = AsUObject()->Class->GetFunction("menuUIInteraface_C", "Remove");
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 
@@ -39,9 +39,9 @@ void ImenuUIInteraface_C::RefreshInventory()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("menuUIInteraface_C", "RefreshInventory");
+		Func = AsUObject()->Class->GetFunction("menuUIInteraface_C", "RefreshInventory");
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 
@@ -53,9 +53,9 @@ void ImenuUIInteraface_C::RemoveloadoutCategory()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("menuUIInteraface_C", "RemoveloadoutCategory");
+		Func = AsUObject()->Class->GetFunction("menuUIInteraface_C", "RemoveloadoutCategory");
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 
@@ -69,13 +69,13 @@ void ImenuUIInteraface_C::ChangeCategory(EShopItemCategory Category)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("menuUIInteraface_C", "ChangeCategory");
+		Func = AsUObject()->Class->GetFunction("menuUIInteraface_C", "ChangeCategory");
 
 	Params::menuUIInteraface_C_ChangeCategory Parms{};
 
 	Parms.Category = Category;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 }
 
 
@@ -89,13 +89,13 @@ void ImenuUIInteraface_C::DragItemFromCategory(EShopItemCategory Category)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("menuUIInteraface_C", "DragItemFromCategory");
+		Func = AsUObject()->Class->GetFunction("menuUIInteraface_C", "DragItemFromCategory");
 
 	Params::menuUIInteraface_C_DragItemFromCategory Parms{};
 
 	Parms.Category = Category;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 }
 
 
@@ -107,9 +107,9 @@ void ImenuUIInteraface_C::CancelDrag()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("menuUIInteraface_C", "CancelDrag");
+		Func = AsUObject()->Class->GetFunction("menuUIInteraface_C", "CancelDrag");
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 
@@ -124,14 +124,14 @@ void ImenuUIInteraface_C::PreviewItem(class UClass* ItemInfo, int32 SalePrice)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("menuUIInteraface_C", "PreviewItem");
+		Func = AsUObject()->Class->GetFunction("menuUIInteraface_C", "PreviewItem");
 
 	Params::menuUIInteraface_C_PreviewItem Parms{};
 
 	Parms.ItemInfo = ItemInfo;
 	Parms.SalePrice = SalePrice;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 }
 
 }

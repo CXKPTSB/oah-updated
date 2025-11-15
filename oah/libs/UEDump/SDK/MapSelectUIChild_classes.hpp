@@ -60,31 +60,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MapSelectUIChild_C">();
+		BP_STATIC_CLASS_IMPL("MapSelectUIChild_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MapSelectUIChild_C")
 	}
 	static class UMapSelectUIChild_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMapSelectUIChild_C>();
 	}
 };
-static_assert(alignof(UMapSelectUIChild_C) == 0x000008, "Wrong alignment on UMapSelectUIChild_C");
-static_assert(sizeof(UMapSelectUIChild_C) == 0x0002E0, "Wrong size on UMapSelectUIChild_C");
-static_assert(offsetof(UMapSelectUIChild_C, UberGraphFrame) == 0x000260, "Member 'UMapSelectUIChild_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMapSelectUIChild_C, Hover) == 0x000268, "Member 'UMapSelectUIChild_C::Hover' has a wrong offset!");
-static_assert(offsetof(UMapSelectUIChild_C, Border_57) == 0x000270, "Member 'UMapSelectUIChild_C::Border_57' has a wrong offset!");
-static_assert(offsetof(UMapSelectUIChild_C, Button_59) == 0x000278, "Member 'UMapSelectUIChild_C::Button_59' has a wrong offset!");
-static_assert(offsetof(UMapSelectUIChild_C, HorizontalBox_101) == 0x000280, "Member 'UMapSelectUIChild_C::HorizontalBox_101' has a wrong offset!");
-static_assert(offsetof(UMapSelectUIChild_C, Image_109) == 0x000288, "Member 'UMapSelectUIChild_C::Image_109' has a wrong offset!");
-static_assert(offsetof(UMapSelectUIChild_C, SaleBannerBorder) == 0x000290, "Member 'UMapSelectUIChild_C::SaleBannerBorder' has a wrong offset!");
-static_assert(offsetof(UMapSelectUIChild_C, SaleOverlay) == 0x000298, "Member 'UMapSelectUIChild_C::SaleOverlay' has a wrong offset!");
-static_assert(offsetof(UMapSelectUIChild_C, TextBlock) == 0x0002A0, "Member 'UMapSelectUIChild_C::TextBlock' has a wrong offset!");
-static_assert(offsetof(UMapSelectUIChild_C, TextBlock_69) == 0x0002A8, "Member 'UMapSelectUIChild_C::TextBlock_69' has a wrong offset!");
-static_assert(offsetof(UMapSelectUIChild_C, TextBlock_234) == 0x0002B0, "Member 'UMapSelectUIChild_C::TextBlock_234' has a wrong offset!");
-static_assert(offsetof(UMapSelectUIChild_C, Map) == 0x0002B8, "Member 'UMapSelectUIChild_C::Map' has a wrong offset!");
-static_assert(offsetof(UMapSelectUIChild_C, ParentWidget) == 0x0002C0, "Member 'UMapSelectUIChild_C::ParentWidget' has a wrong offset!");
-static_assert(offsetof(UMapSelectUIChild_C, Unlocked_) == 0x0002C8, "Member 'UMapSelectUIChild_C::Unlocked_' has a wrong offset!");
-static_assert(offsetof(UMapSelectUIChild_C, As_Robber_Controller) == 0x0002D0, "Member 'UMapSelectUIChild_C::As_Robber_Controller' has a wrong offset!");
-static_assert(offsetof(UMapSelectUIChild_C, SalePrice) == 0x0002D8, "Member 'UMapSelectUIChild_C::SalePrice' has a wrong offset!");
+DUMPER7_ASSERTS_UMapSelectUIChild_C;
 
 }
 

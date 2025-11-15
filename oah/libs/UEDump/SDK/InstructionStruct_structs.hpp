@@ -26,13 +26,7 @@ public:
 	class FString                                 Title_7_22998E3447301C355FBE37BFF1BD4BB6;          // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 Description_9_7E2EB44640463B0E31646B89797E9B97;    // 0x0020(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FInstructionStruct) == 0x000008, "Wrong alignment on FInstructionStruct");
-static_assert(sizeof(FInstructionStruct) == 0x000030, "Wrong size on FInstructionStruct");
-static_assert(offsetof(FInstructionStruct, ID_4_ED865C784EAA9D90C364E08F142C74CC) == 0x000000, "Member 'FInstructionStruct::ID_4_ED865C784EAA9D90C364E08F142C74CC' has a wrong offset!");
-static_assert(offsetof(FInstructionStruct, NextID_15_319D8EA841E50E28C3DB4FB2610AF177) == 0x000004, "Member 'FInstructionStruct::NextID_15_319D8EA841E50E28C3DB4FB2610AF177' has a wrong offset!");
-static_assert(offsetof(FInstructionStruct, Completed__12_E38BF8214BD5CEFD5CAE77B6222B9EFB) == 0x000008, "Member 'FInstructionStruct::Completed__12_E38BF8214BD5CEFD5CAE77B6222B9EFB' has a wrong offset!");
-static_assert(offsetof(FInstructionStruct, Title_7_22998E3447301C355FBE37BFF1BD4BB6) == 0x000010, "Member 'FInstructionStruct::Title_7_22998E3447301C355FBE37BFF1BD4BB6' has a wrong offset!");
-static_assert(offsetof(FInstructionStruct, Description_9_7E2EB44640463B0E31646B89797E9B97) == 0x000020, "Member 'FInstructionStruct::Description_9_7E2EB44640463B0E31646B89797E9B97' has a wrong offset!");
+DUMPER7_ASSERTS_FInstructionStruct;
 
 }
 

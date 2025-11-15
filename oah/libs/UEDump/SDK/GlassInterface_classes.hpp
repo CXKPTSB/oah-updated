@@ -17,8 +17,8 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GlassInterface.GlassInterface_C
-// 0x0000 (0x0028 - 0x0028)
-class IGlassInterface_C final : public IInterface
+// 0x0000 (0x0000 - 0x0000)
+class IGlassInterface_C final
 {
 public:
 	void BreakGlass();
@@ -26,15 +26,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GlassInterface_C">();
+		BP_STATIC_CLASS_IMPL("GlassInterface_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GlassInterface_C")
 	}
 	static class IGlassInterface_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<IGlassInterface_C>();
 	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
 };
-static_assert(alignof(IGlassInterface_C) == 0x000008, "Wrong alignment on IGlassInterface_C");
-static_assert(sizeof(IGlassInterface_C) == 0x000028, "Wrong size on IGlassInterface_C");
+DUMPER7_ASSERTS_IGlassInterface_C;
 
 }
 

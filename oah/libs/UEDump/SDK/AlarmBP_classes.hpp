@@ -43,24 +43,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AlarmBP_C">();
+		BP_STATIC_CLASS_IMPL("AlarmBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AlarmBP_C")
 	}
 	static class AAlarmBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAlarmBP_C>();
 	}
 };
-static_assert(alignof(AAlarmBP_C) == 0x000008, "Wrong alignment on AAlarmBP_C");
-static_assert(sizeof(AAlarmBP_C) == 0x000270, "Wrong size on AAlarmBP_C");
-static_assert(offsetof(AAlarmBP_C, UberGraphFrame) == 0x000220, "Member 'AAlarmBP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AAlarmBP_C, Instructioncomponent) == 0x000228, "Member 'AAlarmBP_C::Instructioncomponent' has a wrong offset!");
-static_assert(offsetof(AAlarmBP_C, Audio) == 0x000230, "Member 'AAlarmBP_C::Audio' has a wrong offset!");
-static_assert(offsetof(AAlarmBP_C, HackableItemComponent) == 0x000238, "Member 'AAlarmBP_C::HackableItemComponent' has a wrong offset!");
-static_assert(offsetof(AAlarmBP_C, StaticMesh) == 0x000240, "Member 'AAlarmBP_C::StaticMesh' has a wrong offset!");
-static_assert(offsetof(AAlarmBP_C, DefaultSceneRoot) == 0x000248, "Member 'AAlarmBP_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AAlarmBP_C, AlarmEnabled_) == 0x000250, "Member 'AAlarmBP_C::AlarmEnabled_' has a wrong offset!");
-static_assert(offsetof(AAlarmBP_C, TriggerAlarmDisp) == 0x000258, "Member 'AAlarmBP_C::TriggerAlarmDisp' has a wrong offset!");
-static_assert(offsetof(AAlarmBP_C, HasAlarmTriggered_) == 0x000268, "Member 'AAlarmBP_C::HasAlarmTriggered_' has a wrong offset!");
+DUMPER7_ASSERTS_AAlarmBP_C;
 
 }
 

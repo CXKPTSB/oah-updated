@@ -23,15 +23,18 @@ class AAttachment_scope_IM1_Iron_C final : public AAttachment_scope_base_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Attachment_scope_IM1_Iron_C">();
+		BP_STATIC_CLASS_IMPL("Attachment_scope_IM1_Iron_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Attachment_scope_IM1_Iron_C")
 	}
 	static class AAttachment_scope_IM1_Iron_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAttachment_scope_IM1_Iron_C>();
 	}
 };
-static_assert(alignof(AAttachment_scope_IM1_Iron_C) == 0x000008, "Wrong alignment on AAttachment_scope_IM1_Iron_C");
-static_assert(sizeof(AAttachment_scope_IM1_Iron_C) == 0x000270, "Wrong size on AAttachment_scope_IM1_Iron_C");
+DUMPER7_ASSERTS_AAttachment_scope_IM1_Iron_C;
 
 }
 

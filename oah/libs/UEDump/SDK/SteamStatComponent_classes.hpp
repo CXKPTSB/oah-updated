@@ -32,17 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SteamStatComponent_C">();
+		BP_STATIC_CLASS_IMPL("SteamStatComponent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamStatComponent_C")
 	}
 	static class USteamStatComponent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamStatComponent_C>();
 	}
 };
-static_assert(alignof(USteamStatComponent_C) == 0x000008, "Wrong alignment on USteamStatComponent_C");
-static_assert(sizeof(USteamStatComponent_C) == 0x0000C8, "Wrong size on USteamStatComponent_C");
-static_assert(offsetof(USteamStatComponent_C, UberGraphFrame) == 0x0000B0, "Member 'USteamStatComponent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USteamStatComponent_C, Stat_name) == 0x0000B8, "Member 'USteamStatComponent_C::Stat_name' has a wrong offset!");
+DUMPER7_ASSERTS_USteamStatComponent_C;
 
 }
 

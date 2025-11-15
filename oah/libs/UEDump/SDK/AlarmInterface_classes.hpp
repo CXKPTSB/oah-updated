@@ -17,8 +17,8 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass AlarmInterface.AlarmInterface_C
-// 0x0000 (0x0028 - 0x0028)
-class IAlarmInterface_C final : public IInterface
+// 0x0000 (0x0000 - 0x0000)
+class IAlarmInterface_C final
 {
 public:
 	void AlarmTriggeredInterfaceCall();
@@ -27,15 +27,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AlarmInterface_C">();
+		BP_STATIC_CLASS_IMPL("AlarmInterface_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AlarmInterface_C")
 	}
 	static class IAlarmInterface_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<IAlarmInterface_C>();
 	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
 };
-static_assert(alignof(IAlarmInterface_C) == 0x000008, "Wrong alignment on IAlarmInterface_C");
-static_assert(sizeof(IAlarmInterface_C) == 0x000028, "Wrong size on IAlarmInterface_C");
+DUMPER7_ASSERTS_IAlarmInterface_C;
 
 }
 

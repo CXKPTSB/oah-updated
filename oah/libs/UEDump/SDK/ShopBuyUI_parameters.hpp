@@ -12,8 +12,8 @@
 
 #include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "ShopItemCategory_structs.hpp"
 #include "AttachmentArrayStructure_structs.hpp"
+#include "ShopItemCategory_structs.hpp"
 
 
 namespace SDK::Params
@@ -119,82 +119,7 @@ public:
 	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0260(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Consume_Coins_Success_;                   // 0x0261(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI) == 0x000008, "Wrong alignment on ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI");
-static_assert(sizeof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI) == 0x000268, "Wrong size on ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, EntryPoint) == 0x000000, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, Temp_bool_Has_Been_Initd_Variable) == 0x000014, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, Temp_int_Loop_Counter_Variable) == 0x000018, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_Add_IntInt_ReturnValue) == 0x00001C, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, Temp_int_Array_Index_Variable) == 0x000020, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, Temp_bool_IsClosed_Variable) == 0x000024, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, Temp_int_Loop_Counter_Variable_1) == 0x000028, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_Add_IntInt_ReturnValue_1) == 0x00002C, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, Temp_int_Array_Index_Variable_1) == 0x000030, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, Temp_int_Array_Index_Variable_2) == 0x000034, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, Temp_int_Loop_Counter_Variable_2) == 0x000038, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_Add_IntInt_ReturnValue_2) == 0x00003C, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, Temp_int_Array_Index_Variable_3) == 0x000040, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::Temp_int_Array_Index_Variable_3' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_GetPlayerController_ReturnValue) == 0x000048, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, K2Node_DynamicCast_AsRobber_Controller) == 0x000050, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::K2Node_DynamicCast_AsRobber_Controller' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, K2Node_DynamicCast_bSuccess) == 0x000058, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_Add_IntInt_ReturnValue_3) == 0x00005C, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_SpendCash_Success_) == 0x000060, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_SpendCash_Success_' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_AddInventoryItem_Index) == 0x000064, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_AddInventoryItem_Index' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000068, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_GetAllWidgetsWithInterface_FoundWidgets) == 0x000070, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_GetAllWidgetsWithInterface_FoundWidgets' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, Temp_int_Loop_Counter_Variable_3) == 0x000080, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::Temp_int_Loop_Counter_Variable_3' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_Array_Get_Item) == 0x000088, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, K2Node_DynamicCast_AsMenu_UIInteraface) == 0x000090, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::K2Node_DynamicCast_AsMenu_UIInteraface' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, K2Node_DynamicCast_bSuccess_1) == 0x0000A0, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, K2Node_DynamicCast_AsMenu_UIInteraface_1) == 0x0000A8, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::K2Node_DynamicCast_AsMenu_UIInteraface_1' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, K2Node_DynamicCast_bSuccess_2) == 0x0000B8, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_Add_IntInt_ReturnValue_4) == 0x0000BC, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_Array_Length_ReturnValue) == 0x0000C0, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_Less_IntInt_ReturnValue) == 0x0000C4, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_IsValid_ReturnValue) == 0x0000C5, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, Temp_bool_Has_Been_Initd_Variable_1) == 0x0000C6, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::Temp_bool_Has_Been_Initd_Variable_1' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_Update_Attachment_New_attachments_structure) == 0x0000C8, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_Update_Attachment_New_attachments_structure' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_GetAllWidgetsOfClass_FoundWidgets) == 0x0000D8, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_GetAllWidgetsOfClass_FoundWidgets' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, Temp_bool_IsClosed_Variable_1) == 0x0000E8, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::Temp_bool_IsClosed_Variable_1' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_Array_Get_Item_1) == 0x0000F0, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue) == 0x0000F8, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_1) == 0x000108, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_Concat_StrStr_ReturnValue) == 0x000118, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000128, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_Concat_StrStr_ReturnValue_2) == 0x000138, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_Concat_StrStr_ReturnValue_3) == 0x000148, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_Concat_StrStr_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_Concat_StrStr_ReturnValue_4) == 0x000158, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_Concat_StrStr_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, K2Node_ClassDynamicCast_AsShop_Item_Map_Base) == 0x000168, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::K2Node_ClassDynamicCast_AsShop_Item_Map_Base' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, K2Node_ClassDynamicCast_bSuccess) == 0x000170, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::K2Node_ClassDynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_Check_Multiplied_Value_Can_purchase_) == 0x000171, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_Check_Multiplied_Value_Can_purchase_' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_Array_LastIndex_ReturnValue) == 0x000174, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_Add_IntInt_ReturnValue_5) == 0x000178, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_Add_IntInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_Less_IntInt_ReturnValue_1) == 0x00017C, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_GetAllWidgetsWithInterface_FoundWidgets_1) == 0x000180, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_GetAllWidgetsWithInterface_FoundWidgets_1' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, K2Node_CreateDelegate_OutputDelegate_1) == 0x000190, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_Array_Get_Item_2) == 0x0001A0, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, K2Node_DynamicCast_AsMenu_UIInteraface_2) == 0x0001A8, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::K2Node_DynamicCast_AsMenu_UIInteraface_2' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, K2Node_DynamicCast_bSuccess_3) == 0x0001B8, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_Array_Length_ReturnValue_1) == 0x0001BC, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_Less_IntInt_ReturnValue_2) == 0x0001C0, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_GetAllActorsWithInterface_OutActors) == 0x0001C8, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_GetAllActorsWithInterface_OutActors' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_Array_Get_Item_3) == 0x0001D8, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_Array_Length_ReturnValue_2) == 0x0001E0, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, K2Node_DynamicCast_AsMenu_UIInteraface_3) == 0x0001E8, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::K2Node_DynamicCast_AsMenu_UIInteraface_3' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, K2Node_DynamicCast_bSuccess_4) == 0x0001F8, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_Less_IntInt_ReturnValue_3) == 0x0001F9, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_GetAllActorsWithInterface_OutActors_1) == 0x000200, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_GetAllActorsWithInterface_OutActors_1' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_Array_Get_Item_4) == 0x000210, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_Array_Length_ReturnValue_3) == 0x000218, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, K2Node_DynamicCast_AsMenu_UIInteraface_4) == 0x000220, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::K2Node_DynamicCast_AsMenu_UIInteraface_4' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, K2Node_DynamicCast_bSuccess_5) == 0x000230, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_Less_IntInt_ReturnValue_4) == 0x000231, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_Less_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, K2Node_DynamicCast_AsMenu_UIInteraface_5) == 0x000238, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::K2Node_DynamicCast_AsMenu_UIInteraface_5' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, K2Node_DynamicCast_bSuccess_6) == 0x000248, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::K2Node_DynamicCast_bSuccess_6' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, K2Node_MakeArray_Array) == 0x000250, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_Array_Contains_ReturnValue) == 0x000260, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI, CallFunc_Consume_Coins_Success_) == 0x000261, "Member 'ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI::CallFunc_Consume_Coins_Success_' has a wrong offset!");
+DUMPER7_ASSERTS_ShopBuyUI_C_ExecuteUbergraph_ShopBuyUI;
 
 // Function ShopBuyUI.ShopBuyUI_C.GetText_0
 // 0x00A8 (0x00A8 - 0x0000)
@@ -212,17 +137,7 @@ public:
 	class FString                                 K2Node_Select_Default;                             // 0x0080(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0090(0x0018)()
 };
-static_assert(alignof(ShopBuyUI_C_GetText_0) == 0x000008, "Wrong alignment on ShopBuyUI_C_GetText_0");
-static_assert(sizeof(ShopBuyUI_C_GetText_0) == 0x0000A8, "Wrong size on ShopBuyUI_C_GetText_0");
-static_assert(offsetof(ShopBuyUI_C_GetText_0, ReturnValue) == 0x000000, "Member 'ShopBuyUI_C_GetText_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_GetText_0, Temp_bool_Variable) == 0x000018, "Member 'ShopBuyUI_C_GetText_0::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_GetText_0, CallFunc_Conv_IntToText_ReturnValue) == 0x000020, "Member 'ShopBuyUI_C_GetText_0::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_GetText_0, CallFunc_Conv_TextToString_ReturnValue) == 0x000038, "Member 'ShopBuyUI_C_GetText_0::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_GetText_0, CallFunc_Conv_IntToText_ReturnValue_1) == 0x000048, "Member 'ShopBuyUI_C_GetText_0::CallFunc_Conv_IntToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_GetText_0, CallFunc_Conv_TextToString_ReturnValue_1) == 0x000060, "Member 'ShopBuyUI_C_GetText_0::CallFunc_Conv_TextToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_GetText_0, CallFunc_Concat_StrStr_ReturnValue) == 0x000070, "Member 'ShopBuyUI_C_GetText_0::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_GetText_0, K2Node_Select_Default) == 0x000080, "Member 'ShopBuyUI_C_GetText_0::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_GetText_0, CallFunc_Conv_StringToText_ReturnValue) == 0x000090, "Member 'ShopBuyUI_C_GetText_0::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ShopBuyUI_C_GetText_0;
 
 // Function ShopBuyUI.ShopBuyUI_C.GetBrush_0
 // 0x0110 (0x0110 - 0x0000)
@@ -232,10 +147,7 @@ public:
 	struct FSlateBrush                            ReturnValue;                                       // 0x0000(0x0088)(Parm, OutParm, ReturnParm)
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0088(0x0088)()
 };
-static_assert(alignof(ShopBuyUI_C_GetBrush_0) == 0x000008, "Wrong alignment on ShopBuyUI_C_GetBrush_0");
-static_assert(sizeof(ShopBuyUI_C_GetBrush_0) == 0x000110, "Wrong size on ShopBuyUI_C_GetBrush_0");
-static_assert(offsetof(ShopBuyUI_C_GetBrush_0, ReturnValue) == 0x000000, "Member 'ShopBuyUI_C_GetBrush_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_GetBrush_0, K2Node_MakeStruct_SlateBrush) == 0x000088, "Member 'ShopBuyUI_C_GetBrush_0::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
+DUMPER7_ASSERTS_ShopBuyUI_C_GetBrush_0;
 
 // Function ShopBuyUI.ShopBuyUI_C.GetText_1
 // 0x0050 (0x0050 - 0x0000)
@@ -247,12 +159,7 @@ public:
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0038(0x0018)()
 };
-static_assert(alignof(ShopBuyUI_C_GetText_1) == 0x000008, "Wrong alignment on ShopBuyUI_C_GetText_1");
-static_assert(sizeof(ShopBuyUI_C_GetText_1) == 0x000050, "Wrong size on ShopBuyUI_C_GetText_1");
-static_assert(offsetof(ShopBuyUI_C_GetText_1, ReturnValue) == 0x000000, "Member 'ShopBuyUI_C_GetText_1::ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_GetText_1, CallFunc_Concat_StrStr_ReturnValue) == 0x000018, "Member 'ShopBuyUI_C_GetText_1::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_GetText_1, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000028, "Member 'ShopBuyUI_C_GetText_1::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShopBuyUI_C_GetText_1, CallFunc_Conv_StringToText_ReturnValue) == 0x000038, "Member 'ShopBuyUI_C_GetText_1::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ShopBuyUI_C_GetText_1;
 
 // Function ShopBuyUI.ShopBuyUI_C.GetText_2
 // 0x0018 (0x0018 - 0x0000)
@@ -261,9 +168,7 @@ struct ShopBuyUI_C_GetText_2 final
 public:
 	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(ShopBuyUI_C_GetText_2) == 0x000008, "Wrong alignment on ShopBuyUI_C_GetText_2");
-static_assert(sizeof(ShopBuyUI_C_GetText_2) == 0x000018, "Wrong size on ShopBuyUI_C_GetText_2");
-static_assert(offsetof(ShopBuyUI_C_GetText_2, ReturnValue) == 0x000000, "Member 'ShopBuyUI_C_GetText_2::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ShopBuyUI_C_GetText_2;
 
 // Function ShopBuyUI.ShopBuyUI_C.VisibleWhenPurchased
 // 0x0001 (0x0001 - 0x0000)
@@ -272,9 +177,7 @@ struct ShopBuyUI_C_VisibleWhenPurchased final
 public:
 	ESlateVisibility                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ShopBuyUI_C_VisibleWhenPurchased) == 0x000001, "Wrong alignment on ShopBuyUI_C_VisibleWhenPurchased");
-static_assert(sizeof(ShopBuyUI_C_VisibleWhenPurchased) == 0x000001, "Wrong size on ShopBuyUI_C_VisibleWhenPurchased");
-static_assert(offsetof(ShopBuyUI_C_VisibleWhenPurchased, ReturnValue) == 0x000000, "Member 'ShopBuyUI_C_VisibleWhenPurchased::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ShopBuyUI_C_VisibleWhenPurchased;
 
 // Function ShopBuyUI.ShopBuyUI_C.HiddenWhenPurchased
 // 0x0001 (0x0001 - 0x0000)
@@ -283,9 +186,7 @@ struct ShopBuyUI_C_HiddenWhenPurchased final
 public:
 	ESlateVisibility                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ShopBuyUI_C_HiddenWhenPurchased) == 0x000001, "Wrong alignment on ShopBuyUI_C_HiddenWhenPurchased");
-static_assert(sizeof(ShopBuyUI_C_HiddenWhenPurchased) == 0x000001, "Wrong size on ShopBuyUI_C_HiddenWhenPurchased");
-static_assert(offsetof(ShopBuyUI_C_HiddenWhenPurchased, ReturnValue) == 0x000000, "Member 'ShopBuyUI_C_HiddenWhenPurchased::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ShopBuyUI_C_HiddenWhenPurchased;
 
 // Function ShopBuyUI.ShopBuyUI_C.GetVisibility_0
 // 0x0001 (0x0001 - 0x0000)
@@ -294,9 +195,7 @@ struct ShopBuyUI_C_GetVisibility_0 final
 public:
 	ESlateVisibility                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ShopBuyUI_C_GetVisibility_0) == 0x000001, "Wrong alignment on ShopBuyUI_C_GetVisibility_0");
-static_assert(sizeof(ShopBuyUI_C_GetVisibility_0) == 0x000001, "Wrong size on ShopBuyUI_C_GetVisibility_0");
-static_assert(offsetof(ShopBuyUI_C_GetVisibility_0, ReturnValue) == 0x000000, "Member 'ShopBuyUI_C_GetVisibility_0::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ShopBuyUI_C_GetVisibility_0;
 
 }
 

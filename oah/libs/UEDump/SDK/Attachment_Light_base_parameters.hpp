@@ -33,17 +33,7 @@ public:
 	class APlayerCharacter_C*                     K2Node_DynamicCast_AsPlayer_Character;             // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Attachment_Light_base_C_ExecuteUbergraph_Attachment_Light_base) == 0x000008, "Wrong alignment on Attachment_Light_base_C_ExecuteUbergraph_Attachment_Light_base");
-static_assert(sizeof(Attachment_Light_base_C_ExecuteUbergraph_Attachment_Light_base) == 0x000050, "Wrong size on Attachment_Light_base_C_ExecuteUbergraph_Attachment_Light_base");
-static_assert(offsetof(Attachment_Light_base_C_ExecuteUbergraph_Attachment_Light_base, EntryPoint) == 0x000000, "Member 'Attachment_Light_base_C_ExecuteUbergraph_Attachment_Light_base::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Attachment_Light_base_C_ExecuteUbergraph_Attachment_Light_base, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000004, "Member 'Attachment_Light_base_C_ExecuteUbergraph_Attachment_Light_base::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Attachment_Light_base_C_ExecuteUbergraph_Attachment_Light_base, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'Attachment_Light_base_C_ExecuteUbergraph_Attachment_Light_base::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Attachment_Light_base_C_ExecuteUbergraph_Attachment_Light_base, CallFunc_GetParentActor_ReturnValue) == 0x000020, "Member 'Attachment_Light_base_C_ExecuteUbergraph_Attachment_Light_base::CallFunc_GetParentActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Attachment_Light_base_C_ExecuteUbergraph_Attachment_Light_base, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'Attachment_Light_base_C_ExecuteUbergraph_Attachment_Light_base::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Attachment_Light_base_C_ExecuteUbergraph_Attachment_Light_base, CallFunc_GetOwner_ReturnValue) == 0x000030, "Member 'Attachment_Light_base_C_ExecuteUbergraph_Attachment_Light_base::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Attachment_Light_base_C_ExecuteUbergraph_Attachment_Light_base, CallFunc_IsValid_ReturnValue_1) == 0x000038, "Member 'Attachment_Light_base_C_ExecuteUbergraph_Attachment_Light_base::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Attachment_Light_base_C_ExecuteUbergraph_Attachment_Light_base, K2Node_DynamicCast_AsPlayer_Character) == 0x000040, "Member 'Attachment_Light_base_C_ExecuteUbergraph_Attachment_Light_base::K2Node_DynamicCast_AsPlayer_Character' has a wrong offset!");
-static_assert(offsetof(Attachment_Light_base_C_ExecuteUbergraph_Attachment_Light_base, K2Node_DynamicCast_bSuccess) == 0x000048, "Member 'Attachment_Light_base_C_ExecuteUbergraph_Attachment_Light_base::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_Attachment_Light_base_C_ExecuteUbergraph_Attachment_Light_base;
 
 }
 

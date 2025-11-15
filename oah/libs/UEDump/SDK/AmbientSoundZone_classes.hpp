@@ -45,22 +45,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AmbientSoundZone_C">();
+		BP_STATIC_CLASS_IMPL("AmbientSoundZone_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AmbientSoundZone_C")
 	}
 	static class AAmbientSoundZone_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAmbientSoundZone_C>();
 	}
 };
-static_assert(alignof(AAmbientSoundZone_C) == 0x000008, "Wrong alignment on AAmbientSoundZone_C");
-static_assert(sizeof(AAmbientSoundZone_C) == 0x000268, "Wrong size on AAmbientSoundZone_C");
-static_assert(offsetof(AAmbientSoundZone_C, UberGraphFrame) == 0x000220, "Member 'AAmbientSoundZone_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AAmbientSoundZone_C, Box) == 0x000228, "Member 'AAmbientSoundZone_C::Box' has a wrong offset!");
-static_assert(offsetof(AAmbientSoundZone_C, DefaultSceneRoot) == 0x000230, "Member 'AAmbientSoundZone_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AAmbientSoundZone_C, Sounds) == 0x000238, "Member 'AAmbientSoundZone_C::Sounds' has a wrong offset!");
-static_assert(offsetof(AAmbientSoundZone_C, AudioComponents) == 0x000248, "Member 'AAmbientSoundZone_C::AudioComponents' has a wrong offset!");
-static_assert(offsetof(AAmbientSoundZone_C, AmbienceSoundController) == 0x000258, "Member 'AAmbientSoundZone_C::AmbienceSoundController' has a wrong offset!");
-static_assert(offsetof(AAmbientSoundZone_C, AlarmTriggered_) == 0x000260, "Member 'AAmbientSoundZone_C::AlarmTriggered_' has a wrong offset!");
+DUMPER7_ASSERTS_AAmbientSoundZone_C;
 
 }
 

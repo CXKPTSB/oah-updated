@@ -58,38 +58,7 @@ public:
 	uint8                                         Pad_E1[0x3];                                       // 0x00E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue_2;          // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator) == 0x000008, "Wrong alignment on WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator");
-static_assert(sizeof(WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator) == 0x0000E8, "Wrong size on WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator");
-static_assert(offsetof(WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator, EntryPoint) == 0x000000, "Member 'WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator, Temp_bool_IsClosed_Variable) == 0x000014, "Member 'WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator, Temp_bool_Has_Been_Initd_Variable) == 0x000015, "Member 'WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator, Temp_bool_Has_Been_Initd_Variable_1) == 0x000016, "Member 'WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator::Temp_bool_Has_Been_Initd_Variable_1' has a wrong offset!");
-static_assert(offsetof(WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator, K2Node_Event_MyGeometry) == 0x000018, "Member 'WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator, K2Node_Event_InDeltaTime) == 0x000050, "Member 'WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator, CallFunc_GetControlRotation_ReturnValue) == 0x000054, "Member 'WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator::CallFunc_GetControlRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000060, "Member 'WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator, CallFunc_BreakRotator_Roll) == 0x00006C, "Member 'WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator::CallFunc_BreakRotator_Roll' has a wrong offset!");
-static_assert(offsetof(WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator, CallFunc_BreakRotator_Pitch) == 0x000070, "Member 'WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator::CallFunc_BreakRotator_Pitch' has a wrong offset!");
-static_assert(offsetof(WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator, CallFunc_BreakRotator_Yaw) == 0x000074, "Member 'WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator::CallFunc_BreakRotator_Yaw' has a wrong offset!");
-static_assert(offsetof(WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000078, "Member 'WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator, CallFunc_FindLookAtRotation_ReturnValue) == 0x000084, "Member 'WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator::CallFunc_FindLookAtRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator, CallFunc_BreakRotator_Roll_1) == 0x000090, "Member 'WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator::CallFunc_BreakRotator_Roll_1' has a wrong offset!");
-static_assert(offsetof(WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator, CallFunc_BreakRotator_Pitch_1) == 0x000094, "Member 'WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator::CallFunc_BreakRotator_Pitch_1' has a wrong offset!");
-static_assert(offsetof(WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator, CallFunc_BreakRotator_Yaw_1) == 0x000098, "Member 'WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator::CallFunc_BreakRotator_Yaw_1' has a wrong offset!");
-static_assert(offsetof(WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator, CallFunc_Divide_FloatFloat_ReturnValue) == 0x00009C, "Member 'WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x0000A0, "Member 'WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator, CallFunc_PlayAnimation_ReturnValue) == 0x0000A8, "Member 'WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator, Temp_bool_IsClosed_Variable_1) == 0x0000B0, "Member 'WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator::Temp_bool_IsClosed_Variable_1' has a wrong offset!");
-static_assert(offsetof(WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x0000B4, "Member 'WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator, CallFunc_PlayAnimation_ReturnValue_1) == 0x0000B8, "Member 'WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator, CallFunc_GetComponentByClass_ReturnValue) == 0x0000C0, "Member 'WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator, CallFunc_GetComponentByClass_ReturnValue_1) == 0x0000C8, "Member 'WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator::CallFunc_GetComponentByClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator, CallFunc_IsValid_ReturnValue) == 0x0000D0, "Member 'WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator, CallFunc_SpotTimeDistance_ReturnValue) == 0x0000D4, "Member 'WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator::CallFunc_SpotTimeDistance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator, K2Node_CustomEvent_Player) == 0x0000D8, "Member 'WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator::K2Node_CustomEvent_Player' has a wrong offset!");
-static_assert(offsetof(WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator, CallFunc_Less_FloatFloat_ReturnValue) == 0x0000E0, "Member 'WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator, CallFunc_Divide_FloatFloat_ReturnValue_2) == 0x0000E4, "Member 'WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator::CallFunc_Divide_FloatFloat_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_WarningDirectionIndicator_C_ExecuteUbergraph_WarningDirectionIndicator;
 
 // Function WarningDirectionIndicator.WarningDirectionIndicator_C.RemoveWhenSpotted
 // 0x0008 (0x0008 - 0x0000)
@@ -98,9 +67,7 @@ struct WarningDirectionIndicator_C_RemoveWhenSpotted final
 public:
 	class APawn*                                  Player_0;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WarningDirectionIndicator_C_RemoveWhenSpotted) == 0x000008, "Wrong alignment on WarningDirectionIndicator_C_RemoveWhenSpotted");
-static_assert(sizeof(WarningDirectionIndicator_C_RemoveWhenSpotted) == 0x000008, "Wrong size on WarningDirectionIndicator_C_RemoveWhenSpotted");
-static_assert(offsetof(WarningDirectionIndicator_C_RemoveWhenSpotted, Player_0) == 0x000000, "Member 'WarningDirectionIndicator_C_RemoveWhenSpotted::Player_0' has a wrong offset!");
+DUMPER7_ASSERTS_WarningDirectionIndicator_C_RemoveWhenSpotted;
 
 // Function WarningDirectionIndicator.WarningDirectionIndicator_C.Tick
 // 0x003C (0x003C - 0x0000)
@@ -110,10 +77,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WarningDirectionIndicator_C_Tick) == 0x000004, "Wrong alignment on WarningDirectionIndicator_C_Tick");
-static_assert(sizeof(WarningDirectionIndicator_C_Tick) == 0x00003C, "Wrong size on WarningDirectionIndicator_C_Tick");
-static_assert(offsetof(WarningDirectionIndicator_C_Tick, MyGeometry) == 0x000000, "Member 'WarningDirectionIndicator_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WarningDirectionIndicator_C_Tick, InDeltaTime) == 0x000038, "Member 'WarningDirectionIndicator_C_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_WarningDirectionIndicator_C_Tick;
 
 }
 

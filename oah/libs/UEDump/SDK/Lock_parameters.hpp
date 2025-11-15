@@ -87,61 +87,7 @@ public:
 	TScriptInterface<class IPlayerInterface_C>    K2Node_DynamicCast_AsPlayer_Interface;             // 0x01C0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess_6;                     // 0x01D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Lock_C_ExecuteUbergraph_Lock) == 0x000008, "Wrong alignment on Lock_C_ExecuteUbergraph_Lock");
-static_assert(sizeof(Lock_C_ExecuteUbergraph_Lock) == 0x0001D8, "Wrong size on Lock_C_ExecuteUbergraph_Lock");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, EntryPoint) == 0x000000, "Member 'Lock_C_ExecuteUbergraph_Lock::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'Lock_C_ExecuteUbergraph_Lock::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'Lock_C_ExecuteUbergraph_Lock::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, K2Node_CustomEvent_Actor) == 0x000010, "Member 'Lock_C_ExecuteUbergraph_Lock::K2Node_CustomEvent_Actor' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, K2Node_CustomEvent_Component) == 0x000018, "Member 'Lock_C_ExecuteUbergraph_Lock::K2Node_CustomEvent_Component' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, K2Node_CustomEvent_Player) == 0x000020, "Member 'Lock_C_ExecuteUbergraph_Lock::K2Node_CustomEvent_Player' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, K2Node_ComponentBoundEvent_OverlappedComponent_1) == 0x000028, "Member 'Lock_C_ExecuteUbergraph_Lock::K2Node_ComponentBoundEvent_OverlappedComponent_1' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, K2Node_ComponentBoundEvent_OtherActor_1) == 0x000030, "Member 'Lock_C_ExecuteUbergraph_Lock::K2Node_ComponentBoundEvent_OtherActor_1' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, K2Node_ComponentBoundEvent_OtherComp_1) == 0x000038, "Member 'Lock_C_ExecuteUbergraph_Lock::K2Node_ComponentBoundEvent_OtherComp_1' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, K2Node_ComponentBoundEvent_OtherBodyIndex_1) == 0x000040, "Member 'Lock_C_ExecuteUbergraph_Lock::K2Node_ComponentBoundEvent_OtherBodyIndex_1' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, K2Node_ComponentBoundEvent_bFromSweep) == 0x000044, "Member 'Lock_C_ExecuteUbergraph_Lock::K2Node_ComponentBoundEvent_bFromSweep' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, K2Node_ComponentBoundEvent_SweepResult) == 0x000048, "Member 'Lock_C_ExecuteUbergraph_Lock::K2Node_ComponentBoundEvent_SweepResult' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, K2Node_DynamicCast_AsLock_Pick) == 0x0000D0, "Member 'Lock_C_ExecuteUbergraph_Lock::K2Node_DynamicCast_AsLock_Pick' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, K2Node_DynamicCast_bSuccess) == 0x0000D8, "Member 'Lock_C_ExecuteUbergraph_Lock::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, K2Node_DynamicCast_AsLock_Pick_1) == 0x0000E0, "Member 'Lock_C_ExecuteUbergraph_Lock::K2Node_DynamicCast_AsLock_Pick_1' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, K2Node_DynamicCast_bSuccess_1) == 0x0000E8, "Member 'Lock_C_ExecuteUbergraph_Lock::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, CallFunc_IsValid_ReturnValue) == 0x0000E9, "Member 'Lock_C_ExecuteUbergraph_Lock::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x0000EC, "Member 'Lock_C_ExecuteUbergraph_Lock::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, CallFunc_GetOwner_ReturnValue) == 0x0000F8, "Member 'Lock_C_ExecuteUbergraph_Lock::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, K2Node_DynamicCast_AsPlayer_Character) == 0x000100, "Member 'Lock_C_ExecuteUbergraph_Lock::K2Node_DynamicCast_AsPlayer_Character' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, K2Node_DynamicCast_bSuccess_2) == 0x000108, "Member 'Lock_C_ExecuteUbergraph_Lock::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, K2Node_ComponentBoundEvent_OverlappedComponent) == 0x000110, "Member 'Lock_C_ExecuteUbergraph_Lock::K2Node_ComponentBoundEvent_OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, K2Node_ComponentBoundEvent_OtherActor) == 0x000118, "Member 'Lock_C_ExecuteUbergraph_Lock::K2Node_ComponentBoundEvent_OtherActor' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, K2Node_ComponentBoundEvent_OtherComp) == 0x000120, "Member 'Lock_C_ExecuteUbergraph_Lock::K2Node_ComponentBoundEvent_OtherComp' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, K2Node_ComponentBoundEvent_OtherBodyIndex) == 0x000128, "Member 'Lock_C_ExecuteUbergraph_Lock::K2Node_ComponentBoundEvent_OtherBodyIndex' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, CallFunc_K2_GetComponentLocation_ReturnValue_1) == 0x00012C, "Member 'Lock_C_ExecuteUbergraph_Lock::CallFunc_K2_GetComponentLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, Temp_int_Array_Index_Variable) == 0x000138, "Member 'Lock_C_ExecuteUbergraph_Lock::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, CallFunc_IsValid_ReturnValue_1) == 0x00013C, "Member 'Lock_C_ExecuteUbergraph_Lock::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, CallFunc_IsValid_ReturnValue_2) == 0x00013D, "Member 'Lock_C_ExecuteUbergraph_Lock::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, CallFunc_GetParentActor_ReturnValue) == 0x000140, "Member 'Lock_C_ExecuteUbergraph_Lock::CallFunc_GetParentActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, CallFunc_GetAllChildActors_ChildActors) == 0x000148, "Member 'Lock_C_ExecuteUbergraph_Lock::CallFunc_GetAllChildActors_ChildActors' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, CallFunc_Array_Get_Item) == 0x000158, "Member 'Lock_C_ExecuteUbergraph_Lock::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, CallFunc_Array_Length_ReturnValue) == 0x000160, "Member 'Lock_C_ExecuteUbergraph_Lock::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, CallFunc_IsValid_ReturnValue_3) == 0x000164, "Member 'Lock_C_ExecuteUbergraph_Lock::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, CallFunc_Less_IntInt_ReturnValue) == 0x000165, "Member 'Lock_C_ExecuteUbergraph_Lock::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, K2Node_DynamicCast_AsUnlock_Collision) == 0x000168, "Member 'Lock_C_ExecuteUbergraph_Lock::K2Node_DynamicCast_AsUnlock_Collision' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, K2Node_DynamicCast_bSuccess_3) == 0x000170, "Member 'Lock_C_ExecuteUbergraph_Lock::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, K2Node_DynamicCast_AsLock) == 0x000178, "Member 'Lock_C_ExecuteUbergraph_Lock::K2Node_DynamicCast_AsLock' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, K2Node_DynamicCast_bSuccess_4) == 0x000180, "Member 'Lock_C_ExecuteUbergraph_Lock::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, CallFunc_IsValid_ReturnValue_4) == 0x000181, "Member 'Lock_C_ExecuteUbergraph_Lock::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000184, "Member 'Lock_C_ExecuteUbergraph_Lock::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, CallFunc_GetParentActor_ReturnValue_1) == 0x000190, "Member 'Lock_C_ExecuteUbergraph_Lock::CallFunc_GetParentActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, CallFunc_GetComponentByClass_ReturnValue) == 0x000198, "Member 'Lock_C_ExecuteUbergraph_Lock::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, CallFunc_IsValid_ReturnValue_5) == 0x0001A0, "Member 'Lock_C_ExecuteUbergraph_Lock::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x0001A1, "Member 'Lock_C_ExecuteUbergraph_Lock::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, CallFunc_IsOverlappingActor_ReturnValue) == 0x0001A2, "Member 'Lock_C_ExecuteUbergraph_Lock::CallFunc_IsOverlappingActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, CallFunc_IsValid_ReturnValue_6) == 0x0001A3, "Member 'Lock_C_ExecuteUbergraph_Lock::CallFunc_IsValid_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, CallFunc_IsValid_ReturnValue_7) == 0x0001A4, "Member 'Lock_C_ExecuteUbergraph_Lock::CallFunc_IsValid_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, CallFunc_GetOwner_ReturnValue_1) == 0x0001A8, "Member 'Lock_C_ExecuteUbergraph_Lock::CallFunc_GetOwner_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, K2Node_DynamicCast_AsPlayer_Character_1) == 0x0001B0, "Member 'Lock_C_ExecuteUbergraph_Lock::K2Node_DynamicCast_AsPlayer_Character_1' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, K2Node_DynamicCast_bSuccess_5) == 0x0001B8, "Member 'Lock_C_ExecuteUbergraph_Lock::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, K2Node_DynamicCast_AsPlayer_Interface) == 0x0001C0, "Member 'Lock_C_ExecuteUbergraph_Lock::K2Node_DynamicCast_AsPlayer_Interface' has a wrong offset!");
-static_assert(offsetof(Lock_C_ExecuteUbergraph_Lock, K2Node_DynamicCast_bSuccess_6) == 0x0001D0, "Member 'Lock_C_ExecuteUbergraph_Lock::K2Node_DynamicCast_bSuccess_6' has a wrong offset!");
+DUMPER7_ASSERTS_Lock_C_ExecuteUbergraph_Lock;
 
 // Function Lock.Lock_C.BndEvt__Lock_Sphere_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature
 // 0x0020 (0x0020 - 0x0000)
@@ -153,12 +99,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Lock_C_BndEvt__Lock_Sphere_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on Lock_C_BndEvt__Lock_Sphere_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature");
-static_assert(sizeof(Lock_C_BndEvt__Lock_Sphere_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature) == 0x000020, "Wrong size on Lock_C_BndEvt__Lock_Sphere_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature");
-static_assert(offsetof(Lock_C_BndEvt__Lock_Sphere_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'Lock_C_BndEvt__Lock_Sphere_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(Lock_C_BndEvt__Lock_Sphere_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'Lock_C_BndEvt__Lock_Sphere_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
-static_assert(offsetof(Lock_C_BndEvt__Lock_Sphere_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'Lock_C_BndEvt__Lock_Sphere_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
-static_assert(offsetof(Lock_C_BndEvt__Lock_Sphere_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'Lock_C_BndEvt__Lock_Sphere_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
+DUMPER7_ASSERTS_Lock_C_BndEvt__Lock_Sphere_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature;
 
 // Function Lock.Lock_C.BndEvt__Lock_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
 // 0x00A8 (0x00A8 - 0x0000)
@@ -173,14 +114,7 @@ public:
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(Lock_C_BndEvt__Lock_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on Lock_C_BndEvt__Lock_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
-static_assert(sizeof(Lock_C_BndEvt__Lock_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature) == 0x0000A8, "Wrong size on Lock_C_BndEvt__Lock_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
-static_assert(offsetof(Lock_C_BndEvt__Lock_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'Lock_C_BndEvt__Lock_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(Lock_C_BndEvt__Lock_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'Lock_C_BndEvt__Lock_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
-static_assert(offsetof(Lock_C_BndEvt__Lock_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'Lock_C_BndEvt__Lock_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
-static_assert(offsetof(Lock_C_BndEvt__Lock_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'Lock_C_BndEvt__Lock_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
-static_assert(offsetof(Lock_C_BndEvt__Lock_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, bFromSweep) == 0x00001C, "Member 'Lock_C_BndEvt__Lock_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::bFromSweep' has a wrong offset!");
-static_assert(offsetof(Lock_C_BndEvt__Lock_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, SweepResult) == 0x000020, "Member 'Lock_C_BndEvt__Lock_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::SweepResult' has a wrong offset!");
+DUMPER7_ASSERTS_Lock_C_BndEvt__Lock_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature;
 
 // Function Lock.Lock_C.AttachPick
 // 0x0018 (0x0018 - 0x0000)
@@ -191,11 +125,7 @@ public:
 	class UPrimitiveComponent*                    Component;                                         // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APlayerCharacter_C*                     Player;                                            // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Lock_C_AttachPick) == 0x000008, "Wrong alignment on Lock_C_AttachPick");
-static_assert(sizeof(Lock_C_AttachPick) == 0x000018, "Wrong size on Lock_C_AttachPick");
-static_assert(offsetof(Lock_C_AttachPick, Actor) == 0x000000, "Member 'Lock_C_AttachPick::Actor' has a wrong offset!");
-static_assert(offsetof(Lock_C_AttachPick, Component) == 0x000008, "Member 'Lock_C_AttachPick::Component' has a wrong offset!");
-static_assert(offsetof(Lock_C_AttachPick, Player) == 0x000010, "Member 'Lock_C_AttachPick::Player' has a wrong offset!");
+DUMPER7_ASSERTS_Lock_C_AttachPick;
 
 // Function Lock.Lock_C.UserConstructionScript
 // 0x0001 (0x0001 - 0x0000)
@@ -204,9 +134,7 @@ struct Lock_C_UserConstructionScript final
 public:
 	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Lock_C_UserConstructionScript) == 0x000001, "Wrong alignment on Lock_C_UserConstructionScript");
-static_assert(sizeof(Lock_C_UserConstructionScript) == 0x000001, "Wrong size on Lock_C_UserConstructionScript");
-static_assert(offsetof(Lock_C_UserConstructionScript, CallFunc_SetStaticMesh_ReturnValue) == 0x000000, "Member 'Lock_C_UserConstructionScript::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_Lock_C_UserConstructionScript;
 
 }
 

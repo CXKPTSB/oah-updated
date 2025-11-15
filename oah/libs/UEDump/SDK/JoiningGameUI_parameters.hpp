@@ -21,9 +21,7 @@ struct JoiningGameUI_C_ExecuteUbergraph_JoiningGameUI final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(JoiningGameUI_C_ExecuteUbergraph_JoiningGameUI) == 0x000004, "Wrong alignment on JoiningGameUI_C_ExecuteUbergraph_JoiningGameUI");
-static_assert(sizeof(JoiningGameUI_C_ExecuteUbergraph_JoiningGameUI) == 0x000004, "Wrong size on JoiningGameUI_C_ExecuteUbergraph_JoiningGameUI");
-static_assert(offsetof(JoiningGameUI_C_ExecuteUbergraph_JoiningGameUI, EntryPoint) == 0x000000, "Member 'JoiningGameUI_C_ExecuteUbergraph_JoiningGameUI::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_JoiningGameUI_C_ExecuteUbergraph_JoiningGameUI;
 
 }
 

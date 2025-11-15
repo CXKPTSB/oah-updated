@@ -23,15 +23,18 @@ class AMask_Kerchief_C final : public AMask_base_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Mask_Kerchief_C">();
+		BP_STATIC_CLASS_IMPL("Mask_Kerchief_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Mask_Kerchief_C")
 	}
 	static class AMask_Kerchief_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMask_Kerchief_C>();
 	}
 };
-static_assert(alignof(AMask_Kerchief_C) == 0x000008, "Wrong alignment on AMask_Kerchief_C");
-static_assert(sizeof(AMask_Kerchief_C) == 0x000230, "Wrong size on AMask_Kerchief_C");
+DUMPER7_ASSERTS_AMask_Kerchief_C;
 
 }
 

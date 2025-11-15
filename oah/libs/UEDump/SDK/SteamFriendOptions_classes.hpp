@@ -46,22 +46,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SteamFriendOptions_C">();
+		BP_STATIC_CLASS_IMPL("SteamFriendOptions_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamFriendOptions_C")
 	}
 	static class USteamFriendOptions_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamFriendOptions_C>();
 	}
 };
-static_assert(alignof(USteamFriendOptions_C) == 0x000008, "Wrong alignment on USteamFriendOptions_C");
-static_assert(sizeof(USteamFriendOptions_C) == 0x0002F8, "Wrong size on USteamFriendOptions_C");
-static_assert(offsetof(USteamFriendOptions_C, UberGraphFrame) == 0x000260, "Member 'USteamFriendOptions_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USteamFriendOptions_C, Invite) == 0x000268, "Member 'USteamFriendOptions_C::Invite' has a wrong offset!");
-static_assert(offsetof(USteamFriendOptions_C, InviteText) == 0x000270, "Member 'USteamFriendOptions_C::InviteText' has a wrong offset!");
-static_assert(offsetof(USteamFriendOptions_C, JoinGame) == 0x000278, "Member 'USteamFriendOptions_C::JoinGame' has a wrong offset!");
-static_assert(offsetof(USteamFriendOptions_C, jointext) == 0x000280, "Member 'USteamFriendOptions_C::jointext' has a wrong offset!");
-static_assert(offsetof(USteamFriendOptions_C, ViewProfile) == 0x000288, "Member 'USteamFriendOptions_C::ViewProfile' has a wrong offset!");
-static_assert(offsetof(USteamFriendOptions_C, FriendInfo) == 0x000290, "Member 'USteamFriendOptions_C::FriendInfo' has a wrong offset!");
+DUMPER7_ASSERTS_USteamFriendOptions_C;
 
 }
 

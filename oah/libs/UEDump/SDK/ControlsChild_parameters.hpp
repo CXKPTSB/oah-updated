@@ -44,27 +44,7 @@ public:
 	uint8                                         Pad_102[0x6];                                      // 0x0102(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0108(0x0018)()
 };
-static_assert(alignof(ControlsChild_C_ExecuteUbergraph_ControlsChild) == 0x000008, "Wrong alignment on ControlsChild_C_ExecuteUbergraph_ControlsChild");
-static_assert(sizeof(ControlsChild_C_ExecuteUbergraph_ControlsChild) == 0x000120, "Wrong size on ControlsChild_C_ExecuteUbergraph_ControlsChild");
-static_assert(offsetof(ControlsChild_C_ExecuteUbergraph_ControlsChild, EntryPoint) == 0x000000, "Member 'ControlsChild_C_ExecuteUbergraph_ControlsChild::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ControlsChild_C_ExecuteUbergraph_ControlsChild, Temp_int_Array_Index_Variable) == 0x000004, "Member 'ControlsChild_C_ExecuteUbergraph_ControlsChild::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(ControlsChild_C_ExecuteUbergraph_ControlsChild, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'ControlsChild_C_ExecuteUbergraph_ControlsChild::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(ControlsChild_C_ExecuteUbergraph_ControlsChild, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'ControlsChild_C_ExecuteUbergraph_ControlsChild::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ControlsChild_C_ExecuteUbergraph_ControlsChild, K2Node_ComponentBoundEvent_SelectedKey) == 0x000010, "Member 'ControlsChild_C_ExecuteUbergraph_ControlsChild::K2Node_ComponentBoundEvent_SelectedKey' has a wrong offset!");
-static_assert(offsetof(ControlsChild_C_ExecuteUbergraph_ControlsChild, CallFunc_GetInputSettings_ReturnValue) == 0x000030, "Member 'ControlsChild_C_ExecuteUbergraph_ControlsChild::CallFunc_GetInputSettings_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ControlsChild_C_ExecuteUbergraph_ControlsChild, CallFunc_Conv_StringToName_ReturnValue) == 0x000038, "Member 'ControlsChild_C_ExecuteUbergraph_ControlsChild::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ControlsChild_C_ExecuteUbergraph_ControlsChild, CallFunc_GetActionMappingByName_OutMappings) == 0x000040, "Member 'ControlsChild_C_ExecuteUbergraph_ControlsChild::CallFunc_GetActionMappingByName_OutMappings' has a wrong offset!");
-static_assert(offsetof(ControlsChild_C_ExecuteUbergraph_ControlsChild, CallFunc_Array_Get_Item) == 0x000050, "Member 'ControlsChild_C_ExecuteUbergraph_ControlsChild::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(ControlsChild_C_ExecuteUbergraph_ControlsChild, CallFunc_Conv_StringToName_ReturnValue_1) == 0x000078, "Member 'ControlsChild_C_ExecuteUbergraph_ControlsChild::CallFunc_Conv_StringToName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ControlsChild_C_ExecuteUbergraph_ControlsChild, CallFunc_GetAxisMappingByName_OutMappings) == 0x000080, "Member 'ControlsChild_C_ExecuteUbergraph_ControlsChild::CallFunc_GetAxisMappingByName_OutMappings' has a wrong offset!");
-static_assert(offsetof(ControlsChild_C_ExecuteUbergraph_ControlsChild, CallFunc_Array_Get_Item_1) == 0x000090, "Member 'ControlsChild_C_ExecuteUbergraph_ControlsChild::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(ControlsChild_C_ExecuteUbergraph_ControlsChild, K2Node_MakeStruct_InputChord) == 0x0000B8, "Member 'ControlsChild_C_ExecuteUbergraph_ControlsChild::K2Node_MakeStruct_InputChord' has a wrong offset!");
-static_assert(offsetof(ControlsChild_C_ExecuteUbergraph_ControlsChild, K2Node_MakeStruct_InputChord_1) == 0x0000D8, "Member 'ControlsChild_C_ExecuteUbergraph_ControlsChild::K2Node_MakeStruct_InputChord_1' has a wrong offset!");
-static_assert(offsetof(ControlsChild_C_ExecuteUbergraph_ControlsChild, CallFunc_EqualEqual_FloatFloat_ReturnValue) == 0x0000F8, "Member 'ControlsChild_C_ExecuteUbergraph_ControlsChild::CallFunc_EqualEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ControlsChild_C_ExecuteUbergraph_ControlsChild, CallFunc_Array_Length_ReturnValue) == 0x0000FC, "Member 'ControlsChild_C_ExecuteUbergraph_ControlsChild::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ControlsChild_C_ExecuteUbergraph_ControlsChild, K2Node_Event_IsDesignTime) == 0x000100, "Member 'ControlsChild_C_ExecuteUbergraph_ControlsChild::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(ControlsChild_C_ExecuteUbergraph_ControlsChild, CallFunc_Less_IntInt_ReturnValue) == 0x000101, "Member 'ControlsChild_C_ExecuteUbergraph_ControlsChild::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ControlsChild_C_ExecuteUbergraph_ControlsChild, CallFunc_Conv_StringToText_ReturnValue) == 0x000108, "Member 'ControlsChild_C_ExecuteUbergraph_ControlsChild::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ControlsChild_C_ExecuteUbergraph_ControlsChild;
 
 // Function ControlsChild.ControlsChild_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -73,9 +53,7 @@ struct ControlsChild_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ControlsChild_C_PreConstruct) == 0x000001, "Wrong alignment on ControlsChild_C_PreConstruct");
-static_assert(sizeof(ControlsChild_C_PreConstruct) == 0x000001, "Wrong size on ControlsChild_C_PreConstruct");
-static_assert(offsetof(ControlsChild_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'ControlsChild_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_ControlsChild_C_PreConstruct;
 
 // Function ControlsChild.ControlsChild_C.BndEvt__ContolsChild_InputKeySelector_133_K2Node_ComponentBoundEvent_1_OnKeySelected__DelegateSignature
 // 0x0020 (0x0020 - 0x0000)
@@ -84,9 +62,7 @@ struct ControlsChild_C_BndEvt__ContolsChild_InputKeySelector_133_K2Node_Componen
 public:
 	struct FInputChord                            SelectedKey;                                       // 0x0000(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(ControlsChild_C_BndEvt__ContolsChild_InputKeySelector_133_K2Node_ComponentBoundEvent_1_OnKeySelected__DelegateSignature) == 0x000008, "Wrong alignment on ControlsChild_C_BndEvt__ContolsChild_InputKeySelector_133_K2Node_ComponentBoundEvent_1_OnKeySelected__DelegateSignature");
-static_assert(sizeof(ControlsChild_C_BndEvt__ContolsChild_InputKeySelector_133_K2Node_ComponentBoundEvent_1_OnKeySelected__DelegateSignature) == 0x000020, "Wrong size on ControlsChild_C_BndEvt__ContolsChild_InputKeySelector_133_K2Node_ComponentBoundEvent_1_OnKeySelected__DelegateSignature");
-static_assert(offsetof(ControlsChild_C_BndEvt__ContolsChild_InputKeySelector_133_K2Node_ComponentBoundEvent_1_OnKeySelected__DelegateSignature, SelectedKey) == 0x000000, "Member 'ControlsChild_C_BndEvt__ContolsChild_InputKeySelector_133_K2Node_ComponentBoundEvent_1_OnKeySelected__DelegateSignature::SelectedKey' has a wrong offset!");
+DUMPER7_ASSERTS_ControlsChild_C_BndEvt__ContolsChild_InputKeySelector_133_K2Node_ComponentBoundEvent_1_OnKeySelected__DelegateSignature;
 
 // Function ControlsChild.ControlsChild_C.UpdateBinding
 // 0x00B8 (0x00B8 - 0x0000)
@@ -102,16 +78,7 @@ public:
 	struct FInputActionKeyMapping                 K2Node_MakeStruct_InputActionKeyMapping;           // 0x0088(0x0028)()
 	class UInputSettings*                         CallFunc_GetInputSettings_ReturnValue_2;           // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ControlsChild_C_UpdateBinding) == 0x000008, "Wrong alignment on ControlsChild_C_UpdateBinding");
-static_assert(sizeof(ControlsChild_C_UpdateBinding) == 0x0000B8, "Wrong size on ControlsChild_C_UpdateBinding");
-static_assert(offsetof(ControlsChild_C_UpdateBinding, InputChord) == 0x000000, "Member 'ControlsChild_C_UpdateBinding::InputChord' has a wrong offset!");
-static_assert(offsetof(ControlsChild_C_UpdateBinding, CallFunc_GetInputSettings_ReturnValue) == 0x000020, "Member 'ControlsChild_C_UpdateBinding::CallFunc_GetInputSettings_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ControlsChild_C_UpdateBinding, CallFunc_Conv_StringToName_ReturnValue) == 0x000028, "Member 'ControlsChild_C_UpdateBinding::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ControlsChild_C_UpdateBinding, K2Node_MakeStruct_InputAxisKeyMapping) == 0x000030, "Member 'ControlsChild_C_UpdateBinding::K2Node_MakeStruct_InputAxisKeyMapping' has a wrong offset!");
-static_assert(offsetof(ControlsChild_C_UpdateBinding, CallFunc_GetInputSettings_ReturnValue_1) == 0x000058, "Member 'ControlsChild_C_UpdateBinding::CallFunc_GetInputSettings_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ControlsChild_C_UpdateBinding, K2Node_MakeStruct_InputAxisKeyMapping_1) == 0x000060, "Member 'ControlsChild_C_UpdateBinding::K2Node_MakeStruct_InputAxisKeyMapping_1' has a wrong offset!");
-static_assert(offsetof(ControlsChild_C_UpdateBinding, K2Node_MakeStruct_InputActionKeyMapping) == 0x000088, "Member 'ControlsChild_C_UpdateBinding::K2Node_MakeStruct_InputActionKeyMapping' has a wrong offset!");
-static_assert(offsetof(ControlsChild_C_UpdateBinding, CallFunc_GetInputSettings_ReturnValue_2) == 0x0000B0, "Member 'ControlsChild_C_UpdateBinding::CallFunc_GetInputSettings_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_ControlsChild_C_UpdateBinding;
 
 }
 

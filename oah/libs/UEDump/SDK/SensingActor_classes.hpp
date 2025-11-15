@@ -28,18 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SensingActor_C">();
+		BP_STATIC_CLASS_IMPL("SensingActor_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SensingActor_C")
 	}
 	static class ASensingActor_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASensingActor_C>();
 	}
 };
-static_assert(alignof(ASensingActor_C) == 0x000008, "Wrong alignment on ASensingActor_C");
-static_assert(sizeof(ASensingActor_C) == 0x000298, "Wrong size on ASensingActor_C");
-static_assert(offsetof(ASensingActor_C, Arrow) == 0x000280, "Member 'ASensingActor_C::Arrow' has a wrong offset!");
-static_assert(offsetof(ASensingActor_C, PawnSensing) == 0x000288, "Member 'ASensingActor_C::PawnSensing' has a wrong offset!");
-static_assert(offsetof(ASensingActor_C, DefaultSceneRoot) == 0x000290, "Member 'ASensingActor_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_ASensingActor_C;
 
 }
 

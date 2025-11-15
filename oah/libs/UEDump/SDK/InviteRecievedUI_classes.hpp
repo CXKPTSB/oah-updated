@@ -47,24 +47,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"InviteRecievedUI_C">();
+		BP_STATIC_CLASS_IMPL("InviteRecievedUI_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InviteRecievedUI_C")
 	}
 	static class UInviteRecievedUI_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInviteRecievedUI_C>();
 	}
 };
-static_assert(alignof(UInviteRecievedUI_C) == 0x000008, "Wrong alignment on UInviteRecievedUI_C");
-static_assert(sizeof(UInviteRecievedUI_C) == 0x0002C0, "Wrong size on UInviteRecievedUI_C");
-static_assert(offsetof(UInviteRecievedUI_C, UberGraphFrame) == 0x000260, "Member 'UInviteRecievedUI_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UInviteRecievedUI_C, NewAnimation) == 0x000268, "Member 'UInviteRecievedUI_C::NewAnimation' has a wrong offset!");
-static_assert(offsetof(UInviteRecievedUI_C, Avatar) == 0x000270, "Member 'UInviteRecievedUI_C::Avatar' has a wrong offset!");
-static_assert(offsetof(UInviteRecievedUI_C, Join_button) == 0x000278, "Member 'UInviteRecievedUI_C::Join_button' has a wrong offset!");
-static_assert(offsetof(UInviteRecievedUI_C, Join_button_1) == 0x000280, "Member 'UInviteRecievedUI_C::Join_button_1' has a wrong offset!");
-static_assert(offsetof(UInviteRecievedUI_C, TextBlock_0) == 0x000288, "Member 'UInviteRecievedUI_C::TextBlock_0' has a wrong offset!");
-static_assert(offsetof(UInviteRecievedUI_C, TextBlock_75) == 0x000290, "Member 'UInviteRecievedUI_C::TextBlock_75' has a wrong offset!");
-static_assert(offsetof(UInviteRecievedUI_C, Steam_friend) == 0x000298, "Member 'UInviteRecievedUI_C::Steam_friend' has a wrong offset!");
-static_assert(offsetof(UInviteRecievedUI_C, TimeLeft) == 0x0002B8, "Member 'UInviteRecievedUI_C::TimeLeft' has a wrong offset!");
+DUMPER7_ASSERTS_UInviteRecievedUI_C;
 
 }
 

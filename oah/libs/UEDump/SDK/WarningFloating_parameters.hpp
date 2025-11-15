@@ -31,15 +31,7 @@ public:
 	struct FVector2D                              CallFunc_ProjectWorldLocationToWidgetPosition_ScreenPosition; // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_ProjectWorldLocationToWidgetPosition_ReturnValue; // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WarningFloating_C_ExecuteUbergraph_WarningFloating) == 0x000008, "Wrong alignment on WarningFloating_C_ExecuteUbergraph_WarningFloating");
-static_assert(sizeof(WarningFloating_C_ExecuteUbergraph_WarningFloating) == 0x000038, "Wrong size on WarningFloating_C_ExecuteUbergraph_WarningFloating");
-static_assert(offsetof(WarningFloating_C_ExecuteUbergraph_WarningFloating, EntryPoint) == 0x000000, "Member 'WarningFloating_C_ExecuteUbergraph_WarningFloating::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WarningFloating_C_ExecuteUbergraph_WarningFloating, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'WarningFloating_C_ExecuteUbergraph_WarningFloating::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WarningFloating_C_ExecuteUbergraph_WarningFloating, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000008, "Member 'WarningFloating_C_ExecuteUbergraph_WarningFloating::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WarningFloating_C_ExecuteUbergraph_WarningFloating, CallFunc_Add_VectorVector_ReturnValue) == 0x000014, "Member 'WarningFloating_C_ExecuteUbergraph_WarningFloating::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WarningFloating_C_ExecuteUbergraph_WarningFloating, CallFunc_GetOwningPlayer_ReturnValue) == 0x000020, "Member 'WarningFloating_C_ExecuteUbergraph_WarningFloating::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WarningFloating_C_ExecuteUbergraph_WarningFloating, CallFunc_ProjectWorldLocationToWidgetPosition_ScreenPosition) == 0x000028, "Member 'WarningFloating_C_ExecuteUbergraph_WarningFloating::CallFunc_ProjectWorldLocationToWidgetPosition_ScreenPosition' has a wrong offset!");
-static_assert(offsetof(WarningFloating_C_ExecuteUbergraph_WarningFloating, CallFunc_ProjectWorldLocationToWidgetPosition_ReturnValue) == 0x000030, "Member 'WarningFloating_C_ExecuteUbergraph_WarningFloating::CallFunc_ProjectWorldLocationToWidgetPosition_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WarningFloating_C_ExecuteUbergraph_WarningFloating;
 
 // Function WarningFloating.WarningFloating_C.GetBrush_0
 // 0x01E8 (0x01E8 - 0x0000)
@@ -52,13 +44,7 @@ public:
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x00D8(0x0088)()
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush_1;                    // 0x0160(0x0088)()
 };
-static_assert(alignof(WarningFloating_C_GetBrush_0) == 0x000008, "Wrong alignment on WarningFloating_C_GetBrush_0");
-static_assert(sizeof(WarningFloating_C_GetBrush_0) == 0x0001E8, "Wrong size on WarningFloating_C_GetBrush_0");
-static_assert(offsetof(WarningFloating_C_GetBrush_0, ReturnValue) == 0x000000, "Member 'WarningFloating_C_GetBrush_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WarningFloating_C_GetBrush_0, K2Node_MakeStruct_SlateColor) == 0x000088, "Member 'WarningFloating_C_GetBrush_0::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(WarningFloating_C_GetBrush_0, K2Node_MakeStruct_SlateColor_1) == 0x0000B0, "Member 'WarningFloating_C_GetBrush_0::K2Node_MakeStruct_SlateColor_1' has a wrong offset!");
-static_assert(offsetof(WarningFloating_C_GetBrush_0, K2Node_MakeStruct_SlateBrush) == 0x0000D8, "Member 'WarningFloating_C_GetBrush_0::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
-static_assert(offsetof(WarningFloating_C_GetBrush_0, K2Node_MakeStruct_SlateBrush_1) == 0x000160, "Member 'WarningFloating_C_GetBrush_0::K2Node_MakeStruct_SlateBrush_1' has a wrong offset!");
+DUMPER7_ASSERTS_WarningFloating_C_GetBrush_0;
 
 }
 

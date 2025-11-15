@@ -34,18 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PowerboxProgress_C">();
+		BP_STATIC_CLASS_IMPL("PowerboxProgress_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PowerboxProgress_C")
 	}
 	static class UPowerboxProgress_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPowerboxProgress_C>();
 	}
 };
-static_assert(alignof(UPowerboxProgress_C) == 0x000008, "Wrong alignment on UPowerboxProgress_C");
-static_assert(sizeof(UPowerboxProgress_C) == 0x000278, "Wrong size on UPowerboxProgress_C");
-static_assert(offsetof(UPowerboxProgress_C, UberGraphFrame) == 0x000260, "Member 'UPowerboxProgress_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPowerboxProgress_C, ProgressBar_72) == 0x000268, "Member 'UPowerboxProgress_C::ProgressBar_72' has a wrong offset!");
-static_assert(offsetof(UPowerboxProgress_C, Powerbox) == 0x000270, "Member 'UPowerboxProgress_C::Powerbox' has a wrong offset!");
+DUMPER7_ASSERTS_UPowerboxProgress_C;
 
 }
 

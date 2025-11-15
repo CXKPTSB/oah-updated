@@ -40,21 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CameraUI_C">();
+		BP_STATIC_CLASS_IMPL("CameraUI_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CameraUI_C")
 	}
 	static class UCameraUI_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCameraUI_C>();
 	}
 };
-static_assert(alignof(UCameraUI_C) == 0x000008, "Wrong alignment on UCameraUI_C");
-static_assert(sizeof(UCameraUI_C) == 0x000290, "Wrong size on UCameraUI_C");
-static_assert(offsetof(UCameraUI_C, UberGraphFrame) == 0x000260, "Member 'UCameraUI_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UCameraUI_C, Button_101) == 0x000268, "Member 'UCameraUI_C::Button_101' has a wrong offset!");
-static_assert(offsetof(UCameraUI_C, SwitchLeft) == 0x000270, "Member 'UCameraUI_C::SwitchLeft' has a wrong offset!");
-static_assert(offsetof(UCameraUI_C, SwitchRight) == 0x000278, "Member 'UCameraUI_C::SwitchRight' has a wrong offset!");
-static_assert(offsetof(UCameraUI_C, TextBlock_1) == 0x000280, "Member 'UCameraUI_C::TextBlock_1' has a wrong offset!");
-static_assert(offsetof(UCameraUI_C, Camera) == 0x000288, "Member 'UCameraUI_C::Camera' has a wrong offset!");
+DUMPER7_ASSERTS_UCameraUI_C;
 
 }
 

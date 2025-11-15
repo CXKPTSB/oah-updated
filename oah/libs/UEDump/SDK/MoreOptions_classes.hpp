@@ -45,23 +45,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MoreOptions_C">();
+		BP_STATIC_CLASS_IMPL("MoreOptions_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoreOptions_C")
 	}
 	static class UMoreOptions_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoreOptions_C>();
 	}
 };
-static_assert(alignof(UMoreOptions_C) == 0x000008, "Wrong alignment on UMoreOptions_C");
-static_assert(sizeof(UMoreOptions_C) == 0x0002A0, "Wrong size on UMoreOptions_C");
-static_assert(offsetof(UMoreOptions_C, UberGraphFrame) == 0x000260, "Member 'UMoreOptions_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMoreOptions_C, HeistCoins) == 0x000268, "Member 'UMoreOptions_C::HeistCoins' has a wrong offset!");
-static_assert(offsetof(UMoreOptions_C, Invite) == 0x000270, "Member 'UMoreOptions_C::Invite' has a wrong offset!");
-static_assert(offsetof(UMoreOptions_C, InviteText) == 0x000278, "Member 'UMoreOptions_C::InviteText' has a wrong offset!");
-static_assert(offsetof(UMoreOptions_C, InviteText_1) == 0x000280, "Member 'UMoreOptions_C::InviteText_1' has a wrong offset!");
-static_assert(offsetof(UMoreOptions_C, jointext) == 0x000288, "Member 'UMoreOptions_C::jointext' has a wrong offset!");
-static_assert(offsetof(UMoreOptions_C, TutorialsButton) == 0x000290, "Member 'UMoreOptions_C::TutorialsButton' has a wrong offset!");
-static_assert(offsetof(UMoreOptions_C, ViewProfile) == 0x000298, "Member 'UMoreOptions_C::ViewProfile' has a wrong offset!");
+DUMPER7_ASSERTS_UMoreOptions_C;
 
 }
 

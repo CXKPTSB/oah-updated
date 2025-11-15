@@ -33,23 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RoofBase_C">();
+		BP_STATIC_CLASS_IMPL("RoofBase_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RoofBase_C")
 	}
 	static class ARoofBase_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ARoofBase_C>();
 	}
 };
-static_assert(alignof(ARoofBase_C) == 0x000008, "Wrong alignment on ARoofBase_C");
-static_assert(sizeof(ARoofBase_C) == 0x000260, "Wrong size on ARoofBase_C");
-static_assert(offsetof(ARoofBase_C, SM_Prop_Warehouse_Fan_04) == 0x000220, "Member 'ARoofBase_C::SM_Prop_Warehouse_Fan_04' has a wrong offset!");
-static_assert(offsetof(ARoofBase_C, SM_Prop_Warehouse_Fan_03) == 0x000228, "Member 'ARoofBase_C::SM_Prop_Warehouse_Fan_03' has a wrong offset!");
-static_assert(offsetof(ARoofBase_C, SM_Prop_Warehouse_Fan_02) == 0x000230, "Member 'ARoofBase_C::SM_Prop_Warehouse_Fan_02' has a wrong offset!");
-static_assert(offsetof(ARoofBase_C, SM_Bld_Roof_End_01__3_5_StaticMeshComponent0) == 0x000238, "Member 'ARoofBase_C::SM_Bld_Roof_End_01__3_5_StaticMeshComponent0' has a wrong offset!");
-static_assert(offsetof(ARoofBase_C, SM_Bld_Roof_End_01__3_4_StaticMeshComponent0) == 0x000240, "Member 'ARoofBase_C::SM_Bld_Roof_End_01__3_4_StaticMeshComponent0' has a wrong offset!");
-static_assert(offsetof(ARoofBase_C, SM_Bld_Roof_End_01__3_3_StaticMeshComponent0) == 0x000248, "Member 'ARoofBase_C::SM_Bld_Roof_End_01__3_3_StaticMeshComponent0' has a wrong offset!");
-static_assert(offsetof(ARoofBase_C, SM_Bld_Roof_End_01__3_2_StaticMeshComponent0) == 0x000250, "Member 'ARoofBase_C::SM_Bld_Roof_End_01__3_2_StaticMeshComponent0' has a wrong offset!");
-static_assert(offsetof(ARoofBase_C, SharedRoot) == 0x000258, "Member 'ARoofBase_C::SharedRoot' has a wrong offset!");
+DUMPER7_ASSERTS_ARoofBase_C;
 
 }
 

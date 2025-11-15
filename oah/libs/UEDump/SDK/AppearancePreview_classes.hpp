@@ -33,39 +33,34 @@ public:
 	class UClass*                                 CurrentEmote;                                      // 0x0258(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Remove();
-	void RemoveloadoutCategory();
-	void ChangeCategory(EShopItemCategory Category);
-	void DragItemFromCategory(EShopItemCategory Category);
-	void CancelDrag();
-	void PreviewItem(class UClass* ItemInfo, int32 SalePrice);
-	void ReceiveBeginPlay();
-	void UpdateAppearance();
-	void RefreshInventory();
-	void ReceiveTick(float DeltaSeconds);
-	void LoadController();
 	void ExecuteUbergraph_AppearancePreview(int32 EntryPoint);
+	void LoadController();
+	void ReceiveTick(float DeltaSeconds);
+	void RefreshInventory();
+	void UpdateAppearance();
+	void ReceiveBeginPlay();
+	void PreviewItem(class UClass* ItemInfo, int32 SalePrice);
+	void CancelDrag();
+	void DragItemFromCategory(EShopItemCategory Category);
+	void ChangeCategory(EShopItemCategory Category);
+	void RemoveloadoutCategory();
+	void Remove();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AppearancePreview_C">();
+		BP_STATIC_CLASS_IMPL("AppearancePreview_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AppearancePreview_C")
 	}
 	static class AAppearancePreview_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAppearancePreview_C>();
 	}
 };
-static_assert(alignof(AAppearancePreview_C) == 0x000008, "Wrong alignment on AAppearancePreview_C");
-static_assert(sizeof(AAppearancePreview_C) == 0x000260, "Wrong size on AAppearancePreview_C");
-static_assert(offsetof(AAppearancePreview_C, UberGraphFrame) == 0x000220, "Member 'AAppearancePreview_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AAppearancePreview_C, EmoteChildActor) == 0x000228, "Member 'AAppearancePreview_C::EmoteChildActor' has a wrong offset!");
-static_assert(offsetof(AAppearancePreview_C, ArmorMesh) == 0x000230, "Member 'AAppearancePreview_C::ArmorMesh' has a wrong offset!");
-static_assert(offsetof(AAppearancePreview_C, Mask) == 0x000238, "Member 'AAppearancePreview_C::Mask' has a wrong offset!");
-static_assert(offsetof(AAppearancePreview_C, SkeletalMesh) == 0x000240, "Member 'AAppearancePreview_C::SkeletalMesh' has a wrong offset!");
-static_assert(offsetof(AAppearancePreview_C, DefaultSceneRoot) == 0x000248, "Member 'AAppearancePreview_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AAppearancePreview_C, As_Robber_Controller) == 0x000250, "Member 'AAppearancePreview_C::As_Robber_Controller' has a wrong offset!");
-static_assert(offsetof(AAppearancePreview_C, CurrentEmote) == 0x000258, "Member 'AAppearancePreview_C::CurrentEmote' has a wrong offset!");
+DUMPER7_ASSERTS_AAppearancePreview_C;
 
 }
 

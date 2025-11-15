@@ -30,11 +30,11 @@ public:
 	TDelegate<void(class APowerbox_C* Powerbox)>  K2Node_CreateDelegate_OutputDelegate;              // 0x000C(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x001C(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x002C(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(class ARestrictedAreaVolume_C* Area, bool Exit_)> K2Node_CreateDelegate_OutputDelegate_3;            // 0x003C(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class ARestrictedAreaVolume_C* Area, bool Exit_)> K2Node_CreateDelegate_OutputDelegate_3; // 0x003C(0x0010)(ZeroConstructor, NoDestructor)
 	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const struct FLinearColor& Color)> K2Node_CreateDelegate_OutputDelegate_4;            // 0x0058(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FLinearColor& Color)> K2Node_CreateDelegate_OutputDelegate_4;        // 0x0058(0x0010)(ZeroConstructor, NoDestructor)
 	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable_2;                  // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -99,69 +99,7 @@ public:
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor_3;                    // 0x0268(0x0028)()
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor_4;                    // 0x0290(0x0028)()
 };
-static_assert(alignof(HUDUI_C_ExecuteUbergraph_HUDUI) == 0x000008, "Wrong alignment on HUDUI_C_ExecuteUbergraph_HUDUI");
-static_assert(sizeof(HUDUI_C_ExecuteUbergraph_HUDUI) == 0x0002B8, "Wrong size on HUDUI_C_ExecuteUbergraph_HUDUI");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, EntryPoint) == 0x000000, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::EntryPoint' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, K2Node_CreateDelegate_OutputDelegate) == 0x00000C, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, K2Node_CreateDelegate_OutputDelegate_1) == 0x00001C, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, K2Node_CreateDelegate_OutputDelegate_2) == 0x00002C, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, K2Node_CreateDelegate_OutputDelegate_3) == 0x00003C, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, Temp_int_Loop_Counter_Variable_1) == 0x00004C, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, CallFunc_Add_IntInt_ReturnValue_1) == 0x000050, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, Temp_int_Array_Index_Variable) == 0x000054, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, K2Node_CreateDelegate_OutputDelegate_4) == 0x000058, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, Temp_int_Array_Index_Variable_1) == 0x000068, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, Temp_int_Loop_Counter_Variable_2) == 0x00006C, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, CallFunc_Add_IntInt_ReturnValue_2) == 0x000070, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, Temp_int_Array_Index_Variable_2) == 0x000074, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, K2Node_CreateDelegate_OutputDelegate_5) == 0x000078, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, K2Node_CustomEvent_Color) == 0x000088, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::K2Node_CustomEvent_Color' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, K2Node_MakeStruct_SlateColor) == 0x000098, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, K2Node_CustomEvent_State) == 0x0000C0, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::K2Node_CustomEvent_State' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, CallFunc_PlayAnimation_ReturnValue) == 0x0000C8, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, K2Node_SwitchInteger_CmpSuccess) == 0x0000D0, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, CallFunc_GetActorOfClass_ReturnValue) == 0x0000D8, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::CallFunc_GetActorOfClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, CallFunc_IsValid_ReturnValue) == 0x0000E0, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, K2Node_Event_MyGeometry) == 0x0000E4, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, K2Node_Event_InDeltaTime) == 0x00011C, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, CallFunc_IsValid_ReturnValue_1) == 0x000120, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, K2Node_CustomEvent_Area) == 0x000128, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::K2Node_CustomEvent_Area' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, K2Node_CustomEvent_Exit_) == 0x000130, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::K2Node_CustomEvent_Exit_' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, CallFunc_PlayAnimation_ReturnValue_1) == 0x000138, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, CallFunc_PlayAnimation_ReturnValue_2) == 0x000140, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, CallFunc_IsValid_ReturnValue_2) == 0x000148, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, K2Node_MakeStruct_SlateColor_1) == 0x000150, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::K2Node_MakeStruct_SlateColor_1' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, K2Node_MakeStruct_SlateColor_2) == 0x000178, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::K2Node_MakeStruct_SlateColor_2' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, K2Node_MakeArray_Array) == 0x0001A0, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, CallFunc_Array_Get_Item) == 0x0001B0, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, CallFunc_Array_Length_ReturnValue) == 0x0001B8, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, CallFunc_Less_IntInt_ReturnValue) == 0x0001BC, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, K2Node_CustomEvent_Number) == 0x0001C0, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::K2Node_CustomEvent_Number' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, CallFunc_IsLocallyControlled_ReturnValue) == 0x0001C4, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::CallFunc_IsLocallyControlled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, CallFunc_Array_Get_Item_1) == 0x0001C8, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x0001D0, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, K2Node_MakeArray_Array_1) == 0x0001D8, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, CallFunc_GetPlayerController_ReturnValue) == 0x0001E8, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, CallFunc_Array_Get_Item_2) == 0x0001F0, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, K2Node_DynamicCast_AsRobber_Controller) == 0x0001F8, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::K2Node_DynamicCast_AsRobber_Controller' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, K2Node_DynamicCast_bSuccess) == 0x000200, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, CallFunc_Array_Length_ReturnValue_1) == 0x000204, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, CallFunc_Array_Get_Item_3) == 0x000208, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, CallFunc_Less_IntInt_ReturnValue_1) == 0x000210, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, CallFunc_PlayAnimation_ReturnValue_3) == 0x000218, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::CallFunc_PlayAnimation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, K2Node_Event_Title) == 0x000220, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::K2Node_Event_Title' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, CallFunc_GetActorOfClass_ReturnValue_1) == 0x000230, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::CallFunc_GetActorOfClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, CallFunc_IsValid_ReturnValue_3) == 0x000238, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, CallFunc_IsLocallyControlled_ReturnValue_1) == 0x000239, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::CallFunc_IsLocallyControlled_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, CallFunc_GetAllActorsOfClass_OutActors) == 0x000240, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, K2Node_CustomEvent_Powerbox) == 0x000250, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::K2Node_CustomEvent_Powerbox' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, CallFunc_Array_Get_Item_4) == 0x000258, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, CallFunc_Array_Length_ReturnValue_2) == 0x000260, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, CallFunc_Less_IntInt_ReturnValue_2) == 0x000264, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, K2Node_MakeStruct_SlateColor_3) == 0x000268, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::K2Node_MakeStruct_SlateColor_3' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_ExecuteUbergraph_HUDUI, K2Node_MakeStruct_SlateColor_4) == 0x000290, "Member 'HUDUI_C_ExecuteUbergraph_HUDUI::K2Node_MakeStruct_SlateColor_4' has a wrong offset!");
+DUMPER7_ASSERTS_HUDUI_C_ExecuteUbergraph_HUDUI;
 
 // Function HUDUI.HUDUI_C.ShowPowerboxProgress
 // 0x0008 (0x0008 - 0x0000)
@@ -170,9 +108,7 @@ struct HUDUI_C_ShowPowerboxProgress final
 public:
 	class APowerbox_C*                            Powerbox_0;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HUDUI_C_ShowPowerboxProgress) == 0x000008, "Wrong alignment on HUDUI_C_ShowPowerboxProgress");
-static_assert(sizeof(HUDUI_C_ShowPowerboxProgress) == 0x000008, "Wrong size on HUDUI_C_ShowPowerboxProgress");
-static_assert(offsetof(HUDUI_C_ShowPowerboxProgress, Powerbox_0) == 0x000000, "Member 'HUDUI_C_ShowPowerboxProgress::Powerbox_0' has a wrong offset!");
+DUMPER7_ASSERTS_HUDUI_C_ShowPowerboxProgress;
 
 // Function HUDUI.HUDUI_C.AnnounceNewInstructionWidget
 // 0x0010 (0x0010 - 0x0000)
@@ -181,9 +117,7 @@ struct HUDUI_C_AnnounceNewInstructionWidget final
 public:
 	class FString                                 Title;                                             // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HUDUI_C_AnnounceNewInstructionWidget) == 0x000008, "Wrong alignment on HUDUI_C_AnnounceNewInstructionWidget");
-static_assert(sizeof(HUDUI_C_AnnounceNewInstructionWidget) == 0x000010, "Wrong size on HUDUI_C_AnnounceNewInstructionWidget");
-static_assert(offsetof(HUDUI_C_AnnounceNewInstructionWidget, Title) == 0x000000, "Member 'HUDUI_C_AnnounceNewInstructionWidget::Title' has a wrong offset!");
+DUMPER7_ASSERTS_HUDUI_C_AnnounceNewInstructionWidget;
 
 // Function HUDUI.HUDUI_C.SwitchGunHighlight
 // 0x0004 (0x0004 - 0x0000)
@@ -192,9 +126,7 @@ struct HUDUI_C_SwitchGunHighlight final
 public:
 	int32                                         Number;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HUDUI_C_SwitchGunHighlight) == 0x000004, "Wrong alignment on HUDUI_C_SwitchGunHighlight");
-static_assert(sizeof(HUDUI_C_SwitchGunHighlight) == 0x000004, "Wrong size on HUDUI_C_SwitchGunHighlight");
-static_assert(offsetof(HUDUI_C_SwitchGunHighlight, Number) == 0x000000, "Member 'HUDUI_C_SwitchGunHighlight::Number' has a wrong offset!");
+DUMPER7_ASSERTS_HUDUI_C_SwitchGunHighlight;
 
 // Function HUDUI.HUDUI_C.EnterWarning
 // 0x0010 (0x0010 - 0x0000)
@@ -204,10 +136,7 @@ public:
 	class ARestrictedAreaVolume_C*                Area;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Exit_;                                             // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HUDUI_C_EnterWarning) == 0x000008, "Wrong alignment on HUDUI_C_EnterWarning");
-static_assert(sizeof(HUDUI_C_EnterWarning) == 0x000010, "Wrong size on HUDUI_C_EnterWarning");
-static_assert(offsetof(HUDUI_C_EnterWarning, Area) == 0x000000, "Member 'HUDUI_C_EnterWarning::Area' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_EnterWarning, Exit_) == 0x000008, "Member 'HUDUI_C_EnterWarning::Exit_' has a wrong offset!");
+DUMPER7_ASSERTS_HUDUI_C_EnterWarning;
 
 // Function HUDUI.HUDUI_C.Tick
 // 0x003C (0x003C - 0x0000)
@@ -217,10 +146,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HUDUI_C_Tick) == 0x000004, "Wrong alignment on HUDUI_C_Tick");
-static_assert(sizeof(HUDUI_C_Tick) == 0x00003C, "Wrong size on HUDUI_C_Tick");
-static_assert(offsetof(HUDUI_C_Tick, MyGeometry) == 0x000000, "Member 'HUDUI_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_Tick, InDeltaTime) == 0x000038, "Member 'HUDUI_C_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_HUDUI_C_Tick;
 
 // Function HUDUI.HUDUI_C.ChangeState
 // 0x0004 (0x0004 - 0x0000)
@@ -229,9 +155,7 @@ struct HUDUI_C_ChangeState final
 public:
 	int32                                         State;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HUDUI_C_ChangeState) == 0x000004, "Wrong alignment on HUDUI_C_ChangeState");
-static_assert(sizeof(HUDUI_C_ChangeState) == 0x000004, "Wrong size on HUDUI_C_ChangeState");
-static_assert(offsetof(HUDUI_C_ChangeState, State) == 0x000000, "Member 'HUDUI_C_ChangeState::State' has a wrong offset!");
+DUMPER7_ASSERTS_HUDUI_C_ChangeState;
 
 // Function HUDUI.HUDUI_C.Hitmarker
 // 0x0010 (0x0010 - 0x0000)
@@ -240,9 +164,7 @@ struct HUDUI_C_Hitmarker final
 public:
 	struct FLinearColor                           Color;                                             // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HUDUI_C_Hitmarker) == 0x000004, "Wrong alignment on HUDUI_C_Hitmarker");
-static_assert(sizeof(HUDUI_C_Hitmarker) == 0x000010, "Wrong size on HUDUI_C_Hitmarker");
-static_assert(offsetof(HUDUI_C_Hitmarker, Color) == 0x000000, "Member 'HUDUI_C_Hitmarker::Color' has a wrong offset!");
+DUMPER7_ASSERTS_HUDUI_C_Hitmarker;
 
 // Function HUDUI.HUDUI_C.GetText_0
 // 0x0080 (0x0080 - 0x0000)
@@ -262,18 +184,7 @@ public:
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0058(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0068(0x0018)()
 };
-static_assert(alignof(HUDUI_C_GetText_0) == 0x000008, "Wrong alignment on HUDUI_C_GetText_0");
-static_assert(sizeof(HUDUI_C_GetText_0) == 0x000080, "Wrong size on HUDUI_C_GetText_0");
-static_assert(offsetof(HUDUI_C_GetText_0, ReturnValue) == 0x000000, "Member 'HUDUI_C_GetText_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_GetText_0, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'HUDUI_C_GetText_0::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_GetText_0, CallFunc_IsValid_ReturnValue_1) == 0x000019, "Member 'HUDUI_C_GetText_0::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_GetText_0, CallFunc_Conv_IntToString_ReturnValue) == 0x000020, "Member 'HUDUI_C_GetText_0::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_GetText_0, CallFunc_Concat_StrStr_ReturnValue) == 0x000030, "Member 'HUDUI_C_GetText_0::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_GetText_0, CallFunc_Array_Get_Item) == 0x000040, "Member 'HUDUI_C_GetText_0::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_GetText_0, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000044, "Member 'HUDUI_C_GetText_0::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_GetText_0, CallFunc_Conv_IntToString_ReturnValue_1) == 0x000048, "Member 'HUDUI_C_GetText_0::CallFunc_Conv_IntToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_GetText_0, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000058, "Member 'HUDUI_C_GetText_0::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_GetText_0, CallFunc_Conv_StringToText_ReturnValue) == 0x000068, "Member 'HUDUI_C_GetText_0::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HUDUI_C_GetText_0;
 
 // Function HUDUI.HUDUI_C.GetColorAndOpacity_0
 // 0x0030 (0x0030 - 0x0000)
@@ -288,14 +199,7 @@ public:
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_MakeColor_ReturnValue;                    // 0x0020(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HUDUI_C_GetColorAndOpacity_0) == 0x000004, "Wrong alignment on HUDUI_C_GetColorAndOpacity_0");
-static_assert(sizeof(HUDUI_C_GetColorAndOpacity_0) == 0x000030, "Wrong size on HUDUI_C_GetColorAndOpacity_0");
-static_assert(offsetof(HUDUI_C_GetColorAndOpacity_0, ReturnValue) == 0x000000, "Member 'HUDUI_C_GetColorAndOpacity_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_GetColorAndOpacity_0, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'HUDUI_C_GetColorAndOpacity_0::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_GetColorAndOpacity_0, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000014, "Member 'HUDUI_C_GetColorAndOpacity_0::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_GetColorAndOpacity_0, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000018, "Member 'HUDUI_C_GetColorAndOpacity_0::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_GetColorAndOpacity_0, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x00001C, "Member 'HUDUI_C_GetColorAndOpacity_0::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_GetColorAndOpacity_0, CallFunc_MakeColor_ReturnValue) == 0x000020, "Member 'HUDUI_C_GetColorAndOpacity_0::CallFunc_MakeColor_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HUDUI_C_GetColorAndOpacity_0;
 
 // Function HUDUI.HUDUI_C.Get_DownedBlur_Visibility_0
 // 0x0003 (0x0003 - 0x0000)
@@ -306,11 +210,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HUDUI_C_Get_DownedBlur_Visibility_0) == 0x000001, "Wrong alignment on HUDUI_C_Get_DownedBlur_Visibility_0");
-static_assert(sizeof(HUDUI_C_Get_DownedBlur_Visibility_0) == 0x000003, "Wrong size on HUDUI_C_Get_DownedBlur_Visibility_0");
-static_assert(offsetof(HUDUI_C_Get_DownedBlur_Visibility_0, ReturnValue) == 0x000000, "Member 'HUDUI_C_Get_DownedBlur_Visibility_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_Get_DownedBlur_Visibility_0, CallFunc_IsValid_ReturnValue) == 0x000001, "Member 'HUDUI_C_Get_DownedBlur_Visibility_0::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_Get_DownedBlur_Visibility_0, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000002, "Member 'HUDUI_C_Get_DownedBlur_Visibility_0::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HUDUI_C_Get_DownedBlur_Visibility_0;
 
 // Function HUDUI.HUDUI_C.GetVisibility_0
 // 0x0002 (0x0002 - 0x0000)
@@ -320,10 +220,7 @@ public:
 	ESlateVisibility                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HUDUI_C_GetVisibility_0) == 0x000001, "Wrong alignment on HUDUI_C_GetVisibility_0");
-static_assert(sizeof(HUDUI_C_GetVisibility_0) == 0x000002, "Wrong size on HUDUI_C_GetVisibility_0");
-static_assert(offsetof(HUDUI_C_GetVisibility_0, ReturnValue) == 0x000000, "Member 'HUDUI_C_GetVisibility_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_GetVisibility_0, CallFunc_IsValid_ReturnValue) == 0x000001, "Member 'HUDUI_C_GetVisibility_0::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HUDUI_C_GetVisibility_0;
 
 // Function HUDUI.HUDUI_C.GetVisibility_1
 // 0x0002 (0x0002 - 0x0000)
@@ -333,10 +230,7 @@ public:
 	ESlateVisibility                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HUDUI_C_GetVisibility_1) == 0x000001, "Wrong alignment on HUDUI_C_GetVisibility_1");
-static_assert(sizeof(HUDUI_C_GetVisibility_1) == 0x000002, "Wrong size on HUDUI_C_GetVisibility_1");
-static_assert(offsetof(HUDUI_C_GetVisibility_1, ReturnValue) == 0x000000, "Member 'HUDUI_C_GetVisibility_1::ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_GetVisibility_1, CallFunc_IsValid_ReturnValue) == 0x000001, "Member 'HUDUI_C_GetVisibility_1::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HUDUI_C_GetVisibility_1;
 
 // Function HUDUI.HUDUI_C.Get_ArmorHealth_Percent_0
 // 0x0020 (0x0020 - 0x0000)
@@ -353,15 +247,7 @@ public:
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue_1;            // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HUDUI_C_Get_ArmorHealth_Percent_0) == 0x000008, "Wrong alignment on HUDUI_C_Get_ArmorHealth_Percent_0");
-static_assert(sizeof(HUDUI_C_Get_ArmorHealth_Percent_0) == 0x000020, "Wrong size on HUDUI_C_Get_ArmorHealth_Percent_0");
-static_assert(offsetof(HUDUI_C_Get_ArmorHealth_Percent_0, ReturnValue) == 0x000000, "Member 'HUDUI_C_Get_ArmorHealth_Percent_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_Get_ArmorHealth_Percent_0, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'HUDUI_C_Get_ArmorHealth_Percent_0::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_Get_ArmorHealth_Percent_0, K2Node_DynamicCast_AsArmor_Light) == 0x000008, "Member 'HUDUI_C_Get_ArmorHealth_Percent_0::K2Node_DynamicCast_AsArmor_Light' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_Get_ArmorHealth_Percent_0, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'HUDUI_C_Get_ArmorHealth_Percent_0::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_Get_ArmorHealth_Percent_0, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000014, "Member 'HUDUI_C_Get_ArmorHealth_Percent_0::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_Get_ArmorHealth_Percent_0, CallFunc_Conv_IntToFloat_ReturnValue_1) == 0x000018, "Member 'HUDUI_C_Get_ArmorHealth_Percent_0::CallFunc_Conv_IntToFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_Get_ArmorHealth_Percent_0, CallFunc_Divide_FloatFloat_ReturnValue) == 0x00001C, "Member 'HUDUI_C_Get_ArmorHealth_Percent_0::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HUDUI_C_Get_ArmorHealth_Percent_0;
 
 // Function HUDUI.HUDUI_C.Get_ArmorHealth_Visibility_0
 // 0x0018 (0x0018 - 0x0000)
@@ -375,13 +261,7 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HUDUI_C_Get_ArmorHealth_Visibility_0) == 0x000008, "Wrong alignment on HUDUI_C_Get_ArmorHealth_Visibility_0");
-static_assert(sizeof(HUDUI_C_Get_ArmorHealth_Visibility_0) == 0x000018, "Wrong size on HUDUI_C_Get_ArmorHealth_Visibility_0");
-static_assert(offsetof(HUDUI_C_Get_ArmorHealth_Visibility_0, ReturnValue) == 0x000000, "Member 'HUDUI_C_Get_ArmorHealth_Visibility_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_Get_ArmorHealth_Visibility_0, CallFunc_IsValid_ReturnValue) == 0x000001, "Member 'HUDUI_C_Get_ArmorHealth_Visibility_0::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_Get_ArmorHealth_Visibility_0, K2Node_DynamicCast_AsArmor_Light) == 0x000008, "Member 'HUDUI_C_Get_ArmorHealth_Visibility_0::K2Node_DynamicCast_AsArmor_Light' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_Get_ArmorHealth_Visibility_0, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'HUDUI_C_Get_ArmorHealth_Visibility_0::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_Get_ArmorHealth_Visibility_0, CallFunc_BooleanOR_ReturnValue) == 0x000011, "Member 'HUDUI_C_Get_ArmorHealth_Visibility_0::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HUDUI_C_Get_ArmorHealth_Visibility_0;
 
 // Function HUDUI.HUDUI_C.SetStyle
 // 0x02C0 (0x02C0 - 0x0000)
@@ -394,13 +274,7 @@ public:
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush_1;                    // 0x0098(0x0088)()
 	struct FProgressBarStyle                      K2Node_MakeStruct_ProgressBarStyle;                // 0x0120(0x01A0)()
 };
-static_assert(alignof(HUDUI_C_SetStyle) == 0x000008, "Wrong alignment on HUDUI_C_SetStyle");
-static_assert(sizeof(HUDUI_C_SetStyle) == 0x0002C0, "Wrong size on HUDUI_C_SetStyle");
-static_assert(offsetof(HUDUI_C_SetStyle, Background_image) == 0x000000, "Member 'HUDUI_C_SetStyle::Background_image' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_SetStyle, Fill_image) == 0x000008, "Member 'HUDUI_C_SetStyle::Fill_image' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_SetStyle, K2Node_MakeStruct_SlateBrush) == 0x000010, "Member 'HUDUI_C_SetStyle::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_SetStyle, K2Node_MakeStruct_SlateBrush_1) == 0x000098, "Member 'HUDUI_C_SetStyle::K2Node_MakeStruct_SlateBrush_1' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_SetStyle, K2Node_MakeStruct_ProgressBarStyle) == 0x000120, "Member 'HUDUI_C_SetStyle::K2Node_MakeStruct_ProgressBarStyle' has a wrong offset!");
+DUMPER7_ASSERTS_HUDUI_C_SetStyle;
 
 // Function HUDUI.HUDUI_C.GetVisibility_2
 // 0x0004 (0x0004 - 0x0000)
@@ -412,12 +286,7 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HUDUI_C_GetVisibility_2) == 0x000001, "Wrong alignment on HUDUI_C_GetVisibility_2");
-static_assert(sizeof(HUDUI_C_GetVisibility_2) == 0x000004, "Wrong size on HUDUI_C_GetVisibility_2");
-static_assert(offsetof(HUDUI_C_GetVisibility_2, ReturnValue) == 0x000000, "Member 'HUDUI_C_GetVisibility_2::ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_GetVisibility_2, CallFunc_IsValid_ReturnValue) == 0x000001, "Member 'HUDUI_C_GetVisibility_2::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_GetVisibility_2, CallFunc_Not_PreBool_ReturnValue) == 0x000002, "Member 'HUDUI_C_GetVisibility_2::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_GetVisibility_2, CallFunc_BooleanAND_ReturnValue) == 0x000003, "Member 'HUDUI_C_GetVisibility_2::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HUDUI_C_GetVisibility_2;
 
 // Function HUDUI.HUDUI_C.GetText_1
 // 0x00D0 (0x00D0 - 0x0000)
@@ -442,22 +311,7 @@ public:
 	class FString                                 K2Node_Select_Default;                             // 0x00A8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x00B8(0x0018)()
 };
-static_assert(alignof(HUDUI_C_GetText_1) == 0x000008, "Wrong alignment on HUDUI_C_GetText_1");
-static_assert(sizeof(HUDUI_C_GetText_1) == 0x0000D0, "Wrong size on HUDUI_C_GetText_1");
-static_assert(offsetof(HUDUI_C_GetText_1, ReturnValue) == 0x000000, "Member 'HUDUI_C_GetText_1::ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_GetText_1, Temp_bool_Variable) == 0x000018, "Member 'HUDUI_C_GetText_1::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_GetText_1, CallFunc_Conv_IntToFloat_ReturnValue) == 0x00001C, "Member 'HUDUI_C_GetText_1::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_GetText_1, CallFunc_Conv_IntToString_ReturnValue) == 0x000020, "Member 'HUDUI_C_GetText_1::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_GetText_1, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000030, "Member 'HUDUI_C_GetText_1::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_GetText_1, CallFunc_Concat_StrStr_ReturnValue) == 0x000038, "Member 'HUDUI_C_GetText_1::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_GetText_1, CallFunc_Conv_FloatToText_ReturnValue) == 0x000048, "Member 'HUDUI_C_GetText_1::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_GetText_1, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000060, "Member 'HUDUI_C_GetText_1::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_GetText_1, CallFunc_Conv_TextToString_ReturnValue) == 0x000070, "Member 'HUDUI_C_GetText_1::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_GetText_1, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000080, "Member 'HUDUI_C_GetText_1::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_GetText_1, CallFunc_Concat_StrStr_ReturnValue_2) == 0x000088, "Member 'HUDUI_C_GetText_1::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_GetText_1, CallFunc_Concat_StrStr_ReturnValue_3) == 0x000098, "Member 'HUDUI_C_GetText_1::CallFunc_Concat_StrStr_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_GetText_1, K2Node_Select_Default) == 0x0000A8, "Member 'HUDUI_C_GetText_1::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_GetText_1, CallFunc_Conv_StringToText_ReturnValue) == 0x0000B8, "Member 'HUDUI_C_GetText_1::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HUDUI_C_GetText_1;
 
 // Function HUDUI.HUDUI_C.GetVisibility_3
 // 0x0002 (0x0002 - 0x0000)
@@ -467,10 +321,7 @@ public:
 	ESlateVisibility                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HUDUI_C_GetVisibility_3) == 0x000001, "Wrong alignment on HUDUI_C_GetVisibility_3");
-static_assert(sizeof(HUDUI_C_GetVisibility_3) == 0x000002, "Wrong size on HUDUI_C_GetVisibility_3");
-static_assert(offsetof(HUDUI_C_GetVisibility_3, ReturnValue) == 0x000000, "Member 'HUDUI_C_GetVisibility_3::ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_GetVisibility_3, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000001, "Member 'HUDUI_C_GetVisibility_3::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HUDUI_C_GetVisibility_3;
 
 // Function HUDUI.HUDUI_C.GetText_2
 // 0x0018 (0x0018 - 0x0000)
@@ -479,9 +330,7 @@ struct HUDUI_C_GetText_2 final
 public:
 	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(HUDUI_C_GetText_2) == 0x000008, "Wrong alignment on HUDUI_C_GetText_2");
-static_assert(sizeof(HUDUI_C_GetText_2) == 0x000018, "Wrong size on HUDUI_C_GetText_2");
-static_assert(offsetof(HUDUI_C_GetText_2, ReturnValue) == 0x000000, "Member 'HUDUI_C_GetText_2::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HUDUI_C_GetText_2;
 
 // Function HUDUI.HUDUI_C.Get_RestrictedAreaText_ColorAndOpacity_0
 // 0x00B8 (0x00B8 - 0x0000)
@@ -499,15 +348,7 @@ public:
 	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateColor                            K2Node_Select_Default;                             // 0x0090(0x0028)()
 };
-static_assert(alignof(HUDUI_C_Get_RestrictedAreaText_ColorAndOpacity_0) == 0x000008, "Wrong alignment on HUDUI_C_Get_RestrictedAreaText_ColorAndOpacity_0");
-static_assert(sizeof(HUDUI_C_Get_RestrictedAreaText_ColorAndOpacity_0) == 0x0000B8, "Wrong size on HUDUI_C_Get_RestrictedAreaText_ColorAndOpacity_0");
-static_assert(offsetof(HUDUI_C_Get_RestrictedAreaText_ColorAndOpacity_0, ReturnValue) == 0x000000, "Member 'HUDUI_C_Get_RestrictedAreaText_ColorAndOpacity_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_Get_RestrictedAreaText_ColorAndOpacity_0, Temp_bool_Variable) == 0x000028, "Member 'HUDUI_C_Get_RestrictedAreaText_ColorAndOpacity_0::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_Get_RestrictedAreaText_ColorAndOpacity_0, K2Node_MakeStruct_SlateColor) == 0x000030, "Member 'HUDUI_C_Get_RestrictedAreaText_ColorAndOpacity_0::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_Get_RestrictedAreaText_ColorAndOpacity_0, CallFunc_IsValid_ReturnValue) == 0x000058, "Member 'HUDUI_C_Get_RestrictedAreaText_ColorAndOpacity_0::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_Get_RestrictedAreaText_ColorAndOpacity_0, K2Node_MakeStruct_SlateColor_1) == 0x000060, "Member 'HUDUI_C_Get_RestrictedAreaText_ColorAndOpacity_0::K2Node_MakeStruct_SlateColor_1' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_Get_RestrictedAreaText_ColorAndOpacity_0, CallFunc_IsValid_ReturnValue_1) == 0x000088, "Member 'HUDUI_C_Get_RestrictedAreaText_ColorAndOpacity_0::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_Get_RestrictedAreaText_ColorAndOpacity_0, K2Node_Select_Default) == 0x000090, "Member 'HUDUI_C_Get_RestrictedAreaText_ColorAndOpacity_0::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_HUDUI_C_Get_RestrictedAreaText_ColorAndOpacity_0;
 
 // Function HUDUI.HUDUI_C.LoadedGunVisibility
 // 0x0002 (0x0002 - 0x0000)
@@ -517,10 +358,7 @@ public:
 	ESlateVisibility                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HUDUI_C_LoadedGunVisibility) == 0x000001, "Wrong alignment on HUDUI_C_LoadedGunVisibility");
-static_assert(sizeof(HUDUI_C_LoadedGunVisibility) == 0x000002, "Wrong size on HUDUI_C_LoadedGunVisibility");
-static_assert(offsetof(HUDUI_C_LoadedGunVisibility, ReturnValue) == 0x000000, "Member 'HUDUI_C_LoadedGunVisibility::ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_LoadedGunVisibility, CallFunc_IsValid_ReturnValue) == 0x000001, "Member 'HUDUI_C_LoadedGunVisibility::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HUDUI_C_LoadedGunVisibility;
 
 // Function HUDUI.HUDUI_C.GetPercent_0
 // 0x0008 (0x0008 - 0x0000)
@@ -530,10 +368,7 @@ public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HUDUI_C_GetPercent_0) == 0x000004, "Wrong alignment on HUDUI_C_GetPercent_0");
-static_assert(sizeof(HUDUI_C_GetPercent_0) == 0x000008, "Wrong size on HUDUI_C_GetPercent_0");
-static_assert(offsetof(HUDUI_C_GetPercent_0, ReturnValue) == 0x000000, "Member 'HUDUI_C_GetPercent_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_GetPercent_0, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'HUDUI_C_GetPercent_0::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HUDUI_C_GetPercent_0;
 
 // Function HUDUI.HUDUI_C.Get_ImmunityVignette_Visibility_0
 // 0x0003 (0x0003 - 0x0000)
@@ -544,11 +379,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HUDUI_C_Get_ImmunityVignette_Visibility_0) == 0x000001, "Wrong alignment on HUDUI_C_Get_ImmunityVignette_Visibility_0");
-static_assert(sizeof(HUDUI_C_Get_ImmunityVignette_Visibility_0) == 0x000003, "Wrong size on HUDUI_C_Get_ImmunityVignette_Visibility_0");
-static_assert(offsetof(HUDUI_C_Get_ImmunityVignette_Visibility_0, ReturnValue) == 0x000000, "Member 'HUDUI_C_Get_ImmunityVignette_Visibility_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_Get_ImmunityVignette_Visibility_0, CallFunc_IsValid_ReturnValue) == 0x000001, "Member 'HUDUI_C_Get_ImmunityVignette_Visibility_0::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_Get_ImmunityVignette_Visibility_0, CallFunc_Greater_IntInt_ReturnValue) == 0x000002, "Member 'HUDUI_C_Get_ImmunityVignette_Visibility_0::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HUDUI_C_Get_ImmunityVignette_Visibility_0;
 
 // Function HUDUI.HUDUI_C.Get_Timertest_Text_0
 // 0x00B8 (0x00B8 - 0x0000)
@@ -571,22 +402,7 @@ public:
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue_3;              // 0x0090(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x00A0(0x0018)()
 };
-static_assert(alignof(HUDUI_C_Get_Timertest_Text_0) == 0x000008, "Wrong alignment on HUDUI_C_Get_Timertest_Text_0");
-static_assert(sizeof(HUDUI_C_Get_Timertest_Text_0) == 0x0000B8, "Wrong size on HUDUI_C_Get_Timertest_Text_0");
-static_assert(offsetof(HUDUI_C_Get_Timertest_Text_0, ReturnValue) == 0x000000, "Member 'HUDUI_C_Get_Timertest_Text_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_Get_Timertest_Text_0, CallFunc_BreakTimespan_Days) == 0x000018, "Member 'HUDUI_C_Get_Timertest_Text_0::CallFunc_BreakTimespan_Days' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_Get_Timertest_Text_0, CallFunc_BreakTimespan_Hours) == 0x00001C, "Member 'HUDUI_C_Get_Timertest_Text_0::CallFunc_BreakTimespan_Hours' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_Get_Timertest_Text_0, CallFunc_BreakTimespan_Minutes) == 0x000020, "Member 'HUDUI_C_Get_Timertest_Text_0::CallFunc_BreakTimespan_Minutes' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_Get_Timertest_Text_0, CallFunc_BreakTimespan_Seconds) == 0x000024, "Member 'HUDUI_C_Get_Timertest_Text_0::CallFunc_BreakTimespan_Seconds' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_Get_Timertest_Text_0, CallFunc_BreakTimespan_Milliseconds) == 0x000028, "Member 'HUDUI_C_Get_Timertest_Text_0::CallFunc_BreakTimespan_Milliseconds' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_Get_Timertest_Text_0, CallFunc_Conv_IntToString_ReturnValue) == 0x000030, "Member 'HUDUI_C_Get_Timertest_Text_0::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_Get_Timertest_Text_0, CallFunc_Conv_IntToString_ReturnValue_1) == 0x000040, "Member 'HUDUI_C_Get_Timertest_Text_0::CallFunc_Conv_IntToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_Get_Timertest_Text_0, CallFunc_Concat_StrStr_ReturnValue) == 0x000050, "Member 'HUDUI_C_Get_Timertest_Text_0::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_Get_Timertest_Text_0, CallFunc_Conv_IntToString_ReturnValue_2) == 0x000060, "Member 'HUDUI_C_Get_Timertest_Text_0::CallFunc_Conv_IntToString_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_Get_Timertest_Text_0, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000070, "Member 'HUDUI_C_Get_Timertest_Text_0::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_Get_Timertest_Text_0, CallFunc_Concat_StrStr_ReturnValue_2) == 0x000080, "Member 'HUDUI_C_Get_Timertest_Text_0::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_Get_Timertest_Text_0, CallFunc_Concat_StrStr_ReturnValue_3) == 0x000090, "Member 'HUDUI_C_Get_Timertest_Text_0::CallFunc_Concat_StrStr_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(HUDUI_C_Get_Timertest_Text_0, CallFunc_Conv_StringToText_ReturnValue) == 0x0000A0, "Member 'HUDUI_C_Get_Timertest_Text_0::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HUDUI_C_Get_Timertest_Text_0;
 
 // Function HUDUI.HUDUI_C.GetCurrentInstruction
 // 0x0030 (0x0030 - 0x0000)
@@ -595,9 +411,7 @@ struct HUDUI_C_GetCurrentInstruction final
 public:
 	struct FInstructionStruct                     Instruction;                                       // 0x0000(0x0030)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HUDUI_C_GetCurrentInstruction) == 0x000008, "Wrong alignment on HUDUI_C_GetCurrentInstruction");
-static_assert(sizeof(HUDUI_C_GetCurrentInstruction) == 0x000030, "Wrong size on HUDUI_C_GetCurrentInstruction");
-static_assert(offsetof(HUDUI_C_GetCurrentInstruction, Instruction) == 0x000000, "Member 'HUDUI_C_GetCurrentInstruction::Instruction' has a wrong offset!");
+DUMPER7_ASSERTS_HUDUI_C_GetCurrentInstruction;
 
 }
 

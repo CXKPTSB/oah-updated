@@ -98,10 +98,7 @@ public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Value;                                             // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FGameAnalyticsCustomEventField) == 0x000008, "Wrong alignment on FGameAnalyticsCustomEventField");
-static_assert(sizeof(FGameAnalyticsCustomEventField) == 0x000020, "Wrong size on FGameAnalyticsCustomEventField");
-static_assert(offsetof(FGameAnalyticsCustomEventField, Key) == 0x000000, "Member 'FGameAnalyticsCustomEventField::Key' has a wrong offset!");
-static_assert(offsetof(FGameAnalyticsCustomEventField, Value) == 0x000010, "Member 'FGameAnalyticsCustomEventField::Value' has a wrong offset!");
+DUMPER7_ASSERTS_FGameAnalyticsCustomEventField;
 
 }
 

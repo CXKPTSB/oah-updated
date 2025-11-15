@@ -47,24 +47,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ToolSpot_C">();
+		BP_STATIC_CLASS_IMPL("ToolSpot_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ToolSpot_C")
 	}
 	static class AToolSpot_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AToolSpot_C>();
 	}
 };
-static_assert(alignof(AToolSpot_C) == 0x000008, "Wrong alignment on AToolSpot_C");
-static_assert(sizeof(AToolSpot_C) == 0x000258, "Wrong size on AToolSpot_C");
-static_assert(offsetof(AToolSpot_C, UberGraphFrame) == 0x000220, "Member 'AToolSpot_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AToolSpot_C, PhysicsHandle) == 0x000228, "Member 'AToolSpot_C::PhysicsHandle' has a wrong offset!");
-static_assert(offsetof(AToolSpot_C, Box) == 0x000230, "Member 'AToolSpot_C::Box' has a wrong offset!");
-static_assert(offsetof(AToolSpot_C, DefaultSceneRoot) == 0x000238, "Member 'AToolSpot_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AToolSpot_C, Tool) == 0x000240, "Member 'AToolSpot_C::Tool' has a wrong offset!");
-static_assert(offsetof(AToolSpot_C, SpotHealth) == 0x000248, "Member 'AToolSpot_C::SpotHealth' has a wrong offset!");
-static_assert(offsetof(AToolSpot_C, MaxHealth) == 0x00024C, "Member 'AToolSpot_C::MaxHealth' has a wrong offset!");
-static_assert(offsetof(AToolSpot_C, ToolAttached_) == 0x000250, "Member 'AToolSpot_C::ToolAttached_' has a wrong offset!");
-static_assert(offsetof(AToolSpot_C, OwnerDamage) == 0x000254, "Member 'AToolSpot_C::OwnerDamage' has a wrong offset!");
+DUMPER7_ASSERTS_AToolSpot_C;
 
 }
 

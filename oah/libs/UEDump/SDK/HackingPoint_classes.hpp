@@ -57,34 +57,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HackingPoint_C">();
+		BP_STATIC_CLASS_IMPL("HackingPoint_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HackingPoint_C")
 	}
 	static class AHackingPoint_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AHackingPoint_C>();
 	}
 };
-static_assert(alignof(AHackingPoint_C) == 0x000008, "Wrong alignment on AHackingPoint_C");
-static_assert(sizeof(AHackingPoint_C) == 0x0002B0, "Wrong size on AHackingPoint_C");
-static_assert(offsetof(AHackingPoint_C, UberGraphFrame) == 0x000220, "Member 'AHackingPoint_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AHackingPoint_C, AlertComponent) == 0x000228, "Member 'AHackingPoint_C::AlertComponent' has a wrong offset!");
-static_assert(offsetof(AHackingPoint_C, KeycardOverlapper) == 0x000230, "Member 'AHackingPoint_C::KeycardOverlapper' has a wrong offset!");
-static_assert(offsetof(AHackingPoint_C, PointLight) == 0x000238, "Member 'AHackingPoint_C::PointLight' has a wrong offset!");
-static_assert(offsetof(AHackingPoint_C, SpottedHighlightcomponent) == 0x000240, "Member 'AHackingPoint_C::SpottedHighlightcomponent' has a wrong offset!");
-static_assert(offsetof(AHackingPoint_C, StaticMesh) == 0x000248, "Member 'AHackingPoint_C::StaticMesh' has a wrong offset!");
-static_assert(offsetof(AHackingPoint_C, Sphere) == 0x000250, "Member 'AHackingPoint_C::Sphere' has a wrong offset!");
-static_assert(offsetof(AHackingPoint_C, HoldingInteractComponent) == 0x000258, "Member 'AHackingPoint_C::HoldingInteractComponent' has a wrong offset!");
-static_assert(offsetof(AHackingPoint_C, DefaultSceneRoot) == 0x000260, "Member 'AHackingPoint_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AHackingPoint_C, HackedActors) == 0x000268, "Member 'AHackingPoint_C::HackedActors' has a wrong offset!");
-static_assert(offsetof(AHackingPoint_C, CanOnlyHackOnce_) == 0x000278, "Member 'AHackingPoint_C::CanOnlyHackOnce_' has a wrong offset!");
-static_assert(offsetof(AHackingPoint_C, HackCooldown) == 0x00027C, "Member 'AHackingPoint_C::HackCooldown' has a wrong offset!");
-static_assert(offsetof(AHackingPoint_C, HackingMinigame) == 0x000280, "Member 'AHackingPoint_C::HackingMinigame' has a wrong offset!");
-static_assert(offsetof(AHackingPoint_C, HasHacked_) == 0x000288, "Member 'AHackingPoint_C::HasHacked_' has a wrong offset!");
-static_assert(offsetof(AHackingPoint_C, HighlightedMesh) == 0x000290, "Member 'AHackingPoint_C::HighlightedMesh' has a wrong offset!");
-static_assert(offsetof(AHackingPoint_C, KeycardNumber) == 0x000298, "Member 'AHackingPoint_C::KeycardNumber' has a wrong offset!");
-static_assert(offsetof(AHackingPoint_C, As_Item_Keycard) == 0x0002A0, "Member 'AHackingPoint_C::As_Item_Keycard' has a wrong offset!");
-static_assert(offsetof(AHackingPoint_C, Disabled_) == 0x0002A8, "Member 'AHackingPoint_C::Disabled_' has a wrong offset!");
-static_assert(offsetof(AHackingPoint_C, CanUseAfterAlarm_) == 0x0002A9, "Member 'AHackingPoint_C::CanUseAfterAlarm_' has a wrong offset!");
+DUMPER7_ASSERTS_AHackingPoint_C;
 
 }
 

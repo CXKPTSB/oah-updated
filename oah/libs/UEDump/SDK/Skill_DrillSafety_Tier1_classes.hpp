@@ -32,17 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Skill_DrillSafety_Tier1_C">();
+		BP_STATIC_CLASS_IMPL("Skill_DrillSafety_Tier1_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Skill_DrillSafety_Tier1_C")
 	}
 	static class USkill_DrillSafety_Tier1_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USkill_DrillSafety_Tier1_C>();
 	}
 };
-static_assert(alignof(USkill_DrillSafety_Tier1_C) == 0x000008, "Wrong alignment on USkill_DrillSafety_Tier1_C");
-static_assert(sizeof(USkill_DrillSafety_Tier1_C) == 0x0000E0, "Wrong size on USkill_DrillSafety_Tier1_C");
-static_assert(offsetof(USkill_DrillSafety_Tier1_C, UberGraphFrame_Skill_DrillSafety_Tier1_C) == 0x0000D0, "Member 'USkill_DrillSafety_Tier1_C::UberGraphFrame_Skill_DrillSafety_Tier1_C' has a wrong offset!");
-static_assert(offsetof(USkill_DrillSafety_Tier1_C, Drill_Immunity_Time) == 0x0000D8, "Member 'USkill_DrillSafety_Tier1_C::Drill_Immunity_Time' has a wrong offset!");
+DUMPER7_ASSERTS_USkill_DrillSafety_Tier1_C;
 
 }
 

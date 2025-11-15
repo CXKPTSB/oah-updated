@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MagicLeapAudioFunctionLibrary">();
+		STATIC_CLASS_IMPL("MagicLeapAudioFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MagicLeapAudioFunctionLibrary")
 	}
 	static class UMagicLeapAudioFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMagicLeapAudioFunctionLibrary>();
 	}
 };
-static_assert(alignof(UMagicLeapAudioFunctionLibrary) == 0x000008, "Wrong alignment on UMagicLeapAudioFunctionLibrary");
-static_assert(sizeof(UMagicLeapAudioFunctionLibrary) == 0x000028, "Wrong size on UMagicLeapAudioFunctionLibrary");
+DUMPER7_ASSERTS_UMagicLeapAudioFunctionLibrary;
 
 }
 

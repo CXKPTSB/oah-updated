@@ -44,10 +44,7 @@ public:
 	bool                                          LeftEyeBlinked;                                    // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          RightEyeBlinked;                                   // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMagicLeapEyeBlinkState) == 0x000001, "Wrong alignment on FMagicLeapEyeBlinkState");
-static_assert(sizeof(FMagicLeapEyeBlinkState) == 0x000002, "Wrong size on FMagicLeapEyeBlinkState");
-static_assert(offsetof(FMagicLeapEyeBlinkState, LeftEyeBlinked) == 0x000000, "Member 'FMagicLeapEyeBlinkState::LeftEyeBlinked' has a wrong offset!");
-static_assert(offsetof(FMagicLeapEyeBlinkState, RightEyeBlinked) == 0x000001, "Member 'FMagicLeapEyeBlinkState::RightEyeBlinked' has a wrong offset!");
+DUMPER7_ASSERTS_FMagicLeapEyeBlinkState;
 
 }
 

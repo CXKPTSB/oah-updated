@@ -23,15 +23,18 @@ class AAttachment_mag_Shotgun_extended_C final : public AAttachment_mag_base_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Attachment_mag_Shotgun_extended_C">();
+		BP_STATIC_CLASS_IMPL("Attachment_mag_Shotgun_extended_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Attachment_mag_Shotgun_extended_C")
 	}
 	static class AAttachment_mag_Shotgun_extended_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAttachment_mag_Shotgun_extended_C>();
 	}
 };
-static_assert(alignof(AAttachment_mag_Shotgun_extended_C) == 0x000008, "Wrong alignment on AAttachment_mag_Shotgun_extended_C");
-static_assert(sizeof(AAttachment_mag_Shotgun_extended_C) == 0x000250, "Wrong size on AAttachment_mag_Shotgun_extended_C");
+DUMPER7_ASSERTS_AAttachment_mag_Shotgun_extended_C;
 
 }
 

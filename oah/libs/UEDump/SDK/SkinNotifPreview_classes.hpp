@@ -33,18 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SkinNotifPreview_C">();
+		BP_STATIC_CLASS_IMPL("SkinNotifPreview_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SkinNotifPreview_C")
 	}
 	static class USkinNotifPreview_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USkinNotifPreview_C>();
 	}
 };
-static_assert(alignof(USkinNotifPreview_C) == 0x000008, "Wrong alignment on USkinNotifPreview_C");
-static_assert(sizeof(USkinNotifPreview_C) == 0x000278, "Wrong size on USkinNotifPreview_C");
-static_assert(offsetof(USkinNotifPreview_C, Image_68) == 0x000260, "Member 'USkinNotifPreview_C::Image_68' has a wrong offset!");
-static_assert(offsetof(USkinNotifPreview_C, Rarity) == 0x000268, "Member 'USkinNotifPreview_C::Rarity' has a wrong offset!");
-static_assert(offsetof(USkinNotifPreview_C, Item) == 0x000270, "Member 'USkinNotifPreview_C::Item' has a wrong offset!");
+DUMPER7_ASSERTS_USkinNotifPreview_C;
 
 }
 

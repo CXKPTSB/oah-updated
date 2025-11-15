@@ -246,8 +246,8 @@ void ACameraBP_C::DestroyCamera()
 // Parameters:
 // int32                                   Amount                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FName                             Bone                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          HitLocation                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          StartLocation                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   HitLocation                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   StartLocation                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           Instigator_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ACameraBP_C::BndEvt__CameraBP_DamageComponent_K2Node_ComponentBoundEvent_1_Damage__DelegateSignature(int32 Amount, class FName Bone, const struct FVector& HitLocation, const struct FVector& StartLocation, class AActor* Instigator_0)
@@ -326,7 +326,7 @@ void ACameraBP_C::PossessCamera(class APlayerCharacter_C* PossessedPlayer)
 // Function CameraBP.CameraBP_C.InpActEvt_Right_K2Node_InputKeyEvent_0
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
 void ACameraBP_C::InpActEvt_Right_K2Node_InputKeyEvent_0(const struct FKey& Key)
 {
@@ -346,7 +346,7 @@ void ACameraBP_C::InpActEvt_Right_K2Node_InputKeyEvent_0(const struct FKey& Key)
 // Function CameraBP.CameraBP_C.InpActEvt_Left_K2Node_InputKeyEvent_1
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
 void ACameraBP_C::InpActEvt_Left_K2Node_InputKeyEvent_1(const struct FKey& Key)
 {
@@ -382,7 +382,7 @@ void ACameraBP_C::UserConstructionScript()
 // Parameters:
 // int32                                   SwitchNum                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   CamNumber_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class ACameraBP_C*                      Camera_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ACameraBP_C**                     Camera_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ACameraBP_C::FindNextCam(int32 SwitchNum, int32 CamNumber_0, class ACameraBP_C** Camera_0)
 {

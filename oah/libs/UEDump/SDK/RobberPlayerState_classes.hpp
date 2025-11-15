@@ -27,17 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RobberPlayerState_C">();
+		BP_STATIC_CLASS_IMPL("RobberPlayerState_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RobberPlayerState_C")
 	}
 	static class ARobberPlayerState_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ARobberPlayerState_C>();
 	}
 };
-static_assert(alignof(ARobberPlayerState_C) == 0x000008, "Wrong alignment on ARobberPlayerState_C");
-static_assert(sizeof(ARobberPlayerState_C) == 0x000330, "Wrong size on ARobberPlayerState_C");
-static_assert(offsetof(ARobberPlayerState_C, DefaultSceneRoot) == 0x000320, "Member 'ARobberPlayerState_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ARobberPlayerState_C, Speaking_) == 0x000328, "Member 'ARobberPlayerState_C::Speaking_' has a wrong offset!");
+DUMPER7_ASSERTS_ARobberPlayerState_C;
 
 }
 

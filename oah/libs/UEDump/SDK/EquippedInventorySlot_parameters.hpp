@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "RarityNum_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "RarityNum_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "ShopItemCategory_structs.hpp"
 
@@ -64,41 +64,7 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot) == 0x000008, "Wrong alignment on EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot");
-static_assert(sizeof(EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot) == 0x0000D8, "Wrong size on EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot");
-static_assert(offsetof(EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot, EntryPoint) == 0x000000, "Member 'EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot::EntryPoint' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot, Temp_int_Array_Index_Variable) == 0x000008, "Member 'EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot, Temp_int_Loop_Counter_Variable_1) == 0x000010, "Member 'EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot, CallFunc_Add_IntInt_ReturnValue_1) == 0x000014, "Member 'EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot, Temp_int_Array_Index_Variable_1) == 0x000018, "Member 'EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot, K2Node_Event_Category_1) == 0x00001C, "Member 'EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot::K2Node_Event_Category_1' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot, K2Node_Event_ItemInfo) == 0x000020, "Member 'EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot::K2Node_Event_ItemInfo' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot, K2Node_Event_SalePrice) == 0x000028, "Member 'EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot::K2Node_Event_SalePrice' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot, CallFunc_GetPlayerController_ReturnValue) == 0x000030, "Member 'EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot, K2Node_DynamicCast_AsRobber_Controller) == 0x000038, "Member 'EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot::K2Node_DynamicCast_AsRobber_Controller' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot, K2Node_DynamicCast_bSuccess) == 0x000040, "Member 'EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot, CallFunc_Array_Get_Item) == 0x000041, "Member 'EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot, K2Node_CustomEvent_ItemInfo) == 0x000048, "Member 'EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot::K2Node_CustomEvent_ItemInfo' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot, CallFunc_Find_Equipped_Item_from_Category_Function_Item) == 0x000050, "Member 'EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot::CallFunc_Find_Equipped_Item_from_Category_Function_Item' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot, CallFunc_Array_Get_Item_1) == 0x000058, "Member 'EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot, CallFunc_GetAllWidgetsWithInterface_FoundWidgets) == 0x000060, "Member 'EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot::CallFunc_GetAllWidgetsWithInterface_FoundWidgets' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot, CallFunc_GetAllActorsWithInterface_OutActors) == 0x000070, "Member 'EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot::CallFunc_GetAllActorsWithInterface_OutActors' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot, CallFunc_Array_Get_Item_2) == 0x000080, "Member 'EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot, CallFunc_Array_Get_Item_3) == 0x000088, "Member 'EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot, K2Node_DynamicCast_AsMenu_UIInteraface) == 0x000090, "Member 'EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot::K2Node_DynamicCast_AsMenu_UIInteraface' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot, K2Node_DynamicCast_bSuccess_1) == 0x0000A0, "Member 'EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot, K2Node_DynamicCast_AsMenu_UIInteraface_1) == 0x0000A8, "Member 'EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot::K2Node_DynamicCast_AsMenu_UIInteraface_1' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot, K2Node_DynamicCast_bSuccess_2) == 0x0000B8, "Member 'EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot, CallFunc_Array_Length_ReturnValue) == 0x0000BC, "Member 'EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot, CallFunc_Array_Length_ReturnValue_1) == 0x0000C0, "Member 'EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot, CallFunc_Less_IntInt_ReturnValue) == 0x0000C4, "Member 'EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot, CallFunc_Less_IntInt_ReturnValue_1) == 0x0000C5, "Member 'EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot, K2Node_Event_Category) == 0x0000C6, "Member 'EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot::K2Node_Event_Category' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot, CallFunc_Array_Contains_ReturnValue) == 0x0000C7, "Member 'EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot, CallFunc_PlayAnimation_ReturnValue) == 0x0000C8, "Member 'EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot, CallFunc_PlayAnimation_ReturnValue_1) == 0x0000D0, "Member 'EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_EquippedInventorySlot_C_ExecuteUbergraph_EquippedInventorySlot;
 
 // Function EquippedInventorySlot.EquippedInventorySlot_C.DragItemFromCategory
 // 0x0001 (0x0001 - 0x0000)
@@ -107,9 +73,7 @@ struct EquippedInventorySlot_C_DragItemFromCategory final
 public:
 	EShopItemCategory                             Category;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EquippedInventorySlot_C_DragItemFromCategory) == 0x000001, "Wrong alignment on EquippedInventorySlot_C_DragItemFromCategory");
-static_assert(sizeof(EquippedInventorySlot_C_DragItemFromCategory) == 0x000001, "Wrong size on EquippedInventorySlot_C_DragItemFromCategory");
-static_assert(offsetof(EquippedInventorySlot_C_DragItemFromCategory, Category) == 0x000000, "Member 'EquippedInventorySlot_C_DragItemFromCategory::Category' has a wrong offset!");
+DUMPER7_ASSERTS_EquippedInventorySlot_C_DragItemFromCategory;
 
 // Function EquippedInventorySlot.EquippedInventorySlot_C.SetNewItem
 // 0x0008 (0x0008 - 0x0000)
@@ -118,9 +82,7 @@ struct EquippedInventorySlot_C_SetNewItem final
 public:
 	class UClass*                                 ItemInfo;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EquippedInventorySlot_C_SetNewItem) == 0x000008, "Wrong alignment on EquippedInventorySlot_C_SetNewItem");
-static_assert(sizeof(EquippedInventorySlot_C_SetNewItem) == 0x000008, "Wrong size on EquippedInventorySlot_C_SetNewItem");
-static_assert(offsetof(EquippedInventorySlot_C_SetNewItem, ItemInfo) == 0x000000, "Member 'EquippedInventorySlot_C_SetNewItem::ItemInfo' has a wrong offset!");
+DUMPER7_ASSERTS_EquippedInventorySlot_C_SetNewItem;
 
 // Function EquippedInventorySlot.EquippedInventorySlot_C.PreviewItem
 // 0x0010 (0x0010 - 0x0000)
@@ -130,10 +92,7 @@ public:
 	class UClass*                                 ItemInfo;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         SalePrice;                                         // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EquippedInventorySlot_C_PreviewItem) == 0x000008, "Wrong alignment on EquippedInventorySlot_C_PreviewItem");
-static_assert(sizeof(EquippedInventorySlot_C_PreviewItem) == 0x000010, "Wrong size on EquippedInventorySlot_C_PreviewItem");
-static_assert(offsetof(EquippedInventorySlot_C_PreviewItem, ItemInfo) == 0x000000, "Member 'EquippedInventorySlot_C_PreviewItem::ItemInfo' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_PreviewItem, SalePrice) == 0x000008, "Member 'EquippedInventorySlot_C_PreviewItem::SalePrice' has a wrong offset!");
+DUMPER7_ASSERTS_EquippedInventorySlot_C_PreviewItem;
 
 // Function EquippedInventorySlot.EquippedInventorySlot_C.ChangeCategory
 // 0x0001 (0x0001 - 0x0000)
@@ -142,9 +101,7 @@ struct EquippedInventorySlot_C_ChangeCategory final
 public:
 	EShopItemCategory                             Category;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EquippedInventorySlot_C_ChangeCategory) == 0x000001, "Wrong alignment on EquippedInventorySlot_C_ChangeCategory");
-static_assert(sizeof(EquippedInventorySlot_C_ChangeCategory) == 0x000001, "Wrong size on EquippedInventorySlot_C_ChangeCategory");
-static_assert(offsetof(EquippedInventorySlot_C_ChangeCategory, Category) == 0x000000, "Member 'EquippedInventorySlot_C_ChangeCategory::Category' has a wrong offset!");
+DUMPER7_ASSERTS_EquippedInventorySlot_C_ChangeCategory;
 
 // Function EquippedInventorySlot.EquippedInventorySlot_C.OnDragOver
 // 0x00B8 (0x00B8 - 0x0000)
@@ -156,12 +113,7 @@ public:
 	class UDragDropOperation*                     Operation;                                         // 0x00A8(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x00B0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(EquippedInventorySlot_C_OnDragOver) == 0x000008, "Wrong alignment on EquippedInventorySlot_C_OnDragOver");
-static_assert(sizeof(EquippedInventorySlot_C_OnDragOver) == 0x0000B8, "Wrong size on EquippedInventorySlot_C_OnDragOver");
-static_assert(offsetof(EquippedInventorySlot_C_OnDragOver, MyGeometry) == 0x000000, "Member 'EquippedInventorySlot_C_OnDragOver::MyGeometry' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_OnDragOver, PointerEvent) == 0x000038, "Member 'EquippedInventorySlot_C_OnDragOver::PointerEvent' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_OnDragOver, Operation) == 0x0000A8, "Member 'EquippedInventorySlot_C_OnDragOver::Operation' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_OnDragOver, ReturnValue) == 0x0000B0, "Member 'EquippedInventorySlot_C_OnDragOver::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_EquippedInventorySlot_C_OnDragOver;
 
 // Function EquippedInventorySlot.EquippedInventorySlot_C.OnDrop
 // 0x00C8 (0x00C8 - 0x0000)
@@ -177,15 +129,7 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(EquippedInventorySlot_C_OnDrop) == 0x000008, "Wrong alignment on EquippedInventorySlot_C_OnDrop");
-static_assert(sizeof(EquippedInventorySlot_C_OnDrop) == 0x0000C8, "Wrong size on EquippedInventorySlot_C_OnDrop");
-static_assert(offsetof(EquippedInventorySlot_C_OnDrop, MyGeometry) == 0x000000, "Member 'EquippedInventorySlot_C_OnDrop::MyGeometry' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_OnDrop, PointerEvent) == 0x000038, "Member 'EquippedInventorySlot_C_OnDrop::PointerEvent' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_OnDrop, Operation) == 0x0000A8, "Member 'EquippedInventorySlot_C_OnDrop::Operation' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_OnDrop, ReturnValue) == 0x0000B0, "Member 'EquippedInventorySlot_C_OnDrop::ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_OnDrop, K2Node_DynamicCast_AsInventory_Item) == 0x0000B8, "Member 'EquippedInventorySlot_C_OnDrop::K2Node_DynamicCast_AsInventory_Item' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_OnDrop, K2Node_DynamicCast_bSuccess) == 0x0000C0, "Member 'EquippedInventorySlot_C_OnDrop::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_OnDrop, CallFunc_Array_Contains_ReturnValue) == 0x0000C1, "Member 'EquippedInventorySlot_C_OnDrop::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_EquippedInventorySlot_C_OnDrop;
 
 // Function EquippedInventorySlot.EquippedInventorySlot_C.UpdateItemInfo
 // 0x0020 (0x0020 - 0x0000)
@@ -196,10 +140,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0008(0x0018)()
 };
-static_assert(alignof(EquippedInventorySlot_C_UpdateItemInfo) == 0x000008, "Wrong alignment on EquippedInventorySlot_C_UpdateItemInfo");
-static_assert(sizeof(EquippedInventorySlot_C_UpdateItemInfo) == 0x000020, "Wrong size on EquippedInventorySlot_C_UpdateItemInfo");
-static_assert(offsetof(EquippedInventorySlot_C_UpdateItemInfo, CallFunc_IsValidClass_ReturnValue) == 0x000000, "Member 'EquippedInventorySlot_C_UpdateItemInfo::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_UpdateItemInfo, CallFunc_Conv_StringToText_ReturnValue) == 0x000008, "Member 'EquippedInventorySlot_C_UpdateItemInfo::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_EquippedInventorySlot_C_UpdateItemInfo;
 
 // Function EquippedInventorySlot.EquippedInventorySlot_C.GetBrush_0
 // 0x0118 (0x0118 - 0x0000)
@@ -211,11 +152,7 @@ public:
 	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0090(0x0088)()
 };
-static_assert(alignof(EquippedInventorySlot_C_GetBrush_0) == 0x000008, "Wrong alignment on EquippedInventorySlot_C_GetBrush_0");
-static_assert(sizeof(EquippedInventorySlot_C_GetBrush_0) == 0x000118, "Wrong size on EquippedInventorySlot_C_GetBrush_0");
-static_assert(offsetof(EquippedInventorySlot_C_GetBrush_0, ReturnValue) == 0x000000, "Member 'EquippedInventorySlot_C_GetBrush_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_GetBrush_0, CallFunc_IsValidClass_ReturnValue) == 0x000088, "Member 'EquippedInventorySlot_C_GetBrush_0::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_GetBrush_0, K2Node_MakeStruct_SlateBrush) == 0x000090, "Member 'EquippedInventorySlot_C_GetBrush_0::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
+DUMPER7_ASSERTS_EquippedInventorySlot_C_GetBrush_0;
 
 // Function EquippedInventorySlot.EquippedInventorySlot_C.Get_Rarity_ColorAndOpacity_0
 // 0x0064 (0x0064 - 0x0000)
@@ -231,15 +168,7 @@ public:
 	struct FLinearColor                           Temp_struct_Variable_3;                            // 0x0044(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           K2Node_Select_Default;                             // 0x0054(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EquippedInventorySlot_C_Get_Rarity_ColorAndOpacity_0) == 0x000004, "Wrong alignment on EquippedInventorySlot_C_Get_Rarity_ColorAndOpacity_0");
-static_assert(sizeof(EquippedInventorySlot_C_Get_Rarity_ColorAndOpacity_0) == 0x000064, "Wrong size on EquippedInventorySlot_C_Get_Rarity_ColorAndOpacity_0");
-static_assert(offsetof(EquippedInventorySlot_C_Get_Rarity_ColorAndOpacity_0, ReturnValue) == 0x000000, "Member 'EquippedInventorySlot_C_Get_Rarity_ColorAndOpacity_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_Get_Rarity_ColorAndOpacity_0, Temp_byte_Variable) == 0x000010, "Member 'EquippedInventorySlot_C_Get_Rarity_ColorAndOpacity_0::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_Get_Rarity_ColorAndOpacity_0, Temp_struct_Variable) == 0x000014, "Member 'EquippedInventorySlot_C_Get_Rarity_ColorAndOpacity_0::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_Get_Rarity_ColorAndOpacity_0, Temp_struct_Variable_1) == 0x000024, "Member 'EquippedInventorySlot_C_Get_Rarity_ColorAndOpacity_0::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_Get_Rarity_ColorAndOpacity_0, Temp_struct_Variable_2) == 0x000034, "Member 'EquippedInventorySlot_C_Get_Rarity_ColorAndOpacity_0::Temp_struct_Variable_2' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_Get_Rarity_ColorAndOpacity_0, Temp_struct_Variable_3) == 0x000044, "Member 'EquippedInventorySlot_C_Get_Rarity_ColorAndOpacity_0::Temp_struct_Variable_3' has a wrong offset!");
-static_assert(offsetof(EquippedInventorySlot_C_Get_Rarity_ColorAndOpacity_0, K2Node_Select_Default) == 0x000054, "Member 'EquippedInventorySlot_C_Get_Rarity_ColorAndOpacity_0::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_EquippedInventorySlot_C_Get_Rarity_ColorAndOpacity_0;
 
 }
 

@@ -45,15 +45,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AdvancedVoiceLibrary">();
+		STATIC_CLASS_IMPL("AdvancedVoiceLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AdvancedVoiceLibrary")
 	}
 	static class UAdvancedVoiceLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAdvancedVoiceLibrary>();
 	}
 };
-static_assert(alignof(UAdvancedVoiceLibrary) == 0x000008, "Wrong alignment on UAdvancedVoiceLibrary");
-static_assert(sizeof(UAdvancedVoiceLibrary) == 0x000028, "Wrong size on UAdvancedVoiceLibrary");
+DUMPER7_ASSERTS_UAdvancedVoiceLibrary;
 
 // Class AdvancedSessions.AdvancedExternalUILibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -71,15 +74,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AdvancedExternalUILibrary">();
+		STATIC_CLASS_IMPL("AdvancedExternalUILibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AdvancedExternalUILibrary")
 	}
 	static class UAdvancedExternalUILibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAdvancedExternalUILibrary>();
 	}
 };
-static_assert(alignof(UAdvancedExternalUILibrary) == 0x000008, "Wrong alignment on UAdvancedExternalUILibrary");
-static_assert(sizeof(UAdvancedExternalUILibrary) == 0x000028, "Wrong size on UAdvancedExternalUILibrary");
+DUMPER7_ASSERTS_UAdvancedExternalUILibrary;
 
 // Class AdvancedSessions.AdvancedFriendsGameInstance
 // 0x0080 (0x0228 - 0x01A8)
@@ -102,23 +108,22 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AdvancedFriendsGameInstance">();
+		STATIC_CLASS_IMPL("AdvancedFriendsGameInstance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AdvancedFriendsGameInstance")
 	}
 	static class UAdvancedFriendsGameInstance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAdvancedFriendsGameInstance>();
 	}
 };
-static_assert(alignof(UAdvancedFriendsGameInstance) == 0x000008, "Wrong alignment on UAdvancedFriendsGameInstance");
-static_assert(sizeof(UAdvancedFriendsGameInstance) == 0x000228, "Wrong size on UAdvancedFriendsGameInstance");
-static_assert(offsetof(UAdvancedFriendsGameInstance, bCallFriendInterfaceEventsOnPlayerControllers) == 0x0001A8, "Member 'UAdvancedFriendsGameInstance::bCallFriendInterfaceEventsOnPlayerControllers' has a wrong offset!");
-static_assert(offsetof(UAdvancedFriendsGameInstance, bCallIdentityInterfaceEventsOnPlayerControllers) == 0x0001A9, "Member 'UAdvancedFriendsGameInstance::bCallIdentityInterfaceEventsOnPlayerControllers' has a wrong offset!");
-static_assert(offsetof(UAdvancedFriendsGameInstance, bCallVoiceInterfaceEventsOnPlayerControllers) == 0x0001AA, "Member 'UAdvancedFriendsGameInstance::bCallVoiceInterfaceEventsOnPlayerControllers' has a wrong offset!");
-static_assert(offsetof(UAdvancedFriendsGameInstance, bEnableTalkingStatusDelegate) == 0x0001AB, "Member 'UAdvancedFriendsGameInstance::bEnableTalkingStatusDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_UAdvancedFriendsGameInstance;
 
 // Class AdvancedSessions.AdvancedFriendsInterface
-// 0x0000 (0x0028 - 0x0028)
-class IAdvancedFriendsInterface final : public IInterface
+// 0x0000 (0x0000 - 0x0000)
+class IAdvancedFriendsInterface final
 {
 public:
 	void OnPlayerLoginChanged(int32 PlayerNum);
@@ -130,15 +135,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AdvancedFriendsInterface">();
+		STATIC_CLASS_IMPL("AdvancedFriendsInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AdvancedFriendsInterface")
 	}
 	static class IAdvancedFriendsInterface* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<IAdvancedFriendsInterface>();
 	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
 };
-static_assert(alignof(IAdvancedFriendsInterface) == 0x000008, "Wrong alignment on IAdvancedFriendsInterface");
-static_assert(sizeof(IAdvancedFriendsInterface) == 0x000028, "Wrong size on IAdvancedFriendsInterface");
+DUMPER7_ASSERTS_IAdvancedFriendsInterface;
 
 // Class AdvancedSessions.AdvancedFriendsLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -155,15 +172,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AdvancedFriendsLibrary">();
+		STATIC_CLASS_IMPL("AdvancedFriendsLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AdvancedFriendsLibrary")
 	}
 	static class UAdvancedFriendsLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAdvancedFriendsLibrary>();
 	}
 };
-static_assert(alignof(UAdvancedFriendsLibrary) == 0x000008, "Wrong alignment on UAdvancedFriendsLibrary");
-static_assert(sizeof(UAdvancedFriendsLibrary) == 0x000028, "Wrong size on UAdvancedFriendsLibrary");
+DUMPER7_ASSERTS_UAdvancedFriendsLibrary;
 
 // Class AdvancedSessions.AdvancedGameSession
 // 0x0050 (0x0288 - 0x0238)
@@ -175,16 +195,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AdvancedGameSession">();
+		STATIC_CLASS_IMPL("AdvancedGameSession")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AdvancedGameSession")
 	}
 	static class AAdvancedGameSession* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAdvancedGameSession>();
 	}
 };
-static_assert(alignof(AAdvancedGameSession) == 0x000008, "Wrong alignment on AAdvancedGameSession");
-static_assert(sizeof(AAdvancedGameSession) == 0x000288, "Wrong size on AAdvancedGameSession");
-static_assert(offsetof(AAdvancedGameSession, BanList) == 0x000238, "Member 'AAdvancedGameSession::BanList' has a wrong offset!");
+DUMPER7_ASSERTS_AAdvancedGameSession;
 
 // Class AdvancedSessions.AdvancedIdentityLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -207,15 +229,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AdvancedIdentityLibrary">();
+		STATIC_CLASS_IMPL("AdvancedIdentityLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AdvancedIdentityLibrary")
 	}
 	static class UAdvancedIdentityLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAdvancedIdentityLibrary>();
 	}
 };
-static_assert(alignof(UAdvancedIdentityLibrary) == 0x000008, "Wrong alignment on UAdvancedIdentityLibrary");
-static_assert(sizeof(UAdvancedIdentityLibrary) == 0x000028, "Wrong size on UAdvancedIdentityLibrary");
+DUMPER7_ASSERTS_UAdvancedIdentityLibrary;
 
 // Class AdvancedSessions.AdvancedSessionsLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -262,15 +287,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AdvancedSessionsLibrary">();
+		STATIC_CLASS_IMPL("AdvancedSessionsLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AdvancedSessionsLibrary")
 	}
 	static class UAdvancedSessionsLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAdvancedSessionsLibrary>();
 	}
 };
-static_assert(alignof(UAdvancedSessionsLibrary) == 0x000008, "Wrong alignment on UAdvancedSessionsLibrary");
-static_assert(sizeof(UAdvancedSessionsLibrary) == 0x000028, "Wrong size on UAdvancedSessionsLibrary");
+DUMPER7_ASSERTS_UAdvancedSessionsLibrary;
 
 // Class AdvancedSessions.CancelFindSessionsCallbackProxy
 // 0x0048 (0x0078 - 0x0030)
@@ -287,17 +315,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CancelFindSessionsCallbackProxy">();
+		STATIC_CLASS_IMPL("CancelFindSessionsCallbackProxy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CancelFindSessionsCallbackProxy")
 	}
 	static class UCancelFindSessionsCallbackProxy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCancelFindSessionsCallbackProxy>();
 	}
 };
-static_assert(alignof(UCancelFindSessionsCallbackProxy) == 0x000008, "Wrong alignment on UCancelFindSessionsCallbackProxy");
-static_assert(sizeof(UCancelFindSessionsCallbackProxy) == 0x000078, "Wrong size on UCancelFindSessionsCallbackProxy");
-static_assert(offsetof(UCancelFindSessionsCallbackProxy, OnSuccess) == 0x000030, "Member 'UCancelFindSessionsCallbackProxy::OnSuccess' has a wrong offset!");
-static_assert(offsetof(UCancelFindSessionsCallbackProxy, OnFailure) == 0x000040, "Member 'UCancelFindSessionsCallbackProxy::OnFailure' has a wrong offset!");
+DUMPER7_ASSERTS_UCancelFindSessionsCallbackProxy;
 
 // Class AdvancedSessions.CreateSessionCallbackProxyAdvanced
 // 0x0088 (0x00B8 - 0x0030)
@@ -314,17 +343,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CreateSessionCallbackProxyAdvanced">();
+		STATIC_CLASS_IMPL("CreateSessionCallbackProxyAdvanced")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CreateSessionCallbackProxyAdvanced")
 	}
 	static class UCreateSessionCallbackProxyAdvanced* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCreateSessionCallbackProxyAdvanced>();
 	}
 };
-static_assert(alignof(UCreateSessionCallbackProxyAdvanced) == 0x000008, "Wrong alignment on UCreateSessionCallbackProxyAdvanced");
-static_assert(sizeof(UCreateSessionCallbackProxyAdvanced) == 0x0000B8, "Wrong size on UCreateSessionCallbackProxyAdvanced");
-static_assert(offsetof(UCreateSessionCallbackProxyAdvanced, OnSuccess) == 0x000030, "Member 'UCreateSessionCallbackProxyAdvanced::OnSuccess' has a wrong offset!");
-static_assert(offsetof(UCreateSessionCallbackProxyAdvanced, OnFailure) == 0x000040, "Member 'UCreateSessionCallbackProxyAdvanced::OnFailure' has a wrong offset!");
+DUMPER7_ASSERTS_UCreateSessionCallbackProxyAdvanced;
 
 // Class AdvancedSessions.EndSessionCallbackProxy
 // 0x0048 (0x0078 - 0x0030)
@@ -341,25 +371,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EndSessionCallbackProxy">();
+		STATIC_CLASS_IMPL("EndSessionCallbackProxy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EndSessionCallbackProxy")
 	}
 	static class UEndSessionCallbackProxy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEndSessionCallbackProxy>();
 	}
 };
-static_assert(alignof(UEndSessionCallbackProxy) == 0x000008, "Wrong alignment on UEndSessionCallbackProxy");
-static_assert(sizeof(UEndSessionCallbackProxy) == 0x000078, "Wrong size on UEndSessionCallbackProxy");
-static_assert(offsetof(UEndSessionCallbackProxy, OnSuccess) == 0x000030, "Member 'UEndSessionCallbackProxy::OnSuccess' has a wrong offset!");
-static_assert(offsetof(UEndSessionCallbackProxy, OnFailure) == 0x000040, "Member 'UEndSessionCallbackProxy::OnFailure' has a wrong offset!");
+DUMPER7_ASSERTS_UEndSessionCallbackProxy;
 
 // Class AdvancedSessions.FindFriendSessionCallbackProxy
 // 0x0068 (0x0098 - 0x0030)
 class UFindFriendSessionCallbackProxy final : public UOnlineBlueprintCallProxyBase
 {
 public:
-	TMulticastInlineDelegate<void(const TArray<struct FBlueprintSessionResult>& SessionInfo)> OnSuccess;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const TArray<struct FBlueprintSessionResult>& SessionInfo)> OnFailure;                                         // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TArray<struct FBlueprintSessionResult>& SessionInfo)> OnSuccess; // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TArray<struct FBlueprintSessionResult>& SessionInfo)> OnFailure; // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_50[0x48];                                      // 0x0050(0x0048)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -368,25 +399,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FindFriendSessionCallbackProxy">();
+		STATIC_CLASS_IMPL("FindFriendSessionCallbackProxy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FindFriendSessionCallbackProxy")
 	}
 	static class UFindFriendSessionCallbackProxy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFindFriendSessionCallbackProxy>();
 	}
 };
-static_assert(alignof(UFindFriendSessionCallbackProxy) == 0x000008, "Wrong alignment on UFindFriendSessionCallbackProxy");
-static_assert(sizeof(UFindFriendSessionCallbackProxy) == 0x000098, "Wrong size on UFindFriendSessionCallbackProxy");
-static_assert(offsetof(UFindFriendSessionCallbackProxy, OnSuccess) == 0x000030, "Member 'UFindFriendSessionCallbackProxy::OnSuccess' has a wrong offset!");
-static_assert(offsetof(UFindFriendSessionCallbackProxy, OnFailure) == 0x000040, "Member 'UFindFriendSessionCallbackProxy::OnFailure' has a wrong offset!");
+DUMPER7_ASSERTS_UFindFriendSessionCallbackProxy;
 
 // Class AdvancedSessions.FindSessionsCallbackProxyAdvanced
 // 0x00A0 (0x00D0 - 0x0030)
 class UFindSessionsCallbackProxyAdvanced final : public UOnlineBlueprintCallProxyBase
 {
 public:
-	TMulticastInlineDelegate<void(const TArray<struct FBlueprintSessionResult>& Results)> OnSuccess;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const TArray<struct FBlueprintSessionResult>& Results)> OnFailure;                                         // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TArray<struct FBlueprintSessionResult>& Results)> OnSuccess; // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TArray<struct FBlueprintSessionResult>& Results)> OnFailure; // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_50[0x80];                                      // 0x0050(0x0080)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -396,25 +428,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FindSessionsCallbackProxyAdvanced">();
+		STATIC_CLASS_IMPL("FindSessionsCallbackProxyAdvanced")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FindSessionsCallbackProxyAdvanced")
 	}
 	static class UFindSessionsCallbackProxyAdvanced* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFindSessionsCallbackProxyAdvanced>();
 	}
 };
-static_assert(alignof(UFindSessionsCallbackProxyAdvanced) == 0x000008, "Wrong alignment on UFindSessionsCallbackProxyAdvanced");
-static_assert(sizeof(UFindSessionsCallbackProxyAdvanced) == 0x0000D0, "Wrong size on UFindSessionsCallbackProxyAdvanced");
-static_assert(offsetof(UFindSessionsCallbackProxyAdvanced, OnSuccess) == 0x000030, "Member 'UFindSessionsCallbackProxyAdvanced::OnSuccess' has a wrong offset!");
-static_assert(offsetof(UFindSessionsCallbackProxyAdvanced, OnFailure) == 0x000040, "Member 'UFindSessionsCallbackProxyAdvanced::OnFailure' has a wrong offset!");
+DUMPER7_ASSERTS_UFindSessionsCallbackProxyAdvanced;
 
 // Class AdvancedSessions.GetFriendsCallbackProxy
 // 0x0040 (0x0070 - 0x0030)
 class UGetFriendsCallbackProxy final : public UOnlineBlueprintCallProxyBase
 {
 public:
-	TMulticastInlineDelegate<void(const TArray<struct FBPFriendInfo>& Results)> OnSuccess;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const TArray<struct FBPFriendInfo>& Results)> OnFailure;                                         // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TArray<struct FBPFriendInfo>& Results)> OnSuccess;           // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TArray<struct FBPFriendInfo>& Results)> OnFailure;           // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_50[0x20];                                      // 0x0050(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -423,25 +456,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GetFriendsCallbackProxy">();
+		STATIC_CLASS_IMPL("GetFriendsCallbackProxy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GetFriendsCallbackProxy")
 	}
 	static class UGetFriendsCallbackProxy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGetFriendsCallbackProxy>();
 	}
 };
-static_assert(alignof(UGetFriendsCallbackProxy) == 0x000008, "Wrong alignment on UGetFriendsCallbackProxy");
-static_assert(sizeof(UGetFriendsCallbackProxy) == 0x000070, "Wrong size on UGetFriendsCallbackProxy");
-static_assert(offsetof(UGetFriendsCallbackProxy, OnSuccess) == 0x000030, "Member 'UGetFriendsCallbackProxy::OnSuccess' has a wrong offset!");
-static_assert(offsetof(UGetFriendsCallbackProxy, OnFailure) == 0x000040, "Member 'UGetFriendsCallbackProxy::OnFailure' has a wrong offset!");
+DUMPER7_ASSERTS_UGetFriendsCallbackProxy;
 
 // Class AdvancedSessions.GetRecentPlayersCallbackProxy
 // 0x0060 (0x0090 - 0x0030)
 class UGetRecentPlayersCallbackProxy final : public UOnlineBlueprintCallProxyBase
 {
 public:
-	TMulticastInlineDelegate<void(const TArray<struct FBPOnlineRecentPlayer>& Results)> OnSuccess;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const TArray<struct FBPOnlineRecentPlayer>& Results)> OnFailure;                                         // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TArray<struct FBPOnlineRecentPlayer>& Results)> OnSuccess;   // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TArray<struct FBPOnlineRecentPlayer>& Results)> OnFailure;   // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_50[0x40];                                      // 0x0050(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -450,24 +484,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GetRecentPlayersCallbackProxy">();
+		STATIC_CLASS_IMPL("GetRecentPlayersCallbackProxy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GetRecentPlayersCallbackProxy")
 	}
 	static class UGetRecentPlayersCallbackProxy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGetRecentPlayersCallbackProxy>();
 	}
 };
-static_assert(alignof(UGetRecentPlayersCallbackProxy) == 0x000008, "Wrong alignment on UGetRecentPlayersCallbackProxy");
-static_assert(sizeof(UGetRecentPlayersCallbackProxy) == 0x000090, "Wrong size on UGetRecentPlayersCallbackProxy");
-static_assert(offsetof(UGetRecentPlayersCallbackProxy, OnSuccess) == 0x000030, "Member 'UGetRecentPlayersCallbackProxy::OnSuccess' has a wrong offset!");
-static_assert(offsetof(UGetRecentPlayersCallbackProxy, OnFailure) == 0x000040, "Member 'UGetRecentPlayersCallbackProxy::OnFailure' has a wrong offset!");
+DUMPER7_ASSERTS_UGetRecentPlayersCallbackProxy;
 
 // Class AdvancedSessions.GetUserPrivilegeCallbackProxy
 // 0x0050 (0x0080 - 0x0030)
 class UGetUserPrivilegeCallbackProxy final : public UOnlineBlueprintCallProxyBase
 {
 public:
-	TMulticastInlineDelegate<void(EBPUserPrivileges QueriedPrivilege, bool HadPrivilege)> OnSuccess;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EBPUserPrivileges QueriedPrivilege, bool HadPrivilege)> OnSuccess; // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void()>              OnFailure;                                         // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_50[0x30];                                      // 0x0050(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
@@ -477,17 +512,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GetUserPrivilegeCallbackProxy">();
+		STATIC_CLASS_IMPL("GetUserPrivilegeCallbackProxy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GetUserPrivilegeCallbackProxy")
 	}
 	static class UGetUserPrivilegeCallbackProxy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGetUserPrivilegeCallbackProxy>();
 	}
 };
-static_assert(alignof(UGetUserPrivilegeCallbackProxy) == 0x000008, "Wrong alignment on UGetUserPrivilegeCallbackProxy");
-static_assert(sizeof(UGetUserPrivilegeCallbackProxy) == 0x000080, "Wrong size on UGetUserPrivilegeCallbackProxy");
-static_assert(offsetof(UGetUserPrivilegeCallbackProxy, OnSuccess) == 0x000030, "Member 'UGetUserPrivilegeCallbackProxy::OnSuccess' has a wrong offset!");
-static_assert(offsetof(UGetUserPrivilegeCallbackProxy, OnFailure) == 0x000040, "Member 'UGetUserPrivilegeCallbackProxy::OnFailure' has a wrong offset!");
+DUMPER7_ASSERTS_UGetUserPrivilegeCallbackProxy;
 
 // Class AdvancedSessions.LoginUserCallbackProxy
 // 0x0068 (0x0098 - 0x0030)
@@ -504,17 +540,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LoginUserCallbackProxy">();
+		STATIC_CLASS_IMPL("LoginUserCallbackProxy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LoginUserCallbackProxy")
 	}
 	static class ULoginUserCallbackProxy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULoginUserCallbackProxy>();
 	}
 };
-static_assert(alignof(ULoginUserCallbackProxy) == 0x000008, "Wrong alignment on ULoginUserCallbackProxy");
-static_assert(sizeof(ULoginUserCallbackProxy) == 0x000098, "Wrong size on ULoginUserCallbackProxy");
-static_assert(offsetof(ULoginUserCallbackProxy, OnSuccess) == 0x000030, "Member 'ULoginUserCallbackProxy::OnSuccess' has a wrong offset!");
-static_assert(offsetof(ULoginUserCallbackProxy, OnFailure) == 0x000040, "Member 'ULoginUserCallbackProxy::OnFailure' has a wrong offset!");
+DUMPER7_ASSERTS_ULoginUserCallbackProxy;
 
 // Class AdvancedSessions.LogoutUserCallbackProxy
 // 0x0048 (0x0078 - 0x0030)
@@ -531,17 +568,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LogoutUserCallbackProxy">();
+		STATIC_CLASS_IMPL("LogoutUserCallbackProxy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LogoutUserCallbackProxy")
 	}
 	static class ULogoutUserCallbackProxy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULogoutUserCallbackProxy>();
 	}
 };
-static_assert(alignof(ULogoutUserCallbackProxy) == 0x000008, "Wrong alignment on ULogoutUserCallbackProxy");
-static_assert(sizeof(ULogoutUserCallbackProxy) == 0x000078, "Wrong size on ULogoutUserCallbackProxy");
-static_assert(offsetof(ULogoutUserCallbackProxy, OnSuccess) == 0x000030, "Member 'ULogoutUserCallbackProxy::OnSuccess' has a wrong offset!");
-static_assert(offsetof(ULogoutUserCallbackProxy, OnFailure) == 0x000040, "Member 'ULogoutUserCallbackProxy::OnFailure' has a wrong offset!");
+DUMPER7_ASSERTS_ULogoutUserCallbackProxy;
 
 // Class AdvancedSessions.SendFriendInviteCallbackProxy
 // 0x0060 (0x0090 - 0x0030)
@@ -558,17 +596,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SendFriendInviteCallbackProxy">();
+		STATIC_CLASS_IMPL("SendFriendInviteCallbackProxy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SendFriendInviteCallbackProxy")
 	}
 	static class USendFriendInviteCallbackProxy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USendFriendInviteCallbackProxy>();
 	}
 };
-static_assert(alignof(USendFriendInviteCallbackProxy) == 0x000008, "Wrong alignment on USendFriendInviteCallbackProxy");
-static_assert(sizeof(USendFriendInviteCallbackProxy) == 0x000090, "Wrong size on USendFriendInviteCallbackProxy");
-static_assert(offsetof(USendFriendInviteCallbackProxy, OnSuccess) == 0x000030, "Member 'USendFriendInviteCallbackProxy::OnSuccess' has a wrong offset!");
-static_assert(offsetof(USendFriendInviteCallbackProxy, OnFailure) == 0x000040, "Member 'USendFriendInviteCallbackProxy::OnFailure' has a wrong offset!");
+DUMPER7_ASSERTS_USendFriendInviteCallbackProxy;
 
 // Class AdvancedSessions.UpdateSessionCallbackProxyAdvanced
 // 0x0068 (0x0098 - 0x0030)
@@ -585,17 +624,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UpdateSessionCallbackProxyAdvanced">();
+		STATIC_CLASS_IMPL("UpdateSessionCallbackProxyAdvanced")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UpdateSessionCallbackProxyAdvanced")
 	}
 	static class UUpdateSessionCallbackProxyAdvanced* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUpdateSessionCallbackProxyAdvanced>();
 	}
 };
-static_assert(alignof(UUpdateSessionCallbackProxyAdvanced) == 0x000008, "Wrong alignment on UUpdateSessionCallbackProxyAdvanced");
-static_assert(sizeof(UUpdateSessionCallbackProxyAdvanced) == 0x000098, "Wrong size on UUpdateSessionCallbackProxyAdvanced");
-static_assert(offsetof(UUpdateSessionCallbackProxyAdvanced, OnSuccess) == 0x000030, "Member 'UUpdateSessionCallbackProxyAdvanced::OnSuccess' has a wrong offset!");
-static_assert(offsetof(UUpdateSessionCallbackProxyAdvanced, OnFailure) == 0x000040, "Member 'UUpdateSessionCallbackProxyAdvanced::OnFailure' has a wrong offset!");
+DUMPER7_ASSERTS_UUpdateSessionCallbackProxyAdvanced;
 
 }
 

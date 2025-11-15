@@ -48,23 +48,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GuardPhone_C">();
+		BP_STATIC_CLASS_IMPL("GuardPhone_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GuardPhone_C")
 	}
 	static class AGuardPhone_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGuardPhone_C>();
 	}
 };
-static_assert(alignof(AGuardPhone_C) == 0x000008, "Wrong alignment on AGuardPhone_C");
-static_assert(sizeof(AGuardPhone_C) == 0x000290, "Wrong size on AGuardPhone_C");
-static_assert(offsetof(AGuardPhone_C, UberGraphFrame_GuardPhone_C) == 0x000258, "Member 'AGuardPhone_C::UberGraphFrame_GuardPhone_C' has a wrong offset!");
-static_assert(offsetof(AGuardPhone_C, Audio) == 0x000260, "Member 'AGuardPhone_C::Audio' has a wrong offset!");
-static_assert(offsetof(AGuardPhone_C, TextRender) == 0x000268, "Member 'AGuardPhone_C::TextRender' has a wrong offset!");
-static_assert(offsetof(AGuardPhone_C, SpottedHighlightcomponent) == 0x000270, "Member 'AGuardPhone_C::SpottedHighlightcomponent' has a wrong offset!");
-static_assert(offsetof(AGuardPhone_C, HighlightWhenHolding) == 0x000278, "Member 'AGuardPhone_C::HighlightWhenHolding' has a wrong offset!");
-static_assert(offsetof(AGuardPhone_C, AlertComponent) == 0x000280, "Member 'AGuardPhone_C::AlertComponent' has a wrong offset!");
-static_assert(offsetof(AGuardPhone_C, Active_) == 0x000288, "Member 'AGuardPhone_C::Active_' has a wrong offset!");
-static_assert(offsetof(AGuardPhone_C, SecondsToAlert) == 0x00028C, "Member 'AGuardPhone_C::SecondsToAlert' has a wrong offset!");
+DUMPER7_ASSERTS_AGuardPhone_C;
 
 }
 

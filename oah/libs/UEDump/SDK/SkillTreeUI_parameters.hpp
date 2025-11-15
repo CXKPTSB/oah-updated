@@ -48,29 +48,7 @@ public:
 	bool                                          CallFunc_IsLocalController_ReturnValue;            // 0x0079(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x007A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI) == 0x000008, "Wrong alignment on SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI");
-static_assert(sizeof(SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI) == 0x000080, "Wrong size on SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI");
-static_assert(offsetof(SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI, EntryPoint) == 0x000000, "Member 'SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI::EntryPoint' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI, Temp_int_Array_Index_Variable) == 0x00000C, "Member 'SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI, K2Node_Event_Category_1) == 0x000010, "Member 'SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI::K2Node_Event_Category_1' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI, K2Node_Event_Category) == 0x000011, "Member 'SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI::K2Node_Event_Category' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI, Temp_bool_IsClosed_Variable) == 0x000012, "Member 'SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI, K2Node_Event_ItemInfo) == 0x000018, "Member 'SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI::K2Node_Event_ItemInfo' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI, K2Node_Event_SalePrice) == 0x000020, "Member 'SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI::K2Node_Event_SalePrice' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI, CallFunc_GetAllWidgetsWithInterface_FoundWidgets) == 0x000028, "Member 'SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI::CallFunc_GetAllWidgetsWithInterface_FoundWidgets' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI, CallFunc_Array_Get_Item) == 0x000038, "Member 'SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI, CallFunc_Array_Get_Item_1) == 0x000040, "Member 'SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI, K2Node_DynamicCast_AsMenu_UIInteraface) == 0x000048, "Member 'SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI::K2Node_DynamicCast_AsMenu_UIInteraface' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI, K2Node_DynamicCast_bSuccess) == 0x000058, "Member 'SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI, CallFunc_Array_Length_ReturnValue) == 0x00005C, "Member 'SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI, CallFunc_Less_IntInt_ReturnValue) == 0x000060, "Member 'SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI, CallFunc_GetPlayerController_ReturnValue) == 0x000068, "Member 'SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI, K2Node_DynamicCast_AsRobber_Controller) == 0x000070, "Member 'SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI::K2Node_DynamicCast_AsRobber_Controller' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI, K2Node_DynamicCast_bSuccess_1) == 0x000078, "Member 'SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI, CallFunc_IsLocalController_ReturnValue) == 0x000079, "Member 'SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI::CallFunc_IsLocalController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI, Temp_bool_Has_Been_Initd_Variable) == 0x00007A, "Member 'SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
+DUMPER7_ASSERTS_SkillTreeUI_C_ExecuteUbergraph_SkillTreeUI;
 
 // Function SkillTreeUI.SkillTreeUI_C.PreviewItem
 // 0x0010 (0x0010 - 0x0000)
@@ -80,10 +58,7 @@ public:
 	class UClass*                                 ItemInfo;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         SalePrice;                                         // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SkillTreeUI_C_PreviewItem) == 0x000008, "Wrong alignment on SkillTreeUI_C_PreviewItem");
-static_assert(sizeof(SkillTreeUI_C_PreviewItem) == 0x000010, "Wrong size on SkillTreeUI_C_PreviewItem");
-static_assert(offsetof(SkillTreeUI_C_PreviewItem, ItemInfo) == 0x000000, "Member 'SkillTreeUI_C_PreviewItem::ItemInfo' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_PreviewItem, SalePrice) == 0x000008, "Member 'SkillTreeUI_C_PreviewItem::SalePrice' has a wrong offset!");
+DUMPER7_ASSERTS_SkillTreeUI_C_PreviewItem;
 
 // Function SkillTreeUI.SkillTreeUI_C.DragItemFromCategory
 // 0x0001 (0x0001 - 0x0000)
@@ -92,9 +67,7 @@ struct SkillTreeUI_C_DragItemFromCategory final
 public:
 	EShopItemCategory                             Category;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SkillTreeUI_C_DragItemFromCategory) == 0x000001, "Wrong alignment on SkillTreeUI_C_DragItemFromCategory");
-static_assert(sizeof(SkillTreeUI_C_DragItemFromCategory) == 0x000001, "Wrong size on SkillTreeUI_C_DragItemFromCategory");
-static_assert(offsetof(SkillTreeUI_C_DragItemFromCategory, Category) == 0x000000, "Member 'SkillTreeUI_C_DragItemFromCategory::Category' has a wrong offset!");
+DUMPER7_ASSERTS_SkillTreeUI_C_DragItemFromCategory;
 
 // Function SkillTreeUI.SkillTreeUI_C.ChangeCategory
 // 0x0001 (0x0001 - 0x0000)
@@ -103,9 +76,7 @@ struct SkillTreeUI_C_ChangeCategory final
 public:
 	EShopItemCategory                             Category;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SkillTreeUI_C_ChangeCategory) == 0x000001, "Wrong alignment on SkillTreeUI_C_ChangeCategory");
-static_assert(sizeof(SkillTreeUI_C_ChangeCategory) == 0x000001, "Wrong size on SkillTreeUI_C_ChangeCategory");
-static_assert(offsetof(SkillTreeUI_C_ChangeCategory, Category) == 0x000000, "Member 'SkillTreeUI_C_ChangeCategory::Category' has a wrong offset!");
+DUMPER7_ASSERTS_SkillTreeUI_C_ChangeCategory;
 
 // Function SkillTreeUI.SkillTreeUI_C.GetText_0
 // 0x0038 (0x0038 - 0x0000)
@@ -117,11 +88,7 @@ public:
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0020(0x0018)()
 };
-static_assert(alignof(SkillTreeUI_C_GetText_0) == 0x000008, "Wrong alignment on SkillTreeUI_C_GetText_0");
-static_assert(sizeof(SkillTreeUI_C_GetText_0) == 0x000038, "Wrong size on SkillTreeUI_C_GetText_0");
-static_assert(offsetof(SkillTreeUI_C_GetText_0, ReturnValue) == 0x000000, "Member 'SkillTreeUI_C_GetText_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_GetText_0, CallFunc_IsValidClass_ReturnValue) == 0x000018, "Member 'SkillTreeUI_C_GetText_0::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_GetText_0, CallFunc_Conv_StringToText_ReturnValue) == 0x000020, "Member 'SkillTreeUI_C_GetText_0::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SkillTreeUI_C_GetText_0;
 
 // Function SkillTreeUI.SkillTreeUI_C.GetText_1
 // 0x0038 (0x0038 - 0x0000)
@@ -133,11 +100,7 @@ public:
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0020(0x0018)()
 };
-static_assert(alignof(SkillTreeUI_C_GetText_1) == 0x000008, "Wrong alignment on SkillTreeUI_C_GetText_1");
-static_assert(sizeof(SkillTreeUI_C_GetText_1) == 0x000038, "Wrong size on SkillTreeUI_C_GetText_1");
-static_assert(offsetof(SkillTreeUI_C_GetText_1, ReturnValue) == 0x000000, "Member 'SkillTreeUI_C_GetText_1::ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_GetText_1, CallFunc_IsValidClass_ReturnValue) == 0x000018, "Member 'SkillTreeUI_C_GetText_1::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_GetText_1, CallFunc_Conv_StringToText_ReturnValue) == 0x000020, "Member 'SkillTreeUI_C_GetText_1::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SkillTreeUI_C_GetText_1;
 
 // Function SkillTreeUI.SkillTreeUI_C.GetText_2
 // 0x0070 (0x0070 - 0x0000)
@@ -152,14 +115,7 @@ public:
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0048(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0058(0x0018)()
 };
-static_assert(alignof(SkillTreeUI_C_GetText_2) == 0x000008, "Wrong alignment on SkillTreeUI_C_GetText_2");
-static_assert(sizeof(SkillTreeUI_C_GetText_2) == 0x000070, "Wrong size on SkillTreeUI_C_GetText_2");
-static_assert(offsetof(SkillTreeUI_C_GetText_2, ReturnValue) == 0x000000, "Member 'SkillTreeUI_C_GetText_2::ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_GetText_2, CallFunc_IsValidClass_ReturnValue) == 0x000018, "Member 'SkillTreeUI_C_GetText_2::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_GetText_2, CallFunc_Conv_IntToText_ReturnValue) == 0x000020, "Member 'SkillTreeUI_C_GetText_2::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_GetText_2, CallFunc_Conv_TextToString_ReturnValue) == 0x000038, "Member 'SkillTreeUI_C_GetText_2::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_GetText_2, CallFunc_Concat_StrStr_ReturnValue) == 0x000048, "Member 'SkillTreeUI_C_GetText_2::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_GetText_2, CallFunc_Conv_StringToText_ReturnValue) == 0x000058, "Member 'SkillTreeUI_C_GetText_2::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SkillTreeUI_C_GetText_2;
 
 // Function SkillTreeUI.SkillTreeUI_C.Get_PriceBorder_Visibility_0
 // 0x0002 (0x0002 - 0x0000)
@@ -169,10 +125,7 @@ public:
 	ESlateVisibility                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SkillTreeUI_C_Get_PriceBorder_Visibility_0) == 0x000001, "Wrong alignment on SkillTreeUI_C_Get_PriceBorder_Visibility_0");
-static_assert(sizeof(SkillTreeUI_C_Get_PriceBorder_Visibility_0) == 0x000002, "Wrong size on SkillTreeUI_C_Get_PriceBorder_Visibility_0");
-static_assert(offsetof(SkillTreeUI_C_Get_PriceBorder_Visibility_0, ReturnValue) == 0x000000, "Member 'SkillTreeUI_C_Get_PriceBorder_Visibility_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_Get_PriceBorder_Visibility_0, CallFunc_IsValidClass_ReturnValue) == 0x000001, "Member 'SkillTreeUI_C_Get_PriceBorder_Visibility_0::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SkillTreeUI_C_Get_PriceBorder_Visibility_0;
 
 // Function SkillTreeUI.SkillTreeUI_C.AddSkillCategory
 // 0x0060 (0x0060 - 0x0000)
@@ -194,20 +147,7 @@ public:
 	bool                                          K2Node_ClassDynamicCast_bSuccess;                  // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SkillTreeUI_C_AddSkillCategory) == 0x000008, "Wrong alignment on SkillTreeUI_C_AddSkillCategory");
-static_assert(sizeof(SkillTreeUI_C_AddSkillCategory) == 0x000060, "Wrong size on SkillTreeUI_C_AddSkillCategory");
-static_assert(offsetof(SkillTreeUI_C_AddSkillCategory, Category) == 0x000000, "Member 'SkillTreeUI_C_AddSkillCategory::Category' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_AddSkillCategory, Temp_int_Array_Index_Variable) == 0x000010, "Member 'SkillTreeUI_C_AddSkillCategory::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_AddSkillCategory, Temp_int_Loop_Counter_Variable) == 0x000014, "Member 'SkillTreeUI_C_AddSkillCategory::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_AddSkillCategory, CallFunc_Add_IntInt_ReturnValue) == 0x000018, "Member 'SkillTreeUI_C_AddSkillCategory::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_AddSkillCategory, CallFunc_Create_ReturnValue) == 0x000020, "Member 'SkillTreeUI_C_AddSkillCategory::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_AddSkillCategory, CallFunc_SortItemsByUnlockLevel_Sorted_items) == 0x000028, "Member 'SkillTreeUI_C_AddSkillCategory::CallFunc_SortItemsByUnlockLevel_Sorted_items' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_AddSkillCategory, CallFunc_AddChild_ReturnValue) == 0x000038, "Member 'SkillTreeUI_C_AddSkillCategory::CallFunc_AddChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_AddSkillCategory, CallFunc_Array_Get_Item) == 0x000040, "Member 'SkillTreeUI_C_AddSkillCategory::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_AddSkillCategory, CallFunc_Array_Length_ReturnValue) == 0x000048, "Member 'SkillTreeUI_C_AddSkillCategory::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_AddSkillCategory, K2Node_ClassDynamicCast_AsShop_Skill_Base) == 0x000050, "Member 'SkillTreeUI_C_AddSkillCategory::K2Node_ClassDynamicCast_AsShop_Skill_Base' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_AddSkillCategory, K2Node_ClassDynamicCast_bSuccess) == 0x000058, "Member 'SkillTreeUI_C_AddSkillCategory::K2Node_ClassDynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(SkillTreeUI_C_AddSkillCategory, CallFunc_Less_IntInt_ReturnValue) == 0x000059, "Member 'SkillTreeUI_C_AddSkillCategory::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SkillTreeUI_C_AddSkillCategory;
 
 }
 

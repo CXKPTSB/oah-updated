@@ -66,41 +66,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WinUI_C">();
+		BP_STATIC_CLASS_IMPL("WinUI_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WinUI_C")
 	}
 	static class UWinUI_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWinUI_C>();
 	}
 };
-static_assert(alignof(UWinUI_C) == 0x000008, "Wrong alignment on UWinUI_C");
-static_assert(sizeof(UWinUI_C) == 0x000310, "Wrong size on UWinUI_C");
-static_assert(offsetof(UWinUI_C, UberGraphFrame) == 0x000260, "Member 'UWinUI_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWinUI_C, CashEndAnim) == 0x000268, "Member 'UWinUI_C::CashEndAnim' has a wrong offset!");
-static_assert(offsetof(UWinUI_C, RevealLevel) == 0x000270, "Member 'UWinUI_C::RevealLevel' has a wrong offset!");
-static_assert(offsetof(UWinUI_C, RevealCashAnim) == 0x000278, "Member 'UWinUI_C::RevealCashAnim' has a wrong offset!");
-static_assert(offsetof(UWinUI_C, LevelUpAnimation) == 0x000280, "Member 'UWinUI_C::LevelUpAnimation' has a wrong offset!");
-static_assert(offsetof(UWinUI_C, CivCasualtyPenaltyBox) == 0x000288, "Member 'UWinUI_C::CivCasualtyPenaltyBox' has a wrong offset!");
-static_assert(offsetof(UWinUI_C, LevelBox) == 0x000290, "Member 'UWinUI_C::LevelBox' has a wrong offset!");
-static_assert(offsetof(UWinUI_C, ProgressBar_106) == 0x000298, "Member 'UWinUI_C::ProgressBar_106' has a wrong offset!");
-static_assert(offsetof(UWinUI_C, QuitButton) == 0x0002A0, "Member 'UWinUI_C::QuitButton' has a wrong offset!");
-static_assert(offsetof(UWinUI_C, RewardsBox) == 0x0002A8, "Member 'UWinUI_C::RewardsBox' has a wrong offset!");
-static_assert(offsetof(UWinUI_C, TextBlock) == 0x0002B0, "Member 'UWinUI_C::TextBlock' has a wrong offset!");
-static_assert(offsetof(UWinUI_C, TextBlock_1) == 0x0002B8, "Member 'UWinUI_C::TextBlock_1' has a wrong offset!");
-static_assert(offsetof(UWinUI_C, TextBlock_2) == 0x0002C0, "Member 'UWinUI_C::TextBlock_2' has a wrong offset!");
-static_assert(offsetof(UWinUI_C, TextBlock_200) == 0x0002C8, "Member 'UWinUI_C::TextBlock_200' has a wrong offset!");
-static_assert(offsetof(UWinUI_C, TextBlock_230) == 0x0002D0, "Member 'UWinUI_C::TextBlock_230' has a wrong offset!");
-static_assert(offsetof(UWinUI_C, TextBlock_559) == 0x0002D8, "Member 'UWinUI_C::TextBlock_559' has a wrong offset!");
-static_assert(offsetof(UWinUI_C, Controller) == 0x0002E0, "Member 'UWinUI_C::Controller' has a wrong offset!");
-static_assert(offsetof(UWinUI_C, Truck) == 0x0002E8, "Member 'UWinUI_C::Truck' has a wrong offset!");
-static_assert(offsetof(UWinUI_C, GainedEXP) == 0x0002F0, "Member 'UWinUI_C::GainedEXP' has a wrong offset!");
-static_assert(offsetof(UWinUI_C, RecordedLevel) == 0x0002F4, "Member 'UWinUI_C::RecordedLevel' has a wrong offset!");
-static_assert(offsetof(UWinUI_C, CountEXP) == 0x0002F8, "Member 'UWinUI_C::CountEXP' has a wrong offset!");
-static_assert(offsetof(UWinUI_C, RecordedEXP) == 0x0002FC, "Member 'UWinUI_C::RecordedEXP' has a wrong offset!");
-static_assert(offsetof(UWinUI_C, RecordedRequiredEXP) == 0x000300, "Member 'UWinUI_C::RecordedRequiredEXP' has a wrong offset!");
-static_assert(offsetof(UWinUI_C, CashCount) == 0x000304, "Member 'UWinUI_C::CashCount' has a wrong offset!");
-static_assert(offsetof(UWinUI_C, CivCasualtyPenalty) == 0x000308, "Member 'UWinUI_C::CivCasualtyPenalty' has a wrong offset!");
-static_assert(offsetof(UWinUI_C, RecordedTotalTake) == 0x00030C, "Member 'UWinUI_C::RecordedTotalTake' has a wrong offset!");
+DUMPER7_ASSERTS_UWinUI_C;
 
 }
 

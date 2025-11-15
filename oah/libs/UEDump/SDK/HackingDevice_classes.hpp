@@ -40,22 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HackingDevice_C">();
+		BP_STATIC_CLASS_IMPL("HackingDevice_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HackingDevice_C")
 	}
 	static class AHackingDevice_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AHackingDevice_C>();
 	}
 };
-static_assert(alignof(AHackingDevice_C) == 0x000008, "Wrong alignment on AHackingDevice_C");
-static_assert(sizeof(AHackingDevice_C) == 0x000290, "Wrong size on AHackingDevice_C");
-static_assert(offsetof(AHackingDevice_C, UberGraphFrame_HackingDevice_C) == 0x000258, "Member 'AHackingDevice_C::UberGraphFrame_HackingDevice_C' has a wrong offset!");
-static_assert(offsetof(AHackingDevice_C, HighlightInRangeComponent) == 0x000260, "Member 'AHackingDevice_C::HighlightInRangeComponent' has a wrong offset!");
-static_assert(offsetof(AHackingDevice_C, Arrow) == 0x000268, "Member 'AHackingDevice_C::Arrow' has a wrong offset!");
-static_assert(offsetof(AHackingDevice_C, SusItemComponent) == 0x000270, "Member 'AHackingDevice_C::SusItemComponent' has a wrong offset!");
-static_assert(offsetof(AHackingDevice_C, HighlightWhenHolding) == 0x000278, "Member 'AHackingDevice_C::HighlightWhenHolding' has a wrong offset!");
-static_assert(offsetof(AHackingDevice_C, DuffelbagStuckComponent1) == 0x000280, "Member 'AHackingDevice_C::DuffelbagStuckComponent1' has a wrong offset!");
-static_assert(offsetof(AHackingDevice_C, HackingPoint) == 0x000288, "Member 'AHackingDevice_C::HackingPoint' has a wrong offset!");
+DUMPER7_ASSERTS_AHackingDevice_C;
 
 }
 

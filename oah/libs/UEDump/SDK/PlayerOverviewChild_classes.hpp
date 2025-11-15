@@ -40,21 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerOverviewChild_C">();
+		BP_STATIC_CLASS_IMPL("PlayerOverviewChild_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerOverviewChild_C")
 	}
 	static class UPlayerOverviewChild_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayerOverviewChild_C>();
 	}
 };
-static_assert(alignof(UPlayerOverviewChild_C) == 0x000008, "Wrong alignment on UPlayerOverviewChild_C");
-static_assert(sizeof(UPlayerOverviewChild_C) == 0x000290, "Wrong size on UPlayerOverviewChild_C");
-static_assert(offsetof(UPlayerOverviewChild_C, UberGraphFrame) == 0x000260, "Member 'UPlayerOverviewChild_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPlayerOverviewChild_C, HoverAnim) == 0x000268, "Member 'UPlayerOverviewChild_C::HoverAnim' has a wrong offset!");
-static_assert(offsetof(UPlayerOverviewChild_C, Button_76) == 0x000270, "Member 'UPlayerOverviewChild_C::Button_76' has a wrong offset!");
-static_assert(offsetof(UPlayerOverviewChild_C, TextBlock) == 0x000278, "Member 'UPlayerOverviewChild_C::TextBlock' has a wrong offset!");
-static_assert(offsetof(UPlayerOverviewChild_C, TextBlock_90) == 0x000280, "Member 'UPlayerOverviewChild_C::TextBlock_90' has a wrong offset!");
-static_assert(offsetof(UPlayerOverviewChild_C, PlayerState) == 0x000288, "Member 'UPlayerOverviewChild_C::PlayerState' has a wrong offset!");
+DUMPER7_ASSERTS_UPlayerOverviewChild_C;
 
 }
 

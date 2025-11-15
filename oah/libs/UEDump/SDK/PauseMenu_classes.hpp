@@ -43,22 +43,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PauseMenu_C">();
+		BP_STATIC_CLASS_IMPL("PauseMenu_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PauseMenu_C")
 	}
 	static class UPauseMenu_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPauseMenu_C>();
 	}
 };
-static_assert(alignof(UPauseMenu_C) == 0x000008, "Wrong alignment on UPauseMenu_C");
-static_assert(sizeof(UPauseMenu_C) == 0x000298, "Wrong size on UPauseMenu_C");
-static_assert(offsetof(UPauseMenu_C, UberGraphFrame) == 0x000260, "Member 'UPauseMenu_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPauseMenu_C, Button) == 0x000268, "Member 'UPauseMenu_C::Button' has a wrong offset!");
-static_assert(offsetof(UPauseMenu_C, Button_0) == 0x000270, "Member 'UPauseMenu_C::Button_0' has a wrong offset!");
-static_assert(offsetof(UPauseMenu_C, Button_1) == 0x000278, "Member 'UPauseMenu_C::Button_1' has a wrong offset!");
-static_assert(offsetof(UPauseMenu_C, Button_2) == 0x000280, "Member 'UPauseMenu_C::Button_2' has a wrong offset!");
-static_assert(offsetof(UPauseMenu_C, Button_109) == 0x000288, "Member 'UPauseMenu_C::Button_109' has a wrong offset!");
-static_assert(offsetof(UPauseMenu_C, LeaveGameConfirm) == 0x000290, "Member 'UPauseMenu_C::LeaveGameConfirm' has a wrong offset!");
+DUMPER7_ASSERTS_UPauseMenu_C;
 
 }
 

@@ -21,9 +21,7 @@ struct Skill_ExtraAmmo_Tier3_C_ExecuteUbergraph_Skill_ExtraAmmo_Tier3 final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Skill_ExtraAmmo_Tier3_C_ExecuteUbergraph_Skill_ExtraAmmo_Tier3) == 0x000004, "Wrong alignment on Skill_ExtraAmmo_Tier3_C_ExecuteUbergraph_Skill_ExtraAmmo_Tier3");
-static_assert(sizeof(Skill_ExtraAmmo_Tier3_C_ExecuteUbergraph_Skill_ExtraAmmo_Tier3) == 0x000004, "Wrong size on Skill_ExtraAmmo_Tier3_C_ExecuteUbergraph_Skill_ExtraAmmo_Tier3");
-static_assert(offsetof(Skill_ExtraAmmo_Tier3_C_ExecuteUbergraph_Skill_ExtraAmmo_Tier3, EntryPoint) == 0x000000, "Member 'Skill_ExtraAmmo_Tier3_C_ExecuteUbergraph_Skill_ExtraAmmo_Tier3::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_Skill_ExtraAmmo_Tier3_C_ExecuteUbergraph_Skill_ExtraAmmo_Tier3;
 
 }
 

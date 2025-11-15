@@ -29,13 +29,7 @@ public:
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0008(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0014(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GarageDoor_C_ExecuteUbergraph_GarageDoor) == 0x000004, "Wrong alignment on GarageDoor_C_ExecuteUbergraph_GarageDoor");
-static_assert(sizeof(GarageDoor_C_ExecuteUbergraph_GarageDoor) == 0x000020, "Wrong size on GarageDoor_C_ExecuteUbergraph_GarageDoor");
-static_assert(offsetof(GarageDoor_C_ExecuteUbergraph_GarageDoor, EntryPoint) == 0x000000, "Member 'GarageDoor_C_ExecuteUbergraph_GarageDoor::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GarageDoor_C_ExecuteUbergraph_GarageDoor, Temp_byte_Variable) == 0x000004, "Member 'GarageDoor_C_ExecuteUbergraph_GarageDoor::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(GarageDoor_C_ExecuteUbergraph_GarageDoor, Temp_byte_Variable_1) == 0x000005, "Member 'GarageDoor_C_ExecuteUbergraph_GarageDoor::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(GarageDoor_C_ExecuteUbergraph_GarageDoor, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000008, "Member 'GarageDoor_C_ExecuteUbergraph_GarageDoor::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GarageDoor_C_ExecuteUbergraph_GarageDoor, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000014, "Member 'GarageDoor_C_ExecuteUbergraph_GarageDoor::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_GarageDoor_C_ExecuteUbergraph_GarageDoor;
 
 }
 

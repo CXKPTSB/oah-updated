@@ -17,8 +17,8 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass DoorInterface.DoorInterface_C
-// 0x0000 (0x0028 - 0x0028)
-class IDoorInterface_C final : public IInterface
+// 0x0000 (0x0000 - 0x0000)
+class IDoorInterface_C final
 {
 public:
 	void IsDoorOpenInterfaceCall(bool* IsOpen_);
@@ -26,15 +26,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DoorInterface_C">();
+		BP_STATIC_CLASS_IMPL("DoorInterface_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DoorInterface_C")
 	}
 	static class IDoorInterface_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<IDoorInterface_C>();
 	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
 };
-static_assert(alignof(IDoorInterface_C) == 0x000008, "Wrong alignment on IDoorInterface_C");
-static_assert(sizeof(IDoorInterface_C) == 0x000028, "Wrong size on IDoorInterface_C");
+DUMPER7_ASSERTS_IDoorInterface_C;
 
 }
 

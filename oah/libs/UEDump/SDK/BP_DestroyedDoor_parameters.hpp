@@ -38,23 +38,7 @@ public:
 	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_1;       // 0x005C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_2;       // 0x0068(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_DestroyedDoor_C_ExecuteUbergraph_BP_DestroyedDoor) == 0x000004, "Wrong alignment on BP_DestroyedDoor_C_ExecuteUbergraph_BP_DestroyedDoor");
-static_assert(sizeof(BP_DestroyedDoor_C_ExecuteUbergraph_BP_DestroyedDoor) == 0x000074, "Wrong size on BP_DestroyedDoor_C_ExecuteUbergraph_BP_DestroyedDoor");
-static_assert(offsetof(BP_DestroyedDoor_C_ExecuteUbergraph_BP_DestroyedDoor, EntryPoint) == 0x000000, "Member 'BP_DestroyedDoor_C_ExecuteUbergraph_BP_DestroyedDoor::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_DestroyedDoor_C_ExecuteUbergraph_BP_DestroyedDoor, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000004, "Member 'BP_DestroyedDoor_C_ExecuteUbergraph_BP_DestroyedDoor::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_DestroyedDoor_C_ExecuteUbergraph_BP_DestroyedDoor, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000010, "Member 'BP_DestroyedDoor_C_ExecuteUbergraph_BP_DestroyedDoor::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_DestroyedDoor_C_ExecuteUbergraph_BP_DestroyedDoor, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x00001C, "Member 'BP_DestroyedDoor_C_ExecuteUbergraph_BP_DestroyedDoor::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_DestroyedDoor_C_ExecuteUbergraph_BP_DestroyedDoor, CallFunc_Vector_Distance_ReturnValue) == 0x000020, "Member 'BP_DestroyedDoor_C_ExecuteUbergraph_BP_DestroyedDoor::CallFunc_Vector_Distance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_DestroyedDoor_C_ExecuteUbergraph_BP_DestroyedDoor, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000024, "Member 'BP_DestroyedDoor_C_ExecuteUbergraph_BP_DestroyedDoor::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_DestroyedDoor_C_ExecuteUbergraph_BP_DestroyedDoor, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x000028, "Member 'BP_DestroyedDoor_C_ExecuteUbergraph_BP_DestroyedDoor::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_DestroyedDoor_C_ExecuteUbergraph_BP_DestroyedDoor, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00002C, "Member 'BP_DestroyedDoor_C_ExecuteUbergraph_BP_DestroyedDoor::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_DestroyedDoor_C_ExecuteUbergraph_BP_DestroyedDoor, CallFunc_Divide_FloatFloat_ReturnValue_2) == 0x000030, "Member 'BP_DestroyedDoor_C_ExecuteUbergraph_BP_DestroyedDoor::CallFunc_Divide_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_DestroyedDoor_C_ExecuteUbergraph_BP_DestroyedDoor, CallFunc_FindLookAtRotation_ReturnValue) == 0x000034, "Member 'BP_DestroyedDoor_C_ExecuteUbergraph_BP_DestroyedDoor::CallFunc_FindLookAtRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_DestroyedDoor_C_ExecuteUbergraph_BP_DestroyedDoor, CallFunc_GetForwardVector_ReturnValue) == 0x000040, "Member 'BP_DestroyedDoor_C_ExecuteUbergraph_BP_DestroyedDoor::CallFunc_GetForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_DestroyedDoor_C_ExecuteUbergraph_BP_DestroyedDoor, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x00004C, "Member 'BP_DestroyedDoor_C_ExecuteUbergraph_BP_DestroyedDoor::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_DestroyedDoor_C_ExecuteUbergraph_BP_DestroyedDoor, CallFunc_SetStaticMesh_ReturnValue) == 0x000058, "Member 'BP_DestroyedDoor_C_ExecuteUbergraph_BP_DestroyedDoor::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_DestroyedDoor_C_ExecuteUbergraph_BP_DestroyedDoor, CallFunc_Multiply_VectorFloat_ReturnValue_1) == 0x00005C, "Member 'BP_DestroyedDoor_C_ExecuteUbergraph_BP_DestroyedDoor::CallFunc_Multiply_VectorFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_DestroyedDoor_C_ExecuteUbergraph_BP_DestroyedDoor, CallFunc_Multiply_VectorFloat_ReturnValue_2) == 0x000068, "Member 'BP_DestroyedDoor_C_ExecuteUbergraph_BP_DestroyedDoor::CallFunc_Multiply_VectorFloat_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_BP_DestroyedDoor_C_ExecuteUbergraph_BP_DestroyedDoor;
 
 // Function BP_DestroyedDoor.BP_DestroyedDoor_C.UserConstructionScript
 // 0x0001 (0x0001 - 0x0000)
@@ -63,9 +47,7 @@ struct BP_DestroyedDoor_C_UserConstructionScript final
 public:
 	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_DestroyedDoor_C_UserConstructionScript) == 0x000001, "Wrong alignment on BP_DestroyedDoor_C_UserConstructionScript");
-static_assert(sizeof(BP_DestroyedDoor_C_UserConstructionScript) == 0x000001, "Wrong size on BP_DestroyedDoor_C_UserConstructionScript");
-static_assert(offsetof(BP_DestroyedDoor_C_UserConstructionScript, CallFunc_SetStaticMesh_ReturnValue) == 0x000000, "Member 'BP_DestroyedDoor_C_UserConstructionScript::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_DestroyedDoor_C_UserConstructionScript;
 
 }
 

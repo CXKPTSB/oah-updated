@@ -29,19 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Equipmentshelf_equipment_base_C">();
+		BP_STATIC_CLASS_IMPL("Equipmentshelf_equipment_base_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Equipmentshelf_equipment_base_C")
 	}
 	static class AEquipmentshelf_equipment_base_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AEquipmentshelf_equipment_base_C>();
 	}
 };
-static_assert(alignof(AEquipmentshelf_equipment_base_C) == 0x000008, "Wrong alignment on AEquipmentshelf_equipment_base_C");
-static_assert(sizeof(AEquipmentshelf_equipment_base_C) == 0x000240, "Wrong size on AEquipmentshelf_equipment_base_C");
-static_assert(offsetof(AEquipmentshelf_equipment_base_C, Arrow1) == 0x000220, "Member 'AEquipmentshelf_equipment_base_C::Arrow1' has a wrong offset!");
-static_assert(offsetof(AEquipmentshelf_equipment_base_C, Arrow) == 0x000228, "Member 'AEquipmentshelf_equipment_base_C::Arrow' has a wrong offset!");
-static_assert(offsetof(AEquipmentshelf_equipment_base_C, DefaultSceneRoot) == 0x000230, "Member 'AEquipmentshelf_equipment_base_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AEquipmentshelf_equipment_base_C, MenuShelf) == 0x000238, "Member 'AEquipmentshelf_equipment_base_C::MenuShelf' has a wrong offset!");
+DUMPER7_ASSERTS_AEquipmentshelf_equipment_base_C;
 
 }
 

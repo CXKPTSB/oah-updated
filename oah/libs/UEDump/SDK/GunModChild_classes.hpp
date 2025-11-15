@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "ShopItemCategory_structs.hpp"
 #include "Engine_structs.hpp"
+#include "ShopItemCategory_structs.hpp"
 #include "UMG_classes.hpp"
 
 
@@ -51,26 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GunModChild_C">();
+		BP_STATIC_CLASS_IMPL("GunModChild_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GunModChild_C")
 	}
 	static class UGunModChild_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGunModChild_C>();
 	}
 };
-static_assert(alignof(UGunModChild_C) == 0x000008, "Wrong alignment on UGunModChild_C");
-static_assert(sizeof(UGunModChild_C) == 0x0002B8, "Wrong size on UGunModChild_C");
-static_assert(offsetof(UGunModChild_C, UberGraphFrame) == 0x000260, "Member 'UGunModChild_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGunModChild_C, Button) == 0x000268, "Member 'UGunModChild_C::Button' has a wrong offset!");
-static_assert(offsetof(UGunModChild_C, Image_146) == 0x000270, "Member 'UGunModChild_C::Image_146' has a wrong offset!");
-static_assert(offsetof(UGunModChild_C, TextBlock_63) == 0x000278, "Member 'UGunModChild_C::TextBlock_63' has a wrong offset!");
-static_assert(offsetof(UGunModChild_C, ShopInfo) == 0x000280, "Member 'UGunModChild_C::ShopInfo' has a wrong offset!");
-static_assert(offsetof(UGunModChild_C, ParentWidget) == 0x000288, "Member 'UGunModChild_C::ParentWidget' has a wrong offset!");
-static_assert(offsetof(UGunModChild_C, GunIndex) == 0x000290, "Member 'UGunModChild_C::GunIndex' has a wrong offset!");
-static_assert(offsetof(UGunModChild_C, GunRef) == 0x000298, "Member 'UGunModChild_C::GunRef' has a wrong offset!");
-static_assert(offsetof(UGunModChild_C, Category) == 0x0002A0, "Member 'UGunModChild_C::Category' has a wrong offset!");
-static_assert(offsetof(UGunModChild_C, As_Robber_Controller) == 0x0002A8, "Member 'UGunModChild_C::As_Robber_Controller' has a wrong offset!");
-static_assert(offsetof(UGunModChild_C, Equipped_) == 0x0002B0, "Member 'UGunModChild_C::Equipped_' has a wrong offset!");
+DUMPER7_ASSERTS_UGunModChild_C;
 
 }
 

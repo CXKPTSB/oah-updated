@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "RarityNum_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "RarityNum_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "UMG_structs.hpp"
 #include "ShopItemCategory_structs.hpp"
@@ -56,32 +56,7 @@ public:
 	TScriptInterface<class ImenuUIInteraface_C>   K2Node_DynamicCast_AsMenu_UIInteraface_1;          // 0x0210(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0220(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(InventoryItem_C_ExecuteUbergraph_InventoryItem) == 0x000008, "Wrong alignment on InventoryItem_C_ExecuteUbergraph_InventoryItem");
-static_assert(sizeof(InventoryItem_C_ExecuteUbergraph_InventoryItem) == 0x000228, "Wrong size on InventoryItem_C_ExecuteUbergraph_InventoryItem");
-static_assert(offsetof(InventoryItem_C_ExecuteUbergraph_InventoryItem, EntryPoint) == 0x000000, "Member 'InventoryItem_C_ExecuteUbergraph_InventoryItem::EntryPoint' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_ExecuteUbergraph_InventoryItem, Temp_int_Array_Index_Variable) == 0x000004, "Member 'InventoryItem_C_ExecuteUbergraph_InventoryItem::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_ExecuteUbergraph_InventoryItem, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'InventoryItem_C_ExecuteUbergraph_InventoryItem::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_ExecuteUbergraph_InventoryItem, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'InventoryItem_C_ExecuteUbergraph_InventoryItem::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_ExecuteUbergraph_InventoryItem, K2Node_Event_Category_1) == 0x000010, "Member 'InventoryItem_C_ExecuteUbergraph_InventoryItem::K2Node_Event_Category_1' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_ExecuteUbergraph_InventoryItem, K2Node_Event_Category) == 0x000011, "Member 'InventoryItem_C_ExecuteUbergraph_InventoryItem::K2Node_Event_Category' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_ExecuteUbergraph_InventoryItem, K2Node_Event_ItemInfo) == 0x000018, "Member 'InventoryItem_C_ExecuteUbergraph_InventoryItem::K2Node_Event_ItemInfo' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_ExecuteUbergraph_InventoryItem, K2Node_Event_SalePrice) == 0x000020, "Member 'InventoryItem_C_ExecuteUbergraph_InventoryItem::K2Node_Event_SalePrice' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_ExecuteUbergraph_InventoryItem, K2Node_Event_MyGeometry) == 0x000024, "Member 'InventoryItem_C_ExecuteUbergraph_InventoryItem::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_ExecuteUbergraph_InventoryItem, K2Node_Event_MouseEvent_1) == 0x000060, "Member 'InventoryItem_C_ExecuteUbergraph_InventoryItem::K2Node_Event_MouseEvent_1' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_ExecuteUbergraph_InventoryItem, K2Node_Event_MouseEvent) == 0x0000D0, "Member 'InventoryItem_C_ExecuteUbergraph_InventoryItem::K2Node_Event_MouseEvent' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_ExecuteUbergraph_InventoryItem, CallFunc_GetAnimationCurrentTime_ReturnValue) == 0x000140, "Member 'InventoryItem_C_ExecuteUbergraph_InventoryItem::CallFunc_GetAnimationCurrentTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_ExecuteUbergraph_InventoryItem, CallFunc_PlayAnimation_ReturnValue) == 0x000148, "Member 'InventoryItem_C_ExecuteUbergraph_InventoryItem::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_ExecuteUbergraph_InventoryItem, CallFunc_PlayAnimation_ReturnValue_1) == 0x000150, "Member 'InventoryItem_C_ExecuteUbergraph_InventoryItem::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_ExecuteUbergraph_InventoryItem, K2Node_Event_PointerEvent) == 0x000158, "Member 'InventoryItem_C_ExecuteUbergraph_InventoryItem::K2Node_Event_PointerEvent' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_ExecuteUbergraph_InventoryItem, K2Node_Event_Operation) == 0x0001C8, "Member 'InventoryItem_C_ExecuteUbergraph_InventoryItem::K2Node_Event_Operation' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_ExecuteUbergraph_InventoryItem, CallFunc_GetAllWidgetsWithInterface_FoundWidgets) == 0x0001D0, "Member 'InventoryItem_C_ExecuteUbergraph_InventoryItem::CallFunc_GetAllWidgetsWithInterface_FoundWidgets' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_ExecuteUbergraph_InventoryItem, CallFunc_Array_Length_ReturnValue) == 0x0001E0, "Member 'InventoryItem_C_ExecuteUbergraph_InventoryItem::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_ExecuteUbergraph_InventoryItem, CallFunc_Array_Get_Item) == 0x0001E8, "Member 'InventoryItem_C_ExecuteUbergraph_InventoryItem::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_ExecuteUbergraph_InventoryItem, CallFunc_Less_IntInt_ReturnValue) == 0x0001F0, "Member 'InventoryItem_C_ExecuteUbergraph_InventoryItem::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_ExecuteUbergraph_InventoryItem, K2Node_DynamicCast_AsMenu_UIInteraface) == 0x0001F8, "Member 'InventoryItem_C_ExecuteUbergraph_InventoryItem::K2Node_DynamicCast_AsMenu_UIInteraface' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_ExecuteUbergraph_InventoryItem, K2Node_DynamicCast_bSuccess) == 0x000208, "Member 'InventoryItem_C_ExecuteUbergraph_InventoryItem::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_ExecuteUbergraph_InventoryItem, K2Node_DynamicCast_AsMenu_UIInteraface_1) == 0x000210, "Member 'InventoryItem_C_ExecuteUbergraph_InventoryItem::K2Node_DynamicCast_AsMenu_UIInteraface_1' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_ExecuteUbergraph_InventoryItem, K2Node_DynamicCast_bSuccess_1) == 0x000220, "Member 'InventoryItem_C_ExecuteUbergraph_InventoryItem::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+DUMPER7_ASSERTS_InventoryItem_C_ExecuteUbergraph_InventoryItem;
 
 // Function InventoryItem.InventoryItem_C.OnDragCancelled
 // 0x0078 (0x0078 - 0x0000)
@@ -91,10 +66,7 @@ public:
 	struct FPointerEvent                          PointerEvent;                                      // 0x0000(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	class UDragDropOperation*                     Operation;                                         // 0x0070(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(InventoryItem_C_OnDragCancelled) == 0x000008, "Wrong alignment on InventoryItem_C_OnDragCancelled");
-static_assert(sizeof(InventoryItem_C_OnDragCancelled) == 0x000078, "Wrong size on InventoryItem_C_OnDragCancelled");
-static_assert(offsetof(InventoryItem_C_OnDragCancelled, PointerEvent) == 0x000000, "Member 'InventoryItem_C_OnDragCancelled::PointerEvent' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_OnDragCancelled, Operation) == 0x000070, "Member 'InventoryItem_C_OnDragCancelled::Operation' has a wrong offset!");
+DUMPER7_ASSERTS_InventoryItem_C_OnDragCancelled;
 
 // Function InventoryItem.InventoryItem_C.OnMouseLeave
 // 0x0070 (0x0070 - 0x0000)
@@ -103,9 +75,7 @@ struct InventoryItem_C_OnMouseLeave final
 public:
 	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(InventoryItem_C_OnMouseLeave) == 0x000008, "Wrong alignment on InventoryItem_C_OnMouseLeave");
-static_assert(sizeof(InventoryItem_C_OnMouseLeave) == 0x000070, "Wrong size on InventoryItem_C_OnMouseLeave");
-static_assert(offsetof(InventoryItem_C_OnMouseLeave, MouseEvent) == 0x000000, "Member 'InventoryItem_C_OnMouseLeave::MouseEvent' has a wrong offset!");
+DUMPER7_ASSERTS_InventoryItem_C_OnMouseLeave;
 
 // Function InventoryItem.InventoryItem_C.OnMouseEnter
 // 0x00A8 (0x00A8 - 0x0000)
@@ -115,10 +85,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(InventoryItem_C_OnMouseEnter) == 0x000008, "Wrong alignment on InventoryItem_C_OnMouseEnter");
-static_assert(sizeof(InventoryItem_C_OnMouseEnter) == 0x0000A8, "Wrong size on InventoryItem_C_OnMouseEnter");
-static_assert(offsetof(InventoryItem_C_OnMouseEnter, MyGeometry) == 0x000000, "Member 'InventoryItem_C_OnMouseEnter::MyGeometry' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_OnMouseEnter, MouseEvent) == 0x000038, "Member 'InventoryItem_C_OnMouseEnter::MouseEvent' has a wrong offset!");
+DUMPER7_ASSERTS_InventoryItem_C_OnMouseEnter;
 
 // Function InventoryItem.InventoryItem_C.PreviewItem
 // 0x0010 (0x0010 - 0x0000)
@@ -128,10 +95,7 @@ public:
 	class UClass*                                 ItemInfo_0;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         SalePrice;                                         // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(InventoryItem_C_PreviewItem) == 0x000008, "Wrong alignment on InventoryItem_C_PreviewItem");
-static_assert(sizeof(InventoryItem_C_PreviewItem) == 0x000010, "Wrong size on InventoryItem_C_PreviewItem");
-static_assert(offsetof(InventoryItem_C_PreviewItem, ItemInfo_0) == 0x000000, "Member 'InventoryItem_C_PreviewItem::ItemInfo_0' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_PreviewItem, SalePrice) == 0x000008, "Member 'InventoryItem_C_PreviewItem::SalePrice' has a wrong offset!");
+DUMPER7_ASSERTS_InventoryItem_C_PreviewItem;
 
 // Function InventoryItem.InventoryItem_C.DragItemFromCategory
 // 0x0001 (0x0001 - 0x0000)
@@ -140,9 +104,7 @@ struct InventoryItem_C_DragItemFromCategory final
 public:
 	EShopItemCategory                             Category;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(InventoryItem_C_DragItemFromCategory) == 0x000001, "Wrong alignment on InventoryItem_C_DragItemFromCategory");
-static_assert(sizeof(InventoryItem_C_DragItemFromCategory) == 0x000001, "Wrong size on InventoryItem_C_DragItemFromCategory");
-static_assert(offsetof(InventoryItem_C_DragItemFromCategory, Category) == 0x000000, "Member 'InventoryItem_C_DragItemFromCategory::Category' has a wrong offset!");
+DUMPER7_ASSERTS_InventoryItem_C_DragItemFromCategory;
 
 // Function InventoryItem.InventoryItem_C.ChangeCategory
 // 0x0001 (0x0001 - 0x0000)
@@ -151,9 +113,7 @@ struct InventoryItem_C_ChangeCategory final
 public:
 	EShopItemCategory                             Category;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(InventoryItem_C_ChangeCategory) == 0x000001, "Wrong alignment on InventoryItem_C_ChangeCategory");
-static_assert(sizeof(InventoryItem_C_ChangeCategory) == 0x000001, "Wrong size on InventoryItem_C_ChangeCategory");
-static_assert(offsetof(InventoryItem_C_ChangeCategory, Category) == 0x000000, "Member 'InventoryItem_C_ChangeCategory::Category' has a wrong offset!");
+DUMPER7_ASSERTS_InventoryItem_C_ChangeCategory;
 
 // Function InventoryItem.InventoryItem_C.GetText_0
 // 0x0030 (0x0030 - 0x0000)
@@ -163,10 +123,7 @@ public:
 	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0018(0x0018)()
 };
-static_assert(alignof(InventoryItem_C_GetText_0) == 0x000008, "Wrong alignment on InventoryItem_C_GetText_0");
-static_assert(sizeof(InventoryItem_C_GetText_0) == 0x000030, "Wrong size on InventoryItem_C_GetText_0");
-static_assert(offsetof(InventoryItem_C_GetText_0, ReturnValue) == 0x000000, "Member 'InventoryItem_C_GetText_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_GetText_0, CallFunc_Conv_StringToText_ReturnValue) == 0x000018, "Member 'InventoryItem_C_GetText_0::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_InventoryItem_C_GetText_0;
 
 // Function InventoryItem.InventoryItem_C.OnDragDetected
 // 0x0100 (0x0100 - 0x0000)
@@ -190,22 +147,7 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(InventoryItem_C_OnDragDetected) == 0x000008, "Wrong alignment on InventoryItem_C_OnDragDetected");
-static_assert(sizeof(InventoryItem_C_OnDragDetected) == 0x000100, "Wrong size on InventoryItem_C_OnDragDetected");
-static_assert(offsetof(InventoryItem_C_OnDragDetected, MyGeometry) == 0x000000, "Member 'InventoryItem_C_OnDragDetected::MyGeometry' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_OnDragDetected, PointerEvent) == 0x000038, "Member 'InventoryItem_C_OnDragDetected::PointerEvent' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_OnDragDetected, Operation) == 0x0000A8, "Member 'InventoryItem_C_OnDragDetected::Operation' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_OnDragDetected, CallFunc_CreateDragDropOperation_ReturnValue) == 0x0000B0, "Member 'InventoryItem_C_OnDragDetected::CallFunc_CreateDragDropOperation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_OnDragDetected, Temp_int_Array_Index_Variable) == 0x0000B8, "Member 'InventoryItem_C_OnDragDetected::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_OnDragDetected, Temp_int_Loop_Counter_Variable) == 0x0000BC, "Member 'InventoryItem_C_OnDragDetected::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_OnDragDetected, CallFunc_Add_IntInt_ReturnValue) == 0x0000C0, "Member 'InventoryItem_C_OnDragDetected::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_OnDragDetected, CallFunc_MakeLiteralByte_ReturnValue) == 0x0000C4, "Member 'InventoryItem_C_OnDragDetected::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_OnDragDetected, CallFunc_GetAllWidgetsWithInterface_FoundWidgets) == 0x0000C8, "Member 'InventoryItem_C_OnDragDetected::CallFunc_GetAllWidgetsWithInterface_FoundWidgets' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_OnDragDetected, CallFunc_Array_Get_Item) == 0x0000D8, "Member 'InventoryItem_C_OnDragDetected::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_OnDragDetected, CallFunc_Array_Length_ReturnValue) == 0x0000E0, "Member 'InventoryItem_C_OnDragDetected::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_OnDragDetected, K2Node_DynamicCast_AsMenu_UIInteraface) == 0x0000E8, "Member 'InventoryItem_C_OnDragDetected::K2Node_DynamicCast_AsMenu_UIInteraface' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_OnDragDetected, K2Node_DynamicCast_bSuccess) == 0x0000F8, "Member 'InventoryItem_C_OnDragDetected::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_OnDragDetected, CallFunc_Less_IntInt_ReturnValue) == 0x0000F9, "Member 'InventoryItem_C_OnDragDetected::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_InventoryItem_C_OnDragDetected;
 
 // Function InventoryItem.InventoryItem_C.OnMouseButtonDown
 // 0x0218 (0x0218 - 0x0000)
@@ -217,12 +159,7 @@ public:
 	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm)
 	struct FEventReply                            CallFunc_DetectDragIfPressed_ReturnValue;          // 0x0160(0x00B8)()
 };
-static_assert(alignof(InventoryItem_C_OnMouseButtonDown) == 0x000008, "Wrong alignment on InventoryItem_C_OnMouseButtonDown");
-static_assert(sizeof(InventoryItem_C_OnMouseButtonDown) == 0x000218, "Wrong size on InventoryItem_C_OnMouseButtonDown");
-static_assert(offsetof(InventoryItem_C_OnMouseButtonDown, MyGeometry) == 0x000000, "Member 'InventoryItem_C_OnMouseButtonDown::MyGeometry' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_OnMouseButtonDown, MouseEvent) == 0x000038, "Member 'InventoryItem_C_OnMouseButtonDown::MouseEvent' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_OnMouseButtonDown, ReturnValue) == 0x0000A8, "Member 'InventoryItem_C_OnMouseButtonDown::ReturnValue' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_OnMouseButtonDown, CallFunc_DetectDragIfPressed_ReturnValue) == 0x000160, "Member 'InventoryItem_C_OnMouseButtonDown::CallFunc_DetectDragIfPressed_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_InventoryItem_C_OnMouseButtonDown;
 
 // Function InventoryItem.InventoryItem_C.GetBrush_0
 // 0x0110 (0x0110 - 0x0000)
@@ -232,10 +169,7 @@ public:
 	struct FSlateBrush                            ReturnValue;                                       // 0x0000(0x0088)(Parm, OutParm, ReturnParm)
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0088(0x0088)()
 };
-static_assert(alignof(InventoryItem_C_GetBrush_0) == 0x000008, "Wrong alignment on InventoryItem_C_GetBrush_0");
-static_assert(sizeof(InventoryItem_C_GetBrush_0) == 0x000110, "Wrong size on InventoryItem_C_GetBrush_0");
-static_assert(offsetof(InventoryItem_C_GetBrush_0, ReturnValue) == 0x000000, "Member 'InventoryItem_C_GetBrush_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_GetBrush_0, K2Node_MakeStruct_SlateBrush) == 0x000088, "Member 'InventoryItem_C_GetBrush_0::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
+DUMPER7_ASSERTS_InventoryItem_C_GetBrush_0;
 
 // Function InventoryItem.InventoryItem_C.Get_Rarity_ColorAndOpacity_0
 // 0x0064 (0x0064 - 0x0000)
@@ -251,15 +185,7 @@ public:
 	struct FLinearColor                           Temp_struct_Variable_3;                            // 0x0044(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           K2Node_Select_Default;                             // 0x0054(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(InventoryItem_C_Get_Rarity_ColorAndOpacity_0) == 0x000004, "Wrong alignment on InventoryItem_C_Get_Rarity_ColorAndOpacity_0");
-static_assert(sizeof(InventoryItem_C_Get_Rarity_ColorAndOpacity_0) == 0x000064, "Wrong size on InventoryItem_C_Get_Rarity_ColorAndOpacity_0");
-static_assert(offsetof(InventoryItem_C_Get_Rarity_ColorAndOpacity_0, ReturnValue) == 0x000000, "Member 'InventoryItem_C_Get_Rarity_ColorAndOpacity_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_Get_Rarity_ColorAndOpacity_0, Temp_byte_Variable) == 0x000010, "Member 'InventoryItem_C_Get_Rarity_ColorAndOpacity_0::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_Get_Rarity_ColorAndOpacity_0, Temp_struct_Variable) == 0x000014, "Member 'InventoryItem_C_Get_Rarity_ColorAndOpacity_0::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_Get_Rarity_ColorAndOpacity_0, Temp_struct_Variable_1) == 0x000024, "Member 'InventoryItem_C_Get_Rarity_ColorAndOpacity_0::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_Get_Rarity_ColorAndOpacity_0, Temp_struct_Variable_2) == 0x000034, "Member 'InventoryItem_C_Get_Rarity_ColorAndOpacity_0::Temp_struct_Variable_2' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_Get_Rarity_ColorAndOpacity_0, Temp_struct_Variable_3) == 0x000044, "Member 'InventoryItem_C_Get_Rarity_ColorAndOpacity_0::Temp_struct_Variable_3' has a wrong offset!");
-static_assert(offsetof(InventoryItem_C_Get_Rarity_ColorAndOpacity_0, K2Node_Select_Default) == 0x000054, "Member 'InventoryItem_C_Get_Rarity_ColorAndOpacity_0::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_InventoryItem_C_Get_Rarity_ColorAndOpacity_0;
 
 }
 

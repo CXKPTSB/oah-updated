@@ -27,17 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Mask_base_C">();
+		BP_STATIC_CLASS_IMPL("Mask_base_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Mask_base_C")
 	}
 	static class AMask_base_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMask_base_C>();
 	}
 };
-static_assert(alignof(AMask_base_C) == 0x000008, "Wrong alignment on AMask_base_C");
-static_assert(sizeof(AMask_base_C) == 0x000230, "Wrong size on AMask_base_C");
-static_assert(offsetof(AMask_base_C, MaskMesh) == 0x000220, "Member 'AMask_base_C::MaskMesh' has a wrong offset!");
-static_assert(offsetof(AMask_base_C, DefaultSceneRoot) == 0x000228, "Member 'AMask_base_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_AMask_base_C;
 
 }
 

@@ -38,21 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WarningFloating_C">();
+		BP_STATIC_CLASS_IMPL("WarningFloating_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WarningFloating_C")
 	}
 	static class UWarningFloating_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWarningFloating_C>();
 	}
 };
-static_assert(alignof(UWarningFloating_C) == 0x000008, "Wrong alignment on UWarningFloating_C");
-static_assert(sizeof(UWarningFloating_C) == 0x000290, "Wrong size on UWarningFloating_C");
-static_assert(offsetof(UWarningFloating_C, UberGraphFrame) == 0x000260, "Member 'UWarningFloating_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWarningFloating_C, Image_52) == 0x000268, "Member 'UWarningFloating_C::Image_52' has a wrong offset!");
-static_assert(offsetof(UWarningFloating_C, Actor) == 0x000270, "Member 'UWarningFloating_C::Actor' has a wrong offset!");
-static_assert(offsetof(UWarningFloating_C, Time) == 0x000278, "Member 'UWarningFloating_C::Time' has a wrong offset!");
-static_assert(offsetof(UWarningFloating_C, Component) == 0x000280, "Member 'UWarningFloating_C::Component' has a wrong offset!");
-static_assert(offsetof(UWarningFloating_C, Question_) == 0x000288, "Member 'UWarningFloating_C::Question_' has a wrong offset!");
+DUMPER7_ASSERTS_UWarningFloating_C;
 
 }
 

@@ -40,21 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LobbyManager_C">();
+		BP_STATIC_CLASS_IMPL("LobbyManager_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LobbyManager_C")
 	}
 	static class ALobbyManager_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ALobbyManager_C>();
 	}
 };
-static_assert(alignof(ALobbyManager_C) == 0x000008, "Wrong alignment on ALobbyManager_C");
-static_assert(sizeof(ALobbyManager_C) == 0x000260, "Wrong size on ALobbyManager_C");
-static_assert(offsetof(ALobbyManager_C, UberGraphFrame) == 0x000220, "Member 'ALobbyManager_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ALobbyManager_C, DefaultSceneRoot) == 0x000228, "Member 'ALobbyManager_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ALobbyManager_C, LobbyType) == 0x000230, "Member 'ALobbyManager_C::LobbyType' has a wrong offset!");
-static_assert(offsetof(ALobbyManager_C, SelectedMap) == 0x000240, "Member 'ALobbyManager_C::SelectedMap' has a wrong offset!");
-static_assert(offsetof(ALobbyManager_C, CompletedSetups) == 0x000248, "Member 'ALobbyManager_C::CompletedSetups' has a wrong offset!");
-static_assert(offsetof(ALobbyManager_C, FocusedSetup) == 0x000258, "Member 'ALobbyManager_C::FocusedSetup' has a wrong offset!");
+DUMPER7_ASSERTS_ALobbyManager_C;
 
 }
 

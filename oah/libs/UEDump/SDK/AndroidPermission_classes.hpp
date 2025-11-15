@@ -22,22 +22,24 @@ namespace SDK
 class UAndroidPermissionCallbackProxy final : public UObject
 {
 public:
-	TMulticastInlineDelegate<void(const TArray<class FString>& Permissions, const TArray<bool>& GrantResults)> OnPermissionsGrantedDynamicDelegate;               // 0x0028(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TArray<class FString>& Permissions, const TArray<bool>& GrantResults)> OnPermissionsGrantedDynamicDelegate; // 0x0028(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_38[0x10];                                      // 0x0038(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AndroidPermissionCallbackProxy">();
+		STATIC_CLASS_IMPL("AndroidPermissionCallbackProxy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AndroidPermissionCallbackProxy")
 	}
 	static class UAndroidPermissionCallbackProxy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAndroidPermissionCallbackProxy>();
 	}
 };
-static_assert(alignof(UAndroidPermissionCallbackProxy) == 0x000008, "Wrong alignment on UAndroidPermissionCallbackProxy");
-static_assert(sizeof(UAndroidPermissionCallbackProxy) == 0x000048, "Wrong size on UAndroidPermissionCallbackProxy");
-static_assert(offsetof(UAndroidPermissionCallbackProxy, OnPermissionsGrantedDynamicDelegate) == 0x000028, "Member 'UAndroidPermissionCallbackProxy::OnPermissionsGrantedDynamicDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_UAndroidPermissionCallbackProxy;
 
 // Class AndroidPermission.AndroidPermissionFunctionLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -50,15 +52,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AndroidPermissionFunctionLibrary">();
+		STATIC_CLASS_IMPL("AndroidPermissionFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AndroidPermissionFunctionLibrary")
 	}
 	static class UAndroidPermissionFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAndroidPermissionFunctionLibrary>();
 	}
 };
-static_assert(alignof(UAndroidPermissionFunctionLibrary) == 0x000008, "Wrong alignment on UAndroidPermissionFunctionLibrary");
-static_assert(sizeof(UAndroidPermissionFunctionLibrary) == 0x000028, "Wrong size on UAndroidPermissionFunctionLibrary");
+DUMPER7_ASSERTS_UAndroidPermissionFunctionLibrary;
 
 }
 

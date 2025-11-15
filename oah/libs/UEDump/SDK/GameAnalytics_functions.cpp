@@ -22,8 +22,8 @@ namespace SDK
 // Parameters:
 // EGAAdAction                             Action                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // EGAAdType                               adType                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           adSdkName                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           adPlacement                                            (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    adSdkName                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    adPlacement                                            (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddAdEvent(EGAAdAction Action, EGAAdType adType, const class FString& adSdkName, const class FString& adPlacement)
 {
@@ -53,8 +53,8 @@ void UGameAnalytics::AddAdEvent(EGAAdAction Action, EGAAdType adType, const clas
 // Parameters:
 // EGAAdAction                             Action                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // EGAAdType                               adType                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           adSdkName                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           adPlacement                                            (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    adSdkName                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    adPlacement                                            (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int64                                   Duration                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddAdEventWithDuration(EGAAdAction Action, EGAAdType adType, const class FString& adSdkName, const class FString& adPlacement, int64 Duration)
@@ -86,10 +86,10 @@ void UGameAnalytics::AddAdEventWithDuration(EGAAdAction Action, EGAAdType adType
 // Parameters:
 // EGAAdAction                             Action                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // EGAAdType                               adType                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           adSdkName                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           adPlacement                                            (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    adSdkName                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    adPlacement                                            (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int64                                   Duration                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FGameAnalyticsCustomEventField>CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// const TArray<struct FGameAnalyticsCustomEventField>&CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddAdEventWithDurationAndFields(EGAAdAction Action, EGAAdType adType, const class FString& adSdkName, const class FString& adPlacement, int64 Duration, const TArray<struct FGameAnalyticsCustomEventField>& CustomFields)
 {
@@ -121,10 +121,10 @@ void UGameAnalytics::AddAdEventWithDurationAndFields(EGAAdAction Action, EGAAdTy
 // Parameters:
 // EGAAdAction                             Action                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // EGAAdType                               adType                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           adSdkName                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           adPlacement                                            (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    adSdkName                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    adPlacement                                            (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int64                                   Duration                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FGameAnalyticsCustomEventField>CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// const TArray<struct FGameAnalyticsCustomEventField>&CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddAdEventWithDurationAndMergeFields(EGAAdAction Action, EGAAdType adType, const class FString& adSdkName, const class FString& adPlacement, int64 Duration, const TArray<struct FGameAnalyticsCustomEventField>& CustomFields)
 {
@@ -156,9 +156,9 @@ void UGameAnalytics::AddAdEventWithDurationAndMergeFields(EGAAdAction Action, EG
 // Parameters:
 // EGAAdAction                             Action                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // EGAAdType                               adType                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           adSdkName                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           adPlacement                                            (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FGameAnalyticsCustomEventField>CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// const class FString&                    adSdkName                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    adPlacement                                            (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const TArray<struct FGameAnalyticsCustomEventField>&CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddAdEventWithFields(EGAAdAction Action, EGAAdType adType, const class FString& adSdkName, const class FString& adPlacement, const TArray<struct FGameAnalyticsCustomEventField>& CustomFields)
 {
@@ -189,9 +189,9 @@ void UGameAnalytics::AddAdEventWithFields(EGAAdAction Action, EGAAdType adType, 
 // Parameters:
 // EGAAdAction                             Action                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // EGAAdType                               adType                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           adSdkName                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           adPlacement                                            (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FGameAnalyticsCustomEventField>CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// const class FString&                    adSdkName                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    adPlacement                                            (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const TArray<struct FGameAnalyticsCustomEventField>&CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddAdEventWithMergeFields(EGAAdAction Action, EGAAdType adType, const class FString& adSdkName, const class FString& adPlacement, const TArray<struct FGameAnalyticsCustomEventField>& CustomFields)
 {
@@ -222,8 +222,8 @@ void UGameAnalytics::AddAdEventWithMergeFields(EGAAdAction Action, EGAAdType adT
 // Parameters:
 // EGAAdAction                             Action                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // EGAAdType                               adType                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           adSdkName                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           adPlacement                                            (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    adSdkName                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    adPlacement                                            (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // EGAAdError                              noAdReason                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddAdEventWithNoAdReason(EGAAdAction Action, EGAAdType adType, const class FString& adSdkName, const class FString& adPlacement, EGAAdError noAdReason)
@@ -255,10 +255,10 @@ void UGameAnalytics::AddAdEventWithNoAdReason(EGAAdAction Action, EGAAdType adTy
 // Parameters:
 // EGAAdAction                             Action                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // EGAAdType                               adType                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           adSdkName                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           adPlacement                                            (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    adSdkName                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    adPlacement                                            (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // EGAAdError                              noAdReason                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FGameAnalyticsCustomEventField>CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// const TArray<struct FGameAnalyticsCustomEventField>&CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddAdEventWithNoAdReasonAndFields(EGAAdAction Action, EGAAdType adType, const class FString& adSdkName, const class FString& adPlacement, EGAAdError noAdReason, const TArray<struct FGameAnalyticsCustomEventField>& CustomFields)
 {
@@ -290,10 +290,10 @@ void UGameAnalytics::AddAdEventWithNoAdReasonAndFields(EGAAdAction Action, EGAAd
 // Parameters:
 // EGAAdAction                             Action                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // EGAAdType                               adType                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           adSdkName                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           adPlacement                                            (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    adSdkName                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    adPlacement                                            (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // EGAAdError                              noAdReason                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FGameAnalyticsCustomEventField>CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// const TArray<struct FGameAnalyticsCustomEventField>&CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddAdEventWithNoAdReasonAndMergeFields(EGAAdAction Action, EGAAdType adType, const class FString& adSdkName, const class FString& adPlacement, EGAAdError noAdReason, const TArray<struct FGameAnalyticsCustomEventField>& CustomFields)
 {
@@ -323,11 +323,11 @@ void UGameAnalytics::AddAdEventWithNoAdReasonAndMergeFields(EGAAdAction Action, 
 // Function GameAnalytics.GameAnalytics.AddBusinessEvent
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class FString                           Currency                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Currency                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   Amount                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ItemType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ItemId                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           CartType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    ItemType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    ItemId                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    CartType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddBusinessEvent(const class FString& Currency, int32 Amount, const class FString& ItemType, const class FString& ItemId, const class FString& CartType)
 {
@@ -356,11 +356,11 @@ void UGameAnalytics::AddBusinessEvent(const class FString& Currency, int32 Amoun
 // Function GameAnalytics.GameAnalytics.AddBusinessEventAndAutoFetchReceipt
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class FString                           Currency                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Currency                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   Amount                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ItemType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ItemId                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           CartType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    ItemType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    ItemId                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    CartType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddBusinessEventAndAutoFetchReceipt(const class FString& Currency, int32 Amount, const class FString& ItemType, const class FString& ItemId, const class FString& CartType)
 {
@@ -389,12 +389,12 @@ void UGameAnalytics::AddBusinessEventAndAutoFetchReceipt(const class FString& Cu
 // Function GameAnalytics.GameAnalytics.AddBusinessEventAndAutoFetchReceiptWithFields
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class FString                           Currency                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Currency                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   Amount                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ItemType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ItemId                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           CartType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FGameAnalyticsCustomEventField>CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// const class FString&                    ItemType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    ItemId                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    CartType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const TArray<struct FGameAnalyticsCustomEventField>&CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddBusinessEventAndAutoFetchReceiptWithFields(const class FString& Currency, int32 Amount, const class FString& ItemType, const class FString& ItemId, const class FString& CartType, const TArray<struct FGameAnalyticsCustomEventField>& CustomFields)
 {
@@ -424,12 +424,12 @@ void UGameAnalytics::AddBusinessEventAndAutoFetchReceiptWithFields(const class F
 // Function GameAnalytics.GameAnalytics.AddBusinessEventAndAutoFetchReceiptWithMergeFields
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class FString                           Currency                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Currency                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   Amount                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ItemType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ItemId                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           CartType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FGameAnalyticsCustomEventField>CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// const class FString&                    ItemType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    ItemId                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    CartType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const TArray<struct FGameAnalyticsCustomEventField>&CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddBusinessEventAndAutoFetchReceiptWithMergeFields(const class FString& Currency, int32 Amount, const class FString& ItemType, const class FString& ItemId, const class FString& CartType, const TArray<struct FGameAnalyticsCustomEventField>& CustomFields)
 {
@@ -459,13 +459,13 @@ void UGameAnalytics::AddBusinessEventAndAutoFetchReceiptWithMergeFields(const cl
 // Function GameAnalytics.GameAnalytics.AddBusinessEventAndroid
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class FString                           Currency                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Currency                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   Amount                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ItemType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ItemId                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           CartType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Receipt                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Signature                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    ItemType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    ItemId                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    CartType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Receipt                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Signature                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddBusinessEventAndroid(const class FString& Currency, int32 Amount, const class FString& ItemType, const class FString& ItemId, const class FString& CartType, const class FString& Receipt, const class FString& Signature)
 {
@@ -496,14 +496,14 @@ void UGameAnalytics::AddBusinessEventAndroid(const class FString& Currency, int3
 // Function GameAnalytics.GameAnalytics.AddBusinessEventAndroidWithFields
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class FString                           Currency                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Currency                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   Amount                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ItemType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ItemId                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           CartType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Receipt                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Signature                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FGameAnalyticsCustomEventField>CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// const class FString&                    ItemType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    ItemId                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    CartType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Receipt                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Signature                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const TArray<struct FGameAnalyticsCustomEventField>&CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddBusinessEventAndroidWithFields(const class FString& Currency, int32 Amount, const class FString& ItemType, const class FString& ItemId, const class FString& CartType, const class FString& Receipt, const class FString& Signature, const TArray<struct FGameAnalyticsCustomEventField>& CustomFields)
 {
@@ -535,14 +535,14 @@ void UGameAnalytics::AddBusinessEventAndroidWithFields(const class FString& Curr
 // Function GameAnalytics.GameAnalytics.AddBusinessEventAndroidWithMergeFields
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class FString                           Currency                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Currency                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   Amount                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ItemType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ItemId                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           CartType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Receipt                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Signature                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FGameAnalyticsCustomEventField>CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// const class FString&                    ItemType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    ItemId                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    CartType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Receipt                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Signature                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const TArray<struct FGameAnalyticsCustomEventField>&CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddBusinessEventAndroidWithMergeFields(const class FString& Currency, int32 Amount, const class FString& ItemType, const class FString& ItemId, const class FString& CartType, const class FString& Receipt, const class FString& Signature, const TArray<struct FGameAnalyticsCustomEventField>& CustomFields)
 {
@@ -574,12 +574,12 @@ void UGameAnalytics::AddBusinessEventAndroidWithMergeFields(const class FString&
 // Function GameAnalytics.GameAnalytics.AddBusinessEventIOS
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class FString                           Currency                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Currency                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   Amount                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ItemType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ItemId                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           CartType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Receipt                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    ItemType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    ItemId                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    CartType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Receipt                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddBusinessEventIOS(const class FString& Currency, int32 Amount, const class FString& ItemType, const class FString& ItemId, const class FString& CartType, const class FString& Receipt)
 {
@@ -609,13 +609,13 @@ void UGameAnalytics::AddBusinessEventIOS(const class FString& Currency, int32 Am
 // Function GameAnalytics.GameAnalytics.AddBusinessEventIOSWithFields
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class FString                           Currency                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Currency                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   Amount                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ItemType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ItemId                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           CartType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Receipt                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FGameAnalyticsCustomEventField>CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// const class FString&                    ItemType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    ItemId                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    CartType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Receipt                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const TArray<struct FGameAnalyticsCustomEventField>&CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddBusinessEventIOSWithFields(const class FString& Currency, int32 Amount, const class FString& ItemType, const class FString& ItemId, const class FString& CartType, const class FString& Receipt, const TArray<struct FGameAnalyticsCustomEventField>& CustomFields)
 {
@@ -646,13 +646,13 @@ void UGameAnalytics::AddBusinessEventIOSWithFields(const class FString& Currency
 // Function GameAnalytics.GameAnalytics.AddBusinessEventIOSWithMergeFields
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class FString                           Currency                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Currency                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   Amount                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ItemType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ItemId                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           CartType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Receipt                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FGameAnalyticsCustomEventField>CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// const class FString&                    ItemType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    ItemId                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    CartType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Receipt                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const TArray<struct FGameAnalyticsCustomEventField>&CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddBusinessEventIOSWithMergeFields(const class FString& Currency, int32 Amount, const class FString& ItemType, const class FString& ItemId, const class FString& CartType, const class FString& Receipt, const TArray<struct FGameAnalyticsCustomEventField>& CustomFields)
 {
@@ -683,12 +683,12 @@ void UGameAnalytics::AddBusinessEventIOSWithMergeFields(const class FString& Cur
 // Function GameAnalytics.GameAnalytics.AddBusinessEventWithFields
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class FString                           Currency                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Currency                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   Amount                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ItemType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ItemId                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           CartType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FGameAnalyticsCustomEventField>CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// const class FString&                    ItemType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    ItemId                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    CartType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const TArray<struct FGameAnalyticsCustomEventField>&CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddBusinessEventWithFields(const class FString& Currency, int32 Amount, const class FString& ItemType, const class FString& ItemId, const class FString& CartType, const TArray<struct FGameAnalyticsCustomEventField>& CustomFields)
 {
@@ -718,12 +718,12 @@ void UGameAnalytics::AddBusinessEventWithFields(const class FString& Currency, i
 // Function GameAnalytics.GameAnalytics.AddBusinessEventWithMergeFields
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class FString                           Currency                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Currency                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   Amount                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ItemType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ItemId                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           CartType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FGameAnalyticsCustomEventField>CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// const class FString&                    ItemType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    ItemId                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    CartType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const TArray<struct FGameAnalyticsCustomEventField>&CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddBusinessEventWithMergeFields(const class FString& Currency, int32 Amount, const class FString& ItemType, const class FString& ItemId, const class FString& CartType, const TArray<struct FGameAnalyticsCustomEventField>& CustomFields)
 {
@@ -753,7 +753,7 @@ void UGameAnalytics::AddBusinessEventWithMergeFields(const class FString& Curren
 // Function GameAnalytics.GameAnalytics.AddDesignEvent
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class FString                           EventId                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    EventId                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddDesignEvent(const class FString& EventId)
 {
@@ -778,8 +778,8 @@ void UGameAnalytics::AddDesignEvent(const class FString& EventId)
 // Function GameAnalytics.GameAnalytics.AddDesignEventWithFields
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class FString                           EventId                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FGameAnalyticsCustomEventField>CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// const class FString&                    EventId                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const TArray<struct FGameAnalyticsCustomEventField>&CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddDesignEventWithFields(const class FString& EventId, const TArray<struct FGameAnalyticsCustomEventField>& CustomFields)
 {
@@ -805,8 +805,8 @@ void UGameAnalytics::AddDesignEventWithFields(const class FString& EventId, cons
 // Function GameAnalytics.GameAnalytics.AddDesignEventWithMergeFields
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class FString                           EventId                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FGameAnalyticsCustomEventField>CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// const class FString&                    EventId                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const TArray<struct FGameAnalyticsCustomEventField>&CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddDesignEventWithMergeFields(const class FString& EventId, const TArray<struct FGameAnalyticsCustomEventField>& CustomFields)
 {
@@ -832,7 +832,7 @@ void UGameAnalytics::AddDesignEventWithMergeFields(const class FString& EventId,
 // Function GameAnalytics.GameAnalytics.AddDesignEventWithValue
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class FString                           EventId                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    EventId                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float                                   Value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddDesignEventWithValue(const class FString& EventId, float Value)
@@ -859,9 +859,9 @@ void UGameAnalytics::AddDesignEventWithValue(const class FString& EventId, float
 // Function GameAnalytics.GameAnalytics.AddDesignEventWithValueAndFields
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class FString                           EventId                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    EventId                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float                                   Value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FGameAnalyticsCustomEventField>CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// const TArray<struct FGameAnalyticsCustomEventField>&CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddDesignEventWithValueAndFields(const class FString& EventId, float Value, const TArray<struct FGameAnalyticsCustomEventField>& CustomFields)
 {
@@ -888,9 +888,9 @@ void UGameAnalytics::AddDesignEventWithValueAndFields(const class FString& Event
 // Function GameAnalytics.GameAnalytics.AddDesignEventWithValueAndMergeFields
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class FString                           EventId                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    EventId                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float                                   Value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FGameAnalyticsCustomEventField>CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// const TArray<struct FGameAnalyticsCustomEventField>&CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddDesignEventWithValueAndMergeFields(const class FString& EventId, float Value, const TArray<struct FGameAnalyticsCustomEventField>& CustomFields)
 {
@@ -918,7 +918,7 @@ void UGameAnalytics::AddDesignEventWithValueAndMergeFields(const class FString& 
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // EGAErrorSeverity                        Severity                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Message                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Message                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddErrorEvent(EGAErrorSeverity Severity, const class FString& Message)
 {
@@ -945,8 +945,8 @@ void UGameAnalytics::AddErrorEvent(EGAErrorSeverity Severity, const class FStrin
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
 // EGAErrorSeverity                        Severity                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Message                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FGameAnalyticsCustomEventField>CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// const class FString&                    Message                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const TArray<struct FGameAnalyticsCustomEventField>&CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddErrorEventWithFields(EGAErrorSeverity Severity, const class FString& Message, const TArray<struct FGameAnalyticsCustomEventField>& CustomFields)
 {
@@ -974,8 +974,8 @@ void UGameAnalytics::AddErrorEventWithFields(EGAErrorSeverity Severity, const cl
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
 // EGAErrorSeverity                        Severity                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Message                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FGameAnalyticsCustomEventField>CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// const class FString&                    Message                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const TArray<struct FGameAnalyticsCustomEventField>&CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddErrorEventWithMergeFields(EGAErrorSeverity Severity, const class FString& Message, const TArray<struct FGameAnalyticsCustomEventField>& CustomFields)
 {
@@ -1003,7 +1003,7 @@ void UGameAnalytics::AddErrorEventWithMergeFields(EGAErrorSeverity Severity, con
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // EGAProgressionStatus                    ProgressionStatus                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Progression01                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Progression01                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddProgressionEventWithOne(EGAProgressionStatus ProgressionStatus, const class FString& Progression01)
 {
@@ -1030,8 +1030,8 @@ void UGameAnalytics::AddProgressionEventWithOne(EGAProgressionStatus Progression
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
 // EGAProgressionStatus                    ProgressionStatus                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Progression01                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FGameAnalyticsCustomEventField>CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// const class FString&                    Progression01                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const TArray<struct FGameAnalyticsCustomEventField>&CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddProgressionEventWithOneAndFields(EGAProgressionStatus ProgressionStatus, const class FString& Progression01, const TArray<struct FGameAnalyticsCustomEventField>& CustomFields)
 {
@@ -1059,8 +1059,8 @@ void UGameAnalytics::AddProgressionEventWithOneAndFields(EGAProgressionStatus Pr
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
 // EGAProgressionStatus                    ProgressionStatus                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Progression01                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FGameAnalyticsCustomEventField>CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// const class FString&                    Progression01                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const TArray<struct FGameAnalyticsCustomEventField>&CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddProgressionEventWithOneAndMergeFields(EGAProgressionStatus ProgressionStatus, const class FString& Progression01, const TArray<struct FGameAnalyticsCustomEventField>& CustomFields)
 {
@@ -1088,7 +1088,7 @@ void UGameAnalytics::AddProgressionEventWithOneAndMergeFields(EGAProgressionStat
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // EGAProgressionStatus                    ProgressionStatus                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Progression01                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Progression01                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   Score                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddProgressionEventWithOneAndScore(EGAProgressionStatus ProgressionStatus, const class FString& Progression01, int32 Score)
@@ -1117,8 +1117,8 @@ void UGameAnalytics::AddProgressionEventWithOneAndScore(EGAProgressionStatus Pro
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // EGAProgressionStatus                    ProgressionStatus                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Progression01                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Progression02                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Progression01                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Progression02                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddProgressionEventWithOneAndTwo(EGAProgressionStatus ProgressionStatus, const class FString& Progression01, const class FString& Progression02)
 {
@@ -1146,9 +1146,9 @@ void UGameAnalytics::AddProgressionEventWithOneAndTwo(EGAProgressionStatus Progr
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
 // EGAProgressionStatus                    ProgressionStatus                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Progression01                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Progression01                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   Score                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FGameAnalyticsCustomEventField>CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// const TArray<struct FGameAnalyticsCustomEventField>&CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddProgressionEventWithOneScoreAndFields(EGAProgressionStatus ProgressionStatus, const class FString& Progression01, int32 Score, const TArray<struct FGameAnalyticsCustomEventField>& CustomFields)
 {
@@ -1177,9 +1177,9 @@ void UGameAnalytics::AddProgressionEventWithOneScoreAndFields(EGAProgressionStat
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
 // EGAProgressionStatus                    ProgressionStatus                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Progression01                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Progression01                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   Score                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FGameAnalyticsCustomEventField>CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// const TArray<struct FGameAnalyticsCustomEventField>&CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddProgressionEventWithOneScoreAndMergeFields(EGAProgressionStatus ProgressionStatus, const class FString& Progression01, int32 Score, const TArray<struct FGameAnalyticsCustomEventField>& CustomFields)
 {
@@ -1208,9 +1208,9 @@ void UGameAnalytics::AddProgressionEventWithOneScoreAndMergeFields(EGAProgressio
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
 // EGAProgressionStatus                    ProgressionStatus                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Progression01                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Progression02                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FGameAnalyticsCustomEventField>CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// const class FString&                    Progression01                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Progression02                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const TArray<struct FGameAnalyticsCustomEventField>&CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddProgressionEventWithOneTwoAndFields(EGAProgressionStatus ProgressionStatus, const class FString& Progression01, const class FString& Progression02, const TArray<struct FGameAnalyticsCustomEventField>& CustomFields)
 {
@@ -1239,9 +1239,9 @@ void UGameAnalytics::AddProgressionEventWithOneTwoAndFields(EGAProgressionStatus
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
 // EGAProgressionStatus                    ProgressionStatus                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Progression01                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Progression02                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FGameAnalyticsCustomEventField>CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// const class FString&                    Progression01                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Progression02                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const TArray<struct FGameAnalyticsCustomEventField>&CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddProgressionEventWithOneTwoAndMergeFields(EGAProgressionStatus ProgressionStatus, const class FString& Progression01, const class FString& Progression02, const TArray<struct FGameAnalyticsCustomEventField>& CustomFields)
 {
@@ -1270,8 +1270,8 @@ void UGameAnalytics::AddProgressionEventWithOneTwoAndMergeFields(EGAProgressionS
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // EGAProgressionStatus                    ProgressionStatus                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Progression01                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Progression02                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Progression01                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Progression02                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   Score                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddProgressionEventWithOneTwoAndScore(EGAProgressionStatus ProgressionStatus, const class FString& Progression01, const class FString& Progression02, int32 Score)
@@ -1301,9 +1301,9 @@ void UGameAnalytics::AddProgressionEventWithOneTwoAndScore(EGAProgressionStatus 
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // EGAProgressionStatus                    ProgressionStatus                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Progression01                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Progression02                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Progression03                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Progression01                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Progression02                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Progression03                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddProgressionEventWithOneTwoAndThree(EGAProgressionStatus ProgressionStatus, const class FString& Progression01, const class FString& Progression02, const class FString& Progression03)
 {
@@ -1332,10 +1332,10 @@ void UGameAnalytics::AddProgressionEventWithOneTwoAndThree(EGAProgressionStatus 
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
 // EGAProgressionStatus                    ProgressionStatus                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Progression01                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Progression02                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Progression01                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Progression02                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   Score                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FGameAnalyticsCustomEventField>CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// const TArray<struct FGameAnalyticsCustomEventField>&CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddProgressionEventWithOneTwoScoreAndFields(EGAProgressionStatus ProgressionStatus, const class FString& Progression01, const class FString& Progression02, int32 Score, const TArray<struct FGameAnalyticsCustomEventField>& CustomFields)
 {
@@ -1365,10 +1365,10 @@ void UGameAnalytics::AddProgressionEventWithOneTwoScoreAndFields(EGAProgressionS
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
 // EGAProgressionStatus                    ProgressionStatus                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Progression01                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Progression02                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Progression01                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Progression02                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   Score                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FGameAnalyticsCustomEventField>CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// const TArray<struct FGameAnalyticsCustomEventField>&CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddProgressionEventWithOneTwoScoreAndMergeFields(EGAProgressionStatus ProgressionStatus, const class FString& Progression01, const class FString& Progression02, int32 Score, const TArray<struct FGameAnalyticsCustomEventField>& CustomFields)
 {
@@ -1398,10 +1398,10 @@ void UGameAnalytics::AddProgressionEventWithOneTwoScoreAndMergeFields(EGAProgres
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
 // EGAProgressionStatus                    ProgressionStatus                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Progression01                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Progression02                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Progression03                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FGameAnalyticsCustomEventField>CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// const class FString&                    Progression01                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Progression02                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Progression03                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const TArray<struct FGameAnalyticsCustomEventField>&CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddProgressionEventWithOneTwoThreeAndFields(EGAProgressionStatus ProgressionStatus, const class FString& Progression01, const class FString& Progression02, const class FString& Progression03, const TArray<struct FGameAnalyticsCustomEventField>& CustomFields)
 {
@@ -1431,10 +1431,10 @@ void UGameAnalytics::AddProgressionEventWithOneTwoThreeAndFields(EGAProgressionS
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
 // EGAProgressionStatus                    ProgressionStatus                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Progression01                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Progression02                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Progression03                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FGameAnalyticsCustomEventField>CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// const class FString&                    Progression01                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Progression02                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Progression03                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const TArray<struct FGameAnalyticsCustomEventField>&CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddProgressionEventWithOneTwoThreeAndMergeFields(EGAProgressionStatus ProgressionStatus, const class FString& Progression01, const class FString& Progression02, const class FString& Progression03, const TArray<struct FGameAnalyticsCustomEventField>& CustomFields)
 {
@@ -1464,9 +1464,9 @@ void UGameAnalytics::AddProgressionEventWithOneTwoThreeAndMergeFields(EGAProgres
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // EGAProgressionStatus                    ProgressionStatus                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Progression01                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Progression02                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Progression03                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Progression01                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Progression02                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Progression03                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   Score                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddProgressionEventWithOneTwoThreeAndScore(EGAProgressionStatus ProgressionStatus, const class FString& Progression01, const class FString& Progression02, const class FString& Progression03, int32 Score)
@@ -1497,11 +1497,11 @@ void UGameAnalytics::AddProgressionEventWithOneTwoThreeAndScore(EGAProgressionSt
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
 // EGAProgressionStatus                    ProgressionStatus                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Progression01                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Progression02                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Progression03                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Progression01                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Progression02                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Progression03                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   Score                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FGameAnalyticsCustomEventField>CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// const TArray<struct FGameAnalyticsCustomEventField>&CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddProgressionEventWithOneTwoThreeScoreAndFields(EGAProgressionStatus ProgressionStatus, const class FString& Progression01, const class FString& Progression02, const class FString& Progression03, int32 Score, const TArray<struct FGameAnalyticsCustomEventField>& CustomFields)
 {
@@ -1532,11 +1532,11 @@ void UGameAnalytics::AddProgressionEventWithOneTwoThreeScoreAndFields(EGAProgres
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
 // EGAProgressionStatus                    ProgressionStatus                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Progression01                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Progression02                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Progression03                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Progression01                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Progression02                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Progression03                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   Score                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FGameAnalyticsCustomEventField>CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// const TArray<struct FGameAnalyticsCustomEventField>&CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddProgressionEventWithOneTwoThreeScoreAndMergeFields(EGAProgressionStatus ProgressionStatus, const class FString& Progression01, const class FString& Progression02, const class FString& Progression03, int32 Score, const TArray<struct FGameAnalyticsCustomEventField>& CustomFields)
 {
@@ -1567,10 +1567,10 @@ void UGameAnalytics::AddProgressionEventWithOneTwoThreeScoreAndMergeFields(EGAPr
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // EGAResourceFlowType                     FlowType                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Currency                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Currency                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float                                   Amount                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ItemType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ItemId                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    ItemType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    ItemId                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddResourceEvent(EGAResourceFlowType FlowType, const class FString& Currency, float Amount, const class FString& ItemType, const class FString& ItemId)
 {
@@ -1600,11 +1600,11 @@ void UGameAnalytics::AddResourceEvent(EGAResourceFlowType FlowType, const class 
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
 // EGAResourceFlowType                     FlowType                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Currency                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Currency                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float                                   Amount                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ItemType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ItemId                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FGameAnalyticsCustomEventField>CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// const class FString&                    ItemType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    ItemId                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const TArray<struct FGameAnalyticsCustomEventField>&CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddResourceEventWithFields(EGAResourceFlowType FlowType, const class FString& Currency, float Amount, const class FString& ItemType, const class FString& ItemId, const TArray<struct FGameAnalyticsCustomEventField>& CustomFields)
 {
@@ -1635,11 +1635,11 @@ void UGameAnalytics::AddResourceEventWithFields(EGAResourceFlowType FlowType, co
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
 // EGAResourceFlowType                     FlowType                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           Currency                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Currency                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float                                   Amount                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ItemType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ItemId                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FGameAnalyticsCustomEventField>CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// const class FString&                    ItemType                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    ItemId                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const TArray<struct FGameAnalyticsCustomEventField>&CustomFields                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::AddResourceEventWithMergeFields(EGAResourceFlowType FlowType, const class FString& Currency, float Amount, const class FString& ItemType, const class FString& ItemId, const TArray<struct FGameAnalyticsCustomEventField>& CustomFields)
 {
@@ -1744,7 +1744,7 @@ class FString UGameAnalytics::GetRemoteConfigsContentAsString()
 // Function GameAnalytics.GameAnalytics.GetRemoteConfigsValueAsString
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class FString                           Key                                                    (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Key                                                    (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 class FString UGameAnalytics::GetRemoteConfigsValueAsString(const class FString& Key)
@@ -1772,8 +1772,8 @@ class FString UGameAnalytics::GetRemoteConfigsValueAsString(const class FString&
 // Function GameAnalytics.GameAnalytics.GetRemoteConfigsValueAsStringWithDefaultValue
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class FString                           Key                                                    (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           DefaultValue                                           (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Key                                                    (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    DefaultValue                                           (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 class FString UGameAnalytics::GetRemoteConfigsValueAsStringWithDefaultValue(const class FString& Key, const class FString& DefaultValue)
@@ -1846,7 +1846,7 @@ void UGameAnalytics::OnQuit()
 // Function GameAnalytics.GameAnalytics.SetCustomDimension01
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class FString                           CustomDimension                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    CustomDimension                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::SetCustomDimension01(const class FString& CustomDimension)
 {
@@ -1871,7 +1871,7 @@ void UGameAnalytics::SetCustomDimension01(const class FString& CustomDimension)
 // Function GameAnalytics.GameAnalytics.SetCustomDimension02
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class FString                           CustomDimension                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    CustomDimension                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::SetCustomDimension02(const class FString& CustomDimension)
 {
@@ -1896,7 +1896,7 @@ void UGameAnalytics::SetCustomDimension02(const class FString& CustomDimension)
 // Function GameAnalytics.GameAnalytics.SetCustomDimension03
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class FString                           CustomDimension                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    CustomDimension                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UGameAnalytics::SetCustomDimension03(const class FString& CustomDimension)
 {

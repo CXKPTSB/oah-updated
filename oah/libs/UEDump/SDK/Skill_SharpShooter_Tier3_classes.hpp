@@ -32,17 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Skill_SharpShooter_Tier3_C">();
+		BP_STATIC_CLASS_IMPL("Skill_SharpShooter_Tier3_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Skill_SharpShooter_Tier3_C")
 	}
 	static class USkill_SharpShooter_Tier3_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USkill_SharpShooter_Tier3_C>();
 	}
 };
-static_assert(alignof(USkill_SharpShooter_Tier3_C) == 0x000008, "Wrong alignment on USkill_SharpShooter_Tier3_C");
-static_assert(sizeof(USkill_SharpShooter_Tier3_C) == 0x0000E0, "Wrong size on USkill_SharpShooter_Tier3_C");
-static_assert(offsetof(USkill_SharpShooter_Tier3_C, UberGraphFrame_Skill_SharpShooter_Tier3_C) == 0x0000D0, "Member 'USkill_SharpShooter_Tier3_C::UberGraphFrame_Skill_SharpShooter_Tier3_C' has a wrong offset!");
-static_assert(offsetof(USkill_SharpShooter_Tier3_C, Accuracy) == 0x0000D8, "Member 'USkill_SharpShooter_Tier3_C::Accuracy' has a wrong offset!");
+DUMPER7_ASSERTS_USkill_SharpShooter_Tier3_C;
 
 }
 

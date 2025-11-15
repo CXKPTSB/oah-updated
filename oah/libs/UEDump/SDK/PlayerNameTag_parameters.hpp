@@ -34,17 +34,7 @@ public:
 	struct FVector2D                              CallFunc_ProjectWorldLocationToWidgetPosition_ScreenPosition; // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_ProjectWorldLocationToWidgetPosition_ReturnValue; // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerNameTag_C_ExecuteUbergraph_PlayerNameTag) == 0x000008, "Wrong alignment on PlayerNameTag_C_ExecuteUbergraph_PlayerNameTag");
-static_assert(sizeof(PlayerNameTag_C_ExecuteUbergraph_PlayerNameTag) == 0x000050, "Wrong size on PlayerNameTag_C_ExecuteUbergraph_PlayerNameTag");
-static_assert(offsetof(PlayerNameTag_C_ExecuteUbergraph_PlayerNameTag, EntryPoint) == 0x000000, "Member 'PlayerNameTag_C_ExecuteUbergraph_PlayerNameTag::EntryPoint' has a wrong offset!");
-static_assert(offsetof(PlayerNameTag_C_ExecuteUbergraph_PlayerNameTag, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'PlayerNameTag_C_ExecuteUbergraph_PlayerNameTag::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerNameTag_C_ExecuteUbergraph_PlayerNameTag, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'PlayerNameTag_C_ExecuteUbergraph_PlayerNameTag::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerNameTag_C_ExecuteUbergraph_PlayerNameTag, CallFunc_IsValid_ReturnValue_1) == 0x000011, "Member 'PlayerNameTag_C_ExecuteUbergraph_PlayerNameTag::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerNameTag_C_ExecuteUbergraph_PlayerNameTag, CallFunc_GetPlayerName_ReturnValue) == 0x000018, "Member 'PlayerNameTag_C_ExecuteUbergraph_PlayerNameTag::CallFunc_GetPlayerName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerNameTag_C_ExecuteUbergraph_PlayerNameTag, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000028, "Member 'PlayerNameTag_C_ExecuteUbergraph_PlayerNameTag::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerNameTag_C_ExecuteUbergraph_PlayerNameTag, CallFunc_Add_VectorVector_ReturnValue) == 0x000034, "Member 'PlayerNameTag_C_ExecuteUbergraph_PlayerNameTag::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerNameTag_C_ExecuteUbergraph_PlayerNameTag, CallFunc_ProjectWorldLocationToWidgetPosition_ScreenPosition) == 0x000040, "Member 'PlayerNameTag_C_ExecuteUbergraph_PlayerNameTag::CallFunc_ProjectWorldLocationToWidgetPosition_ScreenPosition' has a wrong offset!");
-static_assert(offsetof(PlayerNameTag_C_ExecuteUbergraph_PlayerNameTag, CallFunc_ProjectWorldLocationToWidgetPosition_ReturnValue) == 0x000048, "Member 'PlayerNameTag_C_ExecuteUbergraph_PlayerNameTag::CallFunc_ProjectWorldLocationToWidgetPosition_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerNameTag_C_ExecuteUbergraph_PlayerNameTag;
 
 // Function PlayerNameTag.PlayerNameTag_C.GetVisibility_0
 // 0x0001 (0x0001 - 0x0000)
@@ -53,9 +43,7 @@ struct PlayerNameTag_C_GetVisibility_0 final
 public:
 	ESlateVisibility                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerNameTag_C_GetVisibility_0) == 0x000001, "Wrong alignment on PlayerNameTag_C_GetVisibility_0");
-static_assert(sizeof(PlayerNameTag_C_GetVisibility_0) == 0x000001, "Wrong size on PlayerNameTag_C_GetVisibility_0");
-static_assert(offsetof(PlayerNameTag_C_GetVisibility_0, ReturnValue) == 0x000000, "Member 'PlayerNameTag_C_GetVisibility_0::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerNameTag_C_GetVisibility_0;
 
 }
 

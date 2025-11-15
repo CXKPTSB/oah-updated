@@ -33,23 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Rifle_MK47_C">();
+		BP_STATIC_CLASS_IMPL("Rifle_MK47_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Rifle_MK47_C")
 	}
 	static class ARifle_MK47_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ARifle_MK47_C>();
 	}
 };
-static_assert(alignof(ARifle_MK47_C) == 0x000008, "Wrong alignment on ARifle_MK47_C");
-static_assert(sizeof(ARifle_MK47_C) == 0x000370, "Wrong size on ARifle_MK47_C");
-static_assert(offsetof(ARifle_MK47_C, CollisionBox1) == 0x000330, "Member 'ARifle_MK47_C::CollisionBox1' has a wrong offset!");
-static_assert(offsetof(ARifle_MK47_C, SM_Wep_Mod_A_Handguard_02) == 0x000338, "Member 'ARifle_MK47_C::SM_Wep_Mod_A_Handguard_02' has a wrong offset!");
-static_assert(offsetof(ARifle_MK47_C, Scope_front) == 0x000340, "Member 'ARifle_MK47_C::Scope_front' has a wrong offset!");
-static_assert(offsetof(ARifle_MK47_C, Trigger) == 0x000348, "Member 'ARifle_MK47_C::Trigger' has a wrong offset!");
-static_assert(offsetof(ARifle_MK47_C, SM_Wep_Mod_A_handle) == 0x000350, "Member 'ARifle_MK47_C::SM_Wep_Mod_A_handle' has a wrong offset!");
-static_assert(offsetof(ARifle_MK47_C, SM_Wep_Mod_A_Stock) == 0x000358, "Member 'ARifle_MK47_C::SM_Wep_Mod_A_Stock' has a wrong offset!");
-static_assert(offsetof(ARifle_MK47_C, SM_Wep_Mod_A_Barrel) == 0x000360, "Member 'ARifle_MK47_C::SM_Wep_Mod_A_Barrel' has a wrong offset!");
-static_assert(offsetof(ARifle_MK47_C, SM_Wep_Mod_A_Handguard_01) == 0x000368, "Member 'ARifle_MK47_C::SM_Wep_Mod_A_Handguard_01' has a wrong offset!");
+DUMPER7_ASSERTS_ARifle_MK47_C;
 
 }
 

@@ -23,15 +23,18 @@ class USkill_LastStand_Tier3_C final : public USkill_LastStand_Tier1_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Skill_LastStand_Tier3_C">();
+		BP_STATIC_CLASS_IMPL("Skill_LastStand_Tier3_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Skill_LastStand_Tier3_C")
 	}
 	static class USkill_LastStand_Tier3_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USkill_LastStand_Tier3_C>();
 	}
 };
-static_assert(alignof(USkill_LastStand_Tier3_C) == 0x000008, "Wrong alignment on USkill_LastStand_Tier3_C");
-static_assert(sizeof(USkill_LastStand_Tier3_C) == 0x0000E0, "Wrong size on USkill_LastStand_Tier3_C");
+DUMPER7_ASSERTS_USkill_LastStand_Tier3_C;
 
 }
 

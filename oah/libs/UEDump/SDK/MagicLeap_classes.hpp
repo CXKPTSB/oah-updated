@@ -33,30 +33,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MagicLeapSettings">();
+		STATIC_CLASS_IMPL("MagicLeapSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MagicLeapSettings")
 	}
 	static class UMagicLeapSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMagicLeapSettings>();
 	}
 };
-static_assert(alignof(UMagicLeapSettings) == 0x000008, "Wrong alignment on UMagicLeapSettings");
-static_assert(sizeof(UMagicLeapSettings) == 0x000030, "Wrong size on UMagicLeapSettings");
-static_assert(offsetof(UMagicLeapSettings, bEnableZI) == 0x000028, "Member 'UMagicLeapSettings::bEnableZI' has a wrong offset!");
-static_assert(offsetof(UMagicLeapSettings, bUseVulkanForZI) == 0x000029, "Member 'UMagicLeapSettings::bUseVulkanForZI' has a wrong offset!");
-static_assert(offsetof(UMagicLeapSettings, bUseMLAudioForZI) == 0x00002A, "Member 'UMagicLeapSettings::bUseMLAudioForZI' has a wrong offset!");
+DUMPER7_ASSERTS_UMagicLeapSettings;
 
 // Class MagicLeap.InAppPurchaseComponent
 // 0x0078 (0x0128 - 0x00B0)
 class UInAppPurchaseComponent final : public UActorComponent
 {
 public:
-	TMulticastInlineDelegate<void(const class FString& LogMessage)> InAppPurchaseLogMessage;                           // 0x00B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const TArray<struct FPurchaseItemDetails>& ItemsDetails)> GetItemsDetailsSuccess;                            // 0x00C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& LogMessage)> InAppPurchaseLogMessage;         // 0x00B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TArray<struct FPurchaseItemDetails>& ItemsDetails)> GetItemsDetailsSuccess; // 0x00C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void()>              GetItemsDetailsFailure;                            // 0x00D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FPurchaseConfirmation& PurchaseConfirmations)> PurchaseConfirmationSuccess;                       // 0x00E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FPurchaseConfirmation& PurchaseConfirmations)> PurchaseConfirmationSuccess; // 0x00E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void()>              PurchaseConfirmationFailure;                       // 0x00F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const TArray<struct FPurchaseConfirmation>& PurchaseHistory)> GetPurchaseHistorySuccess;                         // 0x0100(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TArray<struct FPurchaseConfirmation>& PurchaseHistory)> GetPurchaseHistorySuccess; // 0x0100(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void()>              GetPurchaseHistoryFailure;                         // 0x0110(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_120[0x8];                                      // 0x0120(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
@@ -68,22 +68,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InAppPurchaseComponent">();
+		STATIC_CLASS_IMPL("InAppPurchaseComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InAppPurchaseComponent")
 	}
 	static class UInAppPurchaseComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInAppPurchaseComponent>();
 	}
 };
-static_assert(alignof(UInAppPurchaseComponent) == 0x000008, "Wrong alignment on UInAppPurchaseComponent");
-static_assert(sizeof(UInAppPurchaseComponent) == 0x000128, "Wrong size on UInAppPurchaseComponent");
-static_assert(offsetof(UInAppPurchaseComponent, InAppPurchaseLogMessage) == 0x0000B0, "Member 'UInAppPurchaseComponent::InAppPurchaseLogMessage' has a wrong offset!");
-static_assert(offsetof(UInAppPurchaseComponent, GetItemsDetailsSuccess) == 0x0000C0, "Member 'UInAppPurchaseComponent::GetItemsDetailsSuccess' has a wrong offset!");
-static_assert(offsetof(UInAppPurchaseComponent, GetItemsDetailsFailure) == 0x0000D0, "Member 'UInAppPurchaseComponent::GetItemsDetailsFailure' has a wrong offset!");
-static_assert(offsetof(UInAppPurchaseComponent, PurchaseConfirmationSuccess) == 0x0000E0, "Member 'UInAppPurchaseComponent::PurchaseConfirmationSuccess' has a wrong offset!");
-static_assert(offsetof(UInAppPurchaseComponent, PurchaseConfirmationFailure) == 0x0000F0, "Member 'UInAppPurchaseComponent::PurchaseConfirmationFailure' has a wrong offset!");
-static_assert(offsetof(UInAppPurchaseComponent, GetPurchaseHistorySuccess) == 0x000100, "Member 'UInAppPurchaseComponent::GetPurchaseHistorySuccess' has a wrong offset!");
-static_assert(offsetof(UInAppPurchaseComponent, GetPurchaseHistoryFailure) == 0x000110, "Member 'UInAppPurchaseComponent::GetPurchaseHistoryFailure' has a wrong offset!");
+DUMPER7_ASSERTS_UInAppPurchaseComponent;
 
 // Class MagicLeap.MagicLeapRaycastComponent
 // 0x0068 (0x0118 - 0x00B0)
@@ -98,15 +94,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MagicLeapRaycastComponent">();
+		STATIC_CLASS_IMPL("MagicLeapRaycastComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MagicLeapRaycastComponent")
 	}
 	static class UMagicLeapRaycastComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMagicLeapRaycastComponent>();
 	}
 };
-static_assert(alignof(UMagicLeapRaycastComponent) == 0x000008, "Wrong alignment on UMagicLeapRaycastComponent");
-static_assert(sizeof(UMagicLeapRaycastComponent) == 0x000118, "Wrong size on UMagicLeapRaycastComponent");
+DUMPER7_ASSERTS_UMagicLeapRaycastComponent;
 
 // Class MagicLeap.LuminApplicationLifecycleComponent
 // 0x0050 (0x0190 - 0x0140)
@@ -116,26 +115,24 @@ public:
 	TMulticastInlineDelegate<void()>              DeviceHasReactivatedDelegate;                      // 0x0140(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void()>              DeviceWillEnterRealityModeDelegate;                // 0x0150(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void()>              DeviceWillGoInStandbyDelegate;                     // 0x0160(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EFocusLostReason Reason)> FocusLostDelegate;                                 // 0x0170(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EFocusLostReason Reason)> FocusLostDelegate;                       // 0x0170(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void()>              FocusGainedDelegate;                               // 0x0180(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LuminApplicationLifecycleComponent">();
+		STATIC_CLASS_IMPL("LuminApplicationLifecycleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LuminApplicationLifecycleComponent")
 	}
 	static class ULuminApplicationLifecycleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULuminApplicationLifecycleComponent>();
 	}
 };
-static_assert(alignof(ULuminApplicationLifecycleComponent) == 0x000008, "Wrong alignment on ULuminApplicationLifecycleComponent");
-static_assert(sizeof(ULuminApplicationLifecycleComponent) == 0x000190, "Wrong size on ULuminApplicationLifecycleComponent");
-static_assert(offsetof(ULuminApplicationLifecycleComponent, DeviceHasReactivatedDelegate) == 0x000140, "Member 'ULuminApplicationLifecycleComponent::DeviceHasReactivatedDelegate' has a wrong offset!");
-static_assert(offsetof(ULuminApplicationLifecycleComponent, DeviceWillEnterRealityModeDelegate) == 0x000150, "Member 'ULuminApplicationLifecycleComponent::DeviceWillEnterRealityModeDelegate' has a wrong offset!");
-static_assert(offsetof(ULuminApplicationLifecycleComponent, DeviceWillGoInStandbyDelegate) == 0x000160, "Member 'ULuminApplicationLifecycleComponent::DeviceWillGoInStandbyDelegate' has a wrong offset!");
-static_assert(offsetof(ULuminApplicationLifecycleComponent, FocusLostDelegate) == 0x000170, "Member 'ULuminApplicationLifecycleComponent::FocusLostDelegate' has a wrong offset!");
-static_assert(offsetof(ULuminApplicationLifecycleComponent, FocusGainedDelegate) == 0x000180, "Member 'ULuminApplicationLifecycleComponent::FocusGainedDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_ULuminApplicationLifecycleComponent;
 
 // Class MagicLeap.MagicLeapHeadTrackingNotificationsComponent
 // 0x0090 (0x01D0 - 0x0140)
@@ -151,19 +148,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MagicLeapHeadTrackingNotificationsComponent">();
+		STATIC_CLASS_IMPL("MagicLeapHeadTrackingNotificationsComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MagicLeapHeadTrackingNotificationsComponent")
 	}
 	static class UMagicLeapHeadTrackingNotificationsComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMagicLeapHeadTrackingNotificationsComponent>();
 	}
 };
-static_assert(alignof(UMagicLeapHeadTrackingNotificationsComponent) == 0x000008, "Wrong alignment on UMagicLeapHeadTrackingNotificationsComponent");
-static_assert(sizeof(UMagicLeapHeadTrackingNotificationsComponent) == 0x0001D0, "Wrong size on UMagicLeapHeadTrackingNotificationsComponent");
-static_assert(offsetof(UMagicLeapHeadTrackingNotificationsComponent, OnHeadTrackingLost) == 0x000140, "Member 'UMagicLeapHeadTrackingNotificationsComponent::OnHeadTrackingLost' has a wrong offset!");
-static_assert(offsetof(UMagicLeapHeadTrackingNotificationsComponent, OnHeadTrackingRecovered) == 0x000150, "Member 'UMagicLeapHeadTrackingNotificationsComponent::OnHeadTrackingRecovered' has a wrong offset!");
-static_assert(offsetof(UMagicLeapHeadTrackingNotificationsComponent, OnHeadTrackingRecoveryFailed) == 0x000160, "Member 'UMagicLeapHeadTrackingNotificationsComponent::OnHeadTrackingRecoveryFailed' has a wrong offset!");
-static_assert(offsetof(UMagicLeapHeadTrackingNotificationsComponent, OnHeadTrackingNewSessionStarted) == 0x000170, "Member 'UMagicLeapHeadTrackingNotificationsComponent::OnHeadTrackingNewSessionStarted' has a wrong offset!");
+DUMPER7_ASSERTS_UMagicLeapHeadTrackingNotificationsComponent;
 
 // Class MagicLeap.MagicLeapHMDFunctionLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -190,15 +186,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MagicLeapHMDFunctionLibrary">();
+		STATIC_CLASS_IMPL("MagicLeapHMDFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MagicLeapHMDFunctionLibrary")
 	}
 	static class UMagicLeapHMDFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMagicLeapHMDFunctionLibrary>();
 	}
 };
-static_assert(alignof(UMagicLeapHMDFunctionLibrary) == 0x000008, "Wrong alignment on UMagicLeapHMDFunctionLibrary");
-static_assert(sizeof(UMagicLeapHMDFunctionLibrary) == 0x000028, "Wrong size on UMagicLeapHMDFunctionLibrary");
+DUMPER7_ASSERTS_UMagicLeapHMDFunctionLibrary;
 
 // Class MagicLeap.MagicLeapMeshTrackerComponent
 // 0x0090 (0x0290 - 0x0200)
@@ -206,7 +205,7 @@ class UMagicLeapMeshTrackerComponent final : public USceneComponent
 {
 public:
 	uint8                                         Pad_1F8[0x8];                                      // 0x01F8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(const struct FGuid& ID, const TArray<struct FVector>& Vertices, const TArray<int32>& Triangles, const TArray<struct FVector>& Normals, const TArray<float>& Confidence)> OnMeshTrackerUpdated;                              // 0x0200(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FGuid& ID, const TArray<struct FVector>& Vertices, const TArray<int32>& Triangles, const TArray<struct FVector>& Normals, const TArray<float>& Confidence)> OnMeshTrackerUpdated; // 0x0200(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	bool                                          ScanWorld;                                         // 0x0210(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EMagicLeapMeshType                            MeshType;                                          // 0x0211(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_212[0x6];                                      // 0x0212(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
@@ -241,36 +240,22 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MagicLeapMeshTrackerComponent">();
+		STATIC_CLASS_IMPL("MagicLeapMeshTrackerComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MagicLeapMeshTrackerComponent")
 	}
 	static class UMagicLeapMeshTrackerComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMagicLeapMeshTrackerComponent>();
 	}
 };
-static_assert(alignof(UMagicLeapMeshTrackerComponent) == 0x000010, "Wrong alignment on UMagicLeapMeshTrackerComponent");
-static_assert(sizeof(UMagicLeapMeshTrackerComponent) == 0x000290, "Wrong size on UMagicLeapMeshTrackerComponent");
-static_assert(offsetof(UMagicLeapMeshTrackerComponent, OnMeshTrackerUpdated) == 0x000200, "Member 'UMagicLeapMeshTrackerComponent::OnMeshTrackerUpdated' has a wrong offset!");
-static_assert(offsetof(UMagicLeapMeshTrackerComponent, ScanWorld) == 0x000210, "Member 'UMagicLeapMeshTrackerComponent::ScanWorld' has a wrong offset!");
-static_assert(offsetof(UMagicLeapMeshTrackerComponent, MeshType) == 0x000211, "Member 'UMagicLeapMeshTrackerComponent::MeshType' has a wrong offset!");
-static_assert(offsetof(UMagicLeapMeshTrackerComponent, BoundingVolume) == 0x000218, "Member 'UMagicLeapMeshTrackerComponent::BoundingVolume' has a wrong offset!");
-static_assert(offsetof(UMagicLeapMeshTrackerComponent, LevelOfDetail) == 0x000220, "Member 'UMagicLeapMeshTrackerComponent::LevelOfDetail' has a wrong offset!");
-static_assert(offsetof(UMagicLeapMeshTrackerComponent, PerimeterOfGapsToFill) == 0x000224, "Member 'UMagicLeapMeshTrackerComponent::PerimeterOfGapsToFill' has a wrong offset!");
-static_assert(offsetof(UMagicLeapMeshTrackerComponent, Planarize) == 0x000228, "Member 'UMagicLeapMeshTrackerComponent::Planarize' has a wrong offset!");
-static_assert(offsetof(UMagicLeapMeshTrackerComponent, DisconnectedSectionArea) == 0x00022C, "Member 'UMagicLeapMeshTrackerComponent::DisconnectedSectionArea' has a wrong offset!");
-static_assert(offsetof(UMagicLeapMeshTrackerComponent, RequestNormals) == 0x000230, "Member 'UMagicLeapMeshTrackerComponent::RequestNormals' has a wrong offset!");
-static_assert(offsetof(UMagicLeapMeshTrackerComponent, RequestVertexConfidence) == 0x000231, "Member 'UMagicLeapMeshTrackerComponent::RequestVertexConfidence' has a wrong offset!");
-static_assert(offsetof(UMagicLeapMeshTrackerComponent, VertexColorMode) == 0x000232, "Member 'UMagicLeapMeshTrackerComponent::VertexColorMode' has a wrong offset!");
-static_assert(offsetof(UMagicLeapMeshTrackerComponent, BlockVertexColors) == 0x000238, "Member 'UMagicLeapMeshTrackerComponent::BlockVertexColors' has a wrong offset!");
-static_assert(offsetof(UMagicLeapMeshTrackerComponent, VertexColorFromConfidenceZero) == 0x000248, "Member 'UMagicLeapMeshTrackerComponent::VertexColorFromConfidenceZero' has a wrong offset!");
-static_assert(offsetof(UMagicLeapMeshTrackerComponent, VertexColorFromConfidenceOne) == 0x000258, "Member 'UMagicLeapMeshTrackerComponent::VertexColorFromConfidenceOne' has a wrong offset!");
-static_assert(offsetof(UMagicLeapMeshTrackerComponent, RemoveOverlappingTriangles) == 0x000268, "Member 'UMagicLeapMeshTrackerComponent::RemoveOverlappingTriangles' has a wrong offset!");
-static_assert(offsetof(UMagicLeapMeshTrackerComponent, MRMesh) == 0x000270, "Member 'UMagicLeapMeshTrackerComponent::MRMesh' has a wrong offset!");
-static_assert(offsetof(UMagicLeapMeshTrackerComponent, BricksPerFrame) == 0x000278, "Member 'UMagicLeapMeshTrackerComponent::BricksPerFrame' has a wrong offset!");
+DUMPER7_ASSERTS_UMagicLeapMeshTrackerComponent;
 
 // Class MagicLeap.MagicLeapMeshBlockSelectorInterface
-// 0x0000 (0x0028 - 0x0028)
-class IMagicLeapMeshBlockSelectorInterface final : public IInterface
+// 0x0000 (0x0000 - 0x0000)
+class IMagicLeapMeshBlockSelectorInterface final
 {
 public:
 	void SelectMeshBlocks(const struct FMagicLeapTrackingMeshInfo& NewMeshInfo, TArray<struct FMagicLeapMeshBlockRequest>* RequestedMesh);
@@ -278,15 +263,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MagicLeapMeshBlockSelectorInterface">();
+		STATIC_CLASS_IMPL("MagicLeapMeshBlockSelectorInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MagicLeapMeshBlockSelectorInterface")
 	}
 	static class IMagicLeapMeshBlockSelectorInterface* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<IMagicLeapMeshBlockSelectorInterface>();
 	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
 };
-static_assert(alignof(IMagicLeapMeshBlockSelectorInterface) == 0x000008, "Wrong alignment on IMagicLeapMeshBlockSelectorInterface");
-static_assert(sizeof(IMagicLeapMeshBlockSelectorInterface) == 0x000028, "Wrong size on IMagicLeapMeshBlockSelectorInterface");
+DUMPER7_ASSERTS_IMagicLeapMeshBlockSelectorInterface;
 
 // Class MagicLeap.MagicLeapRaycastFunctionLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -298,15 +295,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MagicLeapRaycastFunctionLibrary">();
+		STATIC_CLASS_IMPL("MagicLeapRaycastFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MagicLeapRaycastFunctionLibrary")
 	}
 	static class UMagicLeapRaycastFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMagicLeapRaycastFunctionLibrary>();
 	}
 };
-static_assert(alignof(UMagicLeapRaycastFunctionLibrary) == 0x000008, "Wrong alignment on UMagicLeapRaycastFunctionLibrary");
-static_assert(sizeof(UMagicLeapRaycastFunctionLibrary) == 0x000028, "Wrong size on UMagicLeapRaycastFunctionLibrary");
+DUMPER7_ASSERTS_UMagicLeapRaycastFunctionLibrary;
 
 }
 

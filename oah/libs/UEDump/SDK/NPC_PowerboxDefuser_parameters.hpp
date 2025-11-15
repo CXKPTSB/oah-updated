@@ -26,16 +26,16 @@ public:
 	EPathFollowingResult                          K2Node_CustomEvent_MovementResult_3;               // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPathFollowingResult                          K2Node_CustomEvent_MovementResult_2;               // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(EPathFollowingResult MovementResult)> K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EPathFollowingResult MovementResult)> K2Node_CreateDelegate_OutputDelegate;       // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	EPathFollowingResult                          Temp_byte_Variable;                                // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(class AActor* Player)>         K2Node_CreateDelegate_OutputDelegate_1;            // 0x001C(0x0010)(ZeroConstructor, NoDestructor)
 	EPathFollowingResult                          K2Node_CustomEvent_MovementResult_1;               // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(EPathFollowingResult MovementResult)> K2Node_CreateDelegate_OutputDelegate_2;            // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EPathFollowingResult MovementResult)> K2Node_CreateDelegate_OutputDelegate_2;     // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
 	EPathFollowingResult                          K2Node_CustomEvent_MovementResult;                 // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(EPathFollowingResult MovementResult)> K2Node_CreateDelegate_OutputDelegate_3;            // 0x0044(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EPathFollowingResult MovementResult)> K2Node_CreateDelegate_OutputDelegate_3;     // 0x0044(0x0010)(ZeroConstructor, NoDestructor)
 	EPathFollowingResult                          Temp_byte_Variable_1;                              // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_55[0x3];                                       // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(class AActor* Player)>         K2Node_CreateDelegate_OutputDelegate_4;            // 0x0058(0x0010)(ZeroConstructor, NoDestructor)
@@ -53,7 +53,7 @@ public:
 	class AActor*                                 K2Node_CustomEvent_Player_1;                       // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A1[0x3];                                       // 0x00A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(EPathFollowingResult MovementResult)> K2Node_CreateDelegate_OutputDelegate_5;            // 0x00A4(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EPathFollowingResult MovementResult)> K2Node_CreateDelegate_OutputDelegate_5;     // 0x00A4(0x0010)(ZeroConstructor, NoDestructor)
 	uint8                                         Pad_B4[0x4];                                       // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AAIController*                          CallFunc_GetAIController_ReturnValue;              // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AAIController*                          CallFunc_GetAIController_ReturnValue_1;            // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -65,38 +65,7 @@ public:
 	uint8                                         Pad_E9[0x7];                                       // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 K2Node_CustomEvent_Player;                         // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser) == 0x000008, "Wrong alignment on NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser");
-static_assert(sizeof(NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser) == 0x0000F8, "Wrong size on NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser");
-static_assert(offsetof(NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser, EntryPoint) == 0x000000, "Member 'NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser::EntryPoint' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser, K2Node_CustomEvent_MovementResult_3) == 0x000004, "Member 'NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser::K2Node_CustomEvent_MovementResult_3' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser, K2Node_CustomEvent_MovementResult_2) == 0x000005, "Member 'NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser::K2Node_CustomEvent_MovementResult_2' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser, Temp_byte_Variable) == 0x000018, "Member 'NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser, K2Node_CreateDelegate_OutputDelegate_1) == 0x00001C, "Member 'NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser, K2Node_CustomEvent_MovementResult_1) == 0x00002C, "Member 'NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser::K2Node_CustomEvent_MovementResult_1' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser, K2Node_CreateDelegate_OutputDelegate_2) == 0x000030, "Member 'NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser, K2Node_CustomEvent_MovementResult) == 0x000040, "Member 'NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser::K2Node_CustomEvent_MovementResult' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser, K2Node_CreateDelegate_OutputDelegate_3) == 0x000044, "Member 'NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser, Temp_byte_Variable_1) == 0x000054, "Member 'NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser, K2Node_CreateDelegate_OutputDelegate_4) == 0x000058, "Member 'NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser, CallFunc_findActivePowerbox_FoundBox_) == 0x000068, "Member 'NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser::CallFunc_findActivePowerbox_FoundBox_' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser, CallFunc_findActivePowerbox_AllBoxesDestroyed_) == 0x000069, "Member 'NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser::CallFunc_findActivePowerbox_AllBoxesDestroyed_' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser, CallFunc_IsValid_ReturnValue) == 0x00006A, "Member 'NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x00006C, "Member 'NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000078, "Member 'NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser, CallFunc_CreateMoveToProxyObject_ReturnValue) == 0x000088, "Member 'NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser::CallFunc_CreateMoveToProxyObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser, CallFunc_EqualEqual_VectorVector_ReturnValue) == 0x000090, "Member 'NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser::CallFunc_EqualEqual_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser, CallFunc_IsValid_ReturnValue_1) == 0x000091, "Member 'NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser, K2Node_CustomEvent_Player_1) == 0x000098, "Member 'NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser::K2Node_CustomEvent_Player_1' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser, CallFunc_IsValid_ReturnValue_2) == 0x0000A0, "Member 'NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser, K2Node_CreateDelegate_OutputDelegate_5) == 0x0000A4, "Member 'NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser, CallFunc_GetAIController_ReturnValue) == 0x0000B8, "Member 'NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser::CallFunc_GetAIController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser, CallFunc_GetAIController_ReturnValue_1) == 0x0000C0, "Member 'NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser::CallFunc_GetAIController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser, CallFunc_GetAIController_ReturnValue_2) == 0x0000C8, "Member 'NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser::CallFunc_GetAIController_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x0000D0, "Member 'NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser, CallFunc_CreateMoveToProxyObject_ReturnValue_1) == 0x0000E0, "Member 'NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser::CallFunc_CreateMoveToProxyObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser, CallFunc_IsValid_ReturnValue_3) == 0x0000E8, "Member 'NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser, K2Node_CustomEvent_Player) == 0x0000F0, "Member 'NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser::K2Node_CustomEvent_Player' has a wrong offset!");
+DUMPER7_ASSERTS_NPC_PowerboxDefuser_C_ExecuteUbergraph_NPC_PowerboxDefuser;
 
 // Function NPC_PowerboxDefuser.NPC_PowerboxDefuser_C.OnDeathStats
 // 0x0008 (0x0008 - 0x0000)
@@ -105,9 +74,7 @@ struct NPC_PowerboxDefuser_C_OnDeathStats final
 public:
 	class AActor*                                 Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(NPC_PowerboxDefuser_C_OnDeathStats) == 0x000008, "Wrong alignment on NPC_PowerboxDefuser_C_OnDeathStats");
-static_assert(sizeof(NPC_PowerboxDefuser_C_OnDeathStats) == 0x000008, "Wrong size on NPC_PowerboxDefuser_C_OnDeathStats");
-static_assert(offsetof(NPC_PowerboxDefuser_C_OnDeathStats, Player) == 0x000000, "Member 'NPC_PowerboxDefuser_C_OnDeathStats::Player' has a wrong offset!");
+DUMPER7_ASSERTS_NPC_PowerboxDefuser_C_OnDeathStats;
 
 // Function NPC_PowerboxDefuser.NPC_PowerboxDefuser_C.DieEvent
 // 0x0008 (0x0008 - 0x0000)
@@ -116,9 +83,7 @@ struct NPC_PowerboxDefuser_C_DieEvent final
 public:
 	class AActor*                                 Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(NPC_PowerboxDefuser_C_DieEvent) == 0x000008, "Wrong alignment on NPC_PowerboxDefuser_C_DieEvent");
-static_assert(sizeof(NPC_PowerboxDefuser_C_DieEvent) == 0x000008, "Wrong size on NPC_PowerboxDefuser_C_DieEvent");
-static_assert(offsetof(NPC_PowerboxDefuser_C_DieEvent, Player) == 0x000000, "Member 'NPC_PowerboxDefuser_C_DieEvent::Player' has a wrong offset!");
+DUMPER7_ASSERTS_NPC_PowerboxDefuser_C_DieEvent;
 
 // Function NPC_PowerboxDefuser.NPC_PowerboxDefuser_C.OnSuccess_3509034549C3312B5217008101EAB530
 // 0x0001 (0x0001 - 0x0000)
@@ -127,9 +92,7 @@ struct NPC_PowerboxDefuser_C_OnSuccess_3509034549C3312B5217008101EAB530 final
 public:
 	EPathFollowingResult                          MovementResult;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(NPC_PowerboxDefuser_C_OnSuccess_3509034549C3312B5217008101EAB530) == 0x000001, "Wrong alignment on NPC_PowerboxDefuser_C_OnSuccess_3509034549C3312B5217008101EAB530");
-static_assert(sizeof(NPC_PowerboxDefuser_C_OnSuccess_3509034549C3312B5217008101EAB530) == 0x000001, "Wrong size on NPC_PowerboxDefuser_C_OnSuccess_3509034549C3312B5217008101EAB530");
-static_assert(offsetof(NPC_PowerboxDefuser_C_OnSuccess_3509034549C3312B5217008101EAB530, MovementResult) == 0x000000, "Member 'NPC_PowerboxDefuser_C_OnSuccess_3509034549C3312B5217008101EAB530::MovementResult' has a wrong offset!");
+DUMPER7_ASSERTS_NPC_PowerboxDefuser_C_OnSuccess_3509034549C3312B5217008101EAB530;
 
 // Function NPC_PowerboxDefuser.NPC_PowerboxDefuser_C.OnFail_3509034549C3312B5217008101EAB530
 // 0x0001 (0x0001 - 0x0000)
@@ -138,9 +101,7 @@ struct NPC_PowerboxDefuser_C_OnFail_3509034549C3312B5217008101EAB530 final
 public:
 	EPathFollowingResult                          MovementResult;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(NPC_PowerboxDefuser_C_OnFail_3509034549C3312B5217008101EAB530) == 0x000001, "Wrong alignment on NPC_PowerboxDefuser_C_OnFail_3509034549C3312B5217008101EAB530");
-static_assert(sizeof(NPC_PowerboxDefuser_C_OnFail_3509034549C3312B5217008101EAB530) == 0x000001, "Wrong size on NPC_PowerboxDefuser_C_OnFail_3509034549C3312B5217008101EAB530");
-static_assert(offsetof(NPC_PowerboxDefuser_C_OnFail_3509034549C3312B5217008101EAB530, MovementResult) == 0x000000, "Member 'NPC_PowerboxDefuser_C_OnFail_3509034549C3312B5217008101EAB530::MovementResult' has a wrong offset!");
+DUMPER7_ASSERTS_NPC_PowerboxDefuser_C_OnFail_3509034549C3312B5217008101EAB530;
 
 // Function NPC_PowerboxDefuser.NPC_PowerboxDefuser_C.OnSuccess_1257E76C4D301D8096FB3EBDACA4EE95
 // 0x0001 (0x0001 - 0x0000)
@@ -149,9 +110,7 @@ struct NPC_PowerboxDefuser_C_OnSuccess_1257E76C4D301D8096FB3EBDACA4EE95 final
 public:
 	EPathFollowingResult                          MovementResult;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(NPC_PowerboxDefuser_C_OnSuccess_1257E76C4D301D8096FB3EBDACA4EE95) == 0x000001, "Wrong alignment on NPC_PowerboxDefuser_C_OnSuccess_1257E76C4D301D8096FB3EBDACA4EE95");
-static_assert(sizeof(NPC_PowerboxDefuser_C_OnSuccess_1257E76C4D301D8096FB3EBDACA4EE95) == 0x000001, "Wrong size on NPC_PowerboxDefuser_C_OnSuccess_1257E76C4D301D8096FB3EBDACA4EE95");
-static_assert(offsetof(NPC_PowerboxDefuser_C_OnSuccess_1257E76C4D301D8096FB3EBDACA4EE95, MovementResult) == 0x000000, "Member 'NPC_PowerboxDefuser_C_OnSuccess_1257E76C4D301D8096FB3EBDACA4EE95::MovementResult' has a wrong offset!");
+DUMPER7_ASSERTS_NPC_PowerboxDefuser_C_OnSuccess_1257E76C4D301D8096FB3EBDACA4EE95;
 
 // Function NPC_PowerboxDefuser.NPC_PowerboxDefuser_C.OnFail_1257E76C4D301D8096FB3EBDACA4EE95
 // 0x0001 (0x0001 - 0x0000)
@@ -160,9 +119,7 @@ struct NPC_PowerboxDefuser_C_OnFail_1257E76C4D301D8096FB3EBDACA4EE95 final
 public:
 	EPathFollowingResult                          MovementResult;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(NPC_PowerboxDefuser_C_OnFail_1257E76C4D301D8096FB3EBDACA4EE95) == 0x000001, "Wrong alignment on NPC_PowerboxDefuser_C_OnFail_1257E76C4D301D8096FB3EBDACA4EE95");
-static_assert(sizeof(NPC_PowerboxDefuser_C_OnFail_1257E76C4D301D8096FB3EBDACA4EE95) == 0x000001, "Wrong size on NPC_PowerboxDefuser_C_OnFail_1257E76C4D301D8096FB3EBDACA4EE95");
-static_assert(offsetof(NPC_PowerboxDefuser_C_OnFail_1257E76C4D301D8096FB3EBDACA4EE95, MovementResult) == 0x000000, "Member 'NPC_PowerboxDefuser_C_OnFail_1257E76C4D301D8096FB3EBDACA4EE95::MovementResult' has a wrong offset!");
+DUMPER7_ASSERTS_NPC_PowerboxDefuser_C_OnFail_1257E76C4D301D8096FB3EBDACA4EE95;
 
 // Function NPC_PowerboxDefuser.NPC_PowerboxDefuser_C.findActivePowerbox
 // 0x0060 (0x0060 - 0x0000)
@@ -195,30 +152,7 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0057(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(NPC_PowerboxDefuser_C_findActivePowerbox) == 0x000008, "Wrong alignment on NPC_PowerboxDefuser_C_findActivePowerbox");
-static_assert(sizeof(NPC_PowerboxDefuser_C_findActivePowerbox) == 0x000060, "Wrong size on NPC_PowerboxDefuser_C_findActivePowerbox");
-static_assert(offsetof(NPC_PowerboxDefuser_C_findActivePowerbox, FoundBox_) == 0x000000, "Member 'NPC_PowerboxDefuser_C_findActivePowerbox::FoundBox_' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_findActivePowerbox, AllBoxesDestroyed_) == 0x000001, "Member 'NPC_PowerboxDefuser_C_findActivePowerbox::AllBoxesDestroyed_' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_findActivePowerbox, AllDestroyed_) == 0x000002, "Member 'NPC_PowerboxDefuser_C_findActivePowerbox::AllDestroyed_' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_findActivePowerbox, Temp_bool_IsClosed_Variable) == 0x000003, "Member 'NPC_PowerboxDefuser_C_findActivePowerbox::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_findActivePowerbox, Temp_bool_Has_Been_Initd_Variable) == 0x000004, "Member 'NPC_PowerboxDefuser_C_findActivePowerbox::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_findActivePowerbox, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'NPC_PowerboxDefuser_C_findActivePowerbox::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_findActivePowerbox, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'NPC_PowerboxDefuser_C_findActivePowerbox::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_findActivePowerbox, Temp_int_Array_Index_Variable) == 0x000010, "Member 'NPC_PowerboxDefuser_C_findActivePowerbox::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_findActivePowerbox, Temp_int_Loop_Counter_Variable_1) == 0x000014, "Member 'NPC_PowerboxDefuser_C_findActivePowerbox::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_findActivePowerbox, CallFunc_Add_IntInt_ReturnValue_1) == 0x000018, "Member 'NPC_PowerboxDefuser_C_findActivePowerbox::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_findActivePowerbox, Temp_int_Array_Index_Variable_1) == 0x00001C, "Member 'NPC_PowerboxDefuser_C_findActivePowerbox::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_findActivePowerbox, CallFunc_GetAllActorsOfClass_OutActors) == 0x000020, "Member 'NPC_PowerboxDefuser_C_findActivePowerbox::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_findActivePowerbox, CallFunc_Array_Length_ReturnValue) == 0x000030, "Member 'NPC_PowerboxDefuser_C_findActivePowerbox::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_findActivePowerbox, CallFunc_Array_Get_Item) == 0x000038, "Member 'NPC_PowerboxDefuser_C_findActivePowerbox::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_findActivePowerbox, CallFunc_Less_IntInt_ReturnValue) == 0x000040, "Member 'NPC_PowerboxDefuser_C_findActivePowerbox::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_findActivePowerbox, CallFunc_Array_Get_Item_1) == 0x000048, "Member 'NPC_PowerboxDefuser_C_findActivePowerbox::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_findActivePowerbox, CallFunc_Array_Length_ReturnValue_1) == 0x000050, "Member 'NPC_PowerboxDefuser_C_findActivePowerbox::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_findActivePowerbox, CallFunc_Less_IntInt_ReturnValue_1) == 0x000054, "Member 'NPC_PowerboxDefuser_C_findActivePowerbox::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_findActivePowerbox, CallFunc_Not_PreBool_ReturnValue) == 0x000055, "Member 'NPC_PowerboxDefuser_C_findActivePowerbox::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_findActivePowerbox, CallFunc_Not_PreBool_ReturnValue_1) == 0x000056, "Member 'NPC_PowerboxDefuser_C_findActivePowerbox::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_findActivePowerbox, CallFunc_BooleanAND_ReturnValue) == 0x000057, "Member 'NPC_PowerboxDefuser_C_findActivePowerbox::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPC_PowerboxDefuser_C_findActivePowerbox, CallFunc_BooleanAND_ReturnValue_1) == 0x000058, "Member 'NPC_PowerboxDefuser_C_findActivePowerbox::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_NPC_PowerboxDefuser_C_findActivePowerbox;
 
 }
 

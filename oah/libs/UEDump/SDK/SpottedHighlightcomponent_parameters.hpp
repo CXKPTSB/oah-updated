@@ -27,14 +27,7 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_Select_Default;                             // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SpottedHighlightcomponent_C_ExecuteUbergraph_SpottedHighlightcomponent) == 0x000008, "Wrong alignment on SpottedHighlightcomponent_C_ExecuteUbergraph_SpottedHighlightcomponent");
-static_assert(sizeof(SpottedHighlightcomponent_C_ExecuteUbergraph_SpottedHighlightcomponent) == 0x000018, "Wrong size on SpottedHighlightcomponent_C_ExecuteUbergraph_SpottedHighlightcomponent");
-static_assert(offsetof(SpottedHighlightcomponent_C_ExecuteUbergraph_SpottedHighlightcomponent, EntryPoint) == 0x000000, "Member 'SpottedHighlightcomponent_C_ExecuteUbergraph_SpottedHighlightcomponent::EntryPoint' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_ExecuteUbergraph_SpottedHighlightcomponent, Temp_bool_Variable) == 0x000004, "Member 'SpottedHighlightcomponent_C_ExecuteUbergraph_SpottedHighlightcomponent::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_ExecuteUbergraph_SpottedHighlightcomponent, CallFunc_GetActorOfClass_ReturnValue) == 0x000008, "Member 'SpottedHighlightcomponent_C_ExecuteUbergraph_SpottedHighlightcomponent::CallFunc_GetActorOfClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_ExecuteUbergraph_SpottedHighlightcomponent, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'SpottedHighlightcomponent_C_ExecuteUbergraph_SpottedHighlightcomponent::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_ExecuteUbergraph_SpottedHighlightcomponent, CallFunc_BooleanAND_ReturnValue) == 0x000011, "Member 'SpottedHighlightcomponent_C_ExecuteUbergraph_SpottedHighlightcomponent::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_ExecuteUbergraph_SpottedHighlightcomponent, K2Node_Select_Default) == 0x000012, "Member 'SpottedHighlightcomponent_C_ExecuteUbergraph_SpottedHighlightcomponent::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_SpottedHighlightcomponent_C_ExecuteUbergraph_SpottedHighlightcomponent;
 
 // Function SpottedHighlightcomponent.SpottedHighlightcomponent_C.HighlightChange
 // 0x00F0 (0x00F0 - 0x0000)
@@ -91,48 +84,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue_3;               // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_3;                // 0x00EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SpottedHighlightcomponent_C_HighlightChange) == 0x000008, "Wrong alignment on SpottedHighlightcomponent_C_HighlightChange");
-static_assert(sizeof(SpottedHighlightcomponent_C_HighlightChange) == 0x0000F0, "Wrong size on SpottedHighlightcomponent_C_HighlightChange");
-static_assert(offsetof(SpottedHighlightcomponent_C_HighlightChange, Highlight_) == 0x000000, "Member 'SpottedHighlightcomponent_C_HighlightChange::Highlight_' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_HighlightChange, Warning_) == 0x000001, "Member 'SpottedHighlightcomponent_C_HighlightChange::Warning_' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_HighlightChange, Depth) == 0x000004, "Member 'SpottedHighlightcomponent_C_HighlightChange::Depth' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_HighlightChange, Temp_int_Variable) == 0x000008, "Member 'SpottedHighlightcomponent_C_HighlightChange::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_HighlightChange, Temp_int_Loop_Counter_Variable) == 0x00000C, "Member 'SpottedHighlightcomponent_C_HighlightChange::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_HighlightChange, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'SpottedHighlightcomponent_C_HighlightChange::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_HighlightChange, Temp_int_Array_Index_Variable) == 0x000014, "Member 'SpottedHighlightcomponent_C_HighlightChange::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_HighlightChange, Temp_bool_Variable) == 0x000018, "Member 'SpottedHighlightcomponent_C_HighlightChange::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_HighlightChange, Temp_int_Array_Index_Variable_1) == 0x00001C, "Member 'SpottedHighlightcomponent_C_HighlightChange::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_HighlightChange, Temp_int_Loop_Counter_Variable_1) == 0x000020, "Member 'SpottedHighlightcomponent_C_HighlightChange::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_HighlightChange, CallFunc_Add_IntInt_ReturnValue_1) == 0x000024, "Member 'SpottedHighlightcomponent_C_HighlightChange::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_HighlightChange, Temp_int_Array_Index_Variable_2) == 0x000028, "Member 'SpottedHighlightcomponent_C_HighlightChange::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_HighlightChange, Temp_int_Variable_1) == 0x00002C, "Member 'SpottedHighlightcomponent_C_HighlightChange::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_HighlightChange, K2Node_Select_Default) == 0x000030, "Member 'SpottedHighlightcomponent_C_HighlightChange::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_HighlightChange, Temp_int_Loop_Counter_Variable_2) == 0x000034, "Member 'SpottedHighlightcomponent_C_HighlightChange::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_HighlightChange, CallFunc_Add_IntInt_ReturnValue_2) == 0x000038, "Member 'SpottedHighlightcomponent_C_HighlightChange::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_HighlightChange, Temp_int_Loop_Counter_Variable_3) == 0x00003C, "Member 'SpottedHighlightcomponent_C_HighlightChange::Temp_int_Loop_Counter_Variable_3' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_HighlightChange, CallFunc_Add_IntInt_ReturnValue_3) == 0x000040, "Member 'SpottedHighlightcomponent_C_HighlightChange::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_HighlightChange, Temp_int_Array_Index_Variable_3) == 0x000044, "Member 'SpottedHighlightcomponent_C_HighlightChange::Temp_int_Array_Index_Variable_3' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_HighlightChange, CallFunc_GetOwner_ReturnValue) == 0x000048, "Member 'SpottedHighlightcomponent_C_HighlightChange::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_HighlightChange, CallFunc_K2_GetComponentsByClass_ReturnValue) == 0x000050, "Member 'SpottedHighlightcomponent_C_HighlightChange::CallFunc_K2_GetComponentsByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_HighlightChange, CallFunc_IsValid_ReturnValue) == 0x000060, "Member 'SpottedHighlightcomponent_C_HighlightChange::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_HighlightChange, CallFunc_Array_Get_Item) == 0x000068, "Member 'SpottedHighlightcomponent_C_HighlightChange::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_HighlightChange, CallFunc_Array_Length_ReturnValue) == 0x000070, "Member 'SpottedHighlightcomponent_C_HighlightChange::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_HighlightChange, CallFunc_K2_GetComponentsByClass_ReturnValue_1) == 0x000078, "Member 'SpottedHighlightcomponent_C_HighlightChange::CallFunc_K2_GetComponentsByClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_HighlightChange, CallFunc_Less_IntInt_ReturnValue) == 0x000088, "Member 'SpottedHighlightcomponent_C_HighlightChange::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_HighlightChange, CallFunc_Array_Get_Item_1) == 0x000090, "Member 'SpottedHighlightcomponent_C_HighlightChange::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_HighlightChange, CallFunc_IsValid_ReturnValue_1) == 0x000098, "Member 'SpottedHighlightcomponent_C_HighlightChange::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_HighlightChange, CallFunc_IsValid_ReturnValue_2) == 0x000099, "Member 'SpottedHighlightcomponent_C_HighlightChange::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_HighlightChange, CallFunc_K2_GetComponentsByClass_ReturnValue_2) == 0x0000A0, "Member 'SpottedHighlightcomponent_C_HighlightChange::CallFunc_K2_GetComponentsByClass_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_HighlightChange, CallFunc_Array_Get_Item_2) == 0x0000B0, "Member 'SpottedHighlightcomponent_C_HighlightChange::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_HighlightChange, CallFunc_Array_Length_ReturnValue_1) == 0x0000B8, "Member 'SpottedHighlightcomponent_C_HighlightChange::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_HighlightChange, CallFunc_IsValid_ReturnValue_3) == 0x0000BC, "Member 'SpottedHighlightcomponent_C_HighlightChange::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_HighlightChange, CallFunc_Less_IntInt_ReturnValue_1) == 0x0000BD, "Member 'SpottedHighlightcomponent_C_HighlightChange::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_HighlightChange, CallFunc_Array_Length_ReturnValue_2) == 0x0000C0, "Member 'SpottedHighlightcomponent_C_HighlightChange::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_HighlightChange, CallFunc_K2_GetComponentsByClass_ReturnValue_3) == 0x0000C8, "Member 'SpottedHighlightcomponent_C_HighlightChange::CallFunc_K2_GetComponentsByClass_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_HighlightChange, CallFunc_Less_IntInt_ReturnValue_2) == 0x0000D8, "Member 'SpottedHighlightcomponent_C_HighlightChange::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_HighlightChange, CallFunc_Array_Get_Item_3) == 0x0000E0, "Member 'SpottedHighlightcomponent_C_HighlightChange::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_HighlightChange, CallFunc_Array_Length_ReturnValue_3) == 0x0000E8, "Member 'SpottedHighlightcomponent_C_HighlightChange::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(SpottedHighlightcomponent_C_HighlightChange, CallFunc_Less_IntInt_ReturnValue_3) == 0x0000EC, "Member 'SpottedHighlightcomponent_C_HighlightChange::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
+DUMPER7_ASSERTS_SpottedHighlightcomponent_C_HighlightChange;
 
 }
 

@@ -35,20 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HighlightInRangeComponent_C">();
+		BP_STATIC_CLASS_IMPL("HighlightInRangeComponent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HighlightInRangeComponent_C")
 	}
 	static class UHighlightInRangeComponent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHighlightInRangeComponent_C>();
 	}
 };
-static_assert(alignof(UHighlightInRangeComponent_C) == 0x000008, "Wrong alignment on UHighlightInRangeComponent_C");
-static_assert(sizeof(UHighlightInRangeComponent_C) == 0x0000D0, "Wrong size on UHighlightInRangeComponent_C");
-static_assert(offsetof(UHighlightInRangeComponent_C, UberGraphFrame_HighlightInRangeComponent_C) == 0x0000C0, "Member 'UHighlightInRangeComponent_C::UberGraphFrame_HighlightInRangeComponent_C' has a wrong offset!");
-static_assert(offsetof(UHighlightInRangeComponent_C, HighlightRange) == 0x0000C8, "Member 'UHighlightInRangeComponent_C::HighlightRange' has a wrong offset!");
-static_assert(offsetof(UHighlightInRangeComponent_C, MustBeVisible_) == 0x0000CC, "Member 'UHighlightInRangeComponent_C::MustBeVisible_' has a wrong offset!");
-static_assert(offsetof(UHighlightInRangeComponent_C, IsHeld_) == 0x0000CD, "Member 'UHighlightInRangeComponent_C::IsHeld_' has a wrong offset!");
-static_assert(offsetof(UHighlightInRangeComponent_C, OnlyHighlightWhenHidden) == 0x0000CE, "Member 'UHighlightInRangeComponent_C::OnlyHighlightWhenHidden' has a wrong offset!");
+DUMPER7_ASSERTS_UHighlightInRangeComponent_C;
 
 }
 

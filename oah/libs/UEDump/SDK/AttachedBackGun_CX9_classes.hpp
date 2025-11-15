@@ -32,22 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AttachedBackGun_CX9_C">();
+		BP_STATIC_CLASS_IMPL("AttachedBackGun_CX9_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AttachedBackGun_CX9_C")
 	}
 	static class AAttachedBackGun_CX9_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAttachedBackGun_CX9_C>();
 	}
 };
-static_assert(alignof(AAttachedBackGun_CX9_C) == 0x000008, "Wrong alignment on AAttachedBackGun_CX9_C");
-static_assert(sizeof(AAttachedBackGun_CX9_C) == 0x0002A0, "Wrong size on AAttachedBackGun_CX9_C");
-static_assert(offsetof(AAttachedBackGun_CX9_C, SM_Wep_Mod_A_Trigger_01) == 0x000268, "Member 'AAttachedBackGun_CX9_C::SM_Wep_Mod_A_Trigger_01' has a wrong offset!");
-static_assert(offsetof(AAttachedBackGun_CX9_C, SM_Wep_Mod_A_Handguard_03) == 0x000270, "Member 'AAttachedBackGun_CX9_C::SM_Wep_Mod_A_Handguard_03' has a wrong offset!");
-static_assert(offsetof(AAttachedBackGun_CX9_C, SM_Wep_Mod_A_Barrel_01) == 0x000278, "Member 'AAttachedBackGun_CX9_C::SM_Wep_Mod_A_Barrel_01' has a wrong offset!");
-static_assert(offsetof(AAttachedBackGun_CX9_C, SM_Wep_Mod_A_Stock_02) == 0x000280, "Member 'AAttachedBackGun_CX9_C::SM_Wep_Mod_A_Stock_02' has a wrong offset!");
-static_assert(offsetof(AAttachedBackGun_CX9_C, SM_Wep_Mod_A_Grip_01) == 0x000288, "Member 'AAttachedBackGun_CX9_C::SM_Wep_Mod_A_Grip_01' has a wrong offset!");
-static_assert(offsetof(AAttachedBackGun_CX9_C, SM_Wep_Mod_A_Rail_Large_01) == 0x000290, "Member 'AAttachedBackGun_CX9_C::SM_Wep_Mod_A_Rail_Large_01' has a wrong offset!");
-static_assert(offsetof(AAttachedBackGun_CX9_C, SM_Wep_Mod_A_Handguard_02) == 0x000298, "Member 'AAttachedBackGun_CX9_C::SM_Wep_Mod_A_Handguard_02' has a wrong offset!");
+DUMPER7_ASSERTS_AAttachedBackGun_CX9_C;
 
 }
 

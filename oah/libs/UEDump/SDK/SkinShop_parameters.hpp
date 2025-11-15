@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "UMG_structs.hpp"
 #include "SkinRotationStructure_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "ShopItemCategory_structs.hpp"
 
@@ -133,93 +133,7 @@ public:
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_2;                   // 0x01F0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue_1;        // 0x01F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SkinShop_C_ExecuteUbergraph_SkinShop) == 0x000008, "Wrong alignment on SkinShop_C_ExecuteUbergraph_SkinShop");
-static_assert(sizeof(SkinShop_C_ExecuteUbergraph_SkinShop) == 0x000200, "Wrong size on SkinShop_C_ExecuteUbergraph_SkinShop");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, EntryPoint) == 0x000000, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::EntryPoint' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_GetCurrentSkinsInRotation_Array) == 0x000008, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_GetCurrentSkinsInRotation_Array' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_Array_Length_ReturnValue) == 0x000018, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, Temp_float_Variable) == 0x00001C, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, Temp_float_Variable_1) == 0x000020, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::Temp_float_Variable_1' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_Create_ReturnValue) == 0x000028, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_Create_ReturnValue_1) == 0x000030, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_Create_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, Temp_bool_Has_Been_Initd_Variable) == 0x000038, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, Temp_int_Array_Index_Variable) == 0x00003C, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_Array_Get_Item) == 0x000040, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_Array_Get_Item_1) == 0x000048, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, Temp_int_Loop_Counter_Variable) == 0x000050, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_Add_IntInt_ReturnValue) == 0x000054, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, Temp_int_Array_Index_Variable_1) == 0x000058, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, Temp_bool_IsClosed_Variable) == 0x00005C, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, Temp_bool_Variable) == 0x00005D, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, Temp_int_Loop_Counter_Variable_1) == 0x000060, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_Add_IntInt_ReturnValue_1) == 0x000064, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, Temp_int_Array_Index_Variable_2) == 0x000068, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, Temp_int_Array_Index_Variable_3) == 0x00006C, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::Temp_int_Array_Index_Variable_3' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_Create_ReturnValue_2) == 0x000070, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_Create_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, Temp_int_Loop_Counter_Variable_2) == 0x000078, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_Add_IntInt_ReturnValue_2) == 0x00007C, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, Temp_int_Array_Index_Variable_4) == 0x000080, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::Temp_int_Array_Index_Variable_4' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, K2Node_Event_Category_1) == 0x000084, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::K2Node_Event_Category_1' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_PlayAnimation_ReturnValue) == 0x000088, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_PlayAnimation_ReturnValue_1) == 0x000090, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, Temp_int_Loop_Counter_Variable_3) == 0x000098, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::Temp_int_Loop_Counter_Variable_3' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_Add_IntInt_ReturnValue_3) == 0x00009C, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_PlayAnimation_ReturnValue_2) == 0x0000A0, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_PlayAnimation_ReturnValue_3) == 0x0000A8, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_PlayAnimation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_FindTimeLeft_SkinRot) == 0x0000B0, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_FindTimeLeft_SkinRot' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, K2Node_Event_ItemInfo) == 0x0000B8, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::K2Node_Event_ItemInfo' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, K2Node_Event_SalePrice) == 0x0000C0, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::K2Node_Event_SalePrice' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_GetPlayerController_ReturnValue) == 0x0000C8, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, K2Node_DynamicCast_AsRobber_Controller) == 0x0000D0, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::K2Node_DynamicCast_AsRobber_Controller' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, K2Node_DynamicCast_bSuccess) == 0x0000D8, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_IsValid_ReturnValue) == 0x0000D9, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_Create_ReturnValue_3) == 0x0000E0, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_Create_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x0000E8, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_GetAllActorsWithInterface_OutActors) == 0x0000F0, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_GetAllActorsWithInterface_OutActors' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_Array_Contains_ReturnValue) == 0x000100, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_Array_Length_ReturnValue_1) == 0x000104, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_Create_ReturnValue_4) == 0x000108, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_Create_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_GetAllWidgetsWithInterface_FoundWidgets) == 0x000110, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_GetAllWidgetsWithInterface_FoundWidgets' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_Array_Get_Item_2) == 0x000120, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_Array_Length_ReturnValue_2) == 0x000128, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, K2Node_DynamicCast_AsMenu_UIInteraface) == 0x000130, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::K2Node_DynamicCast_AsMenu_UIInteraface' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, K2Node_DynamicCast_bSuccess_1) == 0x000140, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_Less_IntInt_ReturnValue) == 0x000141, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, Temp_int_Loop_Counter_Variable_4) == 0x000144, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::Temp_int_Loop_Counter_Variable_4' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_Less_IntInt_ReturnValue_1) == 0x000148, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_Add_IntInt_ReturnValue_4) == 0x00014C, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_IsValidClass_ReturnValue) == 0x000150, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, Temp_int_Array_Index_Variable_5) == 0x000154, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::Temp_int_Array_Index_Variable_5' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_Array_Get_Item_3) == 0x000158, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, K2Node_DynamicCast_AsMenu_UIInteraface_1) == 0x000160, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::K2Node_DynamicCast_AsMenu_UIInteraface_1' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, K2Node_DynamicCast_bSuccess_2) == 0x000170, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_Greater_IntInt_ReturnValue) == 0x000171, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, K2Node_Event_Category) == 0x000172, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::K2Node_Event_Category' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, K2Node_Select_Default) == 0x000174, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, K2Node_CustomEvent_Category) == 0x000178, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::K2Node_CustomEvent_Category' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_Array_Get_Item_4) == 0x000179, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_Array_Length_ReturnValue_3) == 0x00017C, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_Less_IntInt_ReturnValue_2) == 0x000180, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_AddChild_ReturnValue) == 0x000188, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_AddChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, Temp_int_Loop_Counter_Variable_5) == 0x000190, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::Temp_int_Loop_Counter_Variable_5' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_Array_Get_Item_5) == 0x000198, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_Array_Get_Item_5' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_Array_Contains_ReturnValue_1) == 0x0001A0, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_Array_Contains_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0001A1, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_Less_IntInt_ReturnValue_3) == 0x0001A2, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_Add_IntInt_ReturnValue_5) == 0x0001A4, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_Add_IntInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_Array_Length_ReturnValue_4) == 0x0001A8, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_Array_Length_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_Less_IntInt_ReturnValue_4) == 0x0001AC, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_Less_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_AddChild_ReturnValue_1) == 0x0001B0, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_AddChild_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_Create_ReturnValue_5) == 0x0001B8, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_Create_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_GetAllChildren_ReturnValue) == 0x0001C0, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_GetAllChildren_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_Array_Get_Item_6) == 0x0001D0, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_Array_Get_Item_6' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_Array_Length_ReturnValue_5) == 0x0001D8, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_Array_Length_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, K2Node_DynamicCast_AsInventory_Category_Title) == 0x0001E0, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::K2Node_DynamicCast_AsInventory_Category_Title' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, K2Node_DynamicCast_bSuccess_3) == 0x0001E8, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_Less_IntInt_ReturnValue_5) == 0x0001E9, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_Less_IntInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x0001EA, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_AddChild_ReturnValue_2) == 0x0001F0, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_AddChild_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_ExecuteUbergraph_SkinShop, CallFunc_GreaterEqual_IntInt_ReturnValue_1) == 0x0001F8, "Member 'SkinShop_C_ExecuteUbergraph_SkinShop::CallFunc_GreaterEqual_IntInt_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_SkinShop_C_ExecuteUbergraph_SkinShop;
 
 // Function SkinShop.SkinShop_C.AddItemsFromCategory
 // 0x0001 (0x0001 - 0x0000)
@@ -228,9 +142,7 @@ struct SkinShop_C_AddItemsFromCategory final
 public:
 	EShopItemCategory                             Category;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SkinShop_C_AddItemsFromCategory) == 0x000001, "Wrong alignment on SkinShop_C_AddItemsFromCategory");
-static_assert(sizeof(SkinShop_C_AddItemsFromCategory) == 0x000001, "Wrong size on SkinShop_C_AddItemsFromCategory");
-static_assert(offsetof(SkinShop_C_AddItemsFromCategory, Category) == 0x000000, "Member 'SkinShop_C_AddItemsFromCategory::Category' has a wrong offset!");
+DUMPER7_ASSERTS_SkinShop_C_AddItemsFromCategory;
 
 // Function SkinShop.SkinShop_C.ChangeCategory
 // 0x0001 (0x0001 - 0x0000)
@@ -239,9 +151,7 @@ struct SkinShop_C_ChangeCategory final
 public:
 	EShopItemCategory                             Category;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SkinShop_C_ChangeCategory) == 0x000001, "Wrong alignment on SkinShop_C_ChangeCategory");
-static_assert(sizeof(SkinShop_C_ChangeCategory) == 0x000001, "Wrong size on SkinShop_C_ChangeCategory");
-static_assert(offsetof(SkinShop_C_ChangeCategory, Category) == 0x000000, "Member 'SkinShop_C_ChangeCategory::Category' has a wrong offset!");
+DUMPER7_ASSERTS_SkinShop_C_ChangeCategory;
 
 // Function SkinShop.SkinShop_C.PreviewItem
 // 0x0010 (0x0010 - 0x0000)
@@ -251,10 +161,7 @@ public:
 	class UClass*                                 ItemInfo;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         SalePrice;                                         // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SkinShop_C_PreviewItem) == 0x000008, "Wrong alignment on SkinShop_C_PreviewItem");
-static_assert(sizeof(SkinShop_C_PreviewItem) == 0x000010, "Wrong size on SkinShop_C_PreviewItem");
-static_assert(offsetof(SkinShop_C_PreviewItem, ItemInfo) == 0x000000, "Member 'SkinShop_C_PreviewItem::ItemInfo' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_PreviewItem, SalePrice) == 0x000008, "Member 'SkinShop_C_PreviewItem::SalePrice' has a wrong offset!");
+DUMPER7_ASSERTS_SkinShop_C_PreviewItem;
 
 // Function SkinShop.SkinShop_C.DragItemFromCategory
 // 0x0001 (0x0001 - 0x0000)
@@ -263,9 +170,7 @@ struct SkinShop_C_DragItemFromCategory final
 public:
 	EShopItemCategory                             Category;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SkinShop_C_DragItemFromCategory) == 0x000001, "Wrong alignment on SkinShop_C_DragItemFromCategory");
-static_assert(sizeof(SkinShop_C_DragItemFromCategory) == 0x000001, "Wrong size on SkinShop_C_DragItemFromCategory");
-static_assert(offsetof(SkinShop_C_DragItemFromCategory, Category) == 0x000000, "Member 'SkinShop_C_DragItemFromCategory::Category' has a wrong offset!");
+DUMPER7_ASSERTS_SkinShop_C_DragItemFromCategory;
 
 // Function SkinShop.SkinShop_C.FindTimeLeft
 // 0x0068 (0x0068 - 0x0000)
@@ -290,24 +195,7 @@ public:
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SkinShop_C_FindTimeLeft) == 0x000008, "Wrong alignment on SkinShop_C_FindTimeLeft");
-static_assert(sizeof(SkinShop_C_FindTimeLeft) == 0x000068, "Wrong size on SkinShop_C_FindTimeLeft");
-static_assert(offsetof(SkinShop_C_FindTimeLeft, SkinRot) == 0x000000, "Member 'SkinShop_C_FindTimeLeft::SkinRot' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_FindTimeLeft, CallFunc_Clamp_ReturnValue) == 0x000004, "Member 'SkinShop_C_FindTimeLeft::CallFunc_Clamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_FindTimeLeft, CallFunc_Multiply_IntInt_ReturnValue) == 0x000008, "Member 'SkinShop_C_FindTimeLeft::CallFunc_Multiply_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_FindTimeLeft, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'SkinShop_C_FindTimeLeft::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_FindTimeLeft, CallFunc_MakeDateTime_ReturnValue) == 0x000010, "Member 'SkinShop_C_FindTimeLeft::CallFunc_MakeDateTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_FindTimeLeft, CallFunc_MakeTimespan_ReturnValue) == 0x000018, "Member 'SkinShop_C_FindTimeLeft::CallFunc_MakeTimespan_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_FindTimeLeft, CallFunc_MakeDateTime_ReturnValue_1) == 0x000020, "Member 'SkinShop_C_FindTimeLeft::CallFunc_MakeDateTime_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_FindTimeLeft, CallFunc_GetServerRealTime_ReturnValue) == 0x000028, "Member 'SkinShop_C_FindTimeLeft::CallFunc_GetServerRealTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_FindTimeLeft, CallFunc_Subtract_DateTimeDateTime_ReturnValue) == 0x000030, "Member 'SkinShop_C_FindTimeLeft::CallFunc_Subtract_DateTimeDateTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_FindTimeLeft, CallFunc_MakeTimespan_ReturnValue_1) == 0x000038, "Member 'SkinShop_C_FindTimeLeft::CallFunc_MakeTimespan_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_FindTimeLeft, CallFunc_Add_TimespanTimespan_ReturnValue) == 0x000040, "Member 'SkinShop_C_FindTimeLeft::CallFunc_Add_TimespanTimespan_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_FindTimeLeft, CallFunc_Subtract_TimespanTimespan_ReturnValue) == 0x000048, "Member 'SkinShop_C_FindTimeLeft::CallFunc_Subtract_TimespanTimespan_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_FindTimeLeft, CallFunc_Subtract_TimespanTimespan_ReturnValue_1) == 0x000050, "Member 'SkinShop_C_FindTimeLeft::CallFunc_Subtract_TimespanTimespan_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_FindTimeLeft, CallFunc_GetTotalDays_ReturnValue) == 0x000058, "Member 'SkinShop_C_FindTimeLeft::CallFunc_GetTotalDays_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_FindTimeLeft, CallFunc_Divide_FloatFloat_ReturnValue) == 0x00005C, "Member 'SkinShop_C_FindTimeLeft::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_FindTimeLeft, CallFunc_FTrunc_ReturnValue) == 0x000060, "Member 'SkinShop_C_FindTimeLeft::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SkinShop_C_FindTimeLeft;
 
 // Function SkinShop.SkinShop_C.GetText_0
 // 0x00B0 (0x00B0 - 0x0000)
@@ -332,23 +220,7 @@ public:
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue_2;              // 0x0088(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0098(0x0018)()
 };
-static_assert(alignof(SkinShop_C_GetText_0) == 0x000008, "Wrong alignment on SkinShop_C_GetText_0");
-static_assert(sizeof(SkinShop_C_GetText_0) == 0x0000B0, "Wrong size on SkinShop_C_GetText_0");
-static_assert(offsetof(SkinShop_C_GetText_0, ReturnValue) == 0x000000, "Member 'SkinShop_C_GetText_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetText_0, Temp_bool_Variable) == 0x000018, "Member 'SkinShop_C_GetText_0::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetText_0, CallFunc_BreakTimespan2_Days) == 0x00001C, "Member 'SkinShop_C_GetText_0::CallFunc_BreakTimespan2_Days' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetText_0, CallFunc_BreakTimespan2_Hours) == 0x000020, "Member 'SkinShop_C_GetText_0::CallFunc_BreakTimespan2_Hours' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetText_0, CallFunc_BreakTimespan2_Minutes) == 0x000024, "Member 'SkinShop_C_GetText_0::CallFunc_BreakTimespan2_Minutes' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetText_0, CallFunc_BreakTimespan2_Seconds) == 0x000028, "Member 'SkinShop_C_GetText_0::CallFunc_BreakTimespan2_Seconds' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetText_0, CallFunc_BreakTimespan2_FractionNano) == 0x00002C, "Member 'SkinShop_C_GetText_0::CallFunc_BreakTimespan2_FractionNano' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetText_0, CallFunc_Greater_IntInt_ReturnValue) == 0x000030, "Member 'SkinShop_C_GetText_0::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetText_0, CallFunc_Conv_IntToString_ReturnValue) == 0x000038, "Member 'SkinShop_C_GetText_0::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetText_0, CallFunc_Concat_StrStr_ReturnValue) == 0x000048, "Member 'SkinShop_C_GetText_0::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetText_0, CallFunc_Conv_IntToString_ReturnValue_1) == 0x000058, "Member 'SkinShop_C_GetText_0::CallFunc_Conv_IntToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetText_0, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000068, "Member 'SkinShop_C_GetText_0::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetText_0, K2Node_Select_Default) == 0x000078, "Member 'SkinShop_C_GetText_0::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetText_0, CallFunc_Concat_StrStr_ReturnValue_2) == 0x000088, "Member 'SkinShop_C_GetText_0::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetText_0, CallFunc_Conv_StringToText_ReturnValue) == 0x000098, "Member 'SkinShop_C_GetText_0::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SkinShop_C_GetText_0;
 
 // Function SkinShop.SkinShop_C.GetText_1
 // 0x0038 (0x0038 - 0x0000)
@@ -360,11 +232,7 @@ public:
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0020(0x0018)()
 };
-static_assert(alignof(SkinShop_C_GetText_1) == 0x000008, "Wrong alignment on SkinShop_C_GetText_1");
-static_assert(sizeof(SkinShop_C_GetText_1) == 0x000038, "Wrong size on SkinShop_C_GetText_1");
-static_assert(offsetof(SkinShop_C_GetText_1, ReturnValue) == 0x000000, "Member 'SkinShop_C_GetText_1::ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetText_1, CallFunc_IsValidClass_ReturnValue) == 0x000018, "Member 'SkinShop_C_GetText_1::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetText_1, CallFunc_Conv_StringToText_ReturnValue) == 0x000020, "Member 'SkinShop_C_GetText_1::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SkinShop_C_GetText_1;
 
 // Function SkinShop.SkinShop_C.GetText_2
 // 0x0038 (0x0038 - 0x0000)
@@ -376,11 +244,7 @@ public:
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0020(0x0018)()
 };
-static_assert(alignof(SkinShop_C_GetText_2) == 0x000008, "Wrong alignment on SkinShop_C_GetText_2");
-static_assert(sizeof(SkinShop_C_GetText_2) == 0x000038, "Wrong size on SkinShop_C_GetText_2");
-static_assert(offsetof(SkinShop_C_GetText_2, ReturnValue) == 0x000000, "Member 'SkinShop_C_GetText_2::ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetText_2, CallFunc_IsValidClass_ReturnValue) == 0x000018, "Member 'SkinShop_C_GetText_2::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetText_2, CallFunc_Conv_StringToText_ReturnValue) == 0x000020, "Member 'SkinShop_C_GetText_2::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SkinShop_C_GetText_2;
 
 // Function SkinShop.SkinShop_C.Get_CoinBuyButton_Visibility_0
 // 0x0003 (0x0003 - 0x0000)
@@ -391,11 +255,7 @@ public:
 	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SkinShop_C_Get_CoinBuyButton_Visibility_0) == 0x000001, "Wrong alignment on SkinShop_C_Get_CoinBuyButton_Visibility_0");
-static_assert(sizeof(SkinShop_C_Get_CoinBuyButton_Visibility_0) == 0x000003, "Wrong size on SkinShop_C_Get_CoinBuyButton_Visibility_0");
-static_assert(offsetof(SkinShop_C_Get_CoinBuyButton_Visibility_0, ReturnValue) == 0x000000, "Member 'SkinShop_C_Get_CoinBuyButton_Visibility_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_Get_CoinBuyButton_Visibility_0, CallFunc_IsValidClass_ReturnValue) == 0x000001, "Member 'SkinShop_C_Get_CoinBuyButton_Visibility_0::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_Get_CoinBuyButton_Visibility_0, CallFunc_Greater_IntInt_ReturnValue) == 0x000002, "Member 'SkinShop_C_Get_CoinBuyButton_Visibility_0::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SkinShop_C_Get_CoinBuyButton_Visibility_0;
 
 // Function SkinShop.SkinShop_C.Get_CashBuyButton_Visibility_0
 // 0x0003 (0x0003 - 0x0000)
@@ -406,11 +266,7 @@ public:
 	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SkinShop_C_Get_CashBuyButton_Visibility_0) == 0x000001, "Wrong alignment on SkinShop_C_Get_CashBuyButton_Visibility_0");
-static_assert(sizeof(SkinShop_C_Get_CashBuyButton_Visibility_0) == 0x000003, "Wrong size on SkinShop_C_Get_CashBuyButton_Visibility_0");
-static_assert(offsetof(SkinShop_C_Get_CashBuyButton_Visibility_0, ReturnValue) == 0x000000, "Member 'SkinShop_C_Get_CashBuyButton_Visibility_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_Get_CashBuyButton_Visibility_0, CallFunc_IsValidClass_ReturnValue) == 0x000001, "Member 'SkinShop_C_Get_CashBuyButton_Visibility_0::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_Get_CashBuyButton_Visibility_0, CallFunc_Greater_IntInt_ReturnValue) == 0x000002, "Member 'SkinShop_C_Get_CashBuyButton_Visibility_0::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SkinShop_C_Get_CashBuyButton_Visibility_0;
 
 // Function SkinShop.SkinShop_C.GetVisibility_0
 // 0x0002 (0x0002 - 0x0000)
@@ -420,10 +276,7 @@ public:
 	ESlateVisibility                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SkinShop_C_GetVisibility_0) == 0x000001, "Wrong alignment on SkinShop_C_GetVisibility_0");
-static_assert(sizeof(SkinShop_C_GetVisibility_0) == 0x000002, "Wrong size on SkinShop_C_GetVisibility_0");
-static_assert(offsetof(SkinShop_C_GetVisibility_0, ReturnValue) == 0x000000, "Member 'SkinShop_C_GetVisibility_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetVisibility_0, CallFunc_IsValidClass_ReturnValue) == 0x000001, "Member 'SkinShop_C_GetVisibility_0::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SkinShop_C_GetVisibility_0;
 
 // Function SkinShop.SkinShop_C.GetText_3
 // 0x0050 (0x0050 - 0x0000)
@@ -436,13 +289,7 @@ public:
 	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SkinShop_C_GetText_3) == 0x000008, "Wrong alignment on SkinShop_C_GetText_3");
-static_assert(sizeof(SkinShop_C_GetText_3) == 0x000050, "Wrong size on SkinShop_C_GetText_3");
-static_assert(offsetof(SkinShop_C_GetText_3, ReturnValue) == 0x000000, "Member 'SkinShop_C_GetText_3::ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetText_3, CallFunc_Conv_IntToText_ReturnValue) == 0x000018, "Member 'SkinShop_C_GetText_3::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetText_3, CallFunc_Conv_IntToText_ReturnValue_1) == 0x000030, "Member 'SkinShop_C_GetText_3::CallFunc_Conv_IntToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetText_3, CallFunc_IsValidClass_ReturnValue) == 0x000048, "Member 'SkinShop_C_GetText_3::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetText_3, CallFunc_Greater_IntInt_ReturnValue) == 0x000049, "Member 'SkinShop_C_GetText_3::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SkinShop_C_GetText_3;
 
 // Function SkinShop.SkinShop_C.GetText_4
 // 0x0070 (0x0070 - 0x0000)
@@ -457,14 +304,7 @@ public:
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0048(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0058(0x0018)()
 };
-static_assert(alignof(SkinShop_C_GetText_4) == 0x000008, "Wrong alignment on SkinShop_C_GetText_4");
-static_assert(sizeof(SkinShop_C_GetText_4) == 0x000070, "Wrong size on SkinShop_C_GetText_4");
-static_assert(offsetof(SkinShop_C_GetText_4, ReturnValue) == 0x000000, "Member 'SkinShop_C_GetText_4::ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetText_4, CallFunc_IsValidClass_ReturnValue) == 0x000018, "Member 'SkinShop_C_GetText_4::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetText_4, CallFunc_Conv_IntToText_ReturnValue) == 0x000020, "Member 'SkinShop_C_GetText_4::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetText_4, CallFunc_Conv_TextToString_ReturnValue) == 0x000038, "Member 'SkinShop_C_GetText_4::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetText_4, CallFunc_Concat_StrStr_ReturnValue) == 0x000048, "Member 'SkinShop_C_GetText_4::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetText_4, CallFunc_Conv_StringToText_ReturnValue) == 0x000058, "Member 'SkinShop_C_GetText_4::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SkinShop_C_GetText_4;
 
 // Function SkinShop.SkinShop_C.GetColorAndOpacity_0
 // 0x00B0 (0x00B0 - 0x0000)
@@ -481,15 +321,7 @@ public:
 	uint8                                         Pad_82[0x6];                                       // 0x0082(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateColor                            K2Node_Select_Default;                             // 0x0088(0x0028)()
 };
-static_assert(alignof(SkinShop_C_GetColorAndOpacity_0) == 0x000008, "Wrong alignment on SkinShop_C_GetColorAndOpacity_0");
-static_assert(sizeof(SkinShop_C_GetColorAndOpacity_0) == 0x0000B0, "Wrong size on SkinShop_C_GetColorAndOpacity_0");
-static_assert(offsetof(SkinShop_C_GetColorAndOpacity_0, ReturnValue) == 0x000000, "Member 'SkinShop_C_GetColorAndOpacity_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetColorAndOpacity_0, Temp_bool_Variable) == 0x000028, "Member 'SkinShop_C_GetColorAndOpacity_0::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetColorAndOpacity_0, K2Node_MakeStruct_SlateColor) == 0x000030, "Member 'SkinShop_C_GetColorAndOpacity_0::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetColorAndOpacity_0, K2Node_MakeStruct_SlateColor_1) == 0x000058, "Member 'SkinShop_C_GetColorAndOpacity_0::K2Node_MakeStruct_SlateColor_1' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetColorAndOpacity_0, CallFunc_IsValidClass_ReturnValue) == 0x000080, "Member 'SkinShop_C_GetColorAndOpacity_0::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetColorAndOpacity_0, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000081, "Member 'SkinShop_C_GetColorAndOpacity_0::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetColorAndOpacity_0, K2Node_Select_Default) == 0x000088, "Member 'SkinShop_C_GetColorAndOpacity_0::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_SkinShop_C_GetColorAndOpacity_0;
 
 // Function SkinShop.SkinShop_C.GetVisibility_1
 // 0x0002 (0x0002 - 0x0000)
@@ -499,10 +331,7 @@ public:
 	ESlateVisibility                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SkinShop_C_GetVisibility_1) == 0x000001, "Wrong alignment on SkinShop_C_GetVisibility_1");
-static_assert(sizeof(SkinShop_C_GetVisibility_1) == 0x000002, "Wrong size on SkinShop_C_GetVisibility_1");
-static_assert(offsetof(SkinShop_C_GetVisibility_1, ReturnValue) == 0x000000, "Member 'SkinShop_C_GetVisibility_1::ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetVisibility_1, CallFunc_Array_Contains_ReturnValue) == 0x000001, "Member 'SkinShop_C_GetVisibility_1::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SkinShop_C_GetVisibility_1;
 
 // Function SkinShop.SkinShop_C.AddPreviousRotationItemsToFeatured
 // 0x0050 (0x0050 - 0x0000)
@@ -528,23 +357,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SkinShop_C_AddPreviousRotationItemsToFeatured) == 0x000008, "Wrong alignment on SkinShop_C_AddPreviousRotationItemsToFeatured");
-static_assert(sizeof(SkinShop_C_AddPreviousRotationItemsToFeatured) == 0x000050, "Wrong size on SkinShop_C_AddPreviousRotationItemsToFeatured");
-static_assert(offsetof(SkinShop_C_AddPreviousRotationItemsToFeatured, Temp_int_Loop_Counter_Variable) == 0x000000, "Member 'SkinShop_C_AddPreviousRotationItemsToFeatured::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_AddPreviousRotationItemsToFeatured, CallFunc_Add_IntInt_ReturnValue) == 0x000004, "Member 'SkinShop_C_AddPreviousRotationItemsToFeatured::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_AddPreviousRotationItemsToFeatured, Temp_int_Array_Index_Variable) == 0x000008, "Member 'SkinShop_C_AddPreviousRotationItemsToFeatured::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_AddPreviousRotationItemsToFeatured, Temp_int_Array_Index_Variable_1) == 0x00000C, "Member 'SkinShop_C_AddPreviousRotationItemsToFeatured::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_AddPreviousRotationItemsToFeatured, Temp_int_Loop_Counter_Variable_1) == 0x000010, "Member 'SkinShop_C_AddPreviousRotationItemsToFeatured::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_AddPreviousRotationItemsToFeatured, CallFunc_Add_IntInt_ReturnValue_1) == 0x000014, "Member 'SkinShop_C_AddPreviousRotationItemsToFeatured::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_AddPreviousRotationItemsToFeatured, CallFunc_Less_IntInt_ReturnValue) == 0x000018, "Member 'SkinShop_C_AddPreviousRotationItemsToFeatured::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_AddPreviousRotationItemsToFeatured, CallFunc_Array_Get_Item) == 0x000020, "Member 'SkinShop_C_AddPreviousRotationItemsToFeatured::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_AddPreviousRotationItemsToFeatured, CallFunc_Array_Length_ReturnValue) == 0x000030, "Member 'SkinShop_C_AddPreviousRotationItemsToFeatured::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_AddPreviousRotationItemsToFeatured, CallFunc_Array_Get_Item_1) == 0x000038, "Member 'SkinShop_C_AddPreviousRotationItemsToFeatured::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_AddPreviousRotationItemsToFeatured, CallFunc_Less_IntInt_ReturnValue_1) == 0x000040, "Member 'SkinShop_C_AddPreviousRotationItemsToFeatured::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_AddPreviousRotationItemsToFeatured, CallFunc_Array_Contains_ReturnValue) == 0x000041, "Member 'SkinShop_C_AddPreviousRotationItemsToFeatured::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_AddPreviousRotationItemsToFeatured, CallFunc_Array_Add_ReturnValue) == 0x000044, "Member 'SkinShop_C_AddPreviousRotationItemsToFeatured::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_AddPreviousRotationItemsToFeatured, CallFunc_Array_Length_ReturnValue_1) == 0x000048, "Member 'SkinShop_C_AddPreviousRotationItemsToFeatured::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_AddPreviousRotationItemsToFeatured, CallFunc_Less_IntInt_ReturnValue_2) == 0x00004C, "Member 'SkinShop_C_AddPreviousRotationItemsToFeatured::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_SkinShop_C_AddPreviousRotationItemsToFeatured;
 
 // Function SkinShop.SkinShop_C.GetCurrentSkinsInRotation
 // 0x0090 (0x0090 - 0x0000)
@@ -572,26 +385,7 @@ public:
 	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UClass*>                         K2Node_MakeArray_Array;                            // 0x0080(0x0010)(ReferenceParm)
 };
-static_assert(alignof(SkinShop_C_GetCurrentSkinsInRotation) == 0x000008, "Wrong alignment on SkinShop_C_GetCurrentSkinsInRotation");
-static_assert(sizeof(SkinShop_C_GetCurrentSkinsInRotation) == 0x000090, "Wrong size on SkinShop_C_GetCurrentSkinsInRotation");
-static_assert(offsetof(SkinShop_C_GetCurrentSkinsInRotation, Array) == 0x000000, "Member 'SkinShop_C_GetCurrentSkinsInRotation::Array' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetCurrentSkinsInRotation, AllRotationSkins) == 0x000010, "Member 'SkinShop_C_GetCurrentSkinsInRotation::AllRotationSkins' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetCurrentSkinsInRotation, Temp_int_Array_Index_Variable) == 0x000020, "Member 'SkinShop_C_GetCurrentSkinsInRotation::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetCurrentSkinsInRotation, Temp_int_Loop_Counter_Variable) == 0x000024, "Member 'SkinShop_C_GetCurrentSkinsInRotation::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetCurrentSkinsInRotation, CallFunc_Add_IntInt_ReturnValue) == 0x000028, "Member 'SkinShop_C_GetCurrentSkinsInRotation::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetCurrentSkinsInRotation, CallFunc_Array_LastIndex_ReturnValue) == 0x00002C, "Member 'SkinShop_C_GetCurrentSkinsInRotation::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetCurrentSkinsInRotation, CallFunc_FindTimeLeft_SkinRot) == 0x000030, "Member 'SkinShop_C_GetCurrentSkinsInRotation::CallFunc_FindTimeLeft_SkinRot' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetCurrentSkinsInRotation, CallFunc_Array_Get_Item) == 0x000038, "Member 'SkinShop_C_GetCurrentSkinsInRotation::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetCurrentSkinsInRotation, CallFunc_Multiply_IntInt_ReturnValue) == 0x000048, "Member 'SkinShop_C_GetCurrentSkinsInRotation::CallFunc_Multiply_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetCurrentSkinsInRotation, CallFunc_MakeRandomStream_ReturnValue) == 0x00004C, "Member 'SkinShop_C_GetCurrentSkinsInRotation::CallFunc_MakeRandomStream_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetCurrentSkinsInRotation, CallFunc_RandomIntegerInRangeFromStream_ReturnValue) == 0x000054, "Member 'SkinShop_C_GetCurrentSkinsInRotation::CallFunc_RandomIntegerInRangeFromStream_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetCurrentSkinsInRotation, CallFunc_MakeRandomStream_ReturnValue_1) == 0x000058, "Member 'SkinShop_C_GetCurrentSkinsInRotation::CallFunc_MakeRandomStream_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetCurrentSkinsInRotation, CallFunc_Array_Get_Item_1) == 0x000060, "Member 'SkinShop_C_GetCurrentSkinsInRotation::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetCurrentSkinsInRotation, CallFunc_RandomIntegerInRangeFromStream_ReturnValue_1) == 0x000068, "Member 'SkinShop_C_GetCurrentSkinsInRotation::CallFunc_RandomIntegerInRangeFromStream_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetCurrentSkinsInRotation, CallFunc_Array_Length_ReturnValue) == 0x00006C, "Member 'SkinShop_C_GetCurrentSkinsInRotation::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetCurrentSkinsInRotation, CallFunc_Array_Get_Item_2) == 0x000070, "Member 'SkinShop_C_GetCurrentSkinsInRotation::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetCurrentSkinsInRotation, CallFunc_Less_IntInt_ReturnValue) == 0x000078, "Member 'SkinShop_C_GetCurrentSkinsInRotation::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinShop_C_GetCurrentSkinsInRotation, K2Node_MakeArray_Array) == 0x000080, "Member 'SkinShop_C_GetCurrentSkinsInRotation::K2Node_MakeArray_Array' has a wrong offset!");
+DUMPER7_ASSERTS_SkinShop_C_GetCurrentSkinsInRotation;
 
 }
 

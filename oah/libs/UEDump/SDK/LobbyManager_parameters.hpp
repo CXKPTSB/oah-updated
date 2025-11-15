@@ -54,35 +54,7 @@ public:
 	uint8                                         Pad_D5[0x3];                                       // 0x00D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LobbyManager_C_ExecuteUbergraph_LobbyManager) == 0x000008, "Wrong alignment on LobbyManager_C_ExecuteUbergraph_LobbyManager");
-static_assert(sizeof(LobbyManager_C_ExecuteUbergraph_LobbyManager) == 0x0000E0, "Wrong size on LobbyManager_C_ExecuteUbergraph_LobbyManager");
-static_assert(offsetof(LobbyManager_C_ExecuteUbergraph_LobbyManager, EntryPoint) == 0x000000, "Member 'LobbyManager_C_ExecuteUbergraph_LobbyManager::EntryPoint' has a wrong offset!");
-static_assert(offsetof(LobbyManager_C_ExecuteUbergraph_LobbyManager, Temp_int_Array_Index_Variable) == 0x000004, "Member 'LobbyManager_C_ExecuteUbergraph_LobbyManager::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(LobbyManager_C_ExecuteUbergraph_LobbyManager, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'LobbyManager_C_ExecuteUbergraph_LobbyManager::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(LobbyManager_C_ExecuteUbergraph_LobbyManager, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'LobbyManager_C_ExecuteUbergraph_LobbyManager::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyManager_C_ExecuteUbergraph_LobbyManager, Temp_int_Array_Index_Variable_1) == 0x000010, "Member 'LobbyManager_C_ExecuteUbergraph_LobbyManager::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(LobbyManager_C_ExecuteUbergraph_LobbyManager, K2Node_CustomEvent_Lobby_type) == 0x000018, "Member 'LobbyManager_C_ExecuteUbergraph_LobbyManager::K2Node_CustomEvent_Lobby_type' has a wrong offset!");
-static_assert(offsetof(LobbyManager_C_ExecuteUbergraph_LobbyManager, K2Node_CustomEvent_Map) == 0x000028, "Member 'LobbyManager_C_ExecuteUbergraph_LobbyManager::K2Node_CustomEvent_Map' has a wrong offset!");
-static_assert(offsetof(LobbyManager_C_ExecuteUbergraph_LobbyManager, CallFunc_GetGameInstance_ReturnValue) == 0x000030, "Member 'LobbyManager_C_ExecuteUbergraph_LobbyManager::CallFunc_GetGameInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyManager_C_ExecuteUbergraph_LobbyManager, CallFunc_GetAllWidgetsWithInterface_FoundWidgets) == 0x000038, "Member 'LobbyManager_C_ExecuteUbergraph_LobbyManager::CallFunc_GetAllWidgetsWithInterface_FoundWidgets' has a wrong offset!");
-static_assert(offsetof(LobbyManager_C_ExecuteUbergraph_LobbyManager, K2Node_DynamicCast_AsRobber_GI) == 0x000048, "Member 'LobbyManager_C_ExecuteUbergraph_LobbyManager::K2Node_DynamicCast_AsRobber_GI' has a wrong offset!");
-static_assert(offsetof(LobbyManager_C_ExecuteUbergraph_LobbyManager, K2Node_DynamicCast_bSuccess) == 0x000050, "Member 'LobbyManager_C_ExecuteUbergraph_LobbyManager::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(LobbyManager_C_ExecuteUbergraph_LobbyManager, CallFunc_Array_Get_Item) == 0x000058, "Member 'LobbyManager_C_ExecuteUbergraph_LobbyManager::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(LobbyManager_C_ExecuteUbergraph_LobbyManager, CallFunc_Array_Length_ReturnValue) == 0x000060, "Member 'LobbyManager_C_ExecuteUbergraph_LobbyManager::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyManager_C_ExecuteUbergraph_LobbyManager, K2Node_DynamicCast_AsMenu_UIInteraface) == 0x000068, "Member 'LobbyManager_C_ExecuteUbergraph_LobbyManager::K2Node_DynamicCast_AsMenu_UIInteraface' has a wrong offset!");
-static_assert(offsetof(LobbyManager_C_ExecuteUbergraph_LobbyManager, K2Node_DynamicCast_bSuccess_1) == 0x000078, "Member 'LobbyManager_C_ExecuteUbergraph_LobbyManager::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(LobbyManager_C_ExecuteUbergraph_LobbyManager, CallFunc_GetGameInstance_ReturnValue_1) == 0x000080, "Member 'LobbyManager_C_ExecuteUbergraph_LobbyManager::CallFunc_GetGameInstance_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(LobbyManager_C_ExecuteUbergraph_LobbyManager, K2Node_CustomEvent_Setups) == 0x000088, "Member 'LobbyManager_C_ExecuteUbergraph_LobbyManager::K2Node_CustomEvent_Setups' has a wrong offset!");
-static_assert(offsetof(LobbyManager_C_ExecuteUbergraph_LobbyManager, K2Node_DynamicCast_AsRobber_GI_1) == 0x000098, "Member 'LobbyManager_C_ExecuteUbergraph_LobbyManager::K2Node_DynamicCast_AsRobber_GI_1' has a wrong offset!");
-static_assert(offsetof(LobbyManager_C_ExecuteUbergraph_LobbyManager, K2Node_DynamicCast_bSuccess_2) == 0x0000A0, "Member 'LobbyManager_C_ExecuteUbergraph_LobbyManager::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(LobbyManager_C_ExecuteUbergraph_LobbyManager, K2Node_CustomEvent_Setup) == 0x0000A8, "Member 'LobbyManager_C_ExecuteUbergraph_LobbyManager::K2Node_CustomEvent_Setup' has a wrong offset!");
-static_assert(offsetof(LobbyManager_C_ExecuteUbergraph_LobbyManager, CallFunc_GetAllWidgetsOfClass_FoundWidgets) == 0x0000B0, "Member 'LobbyManager_C_ExecuteUbergraph_LobbyManager::CallFunc_GetAllWidgetsOfClass_FoundWidgets' has a wrong offset!");
-static_assert(offsetof(LobbyManager_C_ExecuteUbergraph_LobbyManager, CallFunc_Array_Get_Item_1) == 0x0000C0, "Member 'LobbyManager_C_ExecuteUbergraph_LobbyManager::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(LobbyManager_C_ExecuteUbergraph_LobbyManager, CallFunc_Array_Length_ReturnValue_1) == 0x0000C8, "Member 'LobbyManager_C_ExecuteUbergraph_LobbyManager::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(LobbyManager_C_ExecuteUbergraph_LobbyManager, CallFunc_Less_IntInt_ReturnValue) == 0x0000CC, "Member 'LobbyManager_C_ExecuteUbergraph_LobbyManager::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyManager_C_ExecuteUbergraph_LobbyManager, Temp_int_Loop_Counter_Variable_1) == 0x0000D0, "Member 'LobbyManager_C_ExecuteUbergraph_LobbyManager::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(LobbyManager_C_ExecuteUbergraph_LobbyManager, CallFunc_Less_IntInt_ReturnValue_1) == 0x0000D4, "Member 'LobbyManager_C_ExecuteUbergraph_LobbyManager::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(LobbyManager_C_ExecuteUbergraph_LobbyManager, CallFunc_Add_IntInt_ReturnValue_1) == 0x0000D8, "Member 'LobbyManager_C_ExecuteUbergraph_LobbyManager::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_LobbyManager_C_ExecuteUbergraph_LobbyManager;
 
 // Function LobbyManager.LobbyManager_C.SetFocusedSetup
 // 0x0008 (0x0008 - 0x0000)
@@ -91,9 +63,7 @@ struct LobbyManager_C_SetFocusedSetup final
 public:
 	class UClass*                                 Setup;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LobbyManager_C_SetFocusedSetup) == 0x000008, "Wrong alignment on LobbyManager_C_SetFocusedSetup");
-static_assert(sizeof(LobbyManager_C_SetFocusedSetup) == 0x000008, "Wrong size on LobbyManager_C_SetFocusedSetup");
-static_assert(offsetof(LobbyManager_C_SetFocusedSetup, Setup) == 0x000000, "Member 'LobbyManager_C_SetFocusedSetup::Setup' has a wrong offset!");
+DUMPER7_ASSERTS_LobbyManager_C_SetFocusedSetup;
 
 // Function LobbyManager.LobbyManager_C.SetCompletedSetups
 // 0x0010 (0x0010 - 0x0000)
@@ -102,9 +72,7 @@ struct LobbyManager_C_SetCompletedSetups final
 public:
 	TArray<class UClass*>                         Setups;                                            // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(LobbyManager_C_SetCompletedSetups) == 0x000008, "Wrong alignment on LobbyManager_C_SetCompletedSetups");
-static_assert(sizeof(LobbyManager_C_SetCompletedSetups) == 0x000010, "Wrong size on LobbyManager_C_SetCompletedSetups");
-static_assert(offsetof(LobbyManager_C_SetCompletedSetups, Setups) == 0x000000, "Member 'LobbyManager_C_SetCompletedSetups::Setups' has a wrong offset!");
+DUMPER7_ASSERTS_LobbyManager_C_SetCompletedSetups;
 
 // Function LobbyManager.LobbyManager_C.SelectMap
 // 0x0008 (0x0008 - 0x0000)
@@ -113,9 +81,7 @@ struct LobbyManager_C_SelectMap final
 public:
 	class UClass*                                 Map;                                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LobbyManager_C_SelectMap) == 0x000008, "Wrong alignment on LobbyManager_C_SelectMap");
-static_assert(sizeof(LobbyManager_C_SelectMap) == 0x000008, "Wrong size on LobbyManager_C_SelectMap");
-static_assert(offsetof(LobbyManager_C_SelectMap, Map) == 0x000000, "Member 'LobbyManager_C_SelectMap::Map' has a wrong offset!");
+DUMPER7_ASSERTS_LobbyManager_C_SelectMap;
 
 // Function LobbyManager.LobbyManager_C.ChangeLobbyType
 // 0x0010 (0x0010 - 0x0000)
@@ -124,9 +90,7 @@ struct LobbyManager_C_ChangeLobbyType final
 public:
 	class FString                                 Lobby_type;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LobbyManager_C_ChangeLobbyType) == 0x000008, "Wrong alignment on LobbyManager_C_ChangeLobbyType");
-static_assert(sizeof(LobbyManager_C_ChangeLobbyType) == 0x000010, "Wrong size on LobbyManager_C_ChangeLobbyType");
-static_assert(offsetof(LobbyManager_C_ChangeLobbyType, Lobby_type) == 0x000000, "Member 'LobbyManager_C_ChangeLobbyType::Lobby_type' has a wrong offset!");
+DUMPER7_ASSERTS_LobbyManager_C_ChangeLobbyType;
 
 }
 

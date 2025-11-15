@@ -34,23 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ArchVisCharacter">();
+		STATIC_CLASS_IMPL("ArchVisCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ArchVisCharacter")
 	}
 	static class AArchVisCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AArchVisCharacter>();
 	}
 };
-static_assert(alignof(AArchVisCharacter) == 0x000010, "Wrong alignment on AArchVisCharacter");
-static_assert(sizeof(AArchVisCharacter) == 0x000520, "Wrong size on AArchVisCharacter");
-static_assert(offsetof(AArchVisCharacter, LookUpAxisName) == 0x0004B8, "Member 'AArchVisCharacter::LookUpAxisName' has a wrong offset!");
-static_assert(offsetof(AArchVisCharacter, LookUpAtRateAxisName) == 0x0004C8, "Member 'AArchVisCharacter::LookUpAtRateAxisName' has a wrong offset!");
-static_assert(offsetof(AArchVisCharacter, TurnAxisName) == 0x0004D8, "Member 'AArchVisCharacter::TurnAxisName' has a wrong offset!");
-static_assert(offsetof(AArchVisCharacter, TurnAtRateAxisName) == 0x0004E8, "Member 'AArchVisCharacter::TurnAtRateAxisName' has a wrong offset!");
-static_assert(offsetof(AArchVisCharacter, MoveForwardAxisName) == 0x0004F8, "Member 'AArchVisCharacter::MoveForwardAxisName' has a wrong offset!");
-static_assert(offsetof(AArchVisCharacter, MoveRightAxisName) == 0x000508, "Member 'AArchVisCharacter::MoveRightAxisName' has a wrong offset!");
-static_assert(offsetof(AArchVisCharacter, MouseSensitivityScale_Pitch) == 0x000518, "Member 'AArchVisCharacter::MouseSensitivityScale_Pitch' has a wrong offset!");
-static_assert(offsetof(AArchVisCharacter, MouseSensitivityScale_Yaw) == 0x00051C, "Member 'AArchVisCharacter::MouseSensitivityScale_Yaw' has a wrong offset!");
+DUMPER7_ASSERTS_AArchVisCharacter;
 
 // Class ArchVisCharacter.ArchVisCharMovementComponent
 // 0x0050 (0x0B40 - 0x0AF0)
@@ -70,23 +65,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ArchVisCharMovementComponent">();
+		STATIC_CLASS_IMPL("ArchVisCharMovementComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ArchVisCharMovementComponent")
 	}
 	static class UArchVisCharMovementComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UArchVisCharMovementComponent>();
 	}
 };
-static_assert(alignof(UArchVisCharMovementComponent) == 0x000010, "Wrong alignment on UArchVisCharMovementComponent");
-static_assert(sizeof(UArchVisCharMovementComponent) == 0x000B40, "Wrong size on UArchVisCharMovementComponent");
-static_assert(offsetof(UArchVisCharMovementComponent, RotationalAcceleration) == 0x000AF0, "Member 'UArchVisCharMovementComponent::RotationalAcceleration' has a wrong offset!");
-static_assert(offsetof(UArchVisCharMovementComponent, RotationalDeceleration) == 0x000AFC, "Member 'UArchVisCharMovementComponent::RotationalDeceleration' has a wrong offset!");
-static_assert(offsetof(UArchVisCharMovementComponent, MaxRotationalVelocity) == 0x000B08, "Member 'UArchVisCharMovementComponent::MaxRotationalVelocity' has a wrong offset!");
-static_assert(offsetof(UArchVisCharMovementComponent, MinPitch) == 0x000B14, "Member 'UArchVisCharMovementComponent::MinPitch' has a wrong offset!");
-static_assert(offsetof(UArchVisCharMovementComponent, MaxPitch) == 0x000B18, "Member 'UArchVisCharMovementComponent::MaxPitch' has a wrong offset!");
-static_assert(offsetof(UArchVisCharMovementComponent, WalkingFriction) == 0x000B1C, "Member 'UArchVisCharMovementComponent::WalkingFriction' has a wrong offset!");
-static_assert(offsetof(UArchVisCharMovementComponent, WalkingSpeed) == 0x000B20, "Member 'UArchVisCharMovementComponent::WalkingSpeed' has a wrong offset!");
-static_assert(offsetof(UArchVisCharMovementComponent, WalkingAcceleration) == 0x000B24, "Member 'UArchVisCharMovementComponent::WalkingAcceleration' has a wrong offset!");
+DUMPER7_ASSERTS_UArchVisCharMovementComponent;
 
 }
 

@@ -40,22 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GuardScanPoint_C">();
+		BP_STATIC_CLASS_IMPL("GuardScanPoint_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GuardScanPoint_C")
 	}
 	static class AGuardScanPoint_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGuardScanPoint_C>();
 	}
 };
-static_assert(alignof(AGuardScanPoint_C) == 0x000008, "Wrong alignment on AGuardScanPoint_C");
-static_assert(sizeof(AGuardScanPoint_C) == 0x000258, "Wrong size on AGuardScanPoint_C");
-static_assert(offsetof(AGuardScanPoint_C, UberGraphFrame) == 0x000220, "Member 'AGuardScanPoint_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AGuardScanPoint_C, Box) == 0x000228, "Member 'AGuardScanPoint_C::Box' has a wrong offset!");
-static_assert(offsetof(AGuardScanPoint_C, AlertComponent) == 0x000230, "Member 'AGuardScanPoint_C::AlertComponent' has a wrong offset!");
-static_assert(offsetof(AGuardScanPoint_C, SpottedHighlightcomponent) == 0x000238, "Member 'AGuardScanPoint_C::SpottedHighlightcomponent' has a wrong offset!");
-static_assert(offsetof(AGuardScanPoint_C, StaticMesh) == 0x000240, "Member 'AGuardScanPoint_C::StaticMesh' has a wrong offset!");
-static_assert(offsetof(AGuardScanPoint_C, DefaultSceneRoot) == 0x000248, "Member 'AGuardScanPoint_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AGuardScanPoint_C, Activated_) == 0x000250, "Member 'AGuardScanPoint_C::Activated_' has a wrong offset!");
+DUMPER7_ASSERTS_AGuardScanPoint_C;
 
 }
 

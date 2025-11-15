@@ -52,21 +52,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"InventoryItem_C">();
+		BP_STATIC_CLASS_IMPL("InventoryItem_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InventoryItem_C")
 	}
 	static class UInventoryItem_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInventoryItem_C>();
 	}
 };
-static_assert(alignof(UInventoryItem_C) == 0x000008, "Wrong alignment on UInventoryItem_C");
-static_assert(sizeof(UInventoryItem_C) == 0x000290, "Wrong size on UInventoryItem_C");
-static_assert(offsetof(UInventoryItem_C, UberGraphFrame) == 0x000260, "Member 'UInventoryItem_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UInventoryItem_C, ZoomOnItem) == 0x000268, "Member 'UInventoryItem_C::ZoomOnItem' has a wrong offset!");
-static_assert(offsetof(UInventoryItem_C, Image_126) == 0x000270, "Member 'UInventoryItem_C::Image_126' has a wrong offset!");
-static_assert(offsetof(UInventoryItem_C, Rarity) == 0x000278, "Member 'UInventoryItem_C::Rarity' has a wrong offset!");
-static_assert(offsetof(UInventoryItem_C, TextBlock_141) == 0x000280, "Member 'UInventoryItem_C::TextBlock_141' has a wrong offset!");
-static_assert(offsetof(UInventoryItem_C, ItemInfo) == 0x000288, "Member 'UInventoryItem_C::ItemInfo' has a wrong offset!");
+DUMPER7_ASSERTS_UInventoryItem_C;
 
 }
 

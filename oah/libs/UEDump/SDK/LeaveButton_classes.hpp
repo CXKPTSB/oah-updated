@@ -50,27 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LeaveButton_C">();
+		BP_STATIC_CLASS_IMPL("LeaveButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LeaveButton_C")
 	}
 	static class ALeaveButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ALeaveButton_C>();
 	}
 };
-static_assert(alignof(ALeaveButton_C) == 0x000008, "Wrong alignment on ALeaveButton_C");
-static_assert(sizeof(ALeaveButton_C) == 0x000280, "Wrong size on ALeaveButton_C");
-static_assert(offsetof(ALeaveButton_C, UberGraphFrame) == 0x000220, "Member 'ALeaveButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ALeaveButton_C, SteamAchievementComponent) == 0x000228, "Member 'ALeaveButton_C::SteamAchievementComponent' has a wrong offset!");
-static_assert(offsetof(ALeaveButton_C, SteamStatComponent_HeistStealth) == 0x000230, "Member 'ALeaveButton_C::SteamStatComponent_HeistStealth' has a wrong offset!");
-static_assert(offsetof(ALeaveButton_C, SteamStatComponent_HeistLoud) == 0x000238, "Member 'ALeaveButton_C::SteamStatComponent_HeistLoud' has a wrong offset!");
-static_assert(offsetof(ALeaveButton_C, SteamStatComponent_cash) == 0x000240, "Member 'ALeaveButton_C::SteamStatComponent_cash' has a wrong offset!");
-static_assert(offsetof(ALeaveButton_C, SpottedHighlightcomponent) == 0x000248, "Member 'ALeaveButton_C::SpottedHighlightcomponent' has a wrong offset!");
-static_assert(offsetof(ALeaveButton_C, LookatInfoComponent) == 0x000250, "Member 'ALeaveButton_C::LookatInfoComponent' has a wrong offset!");
-static_assert(offsetof(ALeaveButton_C, InteractComponent) == 0x000258, "Member 'ALeaveButton_C::InteractComponent' has a wrong offset!");
-static_assert(offsetof(ALeaveButton_C, ButtonMesh) == 0x000260, "Member 'ALeaveButton_C::ButtonMesh' has a wrong offset!");
-static_assert(offsetof(ALeaveButton_C, DefaultSceneRoot) == 0x000268, "Member 'ALeaveButton_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ALeaveButton_C, As_Robber_Truck) == 0x000270, "Member 'ALeaveButton_C::As_Robber_Truck' has a wrong offset!");
-static_assert(offsetof(ALeaveButton_C, ValueableEXP) == 0x000278, "Member 'ALeaveButton_C::ValueableEXP' has a wrong offset!");
+DUMPER7_ASSERTS_ALeaveButton_C;
 
 }
 

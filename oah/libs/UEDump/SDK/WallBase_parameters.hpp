@@ -36,21 +36,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WallBase_C_UserConstructionScript) == 0x000008, "Wrong alignment on WallBase_C_UserConstructionScript");
-static_assert(sizeof(WallBase_C_UserConstructionScript) == 0x000058, "Wrong size on WallBase_C_UserConstructionScript");
-static_assert(offsetof(WallBase_C_UserConstructionScript, Temp_int_Array_Index_Variable) == 0x000000, "Member 'WallBase_C_UserConstructionScript::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WallBase_C_UserConstructionScript, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'WallBase_C_UserConstructionScript::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WallBase_C_UserConstructionScript, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'WallBase_C_UserConstructionScript::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WallBase_C_UserConstructionScript, CallFunc_GetParentActor_ReturnValue) == 0x000010, "Member 'WallBase_C_UserConstructionScript::CallFunc_GetParentActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WallBase_C_UserConstructionScript, K2Node_DynamicCast_AsClosebuilding_Blolck_Base) == 0x000018, "Member 'WallBase_C_UserConstructionScript::K2Node_DynamicCast_AsClosebuilding_Blolck_Base' has a wrong offset!");
-static_assert(offsetof(WallBase_C_UserConstructionScript, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'WallBase_C_UserConstructionScript::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WallBase_C_UserConstructionScript, CallFunc_GetComponentsByTag_ReturnValue) == 0x000028, "Member 'WallBase_C_UserConstructionScript::CallFunc_GetComponentsByTag_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WallBase_C_UserConstructionScript, CallFunc_Array_Get_Item) == 0x000038, "Member 'WallBase_C_UserConstructionScript::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WallBase_C_UserConstructionScript, CallFunc_Array_RandomFromStream_OutItem) == 0x000040, "Member 'WallBase_C_UserConstructionScript::CallFunc_Array_RandomFromStream_OutItem' has a wrong offset!");
-static_assert(offsetof(WallBase_C_UserConstructionScript, CallFunc_Array_RandomFromStream_OutIndex) == 0x000048, "Member 'WallBase_C_UserConstructionScript::CallFunc_Array_RandomFromStream_OutIndex' has a wrong offset!");
-static_assert(offsetof(WallBase_C_UserConstructionScript, CallFunc_SetStaticMesh_ReturnValue) == 0x00004C, "Member 'WallBase_C_UserConstructionScript::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WallBase_C_UserConstructionScript, CallFunc_Array_Length_ReturnValue) == 0x000050, "Member 'WallBase_C_UserConstructionScript::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WallBase_C_UserConstructionScript, CallFunc_Less_IntInt_ReturnValue) == 0x000054, "Member 'WallBase_C_UserConstructionScript::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WallBase_C_UserConstructionScript;
 
 }
 

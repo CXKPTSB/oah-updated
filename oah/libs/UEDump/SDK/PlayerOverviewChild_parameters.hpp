@@ -24,11 +24,7 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerOverviewChild_C_ExecuteUbergraph_PlayerOverviewChild) == 0x000008, "Wrong alignment on PlayerOverviewChild_C_ExecuteUbergraph_PlayerOverviewChild");
-static_assert(sizeof(PlayerOverviewChild_C_ExecuteUbergraph_PlayerOverviewChild) == 0x000018, "Wrong size on PlayerOverviewChild_C_ExecuteUbergraph_PlayerOverviewChild");
-static_assert(offsetof(PlayerOverviewChild_C_ExecuteUbergraph_PlayerOverviewChild, EntryPoint) == 0x000000, "Member 'PlayerOverviewChild_C_ExecuteUbergraph_PlayerOverviewChild::EntryPoint' has a wrong offset!");
-static_assert(offsetof(PlayerOverviewChild_C_ExecuteUbergraph_PlayerOverviewChild, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'PlayerOverviewChild_C_ExecuteUbergraph_PlayerOverviewChild::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerOverviewChild_C_ExecuteUbergraph_PlayerOverviewChild, CallFunc_PlayAnimation_ReturnValue_1) == 0x000010, "Member 'PlayerOverviewChild_C_ExecuteUbergraph_PlayerOverviewChild::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerOverviewChild_C_ExecuteUbergraph_PlayerOverviewChild;
 
 // Function PlayerOverviewChild.PlayerOverviewChild_C.GetText_0
 // 0x0040 (0x0040 - 0x0000)
@@ -39,11 +35,7 @@ public:
 	class FString                                 CallFunc_GetPlayerName_ReturnValue;                // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0028(0x0018)()
 };
-static_assert(alignof(PlayerOverviewChild_C_GetText_0) == 0x000008, "Wrong alignment on PlayerOverviewChild_C_GetText_0");
-static_assert(sizeof(PlayerOverviewChild_C_GetText_0) == 0x000040, "Wrong size on PlayerOverviewChild_C_GetText_0");
-static_assert(offsetof(PlayerOverviewChild_C_GetText_0, ReturnValue) == 0x000000, "Member 'PlayerOverviewChild_C_GetText_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerOverviewChild_C_GetText_0, CallFunc_GetPlayerName_ReturnValue) == 0x000018, "Member 'PlayerOverviewChild_C_GetText_0::CallFunc_GetPlayerName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerOverviewChild_C_GetText_0, CallFunc_Conv_StringToText_ReturnValue) == 0x000028, "Member 'PlayerOverviewChild_C_GetText_0::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerOverviewChild_C_GetText_0;
 
 // Function PlayerOverviewChild.PlayerOverviewChild_C.GetText_1
 // 0x0050 (0x0050 - 0x0000)
@@ -55,12 +47,7 @@ public:
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0038(0x0018)()
 };
-static_assert(alignof(PlayerOverviewChild_C_GetText_1) == 0x000008, "Wrong alignment on PlayerOverviewChild_C_GetText_1");
-static_assert(sizeof(PlayerOverviewChild_C_GetText_1) == 0x000050, "Wrong size on PlayerOverviewChild_C_GetText_1");
-static_assert(offsetof(PlayerOverviewChild_C_GetText_1, ReturnValue) == 0x000000, "Member 'PlayerOverviewChild_C_GetText_1::ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerOverviewChild_C_GetText_1, CallFunc_Conv_ByteToString_ReturnValue) == 0x000018, "Member 'PlayerOverviewChild_C_GetText_1::CallFunc_Conv_ByteToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerOverviewChild_C_GetText_1, CallFunc_Concat_StrStr_ReturnValue) == 0x000028, "Member 'PlayerOverviewChild_C_GetText_1::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerOverviewChild_C_GetText_1, CallFunc_Conv_StringToText_ReturnValue) == 0x000038, "Member 'PlayerOverviewChild_C_GetText_1::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerOverviewChild_C_GetText_1;
 
 }
 

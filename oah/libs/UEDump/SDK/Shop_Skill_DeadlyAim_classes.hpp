@@ -23,15 +23,18 @@ class AShop_Skill_DeadlyAim_C final : public AShop_SkillBase_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Shop_Skill_DeadlyAim_C">();
+		BP_STATIC_CLASS_IMPL("Shop_Skill_DeadlyAim_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Shop_Skill_DeadlyAim_C")
 	}
 	static class AShop_Skill_DeadlyAim_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AShop_Skill_DeadlyAim_C>();
 	}
 };
-static_assert(alignof(AShop_Skill_DeadlyAim_C) == 0x000008, "Wrong alignment on AShop_Skill_DeadlyAim_C");
-static_assert(sizeof(AShop_Skill_DeadlyAim_C) == 0x000288, "Wrong size on AShop_Skill_DeadlyAim_C");
+DUMPER7_ASSERTS_AShop_Skill_DeadlyAim_C;
 
 }
 

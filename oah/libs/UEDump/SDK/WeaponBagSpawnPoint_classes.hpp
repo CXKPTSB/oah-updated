@@ -34,19 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WeaponBagSpawnPoint_C">();
+		BP_STATIC_CLASS_IMPL("WeaponBagSpawnPoint_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WeaponBagSpawnPoint_C")
 	}
 	static class AWeaponBagSpawnPoint_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AWeaponBagSpawnPoint_C>();
 	}
 };
-static_assert(alignof(AWeaponBagSpawnPoint_C) == 0x000008, "Wrong alignment on AWeaponBagSpawnPoint_C");
-static_assert(sizeof(AWeaponBagSpawnPoint_C) == 0x000240, "Wrong size on AWeaponBagSpawnPoint_C");
-static_assert(offsetof(AWeaponBagSpawnPoint_C, UberGraphFrame) == 0x000220, "Member 'AWeaponBagSpawnPoint_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AWeaponBagSpawnPoint_C, StaticMesh) == 0x000228, "Member 'AWeaponBagSpawnPoint_C::StaticMesh' has a wrong offset!");
-static_assert(offsetof(AWeaponBagSpawnPoint_C, Direction) == 0x000230, "Member 'AWeaponBagSpawnPoint_C::Direction' has a wrong offset!");
-static_assert(offsetof(AWeaponBagSpawnPoint_C, DefaultSceneRoot) == 0x000238, "Member 'AWeaponBagSpawnPoint_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_AWeaponBagSpawnPoint_C;
 
 }
 

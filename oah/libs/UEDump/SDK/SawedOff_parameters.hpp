@@ -21,9 +21,7 @@ struct SawedOff_C_ExecuteUbergraph_SawedOff final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SawedOff_C_ExecuteUbergraph_SawedOff) == 0x000004, "Wrong alignment on SawedOff_C_ExecuteUbergraph_SawedOff");
-static_assert(sizeof(SawedOff_C_ExecuteUbergraph_SawedOff) == 0x000004, "Wrong size on SawedOff_C_ExecuteUbergraph_SawedOff");
-static_assert(offsetof(SawedOff_C_ExecuteUbergraph_SawedOff, EntryPoint) == 0x000000, "Member 'SawedOff_C_ExecuteUbergraph_SawedOff::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_SawedOff_C_ExecuteUbergraph_SawedOff;
 
 }
 

@@ -28,14 +28,7 @@ public:
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 K2Node_CustomEvent_Player;                         // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(NPC_Police_Juggernaut_C_ExecuteUbergraph_NPC_Police_Juggernaut) == 0x000008, "Wrong alignment on NPC_Police_Juggernaut_C_ExecuteUbergraph_NPC_Police_Juggernaut");
-static_assert(sizeof(NPC_Police_Juggernaut_C_ExecuteUbergraph_NPC_Police_Juggernaut) == 0x000040, "Wrong size on NPC_Police_Juggernaut_C_ExecuteUbergraph_NPC_Police_Juggernaut");
-static_assert(offsetof(NPC_Police_Juggernaut_C_ExecuteUbergraph_NPC_Police_Juggernaut, EntryPoint) == 0x000000, "Member 'NPC_Police_Juggernaut_C_ExecuteUbergraph_NPC_Police_Juggernaut::EntryPoint' has a wrong offset!");
-static_assert(offsetof(NPC_Police_Juggernaut_C_ExecuteUbergraph_NPC_Police_Juggernaut, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'NPC_Police_Juggernaut_C_ExecuteUbergraph_NPC_Police_Juggernaut::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(NPC_Police_Juggernaut_C_ExecuteUbergraph_NPC_Police_Juggernaut, K2Node_CreateDelegate_OutputDelegate_1) == 0x000014, "Member 'NPC_Police_Juggernaut_C_ExecuteUbergraph_NPC_Police_Juggernaut::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(NPC_Police_Juggernaut_C_ExecuteUbergraph_NPC_Police_Juggernaut, K2Node_DynamicCast_AsPolice_Helmet) == 0x000028, "Member 'NPC_Police_Juggernaut_C_ExecuteUbergraph_NPC_Police_Juggernaut::K2Node_DynamicCast_AsPolice_Helmet' has a wrong offset!");
-static_assert(offsetof(NPC_Police_Juggernaut_C_ExecuteUbergraph_NPC_Police_Juggernaut, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'NPC_Police_Juggernaut_C_ExecuteUbergraph_NPC_Police_Juggernaut::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(NPC_Police_Juggernaut_C_ExecuteUbergraph_NPC_Police_Juggernaut, K2Node_CustomEvent_Player) == 0x000038, "Member 'NPC_Police_Juggernaut_C_ExecuteUbergraph_NPC_Police_Juggernaut::K2Node_CustomEvent_Player' has a wrong offset!");
+DUMPER7_ASSERTS_NPC_Police_Juggernaut_C_ExecuteUbergraph_NPC_Police_Juggernaut;
 
 // Function NPC_Police_Juggernaut.NPC_Police_Juggernaut_C.OnDeathStats
 // 0x0008 (0x0008 - 0x0000)
@@ -44,9 +37,7 @@ struct NPC_Police_Juggernaut_C_OnDeathStats final
 public:
 	class AActor*                                 Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(NPC_Police_Juggernaut_C_OnDeathStats) == 0x000008, "Wrong alignment on NPC_Police_Juggernaut_C_OnDeathStats");
-static_assert(sizeof(NPC_Police_Juggernaut_C_OnDeathStats) == 0x000008, "Wrong size on NPC_Police_Juggernaut_C_OnDeathStats");
-static_assert(offsetof(NPC_Police_Juggernaut_C_OnDeathStats, Player) == 0x000000, "Member 'NPC_Police_Juggernaut_C_OnDeathStats::Player' has a wrong offset!");
+DUMPER7_ASSERTS_NPC_Police_Juggernaut_C_OnDeathStats;
 
 }
 

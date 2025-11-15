@@ -27,7 +27,7 @@ public:
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0228(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FInstructionStruct>             Instructions;                                      // 0x0230(0x0010)(Edit, BlueprintVisible, Net, DisableEditOnInstance)
 	struct FInstructionStruct                     CurrentInstruction;                                // 0x0240(0x0030)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
-	TMulticastInlineDelegate<void(int32 Instruction)> OnInstructionComplete;                             // 0x0270(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(int32 Instruction)> OnInstructionComplete;                         // 0x0270(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void ExecuteUbergraph_Instruction_base(int32 EntryPoint);
@@ -44,20 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Instruction_base_C">();
+		BP_STATIC_CLASS_IMPL("Instruction_base_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Instruction_base_C")
 	}
 	static class AInstruction_base_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AInstruction_base_C>();
 	}
 };
-static_assert(alignof(AInstruction_base_C) == 0x000008, "Wrong alignment on AInstruction_base_C");
-static_assert(sizeof(AInstruction_base_C) == 0x000280, "Wrong size on AInstruction_base_C");
-static_assert(offsetof(AInstruction_base_C, UberGraphFrame) == 0x000220, "Member 'AInstruction_base_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AInstruction_base_C, DefaultSceneRoot) == 0x000228, "Member 'AInstruction_base_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AInstruction_base_C, Instructions) == 0x000230, "Member 'AInstruction_base_C::Instructions' has a wrong offset!");
-static_assert(offsetof(AInstruction_base_C, CurrentInstruction) == 0x000240, "Member 'AInstruction_base_C::CurrentInstruction' has a wrong offset!");
-static_assert(offsetof(AInstruction_base_C, OnInstructionComplete) == 0x000270, "Member 'AInstruction_base_C::OnInstructionComplete' has a wrong offset!");
+DUMPER7_ASSERTS_AInstruction_base_C;
 
 }
 

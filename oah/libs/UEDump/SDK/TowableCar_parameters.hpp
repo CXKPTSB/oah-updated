@@ -80,55 +80,7 @@ public:
 	class AGarageDoor_C*                          K2Node_DynamicCast_AsGarage_Door_1;                // 0x0318(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0320(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TowableCar_C_ExecuteUbergraph_TowableCar) == 0x000008, "Wrong alignment on TowableCar_C_ExecuteUbergraph_TowableCar");
-static_assert(sizeof(TowableCar_C_ExecuteUbergraph_TowableCar) == 0x000328, "Wrong size on TowableCar_C_ExecuteUbergraph_TowableCar");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, EntryPoint) == 0x000000, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::EntryPoint' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, Temp_bool_IsClosed_Variable) == 0x000004, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, Temp_bool_Has_Been_Initd_Variable) == 0x000005, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, Temp_bool_IsClosed_Variable_1) == 0x000006, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::Temp_bool_IsClosed_Variable_1' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, Temp_bool_Has_Been_Initd_Variable_1) == 0x000007, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::Temp_bool_Has_Been_Initd_Variable_1' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, K2Node_ComponentBoundEvent_OverlappedComponent_2) == 0x000008, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::K2Node_ComponentBoundEvent_OverlappedComponent_2' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, K2Node_ComponentBoundEvent_OtherActor_2) == 0x000010, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::K2Node_ComponentBoundEvent_OtherActor_2' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, K2Node_ComponentBoundEvent_OtherComp_2) == 0x000018, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::K2Node_ComponentBoundEvent_OtherComp_2' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, K2Node_ComponentBoundEvent_OtherBodyIndex_2) == 0x000020, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::K2Node_ComponentBoundEvent_OtherBodyIndex_2' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, K2Node_ComponentBoundEvent_bFromSweep_1) == 0x000024, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::K2Node_ComponentBoundEvent_bFromSweep_1' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, K2Node_ComponentBoundEvent_SweepResult_1) == 0x000028, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::K2Node_ComponentBoundEvent_SweepResult_1' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, K2Node_DynamicCast_AsBP_Hitch_Hook) == 0x0000B0, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::K2Node_DynamicCast_AsBP_Hitch_Hook' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, K2Node_DynamicCast_bSuccess) == 0x0000B8, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, CallFunc_GetLocationAtDistanceAlongSpline_ReturnValue) == 0x0000BC, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::CallFunc_GetLocationAtDistanceAlongSpline_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, K2Node_Event_DeltaSeconds) == 0x0000C8, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, CallFunc_Not_PreBool_ReturnValue) == 0x0000CC, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, CallFunc_BooleanAND_ReturnValue) == 0x0000CD, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, CallFunc_Divide_FloatFloat_ReturnValue) == 0x0000D0, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, CallFunc_BooleanAND_ReturnValue_1) == 0x0000D4, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0000D8, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, CallFunc_MakeRotator_ReturnValue) == 0x0000DC, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, CallFunc_MakeRotator_ReturnValue_1) == 0x0000E8, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::CallFunc_MakeRotator_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, CallFunc_K2_AddLocalRotation_SweepHitResult) == 0x0000F4, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::CallFunc_K2_AddLocalRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, CallFunc_K2_AddLocalRotation_SweepHitResult_1) == 0x00017C, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::CallFunc_K2_AddLocalRotation_SweepHitResult_1' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, Temp_bool_IsClosed_Variable_2) == 0x000204, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::Temp_bool_IsClosed_Variable_2' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, CallFunc_GetActorOfClass_ReturnValue) == 0x000208, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::CallFunc_GetActorOfClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000210, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, CallFunc_Vector_Distance_ReturnValue) == 0x00021C, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::CallFunc_Vector_Distance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, CallFunc_Less_FloatFloat_ReturnValue) == 0x000220, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, K2Node_CustomEvent_Pause_) == 0x000221, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::K2Node_CustomEvent_Pause_' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, CallFunc_Conv_BoolToString_ReturnValue) == 0x000228, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::CallFunc_Conv_BoolToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, Temp_bool_Has_Been_Initd_Variable_2) == 0x000238, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::Temp_bool_Has_Been_Initd_Variable_2' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, K2Node_ComponentBoundEvent_OverlappedComponent_1) == 0x000240, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::K2Node_ComponentBoundEvent_OverlappedComponent_1' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, K2Node_ComponentBoundEvent_OtherActor_1) == 0x000248, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::K2Node_ComponentBoundEvent_OtherActor_1' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, K2Node_ComponentBoundEvent_OtherComp_1) == 0x000250, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::K2Node_ComponentBoundEvent_OtherComp_1' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, K2Node_ComponentBoundEvent_OtherBodyIndex_1) == 0x000258, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::K2Node_ComponentBoundEvent_OtherBodyIndex_1' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, K2Node_ComponentBoundEvent_bFromSweep) == 0x00025C, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::K2Node_ComponentBoundEvent_bFromSweep' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, K2Node_ComponentBoundEvent_SweepResult) == 0x000260, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::K2Node_ComponentBoundEvent_SweepResult' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, K2Node_DynamicCast_AsGarage_Door) == 0x0002E8, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::K2Node_DynamicCast_AsGarage_Door' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, K2Node_DynamicCast_bSuccess_1) == 0x0002F0, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, CallFunc_BooleanAND_ReturnValue_2) == 0x0002F1, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, K2Node_ComponentBoundEvent_OverlappedComponent) == 0x0002F8, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::K2Node_ComponentBoundEvent_OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, K2Node_ComponentBoundEvent_OtherActor) == 0x000300, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::K2Node_ComponentBoundEvent_OtherActor' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, K2Node_ComponentBoundEvent_OtherComp) == 0x000308, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::K2Node_ComponentBoundEvent_OtherComp' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, K2Node_ComponentBoundEvent_OtherBodyIndex) == 0x000310, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::K2Node_ComponentBoundEvent_OtherBodyIndex' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, K2Node_DynamicCast_AsGarage_Door_1) == 0x000318, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::K2Node_DynamicCast_AsGarage_Door_1' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_ExecuteUbergraph_TowableCar, K2Node_DynamicCast_bSuccess_2) == 0x000320, "Member 'TowableCar_C_ExecuteUbergraph_TowableCar::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
+DUMPER7_ASSERTS_TowableCar_C_ExecuteUbergraph_TowableCar;
 
 // Function TowableCar.TowableCar_C.BndEvt__TowableCar_CarPauseOverlapper_K2Node_ComponentBoundEvent_4_ComponentEndOverlapSignature__DelegateSignature
 // 0x0020 (0x0020 - 0x0000)
@@ -140,12 +92,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TowableCar_C_BndEvt__TowableCar_CarPauseOverlapper_K2Node_ComponentBoundEvent_4_ComponentEndOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on TowableCar_C_BndEvt__TowableCar_CarPauseOverlapper_K2Node_ComponentBoundEvent_4_ComponentEndOverlapSignature__DelegateSignature");
-static_assert(sizeof(TowableCar_C_BndEvt__TowableCar_CarPauseOverlapper_K2Node_ComponentBoundEvent_4_ComponentEndOverlapSignature__DelegateSignature) == 0x000020, "Wrong size on TowableCar_C_BndEvt__TowableCar_CarPauseOverlapper_K2Node_ComponentBoundEvent_4_ComponentEndOverlapSignature__DelegateSignature");
-static_assert(offsetof(TowableCar_C_BndEvt__TowableCar_CarPauseOverlapper_K2Node_ComponentBoundEvent_4_ComponentEndOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'TowableCar_C_BndEvt__TowableCar_CarPauseOverlapper_K2Node_ComponentBoundEvent_4_ComponentEndOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_BndEvt__TowableCar_CarPauseOverlapper_K2Node_ComponentBoundEvent_4_ComponentEndOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'TowableCar_C_BndEvt__TowableCar_CarPauseOverlapper_K2Node_ComponentBoundEvent_4_ComponentEndOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_BndEvt__TowableCar_CarPauseOverlapper_K2Node_ComponentBoundEvent_4_ComponentEndOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'TowableCar_C_BndEvt__TowableCar_CarPauseOverlapper_K2Node_ComponentBoundEvent_4_ComponentEndOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_BndEvt__TowableCar_CarPauseOverlapper_K2Node_ComponentBoundEvent_4_ComponentEndOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'TowableCar_C_BndEvt__TowableCar_CarPauseOverlapper_K2Node_ComponentBoundEvent_4_ComponentEndOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
+DUMPER7_ASSERTS_TowableCar_C_BndEvt__TowableCar_CarPauseOverlapper_K2Node_ComponentBoundEvent_4_ComponentEndOverlapSignature__DelegateSignature;
 
 // Function TowableCar.TowableCar_C.BndEvt__TowableCar_CarPauseOverlapper_K2Node_ComponentBoundEvent_3_ComponentBeginOverlapSignature__DelegateSignature
 // 0x00A8 (0x00A8 - 0x0000)
@@ -160,14 +107,7 @@ public:
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(TowableCar_C_BndEvt__TowableCar_CarPauseOverlapper_K2Node_ComponentBoundEvent_3_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on TowableCar_C_BndEvt__TowableCar_CarPauseOverlapper_K2Node_ComponentBoundEvent_3_ComponentBeginOverlapSignature__DelegateSignature");
-static_assert(sizeof(TowableCar_C_BndEvt__TowableCar_CarPauseOverlapper_K2Node_ComponentBoundEvent_3_ComponentBeginOverlapSignature__DelegateSignature) == 0x0000A8, "Wrong size on TowableCar_C_BndEvt__TowableCar_CarPauseOverlapper_K2Node_ComponentBoundEvent_3_ComponentBeginOverlapSignature__DelegateSignature");
-static_assert(offsetof(TowableCar_C_BndEvt__TowableCar_CarPauseOverlapper_K2Node_ComponentBoundEvent_3_ComponentBeginOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'TowableCar_C_BndEvt__TowableCar_CarPauseOverlapper_K2Node_ComponentBoundEvent_3_ComponentBeginOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_BndEvt__TowableCar_CarPauseOverlapper_K2Node_ComponentBoundEvent_3_ComponentBeginOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'TowableCar_C_BndEvt__TowableCar_CarPauseOverlapper_K2Node_ComponentBoundEvent_3_ComponentBeginOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_BndEvt__TowableCar_CarPauseOverlapper_K2Node_ComponentBoundEvent_3_ComponentBeginOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'TowableCar_C_BndEvt__TowableCar_CarPauseOverlapper_K2Node_ComponentBoundEvent_3_ComponentBeginOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_BndEvt__TowableCar_CarPauseOverlapper_K2Node_ComponentBoundEvent_3_ComponentBeginOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'TowableCar_C_BndEvt__TowableCar_CarPauseOverlapper_K2Node_ComponentBoundEvent_3_ComponentBeginOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_BndEvt__TowableCar_CarPauseOverlapper_K2Node_ComponentBoundEvent_3_ComponentBeginOverlapSignature__DelegateSignature, bFromSweep) == 0x00001C, "Member 'TowableCar_C_BndEvt__TowableCar_CarPauseOverlapper_K2Node_ComponentBoundEvent_3_ComponentBeginOverlapSignature__DelegateSignature::bFromSweep' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_BndEvt__TowableCar_CarPauseOverlapper_K2Node_ComponentBoundEvent_3_ComponentBeginOverlapSignature__DelegateSignature, SweepResult) == 0x000020, "Member 'TowableCar_C_BndEvt__TowableCar_CarPauseOverlapper_K2Node_ComponentBoundEvent_3_ComponentBeginOverlapSignature__DelegateSignature::SweepResult' has a wrong offset!");
+DUMPER7_ASSERTS_TowableCar_C_BndEvt__TowableCar_CarPauseOverlapper_K2Node_ComponentBoundEvent_3_ComponentBeginOverlapSignature__DelegateSignature;
 
 // Function TowableCar.TowableCar_C.PauseTow
 // 0x0001 (0x0001 - 0x0000)
@@ -176,9 +116,7 @@ struct TowableCar_C_PauseTow final
 public:
 	bool                                          Pause_;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TowableCar_C_PauseTow) == 0x000001, "Wrong alignment on TowableCar_C_PauseTow");
-static_assert(sizeof(TowableCar_C_PauseTow) == 0x000001, "Wrong size on TowableCar_C_PauseTow");
-static_assert(offsetof(TowableCar_C_PauseTow, Pause_) == 0x000000, "Member 'TowableCar_C_PauseTow::Pause_' has a wrong offset!");
+DUMPER7_ASSERTS_TowableCar_C_PauseTow;
 
 // Function TowableCar.TowableCar_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -187,9 +125,7 @@ struct TowableCar_C_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TowableCar_C_ReceiveTick) == 0x000004, "Wrong alignment on TowableCar_C_ReceiveTick");
-static_assert(sizeof(TowableCar_C_ReceiveTick) == 0x000004, "Wrong size on TowableCar_C_ReceiveTick");
-static_assert(offsetof(TowableCar_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'TowableCar_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_TowableCar_C_ReceiveTick;
 
 // Function TowableCar.TowableCar_C.BndEvt__TowableCar_Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature
 // 0x00A8 (0x00A8 - 0x0000)
@@ -204,14 +140,7 @@ public:
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(TowableCar_C_BndEvt__TowableCar_Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on TowableCar_C_BndEvt__TowableCar_Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature");
-static_assert(sizeof(TowableCar_C_BndEvt__TowableCar_Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature) == 0x0000A8, "Wrong size on TowableCar_C_BndEvt__TowableCar_Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature");
-static_assert(offsetof(TowableCar_C_BndEvt__TowableCar_Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'TowableCar_C_BndEvt__TowableCar_Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_BndEvt__TowableCar_Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'TowableCar_C_BndEvt__TowableCar_Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_BndEvt__TowableCar_Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'TowableCar_C_BndEvt__TowableCar_Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_BndEvt__TowableCar_Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'TowableCar_C_BndEvt__TowableCar_Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_BndEvt__TowableCar_Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature, bFromSweep) == 0x00001C, "Member 'TowableCar_C_BndEvt__TowableCar_Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature::bFromSweep' has a wrong offset!");
-static_assert(offsetof(TowableCar_C_BndEvt__TowableCar_Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature, SweepResult) == 0x000020, "Member 'TowableCar_C_BndEvt__TowableCar_Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature::SweepResult' has a wrong offset!");
+DUMPER7_ASSERTS_TowableCar_C_BndEvt__TowableCar_Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature;
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "ShopItemCategory_structs.hpp"
 #include "Engine_structs.hpp"
+#include "ShopItemCategory_structs.hpp"
 #include "UMG_classes.hpp"
 
 
@@ -46,20 +46,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ShopCategoryTab_C">();
+		BP_STATIC_CLASS_IMPL("ShopCategoryTab_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ShopCategoryTab_C")
 	}
 	static class UShopCategoryTab_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UShopCategoryTab_C>();
 	}
 };
-static_assert(alignof(UShopCategoryTab_C) == 0x000008, "Wrong alignment on UShopCategoryTab_C");
-static_assert(sizeof(UShopCategoryTab_C) == 0x000280, "Wrong size on UShopCategoryTab_C");
-static_assert(offsetof(UShopCategoryTab_C, UberGraphFrame) == 0x000260, "Member 'UShopCategoryTab_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UShopCategoryTab_C, Image_0) == 0x000268, "Member 'UShopCategoryTab_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UShopCategoryTab_C, Tools) == 0x000270, "Member 'UShopCategoryTab_C::Tools' has a wrong offset!");
-static_assert(offsetof(UShopCategoryTab_C, ButtonCategory) == 0x000278, "Member 'UShopCategoryTab_C::ButtonCategory' has a wrong offset!");
-static_assert(offsetof(UShopCategoryTab_C, CurrentCategory) == 0x000279, "Member 'UShopCategoryTab_C::CurrentCategory' has a wrong offset!");
+DUMPER7_ASSERTS_UShopCategoryTab_C;
 
 }
 

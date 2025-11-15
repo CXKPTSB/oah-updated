@@ -30,18 +30,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerOverview_C_ExecuteUbergraph_PlayerOverview) == 0x000008, "Wrong alignment on PlayerOverview_C_ExecuteUbergraph_PlayerOverview");
-static_assert(sizeof(PlayerOverview_C_ExecuteUbergraph_PlayerOverview) == 0x000040, "Wrong size on PlayerOverview_C_ExecuteUbergraph_PlayerOverview");
-static_assert(offsetof(PlayerOverview_C_ExecuteUbergraph_PlayerOverview, EntryPoint) == 0x000000, "Member 'PlayerOverview_C_ExecuteUbergraph_PlayerOverview::EntryPoint' has a wrong offset!");
-static_assert(offsetof(PlayerOverview_C_ExecuteUbergraph_PlayerOverview, Temp_int_Array_Index_Variable) == 0x000004, "Member 'PlayerOverview_C_ExecuteUbergraph_PlayerOverview::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerOverview_C_ExecuteUbergraph_PlayerOverview, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'PlayerOverview_C_ExecuteUbergraph_PlayerOverview::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerOverview_C_ExecuteUbergraph_PlayerOverview, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'PlayerOverview_C_ExecuteUbergraph_PlayerOverview::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerOverview_C_ExecuteUbergraph_PlayerOverview, CallFunc_Create_ReturnValue) == 0x000010, "Member 'PlayerOverview_C_ExecuteUbergraph_PlayerOverview::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerOverview_C_ExecuteUbergraph_PlayerOverview, CallFunc_GetAllActorsOfClass_OutActors) == 0x000018, "Member 'PlayerOverview_C_ExecuteUbergraph_PlayerOverview::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(PlayerOverview_C_ExecuteUbergraph_PlayerOverview, CallFunc_Array_Get_Item) == 0x000028, "Member 'PlayerOverview_C_ExecuteUbergraph_PlayerOverview::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(PlayerOverview_C_ExecuteUbergraph_PlayerOverview, CallFunc_AddChild_ReturnValue) == 0x000030, "Member 'PlayerOverview_C_ExecuteUbergraph_PlayerOverview::CallFunc_AddChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerOverview_C_ExecuteUbergraph_PlayerOverview, CallFunc_Array_Length_ReturnValue) == 0x000038, "Member 'PlayerOverview_C_ExecuteUbergraph_PlayerOverview::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerOverview_C_ExecuteUbergraph_PlayerOverview, CallFunc_Less_IntInt_ReturnValue) == 0x00003C, "Member 'PlayerOverview_C_ExecuteUbergraph_PlayerOverview::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerOverview_C_ExecuteUbergraph_PlayerOverview;
 
 }
 

@@ -21,7 +21,6 @@ namespace SDK
 class AFloor_Ceiling_C final : public AWall_C
 {
 public:
-	uint8                                         Pad_271[0x3];                                      // 0x0271(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         FloorDimension;                                    // 0x0274(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                         Width;                                             // 0x0278(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
@@ -31,17 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Floor_Ceiling_C">();
+		BP_STATIC_CLASS_IMPL("Floor_Ceiling_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Floor_Ceiling_C")
 	}
 	static class AFloor_Ceiling_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AFloor_Ceiling_C>();
 	}
 };
-static_assert(alignof(AFloor_Ceiling_C) == 0x000008, "Wrong alignment on AFloor_Ceiling_C");
-static_assert(sizeof(AFloor_Ceiling_C) == 0x000280, "Wrong size on AFloor_Ceiling_C");
-static_assert(offsetof(AFloor_Ceiling_C, FloorDimension) == 0x000274, "Member 'AFloor_Ceiling_C::FloorDimension' has a wrong offset!");
-static_assert(offsetof(AFloor_Ceiling_C, Width) == 0x000278, "Member 'AFloor_Ceiling_C::Width' has a wrong offset!");
+DUMPER7_ASSERTS_AFloor_Ceiling_C;
 
 }
 

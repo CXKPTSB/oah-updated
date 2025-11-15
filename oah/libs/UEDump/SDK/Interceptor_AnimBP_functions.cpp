@@ -60,7 +60,7 @@ void UInterceptor_AnimBP_C::BlueprintUpdateAnimation(float DeltaTimeX)
 // Function Interceptor_AnimBP.Interceptor_AnimBP_C.AnimGraph
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FPoseLink                        AnimGraph_0                                            (Parm, OutParm, NoDestructor)
+// struct FPoseLink*                       AnimGraph_0                                            (Parm, OutParm, NoDestructor)
 
 void UInterceptor_AnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {

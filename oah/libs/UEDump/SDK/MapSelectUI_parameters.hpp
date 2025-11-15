@@ -93,62 +93,7 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0159(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI) == 0x000008, "Wrong alignment on MapSelectUI_C_ExecuteUbergraph_MapSelectUI");
-static_assert(sizeof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI) == 0x000160, "Wrong size on MapSelectUI_C_ExecuteUbergraph_MapSelectUI");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, EntryPoint) == 0x000000, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::EntryPoint' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, K2Node_Event_Items) == 0x000008, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::K2Node_Event_Items' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_Create_ReturnValue) == 0x000018, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_Create_ReturnValue_1) == 0x000020, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_Create_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_Create_ReturnValue_2) == 0x000028, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_Create_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, Temp_bool_Variable) == 0x000030, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, Temp_int_Loop_Counter_Variable) == 0x000034, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, Temp_bool_IsClosed_Variable) == 0x000038, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_Add_IntInt_ReturnValue) == 0x00003C, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, Temp_bool_Has_Been_Initd_Variable) == 0x000040, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, K2Node_Event_Result) == 0x000044, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::K2Node_Event_Result' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, K2Node_Event_Category_1) == 0x000048, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::K2Node_Event_Category_1' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, K2Node_Event_Category) == 0x000049, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::K2Node_Event_Category' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, K2Node_Event_ItemInfo) == 0x000050, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::K2Node_Event_ItemInfo' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, K2Node_Event_SalePrice) == 0x000058, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::K2Node_Event_SalePrice' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, K2Node_CustomEvent_Map) == 0x000060, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::K2Node_CustomEvent_Map' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_Get_Steam_Item_Coin_Price_Price) == 0x000068, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_Get_Steam_Item_Coin_Price_Price' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_Array_Length_ReturnValue) == 0x00006C, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_Less_IntInt_ReturnValue) == 0x000070, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_GetAllWidgetsOfClass_FoundWidgets) == 0x000078, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_GetAllWidgetsOfClass_FoundWidgets' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, Temp_byte_Variable) == 0x000088, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_Array_Get_Item) == 0x000090, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_PlayAnimation_ReturnValue) == 0x000098, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_PlayAnimation_ReturnValue_1) == 0x0000A0, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_GetPlayerController_ReturnValue) == 0x0000A8, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, K2Node_DynamicCast_AsRobber_Controller) == 0x0000B0, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::K2Node_DynamicCast_AsRobber_Controller' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, K2Node_DynamicCast_bSuccess) == 0x0000B8, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_Create_ReturnValue_3) == 0x0000C0, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_Create_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_AddChild_ReturnValue) == 0x0000C8, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_AddChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_Greater_IntInt_ReturnValue) == 0x0000D0, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, Temp_int_Array_Index_Variable) == 0x0000D4, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_Array_Get_Item_1) == 0x0000D8, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_IsValid_ReturnValue) == 0x0000E0, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, K2Node_Event_MyGeometry) == 0x0000E4, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, K2Node_Event_InDeltaTime) == 0x00011C, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_PlayAnimation_ReturnValue_2) == 0x000120, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, Temp_byte_Variable_1) == 0x000128, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_Add_IntInt_ReturnValue_1) == 0x00012C, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_Add_IntInt_ReturnValue_2) == 0x000130, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_Conv_IntToInt64_ReturnValue) == 0x000138, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_Multiply_Int64Int64_ReturnValue) == 0x000140, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_Multiply_Int64Int64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_EqualEqual_Int64Int64_ReturnValue) == 0x000148, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_EqualEqual_Int64Int64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000149, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, K2Node_CustomEvent_Data) == 0x00014C, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::K2Node_CustomEvent_Data' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000150, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_GreaterEqual_IntInt_ReturnValue_1) == 0x000151, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_GreaterEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_BooleanAND_ReturnValue) == 0x000152, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_Array_Contains_ReturnValue) == 0x000153, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_DoesSteamInventoryContainItem__Return) == 0x000154, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_DoesSteamInventoryContainItem__Return' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_BooleanOR_ReturnValue) == 0x000155, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_BooleanOR_ReturnValue_1) == 0x000156, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_Not_PreBool_ReturnValue) == 0x000157, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_BooleanAND_ReturnValue_1) == 0x000158, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, K2Node_Select_Default) == 0x000159, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_MapSelectUI_C_ExecuteUbergraph_MapSelectUI;
 
 // Function MapSelectUI.MapSelectUI_C.OnSteamInventoryUpdated
 // 0x0010 (0x0010 - 0x0000)
@@ -157,9 +102,7 @@ struct MapSelectUI_C_OnSteamInventoryUpdated final
 public:
 	TArray<struct FSteamItemDetails>              Items;                                             // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(MapSelectUI_C_OnSteamInventoryUpdated) == 0x000008, "Wrong alignment on MapSelectUI_C_OnSteamInventoryUpdated");
-static_assert(sizeof(MapSelectUI_C_OnSteamInventoryUpdated) == 0x000010, "Wrong size on MapSelectUI_C_OnSteamInventoryUpdated");
-static_assert(offsetof(MapSelectUI_C_OnSteamInventoryUpdated, Items) == 0x000000, "Member 'MapSelectUI_C_OnSteamInventoryUpdated::Items' has a wrong offset!");
+DUMPER7_ASSERTS_MapSelectUI_C_OnSteamInventoryUpdated;
 
 // Function MapSelectUI.MapSelectUI_C.RefreshOnInventory
 // 0x0004 (0x0004 - 0x0000)
@@ -168,9 +111,7 @@ struct MapSelectUI_C_RefreshOnInventory final
 public:
 	struct FSteamInventoryFullUpdate              Data;                                              // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(MapSelectUI_C_RefreshOnInventory) == 0x000004, "Wrong alignment on MapSelectUI_C_RefreshOnInventory");
-static_assert(sizeof(MapSelectUI_C_RefreshOnInventory) == 0x000004, "Wrong size on MapSelectUI_C_RefreshOnInventory");
-static_assert(offsetof(MapSelectUI_C_RefreshOnInventory, Data) == 0x000000, "Member 'MapSelectUI_C_RefreshOnInventory::Data' has a wrong offset!");
+DUMPER7_ASSERTS_MapSelectUI_C_RefreshOnInventory;
 
 // Function MapSelectUI.MapSelectUI_C.Tick
 // 0x003C (0x003C - 0x0000)
@@ -180,10 +121,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MapSelectUI_C_Tick) == 0x000004, "Wrong alignment on MapSelectUI_C_Tick");
-static_assert(sizeof(MapSelectUI_C_Tick) == 0x00003C, "Wrong size on MapSelectUI_C_Tick");
-static_assert(offsetof(MapSelectUI_C_Tick, MyGeometry) == 0x000000, "Member 'MapSelectUI_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_Tick, InDeltaTime) == 0x000038, "Member 'MapSelectUI_C_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_MapSelectUI_C_Tick;
 
 // Function MapSelectUI.MapSelectUI_C.FocusOnMap
 // 0x0008 (0x0008 - 0x0000)
@@ -192,9 +130,7 @@ struct MapSelectUI_C_FocusOnMap final
 public:
 	class UClass*                                 Map;                                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MapSelectUI_C_FocusOnMap) == 0x000008, "Wrong alignment on MapSelectUI_C_FocusOnMap");
-static_assert(sizeof(MapSelectUI_C_FocusOnMap) == 0x000008, "Wrong size on MapSelectUI_C_FocusOnMap");
-static_assert(offsetof(MapSelectUI_C_FocusOnMap, Map) == 0x000000, "Member 'MapSelectUI_C_FocusOnMap::Map' has a wrong offset!");
+DUMPER7_ASSERTS_MapSelectUI_C_FocusOnMap;
 
 // Function MapSelectUI.MapSelectUI_C.PreviewItem
 // 0x0010 (0x0010 - 0x0000)
@@ -204,10 +140,7 @@ public:
 	class UClass*                                 ItemInfo;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         SalePrice;                                         // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MapSelectUI_C_PreviewItem) == 0x000008, "Wrong alignment on MapSelectUI_C_PreviewItem");
-static_assert(sizeof(MapSelectUI_C_PreviewItem) == 0x000010, "Wrong size on MapSelectUI_C_PreviewItem");
-static_assert(offsetof(MapSelectUI_C_PreviewItem, ItemInfo) == 0x000000, "Member 'MapSelectUI_C_PreviewItem::ItemInfo' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_PreviewItem, SalePrice) == 0x000008, "Member 'MapSelectUI_C_PreviewItem::SalePrice' has a wrong offset!");
+DUMPER7_ASSERTS_MapSelectUI_C_PreviewItem;
 
 // Function MapSelectUI.MapSelectUI_C.DragItemFromCategory
 // 0x0001 (0x0001 - 0x0000)
@@ -216,9 +149,7 @@ struct MapSelectUI_C_DragItemFromCategory final
 public:
 	EShopItemCategory                             Category;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MapSelectUI_C_DragItemFromCategory) == 0x000001, "Wrong alignment on MapSelectUI_C_DragItemFromCategory");
-static_assert(sizeof(MapSelectUI_C_DragItemFromCategory) == 0x000001, "Wrong size on MapSelectUI_C_DragItemFromCategory");
-static_assert(offsetof(MapSelectUI_C_DragItemFromCategory, Category) == 0x000000, "Member 'MapSelectUI_C_DragItemFromCategory::Category' has a wrong offset!");
+DUMPER7_ASSERTS_MapSelectUI_C_DragItemFromCategory;
 
 // Function MapSelectUI.MapSelectUI_C.ChangeCategory
 // 0x0001 (0x0001 - 0x0000)
@@ -227,9 +158,7 @@ struct MapSelectUI_C_ChangeCategory final
 public:
 	EShopItemCategory                             Category;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MapSelectUI_C_ChangeCategory) == 0x000001, "Wrong alignment on MapSelectUI_C_ChangeCategory");
-static_assert(sizeof(MapSelectUI_C_ChangeCategory) == 0x000001, "Wrong size on MapSelectUI_C_ChangeCategory");
-static_assert(offsetof(MapSelectUI_C_ChangeCategory, Category) == 0x000000, "Member 'MapSelectUI_C_ChangeCategory::Category' has a wrong offset!");
+DUMPER7_ASSERTS_MapSelectUI_C_ChangeCategory;
 
 // Function MapSelectUI.MapSelectUI_C.UpdateWhenResultIsFinished
 // 0x0004 (0x0004 - 0x0000)
@@ -238,9 +167,7 @@ struct MapSelectUI_C_UpdateWhenResultIsFinished final
 public:
 	struct FSteamInventoryResult                  Result;                                            // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MapSelectUI_C_UpdateWhenResultIsFinished) == 0x000004, "Wrong alignment on MapSelectUI_C_UpdateWhenResultIsFinished");
-static_assert(sizeof(MapSelectUI_C_UpdateWhenResultIsFinished) == 0x000004, "Wrong size on MapSelectUI_C_UpdateWhenResultIsFinished");
-static_assert(offsetof(MapSelectUI_C_UpdateWhenResultIsFinished, Result) == 0x000000, "Member 'MapSelectUI_C_UpdateWhenResultIsFinished::Result' has a wrong offset!");
+DUMPER7_ASSERTS_MapSelectUI_C_UpdateWhenResultIsFinished;
 
 // Function MapSelectUI.MapSelectUI_C.GetText_0
 // 0x0030 (0x0030 - 0x0000)
@@ -250,10 +177,7 @@ public:
 	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0018(0x0018)()
 };
-static_assert(alignof(MapSelectUI_C_GetText_0) == 0x000008, "Wrong alignment on MapSelectUI_C_GetText_0");
-static_assert(sizeof(MapSelectUI_C_GetText_0) == 0x000030, "Wrong size on MapSelectUI_C_GetText_0");
-static_assert(offsetof(MapSelectUI_C_GetText_0, ReturnValue) == 0x000000, "Member 'MapSelectUI_C_GetText_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_GetText_0, CallFunc_Conv_StringToText_ReturnValue) == 0x000018, "Member 'MapSelectUI_C_GetText_0::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MapSelectUI_C_GetText_0;
 
 // Function MapSelectUI.MapSelectUI_C.GetBrush_0
 // 0x0110 (0x0110 - 0x0000)
@@ -263,10 +187,7 @@ public:
 	struct FSlateBrush                            ReturnValue;                                       // 0x0000(0x0088)(Parm, OutParm, ReturnParm)
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0088(0x0088)()
 };
-static_assert(alignof(MapSelectUI_C_GetBrush_0) == 0x000008, "Wrong alignment on MapSelectUI_C_GetBrush_0");
-static_assert(sizeof(MapSelectUI_C_GetBrush_0) == 0x000110, "Wrong size on MapSelectUI_C_GetBrush_0");
-static_assert(offsetof(MapSelectUI_C_GetBrush_0, ReturnValue) == 0x000000, "Member 'MapSelectUI_C_GetBrush_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_GetBrush_0, K2Node_MakeStruct_SlateBrush) == 0x000088, "Member 'MapSelectUI_C_GetBrush_0::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
+DUMPER7_ASSERTS_MapSelectUI_C_GetBrush_0;
 
 // Function MapSelectUI.MapSelectUI_C.Get_EstimatedTake_Text_0
 // 0x00D0 (0x00D0 - 0x0000)
@@ -285,19 +206,7 @@ public:
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue_4;              // 0x00A8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x00B8(0x0018)()
 };
-static_assert(alignof(MapSelectUI_C_Get_EstimatedTake_Text_0) == 0x000008, "Wrong alignment on MapSelectUI_C_Get_EstimatedTake_Text_0");
-static_assert(sizeof(MapSelectUI_C_Get_EstimatedTake_Text_0) == 0x0000D0, "Wrong size on MapSelectUI_C_Get_EstimatedTake_Text_0");
-static_assert(offsetof(MapSelectUI_C_Get_EstimatedTake_Text_0, ReturnValue) == 0x000000, "Member 'MapSelectUI_C_Get_EstimatedTake_Text_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_Get_EstimatedTake_Text_0, CallFunc_Concat_StrStr_ReturnValue) == 0x000018, "Member 'MapSelectUI_C_Get_EstimatedTake_Text_0::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_Get_EstimatedTake_Text_0, CallFunc_Conv_IntToText_ReturnValue) == 0x000028, "Member 'MapSelectUI_C_Get_EstimatedTake_Text_0::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_Get_EstimatedTake_Text_0, CallFunc_Conv_IntToText_ReturnValue_1) == 0x000040, "Member 'MapSelectUI_C_Get_EstimatedTake_Text_0::CallFunc_Conv_IntToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_Get_EstimatedTake_Text_0, CallFunc_Conv_TextToString_ReturnValue) == 0x000058, "Member 'MapSelectUI_C_Get_EstimatedTake_Text_0::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_Get_EstimatedTake_Text_0, CallFunc_Conv_TextToString_ReturnValue_1) == 0x000068, "Member 'MapSelectUI_C_Get_EstimatedTake_Text_0::CallFunc_Conv_TextToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_Get_EstimatedTake_Text_0, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000078, "Member 'MapSelectUI_C_Get_EstimatedTake_Text_0::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_Get_EstimatedTake_Text_0, CallFunc_Concat_StrStr_ReturnValue_2) == 0x000088, "Member 'MapSelectUI_C_Get_EstimatedTake_Text_0::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_Get_EstimatedTake_Text_0, CallFunc_Concat_StrStr_ReturnValue_3) == 0x000098, "Member 'MapSelectUI_C_Get_EstimatedTake_Text_0::CallFunc_Concat_StrStr_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_Get_EstimatedTake_Text_0, CallFunc_Concat_StrStr_ReturnValue_4) == 0x0000A8, "Member 'MapSelectUI_C_Get_EstimatedTake_Text_0::CallFunc_Concat_StrStr_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_Get_EstimatedTake_Text_0, CallFunc_Conv_StringToText_ReturnValue) == 0x0000B8, "Member 'MapSelectUI_C_Get_EstimatedTake_Text_0::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MapSelectUI_C_Get_EstimatedTake_Text_0;
 
 // Function MapSelectUI.MapSelectUI_C.Get_DifficultiText_Text_0
 // 0x0050 (0x0050 - 0x0000)
@@ -309,12 +218,7 @@ public:
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0038(0x0018)()
 };
-static_assert(alignof(MapSelectUI_C_Get_DifficultiText_Text_0) == 0x000008, "Wrong alignment on MapSelectUI_C_Get_DifficultiText_Text_0");
-static_assert(sizeof(MapSelectUI_C_Get_DifficultiText_Text_0) == 0x000050, "Wrong size on MapSelectUI_C_Get_DifficultiText_Text_0");
-static_assert(offsetof(MapSelectUI_C_Get_DifficultiText_Text_0, ReturnValue) == 0x000000, "Member 'MapSelectUI_C_Get_DifficultiText_Text_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_Get_DifficultiText_Text_0, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue) == 0x000018, "Member 'MapSelectUI_C_Get_DifficultiText_Text_0::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_Get_DifficultiText_Text_0, CallFunc_Concat_StrStr_ReturnValue) == 0x000028, "Member 'MapSelectUI_C_Get_DifficultiText_Text_0::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_Get_DifficultiText_Text_0, CallFunc_Conv_StringToText_ReturnValue) == 0x000038, "Member 'MapSelectUI_C_Get_DifficultiText_Text_0::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MapSelectUI_C_Get_DifficultiText_Text_0;
 
 // Function MapSelectUI.MapSelectUI_C.GetText_1
 // 0x0030 (0x0030 - 0x0000)
@@ -324,10 +228,7 @@ public:
 	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0018(0x0018)()
 };
-static_assert(alignof(MapSelectUI_C_GetText_1) == 0x000008, "Wrong alignment on MapSelectUI_C_GetText_1");
-static_assert(sizeof(MapSelectUI_C_GetText_1) == 0x000030, "Wrong size on MapSelectUI_C_GetText_1");
-static_assert(offsetof(MapSelectUI_C_GetText_1, ReturnValue) == 0x000000, "Member 'MapSelectUI_C_GetText_1::ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_GetText_1, CallFunc_Conv_StringToText_ReturnValue) == 0x000018, "Member 'MapSelectUI_C_GetText_1::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MapSelectUI_C_GetText_1;
 
 // Function MapSelectUI.MapSelectUI_C.GetBrush_1
 // 0x0110 (0x0110 - 0x0000)
@@ -337,10 +238,7 @@ public:
 	struct FSlateBrush                            ReturnValue;                                       // 0x0000(0x0088)(Parm, OutParm, ReturnParm)
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0088(0x0088)()
 };
-static_assert(alignof(MapSelectUI_C_GetBrush_1) == 0x000008, "Wrong alignment on MapSelectUI_C_GetBrush_1");
-static_assert(sizeof(MapSelectUI_C_GetBrush_1) == 0x000110, "Wrong size on MapSelectUI_C_GetBrush_1");
-static_assert(offsetof(MapSelectUI_C_GetBrush_1, ReturnValue) == 0x000000, "Member 'MapSelectUI_C_GetBrush_1::ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_GetBrush_1, K2Node_MakeStruct_SlateBrush) == 0x000088, "Member 'MapSelectUI_C_GetBrush_1::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
+DUMPER7_ASSERTS_MapSelectUI_C_GetBrush_1;
 
 // Function MapSelectUI.MapSelectUI_C.Get_CoinBuyButton_Visibility_0
 // 0x0002 (0x0002 - 0x0000)
@@ -350,10 +248,7 @@ public:
 	ESlateVisibility                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MapSelectUI_C_Get_CoinBuyButton_Visibility_0) == 0x000001, "Wrong alignment on MapSelectUI_C_Get_CoinBuyButton_Visibility_0");
-static_assert(sizeof(MapSelectUI_C_Get_CoinBuyButton_Visibility_0) == 0x000002, "Wrong size on MapSelectUI_C_Get_CoinBuyButton_Visibility_0");
-static_assert(offsetof(MapSelectUI_C_Get_CoinBuyButton_Visibility_0, ReturnValue) == 0x000000, "Member 'MapSelectUI_C_Get_CoinBuyButton_Visibility_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_Get_CoinBuyButton_Visibility_0, CallFunc_Greater_IntInt_ReturnValue) == 0x000001, "Member 'MapSelectUI_C_Get_CoinBuyButton_Visibility_0::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MapSelectUI_C_Get_CoinBuyButton_Visibility_0;
 
 // Function MapSelectUI.MapSelectUI_C.GetText_2
 // 0x0030 (0x0030 - 0x0000)
@@ -363,10 +258,7 @@ public:
 	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0018(0x0018)()
 };
-static_assert(alignof(MapSelectUI_C_GetText_2) == 0x000008, "Wrong alignment on MapSelectUI_C_GetText_2");
-static_assert(sizeof(MapSelectUI_C_GetText_2) == 0x000030, "Wrong size on MapSelectUI_C_GetText_2");
-static_assert(offsetof(MapSelectUI_C_GetText_2, ReturnValue) == 0x000000, "Member 'MapSelectUI_C_GetText_2::ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_GetText_2, CallFunc_Conv_IntToText_ReturnValue) == 0x000018, "Member 'MapSelectUI_C_GetText_2::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MapSelectUI_C_GetText_2;
 
 // Function MapSelectUI.MapSelectUI_C.GetText_3
 // 0x0068 (0x0068 - 0x0000)
@@ -383,15 +275,7 @@ public:
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0048(0x0018)()
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MapSelectUI_C_GetText_3) == 0x000008, "Wrong alignment on MapSelectUI_C_GetText_3");
-static_assert(sizeof(MapSelectUI_C_GetText_3) == 0x000068, "Wrong size on MapSelectUI_C_GetText_3");
-static_assert(offsetof(MapSelectUI_C_GetText_3, ReturnValue) == 0x000000, "Member 'MapSelectUI_C_GetText_3::ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_GetText_3, CallFunc_Conv_IntToString_ReturnValue) == 0x000018, "Member 'MapSelectUI_C_GetText_3::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_GetText_3, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000028, "Member 'MapSelectUI_C_GetText_3::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_GetText_3, CallFunc_Concat_StrStr_ReturnValue) == 0x000030, "Member 'MapSelectUI_C_GetText_3::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_GetText_3, CallFunc_Greater_IntInt_ReturnValue) == 0x000040, "Member 'MapSelectUI_C_GetText_3::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_GetText_3, CallFunc_Conv_StringToText_ReturnValue) == 0x000048, "Member 'MapSelectUI_C_GetText_3::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_GetText_3, CallFunc_BooleanAND_ReturnValue) == 0x000060, "Member 'MapSelectUI_C_GetText_3::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MapSelectUI_C_GetText_3;
 
 // Function MapSelectUI.MapSelectUI_C.GetColorAndOpacity_0
 // 0x0080 (0x0080 - 0x0000)
@@ -405,14 +289,7 @@ public:
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0079(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x007A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MapSelectUI_C_GetColorAndOpacity_0) == 0x000008, "Wrong alignment on MapSelectUI_C_GetColorAndOpacity_0");
-static_assert(sizeof(MapSelectUI_C_GetColorAndOpacity_0) == 0x000080, "Wrong size on MapSelectUI_C_GetColorAndOpacity_0");
-static_assert(offsetof(MapSelectUI_C_GetColorAndOpacity_0, ReturnValue) == 0x000000, "Member 'MapSelectUI_C_GetColorAndOpacity_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_GetColorAndOpacity_0, K2Node_MakeStruct_SlateColor) == 0x000028, "Member 'MapSelectUI_C_GetColorAndOpacity_0::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_GetColorAndOpacity_0, K2Node_MakeStruct_SlateColor_1) == 0x000050, "Member 'MapSelectUI_C_GetColorAndOpacity_0::K2Node_MakeStruct_SlateColor_1' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_GetColorAndOpacity_0, CallFunc_Greater_IntInt_ReturnValue) == 0x000078, "Member 'MapSelectUI_C_GetColorAndOpacity_0::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_GetColorAndOpacity_0, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000079, "Member 'MapSelectUI_C_GetColorAndOpacity_0::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_GetColorAndOpacity_0, CallFunc_BooleanAND_ReturnValue) == 0x00007A, "Member 'MapSelectUI_C_GetColorAndOpacity_0::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MapSelectUI_C_GetColorAndOpacity_0;
 
 // Function MapSelectUI.MapSelectUI_C.SetRandomNumber
 // 0x0020 (0x0020 - 0x0000)
@@ -425,13 +302,7 @@ public:
 	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int64                                         CallFunc_Multiply_Int64Int64_ReturnValue;          // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MapSelectUI_C_SetRandomNumber) == 0x000008, "Wrong alignment on MapSelectUI_C_SetRandomNumber");
-static_assert(sizeof(MapSelectUI_C_SetRandomNumber) == 0x000020, "Wrong size on MapSelectUI_C_SetRandomNumber");
-static_assert(offsetof(MapSelectUI_C_SetRandomNumber, CallFunc_RandomInteger64InRange_ReturnValue) == 0x000000, "Member 'MapSelectUI_C_SetRandomNumber::CallFunc_RandomInteger64InRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_SetRandomNumber, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'MapSelectUI_C_SetRandomNumber::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_SetRandomNumber, CallFunc_Add_IntInt_ReturnValue_1) == 0x00000C, "Member 'MapSelectUI_C_SetRandomNumber::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_SetRandomNumber, CallFunc_Conv_IntToInt64_ReturnValue) == 0x000010, "Member 'MapSelectUI_C_SetRandomNumber::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_SetRandomNumber, CallFunc_Multiply_Int64Int64_ReturnValue) == 0x000018, "Member 'MapSelectUI_C_SetRandomNumber::CallFunc_Multiply_Int64Int64_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MapSelectUI_C_SetRandomNumber;
 
 // Function MapSelectUI.MapSelectUI_C.Get_SaleOverlay_Visibility_0
 // 0x0002 (0x0002 - 0x0000)
@@ -441,10 +312,7 @@ public:
 	ESlateVisibility                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MapSelectUI_C_Get_SaleOverlay_Visibility_0) == 0x000001, "Wrong alignment on MapSelectUI_C_Get_SaleOverlay_Visibility_0");
-static_assert(sizeof(MapSelectUI_C_Get_SaleOverlay_Visibility_0) == 0x000002, "Wrong size on MapSelectUI_C_Get_SaleOverlay_Visibility_0");
-static_assert(offsetof(MapSelectUI_C_Get_SaleOverlay_Visibility_0, ReturnValue) == 0x000000, "Member 'MapSelectUI_C_Get_SaleOverlay_Visibility_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_Get_SaleOverlay_Visibility_0, CallFunc_Less_IntInt_ReturnValue) == 0x000001, "Member 'MapSelectUI_C_Get_SaleOverlay_Visibility_0::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MapSelectUI_C_Get_SaleOverlay_Visibility_0;
 
 // Function MapSelectUI.MapSelectUI_C.GetText_4
 // 0x0030 (0x0030 - 0x0000)
@@ -454,10 +322,7 @@ public:
 	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0018(0x0018)()
 };
-static_assert(alignof(MapSelectUI_C_GetText_4) == 0x000008, "Wrong alignment on MapSelectUI_C_GetText_4");
-static_assert(sizeof(MapSelectUI_C_GetText_4) == 0x000030, "Wrong size on MapSelectUI_C_GetText_4");
-static_assert(offsetof(MapSelectUI_C_GetText_4, ReturnValue) == 0x000000, "Member 'MapSelectUI_C_GetText_4::ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_GetText_4, CallFunc_Conv_IntToText_ReturnValue) == 0x000018, "Member 'MapSelectUI_C_GetText_4::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MapSelectUI_C_GetText_4;
 
 // Function MapSelectUI.MapSelectUI_C.Get Map Coin Price
 // 0x0088 (0x0088 - 0x0000)
@@ -484,23 +349,7 @@ public:
 	uint8                                         Pad_75[0x3];                                       // 0x0075(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x0078(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MapSelectUI_C_Get_Map_Coin_Price) == 0x000008, "Wrong alignment on MapSelectUI_C_Get_Map_Coin_Price");
-static_assert(sizeof(MapSelectUI_C_Get_Map_Coin_Price) == 0x000088, "Wrong size on MapSelectUI_C_Get_Map_Coin_Price");
-static_assert(offsetof(MapSelectUI_C_Get_Map_Coin_Price, Map) == 0x000000, "Member 'MapSelectUI_C_Get_Map_Coin_Price::Map' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_Get_Map_Coin_Price, Price) == 0x000008, "Member 'MapSelectUI_C_Get_Map_Coin_Price::Price' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_Get_Map_Coin_Price, CoinPrice) == 0x00000C, "Member 'MapSelectUI_C_Get_Map_Coin_Price::CoinPrice' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_Get_Map_Coin_Price, Temp_int_Array_Index_Variable) == 0x000010, "Member 'MapSelectUI_C_Get_Map_Coin_Price::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_Get_Map_Coin_Price, Temp_int_Loop_Counter_Variable) == 0x000014, "Member 'MapSelectUI_C_Get_Map_Coin_Price::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_Get_Map_Coin_Price, CallFunc_Add_IntInt_ReturnValue) == 0x000018, "Member 'MapSelectUI_C_Get_Map_Coin_Price::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_Get_Map_Coin_Price, CallFunc_Array_Get_Item) == 0x000020, "Member 'MapSelectUI_C_Get_Map_Coin_Price::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_Get_Map_Coin_Price, CallFunc_Array_Length_ReturnValue) == 0x000040, "Member 'MapSelectUI_C_Get_Map_Coin_Price::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_Get_Map_Coin_Price, CallFunc_Less_IntInt_ReturnValue) == 0x000044, "Member 'MapSelectUI_C_Get_Map_Coin_Price::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_Get_Map_Coin_Price, CallFunc_GetItemDefinitionProperty_Value) == 0x000048, "Member 'MapSelectUI_C_Get_Map_Coin_Price::CallFunc_GetItemDefinitionProperty_Value' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_Get_Map_Coin_Price, CallFunc_GetItemDefinitionProperty_ReturnValue) == 0x000058, "Member 'MapSelectUI_C_Get_Map_Coin_Price::CallFunc_GetItemDefinitionProperty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_Get_Map_Coin_Price, CallFunc_GetSubstring_ReturnValue) == 0x000060, "Member 'MapSelectUI_C_Get_Map_Coin_Price::CallFunc_GetSubstring_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_Get_Map_Coin_Price, CallFunc_Conv_StringToInt_ReturnValue) == 0x000070, "Member 'MapSelectUI_C_Get_Map_Coin_Price::CallFunc_Conv_StringToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_Get_Map_Coin_Price, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000074, "Member 'MapSelectUI_C_Get_Map_Coin_Price::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_Get_Map_Coin_Price, CallFunc_Conv_IntToString_ReturnValue) == 0x000078, "Member 'MapSelectUI_C_Get_Map_Coin_Price::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MapSelectUI_C_Get_Map_Coin_Price;
 
 // Function MapSelectUI.MapSelectUI_C.OnGetSteamInventoryItems
 // 0x0010 (0x0010 - 0x0000)
@@ -509,9 +358,7 @@ struct MapSelectUI_C_OnGetSteamInventoryItems final
 public:
 	TArray<struct FSteamItemDetails>              Items;                                             // 0x0000(0x0010)(Parm, OutParm)
 };
-static_assert(alignof(MapSelectUI_C_OnGetSteamInventoryItems) == 0x000008, "Wrong alignment on MapSelectUI_C_OnGetSteamInventoryItems");
-static_assert(sizeof(MapSelectUI_C_OnGetSteamInventoryItems) == 0x000010, "Wrong size on MapSelectUI_C_OnGetSteamInventoryItems");
-static_assert(offsetof(MapSelectUI_C_OnGetSteamInventoryItems, Items) == 0x000000, "Member 'MapSelectUI_C_OnGetSteamInventoryItems::Items' has a wrong offset!");
+DUMPER7_ASSERTS_MapSelectUI_C_OnGetSteamInventoryItems;
 
 }
 

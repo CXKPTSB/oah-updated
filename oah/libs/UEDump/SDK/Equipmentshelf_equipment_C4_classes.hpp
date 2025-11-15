@@ -29,19 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Equipmentshelf_equipment_C4_C">();
+		BP_STATIC_CLASS_IMPL("Equipmentshelf_equipment_C4_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Equipmentshelf_equipment_C4_C")
 	}
 	static class AEquipmentshelf_equipment_C4_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AEquipmentshelf_equipment_C4_C>();
 	}
 };
-static_assert(alignof(AEquipmentshelf_equipment_C4_C) == 0x000008, "Wrong alignment on AEquipmentshelf_equipment_C4_C");
-static_assert(sizeof(AEquipmentshelf_equipment_C4_C) == 0x000260, "Wrong size on AEquipmentshelf_equipment_C4_C");
-static_assert(offsetof(AEquipmentshelf_equipment_C4_C, C7) == 0x000240, "Member 'AEquipmentshelf_equipment_C4_C::C7' has a wrong offset!");
-static_assert(offsetof(AEquipmentshelf_equipment_C4_C, C6) == 0x000248, "Member 'AEquipmentshelf_equipment_C4_C::C6' has a wrong offset!");
-static_assert(offsetof(AEquipmentshelf_equipment_C4_C, C5) == 0x000250, "Member 'AEquipmentshelf_equipment_C4_C::C5' has a wrong offset!");
-static_assert(offsetof(AEquipmentshelf_equipment_C4_C, C4) == 0x000258, "Member 'AEquipmentshelf_equipment_C4_C::C4' has a wrong offset!");
+DUMPER7_ASSERTS_AEquipmentshelf_equipment_C4_C;
 
 }
 

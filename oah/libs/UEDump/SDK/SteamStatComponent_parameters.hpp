@@ -33,19 +33,7 @@ public:
 	bool                                          CallFunc_SetStatInt_ReturnValue;                   // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsLocallyControlled_ReturnValue;          // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SteamStatComponent_C_ExecuteUbergraph_SteamStatComponent) == 0x000008, "Wrong alignment on SteamStatComponent_C_ExecuteUbergraph_SteamStatComponent");
-static_assert(sizeof(SteamStatComponent_C_ExecuteUbergraph_SteamStatComponent) == 0x000030, "Wrong size on SteamStatComponent_C_ExecuteUbergraph_SteamStatComponent");
-static_assert(offsetof(SteamStatComponent_C_ExecuteUbergraph_SteamStatComponent, EntryPoint) == 0x000000, "Member 'SteamStatComponent_C_ExecuteUbergraph_SteamStatComponent::EntryPoint' has a wrong offset!");
-static_assert(offsetof(SteamStatComponent_C_ExecuteUbergraph_SteamStatComponent, K2Node_CustomEvent_Amount) == 0x000004, "Member 'SteamStatComponent_C_ExecuteUbergraph_SteamStatComponent::K2Node_CustomEvent_Amount' has a wrong offset!");
-static_assert(offsetof(SteamStatComponent_C_ExecuteUbergraph_SteamStatComponent, K2Node_CustomEvent_Player) == 0x000008, "Member 'SteamStatComponent_C_ExecuteUbergraph_SteamStatComponent::K2Node_CustomEvent_Player' has a wrong offset!");
-static_assert(offsetof(SteamStatComponent_C_ExecuteUbergraph_SteamStatComponent, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'SteamStatComponent_C_ExecuteUbergraph_SteamStatComponent::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SteamStatComponent_C_ExecuteUbergraph_SteamStatComponent, CallFunc_GetStatInt_Data) == 0x000014, "Member 'SteamStatComponent_C_ExecuteUbergraph_SteamStatComponent::CallFunc_GetStatInt_Data' has a wrong offset!");
-static_assert(offsetof(SteamStatComponent_C_ExecuteUbergraph_SteamStatComponent, CallFunc_GetStatInt_ReturnValue) == 0x000018, "Member 'SteamStatComponent_C_ExecuteUbergraph_SteamStatComponent::CallFunc_GetStatInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SteamStatComponent_C_ExecuteUbergraph_SteamStatComponent, CallFunc_Add_IntInt_ReturnValue) == 0x00001C, "Member 'SteamStatComponent_C_ExecuteUbergraph_SteamStatComponent::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SteamStatComponent_C_ExecuteUbergraph_SteamStatComponent, K2Node_DynamicCast_AsPawn) == 0x000020, "Member 'SteamStatComponent_C_ExecuteUbergraph_SteamStatComponent::K2Node_DynamicCast_AsPawn' has a wrong offset!");
-static_assert(offsetof(SteamStatComponent_C_ExecuteUbergraph_SteamStatComponent, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'SteamStatComponent_C_ExecuteUbergraph_SteamStatComponent::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(SteamStatComponent_C_ExecuteUbergraph_SteamStatComponent, CallFunc_SetStatInt_ReturnValue) == 0x000029, "Member 'SteamStatComponent_C_ExecuteUbergraph_SteamStatComponent::CallFunc_SetStatInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SteamStatComponent_C_ExecuteUbergraph_SteamStatComponent, CallFunc_IsLocallyControlled_ReturnValue) == 0x00002A, "Member 'SteamStatComponent_C_ExecuteUbergraph_SteamStatComponent::CallFunc_IsLocallyControlled_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SteamStatComponent_C_ExecuteUbergraph_SteamStatComponent;
 
 // Function SteamStatComponent.SteamStatComponent_C.IncrementStat
 // 0x0010 (0x0010 - 0x0000)
@@ -56,10 +44,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Player;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SteamStatComponent_C_IncrementStat) == 0x000008, "Wrong alignment on SteamStatComponent_C_IncrementStat");
-static_assert(sizeof(SteamStatComponent_C_IncrementStat) == 0x000010, "Wrong size on SteamStatComponent_C_IncrementStat");
-static_assert(offsetof(SteamStatComponent_C_IncrementStat, Amount) == 0x000000, "Member 'SteamStatComponent_C_IncrementStat::Amount' has a wrong offset!");
-static_assert(offsetof(SteamStatComponent_C_IncrementStat, Player) == 0x000008, "Member 'SteamStatComponent_C_IncrementStat::Player' has a wrong offset!");
+DUMPER7_ASSERTS_SteamStatComponent_C_IncrementStat;
 
 }
 

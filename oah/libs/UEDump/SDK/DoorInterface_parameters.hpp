@@ -21,9 +21,7 @@ struct DoorInterface_C_IsDoorOpenInterfaceCall final
 public:
 	bool                                          IsOpen_;                                           // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(DoorInterface_C_IsDoorOpenInterfaceCall) == 0x000001, "Wrong alignment on DoorInterface_C_IsDoorOpenInterfaceCall");
-static_assert(sizeof(DoorInterface_C_IsDoorOpenInterfaceCall) == 0x000001, "Wrong size on DoorInterface_C_IsDoorOpenInterfaceCall");
-static_assert(offsetof(DoorInterface_C_IsDoorOpenInterfaceCall, IsOpen_) == 0x000000, "Member 'DoorInterface_C_IsDoorOpenInterfaceCall::IsOpen_' has a wrong offset!");
+DUMPER7_ASSERTS_DoorInterface_C_IsDoorOpenInterfaceCall;
 
 }
 

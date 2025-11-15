@@ -24,9 +24,7 @@ struct FMagicLeapSharedWorldSharedData final
 public:
 	TArray<struct FGuid>                          PinIDs;                                            // 0x0000(0x0010)(BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMagicLeapSharedWorldSharedData) == 0x000008, "Wrong alignment on FMagicLeapSharedWorldSharedData");
-static_assert(sizeof(FMagicLeapSharedWorldSharedData) == 0x000010, "Wrong size on FMagicLeapSharedWorldSharedData");
-static_assert(offsetof(FMagicLeapSharedWorldSharedData, PinIDs) == 0x000000, "Member 'FMagicLeapSharedWorldSharedData::PinIDs' has a wrong offset!");
+DUMPER7_ASSERTS_FMagicLeapSharedWorldSharedData;
 
 // ScriptStruct MagicLeapSharedWorld.MagicLeapSharedWorldAlignmentTransforms
 // 0x0010 (0x0010 - 0x0000)
@@ -35,9 +33,7 @@ struct FMagicLeapSharedWorldAlignmentTransforms final
 public:
 	TArray<struct FTransform>                     AlignmentTransforms;                               // 0x0000(0x0010)(BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMagicLeapSharedWorldAlignmentTransforms) == 0x000008, "Wrong alignment on FMagicLeapSharedWorldAlignmentTransforms");
-static_assert(sizeof(FMagicLeapSharedWorldAlignmentTransforms) == 0x000010, "Wrong size on FMagicLeapSharedWorldAlignmentTransforms");
-static_assert(offsetof(FMagicLeapSharedWorldAlignmentTransforms, AlignmentTransforms) == 0x000000, "Member 'FMagicLeapSharedWorldAlignmentTransforms::AlignmentTransforms' has a wrong offset!");
+DUMPER7_ASSERTS_FMagicLeapSharedWorldAlignmentTransforms;
 
 // ScriptStruct MagicLeapSharedWorld.MagicLeapSharedWorldPinData
 // 0x0024 (0x0024 - 0x0000)
@@ -47,10 +43,7 @@ public:
 	struct FGuid                                  PinId;                                             // 0x0000(0x0010)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FMagicLeapARPinState                   PinState;                                          // 0x0010(0x0014)(BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMagicLeapSharedWorldPinData) == 0x000004, "Wrong alignment on FMagicLeapSharedWorldPinData");
-static_assert(sizeof(FMagicLeapSharedWorldPinData) == 0x000024, "Wrong size on FMagicLeapSharedWorldPinData");
-static_assert(offsetof(FMagicLeapSharedWorldPinData, PinId) == 0x000000, "Member 'FMagicLeapSharedWorldPinData::PinId' has a wrong offset!");
-static_assert(offsetof(FMagicLeapSharedWorldPinData, PinState) == 0x000010, "Member 'FMagicLeapSharedWorldPinData::PinState' has a wrong offset!");
+DUMPER7_ASSERTS_FMagicLeapSharedWorldPinData;
 
 // ScriptStruct MagicLeapSharedWorld.MagicLeapSharedWorldLocalData
 // 0x0010 (0x0010 - 0x0000)
@@ -59,9 +52,7 @@ struct FMagicLeapSharedWorldLocalData final
 public:
 	TArray<struct FMagicLeapSharedWorldPinData>   LocalPins;                                         // 0x0000(0x0010)(BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMagicLeapSharedWorldLocalData) == 0x000008, "Wrong alignment on FMagicLeapSharedWorldLocalData");
-static_assert(sizeof(FMagicLeapSharedWorldLocalData) == 0x000010, "Wrong size on FMagicLeapSharedWorldLocalData");
-static_assert(offsetof(FMagicLeapSharedWorldLocalData, LocalPins) == 0x000000, "Member 'FMagicLeapSharedWorldLocalData::LocalPins' has a wrong offset!");
+DUMPER7_ASSERTS_FMagicLeapSharedWorldLocalData;
 
 }
 

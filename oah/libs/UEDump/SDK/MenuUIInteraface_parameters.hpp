@@ -23,9 +23,7 @@ struct menuUIInteraface_C_ChangeCategory final
 public:
 	EShopItemCategory                             Category;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(menuUIInteraface_C_ChangeCategory) == 0x000001, "Wrong alignment on menuUIInteraface_C_ChangeCategory");
-static_assert(sizeof(menuUIInteraface_C_ChangeCategory) == 0x000001, "Wrong size on menuUIInteraface_C_ChangeCategory");
-static_assert(offsetof(menuUIInteraface_C_ChangeCategory, Category) == 0x000000, "Member 'menuUIInteraface_C_ChangeCategory::Category' has a wrong offset!");
+DUMPER7_ASSERTS_menuUIInteraface_C_ChangeCategory;
 
 // Function menuUIInteraface.menuUIInteraface_C.DragItemFromCategory
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +32,7 @@ struct menuUIInteraface_C_DragItemFromCategory final
 public:
 	EShopItemCategory                             Category;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(menuUIInteraface_C_DragItemFromCategory) == 0x000001, "Wrong alignment on menuUIInteraface_C_DragItemFromCategory");
-static_assert(sizeof(menuUIInteraface_C_DragItemFromCategory) == 0x000001, "Wrong size on menuUIInteraface_C_DragItemFromCategory");
-static_assert(offsetof(menuUIInteraface_C_DragItemFromCategory, Category) == 0x000000, "Member 'menuUIInteraface_C_DragItemFromCategory::Category' has a wrong offset!");
+DUMPER7_ASSERTS_menuUIInteraface_C_DragItemFromCategory;
 
 // Function menuUIInteraface.menuUIInteraface_C.PreviewItem
 // 0x0010 (0x0010 - 0x0000)
@@ -46,10 +42,7 @@ public:
 	class UClass*                                 ItemInfo;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         SalePrice;                                         // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(menuUIInteraface_C_PreviewItem) == 0x000008, "Wrong alignment on menuUIInteraface_C_PreviewItem");
-static_assert(sizeof(menuUIInteraface_C_PreviewItem) == 0x000010, "Wrong size on menuUIInteraface_C_PreviewItem");
-static_assert(offsetof(menuUIInteraface_C_PreviewItem, ItemInfo) == 0x000000, "Member 'menuUIInteraface_C_PreviewItem::ItemInfo' has a wrong offset!");
-static_assert(offsetof(menuUIInteraface_C_PreviewItem, SalePrice) == 0x000008, "Member 'menuUIInteraface_C_PreviewItem::SalePrice' has a wrong offset!");
+DUMPER7_ASSERTS_menuUIInteraface_C_PreviewItem;
 
 }
 

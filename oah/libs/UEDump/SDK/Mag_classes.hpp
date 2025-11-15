@@ -30,17 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Mag_C">();
+		BP_STATIC_CLASS_IMPL("Mag_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Mag_C")
 	}
 	static class AMag_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMag_C>();
 	}
 };
-static_assert(alignof(AMag_C) == 0x000008, "Wrong alignment on AMag_C");
-static_assert(sizeof(AMag_C) == 0x000230, "Wrong size on AMag_C");
-static_assert(offsetof(AMag_C, Mag) == 0x000220, "Member 'AMag_C::Mag' has a wrong offset!");
-static_assert(offsetof(AMag_C, MagMesh) == 0x000228, "Member 'AMag_C::MagMesh' has a wrong offset!");
+DUMPER7_ASSERTS_AMag_C;
 
 }
 

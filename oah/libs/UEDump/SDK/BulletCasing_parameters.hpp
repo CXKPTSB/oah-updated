@@ -55,35 +55,7 @@ public:
 	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0140(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x014C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BulletCasing_C_ExecuteUbergraph_BulletCasing) == 0x000008, "Wrong alignment on BulletCasing_C_ExecuteUbergraph_BulletCasing");
-static_assert(sizeof(BulletCasing_C_ExecuteUbergraph_BulletCasing) == 0x000158, "Wrong size on BulletCasing_C_ExecuteUbergraph_BulletCasing");
-static_assert(offsetof(BulletCasing_C_ExecuteUbergraph_BulletCasing, EntryPoint) == 0x000000, "Member 'BulletCasing_C_ExecuteUbergraph_BulletCasing::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BulletCasing_C_ExecuteUbergraph_BulletCasing, CallFunc_GetActorRightVector_ReturnValue) == 0x000004, "Member 'BulletCasing_C_ExecuteUbergraph_BulletCasing::CallFunc_GetActorRightVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BulletCasing_C_ExecuteUbergraph_BulletCasing, CallFunc_RandomUnitVector_ReturnValue) == 0x000010, "Member 'BulletCasing_C_ExecuteUbergraph_BulletCasing::CallFunc_RandomUnitVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BulletCasing_C_ExecuteUbergraph_BulletCasing, K2Node_Event_MyComp) == 0x000020, "Member 'BulletCasing_C_ExecuteUbergraph_BulletCasing::K2Node_Event_MyComp' has a wrong offset!");
-static_assert(offsetof(BulletCasing_C_ExecuteUbergraph_BulletCasing, K2Node_Event_Other) == 0x000028, "Member 'BulletCasing_C_ExecuteUbergraph_BulletCasing::K2Node_Event_Other' has a wrong offset!");
-static_assert(offsetof(BulletCasing_C_ExecuteUbergraph_BulletCasing, K2Node_Event_OtherComp) == 0x000030, "Member 'BulletCasing_C_ExecuteUbergraph_BulletCasing::K2Node_Event_OtherComp' has a wrong offset!");
-static_assert(offsetof(BulletCasing_C_ExecuteUbergraph_BulletCasing, K2Node_Event_bSelfMoved) == 0x000038, "Member 'BulletCasing_C_ExecuteUbergraph_BulletCasing::K2Node_Event_bSelfMoved' has a wrong offset!");
-static_assert(offsetof(BulletCasing_C_ExecuteUbergraph_BulletCasing, K2Node_Event_HitLocation) == 0x00003C, "Member 'BulletCasing_C_ExecuteUbergraph_BulletCasing::K2Node_Event_HitLocation' has a wrong offset!");
-static_assert(offsetof(BulletCasing_C_ExecuteUbergraph_BulletCasing, K2Node_Event_HitNormal) == 0x000048, "Member 'BulletCasing_C_ExecuteUbergraph_BulletCasing::K2Node_Event_HitNormal' has a wrong offset!");
-static_assert(offsetof(BulletCasing_C_ExecuteUbergraph_BulletCasing, K2Node_Event_NormalImpulse) == 0x000054, "Member 'BulletCasing_C_ExecuteUbergraph_BulletCasing::K2Node_Event_NormalImpulse' has a wrong offset!");
-static_assert(offsetof(BulletCasing_C_ExecuteUbergraph_BulletCasing, K2Node_Event_Hit) == 0x000060, "Member 'BulletCasing_C_ExecuteUbergraph_BulletCasing::K2Node_Event_Hit' has a wrong offset!");
-static_assert(offsetof(BulletCasing_C_ExecuteUbergraph_BulletCasing, Temp_bool_IsClosed_Variable) == 0x0000E8, "Member 'BulletCasing_C_ExecuteUbergraph_BulletCasing::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(BulletCasing_C_ExecuteUbergraph_BulletCasing, CallFunc_RandomFloatInRange_ReturnValue) == 0x0000EC, "Member 'BulletCasing_C_ExecuteUbergraph_BulletCasing::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BulletCasing_C_ExecuteUbergraph_BulletCasing, Temp_bool_Has_Been_Initd_Variable) == 0x0000F0, "Member 'BulletCasing_C_ExecuteUbergraph_BulletCasing::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(BulletCasing_C_ExecuteUbergraph_BulletCasing, CallFunc_GetInstigator_ReturnValue) == 0x0000F8, "Member 'BulletCasing_C_ExecuteUbergraph_BulletCasing::CallFunc_GetInstigator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BulletCasing_C_ExecuteUbergraph_BulletCasing, CallFunc_IsValid_ReturnValue) == 0x000100, "Member 'BulletCasing_C_ExecuteUbergraph_BulletCasing::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BulletCasing_C_ExecuteUbergraph_BulletCasing, CallFunc_GetVelocity_ReturnValue) == 0x000104, "Member 'BulletCasing_C_ExecuteUbergraph_BulletCasing::CallFunc_GetVelocity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BulletCasing_C_ExecuteUbergraph_BulletCasing, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x000110, "Member 'BulletCasing_C_ExecuteUbergraph_BulletCasing::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BulletCasing_C_ExecuteUbergraph_BulletCasing, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000114, "Member 'BulletCasing_C_ExecuteUbergraph_BulletCasing::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BulletCasing_C_ExecuteUbergraph_BulletCasing, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000118, "Member 'BulletCasing_C_ExecuteUbergraph_BulletCasing::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BulletCasing_C_ExecuteUbergraph_BulletCasing, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x00011C, "Member 'BulletCasing_C_ExecuteUbergraph_BulletCasing::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BulletCasing_C_ExecuteUbergraph_BulletCasing, CallFunc_Multiply_FloatFloat_ReturnValue_2) == 0x000120, "Member 'BulletCasing_C_ExecuteUbergraph_BulletCasing::CallFunc_Multiply_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BulletCasing_C_ExecuteUbergraph_BulletCasing, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000124, "Member 'BulletCasing_C_ExecuteUbergraph_BulletCasing::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BulletCasing_C_ExecuteUbergraph_BulletCasing, CallFunc_Multiply_VectorFloat_ReturnValue_1) == 0x000130, "Member 'BulletCasing_C_ExecuteUbergraph_BulletCasing::CallFunc_Multiply_VectorFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BulletCasing_C_ExecuteUbergraph_BulletCasing, CallFunc_Multiply_FloatFloat_ReturnValue_3) == 0x00013C, "Member 'BulletCasing_C_ExecuteUbergraph_BulletCasing::CallFunc_Multiply_FloatFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BulletCasing_C_ExecuteUbergraph_BulletCasing, CallFunc_MakeVector_ReturnValue) == 0x000140, "Member 'BulletCasing_C_ExecuteUbergraph_BulletCasing::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BulletCasing_C_ExecuteUbergraph_BulletCasing, CallFunc_Add_VectorVector_ReturnValue) == 0x00014C, "Member 'BulletCasing_C_ExecuteUbergraph_BulletCasing::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BulletCasing_C_ExecuteUbergraph_BulletCasing;
 
 // Function BulletCasing.BulletCasing_C.ReceiveHit
 // 0x00C8 (0x00C8 - 0x0000)
@@ -100,16 +72,7 @@ public:
 	struct FVector                                NormalImpulse;                                     // 0x0034(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0040(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(BulletCasing_C_ReceiveHit) == 0x000008, "Wrong alignment on BulletCasing_C_ReceiveHit");
-static_assert(sizeof(BulletCasing_C_ReceiveHit) == 0x0000C8, "Wrong size on BulletCasing_C_ReceiveHit");
-static_assert(offsetof(BulletCasing_C_ReceiveHit, MyComp) == 0x000000, "Member 'BulletCasing_C_ReceiveHit::MyComp' has a wrong offset!");
-static_assert(offsetof(BulletCasing_C_ReceiveHit, Other) == 0x000008, "Member 'BulletCasing_C_ReceiveHit::Other' has a wrong offset!");
-static_assert(offsetof(BulletCasing_C_ReceiveHit, OtherComp) == 0x000010, "Member 'BulletCasing_C_ReceiveHit::OtherComp' has a wrong offset!");
-static_assert(offsetof(BulletCasing_C_ReceiveHit, bSelfMoved) == 0x000018, "Member 'BulletCasing_C_ReceiveHit::bSelfMoved' has a wrong offset!");
-static_assert(offsetof(BulletCasing_C_ReceiveHit, HitLocation) == 0x00001C, "Member 'BulletCasing_C_ReceiveHit::HitLocation' has a wrong offset!");
-static_assert(offsetof(BulletCasing_C_ReceiveHit, HitNormal) == 0x000028, "Member 'BulletCasing_C_ReceiveHit::HitNormal' has a wrong offset!");
-static_assert(offsetof(BulletCasing_C_ReceiveHit, NormalImpulse) == 0x000034, "Member 'BulletCasing_C_ReceiveHit::NormalImpulse' has a wrong offset!");
-static_assert(offsetof(BulletCasing_C_ReceiveHit, Hit) == 0x000040, "Member 'BulletCasing_C_ReceiveHit::Hit' has a wrong offset!");
+DUMPER7_ASSERTS_BulletCasing_C_ReceiveHit;
 
 // Function BulletCasing.BulletCasing_C.UserConstructionScript
 // 0x0001 (0x0001 - 0x0000)
@@ -118,9 +81,7 @@ struct BulletCasing_C_UserConstructionScript final
 public:
 	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BulletCasing_C_UserConstructionScript) == 0x000001, "Wrong alignment on BulletCasing_C_UserConstructionScript");
-static_assert(sizeof(BulletCasing_C_UserConstructionScript) == 0x000001, "Wrong size on BulletCasing_C_UserConstructionScript");
-static_assert(offsetof(BulletCasing_C_UserConstructionScript, CallFunc_SetStaticMesh_ReturnValue) == 0x000000, "Member 'BulletCasing_C_UserConstructionScript::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BulletCasing_C_UserConstructionScript;
 
 }
 

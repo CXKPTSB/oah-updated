@@ -69,45 +69,7 @@ public:
 	uint8                                         Pad_10D[0x3];                                      // 0x010D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI) == 0x000008, "Wrong alignment on LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI");
-static_assert(sizeof(LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI) == 0x000118, "Wrong size on LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI");
-static_assert(offsetof(LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI, EntryPoint) == 0x000000, "Member 'LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI::EntryPoint' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI, CallFunc_GetAllActorsWithInterface_OutActors) == 0x000008, "Member 'LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI::CallFunc_GetAllActorsWithInterface_OutActors' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI, Temp_int_Array_Index_Variable) == 0x000018, "Member 'LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI, CallFunc_Array_Length_ReturnValue) == 0x00001C, "Member 'LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI, Temp_int_Loop_Counter_Variable) == 0x000020, "Member 'LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI, CallFunc_Less_IntInt_ReturnValue) == 0x000024, "Member 'LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI, CallFunc_Add_IntInt_ReturnValue) == 0x000028, "Member 'LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI, Temp_int_Array_Index_Variable_1) == 0x00002C, "Member 'LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI, CallFunc_Array_Get_Item) == 0x000030, "Member 'LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI, K2Node_DynamicCast_AsMenu_UIInteraface) == 0x000038, "Member 'LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI::K2Node_DynamicCast_AsMenu_UIInteraface' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI, K2Node_DynamicCast_bSuccess) == 0x000048, "Member 'LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI, K2Node_Event_Category_1) == 0x000049, "Member 'LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI::K2Node_Event_Category_1' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI, K2Node_Event_Category) == 0x00004A, "Member 'LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI::K2Node_Event_Category' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI, K2Node_Event_ItemInfo) == 0x000050, "Member 'LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI::K2Node_Event_ItemInfo' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI, K2Node_Event_SalePrice) == 0x000058, "Member 'LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI::K2Node_Event_SalePrice' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI, CallFunc_GetPlayerController_ReturnValue) == 0x000060, "Member 'LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI, CallFunc_Map_Keys_Keys) == 0x000068, "Member 'LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI::CallFunc_Map_Keys_Keys' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI, K2Node_DynamicCast_AsRobber_Controller) == 0x000078, "Member 'LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI::K2Node_DynamicCast_AsRobber_Controller' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI, K2Node_DynamicCast_bSuccess_1) == 0x000080, "Member 'LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI, CallFunc_Array_Find_ReturnValue) == 0x000084, "Member 'LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI, CallFunc_Map_Keys_Keys_1) == 0x000088, "Member 'LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI::CallFunc_Map_Keys_Keys_1' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI, CallFunc_Add_IntInt_ReturnValue_1) == 0x000098, "Member 'LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI, CallFunc_ChangeSkinColor_SkinColor) == 0x0000A0, "Member 'LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI::CallFunc_ChangeSkinColor_SkinColor' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI, CallFunc_Array_Find_ReturnValue_1) == 0x0000A8, "Member 'LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI::CallFunc_Array_Find_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI, CallFunc_Subtract_IntInt_ReturnValue) == 0x0000AC, "Member 'LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI, CallFunc_Map_Keys_Keys_2) == 0x0000B0, "Member 'LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI::CallFunc_Map_Keys_Keys_2' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI, CallFunc_ChangeSkinColor_SkinColor_1) == 0x0000C0, "Member 'LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI::CallFunc_ChangeSkinColor_SkinColor_1' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI, CallFunc_GetAllActorsWithInterface_OutActors_1) == 0x0000C8, "Member 'LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI::CallFunc_GetAllActorsWithInterface_OutActors_1' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI, CallFunc_Array_Find_ReturnValue_2) == 0x0000D8, "Member 'LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI::CallFunc_Array_Find_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI, CallFunc_Array_Get_Item_1) == 0x0000E0, "Member 'LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI, CallFunc_ChangeSkinColor_SkinColor_2) == 0x0000E8, "Member 'LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI::CallFunc_ChangeSkinColor_SkinColor_2' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI, K2Node_DynamicCast_AsMenu_UIInteraface_1) == 0x0000F0, "Member 'LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI::K2Node_DynamicCast_AsMenu_UIInteraface_1' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI, K2Node_DynamicCast_bSuccess_2) == 0x000100, "Member 'LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI, CallFunc_Array_Length_ReturnValue_1) == 0x000104, "Member 'LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI, Temp_int_Loop_Counter_Variable_1) == 0x000108, "Member 'LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI, CallFunc_Less_IntInt_ReturnValue_1) == 0x00010C, "Member 'LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI, CallFunc_Add_IntInt_ReturnValue_2) == 0x000110, "Member 'LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_LoadoutAppearanceUI_C_ExecuteUbergraph_LoadoutAppearanceUI;
 
 // Function LoadoutAppearanceUI.LoadoutAppearanceUI_C.PreviewItem
 // 0x0010 (0x0010 - 0x0000)
@@ -117,10 +79,7 @@ public:
 	class UClass*                                 ItemInfo;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         SalePrice;                                         // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LoadoutAppearanceUI_C_PreviewItem) == 0x000008, "Wrong alignment on LoadoutAppearanceUI_C_PreviewItem");
-static_assert(sizeof(LoadoutAppearanceUI_C_PreviewItem) == 0x000010, "Wrong size on LoadoutAppearanceUI_C_PreviewItem");
-static_assert(offsetof(LoadoutAppearanceUI_C_PreviewItem, ItemInfo) == 0x000000, "Member 'LoadoutAppearanceUI_C_PreviewItem::ItemInfo' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_PreviewItem, SalePrice) == 0x000008, "Member 'LoadoutAppearanceUI_C_PreviewItem::SalePrice' has a wrong offset!");
+DUMPER7_ASSERTS_LoadoutAppearanceUI_C_PreviewItem;
 
 // Function LoadoutAppearanceUI.LoadoutAppearanceUI_C.DragItemFromCategory
 // 0x0001 (0x0001 - 0x0000)
@@ -129,9 +88,7 @@ struct LoadoutAppearanceUI_C_DragItemFromCategory final
 public:
 	EShopItemCategory                             Category;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LoadoutAppearanceUI_C_DragItemFromCategory) == 0x000001, "Wrong alignment on LoadoutAppearanceUI_C_DragItemFromCategory");
-static_assert(sizeof(LoadoutAppearanceUI_C_DragItemFromCategory) == 0x000001, "Wrong size on LoadoutAppearanceUI_C_DragItemFromCategory");
-static_assert(offsetof(LoadoutAppearanceUI_C_DragItemFromCategory, Category) == 0x000000, "Member 'LoadoutAppearanceUI_C_DragItemFromCategory::Category' has a wrong offset!");
+DUMPER7_ASSERTS_LoadoutAppearanceUI_C_DragItemFromCategory;
 
 // Function LoadoutAppearanceUI.LoadoutAppearanceUI_C.ChangeCategory
 // 0x0001 (0x0001 - 0x0000)
@@ -140,9 +97,7 @@ struct LoadoutAppearanceUI_C_ChangeCategory final
 public:
 	EShopItemCategory                             Category;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LoadoutAppearanceUI_C_ChangeCategory) == 0x000001, "Wrong alignment on LoadoutAppearanceUI_C_ChangeCategory");
-static_assert(sizeof(LoadoutAppearanceUI_C_ChangeCategory) == 0x000001, "Wrong size on LoadoutAppearanceUI_C_ChangeCategory");
-static_assert(offsetof(LoadoutAppearanceUI_C_ChangeCategory, Category) == 0x000000, "Member 'LoadoutAppearanceUI_C_ChangeCategory::Category' has a wrong offset!");
+DUMPER7_ASSERTS_LoadoutAppearanceUI_C_ChangeCategory;
 
 // Function LoadoutAppearanceUI.LoadoutAppearanceUI_C.ChangeSkinColor
 // 0x0070 (0x0070 - 0x0000)
@@ -162,18 +117,7 @@ public:
 	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LoadoutAppearanceUI_C_ChangeSkinColor) == 0x000008, "Wrong alignment on LoadoutAppearanceUI_C_ChangeSkinColor");
-static_assert(sizeof(LoadoutAppearanceUI_C_ChangeSkinColor) == 0x000070, "Wrong size on LoadoutAppearanceUI_C_ChangeSkinColor");
-static_assert(offsetof(LoadoutAppearanceUI_C_ChangeSkinColor, Amount) == 0x000000, "Member 'LoadoutAppearanceUI_C_ChangeSkinColor::Amount' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ChangeSkinColor, SkinColor) == 0x000008, "Member 'LoadoutAppearanceUI_C_ChangeSkinColor::SkinColor' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ChangeSkinColor, Number) == 0x000010, "Member 'LoadoutAppearanceUI_C_ChangeSkinColor::Number' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ChangeSkinColor, CallFunc_Less_IntInt_ReturnValue) == 0x000014, "Member 'LoadoutAppearanceUI_C_ChangeSkinColor::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ChangeSkinColor, CallFunc_Map_Keys_Keys) == 0x000018, "Member 'LoadoutAppearanceUI_C_ChangeSkinColor::CallFunc_Map_Keys_Keys' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ChangeSkinColor, CallFunc_Array_Get_Item) == 0x000028, "Member 'LoadoutAppearanceUI_C_ChangeSkinColor::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ChangeSkinColor, CallFunc_Map_Values_Values) == 0x000030, "Member 'LoadoutAppearanceUI_C_ChangeSkinColor::CallFunc_Map_Values_Values' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ChangeSkinColor, CallFunc_Array_Get_Item_1) == 0x000040, "Member 'LoadoutAppearanceUI_C_ChangeSkinColor::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ChangeSkinColor, CallFunc_Array_LastIndex_ReturnValue) == 0x000068, "Member 'LoadoutAppearanceUI_C_ChangeSkinColor::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LoadoutAppearanceUI_C_ChangeSkinColor, CallFunc_Greater_IntInt_ReturnValue) == 0x00006C, "Member 'LoadoutAppearanceUI_C_ChangeSkinColor::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LoadoutAppearanceUI_C_ChangeSkinColor;
 
 }
 

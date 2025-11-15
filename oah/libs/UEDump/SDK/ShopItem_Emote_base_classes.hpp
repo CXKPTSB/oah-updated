@@ -35,20 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ShopItem_Emote_base_C">();
+		BP_STATIC_CLASS_IMPL("ShopItem_Emote_base_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ShopItem_Emote_base_C")
 	}
 	static class AShopItem_Emote_base_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AShopItem_Emote_base_C>();
 	}
 };
-static_assert(alignof(AShopItem_Emote_base_C) == 0x000008, "Wrong alignment on AShopItem_Emote_base_C");
-static_assert(sizeof(AShopItem_Emote_base_C) == 0x000290, "Wrong size on AShopItem_Emote_base_C");
-static_assert(offsetof(AShopItem_Emote_base_C, UberGraphFrame) == 0x000270, "Member 'AShopItem_Emote_base_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AShopItem_Emote_base_C, SkeletalMesh) == 0x000278, "Member 'AShopItem_Emote_base_C::SkeletalMesh' has a wrong offset!");
-static_assert(offsetof(AShopItem_Emote_base_C, Animation) == 0x000280, "Member 'AShopItem_Emote_base_C::Animation' has a wrong offset!");
-static_assert(offsetof(AShopItem_Emote_base_C, DropsItem_) == 0x000288, "Member 'AShopItem_Emote_base_C::DropsItem_' has a wrong offset!");
-static_assert(offsetof(AShopItem_Emote_base_C, StopSimulatePhysics_) == 0x000289, "Member 'AShopItem_Emote_base_C::StopSimulatePhysics_' has a wrong offset!");
+DUMPER7_ASSERTS_AShopItem_Emote_base_C;
 
 }
 

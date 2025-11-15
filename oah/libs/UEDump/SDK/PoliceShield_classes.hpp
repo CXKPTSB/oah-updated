@@ -27,17 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PoliceShield_C">();
+		BP_STATIC_CLASS_IMPL("PoliceShield_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PoliceShield_C")
 	}
 	static class APoliceShield_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APoliceShield_C>();
 	}
 };
-static_assert(alignof(APoliceShield_C) == 0x000008, "Wrong alignment on APoliceShield_C");
-static_assert(sizeof(APoliceShield_C) == 0x000230, "Wrong size on APoliceShield_C");
-static_assert(offsetof(APoliceShield_C, Glass) == 0x000220, "Member 'APoliceShield_C::Glass' has a wrong offset!");
-static_assert(offsetof(APoliceShield_C, ShieldMesh) == 0x000228, "Member 'APoliceShield_C::ShieldMesh' has a wrong offset!");
+DUMPER7_ASSERTS_APoliceShield_C;
 
 }
 

@@ -32,22 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Rifle_CX9_C">();
+		BP_STATIC_CLASS_IMPL("Rifle_CX9_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Rifle_CX9_C")
 	}
 	static class ARifle_CX9_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ARifle_CX9_C>();
 	}
 };
-static_assert(alignof(ARifle_CX9_C) == 0x000008, "Wrong alignment on ARifle_CX9_C");
-static_assert(sizeof(ARifle_CX9_C) == 0x000368, "Wrong size on ARifle_CX9_C");
-static_assert(offsetof(ARifle_CX9_C, SM_Wep_Mod_A_Trigger_01) == 0x000330, "Member 'ARifle_CX9_C::SM_Wep_Mod_A_Trigger_01' has a wrong offset!");
-static_assert(offsetof(ARifle_CX9_C, SM_Wep_Mod_A_Stock_02) == 0x000338, "Member 'ARifle_CX9_C::SM_Wep_Mod_A_Stock_02' has a wrong offset!");
-static_assert(offsetof(ARifle_CX9_C, SM_Wep_Mod_A_Grip_01) == 0x000340, "Member 'ARifle_CX9_C::SM_Wep_Mod_A_Grip_01' has a wrong offset!");
-static_assert(offsetof(ARifle_CX9_C, SM_Wep_Mod_A_Rail_Large_01) == 0x000348, "Member 'ARifle_CX9_C::SM_Wep_Mod_A_Rail_Large_01' has a wrong offset!");
-static_assert(offsetof(ARifle_CX9_C, SM_Wep_Mod_A_Handguard_03) == 0x000350, "Member 'ARifle_CX9_C::SM_Wep_Mod_A_Handguard_03' has a wrong offset!");
-static_assert(offsetof(ARifle_CX9_C, SM_Wep_Mod_A_Handguard_02) == 0x000358, "Member 'ARifle_CX9_C::SM_Wep_Mod_A_Handguard_02' has a wrong offset!");
-static_assert(offsetof(ARifle_CX9_C, SM_Wep_Mod_A_Barrel_01) == 0x000360, "Member 'ARifle_CX9_C::SM_Wep_Mod_A_Barrel_01' has a wrong offset!");
+DUMPER7_ASSERTS_ARifle_CX9_C;
 
 }
 

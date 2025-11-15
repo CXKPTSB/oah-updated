@@ -17,8 +17,8 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GunStatInterface.GunStatInterface_C
-// 0x0000 (0x0028 - 0x0028)
-class IGunStatInterface_C final : public IInterface
+// 0x0000 (0x0000 - 0x0000)
+class IGunStatInterface_C final
 {
 public:
 	void CompareStats(float Accuracy, float Capacity, float Damage, float Firerate, float Recoil, float ReloadTime);
@@ -27,15 +27,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GunStatInterface_C">();
+		BP_STATIC_CLASS_IMPL("GunStatInterface_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GunStatInterface_C")
 	}
 	static class IGunStatInterface_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<IGunStatInterface_C>();
 	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
 };
-static_assert(alignof(IGunStatInterface_C) == 0x000008, "Wrong alignment on IGunStatInterface_C");
-static_assert(sizeof(IGunStatInterface_C) == 0x000028, "Wrong size on IGunStatInterface_C");
+DUMPER7_ASSERTS_IGunStatInterface_C;
 
 }
 

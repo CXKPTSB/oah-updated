@@ -34,20 +34,7 @@ public:
 	bool                                          CallFunc_IsLocallyControlled_ReturnValue;          // 0x0033(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_SetAchievement_ReturnValue;               // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SteamAchievementComponent_C_ExecuteUbergraph_SteamAchievementComponent) == 0x000008, "Wrong alignment on SteamAchievementComponent_C_ExecuteUbergraph_SteamAchievementComponent");
-static_assert(sizeof(SteamAchievementComponent_C_ExecuteUbergraph_SteamAchievementComponent) == 0x000038, "Wrong size on SteamAchievementComponent_C_ExecuteUbergraph_SteamAchievementComponent");
-static_assert(offsetof(SteamAchievementComponent_C_ExecuteUbergraph_SteamAchievementComponent, EntryPoint) == 0x000000, "Member 'SteamAchievementComponent_C_ExecuteUbergraph_SteamAchievementComponent::EntryPoint' has a wrong offset!");
-static_assert(offsetof(SteamAchievementComponent_C_ExecuteUbergraph_SteamAchievementComponent, CallFunc_StoreStats_ReturnValue) == 0x000004, "Member 'SteamAchievementComponent_C_ExecuteUbergraph_SteamAchievementComponent::CallFunc_StoreStats_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SteamAchievementComponent_C_ExecuteUbergraph_SteamAchievementComponent, K2Node_CustomEvent_AchievementName) == 0x000008, "Member 'SteamAchievementComponent_C_ExecuteUbergraph_SteamAchievementComponent::K2Node_CustomEvent_AchievementName' has a wrong offset!");
-static_assert(offsetof(SteamAchievementComponent_C_ExecuteUbergraph_SteamAchievementComponent, K2Node_CustomEvent_Player) == 0x000018, "Member 'SteamAchievementComponent_C_ExecuteUbergraph_SteamAchievementComponent::K2Node_CustomEvent_Player' has a wrong offset!");
-static_assert(offsetof(SteamAchievementComponent_C_ExecuteUbergraph_SteamAchievementComponent, CallFunc_RequestCurrentStats_ReturnValue) == 0x000020, "Member 'SteamAchievementComponent_C_ExecuteUbergraph_SteamAchievementComponent::CallFunc_RequestCurrentStats_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SteamAchievementComponent_C_ExecuteUbergraph_SteamAchievementComponent, CallFunc_IsValid_ReturnValue) == 0x000021, "Member 'SteamAchievementComponent_C_ExecuteUbergraph_SteamAchievementComponent::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SteamAchievementComponent_C_ExecuteUbergraph_SteamAchievementComponent, K2Node_DynamicCast_AsPawn) == 0x000028, "Member 'SteamAchievementComponent_C_ExecuteUbergraph_SteamAchievementComponent::K2Node_DynamicCast_AsPawn' has a wrong offset!");
-static_assert(offsetof(SteamAchievementComponent_C_ExecuteUbergraph_SteamAchievementComponent, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'SteamAchievementComponent_C_ExecuteUbergraph_SteamAchievementComponent::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(SteamAchievementComponent_C_ExecuteUbergraph_SteamAchievementComponent, CallFunc_GetAchievement_bAchieved) == 0x000031, "Member 'SteamAchievementComponent_C_ExecuteUbergraph_SteamAchievementComponent::CallFunc_GetAchievement_bAchieved' has a wrong offset!");
-static_assert(offsetof(SteamAchievementComponent_C_ExecuteUbergraph_SteamAchievementComponent, CallFunc_GetAchievement_ReturnValue) == 0x000032, "Member 'SteamAchievementComponent_C_ExecuteUbergraph_SteamAchievementComponent::CallFunc_GetAchievement_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SteamAchievementComponent_C_ExecuteUbergraph_SteamAchievementComponent, CallFunc_IsLocallyControlled_ReturnValue) == 0x000033, "Member 'SteamAchievementComponent_C_ExecuteUbergraph_SteamAchievementComponent::CallFunc_IsLocallyControlled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SteamAchievementComponent_C_ExecuteUbergraph_SteamAchievementComponent, CallFunc_SetAchievement_ReturnValue) == 0x000034, "Member 'SteamAchievementComponent_C_ExecuteUbergraph_SteamAchievementComponent::CallFunc_SetAchievement_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SteamAchievementComponent_C_ExecuteUbergraph_SteamAchievementComponent;
 
 // Function SteamAchievementComponent.SteamAchievementComponent_C.UnlockAchievement
 // 0x0018 (0x0018 - 0x0000)
@@ -57,10 +44,7 @@ public:
 	class FString                                 AchievementName;                                   // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	class AActor*                                 Player;                                            // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SteamAchievementComponent_C_UnlockAchievement) == 0x000008, "Wrong alignment on SteamAchievementComponent_C_UnlockAchievement");
-static_assert(sizeof(SteamAchievementComponent_C_UnlockAchievement) == 0x000018, "Wrong size on SteamAchievementComponent_C_UnlockAchievement");
-static_assert(offsetof(SteamAchievementComponent_C_UnlockAchievement, AchievementName) == 0x000000, "Member 'SteamAchievementComponent_C_UnlockAchievement::AchievementName' has a wrong offset!");
-static_assert(offsetof(SteamAchievementComponent_C_UnlockAchievement, Player) == 0x000010, "Member 'SteamAchievementComponent_C_UnlockAchievement::Player' has a wrong offset!");
+DUMPER7_ASSERTS_SteamAchievementComponent_C_UnlockAchievement;
 
 }
 

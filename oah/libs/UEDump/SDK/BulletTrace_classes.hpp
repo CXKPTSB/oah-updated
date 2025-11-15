@@ -33,18 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BulletTrace_C">();
+		BP_STATIC_CLASS_IMPL("BulletTrace_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BulletTrace_C")
 	}
 	static class ABulletTrace_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABulletTrace_C>();
 	}
 };
-static_assert(alignof(ABulletTrace_C) == 0x000008, "Wrong alignment on ABulletTrace_C");
-static_assert(sizeof(ABulletTrace_C) == 0x000238, "Wrong size on ABulletTrace_C");
-static_assert(offsetof(ABulletTrace_C, UberGraphFrame) == 0x000220, "Member 'ABulletTrace_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABulletTrace_C, ProjectileMovement) == 0x000228, "Member 'ABulletTrace_C::ProjectileMovement' has a wrong offset!");
-static_assert(offsetof(ABulletTrace_C, Sphere) == 0x000230, "Member 'ABulletTrace_C::Sphere' has a wrong offset!");
+DUMPER7_ASSERTS_ABulletTrace_C;
 
 }
 

@@ -23,15 +23,18 @@ class AShopItem_Equipment_ExpertLockpick_C final : public AShopItem_Equipment_Ba
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ShopItem_Equipment_ExpertLockpick_C">();
+		BP_STATIC_CLASS_IMPL("ShopItem_Equipment_ExpertLockpick_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ShopItem_Equipment_ExpertLockpick_C")
 	}
 	static class AShopItem_Equipment_ExpertLockpick_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AShopItem_Equipment_ExpertLockpick_C>();
 	}
 };
-static_assert(alignof(AShopItem_Equipment_ExpertLockpick_C) == 0x000008, "Wrong alignment on AShopItem_Equipment_ExpertLockpick_C");
-static_assert(sizeof(AShopItem_Equipment_ExpertLockpick_C) == 0x000278, "Wrong size on AShopItem_Equipment_ExpertLockpick_C");
+DUMPER7_ASSERTS_AShopItem_Equipment_ExpertLockpick_C;
 
 }
 

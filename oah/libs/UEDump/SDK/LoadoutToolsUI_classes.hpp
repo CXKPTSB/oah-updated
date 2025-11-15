@@ -39,16 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LoadoutToolsUI_C">();
+		BP_STATIC_CLASS_IMPL("LoadoutToolsUI_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LoadoutToolsUI_C")
 	}
 	static class ULoadoutToolsUI_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULoadoutToolsUI_C>();
 	}
 };
-static_assert(alignof(ULoadoutToolsUI_C) == 0x000008, "Wrong alignment on ULoadoutToolsUI_C");
-static_assert(sizeof(ULoadoutToolsUI_C) == 0x000268, "Wrong size on ULoadoutToolsUI_C");
-static_assert(offsetof(ULoadoutToolsUI_C, UberGraphFrame) == 0x000260, "Member 'ULoadoutToolsUI_C::UberGraphFrame' has a wrong offset!");
+DUMPER7_ASSERTS_ULoadoutToolsUI_C;
 
 }
 

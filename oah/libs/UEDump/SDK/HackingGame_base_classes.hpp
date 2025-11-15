@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HackingGame_base_C">();
+		BP_STATIC_CLASS_IMPL("HackingGame_base_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HackingGame_base_C")
 	}
 	static class UHackingGame_base_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHackingGame_base_C>();
 	}
 };
-static_assert(alignof(UHackingGame_base_C) == 0x000008, "Wrong alignment on UHackingGame_base_C");
-static_assert(sizeof(UHackingGame_base_C) == 0x000268, "Wrong size on UHackingGame_base_C");
-static_assert(offsetof(UHackingGame_base_C, ParentWidget) == 0x000260, "Member 'UHackingGame_base_C::ParentWidget' has a wrong offset!");
+DUMPER7_ASSERTS_UHackingGame_base_C;
 
 }
 

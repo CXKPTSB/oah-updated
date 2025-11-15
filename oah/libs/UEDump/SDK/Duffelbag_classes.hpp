@@ -41,22 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Duffelbag_C">();
+		BP_STATIC_CLASS_IMPL("Duffelbag_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Duffelbag_C")
 	}
 	static class ADuffelbag_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ADuffelbag_C>();
 	}
 };
-static_assert(alignof(ADuffelbag_C) == 0x000008, "Wrong alignment on ADuffelbag_C");
-static_assert(sizeof(ADuffelbag_C) == 0x000298, "Wrong size on ADuffelbag_C");
-static_assert(offsetof(ADuffelbag_C, UberGraphFrame_Duffelbag_C) == 0x000258, "Member 'ADuffelbag_C::UberGraphFrame_Duffelbag_C' has a wrong offset!");
-static_assert(offsetof(ADuffelbag_C, HighlightInRangeComponent) == 0x000260, "Member 'ADuffelbag_C::HighlightInRangeComponent' has a wrong offset!");
-static_assert(offsetof(ADuffelbag_C, Box) == 0x000268, "Member 'ADuffelbag_C::Box' has a wrong offset!");
-static_assert(offsetof(ADuffelbag_C, Box1) == 0x000270, "Member 'ADuffelbag_C::Box1' has a wrong offset!");
-static_assert(offsetof(ADuffelbag_C, Duffelbag_Straps1) == 0x000278, "Member 'ADuffelbag_C::Duffelbag_Straps1' has a wrong offset!");
-static_assert(offsetof(ADuffelbag_C, Duffelbag_Straps) == 0x000280, "Member 'ADuffelbag_C::Duffelbag_Straps' has a wrong offset!");
-static_assert(offsetof(ADuffelbag_C, AttachedActors) == 0x000288, "Member 'ADuffelbag_C::AttachedActors' has a wrong offset!");
+DUMPER7_ASSERTS_ADuffelbag_C;
 
 }
 

@@ -23,9 +23,7 @@ struct ControllerInterface_C_OnSteamInventoryUpdated final
 public:
 	TArray<struct FSteamItemDetails>              Items;                                             // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(ControllerInterface_C_OnSteamInventoryUpdated) == 0x000008, "Wrong alignment on ControllerInterface_C_OnSteamInventoryUpdated");
-static_assert(sizeof(ControllerInterface_C_OnSteamInventoryUpdated) == 0x000010, "Wrong size on ControllerInterface_C_OnSteamInventoryUpdated");
-static_assert(offsetof(ControllerInterface_C_OnSteamInventoryUpdated, Items) == 0x000000, "Member 'ControllerInterface_C_OnSteamInventoryUpdated::Items' has a wrong offset!");
+DUMPER7_ASSERTS_ControllerInterface_C_OnSteamInventoryUpdated;
 
 // Function ControllerInterface.ControllerInterface_C.OnGetSteamInventoryItems
 // 0x0010 (0x0010 - 0x0000)
@@ -34,9 +32,7 @@ struct ControllerInterface_C_OnGetSteamInventoryItems final
 public:
 	TArray<struct FSteamItemDetails>              Items;                                             // 0x0000(0x0010)(Parm, OutParm)
 };
-static_assert(alignof(ControllerInterface_C_OnGetSteamInventoryItems) == 0x000008, "Wrong alignment on ControllerInterface_C_OnGetSteamInventoryItems");
-static_assert(sizeof(ControllerInterface_C_OnGetSteamInventoryItems) == 0x000010, "Wrong size on ControllerInterface_C_OnGetSteamInventoryItems");
-static_assert(offsetof(ControllerInterface_C_OnGetSteamInventoryItems, Items) == 0x000000, "Member 'ControllerInterface_C_OnGetSteamInventoryItems::Items' has a wrong offset!");
+DUMPER7_ASSERTS_ControllerInterface_C_OnGetSteamInventoryItems;
 
 // Function ControllerInterface.ControllerInterface_C.UpdateWhenResultIsFinished
 // 0x0004 (0x0004 - 0x0000)
@@ -45,9 +41,7 @@ struct ControllerInterface_C_UpdateWhenResultIsFinished final
 public:
 	struct FSteamInventoryResult                  Result;                                            // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ControllerInterface_C_UpdateWhenResultIsFinished) == 0x000004, "Wrong alignment on ControllerInterface_C_UpdateWhenResultIsFinished");
-static_assert(sizeof(ControllerInterface_C_UpdateWhenResultIsFinished) == 0x000004, "Wrong size on ControllerInterface_C_UpdateWhenResultIsFinished");
-static_assert(offsetof(ControllerInterface_C_UpdateWhenResultIsFinished, Result) == 0x000000, "Member 'ControllerInterface_C_UpdateWhenResultIsFinished::Result' has a wrong offset!");
+DUMPER7_ASSERTS_ControllerInterface_C_UpdateWhenResultIsFinished;
 
 }
 

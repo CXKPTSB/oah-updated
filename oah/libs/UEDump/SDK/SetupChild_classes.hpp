@@ -51,27 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SetupChild_C">();
+		BP_STATIC_CLASS_IMPL("SetupChild_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SetupChild_C")
 	}
 	static class USetupChild_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USetupChild_C>();
 	}
 };
-static_assert(alignof(USetupChild_C) == 0x000008, "Wrong alignment on USetupChild_C");
-static_assert(sizeof(USetupChild_C) == 0x0002C0, "Wrong size on USetupChild_C");
-static_assert(offsetof(USetupChild_C, UberGraphFrame) == 0x000260, "Member 'USetupChild_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USetupChild_C, Hover) == 0x000268, "Member 'USetupChild_C::Hover' has a wrong offset!");
-static_assert(offsetof(USetupChild_C, Button_144) == 0x000270, "Member 'USetupChild_C::Button_144' has a wrong offset!");
-static_assert(offsetof(USetupChild_C, Image_63) == 0x000278, "Member 'USetupChild_C::Image_63' has a wrong offset!");
-static_assert(offsetof(USetupChild_C, Image_126) == 0x000280, "Member 'USetupChild_C::Image_126' has a wrong offset!");
-static_assert(offsetof(USetupChild_C, TextBlock_202) == 0x000288, "Member 'USetupChild_C::TextBlock_202' has a wrong offset!");
-static_assert(offsetof(USetupChild_C, Underline) == 0x000290, "Member 'USetupChild_C::Underline' has a wrong offset!");
-static_assert(offsetof(USetupChild_C, SetupInfo) == 0x000298, "Member 'USetupChild_C::SetupInfo' has a wrong offset!");
-static_assert(offsetof(USetupChild_C, ParentSetupWidget) == 0x0002A0, "Member 'USetupChild_C::ParentSetupWidget' has a wrong offset!");
-static_assert(offsetof(USetupChild_C, As_Robber_Controller) == 0x0002A8, "Member 'USetupChild_C::As_Robber_Controller' has a wrong offset!");
-static_assert(offsetof(USetupChild_C, Unlocked_) == 0x0002B0, "Member 'USetupChild_C::Unlocked_' has a wrong offset!");
-static_assert(offsetof(USetupChild_C, LobbyManager) == 0x0002B8, "Member 'USetupChild_C::LobbyManager' has a wrong offset!");
+DUMPER7_ASSERTS_USetupChild_C;
 
 }
 

@@ -23,15 +23,18 @@ class AShopItem_Armor_Medium_C final : public AShopItem_Armor_base_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ShopItem_Armor_Medium_C">();
+		BP_STATIC_CLASS_IMPL("ShopItem_Armor_Medium_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ShopItem_Armor_Medium_C")
 	}
 	static class AShopItem_Armor_Medium_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AShopItem_Armor_Medium_C>();
 	}
 };
-static_assert(alignof(AShopItem_Armor_Medium_C) == 0x000008, "Wrong alignment on AShopItem_Armor_Medium_C");
-static_assert(sizeof(AShopItem_Armor_Medium_C) == 0x000270, "Wrong size on AShopItem_Armor_Medium_C");
+DUMPER7_ASSERTS_AShopItem_Armor_Medium_C;
 
 }
 

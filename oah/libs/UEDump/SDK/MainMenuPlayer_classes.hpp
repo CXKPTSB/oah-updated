@@ -33,7 +33,7 @@ public:
 	class ARobberController_C*                    As_Robber_Controller;                              // 0x04F0(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                 TabName;                                           // 0x04F8(0x0010)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 	TMulticastInlineDelegate<void()>              StartEmote;                                        // 0x0508(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void(class UShopUI_C* Widget)> ShopOpened;                                        // 0x0518(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(class UShopUI_C* Widget)> ShopOpened;                              // 0x0518(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void ExecuteUbergraph_MainMenuPlayer(int32 EntryPoint);
@@ -59,25 +59,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MainMenuPlayer_C">();
+		BP_STATIC_CLASS_IMPL("MainMenuPlayer_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MainMenuPlayer_C")
 	}
 	static class AMainMenuPlayer_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMainMenuPlayer_C>();
 	}
 };
-static_assert(alignof(AMainMenuPlayer_C) == 0x000010, "Wrong alignment on AMainMenuPlayer_C");
-static_assert(sizeof(AMainMenuPlayer_C) == 0x000530, "Wrong size on AMainMenuPlayer_C");
-static_assert(offsetof(AMainMenuPlayer_C, UberGraphFrame) == 0x0004C0, "Member 'AMainMenuPlayer_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AMainMenuPlayer_C, WidgetInteraction) == 0x0004C8, "Member 'AMainMenuPlayer_C::WidgetInteraction' has a wrong offset!");
-static_assert(offsetof(AMainMenuPlayer_C, Camera) == 0x0004D0, "Member 'AMainMenuPlayer_C::Camera' has a wrong offset!");
-static_assert(offsetof(AMainMenuPlayer_C, CurrentTab) == 0x0004D8, "Member 'AMainMenuPlayer_C::CurrentTab' has a wrong offset!");
-static_assert(offsetof(AMainMenuPlayer_C, Ready_) == 0x0004E8, "Member 'AMainMenuPlayer_C::Ready_' has a wrong offset!");
-static_assert(offsetof(AMainMenuPlayer_C, PlayerLevel) == 0x0004EC, "Member 'AMainMenuPlayer_C::PlayerLevel' has a wrong offset!");
-static_assert(offsetof(AMainMenuPlayer_C, As_Robber_Controller) == 0x0004F0, "Member 'AMainMenuPlayer_C::As_Robber_Controller' has a wrong offset!");
-static_assert(offsetof(AMainMenuPlayer_C, TabName) == 0x0004F8, "Member 'AMainMenuPlayer_C::TabName' has a wrong offset!");
-static_assert(offsetof(AMainMenuPlayer_C, StartEmote) == 0x000508, "Member 'AMainMenuPlayer_C::StartEmote' has a wrong offset!");
-static_assert(offsetof(AMainMenuPlayer_C, ShopOpened) == 0x000518, "Member 'AMainMenuPlayer_C::ShopOpened' has a wrong offset!");
+DUMPER7_ASSERTS_AMainMenuPlayer_C;
 
 }
 

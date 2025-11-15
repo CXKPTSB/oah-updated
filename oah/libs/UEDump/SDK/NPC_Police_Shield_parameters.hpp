@@ -27,14 +27,7 @@ public:
 	class UStaticMeshComponent*                   K2Node_DynamicCast_AsStatic_Mesh_Component;        // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(NPC_Police_Shield_C_ExecuteUbergraph_NPC_Police_Shield) == 0x000008, "Wrong alignment on NPC_Police_Shield_C_ExecuteUbergraph_NPC_Police_Shield");
-static_assert(sizeof(NPC_Police_Shield_C_ExecuteUbergraph_NPC_Police_Shield) == 0x000038, "Wrong size on NPC_Police_Shield_C_ExecuteUbergraph_NPC_Police_Shield");
-static_assert(offsetof(NPC_Police_Shield_C_ExecuteUbergraph_NPC_Police_Shield, EntryPoint) == 0x000000, "Member 'NPC_Police_Shield_C_ExecuteUbergraph_NPC_Police_Shield::EntryPoint' has a wrong offset!");
-static_assert(offsetof(NPC_Police_Shield_C_ExecuteUbergraph_NPC_Police_Shield, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'NPC_Police_Shield_C_ExecuteUbergraph_NPC_Police_Shield::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(NPC_Police_Shield_C_ExecuteUbergraph_NPC_Police_Shield, K2Node_CustomEvent_Player) == 0x000018, "Member 'NPC_Police_Shield_C_ExecuteUbergraph_NPC_Police_Shield::K2Node_CustomEvent_Player' has a wrong offset!");
-static_assert(offsetof(NPC_Police_Shield_C_ExecuteUbergraph_NPC_Police_Shield, CallFunc_K2_GetRootComponent_ReturnValue) == 0x000020, "Member 'NPC_Police_Shield_C_ExecuteUbergraph_NPC_Police_Shield::CallFunc_K2_GetRootComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPC_Police_Shield_C_ExecuteUbergraph_NPC_Police_Shield, K2Node_DynamicCast_AsStatic_Mesh_Component) == 0x000028, "Member 'NPC_Police_Shield_C_ExecuteUbergraph_NPC_Police_Shield::K2Node_DynamicCast_AsStatic_Mesh_Component' has a wrong offset!");
-static_assert(offsetof(NPC_Police_Shield_C_ExecuteUbergraph_NPC_Police_Shield, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'NPC_Police_Shield_C_ExecuteUbergraph_NPC_Police_Shield::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_NPC_Police_Shield_C_ExecuteUbergraph_NPC_Police_Shield;
 
 // Function NPC_Police_Shield.NPC_Police_Shield_C.DropShieldOnDeath
 // 0x0008 (0x0008 - 0x0000)
@@ -43,9 +36,7 @@ struct NPC_Police_Shield_C_DropShieldOnDeath final
 public:
 	class AActor*                                 Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(NPC_Police_Shield_C_DropShieldOnDeath) == 0x000008, "Wrong alignment on NPC_Police_Shield_C_DropShieldOnDeath");
-static_assert(sizeof(NPC_Police_Shield_C_DropShieldOnDeath) == 0x000008, "Wrong size on NPC_Police_Shield_C_DropShieldOnDeath");
-static_assert(offsetof(NPC_Police_Shield_C_DropShieldOnDeath, Player) == 0x000000, "Member 'NPC_Police_Shield_C_DropShieldOnDeath::Player' has a wrong offset!");
+DUMPER7_ASSERTS_NPC_Police_Shield_C_DropShieldOnDeath;
 
 }
 

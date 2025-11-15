@@ -53,25 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FindingSessionUI_C">();
+		BP_STATIC_CLASS_IMPL("FindingSessionUI_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FindingSessionUI_C")
 	}
 	static class UFindingSessionUI_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFindingSessionUI_C>();
 	}
 };
-static_assert(alignof(UFindingSessionUI_C) == 0x000008, "Wrong alignment on UFindingSessionUI_C");
-static_assert(sizeof(UFindingSessionUI_C) == 0x0002C0, "Wrong size on UFindingSessionUI_C");
-static_assert(offsetof(UFindingSessionUI_C, UberGraphFrame) == 0x000260, "Member 'UFindingSessionUI_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFindingSessionUI_C, CloseButton) == 0x000268, "Member 'UFindingSessionUI_C::CloseButton' has a wrong offset!");
-static_assert(offsetof(UFindingSessionUI_C, Throbber_48) == 0x000270, "Member 'UFindingSessionUI_C::Throbber_48' has a wrong offset!");
-static_assert(offsetof(UFindingSessionUI_C, SearchingLobbiesFound) == 0x000278, "Member 'UFindingSessionUI_C::SearchingLobbiesFound' has a wrong offset!");
-static_assert(offsetof(UFindingSessionUI_C, As_Robber_GI) == 0x000288, "Member 'UFindingSessionUI_C::As_Robber_GI' has a wrong offset!");
-static_assert(offsetof(UFindingSessionUI_C, RegularLobbiesFound) == 0x000290, "Member 'UFindingSessionUI_C::RegularLobbiesFound' has a wrong offset!");
-static_assert(offsetof(UFindingSessionUI_C, LookForSeaching_) == 0x0002A0, "Member 'UFindingSessionUI_C::LookForSeaching_' has a wrong offset!");
-static_assert(offsetof(UFindingSessionUI_C, SteamIDLobbyFound) == 0x0002A8, "Member 'UFindingSessionUI_C::SteamIDLobbyFound' has a wrong offset!");
-static_assert(offsetof(UFindingSessionUI_C, MapInfo) == 0x0002B0, "Member 'UFindingSessionUI_C::MapInfo' has a wrong offset!");
-static_assert(offsetof(UFindingSessionUI_C, Random_) == 0x0002B8, "Member 'UFindingSessionUI_C::Random_' has a wrong offset!");
+DUMPER7_ASSERTS_UFindingSessionUI_C;
 
 }
 

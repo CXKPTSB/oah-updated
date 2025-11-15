@@ -42,22 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SelectedMapUI_C">();
+		BP_STATIC_CLASS_IMPL("SelectedMapUI_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SelectedMapUI_C")
 	}
 	static class USelectedMapUI_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USelectedMapUI_C>();
 	}
 };
-static_assert(alignof(USelectedMapUI_C) == 0x000008, "Wrong alignment on USelectedMapUI_C");
-static_assert(sizeof(USelectedMapUI_C) == 0x000298, "Wrong size on USelectedMapUI_C");
-static_assert(offsetof(USelectedMapUI_C, UberGraphFrame) == 0x000260, "Member 'USelectedMapUI_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USelectedMapUI_C, HoverAnim) == 0x000268, "Member 'USelectedMapUI_C::HoverAnim' has a wrong offset!");
-static_assert(offsetof(USelectedMapUI_C, Border_71) == 0x000270, "Member 'USelectedMapUI_C::Border_71' has a wrong offset!");
-static_assert(offsetof(USelectedMapUI_C, Button_115) == 0x000278, "Member 'USelectedMapUI_C::Button_115' has a wrong offset!");
-static_assert(offsetof(USelectedMapUI_C, TextBlock_69) == 0x000280, "Member 'USelectedMapUI_C::TextBlock_69' has a wrong offset!");
-static_assert(offsetof(USelectedMapUI_C, Map) == 0x000288, "Member 'USelectedMapUI_C::Map' has a wrong offset!");
-static_assert(offsetof(USelectedMapUI_C, As_Main_Menu_Player) == 0x000290, "Member 'USelectedMapUI_C::As_Main_Menu_Player' has a wrong offset!");
+DUMPER7_ASSERTS_USelectedMapUI_C;
 
 }
 

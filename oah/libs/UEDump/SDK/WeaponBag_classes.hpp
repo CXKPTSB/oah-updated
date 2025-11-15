@@ -51,33 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WeaponBag_C">();
+		BP_STATIC_CLASS_IMPL("WeaponBag_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WeaponBag_C")
 	}
 	static class AWeaponBag_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AWeaponBag_C>();
 	}
 };
-static_assert(alignof(AWeaponBag_C) == 0x000008, "Wrong alignment on AWeaponBag_C");
-static_assert(sizeof(AWeaponBag_C) == 0x0002B0, "Wrong size on AWeaponBag_C");
-static_assert(offsetof(AWeaponBag_C, UberGraphFrame) == 0x000220, "Member 'AWeaponBag_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AWeaponBag_C, ArmorMesh) == 0x000228, "Member 'AWeaponBag_C::ArmorMesh' has a wrong offset!");
-static_assert(offsetof(AWeaponBag_C, Mask) == 0x000230, "Member 'AWeaponBag_C::Mask' has a wrong offset!");
-static_assert(offsetof(AWeaponBag_C, Mag8) == 0x000238, "Member 'AWeaponBag_C::Mag8' has a wrong offset!");
-static_assert(offsetof(AWeaponBag_C, Mag7) == 0x000240, "Member 'AWeaponBag_C::Mag7' has a wrong offset!");
-static_assert(offsetof(AWeaponBag_C, Mag6) == 0x000248, "Member 'AWeaponBag_C::Mag6' has a wrong offset!");
-static_assert(offsetof(AWeaponBag_C, Mag5) == 0x000250, "Member 'AWeaponBag_C::Mag5' has a wrong offset!");
-static_assert(offsetof(AWeaponBag_C, Mag4) == 0x000258, "Member 'AWeaponBag_C::Mag4' has a wrong offset!");
-static_assert(offsetof(AWeaponBag_C, Mag3) == 0x000260, "Member 'AWeaponBag_C::Mag3' has a wrong offset!");
-static_assert(offsetof(AWeaponBag_C, Mag2) == 0x000268, "Member 'AWeaponBag_C::Mag2' has a wrong offset!");
-static_assert(offsetof(AWeaponBag_C, Mag1) == 0x000270, "Member 'AWeaponBag_C::Mag1' has a wrong offset!");
-static_assert(offsetof(AWeaponBag_C, LookatInfoComponent) == 0x000278, "Member 'AWeaponBag_C::LookatInfoComponent' has a wrong offset!");
-static_assert(offsetof(AWeaponBag_C, InteractComponent) == 0x000280, "Member 'AWeaponBag_C::InteractComponent' has a wrong offset!");
-static_assert(offsetof(AWeaponBag_C, RifleActor) == 0x000288, "Member 'AWeaponBag_C::RifleActor' has a wrong offset!");
-static_assert(offsetof(AWeaponBag_C, SideArmActor) == 0x000290, "Member 'AWeaponBag_C::SideArmActor' has a wrong offset!");
-static_assert(offsetof(AWeaponBag_C, StaticMesh) == 0x000298, "Member 'AWeaponBag_C::StaticMesh' has a wrong offset!");
-static_assert(offsetof(AWeaponBag_C, DefaultSceneRoot) == 0x0002A0, "Member 'AWeaponBag_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AWeaponBag_C, OwningPlayer) == 0x0002A8, "Member 'AWeaponBag_C::OwningPlayer' has a wrong offset!");
+DUMPER7_ASSERTS_AWeaponBag_C;
 
 }
 

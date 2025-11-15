@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ShopItem_Equipment_Base_C">();
+		BP_STATIC_CLASS_IMPL("ShopItem_Equipment_Base_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ShopItem_Equipment_Base_C")
 	}
 	static class AShopItem_Equipment_Base_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AShopItem_Equipment_Base_C>();
 	}
 };
-static_assert(alignof(AShopItem_Equipment_Base_C) == 0x000008, "Wrong alignment on AShopItem_Equipment_Base_C");
-static_assert(sizeof(AShopItem_Equipment_Base_C) == 0x000278, "Wrong size on AShopItem_Equipment_Base_C");
-static_assert(offsetof(AShopItem_Equipment_Base_C, EquipmentBP) == 0x000270, "Member 'AShopItem_Equipment_Base_C::EquipmentBP' has a wrong offset!");
+DUMPER7_ASSERTS_AShopItem_Equipment_Base_C;
 
 }
 

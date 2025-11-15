@@ -54,15 +54,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AnalyticsBlueprintLibrary">();
+		STATIC_CLASS_IMPL("AnalyticsBlueprintLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnalyticsBlueprintLibrary")
 	}
 	static class UAnalyticsBlueprintLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnalyticsBlueprintLibrary>();
 	}
 };
-static_assert(alignof(UAnalyticsBlueprintLibrary) == 0x000008, "Wrong alignment on UAnalyticsBlueprintLibrary");
-static_assert(sizeof(UAnalyticsBlueprintLibrary) == 0x000028, "Wrong size on UAnalyticsBlueprintLibrary");
+DUMPER7_ASSERTS_UAnalyticsBlueprintLibrary;
 
 }
 

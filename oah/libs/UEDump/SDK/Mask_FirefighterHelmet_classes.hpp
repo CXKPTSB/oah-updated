@@ -27,17 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Mask_FirefighterHelmet_C">();
+		BP_STATIC_CLASS_IMPL("Mask_FirefighterHelmet_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Mask_FirefighterHelmet_C")
 	}
 	static class AMask_FirefighterHelmet_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMask_FirefighterHelmet_C>();
 	}
 };
-static_assert(alignof(AMask_FirefighterHelmet_C) == 0x000008, "Wrong alignment on AMask_FirefighterHelmet_C");
-static_assert(sizeof(AMask_FirefighterHelmet_C) == 0x000240, "Wrong size on AMask_FirefighterHelmet_C");
-static_assert(offsetof(AMask_FirefighterHelmet_C, ParticleSystem1) == 0x000230, "Member 'AMask_FirefighterHelmet_C::ParticleSystem1' has a wrong offset!");
-static_assert(offsetof(AMask_FirefighterHelmet_C, ParticleSystem) == 0x000238, "Member 'AMask_FirefighterHelmet_C::ParticleSystem' has a wrong offset!");
+DUMPER7_ASSERTS_AMask_FirefighterHelmet_C;
 
 }
 

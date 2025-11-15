@@ -40,7 +40,7 @@ void UMapSelectUI_C::ExecuteUbergraph_MapSelectUI(int32 EntryPoint)
 // Function MapSelectUI.MapSelectUI_C.OnSteamInventoryUpdated
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<struct FSteamItemDetails>        Items                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const TArray<struct FSteamItemDetails>& Items                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
 void UMapSelectUI_C::OnSteamInventoryUpdated(const TArray<struct FSteamItemDetails>& Items)
 {
@@ -60,7 +60,7 @@ void UMapSelectUI_C::OnSteamInventoryUpdated(const TArray<struct FSteamItemDetai
 // Function MapSelectUI.MapSelectUI_C.RefreshOnInventory
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FSteamInventoryFullUpdate        Data                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+// const struct FSteamInventoryFullUpdate& Data                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 
 void UMapSelectUI_C::RefreshOnInventory(const struct FSteamInventoryFullUpdate& Data)
 {
@@ -80,7 +80,7 @@ void UMapSelectUI_C::RefreshOnInventory(const struct FSteamInventoryFullUpdate& 
 // Function MapSelectUI.MapSelectUI_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 // float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UMapSelectUI_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
@@ -324,7 +324,7 @@ void UMapSelectUI_C::Remove()
 // Function MapSelectUI.MapSelectUI_C.UpdateWhenResultIsFinished
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FSteamInventoryResult            Result                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+// const struct FSteamInventoryResult&     Result                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 
 void UMapSelectUI_C::UpdateWhenResultIsFinished(const struct FSteamInventoryResult& Result)
 {
@@ -627,7 +627,7 @@ class FText UMapSelectUI_C::GetText_4()
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UClass*                           Map                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Price                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Price                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UMapSelectUI_C::Get_Map_Coin_Price(class UClass* Map, int32* Price)
 {
@@ -650,7 +650,7 @@ void UMapSelectUI_C::Get_Map_Coin_Price(class UClass* Map, int32* Price)
 // Function MapSelectUI.MapSelectUI_C.OnGetSteamInventoryItems
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<struct FSteamItemDetails>        Items                                                  (Parm, OutParm)
+// TArray<struct FSteamItemDetails>*       Items                                                  (Parm, OutParm)
 
 void UMapSelectUI_C::OnGetSteamInventoryItems(TArray<struct FSteamItemDetails>* Items)
 {

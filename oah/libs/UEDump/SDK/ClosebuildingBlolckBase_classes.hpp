@@ -38,23 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ClosebuildingBlolckBase_C">();
+		BP_STATIC_CLASS_IMPL("ClosebuildingBlolckBase_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ClosebuildingBlolckBase_C")
 	}
 	static class AClosebuildingBlolckBase_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AClosebuildingBlolckBase_C>();
 	}
 };
-static_assert(alignof(AClosebuildingBlolckBase_C) == 0x000008, "Wrong alignment on AClosebuildingBlolckBase_C");
-static_assert(sizeof(AClosebuildingBlolckBase_C) == 0x000278, "Wrong size on AClosebuildingBlolckBase_C");
-static_assert(offsetof(AClosebuildingBlolckBase_C, ChildActor1) == 0x000220, "Member 'AClosebuildingBlolckBase_C::ChildActor1' has a wrong offset!");
-static_assert(offsetof(AClosebuildingBlolckBase_C, ChildActor) == 0x000228, "Member 'AClosebuildingBlolckBase_C::ChildActor' has a wrong offset!");
-static_assert(offsetof(AClosebuildingBlolckBase_C, DefaultSceneRoot) == 0x000230, "Member 'AClosebuildingBlolckBase_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AClosebuildingBlolckBase_C, Random_Stream) == 0x000238, "Member 'AClosebuildingBlolckBase_C::Random_Stream' has a wrong offset!");
-static_assert(offsetof(AClosebuildingBlolckBase_C, Floors) == 0x000240, "Member 'AClosebuildingBlolckBase_C::Floors' has a wrong offset!");
-static_assert(offsetof(AClosebuildingBlolckBase_C, Walls) == 0x000248, "Member 'AClosebuildingBlolckBase_C::Walls' has a wrong offset!");
-static_assert(offsetof(AClosebuildingBlolckBase_C, Material) == 0x000258, "Member 'AClosebuildingBlolckBase_C::Material' has a wrong offset!");
-static_assert(offsetof(AClosebuildingBlolckBase_C, StaticMesh) == 0x000268, "Member 'AClosebuildingBlolckBase_C::StaticMesh' has a wrong offset!");
+DUMPER7_ASSERTS_AClosebuildingBlolckBase_C;
 
 }
 

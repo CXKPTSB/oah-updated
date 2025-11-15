@@ -32,17 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Skill_GuardDodger_Tier1_C">();
+		BP_STATIC_CLASS_IMPL("Skill_GuardDodger_Tier1_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Skill_GuardDodger_Tier1_C")
 	}
 	static class USkill_GuardDodger_Tier1_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USkill_GuardDodger_Tier1_C>();
 	}
 };
-static_assert(alignof(USkill_GuardDodger_Tier1_C) == 0x000008, "Wrong alignment on USkill_GuardDodger_Tier1_C");
-static_assert(sizeof(USkill_GuardDodger_Tier1_C) == 0x0000E0, "Wrong size on USkill_GuardDodger_Tier1_C");
-static_assert(offsetof(USkill_GuardDodger_Tier1_C, UberGraphFrame_Skill_GuardDodger_Tier1_C) == 0x0000D0, "Member 'USkill_GuardDodger_Tier1_C::UberGraphFrame_Skill_GuardDodger_Tier1_C' has a wrong offset!");
-static_assert(offsetof(USkill_GuardDodger_Tier1_C, Added_Guard_Spot_Time_) == 0x0000D8, "Member 'USkill_GuardDodger_Tier1_C::Added_Guard_Spot_Time_' has a wrong offset!");
+DUMPER7_ASSERTS_USkill_GuardDodger_Tier1_C;
 
 }
 

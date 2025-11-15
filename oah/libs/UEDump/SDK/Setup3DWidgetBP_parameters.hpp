@@ -40,25 +40,7 @@ public:
 	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Setup3DWidgetBP_C_ExecuteUbergraph_Setup3DWidgetBP) == 0x000008, "Wrong alignment on Setup3DWidgetBP_C_ExecuteUbergraph_Setup3DWidgetBP");
-static_assert(sizeof(Setup3DWidgetBP_C_ExecuteUbergraph_Setup3DWidgetBP) == 0x000080, "Wrong size on Setup3DWidgetBP_C_ExecuteUbergraph_Setup3DWidgetBP");
-static_assert(offsetof(Setup3DWidgetBP_C_ExecuteUbergraph_Setup3DWidgetBP, EntryPoint) == 0x000000, "Member 'Setup3DWidgetBP_C_ExecuteUbergraph_Setup3DWidgetBP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Setup3DWidgetBP_C_ExecuteUbergraph_Setup3DWidgetBP, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'Setup3DWidgetBP_C_ExecuteUbergraph_Setup3DWidgetBP::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(Setup3DWidgetBP_C_ExecuteUbergraph_Setup3DWidgetBP, Temp_object_Variable) == 0x000008, "Member 'Setup3DWidgetBP_C_ExecuteUbergraph_Setup3DWidgetBP::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(Setup3DWidgetBP_C_ExecuteUbergraph_Setup3DWidgetBP, CallFunc_Add_IntInt_ReturnValue) == 0x000018, "Member 'Setup3DWidgetBP_C_ExecuteUbergraph_Setup3DWidgetBP::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Setup3DWidgetBP_C_ExecuteUbergraph_Setup3DWidgetBP, Temp_int_Array_Index_Variable) == 0x00001C, "Member 'Setup3DWidgetBP_C_ExecuteUbergraph_Setup3DWidgetBP::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(Setup3DWidgetBP_C_ExecuteUbergraph_Setup3DWidgetBP, CallFunc_Create_ReturnValue) == 0x000020, "Member 'Setup3DWidgetBP_C_ExecuteUbergraph_Setup3DWidgetBP::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Setup3DWidgetBP_C_ExecuteUbergraph_Setup3DWidgetBP, K2Node_CustomEvent_Map) == 0x000028, "Member 'Setup3DWidgetBP_C_ExecuteUbergraph_Setup3DWidgetBP::K2Node_CustomEvent_Map' has a wrong offset!");
-static_assert(offsetof(Setup3DWidgetBP_C_ExecuteUbergraph_Setup3DWidgetBP, K2Node_CustomEvent_MenuPlayer) == 0x000030, "Member 'Setup3DWidgetBP_C_ExecuteUbergraph_Setup3DWidgetBP::K2Node_CustomEvent_MenuPlayer' has a wrong offset!");
-static_assert(offsetof(Setup3DWidgetBP_C_ExecuteUbergraph_Setup3DWidgetBP, K2Node_CustomEvent_MainMenuUI) == 0x000038, "Member 'Setup3DWidgetBP_C_ExecuteUbergraph_Setup3DWidgetBP::K2Node_CustomEvent_MainMenuUI' has a wrong offset!");
-static_assert(offsetof(Setup3DWidgetBP_C_ExecuteUbergraph_Setup3DWidgetBP, CallFunc_IsValid_ReturnValue) == 0x000040, "Member 'Setup3DWidgetBP_C_ExecuteUbergraph_Setup3DWidgetBP::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Setup3DWidgetBP_C_ExecuteUbergraph_Setup3DWidgetBP, CallFunc_IsValidClass_ReturnValue) == 0x000041, "Member 'Setup3DWidgetBP_C_ExecuteUbergraph_Setup3DWidgetBP::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Setup3DWidgetBP_C_ExecuteUbergraph_Setup3DWidgetBP, CallFunc_Array_Get_Item) == 0x000048, "Member 'Setup3DWidgetBP_C_ExecuteUbergraph_Setup3DWidgetBP::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Setup3DWidgetBP_C_ExecuteUbergraph_Setup3DWidgetBP, K2Node_MakeArray_Array) == 0x000050, "Member 'Setup3DWidgetBP_C_ExecuteUbergraph_Setup3DWidgetBP::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(Setup3DWidgetBP_C_ExecuteUbergraph_Setup3DWidgetBP, CallFunc_Array_Length_ReturnValue) == 0x000060, "Member 'Setup3DWidgetBP_C_ExecuteUbergraph_Setup3DWidgetBP::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Setup3DWidgetBP_C_ExecuteUbergraph_Setup3DWidgetBP, CallFunc_Array_Get_Item_1) == 0x000068, "Member 'Setup3DWidgetBP_C_ExecuteUbergraph_Setup3DWidgetBP::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(Setup3DWidgetBP_C_ExecuteUbergraph_Setup3DWidgetBP, CallFunc_Less_IntInt_ReturnValue) == 0x000070, "Member 'Setup3DWidgetBP_C_ExecuteUbergraph_Setup3DWidgetBP::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Setup3DWidgetBP_C_ExecuteUbergraph_Setup3DWidgetBP, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000078, "Member 'Setup3DWidgetBP_C_ExecuteUbergraph_Setup3DWidgetBP::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_Setup3DWidgetBP_C_ExecuteUbergraph_Setup3DWidgetBP;
 
 // Function Setup3DWidgetBP.Setup3DWidgetBP_C.SetupWidget
 // 0x0018 (0x0018 - 0x0000)
@@ -69,11 +51,7 @@ public:
 	class AMainMenuPlayer_C*                      MenuPlayer;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMainMenuUI_C*                          MainMenuUI;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Setup3DWidgetBP_C_SetupWidget) == 0x000008, "Wrong alignment on Setup3DWidgetBP_C_SetupWidget");
-static_assert(sizeof(Setup3DWidgetBP_C_SetupWidget) == 0x000018, "Wrong size on Setup3DWidgetBP_C_SetupWidget");
-static_assert(offsetof(Setup3DWidgetBP_C_SetupWidget, Map) == 0x000000, "Member 'Setup3DWidgetBP_C_SetupWidget::Map' has a wrong offset!");
-static_assert(offsetof(Setup3DWidgetBP_C_SetupWidget, MenuPlayer) == 0x000008, "Member 'Setup3DWidgetBP_C_SetupWidget::MenuPlayer' has a wrong offset!");
-static_assert(offsetof(Setup3DWidgetBP_C_SetupWidget, MainMenuUI) == 0x000010, "Member 'Setup3DWidgetBP_C_SetupWidget::MainMenuUI' has a wrong offset!");
+DUMPER7_ASSERTS_Setup3DWidgetBP_C_SetupWidget;
 
 }
 

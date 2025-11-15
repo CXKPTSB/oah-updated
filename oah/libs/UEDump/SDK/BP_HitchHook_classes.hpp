@@ -30,20 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_HitchHook_C">();
+		BP_STATIC_CLASS_IMPL("BP_HitchHook_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_HitchHook_C")
 	}
 	static class ABP_HitchHook_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_HitchHook_C>();
 	}
 };
-static_assert(alignof(ABP_HitchHook_C) == 0x000008, "Wrong alignment on ABP_HitchHook_C");
-static_assert(sizeof(ABP_HitchHook_C) == 0x000260, "Wrong size on ABP_HitchHook_C");
-static_assert(offsetof(ABP_HitchHook_C, HighlightWhenHolding) == 0x000230, "Member 'ABP_HitchHook_C::HighlightWhenHolding' has a wrong offset!");
-static_assert(offsetof(ABP_HitchHook_C, HighlightInRangeComponent) == 0x000238, "Member 'ABP_HitchHook_C::HighlightInRangeComponent' has a wrong offset!");
-static_assert(offsetof(ABP_HitchHook_C, PickupItemComponent) == 0x000240, "Member 'ABP_HitchHook_C::PickupItemComponent' has a wrong offset!");
-static_assert(offsetof(ABP_HitchHook_C, SmoothSync) == 0x000248, "Member 'ABP_HitchHook_C::SmoothSync' has a wrong offset!");
-static_assert(offsetof(ABP_HitchHook_C, OnHooked) == 0x000250, "Member 'ABP_HitchHook_C::OnHooked' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_HitchHook_C;
 
 }
 

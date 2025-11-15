@@ -33,17 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"JoiningGameUI_C">();
+		BP_STATIC_CLASS_IMPL("JoiningGameUI_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"JoiningGameUI_C")
 	}
 	static class UJoiningGameUI_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UJoiningGameUI_C>();
 	}
 };
-static_assert(alignof(UJoiningGameUI_C) == 0x000008, "Wrong alignment on UJoiningGameUI_C");
-static_assert(sizeof(UJoiningGameUI_C) == 0x000270, "Wrong size on UJoiningGameUI_C");
-static_assert(offsetof(UJoiningGameUI_C, UberGraphFrame) == 0x000260, "Member 'UJoiningGameUI_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UJoiningGameUI_C, Loadout_Button) == 0x000268, "Member 'UJoiningGameUI_C::Loadout_Button' has a wrong offset!");
+DUMPER7_ASSERTS_UJoiningGameUI_C;
 
 }
 

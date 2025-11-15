@@ -23,15 +23,18 @@ class USkill_Sabotager_Tier2_C final : public USkill_Sabotager_Tier1_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Skill_Sabotager_Tier2_C">();
+		BP_STATIC_CLASS_IMPL("Skill_Sabotager_Tier2_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Skill_Sabotager_Tier2_C")
 	}
 	static class USkill_Sabotager_Tier2_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USkill_Sabotager_Tier2_C>();
 	}
 };
-static_assert(alignof(USkill_Sabotager_Tier2_C) == 0x000008, "Wrong alignment on USkill_Sabotager_Tier2_C");
-static_assert(sizeof(USkill_Sabotager_Tier2_C) == 0x0000E0, "Wrong size on USkill_Sabotager_Tier2_C");
+DUMPER7_ASSERTS_USkill_Sabotager_Tier2_C;
 
 }
 

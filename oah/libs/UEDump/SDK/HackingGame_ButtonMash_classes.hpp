@@ -38,21 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HackingGame_ButtonMash_C">();
+		BP_STATIC_CLASS_IMPL("HackingGame_ButtonMash_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HackingGame_ButtonMash_C")
 	}
 	static class UHackingGame_ButtonMash_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHackingGame_ButtonMash_C>();
 	}
 };
-static_assert(alignof(UHackingGame_ButtonMash_C) == 0x000008, "Wrong alignment on UHackingGame_ButtonMash_C");
-static_assert(sizeof(UHackingGame_ButtonMash_C) == 0x000298, "Wrong size on UHackingGame_ButtonMash_C");
-static_assert(offsetof(UHackingGame_ButtonMash_C, UberGraphFrame) == 0x000268, "Member 'UHackingGame_ButtonMash_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UHackingGame_ButtonMash_C, BreakWall) == 0x000270, "Member 'UHackingGame_ButtonMash_C::BreakWall' has a wrong offset!");
-static_assert(offsetof(UHackingGame_ButtonMash_C, Button_54) == 0x000278, "Member 'UHackingGame_ButtonMash_C::Button_54' has a wrong offset!");
-static_assert(offsetof(UHackingGame_ButtonMash_C, CrackImage) == 0x000280, "Member 'UHackingGame_ButtonMash_C::CrackImage' has a wrong offset!");
-static_assert(offsetof(UHackingGame_ButtonMash_C, ProgressBar_0) == 0x000288, "Member 'UHackingGame_ButtonMash_C::ProgressBar_0' has a wrong offset!");
-static_assert(offsetof(UHackingGame_ButtonMash_C, Progress) == 0x000290, "Member 'UHackingGame_ButtonMash_C::Progress' has a wrong offset!");
+DUMPER7_ASSERTS_UHackingGame_ButtonMash_C;
 
 }
 

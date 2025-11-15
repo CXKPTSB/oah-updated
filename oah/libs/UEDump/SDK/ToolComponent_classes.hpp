@@ -45,24 +45,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ToolComponent_C">();
+		BP_STATIC_CLASS_IMPL("ToolComponent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ToolComponent_C")
 	}
 	static class UToolComponent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UToolComponent_C>();
 	}
 };
-static_assert(alignof(UToolComponent_C) == 0x000008, "Wrong alignment on UToolComponent_C");
-static_assert(sizeof(UToolComponent_C) == 0x0000F8, "Wrong size on UToolComponent_C");
-static_assert(offsetof(UToolComponent_C, UberGraphFrame) == 0x0000B0, "Member 'UToolComponent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UToolComponent_C, ActivateTool) == 0x0000B8, "Member 'UToolComponent_C::ActivateTool' has a wrong offset!");
-static_assert(offsetof(UToolComponent_C, DeactivateTool) == 0x0000C8, "Member 'UToolComponent_C::DeactivateTool' has a wrong offset!");
-static_assert(offsetof(UToolComponent_C, ToolSpot) == 0x0000D8, "Member 'UToolComponent_C::ToolSpot' has a wrong offset!");
-static_assert(offsetof(UToolComponent_C, DroppedWhenReleased_) == 0x0000E0, "Member 'UToolComponent_C::DroppedWhenReleased_' has a wrong offset!");
-static_assert(offsetof(UToolComponent_C, AutoActivateTool_) == 0x0000E1, "Member 'UToolComponent_C::AutoActivateTool_' has a wrong offset!");
-static_assert(offsetof(UToolComponent_C, ToolDamage) == 0x0000E4, "Member 'UToolComponent_C::ToolDamage' has a wrong offset!");
-static_assert(offsetof(UToolComponent_C, PickedUp_) == 0x0000E8, "Member 'UToolComponent_C::PickedUp_' has a wrong offset!");
-static_assert(offsetof(UToolComponent_C, ToolUI) == 0x0000F0, "Member 'UToolComponent_C::ToolUI' has a wrong offset!");
+DUMPER7_ASSERTS_UToolComponent_C;
 
 }
 

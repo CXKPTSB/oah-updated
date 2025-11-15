@@ -59,39 +59,7 @@ public:
 	uint8                                         Pad_284[0x4];                                      // 0x0284(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABulletCasing_C*                        CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x0288(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase) == 0x000010, "Wrong alignment on PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase");
-static_assert(sizeof(PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase) == 0x000290, "Wrong size on PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase");
-static_assert(offsetof(PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase, EntryPoint) == 0x000000, "Member 'PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase::EntryPoint' has a wrong offset!");
-static_assert(offsetof(PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase, CallFunc_GetForwardVector_ReturnValue) == 0x000004, "Member 'PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase::CallFunc_GetForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase, CallFunc_GetForwardVector_ReturnValue_1) == 0x000010, "Member 'PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase::CallFunc_GetForwardVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x00001C, "Member 'PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase, CallFunc_Multiply_VectorFloat_ReturnValue_1) == 0x000028, "Member 'PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase::CallFunc_Multiply_VectorFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase, CallFunc_MakeRotFromX_ReturnValue) == 0x000034, "Member 'PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase::CallFunc_MakeRotFromX_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase, CallFunc_K2_GetComponentToWorld_ReturnValue) == 0x000040, "Member 'PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase::CallFunc_K2_GetComponentToWorld_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase, K2Node_CustomEvent_Hit) == 0x000070, "Member 'PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase::K2Node_CustomEvent_Hit' has a wrong offset!");
-static_assert(offsetof(PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase, CallFunc_BreakTransform_Location) == 0x0000F8, "Member 'PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase::CallFunc_BreakTransform_Location' has a wrong offset!");
-static_assert(offsetof(PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase, CallFunc_BreakTransform_Rotation) == 0x000104, "Member 'PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase::CallFunc_BreakTransform_Rotation' has a wrong offset!");
-static_assert(offsetof(PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase, CallFunc_BreakTransform_Scale) == 0x000110, "Member 'PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase::CallFunc_BreakTransform_Scale' has a wrong offset!");
-static_assert(offsetof(PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase, CallFunc_Add_VectorVector_ReturnValue) == 0x00011C, "Member 'PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase, CallFunc_K2_GetComponentToWorld_ReturnValue_1) == 0x000130, "Member 'PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase::CallFunc_K2_GetComponentToWorld_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase, CallFunc_MakeTransform_ReturnValue) == 0x000160, "Member 'PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase, CallFunc_BreakTransform_Location_1) == 0x000190, "Member 'PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase::CallFunc_BreakTransform_Location_1' has a wrong offset!");
-static_assert(offsetof(PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase, CallFunc_BreakTransform_Rotation_1) == 0x00019C, "Member 'PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase::CallFunc_BreakTransform_Rotation_1' has a wrong offset!");
-static_assert(offsetof(PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase, CallFunc_BreakTransform_Scale_1) == 0x0001A8, "Member 'PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase::CallFunc_BreakTransform_Scale_1' has a wrong offset!");
-static_assert(offsetof(PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0001B8, "Member 'PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase, CallFunc_SpawnEmitterAttached_ReturnValue) == 0x0001C0, "Member 'PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase::CallFunc_SpawnEmitterAttached_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase, CallFunc_FinishSpawningActor_ReturnValue) == 0x0001C8, "Member 'PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase, CallFunc_K2_GetComponentToWorld_ReturnValue_2) == 0x0001D0, "Member 'PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase::CallFunc_K2_GetComponentToWorld_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase, CallFunc_GetParentActor_ReturnValue) == 0x000200, "Member 'PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase::CallFunc_GetParentActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase, CallFunc_BreakTransform_Location_2) == 0x000208, "Member 'PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase::CallFunc_BreakTransform_Location_2' has a wrong offset!");
-static_assert(offsetof(PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase, CallFunc_BreakTransform_Rotation_2) == 0x000214, "Member 'PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase::CallFunc_BreakTransform_Rotation_2' has a wrong offset!");
-static_assert(offsetof(PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase, CallFunc_BreakTransform_Scale_2) == 0x000220, "Member 'PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase::CallFunc_BreakTransform_Scale_2' has a wrong offset!");
-static_assert(offsetof(PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase, K2Node_DynamicCast_AsPawn) == 0x000230, "Member 'PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase::K2Node_DynamicCast_AsPawn' has a wrong offset!");
-static_assert(offsetof(PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase, K2Node_DynamicCast_bSuccess) == 0x000238, "Member 'PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase, CallFunc_MakeTransform_ReturnValue_1) == 0x000240, "Member 'PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase::CallFunc_MakeTransform_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x000270, "Member 'PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000278, "Member 'PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x000288, "Member 'PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_PoliceGunBase_C_ExecuteUbergraph_PoliceGunBase;
 
 // Function PoliceGunBase.PoliceGunBase_C.Shoot
 // 0x0088 (0x0088 - 0x0000)
@@ -100,9 +68,7 @@ struct PoliceGunBase_C_Shoot final
 public:
 	struct FHitResult                             Hit;                                               // 0x0000(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(PoliceGunBase_C_Shoot) == 0x000004, "Wrong alignment on PoliceGunBase_C_Shoot");
-static_assert(sizeof(PoliceGunBase_C_Shoot) == 0x000088, "Wrong size on PoliceGunBase_C_Shoot");
-static_assert(offsetof(PoliceGunBase_C_Shoot, Hit) == 0x000000, "Member 'PoliceGunBase_C_Shoot::Hit' has a wrong offset!");
+DUMPER7_ASSERTS_PoliceGunBase_C_Shoot;
 
 }
 

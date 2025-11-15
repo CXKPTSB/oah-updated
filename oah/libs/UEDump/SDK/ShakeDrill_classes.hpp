@@ -23,15 +23,18 @@ class UShakeDrill_C final : public UMatineeCameraShake
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ShakeDrill_C">();
+		BP_STATIC_CLASS_IMPL("ShakeDrill_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ShakeDrill_C")
 	}
 	static class UShakeDrill_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UShakeDrill_C>();
 	}
 };
-static_assert(alignof(UShakeDrill_C) == 0x000010, "Wrong alignment on UShakeDrill_C");
-static_assert(sizeof(UShakeDrill_C) == 0x0001B0, "Wrong size on UShakeDrill_C");
+DUMPER7_ASSERTS_UShakeDrill_C;
 
 }
 

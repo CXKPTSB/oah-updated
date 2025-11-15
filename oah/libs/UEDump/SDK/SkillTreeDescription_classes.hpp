@@ -40,57 +40,46 @@ public:
 	int32                                         Tier;                                              // 0x02C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	ESlateVisibility GetVisibility_2();
-	class FText GetText_5();
-	ESlateVisibility GetVisibility_1();
-	struct FSlateColor GetColorAndOpacity_0();
-	float GetPercent_0();
-	ESlateVisibility Get_StartResearchBox_Visibility_0();
-	ESlateVisibility Get_ResearchingBox_Visibility_0();
-	class FText GetText_4();
-	class FText GetText_3();
-	ESlateVisibility GetVisibility_0();
-	class FText GetText_2();
-	class FText GetText_1();
-	class FText GetText_0();
-	void Remove();
-	void RefreshInventory();
-	void RemoveloadoutCategory();
-	void ChangeCategory(EShopItemCategory Category);
-	void DragItemFromCategory(EShopItemCategory Category);
-	void CancelDrag();
-	void Construct();
-	void PreviewItem(class UClass* ItemInfo, int32 SalePrice);
-	void FindTier();
-	void BndEvt__SkillTreeDescription_CashBuyButton_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
 	void ExecuteUbergraph_SkillTreeDescription(int32 EntryPoint);
+	void BndEvt__SkillTreeDescription_CashBuyButton_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
+	void FindTier();
+	void PreviewItem(class UClass* ItemInfo, int32 SalePrice);
+	void Construct();
+	void CancelDrag();
+	void DragItemFromCategory(EShopItemCategory Category);
+	void ChangeCategory(EShopItemCategory Category);
+	void RemoveloadoutCategory();
+	void RefreshInventory();
+	void Remove();
+	class FText GetText_0();
+	class FText GetText_1();
+	class FText GetText_2();
+	ESlateVisibility GetVisibility_0();
+	class FText GetText_3();
+	class FText GetText_4();
+	ESlateVisibility Get_ResearchingBox_Visibility_0();
+	ESlateVisibility Get_StartResearchBox_Visibility_0();
+	float GetPercent_0();
+	struct FSlateColor GetColorAndOpacity_0();
+	ESlateVisibility GetVisibility_1();
+	class FText GetText_5();
+	ESlateVisibility GetVisibility_2();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SkillTreeDescription_C">();
+		BP_STATIC_CLASS_IMPL("SkillTreeDescription_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SkillTreeDescription_C")
 	}
 	static class USkillTreeDescription_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USkillTreeDescription_C>();
 	}
 };
-static_assert(alignof(USkillTreeDescription_C) == 0x000008, "Wrong alignment on USkillTreeDescription_C");
-static_assert(sizeof(USkillTreeDescription_C) == 0x0002D0, "Wrong size on USkillTreeDescription_C");
-static_assert(offsetof(USkillTreeDescription_C, UberGraphFrame) == 0x000260, "Member 'USkillTreeDescription_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USkillTreeDescription_C, CashBuyButton) == 0x000268, "Member 'USkillTreeDescription_C::CashBuyButton' has a wrong offset!");
-static_assert(offsetof(USkillTreeDescription_C, ProgressBar_106) == 0x000270, "Member 'USkillTreeDescription_C::ProgressBar_106' has a wrong offset!");
-static_assert(offsetof(USkillTreeDescription_C, ResearchingBox) == 0x000278, "Member 'USkillTreeDescription_C::ResearchingBox' has a wrong offset!");
-static_assert(offsetof(USkillTreeDescription_C, SkillTierBOx) == 0x000280, "Member 'USkillTreeDescription_C::SkillTierBOx' has a wrong offset!");
-static_assert(offsetof(USkillTreeDescription_C, StartResearchBox) == 0x000288, "Member 'USkillTreeDescription_C::StartResearchBox' has a wrong offset!");
-static_assert(offsetof(USkillTreeDescription_C, TextBlock_1) == 0x000290, "Member 'USkillTreeDescription_C::TextBlock_1' has a wrong offset!");
-static_assert(offsetof(USkillTreeDescription_C, TextBlock_2) == 0x000298, "Member 'USkillTreeDescription_C::TextBlock_2' has a wrong offset!");
-static_assert(offsetof(USkillTreeDescription_C, TextBlock_118) == 0x0002A0, "Member 'USkillTreeDescription_C::TextBlock_118' has a wrong offset!");
-static_assert(offsetof(USkillTreeDescription_C, TextBlock_150) == 0x0002A8, "Member 'USkillTreeDescription_C::TextBlock_150' has a wrong offset!");
-static_assert(offsetof(USkillTreeDescription_C, VerticalBox_0) == 0x0002B0, "Member 'USkillTreeDescription_C::VerticalBox_0' has a wrong offset!");
-static_assert(offsetof(USkillTreeDescription_C, SkillInfo) == 0x0002B8, "Member 'USkillTreeDescription_C::SkillInfo' has a wrong offset!");
-static_assert(offsetof(USkillTreeDescription_C, As_Robber_Controller) == 0x0002C0, "Member 'USkillTreeDescription_C::As_Robber_Controller' has a wrong offset!");
-static_assert(offsetof(USkillTreeDescription_C, Tier) == 0x0002C8, "Member 'USkillTreeDescription_C::Tier' has a wrong offset!");
+DUMPER7_ASSERTS_USkillTreeDescription_C;
 
 }
 

@@ -63,38 +63,7 @@ public:
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue_1;        // 0x0200(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_HasAuthority_ReturnValue_1;               // 0x0208(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo) == 0x000008, "Wrong alignment on PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo");
-static_assert(sizeof(PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo) == 0x000210, "Wrong size on PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo");
-static_assert(offsetof(PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo, EntryPoint) == 0x000000, "Member 'PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo::EntryPoint' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo, CallFunc_GetUniqueNetIDFromPlayerState_UniqueNetId) == 0x000008, "Member 'PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo::CallFunc_GetUniqueNetIDFromPlayerState_UniqueNetId' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo, CallFunc_OpenSteamUserOverlay_ReturnValue) == 0x000028, "Member 'PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo::CallFunc_OpenSteamUserOverlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo, Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable) == 0x000029, "Member 'PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo::Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo, Temp_bool_Has_Been_Initd_Variable) == 0x00002A, "Member 'PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo, CallFunc_GetOwningPlayer_ReturnValue) == 0x000030, "Member 'PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo, CallFunc_IsValid_ReturnValue) == 0x000038, "Member 'PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x00003C, "Member 'PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo, CallFunc_ProjectWorldLocationToWidgetPosition_ScreenPosition) == 0x000048, "Member 'PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo::CallFunc_ProjectWorldLocationToWidgetPosition_ScreenPosition' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo, CallFunc_ProjectWorldLocationToWidgetPosition_ReturnValue) == 0x000050, "Member 'PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo::CallFunc_ProjectWorldLocationToWidgetPosition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo, K2Node_Event_MyGeometry_1) == 0x000054, "Member 'PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo::K2Node_Event_MyGeometry_1' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo, K2Node_Event_InDeltaTime) == 0x00008C, "Member 'PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo, CallFunc_GetUniqueNetIDFromPlayerState_UniqueNetId_1) == 0x000090, "Member 'PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo::CallFunc_GetUniqueNetIDFromPlayerState_UniqueNetId_1' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo, CallFunc_IsValid_ReturnValue_1) == 0x0000B0, "Member 'PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo, CallFunc_GetSteamFriendAvatar_Result) == 0x0000B1, "Member 'PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo::CallFunc_GetSteamFriendAvatar_Result' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo, CallFunc_GetSteamFriendAvatar_ReturnValue) == 0x0000B8, "Member 'PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo::CallFunc_GetSteamFriendAvatar_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo, K2Node_SwitchEnum_CmpSuccess) == 0x0000C0, "Member 'PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo, Temp_bool_IsClosed_Variable) == 0x0000C1, "Member 'PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo, K2Node_Event_MyGeometry) == 0x0000C4, "Member 'PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo, K2Node_Event_MouseEvent_1) == 0x000100, "Member 'PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo::K2Node_Event_MouseEvent_1' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo, K2Node_Event_MouseEvent) == 0x000170, "Member 'PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo::K2Node_Event_MouseEvent' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo, CallFunc_PlayAnimation_ReturnValue) == 0x0001E0, "Member 'PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo, CallFunc_PlayAnimation_ReturnValue_1) == 0x0001E8, "Member 'PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo, CallFunc_GetPlayerController_ReturnValue) == 0x0001F0, "Member 'PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo, CallFunc_IsLocallyControlled_ReturnValue) == 0x0001F8, "Member 'PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo::CallFunc_IsLocallyControlled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo, CallFunc_HasAuthority_ReturnValue) == 0x0001F9, "Member 'PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo, CallFunc_Not_PreBool_ReturnValue) == 0x0001FA, "Member 'PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo, CallFunc_BooleanAND_ReturnValue) == 0x0001FB, "Member 'PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo, CallFunc_GetPlayerController_ReturnValue_1) == 0x000200, "Member 'PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo, CallFunc_HasAuthority_ReturnValue_1) == 0x000208, "Member 'PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo::CallFunc_HasAuthority_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerNameInfo_C_ExecuteUbergraph_PlayerNameInfo;
 
 // Function PlayerNameInfo.PlayerNameInfo_C.OnMouseLeave
 // 0x0070 (0x0070 - 0x0000)
@@ -103,9 +72,7 @@ struct PlayerNameInfo_C_OnMouseLeave final
 public:
 	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PlayerNameInfo_C_OnMouseLeave) == 0x000008, "Wrong alignment on PlayerNameInfo_C_OnMouseLeave");
-static_assert(sizeof(PlayerNameInfo_C_OnMouseLeave) == 0x000070, "Wrong size on PlayerNameInfo_C_OnMouseLeave");
-static_assert(offsetof(PlayerNameInfo_C_OnMouseLeave, MouseEvent) == 0x000000, "Member 'PlayerNameInfo_C_OnMouseLeave::MouseEvent' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerNameInfo_C_OnMouseLeave;
 
 // Function PlayerNameInfo.PlayerNameInfo_C.OnMouseEnter
 // 0x00A8 (0x00A8 - 0x0000)
@@ -115,10 +82,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PlayerNameInfo_C_OnMouseEnter) == 0x000008, "Wrong alignment on PlayerNameInfo_C_OnMouseEnter");
-static_assert(sizeof(PlayerNameInfo_C_OnMouseEnter) == 0x0000A8, "Wrong size on PlayerNameInfo_C_OnMouseEnter");
-static_assert(offsetof(PlayerNameInfo_C_OnMouseEnter, MyGeometry) == 0x000000, "Member 'PlayerNameInfo_C_OnMouseEnter::MyGeometry' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_OnMouseEnter, MouseEvent) == 0x000038, "Member 'PlayerNameInfo_C_OnMouseEnter::MouseEvent' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerNameInfo_C_OnMouseEnter;
 
 // Function PlayerNameInfo.PlayerNameInfo_C.Tick
 // 0x003C (0x003C - 0x0000)
@@ -128,10 +92,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerNameInfo_C_Tick) == 0x000004, "Wrong alignment on PlayerNameInfo_C_Tick");
-static_assert(sizeof(PlayerNameInfo_C_Tick) == 0x00003C, "Wrong size on PlayerNameInfo_C_Tick");
-static_assert(offsetof(PlayerNameInfo_C_Tick, MyGeometry) == 0x000000, "Member 'PlayerNameInfo_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_Tick, InDeltaTime) == 0x000038, "Member 'PlayerNameInfo_C_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerNameInfo_C_Tick;
 
 // Function PlayerNameInfo.PlayerNameInfo_C.GetText_0
 // 0x0048 (0x0048 - 0x0000)
@@ -145,13 +106,7 @@ public:
 	class FString                                 CallFunc_GetPlayerName_ReturnValue;                // 0x0020(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0030(0x0018)()
 };
-static_assert(alignof(PlayerNameInfo_C_GetText_0) == 0x000008, "Wrong alignment on PlayerNameInfo_C_GetText_0");
-static_assert(sizeof(PlayerNameInfo_C_GetText_0) == 0x000048, "Wrong size on PlayerNameInfo_C_GetText_0");
-static_assert(offsetof(PlayerNameInfo_C_GetText_0, ReturnValue) == 0x000000, "Member 'PlayerNameInfo_C_GetText_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_GetText_0, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'PlayerNameInfo_C_GetText_0::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_GetText_0, CallFunc_IsValid_ReturnValue_1) == 0x000019, "Member 'PlayerNameInfo_C_GetText_0::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_GetText_0, CallFunc_GetPlayerName_ReturnValue) == 0x000020, "Member 'PlayerNameInfo_C_GetText_0::CallFunc_GetPlayerName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_GetText_0, CallFunc_Conv_StringToText_ReturnValue) == 0x000030, "Member 'PlayerNameInfo_C_GetText_0::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerNameInfo_C_GetText_0;
 
 // Function PlayerNameInfo.PlayerNameInfo_C.GetBrush_0
 // 0x0110 (0x0110 - 0x0000)
@@ -161,10 +116,7 @@ public:
 	struct FSlateBrush                            ReturnValue;                                       // 0x0000(0x0088)(Parm, OutParm, ReturnParm)
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0088(0x0088)()
 };
-static_assert(alignof(PlayerNameInfo_C_GetBrush_0) == 0x000008, "Wrong alignment on PlayerNameInfo_C_GetBrush_0");
-static_assert(sizeof(PlayerNameInfo_C_GetBrush_0) == 0x000110, "Wrong size on PlayerNameInfo_C_GetBrush_0");
-static_assert(offsetof(PlayerNameInfo_C_GetBrush_0, ReturnValue) == 0x000000, "Member 'PlayerNameInfo_C_GetBrush_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_GetBrush_0, K2Node_MakeStruct_SlateBrush) == 0x000088, "Member 'PlayerNameInfo_C_GetBrush_0::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerNameInfo_C_GetBrush_0;
 
 // Function PlayerNameInfo.PlayerNameInfo_C.GetColorAndOpacity_0
 // 0x0078 (0x0078 - 0x0000)
@@ -175,11 +127,7 @@ public:
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0028(0x0028)()
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x0050(0x0028)()
 };
-static_assert(alignof(PlayerNameInfo_C_GetColorAndOpacity_0) == 0x000008, "Wrong alignment on PlayerNameInfo_C_GetColorAndOpacity_0");
-static_assert(sizeof(PlayerNameInfo_C_GetColorAndOpacity_0) == 0x000078, "Wrong size on PlayerNameInfo_C_GetColorAndOpacity_0");
-static_assert(offsetof(PlayerNameInfo_C_GetColorAndOpacity_0, ReturnValue) == 0x000000, "Member 'PlayerNameInfo_C_GetColorAndOpacity_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_GetColorAndOpacity_0, K2Node_MakeStruct_SlateColor) == 0x000028, "Member 'PlayerNameInfo_C_GetColorAndOpacity_0::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_GetColorAndOpacity_0, K2Node_MakeStruct_SlateColor_1) == 0x000050, "Member 'PlayerNameInfo_C_GetColorAndOpacity_0::K2Node_MakeStruct_SlateColor_1' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerNameInfo_C_GetColorAndOpacity_0;
 
 // Function PlayerNameInfo.PlayerNameInfo_C.GetText_1
 // 0x0030 (0x0030 - 0x0000)
@@ -189,10 +137,7 @@ public:
 	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0018(0x0018)()
 };
-static_assert(alignof(PlayerNameInfo_C_GetText_1) == 0x000008, "Wrong alignment on PlayerNameInfo_C_GetText_1");
-static_assert(sizeof(PlayerNameInfo_C_GetText_1) == 0x000030, "Wrong size on PlayerNameInfo_C_GetText_1");
-static_assert(offsetof(PlayerNameInfo_C_GetText_1, ReturnValue) == 0x000000, "Member 'PlayerNameInfo_C_GetText_1::ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_GetText_1, CallFunc_Conv_IntToText_ReturnValue) == 0x000018, "Member 'PlayerNameInfo_C_GetText_1::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerNameInfo_C_GetText_1;
 
 // Function PlayerNameInfo.PlayerNameInfo_C.GetText_2
 // 0x0068 (0x0068 - 0x0000)
@@ -207,14 +152,7 @@ public:
 	class FString                                 CallFunc_SelectString_ReturnValue;                 // 0x0040(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0050(0x0018)()
 };
-static_assert(alignof(PlayerNameInfo_C_GetText_2) == 0x000008, "Wrong alignment on PlayerNameInfo_C_GetText_2");
-static_assert(sizeof(PlayerNameInfo_C_GetText_2) == 0x000068, "Wrong size on PlayerNameInfo_C_GetText_2");
-static_assert(offsetof(PlayerNameInfo_C_GetText_2, ReturnValue) == 0x000000, "Member 'PlayerNameInfo_C_GetText_2::ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_GetText_2, CallFunc_ToUpper_ReturnValue) == 0x000018, "Member 'PlayerNameInfo_C_GetText_2::CallFunc_ToUpper_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_GetText_2, CallFunc_EqualEqual_StrStr_ReturnValue) == 0x000028, "Member 'PlayerNameInfo_C_GetText_2::CallFunc_EqualEqual_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_GetText_2, CallFunc_Concat_StrStr_ReturnValue) == 0x000030, "Member 'PlayerNameInfo_C_GetText_2::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_GetText_2, CallFunc_SelectString_ReturnValue) == 0x000040, "Member 'PlayerNameInfo_C_GetText_2::CallFunc_SelectString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_GetText_2, CallFunc_Conv_StringToText_ReturnValue) == 0x000050, "Member 'PlayerNameInfo_C_GetText_2::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerNameInfo_C_GetText_2;
 
 // Function PlayerNameInfo.PlayerNameInfo_C.GetVisibility_0
 // 0x0002 (0x0002 - 0x0000)
@@ -224,10 +162,7 @@ public:
 	ESlateVisibility                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerNameInfo_C_GetVisibility_0) == 0x000001, "Wrong alignment on PlayerNameInfo_C_GetVisibility_0");
-static_assert(sizeof(PlayerNameInfo_C_GetVisibility_0) == 0x000002, "Wrong size on PlayerNameInfo_C_GetVisibility_0");
-static_assert(offsetof(PlayerNameInfo_C_GetVisibility_0, ReturnValue) == 0x000000, "Member 'PlayerNameInfo_C_GetVisibility_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerNameInfo_C_GetVisibility_0, CallFunc_Greater_IntInt_ReturnValue) == 0x000001, "Member 'PlayerNameInfo_C_GetVisibility_0::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerNameInfo_C_GetVisibility_0;
 
 }
 

@@ -30,20 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Mag_Revolver_C">();
+		BP_STATIC_CLASS_IMPL("Mag_Revolver_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Mag_Revolver_C")
 	}
 	static class AMag_Revolver_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMag_Revolver_C>();
 	}
 };
-static_assert(alignof(AMag_Revolver_C) == 0x000008, "Wrong alignment on AMag_Revolver_C");
-static_assert(sizeof(AMag_Revolver_C) == 0x000258, "Wrong size on AMag_Revolver_C");
-static_assert(offsetof(AMag_Revolver_C, ChildActor4) == 0x000230, "Member 'AMag_Revolver_C::ChildActor4' has a wrong offset!");
-static_assert(offsetof(AMag_Revolver_C, ChildActor3) == 0x000238, "Member 'AMag_Revolver_C::ChildActor3' has a wrong offset!");
-static_assert(offsetof(AMag_Revolver_C, ChildActor2) == 0x000240, "Member 'AMag_Revolver_C::ChildActor2' has a wrong offset!");
-static_assert(offsetof(AMag_Revolver_C, ChildActor1) == 0x000248, "Member 'AMag_Revolver_C::ChildActor1' has a wrong offset!");
-static_assert(offsetof(AMag_Revolver_C, ChildActor) == 0x000250, "Member 'AMag_Revolver_C::ChildActor' has a wrong offset!");
+DUMPER7_ASSERTS_AMag_Revolver_C;
 
 }
 

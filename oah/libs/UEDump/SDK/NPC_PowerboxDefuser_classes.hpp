@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "NPCBase_classes.hpp"
 #include "CoreUObject_structs.hpp"
+#include "NPCBase_classes.hpp"
 #include "AIModule_structs.hpp"
 
 
@@ -43,36 +43,28 @@ public:
 	void StartWarningPowerBox();
 	void DieEvent(class AActor* Player);
 	void FindPowerbox();
+	void ReceiveBeginPlay();
 	void OnSuccess_3509034549C3312B5217008101EAB530(EPathFollowingResult MovementResult);
 	void OnFail_3509034549C3312B5217008101EAB530(EPathFollowingResult MovementResult);
 	void OnSuccess_1257E76C4D301D8096FB3EBDACA4EE95(EPathFollowingResult MovementResult);
 	void OnFail_1257E76C4D301D8096FB3EBDACA4EE95(EPathFollowingResult MovementResult);
 	void findActivePowerbox(bool* FoundBox_, bool* AllBoxesDestroyed_);
-	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"NPC_PowerboxDefuser_C">();
+		BP_STATIC_CLASS_IMPL("NPC_PowerboxDefuser_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NPC_PowerboxDefuser_C")
 	}
 	static class ANPC_PowerboxDefuser_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ANPC_PowerboxDefuser_C>();
 	}
 };
-static_assert(alignof(ANPC_PowerboxDefuser_C) == 0x000010, "Wrong alignment on ANPC_PowerboxDefuser_C");
-static_assert(sizeof(ANPC_PowerboxDefuser_C) == 0x000590, "Wrong size on ANPC_PowerboxDefuser_C");
-static_assert(offsetof(ANPC_PowerboxDefuser_C, UberGraphFrame_NPC_PowerboxDefuser_C) == 0x000540, "Member 'ANPC_PowerboxDefuser_C::UberGraphFrame_NPC_PowerboxDefuser_C' has a wrong offset!");
-static_assert(offsetof(ANPC_PowerboxDefuser_C, SteamStatComponent) == 0x000548, "Member 'ANPC_PowerboxDefuser_C::SteamStatComponent' has a wrong offset!");
-static_assert(offsetof(ANPC_PowerboxDefuser_C, SM_Chr_Attach_Hat_07) == 0x000550, "Member 'ANPC_PowerboxDefuser_C::SM_Chr_Attach_Hat_07' has a wrong offset!");
-static_assert(offsetof(ANPC_PowerboxDefuser_C, SM_Chr_Attach_Hat_06) == 0x000558, "Member 'ANPC_PowerboxDefuser_C::SM_Chr_Attach_Hat_06' has a wrong offset!");
-static_assert(offsetof(ANPC_PowerboxDefuser_C, Pouch) == 0x000560, "Member 'ANPC_PowerboxDefuser_C::Pouch' has a wrong offset!");
-static_assert(offsetof(ANPC_PowerboxDefuser_C, Screen) == 0x000568, "Member 'ANPC_PowerboxDefuser_C::Screen' has a wrong offset!");
-static_assert(offsetof(ANPC_PowerboxDefuser_C, SM_Chr_Attach_Hat_05) == 0x000570, "Member 'ANPC_PowerboxDefuser_C::SM_Chr_Attach_Hat_05' has a wrong offset!");
-static_assert(offsetof(ANPC_PowerboxDefuser_C, TargetPowerBox) == 0x000578, "Member 'ANPC_PowerboxDefuser_C::TargetPowerBox' has a wrong offset!");
-static_assert(offsetof(ANPC_PowerboxDefuser_C, HomeLocation) == 0x000580, "Member 'ANPC_PowerboxDefuser_C::HomeLocation' has a wrong offset!");
-static_assert(offsetof(ANPC_PowerboxDefuser_C, Interacting_) == 0x00058C, "Member 'ANPC_PowerboxDefuser_C::Interacting_' has a wrong offset!");
-static_assert(offsetof(ANPC_PowerboxDefuser_C, All_Boxes_Destroyed_) == 0x00058D, "Member 'ANPC_PowerboxDefuser_C::All_Boxes_Destroyed_' has a wrong offset!");
+DUMPER7_ASSERTS_ANPC_PowerboxDefuser_C;
 
 }
 

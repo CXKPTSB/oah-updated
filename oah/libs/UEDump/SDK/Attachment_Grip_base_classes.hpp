@@ -23,15 +23,18 @@ class AAttachment_Grip_base_C : public AAttachmentBase_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Attachment_Grip_base_C">();
+		BP_STATIC_CLASS_IMPL("Attachment_Grip_base_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Attachment_Grip_base_C")
 	}
 	static class AAttachment_Grip_base_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAttachment_Grip_base_C>();
 	}
 };
-static_assert(alignof(AAttachment_Grip_base_C) == 0x000008, "Wrong alignment on AAttachment_Grip_base_C");
-static_assert(sizeof(AAttachment_Grip_base_C) == 0x000250, "Wrong size on AAttachment_Grip_base_C");
+DUMPER7_ASSERTS_AAttachment_Grip_base_C;
 
 }
 

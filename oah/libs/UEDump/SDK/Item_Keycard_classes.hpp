@@ -39,20 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Item_Keycard_C">();
+		BP_STATIC_CLASS_IMPL("Item_Keycard_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Item_Keycard_C")
 	}
 	static class AItem_Keycard_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AItem_Keycard_C>();
 	}
 };
-static_assert(alignof(AItem_Keycard_C) == 0x000008, "Wrong alignment on AItem_Keycard_C");
-static_assert(sizeof(AItem_Keycard_C) == 0x000288, "Wrong size on AItem_Keycard_C");
-static_assert(offsetof(AItem_Keycard_C, UberGraphFrame_Item_Keycard_C) == 0x000258, "Member 'AItem_Keycard_C::UberGraphFrame_Item_Keycard_C' has a wrong offset!");
-static_assert(offsetof(AItem_Keycard_C, HighlightInRangeComponent) == 0x000260, "Member 'AItem_Keycard_C::HighlightInRangeComponent' has a wrong offset!");
-static_assert(offsetof(AItem_Keycard_C, HighlightWhenHolding) == 0x000268, "Member 'AItem_Keycard_C::HighlightWhenHolding' has a wrong offset!");
-static_assert(offsetof(AItem_Keycard_C, KeycardNumber) == 0x000270, "Member 'AItem_Keycard_C::KeycardNumber' has a wrong offset!");
-static_assert(offsetof(AItem_Keycard_C, Keycard_name) == 0x000278, "Member 'AItem_Keycard_C::Keycard_name' has a wrong offset!");
+DUMPER7_ASSERTS_AItem_Keycard_C;
 
 }
 

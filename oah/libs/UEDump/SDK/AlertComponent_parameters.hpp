@@ -105,76 +105,7 @@ public:
 	class UAlertComponent_C*                      CallFunc_GetComponentByClass_ReturnValue_1;        // 0x0250(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_6;                    // 0x0258(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AlertComponent_C_ExecuteUbergraph_AlertComponent) == 0x000008, "Wrong alignment on AlertComponent_C_ExecuteUbergraph_AlertComponent");
-static_assert(sizeof(AlertComponent_C_ExecuteUbergraph_AlertComponent) == 0x000260, "Wrong size on AlertComponent_C_ExecuteUbergraph_AlertComponent");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, EntryPoint) == 0x000000, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, Temp_int_Array_Index_Variable) == 0x000008, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, Temp_bool_IsClosed_Variable) == 0x000010, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, Temp_bool_Has_Been_Initd_Variable) == 0x000011, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, Temp_bool_IsClosed_Variable_1) == 0x000012, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::Temp_bool_IsClosed_Variable_1' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, Temp_bool_Has_Been_Initd_Variable_1) == 0x000013, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::Temp_bool_Has_Been_Initd_Variable_1' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, Temp_bool_Variable) == 0x000014, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, K2Node_CustomEvent_Alert_reason) == 0x000018, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::K2Node_CustomEvent_Alert_reason' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_GetActorOfClass_ReturnValue) == 0x000028, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_GetActorOfClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, Temp_bool_Has_Been_Initd_Variable_2) == 0x000030, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::Temp_bool_Has_Been_Initd_Variable_2' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_IsValid_ReturnValue) == 0x000031, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_GetActorOfClass_ReturnValue_1) == 0x000038, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_GetActorOfClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_IsValid_ReturnValue_1) == 0x000040, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, K2Node_CustomEvent_max_distance) == 0x000044, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::K2Node_CustomEvent_max_distance' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, K2Node_CustomEvent_MustBeVisible_) == 0x000048, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::K2Node_CustomEvent_MustBeVisible_' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, K2Node_CustomEvent_Location) == 0x00004C, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::K2Node_CustomEvent_Location' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_GetOwner_ReturnValue) == 0x000058, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_EqualEqual_VectorVector_ReturnValue) == 0x000060, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_EqualEqual_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000064, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, K2Node_Select_Default) == 0x000070, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_GetActorOfClass_ReturnValue_2) == 0x000080, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_GetActorOfClass_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_GetAllActorsOfClass_OutActors) == 0x000088, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_Array_Get_Item) == 0x000098, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_Array_Length_ReturnValue) == 0x0000A0, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, Temp_bool_IsClosed_Variable_2) == 0x0000A4, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::Temp_bool_IsClosed_Variable_2' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_Less_IntInt_ReturnValue) == 0x0000A5, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_GetActorOfClass_ReturnValue_3) == 0x0000A8, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_GetActorOfClass_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_GetActorOfClass_ReturnValue_4) == 0x0000B0, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_GetActorOfClass_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_IsValid_ReturnValue_2) == 0x0000B8, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_FindClosestGuard_Guard) == 0x0000C0, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_FindClosestGuard_Guard' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_FindClosestGuard_Distance_to) == 0x0000C8, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_FindClosestGuard_Distance_to' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_IsValid_ReturnValue_3) == 0x0000CC, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x0000D0, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_GetComponentByClass_ReturnValue) == 0x0000E0, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_GetActorOfClass_ReturnValue_5) == 0x0000E8, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_GetActorOfClass_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, K2Node_CreateDelegate_OutputDelegate) == 0x0000F0, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_IsValid_ReturnValue_4) == 0x000100, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_GetOwner_ReturnValue_1) == 0x000108, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_GetOwner_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, K2Node_MakeArray_Array) == 0x000110, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, K2Node_CustomEvent_AlertLocation) == 0x000120, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::K2Node_CustomEvent_AlertLocation' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_LineTraceSingle_OutHit) == 0x00012C, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_LineTraceSingle_OutHit' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_LineTraceSingle_ReturnValue) == 0x0001B4, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_LineTraceSingle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_GetActorOfClass_ReturnValue_6) == 0x0001B8, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_GetActorOfClass_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_FindClosestGuardOnPath_ClosestGuard) == 0x0001C0, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_FindClosestGuardOnPath_ClosestGuard' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_FindClosestGuardOnPath_Distance) == 0x0001C8, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_FindClosestGuardOnPath_Distance' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_BreakHitResult_bBlockingHit) == 0x0001CC, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_BreakHitResult_bInitialOverlap) == 0x0001CD, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_BreakHitResult_Time) == 0x0001D0, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_BreakHitResult_Distance) == 0x0001D4, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_BreakHitResult_Location) == 0x0001D8, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_BreakHitResult_ImpactPoint) == 0x0001E4, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_BreakHitResult_Normal) == 0x0001F0, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_BreakHitResult_ImpactNormal) == 0x0001FC, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_BreakHitResult_PhysMat) == 0x000208, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_BreakHitResult_HitActor) == 0x000210, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_BreakHitResult_HitComponent) == 0x000218, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_BreakHitResult_HitBoneName) == 0x000220, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_BreakHitResult_HitItem) == 0x000228, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_BreakHitResult_ElementIndex) == 0x00022C, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_BreakHitResult_FaceIndex) == 0x000230, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_BreakHitResult_TraceStart) == 0x000234, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_BreakHitResult_TraceEnd) == 0x000240, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_IsValid_ReturnValue_5) == 0x00024C, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x00024D, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_GetComponentByClass_ReturnValue_1) == 0x000250, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_GetComponentByClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_ExecuteUbergraph_AlertComponent, CallFunc_IsValid_ReturnValue_6) == 0x000258, "Member 'AlertComponent_C_ExecuteUbergraph_AlertComponent::CallFunc_IsValid_ReturnValue_6' has a wrong offset!");
+DUMPER7_ASSERTS_AlertComponent_C_ExecuteUbergraph_AlertComponent;
 
 // Function AlertComponent.AlertComponent_C.AlertNearestGuard
 // 0x000C (0x000C - 0x0000)
@@ -183,9 +114,7 @@ struct AlertComponent_C_AlertNearestGuard final
 public:
 	struct FVector                                AlertLocation;                                     // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AlertComponent_C_AlertNearestGuard) == 0x000004, "Wrong alignment on AlertComponent_C_AlertNearestGuard");
-static_assert(sizeof(AlertComponent_C_AlertNearestGuard) == 0x00000C, "Wrong size on AlertComponent_C_AlertNearestGuard");
-static_assert(offsetof(AlertComponent_C_AlertNearestGuard, AlertLocation) == 0x000000, "Member 'AlertComponent_C_AlertNearestGuard::AlertLocation' has a wrong offset!");
+DUMPER7_ASSERTS_AlertComponent_C_AlertNearestGuard;
 
 // Function AlertComponent.AlertComponent_C.AlertNearbyGuards
 // 0x0014 (0x0014 - 0x0000)
@@ -197,11 +126,7 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                Location;                                          // 0x0008(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AlertComponent_C_AlertNearbyGuards) == 0x000004, "Wrong alignment on AlertComponent_C_AlertNearbyGuards");
-static_assert(sizeof(AlertComponent_C_AlertNearbyGuards) == 0x000014, "Wrong size on AlertComponent_C_AlertNearbyGuards");
-static_assert(offsetof(AlertComponent_C_AlertNearbyGuards, max_distance) == 0x000000, "Member 'AlertComponent_C_AlertNearbyGuards::max_distance' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_AlertNearbyGuards, MustBeVisible_) == 0x000004, "Member 'AlertComponent_C_AlertNearbyGuards::MustBeVisible_' has a wrong offset!");
-static_assert(offsetof(AlertComponent_C_AlertNearbyGuards, Location) == 0x000008, "Member 'AlertComponent_C_AlertNearbyGuards::Location' has a wrong offset!");
+DUMPER7_ASSERTS_AlertComponent_C_AlertNearbyGuards;
 
 // Function AlertComponent.AlertComponent_C.AlertAllGuards
 // 0x0010 (0x0010 - 0x0000)
@@ -210,9 +135,7 @@ struct AlertComponent_C_AlertAllGuards final
 public:
 	class FString                                 Alert_reason;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AlertComponent_C_AlertAllGuards) == 0x000008, "Wrong alignment on AlertComponent_C_AlertAllGuards");
-static_assert(sizeof(AlertComponent_C_AlertAllGuards) == 0x000010, "Wrong size on AlertComponent_C_AlertAllGuards");
-static_assert(offsetof(AlertComponent_C_AlertAllGuards, Alert_reason) == 0x000000, "Member 'AlertComponent_C_AlertAllGuards::Alert_reason' has a wrong offset!");
+DUMPER7_ASSERTS_AlertComponent_C_AlertAllGuards;
 
 }
 

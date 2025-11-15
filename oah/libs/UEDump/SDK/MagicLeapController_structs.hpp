@@ -187,18 +187,7 @@ public:
 	float                                         Radius;                                            // 0x0028(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Angle;                                             // 0x002C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMagicLeapTouchpadGesture) == 0x000004, "Wrong alignment on FMagicLeapTouchpadGesture");
-static_assert(sizeof(FMagicLeapTouchpadGesture) == 0x000030, "Wrong size on FMagicLeapTouchpadGesture");
-static_assert(offsetof(FMagicLeapTouchpadGesture, Hand) == 0x000000, "Member 'FMagicLeapTouchpadGesture::Hand' has a wrong offset!");
-static_assert(offsetof(FMagicLeapTouchpadGesture, MotionSource) == 0x000004, "Member 'FMagicLeapTouchpadGesture::MotionSource' has a wrong offset!");
-static_assert(offsetof(FMagicLeapTouchpadGesture, Type) == 0x00000C, "Member 'FMagicLeapTouchpadGesture::Type' has a wrong offset!");
-static_assert(offsetof(FMagicLeapTouchpadGesture, Direction) == 0x00000D, "Member 'FMagicLeapTouchpadGesture::Direction' has a wrong offset!");
-static_assert(offsetof(FMagicLeapTouchpadGesture, PositionAndForce) == 0x000010, "Member 'FMagicLeapTouchpadGesture::PositionAndForce' has a wrong offset!");
-static_assert(offsetof(FMagicLeapTouchpadGesture, Speed) == 0x00001C, "Member 'FMagicLeapTouchpadGesture::Speed' has a wrong offset!");
-static_assert(offsetof(FMagicLeapTouchpadGesture, Distance) == 0x000020, "Member 'FMagicLeapTouchpadGesture::Distance' has a wrong offset!");
-static_assert(offsetof(FMagicLeapTouchpadGesture, FingerGap) == 0x000024, "Member 'FMagicLeapTouchpadGesture::FingerGap' has a wrong offset!");
-static_assert(offsetof(FMagicLeapTouchpadGesture, Radius) == 0x000028, "Member 'FMagicLeapTouchpadGesture::Radius' has a wrong offset!");
-static_assert(offsetof(FMagicLeapTouchpadGesture, Angle) == 0x00002C, "Member 'FMagicLeapTouchpadGesture::Angle' has a wrong offset!");
+DUMPER7_ASSERTS_FMagicLeapTouchpadGesture;
 
 }
 

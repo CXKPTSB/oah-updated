@@ -27,17 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PoliceSpawnLocation_C">();
+		BP_STATIC_CLASS_IMPL("PoliceSpawnLocation_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PoliceSpawnLocation_C")
 	}
 	static class APoliceSpawnLocation_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APoliceSpawnLocation_C>();
 	}
 };
-static_assert(alignof(APoliceSpawnLocation_C) == 0x000008, "Wrong alignment on APoliceSpawnLocation_C");
-static_assert(sizeof(APoliceSpawnLocation_C) == 0x000230, "Wrong size on APoliceSpawnLocation_C");
-static_assert(offsetof(APoliceSpawnLocation_C, Arrow) == 0x000220, "Member 'APoliceSpawnLocation_C::Arrow' has a wrong offset!");
-static_assert(offsetof(APoliceSpawnLocation_C, DefaultSceneRoot) == 0x000228, "Member 'APoliceSpawnLocation_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_APoliceSpawnLocation_C;
 
 }
 

@@ -51,30 +51,7 @@ public:
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0178(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsInViewport_ReturnValue;                 // 0x0180(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI) == 0x000008, "Wrong alignment on ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI");
-static_assert(sizeof(ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI) == 0x000188, "Wrong size on ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI");
-static_assert(offsetof(ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI, EntryPoint) == 0x000000, "Member 'ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI, CallFunc_Create_ReturnValue) == 0x000008, "Member 'ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI, K2Node_CustomEvent_Session) == 0x000010, "Member 'ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI::K2Node_CustomEvent_Session' has a wrong offset!");
-static_assert(offsetof(ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI, K2Node_CustomEvent_FoundSession_) == 0x000118, "Member 'ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI::K2Node_CustomEvent_FoundSession_' has a wrong offset!");
-static_assert(offsetof(ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI, CallFunc_GetNumberOfNetworkPlayers_NumNetPlayers) == 0x00011C, "Member 'ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI::CallFunc_GetNumberOfNetworkPlayers_NumNetPlayers' has a wrong offset!");
-static_assert(offsetof(ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI, CallFunc_Greater_IntInt_ReturnValue) == 0x000120, "Member 'ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI, Temp_int_Array_Index_Variable) == 0x000124, "Member 'ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI, CallFunc_GetGameInstance_ReturnValue) == 0x000128, "Member 'ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI::CallFunc_GetGameInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI, K2Node_DynamicCast_AsRobber_GI) == 0x000130, "Member 'ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI::K2Node_DynamicCast_AsRobber_GI' has a wrong offset!");
-static_assert(offsetof(ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI, K2Node_DynamicCast_bSuccess) == 0x000138, "Member 'ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI, Temp_int_Loop_Counter_Variable) == 0x00013C, "Member 'ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI, CallFunc_Add_IntInt_ReturnValue) == 0x000140, "Member 'ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI, CallFunc_CheckConnectedPlayers_Alone_) == 0x000144, "Member 'ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI::CallFunc_CheckConnectedPlayers_Alone_' has a wrong offset!");
-static_assert(offsetof(ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI, CallFunc_GetPlayerController_ReturnValue) == 0x000148, "Member 'ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI, CallFunc_Create_ReturnValue_1) == 0x000150, "Member 'ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI::CallFunc_Create_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI, K2Node_DynamicCast_AsRobber_Controller) == 0x000158, "Member 'ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI::K2Node_DynamicCast_AsRobber_Controller' has a wrong offset!");
-static_assert(offsetof(ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI, K2Node_DynamicCast_bSuccess_1) == 0x000160, "Member 'ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI, CallFunc_Array_Get_Item) == 0x000168, "Member 'ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI, CallFunc_Array_Length_ReturnValue) == 0x000170, "Member 'ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI, CallFunc_Less_IntInt_ReturnValue) == 0x000174, "Member 'ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI, CallFunc_AddChild_ReturnValue) == 0x000178, "Member 'ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI::CallFunc_AddChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI, CallFunc_IsInViewport_ReturnValue) == 0x000180, "Member 'ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI::CallFunc_IsInViewport_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ServerBrowserUI_C_ExecuteUbergraph_ServerBrowserUI;
 
 // Function ServerBrowserUI.ServerBrowserUI_C.FoundSessions
 // 0x0110 (0x0110 - 0x0000)
@@ -84,10 +61,7 @@ public:
 	struct FBlueprintSessionResult                Session;                                           // 0x0000(0x0108)(BlueprintVisible, BlueprintReadOnly, Parm)
 	bool                                          FoundSession_;                                     // 0x0108(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ServerBrowserUI_C_FoundSessions) == 0x000008, "Wrong alignment on ServerBrowserUI_C_FoundSessions");
-static_assert(sizeof(ServerBrowserUI_C_FoundSessions) == 0x000110, "Wrong size on ServerBrowserUI_C_FoundSessions");
-static_assert(offsetof(ServerBrowserUI_C_FoundSessions, Session) == 0x000000, "Member 'ServerBrowserUI_C_FoundSessions::Session' has a wrong offset!");
-static_assert(offsetof(ServerBrowserUI_C_FoundSessions, FoundSession_) == 0x000108, "Member 'ServerBrowserUI_C_FoundSessions::FoundSession_' has a wrong offset!");
+DUMPER7_ASSERTS_ServerBrowserUI_C_FoundSessions;
 
 // Function ServerBrowserUI.ServerBrowserUI_C.CheckConnectedPlayers
 // 0x0020 (0x0020 - 0x0000)
@@ -100,12 +74,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ServerBrowserUI_C_CheckConnectedPlayers) == 0x000008, "Wrong alignment on ServerBrowserUI_C_CheckConnectedPlayers");
-static_assert(sizeof(ServerBrowserUI_C_CheckConnectedPlayers) == 0x000020, "Wrong size on ServerBrowserUI_C_CheckConnectedPlayers");
-static_assert(offsetof(ServerBrowserUI_C_CheckConnectedPlayers, Alone_) == 0x000000, "Member 'ServerBrowserUI_C_CheckConnectedPlayers::Alone_' has a wrong offset!");
-static_assert(offsetof(ServerBrowserUI_C_CheckConnectedPlayers, CallFunc_GetAllActorsOfClass_OutActors) == 0x000008, "Member 'ServerBrowserUI_C_CheckConnectedPlayers::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(ServerBrowserUI_C_CheckConnectedPlayers, CallFunc_Array_Length_ReturnValue) == 0x000018, "Member 'ServerBrowserUI_C_CheckConnectedPlayers::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ServerBrowserUI_C_CheckConnectedPlayers, CallFunc_LessEqual_IntInt_ReturnValue) == 0x00001C, "Member 'ServerBrowserUI_C_CheckConnectedPlayers::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ServerBrowserUI_C_CheckConnectedPlayers;
 
 }
 

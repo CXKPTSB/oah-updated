@@ -270,7 +270,7 @@ void UPlayerAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_PlayerAnimBP_A
 // Function PlayerAnimBP.PlayerAnimBP_C.AnimGraph
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FPoseLink                        AnimGraph_0                                            (Parm, OutParm, NoDestructor)
+// struct FPoseLink*                       AnimGraph_0                                            (Parm, OutParm, NoDestructor)
 
 void UPlayerAnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {

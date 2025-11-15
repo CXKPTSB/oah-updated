@@ -34,18 +34,7 @@ public:
 	class FText                                   K2Node_CustomEvent_Text;                           // 0x0048(0x0018)()
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0060(0x0018)()
 };
-static_assert(alignof(GuardPhone_C_ExecuteUbergraph_GuardPhone) == 0x000008, "Wrong alignment on GuardPhone_C_ExecuteUbergraph_GuardPhone");
-static_assert(sizeof(GuardPhone_C_ExecuteUbergraph_GuardPhone) == 0x000078, "Wrong size on GuardPhone_C_ExecuteUbergraph_GuardPhone");
-static_assert(offsetof(GuardPhone_C_ExecuteUbergraph_GuardPhone, EntryPoint) == 0x000000, "Member 'GuardPhone_C_ExecuteUbergraph_GuardPhone::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GuardPhone_C_ExecuteUbergraph_GuardPhone, K2Node_ComponentBoundEvent_Player) == 0x000008, "Member 'GuardPhone_C_ExecuteUbergraph_GuardPhone::K2Node_ComponentBoundEvent_Player' has a wrong offset!");
-static_assert(offsetof(GuardPhone_C_ExecuteUbergraph_GuardPhone, K2Node_ComponentBoundEvent_Pickuplocation) == 0x000010, "Member 'GuardPhone_C_ExecuteUbergraph_GuardPhone::K2Node_ComponentBoundEvent_Pickuplocation' has a wrong offset!");
-static_assert(offsetof(GuardPhone_C_ExecuteUbergraph_GuardPhone, K2Node_ComponentBoundEvent_PickupRotation) == 0x00001C, "Member 'GuardPhone_C_ExecuteUbergraph_GuardPhone::K2Node_ComponentBoundEvent_PickupRotation' has a wrong offset!");
-static_assert(offsetof(GuardPhone_C_ExecuteUbergraph_GuardPhone, K2Node_ComponentBoundEvent_HitLocation) == 0x000028, "Member 'GuardPhone_C_ExecuteUbergraph_GuardPhone::K2Node_ComponentBoundEvent_HitLocation' has a wrong offset!");
-static_assert(offsetof(GuardPhone_C_ExecuteUbergraph_GuardPhone, CallFunc_Subtract_IntInt_ReturnValue) == 0x000034, "Member 'GuardPhone_C_ExecuteUbergraph_GuardPhone::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GuardPhone_C_ExecuteUbergraph_GuardPhone, CallFunc_Less_IntInt_ReturnValue) == 0x000038, "Member 'GuardPhone_C_ExecuteUbergraph_GuardPhone::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GuardPhone_C_ExecuteUbergraph_GuardPhone, CallFunc_K2_GetActorLocation_ReturnValue) == 0x00003C, "Member 'GuardPhone_C_ExecuteUbergraph_GuardPhone::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GuardPhone_C_ExecuteUbergraph_GuardPhone, K2Node_CustomEvent_Text) == 0x000048, "Member 'GuardPhone_C_ExecuteUbergraph_GuardPhone::K2Node_CustomEvent_Text' has a wrong offset!");
-static_assert(offsetof(GuardPhone_C_ExecuteUbergraph_GuardPhone, CallFunc_Conv_IntToText_ReturnValue) == 0x000060, "Member 'GuardPhone_C_ExecuteUbergraph_GuardPhone::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GuardPhone_C_ExecuteUbergraph_GuardPhone;
 
 // Function GuardPhone.GuardPhone_C.CountdownText
 // 0x0018 (0x0018 - 0x0000)
@@ -54,9 +43,7 @@ struct GuardPhone_C_CountdownText final
 public:
 	class FText                                   Text;                                              // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(GuardPhone_C_CountdownText) == 0x000008, "Wrong alignment on GuardPhone_C_CountdownText");
-static_assert(sizeof(GuardPhone_C_CountdownText) == 0x000018, "Wrong size on GuardPhone_C_CountdownText");
-static_assert(offsetof(GuardPhone_C_CountdownText, Text) == 0x000000, "Member 'GuardPhone_C_CountdownText::Text' has a wrong offset!");
+DUMPER7_ASSERTS_GuardPhone_C_CountdownText;
 
 // Function GuardPhone.GuardPhone_C.BndEvt__GuardPhone_PickupItemComponent_K2Node_ComponentBoundEvent_0_PickUpItem__DelegateSignature
 // 0x0030 (0x0030 - 0x0000)
@@ -68,12 +55,7 @@ public:
 	struct FRotator                               PickupRotation;                                    // 0x0014(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FVector                                HitLocation;                                       // 0x0020(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GuardPhone_C_BndEvt__GuardPhone_PickupItemComponent_K2Node_ComponentBoundEvent_0_PickUpItem__DelegateSignature) == 0x000008, "Wrong alignment on GuardPhone_C_BndEvt__GuardPhone_PickupItemComponent_K2Node_ComponentBoundEvent_0_PickUpItem__DelegateSignature");
-static_assert(sizeof(GuardPhone_C_BndEvt__GuardPhone_PickupItemComponent_K2Node_ComponentBoundEvent_0_PickUpItem__DelegateSignature) == 0x000030, "Wrong size on GuardPhone_C_BndEvt__GuardPhone_PickupItemComponent_K2Node_ComponentBoundEvent_0_PickUpItem__DelegateSignature");
-static_assert(offsetof(GuardPhone_C_BndEvt__GuardPhone_PickupItemComponent_K2Node_ComponentBoundEvent_0_PickUpItem__DelegateSignature, Player) == 0x000000, "Member 'GuardPhone_C_BndEvt__GuardPhone_PickupItemComponent_K2Node_ComponentBoundEvent_0_PickUpItem__DelegateSignature::Player' has a wrong offset!");
-static_assert(offsetof(GuardPhone_C_BndEvt__GuardPhone_PickupItemComponent_K2Node_ComponentBoundEvent_0_PickUpItem__DelegateSignature, Pickuplocation) == 0x000008, "Member 'GuardPhone_C_BndEvt__GuardPhone_PickupItemComponent_K2Node_ComponentBoundEvent_0_PickUpItem__DelegateSignature::Pickuplocation' has a wrong offset!");
-static_assert(offsetof(GuardPhone_C_BndEvt__GuardPhone_PickupItemComponent_K2Node_ComponentBoundEvent_0_PickUpItem__DelegateSignature, PickupRotation) == 0x000014, "Member 'GuardPhone_C_BndEvt__GuardPhone_PickupItemComponent_K2Node_ComponentBoundEvent_0_PickUpItem__DelegateSignature::PickupRotation' has a wrong offset!");
-static_assert(offsetof(GuardPhone_C_BndEvt__GuardPhone_PickupItemComponent_K2Node_ComponentBoundEvent_0_PickUpItem__DelegateSignature, HitLocation) == 0x000020, "Member 'GuardPhone_C_BndEvt__GuardPhone_PickupItemComponent_K2Node_ComponentBoundEvent_0_PickUpItem__DelegateSignature::HitLocation' has a wrong offset!");
+DUMPER7_ASSERTS_GuardPhone_C_BndEvt__GuardPhone_PickupItemComponent_K2Node_ComponentBoundEvent_0_PickUpItem__DelegateSignature;
 
 }
 

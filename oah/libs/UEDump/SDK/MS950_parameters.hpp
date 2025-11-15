@@ -32,18 +32,7 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_K2_AttachToComponent_ReturnValue_1;       // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MS950_C_ExecuteUbergraph_MS950) == 0x000008, "Wrong alignment on MS950_C_ExecuteUbergraph_MS950");
-static_assert(sizeof(MS950_C_ExecuteUbergraph_MS950) == 0x000040, "Wrong size on MS950_C_ExecuteUbergraph_MS950");
-static_assert(offsetof(MS950_C_ExecuteUbergraph_MS950, EntryPoint) == 0x000000, "Member 'MS950_C_ExecuteUbergraph_MS950::EntryPoint' has a wrong offset!");
-static_assert(offsetof(MS950_C_ExecuteUbergraph_MS950, Temp_int_Array_Index_Variable) == 0x000004, "Member 'MS950_C_ExecuteUbergraph_MS950::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(MS950_C_ExecuteUbergraph_MS950, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'MS950_C_ExecuteUbergraph_MS950::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(MS950_C_ExecuteUbergraph_MS950, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'MS950_C_ExecuteUbergraph_MS950::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MS950_C_ExecuteUbergraph_MS950, CallFunc_K2_AttachToComponent_ReturnValue) == 0x000010, "Member 'MS950_C_ExecuteUbergraph_MS950::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MS950_C_ExecuteUbergraph_MS950, K2Node_MakeArray_Array) == 0x000018, "Member 'MS950_C_ExecuteUbergraph_MS950::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(MS950_C_ExecuteUbergraph_MS950, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'MS950_C_ExecuteUbergraph_MS950::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MS950_C_ExecuteUbergraph_MS950, CallFunc_Array_Get_Item) == 0x000030, "Member 'MS950_C_ExecuteUbergraph_MS950::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(MS950_C_ExecuteUbergraph_MS950, CallFunc_Less_IntInt_ReturnValue) == 0x000038, "Member 'MS950_C_ExecuteUbergraph_MS950::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MS950_C_ExecuteUbergraph_MS950, CallFunc_K2_AttachToComponent_ReturnValue_1) == 0x000039, "Member 'MS950_C_ExecuteUbergraph_MS950::CallFunc_K2_AttachToComponent_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_MS950_C_ExecuteUbergraph_MS950;
 
 }
 

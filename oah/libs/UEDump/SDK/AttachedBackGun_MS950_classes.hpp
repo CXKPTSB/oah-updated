@@ -23,15 +23,18 @@ class AAttachedBackGun_MS950_C final : public AAttachedBackGun_base_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AttachedBackGun_MS950_C">();
+		BP_STATIC_CLASS_IMPL("AttachedBackGun_MS950_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AttachedBackGun_MS950_C")
 	}
 	static class AAttachedBackGun_MS950_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAttachedBackGun_MS950_C>();
 	}
 };
-static_assert(alignof(AAttachedBackGun_MS950_C) == 0x000008, "Wrong alignment on AAttachedBackGun_MS950_C");
-static_assert(sizeof(AAttachedBackGun_MS950_C) == 0x000268, "Wrong size on AAttachedBackGun_MS950_C");
+DUMPER7_ASSERTS_AAttachedBackGun_MS950_C;
 
 }
 

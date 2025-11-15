@@ -29,19 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WallBase_Ventilation_C">();
+		BP_STATIC_CLASS_IMPL("WallBase_Ventilation_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WallBase_Ventilation_C")
 	}
 	static class AWallBase_Ventilation_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AWallBase_Ventilation_C>();
 	}
 };
-static_assert(alignof(AWallBase_Ventilation_C) == 0x000008, "Wrong alignment on AWallBase_Ventilation_C");
-static_assert(sizeof(AWallBase_Ventilation_C) == 0x0002F8, "Wrong size on AWallBase_Ventilation_C");
-static_assert(offsetof(AWallBase_Ventilation_C, SM_Prop_Light_Wall_01) == 0x0002D8, "Member 'AWallBase_Ventilation_C::SM_Prop_Light_Wall_01' has a wrong offset!");
-static_assert(offsetof(AWallBase_Ventilation_C, SM_Bld_Wall_Brick_01__4_10_StaticMeshComponent3) == 0x0002E0, "Member 'AWallBase_Ventilation_C::SM_Bld_Wall_Brick_01__4_10_StaticMeshComponent3' has a wrong offset!");
-static_assert(offsetof(AWallBase_Ventilation_C, SM_Bld_Wall_Brick_01__4_10_StaticMeshComponent2) == 0x0002E8, "Member 'AWallBase_Ventilation_C::SM_Bld_Wall_Brick_01__4_10_StaticMeshComponent2' has a wrong offset!");
-static_assert(offsetof(AWallBase_Ventilation_C, SM_Bld_Wall_Brick_01__4_10_StaticMeshComponent1) == 0x0002F0, "Member 'AWallBase_Ventilation_C::SM_Bld_Wall_Brick_01__4_10_StaticMeshComponent1' has a wrong offset!");
+DUMPER7_ASSERTS_AWallBase_Ventilation_C;
 
 }
 

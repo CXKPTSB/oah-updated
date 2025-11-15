@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "NPCBase_classes.hpp"
 #include "CoreUObject_structs.hpp"
+#include "NPCBase_classes.hpp"
 #include "AIModule_structs.hpp"
 
 
@@ -106,6 +106,7 @@ public:
 	void InvestigateQuestion(const struct FVector& Location);
 	void BndEvt__NPC_Guard_SpotPlayerComponent_K2Node_ComponentBoundEvent_0_PlayerSpotted__DelegateSignature(class APawn* Player);
 	void See_pawn(class APawn* Pawn);
+	void ReceiveBeginPlay();
 	void FindNearestGuardAsActor(class AActor* GuardActor, float Distance);
 	void OnSuccess_D4CF885043E71FB6876C1D9B6A317D0A(EPathFollowingResult MovementResult);
 	void OnFail_D4CF885043E71FB6876C1D9B6A317D0A(EPathFollowingResult MovementResult);
@@ -131,57 +132,22 @@ public:
 	void LooseHat();
 	void FindClosestGuardOnPath(const struct FVector& Location, class ANPC_Guard_C** ClosestGuard, float* Distance);
 	void UpdateAttachedKeycardLocation();
-	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"NPC_Guard_C">();
+		BP_STATIC_CLASS_IMPL("NPC_Guard_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NPC_Guard_C")
 	}
 	static class ANPC_Guard_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ANPC_Guard_C>();
 	}
 };
-static_assert(alignof(ANPC_Guard_C) == 0x000010, "Wrong alignment on ANPC_Guard_C");
-static_assert(sizeof(ANPC_Guard_C) == 0x000690, "Wrong size on ANPC_Guard_C");
-static_assert(offsetof(ANPC_Guard_C, UberGraphFrame_NPC_Guard_C) == 0x000540, "Member 'ANPC_Guard_C::UberGraphFrame_NPC_Guard_C' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, PhysicsConstraint) == 0x000548, "Member 'ANPC_Guard_C::PhysicsConstraint' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, Sphere) == 0x000550, "Member 'ANPC_Guard_C::Sphere' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, SteamStatComponent) == 0x000558, "Member 'ANPC_Guard_C::SteamStatComponent' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, EscortSphere) == 0x000560, "Member 'ANPC_Guard_C::EscortSphere' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, EscortRing) == 0x000568, "Member 'ANPC_Guard_C::EscortRing' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, EscortSpring) == 0x000570, "Member 'ANPC_Guard_C::EscortSpring' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, Hat) == 0x000578, "Member 'ANPC_Guard_C::Hat' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, PhoneSpawnArrow) == 0x000580, "Member 'ANPC_Guard_C::PhoneSpawnArrow' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, PawnSensing) == 0x000588, "Member 'ANPC_Guard_C::PawnSensing' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, GunLocation) == 0x000590, "Member 'ANPC_Guard_C::GunLocation' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, GunBP) == 0x000598, "Member 'ANPC_Guard_C::GunBP' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, AlertComponent) == 0x0005A0, "Member 'ANPC_Guard_C::AlertComponent' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, RagdollPickupComponent) == 0x0005A8, "Member 'ANPC_Guard_C::RagdollPickupComponent' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, PickupItemComponent) == 0x0005B0, "Member 'ANPC_Guard_C::PickupItemComponent' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, SpottedHighlightcomponent) == 0x0005B8, "Member 'ANPC_Guard_C::SpottedHighlightcomponent' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, SpotPlayerComponent) == 0x0005C0, "Member 'ANPC_Guard_C::SpotPlayerComponent' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, SenseActor) == 0x0005C8, "Member 'ANPC_Guard_C::SenseActor' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, Timeline_0_Alpha_3B178F704D255F5D3990C2837E28D2EF) == 0x0005D0, "Member 'ANPC_Guard_C::Timeline_0_Alpha_3B178F704D255F5D3990C2837E28D2EF' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, Timeline_0__Direction_3B178F704D255F5D3990C2837E28D2EF) == 0x0005D4, "Member 'ANPC_Guard_C::Timeline_0__Direction_3B178F704D255F5D3990C2837E28D2EF' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, Timeline_0) == 0x0005D8, "Member 'ANPC_Guard_C::Timeline_0' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, Armed_) == 0x0005E0, "Member 'ANPC_Guard_C::Armed_' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, Investigate_Reason) == 0x0005E8, "Member 'ANPC_Guard_C::Investigate_Reason' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, patrolling_) == 0x0005F8, "Member 'ANPC_Guard_C::patrolling_' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, Investigating_) == 0x0005F9, "Member 'ANPC_Guard_C::Investigating_' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, GunActor) == 0x000600, "Member 'ANPC_Guard_C::GunActor' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, HomeTransform) == 0x000610, "Member 'ANPC_Guard_C::HomeTransform' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, PatrolPoints) == 0x000640, "Member 'ANPC_Guard_C::PatrolPoints' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, CurrentPatrolPoint) == 0x000650, "Member 'ANPC_Guard_C::CurrentPatrolPoint' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, Escorting_) == 0x000654, "Member 'ANPC_Guard_C::Escorting_' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, Alert_) == 0x000655, "Member 'ANPC_Guard_C::Alert_' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, TargetPlayer) == 0x000658, "Member 'ANPC_Guard_C::TargetPlayer' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, Sensing_) == 0x000660, "Member 'ANPC_Guard_C::Sensing_' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, Manager) == 0x000668, "Member 'ANPC_Guard_C::Manager' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, CameraWatcher_) == 0x000670, "Member 'ANPC_Guard_C::CameraWatcher_' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, EscortingPlayer) == 0x000678, "Member 'ANPC_Guard_C::EscortingPlayer' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, AttachedKeycard) == 0x000680, "Member 'ANPC_Guard_C::AttachedKeycard' has a wrong offset!");
+DUMPER7_ASSERTS_ANPC_Guard_C;
 
 }
 

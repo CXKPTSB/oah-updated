@@ -46,28 +46,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DrillBP_C">();
+		BP_STATIC_CLASS_IMPL("DrillBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DrillBP_C")
 	}
 	static class ADrillBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ADrillBP_C>();
 	}
 };
-static_assert(alignof(ADrillBP_C) == 0x000008, "Wrong alignment on ADrillBP_C");
-static_assert(sizeof(ADrillBP_C) == 0x0002C0, "Wrong size on ADrillBP_C");
-static_assert(offsetof(ADrillBP_C, UberGraphFrame_DrillBP_C) == 0x000258, "Member 'ADrillBP_C::UberGraphFrame_DrillBP_C' has a wrong offset!");
-static_assert(offsetof(ADrillBP_C, HighlightInRangeComponent) == 0x000260, "Member 'ADrillBP_C::HighlightInRangeComponent' has a wrong offset!");
-static_assert(offsetof(ADrillBP_C, DrillSound) == 0x000268, "Member 'ADrillBP_C::DrillSound' has a wrong offset!");
-static_assert(offsetof(ADrillBP_C, Drill_Drill) == 0x000270, "Member 'ADrillBP_C::Drill_Drill' has a wrong offset!");
-static_assert(offsetof(ADrillBP_C, Drill_Drill3) == 0x000278, "Member 'ADrillBP_C::Drill_Drill3' has a wrong offset!");
-static_assert(offsetof(ADrillBP_C, Drill_Drill2) == 0x000280, "Member 'ADrillBP_C::Drill_Drill2' has a wrong offset!");
-static_assert(offsetof(ADrillBP_C, Drill_Drill1) == 0x000288, "Member 'ADrillBP_C::Drill_Drill1' has a wrong offset!");
-static_assert(offsetof(ADrillBP_C, Arrow) == 0x000290, "Member 'ADrillBP_C::Arrow' has a wrong offset!");
-static_assert(offsetof(ADrillBP_C, ParticleSystem) == 0x000298, "Member 'ADrillBP_C::ParticleSystem' has a wrong offset!");
-static_assert(offsetof(ADrillBP_C, AlertComponent) == 0x0002A0, "Member 'ADrillBP_C::AlertComponent' has a wrong offset!");
-static_assert(offsetof(ADrillBP_C, HighlightWhenHolding) == 0x0002A8, "Member 'ADrillBP_C::HighlightWhenHolding' has a wrong offset!");
-static_assert(offsetof(ADrillBP_C, SusItemComponent) == 0x0002B0, "Member 'ADrillBP_C::SusItemComponent' has a wrong offset!");
-static_assert(offsetof(ADrillBP_C, ToolComponent) == 0x0002B8, "Member 'ADrillBP_C::ToolComponent' has a wrong offset!");
+DUMPER7_ASSERTS_ADrillBP_C;
 
 }
 

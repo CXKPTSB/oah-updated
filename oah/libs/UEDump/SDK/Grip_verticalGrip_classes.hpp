@@ -23,15 +23,18 @@ class AGrip_verticalGrip_C final : public AAttachment_Grip_base_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Grip_verticalGrip_C">();
+		BP_STATIC_CLASS_IMPL("Grip_verticalGrip_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Grip_verticalGrip_C")
 	}
 	static class AGrip_verticalGrip_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGrip_verticalGrip_C>();
 	}
 };
-static_assert(alignof(AGrip_verticalGrip_C) == 0x000008, "Wrong alignment on AGrip_verticalGrip_C");
-static_assert(sizeof(AGrip_verticalGrip_C) == 0x000250, "Wrong size on AGrip_verticalGrip_C");
+DUMPER7_ASSERTS_AGrip_verticalGrip_C;
 
 }
 

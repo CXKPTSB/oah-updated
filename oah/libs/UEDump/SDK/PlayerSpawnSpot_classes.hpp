@@ -40,22 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerSpawnSpot_C">();
+		BP_STATIC_CLASS_IMPL("PlayerSpawnSpot_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerSpawnSpot_C")
 	}
 	static class APlayerSpawnSpot_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APlayerSpawnSpot_C>();
 	}
 };
-static_assert(alignof(APlayerSpawnSpot_C) == 0x000008, "Wrong alignment on APlayerSpawnSpot_C");
-static_assert(sizeof(APlayerSpawnSpot_C) == 0x000258, "Wrong size on APlayerSpawnSpot_C");
-static_assert(offsetof(APlayerSpawnSpot_C, UberGraphFrame) == 0x000220, "Member 'APlayerSpawnSpot_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(APlayerSpawnSpot_C, Arrow) == 0x000228, "Member 'APlayerSpawnSpot_C::Arrow' has a wrong offset!");
-static_assert(offsetof(APlayerSpawnSpot_C, DefaultSceneRoot) == 0x000230, "Member 'APlayerSpawnSpot_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(APlayerSpawnSpot_C, Taken_) == 0x000238, "Member 'APlayerSpawnSpot_C::Taken_' has a wrong offset!");
-static_assert(offsetof(APlayerSpawnSpot_C, Player) == 0x000240, "Member 'APlayerSpawnSpot_C::Player' has a wrong offset!");
-static_assert(offsetof(APlayerSpawnSpot_C, Index_0) == 0x000248, "Member 'APlayerSpawnSpot_C::Index_0' has a wrong offset!");
-static_assert(offsetof(APlayerSpawnSpot_C, PlayerPreview) == 0x000250, "Member 'APlayerSpawnSpot_C::PlayerPreview' has a wrong offset!");
+DUMPER7_ASSERTS_APlayerSpawnSpot_C;
 
 }
 

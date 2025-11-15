@@ -31,13 +31,7 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SteamFriend_child_C_ExecuteUbergraph_SteamFriend_child) == 0x000008, "Wrong alignment on SteamFriend_child_C_ExecuteUbergraph_SteamFriend_child");
-static_assert(sizeof(SteamFriend_child_C_ExecuteUbergraph_SteamFriend_child) == 0x000048, "Wrong size on SteamFriend_child_C_ExecuteUbergraph_SteamFriend_child");
-static_assert(offsetof(SteamFriend_child_C_ExecuteUbergraph_SteamFriend_child, EntryPoint) == 0x000000, "Member 'SteamFriend_child_C_ExecuteUbergraph_SteamFriend_child::EntryPoint' has a wrong offset!");
-static_assert(offsetof(SteamFriend_child_C_ExecuteUbergraph_SteamFriend_child, CallFunc_GetColor_ReturnValue) == 0x000008, "Member 'SteamFriend_child_C_ExecuteUbergraph_SteamFriend_child::CallFunc_GetColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SteamFriend_child_C_ExecuteUbergraph_SteamFriend_child, CallFunc_Create_ReturnValue) == 0x000030, "Member 'SteamFriend_child_C_ExecuteUbergraph_SteamFriend_child::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SteamFriend_child_C_ExecuteUbergraph_SteamFriend_child, CallFunc_PlayAnimation_ReturnValue) == 0x000038, "Member 'SteamFriend_child_C_ExecuteUbergraph_SteamFriend_child::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SteamFriend_child_C_ExecuteUbergraph_SteamFriend_child, CallFunc_PlayAnimation_ReturnValue_1) == 0x000040, "Member 'SteamFriend_child_C_ExecuteUbergraph_SteamFriend_child::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_SteamFriend_child_C_ExecuteUbergraph_SteamFriend_child;
 
 // Function SteamFriend_child.SteamFriend_child_C.SetAvatar
 // 0x00A0 (0x00A0 - 0x0000)
@@ -51,12 +45,7 @@ public:
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0018(0x0088)()
 };
-static_assert(alignof(SteamFriend_child_C_SetAvatar) == 0x000008, "Wrong alignment on SteamFriend_child_C_SetAvatar");
-static_assert(sizeof(SteamFriend_child_C_SetAvatar) == 0x0000A0, "Wrong size on SteamFriend_child_C_SetAvatar");
-static_assert(offsetof(SteamFriend_child_C_SetAvatar, CallFunc_GetSteamFriendAvatar_Result) == 0x000000, "Member 'SteamFriend_child_C_SetAvatar::CallFunc_GetSteamFriendAvatar_Result' has a wrong offset!");
-static_assert(offsetof(SteamFriend_child_C_SetAvatar, CallFunc_GetSteamFriendAvatar_ReturnValue) == 0x000008, "Member 'SteamFriend_child_C_SetAvatar::CallFunc_GetSteamFriendAvatar_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SteamFriend_child_C_SetAvatar, K2Node_SwitchEnum_CmpSuccess) == 0x000010, "Member 'SteamFriend_child_C_SetAvatar::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(SteamFriend_child_C_SetAvatar, K2Node_MakeStruct_SlateBrush) == 0x000018, "Member 'SteamFriend_child_C_SetAvatar::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
+DUMPER7_ASSERTS_SteamFriend_child_C_SetAvatar;
 
 // Function SteamFriend_child.SteamFriend_child_C.SetName
 // 0x0018 (0x0018 - 0x0000)
@@ -65,9 +54,7 @@ struct SteamFriend_child_C_SetName final
 public:
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0000(0x0018)()
 };
-static_assert(alignof(SteamFriend_child_C_SetName) == 0x000008, "Wrong alignment on SteamFriend_child_C_SetName");
-static_assert(sizeof(SteamFriend_child_C_SetName) == 0x000018, "Wrong size on SteamFriend_child_C_SetName");
-static_assert(offsetof(SteamFriend_child_C_SetName, CallFunc_Conv_StringToText_ReturnValue) == 0x000000, "Member 'SteamFriend_child_C_SetName::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SteamFriend_child_C_SetName;
 
 // Function SteamFriend_child.SteamFriend_child_C.GetColor
 // 0x0100 (0x0100 - 0x0000)
@@ -93,22 +80,7 @@ public:
 	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x00D8(0x0028)()
 };
-static_assert(alignof(SteamFriend_child_C_GetColor) == 0x000008, "Wrong alignment on SteamFriend_child_C_GetColor");
-static_assert(sizeof(SteamFriend_child_C_GetColor) == 0x000100, "Wrong size on SteamFriend_child_C_GetColor");
-static_assert(offsetof(SteamFriend_child_C_GetColor, ReturnValue) == 0x000000, "Member 'SteamFriend_child_C_GetColor::ReturnValue' has a wrong offset!");
-static_assert(offsetof(SteamFriend_child_C_GetColor, Temp_byte_Variable) == 0x000028, "Member 'SteamFriend_child_C_GetColor::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(SteamFriend_child_C_GetColor, Temp_struct_Variable) == 0x00002C, "Member 'SteamFriend_child_C_GetColor::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(SteamFriend_child_C_GetColor, Temp_struct_Variable_1) == 0x00003C, "Member 'SteamFriend_child_C_GetColor::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(SteamFriend_child_C_GetColor, Temp_struct_Variable_2) == 0x00004C, "Member 'SteamFriend_child_C_GetColor::Temp_struct_Variable_2' has a wrong offset!");
-static_assert(offsetof(SteamFriend_child_C_GetColor, Temp_struct_Variable_3) == 0x00005C, "Member 'SteamFriend_child_C_GetColor::Temp_struct_Variable_3' has a wrong offset!");
-static_assert(offsetof(SteamFriend_child_C_GetColor, Temp_struct_Variable_4) == 0x00006C, "Member 'SteamFriend_child_C_GetColor::Temp_struct_Variable_4' has a wrong offset!");
-static_assert(offsetof(SteamFriend_child_C_GetColor, Temp_struct_Variable_5) == 0x00007C, "Member 'SteamFriend_child_C_GetColor::Temp_struct_Variable_5' has a wrong offset!");
-static_assert(offsetof(SteamFriend_child_C_GetColor, K2Node_MakeStruct_SlateColor) == 0x000090, "Member 'SteamFriend_child_C_GetColor::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(SteamFriend_child_C_GetColor, CallFunc_GetSteamFriendGamePlayed_Result) == 0x0000B8, "Member 'SteamFriend_child_C_GetColor::CallFunc_GetSteamFriendGamePlayed_Result' has a wrong offset!");
-static_assert(offsetof(SteamFriend_child_C_GetColor, CallFunc_GetSteamFriendGamePlayed_AppID) == 0x0000BC, "Member 'SteamFriend_child_C_GetColor::CallFunc_GetSteamFriendGamePlayed_AppID' has a wrong offset!");
-static_assert(offsetof(SteamFriend_child_C_GetColor, K2Node_Select_Default) == 0x0000C0, "Member 'SteamFriend_child_C_GetColor::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(SteamFriend_child_C_GetColor, K2Node_SwitchEnum_CmpSuccess) == 0x0000D0, "Member 'SteamFriend_child_C_GetColor::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(SteamFriend_child_C_GetColor, K2Node_MakeStruct_SlateColor_1) == 0x0000D8, "Member 'SteamFriend_child_C_GetColor::K2Node_MakeStruct_SlateColor_1' has a wrong offset!");
+DUMPER7_ASSERTS_SteamFriend_child_C_GetColor;
 
 // Function SteamFriend_child.SteamFriend_child_C.GetVisibility_0
 // 0x0001 (0x0001 - 0x0000)
@@ -117,9 +89,7 @@ struct SteamFriend_child_C_GetVisibility_0 final
 public:
 	ESlateVisibility                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SteamFriend_child_C_GetVisibility_0) == 0x000001, "Wrong alignment on SteamFriend_child_C_GetVisibility_0");
-static_assert(sizeof(SteamFriend_child_C_GetVisibility_0) == 0x000001, "Wrong size on SteamFriend_child_C_GetVisibility_0");
-static_assert(offsetof(SteamFriend_child_C_GetVisibility_0, ReturnValue) == 0x000000, "Member 'SteamFriend_child_C_GetVisibility_0::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SteamFriend_child_C_GetVisibility_0;
 
 }
 

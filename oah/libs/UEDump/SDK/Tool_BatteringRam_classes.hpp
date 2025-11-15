@@ -34,18 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Tool_BatteringRam_C">();
+		BP_STATIC_CLASS_IMPL("Tool_BatteringRam_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Tool_BatteringRam_C")
 	}
 	static class ATool_BatteringRam_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ATool_BatteringRam_C>();
 	}
 };
-static_assert(alignof(ATool_BatteringRam_C) == 0x000008, "Wrong alignment on ATool_BatteringRam_C");
-static_assert(sizeof(ATool_BatteringRam_C) == 0x000270, "Wrong size on ATool_BatteringRam_C");
-static_assert(offsetof(ATool_BatteringRam_C, UberGraphFrame_Tool_BatteringRam_C) == 0x000258, "Member 'ATool_BatteringRam_C::UberGraphFrame_Tool_BatteringRam_C' has a wrong offset!");
-static_assert(offsetof(ATool_BatteringRam_C, HighlightInRangeComponent) == 0x000260, "Member 'ATool_BatteringRam_C::HighlightInRangeComponent' has a wrong offset!");
-static_assert(offsetof(ATool_BatteringRam_C, AlertComponent) == 0x000268, "Member 'ATool_BatteringRam_C::AlertComponent' has a wrong offset!");
+DUMPER7_ASSERTS_ATool_BatteringRam_C;
 
 }
 

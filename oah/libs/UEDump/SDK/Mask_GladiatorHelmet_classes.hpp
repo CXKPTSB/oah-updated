@@ -32,17 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Mask_GladiatorHelmet_C">();
+		BP_STATIC_CLASS_IMPL("Mask_GladiatorHelmet_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Mask_GladiatorHelmet_C")
 	}
 	static class AMask_GladiatorHelmet_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMask_GladiatorHelmet_C>();
 	}
 };
-static_assert(alignof(AMask_GladiatorHelmet_C) == 0x000008, "Wrong alignment on AMask_GladiatorHelmet_C");
-static_assert(sizeof(AMask_GladiatorHelmet_C) == 0x000240, "Wrong size on AMask_GladiatorHelmet_C");
-static_assert(offsetof(AMask_GladiatorHelmet_C, UberGraphFrame) == 0x000230, "Member 'AMask_GladiatorHelmet_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AMask_GladiatorHelmet_C, SkeletalMesh) == 0x000238, "Member 'AMask_GladiatorHelmet_C::SkeletalMesh' has a wrong offset!");
+DUMPER7_ASSERTS_AMask_GladiatorHelmet_C;
 
 }
 

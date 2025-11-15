@@ -59,38 +59,7 @@ public:
 	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x00C4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Dot_VectorVector_ReturnValue_1;           // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(CopAnimBP_C_ExecuteUbergraph_CopAnimBP) == 0x000008, "Wrong alignment on CopAnimBP_C_ExecuteUbergraph_CopAnimBP");
-static_assert(sizeof(CopAnimBP_C_ExecuteUbergraph_CopAnimBP) == 0x0000D8, "Wrong size on CopAnimBP_C_ExecuteUbergraph_CopAnimBP");
-static_assert(offsetof(CopAnimBP_C_ExecuteUbergraph_CopAnimBP, EntryPoint) == 0x000000, "Member 'CopAnimBP_C_ExecuteUbergraph_CopAnimBP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(CopAnimBP_C_ExecuteUbergraph_CopAnimBP, Temp_struct_Variable) == 0x000004, "Member 'CopAnimBP_C_ExecuteUbergraph_CopAnimBP::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(CopAnimBP_C_ExecuteUbergraph_CopAnimBP, Temp_bool_Variable) == 0x000010, "Member 'CopAnimBP_C_ExecuteUbergraph_CopAnimBP::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(CopAnimBP_C_ExecuteUbergraph_CopAnimBP, Temp_float_Variable) == 0x000014, "Member 'CopAnimBP_C_ExecuteUbergraph_CopAnimBP::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(CopAnimBP_C_ExecuteUbergraph_CopAnimBP, Temp_float_Variable_1) == 0x000018, "Member 'CopAnimBP_C_ExecuteUbergraph_CopAnimBP::Temp_float_Variable_1' has a wrong offset!");
-static_assert(offsetof(CopAnimBP_C_ExecuteUbergraph_CopAnimBP, Temp_bool_Variable_1) == 0x00001C, "Member 'CopAnimBP_C_ExecuteUbergraph_CopAnimBP::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(CopAnimBP_C_ExecuteUbergraph_CopAnimBP, CallFunc_BreakRotator_Roll) == 0x000020, "Member 'CopAnimBP_C_ExecuteUbergraph_CopAnimBP::CallFunc_BreakRotator_Roll' has a wrong offset!");
-static_assert(offsetof(CopAnimBP_C_ExecuteUbergraph_CopAnimBP, CallFunc_BreakRotator_Pitch) == 0x000024, "Member 'CopAnimBP_C_ExecuteUbergraph_CopAnimBP::CallFunc_BreakRotator_Pitch' has a wrong offset!");
-static_assert(offsetof(CopAnimBP_C_ExecuteUbergraph_CopAnimBP, CallFunc_BreakRotator_Yaw) == 0x000028, "Member 'CopAnimBP_C_ExecuteUbergraph_CopAnimBP::CallFunc_BreakRotator_Yaw' has a wrong offset!");
-static_assert(offsetof(CopAnimBP_C_ExecuteUbergraph_CopAnimBP, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00002C, "Member 'CopAnimBP_C_ExecuteUbergraph_CopAnimBP::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CopAnimBP_C_ExecuteUbergraph_CopAnimBP, CallFunc_Add_FloatFloat_ReturnValue) == 0x000030, "Member 'CopAnimBP_C_ExecuteUbergraph_CopAnimBP::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CopAnimBP_C_ExecuteUbergraph_CopAnimBP, CallFunc_ClampAngle_ReturnValue) == 0x000034, "Member 'CopAnimBP_C_ExecuteUbergraph_CopAnimBP::CallFunc_ClampAngle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CopAnimBP_C_ExecuteUbergraph_CopAnimBP, K2Node_Select_Default) == 0x000038, "Member 'CopAnimBP_C_ExecuteUbergraph_CopAnimBP::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(CopAnimBP_C_ExecuteUbergraph_CopAnimBP, CallFunc_MakeRotator_ReturnValue) == 0x00003C, "Member 'CopAnimBP_C_ExecuteUbergraph_CopAnimBP::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CopAnimBP_C_ExecuteUbergraph_CopAnimBP, K2Node_Event_DeltaTimeX) == 0x000048, "Member 'CopAnimBP_C_ExecuteUbergraph_CopAnimBP::K2Node_Event_DeltaTimeX' has a wrong offset!");
-static_assert(offsetof(CopAnimBP_C_ExecuteUbergraph_CopAnimBP, CallFunc_TryGetPawnOwner_ReturnValue) == 0x000050, "Member 'CopAnimBP_C_ExecuteUbergraph_CopAnimBP::CallFunc_TryGetPawnOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CopAnimBP_C_ExecuteUbergraph_CopAnimBP, K2Node_DynamicCast_AsNPC_Police_Base) == 0x000058, "Member 'CopAnimBP_C_ExecuteUbergraph_CopAnimBP::K2Node_DynamicCast_AsNPC_Police_Base' has a wrong offset!");
-static_assert(offsetof(CopAnimBP_C_ExecuteUbergraph_CopAnimBP, K2Node_DynamicCast_bSuccess) == 0x000060, "Member 'CopAnimBP_C_ExecuteUbergraph_CopAnimBP::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(CopAnimBP_C_ExecuteUbergraph_CopAnimBP, CallFunc_GetVelocity_ReturnValue) == 0x000064, "Member 'CopAnimBP_C_ExecuteUbergraph_CopAnimBP::CallFunc_GetVelocity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CopAnimBP_C_ExecuteUbergraph_CopAnimBP, CallFunc_IsValid_ReturnValue) == 0x000070, "Member 'CopAnimBP_C_ExecuteUbergraph_CopAnimBP::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CopAnimBP_C_ExecuteUbergraph_CopAnimBP, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000074, "Member 'CopAnimBP_C_ExecuteUbergraph_CopAnimBP::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CopAnimBP_C_ExecuteUbergraph_CopAnimBP, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000080, "Member 'CopAnimBP_C_ExecuteUbergraph_CopAnimBP::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CopAnimBP_C_ExecuteUbergraph_CopAnimBP, CallFunc_IsValid_ReturnValue_1) == 0x00008C, "Member 'CopAnimBP_C_ExecuteUbergraph_CopAnimBP::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CopAnimBP_C_ExecuteUbergraph_CopAnimBP, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000090, "Member 'CopAnimBP_C_ExecuteUbergraph_CopAnimBP::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CopAnimBP_C_ExecuteUbergraph_CopAnimBP, CallFunc_FindLookAtRotation_ReturnValue) == 0x00009C, "Member 'CopAnimBP_C_ExecuteUbergraph_CopAnimBP::CallFunc_FindLookAtRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CopAnimBP_C_ExecuteUbergraph_CopAnimBP, K2Node_Select_Default_1) == 0x0000A8, "Member 'CopAnimBP_C_ExecuteUbergraph_CopAnimBP::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(CopAnimBP_C_ExecuteUbergraph_CopAnimBP, CallFunc_GetActorRightVector_ReturnValue) == 0x0000B4, "Member 'CopAnimBP_C_ExecuteUbergraph_CopAnimBP::CallFunc_GetActorRightVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CopAnimBP_C_ExecuteUbergraph_CopAnimBP, CallFunc_Dot_VectorVector_ReturnValue) == 0x0000C0, "Member 'CopAnimBP_C_ExecuteUbergraph_CopAnimBP::CallFunc_Dot_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CopAnimBP_C_ExecuteUbergraph_CopAnimBP, CallFunc_GetActorForwardVector_ReturnValue) == 0x0000C4, "Member 'CopAnimBP_C_ExecuteUbergraph_CopAnimBP::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CopAnimBP_C_ExecuteUbergraph_CopAnimBP, CallFunc_Dot_VectorVector_ReturnValue_1) == 0x0000D0, "Member 'CopAnimBP_C_ExecuteUbergraph_CopAnimBP::CallFunc_Dot_VectorVector_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_CopAnimBP_C_ExecuteUbergraph_CopAnimBP;
 
 // Function CopAnimBP.CopAnimBP_C.BlueprintUpdateAnimation
 // 0x0004 (0x0004 - 0x0000)
@@ -99,9 +68,7 @@ struct CopAnimBP_C_BlueprintUpdateAnimation final
 public:
 	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(CopAnimBP_C_BlueprintUpdateAnimation) == 0x000004, "Wrong alignment on CopAnimBP_C_BlueprintUpdateAnimation");
-static_assert(sizeof(CopAnimBP_C_BlueprintUpdateAnimation) == 0x000004, "Wrong size on CopAnimBP_C_BlueprintUpdateAnimation");
-static_assert(offsetof(CopAnimBP_C_BlueprintUpdateAnimation, DeltaTimeX) == 0x000000, "Member 'CopAnimBP_C_BlueprintUpdateAnimation::DeltaTimeX' has a wrong offset!");
+DUMPER7_ASSERTS_CopAnimBP_C_BlueprintUpdateAnimation;
 
 // Function CopAnimBP.CopAnimBP_C.AnimGraph
 // 0x0010 (0x0010 - 0x0000)
@@ -110,9 +77,7 @@ struct CopAnimBP_C_AnimGraph final
 public:
 	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(CopAnimBP_C_AnimGraph) == 0x000008, "Wrong alignment on CopAnimBP_C_AnimGraph");
-static_assert(sizeof(CopAnimBP_C_AnimGraph) == 0x000010, "Wrong size on CopAnimBP_C_AnimGraph");
-static_assert(offsetof(CopAnimBP_C_AnimGraph, AnimGraph_0) == 0x000000, "Member 'CopAnimBP_C_AnimGraph::AnimGraph_0' has a wrong offset!");
+DUMPER7_ASSERTS_CopAnimBP_C_AnimGraph;
 
 }
 

@@ -40,7 +40,7 @@ void USteamAchievementComponent_C::ExecuteUbergraph_SteamAchievementComponent(in
 // Function SteamAchievementComponent.SteamAchievementComponent_C.UnlockAchievement
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FString                           AchievementName                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    AchievementName                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 // class AActor*                           Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void USteamAchievementComponent_C::UnlockAchievement(const class FString& AchievementName, class AActor* Player)

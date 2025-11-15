@@ -22,10 +22,7 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetPlayLength_ReturnValue;                // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ShopItem_Emote_base_C_ExecuteUbergraph_ShopItem_Emote_base) == 0x000004, "Wrong alignment on ShopItem_Emote_base_C_ExecuteUbergraph_ShopItem_Emote_base");
-static_assert(sizeof(ShopItem_Emote_base_C_ExecuteUbergraph_ShopItem_Emote_base) == 0x000008, "Wrong size on ShopItem_Emote_base_C_ExecuteUbergraph_ShopItem_Emote_base");
-static_assert(offsetof(ShopItem_Emote_base_C_ExecuteUbergraph_ShopItem_Emote_base, EntryPoint) == 0x000000, "Member 'ShopItem_Emote_base_C_ExecuteUbergraph_ShopItem_Emote_base::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ShopItem_Emote_base_C_ExecuteUbergraph_ShopItem_Emote_base, CallFunc_GetPlayLength_ReturnValue) == 0x000004, "Member 'ShopItem_Emote_base_C_ExecuteUbergraph_ShopItem_Emote_base::CallFunc_GetPlayLength_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ShopItem_Emote_base_C_ExecuteUbergraph_ShopItem_Emote_base;
 
 }
 

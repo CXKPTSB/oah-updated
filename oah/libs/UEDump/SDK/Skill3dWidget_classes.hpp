@@ -28,18 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Skill3dWidget_C">();
+		BP_STATIC_CLASS_IMPL("Skill3dWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Skill3dWidget_C")
 	}
 	static class ASkill3dWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASkill3dWidget_C>();
 	}
 };
-static_assert(alignof(ASkill3dWidget_C) == 0x000008, "Wrong alignment on ASkill3dWidget_C");
-static_assert(sizeof(ASkill3dWidget_C) == 0x000238, "Wrong size on ASkill3dWidget_C");
-static_assert(offsetof(ASkill3dWidget_C, SM_Prop_GraphicsTablet_03) == 0x000220, "Member 'ASkill3dWidget_C::SM_Prop_GraphicsTablet_03' has a wrong offset!");
-static_assert(offsetof(ASkill3dWidget_C, Widget) == 0x000228, "Member 'ASkill3dWidget_C::Widget' has a wrong offset!");
-static_assert(offsetof(ASkill3dWidget_C, DefaultSceneRoot) == 0x000230, "Member 'ASkill3dWidget_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_ASkill3dWidget_C;
 
 }
 

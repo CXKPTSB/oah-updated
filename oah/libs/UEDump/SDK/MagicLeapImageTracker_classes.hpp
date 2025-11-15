@@ -34,7 +34,7 @@ public:
 	TMulticastInlineDelegate<void()>              OnSetImageTargetFailed;                            // 0x0228(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void()>              OnImageTargetFound;                                // 0x0238(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void()>              OnImageTargetLost;                                 // 0x0248(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FVector& LastTrackedLocation, const struct FRotator& LastTrackedRotation, const struct FVector& NewUnreliableLocation, const struct FRotator& NewUnreliableRotation)> OnImageTargetUnreliableTracking;                   // 0x0258(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FVector& LastTrackedLocation, const struct FRotator& LastTrackedRotation, const struct FVector& NewUnreliableLocation, const struct FRotator& NewUnreliableRotation)> OnImageTargetUnreliableTracking; // 0x0258(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_268[0x8];                                      // 0x0268(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -44,26 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MagicLeapImageTrackerComponent">();
+		STATIC_CLASS_IMPL("MagicLeapImageTrackerComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MagicLeapImageTrackerComponent")
 	}
 	static class UMagicLeapImageTrackerComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMagicLeapImageTrackerComponent>();
 	}
 };
-static_assert(alignof(UMagicLeapImageTrackerComponent) == 0x000010, "Wrong alignment on UMagicLeapImageTrackerComponent");
-static_assert(sizeof(UMagicLeapImageTrackerComponent) == 0x000270, "Wrong size on UMagicLeapImageTrackerComponent");
-static_assert(offsetof(UMagicLeapImageTrackerComponent, TargetImageTexture) == 0x0001F8, "Member 'UMagicLeapImageTrackerComponent::TargetImageTexture' has a wrong offset!");
-static_assert(offsetof(UMagicLeapImageTrackerComponent, Name_0) == 0x000200, "Member 'UMagicLeapImageTrackerComponent::Name_0' has a wrong offset!");
-static_assert(offsetof(UMagicLeapImageTrackerComponent, LongerDimension) == 0x000210, "Member 'UMagicLeapImageTrackerComponent::LongerDimension' has a wrong offset!");
-static_assert(offsetof(UMagicLeapImageTrackerComponent, bIsStationary) == 0x000214, "Member 'UMagicLeapImageTrackerComponent::bIsStationary' has a wrong offset!");
-static_assert(offsetof(UMagicLeapImageTrackerComponent, bUseUnreliablePose) == 0x000215, "Member 'UMagicLeapImageTrackerComponent::bUseUnreliablePose' has a wrong offset!");
-static_assert(offsetof(UMagicLeapImageTrackerComponent, AxisOrientation) == 0x000216, "Member 'UMagicLeapImageTrackerComponent::AxisOrientation' has a wrong offset!");
-static_assert(offsetof(UMagicLeapImageTrackerComponent, OnSetImageTargetSucceeded) == 0x000218, "Member 'UMagicLeapImageTrackerComponent::OnSetImageTargetSucceeded' has a wrong offset!");
-static_assert(offsetof(UMagicLeapImageTrackerComponent, OnSetImageTargetFailed) == 0x000228, "Member 'UMagicLeapImageTrackerComponent::OnSetImageTargetFailed' has a wrong offset!");
-static_assert(offsetof(UMagicLeapImageTrackerComponent, OnImageTargetFound) == 0x000238, "Member 'UMagicLeapImageTrackerComponent::OnImageTargetFound' has a wrong offset!");
-static_assert(offsetof(UMagicLeapImageTrackerComponent, OnImageTargetLost) == 0x000248, "Member 'UMagicLeapImageTrackerComponent::OnImageTargetLost' has a wrong offset!");
-static_assert(offsetof(UMagicLeapImageTrackerComponent, OnImageTargetUnreliableTracking) == 0x000258, "Member 'UMagicLeapImageTrackerComponent::OnImageTargetUnreliableTracking' has a wrong offset!");
+DUMPER7_ASSERTS_UMagicLeapImageTrackerComponent;
 
 // Class MagicLeapImageTracker.MagicLeapImageTrackerFunctionLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -78,15 +70,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MagicLeapImageTrackerFunctionLibrary">();
+		STATIC_CLASS_IMPL("MagicLeapImageTrackerFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MagicLeapImageTrackerFunctionLibrary")
 	}
 	static class UMagicLeapImageTrackerFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMagicLeapImageTrackerFunctionLibrary>();
 	}
 };
-static_assert(alignof(UMagicLeapImageTrackerFunctionLibrary) == 0x000008, "Wrong alignment on UMagicLeapImageTrackerFunctionLibrary");
-static_assert(sizeof(UMagicLeapImageTrackerFunctionLibrary) == 0x000028, "Wrong size on UMagicLeapImageTrackerFunctionLibrary");
+DUMPER7_ASSERTS_UMagicLeapImageTrackerFunctionLibrary;
 
 }
 

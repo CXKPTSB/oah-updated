@@ -21,9 +21,7 @@ struct Pistol_GT17_C_UserConstructionScript final
 public:
 	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Pistol_GT17_C_UserConstructionScript) == 0x000001, "Wrong alignment on Pistol_GT17_C_UserConstructionScript");
-static_assert(sizeof(Pistol_GT17_C_UserConstructionScript) == 0x000001, "Wrong size on Pistol_GT17_C_UserConstructionScript");
-static_assert(offsetof(Pistol_GT17_C_UserConstructionScript, CallFunc_K2_AttachToComponent_ReturnValue) == 0x000000, "Member 'Pistol_GT17_C_UserConstructionScript::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_Pistol_GT17_C_UserConstructionScript;
 
 }
 

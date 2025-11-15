@@ -27,17 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LockPickUI_C">();
+		BP_STATIC_CLASS_IMPL("LockPickUI_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LockPickUI_C")
 	}
 	static class ULockPickUI_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULockPickUI_C>();
 	}
 };
-static_assert(alignof(ULockPickUI_C) == 0x000008, "Wrong alignment on ULockPickUI_C");
-static_assert(sizeof(ULockPickUI_C) == 0x000270, "Wrong size on ULockPickUI_C");
-static_assert(offsetof(ULockPickUI_C, ProgressBar_67) == 0x000260, "Member 'ULockPickUI_C::ProgressBar_67' has a wrong offset!");
-static_assert(offsetof(ULockPickUI_C, LockPick) == 0x000268, "Member 'ULockPickUI_C::LockPick' has a wrong offset!");
+DUMPER7_ASSERTS_ULockPickUI_C;
 
 }
 

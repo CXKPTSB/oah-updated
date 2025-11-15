@@ -87,58 +87,7 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot) == 0x000008, "Wrong alignment on EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot");
-static_assert(sizeof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot) == 0x000188, "Wrong size on EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, EntryPoint) == 0x000000, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::EntryPoint' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, K2Node_Event_Category_1) == 0x000004, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::K2Node_Event_Category_1' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, K2Node_Event_ItemInfo) == 0x000008, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::K2Node_Event_ItemInfo' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, K2Node_Event_SalePrice) == 0x000010, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::K2Node_Event_SalePrice' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, CallFunc_GetPlayerController_ReturnValue) == 0x000018, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, K2Node_DynamicCast_AsRobber_Controller) == 0x000020, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::K2Node_DynamicCast_AsRobber_Controller' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, CallFunc_Array_Get_Item) == 0x000029, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, K2Node_CustomEvent_ItemInfo) == 0x000030, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::K2Node_CustomEvent_ItemInfo' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, CallFunc_Find_Equipped_Item_from_Category_Function_Item) == 0x000038, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::CallFunc_Find_Equipped_Item_from_Category_Function_Item' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, CallFunc_Array_Get_Item_1) == 0x000040, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, CallFunc_GetAllWidgetsWithInterface_FoundWidgets) == 0x000048, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::CallFunc_GetAllWidgetsWithInterface_FoundWidgets' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, CallFunc_GetAllActorsWithInterface_OutActors) == 0x000058, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::CallFunc_GetAllActorsWithInterface_OutActors' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, CallFunc_Array_Length_ReturnValue) == 0x000068, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, CallFunc_Array_Length_ReturnValue_1) == 0x00006C, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, Temp_int_Array_Index_Variable) == 0x000070, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, CallFunc_Array_Get_Item_2) == 0x000078, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, K2Node_DynamicCast_AsMenu_UIInteraface) == 0x000080, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::K2Node_DynamicCast_AsMenu_UIInteraface' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, K2Node_DynamicCast_bSuccess_1) == 0x000090, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, Temp_int_Loop_Counter_Variable) == 0x000094, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, CallFunc_Less_IntInt_ReturnValue) == 0x000098, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, CallFunc_Add_IntInt_ReturnValue) == 0x00009C, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, Temp_int_Loop_Counter_Variable_1) == 0x0000A0, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, CallFunc_Less_IntInt_ReturnValue_1) == 0x0000A4, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, CallFunc_Add_IntInt_ReturnValue_1) == 0x0000A8, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, CallFunc_GetOwningPlayer_ReturnValue) == 0x0000B0, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, Temp_int_Array_Index_Variable_1) == 0x0000B8, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, CallFunc_GetActorOfClass_ReturnValue) == 0x0000C0, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::CallFunc_GetActorOfClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, CallFunc_Array_Get_Item_3) == 0x0000C8, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, K2Node_DynamicCast_AsMenu_UIInteraface_1) == 0x0000D0, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::K2Node_DynamicCast_AsMenu_UIInteraface_1' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, K2Node_DynamicCast_bSuccess_2) == 0x0000E0, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, CallFunc_Array_Get_Item_4) == 0x0000E8, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, CallFunc_ProjectWorldLocationToWidgetPosition_ScreenPosition) == 0x0000F0, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::CallFunc_ProjectWorldLocationToWidgetPosition_ScreenPosition' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, CallFunc_ProjectWorldLocationToWidgetPosition_ReturnValue) == 0x0000F8, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::CallFunc_ProjectWorldLocationToWidgetPosition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x0000FC, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, CallFunc_GetActorOfClass_ReturnValue_1) == 0x000108, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::CallFunc_GetActorOfClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, CallFunc_GetOwningPlayer_ReturnValue_1) == 0x000110, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::CallFunc_GetOwningPlayer_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, CallFunc_GetViewportSize_SizeX) == 0x000118, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::CallFunc_GetViewportSize_SizeX' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, CallFunc_GetViewportSize_SizeY) == 0x00011C, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::CallFunc_GetViewportSize_SizeY' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, K2Node_Event_MyGeometry) == 0x000120, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, K2Node_Event_InDeltaTime) == 0x000158, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, CallFunc_Conv_IntToFloat_ReturnValue) == 0x00015C, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, CallFunc_Conv_IntToFloat_ReturnValue_1) == 0x000160, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::CallFunc_Conv_IntToFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000164, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x000168, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00016C, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, K2Node_Event_Category) == 0x000170, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::K2Node_Event_Category' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, CallFunc_Array_Contains_ReturnValue) == 0x000171, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, CallFunc_PlayAnimation_ReturnValue) == 0x000178, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot, CallFunc_PlayAnimation_ReturnValue_1) == 0x000180, "Member 'EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_EquippedToolSlot_C_ExecuteUbergraph_EquippedToolSlot;
 
 // Function EquippedToolSlot.EquippedToolSlot_C.DragItemFromCategory
 // 0x0001 (0x0001 - 0x0000)
@@ -147,9 +96,7 @@ struct EquippedToolSlot_C_DragItemFromCategory final
 public:
 	EShopItemCategory                             Category;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EquippedToolSlot_C_DragItemFromCategory) == 0x000001, "Wrong alignment on EquippedToolSlot_C_DragItemFromCategory");
-static_assert(sizeof(EquippedToolSlot_C_DragItemFromCategory) == 0x000001, "Wrong size on EquippedToolSlot_C_DragItemFromCategory");
-static_assert(offsetof(EquippedToolSlot_C_DragItemFromCategory, Category) == 0x000000, "Member 'EquippedToolSlot_C_DragItemFromCategory::Category' has a wrong offset!");
+DUMPER7_ASSERTS_EquippedToolSlot_C_DragItemFromCategory;
 
 // Function EquippedToolSlot.EquippedToolSlot_C.Tick
 // 0x003C (0x003C - 0x0000)
@@ -159,10 +106,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EquippedToolSlot_C_Tick) == 0x000004, "Wrong alignment on EquippedToolSlot_C_Tick");
-static_assert(sizeof(EquippedToolSlot_C_Tick) == 0x00003C, "Wrong size on EquippedToolSlot_C_Tick");
-static_assert(offsetof(EquippedToolSlot_C_Tick, MyGeometry) == 0x000000, "Member 'EquippedToolSlot_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_Tick, InDeltaTime) == 0x000038, "Member 'EquippedToolSlot_C_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_EquippedToolSlot_C_Tick;
 
 // Function EquippedToolSlot.EquippedToolSlot_C.SetNewItem
 // 0x0008 (0x0008 - 0x0000)
@@ -171,9 +115,7 @@ struct EquippedToolSlot_C_SetNewItem final
 public:
 	class UClass*                                 ItemInfo;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EquippedToolSlot_C_SetNewItem) == 0x000008, "Wrong alignment on EquippedToolSlot_C_SetNewItem");
-static_assert(sizeof(EquippedToolSlot_C_SetNewItem) == 0x000008, "Wrong size on EquippedToolSlot_C_SetNewItem");
-static_assert(offsetof(EquippedToolSlot_C_SetNewItem, ItemInfo) == 0x000000, "Member 'EquippedToolSlot_C_SetNewItem::ItemInfo' has a wrong offset!");
+DUMPER7_ASSERTS_EquippedToolSlot_C_SetNewItem;
 
 // Function EquippedToolSlot.EquippedToolSlot_C.PreviewItem
 // 0x0010 (0x0010 - 0x0000)
@@ -183,10 +125,7 @@ public:
 	class UClass*                                 ItemInfo;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         SalePrice;                                         // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EquippedToolSlot_C_PreviewItem) == 0x000008, "Wrong alignment on EquippedToolSlot_C_PreviewItem");
-static_assert(sizeof(EquippedToolSlot_C_PreviewItem) == 0x000010, "Wrong size on EquippedToolSlot_C_PreviewItem");
-static_assert(offsetof(EquippedToolSlot_C_PreviewItem, ItemInfo) == 0x000000, "Member 'EquippedToolSlot_C_PreviewItem::ItemInfo' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_PreviewItem, SalePrice) == 0x000008, "Member 'EquippedToolSlot_C_PreviewItem::SalePrice' has a wrong offset!");
+DUMPER7_ASSERTS_EquippedToolSlot_C_PreviewItem;
 
 // Function EquippedToolSlot.EquippedToolSlot_C.ChangeCategory
 // 0x0001 (0x0001 - 0x0000)
@@ -195,9 +134,7 @@ struct EquippedToolSlot_C_ChangeCategory final
 public:
 	EShopItemCategory                             Category;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EquippedToolSlot_C_ChangeCategory) == 0x000001, "Wrong alignment on EquippedToolSlot_C_ChangeCategory");
-static_assert(sizeof(EquippedToolSlot_C_ChangeCategory) == 0x000001, "Wrong size on EquippedToolSlot_C_ChangeCategory");
-static_assert(offsetof(EquippedToolSlot_C_ChangeCategory, Category) == 0x000000, "Member 'EquippedToolSlot_C_ChangeCategory::Category' has a wrong offset!");
+DUMPER7_ASSERTS_EquippedToolSlot_C_ChangeCategory;
 
 // Function EquippedToolSlot.EquippedToolSlot_C.OnDragOver
 // 0x00B8 (0x00B8 - 0x0000)
@@ -209,12 +146,7 @@ public:
 	class UDragDropOperation*                     Operation;                                         // 0x00A8(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x00B0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(EquippedToolSlot_C_OnDragOver) == 0x000008, "Wrong alignment on EquippedToolSlot_C_OnDragOver");
-static_assert(sizeof(EquippedToolSlot_C_OnDragOver) == 0x0000B8, "Wrong size on EquippedToolSlot_C_OnDragOver");
-static_assert(offsetof(EquippedToolSlot_C_OnDragOver, MyGeometry) == 0x000000, "Member 'EquippedToolSlot_C_OnDragOver::MyGeometry' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_OnDragOver, PointerEvent) == 0x000038, "Member 'EquippedToolSlot_C_OnDragOver::PointerEvent' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_OnDragOver, Operation) == 0x0000A8, "Member 'EquippedToolSlot_C_OnDragOver::Operation' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_OnDragOver, ReturnValue) == 0x0000B0, "Member 'EquippedToolSlot_C_OnDragOver::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_EquippedToolSlot_C_OnDragOver;
 
 // Function EquippedToolSlot.EquippedToolSlot_C.OnDrop
 // 0x00C8 (0x00C8 - 0x0000)
@@ -230,15 +162,7 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(EquippedToolSlot_C_OnDrop) == 0x000008, "Wrong alignment on EquippedToolSlot_C_OnDrop");
-static_assert(sizeof(EquippedToolSlot_C_OnDrop) == 0x0000C8, "Wrong size on EquippedToolSlot_C_OnDrop");
-static_assert(offsetof(EquippedToolSlot_C_OnDrop, MyGeometry) == 0x000000, "Member 'EquippedToolSlot_C_OnDrop::MyGeometry' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_OnDrop, PointerEvent) == 0x000038, "Member 'EquippedToolSlot_C_OnDrop::PointerEvent' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_OnDrop, Operation) == 0x0000A8, "Member 'EquippedToolSlot_C_OnDrop::Operation' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_OnDrop, ReturnValue) == 0x0000B0, "Member 'EquippedToolSlot_C_OnDrop::ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_OnDrop, K2Node_DynamicCast_AsInventory_Item) == 0x0000B8, "Member 'EquippedToolSlot_C_OnDrop::K2Node_DynamicCast_AsInventory_Item' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_OnDrop, K2Node_DynamicCast_bSuccess) == 0x0000C0, "Member 'EquippedToolSlot_C_OnDrop::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_OnDrop, CallFunc_Array_Contains_ReturnValue) == 0x0000C1, "Member 'EquippedToolSlot_C_OnDrop::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_EquippedToolSlot_C_OnDrop;
 
 // Function EquippedToolSlot.EquippedToolSlot_C.UpdateItemInfo
 // 0x0020 (0x0020 - 0x0000)
@@ -249,10 +173,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0008(0x0018)()
 };
-static_assert(alignof(EquippedToolSlot_C_UpdateItemInfo) == 0x000008, "Wrong alignment on EquippedToolSlot_C_UpdateItemInfo");
-static_assert(sizeof(EquippedToolSlot_C_UpdateItemInfo) == 0x000020, "Wrong size on EquippedToolSlot_C_UpdateItemInfo");
-static_assert(offsetof(EquippedToolSlot_C_UpdateItemInfo, CallFunc_IsValidClass_ReturnValue) == 0x000000, "Member 'EquippedToolSlot_C_UpdateItemInfo::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedToolSlot_C_UpdateItemInfo, CallFunc_Conv_StringToText_ReturnValue) == 0x000008, "Member 'EquippedToolSlot_C_UpdateItemInfo::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_EquippedToolSlot_C_UpdateItemInfo;
 
 }
 

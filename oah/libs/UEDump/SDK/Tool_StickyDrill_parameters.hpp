@@ -26,11 +26,7 @@ public:
 	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0010(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Tool_StickyDrill_C_ExecuteUbergraph_Tool_StickyDrill) == 0x000008, "Wrong alignment on Tool_StickyDrill_C_ExecuteUbergraph_Tool_StickyDrill");
-static_assert(sizeof(Tool_StickyDrill_C_ExecuteUbergraph_Tool_StickyDrill) == 0x000020, "Wrong size on Tool_StickyDrill_C_ExecuteUbergraph_Tool_StickyDrill");
-static_assert(offsetof(Tool_StickyDrill_C_ExecuteUbergraph_Tool_StickyDrill, EntryPoint) == 0x000000, "Member 'Tool_StickyDrill_C_ExecuteUbergraph_Tool_StickyDrill::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Tool_StickyDrill_C_ExecuteUbergraph_Tool_StickyDrill, CallFunc_GetOwner_ReturnValue) == 0x000008, "Member 'Tool_StickyDrill_C_ExecuteUbergraph_Tool_StickyDrill::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Tool_StickyDrill_C_ExecuteUbergraph_Tool_StickyDrill, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000010, "Member 'Tool_StickyDrill_C_ExecuteUbergraph_Tool_StickyDrill::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_Tool_StickyDrill_C_ExecuteUbergraph_Tool_StickyDrill;
 
 }
 

@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GuardEscortPoint_C">();
+		BP_STATIC_CLASS_IMPL("GuardEscortPoint_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GuardEscortPoint_C")
 	}
 	static class AGuardEscortPoint_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGuardEscortPoint_C>();
 	}
 };
-static_assert(alignof(AGuardEscortPoint_C) == 0x000008, "Wrong alignment on AGuardEscortPoint_C");
-static_assert(sizeof(AGuardEscortPoint_C) == 0x000228, "Wrong size on AGuardEscortPoint_C");
-static_assert(offsetof(AGuardEscortPoint_C, DefaultSceneRoot) == 0x000220, "Member 'AGuardEscortPoint_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_AGuardEscortPoint_C;
 
 }
 

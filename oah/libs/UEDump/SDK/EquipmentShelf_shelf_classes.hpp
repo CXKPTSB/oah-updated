@@ -35,24 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EquipmentShelf_shelf_C">();
+		BP_STATIC_CLASS_IMPL("EquipmentShelf_shelf_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EquipmentShelf_shelf_C")
 	}
 	static class AEquipmentShelf_shelf_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AEquipmentShelf_shelf_C>();
 	}
 };
-static_assert(alignof(AEquipmentShelf_shelf_C) == 0x000008, "Wrong alignment on AEquipmentShelf_shelf_C");
-static_assert(sizeof(AEquipmentShelf_shelf_C) == 0x000260, "Wrong size on AEquipmentShelf_shelf_C");
-static_assert(offsetof(AEquipmentShelf_shelf_C, Duffelbag) == 0x000220, "Member 'AEquipmentShelf_shelf_C::Duffelbag' has a wrong offset!");
-static_assert(offsetof(AEquipmentShelf_shelf_C, Shelf_Bot) == 0x000228, "Member 'AEquipmentShelf_shelf_C::Shelf_Bot' has a wrong offset!");
-static_assert(offsetof(AEquipmentShelf_shelf_C, Shelf_Mid) == 0x000230, "Member 'AEquipmentShelf_shelf_C::Shelf_Mid' has a wrong offset!");
-static_assert(offsetof(AEquipmentShelf_shelf_C, Shelf_Top) == 0x000238, "Member 'AEquipmentShelf_shelf_C::Shelf_Top' has a wrong offset!");
-static_assert(offsetof(AEquipmentShelf_shelf_C, Arrow) == 0x000240, "Member 'AEquipmentShelf_shelf_C::Arrow' has a wrong offset!");
-static_assert(offsetof(AEquipmentShelf_shelf_C, Shelf) == 0x000248, "Member 'AEquipmentShelf_shelf_C::Shelf' has a wrong offset!");
-static_assert(offsetof(AEquipmentShelf_shelf_C, DefaultSceneRoot) == 0x000250, "Member 'AEquipmentShelf_shelf_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AEquipmentShelf_shelf_C, Taken_) == 0x000258, "Member 'AEquipmentShelf_shelf_C::Taken_' has a wrong offset!");
-static_assert(offsetof(AEquipmentShelf_shelf_C, ShelfNumber) == 0x00025C, "Member 'AEquipmentShelf_shelf_C::ShelfNumber' has a wrong offset!");
+DUMPER7_ASSERTS_AEquipmentShelf_shelf_C;
 
 }
 

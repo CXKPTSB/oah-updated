@@ -58,29 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerNameInfo_C">();
+		BP_STATIC_CLASS_IMPL("PlayerNameInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerNameInfo_C")
 	}
 	static class UPlayerNameInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayerNameInfo_C>();
 	}
 };
-static_assert(alignof(UPlayerNameInfo_C) == 0x000008, "Wrong alignment on UPlayerNameInfo_C");
-static_assert(sizeof(UPlayerNameInfo_C) == 0x0002D0, "Wrong size on UPlayerNameInfo_C");
-static_assert(offsetof(UPlayerNameInfo_C, UberGraphFrame) == 0x000260, "Member 'UPlayerNameInfo_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPlayerNameInfo_C, Kickpopup) == 0x000268, "Member 'UPlayerNameInfo_C::Kickpopup' has a wrong offset!");
-static_assert(offsetof(UPlayerNameInfo_C, Image_0) == 0x000270, "Member 'UPlayerNameInfo_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UPlayerNameInfo_C, KickButton) == 0x000278, "Member 'UPlayerNameInfo_C::KickButton' has a wrong offset!");
-static_assert(offsetof(UPlayerNameInfo_C, Text) == 0x000280, "Member 'UPlayerNameInfo_C::Text' has a wrong offset!");
-static_assert(offsetof(UPlayerNameInfo_C, Text_1) == 0x000288, "Member 'UPlayerNameInfo_C::Text_1' has a wrong offset!");
-static_assert(offsetof(UPlayerNameInfo_C, TextBlock_66) == 0x000290, "Member 'UPlayerNameInfo_C::TextBlock_66' has a wrong offset!");
-static_assert(offsetof(UPlayerNameInfo_C, TextBlock_107) == 0x000298, "Member 'UPlayerNameInfo_C::TextBlock_107' has a wrong offset!");
-static_assert(offsetof(UPlayerNameInfo_C, TextBlock_178) == 0x0002A0, "Member 'UPlayerNameInfo_C::TextBlock_178' has a wrong offset!");
-static_assert(offsetof(UPlayerNameInfo_C, ViewProfile) == 0x0002A8, "Member 'UPlayerNameInfo_C::ViewProfile' has a wrong offset!");
-static_assert(offsetof(UPlayerNameInfo_C, PlayerInfo) == 0x0002B0, "Member 'UPlayerNameInfo_C::PlayerInfo' has a wrong offset!");
-static_assert(offsetof(UPlayerNameInfo_C, PreviewPlayer) == 0x0002B8, "Member 'UPlayerNameInfo_C::PreviewPlayer' has a wrong offset!");
-static_assert(offsetof(UPlayerNameInfo_C, Avatar) == 0x0002C0, "Member 'UPlayerNameInfo_C::Avatar' has a wrong offset!");
-static_assert(offsetof(UPlayerNameInfo_C, Hovered_) == 0x0002C8, "Member 'UPlayerNameInfo_C::Hovered_' has a wrong offset!");
+DUMPER7_ASSERTS_UPlayerNameInfo_C;
 
 }
 

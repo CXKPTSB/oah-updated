@@ -38,20 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Scope_MarkmanHunter_LongRifle_C">();
+		BP_STATIC_CLASS_IMPL("Scope_MarkmanHunter_LongRifle_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Scope_MarkmanHunter_LongRifle_C")
 	}
 	static class AScope_MarkmanHunter_LongRifle_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AScope_MarkmanHunter_LongRifle_C>();
 	}
 };
-static_assert(alignof(AScope_MarkmanHunter_LongRifle_C) == 0x000008, "Wrong alignment on AScope_MarkmanHunter_LongRifle_C");
-static_assert(sizeof(AScope_MarkmanHunter_LongRifle_C) == 0x000298, "Wrong size on AScope_MarkmanHunter_LongRifle_C");
-static_assert(offsetof(AScope_MarkmanHunter_LongRifle_C, UberGraphFrame_Scope_MarkmanHunter_LongRifle_C) == 0x000270, "Member 'AScope_MarkmanHunter_LongRifle_C::UberGraphFrame_Scope_MarkmanHunter_LongRifle_C' has a wrong offset!");
-static_assert(offsetof(AScope_MarkmanHunter_LongRifle_C, Pattern) == 0x000278, "Member 'AScope_MarkmanHunter_LongRifle_C::Pattern' has a wrong offset!");
-static_assert(offsetof(AScope_MarkmanHunter_LongRifle_C, Zoom) == 0x000280, "Member 'AScope_MarkmanHunter_LongRifle_C::Zoom' has a wrong offset!");
-static_assert(offsetof(AScope_MarkmanHunter_LongRifle_C, Lens) == 0x000288, "Member 'AScope_MarkmanHunter_LongRifle_C::Lens' has a wrong offset!");
-static_assert(offsetof(AScope_MarkmanHunter_LongRifle_C, SceneCaptureComponent2D) == 0x000290, "Member 'AScope_MarkmanHunter_LongRifle_C::SceneCaptureComponent2D' has a wrong offset!");
+DUMPER7_ASSERTS_AScope_MarkmanHunter_LongRifle_C;
 
 }
 

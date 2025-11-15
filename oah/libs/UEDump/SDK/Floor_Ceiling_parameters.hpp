@@ -64,43 +64,7 @@ public:
 	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0134(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_SetStaticMesh_ReturnValue_1;              // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Floor_Ceiling_C_UserConstructionScript) == 0x000010, "Wrong alignment on Floor_Ceiling_C_UserConstructionScript");
-static_assert(sizeof(Floor_Ceiling_C_UserConstructionScript) == 0x000140, "Wrong size on Floor_Ceiling_C_UserConstructionScript");
-static_assert(offsetof(Floor_Ceiling_C_UserConstructionScript, Temp_int_Array_Index_Variable) == 0x000000, "Member 'Floor_Ceiling_C_UserConstructionScript::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(Floor_Ceiling_C_UserConstructionScript, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'Floor_Ceiling_C_UserConstructionScript::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(Floor_Ceiling_C_UserConstructionScript, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'Floor_Ceiling_C_UserConstructionScript::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Floor_Ceiling_C_UserConstructionScript, Temp_int_Array_Index_Variable_1) == 0x00000C, "Member 'Floor_Ceiling_C_UserConstructionScript::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(Floor_Ceiling_C_UserConstructionScript, Temp_int_Loop_Counter_Variable_1) == 0x000010, "Member 'Floor_Ceiling_C_UserConstructionScript::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(Floor_Ceiling_C_UserConstructionScript, CallFunc_Add_IntInt_ReturnValue_1) == 0x000014, "Member 'Floor_Ceiling_C_UserConstructionScript::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Floor_Ceiling_C_UserConstructionScript, Temp_int_Variable) == 0x000018, "Member 'Floor_Ceiling_C_UserConstructionScript::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(Floor_Ceiling_C_UserConstructionScript, CallFunc_Add_IntInt_ReturnValue_2) == 0x00001C, "Member 'Floor_Ceiling_C_UserConstructionScript::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Floor_Ceiling_C_UserConstructionScript, Temp_int_Variable_1) == 0x000020, "Member 'Floor_Ceiling_C_UserConstructionScript::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(Floor_Ceiling_C_UserConstructionScript, CallFunc_Add_IntInt_ReturnValue_3) == 0x000024, "Member 'Floor_Ceiling_C_UserConstructionScript::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Floor_Ceiling_C_UserConstructionScript, CallFunc_Array_Get_Item) == 0x000028, "Member 'Floor_Ceiling_C_UserConstructionScript::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Floor_Ceiling_C_UserConstructionScript, CallFunc_Array_Get_Item_1) == 0x000030, "Member 'Floor_Ceiling_C_UserConstructionScript::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(Floor_Ceiling_C_UserConstructionScript, CallFunc_Array_Length_ReturnValue) == 0x000038, "Member 'Floor_Ceiling_C_UserConstructionScript::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Floor_Ceiling_C_UserConstructionScript, CallFunc_Less_IntInt_ReturnValue) == 0x00003C, "Member 'Floor_Ceiling_C_UserConstructionScript::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Floor_Ceiling_C_UserConstructionScript, CallFunc_GetMaterials_ReturnValue) == 0x000040, "Member 'Floor_Ceiling_C_UserConstructionScript::CallFunc_GetMaterials_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Floor_Ceiling_C_UserConstructionScript, CallFunc_Array_Length_ReturnValue_1) == 0x000050, "Member 'Floor_Ceiling_C_UserConstructionScript::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Floor_Ceiling_C_UserConstructionScript, CallFunc_Less_IntInt_ReturnValue_1) == 0x000054, "Member 'Floor_Ceiling_C_UserConstructionScript::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Floor_Ceiling_C_UserConstructionScript, CallFunc_Multiply_IntFloat_ReturnValue) == 0x000058, "Member 'Floor_Ceiling_C_UserConstructionScript::CallFunc_Multiply_IntFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Floor_Ceiling_C_UserConstructionScript, CallFunc_Subtract_IntInt_ReturnValue) == 0x00005C, "Member 'Floor_Ceiling_C_UserConstructionScript::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Floor_Ceiling_C_UserConstructionScript, CallFunc_MakeVector_ReturnValue) == 0x000060, "Member 'Floor_Ceiling_C_UserConstructionScript::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Floor_Ceiling_C_UserConstructionScript, CallFunc_LessEqual_IntInt_ReturnValue) == 0x00006C, "Member 'Floor_Ceiling_C_UserConstructionScript::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Floor_Ceiling_C_UserConstructionScript, CallFunc_Multiply_IntFloat_ReturnValue_1) == 0x000070, "Member 'Floor_Ceiling_C_UserConstructionScript::CallFunc_Multiply_IntFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Floor_Ceiling_C_UserConstructionScript, CallFunc_MakeVector_ReturnValue_1) == 0x000074, "Member 'Floor_Ceiling_C_UserConstructionScript::CallFunc_MakeVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Floor_Ceiling_C_UserConstructionScript, CallFunc_Subtract_IntInt_ReturnValue_1) == 0x000080, "Member 'Floor_Ceiling_C_UserConstructionScript::CallFunc_Subtract_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Floor_Ceiling_C_UserConstructionScript, CallFunc_Add_VectorVector_ReturnValue) == 0x000084, "Member 'Floor_Ceiling_C_UserConstructionScript::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Floor_Ceiling_C_UserConstructionScript, CallFunc_LessEqual_IntInt_ReturnValue_1) == 0x000090, "Member 'Floor_Ceiling_C_UserConstructionScript::CallFunc_LessEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Floor_Ceiling_C_UserConstructionScript, CallFunc_MakeTransform_ReturnValue) == 0x0000A0, "Member 'Floor_Ceiling_C_UserConstructionScript::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Floor_Ceiling_C_UserConstructionScript, CallFunc_AddComponent_ReturnValue) == 0x0000D0, "Member 'Floor_Ceiling_C_UserConstructionScript::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Floor_Ceiling_C_UserConstructionScript, CallFunc_MakeVector_ReturnValue_2) == 0x0000D8, "Member 'Floor_Ceiling_C_UserConstructionScript::CallFunc_MakeVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Floor_Ceiling_C_UserConstructionScript, CallFunc_MakeTransform_ReturnValue_1) == 0x0000F0, "Member 'Floor_Ceiling_C_UserConstructionScript::CallFunc_MakeTransform_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Floor_Ceiling_C_UserConstructionScript, CallFunc_Array_Add_ReturnValue) == 0x000120, "Member 'Floor_Ceiling_C_UserConstructionScript::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Floor_Ceiling_C_UserConstructionScript, CallFunc_AddComponent_ReturnValue_1) == 0x000128, "Member 'Floor_Ceiling_C_UserConstructionScript::CallFunc_AddComponent_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Floor_Ceiling_C_UserConstructionScript, CallFunc_SetStaticMesh_ReturnValue) == 0x000130, "Member 'Floor_Ceiling_C_UserConstructionScript::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Floor_Ceiling_C_UserConstructionScript, CallFunc_Array_Add_ReturnValue_1) == 0x000134, "Member 'Floor_Ceiling_C_UserConstructionScript::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Floor_Ceiling_C_UserConstructionScript, CallFunc_SetStaticMesh_ReturnValue_1) == 0x000138, "Member 'Floor_Ceiling_C_UserConstructionScript::CallFunc_SetStaticMesh_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_Floor_Ceiling_C_UserConstructionScript;
 
 }
 

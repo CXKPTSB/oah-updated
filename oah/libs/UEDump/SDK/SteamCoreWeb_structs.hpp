@@ -95,10 +95,7 @@ public:
 	class FString                                 AppID;                                             // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Name;                                              // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FWebAppsGetAppList) == 0x000008, "Wrong alignment on FWebAppsGetAppList");
-static_assert(sizeof(FWebAppsGetAppList) == 0x000020, "Wrong size on FWebAppsGetAppList");
-static_assert(offsetof(FWebAppsGetAppList, AppID) == 0x000000, "Member 'FWebAppsGetAppList::AppID' has a wrong offset!");
-static_assert(offsetof(FWebAppsGetAppList, Name) == 0x000010, "Member 'FWebAppsGetAppList::Name' has a wrong offset!");
+DUMPER7_ASSERTS_FWebAppsGetAppList;
 
 // ScriptStruct SteamCoreWeb.SteamCoreJson
 // 0x0028 (0x0028 - 0x0000)
@@ -112,13 +109,7 @@ public:
 	ESteamValueType                               Type;                                              // 0x0025(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_26[0x2];                                       // 0x0026(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSteamCoreJson) == 0x000008, "Wrong alignment on FSteamCoreJson");
-static_assert(sizeof(FSteamCoreJson) == 0x000028, "Wrong size on FSteamCoreJson");
-static_assert(offsetof(FSteamCoreJson, Key) == 0x000000, "Member 'FSteamCoreJson::Key' has a wrong offset!");
-static_assert(offsetof(FSteamCoreJson, String) == 0x000010, "Member 'FSteamCoreJson::String' has a wrong offset!");
-static_assert(offsetof(FSteamCoreJson, Number) == 0x000020, "Member 'FSteamCoreJson::Number' has a wrong offset!");
-static_assert(offsetof(FSteamCoreJson, Bool) == 0x000024, "Member 'FSteamCoreJson::Bool' has a wrong offset!");
-static_assert(offsetof(FSteamCoreJson, Type) == 0x000025, "Member 'FSteamCoreJson::Type' has a wrong offset!");
+DUMPER7_ASSERTS_FSteamCoreJson;
 
 }
 

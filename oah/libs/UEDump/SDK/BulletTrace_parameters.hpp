@@ -34,17 +34,7 @@ public:
 	struct FVector                                K2Node_Event_NormalImpulse;                        // 0x003C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_Hit;                                  // 0x0048(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(BulletTrace_C_ExecuteUbergraph_BulletTrace) == 0x000008, "Wrong alignment on BulletTrace_C_ExecuteUbergraph_BulletTrace");
-static_assert(sizeof(BulletTrace_C_ExecuteUbergraph_BulletTrace) == 0x0000D0, "Wrong size on BulletTrace_C_ExecuteUbergraph_BulletTrace");
-static_assert(offsetof(BulletTrace_C_ExecuteUbergraph_BulletTrace, EntryPoint) == 0x000000, "Member 'BulletTrace_C_ExecuteUbergraph_BulletTrace::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BulletTrace_C_ExecuteUbergraph_BulletTrace, K2Node_Event_MyComp) == 0x000008, "Member 'BulletTrace_C_ExecuteUbergraph_BulletTrace::K2Node_Event_MyComp' has a wrong offset!");
-static_assert(offsetof(BulletTrace_C_ExecuteUbergraph_BulletTrace, K2Node_Event_Other) == 0x000010, "Member 'BulletTrace_C_ExecuteUbergraph_BulletTrace::K2Node_Event_Other' has a wrong offset!");
-static_assert(offsetof(BulletTrace_C_ExecuteUbergraph_BulletTrace, K2Node_Event_OtherComp) == 0x000018, "Member 'BulletTrace_C_ExecuteUbergraph_BulletTrace::K2Node_Event_OtherComp' has a wrong offset!");
-static_assert(offsetof(BulletTrace_C_ExecuteUbergraph_BulletTrace, K2Node_Event_bSelfMoved) == 0x000020, "Member 'BulletTrace_C_ExecuteUbergraph_BulletTrace::K2Node_Event_bSelfMoved' has a wrong offset!");
-static_assert(offsetof(BulletTrace_C_ExecuteUbergraph_BulletTrace, K2Node_Event_HitLocation) == 0x000024, "Member 'BulletTrace_C_ExecuteUbergraph_BulletTrace::K2Node_Event_HitLocation' has a wrong offset!");
-static_assert(offsetof(BulletTrace_C_ExecuteUbergraph_BulletTrace, K2Node_Event_HitNormal) == 0x000030, "Member 'BulletTrace_C_ExecuteUbergraph_BulletTrace::K2Node_Event_HitNormal' has a wrong offset!");
-static_assert(offsetof(BulletTrace_C_ExecuteUbergraph_BulletTrace, K2Node_Event_NormalImpulse) == 0x00003C, "Member 'BulletTrace_C_ExecuteUbergraph_BulletTrace::K2Node_Event_NormalImpulse' has a wrong offset!");
-static_assert(offsetof(BulletTrace_C_ExecuteUbergraph_BulletTrace, K2Node_Event_Hit) == 0x000048, "Member 'BulletTrace_C_ExecuteUbergraph_BulletTrace::K2Node_Event_Hit' has a wrong offset!");
+DUMPER7_ASSERTS_BulletTrace_C_ExecuteUbergraph_BulletTrace;
 
 // Function BulletTrace.BulletTrace_C.ReceiveHit
 // 0x00C8 (0x00C8 - 0x0000)
@@ -61,16 +51,7 @@ public:
 	struct FVector                                NormalImpulse;                                     // 0x0034(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0040(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(BulletTrace_C_ReceiveHit) == 0x000008, "Wrong alignment on BulletTrace_C_ReceiveHit");
-static_assert(sizeof(BulletTrace_C_ReceiveHit) == 0x0000C8, "Wrong size on BulletTrace_C_ReceiveHit");
-static_assert(offsetof(BulletTrace_C_ReceiveHit, MyComp) == 0x000000, "Member 'BulletTrace_C_ReceiveHit::MyComp' has a wrong offset!");
-static_assert(offsetof(BulletTrace_C_ReceiveHit, Other) == 0x000008, "Member 'BulletTrace_C_ReceiveHit::Other' has a wrong offset!");
-static_assert(offsetof(BulletTrace_C_ReceiveHit, OtherComp) == 0x000010, "Member 'BulletTrace_C_ReceiveHit::OtherComp' has a wrong offset!");
-static_assert(offsetof(BulletTrace_C_ReceiveHit, bSelfMoved) == 0x000018, "Member 'BulletTrace_C_ReceiveHit::bSelfMoved' has a wrong offset!");
-static_assert(offsetof(BulletTrace_C_ReceiveHit, HitLocation) == 0x00001C, "Member 'BulletTrace_C_ReceiveHit::HitLocation' has a wrong offset!");
-static_assert(offsetof(BulletTrace_C_ReceiveHit, HitNormal) == 0x000028, "Member 'BulletTrace_C_ReceiveHit::HitNormal' has a wrong offset!");
-static_assert(offsetof(BulletTrace_C_ReceiveHit, NormalImpulse) == 0x000034, "Member 'BulletTrace_C_ReceiveHit::NormalImpulse' has a wrong offset!");
-static_assert(offsetof(BulletTrace_C_ReceiveHit, Hit) == 0x000040, "Member 'BulletTrace_C_ReceiveHit::Hit' has a wrong offset!");
+DUMPER7_ASSERTS_BulletTrace_C_ReceiveHit;
 
 }
 

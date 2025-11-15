@@ -54,7 +54,7 @@ void AInstruction_base_C::ReceiveBeginPlay()
 // Function Instruction_base.Instruction_base_C.AnnounceNewInstructionWidget
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FString                           Title                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    Title                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
 void AInstruction_base_C::AnnounceNewInstructionWidget(const class FString& Title)
 {
@@ -103,7 +103,7 @@ void AInstruction_base_C::NewInstruction()
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   CompletedInstruction                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    NextInstrFound_                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   NextInstrFound_                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void AInstruction_base_C::Next_Instruction(int32 CompletedInstruction, bool* NextInstrFound_)
 {
@@ -166,7 +166,7 @@ void AInstruction_base_C::CompleteInstruction(int32 ID)
 // Function Instruction_base.Instruction_base_C.Announce Instruction
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FString                           Title                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    Title                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
 void AInstruction_base_C::Announce_Instruction(const class FString& Title)
 {
@@ -186,7 +186,7 @@ void AInstruction_base_C::Announce_Instruction(const class FString& Title)
 // Function Instruction_base.Instruction_base_C.GetCurrentInstruction
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FInstructionStruct               Instruction                                            (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+// struct FInstructionStruct*              Instruction                                            (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 
 void AInstruction_base_C::GetCurrentInstruction(struct FInstructionStruct* Instruction)
 {

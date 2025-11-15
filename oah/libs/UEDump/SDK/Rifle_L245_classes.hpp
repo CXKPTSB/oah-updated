@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Rifle_L245_C">();
+		BP_STATIC_CLASS_IMPL("Rifle_L245_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Rifle_L245_C")
 	}
 	static class ARifle_L245_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ARifle_L245_C>();
 	}
 };
-static_assert(alignof(ARifle_L245_C) == 0x000008, "Wrong alignment on ARifle_L245_C");
-static_assert(sizeof(ARifle_L245_C) == 0x000338, "Wrong size on ARifle_L245_C");
-static_assert(offsetof(ARifle_L245_C, Scope_front) == 0x000330, "Member 'ARifle_L245_C::Scope_front' has a wrong offset!");
+DUMPER7_ASSERTS_ARifle_L245_C;
 
 }
 

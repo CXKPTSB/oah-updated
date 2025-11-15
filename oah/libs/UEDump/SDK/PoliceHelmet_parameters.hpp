@@ -50,30 +50,7 @@ public:
 	float                                         CallFunc_Multiply_IntFloat_ReturnValue;            // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet) == 0x000008, "Wrong alignment on PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet");
-static_assert(sizeof(PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet) == 0x0000A0, "Wrong size on PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet");
-static_assert(offsetof(PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet, EntryPoint) == 0x000000, "Member 'PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet::EntryPoint' has a wrong offset!");
-static_assert(offsetof(PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000004, "Member 'PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet, K2Node_ComponentBoundEvent_Amount) == 0x000008, "Member 'PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet::K2Node_ComponentBoundEvent_Amount' has a wrong offset!");
-static_assert(offsetof(PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet, K2Node_ComponentBoundEvent_Bone) == 0x00000C, "Member 'PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet::K2Node_ComponentBoundEvent_Bone' has a wrong offset!");
-static_assert(offsetof(PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet, K2Node_ComponentBoundEvent_HitLocation) == 0x000014, "Member 'PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet::K2Node_ComponentBoundEvent_HitLocation' has a wrong offset!");
-static_assert(offsetof(PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet, K2Node_ComponentBoundEvent_StartLocation) == 0x000020, "Member 'PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet::K2Node_ComponentBoundEvent_StartLocation' has a wrong offset!");
-static_assert(offsetof(PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet, K2Node_ComponentBoundEvent_Instigator) == 0x000030, "Member 'PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet::K2Node_ComponentBoundEvent_Instigator' has a wrong offset!");
-static_assert(offsetof(PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet, K2Node_CustomEvent_Amount) == 0x000038, "Member 'PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet::K2Node_CustomEvent_Amount' has a wrong offset!");
-static_assert(offsetof(PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet, K2Node_CustomEvent_Player) == 0x000040, "Member 'PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet::K2Node_CustomEvent_Player' has a wrong offset!");
-static_assert(offsetof(PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet, CallFunc_Divide_IntInt_ReturnValue) == 0x000048, "Member 'PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet::CallFunc_Divide_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet, CallFunc_Subtract_IntInt_ReturnValue) == 0x00004C, "Member 'PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet, CallFunc_GetParentActor_ReturnValue) == 0x000050, "Member 'PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet::CallFunc_GetParentActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet, K2Node_DynamicCast_AsNPC_Police_Base) == 0x000058, "Member 'PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet::K2Node_DynamicCast_AsNPC_Police_Base' has a wrong offset!");
-static_assert(offsetof(PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet, K2Node_DynamicCast_bSuccess) == 0x000060, "Member 'PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet, CallFunc_GetParentActor_ReturnValue_1) == 0x000068, "Member 'PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet::CallFunc_GetParentActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet, CallFunc_GetGameState_ReturnValue) == 0x000070, "Member 'PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet::CallFunc_GetGameState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet, K2Node_DynamicCast_AsNPC_Police_Base_1) == 0x000078, "Member 'PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet::K2Node_DynamicCast_AsNPC_Police_Base_1' has a wrong offset!");
-static_assert(offsetof(PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet, K2Node_DynamicCast_bSuccess_1) == 0x000080, "Member 'PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet, K2Node_DynamicCast_AsRobber_Game_State) == 0x000088, "Member 'PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet::K2Node_DynamicCast_AsRobber_Game_State' has a wrong offset!");
-static_assert(offsetof(PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet, K2Node_DynamicCast_bSuccess_2) == 0x000090, "Member 'PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet, CallFunc_Multiply_IntFloat_ReturnValue) == 0x000094, "Member 'PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet::CallFunc_Multiply_IntFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet, CallFunc_FTrunc_ReturnValue) == 0x000098, "Member 'PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PoliceHelmet_C_ExecuteUbergraph_PoliceHelmet;
 
 // Function PoliceHelmet.PoliceHelmet_C.LooseHealth
 // 0x0010 (0x0010 - 0x0000)
@@ -84,10 +61,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Player;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PoliceHelmet_C_LooseHealth) == 0x000008, "Wrong alignment on PoliceHelmet_C_LooseHealth");
-static_assert(sizeof(PoliceHelmet_C_LooseHealth) == 0x000010, "Wrong size on PoliceHelmet_C_LooseHealth");
-static_assert(offsetof(PoliceHelmet_C_LooseHealth, Amount) == 0x000000, "Member 'PoliceHelmet_C_LooseHealth::Amount' has a wrong offset!");
-static_assert(offsetof(PoliceHelmet_C_LooseHealth, Player) == 0x000008, "Member 'PoliceHelmet_C_LooseHealth::Player' has a wrong offset!");
+DUMPER7_ASSERTS_PoliceHelmet_C_LooseHealth;
 
 // Function PoliceHelmet.PoliceHelmet_C.BndEvt__PoliceHelmet_DamageComponent_K2Node_ComponentBoundEvent_0_Damage__DelegateSignature
 // 0x0030 (0x0030 - 0x0000)
@@ -101,13 +75,7 @@ public:
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Instigator_0;                                      // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PoliceHelmet_C_BndEvt__PoliceHelmet_DamageComponent_K2Node_ComponentBoundEvent_0_Damage__DelegateSignature) == 0x000008, "Wrong alignment on PoliceHelmet_C_BndEvt__PoliceHelmet_DamageComponent_K2Node_ComponentBoundEvent_0_Damage__DelegateSignature");
-static_assert(sizeof(PoliceHelmet_C_BndEvt__PoliceHelmet_DamageComponent_K2Node_ComponentBoundEvent_0_Damage__DelegateSignature) == 0x000030, "Wrong size on PoliceHelmet_C_BndEvt__PoliceHelmet_DamageComponent_K2Node_ComponentBoundEvent_0_Damage__DelegateSignature");
-static_assert(offsetof(PoliceHelmet_C_BndEvt__PoliceHelmet_DamageComponent_K2Node_ComponentBoundEvent_0_Damage__DelegateSignature, Amount) == 0x000000, "Member 'PoliceHelmet_C_BndEvt__PoliceHelmet_DamageComponent_K2Node_ComponentBoundEvent_0_Damage__DelegateSignature::Amount' has a wrong offset!");
-static_assert(offsetof(PoliceHelmet_C_BndEvt__PoliceHelmet_DamageComponent_K2Node_ComponentBoundEvent_0_Damage__DelegateSignature, Bone) == 0x000004, "Member 'PoliceHelmet_C_BndEvt__PoliceHelmet_DamageComponent_K2Node_ComponentBoundEvent_0_Damage__DelegateSignature::Bone' has a wrong offset!");
-static_assert(offsetof(PoliceHelmet_C_BndEvt__PoliceHelmet_DamageComponent_K2Node_ComponentBoundEvent_0_Damage__DelegateSignature, HitLocation) == 0x00000C, "Member 'PoliceHelmet_C_BndEvt__PoliceHelmet_DamageComponent_K2Node_ComponentBoundEvent_0_Damage__DelegateSignature::HitLocation' has a wrong offset!");
-static_assert(offsetof(PoliceHelmet_C_BndEvt__PoliceHelmet_DamageComponent_K2Node_ComponentBoundEvent_0_Damage__DelegateSignature, StartLocation) == 0x000018, "Member 'PoliceHelmet_C_BndEvt__PoliceHelmet_DamageComponent_K2Node_ComponentBoundEvent_0_Damage__DelegateSignature::StartLocation' has a wrong offset!");
-static_assert(offsetof(PoliceHelmet_C_BndEvt__PoliceHelmet_DamageComponent_K2Node_ComponentBoundEvent_0_Damage__DelegateSignature, Instigator_0) == 0x000028, "Member 'PoliceHelmet_C_BndEvt__PoliceHelmet_DamageComponent_K2Node_ComponentBoundEvent_0_Damage__DelegateSignature::Instigator_0' has a wrong offset!");
+DUMPER7_ASSERTS_PoliceHelmet_C_BndEvt__PoliceHelmet_DamageComponent_K2Node_ComponentBoundEvent_0_Damage__DelegateSignature;
 
 }
 

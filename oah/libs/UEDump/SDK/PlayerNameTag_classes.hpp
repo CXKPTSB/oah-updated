@@ -39,22 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerNameTag_C">();
+		BP_STATIC_CLASS_IMPL("PlayerNameTag_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerNameTag_C")
 	}
 	static class UPlayerNameTag_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayerNameTag_C>();
 	}
 };
-static_assert(alignof(UPlayerNameTag_C) == 0x000008, "Wrong alignment on UPlayerNameTag_C");
-static_assert(sizeof(UPlayerNameTag_C) == 0x0002A0, "Wrong size on UPlayerNameTag_C");
-static_assert(offsetof(UPlayerNameTag_C, UberGraphFrame) == 0x000260, "Member 'UPlayerNameTag_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPlayerNameTag_C, Kickpopup) == 0x000268, "Member 'UPlayerNameTag_C::Kickpopup' has a wrong offset!");
-static_assert(offsetof(UPlayerNameTag_C, Image_87) == 0x000270, "Member 'UPlayerNameTag_C::Image_87' has a wrong offset!");
-static_assert(offsetof(UPlayerNameTag_C, TextBlock_66) == 0x000278, "Member 'UPlayerNameTag_C::TextBlock_66' has a wrong offset!");
-static_assert(offsetof(UPlayerNameTag_C, NameTagComponentLocation) == 0x000280, "Member 'UPlayerNameTag_C::NameTagComponentLocation' has a wrong offset!");
-static_assert(offsetof(UPlayerNameTag_C, PlayerState) == 0x000288, "Member 'UPlayerNameTag_C::PlayerState' has a wrong offset!");
-static_assert(offsetof(UPlayerNameTag_C, Name_0) == 0x000290, "Member 'UPlayerNameTag_C::Name_0' has a wrong offset!");
+DUMPER7_ASSERTS_UPlayerNameTag_C;
 
 }
 

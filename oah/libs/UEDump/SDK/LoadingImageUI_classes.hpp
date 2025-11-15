@@ -37,21 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LoadingImageUI_C">();
+		BP_STATIC_CLASS_IMPL("LoadingImageUI_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LoadingImageUI_C")
 	}
 	static class ULoadingImageUI_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULoadingImageUI_C>();
 	}
 };
-static_assert(alignof(ULoadingImageUI_C) == 0x000008, "Wrong alignment on ULoadingImageUI_C");
-static_assert(sizeof(ULoadingImageUI_C) == 0x000288, "Wrong size on ULoadingImageUI_C");
-static_assert(offsetof(ULoadingImageUI_C, UberGraphFrame) == 0x000260, "Member 'ULoadingImageUI_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULoadingImageUI_C, NewAnimation) == 0x000268, "Member 'ULoadingImageUI_C::NewAnimation' has a wrong offset!");
-static_assert(offsetof(ULoadingImageUI_C, Cancel) == 0x000270, "Member 'ULoadingImageUI_C::Cancel' has a wrong offset!");
-static_assert(offsetof(ULoadingImageUI_C, Image_84) == 0x000278, "Member 'ULoadingImageUI_C::Image_84' has a wrong offset!");
-static_assert(offsetof(ULoadingImageUI_C, SkipAnim_) == 0x000280, "Member 'ULoadingImageUI_C::SkipAnim_' has a wrong offset!");
-static_assert(offsetof(ULoadingImageUI_C, ReverseAnim_) == 0x000281, "Member 'ULoadingImageUI_C::ReverseAnim_' has a wrong offset!");
+DUMPER7_ASSERTS_ULoadingImageUI_C;
 
 }
 

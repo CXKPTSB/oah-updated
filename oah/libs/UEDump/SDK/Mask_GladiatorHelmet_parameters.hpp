@@ -22,10 +22,7 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   CallFunc_MakeLiteralName_ReturnValue;              // 0x0004(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Mask_GladiatorHelmet_C_ExecuteUbergraph_Mask_GladiatorHelmet) == 0x000004, "Wrong alignment on Mask_GladiatorHelmet_C_ExecuteUbergraph_Mask_GladiatorHelmet");
-static_assert(sizeof(Mask_GladiatorHelmet_C_ExecuteUbergraph_Mask_GladiatorHelmet) == 0x00000C, "Wrong size on Mask_GladiatorHelmet_C_ExecuteUbergraph_Mask_GladiatorHelmet");
-static_assert(offsetof(Mask_GladiatorHelmet_C_ExecuteUbergraph_Mask_GladiatorHelmet, EntryPoint) == 0x000000, "Member 'Mask_GladiatorHelmet_C_ExecuteUbergraph_Mask_GladiatorHelmet::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Mask_GladiatorHelmet_C_ExecuteUbergraph_Mask_GladiatorHelmet, CallFunc_MakeLiteralName_ReturnValue) == 0x000004, "Member 'Mask_GladiatorHelmet_C_ExecuteUbergraph_Mask_GladiatorHelmet::CallFunc_MakeLiteralName_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_Mask_GladiatorHelmet_C_ExecuteUbergraph_Mask_GladiatorHelmet;
 
 }
 

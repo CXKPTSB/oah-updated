@@ -50,26 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MapBuyUI_C">();
+		BP_STATIC_CLASS_IMPL("MapBuyUI_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MapBuyUI_C")
 	}
 	static class UMapBuyUI_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMapBuyUI_C>();
 	}
 };
-static_assert(alignof(UMapBuyUI_C) == 0x000008, "Wrong alignment on UMapBuyUI_C");
-static_assert(sizeof(UMapBuyUI_C) == 0x0002B8, "Wrong size on UMapBuyUI_C");
-static_assert(offsetof(UMapBuyUI_C, UberGraphFrame) == 0x000260, "Member 'UMapBuyUI_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMapBuyUI_C, CashBuyButton) == 0x000268, "Member 'UMapBuyUI_C::CashBuyButton' has a wrong offset!");
-static_assert(offsetof(UMapBuyUI_C, CashBuyButton_1) == 0x000270, "Member 'UMapBuyUI_C::CashBuyButton_1' has a wrong offset!");
-static_assert(offsetof(UMapBuyUI_C, Image_223) == 0x000278, "Member 'UMapBuyUI_C::Image_223' has a wrong offset!");
-static_assert(offsetof(UMapBuyUI_C, TextBlock) == 0x000280, "Member 'UMapBuyUI_C::TextBlock' has a wrong offset!");
-static_assert(offsetof(UMapBuyUI_C, TextBlock_100) == 0x000288, "Member 'UMapBuyUI_C::TextBlock_100' has a wrong offset!");
-static_assert(offsetof(UMapBuyUI_C, Throbber_126) == 0x000290, "Member 'UMapBuyUI_C::Throbber_126' has a wrong offset!");
-static_assert(offsetof(UMapBuyUI_C, Purchased_) == 0x000298, "Member 'UMapBuyUI_C::Purchased_' has a wrong offset!");
-static_assert(offsetof(UMapBuyUI_C, Item) == 0x0002A0, "Member 'UMapBuyUI_C::Item' has a wrong offset!");
-static_assert(offsetof(UMapBuyUI_C, As_Robber_Controller) == 0x0002A8, "Member 'UMapBuyUI_C::As_Robber_Controller' has a wrong offset!");
-static_assert(offsetof(UMapBuyUI_C, SalePrice) == 0x0002B0, "Member 'UMapBuyUI_C::SalePrice' has a wrong offset!");
+DUMPER7_ASSERTS_UMapBuyUI_C;
 
 }
 

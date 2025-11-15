@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "AttachmentArrayStructure_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "ShopItemCategory_structs.hpp"
 #include "Engine_structs.hpp"
 
@@ -106,71 +106,7 @@ public:
 	int32                                         Temp_int_Array_Index_Variable_3;                   // 0x01FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UChildActorComponent*                   CallFunc_Array_Get_Item_5;                         // 0x0200(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard) == 0x000010, "Wrong alignment on MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard");
-static_assert(sizeof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard) == 0x000210, "Wrong size on MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, EntryPoint) == 0x000000, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::EntryPoint' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, Temp_int_Array_Index_Variable) == 0x00000C, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, Temp_bool_Variable) == 0x000010, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, Temp_int_Array_Index_Variable_1) == 0x000014, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, Temp_int_Loop_Counter_Variable_1) == 0x000018, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, CallFunc_Add_IntInt_ReturnValue_1) == 0x00001C, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, Temp_int_Array_Index_Variable_2) == 0x000020, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, K2Node_Event_Category_1) == 0x000024, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::K2Node_Event_Category_1' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, K2Node_Event_Category) == 0x000025, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::K2Node_Event_Category' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, K2Node_Event_ItemInfo) == 0x000028, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::K2Node_Event_ItemInfo' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, K2Node_Event_SalePrice) == 0x000030, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::K2Node_Event_SalePrice' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, CallFunc_GetPlayerController_ReturnValue) == 0x000038, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, Temp_byte_Variable) == 0x000040, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, K2Node_DynamicCast_AsRobber_Controller) == 0x000048, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::K2Node_DynamicCast_AsRobber_Controller' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, K2Node_DynamicCast_bSuccess) == 0x000050, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, CallFunc_Array_Get_Item) == 0x000058, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, CallFunc_Array_Get_Item_1) == 0x000068, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, CallFunc_IsLocalController_ReturnValue) == 0x000070, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::CallFunc_IsLocalController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, K2Node_MakeArray_Array) == 0x000078, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, CallFunc_Array_Get_Item_2) == 0x000088, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, CallFunc_Array_Length_ReturnValue) == 0x000090, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, K2Node_DynamicCast_AsGun_Base) == 0x000098, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::K2Node_DynamicCast_AsGun_Base' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, K2Node_DynamicCast_bSuccess_1) == 0x0000A0, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, CallFunc_Array_Length_ReturnValue_1) == 0x0000A4, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, K2Node_CustomEvent_Info) == 0x0000A8, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::K2Node_CustomEvent_Info' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, K2Node_ClassDynamicCast_AsShop_Item_Weapon_Base) == 0x0000B0, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::K2Node_ClassDynamicCast_AsShop_Item_Weapon_Base' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, K2Node_ClassDynamicCast_bSuccess) == 0x0000B8, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::K2Node_ClassDynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, Temp_int_Loop_Counter_Variable_2) == 0x0000BC, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, K2Node_MakeArray_Array_1) == 0x0000C0, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, CallFunc_Less_IntInt_ReturnValue) == 0x0000D0, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, CallFunc_Array_Get_Item_3) == 0x0000D8, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, CallFunc_Array_Length_ReturnValue_2) == 0x0000E0, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, CallFunc_EqualEqual_ClassClass_ReturnValue) == 0x0000E4, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::CallFunc_EqualEqual_ClassClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, CallFunc_Less_IntInt_ReturnValue_1) == 0x0000E5, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, CallFunc_Add_IntInt_ReturnValue_2) == 0x0000E8, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, CallFunc_K2_GetComponentToWorld_ReturnValue) == 0x0000F0, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::CallFunc_K2_GetComponentToWorld_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, CallFunc_BreakTransform_Location) == 0x000120, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::CallFunc_BreakTransform_Location' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, CallFunc_BreakTransform_Rotation) == 0x00012C, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::CallFunc_BreakTransform_Rotation' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, CallFunc_BreakTransform_Scale) == 0x000138, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::CallFunc_BreakTransform_Scale' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, Temp_byte_Variable_1) == 0x000144, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, CallFunc_K2_GetRootComponent_ReturnValue) == 0x000148, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::CallFunc_K2_GetRootComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, CallFunc_K2_GetRootComponent_ReturnValue_1) == 0x000150, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::CallFunc_K2_GetRootComponent_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000158, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, Temp_int_Loop_Counter_Variable_3) == 0x00015C, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::Temp_int_Loop_Counter_Variable_3' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, K2Node_Select_Default) == 0x000160, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, CallFunc_BreakTransform_Location_1) == 0x000190, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::CallFunc_BreakTransform_Location_1' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, CallFunc_BreakTransform_Rotation_1) == 0x00019C, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::CallFunc_BreakTransform_Rotation_1' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, CallFunc_BreakTransform_Scale_1) == 0x0001A8, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::CallFunc_BreakTransform_Scale_1' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, CallFunc_Less_IntInt_ReturnValue_2) == 0x0001B4, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, CallFunc_Add_IntInt_ReturnValue_3) == 0x0001B8, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, CallFunc_IsValid_ReturnValue) == 0x0001BC, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, CallFunc_GetAllActorsOfClass_OutActors) == 0x0001C0, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, CallFunc_Array_Get_Item_4) == 0x0001D0, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, CallFunc_Array_Length_ReturnValue_3) == 0x0001D8, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, CallFunc_Less_IntInt_ReturnValue_3) == 0x0001DC, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, CallFunc_GetOwner_ReturnValue) == 0x0001E0, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, CallFunc_GetPlayerCharacter_ReturnValue) == 0x0001E8, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::CallFunc_GetPlayerCharacter_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, CallFunc_GetPlayerCharacter_ReturnValue_1) == 0x0001F0, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::CallFunc_GetPlayerCharacter_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, CallFunc_EqualEqual_ObjectObject_ReturnValue_1) == 0x0001F8, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::CallFunc_EqualEqual_ObjectObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, Temp_int_Array_Index_Variable_3) == 0x0001FC, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::Temp_int_Array_Index_Variable_3' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard, CallFunc_Array_Get_Item_5) == 0x000200, "Member 'MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard::CallFunc_Array_Get_Item_5' has a wrong offset!");
+DUMPER7_ASSERTS_MenuWeaponBoard_C_ExecuteUbergraph_MenuWeaponBoard;
 
 // Function MenuWeaponBoard.MenuWeaponBoard_C.ModifyWeapon
 // 0x0008 (0x0008 - 0x0000)
@@ -179,9 +115,7 @@ struct MenuWeaponBoard_C_ModifyWeapon final
 public:
 	class UClass*                                 Info;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MenuWeaponBoard_C_ModifyWeapon) == 0x000008, "Wrong alignment on MenuWeaponBoard_C_ModifyWeapon");
-static_assert(sizeof(MenuWeaponBoard_C_ModifyWeapon) == 0x000008, "Wrong size on MenuWeaponBoard_C_ModifyWeapon");
-static_assert(offsetof(MenuWeaponBoard_C_ModifyWeapon, Info) == 0x000000, "Member 'MenuWeaponBoard_C_ModifyWeapon::Info' has a wrong offset!");
+DUMPER7_ASSERTS_MenuWeaponBoard_C_ModifyWeapon;
 
 // Function MenuWeaponBoard.MenuWeaponBoard_C.PreviewItem
 // 0x0010 (0x0010 - 0x0000)
@@ -191,10 +125,7 @@ public:
 	class UClass*                                 ItemInfo;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         SalePrice;                                         // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MenuWeaponBoard_C_PreviewItem) == 0x000008, "Wrong alignment on MenuWeaponBoard_C_PreviewItem");
-static_assert(sizeof(MenuWeaponBoard_C_PreviewItem) == 0x000010, "Wrong size on MenuWeaponBoard_C_PreviewItem");
-static_assert(offsetof(MenuWeaponBoard_C_PreviewItem, ItemInfo) == 0x000000, "Member 'MenuWeaponBoard_C_PreviewItem::ItemInfo' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_PreviewItem, SalePrice) == 0x000008, "Member 'MenuWeaponBoard_C_PreviewItem::SalePrice' has a wrong offset!");
+DUMPER7_ASSERTS_MenuWeaponBoard_C_PreviewItem;
 
 // Function MenuWeaponBoard.MenuWeaponBoard_C.DragItemFromCategory
 // 0x0001 (0x0001 - 0x0000)
@@ -203,9 +134,7 @@ struct MenuWeaponBoard_C_DragItemFromCategory final
 public:
 	EShopItemCategory                             Category;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MenuWeaponBoard_C_DragItemFromCategory) == 0x000001, "Wrong alignment on MenuWeaponBoard_C_DragItemFromCategory");
-static_assert(sizeof(MenuWeaponBoard_C_DragItemFromCategory) == 0x000001, "Wrong size on MenuWeaponBoard_C_DragItemFromCategory");
-static_assert(offsetof(MenuWeaponBoard_C_DragItemFromCategory, Category) == 0x000000, "Member 'MenuWeaponBoard_C_DragItemFromCategory::Category' has a wrong offset!");
+DUMPER7_ASSERTS_MenuWeaponBoard_C_DragItemFromCategory;
 
 // Function MenuWeaponBoard.MenuWeaponBoard_C.ChangeCategory
 // 0x0001 (0x0001 - 0x0000)
@@ -214,9 +143,7 @@ struct MenuWeaponBoard_C_ChangeCategory final
 public:
 	EShopItemCategory                             Category;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MenuWeaponBoard_C_ChangeCategory) == 0x000001, "Wrong alignment on MenuWeaponBoard_C_ChangeCategory");
-static_assert(sizeof(MenuWeaponBoard_C_ChangeCategory) == 0x000001, "Wrong size on MenuWeaponBoard_C_ChangeCategory");
-static_assert(offsetof(MenuWeaponBoard_C_ChangeCategory, Category) == 0x000000, "Member 'MenuWeaponBoard_C_ChangeCategory::Category' has a wrong offset!");
+DUMPER7_ASSERTS_MenuWeaponBoard_C_ChangeCategory;
 
 // Function MenuWeaponBoard.MenuWeaponBoard_C.UserConstructionScript
 // 0x0060 (0x0060 - 0x0000)
@@ -226,10 +153,7 @@ public:
 	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0000(0x0030)(IsPlainOldData, NoDestructor)
 	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue_1;     // 0x0030(0x0030)(IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MenuWeaponBoard_C_UserConstructionScript) == 0x000010, "Wrong alignment on MenuWeaponBoard_C_UserConstructionScript");
-static_assert(sizeof(MenuWeaponBoard_C_UserConstructionScript) == 0x000060, "Wrong size on MenuWeaponBoard_C_UserConstructionScript");
-static_assert(offsetof(MenuWeaponBoard_C_UserConstructionScript, CallFunc_K2_GetComponentToWorld_ReturnValue) == 0x000000, "Member 'MenuWeaponBoard_C_UserConstructionScript::CallFunc_K2_GetComponentToWorld_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_UserConstructionScript, CallFunc_K2_GetComponentToWorld_ReturnValue_1) == 0x000030, "Member 'MenuWeaponBoard_C_UserConstructionScript::CallFunc_K2_GetComponentToWorld_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_MenuWeaponBoard_C_UserConstructionScript;
 
 // Function MenuWeaponBoard.MenuWeaponBoard_C.FindGun
 // 0x0068 (0x0068 - 0x0000)
@@ -255,23 +179,7 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ClassClass_ReturnValue;        // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MenuWeaponBoard_C_FindGun) == 0x000008, "Wrong alignment on MenuWeaponBoard_C_FindGun");
-static_assert(sizeof(MenuWeaponBoard_C_FindGun) == 0x000068, "Wrong size on MenuWeaponBoard_C_FindGun");
-static_assert(offsetof(MenuWeaponBoard_C_FindGun, Class_0) == 0x000000, "Member 'MenuWeaponBoard_C_FindGun::Class_0' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_FindGun, Gun_actor) == 0x000008, "Member 'MenuWeaponBoard_C_FindGun::Gun_actor' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_FindGun, Child) == 0x000010, "Member 'MenuWeaponBoard_C_FindGun::Child' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_FindGun, K2Node_ClassDynamicCast_AsShop_Item_Weapon_Base) == 0x000018, "Member 'MenuWeaponBoard_C_FindGun::K2Node_ClassDynamicCast_AsShop_Item_Weapon_Base' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_FindGun, K2Node_ClassDynamicCast_bSuccess) == 0x000020, "Member 'MenuWeaponBoard_C_FindGun::K2Node_ClassDynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_FindGun, Temp_int_Array_Index_Variable) == 0x000024, "Member 'MenuWeaponBoard_C_FindGun::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_FindGun, Temp_int_Loop_Counter_Variable) == 0x000028, "Member 'MenuWeaponBoard_C_FindGun::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_FindGun, CallFunc_Add_IntInt_ReturnValue) == 0x00002C, "Member 'MenuWeaponBoard_C_FindGun::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_FindGun, K2Node_MakeArray_Array) == 0x000030, "Member 'MenuWeaponBoard_C_FindGun::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_FindGun, CallFunc_Array_Length_ReturnValue) == 0x000040, "Member 'MenuWeaponBoard_C_FindGun::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_FindGun, CallFunc_Array_Get_Item) == 0x000048, "Member 'MenuWeaponBoard_C_FindGun::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_FindGun, CallFunc_Less_IntInt_ReturnValue) == 0x000050, "Member 'MenuWeaponBoard_C_FindGun::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_FindGun, K2Node_DynamicCast_AsGun_Base) == 0x000058, "Member 'MenuWeaponBoard_C_FindGun::K2Node_DynamicCast_AsGun_Base' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_FindGun, K2Node_DynamicCast_bSuccess) == 0x000060, "Member 'MenuWeaponBoard_C_FindGun::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(MenuWeaponBoard_C_FindGun, CallFunc_EqualEqual_ClassClass_ReturnValue) == 0x000061, "Member 'MenuWeaponBoard_C_FindGun::CallFunc_EqualEqual_ClassClass_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MenuWeaponBoard_C_FindGun;
 
 }
 

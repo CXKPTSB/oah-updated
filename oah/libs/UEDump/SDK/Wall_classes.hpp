@@ -36,16 +36,21 @@ public:
 	uint8                                         Pad_25C[0x4];                                      // 0x025C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UStaticMeshComponent*>           MeshComponents;                                    // 0x0260(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	EComponentMobility                            Mobility;                                          // 0x0270(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_271[0x3];                                      // 0x0271(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	void FetchMats();
-	void SetMats();
 	void UserConstructionScript();
+	void SetMats();
+	void FetchMats();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Wall_C">();
+		BP_STATIC_CLASS_IMPL("Wall_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Wall_C")
 	}
 	static class AWall_C* GetDefaultObj()
 	{
@@ -53,17 +58,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(AWall_C) == 0x000008, "Wrong alignment on AWall_C");
-static_assert(sizeof(AWall_C) == 0x000278, "Wrong size on AWall_C");
-static_assert(offsetof(AWall_C, DefaultSceneRoot) == 0x000220, "Member 'AWall_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AWall_C, Length) == 0x000228, "Member 'AWall_C::Length' has a wrong offset!");
-static_assert(offsetof(AWall_C, Wallmesh) == 0x000230, "Member 'AWall_C::Wallmesh' has a wrong offset!");
-static_assert(offsetof(AWall_C, Material) == 0x000238, "Member 'AWall_C::Material' has a wrong offset!");
-static_assert(offsetof(AWall_C, Override_mats_) == 0x000248, "Member 'AWall_C::Override_mats_' has a wrong offset!");
-static_assert(offsetof(AWall_C, MeshRotation) == 0x00024C, "Member 'AWall_C::MeshRotation' has a wrong offset!");
-static_assert(offsetof(AWall_C, WallLength) == 0x000258, "Member 'AWall_C::WallLength' has a wrong offset!");
-static_assert(offsetof(AWall_C, MeshComponents) == 0x000260, "Member 'AWall_C::MeshComponents' has a wrong offset!");
-static_assert(offsetof(AWall_C, Mobility) == 0x000270, "Member 'AWall_C::Mobility' has a wrong offset!");
+DUMPER7_ASSERTS_AWall_C;
 
 }
 

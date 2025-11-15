@@ -63,29 +63,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SkillChildUI_C">();
+		BP_STATIC_CLASS_IMPL("SkillChildUI_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SkillChildUI_C")
 	}
 	static class USkillChildUI_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USkillChildUI_C>();
 	}
 };
-static_assert(alignof(USkillChildUI_C) == 0x000008, "Wrong alignment on USkillChildUI_C");
-static_assert(sizeof(USkillChildUI_C) == 0x0002D0, "Wrong size on USkillChildUI_C");
-static_assert(offsetof(USkillChildUI_C, UberGraphFrame) == 0x000260, "Member 'USkillChildUI_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USkillChildUI_C, HoverAnim) == 0x000268, "Member 'USkillChildUI_C::HoverAnim' has a wrong offset!");
-static_assert(offsetof(USkillChildUI_C, Button_66) == 0x000270, "Member 'USkillChildUI_C::Button_66' has a wrong offset!");
-static_assert(offsetof(USkillChildUI_C, Image_132) == 0x000278, "Member 'USkillChildUI_C::Image_132' has a wrong offset!");
-static_assert(offsetof(USkillChildUI_C, Image_284) == 0x000280, "Member 'USkillChildUI_C::Image_284' has a wrong offset!");
-static_assert(offsetof(USkillChildUI_C, ProgressBar_108) == 0x000288, "Member 'USkillChildUI_C::ProgressBar_108' has a wrong offset!");
-static_assert(offsetof(USkillChildUI_C, SizeBox_87) == 0x000290, "Member 'USkillChildUI_C::SizeBox_87' has a wrong offset!");
-static_assert(offsetof(USkillChildUI_C, TextBlock_115) == 0x000298, "Member 'USkillChildUI_C::TextBlock_115' has a wrong offset!");
-static_assert(offsetof(USkillChildUI_C, TextBlock_172) == 0x0002A0, "Member 'USkillChildUI_C::TextBlock_172' has a wrong offset!");
-static_assert(offsetof(USkillChildUI_C, TierGlow) == 0x0002A8, "Member 'USkillChildUI_C::TierGlow' has a wrong offset!");
-static_assert(offsetof(USkillChildUI_C, UnlockBox) == 0x0002B0, "Member 'USkillChildUI_C::UnlockBox' has a wrong offset!");
-static_assert(offsetof(USkillChildUI_C, SkillInfo) == 0x0002B8, "Member 'USkillChildUI_C::SkillInfo' has a wrong offset!");
-static_assert(offsetof(USkillChildUI_C, As_Robber_Controller) == 0x0002C0, "Member 'USkillChildUI_C::As_Robber_Controller' has a wrong offset!");
-static_assert(offsetof(USkillChildUI_C, Tier) == 0x0002C8, "Member 'USkillChildUI_C::Tier' has a wrong offset!");
+DUMPER7_ASSERTS_USkillChildUI_C;
 
 }
 

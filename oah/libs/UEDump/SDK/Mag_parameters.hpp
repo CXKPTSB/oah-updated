@@ -22,10 +22,7 @@ public:
 	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Mag_C_UserConstructionScript) == 0x000001, "Wrong alignment on Mag_C_UserConstructionScript");
-static_assert(sizeof(Mag_C_UserConstructionScript) == 0x000002, "Wrong size on Mag_C_UserConstructionScript");
-static_assert(offsetof(Mag_C_UserConstructionScript, CallFunc_SetStaticMesh_ReturnValue) == 0x000000, "Member 'Mag_C_UserConstructionScript::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Mag_C_UserConstructionScript, CallFunc_IsValid_ReturnValue) == 0x000001, "Member 'Mag_C_UserConstructionScript::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_Mag_C_UserConstructionScript;
 
 }
 

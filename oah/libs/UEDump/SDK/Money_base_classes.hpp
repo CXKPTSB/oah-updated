@@ -33,18 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Money_base_C">();
+		BP_STATIC_CLASS_IMPL("Money_base_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Money_base_C")
 	}
 	static class AMoney_base_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMoney_base_C>();
 	}
 };
-static_assert(alignof(AMoney_base_C) == 0x000008, "Wrong alignment on AMoney_base_C");
-static_assert(sizeof(AMoney_base_C) == 0x000268, "Wrong size on AMoney_base_C");
-static_assert(offsetof(AMoney_base_C, UberGraphFrame_Money_base_C) == 0x000258, "Member 'AMoney_base_C::UberGraphFrame_Money_base_C' has a wrong offset!");
-static_assert(offsetof(AMoney_base_C, Value) == 0x000260, "Member 'AMoney_base_C::Value' has a wrong offset!");
-static_assert(offsetof(AMoney_base_C, Exp) == 0x000264, "Member 'AMoney_base_C::Exp' has a wrong offset!");
+DUMPER7_ASSERTS_AMoney_base_C;
 
 }
 

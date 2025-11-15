@@ -37,20 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HeistCoins_Popup_C">();
+		BP_STATIC_CLASS_IMPL("HeistCoins_Popup_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HeistCoins_Popup_C")
 	}
 	static class UHeistCoins_Popup_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHeistCoins_Popup_C>();
 	}
 };
-static_assert(alignof(UHeistCoins_Popup_C) == 0x000008, "Wrong alignment on UHeistCoins_Popup_C");
-static_assert(sizeof(UHeistCoins_Popup_C) == 0x000288, "Wrong size on UHeistCoins_Popup_C");
-static_assert(offsetof(UHeistCoins_Popup_C, UberGraphFrame) == 0x000260, "Member 'UHeistCoins_Popup_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UHeistCoins_Popup_C, Button_1) == 0x000268, "Member 'UHeistCoins_Popup_C::Button_1' has a wrong offset!");
-static_assert(offsetof(UHeistCoins_Popup_C, Image_0) == 0x000270, "Member 'UHeistCoins_Popup_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UHeistCoins_Popup_C, TextBlock_94) == 0x000278, "Member 'UHeistCoins_Popup_C::TextBlock_94' has a wrong offset!");
-static_assert(offsetof(UHeistCoins_Popup_C, Amount) == 0x000280, "Member 'UHeistCoins_Popup_C::Amount' has a wrong offset!");
+DUMPER7_ASSERTS_UHeistCoins_Popup_C;
 
 }
 

@@ -27,17 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EndOfTruckBase_C">();
+		BP_STATIC_CLASS_IMPL("EndOfTruckBase_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EndOfTruckBase_C")
 	}
 	static class AEndOfTruckBase_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AEndOfTruckBase_C>();
 	}
 };
-static_assert(alignof(AEndOfTruckBase_C) == 0x000008, "Wrong alignment on AEndOfTruckBase_C");
-static_assert(sizeof(AEndOfTruckBase_C) == 0x000230, "Wrong size on AEndOfTruckBase_C");
-static_assert(offsetof(AEndOfTruckBase_C, StaticMesh) == 0x000220, "Member 'AEndOfTruckBase_C::StaticMesh' has a wrong offset!");
-static_assert(offsetof(AEndOfTruckBase_C, DefaultSceneRoot) == 0x000228, "Member 'AEndOfTruckBase_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_AEndOfTruckBase_C;
 
 }
 

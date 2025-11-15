@@ -111,11 +111,7 @@ public:
 	struct FDirectoryPath                         IconModelPath;                                     // 0x0010(0x0010)(Edit, Config, GlobalConfig, NativeAccessSpecifierPublic)
 	struct FDirectoryPath                         IconPortalPath;                                    // 0x0020(0x0010)(Edit, Config, GlobalConfig, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FLocalizedIconInfo) == 0x000008, "Wrong alignment on FLocalizedIconInfo");
-static_assert(sizeof(FLocalizedIconInfo) == 0x000030, "Wrong size on FLocalizedIconInfo");
-static_assert(offsetof(FLocalizedIconInfo, LanguageCode) == 0x000000, "Member 'FLocalizedIconInfo::LanguageCode' has a wrong offset!");
-static_assert(offsetof(FLocalizedIconInfo, IconModelPath) == 0x000010, "Member 'FLocalizedIconInfo::IconModelPath' has a wrong offset!");
-static_assert(offsetof(FLocalizedIconInfo, IconPortalPath) == 0x000020, "Member 'FLocalizedIconInfo::IconPortalPath' has a wrong offset!");
+DUMPER7_ASSERTS_FLocalizedIconInfo;
 
 // ScriptStruct LuminRuntimeSettings.LocalizedIconInfos
 // 0x0010 (0x0010 - 0x0000)
@@ -124,9 +120,7 @@ struct FLocalizedIconInfos final
 public:
 	TArray<struct FLocalizedIconInfo>             IconData;                                          // 0x0000(0x0010)(Edit, ZeroConstructor, Config, GlobalConfig, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FLocalizedIconInfos) == 0x000008, "Wrong alignment on FLocalizedIconInfos");
-static_assert(sizeof(FLocalizedIconInfos) == 0x000010, "Wrong size on FLocalizedIconInfos");
-static_assert(offsetof(FLocalizedIconInfos, IconData) == 0x000000, "Member 'FLocalizedIconInfos::IconData' has a wrong offset!");
+DUMPER7_ASSERTS_FLocalizedIconInfos;
 
 // ScriptStruct LuminRuntimeSettings.LocalizedAppName
 // 0x0020 (0x0020 - 0x0000)
@@ -136,10 +130,7 @@ public:
 	class FString                                 LanguageCode;                                      // 0x0000(0x0010)(Edit, ZeroConstructor, Config, GlobalConfig, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 AppName;                                           // 0x0010(0x0010)(Edit, ZeroConstructor, Config, GlobalConfig, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FLocalizedAppName) == 0x000008, "Wrong alignment on FLocalizedAppName");
-static_assert(sizeof(FLocalizedAppName) == 0x000020, "Wrong size on FLocalizedAppName");
-static_assert(offsetof(FLocalizedAppName, LanguageCode) == 0x000000, "Member 'FLocalizedAppName::LanguageCode' has a wrong offset!");
-static_assert(offsetof(FLocalizedAppName, AppName) == 0x000010, "Member 'FLocalizedAppName::AppName' has a wrong offset!");
+DUMPER7_ASSERTS_FLocalizedAppName;
 
 // ScriptStruct LuminRuntimeSettings.LuminComponentSubElement
 // 0x0018 (0x0018 - 0x0000)
@@ -150,10 +141,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Value;                                             // 0x0008(0x0010)(Edit, ZeroConstructor, Config, GlobalConfig, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FLuminComponentSubElement) == 0x000008, "Wrong alignment on FLuminComponentSubElement");
-static_assert(sizeof(FLuminComponentSubElement) == 0x000018, "Wrong size on FLuminComponentSubElement");
-static_assert(offsetof(FLuminComponentSubElement, ElementType) == 0x000000, "Member 'FLuminComponentSubElement::ElementType' has a wrong offset!");
-static_assert(offsetof(FLuminComponentSubElement, Value) == 0x000008, "Member 'FLuminComponentSubElement::Value' has a wrong offset!");
+DUMPER7_ASSERTS_FLuminComponentSubElement;
 
 // ScriptStruct LuminRuntimeSettings.LuminComponentElement
 // 0x0048 (0x0048 - 0x0000)
@@ -167,13 +155,7 @@ public:
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FLuminComponentSubElement>      ExtraComponentSubElements;                         // 0x0038(0x0010)(Edit, ZeroConstructor, Config, GlobalConfig, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FLuminComponentElement) == 0x000008, "Wrong alignment on FLuminComponentElement");
-static_assert(sizeof(FLuminComponentElement) == 0x000048, "Wrong size on FLuminComponentElement");
-static_assert(offsetof(FLuminComponentElement, Name) == 0x000000, "Member 'FLuminComponentElement::Name' has a wrong offset!");
-static_assert(offsetof(FLuminComponentElement, VisibleName) == 0x000010, "Member 'FLuminComponentElement::VisibleName' has a wrong offset!");
-static_assert(offsetof(FLuminComponentElement, ExecutableName) == 0x000020, "Member 'FLuminComponentElement::ExecutableName' has a wrong offset!");
-static_assert(offsetof(FLuminComponentElement, ComponentType) == 0x000030, "Member 'FLuminComponentElement::ComponentType' has a wrong offset!");
-static_assert(offsetof(FLuminComponentElement, ExtraComponentSubElements) == 0x000038, "Member 'FLuminComponentElement::ExtraComponentSubElements' has a wrong offset!");
+DUMPER7_ASSERTS_FLuminComponentElement;
 
 }
 

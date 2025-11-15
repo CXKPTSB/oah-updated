@@ -45,23 +45,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GameChat_C">();
+		BP_STATIC_CLASS_IMPL("GameChat_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GameChat_C")
 	}
 	static class UGameChat_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGameChat_C>();
 	}
 };
-static_assert(alignof(UGameChat_C) == 0x000008, "Wrong alignment on UGameChat_C");
-static_assert(sizeof(UGameChat_C) == 0x0002A0, "Wrong size on UGameChat_C");
-static_assert(offsetof(UGameChat_C, UberGraphFrame) == 0x000260, "Member 'UGameChat_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGameChat_C, FadeOut) == 0x000268, "Member 'UGameChat_C::FadeOut' has a wrong offset!");
-static_assert(offsetof(UGameChat_C, FadeInMessages) == 0x000270, "Member 'UGameChat_C::FadeInMessages' has a wrong offset!");
-static_assert(offsetof(UGameChat_C, ChatMessages) == 0x000278, "Member 'UGameChat_C::ChatMessages' has a wrong offset!");
-static_assert(offsetof(UGameChat_C, EditableTextBox_269) == 0x000280, "Member 'UGameChat_C::EditableTextBox_269' has a wrong offset!");
-static_assert(offsetof(UGameChat_C, Image_366) == 0x000288, "Member 'UGameChat_C::Image_366' has a wrong offset!");
-static_assert(offsetof(UGameChat_C, ChatOpen_) == 0x000290, "Member 'UGameChat_C::ChatOpen_' has a wrong offset!");
-static_assert(offsetof(UGameChat_C, As_Robber_Player_State) == 0x000298, "Member 'UGameChat_C::As_Robber_Player_State' has a wrong offset!");
+DUMPER7_ASSERTS_UGameChat_C;
 
 }
 

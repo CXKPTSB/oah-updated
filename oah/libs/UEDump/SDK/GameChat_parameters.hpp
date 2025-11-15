@@ -72,44 +72,7 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0134(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue_3;        // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GameChat_C_ExecuteUbergraph_GameChat) == 0x000008, "Wrong alignment on GameChat_C_ExecuteUbergraph_GameChat");
-static_assert(sizeof(GameChat_C_ExecuteUbergraph_GameChat) == 0x000140, "Wrong size on GameChat_C_ExecuteUbergraph_GameChat");
-static_assert(offsetof(GameChat_C_ExecuteUbergraph_GameChat, EntryPoint) == 0x000000, "Member 'GameChat_C_ExecuteUbergraph_GameChat::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GameChat_C_ExecuteUbergraph_GameChat, CallFunc_GetPlayerController_ReturnValue) == 0x000008, "Member 'GameChat_C_ExecuteUbergraph_GameChat::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GameChat_C_ExecuteUbergraph_GameChat, K2Node_DynamicCast_AsRobber_Controller) == 0x000010, "Member 'GameChat_C_ExecuteUbergraph_GameChat::K2Node_DynamicCast_AsRobber_Controller' has a wrong offset!");
-static_assert(offsetof(GameChat_C_ExecuteUbergraph_GameChat, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'GameChat_C_ExecuteUbergraph_GameChat::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GameChat_C_ExecuteUbergraph_GameChat, K2Node_DynamicCast_AsRobber_Player_State) == 0x000020, "Member 'GameChat_C_ExecuteUbergraph_GameChat::K2Node_DynamicCast_AsRobber_Player_State' has a wrong offset!");
-static_assert(offsetof(GameChat_C_ExecuteUbergraph_GameChat, K2Node_DynamicCast_bSuccess_1) == 0x000028, "Member 'GameChat_C_ExecuteUbergraph_GameChat::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(GameChat_C_ExecuteUbergraph_GameChat, CallFunc_Create_ReturnValue) == 0x000030, "Member 'GameChat_C_ExecuteUbergraph_GameChat::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GameChat_C_ExecuteUbergraph_GameChat, Temp_int_Array_Index_Variable) == 0x000038, "Member 'GameChat_C_ExecuteUbergraph_GameChat::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(GameChat_C_ExecuteUbergraph_GameChat, CallFunc_Create_ReturnValue_1) == 0x000040, "Member 'GameChat_C_ExecuteUbergraph_GameChat::CallFunc_Create_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GameChat_C_ExecuteUbergraph_GameChat, CallFunc_PlayAnimation_ReturnValue) == 0x000048, "Member 'GameChat_C_ExecuteUbergraph_GameChat::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GameChat_C_ExecuteUbergraph_GameChat, CallFunc_PlayAnimation_ReturnValue_1) == 0x000050, "Member 'GameChat_C_ExecuteUbergraph_GameChat::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GameChat_C_ExecuteUbergraph_GameChat, CallFunc_GetPlayerController_ReturnValue_1) == 0x000058, "Member 'GameChat_C_ExecuteUbergraph_GameChat::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GameChat_C_ExecuteUbergraph_GameChat, K2Node_DynamicCast_AsRobber_Controller_1) == 0x000060, "Member 'GameChat_C_ExecuteUbergraph_GameChat::K2Node_DynamicCast_AsRobber_Controller_1' has a wrong offset!");
-static_assert(offsetof(GameChat_C_ExecuteUbergraph_GameChat, K2Node_DynamicCast_bSuccess_2) == 0x000068, "Member 'GameChat_C_ExecuteUbergraph_GameChat::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(GameChat_C_ExecuteUbergraph_GameChat, CallFunc_AddChild_ReturnValue) == 0x000070, "Member 'GameChat_C_ExecuteUbergraph_GameChat::CallFunc_AddChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GameChat_C_ExecuteUbergraph_GameChat, CallFunc_IsValid_ReturnValue) == 0x000078, "Member 'GameChat_C_ExecuteUbergraph_GameChat::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GameChat_C_ExecuteUbergraph_GameChat, CallFunc_Array_Get_Item) == 0x000080, "Member 'GameChat_C_ExecuteUbergraph_GameChat::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(GameChat_C_ExecuteUbergraph_GameChat, CallFunc_Array_Get_Item_1) == 0x000090, "Member 'GameChat_C_ExecuteUbergraph_GameChat::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(GameChat_C_ExecuteUbergraph_GameChat, CallFunc_Array_Length_ReturnValue) == 0x0000A0, "Member 'GameChat_C_ExecuteUbergraph_GameChat::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GameChat_C_ExecuteUbergraph_GameChat, K2Node_ComponentBoundEvent_Text) == 0x0000A8, "Member 'GameChat_C_ExecuteUbergraph_GameChat::K2Node_ComponentBoundEvent_Text' has a wrong offset!");
-static_assert(offsetof(GameChat_C_ExecuteUbergraph_GameChat, K2Node_ComponentBoundEvent_CommitMethod) == 0x0000C0, "Member 'GameChat_C_ExecuteUbergraph_GameChat::K2Node_ComponentBoundEvent_CommitMethod' has a wrong offset!");
-static_assert(offsetof(GameChat_C_ExecuteUbergraph_GameChat, CallFunc_GetPlayerController_ReturnValue_2) == 0x0000C8, "Member 'GameChat_C_ExecuteUbergraph_GameChat::CallFunc_GetPlayerController_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(GameChat_C_ExecuteUbergraph_GameChat, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000D0, "Member 'GameChat_C_ExecuteUbergraph_GameChat::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GameChat_C_ExecuteUbergraph_GameChat, K2Node_DynamicCast_AsRobber_Controller_2) == 0x0000D8, "Member 'GameChat_C_ExecuteUbergraph_GameChat::K2Node_DynamicCast_AsRobber_Controller_2' has a wrong offset!");
-static_assert(offsetof(GameChat_C_ExecuteUbergraph_GameChat, K2Node_DynamicCast_bSuccess_3) == 0x0000E0, "Member 'GameChat_C_ExecuteUbergraph_GameChat::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(GameChat_C_ExecuteUbergraph_GameChat, CallFunc_GetPlayerName_ReturnValue) == 0x0000E8, "Member 'GameChat_C_ExecuteUbergraph_GameChat::CallFunc_GetPlayerName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GameChat_C_ExecuteUbergraph_GameChat, CallFunc_Conv_TextToString_ReturnValue) == 0x0000F8, "Member 'GameChat_C_ExecuteUbergraph_GameChat::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GameChat_C_ExecuteUbergraph_GameChat, CallFunc_Len_ReturnValue) == 0x000108, "Member 'GameChat_C_ExecuteUbergraph_GameChat::CallFunc_Len_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GameChat_C_ExecuteUbergraph_GameChat, CallFunc_Conv_TextToString_ReturnValue_1) == 0x000110, "Member 'GameChat_C_ExecuteUbergraph_GameChat::CallFunc_Conv_TextToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GameChat_C_ExecuteUbergraph_GameChat, CallFunc_Greater_IntInt_ReturnValue) == 0x000120, "Member 'GameChat_C_ExecuteUbergraph_GameChat::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GameChat_C_ExecuteUbergraph_GameChat, CallFunc_BooleanAND_ReturnValue) == 0x000121, "Member 'GameChat_C_ExecuteUbergraph_GameChat::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GameChat_C_ExecuteUbergraph_GameChat, Temp_int_Loop_Counter_Variable) == 0x000124, "Member 'GameChat_C_ExecuteUbergraph_GameChat::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(GameChat_C_ExecuteUbergraph_GameChat, CallFunc_AddChild_ReturnValue_1) == 0x000128, "Member 'GameChat_C_ExecuteUbergraph_GameChat::CallFunc_AddChild_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GameChat_C_ExecuteUbergraph_GameChat, CallFunc_Less_IntInt_ReturnValue) == 0x000130, "Member 'GameChat_C_ExecuteUbergraph_GameChat::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GameChat_C_ExecuteUbergraph_GameChat, CallFunc_Add_IntInt_ReturnValue) == 0x000134, "Member 'GameChat_C_ExecuteUbergraph_GameChat::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GameChat_C_ExecuteUbergraph_GameChat, CallFunc_GetPlayerController_ReturnValue_3) == 0x000138, "Member 'GameChat_C_ExecuteUbergraph_GameChat::CallFunc_GetPlayerController_ReturnValue_3' has a wrong offset!");
+DUMPER7_ASSERTS_GameChat_C_ExecuteUbergraph_GameChat;
 
 // Function GameChat.GameChat_C.BndEvt__GameChat_EditableTextBox_269_K2Node_ComponentBoundEvent_0_OnEditableTextBoxCommittedEvent__DelegateSignature
 // 0x0020 (0x0020 - 0x0000)
@@ -119,10 +82,7 @@ public:
 	class FText                                   Text;                                              // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	ETextCommit                                   CommitMethod;                                      // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GameChat_C_BndEvt__GameChat_EditableTextBox_269_K2Node_ComponentBoundEvent_0_OnEditableTextBoxCommittedEvent__DelegateSignature) == 0x000008, "Wrong alignment on GameChat_C_BndEvt__GameChat_EditableTextBox_269_K2Node_ComponentBoundEvent_0_OnEditableTextBoxCommittedEvent__DelegateSignature");
-static_assert(sizeof(GameChat_C_BndEvt__GameChat_EditableTextBox_269_K2Node_ComponentBoundEvent_0_OnEditableTextBoxCommittedEvent__DelegateSignature) == 0x000020, "Wrong size on GameChat_C_BndEvt__GameChat_EditableTextBox_269_K2Node_ComponentBoundEvent_0_OnEditableTextBoxCommittedEvent__DelegateSignature");
-static_assert(offsetof(GameChat_C_BndEvt__GameChat_EditableTextBox_269_K2Node_ComponentBoundEvent_0_OnEditableTextBoxCommittedEvent__DelegateSignature, Text) == 0x000000, "Member 'GameChat_C_BndEvt__GameChat_EditableTextBox_269_K2Node_ComponentBoundEvent_0_OnEditableTextBoxCommittedEvent__DelegateSignature::Text' has a wrong offset!");
-static_assert(offsetof(GameChat_C_BndEvt__GameChat_EditableTextBox_269_K2Node_ComponentBoundEvent_0_OnEditableTextBoxCommittedEvent__DelegateSignature, CommitMethod) == 0x000018, "Member 'GameChat_C_BndEvt__GameChat_EditableTextBox_269_K2Node_ComponentBoundEvent_0_OnEditableTextBoxCommittedEvent__DelegateSignature::CommitMethod' has a wrong offset!");
+DUMPER7_ASSERTS_GameChat_C_BndEvt__GameChat_EditableTextBox_269_K2Node_ComponentBoundEvent_0_OnEditableTextBoxCommittedEvent__DelegateSignature;
 
 // Function GameChat.GameChat_C.GetVisibility_0
 // 0x0001 (0x0001 - 0x0000)
@@ -131,9 +91,7 @@ struct GameChat_C_GetVisibility_0 final
 public:
 	ESlateVisibility                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GameChat_C_GetVisibility_0) == 0x000001, "Wrong alignment on GameChat_C_GetVisibility_0");
-static_assert(sizeof(GameChat_C_GetVisibility_0) == 0x000001, "Wrong size on GameChat_C_GetVisibility_0");
-static_assert(offsetof(GameChat_C_GetVisibility_0, ReturnValue) == 0x000000, "Member 'GameChat_C_GetVisibility_0::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GameChat_C_GetVisibility_0;
 
 }
 

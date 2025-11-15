@@ -45,27 +45,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PowerboxDefuser_AnimBP_C">();
+		BP_STATIC_CLASS_IMPL("PowerboxDefuser_AnimBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PowerboxDefuser_AnimBP_C")
 	}
 	static class UPowerboxDefuser_AnimBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPowerboxDefuser_AnimBP_C>();
 	}
 };
-static_assert(alignof(UPowerboxDefuser_AnimBP_C) == 0x000010, "Wrong alignment on UPowerboxDefuser_AnimBP_C");
-static_assert(sizeof(UPowerboxDefuser_AnimBP_C) == 0x0005D0, "Wrong size on UPowerboxDefuser_AnimBP_C");
-static_assert(offsetof(UPowerboxDefuser_AnimBP_C, UberGraphFrame) == 0x0002C0, "Member 'UPowerboxDefuser_AnimBP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPowerboxDefuser_AnimBP_C, AnimGraphNode_Root) == 0x0002C8, "Member 'UPowerboxDefuser_AnimBP_C::AnimGraphNode_Root' has a wrong offset!");
-static_assert(offsetof(UPowerboxDefuser_AnimBP_C, AnimGraphNode_TransitionResult_1) == 0x0002F8, "Member 'UPowerboxDefuser_AnimBP_C::AnimGraphNode_TransitionResult_1' has a wrong offset!");
-static_assert(offsetof(UPowerboxDefuser_AnimBP_C, AnimGraphNode_TransitionResult) == 0x000320, "Member 'UPowerboxDefuser_AnimBP_C::AnimGraphNode_TransitionResult' has a wrong offset!");
-static_assert(offsetof(UPowerboxDefuser_AnimBP_C, AnimGraphNode_SequencePlayer) == 0x000348, "Member 'UPowerboxDefuser_AnimBP_C::AnimGraphNode_SequencePlayer' has a wrong offset!");
-static_assert(offsetof(UPowerboxDefuser_AnimBP_C, AnimGraphNode_StateResult_1) == 0x0003C8, "Member 'UPowerboxDefuser_AnimBP_C::AnimGraphNode_StateResult_1' has a wrong offset!");
-static_assert(offsetof(UPowerboxDefuser_AnimBP_C, AnimGraphNode_BlendSpacePlayer) == 0x0003F8, "Member 'UPowerboxDefuser_AnimBP_C::AnimGraphNode_BlendSpacePlayer' has a wrong offset!");
-static_assert(offsetof(UPowerboxDefuser_AnimBP_C, AnimGraphNode_StateResult) == 0x0004E0, "Member 'UPowerboxDefuser_AnimBP_C::AnimGraphNode_StateResult' has a wrong offset!");
-static_assert(offsetof(UPowerboxDefuser_AnimBP_C, AnimGraphNode_StateMachine) == 0x000510, "Member 'UPowerboxDefuser_AnimBP_C::AnimGraphNode_StateMachine' has a wrong offset!");
-static_assert(offsetof(UPowerboxDefuser_AnimBP_C, ForwardSpeed) == 0x0005C0, "Member 'UPowerboxDefuser_AnimBP_C::ForwardSpeed' has a wrong offset!");
-static_assert(offsetof(UPowerboxDefuser_AnimBP_C, RightSpeed) == 0x0005C4, "Member 'UPowerboxDefuser_AnimBP_C::RightSpeed' has a wrong offset!");
-static_assert(offsetof(UPowerboxDefuser_AnimBP_C, Interacting_) == 0x0005C8, "Member 'UPowerboxDefuser_AnimBP_C::Interacting_' has a wrong offset!");
+DUMPER7_ASSERTS_UPowerboxDefuser_AnimBP_C;
 
 }
 

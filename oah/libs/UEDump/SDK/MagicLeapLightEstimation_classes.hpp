@@ -28,17 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MagicLeapLightingTrackingComponent">();
+		STATIC_CLASS_IMPL("MagicLeapLightingTrackingComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MagicLeapLightingTrackingComponent")
 	}
 	static class UMagicLeapLightingTrackingComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMagicLeapLightingTrackingComponent>();
 	}
 };
-static_assert(alignof(UMagicLeapLightingTrackingComponent) == 0x000008, "Wrong alignment on UMagicLeapLightingTrackingComponent");
-static_assert(sizeof(UMagicLeapLightingTrackingComponent) == 0x0000C0, "Wrong size on UMagicLeapLightingTrackingComponent");
-static_assert(offsetof(UMagicLeapLightingTrackingComponent, UseGlobalAmbience) == 0x0000B0, "Member 'UMagicLeapLightingTrackingComponent::UseGlobalAmbience' has a wrong offset!");
-static_assert(offsetof(UMagicLeapLightingTrackingComponent, UseColorTemp) == 0x0000B1, "Member 'UMagicLeapLightingTrackingComponent::UseColorTemp' has a wrong offset!");
+DUMPER7_ASSERTS_UMagicLeapLightingTrackingComponent;
 
 // Class MagicLeapLightEstimation.MagicLeapLightEstimationFunctionLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -54,15 +55,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MagicLeapLightEstimationFunctionLibrary">();
+		STATIC_CLASS_IMPL("MagicLeapLightEstimationFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MagicLeapLightEstimationFunctionLibrary")
 	}
 	static class UMagicLeapLightEstimationFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMagicLeapLightEstimationFunctionLibrary>();
 	}
 };
-static_assert(alignof(UMagicLeapLightEstimationFunctionLibrary) == 0x000008, "Wrong alignment on UMagicLeapLightEstimationFunctionLibrary");
-static_assert(sizeof(UMagicLeapLightEstimationFunctionLibrary) == 0x000028, "Wrong size on UMagicLeapLightEstimationFunctionLibrary");
+DUMPER7_ASSERTS_UMagicLeapLightEstimationFunctionLibrary;
 
 }
 

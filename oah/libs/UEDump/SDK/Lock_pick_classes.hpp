@@ -47,27 +47,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Lock_pick_C">();
+		BP_STATIC_CLASS_IMPL("Lock_pick_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Lock_pick_C")
 	}
 	static class ALock_pick_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ALock_pick_C>();
 	}
 };
-static_assert(alignof(ALock_pick_C) == 0x000008, "Wrong alignment on ALock_pick_C");
-static_assert(sizeof(ALock_pick_C) == 0x0002A8, "Wrong size on ALock_pick_C");
-static_assert(offsetof(ALock_pick_C, UberGraphFrame_Lock_pick_C) == 0x000258, "Member 'ALock_pick_C::UberGraphFrame_Lock_pick_C' has a wrong offset!");
-static_assert(offsetof(ALock_pick_C, HighlightInRangeComponent) == 0x000260, "Member 'ALock_pick_C::HighlightInRangeComponent' has a wrong offset!");
-static_assert(offsetof(ALock_pick_C, Attach_location) == 0x000268, "Member 'ALock_pick_C::Attach_location' has a wrong offset!");
-static_assert(offsetof(ALock_pick_C, SusItemComponent) == 0x000270, "Member 'ALock_pick_C::SusItemComponent' has a wrong offset!");
-static_assert(offsetof(ALock_pick_C, HighlightWhenHolding) == 0x000278, "Member 'ALock_pick_C::HighlightWhenHolding' has a wrong offset!");
-static_assert(offsetof(ALock_pick_C, Lock) == 0x000280, "Member 'ALock_pick_C::Lock' has a wrong offset!");
-static_assert(offsetof(ALock_pick_C, Picking_) == 0x000288, "Member 'ALock_pick_C::Picking_' has a wrong offset!");
-static_assert(offsetof(ALock_pick_C, PickProgress) == 0x00028C, "Member 'ALock_pick_C::PickProgress' has a wrong offset!");
-static_assert(offsetof(ALock_pick_C, JiggleChange) == 0x000290, "Member 'ALock_pick_C::JiggleChange' has a wrong offset!");
-static_assert(offsetof(ALock_pick_C, LockPickUI) == 0x000298, "Member 'ALock_pick_C::LockPickUI' has a wrong offset!");
-static_assert(offsetof(ALock_pick_C, PickMaxChange) == 0x0002A0, "Member 'ALock_pick_C::PickMaxChange' has a wrong offset!");
-static_assert(offsetof(ALock_pick_C, PickMultiplier) == 0x0002A4, "Member 'ALock_pick_C::PickMultiplier' has a wrong offset!");
+DUMPER7_ASSERTS_ALock_pick_C;
 
 }
 

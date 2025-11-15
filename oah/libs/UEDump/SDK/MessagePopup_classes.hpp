@@ -34,19 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MessagePopup_C">();
+		BP_STATIC_CLASS_IMPL("MessagePopup_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MessagePopup_C")
 	}
 	static class UMessagePopup_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMessagePopup_C>();
 	}
 };
-static_assert(alignof(UMessagePopup_C) == 0x000008, "Wrong alignment on UMessagePopup_C");
-static_assert(sizeof(UMessagePopup_C) == 0x000288, "Wrong size on UMessagePopup_C");
-static_assert(offsetof(UMessagePopup_C, UberGraphFrame) == 0x000260, "Member 'UMessagePopup_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMessagePopup_C, Button_100) == 0x000268, "Member 'UMessagePopup_C::Button_100' has a wrong offset!");
-static_assert(offsetof(UMessagePopup_C, TextBlock_153) == 0x000270, "Member 'UMessagePopup_C::TextBlock_153' has a wrong offset!");
-static_assert(offsetof(UMessagePopup_C, Message) == 0x000278, "Member 'UMessagePopup_C::Message' has a wrong offset!");
+DUMPER7_ASSERTS_UMessagePopup_C;
 
 }
 

@@ -34,34 +34,28 @@ public:
 	int32                                         CurrentTier;                                       // 0x02A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	struct FLinearColor Get_Rarity_ColorAndOpacity_0();
-	struct FLinearColor GetContentColorAndOpacity_0();
-	class FText GetText_1();
-	class FText GetText_0();
-	void Construct();
 	void ExecuteUbergraph_SkillTitleUI(int32 EntryPoint);
+	void Construct();
+	class FText GetText_0();
+	class FText GetText_1();
+	struct FLinearColor GetContentColorAndOpacity_0();
+	struct FLinearColor Get_Rarity_ColorAndOpacity_0();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SkillTitleUI_C">();
+		BP_STATIC_CLASS_IMPL("SkillTitleUI_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SkillTitleUI_C")
 	}
 	static class USkillTitleUI_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USkillTitleUI_C>();
 	}
 };
-static_assert(alignof(USkillTitleUI_C) == 0x000008, "Wrong alignment on USkillTitleUI_C");
-static_assert(sizeof(USkillTitleUI_C) == 0x0002B0, "Wrong size on USkillTitleUI_C");
-static_assert(offsetof(USkillTitleUI_C, UberGraphFrame) == 0x000260, "Member 'USkillTitleUI_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USkillTitleUI_C, Border_110) == 0x000268, "Member 'USkillTitleUI_C::Border_110' has a wrong offset!");
-static_assert(offsetof(USkillTitleUI_C, TextBlock) == 0x000270, "Member 'USkillTitleUI_C::TextBlock' has a wrong offset!");
-static_assert(offsetof(USkillTitleUI_C, TextBlock_0) == 0x000278, "Member 'USkillTitleUI_C::TextBlock_0' has a wrong offset!");
-static_assert(offsetof(USkillTitleUI_C, SkillTier) == 0x000280, "Member 'USkillTitleUI_C::SkillTier' has a wrong offset!");
-static_assert(offsetof(USkillTitleUI_C, SkillDescription) == 0x000288, "Member 'USkillTitleUI_C::SkillDescription' has a wrong offset!");
-static_assert(offsetof(USkillTitleUI_C, Skill) == 0x000298, "Member 'USkillTitleUI_C::Skill' has a wrong offset!");
-static_assert(offsetof(USkillTitleUI_C, As_Robber_Controller) == 0x0002A0, "Member 'USkillTitleUI_C::As_Robber_Controller' has a wrong offset!");
-static_assert(offsetof(USkillTitleUI_C, CurrentTier) == 0x0002A8, "Member 'USkillTitleUI_C::CurrentTier' has a wrong offset!");
+DUMPER7_ASSERTS_USkillTitleUI_C;
 
 }
 

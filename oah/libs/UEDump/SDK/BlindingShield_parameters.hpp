@@ -64,44 +64,7 @@ public:
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_2;        // 0x0178(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_3;        // 0x0184(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BlindingShield_C_ExecuteUbergraph_BlindingShield) == 0x000008, "Wrong alignment on BlindingShield_C_ExecuteUbergraph_BlindingShield");
-static_assert(sizeof(BlindingShield_C_ExecuteUbergraph_BlindingShield) == 0x000190, "Wrong size on BlindingShield_C_ExecuteUbergraph_BlindingShield");
-static_assert(offsetof(BlindingShield_C_ExecuteUbergraph_BlindingShield, EntryPoint) == 0x000000, "Member 'BlindingShield_C_ExecuteUbergraph_BlindingShield::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BlindingShield_C_ExecuteUbergraph_BlindingShield, Temp_int_Array_Index_Variable) == 0x000004, "Member 'BlindingShield_C_ExecuteUbergraph_BlindingShield::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BlindingShield_C_ExecuteUbergraph_BlindingShield, Temp_object_Variable) == 0x000008, "Member 'BlindingShield_C_ExecuteUbergraph_BlindingShield::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(BlindingShield_C_ExecuteUbergraph_BlindingShield, CallFunc_GetAllActorsWithInterface_OutActors) == 0x000018, "Member 'BlindingShield_C_ExecuteUbergraph_BlindingShield::CallFunc_GetAllActorsWithInterface_OutActors' has a wrong offset!");
-static_assert(offsetof(BlindingShield_C_ExecuteUbergraph_BlindingShield, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000028, "Member 'BlindingShield_C_ExecuteUbergraph_BlindingShield::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BlindingShield_C_ExecuteUbergraph_BlindingShield, CallFunc_Array_Get_Item) == 0x000038, "Member 'BlindingShield_C_ExecuteUbergraph_BlindingShield::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BlindingShield_C_ExecuteUbergraph_BlindingShield, CallFunc_Array_Length_ReturnValue) == 0x000040, "Member 'BlindingShield_C_ExecuteUbergraph_BlindingShield::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BlindingShield_C_ExecuteUbergraph_BlindingShield, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000044, "Member 'BlindingShield_C_ExecuteUbergraph_BlindingShield::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BlindingShield_C_ExecuteUbergraph_BlindingShield, CallFunc_LineTraceSingle_OutHit) == 0x000050, "Member 'BlindingShield_C_ExecuteUbergraph_BlindingShield::CallFunc_LineTraceSingle_OutHit' has a wrong offset!");
-static_assert(offsetof(BlindingShield_C_ExecuteUbergraph_BlindingShield, CallFunc_LineTraceSingle_ReturnValue) == 0x0000D8, "Member 'BlindingShield_C_ExecuteUbergraph_BlindingShield::CallFunc_LineTraceSingle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BlindingShield_C_ExecuteUbergraph_BlindingShield, CallFunc_BreakHitResult_bBlockingHit) == 0x0000D9, "Member 'BlindingShield_C_ExecuteUbergraph_BlindingShield::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(BlindingShield_C_ExecuteUbergraph_BlindingShield, CallFunc_BreakHitResult_bInitialOverlap) == 0x0000DA, "Member 'BlindingShield_C_ExecuteUbergraph_BlindingShield::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(BlindingShield_C_ExecuteUbergraph_BlindingShield, CallFunc_BreakHitResult_Time) == 0x0000DC, "Member 'BlindingShield_C_ExecuteUbergraph_BlindingShield::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(BlindingShield_C_ExecuteUbergraph_BlindingShield, CallFunc_BreakHitResult_Distance) == 0x0000E0, "Member 'BlindingShield_C_ExecuteUbergraph_BlindingShield::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(BlindingShield_C_ExecuteUbergraph_BlindingShield, CallFunc_BreakHitResult_Location) == 0x0000E4, "Member 'BlindingShield_C_ExecuteUbergraph_BlindingShield::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(BlindingShield_C_ExecuteUbergraph_BlindingShield, CallFunc_BreakHitResult_ImpactPoint) == 0x0000F0, "Member 'BlindingShield_C_ExecuteUbergraph_BlindingShield::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(BlindingShield_C_ExecuteUbergraph_BlindingShield, CallFunc_BreakHitResult_Normal) == 0x0000FC, "Member 'BlindingShield_C_ExecuteUbergraph_BlindingShield::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(BlindingShield_C_ExecuteUbergraph_BlindingShield, CallFunc_BreakHitResult_ImpactNormal) == 0x000108, "Member 'BlindingShield_C_ExecuteUbergraph_BlindingShield::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(BlindingShield_C_ExecuteUbergraph_BlindingShield, CallFunc_BreakHitResult_PhysMat) == 0x000118, "Member 'BlindingShield_C_ExecuteUbergraph_BlindingShield::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(BlindingShield_C_ExecuteUbergraph_BlindingShield, CallFunc_BreakHitResult_HitActor) == 0x000120, "Member 'BlindingShield_C_ExecuteUbergraph_BlindingShield::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(BlindingShield_C_ExecuteUbergraph_BlindingShield, CallFunc_BreakHitResult_HitComponent) == 0x000128, "Member 'BlindingShield_C_ExecuteUbergraph_BlindingShield::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(BlindingShield_C_ExecuteUbergraph_BlindingShield, CallFunc_BreakHitResult_HitBoneName) == 0x000130, "Member 'BlindingShield_C_ExecuteUbergraph_BlindingShield::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(BlindingShield_C_ExecuteUbergraph_BlindingShield, CallFunc_BreakHitResult_HitItem) == 0x000138, "Member 'BlindingShield_C_ExecuteUbergraph_BlindingShield::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(BlindingShield_C_ExecuteUbergraph_BlindingShield, CallFunc_BreakHitResult_ElementIndex) == 0x00013C, "Member 'BlindingShield_C_ExecuteUbergraph_BlindingShield::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
-static_assert(offsetof(BlindingShield_C_ExecuteUbergraph_BlindingShield, CallFunc_BreakHitResult_FaceIndex) == 0x000140, "Member 'BlindingShield_C_ExecuteUbergraph_BlindingShield::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(BlindingShield_C_ExecuteUbergraph_BlindingShield, CallFunc_BreakHitResult_TraceStart) == 0x000144, "Member 'BlindingShield_C_ExecuteUbergraph_BlindingShield::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(BlindingShield_C_ExecuteUbergraph_BlindingShield, CallFunc_BreakHitResult_TraceEnd) == 0x000150, "Member 'BlindingShield_C_ExecuteUbergraph_BlindingShield::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(BlindingShield_C_ExecuteUbergraph_BlindingShield, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x00015C, "Member 'BlindingShield_C_ExecuteUbergraph_BlindingShield::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BlindingShield_C_ExecuteUbergraph_BlindingShield, CallFunc_Less_FloatFloat_ReturnValue) == 0x00015D, "Member 'BlindingShield_C_ExecuteUbergraph_BlindingShield::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BlindingShield_C_ExecuteUbergraph_BlindingShield, K2Node_Event_DeltaSeconds) == 0x000160, "Member 'BlindingShield_C_ExecuteUbergraph_BlindingShield::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(BlindingShield_C_ExecuteUbergraph_BlindingShield, Temp_int_Loop_Counter_Variable) == 0x000164, "Member 'BlindingShield_C_ExecuteUbergraph_BlindingShield::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BlindingShield_C_ExecuteUbergraph_BlindingShield, CallFunc_SpawnSoundAttached_ReturnValue) == 0x000168, "Member 'BlindingShield_C_ExecuteUbergraph_BlindingShield::CallFunc_SpawnSoundAttached_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BlindingShield_C_ExecuteUbergraph_BlindingShield, CallFunc_Less_IntInt_ReturnValue) == 0x000170, "Member 'BlindingShield_C_ExecuteUbergraph_BlindingShield::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BlindingShield_C_ExecuteUbergraph_BlindingShield, CallFunc_Add_IntInt_ReturnValue) == 0x000174, "Member 'BlindingShield_C_ExecuteUbergraph_BlindingShield::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BlindingShield_C_ExecuteUbergraph_BlindingShield, CallFunc_K2_GetActorLocation_ReturnValue_2) == 0x000178, "Member 'BlindingShield_C_ExecuteUbergraph_BlindingShield::CallFunc_K2_GetActorLocation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BlindingShield_C_ExecuteUbergraph_BlindingShield, CallFunc_K2_GetActorLocation_ReturnValue_3) == 0x000184, "Member 'BlindingShield_C_ExecuteUbergraph_BlindingShield::CallFunc_K2_GetActorLocation_ReturnValue_3' has a wrong offset!");
+DUMPER7_ASSERTS_BlindingShield_C_ExecuteUbergraph_BlindingShield;
 
 // Function BlindingShield.BlindingShield_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -110,9 +73,7 @@ struct BlindingShield_C_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BlindingShield_C_ReceiveTick) == 0x000004, "Wrong alignment on BlindingShield_C_ReceiveTick");
-static_assert(sizeof(BlindingShield_C_ReceiveTick) == 0x000004, "Wrong size on BlindingShield_C_ReceiveTick");
-static_assert(offsetof(BlindingShield_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'BlindingShield_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_BlindingShield_C_ReceiveTick;
 
 }
 

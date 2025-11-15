@@ -62,34 +62,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Lock_C">();
+		BP_STATIC_CLASS_IMPL("Lock_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Lock_C")
 	}
 	static class ALock_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ALock_C>();
 	}
 };
-static_assert(alignof(ALock_C) == 0x000008, "Wrong alignment on ALock_C");
-static_assert(sizeof(ALock_C) == 0x0002A8, "Wrong size on ALock_C");
-static_assert(offsetof(ALock_C, UberGraphFrame) == 0x000220, "Member 'ALock_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ALock_C, SteamStatComponent) == 0x000228, "Member 'ALock_C::SteamStatComponent' has a wrong offset!");
-static_assert(offsetof(ALock_C, ToolSpotChild) == 0x000230, "Member 'ALock_C::ToolSpotChild' has a wrong offset!");
-static_assert(offsetof(ALock_C, AlertComponent) == 0x000238, "Member 'ALock_C::AlertComponent' has a wrong offset!");
-static_assert(offsetof(ALock_C, ToolOwnerComponent) == 0x000240, "Member 'ALock_C::ToolOwnerComponent' has a wrong offset!");
-static_assert(offsetof(ALock_C, SpottedHighlightcomponent) == 0x000248, "Member 'ALock_C::SpottedHighlightcomponent' has a wrong offset!");
-static_assert(offsetof(ALock_C, LookatInfoComponent) == 0x000250, "Member 'ALock_C::LookatInfoComponent' has a wrong offset!");
-static_assert(offsetof(ALock_C, PhysicsHandle) == 0x000258, "Member 'ALock_C::PhysicsHandle' has a wrong offset!");
-static_assert(offsetof(ALock_C, AttractPoint) == 0x000260, "Member 'ALock_C::AttractPoint' has a wrong offset!");
-static_assert(offsetof(ALock_C, Lock) == 0x000268, "Member 'ALock_C::Lock' has a wrong offset!");
-static_assert(offsetof(ALock_C, Sphere) == 0x000270, "Member 'ALock_C::Sphere' has a wrong offset!");
-static_assert(offsetof(ALock_C, DefaultSceneRoot) == 0x000278, "Member 'ALock_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ALock_C, Lock_mesh) == 0x000280, "Member 'ALock_C::Lock_mesh' has a wrong offset!");
-static_assert(offsetof(ALock_C, Tool) == 0x000288, "Member 'ALock_C::Tool' has a wrong offset!");
-static_assert(offsetof(ALock_C, Unlocked_) == 0x000290, "Member 'ALock_C::Unlocked_' has a wrong offset!");
-static_assert(offsetof(ALock_C, Attaches_) == 0x000291, "Member 'ALock_C::Attaches_' has a wrong offset!");
-static_assert(offsetof(ALock_C, AttachComponent) == 0x000298, "Member 'ALock_C::AttachComponent' has a wrong offset!");
-static_assert(offsetof(ALock_C, Triggers_alarm_) == 0x0002A0, "Member 'ALock_C::Triggers_alarm_' has a wrong offset!");
-static_assert(offsetof(ALock_C, Exp) == 0x0002A4, "Member 'ALock_C::Exp' has a wrong offset!");
+DUMPER7_ASSERTS_ALock_C;
 
 }
 

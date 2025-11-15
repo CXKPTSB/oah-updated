@@ -26,13 +26,7 @@ public:
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue_1;            // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ToolprogressUI_C_GetPercent_0) == 0x000004, "Wrong alignment on ToolprogressUI_C_GetPercent_0");
-static_assert(sizeof(ToolprogressUI_C_GetPercent_0) == 0x000014, "Wrong size on ToolprogressUI_C_GetPercent_0");
-static_assert(offsetof(ToolprogressUI_C_GetPercent_0, ReturnValue) == 0x000000, "Member 'ToolprogressUI_C_GetPercent_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(ToolprogressUI_C_GetPercent_0, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'ToolprogressUI_C_GetPercent_0::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ToolprogressUI_C_GetPercent_0, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000008, "Member 'ToolprogressUI_C_GetPercent_0::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ToolprogressUI_C_GetPercent_0, CallFunc_Conv_IntToFloat_ReturnValue_1) == 0x00000C, "Member 'ToolprogressUI_C_GetPercent_0::CallFunc_Conv_IntToFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ToolprogressUI_C_GetPercent_0, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000010, "Member 'ToolprogressUI_C_GetPercent_0::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ToolprogressUI_C_GetPercent_0;
 
 }
 

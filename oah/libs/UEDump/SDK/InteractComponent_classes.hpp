@@ -21,21 +21,23 @@ namespace SDK
 class UInteractComponent_C final : public UActorComponent
 {
 public:
-	TMulticastInlineDelegate<void(class AActor* Player, class UPrimitiveComponent* HitComponent)> Interact;                                          // 0x00B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(class AActor* Player, class UPrimitiveComponent* HitComponent)> Interact; // 0x00B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"InteractComponent_C">();
+		BP_STATIC_CLASS_IMPL("InteractComponent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InteractComponent_C")
 	}
 	static class UInteractComponent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInteractComponent_C>();
 	}
 };
-static_assert(alignof(UInteractComponent_C) == 0x000008, "Wrong alignment on UInteractComponent_C");
-static_assert(sizeof(UInteractComponent_C) == 0x0000C0, "Wrong size on UInteractComponent_C");
-static_assert(offsetof(UInteractComponent_C, Interact) == 0x0000B0, "Member 'UInteractComponent_C::Interact' has a wrong offset!");
+DUMPER7_ASSERTS_UInteractComponent_C;
 
 }
 

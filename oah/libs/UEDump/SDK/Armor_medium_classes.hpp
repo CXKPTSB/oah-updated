@@ -23,15 +23,18 @@ class AArmor_medium_C final : public AArmor_Light_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Armor_medium_C">();
+		BP_STATIC_CLASS_IMPL("Armor_medium_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Armor_medium_C")
 	}
 	static class AArmor_medium_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AArmor_medium_C>();
 	}
 };
-static_assert(alignof(AArmor_medium_C) == 0x000008, "Wrong alignment on AArmor_medium_C");
-static_assert(sizeof(AArmor_medium_C) == 0x000270, "Wrong size on AArmor_medium_C");
+DUMPER7_ASSERTS_AArmor_medium_C;
 
 }
 

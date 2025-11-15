@@ -39,16 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LoadoutWeaponsUI_C">();
+		BP_STATIC_CLASS_IMPL("LoadoutWeaponsUI_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LoadoutWeaponsUI_C")
 	}
 	static class ULoadoutWeaponsUI_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULoadoutWeaponsUI_C>();
 	}
 };
-static_assert(alignof(ULoadoutWeaponsUI_C) == 0x000008, "Wrong alignment on ULoadoutWeaponsUI_C");
-static_assert(sizeof(ULoadoutWeaponsUI_C) == 0x000268, "Wrong size on ULoadoutWeaponsUI_C");
-static_assert(offsetof(ULoadoutWeaponsUI_C, UberGraphFrame) == 0x000260, "Member 'ULoadoutWeaponsUI_C::UberGraphFrame' has a wrong offset!");
+DUMPER7_ASSERTS_ULoadoutWeaponsUI_C;
 
 }
 

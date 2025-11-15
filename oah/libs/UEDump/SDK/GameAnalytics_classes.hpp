@@ -87,15 +87,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GameAnalytics">();
+		STATIC_CLASS_IMPL("GameAnalytics")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GameAnalytics")
 	}
 	static class UGameAnalytics* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGameAnalytics>();
 	}
 };
-static_assert(alignof(UGameAnalytics) == 0x000008, "Wrong alignment on UGameAnalytics");
-static_assert(sizeof(UGameAnalytics) == 0x000028, "Wrong size on UGameAnalytics");
+DUMPER7_ASSERTS_UGameAnalytics;
 
 }
 

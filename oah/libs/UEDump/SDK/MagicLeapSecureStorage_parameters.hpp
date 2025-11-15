@@ -25,10 +25,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapSecureStorage_DeleteSecureData) == 0x000008, "Wrong alignment on MagicLeapSecureStorage_DeleteSecureData");
-static_assert(sizeof(MagicLeapSecureStorage_DeleteSecureData) == 0x000018, "Wrong size on MagicLeapSecureStorage_DeleteSecureData");
-static_assert(offsetof(MagicLeapSecureStorage_DeleteSecureData, Key) == 0x000000, "Member 'MagicLeapSecureStorage_DeleteSecureData::Key' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_DeleteSecureData, ReturnValue) == 0x000010, "Member 'MagicLeapSecureStorage_DeleteSecureData::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapSecureStorage_DeleteSecureData;
 
 // Function MagicLeapSecureStorage.MagicLeapSecureStorage.GetSecureArray
 // 0x0028 (0x0028 - 0x0000)
@@ -40,11 +37,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapSecureStorage_GetSecureArray) == 0x000008, "Wrong alignment on MagicLeapSecureStorage_GetSecureArray");
-static_assert(sizeof(MagicLeapSecureStorage_GetSecureArray) == 0x000028, "Wrong size on MagicLeapSecureStorage_GetSecureArray");
-static_assert(offsetof(MagicLeapSecureStorage_GetSecureArray, Key) == 0x000000, "Member 'MagicLeapSecureStorage_GetSecureArray::Key' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_GetSecureArray, DataToRetrieve) == 0x000010, "Member 'MagicLeapSecureStorage_GetSecureArray::DataToRetrieve' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_GetSecureArray, ReturnValue) == 0x000020, "Member 'MagicLeapSecureStorage_GetSecureArray::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapSecureStorage_GetSecureArray;
 
 // Function MagicLeapSecureStorage.MagicLeapSecureStorage.GetSecureBool
 // 0x0018 (0x0018 - 0x0000)
@@ -56,11 +49,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapSecureStorage_GetSecureBool) == 0x000008, "Wrong alignment on MagicLeapSecureStorage_GetSecureBool");
-static_assert(sizeof(MagicLeapSecureStorage_GetSecureBool) == 0x000018, "Wrong size on MagicLeapSecureStorage_GetSecureBool");
-static_assert(offsetof(MagicLeapSecureStorage_GetSecureBool, Key) == 0x000000, "Member 'MagicLeapSecureStorage_GetSecureBool::Key' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_GetSecureBool, DataToRetrieve) == 0x000010, "Member 'MagicLeapSecureStorage_GetSecureBool::DataToRetrieve' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_GetSecureBool, ReturnValue) == 0x000011, "Member 'MagicLeapSecureStorage_GetSecureBool::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapSecureStorage_GetSecureBool;
 
 // Function MagicLeapSecureStorage.MagicLeapSecureStorage.GetSecureByte
 // 0x0018 (0x0018 - 0x0000)
@@ -72,11 +61,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapSecureStorage_GetSecureByte) == 0x000008, "Wrong alignment on MagicLeapSecureStorage_GetSecureByte");
-static_assert(sizeof(MagicLeapSecureStorage_GetSecureByte) == 0x000018, "Wrong size on MagicLeapSecureStorage_GetSecureByte");
-static_assert(offsetof(MagicLeapSecureStorage_GetSecureByte, Key) == 0x000000, "Member 'MagicLeapSecureStorage_GetSecureByte::Key' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_GetSecureByte, DataToRetrieve) == 0x000010, "Member 'MagicLeapSecureStorage_GetSecureByte::DataToRetrieve' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_GetSecureByte, ReturnValue) == 0x000011, "Member 'MagicLeapSecureStorage_GetSecureByte::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapSecureStorage_GetSecureByte;
 
 // Function MagicLeapSecureStorage.MagicLeapSecureStorage.GetSecureFloat
 // 0x0018 (0x0018 - 0x0000)
@@ -88,11 +73,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapSecureStorage_GetSecureFloat) == 0x000008, "Wrong alignment on MagicLeapSecureStorage_GetSecureFloat");
-static_assert(sizeof(MagicLeapSecureStorage_GetSecureFloat) == 0x000018, "Wrong size on MagicLeapSecureStorage_GetSecureFloat");
-static_assert(offsetof(MagicLeapSecureStorage_GetSecureFloat, Key) == 0x000000, "Member 'MagicLeapSecureStorage_GetSecureFloat::Key' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_GetSecureFloat, DataToRetrieve) == 0x000010, "Member 'MagicLeapSecureStorage_GetSecureFloat::DataToRetrieve' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_GetSecureFloat, ReturnValue) == 0x000014, "Member 'MagicLeapSecureStorage_GetSecureFloat::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapSecureStorage_GetSecureFloat;
 
 // Function MagicLeapSecureStorage.MagicLeapSecureStorage.GetSecureInt
 // 0x0018 (0x0018 - 0x0000)
@@ -104,11 +85,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapSecureStorage_GetSecureInt) == 0x000008, "Wrong alignment on MagicLeapSecureStorage_GetSecureInt");
-static_assert(sizeof(MagicLeapSecureStorage_GetSecureInt) == 0x000018, "Wrong size on MagicLeapSecureStorage_GetSecureInt");
-static_assert(offsetof(MagicLeapSecureStorage_GetSecureInt, Key) == 0x000000, "Member 'MagicLeapSecureStorage_GetSecureInt::Key' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_GetSecureInt, DataToRetrieve) == 0x000010, "Member 'MagicLeapSecureStorage_GetSecureInt::DataToRetrieve' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_GetSecureInt, ReturnValue) == 0x000014, "Member 'MagicLeapSecureStorage_GetSecureInt::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapSecureStorage_GetSecureInt;
 
 // Function MagicLeapSecureStorage.MagicLeapSecureStorage.GetSecureInt64
 // 0x0020 (0x0020 - 0x0000)
@@ -120,11 +97,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapSecureStorage_GetSecureInt64) == 0x000008, "Wrong alignment on MagicLeapSecureStorage_GetSecureInt64");
-static_assert(sizeof(MagicLeapSecureStorage_GetSecureInt64) == 0x000020, "Wrong size on MagicLeapSecureStorage_GetSecureInt64");
-static_assert(offsetof(MagicLeapSecureStorage_GetSecureInt64, Key) == 0x000000, "Member 'MagicLeapSecureStorage_GetSecureInt64::Key' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_GetSecureInt64, DataToRetrieve) == 0x000010, "Member 'MagicLeapSecureStorage_GetSecureInt64::DataToRetrieve' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_GetSecureInt64, ReturnValue) == 0x000018, "Member 'MagicLeapSecureStorage_GetSecureInt64::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapSecureStorage_GetSecureInt64;
 
 // Function MagicLeapSecureStorage.MagicLeapSecureStorage.GetSecureRotator
 // 0x0020 (0x0020 - 0x0000)
@@ -136,11 +109,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x001C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapSecureStorage_GetSecureRotator) == 0x000008, "Wrong alignment on MagicLeapSecureStorage_GetSecureRotator");
-static_assert(sizeof(MagicLeapSecureStorage_GetSecureRotator) == 0x000020, "Wrong size on MagicLeapSecureStorage_GetSecureRotator");
-static_assert(offsetof(MagicLeapSecureStorage_GetSecureRotator, Key) == 0x000000, "Member 'MagicLeapSecureStorage_GetSecureRotator::Key' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_GetSecureRotator, DataToRetrieve) == 0x000010, "Member 'MagicLeapSecureStorage_GetSecureRotator::DataToRetrieve' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_GetSecureRotator, ReturnValue) == 0x00001C, "Member 'MagicLeapSecureStorage_GetSecureRotator::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapSecureStorage_GetSecureRotator;
 
 // Function MagicLeapSecureStorage.MagicLeapSecureStorage.GetSecureSaveGame
 // 0x0020 (0x0020 - 0x0000)
@@ -152,11 +121,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapSecureStorage_GetSecureSaveGame) == 0x000008, "Wrong alignment on MagicLeapSecureStorage_GetSecureSaveGame");
-static_assert(sizeof(MagicLeapSecureStorage_GetSecureSaveGame) == 0x000020, "Wrong size on MagicLeapSecureStorage_GetSecureSaveGame");
-static_assert(offsetof(MagicLeapSecureStorage_GetSecureSaveGame, Key) == 0x000000, "Member 'MagicLeapSecureStorage_GetSecureSaveGame::Key' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_GetSecureSaveGame, ObjectToRetrieve) == 0x000010, "Member 'MagicLeapSecureStorage_GetSecureSaveGame::ObjectToRetrieve' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_GetSecureSaveGame, ReturnValue) == 0x000018, "Member 'MagicLeapSecureStorage_GetSecureSaveGame::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapSecureStorage_GetSecureSaveGame;
 
 // Function MagicLeapSecureStorage.MagicLeapSecureStorage.GetSecureString
 // 0x0028 (0x0028 - 0x0000)
@@ -168,11 +133,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapSecureStorage_GetSecureString) == 0x000008, "Wrong alignment on MagicLeapSecureStorage_GetSecureString");
-static_assert(sizeof(MagicLeapSecureStorage_GetSecureString) == 0x000028, "Wrong size on MagicLeapSecureStorage_GetSecureString");
-static_assert(offsetof(MagicLeapSecureStorage_GetSecureString, Key) == 0x000000, "Member 'MagicLeapSecureStorage_GetSecureString::Key' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_GetSecureString, DataToRetrieve) == 0x000010, "Member 'MagicLeapSecureStorage_GetSecureString::DataToRetrieve' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_GetSecureString, ReturnValue) == 0x000020, "Member 'MagicLeapSecureStorage_GetSecureString::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapSecureStorage_GetSecureString;
 
 // Function MagicLeapSecureStorage.MagicLeapSecureStorage.GetSecureTransform
 // 0x0050 (0x0050 - 0x0000)
@@ -184,11 +145,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_41[0xF];                                       // 0x0041(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapSecureStorage_GetSecureTransform) == 0x000010, "Wrong alignment on MagicLeapSecureStorage_GetSecureTransform");
-static_assert(sizeof(MagicLeapSecureStorage_GetSecureTransform) == 0x000050, "Wrong size on MagicLeapSecureStorage_GetSecureTransform");
-static_assert(offsetof(MagicLeapSecureStorage_GetSecureTransform, Key) == 0x000000, "Member 'MagicLeapSecureStorage_GetSecureTransform::Key' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_GetSecureTransform, DataToRetrieve) == 0x000010, "Member 'MagicLeapSecureStorage_GetSecureTransform::DataToRetrieve' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_GetSecureTransform, ReturnValue) == 0x000040, "Member 'MagicLeapSecureStorage_GetSecureTransform::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapSecureStorage_GetSecureTransform;
 
 // Function MagicLeapSecureStorage.MagicLeapSecureStorage.GetSecureVector
 // 0x0020 (0x0020 - 0x0000)
@@ -200,11 +157,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x001C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapSecureStorage_GetSecureVector) == 0x000008, "Wrong alignment on MagicLeapSecureStorage_GetSecureVector");
-static_assert(sizeof(MagicLeapSecureStorage_GetSecureVector) == 0x000020, "Wrong size on MagicLeapSecureStorage_GetSecureVector");
-static_assert(offsetof(MagicLeapSecureStorage_GetSecureVector, Key) == 0x000000, "Member 'MagicLeapSecureStorage_GetSecureVector::Key' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_GetSecureVector, DataToRetrieve) == 0x000010, "Member 'MagicLeapSecureStorage_GetSecureVector::DataToRetrieve' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_GetSecureVector, ReturnValue) == 0x00001C, "Member 'MagicLeapSecureStorage_GetSecureVector::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapSecureStorage_GetSecureVector;
 
 // Function MagicLeapSecureStorage.MagicLeapSecureStorage.PutSecureArray
 // 0x0028 (0x0028 - 0x0000)
@@ -216,11 +169,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapSecureStorage_PutSecureArray) == 0x000008, "Wrong alignment on MagicLeapSecureStorage_PutSecureArray");
-static_assert(sizeof(MagicLeapSecureStorage_PutSecureArray) == 0x000028, "Wrong size on MagicLeapSecureStorage_PutSecureArray");
-static_assert(offsetof(MagicLeapSecureStorage_PutSecureArray, Key) == 0x000000, "Member 'MagicLeapSecureStorage_PutSecureArray::Key' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_PutSecureArray, DataToStore) == 0x000010, "Member 'MagicLeapSecureStorage_PutSecureArray::DataToStore' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_PutSecureArray, ReturnValue) == 0x000020, "Member 'MagicLeapSecureStorage_PutSecureArray::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapSecureStorage_PutSecureArray;
 
 // Function MagicLeapSecureStorage.MagicLeapSecureStorage.PutSecureBool
 // 0x0018 (0x0018 - 0x0000)
@@ -232,11 +181,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapSecureStorage_PutSecureBool) == 0x000008, "Wrong alignment on MagicLeapSecureStorage_PutSecureBool");
-static_assert(sizeof(MagicLeapSecureStorage_PutSecureBool) == 0x000018, "Wrong size on MagicLeapSecureStorage_PutSecureBool");
-static_assert(offsetof(MagicLeapSecureStorage_PutSecureBool, Key) == 0x000000, "Member 'MagicLeapSecureStorage_PutSecureBool::Key' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_PutSecureBool, DataToStore) == 0x000010, "Member 'MagicLeapSecureStorage_PutSecureBool::DataToStore' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_PutSecureBool, ReturnValue) == 0x000011, "Member 'MagicLeapSecureStorage_PutSecureBool::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapSecureStorage_PutSecureBool;
 
 // Function MagicLeapSecureStorage.MagicLeapSecureStorage.PutSecureByte
 // 0x0018 (0x0018 - 0x0000)
@@ -248,11 +193,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapSecureStorage_PutSecureByte) == 0x000008, "Wrong alignment on MagicLeapSecureStorage_PutSecureByte");
-static_assert(sizeof(MagicLeapSecureStorage_PutSecureByte) == 0x000018, "Wrong size on MagicLeapSecureStorage_PutSecureByte");
-static_assert(offsetof(MagicLeapSecureStorage_PutSecureByte, Key) == 0x000000, "Member 'MagicLeapSecureStorage_PutSecureByte::Key' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_PutSecureByte, DataToStore) == 0x000010, "Member 'MagicLeapSecureStorage_PutSecureByte::DataToStore' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_PutSecureByte, ReturnValue) == 0x000011, "Member 'MagicLeapSecureStorage_PutSecureByte::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapSecureStorage_PutSecureByte;
 
 // Function MagicLeapSecureStorage.MagicLeapSecureStorage.PutSecureFloat
 // 0x0018 (0x0018 - 0x0000)
@@ -264,11 +205,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapSecureStorage_PutSecureFloat) == 0x000008, "Wrong alignment on MagicLeapSecureStorage_PutSecureFloat");
-static_assert(sizeof(MagicLeapSecureStorage_PutSecureFloat) == 0x000018, "Wrong size on MagicLeapSecureStorage_PutSecureFloat");
-static_assert(offsetof(MagicLeapSecureStorage_PutSecureFloat, Key) == 0x000000, "Member 'MagicLeapSecureStorage_PutSecureFloat::Key' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_PutSecureFloat, DataToStore) == 0x000010, "Member 'MagicLeapSecureStorage_PutSecureFloat::DataToStore' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_PutSecureFloat, ReturnValue) == 0x000014, "Member 'MagicLeapSecureStorage_PutSecureFloat::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapSecureStorage_PutSecureFloat;
 
 // Function MagicLeapSecureStorage.MagicLeapSecureStorage.PutSecureInt
 // 0x0018 (0x0018 - 0x0000)
@@ -280,11 +217,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapSecureStorage_PutSecureInt) == 0x000008, "Wrong alignment on MagicLeapSecureStorage_PutSecureInt");
-static_assert(sizeof(MagicLeapSecureStorage_PutSecureInt) == 0x000018, "Wrong size on MagicLeapSecureStorage_PutSecureInt");
-static_assert(offsetof(MagicLeapSecureStorage_PutSecureInt, Key) == 0x000000, "Member 'MagicLeapSecureStorage_PutSecureInt::Key' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_PutSecureInt, DataToStore) == 0x000010, "Member 'MagicLeapSecureStorage_PutSecureInt::DataToStore' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_PutSecureInt, ReturnValue) == 0x000014, "Member 'MagicLeapSecureStorage_PutSecureInt::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapSecureStorage_PutSecureInt;
 
 // Function MagicLeapSecureStorage.MagicLeapSecureStorage.PutSecureInt64
 // 0x0020 (0x0020 - 0x0000)
@@ -296,11 +229,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapSecureStorage_PutSecureInt64) == 0x000008, "Wrong alignment on MagicLeapSecureStorage_PutSecureInt64");
-static_assert(sizeof(MagicLeapSecureStorage_PutSecureInt64) == 0x000020, "Wrong size on MagicLeapSecureStorage_PutSecureInt64");
-static_assert(offsetof(MagicLeapSecureStorage_PutSecureInt64, Key) == 0x000000, "Member 'MagicLeapSecureStorage_PutSecureInt64::Key' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_PutSecureInt64, DataToStore) == 0x000010, "Member 'MagicLeapSecureStorage_PutSecureInt64::DataToStore' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_PutSecureInt64, ReturnValue) == 0x000018, "Member 'MagicLeapSecureStorage_PutSecureInt64::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapSecureStorage_PutSecureInt64;
 
 // Function MagicLeapSecureStorage.MagicLeapSecureStorage.PutSecureRotator
 // 0x0020 (0x0020 - 0x0000)
@@ -312,11 +241,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x001C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapSecureStorage_PutSecureRotator) == 0x000008, "Wrong alignment on MagicLeapSecureStorage_PutSecureRotator");
-static_assert(sizeof(MagicLeapSecureStorage_PutSecureRotator) == 0x000020, "Wrong size on MagicLeapSecureStorage_PutSecureRotator");
-static_assert(offsetof(MagicLeapSecureStorage_PutSecureRotator, Key) == 0x000000, "Member 'MagicLeapSecureStorage_PutSecureRotator::Key' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_PutSecureRotator, DataToStore) == 0x000010, "Member 'MagicLeapSecureStorage_PutSecureRotator::DataToStore' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_PutSecureRotator, ReturnValue) == 0x00001C, "Member 'MagicLeapSecureStorage_PutSecureRotator::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapSecureStorage_PutSecureRotator;
 
 // Function MagicLeapSecureStorage.MagicLeapSecureStorage.PutSecureSaveGame
 // 0x0020 (0x0020 - 0x0000)
@@ -328,11 +253,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapSecureStorage_PutSecureSaveGame) == 0x000008, "Wrong alignment on MagicLeapSecureStorage_PutSecureSaveGame");
-static_assert(sizeof(MagicLeapSecureStorage_PutSecureSaveGame) == 0x000020, "Wrong size on MagicLeapSecureStorage_PutSecureSaveGame");
-static_assert(offsetof(MagicLeapSecureStorage_PutSecureSaveGame, Key) == 0x000000, "Member 'MagicLeapSecureStorage_PutSecureSaveGame::Key' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_PutSecureSaveGame, ObjectToStore) == 0x000010, "Member 'MagicLeapSecureStorage_PutSecureSaveGame::ObjectToStore' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_PutSecureSaveGame, ReturnValue) == 0x000018, "Member 'MagicLeapSecureStorage_PutSecureSaveGame::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapSecureStorage_PutSecureSaveGame;
 
 // Function MagicLeapSecureStorage.MagicLeapSecureStorage.PutSecureString
 // 0x0028 (0x0028 - 0x0000)
@@ -344,11 +265,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapSecureStorage_PutSecureString) == 0x000008, "Wrong alignment on MagicLeapSecureStorage_PutSecureString");
-static_assert(sizeof(MagicLeapSecureStorage_PutSecureString) == 0x000028, "Wrong size on MagicLeapSecureStorage_PutSecureString");
-static_assert(offsetof(MagicLeapSecureStorage_PutSecureString, Key) == 0x000000, "Member 'MagicLeapSecureStorage_PutSecureString::Key' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_PutSecureString, DataToStore) == 0x000010, "Member 'MagicLeapSecureStorage_PutSecureString::DataToStore' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_PutSecureString, ReturnValue) == 0x000020, "Member 'MagicLeapSecureStorage_PutSecureString::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapSecureStorage_PutSecureString;
 
 // Function MagicLeapSecureStorage.MagicLeapSecureStorage.PutSecureTransform
 // 0x0050 (0x0050 - 0x0000)
@@ -360,11 +277,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_41[0xF];                                       // 0x0041(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapSecureStorage_PutSecureTransform) == 0x000010, "Wrong alignment on MagicLeapSecureStorage_PutSecureTransform");
-static_assert(sizeof(MagicLeapSecureStorage_PutSecureTransform) == 0x000050, "Wrong size on MagicLeapSecureStorage_PutSecureTransform");
-static_assert(offsetof(MagicLeapSecureStorage_PutSecureTransform, Key) == 0x000000, "Member 'MagicLeapSecureStorage_PutSecureTransform::Key' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_PutSecureTransform, DataToStore) == 0x000010, "Member 'MagicLeapSecureStorage_PutSecureTransform::DataToStore' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_PutSecureTransform, ReturnValue) == 0x000040, "Member 'MagicLeapSecureStorage_PutSecureTransform::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapSecureStorage_PutSecureTransform;
 
 // Function MagicLeapSecureStorage.MagicLeapSecureStorage.PutSecureVector
 // 0x0020 (0x0020 - 0x0000)
@@ -376,11 +289,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x001C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapSecureStorage_PutSecureVector) == 0x000008, "Wrong alignment on MagicLeapSecureStorage_PutSecureVector");
-static_assert(sizeof(MagicLeapSecureStorage_PutSecureVector) == 0x000020, "Wrong size on MagicLeapSecureStorage_PutSecureVector");
-static_assert(offsetof(MagicLeapSecureStorage_PutSecureVector, Key) == 0x000000, "Member 'MagicLeapSecureStorage_PutSecureVector::Key' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_PutSecureVector, DataToStore) == 0x000010, "Member 'MagicLeapSecureStorage_PutSecureVector::DataToStore' has a wrong offset!");
-static_assert(offsetof(MagicLeapSecureStorage_PutSecureVector, ReturnValue) == 0x00001C, "Member 'MagicLeapSecureStorage_PutSecureVector::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapSecureStorage_PutSecureVector;
 
 }
 

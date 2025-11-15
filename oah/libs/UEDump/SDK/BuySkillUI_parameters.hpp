@@ -19,88 +19,6 @@
 namespace SDK::Params
 {
 
-// Function BuySkillUI.BuySkillUI_C.HiddenWhenPurchased
-// 0x0001 (0x0001 - 0x0000)
-struct BuySkillUI_C_HiddenWhenPurchased final
-{
-public:
-	ESlateVisibility                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BuySkillUI_C_HiddenWhenPurchased) == 0x000001, "Wrong alignment on BuySkillUI_C_HiddenWhenPurchased");
-static_assert(sizeof(BuySkillUI_C_HiddenWhenPurchased) == 0x000001, "Wrong size on BuySkillUI_C_HiddenWhenPurchased");
-static_assert(offsetof(BuySkillUI_C_HiddenWhenPurchased, ReturnValue) == 0x000000, "Member 'BuySkillUI_C_HiddenWhenPurchased::ReturnValue' has a wrong offset!");
-
-// Function BuySkillUI.BuySkillUI_C.VisibleWhenPurchased
-// 0x0001 (0x0001 - 0x0000)
-struct BuySkillUI_C_VisibleWhenPurchased final
-{
-public:
-	ESlateVisibility                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BuySkillUI_C_VisibleWhenPurchased) == 0x000001, "Wrong alignment on BuySkillUI_C_VisibleWhenPurchased");
-static_assert(sizeof(BuySkillUI_C_VisibleWhenPurchased) == 0x000001, "Wrong size on BuySkillUI_C_VisibleWhenPurchased");
-static_assert(offsetof(BuySkillUI_C_VisibleWhenPurchased, ReturnValue) == 0x000000, "Member 'BuySkillUI_C_VisibleWhenPurchased::ReturnValue' has a wrong offset!");
-
-// Function BuySkillUI.BuySkillUI_C.GetText_2
-// 0x0018 (0x0018 - 0x0000)
-struct BuySkillUI_C_GetText_2 final
-{
-public:
-	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
-};
-static_assert(alignof(BuySkillUI_C_GetText_2) == 0x000008, "Wrong alignment on BuySkillUI_C_GetText_2");
-static_assert(sizeof(BuySkillUI_C_GetText_2) == 0x000018, "Wrong size on BuySkillUI_C_GetText_2");
-static_assert(offsetof(BuySkillUI_C_GetText_2, ReturnValue) == 0x000000, "Member 'BuySkillUI_C_GetText_2::ReturnValue' has a wrong offset!");
-
-// Function BuySkillUI.BuySkillUI_C.GetText_1
-// 0x0050 (0x0050 - 0x0000)
-struct BuySkillUI_C_GetText_1 final
-{
-public:
-	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0038(0x0018)()
-};
-static_assert(alignof(BuySkillUI_C_GetText_1) == 0x000008, "Wrong alignment on BuySkillUI_C_GetText_1");
-static_assert(sizeof(BuySkillUI_C_GetText_1) == 0x000050, "Wrong size on BuySkillUI_C_GetText_1");
-static_assert(offsetof(BuySkillUI_C_GetText_1, ReturnValue) == 0x000000, "Member 'BuySkillUI_C_GetText_1::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuySkillUI_C_GetText_1, CallFunc_Concat_StrStr_ReturnValue) == 0x000018, "Member 'BuySkillUI_C_GetText_1::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuySkillUI_C_GetText_1, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000028, "Member 'BuySkillUI_C_GetText_1::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BuySkillUI_C_GetText_1, CallFunc_Conv_StringToText_ReturnValue) == 0x000038, "Member 'BuySkillUI_C_GetText_1::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-
-// Function BuySkillUI.BuySkillUI_C.GetBrush_0
-// 0x0110 (0x0110 - 0x0000)
-struct BuySkillUI_C_GetBrush_0 final
-{
-public:
-	struct FSlateBrush                            ReturnValue;                                       // 0x0000(0x0088)(Parm, OutParm, ReturnParm)
-	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0088(0x0088)()
-};
-static_assert(alignof(BuySkillUI_C_GetBrush_0) == 0x000008, "Wrong alignment on BuySkillUI_C_GetBrush_0");
-static_assert(sizeof(BuySkillUI_C_GetBrush_0) == 0x000110, "Wrong size on BuySkillUI_C_GetBrush_0");
-static_assert(offsetof(BuySkillUI_C_GetBrush_0, ReturnValue) == 0x000000, "Member 'BuySkillUI_C_GetBrush_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuySkillUI_C_GetBrush_0, K2Node_MakeStruct_SlateBrush) == 0x000088, "Member 'BuySkillUI_C_GetBrush_0::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
-
-// Function BuySkillUI.BuySkillUI_C.GetText_0
-// 0x0068 (0x0068 - 0x0000)
-struct BuySkillUI_C_GetText_0 final
-{
-public:
-	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0018(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0030(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0040(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0050(0x0018)()
-};
-static_assert(alignof(BuySkillUI_C_GetText_0) == 0x000008, "Wrong alignment on BuySkillUI_C_GetText_0");
-static_assert(sizeof(BuySkillUI_C_GetText_0) == 0x000068, "Wrong size on BuySkillUI_C_GetText_0");
-static_assert(offsetof(BuySkillUI_C_GetText_0, ReturnValue) == 0x000000, "Member 'BuySkillUI_C_GetText_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuySkillUI_C_GetText_0, CallFunc_Conv_IntToText_ReturnValue) == 0x000018, "Member 'BuySkillUI_C_GetText_0::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuySkillUI_C_GetText_0, CallFunc_Conv_TextToString_ReturnValue) == 0x000030, "Member 'BuySkillUI_C_GetText_0::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuySkillUI_C_GetText_0, CallFunc_Concat_StrStr_ReturnValue) == 0x000040, "Member 'BuySkillUI_C_GetText_0::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuySkillUI_C_GetText_0, CallFunc_Conv_StringToText_ReturnValue) == 0x000050, "Member 'BuySkillUI_C_GetText_0::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-
 // Function BuySkillUI.BuySkillUI_C.ExecuteUbergraph_BuySkillUI
 // 0x0058 (0x0058 - 0x0000)
 struct BuySkillUI_C_ExecuteUbergraph_BuySkillUI final
@@ -119,17 +37,69 @@ public:
 	struct FSkillProgressStruct                   K2Node_MakeStruct_SkillProgressStruct;             // 0x0038(0x0018)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BuySkillUI_C_ExecuteUbergraph_BuySkillUI) == 0x000008, "Wrong alignment on BuySkillUI_C_ExecuteUbergraph_BuySkillUI");
-static_assert(sizeof(BuySkillUI_C_ExecuteUbergraph_BuySkillUI) == 0x000058, "Wrong size on BuySkillUI_C_ExecuteUbergraph_BuySkillUI");
-static_assert(offsetof(BuySkillUI_C_ExecuteUbergraph_BuySkillUI, EntryPoint) == 0x000000, "Member 'BuySkillUI_C_ExecuteUbergraph_BuySkillUI::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BuySkillUI_C_ExecuteUbergraph_BuySkillUI, CallFunc_GetPlayerController_ReturnValue) == 0x000008, "Member 'BuySkillUI_C_ExecuteUbergraph_BuySkillUI::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuySkillUI_C_ExecuteUbergraph_BuySkillUI, K2Node_DynamicCast_AsRobber_Controller) == 0x000010, "Member 'BuySkillUI_C_ExecuteUbergraph_BuySkillUI::K2Node_DynamicCast_AsRobber_Controller' has a wrong offset!");
-static_assert(offsetof(BuySkillUI_C_ExecuteUbergraph_BuySkillUI, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'BuySkillUI_C_ExecuteUbergraph_BuySkillUI::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BuySkillUI_C_ExecuteUbergraph_BuySkillUI, CallFunc_Subtract_IntInt_ReturnValue) == 0x00001C, "Member 'BuySkillUI_C_ExecuteUbergraph_BuySkillUI::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuySkillUI_C_ExecuteUbergraph_BuySkillUI, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000020, "Member 'BuySkillUI_C_ExecuteUbergraph_BuySkillUI::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuySkillUI_C_ExecuteUbergraph_BuySkillUI, K2Node_MakeStruct_SkillSaveStruct) == 0x000028, "Member 'BuySkillUI_C_ExecuteUbergraph_BuySkillUI::K2Node_MakeStruct_SkillSaveStruct' has a wrong offset!");
-static_assert(offsetof(BuySkillUI_C_ExecuteUbergraph_BuySkillUI, K2Node_MakeStruct_SkillProgressStruct) == 0x000038, "Member 'BuySkillUI_C_ExecuteUbergraph_BuySkillUI::K2Node_MakeStruct_SkillProgressStruct' has a wrong offset!");
-static_assert(offsetof(BuySkillUI_C_ExecuteUbergraph_BuySkillUI, CallFunc_Array_Add_ReturnValue) == 0x000050, "Member 'BuySkillUI_C_ExecuteUbergraph_BuySkillUI::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BuySkillUI_C_ExecuteUbergraph_BuySkillUI;
+
+// Function BuySkillUI.BuySkillUI_C.GetText_0
+// 0x0068 (0x0068 - 0x0000)
+struct BuySkillUI_C_GetText_0 final
+{
+public:
+	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0018(0x0018)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0030(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0040(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0050(0x0018)()
+};
+DUMPER7_ASSERTS_BuySkillUI_C_GetText_0;
+
+// Function BuySkillUI.BuySkillUI_C.GetBrush_0
+// 0x0110 (0x0110 - 0x0000)
+struct BuySkillUI_C_GetBrush_0 final
+{
+public:
+	struct FSlateBrush                            ReturnValue;                                       // 0x0000(0x0088)(Parm, OutParm, ReturnParm)
+	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0088(0x0088)()
+};
+DUMPER7_ASSERTS_BuySkillUI_C_GetBrush_0;
+
+// Function BuySkillUI.BuySkillUI_C.GetText_1
+// 0x0050 (0x0050 - 0x0000)
+struct BuySkillUI_C_GetText_1 final
+{
+public:
+	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0038(0x0018)()
+};
+DUMPER7_ASSERTS_BuySkillUI_C_GetText_1;
+
+// Function BuySkillUI.BuySkillUI_C.GetText_2
+// 0x0018 (0x0018 - 0x0000)
+struct BuySkillUI_C_GetText_2 final
+{
+public:
+	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
+};
+DUMPER7_ASSERTS_BuySkillUI_C_GetText_2;
+
+// Function BuySkillUI.BuySkillUI_C.VisibleWhenPurchased
+// 0x0001 (0x0001 - 0x0000)
+struct BuySkillUI_C_VisibleWhenPurchased final
+{
+public:
+	ESlateVisibility                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BuySkillUI_C_VisibleWhenPurchased;
+
+// Function BuySkillUI.BuySkillUI_C.HiddenWhenPurchased
+// 0x0001 (0x0001 - 0x0000)
+struct BuySkillUI_C_HiddenWhenPurchased final
+{
+public:
+	ESlateVisibility                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BuySkillUI_C_HiddenWhenPurchased;
 
 }
 

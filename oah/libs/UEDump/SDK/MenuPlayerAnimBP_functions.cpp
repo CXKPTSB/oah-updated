@@ -60,7 +60,7 @@ void UmenuPlayerAnimBP_C::BlueprintUpdateAnimation(float DeltaTimeX)
 // Function menuPlayerAnimBP.menuPlayerAnimBP_C.AnimGraph
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FPoseLink                        AnimGraph_0                                            (Parm, OutParm, NoDestructor)
+// struct FPoseLink*                       AnimGraph_0                                            (Parm, OutParm, NoDestructor)
 
 void UmenuPlayerAnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {

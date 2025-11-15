@@ -27,17 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WallBase_Windows_Shade_C">();
+		BP_STATIC_CLASS_IMPL("WallBase_Windows_Shade_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WallBase_Windows_Shade_C")
 	}
 	static class AWallBase_Windows_Shade_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AWallBase_Windows_Shade_C>();
 	}
 };
-static_assert(alignof(AWallBase_Windows_Shade_C) == 0x000008, "Wrong alignment on AWallBase_Windows_Shade_C");
-static_assert(sizeof(AWallBase_Windows_Shade_C) == 0x0002E8, "Wrong size on AWallBase_Windows_Shade_C");
-static_assert(offsetof(AWallBase_Windows_Shade_C, SM_Bld_Exterior_Shade_03) == 0x0002D8, "Member 'AWallBase_Windows_Shade_C::SM_Bld_Exterior_Shade_03' has a wrong offset!");
-static_assert(offsetof(AWallBase_Windows_Shade_C, SM_Bld_Exterior_Shade_02) == 0x0002E0, "Member 'AWallBase_Windows_Shade_C::SM_Bld_Exterior_Shade_02' has a wrong offset!");
+DUMPER7_ASSERTS_AWallBase_Windows_Shade_C;
 
 }
 

@@ -86,54 +86,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SmoothSync">();
+		STATIC_CLASS_IMPL("SmoothSync")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SmoothSync")
 	}
 	static class USmoothSync* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USmoothSync>();
 	}
 };
-static_assert(alignof(USmoothSync) == 0x000010, "Wrong alignment on USmoothSync");
-static_assert(sizeof(USmoothSync) == 0x000370, "Wrong size on USmoothSync");
-static_assert(offsetof(USmoothSync, interpolationBackTime) == 0x000108, "Member 'USmoothSync::interpolationBackTime' has a wrong offset!");
-static_assert(offsetof(USmoothSync, ExtrapolationMode) == 0x00010C, "Member 'USmoothSync::ExtrapolationMode' has a wrong offset!");
-static_assert(offsetof(USmoothSync, useExtrapolationTimeLimit) == 0x00010D, "Member 'USmoothSync::useExtrapolationTimeLimit' has a wrong offset!");
-static_assert(offsetof(USmoothSync, extrapolationTimeLimit) == 0x000110, "Member 'USmoothSync::extrapolationTimeLimit' has a wrong offset!");
-static_assert(offsetof(USmoothSync, useExtrapolationDistanceLimit) == 0x000114, "Member 'USmoothSync::useExtrapolationDistanceLimit' has a wrong offset!");
-static_assert(offsetof(USmoothSync, extrapolationDistanceLimit) == 0x000118, "Member 'USmoothSync::extrapolationDistanceLimit' has a wrong offset!");
-static_assert(offsetof(USmoothSync, sendPositionThreshold) == 0x00011C, "Member 'USmoothSync::sendPositionThreshold' has a wrong offset!");
-static_assert(offsetof(USmoothSync, sendRotationThreshold) == 0x000120, "Member 'USmoothSync::sendRotationThreshold' has a wrong offset!");
-static_assert(offsetof(USmoothSync, sendScaleThreshold) == 0x000124, "Member 'USmoothSync::sendScaleThreshold' has a wrong offset!");
-static_assert(offsetof(USmoothSync, sendVelocityThreshold) == 0x000128, "Member 'USmoothSync::sendVelocityThreshold' has a wrong offset!");
-static_assert(offsetof(USmoothSync, sendAngularVelocityThreshold) == 0x00012C, "Member 'USmoothSync::sendAngularVelocityThreshold' has a wrong offset!");
-static_assert(offsetof(USmoothSync, receivedPositionThreshold) == 0x000130, "Member 'USmoothSync::receivedPositionThreshold' has a wrong offset!");
-static_assert(offsetof(USmoothSync, receivedRotationThreshold) == 0x000134, "Member 'USmoothSync::receivedRotationThreshold' has a wrong offset!");
-static_assert(offsetof(USmoothSync, positionSnapThreshold) == 0x000138, "Member 'USmoothSync::positionSnapThreshold' has a wrong offset!");
-static_assert(offsetof(USmoothSync, rotationSnapThreshold) == 0x00013C, "Member 'USmoothSync::rotationSnapThreshold' has a wrong offset!");
-static_assert(offsetof(USmoothSync, scaleSnapThreshold) == 0x000140, "Member 'USmoothSync::scaleSnapThreshold' has a wrong offset!");
-static_assert(offsetof(USmoothSync, timeSmoothing) == 0x000144, "Member 'USmoothSync::timeSmoothing' has a wrong offset!");
-static_assert(offsetof(USmoothSync, positionLerpSpeed) == 0x000148, "Member 'USmoothSync::positionLerpSpeed' has a wrong offset!");
-static_assert(offsetof(USmoothSync, rotationLerpSpeed) == 0x00014C, "Member 'USmoothSync::rotationLerpSpeed' has a wrong offset!");
-static_assert(offsetof(USmoothSync, scaleLerpSpeed) == 0x000150, "Member 'USmoothSync::scaleLerpSpeed' has a wrong offset!");
-static_assert(offsetof(USmoothSync, syncPosition) == 0x000154, "Member 'USmoothSync::syncPosition' has a wrong offset!");
-static_assert(offsetof(USmoothSync, syncRotation) == 0x000155, "Member 'USmoothSync::syncRotation' has a wrong offset!");
-static_assert(offsetof(USmoothSync, syncScale) == 0x000156, "Member 'USmoothSync::syncScale' has a wrong offset!");
-static_assert(offsetof(USmoothSync, syncVelocity) == 0x000157, "Member 'USmoothSync::syncVelocity' has a wrong offset!");
-static_assert(offsetof(USmoothSync, syncAngularVelocity) == 0x000158, "Member 'USmoothSync::syncAngularVelocity' has a wrong offset!");
-static_assert(offsetof(USmoothSync, syncMovementMode) == 0x000159, "Member 'USmoothSync::syncMovementMode' has a wrong offset!");
-static_assert(offsetof(USmoothSync, isPositionCompressed) == 0x00015A, "Member 'USmoothSync::isPositionCompressed' has a wrong offset!");
-static_assert(offsetof(USmoothSync, isRotationCompressed) == 0x00015B, "Member 'USmoothSync::isRotationCompressed' has a wrong offset!");
-static_assert(offsetof(USmoothSync, isScaleCompressed) == 0x00015C, "Member 'USmoothSync::isScaleCompressed' has a wrong offset!");
-static_assert(offsetof(USmoothSync, isVelocityCompressed) == 0x00015D, "Member 'USmoothSync::isVelocityCompressed' has a wrong offset!");
-static_assert(offsetof(USmoothSync, isAngularVelocityCompressed) == 0x00015E, "Member 'USmoothSync::isAngularVelocityCompressed' has a wrong offset!");
-static_assert(offsetof(USmoothSync, sendRate) == 0x000160, "Member 'USmoothSync::sendRate' has a wrong offset!");
-static_assert(offsetof(USmoothSync, isUsingOriginRebasing) == 0x000164, "Member 'USmoothSync::isUsingOriginRebasing' has a wrong offset!");
-static_assert(offsetof(USmoothSync, alwaysSendOrigin) == 0x000165, "Member 'USmoothSync::alwaysSendOrigin' has a wrong offset!");
-static_assert(offsetof(USmoothSync, syncOwnershipChange) == 0x000166, "Member 'USmoothSync::syncOwnershipChange' has a wrong offset!");
-static_assert(offsetof(USmoothSync, realComponentToSync) == 0x0001F8, "Member 'USmoothSync::realComponentToSync' has a wrong offset!");
-static_assert(offsetof(USmoothSync, InterpolationTime) == 0x000218, "Member 'USmoothSync::InterpolationTime' has a wrong offset!");
-static_assert(offsetof(USmoothSync, atRestPositionThreshold) == 0x000350, "Member 'USmoothSync::atRestPositionThreshold' has a wrong offset!");
-static_assert(offsetof(USmoothSync, atRestRotationThreshold) == 0x000354, "Member 'USmoothSync::atRestRotationThreshold' has a wrong offset!");
+DUMPER7_ASSERTS_USmoothSync;
 
 }
 

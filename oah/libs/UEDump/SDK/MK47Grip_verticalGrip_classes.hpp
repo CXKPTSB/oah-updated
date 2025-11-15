@@ -23,15 +23,18 @@ class AMK47Grip_verticalGrip_C final : public AAttachment_Grip_base_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MK47Grip_verticalGrip_C">();
+		BP_STATIC_CLASS_IMPL("MK47Grip_verticalGrip_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MK47Grip_verticalGrip_C")
 	}
 	static class AMK47Grip_verticalGrip_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMK47Grip_verticalGrip_C>();
 	}
 };
-static_assert(alignof(AMK47Grip_verticalGrip_C) == 0x000008, "Wrong alignment on AMK47Grip_verticalGrip_C");
-static_assert(sizeof(AMK47Grip_verticalGrip_C) == 0x000250, "Wrong size on AMK47Grip_verticalGrip_C");
+DUMPER7_ASSERTS_AMK47Grip_verticalGrip_C;
 
 }
 

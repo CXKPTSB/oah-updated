@@ -36,20 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ChatMessageChild_C">();
+		BP_STATIC_CLASS_IMPL("ChatMessageChild_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChatMessageChild_C")
 	}
 	static class UChatMessageChild_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChatMessageChild_C>();
 	}
 };
-static_assert(alignof(UChatMessageChild_C) == 0x000008, "Wrong alignment on UChatMessageChild_C");
-static_assert(sizeof(UChatMessageChild_C) == 0x0002B8, "Wrong size on UChatMessageChild_C");
-static_assert(offsetof(UChatMessageChild_C, Chat) == 0x000260, "Member 'UChatMessageChild_C::Chat' has a wrong offset!");
-static_assert(offsetof(UChatMessageChild_C, Name_0) == 0x000268, "Member 'UChatMessageChild_C::Name_0' has a wrong offset!");
-static_assert(offsetof(UChatMessageChild_C, ChatName) == 0x000270, "Member 'UChatMessageChild_C::ChatName' has a wrong offset!");
-static_assert(offsetof(UChatMessageChild_C, ChatMessage) == 0x000280, "Member 'UChatMessageChild_C::ChatMessage' has a wrong offset!");
-static_assert(offsetof(UChatMessageChild_C, MessageColor) == 0x000290, "Member 'UChatMessageChild_C::MessageColor' has a wrong offset!");
+DUMPER7_ASSERTS_UChatMessageChild_C;
 
 }
 

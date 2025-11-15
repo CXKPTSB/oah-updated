@@ -27,16 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneGeometryCollectionSection">();
+		STATIC_CLASS_IMPL("MovieSceneGeometryCollectionSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneGeometryCollectionSection")
 	}
 	static class UMovieSceneGeometryCollectionSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneGeometryCollectionSection>();
 	}
 };
-static_assert(alignof(UMovieSceneGeometryCollectionSection) == 0x000008, "Wrong alignment on UMovieSceneGeometryCollectionSection");
-static_assert(sizeof(UMovieSceneGeometryCollectionSection) == 0x000118, "Wrong size on UMovieSceneGeometryCollectionSection");
-static_assert(offsetof(UMovieSceneGeometryCollectionSection, Params_0) == 0x0000E8, "Member 'UMovieSceneGeometryCollectionSection::Params_0' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieSceneGeometryCollectionSection;
 
 // Class GeometryCollectionTracks.MovieSceneGeometryCollectionTrack
 // 0x0018 (0x00A8 - 0x0090)
@@ -49,16 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneGeometryCollectionTrack">();
+		STATIC_CLASS_IMPL("MovieSceneGeometryCollectionTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneGeometryCollectionTrack")
 	}
 	static class UMovieSceneGeometryCollectionTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneGeometryCollectionTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneGeometryCollectionTrack) == 0x000008, "Wrong alignment on UMovieSceneGeometryCollectionTrack");
-static_assert(sizeof(UMovieSceneGeometryCollectionTrack) == 0x0000A8, "Wrong size on UMovieSceneGeometryCollectionTrack");
-static_assert(offsetof(UMovieSceneGeometryCollectionTrack, AnimationSections) == 0x000098, "Member 'UMovieSceneGeometryCollectionTrack::AnimationSections' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieSceneGeometryCollectionTrack;
 
 }
 

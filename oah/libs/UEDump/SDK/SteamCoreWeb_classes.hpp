@@ -26,15 +26,18 @@ class USteamCoreWeb final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWeb">();
+		STATIC_CLASS_IMPL("SteamCoreWeb")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWeb")
 	}
 	static class USteamCoreWeb* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWeb>();
 	}
 };
-static_assert(alignof(USteamCoreWeb) == 0x000008, "Wrong alignment on USteamCoreWeb");
-static_assert(sizeof(USteamCoreWeb) == 0x000028, "Wrong size on USteamCoreWeb");
+DUMPER7_ASSERTS_USteamCoreWeb;
 
 // Class SteamCoreWeb.SteamCoreWebSubsystem
 // 0x0018 (0x0048 - 0x0030)
@@ -46,22 +49,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebSubsystem">();
+		STATIC_CLASS_IMPL("SteamCoreWebSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebSubsystem")
 	}
 	static class USteamCoreWebSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebSubsystem>();
 	}
 };
-static_assert(alignof(USteamCoreWebSubsystem) == 0x000008, "Wrong alignment on USteamCoreWebSubsystem");
-static_assert(sizeof(USteamCoreWebSubsystem) == 0x000048, "Wrong size on USteamCoreWebSubsystem");
+DUMPER7_ASSERTS_USteamCoreWebSubsystem;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncAction
 // 0x0028 (0x0058 - 0x0030)
 class USteamCoreWebAsyncAction : public UBlueprintAsyncActionBase
 {
 public:
-	TMulticastInlineDelegate<void(const class FString& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& Data, bool bWasSuccessful)> OnCallback;       // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_40[0x18];                                      // 0x0040(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -70,16 +76,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncAction">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncAction")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncAction")
 	}
 	static class USteamCoreWebAsyncAction* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncAction>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncAction) == 0x000008, "Wrong alignment on USteamCoreWebAsyncAction");
-static_assert(sizeof(USteamCoreWebAsyncAction) == 0x000058, "Wrong size on USteamCoreWebAsyncAction");
-static_assert(offsetof(USteamCoreWebAsyncAction, OnCallback) == 0x000030, "Member 'USteamCoreWebAsyncAction::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreWebAsyncAction;
 
 // Class SteamCoreWeb.SteamCoreWebSettings
 // 0x0040 (0x0078 - 0x0038)
@@ -101,23 +109,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebSettings">();
+		STATIC_CLASS_IMPL("SteamCoreWebSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebSettings")
 	}
 	static class USteamCoreWebSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebSettings>();
 	}
 };
-static_assert(alignof(USteamCoreWebSettings) == 0x000008, "Wrong alignment on USteamCoreWebSettings");
-static_assert(sizeof(USteamCoreWebSettings) == 0x000078, "Wrong size on USteamCoreWebSettings");
-static_assert(offsetof(USteamCoreWebSettings, AsyncTaskTimeout) == 0x000038, "Member 'USteamCoreWebSettings::AsyncTaskTimeout' has a wrong offset!");
-static_assert(offsetof(USteamCoreWebSettings, DisabledSubsystems) == 0x00003C, "Member 'USteamCoreWebSettings::DisabledSubsystems' has a wrong offset!");
-static_assert(offsetof(USteamCoreWebSettings, bDebugging) == 0x000040, "Member 'USteamCoreWebSettings::bDebugging' has a wrong offset!");
-static_assert(offsetof(USteamCoreWebSettings, bDevMode) == 0x000041, "Member 'USteamCoreWebSettings::bDevMode' has a wrong offset!");
-static_assert(offsetof(USteamCoreWebSettings, Key) == 0x000048, "Member 'USteamCoreWebSettings::Key' has a wrong offset!");
-static_assert(offsetof(USteamCoreWebSettings, AppID) == 0x000058, "Member 'USteamCoreWebSettings::AppID' has a wrong offset!");
-static_assert(offsetof(USteamCoreWebSettings, DevSteamID) == 0x000060, "Member 'USteamCoreWebSettings::DevSteamID' has a wrong offset!");
-static_assert(offsetof(USteamCoreWebSettings, bSandboxMode) == 0x000070, "Member 'USteamCoreWebSettings::bSandboxMode' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreWebSettings;
 
 // Class SteamCoreWeb.SteamWebUtilities
 // 0x0000 (0x0028 - 0x0028)
@@ -138,15 +141,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamWebUtilities">();
+		STATIC_CLASS_IMPL("SteamWebUtilities")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamWebUtilities")
 	}
 	static class USteamWebUtilities* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamWebUtilities>();
 	}
 };
-static_assert(alignof(USteamWebUtilities) == 0x000008, "Wrong alignment on USteamWebUtilities");
-static_assert(sizeof(USteamWebUtilities) == 0x000028, "Wrong size on USteamWebUtilities");
+DUMPER7_ASSERTS_USteamWebUtilities;
 
 // Class SteamCoreWeb.WebApps
 // 0x0000 (0x0048 - 0x0048)
@@ -167,15 +173,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WebApps">();
+		STATIC_CLASS_IMPL("WebApps")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WebApps")
 	}
 	static class UWebApps* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWebApps>();
 	}
 };
-static_assert(alignof(UWebApps) == 0x000008, "Wrong alignment on UWebApps");
-static_assert(sizeof(UWebApps) == 0x000048, "Wrong size on UWebApps");
+DUMPER7_ASSERTS_UWebApps;
 
 // Class SteamCoreWeb.SteamCoreAppsAsyncActionGetAppBetas
 // 0x0000 (0x0058 - 0x0058)
@@ -187,15 +196,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreAppsAsyncActionGetAppBetas">();
+		STATIC_CLASS_IMPL("SteamCoreAppsAsyncActionGetAppBetas")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreAppsAsyncActionGetAppBetas")
 	}
 	static class USteamCoreAppsAsyncActionGetAppBetas* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreAppsAsyncActionGetAppBetas>();
 	}
 };
-static_assert(alignof(USteamCoreAppsAsyncActionGetAppBetas) == 0x000008, "Wrong alignment on USteamCoreAppsAsyncActionGetAppBetas");
-static_assert(sizeof(USteamCoreAppsAsyncActionGetAppBetas) == 0x000058, "Wrong size on USteamCoreAppsAsyncActionGetAppBetas");
+DUMPER7_ASSERTS_USteamCoreAppsAsyncActionGetAppBetas;
 
 // Class SteamCoreWeb.SteamCoreAppsAsyncActionGetAppBuilds
 // 0x0000 (0x0058 - 0x0058)
@@ -207,15 +219,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreAppsAsyncActionGetAppBuilds">();
+		STATIC_CLASS_IMPL("SteamCoreAppsAsyncActionGetAppBuilds")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreAppsAsyncActionGetAppBuilds")
 	}
 	static class USteamCoreAppsAsyncActionGetAppBuilds* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreAppsAsyncActionGetAppBuilds>();
 	}
 };
-static_assert(alignof(USteamCoreAppsAsyncActionGetAppBuilds) == 0x000008, "Wrong alignment on USteamCoreAppsAsyncActionGetAppBuilds");
-static_assert(sizeof(USteamCoreAppsAsyncActionGetAppBuilds) == 0x000058, "Wrong size on USteamCoreAppsAsyncActionGetAppBuilds");
+DUMPER7_ASSERTS_USteamCoreAppsAsyncActionGetAppBuilds;
 
 // Class SteamCoreWeb.SteamCoreAppsAsyncActionGetAppDepotVersions
 // 0x0000 (0x0058 - 0x0058)
@@ -227,22 +242,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreAppsAsyncActionGetAppDepotVersions">();
+		STATIC_CLASS_IMPL("SteamCoreAppsAsyncActionGetAppDepotVersions")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreAppsAsyncActionGetAppDepotVersions")
 	}
 	static class USteamCoreAppsAsyncActionGetAppDepotVersions* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreAppsAsyncActionGetAppDepotVersions>();
 	}
 };
-static_assert(alignof(USteamCoreAppsAsyncActionGetAppDepotVersions) == 0x000008, "Wrong alignment on USteamCoreAppsAsyncActionGetAppDepotVersions");
-static_assert(sizeof(USteamCoreAppsAsyncActionGetAppDepotVersions) == 0x000058, "Wrong size on USteamCoreAppsAsyncActionGetAppDepotVersions");
+DUMPER7_ASSERTS_USteamCoreAppsAsyncActionGetAppDepotVersions;
 
 // Class SteamCoreWeb.SteamCoreAppsAsyncActionGetAppList
 // 0x0020 (0x0050 - 0x0030)
 class USteamCoreAppsAsyncActionGetAppList final : public UBlueprintAsyncActionBase
 {
 public:
-	TMulticastInlineDelegate<void(const TArray<struct FWebAppsGetAppList>& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TArray<struct FWebAppsGetAppList>& Data, bool bWasSuccessful)> OnCallback; // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_40[0x10];                                      // 0x0040(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -253,16 +271,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreAppsAsyncActionGetAppList">();
+		STATIC_CLASS_IMPL("SteamCoreAppsAsyncActionGetAppList")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreAppsAsyncActionGetAppList")
 	}
 	static class USteamCoreAppsAsyncActionGetAppList* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreAppsAsyncActionGetAppList>();
 	}
 };
-static_assert(alignof(USteamCoreAppsAsyncActionGetAppList) == 0x000008, "Wrong alignment on USteamCoreAppsAsyncActionGetAppList");
-static_assert(sizeof(USteamCoreAppsAsyncActionGetAppList) == 0x000050, "Wrong size on USteamCoreAppsAsyncActionGetAppList");
-static_assert(offsetof(USteamCoreAppsAsyncActionGetAppList, OnCallback) == 0x000030, "Member 'USteamCoreAppsAsyncActionGetAppList::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreAppsAsyncActionGetAppList;
 
 // Class SteamCoreWeb.SteamCoreAppsAsyncActionGetCheatingReports
 // 0x0000 (0x0058 - 0x0058)
@@ -274,15 +294,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreAppsAsyncActionGetCheatingReports">();
+		STATIC_CLASS_IMPL("SteamCoreAppsAsyncActionGetCheatingReports")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreAppsAsyncActionGetCheatingReports")
 	}
 	static class USteamCoreAppsAsyncActionGetCheatingReports* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreAppsAsyncActionGetCheatingReports>();
 	}
 };
-static_assert(alignof(USteamCoreAppsAsyncActionGetCheatingReports) == 0x000008, "Wrong alignment on USteamCoreAppsAsyncActionGetCheatingReports");
-static_assert(sizeof(USteamCoreAppsAsyncActionGetCheatingReports) == 0x000058, "Wrong size on USteamCoreAppsAsyncActionGetCheatingReports");
+DUMPER7_ASSERTS_USteamCoreAppsAsyncActionGetCheatingReports;
 
 // Class SteamCoreWeb.SteamCoreAppsAsyncActionGetPlayersBanned
 // 0x0000 (0x0058 - 0x0058)
@@ -294,15 +317,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreAppsAsyncActionGetPlayersBanned">();
+		STATIC_CLASS_IMPL("SteamCoreAppsAsyncActionGetPlayersBanned")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreAppsAsyncActionGetPlayersBanned")
 	}
 	static class USteamCoreAppsAsyncActionGetPlayersBanned* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreAppsAsyncActionGetPlayersBanned>();
 	}
 };
-static_assert(alignof(USteamCoreAppsAsyncActionGetPlayersBanned) == 0x000008, "Wrong alignment on USteamCoreAppsAsyncActionGetPlayersBanned");
-static_assert(sizeof(USteamCoreAppsAsyncActionGetPlayersBanned) == 0x000058, "Wrong size on USteamCoreAppsAsyncActionGetPlayersBanned");
+DUMPER7_ASSERTS_USteamCoreAppsAsyncActionGetPlayersBanned;
 
 // Class SteamCoreWeb.SteamCoreAppsAsyncActionGetServerList
 // 0x0000 (0x0058 - 0x0058)
@@ -314,15 +340,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreAppsAsyncActionGetServerList">();
+		STATIC_CLASS_IMPL("SteamCoreAppsAsyncActionGetServerList")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreAppsAsyncActionGetServerList")
 	}
 	static class USteamCoreAppsAsyncActionGetServerList* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreAppsAsyncActionGetServerList>();
 	}
 };
-static_assert(alignof(USteamCoreAppsAsyncActionGetServerList) == 0x000008, "Wrong alignment on USteamCoreAppsAsyncActionGetServerList");
-static_assert(sizeof(USteamCoreAppsAsyncActionGetServerList) == 0x000058, "Wrong size on USteamCoreAppsAsyncActionGetServerList");
+DUMPER7_ASSERTS_USteamCoreAppsAsyncActionGetServerList;
 
 // Class SteamCoreWeb.SteamCoreAppsAsyncActionGetServersAtAddress
 // 0x0000 (0x0058 - 0x0058)
@@ -334,15 +363,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreAppsAsyncActionGetServersAtAddress">();
+		STATIC_CLASS_IMPL("SteamCoreAppsAsyncActionGetServersAtAddress")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreAppsAsyncActionGetServersAtAddress")
 	}
 	static class USteamCoreAppsAsyncActionGetServersAtAddress* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreAppsAsyncActionGetServersAtAddress>();
 	}
 };
-static_assert(alignof(USteamCoreAppsAsyncActionGetServersAtAddress) == 0x000008, "Wrong alignment on USteamCoreAppsAsyncActionGetServersAtAddress");
-static_assert(sizeof(USteamCoreAppsAsyncActionGetServersAtAddress) == 0x000058, "Wrong size on USteamCoreAppsAsyncActionGetServersAtAddress");
+DUMPER7_ASSERTS_USteamCoreAppsAsyncActionGetServersAtAddress;
 
 // Class SteamCoreWeb.SteamCoreAppsAsyncActionSetAppBuildLive
 // 0x0000 (0x0058 - 0x0058)
@@ -354,15 +386,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreAppsAsyncActionSetAppBuildLive">();
+		STATIC_CLASS_IMPL("SteamCoreAppsAsyncActionSetAppBuildLive")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreAppsAsyncActionSetAppBuildLive")
 	}
 	static class USteamCoreAppsAsyncActionSetAppBuildLive* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreAppsAsyncActionSetAppBuildLive>();
 	}
 };
-static_assert(alignof(USteamCoreAppsAsyncActionSetAppBuildLive) == 0x000008, "Wrong alignment on USteamCoreAppsAsyncActionSetAppBuildLive");
-static_assert(sizeof(USteamCoreAppsAsyncActionSetAppBuildLive) == 0x000058, "Wrong size on USteamCoreAppsAsyncActionSetAppBuildLive");
+DUMPER7_ASSERTS_USteamCoreAppsAsyncActionSetAppBuildLive;
 
 // Class SteamCoreWeb.SteamCoreAppsAsyncActionUpToDateCheck
 // 0x0000 (0x0058 - 0x0058)
@@ -374,15 +409,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreAppsAsyncActionUpToDateCheck">();
+		STATIC_CLASS_IMPL("SteamCoreAppsAsyncActionUpToDateCheck")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreAppsAsyncActionUpToDateCheck")
 	}
 	static class USteamCoreAppsAsyncActionUpToDateCheck* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreAppsAsyncActionUpToDateCheck>();
 	}
 };
-static_assert(alignof(USteamCoreAppsAsyncActionUpToDateCheck) == 0x000008, "Wrong alignment on USteamCoreAppsAsyncActionUpToDateCheck");
-static_assert(sizeof(USteamCoreAppsAsyncActionUpToDateCheck) == 0x000058, "Wrong size on USteamCoreAppsAsyncActionUpToDateCheck");
+DUMPER7_ASSERTS_USteamCoreAppsAsyncActionUpToDateCheck;
 
 // Class SteamCoreWeb.WebBroadcastService
 // 0x0000 (0x0048 - 0x0048)
@@ -394,15 +432,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WebBroadcastService">();
+		STATIC_CLASS_IMPL("WebBroadcastService")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WebBroadcastService")
 	}
 	static class UWebBroadcastService* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWebBroadcastService>();
 	}
 };
-static_assert(alignof(UWebBroadcastService) == 0x000008, "Wrong alignment on UWebBroadcastService");
-static_assert(sizeof(UWebBroadcastService) == 0x000048, "Wrong size on UWebBroadcastService");
+DUMPER7_ASSERTS_UWebBroadcastService;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionPostGameDataFrame
 // 0x0000 (0x0058 - 0x0058)
@@ -414,15 +455,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionPostGameDataFrame">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionPostGameDataFrame")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionPostGameDataFrame")
 	}
 	static class USteamCoreWebAsyncActionPostGameDataFrame* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionPostGameDataFrame>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionPostGameDataFrame) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionPostGameDataFrame");
-static_assert(sizeof(USteamCoreWebAsyncActionPostGameDataFrame) == 0x000058, "Wrong size on USteamCoreWebAsyncActionPostGameDataFrame");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionPostGameDataFrame;
 
 // Class SteamCoreWeb.WebCheatReporting
 // 0x0000 (0x0048 - 0x0048)
@@ -441,15 +485,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WebCheatReporting">();
+		STATIC_CLASS_IMPL("WebCheatReporting")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WebCheatReporting")
 	}
 	static class UWebCheatReporting* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWebCheatReporting>();
 	}
 };
-static_assert(alignof(UWebCheatReporting) == 0x000008, "Wrong alignment on UWebCheatReporting");
-static_assert(sizeof(UWebCheatReporting) == 0x000048, "Wrong size on UWebCheatReporting");
+DUMPER7_ASSERTS_UWebCheatReporting;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionReportPlayerCheating
 // 0x0000 (0x0058 - 0x0058)
@@ -461,15 +508,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionReportPlayerCheating">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionReportPlayerCheating")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionReportPlayerCheating")
 	}
 	static class USteamCoreWebAsyncActionReportPlayerCheating* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionReportPlayerCheating>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionReportPlayerCheating) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionReportPlayerCheating");
-static_assert(sizeof(USteamCoreWebAsyncActionReportPlayerCheating) == 0x000058, "Wrong size on USteamCoreWebAsyncActionReportPlayerCheating");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionReportPlayerCheating;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionRequestPlayerGameBan
 // 0x0000 (0x0058 - 0x0058)
@@ -481,15 +531,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionRequestPlayerGameBan">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionRequestPlayerGameBan")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionRequestPlayerGameBan")
 	}
 	static class USteamCoreWebAsyncActionRequestPlayerGameBan* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionRequestPlayerGameBan>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionRequestPlayerGameBan) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionRequestPlayerGameBan");
-static_assert(sizeof(USteamCoreWebAsyncActionRequestPlayerGameBan) == 0x000058, "Wrong size on USteamCoreWebAsyncActionRequestPlayerGameBan");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionRequestPlayerGameBan;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionRemovePlayerGameBan
 // 0x0000 (0x0058 - 0x0058)
@@ -501,15 +554,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionRemovePlayerGameBan">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionRemovePlayerGameBan")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionRemovePlayerGameBan")
 	}
 	static class USteamCoreWebAsyncActionRemovePlayerGameBan* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionRemovePlayerGameBan>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionRemovePlayerGameBan) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionRemovePlayerGameBan");
-static_assert(sizeof(USteamCoreWebAsyncActionRemovePlayerGameBan) == 0x000058, "Wrong size on USteamCoreWebAsyncActionRemovePlayerGameBan");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionRemovePlayerGameBan;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetCheatingReports
 // 0x0000 (0x0058 - 0x0058)
@@ -521,15 +577,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetCheatingReports">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetCheatingReports")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetCheatingReports")
 	}
 	static class USteamCoreWebAsyncActionGetCheatingReports* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetCheatingReports>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetCheatingReports) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetCheatingReports");
-static_assert(sizeof(USteamCoreWebAsyncActionGetCheatingReports) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetCheatingReports");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetCheatingReports;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionReportCheatData
 // 0x0000 (0x0058 - 0x0058)
@@ -541,15 +600,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionReportCheatData">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionReportCheatData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionReportCheatData")
 	}
 	static class USteamCoreWebAsyncActionReportCheatData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionReportCheatData>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionReportCheatData) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionReportCheatData");
-static_assert(sizeof(USteamCoreWebAsyncActionReportCheatData) == 0x000058, "Wrong size on USteamCoreWebAsyncActionReportCheatData");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionReportCheatData;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionRequestVacStatusForUser
 // 0x0000 (0x0058 - 0x0058)
@@ -561,15 +623,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionRequestVacStatusForUser">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionRequestVacStatusForUser")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionRequestVacStatusForUser")
 	}
 	static class USteamCoreWebAsyncActionRequestVacStatusForUser* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionRequestVacStatusForUser>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionRequestVacStatusForUser) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionRequestVacStatusForUser");
-static_assert(sizeof(USteamCoreWebAsyncActionRequestVacStatusForUser) == 0x000058, "Wrong size on USteamCoreWebAsyncActionRequestVacStatusForUser");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionRequestVacStatusForUser;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionStartSecureMultiplayerSession
 // 0x0000 (0x0058 - 0x0058)
@@ -581,15 +646,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionStartSecureMultiplayerSession">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionStartSecureMultiplayerSession")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionStartSecureMultiplayerSession")
 	}
 	static class USteamCoreWebAsyncActionStartSecureMultiplayerSession* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionStartSecureMultiplayerSession>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionStartSecureMultiplayerSession) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionStartSecureMultiplayerSession");
-static_assert(sizeof(USteamCoreWebAsyncActionStartSecureMultiplayerSession) == 0x000058, "Wrong size on USteamCoreWebAsyncActionStartSecureMultiplayerSession");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionStartSecureMultiplayerSession;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionEndSecureMultiplayerSession
 // 0x0000 (0x0058 - 0x0058)
@@ -601,15 +669,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionEndSecureMultiplayerSession">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionEndSecureMultiplayerSession")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionEndSecureMultiplayerSession")
 	}
 	static class USteamCoreWebAsyncActionEndSecureMultiplayerSession* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionEndSecureMultiplayerSession>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionEndSecureMultiplayerSession) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionEndSecureMultiplayerSession");
-static_assert(sizeof(USteamCoreWebAsyncActionEndSecureMultiplayerSession) == 0x000058, "Wrong size on USteamCoreWebAsyncActionEndSecureMultiplayerSession");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionEndSecureMultiplayerSession;
 
 // Class SteamCoreWeb.WebEconMarketService
 // 0x0000 (0x0048 - 0x0048)
@@ -624,15 +695,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WebEconMarketService">();
+		STATIC_CLASS_IMPL("WebEconMarketService")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WebEconMarketService")
 	}
 	static class UWebEconMarketService* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWebEconMarketService>();
 	}
 };
-static_assert(alignof(UWebEconMarketService) == 0x000008, "Wrong alignment on UWebEconMarketService");
-static_assert(sizeof(UWebEconMarketService) == 0x000048, "Wrong size on UWebEconMarketService");
+DUMPER7_ASSERTS_UWebEconMarketService;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetMarketEligibility
 // 0x0000 (0x0058 - 0x0058)
@@ -644,15 +718,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetMarketEligibility">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetMarketEligibility")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetMarketEligibility")
 	}
 	static class USteamCoreWebAsyncActionGetMarketEligibility* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetMarketEligibility>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetMarketEligibility) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetMarketEligibility");
-static_assert(sizeof(USteamCoreWebAsyncActionGetMarketEligibility) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetMarketEligibility");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetMarketEligibility;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionCancelAppListingsForUser
 // 0x0000 (0x0058 - 0x0058)
@@ -664,15 +741,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionCancelAppListingsForUser">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionCancelAppListingsForUser")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionCancelAppListingsForUser")
 	}
 	static class USteamCoreWebAsyncActionCancelAppListingsForUser* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionCancelAppListingsForUser>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionCancelAppListingsForUser) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionCancelAppListingsForUser");
-static_assert(sizeof(USteamCoreWebAsyncActionCancelAppListingsForUser) == 0x000058, "Wrong size on USteamCoreWebAsyncActionCancelAppListingsForUser");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionCancelAppListingsForUser;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetAssetID
 // 0x0000 (0x0058 - 0x0058)
@@ -684,15 +764,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetAssetID">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetAssetID")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetAssetID")
 	}
 	static class USteamCoreWebAsyncActionGetAssetID* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetAssetID>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetAssetID) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetAssetID");
-static_assert(sizeof(USteamCoreWebAsyncActionGetAssetID) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetAssetID");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetAssetID;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetPopular
 // 0x0000 (0x0058 - 0x0058)
@@ -704,15 +787,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetPopular">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetPopular")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetPopular")
 	}
 	static class USteamCoreWebAsyncActionGetPopular* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetPopular>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetPopular) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetPopular");
-static_assert(sizeof(USteamCoreWebAsyncActionGetPopular) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetPopular");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetPopular;
 
 // Class SteamCoreWeb.WebEconService
 // 0x0000 (0x0048 - 0x0048)
@@ -732,15 +818,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WebEconService">();
+		STATIC_CLASS_IMPL("WebEconService")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WebEconService")
 	}
 	static class UWebEconService* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWebEconService>();
 	}
 };
-static_assert(alignof(UWebEconService) == 0x000008, "Wrong alignment on UWebEconService");
-static_assert(sizeof(UWebEconService) == 0x000048, "Wrong size on UWebEconService");
+DUMPER7_ASSERTS_UWebEconService;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetTradeHistory
 // 0x0000 (0x0058 - 0x0058)
@@ -752,15 +841,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetTradeHistory">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetTradeHistory")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetTradeHistory")
 	}
 	static class USteamCoreWebAsyncActionGetTradeHistory* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetTradeHistory>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetTradeHistory) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetTradeHistory");
-static_assert(sizeof(USteamCoreWebAsyncActionGetTradeHistory) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetTradeHistory");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetTradeHistory;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionFlushInventoryCache
 // 0x0000 (0x0058 - 0x0058)
@@ -772,15 +864,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionFlushInventoryCache">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionFlushInventoryCache")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionFlushInventoryCache")
 	}
 	static class USteamCoreWebAsyncActionFlushInventoryCache* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionFlushInventoryCache>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionFlushInventoryCache) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionFlushInventoryCache");
-static_assert(sizeof(USteamCoreWebAsyncActionFlushInventoryCache) == 0x000058, "Wrong size on USteamCoreWebAsyncActionFlushInventoryCache");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionFlushInventoryCache;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionFlushAssetAppearanceCache
 // 0x0000 (0x0058 - 0x0058)
@@ -792,15 +887,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionFlushAssetAppearanceCache">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionFlushAssetAppearanceCache")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionFlushAssetAppearanceCache")
 	}
 	static class USteamCoreWebAsyncActionFlushAssetAppearanceCache* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionFlushAssetAppearanceCache>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionFlushAssetAppearanceCache) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionFlushAssetAppearanceCache");
-static_assert(sizeof(USteamCoreWebAsyncActionFlushAssetAppearanceCache) == 0x000058, "Wrong size on USteamCoreWebAsyncActionFlushAssetAppearanceCache");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionFlushAssetAppearanceCache;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionFlushContextCache
 // 0x0000 (0x0058 - 0x0058)
@@ -812,15 +910,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionFlushContextCache">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionFlushContextCache")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionFlushContextCache")
 	}
 	static class USteamCoreWebAsyncActionFlushContextCache* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionFlushContextCache>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionFlushContextCache) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionFlushContextCache");
-static_assert(sizeof(USteamCoreWebAsyncActionFlushContextCache) == 0x000058, "Wrong size on USteamCoreWebAsyncActionFlushContextCache");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionFlushContextCache;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetTradeOffers
 // 0x0000 (0x0058 - 0x0058)
@@ -832,15 +933,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetTradeOffers">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetTradeOffers")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetTradeOffers")
 	}
 	static class USteamCoreWebAsyncActionGetTradeOffers* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetTradeOffers>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetTradeOffers) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetTradeOffers");
-static_assert(sizeof(USteamCoreWebAsyncActionGetTradeOffers) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetTradeOffers");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetTradeOffers;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetTradeOffer
 // 0x0000 (0x0058 - 0x0058)
@@ -852,15 +956,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetTradeOffer">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetTradeOffer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetTradeOffer")
 	}
 	static class USteamCoreWebAsyncActionGetTradeOffer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetTradeOffer>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetTradeOffer) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetTradeOffer");
-static_assert(sizeof(USteamCoreWebAsyncActionGetTradeOffer) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetTradeOffer");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetTradeOffer;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetTradeOffersSummary
 // 0x0000 (0x0058 - 0x0058)
@@ -872,15 +979,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetTradeOffersSummary">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetTradeOffersSummary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetTradeOffersSummary")
 	}
 	static class USteamCoreWebAsyncActionGetTradeOffersSummary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetTradeOffersSummary>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetTradeOffersSummary) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetTradeOffersSummary");
-static_assert(sizeof(USteamCoreWebAsyncActionGetTradeOffersSummary) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetTradeOffersSummary");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetTradeOffersSummary;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionDeclineTradeOffer
 // 0x0000 (0x0058 - 0x0058)
@@ -892,15 +1002,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionDeclineTradeOffer">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionDeclineTradeOffer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionDeclineTradeOffer")
 	}
 	static class USteamCoreWebAsyncActionDeclineTradeOffer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionDeclineTradeOffer>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionDeclineTradeOffer) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionDeclineTradeOffer");
-static_assert(sizeof(USteamCoreWebAsyncActionDeclineTradeOffer) == 0x000058, "Wrong size on USteamCoreWebAsyncActionDeclineTradeOffer");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionDeclineTradeOffer;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionCancelTradeOffer
 // 0x0000 (0x0058 - 0x0058)
@@ -912,15 +1025,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionCancelTradeOffer">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionCancelTradeOffer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionCancelTradeOffer")
 	}
 	static class USteamCoreWebAsyncActionCancelTradeOffer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionCancelTradeOffer>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionCancelTradeOffer) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionCancelTradeOffer");
-static_assert(sizeof(USteamCoreWebAsyncActionCancelTradeOffer) == 0x000058, "Wrong size on USteamCoreWebAsyncActionCancelTradeOffer");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionCancelTradeOffer;
 
 // Class SteamCoreWeb.WebGameInventory
 // 0x0000 (0x0048 - 0x0048)
@@ -936,15 +1052,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WebGameInventory">();
+		STATIC_CLASS_IMPL("WebGameInventory")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WebGameInventory")
 	}
 	static class UWebGameInventory* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWebGameInventory>();
 	}
 };
-static_assert(alignof(UWebGameInventory) == 0x000008, "Wrong alignment on UWebGameInventory");
-static_assert(sizeof(UWebGameInventory) == 0x000048, "Wrong size on UWebGameInventory");
+DUMPER7_ASSERTS_UWebGameInventory;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetHistoryCommandDetails
 // 0x0000 (0x0058 - 0x0058)
@@ -956,15 +1075,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetHistoryCommandDetails">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetHistoryCommandDetails")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetHistoryCommandDetails")
 	}
 	static class USteamCoreWebAsyncActionGetHistoryCommandDetails* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetHistoryCommandDetails>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetHistoryCommandDetails) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetHistoryCommandDetails");
-static_assert(sizeof(USteamCoreWebAsyncActionGetHistoryCommandDetails) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetHistoryCommandDetails");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetHistoryCommandDetails;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetUserHistory
 // 0x0000 (0x0058 - 0x0058)
@@ -976,15 +1098,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetUserHistory">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetUserHistory")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetUserHistory")
 	}
 	static class USteamCoreWebAsyncActionGetUserHistory* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetUserHistory>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetUserHistory) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetUserHistory");
-static_assert(sizeof(USteamCoreWebAsyncActionGetUserHistory) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetUserHistory");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetUserHistory;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionHistoryExecuteCommand
 // 0x0000 (0x0058 - 0x0058)
@@ -996,15 +1121,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionHistoryExecuteCommand">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionHistoryExecuteCommand")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionHistoryExecuteCommand")
 	}
 	static class USteamCoreWebAsyncActionHistoryExecuteCommand* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionHistoryExecuteCommand>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionHistoryExecuteCommand) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionHistoryExecuteCommand");
-static_assert(sizeof(USteamCoreWebAsyncActionHistoryExecuteCommand) == 0x000058, "Wrong size on USteamCoreWebAsyncActionHistoryExecuteCommand");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionHistoryExecuteCommand;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionSupportGetAssetHistory
 // 0x0000 (0x0058 - 0x0058)
@@ -1016,15 +1144,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionSupportGetAssetHistory">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionSupportGetAssetHistory")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionSupportGetAssetHistory")
 	}
 	static class USteamCoreWebAsyncActionSupportGetAssetHistory* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionSupportGetAssetHistory>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionSupportGetAssetHistory) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionSupportGetAssetHistory");
-static_assert(sizeof(USteamCoreWebAsyncActionSupportGetAssetHistory) == 0x000058, "Wrong size on USteamCoreWebAsyncActionSupportGetAssetHistory");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionSupportGetAssetHistory;
 
 // Class SteamCoreWeb.WebGameNotificationsService
 // 0x0000 (0x0048 - 0x0048)
@@ -1042,15 +1173,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WebGameNotificationsService">();
+		STATIC_CLASS_IMPL("WebGameNotificationsService")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WebGameNotificationsService")
 	}
 	static class UWebGameNotificationsService* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWebGameNotificationsService>();
 	}
 };
-static_assert(alignof(UWebGameNotificationsService) == 0x000008, "Wrong alignment on UWebGameNotificationsService");
-static_assert(sizeof(UWebGameNotificationsService) == 0x000048, "Wrong size on UWebGameNotificationsService");
+DUMPER7_ASSERTS_UWebGameNotificationsService;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionCreateSession
 // 0x0000 (0x0058 - 0x0058)
@@ -1062,15 +1196,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionCreateSession">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionCreateSession")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionCreateSession")
 	}
 	static class USteamCoreWebAsyncActionCreateSession* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionCreateSession>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionCreateSession) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionCreateSession");
-static_assert(sizeof(USteamCoreWebAsyncActionCreateSession) == 0x000058, "Wrong size on USteamCoreWebAsyncActionCreateSession");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionCreateSession;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionUpdateSession
 // 0x0000 (0x0058 - 0x0058)
@@ -1082,15 +1219,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionUpdateSession">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionUpdateSession")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionUpdateSession")
 	}
 	static class USteamCoreWebAsyncActionUpdateSession* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionUpdateSession>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionUpdateSession) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionUpdateSession");
-static_assert(sizeof(USteamCoreWebAsyncActionUpdateSession) == 0x000058, "Wrong size on USteamCoreWebAsyncActionUpdateSession");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionUpdateSession;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionEnumerateSessionsForApp
 // 0x0000 (0x0058 - 0x0058)
@@ -1102,15 +1242,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionEnumerateSessionsForApp">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionEnumerateSessionsForApp")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionEnumerateSessionsForApp")
 	}
 	static class USteamCoreWebAsyncActionEnumerateSessionsForApp* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionEnumerateSessionsForApp>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionEnumerateSessionsForApp) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionEnumerateSessionsForApp");
-static_assert(sizeof(USteamCoreWebAsyncActionEnumerateSessionsForApp) == 0x000058, "Wrong size on USteamCoreWebAsyncActionEnumerateSessionsForApp");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionEnumerateSessionsForApp;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetSessionDetailsForApp
 // 0x0000 (0x0058 - 0x0058)
@@ -1122,15 +1265,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetSessionDetailsForApp">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetSessionDetailsForApp")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetSessionDetailsForApp")
 	}
 	static class USteamCoreWebAsyncActionGetSessionDetailsForApp* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetSessionDetailsForApp>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetSessionDetailsForApp) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetSessionDetailsForApp");
-static_assert(sizeof(USteamCoreWebAsyncActionGetSessionDetailsForApp) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetSessionDetailsForApp");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetSessionDetailsForApp;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionRequestNotifications
 // 0x0000 (0x0058 - 0x0058)
@@ -1142,15 +1288,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionRequestNotifications">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionRequestNotifications")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionRequestNotifications")
 	}
 	static class USteamCoreWebAsyncActionRequestNotifications* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionRequestNotifications>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionRequestNotifications) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionRequestNotifications");
-static_assert(sizeof(USteamCoreWebAsyncActionRequestNotifications) == 0x000058, "Wrong size on USteamCoreWebAsyncActionRequestNotifications");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionRequestNotifications;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionDeleteSession
 // 0x0000 (0x0058 - 0x0058)
@@ -1162,15 +1311,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionDeleteSession">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionDeleteSession")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionDeleteSession")
 	}
 	static class USteamCoreWebAsyncActionDeleteSession* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionDeleteSession>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionDeleteSession) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionDeleteSession");
-static_assert(sizeof(USteamCoreWebAsyncActionDeleteSession) == 0x000058, "Wrong size on USteamCoreWebAsyncActionDeleteSession");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionDeleteSession;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionDeleteSessionBatch
 // 0x0000 (0x0058 - 0x0058)
@@ -1182,15 +1334,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionDeleteSessionBatch">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionDeleteSessionBatch")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionDeleteSessionBatch")
 	}
 	static class USteamCoreWebAsyncActionDeleteSessionBatch* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionDeleteSessionBatch>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionDeleteSessionBatch) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionDeleteSessionBatch");
-static_assert(sizeof(USteamCoreWebAsyncActionDeleteSessionBatch) == 0x000058, "Wrong size on USteamCoreWebAsyncActionDeleteSessionBatch");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionDeleteSessionBatch;
 
 // Class SteamCoreWeb.WebGameServersService
 // 0x0000 (0x0048 - 0x0048)
@@ -1211,15 +1366,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WebGameServersService">();
+		STATIC_CLASS_IMPL("WebGameServersService")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WebGameServersService")
 	}
 	static class UWebGameServersService* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWebGameServersService>();
 	}
 };
-static_assert(alignof(UWebGameServersService) == 0x000008, "Wrong alignment on UWebGameServersService");
-static_assert(sizeof(UWebGameServersService) == 0x000048, "Wrong size on UWebGameServersService");
+DUMPER7_ASSERTS_UWebGameServersService;
 
 // Class SteamCoreWeb.WebInventoryService
 // 0x0000 (0x0048 - 0x0048)
@@ -1240,15 +1398,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WebInventoryService">();
+		STATIC_CLASS_IMPL("WebInventoryService")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WebInventoryService")
 	}
 	static class UWebInventoryService* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWebInventoryService>();
 	}
 };
-static_assert(alignof(UWebInventoryService) == 0x000008, "Wrong alignment on UWebInventoryService");
-static_assert(sizeof(UWebInventoryService) == 0x000048, "Wrong size on UWebInventoryService");
+DUMPER7_ASSERTS_UWebInventoryService;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionAddItem
 // 0x0000 (0x0058 - 0x0058)
@@ -1260,15 +1421,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionAddItem">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionAddItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionAddItem")
 	}
 	static class USteamCoreWebAsyncActionAddItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionAddItem>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionAddItem) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionAddItem");
-static_assert(sizeof(USteamCoreWebAsyncActionAddItem) == 0x000058, "Wrong size on USteamCoreWebAsyncActionAddItem");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionAddItem;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionAddPromoItem
 // 0x0000 (0x0058 - 0x0058)
@@ -1280,15 +1444,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionAddPromoItem">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionAddPromoItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionAddPromoItem")
 	}
 	static class USteamCoreWebAsyncActionAddPromoItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionAddPromoItem>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionAddPromoItem) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionAddPromoItem");
-static_assert(sizeof(USteamCoreWebAsyncActionAddPromoItem) == 0x000058, "Wrong size on USteamCoreWebAsyncActionAddPromoItem");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionAddPromoItem;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionConsumeItem
 // 0x0000 (0x0058 - 0x0058)
@@ -1300,15 +1467,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionConsumeItem">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionConsumeItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionConsumeItem")
 	}
 	static class USteamCoreWebAsyncActionConsumeItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionConsumeItem>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionConsumeItem) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionConsumeItem");
-static_assert(sizeof(USteamCoreWebAsyncActionConsumeItem) == 0x000058, "Wrong size on USteamCoreWebAsyncActionConsumeItem");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionConsumeItem;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionExchangeItem
 // 0x0000 (0x0058 - 0x0058)
@@ -1320,15 +1490,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionExchangeItem">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionExchangeItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionExchangeItem")
 	}
 	static class USteamCoreWebAsyncActionExchangeItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionExchangeItem>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionExchangeItem) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionExchangeItem");
-static_assert(sizeof(USteamCoreWebAsyncActionExchangeItem) == 0x000058, "Wrong size on USteamCoreWebAsyncActionExchangeItem");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionExchangeItem;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetInventory
 // 0x0000 (0x0058 - 0x0058)
@@ -1340,15 +1513,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetInventory">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetInventory")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetInventory")
 	}
 	static class USteamCoreWebAsyncActionGetInventory* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetInventory>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetInventory) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetInventory");
-static_assert(sizeof(USteamCoreWebAsyncActionGetInventory) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetInventory");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetInventory;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetItemDefs
 // 0x0000 (0x0058 - 0x0058)
@@ -1360,15 +1536,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetItemDefs">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetItemDefs")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetItemDefs")
 	}
 	static class USteamCoreWebAsyncActionGetItemDefs* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetItemDefs>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetItemDefs) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetItemDefs");
-static_assert(sizeof(USteamCoreWebAsyncActionGetItemDefs) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetItemDefs");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetItemDefs;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetPriceSheet
 // 0x0000 (0x0058 - 0x0058)
@@ -1380,15 +1559,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetPriceSheet">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetPriceSheet")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetPriceSheet")
 	}
 	static class USteamCoreWebAsyncActionGetPriceSheet* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetPriceSheet>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetPriceSheet) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetPriceSheet");
-static_assert(sizeof(USteamCoreWebAsyncActionGetPriceSheet) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetPriceSheet");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetPriceSheet;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionConsolidate
 // 0x0000 (0x0058 - 0x0058)
@@ -1400,15 +1582,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionConsolidate">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionConsolidate")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionConsolidate")
 	}
 	static class USteamCoreWebAsyncActionConsolidate* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionConsolidate>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionConsolidate) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionConsolidate");
-static_assert(sizeof(USteamCoreWebAsyncActionConsolidate) == 0x000058, "Wrong size on USteamCoreWebAsyncActionConsolidate");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionConsolidate;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetQuantity
 // 0x0000 (0x0058 - 0x0058)
@@ -1420,15 +1605,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetQuantity">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetQuantity")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetQuantity")
 	}
 	static class USteamCoreWebAsyncActionGetQuantity* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetQuantity>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetQuantity) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetQuantity");
-static_assert(sizeof(USteamCoreWebAsyncActionGetQuantity) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetQuantity");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetQuantity;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionModifyItems
 // 0x0000 (0x0058 - 0x0058)
@@ -1440,15 +1628,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionModifyItems">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionModifyItems")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionModifyItems")
 	}
 	static class USteamCoreWebAsyncActionModifyItems* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionModifyItems>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionModifyItems) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionModifyItems");
-static_assert(sizeof(USteamCoreWebAsyncActionModifyItems) == 0x000058, "Wrong size on USteamCoreWebAsyncActionModifyItems");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionModifyItems;
 
 // Class SteamCoreWeb.WebLeaderboards
 // 0x0000 (0x0048 - 0x0048)
@@ -1465,15 +1656,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WebLeaderboards">();
+		STATIC_CLASS_IMPL("WebLeaderboards")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WebLeaderboards")
 	}
 	static class UWebLeaderboards* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWebLeaderboards>();
 	}
 };
-static_assert(alignof(UWebLeaderboards) == 0x000008, "Wrong alignment on UWebLeaderboards");
-static_assert(sizeof(UWebLeaderboards) == 0x000048, "Wrong size on UWebLeaderboards");
+DUMPER7_ASSERTS_UWebLeaderboards;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionDeleteLeaderboard
 // 0x0000 (0x0058 - 0x0058)
@@ -1485,15 +1679,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionDeleteLeaderboard">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionDeleteLeaderboard")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionDeleteLeaderboard")
 	}
 	static class USteamCoreWebAsyncActionDeleteLeaderboard* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionDeleteLeaderboard>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionDeleteLeaderboard) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionDeleteLeaderboard");
-static_assert(sizeof(USteamCoreWebAsyncActionDeleteLeaderboard) == 0x000058, "Wrong size on USteamCoreWebAsyncActionDeleteLeaderboard");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionDeleteLeaderboard;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionFindOrCreateLeaderboard
 // 0x0000 (0x0058 - 0x0058)
@@ -1505,15 +1702,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionFindOrCreateLeaderboard">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionFindOrCreateLeaderboard")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionFindOrCreateLeaderboard")
 	}
 	static class USteamCoreWebAsyncActionFindOrCreateLeaderboard* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionFindOrCreateLeaderboard>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionFindOrCreateLeaderboard) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionFindOrCreateLeaderboard");
-static_assert(sizeof(USteamCoreWebAsyncActionFindOrCreateLeaderboard) == 0x000058, "Wrong size on USteamCoreWebAsyncActionFindOrCreateLeaderboard");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionFindOrCreateLeaderboard;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetLeaderboardEntries
 // 0x0000 (0x0058 - 0x0058)
@@ -1525,15 +1725,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetLeaderboardEntries">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetLeaderboardEntries")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetLeaderboardEntries")
 	}
 	static class USteamCoreWebAsyncActionGetLeaderboardEntries* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetLeaderboardEntries>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetLeaderboardEntries) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetLeaderboardEntries");
-static_assert(sizeof(USteamCoreWebAsyncActionGetLeaderboardEntries) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetLeaderboardEntries");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetLeaderboardEntries;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetLeaderboardsForGame
 // 0x0000 (0x0058 - 0x0058)
@@ -1545,15 +1748,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetLeaderboardsForGame">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetLeaderboardsForGame")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetLeaderboardsForGame")
 	}
 	static class USteamCoreWebAsyncActionGetLeaderboardsForGame* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetLeaderboardsForGame>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetLeaderboardsForGame) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetLeaderboardsForGame");
-static_assert(sizeof(USteamCoreWebAsyncActionGetLeaderboardsForGame) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetLeaderboardsForGame");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetLeaderboardsForGame;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionResetLeaderboard
 // 0x0000 (0x0058 - 0x0058)
@@ -1565,15 +1771,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionResetLeaderboard">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionResetLeaderboard")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionResetLeaderboard")
 	}
 	static class USteamCoreWebAsyncActionResetLeaderboard* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionResetLeaderboard>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionResetLeaderboard) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionResetLeaderboard");
-static_assert(sizeof(USteamCoreWebAsyncActionResetLeaderboard) == 0x000058, "Wrong size on USteamCoreWebAsyncActionResetLeaderboard");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionResetLeaderboard;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionSetLeaderboardScore
 // 0x0000 (0x0058 - 0x0058)
@@ -1585,15 +1794,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionSetLeaderboardScore">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionSetLeaderboardScore")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionSetLeaderboardScore")
 	}
 	static class USteamCoreWebAsyncActionSetLeaderboardScore* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionSetLeaderboardScore>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionSetLeaderboardScore) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionSetLeaderboardScore");
-static_assert(sizeof(USteamCoreWebAsyncActionSetLeaderboardScore) == 0x000058, "Wrong size on USteamCoreWebAsyncActionSetLeaderboardScore");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionSetLeaderboardScore;
 
 // Class SteamCoreWeb.WebLobbyMatchmakingService
 // 0x0000 (0x0048 - 0x0048)
@@ -1606,15 +1818,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WebLobbyMatchmakingService">();
+		STATIC_CLASS_IMPL("WebLobbyMatchmakingService")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WebLobbyMatchmakingService")
 	}
 	static class UWebLobbyMatchmakingService* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWebLobbyMatchmakingService>();
 	}
 };
-static_assert(alignof(UWebLobbyMatchmakingService) == 0x000008, "Wrong alignment on UWebLobbyMatchmakingService");
-static_assert(sizeof(UWebLobbyMatchmakingService) == 0x000048, "Wrong size on UWebLobbyMatchmakingService");
+DUMPER7_ASSERTS_UWebLobbyMatchmakingService;
 
 // Class SteamCoreWeb.WebMicroTxn
 // 0x0000 (0x0048 - 0x0048)
@@ -1637,15 +1852,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WebMicroTxn">();
+		STATIC_CLASS_IMPL("WebMicroTxn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WebMicroTxn")
 	}
 	static class UWebMicroTxn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWebMicroTxn>();
 	}
 };
-static_assert(alignof(UWebMicroTxn) == 0x000008, "Wrong alignment on UWebMicroTxn");
-static_assert(sizeof(UWebMicroTxn) == 0x000048, "Wrong size on UWebMicroTxn");
+DUMPER7_ASSERTS_UWebMicroTxn;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionAdjustAgreement
 // 0x0000 (0x0058 - 0x0058)
@@ -1657,15 +1875,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionAdjustAgreement">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionAdjustAgreement")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionAdjustAgreement")
 	}
 	static class USteamCoreWebAsyncActionAdjustAgreement* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionAdjustAgreement>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionAdjustAgreement) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionAdjustAgreement");
-static_assert(sizeof(USteamCoreWebAsyncActionAdjustAgreement) == 0x000058, "Wrong size on USteamCoreWebAsyncActionAdjustAgreement");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionAdjustAgreement;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionCancelAgreement
 // 0x0000 (0x0058 - 0x0058)
@@ -1677,15 +1898,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionCancelAgreement">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionCancelAgreement")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionCancelAgreement")
 	}
 	static class USteamCoreWebAsyncActionCancelAgreement* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionCancelAgreement>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionCancelAgreement) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionCancelAgreement");
-static_assert(sizeof(USteamCoreWebAsyncActionCancelAgreement) == 0x000058, "Wrong size on USteamCoreWebAsyncActionCancelAgreement");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionCancelAgreement;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionFinalizeTxn
 // 0x0000 (0x0058 - 0x0058)
@@ -1697,15 +1921,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionFinalizeTxn">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionFinalizeTxn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionFinalizeTxn")
 	}
 	static class USteamCoreWebAsyncActionFinalizeTxn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionFinalizeTxn>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionFinalizeTxn) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionFinalizeTxn");
-static_assert(sizeof(USteamCoreWebAsyncActionFinalizeTxn) == 0x000058, "Wrong size on USteamCoreWebAsyncActionFinalizeTxn");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionFinalizeTxn;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetReport
 // 0x0000 (0x0058 - 0x0058)
@@ -1717,15 +1944,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetReport">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetReport")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetReport")
 	}
 	static class USteamCoreWebAsyncActionGetReport* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetReport>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetReport) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetReport");
-static_assert(sizeof(USteamCoreWebAsyncActionGetReport) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetReport");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetReport;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetUserAgreementInfo
 // 0x0000 (0x0058 - 0x0058)
@@ -1737,15 +1967,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetUserAgreementInfo">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetUserAgreementInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetUserAgreementInfo")
 	}
 	static class USteamCoreWebAsyncActionGetUserAgreementInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetUserAgreementInfo>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetUserAgreementInfo) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetUserAgreementInfo");
-static_assert(sizeof(USteamCoreWebAsyncActionGetUserAgreementInfo) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetUserAgreementInfo");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetUserAgreementInfo;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetUserInfo
 // 0x0000 (0x0058 - 0x0058)
@@ -1757,15 +1990,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetUserInfo">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetUserInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetUserInfo")
 	}
 	static class USteamCoreWebAsyncActionGetUserInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetUserInfo>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetUserInfo) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetUserInfo");
-static_assert(sizeof(USteamCoreWebAsyncActionGetUserInfo) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetUserInfo");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetUserInfo;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionInitTxn
 // 0x0000 (0x0058 - 0x0058)
@@ -1777,15 +2013,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionInitTxn">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionInitTxn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionInitTxn")
 	}
 	static class USteamCoreWebAsyncActionInitTxn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionInitTxn>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionInitTxn) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionInitTxn");
-static_assert(sizeof(USteamCoreWebAsyncActionInitTxn) == 0x000058, "Wrong size on USteamCoreWebAsyncActionInitTxn");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionInitTxn;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionProcessAgreement
 // 0x0000 (0x0058 - 0x0058)
@@ -1797,15 +2036,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionProcessAgreement">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionProcessAgreement")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionProcessAgreement")
 	}
 	static class USteamCoreWebAsyncActionProcessAgreement* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionProcessAgreement>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionProcessAgreement) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionProcessAgreement");
-static_assert(sizeof(USteamCoreWebAsyncActionProcessAgreement) == 0x000058, "Wrong size on USteamCoreWebAsyncActionProcessAgreement");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionProcessAgreement;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionQueryTxn
 // 0x0000 (0x0058 - 0x0058)
@@ -1817,15 +2059,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionQueryTxn">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionQueryTxn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionQueryTxn")
 	}
 	static class USteamCoreWebAsyncActionQueryTxn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionQueryTxn>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionQueryTxn) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionQueryTxn");
-static_assert(sizeof(USteamCoreWebAsyncActionQueryTxn) == 0x000058, "Wrong size on USteamCoreWebAsyncActionQueryTxn");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionQueryTxn;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionRefundTxn
 // 0x0000 (0x0058 - 0x0058)
@@ -1837,15 +2082,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionRefundTxn">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionRefundTxn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionRefundTxn")
 	}
 	static class USteamCoreWebAsyncActionRefundTxn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionRefundTxn>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionRefundTxn) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionRefundTxn");
-static_assert(sizeof(USteamCoreWebAsyncActionRefundTxn) == 0x000058, "Wrong size on USteamCoreWebAsyncActionRefundTxn");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionRefundTxn;
 
 // Class SteamCoreWeb.WebPlayerService
 // 0x0000 (0x0048 - 0x0048)
@@ -1862,15 +2110,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WebPlayerService">();
+		STATIC_CLASS_IMPL("WebPlayerService")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WebPlayerService")
 	}
 	static class UWebPlayerService* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWebPlayerService>();
 	}
 };
-static_assert(alignof(UWebPlayerService) == 0x000008, "Wrong alignment on UWebPlayerService");
-static_assert(sizeof(UWebPlayerService) == 0x000048, "Wrong size on UWebPlayerService");
+DUMPER7_ASSERTS_UWebPlayerService;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetRecentlyPlayedGames
 // 0x0000 (0x0058 - 0x0058)
@@ -1882,15 +2133,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetRecentlyPlayedGames">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetRecentlyPlayedGames")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetRecentlyPlayedGames")
 	}
 	static class USteamCoreWebAsyncActionGetRecentlyPlayedGames* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetRecentlyPlayedGames>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetRecentlyPlayedGames) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetRecentlyPlayedGames");
-static_assert(sizeof(USteamCoreWebAsyncActionGetRecentlyPlayedGames) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetRecentlyPlayedGames");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetRecentlyPlayedGames;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetOwnedGames
 // 0x0000 (0x0058 - 0x0058)
@@ -1902,15 +2156,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetOwnedGames">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetOwnedGames")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetOwnedGames")
 	}
 	static class USteamCoreWebAsyncActionGetOwnedGames* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetOwnedGames>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetOwnedGames) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetOwnedGames");
-static_assert(sizeof(USteamCoreWebAsyncActionGetOwnedGames) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetOwnedGames");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetOwnedGames;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetSteamLevel
 // 0x0000 (0x0058 - 0x0058)
@@ -1922,15 +2179,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetSteamLevel">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetSteamLevel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetSteamLevel")
 	}
 	static class USteamCoreWebAsyncActionGetSteamLevel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetSteamLevel>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetSteamLevel) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetSteamLevel");
-static_assert(sizeof(USteamCoreWebAsyncActionGetSteamLevel) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetSteamLevel");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetSteamLevel;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetBadges
 // 0x0000 (0x0058 - 0x0058)
@@ -1942,15 +2202,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetBadges">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetBadges")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetBadges")
 	}
 	static class USteamCoreWebAsyncActionGetBadges* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetBadges>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetBadges) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetBadges");
-static_assert(sizeof(USteamCoreWebAsyncActionGetBadges) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetBadges");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetBadges;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetCommunityBadgeProgress
 // 0x0000 (0x0058 - 0x0058)
@@ -1962,15 +2225,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetCommunityBadgeProgress">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetCommunityBadgeProgress")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetCommunityBadgeProgress")
 	}
 	static class USteamCoreWebAsyncActionGetCommunityBadgeProgress* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetCommunityBadgeProgress>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetCommunityBadgeProgress) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetCommunityBadgeProgress");
-static_assert(sizeof(USteamCoreWebAsyncActionGetCommunityBadgeProgress) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetCommunityBadgeProgress");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetCommunityBadgeProgress;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionIsPlayingSharedGame
 // 0x0000 (0x0058 - 0x0058)
@@ -1982,15 +2248,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionIsPlayingSharedGame">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionIsPlayingSharedGame")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionIsPlayingSharedGame")
 	}
 	static class USteamCoreWebAsyncActionIsPlayingSharedGame* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionIsPlayingSharedGame>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionIsPlayingSharedGame) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionIsPlayingSharedGame");
-static_assert(sizeof(USteamCoreWebAsyncActionIsPlayingSharedGame) == 0x000058, "Wrong size on USteamCoreWebAsyncActionIsPlayingSharedGame");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionIsPlayingSharedGame;
 
 // Class SteamCoreWeb.WebPublishedFileService
 // 0x0000 (0x0048 - 0x0048)
@@ -2006,15 +2275,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WebPublishedFileService">();
+		STATIC_CLASS_IMPL("WebPublishedFileService")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WebPublishedFileService")
 	}
 	static class UWebPublishedFileService* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWebPublishedFileService>();
 	}
 };
-static_assert(alignof(UWebPublishedFileService) == 0x000008, "Wrong alignment on UWebPublishedFileService");
-static_assert(sizeof(UWebPublishedFileService) == 0x000048, "Wrong size on UWebPublishedFileService");
+DUMPER7_ASSERTS_UWebPublishedFileService;
 
 // Class SteamCoreWeb.WebSteamPublishedItemSearch
 // 0x0000 (0x0048 - 0x0048)
@@ -2029,15 +2301,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WebSteamPublishedItemSearch">();
+		STATIC_CLASS_IMPL("WebSteamPublishedItemSearch")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WebSteamPublishedItemSearch")
 	}
 	static class UWebSteamPublishedItemSearch* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWebSteamPublishedItemSearch>();
 	}
 };
-static_assert(alignof(UWebSteamPublishedItemSearch) == 0x000008, "Wrong alignment on UWebSteamPublishedItemSearch");
-static_assert(sizeof(UWebSteamPublishedItemSearch) == 0x000048, "Wrong size on UWebSteamPublishedItemSearch");
+DUMPER7_ASSERTS_UWebSteamPublishedItemSearch;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionRankedByPublicationOrder
 // 0x0000 (0x0058 - 0x0058)
@@ -2049,15 +2324,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionRankedByPublicationOrder">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionRankedByPublicationOrder")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionRankedByPublicationOrder")
 	}
 	static class USteamCoreWebAsyncActionRankedByPublicationOrder* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionRankedByPublicationOrder>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionRankedByPublicationOrder) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionRankedByPublicationOrder");
-static_assert(sizeof(USteamCoreWebAsyncActionRankedByPublicationOrder) == 0x000058, "Wrong size on USteamCoreWebAsyncActionRankedByPublicationOrder");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionRankedByPublicationOrder;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionRankedByTrend
 // 0x0000 (0x0058 - 0x0058)
@@ -2069,15 +2347,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionRankedByTrend">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionRankedByTrend")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionRankedByTrend")
 	}
 	static class USteamCoreWebAsyncActionRankedByTrend* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionRankedByTrend>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionRankedByTrend) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionRankedByTrend");
-static_assert(sizeof(USteamCoreWebAsyncActionRankedByTrend) == 0x000058, "Wrong size on USteamCoreWebAsyncActionRankedByTrend");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionRankedByTrend;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionRankedByVote
 // 0x0000 (0x0058 - 0x0058)
@@ -2089,15 +2370,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionRankedByVote">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionRankedByVote")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionRankedByVote")
 	}
 	static class USteamCoreWebAsyncActionRankedByVote* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionRankedByVote>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionRankedByVote) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionRankedByVote");
-static_assert(sizeof(USteamCoreWebAsyncActionRankedByVote) == 0x000058, "Wrong size on USteamCoreWebAsyncActionRankedByVote");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionRankedByVote;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionResultSetSummary
 // 0x0000 (0x0058 - 0x0058)
@@ -2109,15 +2393,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionResultSetSummary">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionResultSetSummary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionResultSetSummary")
 	}
 	static class USteamCoreWebAsyncActionResultSetSummary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionResultSetSummary>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionResultSetSummary) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionResultSetSummary");
-static_assert(sizeof(USteamCoreWebAsyncActionResultSetSummary) == 0x000058, "Wrong size on USteamCoreWebAsyncActionResultSetSummary");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionResultSetSummary;
 
 // Class SteamCoreWeb.WebPublishedItemVoting
 // 0x0000 (0x0048 - 0x0048)
@@ -2130,15 +2417,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WebPublishedItemVoting">();
+		STATIC_CLASS_IMPL("WebPublishedItemVoting")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WebPublishedItemVoting")
 	}
 	static class UWebPublishedItemVoting* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWebPublishedItemVoting>();
 	}
 };
-static_assert(alignof(UWebPublishedItemVoting) == 0x000008, "Wrong alignment on UWebPublishedItemVoting");
-static_assert(sizeof(UWebPublishedItemVoting) == 0x000048, "Wrong size on UWebPublishedItemVoting");
+DUMPER7_ASSERTS_UWebPublishedItemVoting;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionItemVoteSummary
 // 0x0000 (0x0058 - 0x0058)
@@ -2150,15 +2440,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionItemVoteSummary">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionItemVoteSummary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionItemVoteSummary")
 	}
 	static class USteamCoreWebAsyncActionItemVoteSummary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionItemVoteSummary>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionItemVoteSummary) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionItemVoteSummary");
-static_assert(sizeof(USteamCoreWebAsyncActionItemVoteSummary) == 0x000058, "Wrong size on USteamCoreWebAsyncActionItemVoteSummary");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionItemVoteSummary;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionUserVoteSummary
 // 0x0000 (0x0058 - 0x0058)
@@ -2170,15 +2463,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionUserVoteSummary">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionUserVoteSummary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionUserVoteSummary")
 	}
 	static class USteamCoreWebAsyncActionUserVoteSummary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionUserVoteSummary>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionUserVoteSummary) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionUserVoteSummary");
-static_assert(sizeof(USteamCoreWebAsyncActionUserVoteSummary) == 0x000058, "Wrong size on USteamCoreWebAsyncActionUserVoteSummary");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionUserVoteSummary;
 
 // Class SteamCoreWeb.WebRemoteStorage
 // 0x0000 (0x0048 - 0x0048)
@@ -2197,15 +2493,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WebRemoteStorage">();
+		STATIC_CLASS_IMPL("WebRemoteStorage")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WebRemoteStorage")
 	}
 	static class UWebRemoteStorage* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWebRemoteStorage>();
 	}
 };
-static_assert(alignof(UWebRemoteStorage) == 0x000008, "Wrong alignment on UWebRemoteStorage");
-static_assert(sizeof(UWebRemoteStorage) == 0x000048, "Wrong size on UWebRemoteStorage");
+DUMPER7_ASSERTS_UWebRemoteStorage;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionEnumerateUserPublishedFiles
 // 0x0000 (0x0058 - 0x0058)
@@ -2217,15 +2516,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionEnumerateUserPublishedFiles">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionEnumerateUserPublishedFiles")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionEnumerateUserPublishedFiles")
 	}
 	static class USteamCoreWebAsyncActionEnumerateUserPublishedFiles* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionEnumerateUserPublishedFiles>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionEnumerateUserPublishedFiles) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionEnumerateUserPublishedFiles");
-static_assert(sizeof(USteamCoreWebAsyncActionEnumerateUserPublishedFiles) == 0x000058, "Wrong size on USteamCoreWebAsyncActionEnumerateUserPublishedFiles");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionEnumerateUserPublishedFiles;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionEnumerateUserSubscribedFiles
 // 0x0000 (0x0058 - 0x0058)
@@ -2237,15 +2539,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionEnumerateUserSubscribedFiles">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionEnumerateUserSubscribedFiles")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionEnumerateUserSubscribedFiles")
 	}
 	static class USteamCoreWebAsyncActionEnumerateUserSubscribedFiles* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionEnumerateUserSubscribedFiles>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionEnumerateUserSubscribedFiles) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionEnumerateUserSubscribedFiles");
-static_assert(sizeof(USteamCoreWebAsyncActionEnumerateUserSubscribedFiles) == 0x000058, "Wrong size on USteamCoreWebAsyncActionEnumerateUserSubscribedFiles");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionEnumerateUserSubscribedFiles;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetCollectionDetails
 // 0x0000 (0x0058 - 0x0058)
@@ -2257,15 +2562,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetCollectionDetails">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetCollectionDetails")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetCollectionDetails")
 	}
 	static class USteamCoreWebAsyncActionGetCollectionDetails* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetCollectionDetails>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetCollectionDetails) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetCollectionDetails");
-static_assert(sizeof(USteamCoreWebAsyncActionGetCollectionDetails) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetCollectionDetails");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetCollectionDetails;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetPublishedFileDetails
 // 0x0000 (0x0058 - 0x0058)
@@ -2277,15 +2585,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetPublishedFileDetails">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetPublishedFileDetails")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetPublishedFileDetails")
 	}
 	static class USteamCoreWebAsyncActionGetPublishedFileDetails* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetPublishedFileDetails>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetPublishedFileDetails) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetPublishedFileDetails");
-static_assert(sizeof(USteamCoreWebAsyncActionGetPublishedFileDetails) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetPublishedFileDetails");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetPublishedFileDetails;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetUGCFileDetails
 // 0x0000 (0x0058 - 0x0058)
@@ -2297,15 +2608,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetUGCFileDetails">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetUGCFileDetails")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetUGCFileDetails")
 	}
 	static class USteamCoreWebAsyncActionGetUGCFileDetails* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetUGCFileDetails>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetUGCFileDetails) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetUGCFileDetails");
-static_assert(sizeof(USteamCoreWebAsyncActionGetUGCFileDetails) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetUGCFileDetails");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetUGCFileDetails;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionSetUGCUsedByGC
 // 0x0000 (0x0058 - 0x0058)
@@ -2317,15 +2631,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionSetUGCUsedByGC">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionSetUGCUsedByGC")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionSetUGCUsedByGC")
 	}
 	static class USteamCoreWebAsyncActionSetUGCUsedByGC* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionSetUGCUsedByGC>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionSetUGCUsedByGC) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionSetUGCUsedByGC");
-static_assert(sizeof(USteamCoreWebAsyncActionSetUGCUsedByGC) == 0x000058, "Wrong size on USteamCoreWebAsyncActionSetUGCUsedByGC");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionSetUGCUsedByGC;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionSubscribePublishedFile
 // 0x0000 (0x0058 - 0x0058)
@@ -2337,15 +2654,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionSubscribePublishedFile">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionSubscribePublishedFile")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionSubscribePublishedFile")
 	}
 	static class USteamCoreWebAsyncActionSubscribePublishedFile* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionSubscribePublishedFile>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionSubscribePublishedFile) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionSubscribePublishedFile");
-static_assert(sizeof(USteamCoreWebAsyncActionSubscribePublishedFile) == 0x000058, "Wrong size on USteamCoreWebAsyncActionSubscribePublishedFile");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionSubscribePublishedFile;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionUnsubscribePublishedFile
 // 0x0000 (0x0058 - 0x0058)
@@ -2357,15 +2677,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionUnsubscribePublishedFile">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionUnsubscribePublishedFile")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionUnsubscribePublishedFile")
 	}
 	static class USteamCoreWebAsyncActionUnsubscribePublishedFile* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionUnsubscribePublishedFile>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionUnsubscribePublishedFile) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionUnsubscribePublishedFile");
-static_assert(sizeof(USteamCoreWebAsyncActionUnsubscribePublishedFile) == 0x000058, "Wrong size on USteamCoreWebAsyncActionUnsubscribePublishedFile");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionUnsubscribePublishedFile;
 
 // Class SteamCoreWeb.WebSteamCommunity
 // 0x0000 (0x0048 - 0x0048)
@@ -2377,15 +2700,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WebSteamCommunity">();
+		STATIC_CLASS_IMPL("WebSteamCommunity")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WebSteamCommunity")
 	}
 	static class UWebSteamCommunity* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWebSteamCommunity>();
 	}
 };
-static_assert(alignof(UWebSteamCommunity) == 0x000008, "Wrong alignment on UWebSteamCommunity");
-static_assert(sizeof(UWebSteamCommunity) == 0x000048, "Wrong size on UWebSteamCommunity");
+DUMPER7_ASSERTS_UWebSteamCommunity;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionReportAbuse
 // 0x0000 (0x0058 - 0x0058)
@@ -2397,15 +2723,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionReportAbuse">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionReportAbuse")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionReportAbuse")
 	}
 	static class USteamCoreWebAsyncActionReportAbuse* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionReportAbuse>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionReportAbuse) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionReportAbuse");
-static_assert(sizeof(USteamCoreWebAsyncActionReportAbuse) == 0x000058, "Wrong size on USteamCoreWebAsyncActionReportAbuse");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionReportAbuse;
 
 // Class SteamCoreWeb.WebSteamEconomy
 // 0x0000 (0x0048 - 0x0048)
@@ -2424,15 +2753,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WebSteamEconomy">();
+		STATIC_CLASS_IMPL("WebSteamEconomy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WebSteamEconomy")
 	}
 	static class UWebSteamEconomy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWebSteamEconomy>();
 	}
 };
-static_assert(alignof(UWebSteamEconomy) == 0x000008, "Wrong alignment on UWebSteamEconomy");
-static_assert(sizeof(UWebSteamEconomy) == 0x000048, "Wrong size on UWebSteamEconomy");
+DUMPER7_ASSERTS_UWebSteamEconomy;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionCanTrade
 // 0x0000 (0x0058 - 0x0058)
@@ -2444,15 +2776,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionCanTrade">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionCanTrade")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionCanTrade")
 	}
 	static class USteamCoreWebAsyncActionCanTrade* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionCanTrade>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionCanTrade) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionCanTrade");
-static_assert(sizeof(USteamCoreWebAsyncActionCanTrade) == 0x000058, "Wrong size on USteamCoreWebAsyncActionCanTrade");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionCanTrade;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionFinalizeAssetTransaction
 // 0x0000 (0x0058 - 0x0058)
@@ -2464,15 +2799,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionFinalizeAssetTransaction">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionFinalizeAssetTransaction")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionFinalizeAssetTransaction")
 	}
 	static class USteamCoreWebAsyncActionFinalizeAssetTransaction* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionFinalizeAssetTransaction>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionFinalizeAssetTransaction) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionFinalizeAssetTransaction");
-static_assert(sizeof(USteamCoreWebAsyncActionFinalizeAssetTransaction) == 0x000058, "Wrong size on USteamCoreWebAsyncActionFinalizeAssetTransaction");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionFinalizeAssetTransaction;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetAssetClassInfo
 // 0x0000 (0x0058 - 0x0058)
@@ -2484,15 +2822,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetAssetClassInfo">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetAssetClassInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetAssetClassInfo")
 	}
 	static class USteamCoreWebAsyncActionGetAssetClassInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetAssetClassInfo>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetAssetClassInfo) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetAssetClassInfo");
-static_assert(sizeof(USteamCoreWebAsyncActionGetAssetClassInfo) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetAssetClassInfo");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetAssetClassInfo;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetAssetPrices
 // 0x0000 (0x0058 - 0x0058)
@@ -2504,15 +2845,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetAssetPrices">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetAssetPrices")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetAssetPrices")
 	}
 	static class USteamCoreWebAsyncActionGetAssetPrices* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetAssetPrices>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetAssetPrices) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetAssetPrices");
-static_assert(sizeof(USteamCoreWebAsyncActionGetAssetPrices) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetAssetPrices");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetAssetPrices;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetExportedAssetsForUser
 // 0x0000 (0x0058 - 0x0058)
@@ -2524,15 +2868,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetExportedAssetsForUser">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetExportedAssetsForUser")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetExportedAssetsForUser")
 	}
 	static class USteamCoreWebAsyncActionGetExportedAssetsForUser* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetExportedAssetsForUser>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetExportedAssetsForUser) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetExportedAssetsForUser");
-static_assert(sizeof(USteamCoreWebAsyncActionGetExportedAssetsForUser) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetExportedAssetsForUser");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetExportedAssetsForUser;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetMarketPrices
 // 0x0000 (0x0058 - 0x0058)
@@ -2544,15 +2891,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetMarketPrices">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetMarketPrices")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetMarketPrices")
 	}
 	static class USteamCoreWebAsyncActionGetMarketPrices* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetMarketPrices>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetMarketPrices) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetMarketPrices");
-static_assert(sizeof(USteamCoreWebAsyncActionGetMarketPrices) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetMarketPrices");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetMarketPrices;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionStartAssetTransaction
 // 0x0000 (0x0058 - 0x0058)
@@ -2564,15 +2914,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionStartAssetTransaction">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionStartAssetTransaction")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionStartAssetTransaction")
 	}
 	static class USteamCoreWebAsyncActionStartAssetTransaction* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionStartAssetTransaction>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionStartAssetTransaction) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionStartAssetTransaction");
-static_assert(sizeof(USteamCoreWebAsyncActionStartAssetTransaction) == 0x000058, "Wrong size on USteamCoreWebAsyncActionStartAssetTransaction");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionStartAssetTransaction;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionStartTrade
 // 0x0000 (0x0058 - 0x0058)
@@ -2584,15 +2937,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionStartTrade">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionStartTrade")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionStartTrade")
 	}
 	static class USteamCoreWebAsyncActionStartTrade* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionStartTrade>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionStartTrade) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionStartTrade");
-static_assert(sizeof(USteamCoreWebAsyncActionStartTrade) == 0x000058, "Wrong size on USteamCoreWebAsyncActionStartTrade");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionStartTrade;
 
 // Class SteamCoreWeb.WebSteamGameServerStats
 // 0x0000 (0x0048 - 0x0048)
@@ -2604,15 +2960,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WebSteamGameServerStats">();
+		STATIC_CLASS_IMPL("WebSteamGameServerStats")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WebSteamGameServerStats")
 	}
 	static class UWebSteamGameServerStats* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWebSteamGameServerStats>();
 	}
 };
-static_assert(alignof(UWebSteamGameServerStats) == 0x000008, "Wrong alignment on UWebSteamGameServerStats");
-static_assert(sizeof(UWebSteamGameServerStats) == 0x000048, "Wrong size on UWebSteamGameServerStats");
+DUMPER7_ASSERTS_UWebSteamGameServerStats;
 
 // Class SteamCoreWeb.WebSteamNews
 // 0x0000 (0x0048 - 0x0048)
@@ -2625,15 +2984,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WebSteamNews">();
+		STATIC_CLASS_IMPL("WebSteamNews")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WebSteamNews")
 	}
 	static class UWebSteamNews* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWebSteamNews>();
 	}
 };
-static_assert(alignof(UWebSteamNews) == 0x000008, "Wrong alignment on UWebSteamNews");
-static_assert(sizeof(UWebSteamNews) == 0x000048, "Wrong size on UWebSteamNews");
+DUMPER7_ASSERTS_UWebSteamNews;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetNewsForApp
 // 0x0000 (0x0058 - 0x0058)
@@ -2645,15 +3007,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetNewsForApp">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetNewsForApp")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetNewsForApp")
 	}
 	static class USteamCoreWebAsyncActionGetNewsForApp* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetNewsForApp>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetNewsForApp) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetNewsForApp");
-static_assert(sizeof(USteamCoreWebAsyncActionGetNewsForApp) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetNewsForApp");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetNewsForApp;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetNewsForAppAuthed
 // 0x0000 (0x0058 - 0x0058)
@@ -2665,15 +3030,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetNewsForAppAuthed">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetNewsForAppAuthed")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetNewsForAppAuthed")
 	}
 	static class USteamCoreWebAsyncActionGetNewsForAppAuthed* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetNewsForAppAuthed>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetNewsForAppAuthed) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetNewsForAppAuthed");
-static_assert(sizeof(USteamCoreWebAsyncActionGetNewsForAppAuthed) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetNewsForAppAuthed");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetNewsForAppAuthed;
 
 // Class SteamCoreWeb.WebSteamUser
 // 0x0000 (0x0048 - 0x0048)
@@ -2694,15 +3062,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WebSteamUser">();
+		STATIC_CLASS_IMPL("WebSteamUser")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WebSteamUser")
 	}
 	static class UWebSteamUser* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWebSteamUser>();
 	}
 };
-static_assert(alignof(UWebSteamUser) == 0x000008, "Wrong alignment on UWebSteamUser");
-static_assert(sizeof(UWebSteamUser) == 0x000048, "Wrong size on UWebSteamUser");
+DUMPER7_ASSERTS_UWebSteamUser;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionCheckAppOwnership
 // 0x0000 (0x0058 - 0x0058)
@@ -2714,15 +3085,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionCheckAppOwnership">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionCheckAppOwnership")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionCheckAppOwnership")
 	}
 	static class USteamCoreWebAsyncActionCheckAppOwnership* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionCheckAppOwnership>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionCheckAppOwnership) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionCheckAppOwnership");
-static_assert(sizeof(USteamCoreWebAsyncActionCheckAppOwnership) == 0x000058, "Wrong size on USteamCoreWebAsyncActionCheckAppOwnership");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionCheckAppOwnership;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetAppPriceInfo
 // 0x0000 (0x0058 - 0x0058)
@@ -2734,15 +3108,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetAppPriceInfo">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetAppPriceInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetAppPriceInfo")
 	}
 	static class USteamCoreWebAsyncActionGetAppPriceInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetAppPriceInfo>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetAppPriceInfo) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetAppPriceInfo");
-static_assert(sizeof(USteamCoreWebAsyncActionGetAppPriceInfo) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetAppPriceInfo");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetAppPriceInfo;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetFriendList
 // 0x0000 (0x0058 - 0x0058)
@@ -2754,15 +3131,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetFriendList">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetFriendList")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetFriendList")
 	}
 	static class USteamCoreWebAsyncActionGetFriendList* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetFriendList>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetFriendList) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetFriendList");
-static_assert(sizeof(USteamCoreWebAsyncActionGetFriendList) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetFriendList");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetFriendList;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetPlayerBans
 // 0x0000 (0x0058 - 0x0058)
@@ -2774,15 +3154,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetPlayerBans">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetPlayerBans")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetPlayerBans")
 	}
 	static class USteamCoreWebAsyncActionGetPlayerBans* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetPlayerBans>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetPlayerBans) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetPlayerBans");
-static_assert(sizeof(USteamCoreWebAsyncActionGetPlayerBans) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetPlayerBans");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetPlayerBans;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetPlayerSummaries
 // 0x0000 (0x0058 - 0x0058)
@@ -2794,15 +3177,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetPlayerSummaries">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetPlayerSummaries")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetPlayerSummaries")
 	}
 	static class USteamCoreWebAsyncActionGetPlayerSummaries* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetPlayerSummaries>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetPlayerSummaries) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetPlayerSummaries");
-static_assert(sizeof(USteamCoreWebAsyncActionGetPlayerSummaries) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetPlayerSummaries");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetPlayerSummaries;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetPublisherAppOwnership
 // 0x0000 (0x0058 - 0x0058)
@@ -2814,15 +3200,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetPublisherAppOwnership">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetPublisherAppOwnership")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetPublisherAppOwnership")
 	}
 	static class USteamCoreWebAsyncActionGetPublisherAppOwnership* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetPublisherAppOwnership>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetPublisherAppOwnership) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetPublisherAppOwnership");
-static_assert(sizeof(USteamCoreWebAsyncActionGetPublisherAppOwnership) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetPublisherAppOwnership");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetPublisherAppOwnership;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetPublisherAppOwnershipChanges
 // 0x0000 (0x0058 - 0x0058)
@@ -2834,15 +3223,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetPublisherAppOwnershipChanges">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetPublisherAppOwnershipChanges")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetPublisherAppOwnershipChanges")
 	}
 	static class USteamCoreWebAsyncActionGetPublisherAppOwnershipChanges* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetPublisherAppOwnershipChanges>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetPublisherAppOwnershipChanges) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetPublisherAppOwnershipChanges");
-static_assert(sizeof(USteamCoreWebAsyncActionGetPublisherAppOwnershipChanges) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetPublisherAppOwnershipChanges");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetPublisherAppOwnershipChanges;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetUserGroupList
 // 0x0000 (0x0058 - 0x0058)
@@ -2854,15 +3246,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetUserGroupList">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetUserGroupList")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetUserGroupList")
 	}
 	static class USteamCoreWebAsyncActionGetUserGroupList* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetUserGroupList>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetUserGroupList) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetUserGroupList");
-static_assert(sizeof(USteamCoreWebAsyncActionGetUserGroupList) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetUserGroupList");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetUserGroupList;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGrantPackage
 // 0x0000 (0x0058 - 0x0058)
@@ -2874,15 +3269,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGrantPackage">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGrantPackage")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGrantPackage")
 	}
 	static class USteamCoreWebAsyncActionGrantPackage* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGrantPackage>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGrantPackage) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGrantPackage");
-static_assert(sizeof(USteamCoreWebAsyncActionGrantPackage) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGrantPackage");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGrantPackage;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionResolveVanityURL
 // 0x0000 (0x0058 - 0x0058)
@@ -2894,15 +3292,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionResolveVanityURL">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionResolveVanityURL")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionResolveVanityURL")
 	}
 	static class USteamCoreWebAsyncActionResolveVanityURL* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionResolveVanityURL>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionResolveVanityURL) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionResolveVanityURL");
-static_assert(sizeof(USteamCoreWebAsyncActionResolveVanityURL) == 0x000058, "Wrong size on USteamCoreWebAsyncActionResolveVanityURL");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionResolveVanityURL;
 
 // Class SteamCoreWeb.WebUserAuth
 // 0x0000 (0x0048 - 0x0048)
@@ -2915,15 +3316,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WebUserAuth">();
+		STATIC_CLASS_IMPL("WebUserAuth")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WebUserAuth")
 	}
 	static class UWebUserAuth* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWebUserAuth>();
 	}
 };
-static_assert(alignof(UWebUserAuth) == 0x000008, "Wrong alignment on UWebUserAuth");
-static_assert(sizeof(UWebUserAuth) == 0x000048, "Wrong size on UWebUserAuth");
+DUMPER7_ASSERTS_UWebUserAuth;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionAuthenticateUser
 // 0x0000 (0x0058 - 0x0058)
@@ -2935,15 +3339,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionAuthenticateUser">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionAuthenticateUser")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionAuthenticateUser")
 	}
 	static class USteamCoreWebAsyncActionAuthenticateUser* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionAuthenticateUser>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionAuthenticateUser) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionAuthenticateUser");
-static_assert(sizeof(USteamCoreWebAsyncActionAuthenticateUser) == 0x000058, "Wrong size on USteamCoreWebAsyncActionAuthenticateUser");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionAuthenticateUser;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionAuthenticateUserTicket
 // 0x0000 (0x0058 - 0x0058)
@@ -2955,15 +3362,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionAuthenticateUserTicket">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionAuthenticateUserTicket")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionAuthenticateUserTicket")
 	}
 	static class USteamCoreWebAsyncActionAuthenticateUserTicket* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionAuthenticateUserTicket>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionAuthenticateUserTicket) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionAuthenticateUserTicket");
-static_assert(sizeof(USteamCoreWebAsyncActionAuthenticateUserTicket) == 0x000058, "Wrong size on USteamCoreWebAsyncActionAuthenticateUserTicket");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionAuthenticateUserTicket;
 
 // Class SteamCoreWeb.WebUserStats
 // 0x0000 (0x0048 - 0x0048)
@@ -2981,15 +3391,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WebUserStats">();
+		STATIC_CLASS_IMPL("WebUserStats")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WebUserStats")
 	}
 	static class UWebUserStats* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWebUserStats>();
 	}
 };
-static_assert(alignof(UWebUserStats) == 0x000008, "Wrong alignment on UWebUserStats");
-static_assert(sizeof(UWebUserStats) == 0x000048, "Wrong size on UWebUserStats");
+DUMPER7_ASSERTS_UWebUserStats;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetGlobalAchievementPercentagesForApp
 // 0x0000 (0x0058 - 0x0058)
@@ -3001,15 +3414,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetGlobalAchievementPercentagesForApp">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetGlobalAchievementPercentagesForApp")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetGlobalAchievementPercentagesForApp")
 	}
 	static class USteamCoreWebAsyncActionGetGlobalAchievementPercentagesForApp* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetGlobalAchievementPercentagesForApp>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetGlobalAchievementPercentagesForApp) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetGlobalAchievementPercentagesForApp");
-static_assert(sizeof(USteamCoreWebAsyncActionGetGlobalAchievementPercentagesForApp) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetGlobalAchievementPercentagesForApp");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetGlobalAchievementPercentagesForApp;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetGlobalStatsForGame
 // 0x0000 (0x0058 - 0x0058)
@@ -3021,15 +3437,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetGlobalStatsForGame">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetGlobalStatsForGame")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetGlobalStatsForGame")
 	}
 	static class USteamCoreWebAsyncActionGetGlobalStatsForGame* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetGlobalStatsForGame>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetGlobalStatsForGame) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetGlobalStatsForGame");
-static_assert(sizeof(USteamCoreWebAsyncActionGetGlobalStatsForGame) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetGlobalStatsForGame");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetGlobalStatsForGame;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetNumberOfCurrentPlayers
 // 0x0000 (0x0058 - 0x0058)
@@ -3041,15 +3460,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetNumberOfCurrentPlayers">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetNumberOfCurrentPlayers")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetNumberOfCurrentPlayers")
 	}
 	static class USteamCoreWebAsyncActionGetNumberOfCurrentPlayers* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetNumberOfCurrentPlayers>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetNumberOfCurrentPlayers) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetNumberOfCurrentPlayers");
-static_assert(sizeof(USteamCoreWebAsyncActionGetNumberOfCurrentPlayers) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetNumberOfCurrentPlayers");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetNumberOfCurrentPlayers;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetPlayerAchievements
 // 0x0000 (0x0058 - 0x0058)
@@ -3061,15 +3483,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetPlayerAchievements">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetPlayerAchievements")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetPlayerAchievements")
 	}
 	static class USteamCoreWebAsyncActionGetPlayerAchievements* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetPlayerAchievements>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetPlayerAchievements) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetPlayerAchievements");
-static_assert(sizeof(USteamCoreWebAsyncActionGetPlayerAchievements) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetPlayerAchievements");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetPlayerAchievements;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetSchemaForGame
 // 0x0000 (0x0058 - 0x0058)
@@ -3081,15 +3506,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetSchemaForGame">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetSchemaForGame")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetSchemaForGame")
 	}
 	static class USteamCoreWebAsyncActionGetSchemaForGame* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetSchemaForGame>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetSchemaForGame) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetSchemaForGame");
-static_assert(sizeof(USteamCoreWebAsyncActionGetSchemaForGame) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetSchemaForGame");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetSchemaForGame;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionGetUserStatsForGame
 // 0x0000 (0x0058 - 0x0058)
@@ -3101,15 +3529,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionGetUserStatsForGame">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionGetUserStatsForGame")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionGetUserStatsForGame")
 	}
 	static class USteamCoreWebAsyncActionGetUserStatsForGame* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionGetUserStatsForGame>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionGetUserStatsForGame) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionGetUserStatsForGame");
-static_assert(sizeof(USteamCoreWebAsyncActionGetUserStatsForGame) == 0x000058, "Wrong size on USteamCoreWebAsyncActionGetUserStatsForGame");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionGetUserStatsForGame;
 
 // Class SteamCoreWeb.SteamCoreWebAsyncActionSetUserStatsForGame
 // 0x0000 (0x0058 - 0x0058)
@@ -3121,15 +3552,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreWebAsyncActionSetUserStatsForGame">();
+		STATIC_CLASS_IMPL("SteamCoreWebAsyncActionSetUserStatsForGame")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreWebAsyncActionSetUserStatsForGame")
 	}
 	static class USteamCoreWebAsyncActionSetUserStatsForGame* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreWebAsyncActionSetUserStatsForGame>();
 	}
 };
-static_assert(alignof(USteamCoreWebAsyncActionSetUserStatsForGame) == 0x000008, "Wrong alignment on USteamCoreWebAsyncActionSetUserStatsForGame");
-static_assert(sizeof(USteamCoreWebAsyncActionSetUserStatsForGame) == 0x000058, "Wrong size on USteamCoreWebAsyncActionSetUserStatsForGame");
+DUMPER7_ASSERTS_USteamCoreWebAsyncActionSetUserStatsForGame;
 
 }
 

@@ -24,11 +24,7 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTextureRenderTarget2D*                 CallFunc_CreateRenderTarget2D_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Scope_MarkmanHunter_LongRifle_C_ExecuteUbergraph_Scope_MarkmanHunter_LongRifle) == 0x000008, "Wrong alignment on Scope_MarkmanHunter_LongRifle_C_ExecuteUbergraph_Scope_MarkmanHunter_LongRifle");
-static_assert(sizeof(Scope_MarkmanHunter_LongRifle_C_ExecuteUbergraph_Scope_MarkmanHunter_LongRifle) == 0x000018, "Wrong size on Scope_MarkmanHunter_LongRifle_C_ExecuteUbergraph_Scope_MarkmanHunter_LongRifle");
-static_assert(offsetof(Scope_MarkmanHunter_LongRifle_C_ExecuteUbergraph_Scope_MarkmanHunter_LongRifle, EntryPoint) == 0x000000, "Member 'Scope_MarkmanHunter_LongRifle_C_ExecuteUbergraph_Scope_MarkmanHunter_LongRifle::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Scope_MarkmanHunter_LongRifle_C_ExecuteUbergraph_Scope_MarkmanHunter_LongRifle, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000008, "Member 'Scope_MarkmanHunter_LongRifle_C_ExecuteUbergraph_Scope_MarkmanHunter_LongRifle::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Scope_MarkmanHunter_LongRifle_C_ExecuteUbergraph_Scope_MarkmanHunter_LongRifle, CallFunc_CreateRenderTarget2D_ReturnValue) == 0x000010, "Member 'Scope_MarkmanHunter_LongRifle_C_ExecuteUbergraph_Scope_MarkmanHunter_LongRifle::CallFunc_CreateRenderTarget2D_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_Scope_MarkmanHunter_LongRifle_C_ExecuteUbergraph_Scope_MarkmanHunter_LongRifle;
 
 }
 

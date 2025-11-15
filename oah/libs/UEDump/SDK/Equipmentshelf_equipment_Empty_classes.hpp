@@ -37,21 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Equipmentshelf_equipment_Empty_C">();
+		BP_STATIC_CLASS_IMPL("Equipmentshelf_equipment_Empty_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Equipmentshelf_equipment_Empty_C")
 	}
 	static class AEquipmentshelf_equipment_Empty_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AEquipmentshelf_equipment_Empty_C>();
 	}
 };
-static_assert(alignof(AEquipmentshelf_equipment_Empty_C) == 0x000008, "Wrong alignment on AEquipmentshelf_equipment_Empty_C");
-static_assert(sizeof(AEquipmentshelf_equipment_Empty_C) == 0x000278, "Wrong size on AEquipmentshelf_equipment_Empty_C");
-static_assert(offsetof(AEquipmentshelf_equipment_Empty_C, UberGraphFrame) == 0x000240, "Member 'AEquipmentshelf_equipment_Empty_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AEquipmentshelf_equipment_Empty_C, SM_Prop_CardboardBox_04) == 0x000248, "Member 'AEquipmentshelf_equipment_Empty_C::SM_Prop_CardboardBox_04' has a wrong offset!");
-static_assert(offsetof(AEquipmentshelf_equipment_Empty_C, SM_Prop_CardboardBox_03) == 0x000250, "Member 'AEquipmentshelf_equipment_Empty_C::SM_Prop_CardboardBox_03' has a wrong offset!");
-static_assert(offsetof(AEquipmentshelf_equipment_Empty_C, SM_Prop_CardboardBox_02) == 0x000258, "Member 'AEquipmentshelf_equipment_Empty_C::SM_Prop_CardboardBox_02' has a wrong offset!");
-static_assert(offsetof(AEquipmentshelf_equipment_Empty_C, SM_Prop_CardboardBox_01) == 0x000260, "Member 'AEquipmentshelf_equipment_Empty_C::SM_Prop_CardboardBox_01' has a wrong offset!");
-static_assert(offsetof(AEquipmentshelf_equipment_Empty_C, Meshes) == 0x000268, "Member 'AEquipmentshelf_equipment_Empty_C::Meshes' has a wrong offset!");
+DUMPER7_ASSERTS_AEquipmentshelf_equipment_Empty_C;
 
 }
 

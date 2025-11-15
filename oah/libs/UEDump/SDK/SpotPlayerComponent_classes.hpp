@@ -26,7 +26,7 @@ public:
 	class APlayerCharacter_C*                     SpottedPlayer;                                     // 0x00B8(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Spot_time;                                         // 0x00C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_C4[0x4];                                       // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(class APawn* Player)> PlayerSpotted;                                     // 0x00C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(class APawn* Player)> PlayerSpotted;                               // 0x00C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	TMulticastInlineDelegate<void()>              CancelPlayerSpotted;                               // 0x00D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class UWarningDirectionIndicator_C*           WarningWidget;                                     // 0x00E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          FloatingWarning_;                                  // 0x00F0(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -47,25 +47,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SpotPlayerComponent_C">();
+		BP_STATIC_CLASS_IMPL("SpotPlayerComponent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SpotPlayerComponent_C")
 	}
 	static class USpotPlayerComponent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USpotPlayerComponent_C>();
 	}
 };
-static_assert(alignof(USpotPlayerComponent_C) == 0x000008, "Wrong alignment on USpotPlayerComponent_C");
-static_assert(sizeof(USpotPlayerComponent_C) == 0x000110, "Wrong size on USpotPlayerComponent_C");
-static_assert(offsetof(USpotPlayerComponent_C, UberGraphFrame) == 0x0000B0, "Member 'USpotPlayerComponent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USpotPlayerComponent_C, SpottedPlayer) == 0x0000B8, "Member 'USpotPlayerComponent_C::SpottedPlayer' has a wrong offset!");
-static_assert(offsetof(USpotPlayerComponent_C, Spot_time) == 0x0000C0, "Member 'USpotPlayerComponent_C::Spot_time' has a wrong offset!");
-static_assert(offsetof(USpotPlayerComponent_C, PlayerSpotted) == 0x0000C8, "Member 'USpotPlayerComponent_C::PlayerSpotted' has a wrong offset!");
-static_assert(offsetof(USpotPlayerComponent_C, CancelPlayerSpotted) == 0x0000D8, "Member 'USpotPlayerComponent_C::CancelPlayerSpotted' has a wrong offset!");
-static_assert(offsetof(USpotPlayerComponent_C, WarningWidget) == 0x0000E8, "Member 'USpotPlayerComponent_C::WarningWidget' has a wrong offset!");
-static_assert(offsetof(USpotPlayerComponent_C, FloatingWarning_) == 0x0000F0, "Member 'USpotPlayerComponent_C::FloatingWarning_' has a wrong offset!");
-static_assert(offsetof(USpotPlayerComponent_C, StartSpotSound) == 0x0000F8, "Member 'USpotPlayerComponent_C::StartSpotSound' has a wrong offset!");
-static_assert(offsetof(USpotPlayerComponent_C, SpottedSound) == 0x000100, "Member 'USpotPlayerComponent_C::SpottedSound' has a wrong offset!");
-static_assert(offsetof(USpotPlayerComponent_C, AlwaysStartSoundAt0) == 0x000108, "Member 'USpotPlayerComponent_C::AlwaysStartSoundAt0' has a wrong offset!");
+DUMPER7_ASSERTS_USpotPlayerComponent_C;
 
 }
 

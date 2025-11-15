@@ -29,19 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MenuCamera_C">();
+		BP_STATIC_CLASS_IMPL("MenuCamera_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MenuCamera_C")
 	}
 	static class AMenuCamera_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMenuCamera_C>();
 	}
 };
-static_assert(alignof(AMenuCamera_C) == 0x000008, "Wrong alignment on AMenuCamera_C");
-static_assert(sizeof(AMenuCamera_C) == 0x000248, "Wrong size on AMenuCamera_C");
-static_assert(offsetof(AMenuCamera_C, Camera) == 0x000220, "Member 'AMenuCamera_C::Camera' has a wrong offset!");
-static_assert(offsetof(AMenuCamera_C, DefaultSceneRoot) == 0x000228, "Member 'AMenuCamera_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AMenuCamera_C, Name_0) == 0x000230, "Member 'AMenuCamera_C::Name_0' has a wrong offset!");
-static_assert(offsetof(AMenuCamera_C, TransitionTime) == 0x000240, "Member 'AMenuCamera_C::TransitionTime' has a wrong offset!");
+DUMPER7_ASSERTS_AMenuCamera_C;
 
 }
 

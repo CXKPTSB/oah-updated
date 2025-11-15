@@ -122,8 +122,7 @@ struct alignas(0x08) FBPUniqueNetId final
 public:
 	uint8                                         Pad_0[0x20];                                       // 0x0000(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FBPUniqueNetId) == 0x000008, "Wrong alignment on FBPUniqueNetId");
-static_assert(sizeof(FBPUniqueNetId) == 0x000020, "Wrong size on FBPUniqueNetId");
+DUMPER7_ASSERTS_FBPUniqueNetId;
 
 // ScriptStruct AdvancedSessions.BPFriendPresenceInfo
 // 0x0018 (0x0018 - 0x0000)
@@ -139,15 +138,7 @@ public:
 	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 StatusString;                                      // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FBPFriendPresenceInfo) == 0x000008, "Wrong alignment on FBPFriendPresenceInfo");
-static_assert(sizeof(FBPFriendPresenceInfo) == 0x000018, "Wrong size on FBPFriendPresenceInfo");
-static_assert(offsetof(FBPFriendPresenceInfo, bIsOnline) == 0x000000, "Member 'FBPFriendPresenceInfo::bIsOnline' has a wrong offset!");
-static_assert(offsetof(FBPFriendPresenceInfo, BIsPlaying) == 0x000001, "Member 'FBPFriendPresenceInfo::BIsPlaying' has a wrong offset!");
-static_assert(offsetof(FBPFriendPresenceInfo, bIsPlayingThisGame) == 0x000002, "Member 'FBPFriendPresenceInfo::bIsPlayingThisGame' has a wrong offset!");
-static_assert(offsetof(FBPFriendPresenceInfo, bIsJoinable) == 0x000003, "Member 'FBPFriendPresenceInfo::bIsJoinable' has a wrong offset!");
-static_assert(offsetof(FBPFriendPresenceInfo, bHasVoiceSupport) == 0x000004, "Member 'FBPFriendPresenceInfo::bHasVoiceSupport' has a wrong offset!");
-static_assert(offsetof(FBPFriendPresenceInfo, PresenceState) == 0x000005, "Member 'FBPFriendPresenceInfo::PresenceState' has a wrong offset!");
-static_assert(offsetof(FBPFriendPresenceInfo, StatusString) == 0x000008, "Member 'FBPFriendPresenceInfo::StatusString' has a wrong offset!");
+DUMPER7_ASSERTS_FBPFriendPresenceInfo;
 
 // ScriptStruct AdvancedSessions.BPFriendInfo
 // 0x0068 (0x0068 - 0x0000)
@@ -163,14 +154,7 @@ public:
 	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FBPFriendPresenceInfo                  PresenceInfo;                                      // 0x0050(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FBPFriendInfo) == 0x000008, "Wrong alignment on FBPFriendInfo");
-static_assert(sizeof(FBPFriendInfo) == 0x000068, "Wrong size on FBPFriendInfo");
-static_assert(offsetof(FBPFriendInfo, DisplayName) == 0x000000, "Member 'FBPFriendInfo::DisplayName' has a wrong offset!");
-static_assert(offsetof(FBPFriendInfo, RealName) == 0x000010, "Member 'FBPFriendInfo::RealName' has a wrong offset!");
-static_assert(offsetof(FBPFriendInfo, OnlineState) == 0x000020, "Member 'FBPFriendInfo::OnlineState' has a wrong offset!");
-static_assert(offsetof(FBPFriendInfo, UniqueNetId) == 0x000028, "Member 'FBPFriendInfo::UniqueNetId' has a wrong offset!");
-static_assert(offsetof(FBPFriendInfo, bIsPlayingSameGame) == 0x000048, "Member 'FBPFriendInfo::bIsPlayingSameGame' has a wrong offset!");
-static_assert(offsetof(FBPFriendInfo, PresenceInfo) == 0x000050, "Member 'FBPFriendInfo::PresenceInfo' has a wrong offset!");
+DUMPER7_ASSERTS_FBPFriendInfo;
 
 // ScriptStruct AdvancedSessions.SessionPropertyKeyPair
 // 0x0020 (0x0020 - 0x0000)
@@ -179,8 +163,7 @@ struct alignas(0x08) FSessionPropertyKeyPair final
 public:
 	uint8                                         Pad_0[0x20];                                       // 0x0000(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSessionPropertyKeyPair) == 0x000008, "Wrong alignment on FSessionPropertyKeyPair");
-static_assert(sizeof(FSessionPropertyKeyPair) == 0x000020, "Wrong size on FSessionPropertyKeyPair");
+DUMPER7_ASSERTS_FSessionPropertyKeyPair;
 
 // ScriptStruct AdvancedSessions.BPOnlineUser
 // 0x0040 (0x0040 - 0x0000)
@@ -191,11 +174,7 @@ public:
 	class FString                                 DisplayName;                                       // 0x0020(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 RealName;                                          // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FBPOnlineUser) == 0x000008, "Wrong alignment on FBPOnlineUser");
-static_assert(sizeof(FBPOnlineUser) == 0x000040, "Wrong size on FBPOnlineUser");
-static_assert(offsetof(FBPOnlineUser, UniqueNetId) == 0x000000, "Member 'FBPOnlineUser::UniqueNetId' has a wrong offset!");
-static_assert(offsetof(FBPOnlineUser, DisplayName) == 0x000020, "Member 'FBPOnlineUser::DisplayName' has a wrong offset!");
-static_assert(offsetof(FBPOnlineUser, RealName) == 0x000030, "Member 'FBPOnlineUser::RealName' has a wrong offset!");
+DUMPER7_ASSERTS_FBPOnlineUser;
 
 // ScriptStruct AdvancedSessions.BPOnlineRecentPlayer
 // 0x0010 (0x0050 - 0x0040)
@@ -204,9 +183,7 @@ struct FBPOnlineRecentPlayer final : public FBPOnlineUser
 public:
 	class FString                                 LastSeen;                                          // 0x0040(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FBPOnlineRecentPlayer) == 0x000008, "Wrong alignment on FBPOnlineRecentPlayer");
-static_assert(sizeof(FBPOnlineRecentPlayer) == 0x000050, "Wrong size on FBPOnlineRecentPlayer");
-static_assert(offsetof(FBPOnlineRecentPlayer, LastSeen) == 0x000040, "Member 'FBPOnlineRecentPlayer::LastSeen' has a wrong offset!");
+DUMPER7_ASSERTS_FBPOnlineRecentPlayer;
 
 // ScriptStruct AdvancedSessions.SessionsSearchSetting
 // 0x0028 (0x0028 - 0x0000)
@@ -215,8 +192,7 @@ struct alignas(0x08) FSessionsSearchSetting final
 public:
 	uint8                                         Pad_0[0x28];                                       // 0x0000(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSessionsSearchSetting) == 0x000008, "Wrong alignment on FSessionsSearchSetting");
-static_assert(sizeof(FSessionsSearchSetting) == 0x000028, "Wrong size on FSessionsSearchSetting");
+DUMPER7_ASSERTS_FSessionsSearchSetting;
 
 // ScriptStruct AdvancedSessions.BPUserOnlineAccount
 // 0x0010 (0x0010 - 0x0000)
@@ -225,8 +201,7 @@ struct alignas(0x08) FBPUserOnlineAccount final
 public:
 	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FBPUserOnlineAccount) == 0x000008, "Wrong alignment on FBPUserOnlineAccount");
-static_assert(sizeof(FBPUserOnlineAccount) == 0x000010, "Wrong size on FBPUserOnlineAccount");
+DUMPER7_ASSERTS_FBPUserOnlineAccount;
 
 }
 

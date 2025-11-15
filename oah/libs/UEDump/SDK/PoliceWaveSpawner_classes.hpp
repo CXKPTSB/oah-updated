@@ -65,29 +65,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PoliceWaveSpawner_C">();
+		BP_STATIC_CLASS_IMPL("PoliceWaveSpawner_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PoliceWaveSpawner_C")
 	}
 	static class APoliceWaveSpawner_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APoliceWaveSpawner_C>();
 	}
 };
-static_assert(alignof(APoliceWaveSpawner_C) == 0x000008, "Wrong alignment on APoliceWaveSpawner_C");
-static_assert(sizeof(APoliceWaveSpawner_C) == 0x000288, "Wrong size on APoliceWaveSpawner_C");
-static_assert(offsetof(APoliceWaveSpawner_C, UberGraphFrame) == 0x000220, "Member 'APoliceWaveSpawner_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(APoliceWaveSpawner_C, DefaultSceneRoot) == 0x000228, "Member 'APoliceWaveSpawner_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(APoliceWaveSpawner_C, WaveNumber) == 0x000230, "Member 'APoliceWaveSpawner_C::WaveNumber' has a wrong offset!");
-static_assert(offsetof(APoliceWaveSpawner_C, PoliceGuns) == 0x000238, "Member 'APoliceWaveSpawner_C::PoliceGuns' has a wrong offset!");
-static_assert(offsetof(APoliceWaveSpawner_C, CiviliansKilled) == 0x000248, "Member 'APoliceWaveSpawner_C::CiviliansKilled' has a wrong offset!");
-static_assert(offsetof(APoliceWaveSpawner_C, CopsAlerted_) == 0x00024C, "Member 'APoliceWaveSpawner_C::CopsAlerted_' has a wrong offset!");
-static_assert(offsetof(APoliceWaveSpawner_C, MaxPoliceAmount) == 0x000250, "Member 'APoliceWaveSpawner_C::MaxPoliceAmount' has a wrong offset!");
-static_assert(offsetof(APoliceWaveSpawner_C, CurrentWaveRemain) == 0x000254, "Member 'APoliceWaveSpawner_C::CurrentWaveRemain' has a wrong offset!");
-static_assert(offsetof(APoliceWaveSpawner_C, Players) == 0x000258, "Member 'APoliceWaveSpawner_C::Players' has a wrong offset!");
-static_assert(offsetof(APoliceWaveSpawner_C, WaveMultiplier) == 0x00025C, "Member 'APoliceWaveSpawner_C::WaveMultiplier' has a wrong offset!");
-static_assert(offsetof(APoliceWaveSpawner_C, PowerMultiplier) == 0x000260, "Member 'APoliceWaveSpawner_C::PowerMultiplier' has a wrong offset!");
-static_assert(offsetof(APoliceWaveSpawner_C, As_Robber_Game_State) == 0x000268, "Member 'APoliceWaveSpawner_C::As_Robber_Game_State' has a wrong offset!");
-static_assert(offsetof(APoliceWaveSpawner_C, WavePause_) == 0x000270, "Member 'APoliceWaveSpawner_C::WavePause_' has a wrong offset!");
-static_assert(offsetof(APoliceWaveSpawner_C, SpecialPolice) == 0x000278, "Member 'APoliceWaveSpawner_C::SpecialPolice' has a wrong offset!");
+DUMPER7_ASSERTS_APoliceWaveSpawner_C;
 
 }
 

@@ -44,7 +44,7 @@ public:
 	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 K2Node_CustomEvent_Text;                           // 0x00A8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(int32 Total, int32 Minimum, float PowerMultiplier)> K2Node_CreateDelegate_OutputDelegate;              // 0x00BC(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(int32 Total, int32 Minimum, float PowerMultiplier)> K2Node_CreateDelegate_OutputDelegate; // 0x00BC(0x0010)(ZeroConstructor, NoDestructor)
 	int32                                         CallFunc_FindCurrentPoliceAlive_AmountAlive;       // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_D1[0x3];                                       // 0x00D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -77,7 +77,7 @@ public:
 	class AActor*                                 CallFunc_Array_Get_Item_1;                         // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0180(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_184[0x4];                                      // 0x0184(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IPoliceTargetInterface_C> K2Node_DynamicCast_AsPolice_Target_Interface;      // 0x0188(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TScriptInterface<class IPoliceTargetInterface_C> K2Node_DynamicCast_AsPolice_Target_Interface;   // 0x0188(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_199[0x3];                                      // 0x0199(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x019C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -144,106 +144,7 @@ public:
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3; // 0x0380(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ANPC_Police_base_C*                     CallFunc_FinishSpawningActor_ReturnValue_3;        // 0x0388(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner) == 0x000010, "Wrong alignment on PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner");
-static_assert(sizeof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner) == 0x000390, "Wrong size on PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, EntryPoint) == 0x000000, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::EntryPoint' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, Temp_int_Array_Index_Variable) == 0x00000C, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, Temp_bool_Has_Been_Initd_Variable) == 0x000010, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, Temp_bool_IsClosed_Variable) == 0x000011, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, Temp_bool_Has_Been_Initd_Variable_1) == 0x000012, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::Temp_bool_Has_Been_Initd_Variable_1' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_GetAllActorsOfClass_OutActors) == 0x000018, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Array_Random_OutItem) == 0x000028, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Array_Random_OutItem' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Array_Random_OutIndex) == 0x000030, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Array_Random_OutIndex' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Array_Random_OutItem_1) == 0x000038, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Array_Random_OutItem_1' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Array_Random_OutIndex_1) == 0x000040, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Array_Random_OutIndex_1' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000044, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, K2Node_CustomEvent_Reason) == 0x000050, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::K2Node_CustomEvent_Reason' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Add_VectorVector_ReturnValue) == 0x000060, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_MakeTransform_ReturnValue) == 0x000070, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, Temp_bool_IsClosed_Variable_1) == 0x0000A0, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::Temp_bool_IsClosed_Variable_1' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, K2Node_CustomEvent_Text) == 0x0000A8, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::K2Node_CustomEvent_Text' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, K2Node_Event_DeltaSeconds) == 0x0000B8, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, K2Node_CreateDelegate_OutputDelegate) == 0x0000BC, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_FindCurrentPoliceAlive_AmountAlive) == 0x0000CC, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_FindCurrentPoliceAlive_AmountAlive' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Greater_IntInt_ReturnValue) == 0x0000D0, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Subtract_IntInt_ReturnValue) == 0x0000D4, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, Temp_int_Array_Index_Variable_1) == 0x0000D8, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, Temp_int_Variable) == 0x0000DC, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_LessEqual_IntInt_ReturnValue) == 0x0000E0, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_DecidepoliceToSpawn_Police_array) == 0x0000E8, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_DecidepoliceToSpawn_Police_array' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Array_Random_OutItem_2) == 0x0000F8, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Array_Random_OutItem_2' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Array_Random_OutIndex_2) == 0x000100, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Array_Random_OutIndex_2' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Add_IntInt_ReturnValue_1) == 0x000104, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000108, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_FinishSpawningActor_ReturnValue) == 0x000110, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_LessEqual_IntInt_ReturnValue_1) == 0x000118, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_LessEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_GetAllActorsWithInterface_OutActors) == 0x000120, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_GetAllActorsWithInterface_OutActors' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_FindCurrentPoliceAlive_AmountAlive_1) == 0x000130, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_FindCurrentPoliceAlive_AmountAlive_1' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Array_Get_Item) == 0x000138, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_LessEqual_IntInt_ReturnValue_2) == 0x000140, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_LessEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, K2Node_DynamicCast_AsNPCInterface) == 0x000148, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::K2Node_DynamicCast_AsNPCInterface' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, K2Node_DynamicCast_bSuccess) == 0x000158, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Array_Length_ReturnValue) == 0x00015C, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Less_IntInt_ReturnValue) == 0x000160, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_GetAllActorsWithInterface_OutActors_1) == 0x000168, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_GetAllActorsWithInterface_OutActors_1' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Array_Get_Item_1) == 0x000178, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Add_IntInt_ReturnValue_2) == 0x000180, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, K2Node_DynamicCast_AsPolice_Target_Interface) == 0x000188, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::K2Node_DynamicCast_AsPolice_Target_Interface' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, K2Node_DynamicCast_bSuccess_1) == 0x000198, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Array_Length_ReturnValue_1) == 0x00019C, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Array_Length_ReturnValue_2) == 0x0001A0, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Multiply_IntInt_ReturnValue) == 0x0001A4, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Multiply_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_FindActivePowerboxes_ActivePowerboxes_) == 0x0001A8, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_FindActivePowerboxes_ActivePowerboxes_' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Clamp_ReturnValue) == 0x0001AC, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Clamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Conv_IntToString_ReturnValue) == 0x0001B0, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Greater_IntInt_ReturnValue_1) == 0x0001C0, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_GetGameState_ReturnValue) == 0x0001C8, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_GetGameState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, K2Node_DynamicCast_AsRobber_Game_State) == 0x0001D0, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::K2Node_DynamicCast_AsRobber_Game_State' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, K2Node_DynamicCast_bSuccess_2) == 0x0001D8, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, Temp_int_Loop_Counter_Variable_1) == 0x0001DC, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Less_IntInt_ReturnValue_1) == 0x0001E0, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Add_IntInt_ReturnValue_3) == 0x0001E4, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_GetAllActorsOfClass_OutActors_1) == 0x0001E8, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_GetAllActorsOfClass_OutActors_1' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Array_Random_OutItem_3) == 0x0001F8, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Array_Random_OutItem_3' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Array_Random_OutIndex_3) == 0x000200, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Array_Random_OutIndex_3' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000204, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_K2_GetComponentLocation_ReturnValue_1) == 0x000208, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_K2_GetComponentLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Add_VectorVector_ReturnValue_1) == 0x000214, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Array_Random_OutItem_4) == 0x000220, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Array_Random_OutItem_4' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Array_Random_OutIndex_4) == 0x000228, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Array_Random_OutIndex_4' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_MakeTransform_ReturnValue_1) == 0x000230, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_MakeTransform_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_MakeTransform_ReturnValue_2) == 0x000260, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_MakeTransform_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x000290, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2) == 0x000298, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x0002A0, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_FinishSpawningActor_ReturnValue_2) == 0x0002A8, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_FinishSpawningActor_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Array_Length_ReturnValue_3) == 0x0002B0, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Greater_IntInt_ReturnValue_2) == 0x0002B4, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Greater_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Create_ReturnValue) == 0x0002B8, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, K2Node_CustomEvent_Total) == 0x0002C0, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::K2Node_CustomEvent_Total' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, K2Node_CustomEvent_Minimum) == 0x0002C4, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::K2Node_CustomEvent_Minimum' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, K2Node_CustomEvent_PowerMultiplier) == 0x0002C8, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::K2Node_CustomEvent_PowerMultiplier' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Divide_FloatFloat_ReturnValue) == 0x0002CC, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x0002D0, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_RandomFloatInRange_ReturnValue) == 0x0002D4, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_FindActivePowerboxes_ActivePowerboxes__1) == 0x0002D8, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_FindActivePowerboxes_ActivePowerboxes__1' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_FindCurrentPoliceAlive_AmountAlive_2) == 0x0002DC, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_FindCurrentPoliceAlive_AmountAlive_2' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_GetAllActorsOfClass_OutActors_2) == 0x0002E0, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_GetAllActorsOfClass_OutActors_2' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Greater_IntInt_ReturnValue_3) == 0x0002F0, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Greater_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Array_Random_OutItem_5) == 0x0002F8, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Array_Random_OutItem_5' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Array_Random_OutIndex_5) == 0x000300, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Array_Random_OutIndex_5' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_K2_GetComponentLocation_ReturnValue_2) == 0x000304, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_K2_GetComponentLocation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Array_Random_OutItem_6) == 0x000310, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Array_Random_OutItem_6' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Array_Random_OutIndex_6) == 0x000318, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Array_Random_OutIndex_6' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Add_VectorVector_ReturnValue_2) == 0x00031C, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Add_VectorVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_DecidepoliceToSpawn_Police_array_1) == 0x000328, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_DecidepoliceToSpawn_Police_array_1' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_MakeTransform_ReturnValue_3) == 0x000340, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_MakeTransform_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Array_Random_OutItem_7) == 0x000370, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Array_Random_OutItem_7' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_Array_Random_OutIndex_7) == 0x000378, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_Array_Random_OutIndex_7' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3) == 0x000380, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner, CallFunc_FinishSpawningActor_ReturnValue_3) == 0x000388, "Member 'PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner::CallFunc_FinishSpawningActor_ReturnValue_3' has a wrong offset!");
+DUMPER7_ASSERTS_PoliceWaveSpawner_C_ExecuteUbergraph_PoliceWaveSpawner;
 
 // Function PoliceWaveSpawner.PoliceWaveSpawner_C.SetPower
 // 0x000C (0x000C - 0x0000)
@@ -254,11 +155,7 @@ public:
 	int32                                         Minimum;                                           // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         PowerMultiplier_0;                                 // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PoliceWaveSpawner_C_SetPower) == 0x000004, "Wrong alignment on PoliceWaveSpawner_C_SetPower");
-static_assert(sizeof(PoliceWaveSpawner_C_SetPower) == 0x00000C, "Wrong size on PoliceWaveSpawner_C_SetPower");
-static_assert(offsetof(PoliceWaveSpawner_C_SetPower, Total) == 0x000000, "Member 'PoliceWaveSpawner_C_SetPower::Total' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_SetPower, Minimum) == 0x000004, "Member 'PoliceWaveSpawner_C_SetPower::Minimum' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_SetPower, PowerMultiplier_0) == 0x000008, "Member 'PoliceWaveSpawner_C_SetPower::PowerMultiplier_0' has a wrong offset!");
+DUMPER7_ASSERTS_PoliceWaveSpawner_C_SetPower;
 
 // Function PoliceWaveSpawner.PoliceWaveSpawner_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -267,9 +164,7 @@ struct PoliceWaveSpawner_C_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PoliceWaveSpawner_C_ReceiveTick) == 0x000004, "Wrong alignment on PoliceWaveSpawner_C_ReceiveTick");
-static_assert(sizeof(PoliceWaveSpawner_C_ReceiveTick) == 0x000004, "Wrong size on PoliceWaveSpawner_C_ReceiveTick");
-static_assert(offsetof(PoliceWaveSpawner_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PoliceWaveSpawner_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PoliceWaveSpawner_C_ReceiveTick;
 
 // Function PoliceWaveSpawner.PoliceWaveSpawner_C.AlertCopsUI
 // 0x0010 (0x0010 - 0x0000)
@@ -278,9 +173,7 @@ struct PoliceWaveSpawner_C_AlertCopsUI final
 public:
 	class FString                                 Text;                                              // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PoliceWaveSpawner_C_AlertCopsUI) == 0x000008, "Wrong alignment on PoliceWaveSpawner_C_AlertCopsUI");
-static_assert(sizeof(PoliceWaveSpawner_C_AlertCopsUI) == 0x000010, "Wrong size on PoliceWaveSpawner_C_AlertCopsUI");
-static_assert(offsetof(PoliceWaveSpawner_C_AlertCopsUI, Text) == 0x000000, "Member 'PoliceWaveSpawner_C_AlertCopsUI::Text' has a wrong offset!");
+DUMPER7_ASSERTS_PoliceWaveSpawner_C_AlertCopsUI;
 
 // Function PoliceWaveSpawner.PoliceWaveSpawner_C.AlertCops
 // 0x0010 (0x0010 - 0x0000)
@@ -289,9 +182,7 @@ struct PoliceWaveSpawner_C_AlertCops final
 public:
 	class FString                                 Reason;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PoliceWaveSpawner_C_AlertCops) == 0x000008, "Wrong alignment on PoliceWaveSpawner_C_AlertCops");
-static_assert(sizeof(PoliceWaveSpawner_C_AlertCops) == 0x000010, "Wrong size on PoliceWaveSpawner_C_AlertCops");
-static_assert(offsetof(PoliceWaveSpawner_C_AlertCops, Reason) == 0x000000, "Member 'PoliceWaveSpawner_C_AlertCops::Reason' has a wrong offset!");
+DUMPER7_ASSERTS_PoliceWaveSpawner_C_AlertCops;
 
 // Function PoliceWaveSpawner.PoliceWaveSpawner_C.DecideWaveSize
 // 0x002C (0x002C - 0x0000)
@@ -310,19 +201,7 @@ public:
 	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Clamp_ReturnValue;                        // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PoliceWaveSpawner_C_DecideWaveSize) == 0x000004, "Wrong alignment on PoliceWaveSpawner_C_DecideWaveSize");
-static_assert(sizeof(PoliceWaveSpawner_C_DecideWaveSize) == 0x00002C, "Wrong size on PoliceWaveSpawner_C_DecideWaveSize");
-static_assert(offsetof(PoliceWaveSpawner_C_DecideWaveSize, WaveMultiplier_0) == 0x000000, "Member 'PoliceWaveSpawner_C_DecideWaveSize::WaveMultiplier_0' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_DecideWaveSize, CallFunc_Multiply_IntFloat_ReturnValue) == 0x000004, "Member 'PoliceWaveSpawner_C_DecideWaveSize::CallFunc_Multiply_IntFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_DecideWaveSize, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000008, "Member 'PoliceWaveSpawner_C_DecideWaveSize::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_DecideWaveSize, CallFunc_FClamp_ReturnValue) == 0x00000C, "Member 'PoliceWaveSpawner_C_DecideWaveSize::CallFunc_FClamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_DecideWaveSize, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000010, "Member 'PoliceWaveSpawner_C_DecideWaveSize::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_DecideWaveSize, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue) == 0x000014, "Member 'PoliceWaveSpawner_C_DecideWaveSize::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_DecideWaveSize, CallFunc_Add_FloatFloat_ReturnValue) == 0x000018, "Member 'PoliceWaveSpawner_C_DecideWaveSize::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_DecideWaveSize, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00001C, "Member 'PoliceWaveSpawner_C_DecideWaveSize::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_DecideWaveSize, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x000020, "Member 'PoliceWaveSpawner_C_DecideWaveSize::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_DecideWaveSize, CallFunc_FTrunc_ReturnValue) == 0x000024, "Member 'PoliceWaveSpawner_C_DecideWaveSize::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_DecideWaveSize, CallFunc_Clamp_ReturnValue) == 0x000028, "Member 'PoliceWaveSpawner_C_DecideWaveSize::CallFunc_Clamp_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PoliceWaveSpawner_C_DecideWaveSize;
 
 // Function PoliceWaveSpawner.PoliceWaveSpawner_C.FindCurrentPoliceAlive
 // 0x0038 (0x0038 - 0x0000)
@@ -340,18 +219,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PoliceWaveSpawner_C_FindCurrentPoliceAlive) == 0x000008, "Wrong alignment on PoliceWaveSpawner_C_FindCurrentPoliceAlive");
-static_assert(sizeof(PoliceWaveSpawner_C_FindCurrentPoliceAlive) == 0x000038, "Wrong size on PoliceWaveSpawner_C_FindCurrentPoliceAlive");
-static_assert(offsetof(PoliceWaveSpawner_C_FindCurrentPoliceAlive, AmountAlive) == 0x000000, "Member 'PoliceWaveSpawner_C_FindCurrentPoliceAlive::AmountAlive' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_FindCurrentPoliceAlive, Amount) == 0x000004, "Member 'PoliceWaveSpawner_C_FindCurrentPoliceAlive::Amount' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_FindCurrentPoliceAlive, Temp_int_Array_Index_Variable) == 0x000008, "Member 'PoliceWaveSpawner_C_FindCurrentPoliceAlive::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_FindCurrentPoliceAlive, Temp_int_Loop_Counter_Variable) == 0x00000C, "Member 'PoliceWaveSpawner_C_FindCurrentPoliceAlive::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_FindCurrentPoliceAlive, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'PoliceWaveSpawner_C_FindCurrentPoliceAlive::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_FindCurrentPoliceAlive, CallFunc_Add_IntInt_ReturnValue_1) == 0x000014, "Member 'PoliceWaveSpawner_C_FindCurrentPoliceAlive::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_FindCurrentPoliceAlive, CallFunc_GetAllActorsOfClass_OutActors) == 0x000018, "Member 'PoliceWaveSpawner_C_FindCurrentPoliceAlive::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_FindCurrentPoliceAlive, CallFunc_Array_Get_Item) == 0x000028, "Member 'PoliceWaveSpawner_C_FindCurrentPoliceAlive::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_FindCurrentPoliceAlive, CallFunc_Array_Length_ReturnValue) == 0x000030, "Member 'PoliceWaveSpawner_C_FindCurrentPoliceAlive::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_FindCurrentPoliceAlive, CallFunc_Less_IntInt_ReturnValue) == 0x000034, "Member 'PoliceWaveSpawner_C_FindCurrentPoliceAlive::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PoliceWaveSpawner_C_FindCurrentPoliceAlive;
 
 // Function PoliceWaveSpawner.PoliceWaveSpawner_C.DecidepoliceToSpawn
 // 0x0050 (0x0050 - 0x0000)
@@ -367,14 +235,7 @@ public:
 	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UClass*>                         K2Node_Select_Default;                             // 0x0040(0x0010)(ReferenceParm)
 };
-static_assert(alignof(PoliceWaveSpawner_C_DecidepoliceToSpawn) == 0x000008, "Wrong alignment on PoliceWaveSpawner_C_DecidepoliceToSpawn");
-static_assert(sizeof(PoliceWaveSpawner_C_DecidepoliceToSpawn) == 0x000050, "Wrong size on PoliceWaveSpawner_C_DecidepoliceToSpawn");
-static_assert(offsetof(PoliceWaveSpawner_C_DecidepoliceToSpawn, Police_array) == 0x000000, "Member 'PoliceWaveSpawner_C_DecidepoliceToSpawn::Police_array' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_DecidepoliceToSpawn, Temp_bool_Variable) == 0x000010, "Member 'PoliceWaveSpawner_C_DecidepoliceToSpawn::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_DecidepoliceToSpawn, K2Node_MakeArray_Array) == 0x000018, "Member 'PoliceWaveSpawner_C_DecidepoliceToSpawn::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_DecidepoliceToSpawn, K2Node_MakeArray_Array_1) == 0x000028, "Member 'PoliceWaveSpawner_C_DecidepoliceToSpawn::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_DecidepoliceToSpawn, CallFunc_Greater_IntInt_ReturnValue) == 0x000038, "Member 'PoliceWaveSpawner_C_DecidepoliceToSpawn::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_DecidepoliceToSpawn, K2Node_Select_Default) == 0x000040, "Member 'PoliceWaveSpawner_C_DecidepoliceToSpawn::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_PoliceWaveSpawner_C_DecidepoliceToSpawn;
 
 // Function PoliceWaveSpawner.PoliceWaveSpawner_C.FindActivePowerboxes
 // 0x0038 (0x0038 - 0x0000)
@@ -395,19 +256,7 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0032(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PoliceWaveSpawner_C_FindActivePowerboxes) == 0x000008, "Wrong alignment on PoliceWaveSpawner_C_FindActivePowerboxes");
-static_assert(sizeof(PoliceWaveSpawner_C_FindActivePowerboxes) == 0x000038, "Wrong size on PoliceWaveSpawner_C_FindActivePowerboxes");
-static_assert(offsetof(PoliceWaveSpawner_C_FindActivePowerboxes, ActivePowerboxes_) == 0x000000, "Member 'PoliceWaveSpawner_C_FindActivePowerboxes::ActivePowerboxes_' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_FindActivePowerboxes, AnyPowerboxActive_) == 0x000001, "Member 'PoliceWaveSpawner_C_FindActivePowerboxes::AnyPowerboxActive_' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_FindActivePowerboxes, Temp_int_Array_Index_Variable) == 0x000004, "Member 'PoliceWaveSpawner_C_FindActivePowerboxes::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_FindActivePowerboxes, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'PoliceWaveSpawner_C_FindActivePowerboxes::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_FindActivePowerboxes, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'PoliceWaveSpawner_C_FindActivePowerboxes::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_FindActivePowerboxes, CallFunc_GetAllActorsOfClass_OutActors) == 0x000010, "Member 'PoliceWaveSpawner_C_FindActivePowerboxes::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_FindActivePowerboxes, CallFunc_Array_Length_ReturnValue) == 0x000020, "Member 'PoliceWaveSpawner_C_FindActivePowerboxes::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_FindActivePowerboxes, CallFunc_Array_Get_Item) == 0x000028, "Member 'PoliceWaveSpawner_C_FindActivePowerboxes::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_FindActivePowerboxes, CallFunc_Less_IntInt_ReturnValue) == 0x000030, "Member 'PoliceWaveSpawner_C_FindActivePowerboxes::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_FindActivePowerboxes, CallFunc_Not_PreBool_ReturnValue) == 0x000031, "Member 'PoliceWaveSpawner_C_FindActivePowerboxes::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PoliceWaveSpawner_C_FindActivePowerboxes, CallFunc_BooleanAND_ReturnValue) == 0x000032, "Member 'PoliceWaveSpawner_C_FindActivePowerboxes::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PoliceWaveSpawner_C_FindActivePowerboxes;
 
 // Function PoliceWaveSpawner.PoliceWaveSpawner_C.DecideSpecials
 // 0x0010 (0x0010 - 0x0000)
@@ -416,9 +265,7 @@ struct PoliceWaveSpawner_C_DecideSpecials final
 public:
 	TArray<class UClass*>                         SpecialsToSpawn;                                   // 0x0000(0x0010)(Edit, BlueprintVisible)
 };
-static_assert(alignof(PoliceWaveSpawner_C_DecideSpecials) == 0x000008, "Wrong alignment on PoliceWaveSpawner_C_DecideSpecials");
-static_assert(sizeof(PoliceWaveSpawner_C_DecideSpecials) == 0x000010, "Wrong size on PoliceWaveSpawner_C_DecideSpecials");
-static_assert(offsetof(PoliceWaveSpawner_C_DecideSpecials, SpecialsToSpawn) == 0x000000, "Member 'PoliceWaveSpawner_C_DecideSpecials::SpecialsToSpawn' has a wrong offset!");
+DUMPER7_ASSERTS_PoliceWaveSpawner_C_DecideSpecials;
 
 }
 

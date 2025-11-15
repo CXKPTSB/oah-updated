@@ -25,11 +25,7 @@ public:
 	struct FVector                                Attacker_location;                                 // 0x0004(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ShowDirection_;                                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PoliceTargetInterface_C_TakeDamageInterface) == 0x000004, "Wrong alignment on PoliceTargetInterface_C_TakeDamageInterface");
-static_assert(sizeof(PoliceTargetInterface_C_TakeDamageInterface) == 0x000014, "Wrong size on PoliceTargetInterface_C_TakeDamageInterface");
-static_assert(offsetof(PoliceTargetInterface_C_TakeDamageInterface, DamageTaken) == 0x000000, "Member 'PoliceTargetInterface_C_TakeDamageInterface::DamageTaken' has a wrong offset!");
-static_assert(offsetof(PoliceTargetInterface_C_TakeDamageInterface, Attacker_location) == 0x000004, "Member 'PoliceTargetInterface_C_TakeDamageInterface::Attacker_location' has a wrong offset!");
-static_assert(offsetof(PoliceTargetInterface_C_TakeDamageInterface, ShowDirection_) == 0x000010, "Member 'PoliceTargetInterface_C_TakeDamageInterface::ShowDirection_' has a wrong offset!");
+DUMPER7_ASSERTS_PoliceTargetInterface_C_TakeDamageInterface;
 
 // Function PoliceTargetInterface.PoliceTargetInterface_C.CheckIfDowned?
 // 0x0001 (0x0001 - 0x0000)
@@ -38,9 +34,7 @@ struct PoliceTargetInterface_C_CheckIfDowned_ final
 public:
 	bool                                          Downed_;                                           // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PoliceTargetInterface_C_CheckIfDowned_) == 0x000001, "Wrong alignment on PoliceTargetInterface_C_CheckIfDowned_");
-static_assert(sizeof(PoliceTargetInterface_C_CheckIfDowned_) == 0x000001, "Wrong size on PoliceTargetInterface_C_CheckIfDowned_");
-static_assert(offsetof(PoliceTargetInterface_C_CheckIfDowned_, Downed_) == 0x000000, "Member 'PoliceTargetInterface_C_CheckIfDowned_::Downed_' has a wrong offset!");
+DUMPER7_ASSERTS_PoliceTargetInterface_C_CheckIfDowned_;
 
 // Function PoliceTargetInterface.PoliceTargetInterface_C.HitmarkerInterfaceCall
 // 0x0010 (0x0010 - 0x0000)
@@ -49,9 +43,7 @@ struct PoliceTargetInterface_C_HitmarkerInterfaceCall final
 public:
 	struct FLinearColor                           Color;                                             // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PoliceTargetInterface_C_HitmarkerInterfaceCall) == 0x000004, "Wrong alignment on PoliceTargetInterface_C_HitmarkerInterfaceCall");
-static_assert(sizeof(PoliceTargetInterface_C_HitmarkerInterfaceCall) == 0x000010, "Wrong size on PoliceTargetInterface_C_HitmarkerInterfaceCall");
-static_assert(offsetof(PoliceTargetInterface_C_HitmarkerInterfaceCall, Color) == 0x000000, "Member 'PoliceTargetInterface_C_HitmarkerInterfaceCall::Color' has a wrong offset!");
+DUMPER7_ASSERTS_PoliceTargetInterface_C_HitmarkerInterfaceCall;
 
 // Function PoliceTargetInterface.PoliceTargetInterface_C.AddAmmoInterfaceCall
 // 0x0008 (0x0008 - 0x0000)
@@ -61,10 +53,7 @@ public:
 	int32                                         Amount;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          DidAddAmmo_;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PoliceTargetInterface_C_AddAmmoInterfaceCall) == 0x000004, "Wrong alignment on PoliceTargetInterface_C_AddAmmoInterfaceCall");
-static_assert(sizeof(PoliceTargetInterface_C_AddAmmoInterfaceCall) == 0x000008, "Wrong size on PoliceTargetInterface_C_AddAmmoInterfaceCall");
-static_assert(offsetof(PoliceTargetInterface_C_AddAmmoInterfaceCall, Amount) == 0x000000, "Member 'PoliceTargetInterface_C_AddAmmoInterfaceCall::Amount' has a wrong offset!");
-static_assert(offsetof(PoliceTargetInterface_C_AddAmmoInterfaceCall, DidAddAmmo_) == 0x000004, "Member 'PoliceTargetInterface_C_AddAmmoInterfaceCall::DidAddAmmo_' has a wrong offset!");
+DUMPER7_ASSERTS_PoliceTargetInterface_C_AddAmmoInterfaceCall;
 
 // Function PoliceTargetInterface.PoliceTargetInterface_C.CheckHoldingItemInterfaceCall
 // 0x0008 (0x0008 - 0x0000)
@@ -73,9 +62,7 @@ struct PoliceTargetInterface_C_CheckHoldingItemInterfaceCall final
 public:
 	class AActor*                                 HoldingItem;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PoliceTargetInterface_C_CheckHoldingItemInterfaceCall) == 0x000008, "Wrong alignment on PoliceTargetInterface_C_CheckHoldingItemInterfaceCall");
-static_assert(sizeof(PoliceTargetInterface_C_CheckHoldingItemInterfaceCall) == 0x000008, "Wrong size on PoliceTargetInterface_C_CheckHoldingItemInterfaceCall");
-static_assert(offsetof(PoliceTargetInterface_C_CheckHoldingItemInterfaceCall, HoldingItem) == 0x000000, "Member 'PoliceTargetInterface_C_CheckHoldingItemInterfaceCall::HoldingItem' has a wrong offset!");
+DUMPER7_ASSERTS_PoliceTargetInterface_C_CheckHoldingItemInterfaceCall;
 
 // Function PoliceTargetInterface.PoliceTargetInterface_C.SetInteractDescriptionInterfaceCall
 // 0x0010 (0x0010 - 0x0000)
@@ -84,9 +71,7 @@ struct PoliceTargetInterface_C_SetInteractDescriptionInterfaceCall final
 public:
 	class FString                                 InteractDescription;                               // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PoliceTargetInterface_C_SetInteractDescriptionInterfaceCall) == 0x000008, "Wrong alignment on PoliceTargetInterface_C_SetInteractDescriptionInterfaceCall");
-static_assert(sizeof(PoliceTargetInterface_C_SetInteractDescriptionInterfaceCall) == 0x000010, "Wrong size on PoliceTargetInterface_C_SetInteractDescriptionInterfaceCall");
-static_assert(offsetof(PoliceTargetInterface_C_SetInteractDescriptionInterfaceCall, InteractDescription) == 0x000000, "Member 'PoliceTargetInterface_C_SetInteractDescriptionInterfaceCall::InteractDescription' has a wrong offset!");
+DUMPER7_ASSERTS_PoliceTargetInterface_C_SetInteractDescriptionInterfaceCall;
 
 // Function PoliceTargetInterface.PoliceTargetInterface_C.SetPoliceAlerted
 // 0x0001 (0x0001 - 0x0000)
@@ -95,9 +80,7 @@ struct PoliceTargetInterface_C_SetPoliceAlerted final
 public:
 	bool                                          Alerted_;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PoliceTargetInterface_C_SetPoliceAlerted) == 0x000001, "Wrong alignment on PoliceTargetInterface_C_SetPoliceAlerted");
-static_assert(sizeof(PoliceTargetInterface_C_SetPoliceAlerted) == 0x000001, "Wrong size on PoliceTargetInterface_C_SetPoliceAlerted");
-static_assert(offsetof(PoliceTargetInterface_C_SetPoliceAlerted, Alerted_) == 0x000000, "Member 'PoliceTargetInterface_C_SetPoliceAlerted::Alerted_' has a wrong offset!");
+DUMPER7_ASSERTS_PoliceTargetInterface_C_SetPoliceAlerted;
 
 // Function PoliceTargetInterface.PoliceTargetInterface_C.GetHoldingActor
 // 0x0008 (0x0008 - 0x0000)
@@ -106,9 +89,7 @@ struct PoliceTargetInterface_C_GetHoldingActor final
 public:
 	class AActor*                                 HoldingActor;                                      // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PoliceTargetInterface_C_GetHoldingActor) == 0x000008, "Wrong alignment on PoliceTargetInterface_C_GetHoldingActor");
-static_assert(sizeof(PoliceTargetInterface_C_GetHoldingActor) == 0x000008, "Wrong size on PoliceTargetInterface_C_GetHoldingActor");
-static_assert(offsetof(PoliceTargetInterface_C_GetHoldingActor, HoldingActor) == 0x000000, "Member 'PoliceTargetInterface_C_GetHoldingActor::HoldingActor' has a wrong offset!");
+DUMPER7_ASSERTS_PoliceTargetInterface_C_GetHoldingActor;
 
 }
 

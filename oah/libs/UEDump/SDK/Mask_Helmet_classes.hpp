@@ -23,15 +23,18 @@ class AMask_Helmet_C final : public AMask_base_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Mask_Helmet_C">();
+		BP_STATIC_CLASS_IMPL("Mask_Helmet_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Mask_Helmet_C")
 	}
 	static class AMask_Helmet_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMask_Helmet_C>();
 	}
 };
-static_assert(alignof(AMask_Helmet_C) == 0x000008, "Wrong alignment on AMask_Helmet_C");
-static_assert(sizeof(AMask_Helmet_C) == 0x000230, "Wrong size on AMask_Helmet_C");
+DUMPER7_ASSERTS_AMask_Helmet_C;
 
 }
 

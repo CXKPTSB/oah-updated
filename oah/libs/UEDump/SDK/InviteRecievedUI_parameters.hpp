@@ -28,7 +28,7 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FBlueprintSessionResult>        K2Node_CustomEvent_SessionInfo_1;                  // 0x0010(0x0010)(ConstParm, ReferenceParm)
 	TArray<struct FBlueprintSessionResult>        K2Node_CustomEvent_SessionInfo;                    // 0x0020(0x0010)(ConstParm, ReferenceParm)
-	TDelegate<void(const TArray<struct FBlueprintSessionResult>& SessionInfo)> K2Node_CreateDelegate_OutputDelegate;              // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const TArray<struct FBlueprintSessionResult>& SessionInfo)> K2Node_CreateDelegate_OutputDelegate; // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
 	TArray<struct FBlueprintSessionResult>        Temp_struct_Variable;                              // 0x0040(0x0010)(ReferenceParm)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -39,7 +39,7 @@ public:
 	uint8                                         Pad_171[0x7];                                      // 0x0171(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFindFriendSessionCallbackProxy*        CallFunc_FindFriendSession_ReturnValue;            // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const TArray<struct FBlueprintSessionResult>& SessionInfo)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x0188(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const TArray<struct FBlueprintSessionResult>& SessionInfo)> K2Node_CreateDelegate_OutputDelegate_1; // 0x0188(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_199[0x7];                                      // 0x0199(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x01A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -57,36 +57,7 @@ public:
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0230(0x0088)()
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x02B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI) == 0x000008, "Wrong alignment on InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI");
-static_assert(sizeof(InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI) == 0x0002C0, "Wrong size on InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI");
-static_assert(offsetof(InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI, EntryPoint) == 0x000000, "Member 'InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI::EntryPoint' has a wrong offset!");
-static_assert(offsetof(InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI, K2Node_CustomEvent_SessionInfo_1) == 0x000010, "Member 'InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI::K2Node_CustomEvent_SessionInfo_1' has a wrong offset!");
-static_assert(offsetof(InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI, K2Node_CustomEvent_SessionInfo) == 0x000020, "Member 'InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI::K2Node_CustomEvent_SessionInfo' has a wrong offset!");
-static_assert(offsetof(InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI, K2Node_CreateDelegate_OutputDelegate) == 0x000030, "Member 'InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI, Temp_struct_Variable) == 0x000040, "Member 'InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000050, "Member 'InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI, CallFunc_Array_Get_Item) == 0x000058, "Member 'InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI, CallFunc_GetGameInstance_ReturnValue) == 0x000160, "Member 'InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI::CallFunc_GetGameInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI, K2Node_DynamicCast_AsRobber_GI) == 0x000168, "Member 'InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI::K2Node_DynamicCast_AsRobber_GI' has a wrong offset!");
-static_assert(offsetof(InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI, K2Node_DynamicCast_bSuccess) == 0x000170, "Member 'InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI, CallFunc_GetPlayerController_ReturnValue) == 0x000178, "Member 'InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI, CallFunc_FindFriendSession_ReturnValue) == 0x000180, "Member 'InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI::CallFunc_FindFriendSession_ReturnValue' has a wrong offset!");
-static_assert(offsetof(InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI, K2Node_CreateDelegate_OutputDelegate_1) == 0x000188, "Member 'InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI, CallFunc_IsValid_ReturnValue) == 0x000198, "Member 'InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI, CallFunc_PlayAnimation_ReturnValue_1) == 0x0001A0, "Member 'InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI, CallFunc_GetAllWidgetsOfClass_FoundWidgets) == 0x0001A8, "Member 'InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI::CallFunc_GetAllWidgetsOfClass_FoundWidgets' has a wrong offset!");
-static_assert(offsetof(InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI, CallFunc_Array_Get_Item_1) == 0x0001B8, "Member 'InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI, CallFunc_GetAllWidgetsOfClass_FoundWidgets_1) == 0x0001C0, "Member 'InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI::CallFunc_GetAllWidgetsOfClass_FoundWidgets_1' has a wrong offset!");
-static_assert(offsetof(InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI, CallFunc_Array_Get_Item_2) == 0x0001D0, "Member 'InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI, CallFunc_PlayAnimation_ReturnValue_2) == 0x0001D8, "Member 'InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI, K2Node_Event_MyGeometry) == 0x0001E0, "Member 'InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI, K2Node_Event_InDeltaTime) == 0x000218, "Member 'InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI, CallFunc_Subtract_IntInt_ReturnValue) == 0x00021C, "Member 'InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI, CallFunc_GetSteamFriendAvatar_Result) == 0x000220, "Member 'InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI::CallFunc_GetSteamFriendAvatar_Result' has a wrong offset!");
-static_assert(offsetof(InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI, CallFunc_GetSteamFriendAvatar_ReturnValue) == 0x000228, "Member 'InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI::CallFunc_GetSteamFriendAvatar_ReturnValue' has a wrong offset!");
-static_assert(offsetof(InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI, K2Node_MakeStruct_SlateBrush) == 0x000230, "Member 'InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
-static_assert(offsetof(InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI, K2Node_SwitchEnum_CmpSuccess) == 0x0002B8, "Member 'InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_InviteRecievedUI_C_ExecuteUbergraph_InviteRecievedUI;
 
 // Function InviteRecievedUI.InviteRecievedUI_C.Tick
 // 0x003C (0x003C - 0x0000)
@@ -96,10 +67,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(InviteRecievedUI_C_Tick) == 0x000004, "Wrong alignment on InviteRecievedUI_C_Tick");
-static_assert(sizeof(InviteRecievedUI_C_Tick) == 0x00003C, "Wrong size on InviteRecievedUI_C_Tick");
-static_assert(offsetof(InviteRecievedUI_C_Tick, MyGeometry) == 0x000000, "Member 'InviteRecievedUI_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(InviteRecievedUI_C_Tick, InDeltaTime) == 0x000038, "Member 'InviteRecievedUI_C_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_InviteRecievedUI_C_Tick;
 
 // Function InviteRecievedUI.InviteRecievedUI_C.OnSuccess_3E7C23BB45CA42C60BE2ABA8BA0E4FE7
 // 0x0010 (0x0010 - 0x0000)
@@ -108,9 +76,7 @@ struct InviteRecievedUI_C_OnSuccess_3E7C23BB45CA42C60BE2ABA8BA0E4FE7 final
 public:
 	TArray<struct FBlueprintSessionResult>        SessionInfo;                                       // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(InviteRecievedUI_C_OnSuccess_3E7C23BB45CA42C60BE2ABA8BA0E4FE7) == 0x000008, "Wrong alignment on InviteRecievedUI_C_OnSuccess_3E7C23BB45CA42C60BE2ABA8BA0E4FE7");
-static_assert(sizeof(InviteRecievedUI_C_OnSuccess_3E7C23BB45CA42C60BE2ABA8BA0E4FE7) == 0x000010, "Wrong size on InviteRecievedUI_C_OnSuccess_3E7C23BB45CA42C60BE2ABA8BA0E4FE7");
-static_assert(offsetof(InviteRecievedUI_C_OnSuccess_3E7C23BB45CA42C60BE2ABA8BA0E4FE7, SessionInfo) == 0x000000, "Member 'InviteRecievedUI_C_OnSuccess_3E7C23BB45CA42C60BE2ABA8BA0E4FE7::SessionInfo' has a wrong offset!");
+DUMPER7_ASSERTS_InviteRecievedUI_C_OnSuccess_3E7C23BB45CA42C60BE2ABA8BA0E4FE7;
 
 // Function InviteRecievedUI.InviteRecievedUI_C.OnFailure_3E7C23BB45CA42C60BE2ABA8BA0E4FE7
 // 0x0010 (0x0010 - 0x0000)
@@ -119,9 +85,7 @@ struct InviteRecievedUI_C_OnFailure_3E7C23BB45CA42C60BE2ABA8BA0E4FE7 final
 public:
 	TArray<struct FBlueprintSessionResult>        SessionInfo;                                       // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(InviteRecievedUI_C_OnFailure_3E7C23BB45CA42C60BE2ABA8BA0E4FE7) == 0x000008, "Wrong alignment on InviteRecievedUI_C_OnFailure_3E7C23BB45CA42C60BE2ABA8BA0E4FE7");
-static_assert(sizeof(InviteRecievedUI_C_OnFailure_3E7C23BB45CA42C60BE2ABA8BA0E4FE7) == 0x000010, "Wrong size on InviteRecievedUI_C_OnFailure_3E7C23BB45CA42C60BE2ABA8BA0E4FE7");
-static_assert(offsetof(InviteRecievedUI_C_OnFailure_3E7C23BB45CA42C60BE2ABA8BA0E4FE7, SessionInfo) == 0x000000, "Member 'InviteRecievedUI_C_OnFailure_3E7C23BB45CA42C60BE2ABA8BA0E4FE7::SessionInfo' has a wrong offset!");
+DUMPER7_ASSERTS_InviteRecievedUI_C_OnFailure_3E7C23BB45CA42C60BE2ABA8BA0E4FE7;
 
 // Function InviteRecievedUI.InviteRecievedUI_C.GetText_0
 // 0x0050 (0x0050 - 0x0000)
@@ -133,12 +97,7 @@ public:
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0038(0x0018)()
 };
-static_assert(alignof(InviteRecievedUI_C_GetText_0) == 0x000008, "Wrong alignment on InviteRecievedUI_C_GetText_0");
-static_assert(sizeof(InviteRecievedUI_C_GetText_0) == 0x000050, "Wrong size on InviteRecievedUI_C_GetText_0");
-static_assert(offsetof(InviteRecievedUI_C_GetText_0, ReturnValue) == 0x000000, "Member 'InviteRecievedUI_C_GetText_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(InviteRecievedUI_C_GetText_0, CallFunc_GetSteamPersonaName_ReturnValue) == 0x000018, "Member 'InviteRecievedUI_C_GetText_0::CallFunc_GetSteamPersonaName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(InviteRecievedUI_C_GetText_0, CallFunc_Concat_StrStr_ReturnValue) == 0x000028, "Member 'InviteRecievedUI_C_GetText_0::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(InviteRecievedUI_C_GetText_0, CallFunc_Conv_StringToText_ReturnValue) == 0x000038, "Member 'InviteRecievedUI_C_GetText_0::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_InviteRecievedUI_C_GetText_0;
 
 }
 

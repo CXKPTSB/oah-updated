@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "SlateCore_structs.hpp"
-#include "RarityNum_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "RarityNum_structs.hpp"
 
 
 namespace SDK::Params
@@ -34,16 +34,7 @@ public:
 	uint8                                         Pad_55[0x3];                                       // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           K2Node_Select_Default;                             // 0x0058(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SkinNotifPreview_C_Get_Rarity_ColorAndOpacity_0) == 0x000004, "Wrong alignment on SkinNotifPreview_C_Get_Rarity_ColorAndOpacity_0");
-static_assert(sizeof(SkinNotifPreview_C_Get_Rarity_ColorAndOpacity_0) == 0x000068, "Wrong size on SkinNotifPreview_C_Get_Rarity_ColorAndOpacity_0");
-static_assert(offsetof(SkinNotifPreview_C_Get_Rarity_ColorAndOpacity_0, ReturnValue) == 0x000000, "Member 'SkinNotifPreview_C_Get_Rarity_ColorAndOpacity_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinNotifPreview_C_Get_Rarity_ColorAndOpacity_0, Temp_byte_Variable) == 0x000010, "Member 'SkinNotifPreview_C_Get_Rarity_ColorAndOpacity_0::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(SkinNotifPreview_C_Get_Rarity_ColorAndOpacity_0, Temp_struct_Variable) == 0x000014, "Member 'SkinNotifPreview_C_Get_Rarity_ColorAndOpacity_0::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(SkinNotifPreview_C_Get_Rarity_ColorAndOpacity_0, Temp_struct_Variable_1) == 0x000024, "Member 'SkinNotifPreview_C_Get_Rarity_ColorAndOpacity_0::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(SkinNotifPreview_C_Get_Rarity_ColorAndOpacity_0, Temp_struct_Variable_2) == 0x000034, "Member 'SkinNotifPreview_C_Get_Rarity_ColorAndOpacity_0::Temp_struct_Variable_2' has a wrong offset!");
-static_assert(offsetof(SkinNotifPreview_C_Get_Rarity_ColorAndOpacity_0, Temp_struct_Variable_3) == 0x000044, "Member 'SkinNotifPreview_C_Get_Rarity_ColorAndOpacity_0::Temp_struct_Variable_3' has a wrong offset!");
-static_assert(offsetof(SkinNotifPreview_C_Get_Rarity_ColorAndOpacity_0, CallFunc_IsValidClass_ReturnValue) == 0x000054, "Member 'SkinNotifPreview_C_Get_Rarity_ColorAndOpacity_0::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinNotifPreview_C_Get_Rarity_ColorAndOpacity_0, K2Node_Select_Default) == 0x000058, "Member 'SkinNotifPreview_C_Get_Rarity_ColorAndOpacity_0::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_SkinNotifPreview_C_Get_Rarity_ColorAndOpacity_0;
 
 // Function SkinNotifPreview.SkinNotifPreview_C.GetBrush_0
 // 0x0118 (0x0118 - 0x0000)
@@ -55,11 +46,7 @@ public:
 	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0090(0x0088)()
 };
-static_assert(alignof(SkinNotifPreview_C_GetBrush_0) == 0x000008, "Wrong alignment on SkinNotifPreview_C_GetBrush_0");
-static_assert(sizeof(SkinNotifPreview_C_GetBrush_0) == 0x000118, "Wrong size on SkinNotifPreview_C_GetBrush_0");
-static_assert(offsetof(SkinNotifPreview_C_GetBrush_0, ReturnValue) == 0x000000, "Member 'SkinNotifPreview_C_GetBrush_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinNotifPreview_C_GetBrush_0, CallFunc_IsValidClass_ReturnValue) == 0x000088, "Member 'SkinNotifPreview_C_GetBrush_0::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SkinNotifPreview_C_GetBrush_0, K2Node_MakeStruct_SlateBrush) == 0x000090, "Member 'SkinNotifPreview_C_GetBrush_0::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
+DUMPER7_ASSERTS_SkinNotifPreview_C_GetBrush_0;
 
 }
 

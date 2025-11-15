@@ -95,63 +95,7 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x01E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x01E8(0x0008)(NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RobberTruck_C_ExecuteUbergraph_RobberTruck) == 0x000008, "Wrong alignment on RobberTruck_C_ExecuteUbergraph_RobberTruck");
-static_assert(sizeof(RobberTruck_C_ExecuteUbergraph_RobberTruck) == 0x0001F0, "Wrong size on RobberTruck_C_ExecuteUbergraph_RobberTruck");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, EntryPoint) == 0x000000, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::EntryPoint' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, Temp_int_Array_Index_Variable) == 0x000004, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, Temp_int_Array_Index_Variable_1) == 0x000010, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, K2Node_ComponentBoundEvent_OverlappedComponent_1) == 0x000018, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::K2Node_ComponentBoundEvent_OverlappedComponent_1' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, K2Node_ComponentBoundEvent_OtherActor_1) == 0x000020, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::K2Node_ComponentBoundEvent_OtherActor_1' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, K2Node_ComponentBoundEvent_OtherComp_1) == 0x000028, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::K2Node_ComponentBoundEvent_OtherComp_1' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, K2Node_ComponentBoundEvent_OtherBodyIndex_1) == 0x000030, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::K2Node_ComponentBoundEvent_OtherBodyIndex_1' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, K2Node_ComponentBoundEvent_bFromSweep) == 0x000034, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::K2Node_ComponentBoundEvent_bFromSweep' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, K2Node_ComponentBoundEvent_SweepResult) == 0x000038, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::K2Node_ComponentBoundEvent_SweepResult' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, K2Node_CustomEvent_MoneyActor_1) == 0x0000C0, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::K2Node_CustomEvent_MoneyActor_1' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, K2Node_DynamicCast_AsPlayer_Character) == 0x0000C8, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::K2Node_DynamicCast_AsPlayer_Character' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, K2Node_DynamicCast_bSuccess) == 0x0000D0, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, K2Node_DynamicCast_AsMoney_Base) == 0x0000D8, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::K2Node_DynamicCast_AsMoney_Base' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, K2Node_DynamicCast_bSuccess_1) == 0x0000E0, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, CallFunc_Add_IntInt_ReturnValue_1) == 0x0000E4, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, K2Node_ComponentBoundEvent_OverlappedComponent) == 0x0000E8, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::K2Node_ComponentBoundEvent_OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, K2Node_ComponentBoundEvent_OtherActor) == 0x0000F0, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::K2Node_ComponentBoundEvent_OtherActor' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, K2Node_ComponentBoundEvent_OtherComp) == 0x0000F8, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::K2Node_ComponentBoundEvent_OtherComp' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, K2Node_ComponentBoundEvent_OtherBodyIndex) == 0x000100, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::K2Node_ComponentBoundEvent_OtherBodyIndex' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, K2Node_DynamicCast_AsPlayer_Character_1) == 0x000108, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::K2Node_DynamicCast_AsPlayer_Character_1' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, K2Node_DynamicCast_bSuccess_2) == 0x000110, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, K2Node_DynamicCast_AsMoney_Base_1) == 0x000118, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::K2Node_DynamicCast_AsMoney_Base_1' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, K2Node_DynamicCast_bSuccess_3) == 0x000120, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, K2Node_CustomEvent_MoneyActor) == 0x000128, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::K2Node_CustomEvent_MoneyActor' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, CallFunc_Subtract_IntInt_ReturnValue) == 0x000130, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, K2Node_CustomEvent_Player) == 0x000138, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::K2Node_CustomEvent_Player' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, K2Node_CustomEvent_EndOverlap_) == 0x000140, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::K2Node_CustomEvent_EndOverlap_' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, CallFunc_IsValid_ReturnValue) == 0x000141, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, CallFunc_IsLocallyControlled_ReturnValue) == 0x000142, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::CallFunc_IsLocallyControlled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, CallFunc_GetAllActorsOfClass_OutActors) == 0x000148, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, CallFunc_Array_Length_ReturnValue) == 0x000158, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x00015C, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, CallFunc_GreaterEqual_IntInt_ReturnValue_1) == 0x00015D, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::CallFunc_GreaterEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, CallFunc_GetOverlappingActors_OverlappingActors) == 0x000160, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::CallFunc_GetOverlappingActors_OverlappingActors' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, CallFunc_BooleanAND_ReturnValue) == 0x000170, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, CallFunc_Array_Length_ReturnValue_1) == 0x000174, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, CallFunc_GreaterEqual_IntInt_ReturnValue_2) == 0x000178, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::CallFunc_GreaterEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, CallFunc_GetAllWidgetsOfClass_FoundWidgets) == 0x000180, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::CallFunc_GetAllWidgetsOfClass_FoundWidgets' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, CallFunc_Array_Get_Item) == 0x000190, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, CallFunc_Array_Length_ReturnValue_2) == 0x000198, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, CallFunc_Array_Length_ReturnValue_3) == 0x00019C, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, CallFunc_Create_ReturnValue) == 0x0001A0, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, CallFunc_Greater_IntInt_ReturnValue) == 0x0001A8, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, CallFunc_GetAllActorsOfClass_OutActors_1) == 0x0001B0, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::CallFunc_GetAllActorsOfClass_OutActors_1' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, CallFunc_GreaterEqual_IntInt_ReturnValue_3) == 0x0001C0, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::CallFunc_GreaterEqual_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, CallFunc_Array_Get_Item_1) == 0x0001C8, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, CallFunc_IsOverlappingActor_ReturnValue) == 0x0001D0, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::CallFunc_IsOverlappingActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, CallFunc_Array_Length_ReturnValue_4) == 0x0001D4, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::CallFunc_Array_Length_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, CallFunc_Less_IntInt_ReturnValue) == 0x0001D8, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, Temp_int_Loop_Counter_Variable_1) == 0x0001DC, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, CallFunc_Less_IntInt_ReturnValue_1) == 0x0001E0, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, CallFunc_Add_IntInt_ReturnValue_2) == 0x0001E4, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_ExecuteUbergraph_RobberTruck, CallFunc_K2_SetTimer_ReturnValue) == 0x0001E8, "Member 'RobberTruck_C_ExecuteUbergraph_RobberTruck::CallFunc_K2_SetTimer_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_RobberTruck_C_ExecuteUbergraph_RobberTruck;
 
 // Function RobberTruck.RobberTruck_C.CountPlayers
 // 0x0010 (0x0010 - 0x0000)
@@ -161,10 +105,7 @@ public:
 	class APlayerCharacter_C*                     Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          EndOverlap_;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RobberTruck_C_CountPlayers) == 0x000008, "Wrong alignment on RobberTruck_C_CountPlayers");
-static_assert(sizeof(RobberTruck_C_CountPlayers) == 0x000010, "Wrong size on RobberTruck_C_CountPlayers");
-static_assert(offsetof(RobberTruck_C_CountPlayers, Player) == 0x000000, "Member 'RobberTruck_C_CountPlayers::Player' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_CountPlayers, EndOverlap_) == 0x000008, "Member 'RobberTruck_C_CountPlayers::EndOverlap_' has a wrong offset!");
+DUMPER7_ASSERTS_RobberTruck_C_CountPlayers;
 
 // Function RobberTruck.RobberTruck_C.RemoveMoney
 // 0x0008 (0x0008 - 0x0000)
@@ -173,9 +114,7 @@ struct RobberTruck_C_RemoveMoney final
 public:
 	class AMoney_base_C*                          MoneyActor;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RobberTruck_C_RemoveMoney) == 0x000008, "Wrong alignment on RobberTruck_C_RemoveMoney");
-static_assert(sizeof(RobberTruck_C_RemoveMoney) == 0x000008, "Wrong size on RobberTruck_C_RemoveMoney");
-static_assert(offsetof(RobberTruck_C_RemoveMoney, MoneyActor) == 0x000000, "Member 'RobberTruck_C_RemoveMoney::MoneyActor' has a wrong offset!");
+DUMPER7_ASSERTS_RobberTruck_C_RemoveMoney;
 
 // Function RobberTruck.RobberTruck_C.BndEvt__RobberTruck_MoneyOverlapper_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature
 // 0x0020 (0x0020 - 0x0000)
@@ -187,12 +126,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RobberTruck_C_BndEvt__RobberTruck_MoneyOverlapper_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on RobberTruck_C_BndEvt__RobberTruck_MoneyOverlapper_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature");
-static_assert(sizeof(RobberTruck_C_BndEvt__RobberTruck_MoneyOverlapper_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature) == 0x000020, "Wrong size on RobberTruck_C_BndEvt__RobberTruck_MoneyOverlapper_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature");
-static_assert(offsetof(RobberTruck_C_BndEvt__RobberTruck_MoneyOverlapper_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'RobberTruck_C_BndEvt__RobberTruck_MoneyOverlapper_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_BndEvt__RobberTruck_MoneyOverlapper_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'RobberTruck_C_BndEvt__RobberTruck_MoneyOverlapper_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_BndEvt__RobberTruck_MoneyOverlapper_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'RobberTruck_C_BndEvt__RobberTruck_MoneyOverlapper_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_BndEvt__RobberTruck_MoneyOverlapper_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'RobberTruck_C_BndEvt__RobberTruck_MoneyOverlapper_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
+DUMPER7_ASSERTS_RobberTruck_C_BndEvt__RobberTruck_MoneyOverlapper_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature;
 
 // Function RobberTruck.RobberTruck_C.CountMoney
 // 0x0008 (0x0008 - 0x0000)
@@ -201,9 +135,7 @@ struct RobberTruck_C_CountMoney final
 public:
 	class AMoney_base_C*                          MoneyActor;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RobberTruck_C_CountMoney) == 0x000008, "Wrong alignment on RobberTruck_C_CountMoney");
-static_assert(sizeof(RobberTruck_C_CountMoney) == 0x000008, "Wrong size on RobberTruck_C_CountMoney");
-static_assert(offsetof(RobberTruck_C_CountMoney, MoneyActor) == 0x000000, "Member 'RobberTruck_C_CountMoney::MoneyActor' has a wrong offset!");
+DUMPER7_ASSERTS_RobberTruck_C_CountMoney;
 
 // Function RobberTruck.RobberTruck_C.BndEvt__RobberTruck_MoneyOverlapper_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
 // 0x00A8 (0x00A8 - 0x0000)
@@ -218,14 +150,7 @@ public:
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(RobberTruck_C_BndEvt__RobberTruck_MoneyOverlapper_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on RobberTruck_C_BndEvt__RobberTruck_MoneyOverlapper_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
-static_assert(sizeof(RobberTruck_C_BndEvt__RobberTruck_MoneyOverlapper_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature) == 0x0000A8, "Wrong size on RobberTruck_C_BndEvt__RobberTruck_MoneyOverlapper_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
-static_assert(offsetof(RobberTruck_C_BndEvt__RobberTruck_MoneyOverlapper_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'RobberTruck_C_BndEvt__RobberTruck_MoneyOverlapper_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_BndEvt__RobberTruck_MoneyOverlapper_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'RobberTruck_C_BndEvt__RobberTruck_MoneyOverlapper_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_BndEvt__RobberTruck_MoneyOverlapper_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'RobberTruck_C_BndEvt__RobberTruck_MoneyOverlapper_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_BndEvt__RobberTruck_MoneyOverlapper_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'RobberTruck_C_BndEvt__RobberTruck_MoneyOverlapper_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_BndEvt__RobberTruck_MoneyOverlapper_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, bFromSweep) == 0x00001C, "Member 'RobberTruck_C_BndEvt__RobberTruck_MoneyOverlapper_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::bFromSweep' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_BndEvt__RobberTruck_MoneyOverlapper_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, SweepResult) == 0x000020, "Member 'RobberTruck_C_BndEvt__RobberTruck_MoneyOverlapper_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::SweepResult' has a wrong offset!");
+DUMPER7_ASSERTS_RobberTruck_C_BndEvt__RobberTruck_MoneyOverlapper_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature;
 
 // Function RobberTruck.RobberTruck_C.UserConstructionScript
 // 0x0018 (0x0018 - 0x0000)
@@ -234,9 +159,7 @@ struct RobberTruck_C_UserConstructionScript final
 public:
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0000(0x0018)()
 };
-static_assert(alignof(RobberTruck_C_UserConstructionScript) == 0x000008, "Wrong alignment on RobberTruck_C_UserConstructionScript");
-static_assert(sizeof(RobberTruck_C_UserConstructionScript) == 0x000018, "Wrong size on RobberTruck_C_UserConstructionScript");
-static_assert(offsetof(RobberTruck_C_UserConstructionScript, CallFunc_Conv_IntToText_ReturnValue) == 0x000000, "Member 'RobberTruck_C_UserConstructionScript::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_RobberTruck_C_UserConstructionScript;
 
 // Function RobberTruck.RobberTruck_C.CheckAllMoney
 // 0x0068 (0x0068 - 0x0000)
@@ -263,23 +186,7 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RobberTruck_C_CheckAllMoney) == 0x000008, "Wrong alignment on RobberTruck_C_CheckAllMoney");
-static_assert(sizeof(RobberTruck_C_CheckAllMoney) == 0x000068, "Wrong size on RobberTruck_C_CheckAllMoney");
-static_assert(offsetof(RobberTruck_C_CheckAllMoney, TakeVar) == 0x000000, "Member 'RobberTruck_C_CheckAllMoney::TakeVar' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_CheckAllMoney, Temp_int_Array_Index_Variable) == 0x000004, "Member 'RobberTruck_C_CheckAllMoney::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_CheckAllMoney, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'RobberTruck_C_CheckAllMoney::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_CheckAllMoney, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'RobberTruck_C_CheckAllMoney::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_CheckAllMoney, CallFunc_GetAllActorsOfClass_OutActors) == 0x000010, "Member 'RobberTruck_C_CheckAllMoney::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_CheckAllMoney, CallFunc_Array_Length_ReturnValue) == 0x000020, "Member 'RobberTruck_C_CheckAllMoney::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_CheckAllMoney, CallFunc_GetOverlappingActors_OverlappingActors) == 0x000028, "Member 'RobberTruck_C_CheckAllMoney::CallFunc_GetOverlappingActors_OverlappingActors' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_CheckAllMoney, CallFunc_Array_Length_ReturnValue_1) == 0x000038, "Member 'RobberTruck_C_CheckAllMoney::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_CheckAllMoney, CallFunc_Array_Get_Item) == 0x000040, "Member 'RobberTruck_C_CheckAllMoney::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_CheckAllMoney, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000048, "Member 'RobberTruck_C_CheckAllMoney::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_CheckAllMoney, K2Node_DynamicCast_AsMoney_Base) == 0x000050, "Member 'RobberTruck_C_CheckAllMoney::K2Node_DynamicCast_AsMoney_Base' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_CheckAllMoney, K2Node_DynamicCast_bSuccess) == 0x000058, "Member 'RobberTruck_C_CheckAllMoney::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_CheckAllMoney, CallFunc_Array_Length_ReturnValue_2) == 0x00005C, "Member 'RobberTruck_C_CheckAllMoney::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_CheckAllMoney, CallFunc_Add_IntInt_ReturnValue_1) == 0x000060, "Member 'RobberTruck_C_CheckAllMoney::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberTruck_C_CheckAllMoney, CallFunc_Less_IntInt_ReturnValue) == 0x000064, "Member 'RobberTruck_C_CheckAllMoney::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_RobberTruck_C_CheckAllMoney;
 
 // Function RobberTruck.RobberTruck_C.Countdown
 // 0x0008 (0x0008 - 0x0000)
@@ -288,9 +195,7 @@ struct RobberTruck_C_Countdown final
 public:
 	struct FTimespan                              CallFunc_Add_TimespanTimespan_ReturnValue;         // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RobberTruck_C_Countdown) == 0x000008, "Wrong alignment on RobberTruck_C_Countdown");
-static_assert(sizeof(RobberTruck_C_Countdown) == 0x000008, "Wrong size on RobberTruck_C_Countdown");
-static_assert(offsetof(RobberTruck_C_Countdown, CallFunc_Add_TimespanTimespan_ReturnValue) == 0x000000, "Member 'RobberTruck_C_Countdown::CallFunc_Add_TimespanTimespan_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_RobberTruck_C_Countdown;
 
 }
 

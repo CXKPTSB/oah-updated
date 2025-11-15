@@ -39,21 +39,7 @@ public:
 	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USettingsUI_C*                          CallFunc_Create_ReturnValue_2;                     // 0x00B8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MoreOptions_C_ExecuteUbergraph_MoreOptions) == 0x000008, "Wrong alignment on MoreOptions_C_ExecuteUbergraph_MoreOptions");
-static_assert(sizeof(MoreOptions_C_ExecuteUbergraph_MoreOptions) == 0x0000C0, "Wrong size on MoreOptions_C_ExecuteUbergraph_MoreOptions");
-static_assert(offsetof(MoreOptions_C_ExecuteUbergraph_MoreOptions, EntryPoint) == 0x000000, "Member 'MoreOptions_C_ExecuteUbergraph_MoreOptions::EntryPoint' has a wrong offset!");
-static_assert(offsetof(MoreOptions_C_ExecuteUbergraph_MoreOptions, CallFunc_Create_ReturnValue) == 0x000008, "Member 'MoreOptions_C_ExecuteUbergraph_MoreOptions::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MoreOptions_C_ExecuteUbergraph_MoreOptions, K2Node_Event_InFocusEvent) == 0x000010, "Member 'MoreOptions_C_ExecuteUbergraph_MoreOptions::K2Node_Event_InFocusEvent' has a wrong offset!");
-static_assert(offsetof(MoreOptions_C_ExecuteUbergraph_MoreOptions, K2Node_Event_MouseEvent) == 0x000018, "Member 'MoreOptions_C_ExecuteUbergraph_MoreOptions::K2Node_Event_MouseEvent' has a wrong offset!");
-static_assert(offsetof(MoreOptions_C_ExecuteUbergraph_MoreOptions, CallFunc_GetPlayerController_ReturnValue) == 0x000088, "Member 'MoreOptions_C_ExecuteUbergraph_MoreOptions::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MoreOptions_C_ExecuteUbergraph_MoreOptions, CallFunc_GetMousePositionScaledByDPI_LocationX) == 0x000090, "Member 'MoreOptions_C_ExecuteUbergraph_MoreOptions::CallFunc_GetMousePositionScaledByDPI_LocationX' has a wrong offset!");
-static_assert(offsetof(MoreOptions_C_ExecuteUbergraph_MoreOptions, CallFunc_GetMousePositionScaledByDPI_LocationY) == 0x000094, "Member 'MoreOptions_C_ExecuteUbergraph_MoreOptions::CallFunc_GetMousePositionScaledByDPI_LocationY' has a wrong offset!");
-static_assert(offsetof(MoreOptions_C_ExecuteUbergraph_MoreOptions, CallFunc_GetMousePositionScaledByDPI_ReturnValue) == 0x000098, "Member 'MoreOptions_C_ExecuteUbergraph_MoreOptions::CallFunc_GetMousePositionScaledByDPI_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MoreOptions_C_ExecuteUbergraph_MoreOptions, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x00009C, "Member 'MoreOptions_C_ExecuteUbergraph_MoreOptions::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MoreOptions_C_ExecuteUbergraph_MoreOptions, CallFunc_Subtract_FloatFloat_ReturnValue_1) == 0x0000A0, "Member 'MoreOptions_C_ExecuteUbergraph_MoreOptions::CallFunc_Subtract_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MoreOptions_C_ExecuteUbergraph_MoreOptions, CallFunc_Create_ReturnValue_1) == 0x0000A8, "Member 'MoreOptions_C_ExecuteUbergraph_MoreOptions::CallFunc_Create_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MoreOptions_C_ExecuteUbergraph_MoreOptions, CallFunc_MakeVector2D_ReturnValue) == 0x0000B0, "Member 'MoreOptions_C_ExecuteUbergraph_MoreOptions::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MoreOptions_C_ExecuteUbergraph_MoreOptions, CallFunc_Create_ReturnValue_2) == 0x0000B8, "Member 'MoreOptions_C_ExecuteUbergraph_MoreOptions::CallFunc_Create_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_MoreOptions_C_ExecuteUbergraph_MoreOptions;
 
 // Function MoreOptions.MoreOptions_C.OnMouseLeave
 // 0x0070 (0x0070 - 0x0000)
@@ -62,9 +48,7 @@ struct MoreOptions_C_OnMouseLeave final
 public:
 	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(MoreOptions_C_OnMouseLeave) == 0x000008, "Wrong alignment on MoreOptions_C_OnMouseLeave");
-static_assert(sizeof(MoreOptions_C_OnMouseLeave) == 0x000070, "Wrong size on MoreOptions_C_OnMouseLeave");
-static_assert(offsetof(MoreOptions_C_OnMouseLeave, MouseEvent) == 0x000000, "Member 'MoreOptions_C_OnMouseLeave::MouseEvent' has a wrong offset!");
+DUMPER7_ASSERTS_MoreOptions_C_OnMouseLeave;
 
 // Function MoreOptions.MoreOptions_C.OnFocusLost
 // 0x0008 (0x0008 - 0x0000)
@@ -73,9 +57,7 @@ struct MoreOptions_C_OnFocusLost final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(MoreOptions_C_OnFocusLost) == 0x000004, "Wrong alignment on MoreOptions_C_OnFocusLost");
-static_assert(sizeof(MoreOptions_C_OnFocusLost) == 0x000008, "Wrong size on MoreOptions_C_OnFocusLost");
-static_assert(offsetof(MoreOptions_C_OnFocusLost, InFocusEvent) == 0x000000, "Member 'MoreOptions_C_OnFocusLost::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_MoreOptions_C_OnFocusLost;
 
 }
 

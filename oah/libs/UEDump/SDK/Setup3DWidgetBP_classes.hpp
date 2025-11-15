@@ -40,24 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Setup3DWidgetBP_C">();
+		BP_STATIC_CLASS_IMPL("Setup3DWidgetBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Setup3DWidgetBP_C")
 	}
 	static class ASetup3DWidgetBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASetup3DWidgetBP_C>();
 	}
 };
-static_assert(alignof(ASetup3DWidgetBP_C) == 0x000008, "Wrong alignment on ASetup3DWidgetBP_C");
-static_assert(sizeof(ASetup3DWidgetBP_C) == 0x000268, "Wrong size on ASetup3DWidgetBP_C");
-static_assert(offsetof(ASetup3DWidgetBP_C, UberGraphFrame) == 0x000220, "Member 'ASetup3DWidgetBP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ASetup3DWidgetBP_C, StaticMesh) == 0x000228, "Member 'ASetup3DWidgetBP_C::StaticMesh' has a wrong offset!");
-static_assert(offsetof(ASetup3DWidgetBP_C, SM_prop_WhiteBoardPhoto2) == 0x000230, "Member 'ASetup3DWidgetBP_C::SM_prop_WhiteBoardPhoto2' has a wrong offset!");
-static_assert(offsetof(ASetup3DWidgetBP_C, SM_prop_WhiteBoardPhoto1) == 0x000238, "Member 'ASetup3DWidgetBP_C::SM_prop_WhiteBoardPhoto1' has a wrong offset!");
-static_assert(offsetof(ASetup3DWidgetBP_C, SM_prop_WhiteBoardPhoto) == 0x000240, "Member 'ASetup3DWidgetBP_C::SM_prop_WhiteBoardPhoto' has a wrong offset!");
-static_assert(offsetof(ASetup3DWidgetBP_C, Widget) == 0x000248, "Member 'ASetup3DWidgetBP_C::Widget' has a wrong offset!");
-static_assert(offsetof(ASetup3DWidgetBP_C, DefaultSceneRoot) == 0x000250, "Member 'ASetup3DWidgetBP_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ASetup3DWidgetBP_C, SetupsWidget) == 0x000258, "Member 'ASetup3DWidgetBP_C::SetupsWidget' has a wrong offset!");
-static_assert(offsetof(ASetup3DWidgetBP_C, Menu_Player) == 0x000260, "Member 'ASetup3DWidgetBP_C::Menu_Player' has a wrong offset!");
+DUMPER7_ASSERTS_ASetup3DWidgetBP_C;
 
 }
 

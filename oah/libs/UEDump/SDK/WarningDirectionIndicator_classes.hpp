@@ -44,26 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WarningDirectionIndicator_C">();
+		BP_STATIC_CLASS_IMPL("WarningDirectionIndicator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WarningDirectionIndicator_C")
 	}
 	static class UWarningDirectionIndicator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWarningDirectionIndicator_C>();
 	}
 };
-static_assert(alignof(UWarningDirectionIndicator_C) == 0x000008, "Wrong alignment on UWarningDirectionIndicator_C");
-static_assert(sizeof(UWarningDirectionIndicator_C) == 0x0002B0, "Wrong size on UWarningDirectionIndicator_C");
-static_assert(offsetof(UWarningDirectionIndicator_C, UberGraphFrame) == 0x000260, "Member 'UWarningDirectionIndicator_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWarningDirectionIndicator_C, WarningFade) == 0x000268, "Member 'UWarningDirectionIndicator_C::WarningFade' has a wrong offset!");
-static_assert(offsetof(UWarningDirectionIndicator_C, WarningAnim) == 0x000270, "Member 'UWarningDirectionIndicator_C::WarningAnim' has a wrong offset!");
-static_assert(offsetof(UWarningDirectionIndicator_C, WarningFiller_left) == 0x000278, "Member 'UWarningDirectionIndicator_C::WarningFiller_left' has a wrong offset!");
-static_assert(offsetof(UWarningDirectionIndicator_C, WarningFillerRight) == 0x000280, "Member 'UWarningDirectionIndicator_C::WarningFillerRight' has a wrong offset!");
-static_assert(offsetof(UWarningDirectionIndicator_C, WarningRotationBorder) == 0x000288, "Member 'UWarningDirectionIndicator_C::WarningRotationBorder' has a wrong offset!");
-static_assert(offsetof(UWarningDirectionIndicator_C, WarningActor) == 0x000290, "Member 'UWarningDirectionIndicator_C::WarningActor' has a wrong offset!");
-static_assert(offsetof(UWarningDirectionIndicator_C, Player) == 0x000298, "Member 'UWarningDirectionIndicator_C::Player' has a wrong offset!");
-static_assert(offsetof(UWarningDirectionIndicator_C, WarningTime) == 0x0002A0, "Member 'UWarningDirectionIndicator_C::WarningTime' has a wrong offset!");
-static_assert(offsetof(UWarningDirectionIndicator_C, CurrentTime) == 0x0002A4, "Member 'UWarningDirectionIndicator_C::CurrentTime' has a wrong offset!");
-static_assert(offsetof(UWarningDirectionIndicator_C, Percent) == 0x0002A8, "Member 'UWarningDirectionIndicator_C::Percent' has a wrong offset!");
+DUMPER7_ASSERTS_UWarningDirectionIndicator_C;
 
 }
 

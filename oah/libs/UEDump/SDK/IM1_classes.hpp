@@ -28,18 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"IM1_C">();
+		BP_STATIC_CLASS_IMPL("IM1_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"IM1_C")
 	}
 	static class AIM1_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AIM1_C>();
 	}
 };
-static_assert(alignof(AIM1_C) == 0x000008, "Wrong alignment on AIM1_C");
-static_assert(sizeof(AIM1_C) == 0x000348, "Wrong size on AIM1_C");
-static_assert(offsetof(AIM1_C, CollisionBox2) == 0x000330, "Member 'AIM1_C::CollisionBox2' has a wrong offset!");
-static_assert(offsetof(AIM1_C, CollisionBox1) == 0x000338, "Member 'AIM1_C::CollisionBox1' has a wrong offset!");
-static_assert(offsetof(AIM1_C, Scope_front) == 0x000340, "Member 'AIM1_C::Scope_front' has a wrong offset!");
+DUMPER7_ASSERTS_AIM1_C;
 
 }
 

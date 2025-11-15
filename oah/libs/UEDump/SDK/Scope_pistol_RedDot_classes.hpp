@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Scope_pistol_RedDot_C">();
+		BP_STATIC_CLASS_IMPL("Scope_pistol_RedDot_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Scope_pistol_RedDot_C")
 	}
 	static class AScope_pistol_RedDot_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AScope_pistol_RedDot_C>();
 	}
 };
-static_assert(alignof(AScope_pistol_RedDot_C) == 0x000008, "Wrong alignment on AScope_pistol_RedDot_C");
-static_assert(sizeof(AScope_pistol_RedDot_C) == 0x000278, "Wrong size on AScope_pistol_RedDot_C");
-static_assert(offsetof(AScope_pistol_RedDot_C, Plane) == 0x000270, "Member 'AScope_pistol_RedDot_C::Plane' has a wrong offset!");
+DUMPER7_ASSERTS_AScope_pistol_RedDot_C;
 
 }
 

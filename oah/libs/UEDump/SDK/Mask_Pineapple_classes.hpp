@@ -23,15 +23,18 @@ class AMask_Pineapple_C final : public AMask_base_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Mask_Pineapple_C">();
+		BP_STATIC_CLASS_IMPL("Mask_Pineapple_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Mask_Pineapple_C")
 	}
 	static class AMask_Pineapple_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMask_Pineapple_C>();
 	}
 };
-static_assert(alignof(AMask_Pineapple_C) == 0x000008, "Wrong alignment on AMask_Pineapple_C");
-static_assert(sizeof(AMask_Pineapple_C) == 0x000230, "Wrong size on AMask_Pineapple_C");
+DUMPER7_ASSERTS_AMask_Pineapple_C;
 
 }
 

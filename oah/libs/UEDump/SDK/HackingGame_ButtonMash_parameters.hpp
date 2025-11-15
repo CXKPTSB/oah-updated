@@ -49,30 +49,7 @@ public:
 	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue_1;             // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash) == 0x000008, "Wrong alignment on HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash");
-static_assert(sizeof(HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash) == 0x0000A0, "Wrong size on HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash");
-static_assert(offsetof(HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash, EntryPoint) == 0x000000, "Member 'HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash::EntryPoint' has a wrong offset!");
-static_assert(offsetof(HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash, CallFunc_MakeLiteralFloat_ReturnValue) == 0x000004, "Member 'HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash::CallFunc_MakeLiteralFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash, Temp_bool_Variable) == 0x000008, "Member 'HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x000009, "Member 'HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash, Temp_float_Variable) == 0x00000C, "Member 'HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000010, "Member 'HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000014, "Member 'HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash, CallFunc_RandomFloatInRange_ReturnValue) == 0x000018, "Member 'HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x00001C, "Member 'HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash, CallFunc_MakeVector2D_ReturnValue) == 0x000020, "Member 'HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash, K2Node_Event_MyGeometry) == 0x000028, "Member 'HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash, K2Node_Event_InDeltaTime) == 0x000060, "Member 'HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash, CallFunc_MakeVector2D_ReturnValue_1) == 0x000064, "Member 'HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash::CallFunc_MakeVector2D_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash, CallFunc_PlayAnimation_ReturnValue) == 0x000070, "Member 'HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash, CallFunc_GetOwningPlayerPawn_ReturnValue) == 0x000078, "Member 'HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash::CallFunc_GetOwningPlayerPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash, K2Node_DynamicCast_AsPlayer_Character) == 0x000080, "Member 'HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash::K2Node_DynamicCast_AsPlayer_Character' has a wrong offset!");
-static_assert(offsetof(HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash, K2Node_DynamicCast_bSuccess) == 0x000088, "Member 'HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash, CallFunc_Divide_FloatFloat_ReturnValue) == 0x00008C, "Member 'HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash, K2Node_Select_Default) == 0x000090, "Member 'HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000094, "Member 'HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash, CallFunc_Add_FloatFloat_ReturnValue) == 0x000098, "Member 'HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash, CallFunc_Add_FloatFloat_ReturnValue_1) == 0x00009C, "Member 'HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash::CallFunc_Add_FloatFloat_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_HackingGame_ButtonMash_C_ExecuteUbergraph_HackingGame_ButtonMash;
 
 // Function HackingGame_ButtonMash.HackingGame_ButtonMash_C.Tick
 // 0x003C (0x003C - 0x0000)
@@ -82,10 +59,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HackingGame_ButtonMash_C_Tick) == 0x000004, "Wrong alignment on HackingGame_ButtonMash_C_Tick");
-static_assert(sizeof(HackingGame_ButtonMash_C_Tick) == 0x00003C, "Wrong size on HackingGame_ButtonMash_C_Tick");
-static_assert(offsetof(HackingGame_ButtonMash_C_Tick, MyGeometry) == 0x000000, "Member 'HackingGame_ButtonMash_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(HackingGame_ButtonMash_C_Tick, InDeltaTime) == 0x000038, "Member 'HackingGame_ButtonMash_C_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_HackingGame_ButtonMash_C_Tick;
 
 }
 

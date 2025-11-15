@@ -33,15 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MagicLeapIdentity">();
+		STATIC_CLASS_IMPL("MagicLeapIdentity")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MagicLeapIdentity")
 	}
 	static class UMagicLeapIdentity* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMagicLeapIdentity>();
 	}
 };
-static_assert(alignof(UMagicLeapIdentity) == 0x000008, "Wrong alignment on UMagicLeapIdentity");
-static_assert(sizeof(UMagicLeapIdentity) == 0x000038, "Wrong size on UMagicLeapIdentity");
+DUMPER7_ASSERTS_UMagicLeapIdentity;
 
 }
 

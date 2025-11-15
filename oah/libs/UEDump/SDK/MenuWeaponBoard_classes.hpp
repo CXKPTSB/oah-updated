@@ -54,25 +54,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MenuWeaponBoard_C">();
+		BP_STATIC_CLASS_IMPL("MenuWeaponBoard_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MenuWeaponBoard_C")
 	}
 	static class AMenuWeaponBoard_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMenuWeaponBoard_C>();
 	}
 };
-static_assert(alignof(AMenuWeaponBoard_C) == 0x000010, "Wrong alignment on AMenuWeaponBoard_C");
-static_assert(sizeof(AMenuWeaponBoard_C) == 0x0002D0, "Wrong size on AMenuWeaponBoard_C");
-static_assert(offsetof(AMenuWeaponBoard_C, UberGraphFrame) == 0x000220, "Member 'AMenuWeaponBoard_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AMenuWeaponBoard_C, Arrow) == 0x000228, "Member 'AMenuWeaponBoard_C::Arrow' has a wrong offset!");
-static_assert(offsetof(AMenuWeaponBoard_C, SecondaryWeapon) == 0x000230, "Member 'AMenuWeaponBoard_C::SecondaryWeapon' has a wrong offset!");
-static_assert(offsetof(AMenuWeaponBoard_C, PrimaryWeapon) == 0x000238, "Member 'AMenuWeaponBoard_C::PrimaryWeapon' has a wrong offset!");
-static_assert(offsetof(AMenuWeaponBoard_C, StaticMesh) == 0x000240, "Member 'AMenuWeaponBoard_C::StaticMesh' has a wrong offset!");
-static_assert(offsetof(AMenuWeaponBoard_C, DefaultSceneRoot) == 0x000248, "Member 'AMenuWeaponBoard_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AMenuWeaponBoard_C, ModifyingWeapon) == 0x000250, "Member 'AMenuWeaponBoard_C::ModifyingWeapon' has a wrong offset!");
-static_assert(offsetof(AMenuWeaponBoard_C, DefaultPrimarylocation) == 0x000260, "Member 'AMenuWeaponBoard_C::DefaultPrimarylocation' has a wrong offset!");
-static_assert(offsetof(AMenuWeaponBoard_C, DefaultScondaryLocation) == 0x000290, "Member 'AMenuWeaponBoard_C::DefaultScondaryLocation' has a wrong offset!");
-static_assert(offsetof(AMenuWeaponBoard_C, ModifyingWeapon_) == 0x0002C0, "Member 'AMenuWeaponBoard_C::ModifyingWeapon_' has a wrong offset!");
+DUMPER7_ASSERTS_AMenuWeaponBoard_C;
 
 }
 

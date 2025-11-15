@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "ShopItemCategory_structs.hpp"
 #include "SteamCoreWeb_structs.hpp"
 #include "Engine_structs.hpp"
+#include "ShopItemCategory_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
 
@@ -73,39 +73,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CoinShopUIChild_C">();
+		BP_STATIC_CLASS_IMPL("CoinShopUIChild_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CoinShopUIChild_C")
 	}
 	static class UCoinShopUIChild_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCoinShopUIChild_C>();
 	}
 };
-static_assert(alignof(UCoinShopUIChild_C) == 0x000008, "Wrong alignment on UCoinShopUIChild_C");
-static_assert(sizeof(UCoinShopUIChild_C) == 0x000340, "Wrong size on UCoinShopUIChild_C");
-static_assert(offsetof(UCoinShopUIChild_C, UberGraphFrame) == 0x000260, "Member 'UCoinShopUIChild_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UCoinShopUIChild_C, PressAnim) == 0x000268, "Member 'UCoinShopUIChild_C::PressAnim' has a wrong offset!");
-static_assert(offsetof(UCoinShopUIChild_C, HoverAnim) == 0x000270, "Member 'UCoinShopUIChild_C::HoverAnim' has a wrong offset!");
-static_assert(offsetof(UCoinShopUIChild_C, One500Price) == 0x000278, "Member 'UCoinShopUIChild_C::One500Price' has a wrong offset!");
-static_assert(offsetof(UCoinShopUIChild_C, AmountText) == 0x000280, "Member 'UCoinShopUIChild_C::AmountText' has a wrong offset!");
-static_assert(offsetof(UCoinShopUIChild_C, Border) == 0x000288, "Member 'UCoinShopUIChild_C::Border' has a wrong offset!");
-static_assert(offsetof(UCoinShopUIChild_C, Border_110) == 0x000290, "Member 'UCoinShopUIChild_C::Border_110' has a wrong offset!");
-static_assert(offsetof(UCoinShopUIChild_C, Buy1500) == 0x000298, "Member 'UCoinShopUIChild_C::Buy1500' has a wrong offset!");
-static_assert(offsetof(UCoinShopUIChild_C, Image_0) == 0x0002A0, "Member 'UCoinShopUIChild_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UCoinShopUIChild_C, SkinBundleBorder) == 0x0002A8, "Member 'UCoinShopUIChild_C::SkinBundleBorder' has a wrong offset!");
-static_assert(offsetof(UCoinShopUIChild_C, SkinBundleWrap) == 0x0002B0, "Member 'UCoinShopUIChild_C::SkinBundleWrap' has a wrong offset!");
-static_assert(offsetof(UCoinShopUIChild_C, TextBlock_1) == 0x0002B8, "Member 'UCoinShopUIChild_C::TextBlock_1' has a wrong offset!");
-static_assert(offsetof(UCoinShopUIChild_C, TextBlock_119) == 0x0002C0, "Member 'UCoinShopUIChild_C::TextBlock_119' has a wrong offset!");
-static_assert(offsetof(UCoinShopUIChild_C, CoinAmount) == 0x0002C8, "Member 'UCoinShopUIChild_C::CoinAmount' has a wrong offset!");
-static_assert(offsetof(UCoinShopUIChild_C, As_Robber_Controller) == 0x0002D0, "Member 'UCoinShopUIChild_C::As_Robber_Controller' has a wrong offset!");
-static_assert(offsetof(UCoinShopUIChild_C, Icon) == 0x0002D8, "Member 'UCoinShopUIChild_C::Icon' has a wrong offset!");
-static_assert(offsetof(UCoinShopUIChild_C, Price) == 0x0002E0, "Member 'UCoinShopUIChild_C::Price' has a wrong offset!");
-static_assert(offsetof(UCoinShopUIChild_C, ValuesName) == 0x0002E8, "Member 'UCoinShopUIChild_C::ValuesName' has a wrong offset!");
-static_assert(offsetof(UCoinShopUIChild_C, Price_Array) == 0x0002F8, "Member 'UCoinShopUIChild_C::Price_Array' has a wrong offset!");
-static_assert(offsetof(UCoinShopUIChild_C, OrderId) == 0x000308, "Member 'UCoinShopUIChild_C::OrderId' has a wrong offset!");
-static_assert(offsetof(UCoinShopUIChild_C, TransId) == 0x000318, "Member 'UCoinShopUIChild_C::TransId' has a wrong offset!");
-static_assert(offsetof(UCoinShopUIChild_C, MostPopular_) == 0x000328, "Member 'UCoinShopUIChild_C::MostPopular_' has a wrong offset!");
-static_assert(offsetof(UCoinShopUIChild_C, PercentExtra) == 0x00032C, "Member 'UCoinShopUIChild_C::PercentExtra' has a wrong offset!");
-static_assert(offsetof(UCoinShopUIChild_C, BundledSkins) == 0x000330, "Member 'UCoinShopUIChild_C::BundledSkins' has a wrong offset!");
+DUMPER7_ASSERTS_UCoinShopUIChild_C;
 
 }
 

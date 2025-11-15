@@ -40,7 +40,7 @@ void ARobberController_C::ExecuteUbergraph_RobberController(int32 EntryPoint)
 // Function RobberController.RobberController_C.OnFullUpdate
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FSteamInventoryFullUpdate        Data                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+// const struct FSteamInventoryFullUpdate& Data                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 
 void ARobberController_C::OnFullUpdate(const struct FSteamInventoryFullUpdate& Data)
 {
@@ -60,7 +60,7 @@ void ARobberController_C::OnFullUpdate(const struct FSteamInventoryFullUpdate& D
 // Function RobberController.RobberController_C.UpdateWhenResultIsFinished
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FSteamInventoryResult            Result                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+// const struct FSteamInventoryResult&     Result                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 
 void ARobberController_C::UpdateWhenResultIsFinished(const struct FSteamInventoryResult& Result)
 {
@@ -108,7 +108,7 @@ void ARobberController_C::CheckCoinPacks()
 // Function RobberController.RobberController_C.UpdateSteamItemsEvent
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FSteamInventoryResult            InventoryHandle_0                                      (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+// const struct FSteamInventoryResult&     InventoryHandle_0                                      (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 
 void ARobberController_C::UpdateSteamItemsEvent(const struct FSteamInventoryResult& InventoryHandle_0)
 {
@@ -142,7 +142,7 @@ void ARobberController_C::OnUpdateAllSteamInventory()
 // Function RobberController.RobberController_C.OnBackupFileUploaded
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FRemoteStorageFileWriteAsyncCompleteData                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+// const struct FRemoteStorageFileWriteAsyncComplete&Data                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 // bool                                    bWasSuccessful                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void ARobberController_C::OnBackupFileUploaded(const struct FRemoteStorageFileWriteAsyncComplete& Data, bool bWasSuccessful)
@@ -164,7 +164,7 @@ void ARobberController_C::OnBackupFileUploaded(const struct FRemoteStorageFileWr
 // Function RobberController.RobberController_C.OnCloudFilesSaves
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FRemoteStorageFileWriteAsyncCompleteData                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+// const struct FRemoteStorageFileWriteAsyncComplete&Data                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 // bool                                    bWasSuccessful                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void ARobberController_C::OnCloudFilesSaves(const struct FRemoteStorageFileWriteAsyncComplete& Data, bool bWasSuccessful)
@@ -270,7 +270,7 @@ void ARobberController_C::SaveInput()
 // Function RobberController.RobberController_C.SetCompletedSetupsServer
 // (Net, NetReliable, NetServer, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UClass*>                   Setups                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const TArray<class UClass*>&            Setups                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
 void ARobberController_C::SetCompletedSetupsServer(const TArray<class UClass*>& Setups)
 {
@@ -450,7 +450,7 @@ void ARobberController_C::DefineCoinItem()
 // Function RobberController.RobberController_C.LoadSavefromCloud
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FString                           Save_name                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    Save_name                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
 void ARobberController_C::LoadSavefromCloud(const class FString& Save_name)
 {
@@ -470,7 +470,7 @@ void ARobberController_C::LoadSavefromCloud(const class FString& Save_name)
 // Function RobberController.RobberController_C.UploadToCloud
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FString                           SaveName                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    SaveName                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
 void ARobberController_C::UploadToCloud(const class FString& SaveName)
 {
@@ -572,7 +572,7 @@ void ARobberController_C::VoteRestart(class ARobberController_C* Player_0)
 // Function RobberController.RobberController_C.SetToolsServer
 // (Net, NetReliable, NetServer, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UClass*>                   Tools                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const TArray<class UClass*>&            Tools                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
 void ARobberController_C::SetToolsServer(const TArray<class UClass*>& Tools)
 {
@@ -592,8 +592,8 @@ void ARobberController_C::SetToolsServer(const TArray<class UClass*>& Tools)
 // Function RobberController.RobberController_C.UpdateMessages
 // (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FString                           ChatLog_0                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// class FString                           NameLog                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    ChatLog_0                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    NameLog                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
 void ARobberController_C::UpdateMessages(const class FString& ChatLog_0, const class FString& NameLog)
 {
@@ -614,8 +614,8 @@ void ARobberController_C::UpdateMessages(const class FString& ChatLog_0, const c
 // Function RobberController.RobberController_C.ChatMessageController
 // (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FString                           Message                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// class FString                           Name_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    Message                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    Name_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
 void ARobberController_C::ChatMessageController(const class FString& Message, const class FString& Name_0)
 {
@@ -636,8 +636,8 @@ void ARobberController_C::ChatMessageController(const class FString& Message, co
 // Function RobberController.RobberController_C.SetWeaponsServer
 // (Net, NetReliable, NetServer, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UClass*>                   Weapons                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// TArray<struct FAttachmentArrayStructure>Mods                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const TArray<class UClass*>&            Weapons                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const TArray<struct FAttachmentArrayStructure>&Mods                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
 void ARobberController_C::SetWeaponsServer(const TArray<class UClass*>& Weapons, const TArray<struct FAttachmentArrayStructure>& Mods)
 {
@@ -742,10 +742,10 @@ void ARobberController_C::SaveAppearance()
 // Function RobberController.RobberController_C.UpdateAppearance
 // (Net, NetReliable, NetServer, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UClass*>                   Masks                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// TArray<class UClass*>                   Outfits                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// TArray<class UClass*>                   Emote                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// TArray<class UClass*>                   Armor                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const TArray<class UClass*>&            Masks                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const TArray<class UClass*>&            Outfits                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const TArray<class UClass*>&            Emote                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const TArray<class UClass*>&            Armor                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // class UMaterialInterface*               SkinColor_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ARobberController_C::UpdateAppearance(const TArray<class UClass*>& Masks, const TArray<class UClass*>& Outfits, const TArray<class UClass*>& Emote, const TArray<class UClass*>& Armor, class UMaterialInterface* SkinColor_0)
@@ -882,7 +882,7 @@ void ARobberController_C::ReceiveBeginPlay()
 // Function RobberController.RobberController_C.OnSteamInventoryUpdated
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<struct FSteamItemDetails>        Items                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const TArray<struct FSteamItemDetails>& Items                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
 void ARobberController_C::OnSteamInventoryUpdated(const TArray<struct FSteamItemDetails>& Items)
 {
@@ -902,7 +902,7 @@ void ARobberController_C::OnSteamInventoryUpdated(const TArray<struct FSteamItem
 // Function RobberController.RobberController_C.OnCallback_AD45EEAC44D55B89E3CC16A1A002AE23
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FString                           Data                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    Data                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 // bool                                    bWasSuccessful                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void ARobberController_C::OnCallback_AD45EEAC44D55B89E3CC16A1A002AE23(const class FString& Data, bool bWasSuccessful)
@@ -924,7 +924,7 @@ void ARobberController_C::OnCallback_AD45EEAC44D55B89E3CC16A1A002AE23(const clas
 // Function RobberController.RobberController_C.OnCallback_0D5D0EC4428E0E8C7A5C85ACACEA797E
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FSteamInventoryRequestPricesResultData                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const struct FSteamInventoryRequestPricesResult&Data                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // bool                                    bWasSuccessful                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void ARobberController_C::OnCallback_0D5D0EC4428E0E8C7A5C85ACACEA797E(const struct FSteamInventoryRequestPricesResult& Data, bool bWasSuccessful)
@@ -948,7 +948,7 @@ void ARobberController_C::OnCallback_0D5D0EC4428E0E8C7A5C85ACACEA797E(const stru
 // Parameters:
 // EShopItemCategory                       Category                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UClass*                           Item                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UClass**                          Item                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ARobberController_C::Find_Equipped_Item_from_Category_Function(EShopItemCategory Category, int32 Index_0, class UClass** Item)
 {
@@ -997,7 +997,7 @@ void ARobberController_C::OverrideIndexFromCategory(EShopItemCategory Category, 
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UClass*                           Item                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    Success_                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Success_                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void ARobberController_C::RemoveInventoryItem(class UClass* Item, bool* Success_)
 {
@@ -1021,7 +1021,7 @@ void ARobberController_C::RemoveInventoryItem(class UClass* Item, bool* Success_
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UClass*                           Item                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Index_0                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Index_0                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ARobberController_C::AddInventoryItem(class UClass* Item, int32* Index_0)
 {
@@ -1046,7 +1046,7 @@ void ARobberController_C::AddInventoryItem(class UClass* Item, int32* Index_0)
 // Parameters:
 // EShopItemCategory                       Category                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    Include_equipped_                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// TArray<class UClass*>                   Inventory                                              (Parm, OutParm)
+// TArray<class UClass*>*                  Inventory                                              (Parm, OutParm)
 
 void ARobberController_C::GetInventoryItemsInCategory(EShopItemCategory Category, bool Include_equipped_, TArray<class UClass*>* Inventory)
 {
@@ -1090,11 +1090,11 @@ void ARobberController_C::UpdateNewWeapon(int32 Index_0)
 // Function RobberController.RobberController_C.Update Attachment
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UClass*                           Item_info                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UClass*                           Item_Info                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   Weaponindex                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FAttachmentArrayStructure        New_attachments_structure                              (Parm, OutParm, HasGetValueTypeHash)
+// struct FAttachmentArrayStructure*       New_attachments_structure                              (Parm, OutParm, HasGetValueTypeHash)
 
-void ARobberController_C::Update_Attachment(class UClass* Item_info, int32 Weaponindex, struct FAttachmentArrayStructure* New_attachments_structure)
+void ARobberController_C::Update_Attachment(class UClass* Item_Info, int32 Weaponindex, struct FAttachmentArrayStructure* New_attachments_structure)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1103,7 +1103,7 @@ void ARobberController_C::Update_Attachment(class UClass* Item_info, int32 Weapo
 
 	Params::RobberController_C_Update_Attachment Parms{};
 
-	Parms.Item_info = Item_info;
+	Parms.Item_Info = Item_Info;
 	Parms.Weaponindex = Weaponindex;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -1118,7 +1118,7 @@ void ARobberController_C::Update_Attachment(class UClass* Item_info, int32 Weapo
 // Parameters:
 // EShopItemCategory                       Category                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UClass*                           Attachment                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UClass**                          Attachment                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ARobberController_C::FindEquppedAttachmentFunc(EShopItemCategory Category, int32 Index_0, class UClass** Attachment)
 {
@@ -1185,8 +1185,8 @@ void ARobberController_C::Savecategory(EShopItemCategory Category)
 // Function RobberController.RobberController_C.SortItemsByUnlockLevel
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UClass*>                   Items                                                  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// TArray<class UClass*>                   Sorted_items                                           (Parm, OutParm)
+// TArray<class UClass*>&                  Items                                                  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// TArray<class UClass*>*                  Sorted_items                                           (Parm, OutParm)
 
 void ARobberController_C::SortItemsByUnlockLevel(TArray<class UClass*>& Items, TArray<class UClass*>* Sorted_items)
 {
@@ -1212,7 +1212,7 @@ void ARobberController_C::SortItemsByUnlockLevel(TArray<class UClass*>& Items, T
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   Amount                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    Success_                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Success_                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void ARobberController_C::SpendCash(int32 Amount, bool* Success_)
 {
@@ -1236,7 +1236,7 @@ void ARobberController_C::SpendCash(int32 Amount, bool* Success_)
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // float                                   Amount                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    LevelUp_                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   LevelUp_                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void ARobberController_C::AddEXP(float Amount, bool* LevelUp_)
 {
@@ -1260,7 +1260,7 @@ void ARobberController_C::AddEXP(float Amount, bool* LevelUp_)
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   Level_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   EXP_required_for_levelup                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float*                                  EXP_required_for_levelup                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ARobberController_C::GetRequiredEXP(int32 Level_0, float* EXP_required_for_levelup)
 {
@@ -1284,7 +1284,7 @@ void ARobberController_C::GetRequiredEXP(int32 Level_0, float* EXP_required_for_
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   Level_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Exp_0                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float*                                  Exp_0                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ARobberController_C::GetEXPForLevel(int32 Level_0, float* Exp_0)
 {
@@ -1335,7 +1335,7 @@ void ARobberController_C::Load_All_Saved_From_Remote()
 // Function RobberController.RobberController_C.DownloadFromCloudFunc
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FString                           Save_name                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    Save_name                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
 void ARobberController_C::DownloadFromCloudFunc(const class FString& Save_name)
 {
@@ -1384,7 +1384,7 @@ void ARobberController_C::Update_Coins()
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   Amount                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    Success_                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Success_                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void ARobberController_C::Consume_Coins(int32 Amount, bool* Success_)
 {
@@ -1490,7 +1490,7 @@ void ARobberController_C::Set_Multiply_Value(int32 Integer)
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   Check                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    Can_purchase_                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Can_purchase_                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void ARobberController_C::Check_Multiplied_Value(int32 Check, bool* Can_purchase_)
 {
@@ -1514,7 +1514,7 @@ void ARobberController_C::Check_Multiplied_Value(int32 Check, bool* Can_purchase
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EShopItemCategory                       Category                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class UClass*>                   Array                                                  (Parm, OutParm)
+// TArray<class UClass*>*                  Array                                                  (Parm, OutParm)
 
 void ARobberController_C::FindEquippedArrayFromCategoryFunction(EShopItemCategory Category, TArray<class UClass*>* Array)
 {
@@ -1537,7 +1537,7 @@ void ARobberController_C::FindEquippedArrayFromCategoryFunction(EShopItemCategor
 // Function RobberController.RobberController_C.FindSkinTimeLeft
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   RotationNumber                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  RotationNumber                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FTimespan                        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 
 struct FTimespan ARobberController_C::FindSkinTimeLeft(int32* RotationNumber)
@@ -1562,8 +1562,8 @@ struct FTimespan ARobberController_C::FindSkinTimeLeft(int32* RotationNumber)
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UOAR_Savegame_C*                  SaveGame                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FString                           SaveName                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// TArray<uint8>                           LoadedBytes                                            (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const class FString&                    SaveName                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// TArray<uint8>&                          LoadedBytes                                            (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
 void ARobberController_C::CheckSteamID(class UOAR_Savegame_C* SaveGame, const class FString& SaveName, TArray<uint8>& LoadedBytes)
 {
@@ -1601,7 +1601,7 @@ void ARobberController_C::LockUserSteamID()
 // Function RobberController.RobberController_C.SaveFileByName
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FString                           SaveName                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    SaveName                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
 void ARobberController_C::SaveFileByName(const class FString& SaveName)
 {
@@ -1656,7 +1656,7 @@ void ARobberController_C::ApplySavedInputSettings()
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UClass*                           Skill                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Tier                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Tier                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ARobberController_C::GetSkillTier(class UClass* Skill, int32* Tier)
 {
@@ -1680,8 +1680,8 @@ void ARobberController_C::GetSkillTier(class UClass* Skill, int32* Tier)
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UClass*                           Skill                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    Is_researching_                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FSkillProgressStruct             Array_Element                                          (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Is_researching_                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FSkillProgressStruct*            Array_Element                                          (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ARobberController_C::FindResearchingSkill(class UClass* Skill, bool* Is_researching_, struct FSkillProgressStruct* Array_Element)
 {
@@ -1728,8 +1728,8 @@ void ARobberController_C::ProgressSkills(float XP)
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UClass*                           Map                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   SetupsCompleted                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    Completed_min_                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32*                                  SetupsCompleted                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Completed_min_                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void ARobberController_C::GetCompletedSetupsForMap(class UClass* Map, int32* SetupsCompleted, bool* Completed_min_)
 {
@@ -1755,9 +1755,9 @@ void ARobberController_C::GetCompletedSetupsForMap(class UClass* Map, int32* Set
 // Function RobberController.RobberController_C.LoadFileFromBackup
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FString                           SaveName                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// TArray<uint8>                           LoadedBytes                                            (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// bool                                    Success_                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// const class FString&                    SaveName                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// TArray<uint8>&                          LoadedBytes                                            (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// bool*                                   Success_                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void ARobberController_C::LoadFileFromBackup(const class FString& SaveName, TArray<uint8>& LoadedBytes, bool* Success_)
 {
@@ -1784,7 +1784,7 @@ void ARobberController_C::LoadFileFromBackup(const class FString& SaveName, TArr
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   IntIn                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<uint8>                           Bytes                                                  (Parm, OutParm)
+// TArray<uint8>*                          Bytes                                                  (Parm, OutParm)
 
 void ARobberController_C::Convert_Save_Info_To_Bytes(int32 IntIn, TArray<uint8>* Bytes)
 {
@@ -1822,9 +1822,9 @@ void ARobberController_C::MapsToInventory()
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   SteamDefID                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class UClass*>                   Items                                                  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// bool                                    Exists_                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                                   Index_0                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<class UClass*>&                  Items                                                  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// bool*                                   Exists_                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32*                                  Index_0                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ARobberController_C::DoesItemExistInSteamInventory_(int32 SteamDefID, TArray<class UClass*>& Items, bool* Exists_, int32* Index_0)
 {
@@ -1853,9 +1853,9 @@ void ARobberController_C::DoesItemExistInSteamInventory_(int32 SteamDefID, TArra
 // Function RobberController.RobberController_C.GetSteamItemsInCategory
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FString                           Category                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// struct FSteamInventoryResult            Inventory                                              (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-// TArray<int32>                           Items                                                  (Parm, OutParm)
+// const class FString&                    Category                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const struct FSteamInventoryResult&     Inventory                                              (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+// TArray<int32>*                          Items                                                  (Parm, OutParm)
 
 void ARobberController_C::GetSteamItemsInCategory(const class FString& Category, const struct FSteamInventoryResult& Inventory, TArray<int32>* Items)
 {
@@ -1879,7 +1879,7 @@ void ARobberController_C::GetSteamItemsInCategory(const class FString& Category,
 // Function RobberController.RobberController_C.OnGetSteamInventoryItems
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<struct FSteamItemDetails>        Items                                                  (Parm, OutParm)
+// TArray<struct FSteamItemDetails>*       Items                                                  (Parm, OutParm)
 
 void ARobberController_C::OnGetSteamInventoryItems(TArray<struct FSteamItemDetails>* Items)
 {

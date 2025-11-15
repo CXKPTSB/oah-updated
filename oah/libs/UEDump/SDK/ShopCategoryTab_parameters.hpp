@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
 #include "ShopItemCategory_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK::Params
@@ -47,25 +47,7 @@ public:
 	uint8                                         Pad_F9[0x3];                                       // 0x00F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ShopCategoryTab_C_ExecuteUbergraph_ShopCategoryTab) == 0x000008, "Wrong alignment on ShopCategoryTab_C_ExecuteUbergraph_ShopCategoryTab");
-static_assert(sizeof(ShopCategoryTab_C_ExecuteUbergraph_ShopCategoryTab) == 0x000100, "Wrong size on ShopCategoryTab_C_ExecuteUbergraph_ShopCategoryTab");
-static_assert(offsetof(ShopCategoryTab_C_ExecuteUbergraph_ShopCategoryTab, EntryPoint) == 0x000000, "Member 'ShopCategoryTab_C_ExecuteUbergraph_ShopCategoryTab::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ShopCategoryTab_C_ExecuteUbergraph_ShopCategoryTab, Temp_int_Array_Index_Variable) == 0x000004, "Member 'ShopCategoryTab_C_ExecuteUbergraph_ShopCategoryTab::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(ShopCategoryTab_C_ExecuteUbergraph_ShopCategoryTab, K2Node_Event_Category_1) == 0x000008, "Member 'ShopCategoryTab_C_ExecuteUbergraph_ShopCategoryTab::K2Node_Event_Category_1' has a wrong offset!");
-static_assert(offsetof(ShopCategoryTab_C_ExecuteUbergraph_ShopCategoryTab, K2Node_Event_ItemInfo) == 0x000010, "Member 'ShopCategoryTab_C_ExecuteUbergraph_ShopCategoryTab::K2Node_Event_ItemInfo' has a wrong offset!");
-static_assert(offsetof(ShopCategoryTab_C_ExecuteUbergraph_ShopCategoryTab, K2Node_Event_SalePrice) == 0x000018, "Member 'ShopCategoryTab_C_ExecuteUbergraph_ShopCategoryTab::K2Node_Event_SalePrice' has a wrong offset!");
-static_assert(offsetof(ShopCategoryTab_C_ExecuteUbergraph_ShopCategoryTab, CallFunc_GetAllWidgetsWithInterface_FoundWidgets) == 0x000020, "Member 'ShopCategoryTab_C_ExecuteUbergraph_ShopCategoryTab::CallFunc_GetAllWidgetsWithInterface_FoundWidgets' has a wrong offset!");
-static_assert(offsetof(ShopCategoryTab_C_ExecuteUbergraph_ShopCategoryTab, CallFunc_Array_Get_Item) == 0x000030, "Member 'ShopCategoryTab_C_ExecuteUbergraph_ShopCategoryTab::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(ShopCategoryTab_C_ExecuteUbergraph_ShopCategoryTab, CallFunc_Array_Length_ReturnValue) == 0x000038, "Member 'ShopCategoryTab_C_ExecuteUbergraph_ShopCategoryTab::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShopCategoryTab_C_ExecuteUbergraph_ShopCategoryTab, K2Node_DynamicCast_AsMenu_UIInteraface) == 0x000040, "Member 'ShopCategoryTab_C_ExecuteUbergraph_ShopCategoryTab::K2Node_DynamicCast_AsMenu_UIInteraface' has a wrong offset!");
-static_assert(offsetof(ShopCategoryTab_C_ExecuteUbergraph_ShopCategoryTab, K2Node_DynamicCast_bSuccess) == 0x000050, "Member 'ShopCategoryTab_C_ExecuteUbergraph_ShopCategoryTab::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ShopCategoryTab_C_ExecuteUbergraph_ShopCategoryTab, K2Node_Event_Category) == 0x000051, "Member 'ShopCategoryTab_C_ExecuteUbergraph_ShopCategoryTab::K2Node_Event_Category' has a wrong offset!");
-static_assert(offsetof(ShopCategoryTab_C_ExecuteUbergraph_ShopCategoryTab, K2Node_MakeStruct_Margin) == 0x000054, "Member 'ShopCategoryTab_C_ExecuteUbergraph_ShopCategoryTab::K2Node_MakeStruct_Margin' has a wrong offset!");
-static_assert(offsetof(ShopCategoryTab_C_ExecuteUbergraph_ShopCategoryTab, K2Node_MakeStruct_SlateBrush) == 0x000068, "Member 'ShopCategoryTab_C_ExecuteUbergraph_ShopCategoryTab::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
-static_assert(offsetof(ShopCategoryTab_C_ExecuteUbergraph_ShopCategoryTab, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000F0, "Member 'ShopCategoryTab_C_ExecuteUbergraph_ShopCategoryTab::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShopCategoryTab_C_ExecuteUbergraph_ShopCategoryTab, Temp_int_Loop_Counter_Variable) == 0x0000F4, "Member 'ShopCategoryTab_C_ExecuteUbergraph_ShopCategoryTab::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(ShopCategoryTab_C_ExecuteUbergraph_ShopCategoryTab, CallFunc_Less_IntInt_ReturnValue) == 0x0000F8, "Member 'ShopCategoryTab_C_ExecuteUbergraph_ShopCategoryTab::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShopCategoryTab_C_ExecuteUbergraph_ShopCategoryTab, CallFunc_Add_IntInt_ReturnValue) == 0x0000FC, "Member 'ShopCategoryTab_C_ExecuteUbergraph_ShopCategoryTab::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ShopCategoryTab_C_ExecuteUbergraph_ShopCategoryTab;
 
 // Function ShopCategoryTab.ShopCategoryTab_C.ChangeCategory
 // 0x0001 (0x0001 - 0x0000)
@@ -74,9 +56,7 @@ struct ShopCategoryTab_C_ChangeCategory final
 public:
 	EShopItemCategory                             Category;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ShopCategoryTab_C_ChangeCategory) == 0x000001, "Wrong alignment on ShopCategoryTab_C_ChangeCategory");
-static_assert(sizeof(ShopCategoryTab_C_ChangeCategory) == 0x000001, "Wrong size on ShopCategoryTab_C_ChangeCategory");
-static_assert(offsetof(ShopCategoryTab_C_ChangeCategory, Category) == 0x000000, "Member 'ShopCategoryTab_C_ChangeCategory::Category' has a wrong offset!");
+DUMPER7_ASSERTS_ShopCategoryTab_C_ChangeCategory;
 
 // Function ShopCategoryTab.ShopCategoryTab_C.PreviewItem
 // 0x0010 (0x0010 - 0x0000)
@@ -86,10 +66,7 @@ public:
 	class UClass*                                 ItemInfo;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         SalePrice;                                         // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ShopCategoryTab_C_PreviewItem) == 0x000008, "Wrong alignment on ShopCategoryTab_C_PreviewItem");
-static_assert(sizeof(ShopCategoryTab_C_PreviewItem) == 0x000010, "Wrong size on ShopCategoryTab_C_PreviewItem");
-static_assert(offsetof(ShopCategoryTab_C_PreviewItem, ItemInfo) == 0x000000, "Member 'ShopCategoryTab_C_PreviewItem::ItemInfo' has a wrong offset!");
-static_assert(offsetof(ShopCategoryTab_C_PreviewItem, SalePrice) == 0x000008, "Member 'ShopCategoryTab_C_PreviewItem::SalePrice' has a wrong offset!");
+DUMPER7_ASSERTS_ShopCategoryTab_C_PreviewItem;
 
 // Function ShopCategoryTab.ShopCategoryTab_C.DragItemFromCategory
 // 0x0001 (0x0001 - 0x0000)
@@ -98,9 +75,7 @@ struct ShopCategoryTab_C_DragItemFromCategory final
 public:
 	EShopItemCategory                             Category;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ShopCategoryTab_C_DragItemFromCategory) == 0x000001, "Wrong alignment on ShopCategoryTab_C_DragItemFromCategory");
-static_assert(sizeof(ShopCategoryTab_C_DragItemFromCategory) == 0x000001, "Wrong size on ShopCategoryTab_C_DragItemFromCategory");
-static_assert(offsetof(ShopCategoryTab_C_DragItemFromCategory, Category) == 0x000000, "Member 'ShopCategoryTab_C_DragItemFromCategory::Category' has a wrong offset!");
+DUMPER7_ASSERTS_ShopCategoryTab_C_DragItemFromCategory;
 
 // Function ShopCategoryTab.ShopCategoryTab_C.GetText_0
 // 0x0040 (0x0040 - 0x0000)
@@ -111,11 +86,7 @@ public:
 	class FString                                 CallFunc_GetEnumeratorUserFriendlyName_ReturnValue; // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0028(0x0018)()
 };
-static_assert(alignof(ShopCategoryTab_C_GetText_0) == 0x000008, "Wrong alignment on ShopCategoryTab_C_GetText_0");
-static_assert(sizeof(ShopCategoryTab_C_GetText_0) == 0x000040, "Wrong size on ShopCategoryTab_C_GetText_0");
-static_assert(offsetof(ShopCategoryTab_C_GetText_0, ReturnValue) == 0x000000, "Member 'ShopCategoryTab_C_GetText_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShopCategoryTab_C_GetText_0, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue) == 0x000018, "Member 'ShopCategoryTab_C_GetText_0::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShopCategoryTab_C_GetText_0, CallFunc_Conv_StringToText_ReturnValue) == 0x000028, "Member 'ShopCategoryTab_C_GetText_0::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ShopCategoryTab_C_GetText_0;
 
 // Function ShopCategoryTab.ShopCategoryTab_C.GetBrush_0
 // 0x01A0 (0x01A0 - 0x0000)
@@ -144,28 +115,7 @@ public:
 	class UObject*                                K2Node_Select_Default;                             // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0118(0x0088)()
 };
-static_assert(alignof(ShopCategoryTab_C_GetBrush_0) == 0x000008, "Wrong alignment on ShopCategoryTab_C_GetBrush_0");
-static_assert(sizeof(ShopCategoryTab_C_GetBrush_0) == 0x0001A0, "Wrong size on ShopCategoryTab_C_GetBrush_0");
-static_assert(offsetof(ShopCategoryTab_C_GetBrush_0, ReturnValue) == 0x000000, "Member 'ShopCategoryTab_C_GetBrush_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShopCategoryTab_C_GetBrush_0, Temp_byte_Variable) == 0x000088, "Member 'ShopCategoryTab_C_GetBrush_0::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ShopCategoryTab_C_GetBrush_0, Temp_object_Variable) == 0x000090, "Member 'ShopCategoryTab_C_GetBrush_0::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(ShopCategoryTab_C_GetBrush_0, Temp_object_Variable_1) == 0x000098, "Member 'ShopCategoryTab_C_GetBrush_0::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(ShopCategoryTab_C_GetBrush_0, Temp_object_Variable_2) == 0x0000A0, "Member 'ShopCategoryTab_C_GetBrush_0::Temp_object_Variable_2' has a wrong offset!");
-static_assert(offsetof(ShopCategoryTab_C_GetBrush_0, Temp_object_Variable_3) == 0x0000A8, "Member 'ShopCategoryTab_C_GetBrush_0::Temp_object_Variable_3' has a wrong offset!");
-static_assert(offsetof(ShopCategoryTab_C_GetBrush_0, Temp_object_Variable_4) == 0x0000B0, "Member 'ShopCategoryTab_C_GetBrush_0::Temp_object_Variable_4' has a wrong offset!");
-static_assert(offsetof(ShopCategoryTab_C_GetBrush_0, Temp_object_Variable_5) == 0x0000B8, "Member 'ShopCategoryTab_C_GetBrush_0::Temp_object_Variable_5' has a wrong offset!");
-static_assert(offsetof(ShopCategoryTab_C_GetBrush_0, Temp_object_Variable_6) == 0x0000C0, "Member 'ShopCategoryTab_C_GetBrush_0::Temp_object_Variable_6' has a wrong offset!");
-static_assert(offsetof(ShopCategoryTab_C_GetBrush_0, Temp_object_Variable_7) == 0x0000C8, "Member 'ShopCategoryTab_C_GetBrush_0::Temp_object_Variable_7' has a wrong offset!");
-static_assert(offsetof(ShopCategoryTab_C_GetBrush_0, Temp_object_Variable_8) == 0x0000D0, "Member 'ShopCategoryTab_C_GetBrush_0::Temp_object_Variable_8' has a wrong offset!");
-static_assert(offsetof(ShopCategoryTab_C_GetBrush_0, Temp_object_Variable_9) == 0x0000D8, "Member 'ShopCategoryTab_C_GetBrush_0::Temp_object_Variable_9' has a wrong offset!");
-static_assert(offsetof(ShopCategoryTab_C_GetBrush_0, Temp_object_Variable_10) == 0x0000E0, "Member 'ShopCategoryTab_C_GetBrush_0::Temp_object_Variable_10' has a wrong offset!");
-static_assert(offsetof(ShopCategoryTab_C_GetBrush_0, Temp_object_Variable_11) == 0x0000E8, "Member 'ShopCategoryTab_C_GetBrush_0::Temp_object_Variable_11' has a wrong offset!");
-static_assert(offsetof(ShopCategoryTab_C_GetBrush_0, Temp_object_Variable_12) == 0x0000F0, "Member 'ShopCategoryTab_C_GetBrush_0::Temp_object_Variable_12' has a wrong offset!");
-static_assert(offsetof(ShopCategoryTab_C_GetBrush_0, Temp_object_Variable_13) == 0x0000F8, "Member 'ShopCategoryTab_C_GetBrush_0::Temp_object_Variable_13' has a wrong offset!");
-static_assert(offsetof(ShopCategoryTab_C_GetBrush_0, Temp_object_Variable_14) == 0x000100, "Member 'ShopCategoryTab_C_GetBrush_0::Temp_object_Variable_14' has a wrong offset!");
-static_assert(offsetof(ShopCategoryTab_C_GetBrush_0, Temp_object_Variable_15) == 0x000108, "Member 'ShopCategoryTab_C_GetBrush_0::Temp_object_Variable_15' has a wrong offset!");
-static_assert(offsetof(ShopCategoryTab_C_GetBrush_0, K2Node_Select_Default) == 0x000110, "Member 'ShopCategoryTab_C_GetBrush_0::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ShopCategoryTab_C_GetBrush_0, K2Node_MakeStruct_SlateBrush) == 0x000118, "Member 'ShopCategoryTab_C_GetBrush_0::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
+DUMPER7_ASSERTS_ShopCategoryTab_C_GetBrush_0;
 
 }
 

@@ -38,20 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DamageDirectionIndicator_C">();
+		BP_STATIC_CLASS_IMPL("DamageDirectionIndicator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DamageDirectionIndicator_C")
 	}
 	static class UDamageDirectionIndicator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDamageDirectionIndicator_C>();
 	}
 };
-static_assert(alignof(UDamageDirectionIndicator_C) == 0x000008, "Wrong alignment on UDamageDirectionIndicator_C");
-static_assert(sizeof(UDamageDirectionIndicator_C) == 0x000290, "Wrong size on UDamageDirectionIndicator_C");
-static_assert(offsetof(UDamageDirectionIndicator_C, UberGraphFrame) == 0x000260, "Member 'UDamageDirectionIndicator_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UDamageDirectionIndicator_C, NewAnimation) == 0x000268, "Member 'UDamageDirectionIndicator_C::NewAnimation' has a wrong offset!");
-static_assert(offsetof(UDamageDirectionIndicator_C, DamageIndicator) == 0x000270, "Member 'UDamageDirectionIndicator_C::DamageIndicator' has a wrong offset!");
-static_assert(offsetof(UDamageDirectionIndicator_C, DamageLocation) == 0x000278, "Member 'UDamageDirectionIndicator_C::DamageLocation' has a wrong offset!");
-static_assert(offsetof(UDamageDirectionIndicator_C, Player) == 0x000288, "Member 'UDamageDirectionIndicator_C::Player' has a wrong offset!");
+DUMPER7_ASSERTS_UDamageDirectionIndicator_C;
 
 }
 

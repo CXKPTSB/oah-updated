@@ -23,15 +23,18 @@ class AMask_Skeleton_C final : public AMask_base_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Mask_Skeleton_C">();
+		BP_STATIC_CLASS_IMPL("Mask_Skeleton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Mask_Skeleton_C")
 	}
 	static class AMask_Skeleton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMask_Skeleton_C>();
 	}
 };
-static_assert(alignof(AMask_Skeleton_C) == 0x000008, "Wrong alignment on AMask_Skeleton_C");
-static_assert(sizeof(AMask_Skeleton_C) == 0x000230, "Wrong size on AMask_Skeleton_C");
+DUMPER7_ASSERTS_AMask_Skeleton_C;
 
 }
 

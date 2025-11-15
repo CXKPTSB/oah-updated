@@ -32,19 +32,7 @@ public:
 	int32                                         CallFunc_GetTotalPlayerPower_MinimumPower;         // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_CheckPlayersLoaded_Loaded_;               // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RobberGameState_C_ExecuteUbergraph_RobberGameState) == 0x000008, "Wrong alignment on RobberGameState_C_ExecuteUbergraph_RobberGameState");
-static_assert(sizeof(RobberGameState_C_ExecuteUbergraph_RobberGameState) == 0x000048, "Wrong size on RobberGameState_C_ExecuteUbergraph_RobberGameState");
-static_assert(offsetof(RobberGameState_C_ExecuteUbergraph_RobberGameState, EntryPoint) == 0x000000, "Member 'RobberGameState_C_ExecuteUbergraph_RobberGameState::EntryPoint' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_ExecuteUbergraph_RobberGameState, CallFunc_Conv_IntToString_ReturnValue) == 0x000008, "Member 'RobberGameState_C_ExecuteUbergraph_RobberGameState::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_ExecuteUbergraph_RobberGameState, CallFunc_Concat_StrStr_ReturnValue) == 0x000018, "Member 'RobberGameState_C_ExecuteUbergraph_RobberGameState::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_ExecuteUbergraph_RobberGameState, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000028, "Member 'RobberGameState_C_ExecuteUbergraph_RobberGameState::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_ExecuteUbergraph_RobberGameState, CallFunc_Conv_IntToFloat_ReturnValue_1) == 0x00002C, "Member 'RobberGameState_C_ExecuteUbergraph_RobberGameState::CallFunc_Conv_IntToFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_ExecuteUbergraph_RobberGameState, CallFunc_WeightedMovingAverage_Float_ReturnValue) == 0x000030, "Member 'RobberGameState_C_ExecuteUbergraph_RobberGameState::CallFunc_WeightedMovingAverage_Float_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_ExecuteUbergraph_RobberGameState, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000034, "Member 'RobberGameState_C_ExecuteUbergraph_RobberGameState::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_ExecuteUbergraph_RobberGameState, CallFunc_FClamp_ReturnValue) == 0x000038, "Member 'RobberGameState_C_ExecuteUbergraph_RobberGameState::CallFunc_FClamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_ExecuteUbergraph_RobberGameState, CallFunc_GetTotalPlayerPower_Total_power) == 0x00003C, "Member 'RobberGameState_C_ExecuteUbergraph_RobberGameState::CallFunc_GetTotalPlayerPower_Total_power' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_ExecuteUbergraph_RobberGameState, CallFunc_GetTotalPlayerPower_MinimumPower) == 0x000040, "Member 'RobberGameState_C_ExecuteUbergraph_RobberGameState::CallFunc_GetTotalPlayerPower_MinimumPower' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_ExecuteUbergraph_RobberGameState, CallFunc_CheckPlayersLoaded_Loaded_) == 0x000044, "Member 'RobberGameState_C_ExecuteUbergraph_RobberGameState::CallFunc_CheckPlayersLoaded_Loaded_' has a wrong offset!");
+DUMPER7_ASSERTS_RobberGameState_C_ExecuteUbergraph_RobberGameState;
 
 // Function RobberGameState.RobberGameState_C.GetTotalPlayerPower
 // 0x0088 (0x0088 - 0x0000)
@@ -83,34 +71,7 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue_4;                 // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RobberGameState_C_GetTotalPlayerPower) == 0x000008, "Wrong alignment on RobberGameState_C_GetTotalPlayerPower");
-static_assert(sizeof(RobberGameState_C_GetTotalPlayerPower) == 0x000088, "Wrong size on RobberGameState_C_GetTotalPlayerPower");
-static_assert(offsetof(RobberGameState_C_GetTotalPlayerPower, Total_Power_0) == 0x000000, "Member 'RobberGameState_C_GetTotalPlayerPower::Total_Power_0' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_GetTotalPlayerPower, MinimumPower_0) == 0x000004, "Member 'RobberGameState_C_GetTotalPlayerPower::MinimumPower_0' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_GetTotalPlayerPower, CurrentPlayerPower) == 0x000008, "Member 'RobberGameState_C_GetTotalPlayerPower::CurrentPlayerPower' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_GetTotalPlayerPower, MinPo) == 0x00000C, "Member 'RobberGameState_C_GetTotalPlayerPower::MinPo' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_GetTotalPlayerPower, TotalPower) == 0x000010, "Member 'RobberGameState_C_GetTotalPlayerPower::TotalPower' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_GetTotalPlayerPower, Temp_int_Array_Index_Variable) == 0x000014, "Member 'RobberGameState_C_GetTotalPlayerPower::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_GetTotalPlayerPower, Temp_int_Loop_Counter_Variable) == 0x000018, "Member 'RobberGameState_C_GetTotalPlayerPower::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_GetTotalPlayerPower, CallFunc_Add_IntInt_ReturnValue) == 0x00001C, "Member 'RobberGameState_C_GetTotalPlayerPower::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_GetTotalPlayerPower, CallFunc_Less_IntInt_ReturnValue) == 0x000020, "Member 'RobberGameState_C_GetTotalPlayerPower::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_GetTotalPlayerPower, CallFunc_GetAllActorsOfClass_OutActors) == 0x000028, "Member 'RobberGameState_C_GetTotalPlayerPower::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_GetTotalPlayerPower, CallFunc_Array_Length_ReturnValue) == 0x000038, "Member 'RobberGameState_C_GetTotalPlayerPower::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_GetTotalPlayerPower, CallFunc_Array_Get_Item) == 0x000040, "Member 'RobberGameState_C_GetTotalPlayerPower::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_GetTotalPlayerPower, CallFunc_Less_IntInt_ReturnValue_1) == 0x000048, "Member 'RobberGameState_C_GetTotalPlayerPower::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_GetTotalPlayerPower, CallFunc_IsValidClass_ReturnValue) == 0x000049, "Member 'RobberGameState_C_GetTotalPlayerPower::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_GetTotalPlayerPower, CallFunc_FTrunc_ReturnValue) == 0x00004C, "Member 'RobberGameState_C_GetTotalPlayerPower::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_GetTotalPlayerPower, CallFunc_Add_IntInt_ReturnValue_1) == 0x000050, "Member 'RobberGameState_C_GetTotalPlayerPower::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_GetTotalPlayerPower, CallFunc_Array_Get_Item_1) == 0x000058, "Member 'RobberGameState_C_GetTotalPlayerPower::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_GetTotalPlayerPower, K2Node_ClassDynamicCast_AsGun_Base) == 0x000060, "Member 'RobberGameState_C_GetTotalPlayerPower::K2Node_ClassDynamicCast_AsGun_Base' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_GetTotalPlayerPower, K2Node_ClassDynamicCast_bSuccess) == 0x000068, "Member 'RobberGameState_C_GetTotalPlayerPower::K2Node_ClassDynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_GetTotalPlayerPower, CallFunc_Add_IntInt_ReturnValue_2) == 0x00006C, "Member 'RobberGameState_C_GetTotalPlayerPower::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_GetTotalPlayerPower, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000070, "Member 'RobberGameState_C_GetTotalPlayerPower::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_GetTotalPlayerPower, CallFunc_FTrunc_ReturnValue_1) == 0x000074, "Member 'RobberGameState_C_GetTotalPlayerPower::CallFunc_FTrunc_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_GetTotalPlayerPower, CallFunc_Multiply_IntInt_ReturnValue) == 0x000078, "Member 'RobberGameState_C_GetTotalPlayerPower::CallFunc_Multiply_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_GetTotalPlayerPower, CallFunc_Multiply_IntInt_ReturnValue_1) == 0x00007C, "Member 'RobberGameState_C_GetTotalPlayerPower::CallFunc_Multiply_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_GetTotalPlayerPower, CallFunc_Add_IntInt_ReturnValue_3) == 0x000080, "Member 'RobberGameState_C_GetTotalPlayerPower::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_GetTotalPlayerPower, CallFunc_Add_IntInt_ReturnValue_4) == 0x000084, "Member 'RobberGameState_C_GetTotalPlayerPower::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
+DUMPER7_ASSERTS_RobberGameState_C_GetTotalPlayerPower;
 
 // Function RobberGameState.RobberGameState_C.CheckPlayersLoaded
 // 0x0040 (0x0040 - 0x0000)
@@ -133,20 +94,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RobberGameState_C_CheckPlayersLoaded) == 0x000008, "Wrong alignment on RobberGameState_C_CheckPlayersLoaded");
-static_assert(sizeof(RobberGameState_C_CheckPlayersLoaded) == 0x000040, "Wrong size on RobberGameState_C_CheckPlayersLoaded");
-static_assert(offsetof(RobberGameState_C_CheckPlayersLoaded, Loaded_) == 0x000000, "Member 'RobberGameState_C_CheckPlayersLoaded::Loaded_' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_CheckPlayersLoaded, LoadedAll_) == 0x000001, "Member 'RobberGameState_C_CheckPlayersLoaded::LoadedAll_' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_CheckPlayersLoaded, Temp_int_Array_Index_Variable) == 0x000004, "Member 'RobberGameState_C_CheckPlayersLoaded::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_CheckPlayersLoaded, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'RobberGameState_C_CheckPlayersLoaded::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_CheckPlayersLoaded, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'RobberGameState_C_CheckPlayersLoaded::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_CheckPlayersLoaded, CallFunc_GetAllActorsOfClass_OutActors) == 0x000010, "Member 'RobberGameState_C_CheckPlayersLoaded::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_CheckPlayersLoaded, CallFunc_GetNumberOfNetworkPlayers_NumNetPlayers) == 0x000020, "Member 'RobberGameState_C_CheckPlayersLoaded::CallFunc_GetNumberOfNetworkPlayers_NumNetPlayers' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_CheckPlayersLoaded, CallFunc_Array_Get_Item) == 0x000028, "Member 'RobberGameState_C_CheckPlayersLoaded::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_CheckPlayersLoaded, CallFunc_Array_Length_ReturnValue) == 0x000030, "Member 'RobberGameState_C_CheckPlayersLoaded::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_CheckPlayersLoaded, CallFunc_Less_IntInt_ReturnValue) == 0x000034, "Member 'RobberGameState_C_CheckPlayersLoaded::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_CheckPlayersLoaded, CallFunc_Array_Length_ReturnValue_1) == 0x000038, "Member 'RobberGameState_C_CheckPlayersLoaded::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberGameState_C_CheckPlayersLoaded, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x00003C, "Member 'RobberGameState_C_CheckPlayersLoaded::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_RobberGameState_C_CheckPlayersLoaded;
 
 }
 

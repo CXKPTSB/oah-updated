@@ -24,15 +24,18 @@ class UEditableMeshAdapter : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EditableMeshAdapter">();
+		STATIC_CLASS_IMPL("EditableMeshAdapter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EditableMeshAdapter")
 	}
 	static class UEditableMeshAdapter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEditableMeshAdapter>();
 	}
 };
-static_assert(alignof(UEditableMeshAdapter) == 0x000008, "Wrong alignment on UEditableMeshAdapter");
-static_assert(sizeof(UEditableMeshAdapter) == 0x000028, "Wrong size on UEditableMeshAdapter");
+DUMPER7_ASSERTS_UEditableMeshAdapter;
 
 // Class EditableMesh.EditableGeometryCollectionAdapter
 // 0x00B0 (0x00D8 - 0x0028)
@@ -47,18 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EditableGeometryCollectionAdapter">();
+		STATIC_CLASS_IMPL("EditableGeometryCollectionAdapter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EditableGeometryCollectionAdapter")
 	}
 	static class UEditableGeometryCollectionAdapter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEditableGeometryCollectionAdapter>();
 	}
 };
-static_assert(alignof(UEditableGeometryCollectionAdapter) == 0x000008, "Wrong alignment on UEditableGeometryCollectionAdapter");
-static_assert(sizeof(UEditableGeometryCollectionAdapter) == 0x0000D8, "Wrong size on UEditableGeometryCollectionAdapter");
-static_assert(offsetof(UEditableGeometryCollectionAdapter, GeometryCollection) == 0x000028, "Member 'UEditableGeometryCollectionAdapter::GeometryCollection' has a wrong offset!");
-static_assert(offsetof(UEditableGeometryCollectionAdapter, OriginalGeometryCollection) == 0x000030, "Member 'UEditableGeometryCollectionAdapter::OriginalGeometryCollection' has a wrong offset!");
-static_assert(offsetof(UEditableGeometryCollectionAdapter, GeometryCollectionLODIndex) == 0x000038, "Member 'UEditableGeometryCollectionAdapter::GeometryCollectionLODIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UEditableGeometryCollectionAdapter;
 
 // Class EditableMesh.EditableMesh
 // 0x06E0 (0x0708 - 0x0028)
@@ -210,19 +213,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EditableMesh">();
+		STATIC_CLASS_IMPL("EditableMesh")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EditableMesh")
 	}
 	static class UEditableMesh* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEditableMesh>();
 	}
 };
-static_assert(alignof(UEditableMesh) == 0x000008, "Wrong alignment on UEditableMesh");
-static_assert(sizeof(UEditableMesh) == 0x000708, "Wrong size on UEditableMesh");
-static_assert(offsetof(UEditableMesh, Adapters) == 0x0003B8, "Member 'UEditableMesh::Adapters' has a wrong offset!");
-static_assert(offsetof(UEditableMesh, TextureCoordinateCount) == 0x0003D0, "Member 'UEditableMesh::TextureCoordinateCount' has a wrong offset!");
-static_assert(offsetof(UEditableMesh, PendingCompactCounter) == 0x00051C, "Member 'UEditableMesh::PendingCompactCounter' has a wrong offset!");
-static_assert(offsetof(UEditableMesh, SubdivisionCount) == 0x000520, "Member 'UEditableMesh::SubdivisionCount' has a wrong offset!");
+DUMPER7_ASSERTS_UEditableMesh;
 
 // Class EditableMesh.EditableMeshFactory
 // 0x0000 (0x0028 - 0x0028)
@@ -234,15 +236,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EditableMeshFactory">();
+		STATIC_CLASS_IMPL("EditableMeshFactory")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EditableMeshFactory")
 	}
 	static class UEditableMeshFactory* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEditableMeshFactory>();
 	}
 };
-static_assert(alignof(UEditableMeshFactory) == 0x000008, "Wrong alignment on UEditableMeshFactory");
-static_assert(sizeof(UEditableMeshFactory) == 0x000028, "Wrong size on UEditableMeshFactory");
+DUMPER7_ASSERTS_UEditableMeshFactory;
 
 // Class EditableMesh.EditableStaticMeshAdapter
 // 0x00B8 (0x00E0 - 0x0028)
@@ -257,18 +262,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EditableStaticMeshAdapter">();
+		STATIC_CLASS_IMPL("EditableStaticMeshAdapter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EditableStaticMeshAdapter")
 	}
 	static class UEditableStaticMeshAdapter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEditableStaticMeshAdapter>();
 	}
 };
-static_assert(alignof(UEditableStaticMeshAdapter) == 0x000008, "Wrong alignment on UEditableStaticMeshAdapter");
-static_assert(sizeof(UEditableStaticMeshAdapter) == 0x0000E0, "Wrong size on UEditableStaticMeshAdapter");
-static_assert(offsetof(UEditableStaticMeshAdapter, StaticMesh) == 0x000028, "Member 'UEditableStaticMeshAdapter::StaticMesh' has a wrong offset!");
-static_assert(offsetof(UEditableStaticMeshAdapter, OriginalStaticMesh) == 0x000030, "Member 'UEditableStaticMeshAdapter::OriginalStaticMesh' has a wrong offset!");
-static_assert(offsetof(UEditableStaticMeshAdapter, StaticMeshLODIndex) == 0x000038, "Member 'UEditableStaticMeshAdapter::StaticMeshLODIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UEditableStaticMeshAdapter;
 
 }
 

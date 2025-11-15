@@ -144,7 +144,7 @@ void ULoadoutUI_C::ViewDefault()
 // Function LoadoutUI.LoadoutUI_C.AddCategories
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<EShopItemCategory>               Categories                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const TArray<EShopItemCategory>&        Categories                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
 void ULoadoutUI_C::AddCategories(const TArray<EShopItemCategory>& Categories)
 {

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "AttachmentArrayStructure_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK::Params
@@ -63,38 +63,7 @@ public:
 	struct FAttachmentArrayStructure              CallFunc_Array_Get_Item_1;                         // 0x00E8(0x0010)(HasGetValueTypeHash)
 	bool                                          CallFunc_IsLocallyControlled_ReturnValue;          // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WeaponBag_C_ExecuteUbergraph_WeaponBag) == 0x000010, "Wrong alignment on WeaponBag_C_ExecuteUbergraph_WeaponBag");
-static_assert(sizeof(WeaponBag_C_ExecuteUbergraph_WeaponBag) == 0x000100, "Wrong size on WeaponBag_C_ExecuteUbergraph_WeaponBag");
-static_assert(offsetof(WeaponBag_C_ExecuteUbergraph_WeaponBag, EntryPoint) == 0x000000, "Member 'WeaponBag_C_ExecuteUbergraph_WeaponBag::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WeaponBag_C_ExecuteUbergraph_WeaponBag, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000004, "Member 'WeaponBag_C_ExecuteUbergraph_WeaponBag::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeaponBag_C_ExecuteUbergraph_WeaponBag, CallFunc_IsValidClass_ReturnValue) == 0x000010, "Member 'WeaponBag_C_ExecuteUbergraph_WeaponBag::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeaponBag_C_ExecuteUbergraph_WeaponBag, K2Node_DynamicCast_AsAttached_Back_Gun_Base) == 0x000018, "Member 'WeaponBag_C_ExecuteUbergraph_WeaponBag::K2Node_DynamicCast_AsAttached_Back_Gun_Base' has a wrong offset!");
-static_assert(offsetof(WeaponBag_C_ExecuteUbergraph_WeaponBag, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'WeaponBag_C_ExecuteUbergraph_WeaponBag::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WeaponBag_C_ExecuteUbergraph_WeaponBag, K2Node_ComponentBoundEvent_Player) == 0x000028, "Member 'WeaponBag_C_ExecuteUbergraph_WeaponBag::K2Node_ComponentBoundEvent_Player' has a wrong offset!");
-static_assert(offsetof(WeaponBag_C_ExecuteUbergraph_WeaponBag, K2Node_ComponentBoundEvent_HitComponent) == 0x000030, "Member 'WeaponBag_C_ExecuteUbergraph_WeaponBag::K2Node_ComponentBoundEvent_HitComponent' has a wrong offset!");
-static_assert(offsetof(WeaponBag_C_ExecuteUbergraph_WeaponBag, K2Node_DynamicCast_AsAttached_Back_Gun_Base_1) == 0x000038, "Member 'WeaponBag_C_ExecuteUbergraph_WeaponBag::K2Node_DynamicCast_AsAttached_Back_Gun_Base_1' has a wrong offset!");
-static_assert(offsetof(WeaponBag_C_ExecuteUbergraph_WeaponBag, K2Node_DynamicCast_bSuccess_1) == 0x000040, "Member 'WeaponBag_C_ExecuteUbergraph_WeaponBag::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WeaponBag_C_ExecuteUbergraph_WeaponBag, Temp_int_Loop_Counter_Variable) == 0x000044, "Member 'WeaponBag_C_ExecuteUbergraph_WeaponBag::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WeaponBag_C_ExecuteUbergraph_WeaponBag, CallFunc_Add_IntInt_ReturnValue) == 0x000048, "Member 'WeaponBag_C_ExecuteUbergraph_WeaponBag::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeaponBag_C_ExecuteUbergraph_WeaponBag, CallFunc_K2_GetComponentToWorld_ReturnValue) == 0x000050, "Member 'WeaponBag_C_ExecuteUbergraph_WeaponBag::CallFunc_K2_GetComponentToWorld_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeaponBag_C_ExecuteUbergraph_WeaponBag, K2Node_CustomEvent_magActor) == 0x000080, "Member 'WeaponBag_C_ExecuteUbergraph_WeaponBag::K2Node_CustomEvent_magActor' has a wrong offset!");
-static_assert(offsetof(WeaponBag_C_ExecuteUbergraph_WeaponBag, K2Node_CustomEvent_Rifle_) == 0x000088, "Member 'WeaponBag_C_ExecuteUbergraph_WeaponBag::K2Node_CustomEvent_Rifle_' has a wrong offset!");
-static_assert(offsetof(WeaponBag_C_ExecuteUbergraph_WeaponBag, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000090, "Member 'WeaponBag_C_ExecuteUbergraph_WeaponBag::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeaponBag_C_ExecuteUbergraph_WeaponBag, Temp_int_Array_Index_Variable) == 0x000098, "Member 'WeaponBag_C_ExecuteUbergraph_WeaponBag::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WeaponBag_C_ExecuteUbergraph_WeaponBag, CallFunc_FinishSpawningActor_ReturnValue) == 0x0000A0, "Member 'WeaponBag_C_ExecuteUbergraph_WeaponBag::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeaponBag_C_ExecuteUbergraph_WeaponBag, CallFunc_SetStaticMesh_ReturnValue) == 0x0000A8, "Member 'WeaponBag_C_ExecuteUbergraph_WeaponBag::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeaponBag_C_ExecuteUbergraph_WeaponBag, CallFunc_SetStaticMesh_ReturnValue_1) == 0x0000A9, "Member 'WeaponBag_C_ExecuteUbergraph_WeaponBag::CallFunc_SetStaticMesh_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WeaponBag_C_ExecuteUbergraph_WeaponBag, CallFunc_IsValid_ReturnValue) == 0x0000AA, "Member 'WeaponBag_C_ExecuteUbergraph_WeaponBag::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeaponBag_C_ExecuteUbergraph_WeaponBag, CallFunc_Array_Get_Item) == 0x0000B0, "Member 'WeaponBag_C_ExecuteUbergraph_WeaponBag::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WeaponBag_C_ExecuteUbergraph_WeaponBag, K2Node_ClassDynamicCast_AsGun_Base) == 0x0000B8, "Member 'WeaponBag_C_ExecuteUbergraph_WeaponBag::K2Node_ClassDynamicCast_AsGun_Base' has a wrong offset!");
-static_assert(offsetof(WeaponBag_C_ExecuteUbergraph_WeaponBag, K2Node_ClassDynamicCast_bSuccess) == 0x0000C0, "Member 'WeaponBag_C_ExecuteUbergraph_WeaponBag::K2Node_ClassDynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WeaponBag_C_ExecuteUbergraph_WeaponBag, CallFunc_Array_Length_ReturnValue) == 0x0000C4, "Member 'WeaponBag_C_ExecuteUbergraph_WeaponBag::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeaponBag_C_ExecuteUbergraph_WeaponBag, CallFunc_Less_IntInt_ReturnValue) == 0x0000C8, "Member 'WeaponBag_C_ExecuteUbergraph_WeaponBag::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeaponBag_C_ExecuteUbergraph_WeaponBag, K2Node_CustomEvent_Player) == 0x0000D0, "Member 'WeaponBag_C_ExecuteUbergraph_WeaponBag::K2Node_CustomEvent_Player' has a wrong offset!");
-static_assert(offsetof(WeaponBag_C_ExecuteUbergraph_WeaponBag, K2Node_DynamicCast_AsPlayer_Character) == 0x0000D8, "Member 'WeaponBag_C_ExecuteUbergraph_WeaponBag::K2Node_DynamicCast_AsPlayer_Character' has a wrong offset!");
-static_assert(offsetof(WeaponBag_C_ExecuteUbergraph_WeaponBag, K2Node_DynamicCast_bSuccess_2) == 0x0000E0, "Member 'WeaponBag_C_ExecuteUbergraph_WeaponBag::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(WeaponBag_C_ExecuteUbergraph_WeaponBag, CallFunc_Array_Get_Item_1) == 0x0000E8, "Member 'WeaponBag_C_ExecuteUbergraph_WeaponBag::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WeaponBag_C_ExecuteUbergraph_WeaponBag, CallFunc_IsLocallyControlled_ReturnValue) == 0x0000F8, "Member 'WeaponBag_C_ExecuteUbergraph_WeaponBag::CallFunc_IsLocallyControlled_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WeaponBag_C_ExecuteUbergraph_WeaponBag;
 
 // Function WeaponBag.WeaponBag_C.PickupLoadout
 // 0x0008 (0x0008 - 0x0000)
@@ -103,9 +72,7 @@ struct WeaponBag_C_PickupLoadout final
 public:
 	class AActor*                                 Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WeaponBag_C_PickupLoadout) == 0x000008, "Wrong alignment on WeaponBag_C_PickupLoadout");
-static_assert(sizeof(WeaponBag_C_PickupLoadout) == 0x000008, "Wrong size on WeaponBag_C_PickupLoadout");
-static_assert(offsetof(WeaponBag_C_PickupLoadout, Player) == 0x000000, "Member 'WeaponBag_C_PickupLoadout::Player' has a wrong offset!");
+DUMPER7_ASSERTS_WeaponBag_C_PickupLoadout;
 
 // Function WeaponBag.WeaponBag_C.SpawnMag
 // 0x0010 (0x0010 - 0x0000)
@@ -115,10 +82,7 @@ public:
 	class UClass*                                 Magactor;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Rifle_;                                            // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WeaponBag_C_SpawnMag) == 0x000008, "Wrong alignment on WeaponBag_C_SpawnMag");
-static_assert(sizeof(WeaponBag_C_SpawnMag) == 0x000010, "Wrong size on WeaponBag_C_SpawnMag");
-static_assert(offsetof(WeaponBag_C_SpawnMag, Magactor) == 0x000000, "Member 'WeaponBag_C_SpawnMag::Magactor' has a wrong offset!");
-static_assert(offsetof(WeaponBag_C_SpawnMag, Rifle_) == 0x000008, "Member 'WeaponBag_C_SpawnMag::Rifle_' has a wrong offset!");
+DUMPER7_ASSERTS_WeaponBag_C_SpawnMag;
 
 // Function WeaponBag.WeaponBag_C.BndEvt__WeaponBag_InteractComponent_K2Node_ComponentBoundEvent_0_Interact__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
@@ -128,10 +92,7 @@ public:
 	class AActor*                                 Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    HitComponent;                                      // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WeaponBag_C_BndEvt__WeaponBag_InteractComponent_K2Node_ComponentBoundEvent_0_Interact__DelegateSignature) == 0x000008, "Wrong alignment on WeaponBag_C_BndEvt__WeaponBag_InteractComponent_K2Node_ComponentBoundEvent_0_Interact__DelegateSignature");
-static_assert(sizeof(WeaponBag_C_BndEvt__WeaponBag_InteractComponent_K2Node_ComponentBoundEvent_0_Interact__DelegateSignature) == 0x000010, "Wrong size on WeaponBag_C_BndEvt__WeaponBag_InteractComponent_K2Node_ComponentBoundEvent_0_Interact__DelegateSignature");
-static_assert(offsetof(WeaponBag_C_BndEvt__WeaponBag_InteractComponent_K2Node_ComponentBoundEvent_0_Interact__DelegateSignature, Player) == 0x000000, "Member 'WeaponBag_C_BndEvt__WeaponBag_InteractComponent_K2Node_ComponentBoundEvent_0_Interact__DelegateSignature::Player' has a wrong offset!");
-static_assert(offsetof(WeaponBag_C_BndEvt__WeaponBag_InteractComponent_K2Node_ComponentBoundEvent_0_Interact__DelegateSignature, HitComponent) == 0x000008, "Member 'WeaponBag_C_BndEvt__WeaponBag_InteractComponent_K2Node_ComponentBoundEvent_0_Interact__DelegateSignature::HitComponent' has a wrong offset!");
+DUMPER7_ASSERTS_WeaponBag_C_BndEvt__WeaponBag_InteractComponent_K2Node_ComponentBoundEvent_0_Interact__DelegateSignature;
 
 }
 

@@ -23,15 +23,18 @@ class ASuppressor_Shotgun_C final : public AAttachment_Barrel_base_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Suppressor_Shotgun_C">();
+		BP_STATIC_CLASS_IMPL("Suppressor_Shotgun_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Suppressor_Shotgun_C")
 	}
 	static class ASuppressor_Shotgun_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASuppressor_Shotgun_C>();
 	}
 };
-static_assert(alignof(ASuppressor_Shotgun_C) == 0x000008, "Wrong alignment on ASuppressor_Shotgun_C");
-static_assert(sizeof(ASuppressor_Shotgun_C) == 0x000260, "Wrong size on ASuppressor_Shotgun_C");
+DUMPER7_ASSERTS_ASuppressor_Shotgun_C;
 
 }
 

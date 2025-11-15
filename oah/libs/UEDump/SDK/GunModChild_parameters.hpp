@@ -75,50 +75,7 @@ public:
 	uint8                                         Pad_1F9[0x3];                                      // 0x01F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x01FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GunModChild_C_ExecuteUbergraph_GunModChild) == 0x000008, "Wrong alignment on GunModChild_C_ExecuteUbergraph_GunModChild");
-static_assert(sizeof(GunModChild_C_ExecuteUbergraph_GunModChild) == 0x000200, "Wrong size on GunModChild_C_ExecuteUbergraph_GunModChild");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, EntryPoint) == 0x000000, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, Temp_int_Array_Index_Variable) == 0x000004, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, Temp_int_Array_Index_Variable_1) == 0x000010, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, CallFunc_GetPlayerController_ReturnValue) == 0x000018, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, K2Node_DynamicCast_AsRobber_Controller) == 0x000020, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::K2Node_DynamicCast_AsRobber_Controller' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, CallFunc_Update_Attachment_New_attachments_structure) == 0x000030, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::CallFunc_Update_Attachment_New_attachments_structure' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, CallFunc_FindEquppedAttachmentFunc_Attachment) == 0x000040, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::CallFunc_FindEquppedAttachmentFunc_Attachment' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, K2Node_ClassDynamicCast_AsShop_Item_Weapon_Mod_Base) == 0x000048, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::K2Node_ClassDynamicCast_AsShop_Item_Weapon_Mod_Base' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, K2Node_ClassDynamicCast_bSuccess) == 0x000050, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::K2Node_ClassDynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, K2Node_MakeStruct_SlateColor) == 0x000058, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, CallFunc_EqualEqual_ClassClass_ReturnValue) == 0x000080, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::CallFunc_EqualEqual_ClassClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, K2Node_ClassDynamicCast_AsShop_Item_Weapon_Mod_Base_1) == 0x000088, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::K2Node_ClassDynamicCast_AsShop_Item_Weapon_Mod_Base_1' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, K2Node_ClassDynamicCast_bSuccess_1) == 0x000090, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::K2Node_ClassDynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, CallFunc_GetAllWidgetsWithInterface_FoundWidgets) == 0x000098, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::CallFunc_GetAllWidgetsWithInterface_FoundWidgets' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, CallFunc_Array_Get_Item) == 0x0000A8, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, CallFunc_GetClassDisplayName_ReturnValue) == 0x0000B0, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::CallFunc_GetClassDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, K2Node_DynamicCast_AsGun_Stat_Interface) == 0x0000C0, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::K2Node_DynamicCast_AsGun_Stat_Interface' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, K2Node_DynamicCast_bSuccess_1) == 0x0000D0, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, CallFunc_Concat_StrStr_ReturnValue) == 0x0000D8, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, CallFunc_Array_Length_ReturnValue) == 0x0000E8, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, CallFunc_Conv_IntToString_ReturnValue) == 0x0000F0, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, K2Node_MakeStruct_Margin) == 0x000100, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::K2Node_MakeStruct_Margin' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000110, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, K2Node_MakeStruct_SlateBrush) == 0x000120, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, CallFunc_GetUpgradeStats_Recoil) == 0x0001A8, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::CallFunc_GetUpgradeStats_Recoil' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, CallFunc_GetUpgradeStats_Accuracy) == 0x0001AC, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::CallFunc_GetUpgradeStats_Accuracy' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, CallFunc_GetUpgradeStats_Damage) == 0x0001B0, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::CallFunc_GetUpgradeStats_Damage' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, CallFunc_GetUpgradeStats_Bullets) == 0x0001B4, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::CallFunc_GetUpgradeStats_Bullets' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, CallFunc_GetUpgradeStats_Reload_time) == 0x0001B8, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::CallFunc_GetUpgradeStats_Reload_time' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, CallFunc_Conv_IntToFloat_ReturnValue) == 0x0001BC, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, CallFunc_GetAllWidgetsWithInterface_FoundWidgets_1) == 0x0001C0, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::CallFunc_GetAllWidgetsWithInterface_FoundWidgets_1' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, CallFunc_Array_Get_Item_1) == 0x0001D0, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, CallFunc_Array_Length_ReturnValue_1) == 0x0001D8, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, K2Node_DynamicCast_AsGun_Stat_Interface_1) == 0x0001E0, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::K2Node_DynamicCast_AsGun_Stat_Interface_1' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, K2Node_DynamicCast_bSuccess_2) == 0x0001F0, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, CallFunc_Less_IntInt_ReturnValue) == 0x0001F1, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, Temp_int_Loop_Counter_Variable_1) == 0x0001F4, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, CallFunc_Less_IntInt_ReturnValue_1) == 0x0001F8, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_ExecuteUbergraph_GunModChild, CallFunc_Add_IntInt_ReturnValue_1) == 0x0001FC, "Member 'GunModChild_C_ExecuteUbergraph_GunModChild::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_GunModChild_C_ExecuteUbergraph_GunModChild;
 
 // Function GunModChild.GunModChild_C.GetText_0
 // 0x0030 (0x0030 - 0x0000)
@@ -128,10 +85,7 @@ public:
 	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0018(0x0018)()
 };
-static_assert(alignof(GunModChild_C_GetText_0) == 0x000008, "Wrong alignment on GunModChild_C_GetText_0");
-static_assert(sizeof(GunModChild_C_GetText_0) == 0x000030, "Wrong size on GunModChild_C_GetText_0");
-static_assert(offsetof(GunModChild_C_GetText_0, ReturnValue) == 0x000000, "Member 'GunModChild_C_GetText_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_GetText_0, CallFunc_Conv_StringToText_ReturnValue) == 0x000018, "Member 'GunModChild_C_GetText_0::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GunModChild_C_GetText_0;
 
 // Function GunModChild.GunModChild_C.GetBrush_0
 // 0x0110 (0x0110 - 0x0000)
@@ -141,10 +95,7 @@ public:
 	struct FSlateBrush                            ReturnValue;                                       // 0x0000(0x0088)(Parm, OutParm, ReturnParm)
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0088(0x0088)()
 };
-static_assert(alignof(GunModChild_C_GetBrush_0) == 0x000008, "Wrong alignment on GunModChild_C_GetBrush_0");
-static_assert(sizeof(GunModChild_C_GetBrush_0) == 0x000110, "Wrong size on GunModChild_C_GetBrush_0");
-static_assert(offsetof(GunModChild_C_GetBrush_0, ReturnValue) == 0x000000, "Member 'GunModChild_C_GetBrush_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(GunModChild_C_GetBrush_0, K2Node_MakeStruct_SlateBrush) == 0x000088, "Member 'GunModChild_C_GetBrush_0::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
+DUMPER7_ASSERTS_GunModChild_C_GetBrush_0;
 
 }
 

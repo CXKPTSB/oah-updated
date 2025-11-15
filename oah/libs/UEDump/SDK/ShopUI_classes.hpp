@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "ShopItemCategory_structs.hpp"
 #include "Engine_structs.hpp"
+#include "ShopItemCategory_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
 
@@ -99,51 +99,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ShopUI_C">();
+		BP_STATIC_CLASS_IMPL("ShopUI_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ShopUI_C")
 	}
 	static class UShopUI_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UShopUI_C>();
 	}
 };
-static_assert(alignof(UShopUI_C) == 0x000008, "Wrong alignment on UShopUI_C");
-static_assert(sizeof(UShopUI_C) == 0x0003D0, "Wrong size on UShopUI_C");
-static_assert(offsetof(UShopUI_C, UberGraphFrame) == 0x000260, "Member 'UShopUI_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UShopUI_C, SwipeOut) == 0x000268, "Member 'UShopUI_C::SwipeOut' has a wrong offset!");
-static_assert(offsetof(UShopUI_C, moveOut) == 0x000270, "Member 'UShopUI_C::moveOut' has a wrong offset!");
-static_assert(offsetof(UShopUI_C, Appearence) == 0x000278, "Member 'UShopUI_C::Appearence' has a wrong offset!");
-static_assert(offsetof(UShopUI_C, BuyBorder) == 0x000280, "Member 'UShopUI_C::BuyBorder' has a wrong offset!");
-static_assert(offsetof(UShopUI_C, CashBuyButton) == 0x000288, "Member 'UShopUI_C::CashBuyButton' has a wrong offset!");
-static_assert(offsetof(UShopUI_C, CategoryBox) == 0x000290, "Member 'UShopUI_C::CategoryBox' has a wrong offset!");
-static_assert(offsetof(UShopUI_C, CoinBuyButton) == 0x000298, "Member 'UShopUI_C::CoinBuyButton' has a wrong offset!");
-static_assert(offsetof(UShopUI_C, DescriptionBorder) == 0x0002A0, "Member 'UShopUI_C::DescriptionBorder' has a wrong offset!");
-static_assert(offsetof(UShopUI_C, EquipButton) == 0x0002A8, "Member 'UShopUI_C::EquipButton' has a wrong offset!");
-static_assert(offsetof(UShopUI_C, GunInfoPanel) == 0x0002B0, "Member 'UShopUI_C::GunInfoPanel' has a wrong offset!");
-static_assert(offsetof(UShopUI_C, Image_124) == 0x0002B8, "Member 'UShopUI_C::Image_124' has a wrong offset!");
-static_assert(offsetof(UShopUI_C, InventoryScroll) == 0x0002C0, "Member 'UShopUI_C::InventoryScroll' has a wrong offset!");
-static_assert(offsetof(UShopUI_C, InventoryWrap) == 0x0002C8, "Member 'UShopUI_C::InventoryWrap' has a wrong offset!");
-static_assert(offsetof(UShopUI_C, TextBlock) == 0x0002D0, "Member 'UShopUI_C::TextBlock' has a wrong offset!");
-static_assert(offsetof(UShopUI_C, TextBlock_0) == 0x0002D8, "Member 'UShopUI_C::TextBlock_0' has a wrong offset!");
-static_assert(offsetof(UShopUI_C, TextBlock_3) == 0x0002E0, "Member 'UShopUI_C::TextBlock_3' has a wrong offset!");
-static_assert(offsetof(UShopUI_C, TextBlock_4) == 0x0002E8, "Member 'UShopUI_C::TextBlock_4' has a wrong offset!");
-static_assert(offsetof(UShopUI_C, TextBlock_6) == 0x0002F0, "Member 'UShopUI_C::TextBlock_6' has a wrong offset!");
-static_assert(offsetof(UShopUI_C, Tools) == 0x0002F8, "Member 'UShopUI_C::Tools' has a wrong offset!");
-static_assert(offsetof(UShopUI_C, Weapons) == 0x000300, "Member 'UShopUI_C::Weapons' has a wrong offset!");
-static_assert(offsetof(UShopUI_C, WrapBox_70) == 0x000308, "Member 'UShopUI_C::WrapBox_70' has a wrong offset!");
-static_assert(offsetof(UShopUI_C, PrimaryWeapons) == 0x000310, "Member 'UShopUI_C::PrimaryWeapons' has a wrong offset!");
-static_assert(offsetof(UShopUI_C, SecondaryWeapons) == 0x000320, "Member 'UShopUI_C::SecondaryWeapons' has a wrong offset!");
-static_assert(offsetof(UShopUI_C, BreachTools) == 0x000330, "Member 'UShopUI_C::BreachTools' has a wrong offset!");
-static_assert(offsetof(UShopUI_C, StealthTools) == 0x000340, "Member 'UShopUI_C::StealthTools' has a wrong offset!");
-static_assert(offsetof(UShopUI_C, OtherTools) == 0x000350, "Member 'UShopUI_C::OtherTools' has a wrong offset!");
-static_assert(offsetof(UShopUI_C, Masks) == 0x000360, "Member 'UShopUI_C::Masks' has a wrong offset!");
-static_assert(offsetof(UShopUI_C, Outfits) == 0x000370, "Member 'UShopUI_C::Outfits' has a wrong offset!");
-static_assert(offsetof(UShopUI_C, Emotes) == 0x000380, "Member 'UShopUI_C::Emotes' has a wrong offset!");
-static_assert(offsetof(UShopUI_C, Armor) == 0x000390, "Member 'UShopUI_C::Armor' has a wrong offset!");
-static_assert(offsetof(UShopUI_C, As_Robber_Controller) == 0x0003A0, "Member 'UShopUI_C::As_Robber_Controller' has a wrong offset!");
-static_assert(offsetof(UShopUI_C, SelectedItem) == 0x0003A8, "Member 'UShopUI_C::SelectedItem' has a wrong offset!");
-static_assert(offsetof(UShopUI_C, CurrentCategory) == 0x0003B0, "Member 'UShopUI_C::CurrentCategory' has a wrong offset!");
-static_assert(offsetof(UShopUI_C, CurrentCatArray) == 0x0003B8, "Member 'UShopUI_C::CurrentCatArray' has a wrong offset!");
-static_assert(offsetof(UShopUI_C, SelectedSalePrice) == 0x0003C8, "Member 'UShopUI_C::SelectedSalePrice' has a wrong offset!");
+DUMPER7_ASSERTS_UShopUI_C;
 
 }
 

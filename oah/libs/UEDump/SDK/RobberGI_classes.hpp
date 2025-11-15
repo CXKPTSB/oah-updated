@@ -31,7 +31,7 @@ public:
 	class FString                                 Map;                                               // 0x0248(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 	struct FSteamID                               Steam_IDLobby;                                     // 0x0258(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	TMulticastInlineDelegate<void()>              SessionUpdated;                                    // 0x0260(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void(const struct FBlueprintSessionResult& Session, bool FoundSession_)> PublicSessionFound;                                // 0x0270(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(const struct FBlueprintSessionResult& Session, bool FoundSession_)> PublicSessionFound; // 0x0270(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	TArray<struct FBlueprintSessionResult>        Results;                                           // 0x0280(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FString                                 AlteredSave;                                       // 0x0290(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 	class UClass*                                 SelectedMap;                                       // 0x02A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -81,25 +81,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RobberGI_C">();
+		BP_STATIC_CLASS_IMPL("RobberGI_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RobberGI_C")
 	}
 	static class URobberGI_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URobberGI_C>();
 	}
 };
-static_assert(alignof(URobberGI_C) == 0x000008, "Wrong alignment on URobberGI_C");
-static_assert(sizeof(URobberGI_C) == 0x0002A8, "Wrong size on URobberGI_C");
-static_assert(offsetof(URobberGI_C, UberGraphFrame) == 0x000228, "Member 'URobberGI_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(URobberGI_C, ConnectedPlayers) == 0x000230, "Member 'URobberGI_C::ConnectedPlayers' has a wrong offset!");
-static_assert(offsetof(URobberGI_C, LobbyType) == 0x000238, "Member 'URobberGI_C::LobbyType' has a wrong offset!");
-static_assert(offsetof(URobberGI_C, Map) == 0x000248, "Member 'URobberGI_C::Map' has a wrong offset!");
-static_assert(offsetof(URobberGI_C, Steam_IDLobby) == 0x000258, "Member 'URobberGI_C::Steam_IDLobby' has a wrong offset!");
-static_assert(offsetof(URobberGI_C, SessionUpdated) == 0x000260, "Member 'URobberGI_C::SessionUpdated' has a wrong offset!");
-static_assert(offsetof(URobberGI_C, PublicSessionFound) == 0x000270, "Member 'URobberGI_C::PublicSessionFound' has a wrong offset!");
-static_assert(offsetof(URobberGI_C, Results) == 0x000280, "Member 'URobberGI_C::Results' has a wrong offset!");
-static_assert(offsetof(URobberGI_C, AlteredSave) == 0x000290, "Member 'URobberGI_C::AlteredSave' has a wrong offset!");
-static_assert(offsetof(URobberGI_C, SelectedMap) == 0x0002A0, "Member 'URobberGI_C::SelectedMap' has a wrong offset!");
+DUMPER7_ASSERTS_URobberGI_C;
 
 }
 

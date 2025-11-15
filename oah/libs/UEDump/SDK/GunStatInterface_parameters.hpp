@@ -26,14 +26,7 @@ public:
 	float                                         Recoil;                                            // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         ReloadTime;                                        // 0x0014(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GunStatInterface_C_CompareStats) == 0x000004, "Wrong alignment on GunStatInterface_C_CompareStats");
-static_assert(sizeof(GunStatInterface_C_CompareStats) == 0x000018, "Wrong size on GunStatInterface_C_CompareStats");
-static_assert(offsetof(GunStatInterface_C_CompareStats, Accuracy) == 0x000000, "Member 'GunStatInterface_C_CompareStats::Accuracy' has a wrong offset!");
-static_assert(offsetof(GunStatInterface_C_CompareStats, Capacity) == 0x000004, "Member 'GunStatInterface_C_CompareStats::Capacity' has a wrong offset!");
-static_assert(offsetof(GunStatInterface_C_CompareStats, Damage) == 0x000008, "Member 'GunStatInterface_C_CompareStats::Damage' has a wrong offset!");
-static_assert(offsetof(GunStatInterface_C_CompareStats, Firerate) == 0x00000C, "Member 'GunStatInterface_C_CompareStats::Firerate' has a wrong offset!");
-static_assert(offsetof(GunStatInterface_C_CompareStats, Recoil) == 0x000010, "Member 'GunStatInterface_C_CompareStats::Recoil' has a wrong offset!");
-static_assert(offsetof(GunStatInterface_C_CompareStats, ReloadTime) == 0x000014, "Member 'GunStatInterface_C_CompareStats::ReloadTime' has a wrong offset!");
+DUMPER7_ASSERTS_GunStatInterface_C_CompareStats;
 
 }
 

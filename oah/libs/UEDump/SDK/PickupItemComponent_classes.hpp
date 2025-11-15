@@ -24,11 +24,11 @@ class UPickupItemComponent_C final : public UActorComponent
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x00B0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	TMulticastInlineDelegate<void(class AActor* Player, const struct FVector& Pickuplocation, const struct FRotator& PickupRotation, const struct FVector& HitLocation)> PickUpItem;                                        // 0x00B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void(class AActor* Player)> DropItem;                                          // 0x00C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(class AActor* Player, const struct FVector& Pickuplocation, const struct FRotator& PickupRotation, const struct FVector& HitLocation)> PickUpItem; // 0x00B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(class AActor* Player)> DropItem;                                   // 0x00C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          CollidesWithPlayer_;                               // 0x00D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	uint8                                         Pad_D9[0x7];                                       // 0x00D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(class AActor* Instigator, class AActor* Overlap)> Interactholding;                                   // 0x00E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(class AActor* Instigator, class AActor* Overlap)> InteractHolding; // 0x00E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          MustOverlapInteract_;                              // 0x00F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	uint8                                         Pad_F1[0x7];                                       // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class USoundBase*                             HitSound;                                          // 0x00F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
@@ -52,24 +52,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PickupItemComponent_C">();
+		BP_STATIC_CLASS_IMPL("PickupItemComponent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PickupItemComponent_C")
 	}
 	static class UPickupItemComponent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPickupItemComponent_C>();
 	}
 };
-static_assert(alignof(UPickupItemComponent_C) == 0x000008, "Wrong alignment on UPickupItemComponent_C");
-static_assert(sizeof(UPickupItemComponent_C) == 0x000108, "Wrong size on UPickupItemComponent_C");
-static_assert(offsetof(UPickupItemComponent_C, UberGraphFrame) == 0x0000B0, "Member 'UPickupItemComponent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPickupItemComponent_C, PickUpItem) == 0x0000B8, "Member 'UPickupItemComponent_C::PickUpItem' has a wrong offset!");
-static_assert(offsetof(UPickupItemComponent_C, DropItem) == 0x0000C8, "Member 'UPickupItemComponent_C::DropItem' has a wrong offset!");
-static_assert(offsetof(UPickupItemComponent_C, CollidesWithPlayer_) == 0x0000D8, "Member 'UPickupItemComponent_C::CollidesWithPlayer_' has a wrong offset!");
-static_assert(offsetof(UPickupItemComponent_C, Interactholding) == 0x0000E0, "Member 'UPickupItemComponent_C::Interactholding' has a wrong offset!");
-static_assert(offsetof(UPickupItemComponent_C, MustOverlapInteract_) == 0x0000F0, "Member 'UPickupItemComponent_C::MustOverlapInteract_' has a wrong offset!");
-static_assert(offsetof(UPickupItemComponent_C, HitSound) == 0x0000F8, "Member 'UPickupItemComponent_C::HitSound' has a wrong offset!");
-static_assert(offsetof(UPickupItemComponent_C, Picked_up_) == 0x000100, "Member 'UPickupItemComponent_C::Picked_up_' has a wrong offset!");
-static_assert(offsetof(UPickupItemComponent_C, SoundImpactStrength) == 0x000104, "Member 'UPickupItemComponent_C::SoundImpactStrength' has a wrong offset!");
+DUMPER7_ASSERTS_UPickupItemComponent_C;
 
 }
 

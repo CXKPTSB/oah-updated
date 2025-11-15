@@ -35,19 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LeaveGameConfirm_C">();
+		BP_STATIC_CLASS_IMPL("LeaveGameConfirm_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LeaveGameConfirm_C")
 	}
 	static class ULeaveGameConfirm_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULeaveGameConfirm_C>();
 	}
 };
-static_assert(alignof(ULeaveGameConfirm_C) == 0x000008, "Wrong alignment on ULeaveGameConfirm_C");
-static_assert(sizeof(ULeaveGameConfirm_C) == 0x000288, "Wrong size on ULeaveGameConfirm_C");
-static_assert(offsetof(ULeaveGameConfirm_C, UberGraphFrame) == 0x000260, "Member 'ULeaveGameConfirm_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULeaveGameConfirm_C, Button) == 0x000268, "Member 'ULeaveGameConfirm_C::Button' has a wrong offset!");
-static_assert(offsetof(ULeaveGameConfirm_C, Button_100) == 0x000270, "Member 'ULeaveGameConfirm_C::Button_100' has a wrong offset!");
-static_assert(offsetof(ULeaveGameConfirm_C, Message) == 0x000278, "Member 'ULeaveGameConfirm_C::Message' has a wrong offset!");
+DUMPER7_ASSERTS_ULeaveGameConfirm_C;
 
 }
 

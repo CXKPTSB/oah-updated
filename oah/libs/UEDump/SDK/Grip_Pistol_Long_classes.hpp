@@ -23,15 +23,18 @@ class AGrip_Pistol_Long_C final : public AAttachment_Grip_base_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Grip_Pistol_Long_C">();
+		BP_STATIC_CLASS_IMPL("Grip_Pistol_Long_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Grip_Pistol_Long_C")
 	}
 	static class AGrip_Pistol_Long_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGrip_Pistol_Long_C>();
 	}
 };
-static_assert(alignof(AGrip_Pistol_Long_C) == 0x000008, "Wrong alignment on AGrip_Pistol_Long_C");
-static_assert(sizeof(AGrip_Pistol_Long_C) == 0x000250, "Wrong size on AGrip_Pistol_Long_C");
+DUMPER7_ASSERTS_AGrip_Pistol_Long_C;
 
 }
 

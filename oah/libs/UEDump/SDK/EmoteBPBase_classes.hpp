@@ -34,19 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EmoteBPBase_C">();
+		BP_STATIC_CLASS_IMPL("EmoteBPBase_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EmoteBPBase_C")
 	}
 	static class AEmoteBPBase_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AEmoteBPBase_C>();
 	}
 };
-static_assert(alignof(AEmoteBPBase_C) == 0x000008, "Wrong alignment on AEmoteBPBase_C");
-static_assert(sizeof(AEmoteBPBase_C) == 0x000240, "Wrong size on AEmoteBPBase_C");
-static_assert(offsetof(AEmoteBPBase_C, UberGraphFrame) == 0x000220, "Member 'AEmoteBPBase_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AEmoteBPBase_C, SkeletalMesh) == 0x000228, "Member 'AEmoteBPBase_C::SkeletalMesh' has a wrong offset!");
-static_assert(offsetof(AEmoteBPBase_C, DefaultSceneRoot) == 0x000230, "Member 'AEmoteBPBase_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AEmoteBPBase_C, Animation) == 0x000238, "Member 'AEmoteBPBase_C::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_AEmoteBPBase_C;
 
 }
 

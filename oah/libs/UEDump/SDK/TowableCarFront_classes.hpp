@@ -28,18 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TowableCarFront_C">();
+		BP_STATIC_CLASS_IMPL("TowableCarFront_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TowableCarFront_C")
 	}
 	static class ATowableCarFront_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ATowableCarFront_C>();
 	}
 };
-static_assert(alignof(ATowableCarFront_C) == 0x000008, "Wrong alignment on ATowableCarFront_C");
-static_assert(sizeof(ATowableCarFront_C) == 0x000238, "Wrong size on ATowableCarFront_C");
-static_assert(offsetof(ATowableCarFront_C, SpottedHighlightcomponent) == 0x000220, "Member 'ATowableCarFront_C::SpottedHighlightcomponent' has a wrong offset!");
-static_assert(offsetof(ATowableCarFront_C, SK_Veh_Exotic_01_Front_Bumper_02_New) == 0x000228, "Member 'ATowableCarFront_C::SK_Veh_Exotic_01_Front_Bumper_02_New' has a wrong offset!");
-static_assert(offsetof(ATowableCarFront_C, DefaultSceneRoot) == 0x000230, "Member 'ATowableCarFront_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_ATowableCarFront_C;
 
 }
 

@@ -23,9 +23,7 @@ struct AnalyticsBlueprintLibrary_GetSessionID final
 public:
 	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AnalyticsBlueprintLibrary_GetSessionID) == 0x000008, "Wrong alignment on AnalyticsBlueprintLibrary_GetSessionID");
-static_assert(sizeof(AnalyticsBlueprintLibrary_GetSessionID) == 0x000010, "Wrong size on AnalyticsBlueprintLibrary_GetSessionID");
-static_assert(offsetof(AnalyticsBlueprintLibrary_GetSessionID, ReturnValue) == 0x000000, "Member 'AnalyticsBlueprintLibrary_GetSessionID::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AnalyticsBlueprintLibrary_GetSessionID;
 
 // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.GetUserID
 // 0x0010 (0x0010 - 0x0000)
@@ -34,9 +32,7 @@ struct AnalyticsBlueprintLibrary_GetUserID final
 public:
 	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AnalyticsBlueprintLibrary_GetUserID) == 0x000008, "Wrong alignment on AnalyticsBlueprintLibrary_GetUserID");
-static_assert(sizeof(AnalyticsBlueprintLibrary_GetUserID) == 0x000010, "Wrong size on AnalyticsBlueprintLibrary_GetUserID");
-static_assert(offsetof(AnalyticsBlueprintLibrary_GetUserID, ReturnValue) == 0x000000, "Member 'AnalyticsBlueprintLibrary_GetUserID::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AnalyticsBlueprintLibrary_GetUserID;
 
 // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.MakeEventAttribute
 // 0x0040 (0x0040 - 0x0000)
@@ -47,11 +43,7 @@ public:
 	class FString                                 AttributeValue;                                    // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAnalyticsEventAttr                    ReturnValue;                                       // 0x0020(0x0020)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AnalyticsBlueprintLibrary_MakeEventAttribute) == 0x000008, "Wrong alignment on AnalyticsBlueprintLibrary_MakeEventAttribute");
-static_assert(sizeof(AnalyticsBlueprintLibrary_MakeEventAttribute) == 0x000040, "Wrong size on AnalyticsBlueprintLibrary_MakeEventAttribute");
-static_assert(offsetof(AnalyticsBlueprintLibrary_MakeEventAttribute, AttributeName) == 0x000000, "Member 'AnalyticsBlueprintLibrary_MakeEventAttribute::AttributeName' has a wrong offset!");
-static_assert(offsetof(AnalyticsBlueprintLibrary_MakeEventAttribute, AttributeValue) == 0x000010, "Member 'AnalyticsBlueprintLibrary_MakeEventAttribute::AttributeValue' has a wrong offset!");
-static_assert(offsetof(AnalyticsBlueprintLibrary_MakeEventAttribute, ReturnValue) == 0x000020, "Member 'AnalyticsBlueprintLibrary_MakeEventAttribute::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AnalyticsBlueprintLibrary_MakeEventAttribute;
 
 // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordCurrencyGiven
 // 0x0018 (0x0018 - 0x0000)
@@ -62,10 +54,7 @@ public:
 	int32                                         GameCurrencyAmount;                                // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AnalyticsBlueprintLibrary_RecordCurrencyGiven) == 0x000008, "Wrong alignment on AnalyticsBlueprintLibrary_RecordCurrencyGiven");
-static_assert(sizeof(AnalyticsBlueprintLibrary_RecordCurrencyGiven) == 0x000018, "Wrong size on AnalyticsBlueprintLibrary_RecordCurrencyGiven");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordCurrencyGiven, GameCurrencyType) == 0x000000, "Member 'AnalyticsBlueprintLibrary_RecordCurrencyGiven::GameCurrencyType' has a wrong offset!");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordCurrencyGiven, GameCurrencyAmount) == 0x000010, "Member 'AnalyticsBlueprintLibrary_RecordCurrencyGiven::GameCurrencyAmount' has a wrong offset!");
+DUMPER7_ASSERTS_AnalyticsBlueprintLibrary_RecordCurrencyGiven;
 
 // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordCurrencyGivenWithAttributes
 // 0x0028 (0x0028 - 0x0000)
@@ -77,11 +66,7 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FAnalyticsEventAttr>            Attributes;                                        // 0x0018(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AnalyticsBlueprintLibrary_RecordCurrencyGivenWithAttributes) == 0x000008, "Wrong alignment on AnalyticsBlueprintLibrary_RecordCurrencyGivenWithAttributes");
-static_assert(sizeof(AnalyticsBlueprintLibrary_RecordCurrencyGivenWithAttributes) == 0x000028, "Wrong size on AnalyticsBlueprintLibrary_RecordCurrencyGivenWithAttributes");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordCurrencyGivenWithAttributes, GameCurrencyType) == 0x000000, "Member 'AnalyticsBlueprintLibrary_RecordCurrencyGivenWithAttributes::GameCurrencyType' has a wrong offset!");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordCurrencyGivenWithAttributes, GameCurrencyAmount) == 0x000010, "Member 'AnalyticsBlueprintLibrary_RecordCurrencyGivenWithAttributes::GameCurrencyAmount' has a wrong offset!");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordCurrencyGivenWithAttributes, Attributes) == 0x000018, "Member 'AnalyticsBlueprintLibrary_RecordCurrencyGivenWithAttributes::Attributes' has a wrong offset!");
+DUMPER7_ASSERTS_AnalyticsBlueprintLibrary_RecordCurrencyGivenWithAttributes;
 
 // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordCurrencyPurchase
 // 0x0040 (0x0040 - 0x0000)
@@ -96,13 +81,7 @@ public:
 	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 PaymentProvider;                                   // 0x0030(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AnalyticsBlueprintLibrary_RecordCurrencyPurchase) == 0x000008, "Wrong alignment on AnalyticsBlueprintLibrary_RecordCurrencyPurchase");
-static_assert(sizeof(AnalyticsBlueprintLibrary_RecordCurrencyPurchase) == 0x000040, "Wrong size on AnalyticsBlueprintLibrary_RecordCurrencyPurchase");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordCurrencyPurchase, GameCurrencyType) == 0x000000, "Member 'AnalyticsBlueprintLibrary_RecordCurrencyPurchase::GameCurrencyType' has a wrong offset!");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordCurrencyPurchase, GameCurrencyAmount) == 0x000010, "Member 'AnalyticsBlueprintLibrary_RecordCurrencyPurchase::GameCurrencyAmount' has a wrong offset!");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordCurrencyPurchase, RealCurrencyType) == 0x000018, "Member 'AnalyticsBlueprintLibrary_RecordCurrencyPurchase::RealCurrencyType' has a wrong offset!");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordCurrencyPurchase, RealMoneyCost) == 0x000028, "Member 'AnalyticsBlueprintLibrary_RecordCurrencyPurchase::RealMoneyCost' has a wrong offset!");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordCurrencyPurchase, PaymentProvider) == 0x000030, "Member 'AnalyticsBlueprintLibrary_RecordCurrencyPurchase::PaymentProvider' has a wrong offset!");
+DUMPER7_ASSERTS_AnalyticsBlueprintLibrary_RecordCurrencyPurchase;
 
 // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordError
 // 0x0010 (0x0010 - 0x0000)
@@ -111,9 +90,7 @@ struct AnalyticsBlueprintLibrary_RecordError final
 public:
 	class FString                                 Error;                                             // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AnalyticsBlueprintLibrary_RecordError) == 0x000008, "Wrong alignment on AnalyticsBlueprintLibrary_RecordError");
-static_assert(sizeof(AnalyticsBlueprintLibrary_RecordError) == 0x000010, "Wrong size on AnalyticsBlueprintLibrary_RecordError");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordError, Error) == 0x000000, "Member 'AnalyticsBlueprintLibrary_RecordError::Error' has a wrong offset!");
+DUMPER7_ASSERTS_AnalyticsBlueprintLibrary_RecordError;
 
 // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordErrorWithAttributes
 // 0x0020 (0x0020 - 0x0000)
@@ -123,10 +100,7 @@ public:
 	class FString                                 Error;                                             // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FAnalyticsEventAttr>            Attributes;                                        // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AnalyticsBlueprintLibrary_RecordErrorWithAttributes) == 0x000008, "Wrong alignment on AnalyticsBlueprintLibrary_RecordErrorWithAttributes");
-static_assert(sizeof(AnalyticsBlueprintLibrary_RecordErrorWithAttributes) == 0x000020, "Wrong size on AnalyticsBlueprintLibrary_RecordErrorWithAttributes");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordErrorWithAttributes, Error) == 0x000000, "Member 'AnalyticsBlueprintLibrary_RecordErrorWithAttributes::Error' has a wrong offset!");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordErrorWithAttributes, Attributes) == 0x000010, "Member 'AnalyticsBlueprintLibrary_RecordErrorWithAttributes::Attributes' has a wrong offset!");
+DUMPER7_ASSERTS_AnalyticsBlueprintLibrary_RecordErrorWithAttributes;
 
 // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordEvent
 // 0x0010 (0x0010 - 0x0000)
@@ -135,9 +109,7 @@ struct AnalyticsBlueprintLibrary_RecordEvent final
 public:
 	class FString                                 EventName;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AnalyticsBlueprintLibrary_RecordEvent) == 0x000008, "Wrong alignment on AnalyticsBlueprintLibrary_RecordEvent");
-static_assert(sizeof(AnalyticsBlueprintLibrary_RecordEvent) == 0x000010, "Wrong size on AnalyticsBlueprintLibrary_RecordEvent");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordEvent, EventName) == 0x000000, "Member 'AnalyticsBlueprintLibrary_RecordEvent::EventName' has a wrong offset!");
+DUMPER7_ASSERTS_AnalyticsBlueprintLibrary_RecordEvent;
 
 // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordEventWithAttribute
 // 0x0030 (0x0030 - 0x0000)
@@ -148,11 +120,7 @@ public:
 	class FString                                 AttributeName;                                     // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 AttributeValue;                                    // 0x0020(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AnalyticsBlueprintLibrary_RecordEventWithAttribute) == 0x000008, "Wrong alignment on AnalyticsBlueprintLibrary_RecordEventWithAttribute");
-static_assert(sizeof(AnalyticsBlueprintLibrary_RecordEventWithAttribute) == 0x000030, "Wrong size on AnalyticsBlueprintLibrary_RecordEventWithAttribute");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordEventWithAttribute, EventName) == 0x000000, "Member 'AnalyticsBlueprintLibrary_RecordEventWithAttribute::EventName' has a wrong offset!");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordEventWithAttribute, AttributeName) == 0x000010, "Member 'AnalyticsBlueprintLibrary_RecordEventWithAttribute::AttributeName' has a wrong offset!");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordEventWithAttribute, AttributeValue) == 0x000020, "Member 'AnalyticsBlueprintLibrary_RecordEventWithAttribute::AttributeValue' has a wrong offset!");
+DUMPER7_ASSERTS_AnalyticsBlueprintLibrary_RecordEventWithAttribute;
 
 // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordEventWithAttributes
 // 0x0020 (0x0020 - 0x0000)
@@ -162,10 +130,7 @@ public:
 	class FString                                 EventName;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FAnalyticsEventAttr>            Attributes;                                        // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AnalyticsBlueprintLibrary_RecordEventWithAttributes) == 0x000008, "Wrong alignment on AnalyticsBlueprintLibrary_RecordEventWithAttributes");
-static_assert(sizeof(AnalyticsBlueprintLibrary_RecordEventWithAttributes) == 0x000020, "Wrong size on AnalyticsBlueprintLibrary_RecordEventWithAttributes");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordEventWithAttributes, EventName) == 0x000000, "Member 'AnalyticsBlueprintLibrary_RecordEventWithAttributes::EventName' has a wrong offset!");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordEventWithAttributes, Attributes) == 0x000010, "Member 'AnalyticsBlueprintLibrary_RecordEventWithAttributes::Attributes' has a wrong offset!");
+DUMPER7_ASSERTS_AnalyticsBlueprintLibrary_RecordEventWithAttributes;
 
 // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordItemPurchase
 // 0x0028 (0x0028 - 0x0000)
@@ -177,12 +142,7 @@ public:
 	int32                                         PerItemCost;                                       // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ItemQuantity;                                      // 0x0024(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AnalyticsBlueprintLibrary_RecordItemPurchase) == 0x000008, "Wrong alignment on AnalyticsBlueprintLibrary_RecordItemPurchase");
-static_assert(sizeof(AnalyticsBlueprintLibrary_RecordItemPurchase) == 0x000028, "Wrong size on AnalyticsBlueprintLibrary_RecordItemPurchase");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordItemPurchase, ItemId) == 0x000000, "Member 'AnalyticsBlueprintLibrary_RecordItemPurchase::ItemId' has a wrong offset!");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordItemPurchase, Currency) == 0x000010, "Member 'AnalyticsBlueprintLibrary_RecordItemPurchase::Currency' has a wrong offset!");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordItemPurchase, PerItemCost) == 0x000020, "Member 'AnalyticsBlueprintLibrary_RecordItemPurchase::PerItemCost' has a wrong offset!");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordItemPurchase, ItemQuantity) == 0x000024, "Member 'AnalyticsBlueprintLibrary_RecordItemPurchase::ItemQuantity' has a wrong offset!");
+DUMPER7_ASSERTS_AnalyticsBlueprintLibrary_RecordItemPurchase;
 
 // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordProgress
 // 0x0020 (0x0020 - 0x0000)
@@ -192,10 +152,7 @@ public:
 	class FString                                 ProgressType;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ProgressName;                                      // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AnalyticsBlueprintLibrary_RecordProgress) == 0x000008, "Wrong alignment on AnalyticsBlueprintLibrary_RecordProgress");
-static_assert(sizeof(AnalyticsBlueprintLibrary_RecordProgress) == 0x000020, "Wrong size on AnalyticsBlueprintLibrary_RecordProgress");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordProgress, ProgressType) == 0x000000, "Member 'AnalyticsBlueprintLibrary_RecordProgress::ProgressType' has a wrong offset!");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordProgress, ProgressName) == 0x000010, "Member 'AnalyticsBlueprintLibrary_RecordProgress::ProgressName' has a wrong offset!");
+DUMPER7_ASSERTS_AnalyticsBlueprintLibrary_RecordProgress;
 
 // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordProgressWithAttributes
 // 0x0030 (0x0030 - 0x0000)
@@ -206,11 +163,7 @@ public:
 	class FString                                 ProgressName;                                      // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FAnalyticsEventAttr>            Attributes;                                        // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AnalyticsBlueprintLibrary_RecordProgressWithAttributes) == 0x000008, "Wrong alignment on AnalyticsBlueprintLibrary_RecordProgressWithAttributes");
-static_assert(sizeof(AnalyticsBlueprintLibrary_RecordProgressWithAttributes) == 0x000030, "Wrong size on AnalyticsBlueprintLibrary_RecordProgressWithAttributes");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordProgressWithAttributes, ProgressType) == 0x000000, "Member 'AnalyticsBlueprintLibrary_RecordProgressWithAttributes::ProgressType' has a wrong offset!");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordProgressWithAttributes, ProgressName) == 0x000010, "Member 'AnalyticsBlueprintLibrary_RecordProgressWithAttributes::ProgressName' has a wrong offset!");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordProgressWithAttributes, Attributes) == 0x000020, "Member 'AnalyticsBlueprintLibrary_RecordProgressWithAttributes::Attributes' has a wrong offset!");
+DUMPER7_ASSERTS_AnalyticsBlueprintLibrary_RecordProgressWithAttributes;
 
 // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordProgressWithFullHierarchyAndAttributes
 // 0x0030 (0x0030 - 0x0000)
@@ -221,11 +174,7 @@ public:
 	TArray<class FString>                         ProgressNames;                                     // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	TArray<struct FAnalyticsEventAttr>            Attributes;                                        // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AnalyticsBlueprintLibrary_RecordProgressWithFullHierarchyAndAttributes) == 0x000008, "Wrong alignment on AnalyticsBlueprintLibrary_RecordProgressWithFullHierarchyAndAttributes");
-static_assert(sizeof(AnalyticsBlueprintLibrary_RecordProgressWithFullHierarchyAndAttributes) == 0x000030, "Wrong size on AnalyticsBlueprintLibrary_RecordProgressWithFullHierarchyAndAttributes");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordProgressWithFullHierarchyAndAttributes, ProgressType) == 0x000000, "Member 'AnalyticsBlueprintLibrary_RecordProgressWithFullHierarchyAndAttributes::ProgressType' has a wrong offset!");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordProgressWithFullHierarchyAndAttributes, ProgressNames) == 0x000010, "Member 'AnalyticsBlueprintLibrary_RecordProgressWithFullHierarchyAndAttributes::ProgressNames' has a wrong offset!");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordProgressWithFullHierarchyAndAttributes, Attributes) == 0x000020, "Member 'AnalyticsBlueprintLibrary_RecordProgressWithFullHierarchyAndAttributes::Attributes' has a wrong offset!");
+DUMPER7_ASSERTS_AnalyticsBlueprintLibrary_RecordProgressWithFullHierarchyAndAttributes;
 
 // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordSimpleCurrencyPurchase
 // 0x0018 (0x0018 - 0x0000)
@@ -236,10 +185,7 @@ public:
 	int32                                         GameCurrencyAmount;                                // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AnalyticsBlueprintLibrary_RecordSimpleCurrencyPurchase) == 0x000008, "Wrong alignment on AnalyticsBlueprintLibrary_RecordSimpleCurrencyPurchase");
-static_assert(sizeof(AnalyticsBlueprintLibrary_RecordSimpleCurrencyPurchase) == 0x000018, "Wrong size on AnalyticsBlueprintLibrary_RecordSimpleCurrencyPurchase");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordSimpleCurrencyPurchase, GameCurrencyType) == 0x000000, "Member 'AnalyticsBlueprintLibrary_RecordSimpleCurrencyPurchase::GameCurrencyType' has a wrong offset!");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordSimpleCurrencyPurchase, GameCurrencyAmount) == 0x000010, "Member 'AnalyticsBlueprintLibrary_RecordSimpleCurrencyPurchase::GameCurrencyAmount' has a wrong offset!");
+DUMPER7_ASSERTS_AnalyticsBlueprintLibrary_RecordSimpleCurrencyPurchase;
 
 // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordSimpleCurrencyPurchaseWithAttributes
 // 0x0028 (0x0028 - 0x0000)
@@ -251,11 +197,7 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FAnalyticsEventAttr>            Attributes;                                        // 0x0018(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AnalyticsBlueprintLibrary_RecordSimpleCurrencyPurchaseWithAttributes) == 0x000008, "Wrong alignment on AnalyticsBlueprintLibrary_RecordSimpleCurrencyPurchaseWithAttributes");
-static_assert(sizeof(AnalyticsBlueprintLibrary_RecordSimpleCurrencyPurchaseWithAttributes) == 0x000028, "Wrong size on AnalyticsBlueprintLibrary_RecordSimpleCurrencyPurchaseWithAttributes");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordSimpleCurrencyPurchaseWithAttributes, GameCurrencyType) == 0x000000, "Member 'AnalyticsBlueprintLibrary_RecordSimpleCurrencyPurchaseWithAttributes::GameCurrencyType' has a wrong offset!");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordSimpleCurrencyPurchaseWithAttributes, GameCurrencyAmount) == 0x000010, "Member 'AnalyticsBlueprintLibrary_RecordSimpleCurrencyPurchaseWithAttributes::GameCurrencyAmount' has a wrong offset!");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordSimpleCurrencyPurchaseWithAttributes, Attributes) == 0x000018, "Member 'AnalyticsBlueprintLibrary_RecordSimpleCurrencyPurchaseWithAttributes::Attributes' has a wrong offset!");
+DUMPER7_ASSERTS_AnalyticsBlueprintLibrary_RecordSimpleCurrencyPurchaseWithAttributes;
 
 // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordSimpleItemPurchase
 // 0x0018 (0x0018 - 0x0000)
@@ -266,10 +208,7 @@ public:
 	int32                                         ItemQuantity;                                      // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AnalyticsBlueprintLibrary_RecordSimpleItemPurchase) == 0x000008, "Wrong alignment on AnalyticsBlueprintLibrary_RecordSimpleItemPurchase");
-static_assert(sizeof(AnalyticsBlueprintLibrary_RecordSimpleItemPurchase) == 0x000018, "Wrong size on AnalyticsBlueprintLibrary_RecordSimpleItemPurchase");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordSimpleItemPurchase, ItemId) == 0x000000, "Member 'AnalyticsBlueprintLibrary_RecordSimpleItemPurchase::ItemId' has a wrong offset!");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordSimpleItemPurchase, ItemQuantity) == 0x000010, "Member 'AnalyticsBlueprintLibrary_RecordSimpleItemPurchase::ItemQuantity' has a wrong offset!");
+DUMPER7_ASSERTS_AnalyticsBlueprintLibrary_RecordSimpleItemPurchase;
 
 // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordSimpleItemPurchaseWithAttributes
 // 0x0028 (0x0028 - 0x0000)
@@ -281,11 +220,7 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FAnalyticsEventAttr>            Attributes;                                        // 0x0018(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AnalyticsBlueprintLibrary_RecordSimpleItemPurchaseWithAttributes) == 0x000008, "Wrong alignment on AnalyticsBlueprintLibrary_RecordSimpleItemPurchaseWithAttributes");
-static_assert(sizeof(AnalyticsBlueprintLibrary_RecordSimpleItemPurchaseWithAttributes) == 0x000028, "Wrong size on AnalyticsBlueprintLibrary_RecordSimpleItemPurchaseWithAttributes");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordSimpleItemPurchaseWithAttributes, ItemId) == 0x000000, "Member 'AnalyticsBlueprintLibrary_RecordSimpleItemPurchaseWithAttributes::ItemId' has a wrong offset!");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordSimpleItemPurchaseWithAttributes, ItemQuantity) == 0x000010, "Member 'AnalyticsBlueprintLibrary_RecordSimpleItemPurchaseWithAttributes::ItemQuantity' has a wrong offset!");
-static_assert(offsetof(AnalyticsBlueprintLibrary_RecordSimpleItemPurchaseWithAttributes, Attributes) == 0x000018, "Member 'AnalyticsBlueprintLibrary_RecordSimpleItemPurchaseWithAttributes::Attributes' has a wrong offset!");
+DUMPER7_ASSERTS_AnalyticsBlueprintLibrary_RecordSimpleItemPurchaseWithAttributes;
 
 // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.SetAge
 // 0x0004 (0x0004 - 0x0000)
@@ -294,9 +229,7 @@ struct AnalyticsBlueprintLibrary_SetAge final
 public:
 	int32                                         Age;                                               // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AnalyticsBlueprintLibrary_SetAge) == 0x000004, "Wrong alignment on AnalyticsBlueprintLibrary_SetAge");
-static_assert(sizeof(AnalyticsBlueprintLibrary_SetAge) == 0x000004, "Wrong size on AnalyticsBlueprintLibrary_SetAge");
-static_assert(offsetof(AnalyticsBlueprintLibrary_SetAge, Age) == 0x000000, "Member 'AnalyticsBlueprintLibrary_SetAge::Age' has a wrong offset!");
+DUMPER7_ASSERTS_AnalyticsBlueprintLibrary_SetAge;
 
 // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.SetBuildInfo
 // 0x0010 (0x0010 - 0x0000)
@@ -305,9 +238,7 @@ struct AnalyticsBlueprintLibrary_SetBuildInfo final
 public:
 	class FString                                 BuildInfo;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AnalyticsBlueprintLibrary_SetBuildInfo) == 0x000008, "Wrong alignment on AnalyticsBlueprintLibrary_SetBuildInfo");
-static_assert(sizeof(AnalyticsBlueprintLibrary_SetBuildInfo) == 0x000010, "Wrong size on AnalyticsBlueprintLibrary_SetBuildInfo");
-static_assert(offsetof(AnalyticsBlueprintLibrary_SetBuildInfo, BuildInfo) == 0x000000, "Member 'AnalyticsBlueprintLibrary_SetBuildInfo::BuildInfo' has a wrong offset!");
+DUMPER7_ASSERTS_AnalyticsBlueprintLibrary_SetBuildInfo;
 
 // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.SetGender
 // 0x0010 (0x0010 - 0x0000)
@@ -316,9 +247,7 @@ struct AnalyticsBlueprintLibrary_SetGender final
 public:
 	class FString                                 Gender;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AnalyticsBlueprintLibrary_SetGender) == 0x000008, "Wrong alignment on AnalyticsBlueprintLibrary_SetGender");
-static_assert(sizeof(AnalyticsBlueprintLibrary_SetGender) == 0x000010, "Wrong size on AnalyticsBlueprintLibrary_SetGender");
-static_assert(offsetof(AnalyticsBlueprintLibrary_SetGender, Gender) == 0x000000, "Member 'AnalyticsBlueprintLibrary_SetGender::Gender' has a wrong offset!");
+DUMPER7_ASSERTS_AnalyticsBlueprintLibrary_SetGender;
 
 // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.SetLocation
 // 0x0010 (0x0010 - 0x0000)
@@ -327,9 +256,7 @@ struct AnalyticsBlueprintLibrary_SetLocation final
 public:
 	class FString                                 Location;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AnalyticsBlueprintLibrary_SetLocation) == 0x000008, "Wrong alignment on AnalyticsBlueprintLibrary_SetLocation");
-static_assert(sizeof(AnalyticsBlueprintLibrary_SetLocation) == 0x000010, "Wrong size on AnalyticsBlueprintLibrary_SetLocation");
-static_assert(offsetof(AnalyticsBlueprintLibrary_SetLocation, Location) == 0x000000, "Member 'AnalyticsBlueprintLibrary_SetLocation::Location' has a wrong offset!");
+DUMPER7_ASSERTS_AnalyticsBlueprintLibrary_SetLocation;
 
 // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.SetSessionId
 // 0x0010 (0x0010 - 0x0000)
@@ -338,9 +265,7 @@ struct AnalyticsBlueprintLibrary_SetSessionId final
 public:
 	class FString                                 SessionID;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AnalyticsBlueprintLibrary_SetSessionId) == 0x000008, "Wrong alignment on AnalyticsBlueprintLibrary_SetSessionId");
-static_assert(sizeof(AnalyticsBlueprintLibrary_SetSessionId) == 0x000010, "Wrong size on AnalyticsBlueprintLibrary_SetSessionId");
-static_assert(offsetof(AnalyticsBlueprintLibrary_SetSessionId, SessionID) == 0x000000, "Member 'AnalyticsBlueprintLibrary_SetSessionId::SessionID' has a wrong offset!");
+DUMPER7_ASSERTS_AnalyticsBlueprintLibrary_SetSessionId;
 
 // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.SetUserId
 // 0x0010 (0x0010 - 0x0000)
@@ -349,9 +274,7 @@ struct AnalyticsBlueprintLibrary_SetUserId final
 public:
 	class FString                                 UserId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AnalyticsBlueprintLibrary_SetUserId) == 0x000008, "Wrong alignment on AnalyticsBlueprintLibrary_SetUserId");
-static_assert(sizeof(AnalyticsBlueprintLibrary_SetUserId) == 0x000010, "Wrong size on AnalyticsBlueprintLibrary_SetUserId");
-static_assert(offsetof(AnalyticsBlueprintLibrary_SetUserId, UserId) == 0x000000, "Member 'AnalyticsBlueprintLibrary_SetUserId::UserId' has a wrong offset!");
+DUMPER7_ASSERTS_AnalyticsBlueprintLibrary_SetUserId;
 
 // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.StartSession
 // 0x0001 (0x0001 - 0x0000)
@@ -360,9 +283,7 @@ struct AnalyticsBlueprintLibrary_StartSession final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AnalyticsBlueprintLibrary_StartSession) == 0x000001, "Wrong alignment on AnalyticsBlueprintLibrary_StartSession");
-static_assert(sizeof(AnalyticsBlueprintLibrary_StartSession) == 0x000001, "Wrong size on AnalyticsBlueprintLibrary_StartSession");
-static_assert(offsetof(AnalyticsBlueprintLibrary_StartSession, ReturnValue) == 0x000000, "Member 'AnalyticsBlueprintLibrary_StartSession::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AnalyticsBlueprintLibrary_StartSession;
 
 // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.StartSessionWithAttributes
 // 0x0018 (0x0018 - 0x0000)
@@ -373,10 +294,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AnalyticsBlueprintLibrary_StartSessionWithAttributes) == 0x000008, "Wrong alignment on AnalyticsBlueprintLibrary_StartSessionWithAttributes");
-static_assert(sizeof(AnalyticsBlueprintLibrary_StartSessionWithAttributes) == 0x000018, "Wrong size on AnalyticsBlueprintLibrary_StartSessionWithAttributes");
-static_assert(offsetof(AnalyticsBlueprintLibrary_StartSessionWithAttributes, Attributes) == 0x000000, "Member 'AnalyticsBlueprintLibrary_StartSessionWithAttributes::Attributes' has a wrong offset!");
-static_assert(offsetof(AnalyticsBlueprintLibrary_StartSessionWithAttributes, ReturnValue) == 0x000010, "Member 'AnalyticsBlueprintLibrary_StartSessionWithAttributes::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AnalyticsBlueprintLibrary_StartSessionWithAttributes;
 
 }
 

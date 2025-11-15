@@ -39,24 +39,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AmbienceSoundController_C_ExecuteUbergraph_AmbienceSoundController) == 0x000008, "Wrong alignment on AmbienceSoundController_C_ExecuteUbergraph_AmbienceSoundController");
-static_assert(sizeof(AmbienceSoundController_C_ExecuteUbergraph_AmbienceSoundController) == 0x000060, "Wrong size on AmbienceSoundController_C_ExecuteUbergraph_AmbienceSoundController");
-static_assert(offsetof(AmbienceSoundController_C_ExecuteUbergraph_AmbienceSoundController, EntryPoint) == 0x000000, "Member 'AmbienceSoundController_C_ExecuteUbergraph_AmbienceSoundController::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AmbienceSoundController_C_ExecuteUbergraph_AmbienceSoundController, K2Node_CustomEvent_Player_1) == 0x000008, "Member 'AmbienceSoundController_C_ExecuteUbergraph_AmbienceSoundController::K2Node_CustomEvent_Player_1' has a wrong offset!");
-static_assert(offsetof(AmbienceSoundController_C_ExecuteUbergraph_AmbienceSoundController, CallFunc_IsLocallyControlled_ReturnValue) == 0x000010, "Member 'AmbienceSoundController_C_ExecuteUbergraph_AmbienceSoundController::CallFunc_IsLocallyControlled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AmbienceSoundController_C_ExecuteUbergraph_AmbienceSoundController, CallFunc_SpawnSound2D_ReturnValue) == 0x000018, "Member 'AmbienceSoundController_C_ExecuteUbergraph_AmbienceSoundController::CallFunc_SpawnSound2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AmbienceSoundController_C_ExecuteUbergraph_AmbienceSoundController, K2Node_CustomEvent_Player) == 0x000020, "Member 'AmbienceSoundController_C_ExecuteUbergraph_AmbienceSoundController::K2Node_CustomEvent_Player' has a wrong offset!");
-static_assert(offsetof(AmbienceSoundController_C_ExecuteUbergraph_AmbienceSoundController, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'AmbienceSoundController_C_ExecuteUbergraph_AmbienceSoundController::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AmbienceSoundController_C_ExecuteUbergraph_AmbienceSoundController, CallFunc_GetOverlappingActors_OverlappingActors) == 0x000030, "Member 'AmbienceSoundController_C_ExecuteUbergraph_AmbienceSoundController::CallFunc_GetOverlappingActors_OverlappingActors' has a wrong offset!");
-static_assert(offsetof(AmbienceSoundController_C_ExecuteUbergraph_AmbienceSoundController, CallFunc_Array_Length_ReturnValue) == 0x000040, "Member 'AmbienceSoundController_C_ExecuteUbergraph_AmbienceSoundController::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AmbienceSoundController_C_ExecuteUbergraph_AmbienceSoundController, CallFunc_IsLocallyControlled_ReturnValue_1) == 0x000044, "Member 'AmbienceSoundController_C_ExecuteUbergraph_AmbienceSoundController::CallFunc_IsLocallyControlled_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AmbienceSoundController_C_ExecuteUbergraph_AmbienceSoundController, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000045, "Member 'AmbienceSoundController_C_ExecuteUbergraph_AmbienceSoundController::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AmbienceSoundController_C_ExecuteUbergraph_AmbienceSoundController, CallFunc_IsValid_ReturnValue_1) == 0x000046, "Member 'AmbienceSoundController_C_ExecuteUbergraph_AmbienceSoundController::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AmbienceSoundController_C_ExecuteUbergraph_AmbienceSoundController, CallFunc_IsValid_ReturnValue_2) == 0x000047, "Member 'AmbienceSoundController_C_ExecuteUbergraph_AmbienceSoundController::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(AmbienceSoundController_C_ExecuteUbergraph_AmbienceSoundController, CallFunc_SpawnSound2D_ReturnValue_1) == 0x000048, "Member 'AmbienceSoundController_C_ExecuteUbergraph_AmbienceSoundController::CallFunc_SpawnSound2D_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AmbienceSoundController_C_ExecuteUbergraph_AmbienceSoundController, CallFunc_SpawnSound2D_ReturnValue_2) == 0x000050, "Member 'AmbienceSoundController_C_ExecuteUbergraph_AmbienceSoundController::CallFunc_SpawnSound2D_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(AmbienceSoundController_C_ExecuteUbergraph_AmbienceSoundController, CallFunc_IsValid_ReturnValue_3) == 0x000058, "Member 'AmbienceSoundController_C_ExecuteUbergraph_AmbienceSoundController::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(AmbienceSoundController_C_ExecuteUbergraph_AmbienceSoundController, CallFunc_IsValid_ReturnValue_4) == 0x000059, "Member 'AmbienceSoundController_C_ExecuteUbergraph_AmbienceSoundController::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
+DUMPER7_ASSERTS_AmbienceSoundController_C_ExecuteUbergraph_AmbienceSoundController;
 
 // Function AmbienceSoundController.AmbienceSoundController_C.StartSound
 // 0x0008 (0x0008 - 0x0000)
@@ -65,9 +48,7 @@ struct AmbienceSoundController_C_StartSound final
 public:
 	class APlayerCharacter_C*                     Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AmbienceSoundController_C_StartSound) == 0x000008, "Wrong alignment on AmbienceSoundController_C_StartSound");
-static_assert(sizeof(AmbienceSoundController_C_StartSound) == 0x000008, "Wrong size on AmbienceSoundController_C_StartSound");
-static_assert(offsetof(AmbienceSoundController_C_StartSound, Player) == 0x000000, "Member 'AmbienceSoundController_C_StartSound::Player' has a wrong offset!");
+DUMPER7_ASSERTS_AmbienceSoundController_C_StartSound;
 
 // Function AmbienceSoundController.AmbienceSoundController_C.StopOutsideSound
 // 0x0008 (0x0008 - 0x0000)
@@ -76,9 +57,7 @@ struct AmbienceSoundController_C_StopOutsideSound final
 public:
 	class APlayerCharacter_C*                     Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AmbienceSoundController_C_StopOutsideSound) == 0x000008, "Wrong alignment on AmbienceSoundController_C_StopOutsideSound");
-static_assert(sizeof(AmbienceSoundController_C_StopOutsideSound) == 0x000008, "Wrong size on AmbienceSoundController_C_StopOutsideSound");
-static_assert(offsetof(AmbienceSoundController_C_StopOutsideSound, Player) == 0x000000, "Member 'AmbienceSoundController_C_StopOutsideSound::Player' has a wrong offset!");
+DUMPER7_ASSERTS_AmbienceSoundController_C_StopOutsideSound;
 
 }
 

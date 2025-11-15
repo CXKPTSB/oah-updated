@@ -63,42 +63,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Guard_AnimBP_C">();
+		BP_STATIC_CLASS_IMPL("Guard_AnimBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Guard_AnimBP_C")
 	}
 	static class UGuard_AnimBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGuard_AnimBP_C>();
 	}
 };
-static_assert(alignof(UGuard_AnimBP_C) == 0x000010, "Wrong alignment on UGuard_AnimBP_C");
-static_assert(sizeof(UGuard_AnimBP_C) == 0x000A90, "Wrong size on UGuard_AnimBP_C");
-static_assert(offsetof(UGuard_AnimBP_C, UberGraphFrame) == 0x0002C0, "Member 'UGuard_AnimBP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGuard_AnimBP_C, AnimGraphNode_Root) == 0x0002C8, "Member 'UGuard_AnimBP_C::AnimGraphNode_Root' has a wrong offset!");
-static_assert(offsetof(UGuard_AnimBP_C, AnimGraphNode_TransitionResult_6) == 0x0002F8, "Member 'UGuard_AnimBP_C::AnimGraphNode_TransitionResult_6' has a wrong offset!");
-static_assert(offsetof(UGuard_AnimBP_C, AnimGraphNode_TransitionResult_5) == 0x000320, "Member 'UGuard_AnimBP_C::AnimGraphNode_TransitionResult_5' has a wrong offset!");
-static_assert(offsetof(UGuard_AnimBP_C, AnimGraphNode_SequencePlayer_2) == 0x000348, "Member 'UGuard_AnimBP_C::AnimGraphNode_SequencePlayer_2' has a wrong offset!");
-static_assert(offsetof(UGuard_AnimBP_C, AnimGraphNode_StateResult_4) == 0x0003C8, "Member 'UGuard_AnimBP_C::AnimGraphNode_StateResult_4' has a wrong offset!");
-static_assert(offsetof(UGuard_AnimBP_C, AnimGraphNode_BlendSpacePlayer_1) == 0x0003F8, "Member 'UGuard_AnimBP_C::AnimGraphNode_BlendSpacePlayer_1' has a wrong offset!");
-static_assert(offsetof(UGuard_AnimBP_C, AnimGraphNode_StateResult_3) == 0x0004E0, "Member 'UGuard_AnimBP_C::AnimGraphNode_StateResult_3' has a wrong offset!");
-static_assert(offsetof(UGuard_AnimBP_C, AnimGraphNode_StateMachine_1) == 0x000510, "Member 'UGuard_AnimBP_C::AnimGraphNode_StateMachine_1' has a wrong offset!");
-static_assert(offsetof(UGuard_AnimBP_C, AnimGraphNode_TransitionResult_4) == 0x0005C0, "Member 'UGuard_AnimBP_C::AnimGraphNode_TransitionResult_4' has a wrong offset!");
-static_assert(offsetof(UGuard_AnimBP_C, AnimGraphNode_TransitionResult_3) == 0x0005E8, "Member 'UGuard_AnimBP_C::AnimGraphNode_TransitionResult_3' has a wrong offset!");
-static_assert(offsetof(UGuard_AnimBP_C, AnimGraphNode_TransitionResult_2) == 0x000610, "Member 'UGuard_AnimBP_C::AnimGraphNode_TransitionResult_2' has a wrong offset!");
-static_assert(offsetof(UGuard_AnimBP_C, AnimGraphNode_TransitionResult_1) == 0x000638, "Member 'UGuard_AnimBP_C::AnimGraphNode_TransitionResult_1' has a wrong offset!");
-static_assert(offsetof(UGuard_AnimBP_C, AnimGraphNode_TransitionResult) == 0x000660, "Member 'UGuard_AnimBP_C::AnimGraphNode_TransitionResult' has a wrong offset!");
-static_assert(offsetof(UGuard_AnimBP_C, AnimGraphNode_SequencePlayer_1) == 0x000688, "Member 'UGuard_AnimBP_C::AnimGraphNode_SequencePlayer_1' has a wrong offset!");
-static_assert(offsetof(UGuard_AnimBP_C, AnimGraphNode_StateResult_2) == 0x000708, "Member 'UGuard_AnimBP_C::AnimGraphNode_StateResult_2' has a wrong offset!");
-static_assert(offsetof(UGuard_AnimBP_C, AnimGraphNode_SequencePlayer) == 0x000738, "Member 'UGuard_AnimBP_C::AnimGraphNode_SequencePlayer' has a wrong offset!");
-static_assert(offsetof(UGuard_AnimBP_C, AnimGraphNode_StateResult_1) == 0x0007B8, "Member 'UGuard_AnimBP_C::AnimGraphNode_StateResult_1' has a wrong offset!");
-static_assert(offsetof(UGuard_AnimBP_C, AnimGraphNode_BlendSpacePlayer) == 0x0007E8, "Member 'UGuard_AnimBP_C::AnimGraphNode_BlendSpacePlayer' has a wrong offset!");
-static_assert(offsetof(UGuard_AnimBP_C, AnimGraphNode_StateResult) == 0x0008D0, "Member 'UGuard_AnimBP_C::AnimGraphNode_StateResult' has a wrong offset!");
-static_assert(offsetof(UGuard_AnimBP_C, AnimGraphNode_StateMachine) == 0x000900, "Member 'UGuard_AnimBP_C::AnimGraphNode_StateMachine' has a wrong offset!");
-static_assert(offsetof(UGuard_AnimBP_C, AnimGraphNode_LayeredBoneBlend) == 0x0009B0, "Member 'UGuard_AnimBP_C::AnimGraphNode_LayeredBoneBlend' has a wrong offset!");
-static_assert(offsetof(UGuard_AnimBP_C, ForwardSpeed) == 0x000A70, "Member 'UGuard_AnimBP_C::ForwardSpeed' has a wrong offset!");
-static_assert(offsetof(UGuard_AnimBP_C, RightSpeed) == 0x000A74, "Member 'UGuard_AnimBP_C::RightSpeed' has a wrong offset!");
-static_assert(offsetof(UGuard_AnimBP_C, DoingGesture_) == 0x000A78, "Member 'UGuard_AnimBP_C::DoingGesture_' has a wrong offset!");
-static_assert(offsetof(UGuard_AnimBP_C, GestureAnim) == 0x000A80, "Member 'UGuard_AnimBP_C::GestureAnim' has a wrong offset!");
-static_assert(offsetof(UGuard_AnimBP_C, Armed_) == 0x000A88, "Member 'UGuard_AnimBP_C::Armed_' has a wrong offset!");
+DUMPER7_ASSERTS_UGuard_AnimBP_C;
 
 }
 

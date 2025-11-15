@@ -44,26 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GunInfoChild_C">();
+		BP_STATIC_CLASS_IMPL("GunInfoChild_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GunInfoChild_C")
 	}
 	static class UGunInfoChild_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGunInfoChild_C>();
 	}
 };
-static_assert(alignof(UGunInfoChild_C) == 0x000008, "Wrong alignment on UGunInfoChild_C");
-static_assert(sizeof(UGunInfoChild_C) == 0x0002B8, "Wrong size on UGunInfoChild_C");
-static_assert(offsetof(UGunInfoChild_C, TextBlock_0) == 0x000260, "Member 'UGunInfoChild_C::TextBlock_0' has a wrong offset!");
-static_assert(offsetof(UGunInfoChild_C, TextBlock_87) == 0x000268, "Member 'UGunInfoChild_C::TextBlock_87' has a wrong offset!");
-static_assert(offsetof(UGunInfoChild_C, TextBlock_166) == 0x000270, "Member 'UGunInfoChild_C::TextBlock_166' has a wrong offset!");
-static_assert(offsetof(UGunInfoChild_C, TextBlock_234) == 0x000278, "Member 'UGunInfoChild_C::TextBlock_234' has a wrong offset!");
-static_assert(offsetof(UGunInfoChild_C, Name_0) == 0x000280, "Member 'UGunInfoChild_C::Name_0' has a wrong offset!");
-static_assert(offsetof(UGunInfoChild_C, Value) == 0x000290, "Member 'UGunInfoChild_C::Value' has a wrong offset!");
-static_assert(offsetof(UGunInfoChild_C, Unit) == 0x000298, "Member 'UGunInfoChild_C::Unit' has a wrong offset!");
-static_assert(offsetof(UGunInfoChild_C, ValueMultiplier) == 0x0002A8, "Member 'UGunInfoChild_C::ValueMultiplier' has a wrong offset!");
-static_assert(offsetof(UGunInfoChild_C, CompareValue) == 0x0002AC, "Member 'UGunInfoChild_C::CompareValue' has a wrong offset!");
-static_assert(offsetof(UGunInfoChild_C, LessIsBetter_) == 0x0002B0, "Member 'UGunInfoChild_C::LessIsBetter_' has a wrong offset!");
-static_assert(offsetof(UGunInfoChild_C, Float_value_) == 0x0002B1, "Member 'UGunInfoChild_C::Float_value_' has a wrong offset!");
+DUMPER7_ASSERTS_UGunInfoChild_C;
 
 }
 

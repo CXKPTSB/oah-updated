@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "ShopItemCategory_structs.hpp"
 #include "Engine_structs.hpp"
+#include "ShopItemCategory_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "UMG_classes.hpp"
 
@@ -38,20 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WorldPositionInventoryEquipSlot_C">();
+		BP_STATIC_CLASS_IMPL("WorldPositionInventoryEquipSlot_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WorldPositionInventoryEquipSlot_C")
 	}
 	static class UWorldPositionInventoryEquipSlot_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWorldPositionInventoryEquipSlot_C>();
 	}
 };
-static_assert(alignof(UWorldPositionInventoryEquipSlot_C) == 0x000008, "Wrong alignment on UWorldPositionInventoryEquipSlot_C");
-static_assert(sizeof(UWorldPositionInventoryEquipSlot_C) == 0x000290, "Wrong size on UWorldPositionInventoryEquipSlot_C");
-static_assert(offsetof(UWorldPositionInventoryEquipSlot_C, UberGraphFrame) == 0x000260, "Member 'UWorldPositionInventoryEquipSlot_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWorldPositionInventoryEquipSlot_C, Postition) == 0x000268, "Member 'UWorldPositionInventoryEquipSlot_C::Postition' has a wrong offset!");
-static_assert(offsetof(UWorldPositionInventoryEquipSlot_C, Categories) == 0x000270, "Member 'UWorldPositionInventoryEquipSlot_C::Categories' has a wrong offset!");
-static_assert(offsetof(UWorldPositionInventoryEquipSlot_C, Index_0) == 0x000280, "Member 'UWorldPositionInventoryEquipSlot_C::Index_0' has a wrong offset!");
-static_assert(offsetof(UWorldPositionInventoryEquipSlot_C, Location) == 0x000284, "Member 'UWorldPositionInventoryEquipSlot_C::Location' has a wrong offset!");
+DUMPER7_ASSERTS_UWorldPositionInventoryEquipSlot_C;
 
 }
 

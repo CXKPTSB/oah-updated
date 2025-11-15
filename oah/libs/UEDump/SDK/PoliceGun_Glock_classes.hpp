@@ -23,15 +23,18 @@ class APoliceGun_Glock_C final : public APoliceGunBase_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PoliceGun_Glock_C">();
+		BP_STATIC_CLASS_IMPL("PoliceGun_Glock_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PoliceGun_Glock_C")
 	}
 	static class APoliceGun_Glock_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APoliceGun_Glock_C>();
 	}
 };
-static_assert(alignof(APoliceGun_Glock_C) == 0x000008, "Wrong alignment on APoliceGun_Glock_C");
-static_assert(sizeof(APoliceGun_Glock_C) == 0x000278, "Wrong size on APoliceGun_Glock_C");
+DUMPER7_ASSERTS_APoliceGun_Glock_C;
 
 }
 

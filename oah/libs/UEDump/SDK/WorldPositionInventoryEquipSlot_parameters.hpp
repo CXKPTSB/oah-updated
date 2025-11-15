@@ -31,15 +31,7 @@ public:
 	struct FVector2D                              CallFunc_ProjectWorldLocationToWidgetPosition_ScreenPosition; // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_ProjectWorldLocationToWidgetPosition_ReturnValue; // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WorldPositionInventoryEquipSlot_C_ExecuteUbergraph_WorldPositionInventoryEquipSlot) == 0x000008, "Wrong alignment on WorldPositionInventoryEquipSlot_C_ExecuteUbergraph_WorldPositionInventoryEquipSlot");
-static_assert(sizeof(WorldPositionInventoryEquipSlot_C_ExecuteUbergraph_WorldPositionInventoryEquipSlot) == 0x000038, "Wrong size on WorldPositionInventoryEquipSlot_C_ExecuteUbergraph_WorldPositionInventoryEquipSlot");
-static_assert(offsetof(WorldPositionInventoryEquipSlot_C_ExecuteUbergraph_WorldPositionInventoryEquipSlot, EntryPoint) == 0x000000, "Member 'WorldPositionInventoryEquipSlot_C_ExecuteUbergraph_WorldPositionInventoryEquipSlot::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WorldPositionInventoryEquipSlot_C_ExecuteUbergraph_WorldPositionInventoryEquipSlot, CallFunc_Create_ReturnValue) == 0x000008, "Member 'WorldPositionInventoryEquipSlot_C_ExecuteUbergraph_WorldPositionInventoryEquipSlot::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WorldPositionInventoryEquipSlot_C_ExecuteUbergraph_WorldPositionInventoryEquipSlot, CallFunc_AddChild_ReturnValue) == 0x000010, "Member 'WorldPositionInventoryEquipSlot_C_ExecuteUbergraph_WorldPositionInventoryEquipSlot::CallFunc_AddChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WorldPositionInventoryEquipSlot_C_ExecuteUbergraph_WorldPositionInventoryEquipSlot, K2Node_Event_IsDesignTime) == 0x000018, "Member 'WorldPositionInventoryEquipSlot_C_ExecuteUbergraph_WorldPositionInventoryEquipSlot::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WorldPositionInventoryEquipSlot_C_ExecuteUbergraph_WorldPositionInventoryEquipSlot, CallFunc_GetOwningPlayer_ReturnValue) == 0x000020, "Member 'WorldPositionInventoryEquipSlot_C_ExecuteUbergraph_WorldPositionInventoryEquipSlot::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WorldPositionInventoryEquipSlot_C_ExecuteUbergraph_WorldPositionInventoryEquipSlot, CallFunc_ProjectWorldLocationToWidgetPosition_ScreenPosition) == 0x000028, "Member 'WorldPositionInventoryEquipSlot_C_ExecuteUbergraph_WorldPositionInventoryEquipSlot::CallFunc_ProjectWorldLocationToWidgetPosition_ScreenPosition' has a wrong offset!");
-static_assert(offsetof(WorldPositionInventoryEquipSlot_C_ExecuteUbergraph_WorldPositionInventoryEquipSlot, CallFunc_ProjectWorldLocationToWidgetPosition_ReturnValue) == 0x000030, "Member 'WorldPositionInventoryEquipSlot_C_ExecuteUbergraph_WorldPositionInventoryEquipSlot::CallFunc_ProjectWorldLocationToWidgetPosition_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WorldPositionInventoryEquipSlot_C_ExecuteUbergraph_WorldPositionInventoryEquipSlot;
 
 // Function WorldPositionInventoryEquipSlot.WorldPositionInventoryEquipSlot_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -48,9 +40,7 @@ struct WorldPositionInventoryEquipSlot_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WorldPositionInventoryEquipSlot_C_PreConstruct) == 0x000001, "Wrong alignment on WorldPositionInventoryEquipSlot_C_PreConstruct");
-static_assert(sizeof(WorldPositionInventoryEquipSlot_C_PreConstruct) == 0x000001, "Wrong size on WorldPositionInventoryEquipSlot_C_PreConstruct");
-static_assert(offsetof(WorldPositionInventoryEquipSlot_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WorldPositionInventoryEquipSlot_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WorldPositionInventoryEquipSlot_C_PreConstruct;
 
 }
 

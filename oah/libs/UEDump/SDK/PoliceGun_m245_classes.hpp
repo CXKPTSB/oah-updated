@@ -23,15 +23,18 @@ class APoliceGun_m245_C final : public APoliceGunBase_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PoliceGun_m245_C">();
+		BP_STATIC_CLASS_IMPL("PoliceGun_m245_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PoliceGun_m245_C")
 	}
 	static class APoliceGun_m245_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APoliceGun_m245_C>();
 	}
 };
-static_assert(alignof(APoliceGun_m245_C) == 0x000008, "Wrong alignment on APoliceGun_m245_C");
-static_assert(sizeof(APoliceGun_m245_C) == 0x000278, "Wrong size on APoliceGun_m245_C");
+DUMPER7_ASSERTS_APoliceGun_m245_C;
 
 }
 

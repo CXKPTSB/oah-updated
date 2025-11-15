@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "ShopItemCategory_structs.hpp"
 #include "AttachmentArrayStructure_structs.hpp"
+#include "ShopItemCategory_structs.hpp"
 
 
 namespace SDK::Params
@@ -46,28 +46,7 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UChildActorComponent*                   K2Node_Select_Default;                             // 0x0090(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AttachedBackGun_base_C_SetupAttachments) == 0x000008, "Wrong alignment on AttachedBackGun_base_C_SetupAttachments");
-static_assert(sizeof(AttachedBackGun_base_C_SetupAttachments) == 0x000098, "Wrong size on AttachedBackGun_base_C_SetupAttachments");
-static_assert(offsetof(AttachedBackGun_base_C_SetupAttachments, Attachments) == 0x000000, "Member 'AttachedBackGun_base_C_SetupAttachments::Attachments' has a wrong offset!");
-static_assert(offsetof(AttachedBackGun_base_C_SetupAttachments, Temp_byte_Variable) == 0x000010, "Member 'AttachedBackGun_base_C_SetupAttachments::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AttachedBackGun_base_C_SetupAttachments, Temp_object_Variable) == 0x000018, "Member 'AttachedBackGun_base_C_SetupAttachments::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(AttachedBackGun_base_C_SetupAttachments, CallFunc_Array_Length_ReturnValue) == 0x000020, "Member 'AttachedBackGun_base_C_SetupAttachments::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AttachedBackGun_base_C_SetupAttachments, Temp_object_Variable_1) == 0x000028, "Member 'AttachedBackGun_base_C_SetupAttachments::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(AttachedBackGun_base_C_SetupAttachments, Temp_object_Variable_2) == 0x000030, "Member 'AttachedBackGun_base_C_SetupAttachments::Temp_object_Variable_2' has a wrong offset!");
-static_assert(offsetof(AttachedBackGun_base_C_SetupAttachments, Temp_object_Variable_3) == 0x000038, "Member 'AttachedBackGun_base_C_SetupAttachments::Temp_object_Variable_3' has a wrong offset!");
-static_assert(offsetof(AttachedBackGun_base_C_SetupAttachments, Temp_object_Variable_4) == 0x000040, "Member 'AttachedBackGun_base_C_SetupAttachments::Temp_object_Variable_4' has a wrong offset!");
-static_assert(offsetof(AttachedBackGun_base_C_SetupAttachments, Temp_object_Variable_5) == 0x000048, "Member 'AttachedBackGun_base_C_SetupAttachments::Temp_object_Variable_5' has a wrong offset!");
-static_assert(offsetof(AttachedBackGun_base_C_SetupAttachments, Temp_object_Variable_6) == 0x000050, "Member 'AttachedBackGun_base_C_SetupAttachments::Temp_object_Variable_6' has a wrong offset!");
-static_assert(offsetof(AttachedBackGun_base_C_SetupAttachments, Temp_object_Variable_7) == 0x000058, "Member 'AttachedBackGun_base_C_SetupAttachments::Temp_object_Variable_7' has a wrong offset!");
-static_assert(offsetof(AttachedBackGun_base_C_SetupAttachments, Temp_object_Variable_8) == 0x000060, "Member 'AttachedBackGun_base_C_SetupAttachments::Temp_object_Variable_8' has a wrong offset!");
-static_assert(offsetof(AttachedBackGun_base_C_SetupAttachments, Temp_object_Variable_9) == 0x000068, "Member 'AttachedBackGun_base_C_SetupAttachments::Temp_object_Variable_9' has a wrong offset!");
-static_assert(offsetof(AttachedBackGun_base_C_SetupAttachments, Temp_object_Variable_10) == 0x000070, "Member 'AttachedBackGun_base_C_SetupAttachments::Temp_object_Variable_10' has a wrong offset!");
-static_assert(offsetof(AttachedBackGun_base_C_SetupAttachments, Temp_int_Array_Index_Variable) == 0x000078, "Member 'AttachedBackGun_base_C_SetupAttachments::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(AttachedBackGun_base_C_SetupAttachments, Temp_int_Loop_Counter_Variable) == 0x00007C, "Member 'AttachedBackGun_base_C_SetupAttachments::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(AttachedBackGun_base_C_SetupAttachments, CallFunc_Array_Get_Item) == 0x000080, "Member 'AttachedBackGun_base_C_SetupAttachments::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(AttachedBackGun_base_C_SetupAttachments, CallFunc_Less_IntInt_ReturnValue) == 0x000088, "Member 'AttachedBackGun_base_C_SetupAttachments::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AttachedBackGun_base_C_SetupAttachments, CallFunc_Add_IntInt_ReturnValue) == 0x00008C, "Member 'AttachedBackGun_base_C_SetupAttachments::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AttachedBackGun_base_C_SetupAttachments, K2Node_Select_Default) == 0x000090, "Member 'AttachedBackGun_base_C_SetupAttachments::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_AttachedBackGun_base_C_SetupAttachments;
 
 }
 

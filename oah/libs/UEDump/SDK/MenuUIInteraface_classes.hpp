@@ -18,8 +18,8 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass menuUIInteraface.menuUIInteraface_C
-// 0x0000 (0x0028 - 0x0028)
-class ImenuUIInteraface_C final : public IInterface
+// 0x0000 (0x0000 - 0x0000)
+class ImenuUIInteraface_C final
 {
 public:
 	void Remove();
@@ -33,15 +33,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"menuUIInteraface_C">();
+		BP_STATIC_CLASS_IMPL("menuUIInteraface_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"menuUIInteraface_C")
 	}
 	static class ImenuUIInteraface_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ImenuUIInteraface_C>();
 	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
 };
-static_assert(alignof(ImenuUIInteraface_C) == 0x000008, "Wrong alignment on ImenuUIInteraface_C");
-static_assert(sizeof(ImenuUIInteraface_C) == 0x000028, "Wrong size on ImenuUIInteraface_C");
+DUMPER7_ASSERTS_ImenuUIInteraface_C;
 
 }
 

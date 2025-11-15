@@ -40,15 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AdvancedSteamFriendsLibrary">();
+		STATIC_CLASS_IMPL("AdvancedSteamFriendsLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AdvancedSteamFriendsLibrary")
 	}
 	static class UAdvancedSteamFriendsLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAdvancedSteamFriendsLibrary>();
 	}
 };
-static_assert(alignof(UAdvancedSteamFriendsLibrary) == 0x000008, "Wrong alignment on UAdvancedSteamFriendsLibrary");
-static_assert(sizeof(UAdvancedSteamFriendsLibrary) == 0x000028, "Wrong size on UAdvancedSteamFriendsLibrary");
+DUMPER7_ASSERTS_UAdvancedSteamFriendsLibrary;
 
 // Class AdvancedSteamSessions.AdvancedSteamWorkshopLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -61,23 +64,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AdvancedSteamWorkshopLibrary">();
+		STATIC_CLASS_IMPL("AdvancedSteamWorkshopLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AdvancedSteamWorkshopLibrary")
 	}
 	static class UAdvancedSteamWorkshopLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAdvancedSteamWorkshopLibrary>();
 	}
 };
-static_assert(alignof(UAdvancedSteamWorkshopLibrary) == 0x000008, "Wrong alignment on UAdvancedSteamWorkshopLibrary");
-static_assert(sizeof(UAdvancedSteamWorkshopLibrary) == 0x000028, "Wrong size on UAdvancedSteamWorkshopLibrary");
+DUMPER7_ASSERTS_UAdvancedSteamWorkshopLibrary;
 
 // Class AdvancedSteamSessions.SteamRequestGroupOfficersCallbackProxy
 // 0x0070 (0x00A0 - 0x0030)
 class USteamRequestGroupOfficersCallbackProxy final : public UOnlineBlueprintCallProxyBase
 {
 public:
-	TMulticastInlineDelegate<void(const TArray<struct FBPSteamGroupOfficer>& OfficerList)> OnSuccess;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const TArray<struct FBPSteamGroupOfficer>& OfficerList)> OnFailure;                                         // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TArray<struct FBPSteamGroupOfficer>& OfficerList)> OnSuccess; // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TArray<struct FBPSteamGroupOfficer>& OfficerList)> OnFailure; // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_50[0x50];                                      // 0x0050(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -86,25 +92,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamRequestGroupOfficersCallbackProxy">();
+		STATIC_CLASS_IMPL("SteamRequestGroupOfficersCallbackProxy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamRequestGroupOfficersCallbackProxy")
 	}
 	static class USteamRequestGroupOfficersCallbackProxy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamRequestGroupOfficersCallbackProxy>();
 	}
 };
-static_assert(alignof(USteamRequestGroupOfficersCallbackProxy) == 0x000008, "Wrong alignment on USteamRequestGroupOfficersCallbackProxy");
-static_assert(sizeof(USteamRequestGroupOfficersCallbackProxy) == 0x0000A0, "Wrong size on USteamRequestGroupOfficersCallbackProxy");
-static_assert(offsetof(USteamRequestGroupOfficersCallbackProxy, OnSuccess) == 0x000030, "Member 'USteamRequestGroupOfficersCallbackProxy::OnSuccess' has a wrong offset!");
-static_assert(offsetof(USteamRequestGroupOfficersCallbackProxy, OnFailure) == 0x000040, "Member 'USteamRequestGroupOfficersCallbackProxy::OnFailure' has a wrong offset!");
+DUMPER7_ASSERTS_USteamRequestGroupOfficersCallbackProxy;
 
 // Class AdvancedSteamSessions.SteamWSRequestUGCDetailsCallbackProxy
 // 0x0058 (0x0088 - 0x0030)
 class USteamWSRequestUGCDetailsCallbackProxy final : public UOnlineBlueprintCallProxyBase
 {
 public:
-	TMulticastInlineDelegate<void(const struct FBPSteamWorkshopItemDetails& WorkShopDetails)> OnSuccess;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FBPSteamWorkshopItemDetails& WorkShopDetails)> OnFailure;                                         // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FBPSteamWorkshopItemDetails& WorkShopDetails)> OnSuccess; // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FBPSteamWorkshopItemDetails& WorkShopDetails)> OnFailure; // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_50[0x38];                                      // 0x0050(0x0038)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -113,17 +120,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamWSRequestUGCDetailsCallbackProxy">();
+		STATIC_CLASS_IMPL("SteamWSRequestUGCDetailsCallbackProxy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamWSRequestUGCDetailsCallbackProxy")
 	}
 	static class USteamWSRequestUGCDetailsCallbackProxy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamWSRequestUGCDetailsCallbackProxy>();
 	}
 };
-static_assert(alignof(USteamWSRequestUGCDetailsCallbackProxy) == 0x000008, "Wrong alignment on USteamWSRequestUGCDetailsCallbackProxy");
-static_assert(sizeof(USteamWSRequestUGCDetailsCallbackProxy) == 0x000088, "Wrong size on USteamWSRequestUGCDetailsCallbackProxy");
-static_assert(offsetof(USteamWSRequestUGCDetailsCallbackProxy, OnSuccess) == 0x000030, "Member 'USteamWSRequestUGCDetailsCallbackProxy::OnSuccess' has a wrong offset!");
-static_assert(offsetof(USteamWSRequestUGCDetailsCallbackProxy, OnFailure) == 0x000040, "Member 'USteamWSRequestUGCDetailsCallbackProxy::OnFailure' has a wrong offset!");
+DUMPER7_ASSERTS_USteamWSRequestUGCDetailsCallbackProxy;
 
 }
 

@@ -17,8 +17,8 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass InstructionInterface.InstructionInterface_C
-// 0x0000 (0x0028 - 0x0028)
-class IInstructionInterface_C final : public IInterface
+// 0x0000 (0x0000 - 0x0000)
+class IInstructionInterface_C final
 {
 public:
 	void NewInstruction();
@@ -29,15 +29,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"InstructionInterface_C">();
+		BP_STATIC_CLASS_IMPL("InstructionInterface_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InstructionInterface_C")
 	}
 	static class IInstructionInterface_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<IInstructionInterface_C>();
 	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
 };
-static_assert(alignof(IInstructionInterface_C) == 0x000008, "Wrong alignment on IInstructionInterface_C");
-static_assert(sizeof(IInstructionInterface_C) == 0x000028, "Wrong size on IInstructionInterface_C");
+DUMPER7_ASSERTS_IInstructionInterface_C;
 
 }
 

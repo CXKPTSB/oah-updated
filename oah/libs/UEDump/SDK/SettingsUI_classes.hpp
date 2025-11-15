@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "SlateCore_structs.hpp"
 #include "SettingsStruct_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UMG_classes.hpp"
-#include "SlateCore_structs.hpp"
 
 
 namespace SDK
@@ -83,41 +83,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SettingsUI_C">();
+		BP_STATIC_CLASS_IMPL("SettingsUI_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SettingsUI_C")
 	}
 	static class USettingsUI_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USettingsUI_C>();
 	}
 };
-static_assert(alignof(USettingsUI_C) == 0x000008, "Wrong alignment on USettingsUI_C");
-static_assert(sizeof(USettingsUI_C) == 0x000358, "Wrong size on USettingsUI_C");
-static_assert(offsetof(USettingsUI_C, UberGraphFrame) == 0x000260, "Member 'USettingsUI_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USettingsUI_C, AimSensSlider) == 0x000268, "Member 'USettingsUI_C::AimSensSlider' has a wrong offset!");
-static_assert(offsetof(USettingsUI_C, Button) == 0x000270, "Member 'USettingsUI_C::Button' has a wrong offset!");
-static_assert(offsetof(USettingsUI_C, Button_0) == 0x000278, "Member 'USettingsUI_C::Button_0' has a wrong offset!");
-static_assert(offsetof(USettingsUI_C, Button_201) == 0x000280, "Member 'USettingsUI_C::Button_201' has a wrong offset!");
-static_assert(offsetof(USettingsUI_C, CloseButton) == 0x000288, "Member 'USettingsUI_C::CloseButton' has a wrong offset!");
-static_assert(offsetof(USettingsUI_C, ComboBoxString_164) == 0x000290, "Member 'USettingsUI_C::ComboBoxString_164' has a wrong offset!");
-static_assert(offsetof(USettingsUI_C, FOVSlider) == 0x000298, "Member 'USettingsUI_C::FOVSlider' has a wrong offset!");
-static_assert(offsetof(USettingsUI_C, FPScombo) == 0x0002A0, "Member 'USettingsUI_C::FPScombo' has a wrong offset!");
-static_assert(offsetof(USettingsUI_C, LookSensSlider) == 0x0002A8, "Member 'USettingsUI_C::LookSensSlider' has a wrong offset!");
-static_assert(offsetof(USettingsUI_C, lookSensText) == 0x0002B0, "Member 'USettingsUI_C::lookSensText' has a wrong offset!");
-static_assert(offsetof(USettingsUI_C, lookSensText_1) == 0x0002B8, "Member 'USettingsUI_C::lookSensText_1' has a wrong offset!");
-static_assert(offsetof(USettingsUI_C, MasterVolText) == 0x0002C0, "Member 'USettingsUI_C::MasterVolText' has a wrong offset!");
-static_assert(offsetof(USettingsUI_C, MasterVolText_1) == 0x0002C8, "Member 'USettingsUI_C::MasterVolText_1' has a wrong offset!");
-static_assert(offsetof(USettingsUI_C, MasterVolText_2) == 0x0002D0, "Member 'USettingsUI_C::MasterVolText_2' has a wrong offset!");
-static_assert(offsetof(USettingsUI_C, MasterVolText_3) == 0x0002D8, "Member 'USettingsUI_C::MasterVolText_3' has a wrong offset!");
-static_assert(offsetof(USettingsUI_C, MasterVolText_4) == 0x0002E0, "Member 'USettingsUI_C::MasterVolText_4' has a wrong offset!");
-static_assert(offsetof(USettingsUI_C, MasterVolumeSlider) == 0x0002E8, "Member 'USettingsUI_C::MasterVolumeSlider' has a wrong offset!");
-static_assert(offsetof(USettingsUI_C, MotionBlurText) == 0x0002F0, "Member 'USettingsUI_C::MotionBlurText' has a wrong offset!");
-static_assert(offsetof(USettingsUI_C, MusicVolumeSlider_1) == 0x0002F8, "Member 'USettingsUI_C::MusicVolumeSlider_1' has a wrong offset!");
-static_assert(offsetof(USettingsUI_C, ResScaleSlider) == 0x000300, "Member 'USettingsUI_C::ResScaleSlider' has a wrong offset!");
-static_assert(offsetof(USettingsUI_C, TextBlock_14) == 0x000308, "Member 'USettingsUI_C::TextBlock_14' has a wrong offset!");
-static_assert(offsetof(USettingsUI_C, VoiceeSlider) == 0x000310, "Member 'USettingsUI_C::VoiceeSlider' has a wrong offset!");
-static_assert(offsetof(USettingsUI_C, As_Robber_Controller) == 0x000318, "Member 'USettingsUI_C::As_Robber_Controller' has a wrong offset!");
-static_assert(offsetof(USettingsUI_C, Settings_Struct) == 0x000320, "Member 'USettingsUI_C::Settings_Struct' has a wrong offset!");
-static_assert(offsetof(USettingsUI_C, PauseUI) == 0x000350, "Member 'USettingsUI_C::PauseUI' has a wrong offset!");
+DUMPER7_ASSERTS_USettingsUI_C;
 
 }
 

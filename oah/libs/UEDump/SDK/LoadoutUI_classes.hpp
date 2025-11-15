@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "ShopItemCategory_structs.hpp"
 #include "Engine_structs.hpp"
+#include "ShopItemCategory_structs.hpp"
 #include "UMG_classes.hpp"
 
 
@@ -74,33 +74,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LoadoutUI_C">();
+		BP_STATIC_CLASS_IMPL("LoadoutUI_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LoadoutUI_C")
 	}
 	static class ULoadoutUI_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULoadoutUI_C>();
 	}
 };
-static_assert(alignof(ULoadoutUI_C) == 0x000008, "Wrong alignment on ULoadoutUI_C");
-static_assert(sizeof(ULoadoutUI_C) == 0x0002F8, "Wrong size on ULoadoutUI_C");
-static_assert(offsetof(ULoadoutUI_C, UberGraphFrame) == 0x000260, "Member 'ULoadoutUI_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULoadoutUI_C, MoveIn) == 0x000268, "Member 'ULoadoutUI_C::MoveIn' has a wrong offset!");
-static_assert(offsetof(ULoadoutUI_C, Appearence) == 0x000270, "Member 'ULoadoutUI_C::Appearence' has a wrong offset!");
-static_assert(offsetof(ULoadoutUI_C, CategoryBox_1) == 0x000278, "Member 'ULoadoutUI_C::CategoryBox_1' has a wrong offset!");
-static_assert(offsetof(ULoadoutUI_C, EquippedInventorySlot) == 0x000280, "Member 'ULoadoutUI_C::EquippedInventorySlot' has a wrong offset!");
-static_assert(offsetof(ULoadoutUI_C, EquippedInventorySlot_1) == 0x000288, "Member 'ULoadoutUI_C::EquippedInventorySlot_1' has a wrong offset!");
-static_assert(offsetof(ULoadoutUI_C, EquippedInventorySlot_2) == 0x000290, "Member 'ULoadoutUI_C::EquippedInventorySlot_2' has a wrong offset!");
-static_assert(offsetof(ULoadoutUI_C, InventoryScroll) == 0x000298, "Member 'ULoadoutUI_C::InventoryScroll' has a wrong offset!");
-static_assert(offsetof(ULoadoutUI_C, InventoryWrap) == 0x0002A0, "Member 'ULoadoutUI_C::InventoryWrap' has a wrong offset!");
-static_assert(offsetof(ULoadoutUI_C, LoadoutBox) == 0x0002A8, "Member 'ULoadoutUI_C::LoadoutBox' has a wrong offset!");
-static_assert(offsetof(ULoadoutUI_C, LoadoutDown) == 0x0002B0, "Member 'ULoadoutUI_C::LoadoutDown' has a wrong offset!");
-static_assert(offsetof(ULoadoutUI_C, LoadoutUp) == 0x0002B8, "Member 'ULoadoutUI_C::LoadoutUp' has a wrong offset!");
-static_assert(offsetof(ULoadoutUI_C, TextBlock_3) == 0x0002C0, "Member 'ULoadoutUI_C::TextBlock_3' has a wrong offset!");
-static_assert(offsetof(ULoadoutUI_C, Tools) == 0x0002C8, "Member 'ULoadoutUI_C::Tools' has a wrong offset!");
-static_assert(offsetof(ULoadoutUI_C, Weapons) == 0x0002D0, "Member 'ULoadoutUI_C::Weapons' has a wrong offset!");
-static_assert(offsetof(ULoadoutUI_C, As_Robber_Controller) == 0x0002D8, "Member 'ULoadoutUI_C::As_Robber_Controller' has a wrong offset!");
-static_assert(offsetof(ULoadoutUI_C, CurrentCategory) == 0x0002E0, "Member 'ULoadoutUI_C::CurrentCategory' has a wrong offset!");
-static_assert(offsetof(ULoadoutUI_C, CurrentCatArray) == 0x0002E8, "Member 'ULoadoutUI_C::CurrentCatArray' has a wrong offset!");
+DUMPER7_ASSERTS_ULoadoutUI_C;
 
 }
 

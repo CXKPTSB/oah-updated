@@ -45,25 +45,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HackingGameParent_C">();
+		BP_STATIC_CLASS_IMPL("HackingGameParent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HackingGameParent_C")
 	}
 	static class UHackingGameParent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHackingGameParent_C>();
 	}
 };
-static_assert(alignof(UHackingGameParent_C) == 0x000008, "Wrong alignment on UHackingGameParent_C");
-static_assert(sizeof(UHackingGameParent_C) == 0x0002B0, "Wrong size on UHackingGameParent_C");
-static_assert(offsetof(UHackingGameParent_C, UberGraphFrame) == 0x000260, "Member 'UHackingGameParent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UHackingGameParent_C, FinishGameAnim) == 0x000268, "Member 'UHackingGameParent_C::FinishGameAnim' has a wrong offset!");
-static_assert(offsetof(UHackingGameParent_C, Button_73) == 0x000270, "Member 'UHackingGameParent_C::Button_73' has a wrong offset!");
-static_assert(offsetof(UHackingGameParent_C, CloseButton) == 0x000278, "Member 'UHackingGameParent_C::CloseButton' has a wrong offset!");
-static_assert(offsetof(UHackingGameParent_C, FinishText) == 0x000280, "Member 'UHackingGameParent_C::FinishText' has a wrong offset!");
-static_assert(offsetof(UHackingGameParent_C, HackingBorder) == 0x000288, "Member 'UHackingGameParent_C::HackingBorder' has a wrong offset!");
-static_assert(offsetof(UHackingGameParent_C, Image_78) == 0x000290, "Member 'UHackingGameParent_C::Image_78' has a wrong offset!");
-static_assert(offsetof(UHackingGameParent_C, Game) == 0x000298, "Member 'UHackingGameParent_C::Game' has a wrong offset!");
-static_assert(offsetof(UHackingGameParent_C, HackingDevice) == 0x0002A0, "Member 'UHackingGameParent_C::HackingDevice' has a wrong offset!");
-static_assert(offsetof(UHackingGameParent_C, GameChild) == 0x0002A8, "Member 'UHackingGameParent_C::GameChild' has a wrong offset!");
+DUMPER7_ASSERTS_UHackingGameParent_C;
 
 }
 

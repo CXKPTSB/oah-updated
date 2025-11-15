@@ -59,36 +59,7 @@ public:
 	class ARobberController_C*                    K2Node_DynamicCast_AsRobber_Controller_1;          // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MenuChat_C_ExecuteUbergraph_MenuChat) == 0x000008, "Wrong alignment on MenuChat_C_ExecuteUbergraph_MenuChat");
-static_assert(sizeof(MenuChat_C_ExecuteUbergraph_MenuChat) == 0x0000F8, "Wrong size on MenuChat_C_ExecuteUbergraph_MenuChat");
-static_assert(offsetof(MenuChat_C_ExecuteUbergraph_MenuChat, EntryPoint) == 0x000000, "Member 'MenuChat_C_ExecuteUbergraph_MenuChat::EntryPoint' has a wrong offset!");
-static_assert(offsetof(MenuChat_C_ExecuteUbergraph_MenuChat, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'MenuChat_C_ExecuteUbergraph_MenuChat::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MenuChat_C_ExecuteUbergraph_MenuChat, CallFunc_Array_Length_ReturnValue) == 0x000008, "Member 'MenuChat_C_ExecuteUbergraph_MenuChat::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MenuChat_C_ExecuteUbergraph_MenuChat, CallFunc_Create_ReturnValue) == 0x000010, "Member 'MenuChat_C_ExecuteUbergraph_MenuChat::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MenuChat_C_ExecuteUbergraph_MenuChat, Temp_int_Array_Index_Variable) == 0x000018, "Member 'MenuChat_C_ExecuteUbergraph_MenuChat::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(MenuChat_C_ExecuteUbergraph_MenuChat, CallFunc_Create_ReturnValue_1) == 0x000020, "Member 'MenuChat_C_ExecuteUbergraph_MenuChat::CallFunc_Create_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MenuChat_C_ExecuteUbergraph_MenuChat, CallFunc_Array_Get_Item) == 0x000028, "Member 'MenuChat_C_ExecuteUbergraph_MenuChat::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(MenuChat_C_ExecuteUbergraph_MenuChat, CallFunc_Array_Get_Item_1) == 0x000038, "Member 'MenuChat_C_ExecuteUbergraph_MenuChat::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(MenuChat_C_ExecuteUbergraph_MenuChat, CallFunc_AddChild_ReturnValue) == 0x000048, "Member 'MenuChat_C_ExecuteUbergraph_MenuChat::CallFunc_AddChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MenuChat_C_ExecuteUbergraph_MenuChat, K2Node_ComponentBoundEvent_Text) == 0x000050, "Member 'MenuChat_C_ExecuteUbergraph_MenuChat::K2Node_ComponentBoundEvent_Text' has a wrong offset!");
-static_assert(offsetof(MenuChat_C_ExecuteUbergraph_MenuChat, K2Node_ComponentBoundEvent_CommitMethod) == 0x000068, "Member 'MenuChat_C_ExecuteUbergraph_MenuChat::K2Node_ComponentBoundEvent_CommitMethod' has a wrong offset!");
-static_assert(offsetof(MenuChat_C_ExecuteUbergraph_MenuChat, CallFunc_GetPlayerController_ReturnValue) == 0x000070, "Member 'MenuChat_C_ExecuteUbergraph_MenuChat::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MenuChat_C_ExecuteUbergraph_MenuChat, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000078, "Member 'MenuChat_C_ExecuteUbergraph_MenuChat::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MenuChat_C_ExecuteUbergraph_MenuChat, K2Node_DynamicCast_AsRobber_Controller) == 0x000080, "Member 'MenuChat_C_ExecuteUbergraph_MenuChat::K2Node_DynamicCast_AsRobber_Controller' has a wrong offset!");
-static_assert(offsetof(MenuChat_C_ExecuteUbergraph_MenuChat, K2Node_DynamicCast_bSuccess) == 0x000088, "Member 'MenuChat_C_ExecuteUbergraph_MenuChat::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(MenuChat_C_ExecuteUbergraph_MenuChat, CallFunc_GetPlayerName_ReturnValue) == 0x000090, "Member 'MenuChat_C_ExecuteUbergraph_MenuChat::CallFunc_GetPlayerName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MenuChat_C_ExecuteUbergraph_MenuChat, CallFunc_Conv_TextToString_ReturnValue) == 0x0000A0, "Member 'MenuChat_C_ExecuteUbergraph_MenuChat::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MenuChat_C_ExecuteUbergraph_MenuChat, CallFunc_Len_ReturnValue) == 0x0000B0, "Member 'MenuChat_C_ExecuteUbergraph_MenuChat::CallFunc_Len_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MenuChat_C_ExecuteUbergraph_MenuChat, CallFunc_Conv_TextToString_ReturnValue_1) == 0x0000B8, "Member 'MenuChat_C_ExecuteUbergraph_MenuChat::CallFunc_Conv_TextToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MenuChat_C_ExecuteUbergraph_MenuChat, CallFunc_Greater_IntInt_ReturnValue) == 0x0000C8, "Member 'MenuChat_C_ExecuteUbergraph_MenuChat::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MenuChat_C_ExecuteUbergraph_MenuChat, CallFunc_BooleanAND_ReturnValue) == 0x0000C9, "Member 'MenuChat_C_ExecuteUbergraph_MenuChat::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MenuChat_C_ExecuteUbergraph_MenuChat, Temp_int_Loop_Counter_Variable) == 0x0000CC, "Member 'MenuChat_C_ExecuteUbergraph_MenuChat::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(MenuChat_C_ExecuteUbergraph_MenuChat, CallFunc_AddChild_ReturnValue_1) == 0x0000D0, "Member 'MenuChat_C_ExecuteUbergraph_MenuChat::CallFunc_AddChild_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MenuChat_C_ExecuteUbergraph_MenuChat, CallFunc_Less_IntInt_ReturnValue) == 0x0000D8, "Member 'MenuChat_C_ExecuteUbergraph_MenuChat::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MenuChat_C_ExecuteUbergraph_MenuChat, CallFunc_Add_IntInt_ReturnValue) == 0x0000DC, "Member 'MenuChat_C_ExecuteUbergraph_MenuChat::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MenuChat_C_ExecuteUbergraph_MenuChat, CallFunc_GetPlayerController_ReturnValue_1) == 0x0000E0, "Member 'MenuChat_C_ExecuteUbergraph_MenuChat::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MenuChat_C_ExecuteUbergraph_MenuChat, K2Node_DynamicCast_AsRobber_Controller_1) == 0x0000E8, "Member 'MenuChat_C_ExecuteUbergraph_MenuChat::K2Node_DynamicCast_AsRobber_Controller_1' has a wrong offset!");
-static_assert(offsetof(MenuChat_C_ExecuteUbergraph_MenuChat, K2Node_DynamicCast_bSuccess_1) == 0x0000F0, "Member 'MenuChat_C_ExecuteUbergraph_MenuChat::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+DUMPER7_ASSERTS_MenuChat_C_ExecuteUbergraph_MenuChat;
 
 // Function MenuChat.MenuChat_C.BndEvt__MenuChat_EditableTextBox_269_K2Node_ComponentBoundEvent_0_OnEditableTextBoxCommittedEvent__DelegateSignature
 // 0x0020 (0x0020 - 0x0000)
@@ -98,10 +69,7 @@ public:
 	class FText                                   Text;                                              // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	ETextCommit                                   CommitMethod;                                      // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MenuChat_C_BndEvt__MenuChat_EditableTextBox_269_K2Node_ComponentBoundEvent_0_OnEditableTextBoxCommittedEvent__DelegateSignature) == 0x000008, "Wrong alignment on MenuChat_C_BndEvt__MenuChat_EditableTextBox_269_K2Node_ComponentBoundEvent_0_OnEditableTextBoxCommittedEvent__DelegateSignature");
-static_assert(sizeof(MenuChat_C_BndEvt__MenuChat_EditableTextBox_269_K2Node_ComponentBoundEvent_0_OnEditableTextBoxCommittedEvent__DelegateSignature) == 0x000020, "Wrong size on MenuChat_C_BndEvt__MenuChat_EditableTextBox_269_K2Node_ComponentBoundEvent_0_OnEditableTextBoxCommittedEvent__DelegateSignature");
-static_assert(offsetof(MenuChat_C_BndEvt__MenuChat_EditableTextBox_269_K2Node_ComponentBoundEvent_0_OnEditableTextBoxCommittedEvent__DelegateSignature, Text) == 0x000000, "Member 'MenuChat_C_BndEvt__MenuChat_EditableTextBox_269_K2Node_ComponentBoundEvent_0_OnEditableTextBoxCommittedEvent__DelegateSignature::Text' has a wrong offset!");
-static_assert(offsetof(MenuChat_C_BndEvt__MenuChat_EditableTextBox_269_K2Node_ComponentBoundEvent_0_OnEditableTextBoxCommittedEvent__DelegateSignature, CommitMethod) == 0x000018, "Member 'MenuChat_C_BndEvt__MenuChat_EditableTextBox_269_K2Node_ComponentBoundEvent_0_OnEditableTextBoxCommittedEvent__DelegateSignature::CommitMethod' has a wrong offset!");
+DUMPER7_ASSERTS_MenuChat_C_BndEvt__MenuChat_EditableTextBox_269_K2Node_ComponentBoundEvent_0_OnEditableTextBoxCommittedEvent__DelegateSignature;
 
 }
 

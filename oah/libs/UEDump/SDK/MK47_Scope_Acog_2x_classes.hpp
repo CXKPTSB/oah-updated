@@ -39,21 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MK47_Scope_Acog_2x_C">();
+		BP_STATIC_CLASS_IMPL("MK47_Scope_Acog_2x_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MK47_Scope_Acog_2x_C")
 	}
 	static class AMK47_Scope_Acog_2x_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMK47_Scope_Acog_2x_C>();
 	}
 };
-static_assert(alignof(AMK47_Scope_Acog_2x_C) == 0x000008, "Wrong alignment on AMK47_Scope_Acog_2x_C");
-static_assert(sizeof(AMK47_Scope_Acog_2x_C) == 0x0002A0, "Wrong size on AMK47_Scope_Acog_2x_C");
-static_assert(offsetof(AMK47_Scope_Acog_2x_C, UberGraphFrame_MK47_Scope_Acog_2x_C) == 0x000270, "Member 'AMK47_Scope_Acog_2x_C::UberGraphFrame_MK47_Scope_Acog_2x_C' has a wrong offset!");
-static_assert(offsetof(AMK47_Scope_Acog_2x_C, SM_Wep_Mod_B_Rail_01) == 0x000278, "Member 'AMK47_Scope_Acog_2x_C::SM_Wep_Mod_B_Rail_01' has a wrong offset!");
-static_assert(offsetof(AMK47_Scope_Acog_2x_C, Pattern) == 0x000280, "Member 'AMK47_Scope_Acog_2x_C::Pattern' has a wrong offset!");
-static_assert(offsetof(AMK47_Scope_Acog_2x_C, Zoom) == 0x000288, "Member 'AMK47_Scope_Acog_2x_C::Zoom' has a wrong offset!");
-static_assert(offsetof(AMK47_Scope_Acog_2x_C, Lens) == 0x000290, "Member 'AMK47_Scope_Acog_2x_C::Lens' has a wrong offset!");
-static_assert(offsetof(AMK47_Scope_Acog_2x_C, SceneCaptureComponent2D) == 0x000298, "Member 'AMK47_Scope_Acog_2x_C::SceneCaptureComponent2D' has a wrong offset!");
+DUMPER7_ASSERTS_AMK47_Scope_Acog_2x_C;
 
 }
 

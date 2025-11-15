@@ -65,33 +65,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MenuPlayerPreview_C">();
+		BP_STATIC_CLASS_IMPL("MenuPlayerPreview_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MenuPlayerPreview_C")
 	}
 	static class AMenuPlayerPreview_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMenuPlayerPreview_C>();
 	}
 };
-static_assert(alignof(AMenuPlayerPreview_C) == 0x000008, "Wrong alignment on AMenuPlayerPreview_C");
-static_assert(sizeof(AMenuPlayerPreview_C) == 0x000328, "Wrong size on AMenuPlayerPreview_C");
-static_assert(offsetof(AMenuPlayerPreview_C, UberGraphFrame) == 0x000280, "Member 'AMenuPlayerPreview_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AMenuPlayerPreview_C, EmoteChildActor) == 0x000288, "Member 'AMenuPlayerPreview_C::EmoteChildActor' has a wrong offset!");
-static_assert(offsetof(AMenuPlayerPreview_C, ArmorMesh) == 0x000290, "Member 'AMenuPlayerPreview_C::ArmorMesh' has a wrong offset!");
-static_assert(offsetof(AMenuPlayerPreview_C, Mask) == 0x000298, "Member 'AMenuPlayerPreview_C::Mask' has a wrong offset!");
-static_assert(offsetof(AMenuPlayerPreview_C, name_location) == 0x0002A0, "Member 'AMenuPlayerPreview_C::name_location' has a wrong offset!");
-static_assert(offsetof(AMenuPlayerPreview_C, SkeletalMesh) == 0x0002A8, "Member 'AMenuPlayerPreview_C::SkeletalMesh' has a wrong offset!");
-static_assert(offsetof(AMenuPlayerPreview_C, DefaultSceneRoot) == 0x0002B0, "Member 'AMenuPlayerPreview_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AMenuPlayerPreview_C, OwnerPlayer) == 0x0002B8, "Member 'AMenuPlayerPreview_C::OwnerPlayer' has a wrong offset!");
-static_assert(offsetof(AMenuPlayerPreview_C, As_Robber_Controller) == 0x0002C0, "Member 'AMenuPlayerPreview_C::As_Robber_Controller' has a wrong offset!");
-static_assert(offsetof(AMenuPlayerPreview_C, Mask_Equipped) == 0x0002C8, "Member 'AMenuPlayerPreview_C::Mask_Equipped' has a wrong offset!");
-static_assert(offsetof(AMenuPlayerPreview_C, PlayerLoaded_) == 0x0002D8, "Member 'AMenuPlayerPreview_C::PlayerLoaded_' has a wrong offset!");
-static_assert(offsetof(AMenuPlayerPreview_C, Armor) == 0x0002E0, "Member 'AMenuPlayerPreview_C::Armor' has a wrong offset!");
-static_assert(offsetof(AMenuPlayerPreview_C, Outfit) == 0x0002F0, "Member 'AMenuPlayerPreview_C::Outfit' has a wrong offset!");
-static_assert(offsetof(AMenuPlayerPreview_C, InfoWidget) == 0x000300, "Member 'AMenuPlayerPreview_C::InfoWidget' has a wrong offset!");
-static_assert(offsetof(AMenuPlayerPreview_C, Skin_ColorVar) == 0x000308, "Member 'AMenuPlayerPreview_C::Skin_ColorVar' has a wrong offset!");
-static_assert(offsetof(AMenuPlayerPreview_C, Emoting_) == 0x000310, "Member 'AMenuPlayerPreview_C::Emoting_' has a wrong offset!");
-static_assert(offsetof(AMenuPlayerPreview_C, EmoteAnim) == 0x000318, "Member 'AMenuPlayerPreview_C::EmoteAnim' has a wrong offset!");
-static_assert(offsetof(AMenuPlayerPreview_C, EmoteActor) == 0x000320, "Member 'AMenuPlayerPreview_C::EmoteActor' has a wrong offset!");
+DUMPER7_ASSERTS_AMenuPlayerPreview_C;
 
 }
 

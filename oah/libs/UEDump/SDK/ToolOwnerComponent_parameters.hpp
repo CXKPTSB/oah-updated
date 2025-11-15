@@ -25,12 +25,7 @@ public:
 	int32                                         K2Node_CustomEvent_Damage;                         // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ToolOwnerComponent_C_ExecuteUbergraph_ToolOwnerComponent) == 0x000004, "Wrong alignment on ToolOwnerComponent_C_ExecuteUbergraph_ToolOwnerComponent");
-static_assert(sizeof(ToolOwnerComponent_C_ExecuteUbergraph_ToolOwnerComponent) == 0x000010, "Wrong size on ToolOwnerComponent_C_ExecuteUbergraph_ToolOwnerComponent");
-static_assert(offsetof(ToolOwnerComponent_C_ExecuteUbergraph_ToolOwnerComponent, EntryPoint) == 0x000000, "Member 'ToolOwnerComponent_C_ExecuteUbergraph_ToolOwnerComponent::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ToolOwnerComponent_C_ExecuteUbergraph_ToolOwnerComponent, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000004, "Member 'ToolOwnerComponent_C_ExecuteUbergraph_ToolOwnerComponent::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ToolOwnerComponent_C_ExecuteUbergraph_ToolOwnerComponent, K2Node_CustomEvent_Damage) == 0x000008, "Member 'ToolOwnerComponent_C_ExecuteUbergraph_ToolOwnerComponent::K2Node_CustomEvent_Damage' has a wrong offset!");
-static_assert(offsetof(ToolOwnerComponent_C_ExecuteUbergraph_ToolOwnerComponent, CallFunc_Subtract_IntInt_ReturnValue) == 0x00000C, "Member 'ToolOwnerComponent_C_ExecuteUbergraph_ToolOwnerComponent::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ToolOwnerComponent_C_ExecuteUbergraph_ToolOwnerComponent;
 
 // Function ToolOwnerComponent.ToolOwnerComponent_C.TakeDamage
 // 0x0004 (0x0004 - 0x0000)
@@ -39,9 +34,7 @@ struct ToolOwnerComponent_C_TakeDamage final
 public:
 	int32                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ToolOwnerComponent_C_TakeDamage) == 0x000004, "Wrong alignment on ToolOwnerComponent_C_TakeDamage");
-static_assert(sizeof(ToolOwnerComponent_C_TakeDamage) == 0x000004, "Wrong size on ToolOwnerComponent_C_TakeDamage");
-static_assert(offsetof(ToolOwnerComponent_C_TakeDamage, Damage) == 0x000000, "Member 'ToolOwnerComponent_C_TakeDamage::Damage' has a wrong offset!");
+DUMPER7_ASSERTS_ToolOwnerComponent_C_TakeDamage;
 
 }
 

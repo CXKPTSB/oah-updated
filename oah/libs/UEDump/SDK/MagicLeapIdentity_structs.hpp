@@ -63,10 +63,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Value;                                             // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMagicLeapIdentityAttribute) == 0x000008, "Wrong alignment on FMagicLeapIdentityAttribute");
-static_assert(sizeof(FMagicLeapIdentityAttribute) == 0x000018, "Wrong size on FMagicLeapIdentityAttribute");
-static_assert(offsetof(FMagicLeapIdentityAttribute, Attribute) == 0x000000, "Member 'FMagicLeapIdentityAttribute::Attribute' has a wrong offset!");
-static_assert(offsetof(FMagicLeapIdentityAttribute, Value) == 0x000008, "Member 'FMagicLeapIdentityAttribute::Value' has a wrong offset!");
+DUMPER7_ASSERTS_FMagicLeapIdentityAttribute;
 
 }
 

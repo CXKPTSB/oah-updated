@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MagicLeapHandMeshingComponent">();
+		STATIC_CLASS_IMPL("MagicLeapHandMeshingComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MagicLeapHandMeshingComponent")
 	}
 	static class UMagicLeapHandMeshingComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMagicLeapHandMeshingComponent>();
 	}
 };
-static_assert(alignof(UMagicLeapHandMeshingComponent) == 0x000008, "Wrong alignment on UMagicLeapHandMeshingComponent");
-static_assert(sizeof(UMagicLeapHandMeshingComponent) == 0x0000B0, "Wrong size on UMagicLeapHandMeshingComponent");
+DUMPER7_ASSERTS_UMagicLeapHandMeshingComponent;
 
 // Class MagicLeapHandMeshing.MagicLeapHandMeshingFunctionLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -51,15 +54,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MagicLeapHandMeshingFunctionLibrary">();
+		STATIC_CLASS_IMPL("MagicLeapHandMeshingFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MagicLeapHandMeshingFunctionLibrary")
 	}
 	static class UMagicLeapHandMeshingFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMagicLeapHandMeshingFunctionLibrary>();
 	}
 };
-static_assert(alignof(UMagicLeapHandMeshingFunctionLibrary) == 0x000008, "Wrong alignment on UMagicLeapHandMeshingFunctionLibrary");
-static_assert(sizeof(UMagicLeapHandMeshingFunctionLibrary) == 0x000028, "Wrong size on UMagicLeapHandMeshingFunctionLibrary");
+DUMPER7_ASSERTS_UMagicLeapHandMeshingFunctionLibrary;
 
 }
 

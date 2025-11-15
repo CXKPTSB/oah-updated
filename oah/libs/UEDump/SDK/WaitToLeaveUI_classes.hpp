@@ -37,20 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WaitToLeaveUI_C">();
+		BP_STATIC_CLASS_IMPL("WaitToLeaveUI_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WaitToLeaveUI_C")
 	}
 	static class UWaitToLeaveUI_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWaitToLeaveUI_C>();
 	}
 };
-static_assert(alignof(UWaitToLeaveUI_C) == 0x000008, "Wrong alignment on UWaitToLeaveUI_C");
-static_assert(sizeof(UWaitToLeaveUI_C) == 0x000288, "Wrong size on UWaitToLeaveUI_C");
-static_assert(offsetof(UWaitToLeaveUI_C, UberGraphFrame) == 0x000260, "Member 'UWaitToLeaveUI_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWaitToLeaveUI_C, popIn) == 0x000268, "Member 'UWaitToLeaveUI_C::popIn' has a wrong offset!");
-static_assert(offsetof(UWaitToLeaveUI_C, TextBlock_66) == 0x000270, "Member 'UWaitToLeaveUI_C::TextBlock_66' has a wrong offset!");
-static_assert(offsetof(UWaitToLeaveUI_C, RobberTruck) == 0x000278, "Member 'UWaitToLeaveUI_C::RobberTruck' has a wrong offset!");
-static_assert(offsetof(UWaitToLeaveUI_C, TotalPlayers) == 0x000280, "Member 'UWaitToLeaveUI_C::TotalPlayers' has a wrong offset!");
+DUMPER7_ASSERTS_UWaitToLeaveUI_C;
 
 }
 

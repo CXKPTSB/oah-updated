@@ -23,15 +23,18 @@ class AM4_carbine_magBP_C final : public AMag_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"M4_carbine_magBP_C">();
+		BP_STATIC_CLASS_IMPL("M4_carbine_magBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"M4_carbine_magBP_C")
 	}
 	static class AM4_carbine_magBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AM4_carbine_magBP_C>();
 	}
 };
-static_assert(alignof(AM4_carbine_magBP_C) == 0x000008, "Wrong alignment on AM4_carbine_magBP_C");
-static_assert(sizeof(AM4_carbine_magBP_C) == 0x000230, "Wrong size on AM4_carbine_magBP_C");
+DUMPER7_ASSERTS_AM4_carbine_magBP_C;
 
 }
 

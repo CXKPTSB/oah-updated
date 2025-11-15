@@ -52,33 +52,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MagicLeapARPinInfoActor_C">();
+		BP_STATIC_CLASS_IMPL("MagicLeapARPinInfoActor_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MagicLeapARPinInfoActor_C")
 	}
 	static class AMagicLeapARPinInfoActor_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMagicLeapARPinInfoActor_C>();
 	}
 };
-static_assert(alignof(AMagicLeapARPinInfoActor_C) == 0x000008, "Wrong alignment on AMagicLeapARPinInfoActor_C");
-static_assert(sizeof(AMagicLeapARPinInfoActor_C) == 0x0002C8, "Wrong size on AMagicLeapARPinInfoActor_C");
-static_assert(offsetof(AMagicLeapARPinInfoActor_C, UberGraphFrame) == 0x000238, "Member 'AMagicLeapARPinInfoActor_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AMagicLeapARPinInfoActor_C, Right) == 0x000240, "Member 'AMagicLeapARPinInfoActor_C::Right' has a wrong offset!");
-static_assert(offsetof(AMagicLeapARPinInfoActor_C, Forward) == 0x000248, "Member 'AMagicLeapARPinInfoActor_C::Forward' has a wrong offset!");
-static_assert(offsetof(AMagicLeapARPinInfoActor_C, Up) == 0x000250, "Member 'AMagicLeapARPinInfoActor_C::Up' has a wrong offset!");
-static_assert(offsetof(AMagicLeapARPinInfoActor_C, ValidRadiusVisualizer) == 0x000258, "Member 'AMagicLeapARPinInfoActor_C::ValidRadiusVisualizer' has a wrong offset!");
-static_assert(offsetof(AMagicLeapARPinInfoActor_C, AxisRoot) == 0x000260, "Member 'AMagicLeapARPinInfoActor_C::AxisRoot' has a wrong offset!");
-static_assert(offsetof(AMagicLeapARPinInfoActor_C, VisualizerRoot) == 0x000268, "Member 'AMagicLeapARPinInfoActor_C::VisualizerRoot' has a wrong offset!");
-static_assert(offsetof(AMagicLeapARPinInfoActor_C, TypeValue) == 0x000270, "Member 'AMagicLeapARPinInfoActor_C::TypeValue' has a wrong offset!");
-static_assert(offsetof(AMagicLeapARPinInfoActor_C, TransErrValue) == 0x000278, "Member 'AMagicLeapARPinInfoActor_C::TransErrValue' has a wrong offset!");
-static_assert(offsetof(AMagicLeapARPinInfoActor_C, RotErrValue) == 0x000280, "Member 'AMagicLeapARPinInfoActor_C::RotErrValue' has a wrong offset!");
-static_assert(offsetof(AMagicLeapARPinInfoActor_C, ConfidenceValue) == 0x000288, "Member 'AMagicLeapARPinInfoActor_C::ConfidenceValue' has a wrong offset!");
-static_assert(offsetof(AMagicLeapARPinInfoActor_C, TransErrLabel) == 0x000290, "Member 'AMagicLeapARPinInfoActor_C::TransErrLabel' has a wrong offset!");
-static_assert(offsetof(AMagicLeapARPinInfoActor_C, RotErrLabel) == 0x000298, "Member 'AMagicLeapARPinInfoActor_C::RotErrLabel' has a wrong offset!");
-static_assert(offsetof(AMagicLeapARPinInfoActor_C, ConfidenceLabel) == 0x0002A0, "Member 'AMagicLeapARPinInfoActor_C::ConfidenceLabel' has a wrong offset!");
-static_assert(offsetof(AMagicLeapARPinInfoActor_C, PinIDValue) == 0x0002A8, "Member 'AMagicLeapARPinInfoActor_C::PinIDValue' has a wrong offset!");
-static_assert(offsetof(AMagicLeapARPinInfoActor_C, InfoRoot) == 0x0002B0, "Member 'AMagicLeapARPinInfoActor_C::InfoRoot' has a wrong offset!");
-static_assert(offsetof(AMagicLeapARPinInfoActor_C, Root) == 0x0002B8, "Member 'AMagicLeapARPinInfoActor_C::Root' has a wrong offset!");
-static_assert(offsetof(AMagicLeapARPinInfoActor_C, RotationSmoothSpeed) == 0x0002C0, "Member 'AMagicLeapARPinInfoActor_C::RotationSmoothSpeed' has a wrong offset!");
+DUMPER7_ASSERTS_AMagicLeapARPinInfoActor_C;
 
 }
 

@@ -23,15 +23,18 @@ class USkill_ComputerScience_Tier3_C final : public USkill_ComputerScience_Tier1
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Skill_ComputerScience_Tier3_C">();
+		BP_STATIC_CLASS_IMPL("Skill_ComputerScience_Tier3_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Skill_ComputerScience_Tier3_C")
 	}
 	static class USkill_ComputerScience_Tier3_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USkill_ComputerScience_Tier3_C>();
 	}
 };
-static_assert(alignof(USkill_ComputerScience_Tier3_C) == 0x000008, "Wrong alignment on USkill_ComputerScience_Tier3_C");
-static_assert(sizeof(USkill_ComputerScience_Tier3_C) == 0x0000E0, "Wrong size on USkill_ComputerScience_Tier3_C");
+DUMPER7_ASSERTS_USkill_ComputerScience_Tier3_C;
 
 }
 

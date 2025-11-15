@@ -32,17 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WaitingForPlayersUI_C">();
+		BP_STATIC_CLASS_IMPL("WaitingForPlayersUI_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WaitingForPlayersUI_C")
 	}
 	static class UWaitingForPlayersUI_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWaitingForPlayersUI_C>();
 	}
 };
-static_assert(alignof(UWaitingForPlayersUI_C) == 0x000008, "Wrong alignment on UWaitingForPlayersUI_C");
-static_assert(sizeof(UWaitingForPlayersUI_C) == 0x000270, "Wrong size on UWaitingForPlayersUI_C");
-static_assert(offsetof(UWaitingForPlayersUI_C, UberGraphFrame) == 0x000260, "Member 'UWaitingForPlayersUI_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWaitingForPlayersUI_C, As_Robber_GI) == 0x000268, "Member 'UWaitingForPlayersUI_C::As_Robber_GI' has a wrong offset!");
+DUMPER7_ASSERTS_UWaitingForPlayersUI_C;
 
 }
 

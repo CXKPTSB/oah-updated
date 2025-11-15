@@ -43,27 +43,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PoliceGunBase_C">();
+		BP_STATIC_CLASS_IMPL("PoliceGunBase_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PoliceGunBase_C")
 	}
 	static class APoliceGunBase_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APoliceGunBase_C>();
 	}
 };
-static_assert(alignof(APoliceGunBase_C) == 0x000008, "Wrong alignment on APoliceGunBase_C");
-static_assert(sizeof(APoliceGunBase_C) == 0x000278, "Wrong size on APoliceGunBase_C");
-static_assert(offsetof(APoliceGunBase_C, UberGraphFrame) == 0x000220, "Member 'APoliceGunBase_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(APoliceGunBase_C, Muzzle) == 0x000228, "Member 'APoliceGunBase_C::Muzzle' has a wrong offset!");
-static_assert(offsetof(APoliceGunBase_C, Ejector) == 0x000230, "Member 'APoliceGunBase_C::Ejector' has a wrong offset!");
-static_assert(offsetof(APoliceGunBase_C, Box) == 0x000238, "Member 'APoliceGunBase_C::Box' has a wrong offset!");
-static_assert(offsetof(APoliceGunBase_C, Gunmesh) == 0x000240, "Member 'APoliceGunBase_C::Gunmesh' has a wrong offset!");
-static_assert(offsetof(APoliceGunBase_C, Rifle_) == 0x000248, "Member 'APoliceGunBase_C::Rifle_' has a wrong offset!");
-static_assert(offsetof(APoliceGunBase_C, CasingMesh) == 0x000250, "Member 'APoliceGunBase_C::CasingMesh' has a wrong offset!");
-static_assert(offsetof(APoliceGunBase_C, GunSound) == 0x000258, "Member 'APoliceGunBase_C::GunSound' has a wrong offset!");
-static_assert(offsetof(APoliceGunBase_C, ShootAnim) == 0x000260, "Member 'APoliceGunBase_C::ShootAnim' has a wrong offset!");
-static_assert(offsetof(APoliceGunBase_C, Damage) == 0x000268, "Member 'APoliceGunBase_C::Damage' has a wrong offset!");
-static_assert(offsetof(APoliceGunBase_C, Firerate) == 0x00026C, "Member 'APoliceGunBase_C::Firerate' has a wrong offset!");
-static_assert(offsetof(APoliceGunBase_C, LongPause) == 0x000270, "Member 'APoliceGunBase_C::LongPause' has a wrong offset!");
+DUMPER7_ASSERTS_APoliceGunBase_C;
 
 }
 

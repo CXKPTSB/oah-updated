@@ -23,15 +23,18 @@ class AShopItem_Weapon_ZM48_C final : public AShopItem_Weapon_base_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ShopItem_Weapon_ZM48_C">();
+		BP_STATIC_CLASS_IMPL("ShopItem_Weapon_ZM48_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ShopItem_Weapon_ZM48_C")
 	}
 	static class AShopItem_Weapon_ZM48_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AShopItem_Weapon_ZM48_C>();
 	}
 };
-static_assert(alignof(AShopItem_Weapon_ZM48_C) == 0x000008, "Wrong alignment on AShopItem_Weapon_ZM48_C");
-static_assert(sizeof(AShopItem_Weapon_ZM48_C) == 0x000298, "Wrong size on AShopItem_Weapon_ZM48_C");
+DUMPER7_ASSERTS_AShopItem_Weapon_ZM48_C;
 
 }
 

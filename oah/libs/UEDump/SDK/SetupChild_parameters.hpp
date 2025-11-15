@@ -35,18 +35,7 @@ public:
 	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Array_Contains_ReturnValue_1;             // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SetupChild_C_ExecuteUbergraph_SetupChild) == 0x000008, "Wrong alignment on SetupChild_C_ExecuteUbergraph_SetupChild");
-static_assert(sizeof(SetupChild_C_ExecuteUbergraph_SetupChild) == 0x000040, "Wrong size on SetupChild_C_ExecuteUbergraph_SetupChild");
-static_assert(offsetof(SetupChild_C_ExecuteUbergraph_SetupChild, EntryPoint) == 0x000000, "Member 'SetupChild_C_ExecuteUbergraph_SetupChild::EntryPoint' has a wrong offset!");
-static_assert(offsetof(SetupChild_C_ExecuteUbergraph_SetupChild, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'SetupChild_C_ExecuteUbergraph_SetupChild::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SetupChild_C_ExecuteUbergraph_SetupChild, CallFunc_PlayAnimation_ReturnValue_1) == 0x000010, "Member 'SetupChild_C_ExecuteUbergraph_SetupChild::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SetupChild_C_ExecuteUbergraph_SetupChild, CallFunc_GetPlayerController_ReturnValue) == 0x000018, "Member 'SetupChild_C_ExecuteUbergraph_SetupChild::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SetupChild_C_ExecuteUbergraph_SetupChild, K2Node_DynamicCast_AsRobber_Controller) == 0x000020, "Member 'SetupChild_C_ExecuteUbergraph_SetupChild::K2Node_DynamicCast_AsRobber_Controller' has a wrong offset!");
-static_assert(offsetof(SetupChild_C_ExecuteUbergraph_SetupChild, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'SetupChild_C_ExecuteUbergraph_SetupChild::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(SetupChild_C_ExecuteUbergraph_SetupChild, CallFunc_Array_Contains_ReturnValue) == 0x000029, "Member 'SetupChild_C_ExecuteUbergraph_SetupChild::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SetupChild_C_ExecuteUbergraph_SetupChild, CallFunc_GetActorOfClass_ReturnValue) == 0x000030, "Member 'SetupChild_C_ExecuteUbergraph_SetupChild::CallFunc_GetActorOfClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SetupChild_C_ExecuteUbergraph_SetupChild, CallFunc_IsValidClass_ReturnValue) == 0x000038, "Member 'SetupChild_C_ExecuteUbergraph_SetupChild::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SetupChild_C_ExecuteUbergraph_SetupChild, CallFunc_Array_Contains_ReturnValue_1) == 0x000039, "Member 'SetupChild_C_ExecuteUbergraph_SetupChild::CallFunc_Array_Contains_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_SetupChild_C_ExecuteUbergraph_SetupChild;
 
 // Function SetupChild.SetupChild_C.GetBackground_0
 // 0x0130 (0x0130 - 0x0000)
@@ -63,15 +52,7 @@ public:
 	class UObject*                                K2Node_Select_Default;                             // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x00A8(0x0088)()
 };
-static_assert(alignof(SetupChild_C_GetBackground_0) == 0x000008, "Wrong alignment on SetupChild_C_GetBackground_0");
-static_assert(sizeof(SetupChild_C_GetBackground_0) == 0x000130, "Wrong size on SetupChild_C_GetBackground_0");
-static_assert(offsetof(SetupChild_C_GetBackground_0, ReturnValue) == 0x000000, "Member 'SetupChild_C_GetBackground_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(SetupChild_C_GetBackground_0, Temp_bool_Variable) == 0x000088, "Member 'SetupChild_C_GetBackground_0::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(SetupChild_C_GetBackground_0, Temp_object_Variable) == 0x000090, "Member 'SetupChild_C_GetBackground_0::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(SetupChild_C_GetBackground_0, CallFunc_IsValid_ReturnValue) == 0x000098, "Member 'SetupChild_C_GetBackground_0::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SetupChild_C_GetBackground_0, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000099, "Member 'SetupChild_C_GetBackground_0::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SetupChild_C_GetBackground_0, K2Node_Select_Default) == 0x0000A0, "Member 'SetupChild_C_GetBackground_0::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(SetupChild_C_GetBackground_0, K2Node_MakeStruct_SlateBrush) == 0x0000A8, "Member 'SetupChild_C_GetBackground_0::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
+DUMPER7_ASSERTS_SetupChild_C_GetBackground_0;
 
 // Function SetupChild.SetupChild_C.GetText_0
 // 0x0038 (0x0038 - 0x0000)
@@ -84,12 +65,7 @@ public:
 	uint8                                         Pad_1A[0x6];                                       // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0020(0x0018)()
 };
-static_assert(alignof(SetupChild_C_GetText_0) == 0x000008, "Wrong alignment on SetupChild_C_GetText_0");
-static_assert(sizeof(SetupChild_C_GetText_0) == 0x000038, "Wrong size on SetupChild_C_GetText_0");
-static_assert(offsetof(SetupChild_C_GetText_0, ReturnValue) == 0x000000, "Member 'SetupChild_C_GetText_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(SetupChild_C_GetText_0, CallFunc_IsValidClass_ReturnValue) == 0x000018, "Member 'SetupChild_C_GetText_0::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SetupChild_C_GetText_0, CallFunc_Array_Contains_ReturnValue) == 0x000019, "Member 'SetupChild_C_GetText_0::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SetupChild_C_GetText_0, CallFunc_Conv_StringToText_ReturnValue) == 0x000020, "Member 'SetupChild_C_GetText_0::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SetupChild_C_GetText_0;
 
 // Function SetupChild.SetupChild_C.GetColorAndOpacity_0
 // 0x0080 (0x0080 - 0x0000)
@@ -102,13 +78,7 @@ public:
 	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x0079(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SetupChild_C_GetColorAndOpacity_0) == 0x000008, "Wrong alignment on SetupChild_C_GetColorAndOpacity_0");
-static_assert(sizeof(SetupChild_C_GetColorAndOpacity_0) == 0x000080, "Wrong size on SetupChild_C_GetColorAndOpacity_0");
-static_assert(offsetof(SetupChild_C_GetColorAndOpacity_0, ReturnValue) == 0x000000, "Member 'SetupChild_C_GetColorAndOpacity_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(SetupChild_C_GetColorAndOpacity_0, K2Node_MakeStruct_SlateColor) == 0x000028, "Member 'SetupChild_C_GetColorAndOpacity_0::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(SetupChild_C_GetColorAndOpacity_0, K2Node_MakeStruct_SlateColor_1) == 0x000050, "Member 'SetupChild_C_GetColorAndOpacity_0::K2Node_MakeStruct_SlateColor_1' has a wrong offset!");
-static_assert(offsetof(SetupChild_C_GetColorAndOpacity_0, CallFunc_Array_Contains_ReturnValue) == 0x000078, "Member 'SetupChild_C_GetColorAndOpacity_0::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SetupChild_C_GetColorAndOpacity_0, CallFunc_IsValidClass_ReturnValue) == 0x000079, "Member 'SetupChild_C_GetColorAndOpacity_0::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SetupChild_C_GetColorAndOpacity_0;
 
 // Function SetupChild.SetupChild_C.GetVisibility_0
 // 0x0002 (0x0002 - 0x0000)
@@ -118,10 +88,7 @@ public:
 	ESlateVisibility                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SetupChild_C_GetVisibility_0) == 0x000001, "Wrong alignment on SetupChild_C_GetVisibility_0");
-static_assert(sizeof(SetupChild_C_GetVisibility_0) == 0x000002, "Wrong size on SetupChild_C_GetVisibility_0");
-static_assert(offsetof(SetupChild_C_GetVisibility_0, ReturnValue) == 0x000000, "Member 'SetupChild_C_GetVisibility_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(SetupChild_C_GetVisibility_0, CallFunc_Array_Contains_ReturnValue) == 0x000001, "Member 'SetupChild_C_GetVisibility_0::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SetupChild_C_GetVisibility_0;
 
 }
 

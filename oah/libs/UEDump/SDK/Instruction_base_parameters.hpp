@@ -26,11 +26,7 @@ public:
 	class FString                                 K2Node_Event_Title;                                // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	struct FInstructionStruct                     CallFunc_Array_Get_Item;                           // 0x0018(0x0030)(ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Instruction_base_C_ExecuteUbergraph_Instruction_base) == 0x000008, "Wrong alignment on Instruction_base_C_ExecuteUbergraph_Instruction_base");
-static_assert(sizeof(Instruction_base_C_ExecuteUbergraph_Instruction_base) == 0x000048, "Wrong size on Instruction_base_C_ExecuteUbergraph_Instruction_base");
-static_assert(offsetof(Instruction_base_C_ExecuteUbergraph_Instruction_base, EntryPoint) == 0x000000, "Member 'Instruction_base_C_ExecuteUbergraph_Instruction_base::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_ExecuteUbergraph_Instruction_base, K2Node_Event_Title) == 0x000008, "Member 'Instruction_base_C_ExecuteUbergraph_Instruction_base::K2Node_Event_Title' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_ExecuteUbergraph_Instruction_base, CallFunc_Array_Get_Item) == 0x000018, "Member 'Instruction_base_C_ExecuteUbergraph_Instruction_base::CallFunc_Array_Get_Item' has a wrong offset!");
+DUMPER7_ASSERTS_Instruction_base_C_ExecuteUbergraph_Instruction_base;
 
 // Function Instruction_base.Instruction_base_C.AnnounceNewInstructionWidget
 // 0x0010 (0x0010 - 0x0000)
@@ -39,9 +35,7 @@ struct Instruction_base_C_AnnounceNewInstructionWidget final
 public:
 	class FString                                 Title;                                             // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Instruction_base_C_AnnounceNewInstructionWidget) == 0x000008, "Wrong alignment on Instruction_base_C_AnnounceNewInstructionWidget");
-static_assert(sizeof(Instruction_base_C_AnnounceNewInstructionWidget) == 0x000010, "Wrong size on Instruction_base_C_AnnounceNewInstructionWidget");
-static_assert(offsetof(Instruction_base_C_AnnounceNewInstructionWidget, Title) == 0x000000, "Member 'Instruction_base_C_AnnounceNewInstructionWidget::Title' has a wrong offset!");
+DUMPER7_ASSERTS_Instruction_base_C_AnnounceNewInstructionWidget;
 
 // Function Instruction_base.Instruction_base_C.Next Instruction
 // 0x0090 (0x0090 - 0x0000)
@@ -70,26 +64,7 @@ public:
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0x0087(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Instruction_base_C_Next_Instruction) == 0x000008, "Wrong alignment on Instruction_base_C_Next_Instruction");
-static_assert(sizeof(Instruction_base_C_Next_Instruction) == 0x000090, "Wrong size on Instruction_base_C_Next_Instruction");
-static_assert(offsetof(Instruction_base_C_Next_Instruction, CompletedInstruction) == 0x000000, "Member 'Instruction_base_C_Next_Instruction::CompletedInstruction' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_Next_Instruction, NextInstrFound_) == 0x000004, "Member 'Instruction_base_C_Next_Instruction::NextInstrFound_' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_Next_Instruction, NextWasCompleted_) == 0x000005, "Member 'Instruction_base_C_Next_Instruction::NextWasCompleted_' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_Next_Instruction, NextInstructionVar) == 0x000008, "Member 'Instruction_base_C_Next_Instruction::NextInstructionVar' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_Next_Instruction, FoundNext_) == 0x000038, "Member 'Instruction_base_C_Next_Instruction::FoundNext_' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_Next_Instruction, Temp_int_Loop_Counter_Variable) == 0x00003C, "Member 'Instruction_base_C_Next_Instruction::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_Next_Instruction, CallFunc_Add_IntInt_ReturnValue) == 0x000040, "Member 'Instruction_base_C_Next_Instruction::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_Next_Instruction, Temp_int_Array_Index_Variable) == 0x000044, "Member 'Instruction_base_C_Next_Instruction::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_Next_Instruction, Temp_bool_Has_Been_Initd_Variable) == 0x000048, "Member 'Instruction_base_C_Next_Instruction::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_Next_Instruction, CallFunc_Next_Instruction_NextInstrFound_) == 0x000049, "Member 'Instruction_base_C_Next_Instruction::CallFunc_Next_Instruction_NextInstrFound_' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_Next_Instruction, Temp_bool_IsClosed_Variable) == 0x00004A, "Member 'Instruction_base_C_Next_Instruction::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_Next_Instruction, CallFunc_Array_Get_Item) == 0x000050, "Member 'Instruction_base_C_Next_Instruction::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_Next_Instruction, CallFunc_Array_Length_ReturnValue) == 0x000080, "Member 'Instruction_base_C_Next_Instruction::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_Next_Instruction, CallFunc_Less_IntInt_ReturnValue) == 0x000084, "Member 'Instruction_base_C_Next_Instruction::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_Next_Instruction, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000085, "Member 'Instruction_base_C_Next_Instruction::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_Next_Instruction, CallFunc_Greater_IntInt_ReturnValue) == 0x000086, "Member 'Instruction_base_C_Next_Instruction::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_Next_Instruction, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x000087, "Member 'Instruction_base_C_Next_Instruction::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_Next_Instruction, CallFunc_Less_IntInt_ReturnValue_1) == 0x000088, "Member 'Instruction_base_C_Next_Instruction::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_Instruction_base_C_Next_Instruction;
 
 // Function Instruction_base.Instruction_base_C.SetInstruction
 // 0x0050 (0x0050 - 0x0000)
@@ -110,20 +85,7 @@ public:
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Next_Instruction_NextInstrFound_;         // 0x004A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Instruction_base_C_SetInstruction) == 0x000008, "Wrong alignment on Instruction_base_C_SetInstruction");
-static_assert(sizeof(Instruction_base_C_SetInstruction) == 0x000050, "Wrong size on Instruction_base_C_SetInstruction");
-static_assert(offsetof(Instruction_base_C_SetInstruction, ID) == 0x000000, "Member 'Instruction_base_C_SetInstruction::ID' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_SetInstruction, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'Instruction_base_C_SetInstruction::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_SetInstruction, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'Instruction_base_C_SetInstruction::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_SetInstruction, Temp_int_Array_Index_Variable) == 0x00000C, "Member 'Instruction_base_C_SetInstruction::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_SetInstruction, Temp_bool_Has_Been_Initd_Variable) == 0x000010, "Member 'Instruction_base_C_SetInstruction::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_SetInstruction, Temp_bool_IsClosed_Variable) == 0x000011, "Member 'Instruction_base_C_SetInstruction::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_SetInstruction, CallFunc_Greater_IntInt_ReturnValue) == 0x000012, "Member 'Instruction_base_C_SetInstruction::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_SetInstruction, CallFunc_Array_Length_ReturnValue) == 0x000014, "Member 'Instruction_base_C_SetInstruction::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_SetInstruction, CallFunc_Array_Get_Item) == 0x000018, "Member 'Instruction_base_C_SetInstruction::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_SetInstruction, CallFunc_Less_IntInt_ReturnValue) == 0x000048, "Member 'Instruction_base_C_SetInstruction::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_SetInstruction, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000049, "Member 'Instruction_base_C_SetInstruction::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_SetInstruction, CallFunc_Next_Instruction_NextInstrFound_) == 0x00004A, "Member 'Instruction_base_C_SetInstruction::CallFunc_Next_Instruction_NextInstrFound_' has a wrong offset!");
+DUMPER7_ASSERTS_Instruction_base_C_SetInstruction;
 
 // Function Instruction_base.Instruction_base_C.CompleteInstruction
 // 0x0080 (0x0080 - 0x0000)
@@ -144,19 +106,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Instruction_base_C_CompleteInstruction) == 0x000008, "Wrong alignment on Instruction_base_C_CompleteInstruction");
-static_assert(sizeof(Instruction_base_C_CompleteInstruction) == 0x000080, "Wrong size on Instruction_base_C_CompleteInstruction");
-static_assert(offsetof(Instruction_base_C_CompleteInstruction, ID) == 0x000000, "Member 'Instruction_base_C_CompleteInstruction::ID' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_CompleteInstruction, Temp_int_Array_Index_Variable) == 0x000004, "Member 'Instruction_base_C_CompleteInstruction::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_CompleteInstruction, Temp_bool_IsClosed_Variable) == 0x000008, "Member 'Instruction_base_C_CompleteInstruction::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_CompleteInstruction, Temp_bool_Has_Been_Initd_Variable) == 0x000009, "Member 'Instruction_base_C_CompleteInstruction::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_CompleteInstruction, Temp_int_Loop_Counter_Variable) == 0x00000C, "Member 'Instruction_base_C_CompleteInstruction::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_CompleteInstruction, CallFunc_Array_Get_Item) == 0x000010, "Member 'Instruction_base_C_CompleteInstruction::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_CompleteInstruction, K2Node_SetFieldsInStruct_StructOut) == 0x000040, "Member 'Instruction_base_C_CompleteInstruction::K2Node_SetFieldsInStruct_StructOut' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_CompleteInstruction, CallFunc_Add_IntInt_ReturnValue) == 0x000070, "Member 'Instruction_base_C_CompleteInstruction::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_CompleteInstruction, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000074, "Member 'Instruction_base_C_CompleteInstruction::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_CompleteInstruction, CallFunc_Array_Length_ReturnValue) == 0x000078, "Member 'Instruction_base_C_CompleteInstruction::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_CompleteInstruction, CallFunc_Less_IntInt_ReturnValue) == 0x00007C, "Member 'Instruction_base_C_CompleteInstruction::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_Instruction_base_C_CompleteInstruction;
 
 // Function Instruction_base.Instruction_base_C.Announce Instruction
 // 0x0060 (0x0060 - 0x0000)
@@ -174,21 +124,10 @@ public:
 	class UUserWidget*                            CallFunc_Array_Get_Item;                           // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IInstructionInterface_C> K2Node_DynamicCast_AsInstruction_Interface;        // 0x0048(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TScriptInterface<class IInstructionInterface_C> K2Node_DynamicCast_AsInstruction_Interface;      // 0x0048(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Instruction_base_C_Announce_Instruction) == 0x000008, "Wrong alignment on Instruction_base_C_Announce_Instruction");
-static_assert(sizeof(Instruction_base_C_Announce_Instruction) == 0x000060, "Wrong size on Instruction_base_C_Announce_Instruction");
-static_assert(offsetof(Instruction_base_C_Announce_Instruction, Title) == 0x000000, "Member 'Instruction_base_C_Announce_Instruction::Title' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_Announce_Instruction, Temp_int_Array_Index_Variable) == 0x000010, "Member 'Instruction_base_C_Announce_Instruction::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_Announce_Instruction, Temp_int_Loop_Counter_Variable) == 0x000014, "Member 'Instruction_base_C_Announce_Instruction::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_Announce_Instruction, CallFunc_Add_IntInt_ReturnValue) == 0x000018, "Member 'Instruction_base_C_Announce_Instruction::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_Announce_Instruction, CallFunc_GetAllWidgetsWithInterface_FoundWidgets) == 0x000020, "Member 'Instruction_base_C_Announce_Instruction::CallFunc_GetAllWidgetsWithInterface_FoundWidgets' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_Announce_Instruction, CallFunc_Array_Length_ReturnValue) == 0x000030, "Member 'Instruction_base_C_Announce_Instruction::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_Announce_Instruction, CallFunc_Array_Get_Item) == 0x000038, "Member 'Instruction_base_C_Announce_Instruction::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_Announce_Instruction, CallFunc_Less_IntInt_ReturnValue) == 0x000040, "Member 'Instruction_base_C_Announce_Instruction::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_Announce_Instruction, K2Node_DynamicCast_AsInstruction_Interface) == 0x000048, "Member 'Instruction_base_C_Announce_Instruction::K2Node_DynamicCast_AsInstruction_Interface' has a wrong offset!");
-static_assert(offsetof(Instruction_base_C_Announce_Instruction, K2Node_DynamicCast_bSuccess) == 0x000058, "Member 'Instruction_base_C_Announce_Instruction::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_Instruction_base_C_Announce_Instruction;
 
 // Function Instruction_base.Instruction_base_C.GetCurrentInstruction
 // 0x0030 (0x0030 - 0x0000)
@@ -197,9 +136,7 @@ struct Instruction_base_C_GetCurrentInstruction final
 public:
 	struct FInstructionStruct                     Instruction;                                       // 0x0000(0x0030)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Instruction_base_C_GetCurrentInstruction) == 0x000008, "Wrong alignment on Instruction_base_C_GetCurrentInstruction");
-static_assert(sizeof(Instruction_base_C_GetCurrentInstruction) == 0x000030, "Wrong size on Instruction_base_C_GetCurrentInstruction");
-static_assert(offsetof(Instruction_base_C_GetCurrentInstruction, Instruction) == 0x000000, "Member 'Instruction_base_C_GetCurrentInstruction::Instruction' has a wrong offset!");
+DUMPER7_ASSERTS_Instruction_base_C_GetCurrentInstruction;
 
 }
 

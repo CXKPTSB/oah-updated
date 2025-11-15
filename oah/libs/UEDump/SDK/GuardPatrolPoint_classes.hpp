@@ -44,27 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GuardPatrolPoint_C">();
+		BP_STATIC_CLASS_IMPL("GuardPatrolPoint_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GuardPatrolPoint_C")
 	}
 	static class AGuardPatrolPoint_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGuardPatrolPoint_C>();
 	}
 };
-static_assert(alignof(AGuardPatrolPoint_C) == 0x000008, "Wrong alignment on AGuardPatrolPoint_C");
-static_assert(sizeof(AGuardPatrolPoint_C) == 0x000280, "Wrong size on AGuardPatrolPoint_C");
-static_assert(offsetof(AGuardPatrolPoint_C, UberGraphFrame) == 0x000220, "Member 'AGuardPatrolPoint_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AGuardPatrolPoint_C, Arrow) == 0x000228, "Member 'AGuardPatrolPoint_C::Arrow' has a wrong offset!");
-static_assert(offsetof(AGuardPatrolPoint_C, Sphere) == 0x000230, "Member 'AGuardPatrolPoint_C::Sphere' has a wrong offset!");
-static_assert(offsetof(AGuardPatrolPoint_C, DefaultSceneRoot) == 0x000238, "Member 'AGuardPatrolPoint_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AGuardPatrolPoint_C, PatrollingGuard) == 0x000240, "Member 'AGuardPatrolPoint_C::PatrollingGuard' has a wrong offset!");
-static_assert(offsetof(AGuardPatrolPoint_C, PointNumber) == 0x000248, "Member 'AGuardPatrolPoint_C::PointNumber' has a wrong offset!");
-static_assert(offsetof(AGuardPatrolPoint_C, Color) == 0x00024C, "Member 'AGuardPatrolPoint_C::Color' has a wrong offset!");
-static_assert(offsetof(AGuardPatrolPoint_C, Stream) == 0x00025C, "Member 'AGuardPatrolPoint_C::Stream' has a wrong offset!");
-static_assert(offsetof(AGuardPatrolPoint_C, Rotation) == 0x000264, "Member 'AGuardPatrolPoint_C::Rotation' has a wrong offset!");
-static_assert(offsetof(AGuardPatrolPoint_C, PointAnimation) == 0x000270, "Member 'AGuardPatrolPoint_C::PointAnimation' has a wrong offset!");
-static_assert(offsetof(AGuardPatrolPoint_C, AnimDelay) == 0x000278, "Member 'AGuardPatrolPoint_C::AnimDelay' has a wrong offset!");
-static_assert(offsetof(AGuardPatrolPoint_C, Stop_time) == 0x00027C, "Member 'AGuardPatrolPoint_C::Stop_time' has a wrong offset!");
+DUMPER7_ASSERTS_AGuardPatrolPoint_C;
 
 }
 

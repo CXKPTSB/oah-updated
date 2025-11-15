@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "SkinRotationStructure_structs.hpp"
 #include "ShopItemCategory_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
-#include "SkinRotationStructure_structs.hpp"
-#include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
@@ -50,7 +50,7 @@ public:
 	struct FTimespan                              TimeLeft;                                          // 0x0308(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	int32                                         RotationNumber;                                    // 0x0310(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_314[0x4];                                      // 0x0314(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 Item_info;                                         // 0x0318(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 Item_Info;                                         // 0x0318(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ARobberController_C*                    As_Robber_Controller;                              // 0x0320(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UClass*>                         FeaturedItems;                                     // 0x0328(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<struct FSkinRotationStructure>         SkinRotationStruct;                                // 0x0338(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
@@ -92,45 +92,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SkinShop_C">();
+		BP_STATIC_CLASS_IMPL("SkinShop_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SkinShop_C")
 	}
 	static class USkinShop_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USkinShop_C>();
 	}
 };
-static_assert(alignof(USkinShop_C) == 0x000008, "Wrong alignment on USkinShop_C");
-static_assert(sizeof(USkinShop_C) == 0x000370, "Wrong size on USkinShop_C");
-static_assert(offsetof(USkinShop_C, UberGraphFrame) == 0x000260, "Member 'USkinShop_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USkinShop_C, SwipeInAnim) == 0x000268, "Member 'USkinShop_C::SwipeInAnim' has a wrong offset!");
-static_assert(offsetof(USkinShop_C, BackButton) == 0x000270, "Member 'USkinShop_C::BackButton' has a wrong offset!");
-static_assert(offsetof(USkinShop_C, Border_0) == 0x000278, "Member 'USkinShop_C::Border_0' has a wrong offset!");
-static_assert(offsetof(USkinShop_C, CashBuyButton) == 0x000280, "Member 'USkinShop_C::CashBuyButton' has a wrong offset!");
-static_assert(offsetof(USkinShop_C, CoinBuyButton) == 0x000288, "Member 'USkinShop_C::CoinBuyButton' has a wrong offset!");
-static_assert(offsetof(USkinShop_C, DescriptionBorder) == 0x000290, "Member 'USkinShop_C::DescriptionBorder' has a wrong offset!");
-static_assert(offsetof(USkinShop_C, FeatureItemsWrap) == 0x000298, "Member 'USkinShop_C::FeatureItemsWrap' has a wrong offset!");
-static_assert(offsetof(USkinShop_C, HorizontalBox_0) == 0x0002A0, "Member 'USkinShop_C::HorizontalBox_0' has a wrong offset!");
-static_assert(offsetof(USkinShop_C, Image_124) == 0x0002A8, "Member 'USkinShop_C::Image_124' has a wrong offset!");
-static_assert(offsetof(USkinShop_C, InventoryScroll) == 0x0002B0, "Member 'USkinShop_C::InventoryScroll' has a wrong offset!");
-static_assert(offsetof(USkinShop_C, InventoryWrap) == 0x0002B8, "Member 'USkinShop_C::InventoryWrap' has a wrong offset!");
-static_assert(offsetof(USkinShop_C, ShopCategoryTab) == 0x0002C0, "Member 'USkinShop_C::ShopCategoryTab' has a wrong offset!");
-static_assert(offsetof(USkinShop_C, ShopCategoryTab_1) == 0x0002C8, "Member 'USkinShop_C::ShopCategoryTab_1' has a wrong offset!");
-static_assert(offsetof(USkinShop_C, ShopCategoryTab_2) == 0x0002D0, "Member 'USkinShop_C::ShopCategoryTab_2' has a wrong offset!");
-static_assert(offsetof(USkinShop_C, TextBlock) == 0x0002D8, "Member 'USkinShop_C::TextBlock' has a wrong offset!");
-static_assert(offsetof(USkinShop_C, TextBlock_0) == 0x0002E0, "Member 'USkinShop_C::TextBlock_0' has a wrong offset!");
-static_assert(offsetof(USkinShop_C, TextBlock_1) == 0x0002E8, "Member 'USkinShop_C::TextBlock_1' has a wrong offset!");
-static_assert(offsetof(USkinShop_C, TextBlock_3) == 0x0002F0, "Member 'USkinShop_C::TextBlock_3' has a wrong offset!");
-static_assert(offsetof(USkinShop_C, TextBlock_4) == 0x0002F8, "Member 'USkinShop_C::TextBlock_4' has a wrong offset!");
-static_assert(offsetof(USkinShop_C, ShopParent) == 0x000300, "Member 'USkinShop_C::ShopParent' has a wrong offset!");
-static_assert(offsetof(USkinShop_C, TimeLeft) == 0x000308, "Member 'USkinShop_C::TimeLeft' has a wrong offset!");
-static_assert(offsetof(USkinShop_C, RotationNumber) == 0x000310, "Member 'USkinShop_C::RotationNumber' has a wrong offset!");
-static_assert(offsetof(USkinShop_C, Item_info) == 0x000318, "Member 'USkinShop_C::Item_info' has a wrong offset!");
-static_assert(offsetof(USkinShop_C, As_Robber_Controller) == 0x000320, "Member 'USkinShop_C::As_Robber_Controller' has a wrong offset!");
-static_assert(offsetof(USkinShop_C, FeaturedItems) == 0x000328, "Member 'USkinShop_C::FeaturedItems' has a wrong offset!");
-static_assert(offsetof(USkinShop_C, SkinRotationStruct) == 0x000338, "Member 'USkinShop_C::SkinRotationStruct' has a wrong offset!");
-static_assert(offsetof(USkinShop_C, FocusedItemSalePrice) == 0x000348, "Member 'USkinShop_C::FocusedItemSalePrice' has a wrong offset!");
-static_assert(offsetof(USkinShop_C, Categories) == 0x000350, "Member 'USkinShop_C::Categories' has a wrong offset!");
-static_assert(offsetof(USkinShop_C, CurrentSkinRotation) == 0x000360, "Member 'USkinShop_C::CurrentSkinRotation' has a wrong offset!");
+DUMPER7_ASSERTS_USkinShop_C;
 
 }
 

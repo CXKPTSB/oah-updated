@@ -39,20 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MenuChat_C">();
+		BP_STATIC_CLASS_IMPL("MenuChat_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MenuChat_C")
 	}
 	static class UMenuChat_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMenuChat_C>();
 	}
 };
-static_assert(alignof(UMenuChat_C) == 0x000008, "Wrong alignment on UMenuChat_C");
-static_assert(sizeof(UMenuChat_C) == 0x000288, "Wrong size on UMenuChat_C");
-static_assert(offsetof(UMenuChat_C, UberGraphFrame) == 0x000260, "Member 'UMenuChat_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMenuChat_C, ChatMessages) == 0x000268, "Member 'UMenuChat_C::ChatMessages' has a wrong offset!");
-static_assert(offsetof(UMenuChat_C, EditableTextBox_269) == 0x000270, "Member 'UMenuChat_C::EditableTextBox_269' has a wrong offset!");
-static_assert(offsetof(UMenuChat_C, As_Robber_GI) == 0x000278, "Member 'UMenuChat_C::As_Robber_GI' has a wrong offset!");
-static_assert(offsetof(UMenuChat_C, As_Robber_Controller) == 0x000280, "Member 'UMenuChat_C::As_Robber_Controller' has a wrong offset!");
+DUMPER7_ASSERTS_UMenuChat_C;
 
 }
 

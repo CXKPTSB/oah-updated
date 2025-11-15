@@ -44,15 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MagicLeapControllerFunctionLibrary">();
+		STATIC_CLASS_IMPL("MagicLeapControllerFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MagicLeapControllerFunctionLibrary")
 	}
 	static class UMagicLeapControllerFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMagicLeapControllerFunctionLibrary>();
 	}
 };
-static_assert(alignof(UMagicLeapControllerFunctionLibrary) == 0x000008, "Wrong alignment on UMagicLeapControllerFunctionLibrary");
-static_assert(sizeof(UMagicLeapControllerFunctionLibrary) == 0x000028, "Wrong size on UMagicLeapControllerFunctionLibrary");
+DUMPER7_ASSERTS_UMagicLeapControllerFunctionLibrary;
 
 // Class MagicLeapController.MagicLeapTouchpadGesturesComponent
 // 0x0090 (0x0140 - 0x00B0)
@@ -60,26 +63,26 @@ class UMagicLeapTouchpadGesturesComponent final : public UActorComponent
 {
 public:
 	uint8                                         Pad_B0[0x8];                                       // 0x00B0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(const struct FMagicLeapTouchpadGesture& GestureData)> OnTouchpadGestureStart;                            // 0x00B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FMagicLeapTouchpadGesture& GestureData)> OnTouchpadGestureContinue;                         // 0x00C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FMagicLeapTouchpadGesture& GestureData)> OnTouchpadGestureEnd;                              // 0x00D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FMagicLeapTouchpadGesture& GestureData)> OnTouchpadGestureStart; // 0x00B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FMagicLeapTouchpadGesture& GestureData)> OnTouchpadGestureContinue; // 0x00C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FMagicLeapTouchpadGesture& GestureData)> OnTouchpadGestureEnd; // 0x00D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_E8[0x58];                                      // 0x00E8(0x0058)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MagicLeapTouchpadGesturesComponent">();
+		STATIC_CLASS_IMPL("MagicLeapTouchpadGesturesComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MagicLeapTouchpadGesturesComponent")
 	}
 	static class UMagicLeapTouchpadGesturesComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMagicLeapTouchpadGesturesComponent>();
 	}
 };
-static_assert(alignof(UMagicLeapTouchpadGesturesComponent) == 0x000008, "Wrong alignment on UMagicLeapTouchpadGesturesComponent");
-static_assert(sizeof(UMagicLeapTouchpadGesturesComponent) == 0x000140, "Wrong size on UMagicLeapTouchpadGesturesComponent");
-static_assert(offsetof(UMagicLeapTouchpadGesturesComponent, OnTouchpadGestureStart) == 0x0000B8, "Member 'UMagicLeapTouchpadGesturesComponent::OnTouchpadGestureStart' has a wrong offset!");
-static_assert(offsetof(UMagicLeapTouchpadGesturesComponent, OnTouchpadGestureContinue) == 0x0000C8, "Member 'UMagicLeapTouchpadGesturesComponent::OnTouchpadGestureContinue' has a wrong offset!");
-static_assert(offsetof(UMagicLeapTouchpadGesturesComponent, OnTouchpadGestureEnd) == 0x0000D8, "Member 'UMagicLeapTouchpadGesturesComponent::OnTouchpadGestureEnd' has a wrong offset!");
+DUMPER7_ASSERTS_UMagicLeapTouchpadGesturesComponent;
 
 }
 

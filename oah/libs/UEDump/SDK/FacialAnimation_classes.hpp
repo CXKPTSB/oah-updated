@@ -29,17 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AudioCurveSourceComponent">();
+		STATIC_CLASS_IMPL("AudioCurveSourceComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AudioCurveSourceComponent")
 	}
 	static class UAudioCurveSourceComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAudioCurveSourceComponent>();
 	}
 };
-static_assert(alignof(UAudioCurveSourceComponent) == 0x000010, "Wrong alignment on UAudioCurveSourceComponent");
-static_assert(sizeof(UAudioCurveSourceComponent) == 0x0008A0, "Wrong size on UAudioCurveSourceComponent");
-static_assert(offsetof(UAudioCurveSourceComponent, CurveSourceBindingName) == 0x000868, "Member 'UAudioCurveSourceComponent::CurveSourceBindingName' has a wrong offset!");
-static_assert(offsetof(UAudioCurveSourceComponent, CurveSyncOffset) == 0x000870, "Member 'UAudioCurveSourceComponent::CurveSyncOffset' has a wrong offset!");
+DUMPER7_ASSERTS_UAudioCurveSourceComponent;
 
 }
 

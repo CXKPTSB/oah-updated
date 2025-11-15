@@ -29,19 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MenuShelf_ConcreteBreaker_C">();
+		BP_STATIC_CLASS_IMPL("MenuShelf_ConcreteBreaker_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MenuShelf_ConcreteBreaker_C")
 	}
 	static class AMenuShelf_ConcreteBreaker_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMenuShelf_ConcreteBreaker_C>();
 	}
 };
-static_assert(alignof(AMenuShelf_ConcreteBreaker_C) == 0x000008, "Wrong alignment on AMenuShelf_ConcreteBreaker_C");
-static_assert(sizeof(AMenuShelf_ConcreteBreaker_C) == 0x000258, "Wrong size on AMenuShelf_ConcreteBreaker_C");
-static_assert(offsetof(AMenuShelf_ConcreteBreaker_C, Drill_Drill2) == 0x000238, "Member 'AMenuShelf_ConcreteBreaker_C::Drill_Drill2' has a wrong offset!");
-static_assert(offsetof(AMenuShelf_ConcreteBreaker_C, Drill_Drill1) == 0x000240, "Member 'AMenuShelf_ConcreteBreaker_C::Drill_Drill1' has a wrong offset!");
-static_assert(offsetof(AMenuShelf_ConcreteBreaker_C, Drill_Drill3) == 0x000248, "Member 'AMenuShelf_ConcreteBreaker_C::Drill_Drill3' has a wrong offset!");
-static_assert(offsetof(AMenuShelf_ConcreteBreaker_C, StaticMesh1) == 0x000250, "Member 'AMenuShelf_ConcreteBreaker_C::StaticMesh1' has a wrong offset!");
+DUMPER7_ASSERTS_AMenuShelf_ConcreteBreaker_C;
 
 }
 

@@ -59,38 +59,7 @@ public:
 	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x00C4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Dot_VectorVector_ReturnValue_1;           // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP) == 0x000008, "Wrong alignment on ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP");
-static_assert(sizeof(ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP) == 0x0000D8, "Wrong size on ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP");
-static_assert(offsetof(ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP, EntryPoint) == 0x000000, "Member 'ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP, Temp_struct_Variable) == 0x000004, "Member 'ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP, Temp_bool_Variable) == 0x000010, "Member 'ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP, Temp_float_Variable) == 0x000014, "Member 'ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP, Temp_float_Variable_1) == 0x000018, "Member 'ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP::Temp_float_Variable_1' has a wrong offset!");
-static_assert(offsetof(ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP, Temp_bool_Variable_1) == 0x00001C, "Member 'ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP, CallFunc_BreakRotator_Roll) == 0x000020, "Member 'ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP::CallFunc_BreakRotator_Roll' has a wrong offset!");
-static_assert(offsetof(ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP, CallFunc_BreakRotator_Pitch) == 0x000024, "Member 'ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP::CallFunc_BreakRotator_Pitch' has a wrong offset!");
-static_assert(offsetof(ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP, CallFunc_BreakRotator_Yaw) == 0x000028, "Member 'ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP::CallFunc_BreakRotator_Yaw' has a wrong offset!");
-static_assert(offsetof(ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00002C, "Member 'ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP, CallFunc_Add_FloatFloat_ReturnValue) == 0x000030, "Member 'ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP, CallFunc_ClampAngle_ReturnValue) == 0x000034, "Member 'ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP::CallFunc_ClampAngle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP, K2Node_Select_Default) == 0x000038, "Member 'ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP, CallFunc_MakeRotator_ReturnValue) == 0x00003C, "Member 'ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP, K2Node_Event_DeltaTimeX) == 0x000048, "Member 'ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP::K2Node_Event_DeltaTimeX' has a wrong offset!");
-static_assert(offsetof(ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP, CallFunc_TryGetPawnOwner_ReturnValue) == 0x000050, "Member 'ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP::CallFunc_TryGetPawnOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP, K2Node_DynamicCast_AsNPC_Police_Base) == 0x000058, "Member 'ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP::K2Node_DynamicCast_AsNPC_Police_Base' has a wrong offset!");
-static_assert(offsetof(ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP, K2Node_DynamicCast_bSuccess) == 0x000060, "Member 'ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP, CallFunc_GetVelocity_ReturnValue) == 0x000064, "Member 'ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP::CallFunc_GetVelocity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP, CallFunc_IsValid_ReturnValue) == 0x000070, "Member 'ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000074, "Member 'ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000080, "Member 'ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP, CallFunc_IsValid_ReturnValue_1) == 0x00008C, "Member 'ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000090, "Member 'ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP, CallFunc_FindLookAtRotation_ReturnValue) == 0x00009C, "Member 'ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP::CallFunc_FindLookAtRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP, K2Node_Select_Default_1) == 0x0000A8, "Member 'ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP, CallFunc_GetActorRightVector_ReturnValue) == 0x0000B4, "Member 'ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP::CallFunc_GetActorRightVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP, CallFunc_Dot_VectorVector_ReturnValue) == 0x0000C0, "Member 'ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP::CallFunc_Dot_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP, CallFunc_GetActorForwardVector_ReturnValue) == 0x0000C4, "Member 'ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP, CallFunc_Dot_VectorVector_ReturnValue_1) == 0x0000D0, "Member 'ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP::CallFunc_Dot_VectorVector_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_ShieldAnimBP_C_ExecuteUbergraph_ShieldAnimBP;
 
 // Function ShieldAnimBP.ShieldAnimBP_C.BlueprintUpdateAnimation
 // 0x0004 (0x0004 - 0x0000)
@@ -99,9 +68,7 @@ struct ShieldAnimBP_C_BlueprintUpdateAnimation final
 public:
 	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ShieldAnimBP_C_BlueprintUpdateAnimation) == 0x000004, "Wrong alignment on ShieldAnimBP_C_BlueprintUpdateAnimation");
-static_assert(sizeof(ShieldAnimBP_C_BlueprintUpdateAnimation) == 0x000004, "Wrong size on ShieldAnimBP_C_BlueprintUpdateAnimation");
-static_assert(offsetof(ShieldAnimBP_C_BlueprintUpdateAnimation, DeltaTimeX) == 0x000000, "Member 'ShieldAnimBP_C_BlueprintUpdateAnimation::DeltaTimeX' has a wrong offset!");
+DUMPER7_ASSERTS_ShieldAnimBP_C_BlueprintUpdateAnimation;
 
 // Function ShieldAnimBP.ShieldAnimBP_C.AnimGraph
 // 0x0010 (0x0010 - 0x0000)
@@ -110,9 +77,7 @@ struct ShieldAnimBP_C_AnimGraph final
 public:
 	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(ShieldAnimBP_C_AnimGraph) == 0x000008, "Wrong alignment on ShieldAnimBP_C_AnimGraph");
-static_assert(sizeof(ShieldAnimBP_C_AnimGraph) == 0x000010, "Wrong size on ShieldAnimBP_C_AnimGraph");
-static_assert(offsetof(ShieldAnimBP_C_AnimGraph, AnimGraph_0) == 0x000000, "Member 'ShieldAnimBP_C_AnimGraph::AnimGraph_0' has a wrong offset!");
+DUMPER7_ASSERTS_ShieldAnimBP_C_AnimGraph;
 
 }
 

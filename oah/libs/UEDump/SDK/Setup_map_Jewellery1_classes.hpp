@@ -23,15 +23,18 @@ class ASetup_map_Jewellery1_C final : public ASetup_map_base_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Setup_map_Jewellery1_C">();
+		BP_STATIC_CLASS_IMPL("Setup_map_Jewellery1_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Setup_map_Jewellery1_C")
 	}
 	static class ASetup_map_Jewellery1_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASetup_map_Jewellery1_C>();
 	}
 };
-static_assert(alignof(ASetup_map_Jewellery1_C) == 0x000008, "Wrong alignment on ASetup_map_Jewellery1_C");
-static_assert(sizeof(ASetup_map_Jewellery1_C) == 0x0002C0, "Wrong size on ASetup_map_Jewellery1_C");
+DUMPER7_ASSERTS_ASetup_map_Jewellery1_C;
 
 }
 

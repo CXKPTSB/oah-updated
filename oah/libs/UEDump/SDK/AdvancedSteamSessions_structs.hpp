@@ -184,10 +184,7 @@ public:
 	bool                                          bIsOwner;                                          // 0x0020(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FBPSteamGroupOfficer) == 0x000008, "Wrong alignment on FBPSteamGroupOfficer");
-static_assert(sizeof(FBPSteamGroupOfficer) == 0x000028, "Wrong size on FBPSteamGroupOfficer");
-static_assert(offsetof(FBPSteamGroupOfficer, OfficerUniqueNetID) == 0x000000, "Member 'FBPSteamGroupOfficer::OfficerUniqueNetID' has a wrong offset!");
-static_assert(offsetof(FBPSteamGroupOfficer, bIsOwner) == 0x000020, "Member 'FBPSteamGroupOfficer::bIsOwner' has a wrong offset!");
+DUMPER7_ASSERTS_FBPSteamGroupOfficer;
 
 // ScriptStruct AdvancedSteamSessions.BPSteamWorkshopItemDetails
 // 0x0060 (0x0060 - 0x0000)
@@ -212,22 +209,7 @@ public:
 	uint8                                         Pad_4F[0x1];                                       // 0x004F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CreatorSteamID;                                    // 0x0050(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FBPSteamWorkshopItemDetails) == 0x000008, "Wrong alignment on FBPSteamWorkshopItemDetails");
-static_assert(sizeof(FBPSteamWorkshopItemDetails) == 0x000060, "Wrong size on FBPSteamWorkshopItemDetails");
-static_assert(offsetof(FBPSteamWorkshopItemDetails, ResultOfRequest) == 0x000000, "Member 'FBPSteamWorkshopItemDetails::ResultOfRequest' has a wrong offset!");
-static_assert(offsetof(FBPSteamWorkshopItemDetails, FileType) == 0x000001, "Member 'FBPSteamWorkshopItemDetails::FileType' has a wrong offset!");
-static_assert(offsetof(FBPSteamWorkshopItemDetails, CreatorAppID) == 0x000004, "Member 'FBPSteamWorkshopItemDetails::CreatorAppID' has a wrong offset!");
-static_assert(offsetof(FBPSteamWorkshopItemDetails, ConsumerAppID) == 0x000008, "Member 'FBPSteamWorkshopItemDetails::ConsumerAppID' has a wrong offset!");
-static_assert(offsetof(FBPSteamWorkshopItemDetails, Title) == 0x000010, "Member 'FBPSteamWorkshopItemDetails::Title' has a wrong offset!");
-static_assert(offsetof(FBPSteamWorkshopItemDetails, Description) == 0x000020, "Member 'FBPSteamWorkshopItemDetails::Description' has a wrong offset!");
-static_assert(offsetof(FBPSteamWorkshopItemDetails, ItemUrl) == 0x000030, "Member 'FBPSteamWorkshopItemDetails::ItemUrl' has a wrong offset!");
-static_assert(offsetof(FBPSteamWorkshopItemDetails, VotesUp) == 0x000040, "Member 'FBPSteamWorkshopItemDetails::VotesUp' has a wrong offset!");
-static_assert(offsetof(FBPSteamWorkshopItemDetails, VotesDown) == 0x000044, "Member 'FBPSteamWorkshopItemDetails::VotesDown' has a wrong offset!");
-static_assert(offsetof(FBPSteamWorkshopItemDetails, CalculatedScore) == 0x000048, "Member 'FBPSteamWorkshopItemDetails::CalculatedScore' has a wrong offset!");
-static_assert(offsetof(FBPSteamWorkshopItemDetails, bBanned) == 0x00004C, "Member 'FBPSteamWorkshopItemDetails::bBanned' has a wrong offset!");
-static_assert(offsetof(FBPSteamWorkshopItemDetails, bAcceptedForUse) == 0x00004D, "Member 'FBPSteamWorkshopItemDetails::bAcceptedForUse' has a wrong offset!");
-static_assert(offsetof(FBPSteamWorkshopItemDetails, bTagsTruncated) == 0x00004E, "Member 'FBPSteamWorkshopItemDetails::bTagsTruncated' has a wrong offset!");
-static_assert(offsetof(FBPSteamWorkshopItemDetails, CreatorSteamID) == 0x000050, "Member 'FBPSteamWorkshopItemDetails::CreatorSteamID' has a wrong offset!");
+DUMPER7_ASSERTS_FBPSteamWorkshopItemDetails;
 
 // ScriptStruct AdvancedSteamSessions.BPSteamGroupInfo
 // 0x0050 (0x0050 - 0x0000)
@@ -242,14 +224,7 @@ public:
 	int32                                         numChatting;                                       // 0x0048(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FBPSteamGroupInfo) == 0x000008, "Wrong alignment on FBPSteamGroupInfo");
-static_assert(sizeof(FBPSteamGroupInfo) == 0x000050, "Wrong size on FBPSteamGroupInfo");
-static_assert(offsetof(FBPSteamGroupInfo, GroupID) == 0x000000, "Member 'FBPSteamGroupInfo::GroupID' has a wrong offset!");
-static_assert(offsetof(FBPSteamGroupInfo, GroupName) == 0x000020, "Member 'FBPSteamGroupInfo::GroupName' has a wrong offset!");
-static_assert(offsetof(FBPSteamGroupInfo, GroupTag) == 0x000030, "Member 'FBPSteamGroupInfo::GroupTag' has a wrong offset!");
-static_assert(offsetof(FBPSteamGroupInfo, numOnline) == 0x000040, "Member 'FBPSteamGroupInfo::numOnline' has a wrong offset!");
-static_assert(offsetof(FBPSteamGroupInfo, numInGame) == 0x000044, "Member 'FBPSteamGroupInfo::numInGame' has a wrong offset!");
-static_assert(offsetof(FBPSteamGroupInfo, numChatting) == 0x000048, "Member 'FBPSteamGroupInfo::numChatting' has a wrong offset!");
+DUMPER7_ASSERTS_FBPSteamGroupInfo;
 
 // ScriptStruct AdvancedSteamSessions.BPSteamWorkshopID
 // 0x0008 (0x0008 - 0x0000)
@@ -258,8 +233,7 @@ struct alignas(0x08) FBPSteamWorkshopID final
 public:
 	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FBPSteamWorkshopID) == 0x000008, "Wrong alignment on FBPSteamWorkshopID");
-static_assert(sizeof(FBPSteamWorkshopID) == 0x000008, "Wrong size on FBPSteamWorkshopID");
+DUMPER7_ASSERTS_FBPSteamWorkshopID;
 
 }
 

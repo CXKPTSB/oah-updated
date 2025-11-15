@@ -25,7 +25,7 @@ class UAlertComponent_C final : public UActorComponent
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x00B0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	TMulticastInlineDelegate<void()>              OnAlarmtriggered;                                  // 0x00B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void(const struct FVector& Location)> NearbyNoise;                                       // 0x00C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(const struct FVector& Location)> NearbyNoise;                      // 0x00C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void ExecuteUbergraph_AlertComponent(int32 EntryPoint);
@@ -40,18 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AlertComponent_C">();
+		BP_STATIC_CLASS_IMPL("AlertComponent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AlertComponent_C")
 	}
 	static class UAlertComponent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAlertComponent_C>();
 	}
 };
-static_assert(alignof(UAlertComponent_C) == 0x000008, "Wrong alignment on UAlertComponent_C");
-static_assert(sizeof(UAlertComponent_C) == 0x0000D8, "Wrong size on UAlertComponent_C");
-static_assert(offsetof(UAlertComponent_C, UberGraphFrame) == 0x0000B0, "Member 'UAlertComponent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAlertComponent_C, OnAlarmtriggered) == 0x0000B8, "Member 'UAlertComponent_C::OnAlarmtriggered' has a wrong offset!");
-static_assert(offsetof(UAlertComponent_C, NearbyNoise) == 0x0000C8, "Member 'UAlertComponent_C::NearbyNoise' has a wrong offset!");
+DUMPER7_ASSERTS_UAlertComponent_C;
 
 }
 

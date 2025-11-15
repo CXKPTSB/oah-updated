@@ -40,7 +40,7 @@ void AGuardmanager_C::ExecuteUbergraph_Guardmanager(int32 EntryPoint)
 // Function Guardmanager.Guardmanager_C.SpawnAmmo
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector                          Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   Amount                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void AGuardmanager_C::SpawnAmmo(const struct FVector& Location, int32 Amount)

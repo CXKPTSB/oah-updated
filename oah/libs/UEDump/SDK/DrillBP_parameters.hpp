@@ -26,11 +26,7 @@ public:
 	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0010(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(DrillBP_C_ExecuteUbergraph_DrillBP) == 0x000008, "Wrong alignment on DrillBP_C_ExecuteUbergraph_DrillBP");
-static_assert(sizeof(DrillBP_C_ExecuteUbergraph_DrillBP) == 0x000020, "Wrong size on DrillBP_C_ExecuteUbergraph_DrillBP");
-static_assert(offsetof(DrillBP_C_ExecuteUbergraph_DrillBP, EntryPoint) == 0x000000, "Member 'DrillBP_C_ExecuteUbergraph_DrillBP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(DrillBP_C_ExecuteUbergraph_DrillBP, CallFunc_GetOwner_ReturnValue) == 0x000008, "Member 'DrillBP_C_ExecuteUbergraph_DrillBP::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DrillBP_C_ExecuteUbergraph_DrillBP, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000010, "Member 'DrillBP_C_ExecuteUbergraph_DrillBP::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_DrillBP_C_ExecuteUbergraph_DrillBP;
 
 }
 

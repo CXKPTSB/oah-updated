@@ -28,18 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Attachment_Barrel_base_C">();
+		BP_STATIC_CLASS_IMPL("Attachment_Barrel_base_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Attachment_Barrel_base_C")
 	}
 	static class AAttachment_Barrel_base_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAttachment_Barrel_base_C>();
 	}
 };
-static_assert(alignof(AAttachment_Barrel_base_C) == 0x000008, "Wrong alignment on AAttachment_Barrel_base_C");
-static_assert(sizeof(AAttachment_Barrel_base_C) == 0x000260, "Wrong size on AAttachment_Barrel_base_C");
-static_assert(offsetof(AAttachment_Barrel_base_C, SoundReplacement) == 0x000250, "Member 'AAttachment_Barrel_base_C::SoundReplacement' has a wrong offset!");
-static_assert(offsetof(AAttachment_Barrel_base_C, HideMuzzleflash_) == 0x000258, "Member 'AAttachment_Barrel_base_C::HideMuzzleflash_' has a wrong offset!");
-static_assert(offsetof(AAttachment_Barrel_base_C, Silence_) == 0x000259, "Member 'AAttachment_Barrel_base_C::Silence_' has a wrong offset!");
+DUMPER7_ASSERTS_AAttachment_Barrel_base_C;
 
 }
 

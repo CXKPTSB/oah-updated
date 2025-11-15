@@ -26,15 +26,18 @@ class ULiveLinkMagicLeapHandTrackingSourceFactory final : public ULiveLinkSource
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LiveLinkMagicLeapHandTrackingSourceFactory">();
+		STATIC_CLASS_IMPL("LiveLinkMagicLeapHandTrackingSourceFactory")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LiveLinkMagicLeapHandTrackingSourceFactory")
 	}
 	static class ULiveLinkMagicLeapHandTrackingSourceFactory* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULiveLinkMagicLeapHandTrackingSourceFactory>();
 	}
 };
-static_assert(alignof(ULiveLinkMagicLeapHandTrackingSourceFactory) == 0x000008, "Wrong alignment on ULiveLinkMagicLeapHandTrackingSourceFactory");
-static_assert(sizeof(ULiveLinkMagicLeapHandTrackingSourceFactory) == 0x000028, "Wrong size on ULiveLinkMagicLeapHandTrackingSourceFactory");
+DUMPER7_ASSERTS_ULiveLinkMagicLeapHandTrackingSourceFactory;
 
 // Class MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -61,15 +64,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MagicLeapHandTrackingFunctionLibrary">();
+		STATIC_CLASS_IMPL("MagicLeapHandTrackingFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MagicLeapHandTrackingFunctionLibrary")
 	}
 	static class UMagicLeapHandTrackingFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMagicLeapHandTrackingFunctionLibrary>();
 	}
 };
-static_assert(alignof(UMagicLeapHandTrackingFunctionLibrary) == 0x000008, "Wrong alignment on UMagicLeapHandTrackingFunctionLibrary");
-static_assert(sizeof(UMagicLeapHandTrackingFunctionLibrary) == 0x000028, "Wrong size on UMagicLeapHandTrackingFunctionLibrary");
+DUMPER7_ASSERTS_UMagicLeapHandTrackingFunctionLibrary;
 
 }
 

@@ -60,41 +60,7 @@ public:
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ANPC_ammopack_C*                        CallFunc_FinishSpawningActor_ReturnValue;          // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Guardmanager_C_ExecuteUbergraph_Guardmanager) == 0x000010, "Wrong alignment on Guardmanager_C_ExecuteUbergraph_Guardmanager");
-static_assert(sizeof(Guardmanager_C_ExecuteUbergraph_Guardmanager) == 0x0001A0, "Wrong size on Guardmanager_C_ExecuteUbergraph_Guardmanager");
-static_assert(offsetof(Guardmanager_C_ExecuteUbergraph_Guardmanager, EntryPoint) == 0x000000, "Member 'Guardmanager_C_ExecuteUbergraph_Guardmanager::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Guardmanager_C_ExecuteUbergraph_Guardmanager, CallFunc_RandomFloatInRange_ReturnValue) == 0x000004, "Member 'Guardmanager_C_ExecuteUbergraph_Guardmanager::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Guardmanager_C_ExecuteUbergraph_Guardmanager, Temp_object_Variable) == 0x000008, "Member 'Guardmanager_C_ExecuteUbergraph_Guardmanager::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(Guardmanager_C_ExecuteUbergraph_Guardmanager, CallFunc_MakeRotator_ReturnValue) == 0x000018, "Member 'Guardmanager_C_ExecuteUbergraph_Guardmanager::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Guardmanager_C_ExecuteUbergraph_Guardmanager, K2Node_Event_Picked_up_) == 0x000024, "Member 'Guardmanager_C_ExecuteUbergraph_Guardmanager::K2Node_Event_Picked_up_' has a wrong offset!");
-static_assert(offsetof(Guardmanager_C_ExecuteUbergraph_Guardmanager, K2Node_Event_location) == 0x000028, "Member 'Guardmanager_C_ExecuteUbergraph_Guardmanager::K2Node_Event_location' has a wrong offset!");
-static_assert(offsetof(Guardmanager_C_ExecuteUbergraph_Guardmanager, K2Node_Event_Amount) == 0x000034, "Member 'Guardmanager_C_ExecuteUbergraph_Guardmanager::K2Node_Event_Amount' has a wrong offset!");
-static_assert(offsetof(Guardmanager_C_ExecuteUbergraph_Guardmanager, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000038, "Member 'Guardmanager_C_ExecuteUbergraph_Guardmanager::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Guardmanager_C_ExecuteUbergraph_Guardmanager, CallFunc_Multiply_IntFloat_ReturnValue) == 0x000044, "Member 'Guardmanager_C_ExecuteUbergraph_Guardmanager::CallFunc_Multiply_IntFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Guardmanager_C_ExecuteUbergraph_Guardmanager, CallFunc_LineTraceSingle_OutHit) == 0x000048, "Member 'Guardmanager_C_ExecuteUbergraph_Guardmanager::CallFunc_LineTraceSingle_OutHit' has a wrong offset!");
-static_assert(offsetof(Guardmanager_C_ExecuteUbergraph_Guardmanager, CallFunc_LineTraceSingle_ReturnValue) == 0x0000D0, "Member 'Guardmanager_C_ExecuteUbergraph_Guardmanager::CallFunc_LineTraceSingle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Guardmanager_C_ExecuteUbergraph_Guardmanager, CallFunc_Round_ReturnValue) == 0x0000D4, "Member 'Guardmanager_C_ExecuteUbergraph_Guardmanager::CallFunc_Round_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Guardmanager_C_ExecuteUbergraph_Guardmanager, CallFunc_RandomIntegerInRange_ReturnValue) == 0x0000D8, "Member 'Guardmanager_C_ExecuteUbergraph_Guardmanager::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Guardmanager_C_ExecuteUbergraph_Guardmanager, CallFunc_BreakHitResult_bBlockingHit) == 0x0000DC, "Member 'Guardmanager_C_ExecuteUbergraph_Guardmanager::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(Guardmanager_C_ExecuteUbergraph_Guardmanager, CallFunc_BreakHitResult_bInitialOverlap) == 0x0000DD, "Member 'Guardmanager_C_ExecuteUbergraph_Guardmanager::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(Guardmanager_C_ExecuteUbergraph_Guardmanager, CallFunc_BreakHitResult_Time) == 0x0000E0, "Member 'Guardmanager_C_ExecuteUbergraph_Guardmanager::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(Guardmanager_C_ExecuteUbergraph_Guardmanager, CallFunc_BreakHitResult_Distance) == 0x0000E4, "Member 'Guardmanager_C_ExecuteUbergraph_Guardmanager::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(Guardmanager_C_ExecuteUbergraph_Guardmanager, CallFunc_BreakHitResult_Location) == 0x0000E8, "Member 'Guardmanager_C_ExecuteUbergraph_Guardmanager::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(Guardmanager_C_ExecuteUbergraph_Guardmanager, CallFunc_BreakHitResult_ImpactPoint) == 0x0000F4, "Member 'Guardmanager_C_ExecuteUbergraph_Guardmanager::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(Guardmanager_C_ExecuteUbergraph_Guardmanager, CallFunc_BreakHitResult_Normal) == 0x000100, "Member 'Guardmanager_C_ExecuteUbergraph_Guardmanager::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(Guardmanager_C_ExecuteUbergraph_Guardmanager, CallFunc_BreakHitResult_ImpactNormal) == 0x00010C, "Member 'Guardmanager_C_ExecuteUbergraph_Guardmanager::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(Guardmanager_C_ExecuteUbergraph_Guardmanager, CallFunc_BreakHitResult_PhysMat) == 0x000118, "Member 'Guardmanager_C_ExecuteUbergraph_Guardmanager::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(Guardmanager_C_ExecuteUbergraph_Guardmanager, CallFunc_BreakHitResult_HitActor) == 0x000120, "Member 'Guardmanager_C_ExecuteUbergraph_Guardmanager::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(Guardmanager_C_ExecuteUbergraph_Guardmanager, CallFunc_BreakHitResult_HitComponent) == 0x000128, "Member 'Guardmanager_C_ExecuteUbergraph_Guardmanager::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(Guardmanager_C_ExecuteUbergraph_Guardmanager, CallFunc_BreakHitResult_HitBoneName) == 0x000130, "Member 'Guardmanager_C_ExecuteUbergraph_Guardmanager::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(Guardmanager_C_ExecuteUbergraph_Guardmanager, CallFunc_BreakHitResult_HitItem) == 0x000138, "Member 'Guardmanager_C_ExecuteUbergraph_Guardmanager::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(Guardmanager_C_ExecuteUbergraph_Guardmanager, CallFunc_BreakHitResult_ElementIndex) == 0x00013C, "Member 'Guardmanager_C_ExecuteUbergraph_Guardmanager::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
-static_assert(offsetof(Guardmanager_C_ExecuteUbergraph_Guardmanager, CallFunc_BreakHitResult_FaceIndex) == 0x000140, "Member 'Guardmanager_C_ExecuteUbergraph_Guardmanager::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(Guardmanager_C_ExecuteUbergraph_Guardmanager, CallFunc_BreakHitResult_TraceStart) == 0x000144, "Member 'Guardmanager_C_ExecuteUbergraph_Guardmanager::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(Guardmanager_C_ExecuteUbergraph_Guardmanager, CallFunc_BreakHitResult_TraceEnd) == 0x000150, "Member 'Guardmanager_C_ExecuteUbergraph_Guardmanager::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(Guardmanager_C_ExecuteUbergraph_Guardmanager, CallFunc_MakeTransform_ReturnValue) == 0x000160, "Member 'Guardmanager_C_ExecuteUbergraph_Guardmanager::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Guardmanager_C_ExecuteUbergraph_Guardmanager, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000190, "Member 'Guardmanager_C_ExecuteUbergraph_Guardmanager::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Guardmanager_C_ExecuteUbergraph_Guardmanager, CallFunc_FinishSpawningActor_ReturnValue) == 0x000198, "Member 'Guardmanager_C_ExecuteUbergraph_Guardmanager::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_Guardmanager_C_ExecuteUbergraph_Guardmanager;
 
 // Function Guardmanager.Guardmanager_C.SpawnAmmo
 // 0x0010 (0x0010 - 0x0000)
@@ -104,10 +70,7 @@ public:
 	struct FVector                                Location;                                          // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Amount;                                            // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Guardmanager_C_SpawnAmmo) == 0x000004, "Wrong alignment on Guardmanager_C_SpawnAmmo");
-static_assert(sizeof(Guardmanager_C_SpawnAmmo) == 0x000010, "Wrong size on Guardmanager_C_SpawnAmmo");
-static_assert(offsetof(Guardmanager_C_SpawnAmmo, Location) == 0x000000, "Member 'Guardmanager_C_SpawnAmmo::Location' has a wrong offset!");
-static_assert(offsetof(Guardmanager_C_SpawnAmmo, Amount) == 0x00000C, "Member 'Guardmanager_C_SpawnAmmo::Amount' has a wrong offset!");
+DUMPER7_ASSERTS_Guardmanager_C_SpawnAmmo;
 
 // Function Guardmanager.Guardmanager_C.RagdollPickedUp
 // 0x0001 (0x0001 - 0x0000)
@@ -116,9 +79,7 @@ struct Guardmanager_C_RagdollPickedUp final
 public:
 	bool                                          Picked_up_;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Guardmanager_C_RagdollPickedUp) == 0x000001, "Wrong alignment on Guardmanager_C_RagdollPickedUp");
-static_assert(sizeof(Guardmanager_C_RagdollPickedUp) == 0x000001, "Wrong size on Guardmanager_C_RagdollPickedUp");
-static_assert(offsetof(Guardmanager_C_RagdollPickedUp, Picked_up_) == 0x000000, "Member 'Guardmanager_C_RagdollPickedUp::Picked_up_' has a wrong offset!");
+DUMPER7_ASSERTS_Guardmanager_C_RagdollPickedUp;
 
 // Function Guardmanager.Guardmanager_C.DestroyOldestBody
 // 0x0028 (0x0028 - 0x0000)
@@ -133,14 +94,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Guardmanager_C_DestroyOldestBody) == 0x000008, "Wrong alignment on Guardmanager_C_DestroyOldestBody");
-static_assert(sizeof(Guardmanager_C_DestroyOldestBody) == 0x000028, "Wrong size on Guardmanager_C_DestroyOldestBody");
-static_assert(offsetof(Guardmanager_C_DestroyOldestBody, NPC) == 0x000000, "Member 'Guardmanager_C_DestroyOldestBody::NPC' has a wrong offset!");
-static_assert(offsetof(Guardmanager_C_DestroyOldestBody, MaxBodies) == 0x000008, "Member 'Guardmanager_C_DestroyOldestBody::MaxBodies' has a wrong offset!");
-static_assert(offsetof(Guardmanager_C_DestroyOldestBody, CallFunc_Array_Get_Item) == 0x000010, "Member 'Guardmanager_C_DestroyOldestBody::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Guardmanager_C_DestroyOldestBody, CallFunc_Array_Add_ReturnValue) == 0x000018, "Member 'Guardmanager_C_DestroyOldestBody::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Guardmanager_C_DestroyOldestBody, CallFunc_Array_Length_ReturnValue) == 0x00001C, "Member 'Guardmanager_C_DestroyOldestBody::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Guardmanager_C_DestroyOldestBody, CallFunc_Greater_IntInt_ReturnValue) == 0x000020, "Member 'Guardmanager_C_DestroyOldestBody::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_Guardmanager_C_DestroyOldestBody;
 
 }
 

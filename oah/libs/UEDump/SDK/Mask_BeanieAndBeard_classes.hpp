@@ -23,15 +23,18 @@ class AMask_BeanieAndBeard_C final : public AMask_base_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Mask_BeanieAndBeard_C">();
+		BP_STATIC_CLASS_IMPL("Mask_BeanieAndBeard_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Mask_BeanieAndBeard_C")
 	}
 	static class AMask_BeanieAndBeard_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMask_BeanieAndBeard_C>();
 	}
 };
-static_assert(alignof(AMask_BeanieAndBeard_C) == 0x000008, "Wrong alignment on AMask_BeanieAndBeard_C");
-static_assert(sizeof(AMask_BeanieAndBeard_C) == 0x000230, "Wrong size on AMask_BeanieAndBeard_C");
+DUMPER7_ASSERTS_AMask_BeanieAndBeard_C;
 
 }
 

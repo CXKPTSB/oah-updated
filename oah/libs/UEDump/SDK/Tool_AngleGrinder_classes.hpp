@@ -46,28 +46,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Tool_AngleGrinder_C">();
+		BP_STATIC_CLASS_IMPL("Tool_AngleGrinder_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Tool_AngleGrinder_C")
 	}
 	static class ATool_AngleGrinder_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ATool_AngleGrinder_C>();
 	}
 };
-static_assert(alignof(ATool_AngleGrinder_C) == 0x000008, "Wrong alignment on ATool_AngleGrinder_C");
-static_assert(sizeof(ATool_AngleGrinder_C) == 0x0002C0, "Wrong size on ATool_AngleGrinder_C");
-static_assert(offsetof(ATool_AngleGrinder_C, UberGraphFrame_Tool_AngleGrinder_C) == 0x000258, "Member 'ATool_AngleGrinder_C::UberGraphFrame_Tool_AngleGrinder_C' has a wrong offset!");
-static_assert(offsetof(ATool_AngleGrinder_C, HighlightInRangeComponent) == 0x000260, "Member 'ATool_AngleGrinder_C::HighlightInRangeComponent' has a wrong offset!");
-static_assert(offsetof(ATool_AngleGrinder_C, DrillSound) == 0x000268, "Member 'ATool_AngleGrinder_C::DrillSound' has a wrong offset!");
-static_assert(offsetof(ATool_AngleGrinder_C, Drill_Drill) == 0x000270, "Member 'ATool_AngleGrinder_C::Drill_Drill' has a wrong offset!");
-static_assert(offsetof(ATool_AngleGrinder_C, Drill_Drill3) == 0x000278, "Member 'ATool_AngleGrinder_C::Drill_Drill3' has a wrong offset!");
-static_assert(offsetof(ATool_AngleGrinder_C, Drill_Drill2) == 0x000280, "Member 'ATool_AngleGrinder_C::Drill_Drill2' has a wrong offset!");
-static_assert(offsetof(ATool_AngleGrinder_C, Drill_Drill1) == 0x000288, "Member 'ATool_AngleGrinder_C::Drill_Drill1' has a wrong offset!");
-static_assert(offsetof(ATool_AngleGrinder_C, Arrow) == 0x000290, "Member 'ATool_AngleGrinder_C::Arrow' has a wrong offset!");
-static_assert(offsetof(ATool_AngleGrinder_C, ParticleSystem) == 0x000298, "Member 'ATool_AngleGrinder_C::ParticleSystem' has a wrong offset!");
-static_assert(offsetof(ATool_AngleGrinder_C, AlertComponent) == 0x0002A0, "Member 'ATool_AngleGrinder_C::AlertComponent' has a wrong offset!");
-static_assert(offsetof(ATool_AngleGrinder_C, HighlightWhenHolding) == 0x0002A8, "Member 'ATool_AngleGrinder_C::HighlightWhenHolding' has a wrong offset!");
-static_assert(offsetof(ATool_AngleGrinder_C, SusItemComponent) == 0x0002B0, "Member 'ATool_AngleGrinder_C::SusItemComponent' has a wrong offset!");
-static_assert(offsetof(ATool_AngleGrinder_C, ToolComponent) == 0x0002B8, "Member 'ATool_AngleGrinder_C::ToolComponent' has a wrong offset!");
+DUMPER7_ASSERTS_ATool_AngleGrinder_C;
 
 }
 

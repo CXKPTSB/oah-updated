@@ -32,8 +32,8 @@ public:
 	uint8                                         Pad_21D[0x3];                                      // 0x021D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         SimilarityThreshold;                               // 0x0220(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_224[0x4];                                      // 0x0224(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(const bool bSuccess, const TArray<struct FMagicLeapPlaneResult>& Planes, const TArray<struct FMagicLeapPlaneBoundaries>& Polygons)> OnPlanesQueryResult;                               // 0x0228(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate)
-	TMulticastInlineDelegate<void(const bool bSuccess, const struct FGuid& QueryHandle, const EMagicLeapPlaneQueryType QueryType, const TArray<struct FMagicLeapPlaneResult>& NewPlanes, const TArray<struct FGuid>& RemovedPlaneIDs, const TArray<struct FMagicLeapPlaneBoundaries>& NewPolygons, const TArray<struct FGuid>& RemovedPolygonIDs)> OnPersistentPlanesQueryResult;                     // 0x0238(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate)
+	TMulticastInlineDelegate<void(const bool bSuccess, const TArray<struct FMagicLeapPlaneResult>& Planes, const TArray<struct FMagicLeapPlaneBoundaries>& Polygons)> OnPlanesQueryResult; // 0x0228(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate)
+	TMulticastInlineDelegate<void(const bool bSuccess, const struct FGuid& QueryHandle, const EMagicLeapPlaneQueryType QueryType, const TArray<struct FMagicLeapPlaneResult>& NewPlanes, const TArray<struct FGuid>& RemovedPlaneIDs, const TArray<struct FMagicLeapPlaneBoundaries>& NewPolygons, const TArray<struct FGuid>& RemovedPolygonIDs)> OnPersistentPlanesQueryResult; // 0x0238(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_248[0x18];                                     // 0x0248(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -42,24 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MagicLeapPlanesComponent">();
+		STATIC_CLASS_IMPL("MagicLeapPlanesComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MagicLeapPlanesComponent")
 	}
 	static class UMagicLeapPlanesComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMagicLeapPlanesComponent>();
 	}
 };
-static_assert(alignof(UMagicLeapPlanesComponent) == 0x000010, "Wrong alignment on UMagicLeapPlanesComponent");
-static_assert(sizeof(UMagicLeapPlanesComponent) == 0x000260, "Wrong size on UMagicLeapPlanesComponent");
-static_assert(offsetof(UMagicLeapPlanesComponent, QueryFlags) == 0x0001F8, "Member 'UMagicLeapPlanesComponent::QueryFlags' has a wrong offset!");
-static_assert(offsetof(UMagicLeapPlanesComponent, SearchVolume) == 0x000208, "Member 'UMagicLeapPlanesComponent::SearchVolume' has a wrong offset!");
-static_assert(offsetof(UMagicLeapPlanesComponent, MaxResults) == 0x000210, "Member 'UMagicLeapPlanesComponent::MaxResults' has a wrong offset!");
-static_assert(offsetof(UMagicLeapPlanesComponent, MinHolePerimeter) == 0x000214, "Member 'UMagicLeapPlanesComponent::MinHolePerimeter' has a wrong offset!");
-static_assert(offsetof(UMagicLeapPlanesComponent, MinPlaneArea) == 0x000218, "Member 'UMagicLeapPlanesComponent::MinPlaneArea' has a wrong offset!");
-static_assert(offsetof(UMagicLeapPlanesComponent, QueryType) == 0x00021C, "Member 'UMagicLeapPlanesComponent::QueryType' has a wrong offset!");
-static_assert(offsetof(UMagicLeapPlanesComponent, SimilarityThreshold) == 0x000220, "Member 'UMagicLeapPlanesComponent::SimilarityThreshold' has a wrong offset!");
-static_assert(offsetof(UMagicLeapPlanesComponent, OnPlanesQueryResult) == 0x000228, "Member 'UMagicLeapPlanesComponent::OnPlanesQueryResult' has a wrong offset!");
-static_assert(offsetof(UMagicLeapPlanesComponent, OnPersistentPlanesQueryResult) == 0x000238, "Member 'UMagicLeapPlanesComponent::OnPersistentPlanesQueryResult' has a wrong offset!");
+DUMPER7_ASSERTS_UMagicLeapPlanesComponent;
 
 // Class MagicLeapPlanes.MagicLeapPlanesFunctionLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -80,15 +74,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MagicLeapPlanesFunctionLibrary">();
+		STATIC_CLASS_IMPL("MagicLeapPlanesFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MagicLeapPlanesFunctionLibrary")
 	}
 	static class UMagicLeapPlanesFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMagicLeapPlanesFunctionLibrary>();
 	}
 };
-static_assert(alignof(UMagicLeapPlanesFunctionLibrary) == 0x000008, "Wrong alignment on UMagicLeapPlanesFunctionLibrary");
-static_assert(sizeof(UMagicLeapPlanesFunctionLibrary) == 0x000028, "Wrong size on UMagicLeapPlanesFunctionLibrary");
+DUMPER7_ASSERTS_UMagicLeapPlanesFunctionLibrary;
 
 }
 

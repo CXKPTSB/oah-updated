@@ -46,41 +46,25 @@ public:
 	class UCurveLinearColor*                      Cloud_color_curve;                                 // 0x02B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void RefreshMaterial();
-	void UpdateSunDirection();
 	void UserConstructionScript();
+	void UpdateSunDirection();
+	void RefreshMaterial();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Sky_Sphere_C">();
+		BP_STATIC_CLASS_IMPL("BP_Sky_Sphere_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Sky_Sphere_C")
 	}
 	static class ABP_Sky_Sphere_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_Sky_Sphere_C>();
 	}
 };
-static_assert(alignof(ABP_Sky_Sphere_C) == 0x000008, "Wrong alignment on ABP_Sky_Sphere_C");
-static_assert(sizeof(ABP_Sky_Sphere_C) == 0x0002C0, "Wrong size on ABP_Sky_Sphere_C");
-static_assert(offsetof(ABP_Sky_Sphere_C, SkySphereMesh) == 0x000220, "Member 'ABP_Sky_Sphere_C::SkySphereMesh' has a wrong offset!");
-static_assert(offsetof(ABP_Sky_Sphere_C, Base) == 0x000228, "Member 'ABP_Sky_Sphere_C::Base' has a wrong offset!");
-static_assert(offsetof(ABP_Sky_Sphere_C, Sky_material) == 0x000230, "Member 'ABP_Sky_Sphere_C::Sky_material' has a wrong offset!");
-static_assert(offsetof(ABP_Sky_Sphere_C, Refresh_material) == 0x000238, "Member 'ABP_Sky_Sphere_C::Refresh_material' has a wrong offset!");
-static_assert(offsetof(ABP_Sky_Sphere_C, Directional_light_actor) == 0x000240, "Member 'ABP_Sky_Sphere_C::Directional_light_actor' has a wrong offset!");
-static_assert(offsetof(ABP_Sky_Sphere_C, Colors_determined_by_sun_position) == 0x000248, "Member 'ABP_Sky_Sphere_C::Colors_determined_by_sun_position' has a wrong offset!");
-static_assert(offsetof(ABP_Sky_Sphere_C, Sun_height) == 0x00024C, "Member 'ABP_Sky_Sphere_C::Sun_height' has a wrong offset!");
-static_assert(offsetof(ABP_Sky_Sphere_C, Sun_brightness) == 0x000250, "Member 'ABP_Sky_Sphere_C::Sun_brightness' has a wrong offset!");
-static_assert(offsetof(ABP_Sky_Sphere_C, Horizon_falloff) == 0x000254, "Member 'ABP_Sky_Sphere_C::Horizon_falloff' has a wrong offset!");
-static_assert(offsetof(ABP_Sky_Sphere_C, Zenith_color) == 0x000258, "Member 'ABP_Sky_Sphere_C::Zenith_color' has a wrong offset!");
-static_assert(offsetof(ABP_Sky_Sphere_C, Horizon_color) == 0x000268, "Member 'ABP_Sky_Sphere_C::Horizon_color' has a wrong offset!");
-static_assert(offsetof(ABP_Sky_Sphere_C, Cloud_color) == 0x000278, "Member 'ABP_Sky_Sphere_C::Cloud_color' has a wrong offset!");
-static_assert(offsetof(ABP_Sky_Sphere_C, Overall_color) == 0x000288, "Member 'ABP_Sky_Sphere_C::Overall_color' has a wrong offset!");
-static_assert(offsetof(ABP_Sky_Sphere_C, Cloud_speed) == 0x000298, "Member 'ABP_Sky_Sphere_C::Cloud_speed' has a wrong offset!");
-static_assert(offsetof(ABP_Sky_Sphere_C, Cloud_opacity) == 0x00029C, "Member 'ABP_Sky_Sphere_C::Cloud_opacity' has a wrong offset!");
-static_assert(offsetof(ABP_Sky_Sphere_C, Stars_brightness) == 0x0002A0, "Member 'ABP_Sky_Sphere_C::Stars_brightness' has a wrong offset!");
-static_assert(offsetof(ABP_Sky_Sphere_C, Horizon_color_curve) == 0x0002A8, "Member 'ABP_Sky_Sphere_C::Horizon_color_curve' has a wrong offset!");
-static_assert(offsetof(ABP_Sky_Sphere_C, Zenith_color_curve) == 0x0002B0, "Member 'ABP_Sky_Sphere_C::Zenith_color_curve' has a wrong offset!");
-static_assert(offsetof(ABP_Sky_Sphere_C, Cloud_color_curve) == 0x0002B8, "Member 'ABP_Sky_Sphere_C::Cloud_color_curve' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_Sky_Sphere_C;
 
 }
 

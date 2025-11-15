@@ -38,18 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SteamFriend_parent_C">();
+		BP_STATIC_CLASS_IMPL("SteamFriend_parent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamFriend_parent_C")
 	}
 	static class USteamFriend_parent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamFriend_parent_C>();
 	}
 };
-static_assert(alignof(USteamFriend_parent_C) == 0x000008, "Wrong alignment on USteamFriend_parent_C");
-static_assert(sizeof(USteamFriend_parent_C) == 0x000280, "Wrong size on USteamFriend_parent_C");
-static_assert(offsetof(USteamFriend_parent_C, UberGraphFrame) == 0x000260, "Member 'USteamFriend_parent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USteamFriend_parent_C, FriendsScoll) == 0x000268, "Member 'USteamFriend_parent_C::FriendsScoll' has a wrong offset!");
-static_assert(offsetof(USteamFriend_parent_C, FriendInvites) == 0x000270, "Member 'USteamFriend_parent_C::FriendInvites' has a wrong offset!");
+DUMPER7_ASSERTS_USteamFriend_parent_C;
 
 }
 

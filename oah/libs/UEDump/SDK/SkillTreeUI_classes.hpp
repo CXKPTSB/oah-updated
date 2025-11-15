@@ -60,27 +60,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SkillTreeUI_C">();
+		BP_STATIC_CLASS_IMPL("SkillTreeUI_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SkillTreeUI_C")
 	}
 	static class USkillTreeUI_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USkillTreeUI_C>();
 	}
 };
-static_assert(alignof(USkillTreeUI_C) == 0x000008, "Wrong alignment on USkillTreeUI_C");
-static_assert(sizeof(USkillTreeUI_C) == 0x0002E0, "Wrong size on USkillTreeUI_C");
-static_assert(offsetof(USkillTreeUI_C, UberGraphFrame) == 0x000260, "Member 'USkillTreeUI_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USkillTreeUI_C, CategoryButton) == 0x000268, "Member 'USkillTreeUI_C::CategoryButton' has a wrong offset!");
-static_assert(offsetof(USkillTreeUI_C, CategoryButton_1) == 0x000270, "Member 'USkillTreeUI_C::CategoryButton_1' has a wrong offset!");
-static_assert(offsetof(USkillTreeUI_C, CategoryButton_2) == 0x000278, "Member 'USkillTreeUI_C::CategoryButton_2' has a wrong offset!");
-static_assert(offsetof(USkillTreeUI_C, CategoryButton_3) == 0x000280, "Member 'USkillTreeUI_C::CategoryButton_3' has a wrong offset!");
-static_assert(offsetof(USkillTreeUI_C, SkillsBox) == 0x000288, "Member 'USkillTreeUI_C::SkillsBox' has a wrong offset!");
-static_assert(offsetof(USkillTreeUI_C, PreviewedSkill) == 0x000290, "Member 'USkillTreeUI_C::PreviewedSkill' has a wrong offset!");
-static_assert(offsetof(USkillTreeUI_C, GunSkills) == 0x000298, "Member 'USkillTreeUI_C::GunSkills' has a wrong offset!");
-static_assert(offsetof(USkillTreeUI_C, SurvivorSkills) == 0x0002A8, "Member 'USkillTreeUI_C::SurvivorSkills' has a wrong offset!");
-static_assert(offsetof(USkillTreeUI_C, BreachSkills) == 0x0002B8, "Member 'USkillTreeUI_C::BreachSkills' has a wrong offset!");
-static_assert(offsetof(USkillTreeUI_C, StealthSkills) == 0x0002C8, "Member 'USkillTreeUI_C::StealthSkills' has a wrong offset!");
-static_assert(offsetof(USkillTreeUI_C, As_Robber_Controller) == 0x0002D8, "Member 'USkillTreeUI_C::As_Robber_Controller' has a wrong offset!");
+DUMPER7_ASSERTS_USkillTreeUI_C;
 
 }
 

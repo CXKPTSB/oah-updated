@@ -30,16 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FieldSystemActor">();
+		STATIC_CLASS_IMPL("FieldSystemActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FieldSystemActor")
 	}
 	static class AFieldSystemActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AFieldSystemActor>();
 	}
 };
-static_assert(alignof(AFieldSystemActor) == 0x000008, "Wrong alignment on AFieldSystemActor");
-static_assert(sizeof(AFieldSystemActor) == 0x000228, "Wrong size on AFieldSystemActor");
-static_assert(offsetof(AFieldSystemActor, FieldSystemComponent) == 0x000220, "Member 'AFieldSystemActor::FieldSystemComponent' has a wrong offset!");
+DUMPER7_ASSERTS_AFieldSystemActor;
 
 // Class FieldSystemEngine.FieldSystem
 // 0x0010 (0x0038 - 0x0028)
@@ -51,15 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FieldSystem">();
+		STATIC_CLASS_IMPL("FieldSystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FieldSystem")
 	}
 	static class UFieldSystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFieldSystem>();
 	}
 };
-static_assert(alignof(UFieldSystem) == 0x000008, "Wrong alignment on UFieldSystem");
-static_assert(sizeof(UFieldSystem) == 0x000038, "Wrong size on UFieldSystem");
+DUMPER7_ASSERTS_UFieldSystem;
 
 // Class FieldSystemEngine.FieldSystemComponent
 // 0x00D0 (0x0520 - 0x0450)
@@ -70,7 +75,7 @@ public:
 	bool                                          bIsWorldField;                                     // 0x0458(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsChaosField;                                     // 0x0459(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_45A[0x6];                                      // 0x045A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<TSoftObjectPtr<class AChaosSolverActor>> SupportedSolvers;                                  // 0x0460(0x0010)(Edit, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
+	TArray<TSoftObjectPtr<class AChaosSolverActor>> SupportedSolvers;                                // 0x0460(0x0010)(Edit, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
 	struct FFieldObjectCommands                   ConstructionCommands;                              // 0x0470(0x0030)(ContainsInstancedReference, NativeAccessSpecifierPublic)
 	struct FFieldObjectCommands                   BufferCommands;                                    // 0x04A0(0x0030)(ContainsInstancedReference, NativeAccessSpecifierPublic)
 	uint8                                         Pad_4D0[0x50];                                     // 0x04D0(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -91,21 +96,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FieldSystemComponent">();
+		STATIC_CLASS_IMPL("FieldSystemComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FieldSystemComponent")
 	}
 	static class UFieldSystemComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFieldSystemComponent>();
 	}
 };
-static_assert(alignof(UFieldSystemComponent) == 0x000010, "Wrong alignment on UFieldSystemComponent");
-static_assert(sizeof(UFieldSystemComponent) == 0x000520, "Wrong size on UFieldSystemComponent");
-static_assert(offsetof(UFieldSystemComponent, FieldSystem) == 0x000450, "Member 'UFieldSystemComponent::FieldSystem' has a wrong offset!");
-static_assert(offsetof(UFieldSystemComponent, bIsWorldField) == 0x000458, "Member 'UFieldSystemComponent::bIsWorldField' has a wrong offset!");
-static_assert(offsetof(UFieldSystemComponent, bIsChaosField) == 0x000459, "Member 'UFieldSystemComponent::bIsChaosField' has a wrong offset!");
-static_assert(offsetof(UFieldSystemComponent, SupportedSolvers) == 0x000460, "Member 'UFieldSystemComponent::SupportedSolvers' has a wrong offset!");
-static_assert(offsetof(UFieldSystemComponent, ConstructionCommands) == 0x000470, "Member 'UFieldSystemComponent::ConstructionCommands' has a wrong offset!");
-static_assert(offsetof(UFieldSystemComponent, BufferCommands) == 0x0004A0, "Member 'UFieldSystemComponent::BufferCommands' has a wrong offset!");
+DUMPER7_ASSERTS_UFieldSystemComponent;
 
 // Class FieldSystemEngine.FieldSystemMetaData
 // 0x0000 (0x00B0 - 0x00B0)
@@ -114,15 +116,18 @@ class UFieldSystemMetaData : public UActorComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FieldSystemMetaData">();
+		STATIC_CLASS_IMPL("FieldSystemMetaData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FieldSystemMetaData")
 	}
 	static class UFieldSystemMetaData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFieldSystemMetaData>();
 	}
 };
-static_assert(alignof(UFieldSystemMetaData) == 0x000008, "Wrong alignment on UFieldSystemMetaData");
-static_assert(sizeof(UFieldSystemMetaData) == 0x0000B0, "Wrong size on UFieldSystemMetaData");
+DUMPER7_ASSERTS_UFieldSystemMetaData;
 
 // Class FieldSystemEngine.FieldSystemMetaDataIteration
 // 0x0008 (0x00B8 - 0x00B0)
@@ -138,16 +143,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FieldSystemMetaDataIteration">();
+		STATIC_CLASS_IMPL("FieldSystemMetaDataIteration")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FieldSystemMetaDataIteration")
 	}
 	static class UFieldSystemMetaDataIteration* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFieldSystemMetaDataIteration>();
 	}
 };
-static_assert(alignof(UFieldSystemMetaDataIteration) == 0x000008, "Wrong alignment on UFieldSystemMetaDataIteration");
-static_assert(sizeof(UFieldSystemMetaDataIteration) == 0x0000B8, "Wrong size on UFieldSystemMetaDataIteration");
-static_assert(offsetof(UFieldSystemMetaDataIteration, Iterations) == 0x0000B0, "Member 'UFieldSystemMetaDataIteration::Iterations' has a wrong offset!");
+DUMPER7_ASSERTS_UFieldSystemMetaDataIteration;
 
 // Class FieldSystemEngine.FieldSystemMetaDataProcessingResolution
 // 0x0008 (0x00B8 - 0x00B0)
@@ -163,16 +170,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FieldSystemMetaDataProcessingResolution">();
+		STATIC_CLASS_IMPL("FieldSystemMetaDataProcessingResolution")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FieldSystemMetaDataProcessingResolution")
 	}
 	static class UFieldSystemMetaDataProcessingResolution* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFieldSystemMetaDataProcessingResolution>();
 	}
 };
-static_assert(alignof(UFieldSystemMetaDataProcessingResolution) == 0x000008, "Wrong alignment on UFieldSystemMetaDataProcessingResolution");
-static_assert(sizeof(UFieldSystemMetaDataProcessingResolution) == 0x0000B8, "Wrong size on UFieldSystemMetaDataProcessingResolution");
-static_assert(offsetof(UFieldSystemMetaDataProcessingResolution, ResolutionType) == 0x0000B0, "Member 'UFieldSystemMetaDataProcessingResolution::ResolutionType' has a wrong offset!");
+DUMPER7_ASSERTS_UFieldSystemMetaDataProcessingResolution;
 
 // Class FieldSystemEngine.FieldSystemMetaDataFilter
 // 0x0008 (0x00B8 - 0x00B0)
@@ -188,16 +197,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FieldSystemMetaDataFilter">();
+		STATIC_CLASS_IMPL("FieldSystemMetaDataFilter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FieldSystemMetaDataFilter")
 	}
 	static class UFieldSystemMetaDataFilter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFieldSystemMetaDataFilter>();
 	}
 };
-static_assert(alignof(UFieldSystemMetaDataFilter) == 0x000008, "Wrong alignment on UFieldSystemMetaDataFilter");
-static_assert(sizeof(UFieldSystemMetaDataFilter) == 0x0000B8, "Wrong size on UFieldSystemMetaDataFilter");
-static_assert(offsetof(UFieldSystemMetaDataFilter, FilterType) == 0x0000B0, "Member 'UFieldSystemMetaDataFilter::FilterType' has a wrong offset!");
+DUMPER7_ASSERTS_UFieldSystemMetaDataFilter;
 
 // Class FieldSystemEngine.FieldNodeBase
 // 0x0000 (0x00B0 - 0x00B0)
@@ -206,15 +217,18 @@ class UFieldNodeBase : public UActorComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FieldNodeBase">();
+		STATIC_CLASS_IMPL("FieldNodeBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FieldNodeBase")
 	}
 	static class UFieldNodeBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFieldNodeBase>();
 	}
 };
-static_assert(alignof(UFieldNodeBase) == 0x000008, "Wrong alignment on UFieldNodeBase");
-static_assert(sizeof(UFieldNodeBase) == 0x0000B0, "Wrong size on UFieldNodeBase");
+DUMPER7_ASSERTS_UFieldNodeBase;
 
 // Class FieldSystemEngine.FieldNodeInt
 // 0x0000 (0x00B0 - 0x00B0)
@@ -223,15 +237,18 @@ class UFieldNodeInt : public UFieldNodeBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FieldNodeInt">();
+		STATIC_CLASS_IMPL("FieldNodeInt")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FieldNodeInt")
 	}
 	static class UFieldNodeInt* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFieldNodeInt>();
 	}
 };
-static_assert(alignof(UFieldNodeInt) == 0x000008, "Wrong alignment on UFieldNodeInt");
-static_assert(sizeof(UFieldNodeInt) == 0x0000B0, "Wrong size on UFieldNodeInt");
+DUMPER7_ASSERTS_UFieldNodeInt;
 
 // Class FieldSystemEngine.FieldNodeFloat
 // 0x0000 (0x00B0 - 0x00B0)
@@ -240,15 +257,18 @@ class UFieldNodeFloat : public UFieldNodeBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FieldNodeFloat">();
+		STATIC_CLASS_IMPL("FieldNodeFloat")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FieldNodeFloat")
 	}
 	static class UFieldNodeFloat* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFieldNodeFloat>();
 	}
 };
-static_assert(alignof(UFieldNodeFloat) == 0x000008, "Wrong alignment on UFieldNodeFloat");
-static_assert(sizeof(UFieldNodeFloat) == 0x0000B0, "Wrong size on UFieldNodeFloat");
+DUMPER7_ASSERTS_UFieldNodeFloat;
 
 // Class FieldSystemEngine.FieldNodeVector
 // 0x0000 (0x00B0 - 0x00B0)
@@ -257,15 +277,18 @@ class UFieldNodeVector : public UFieldNodeBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FieldNodeVector">();
+		STATIC_CLASS_IMPL("FieldNodeVector")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FieldNodeVector")
 	}
 	static class UFieldNodeVector* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFieldNodeVector>();
 	}
 };
-static_assert(alignof(UFieldNodeVector) == 0x000008, "Wrong alignment on UFieldNodeVector");
-static_assert(sizeof(UFieldNodeVector) == 0x0000B0, "Wrong size on UFieldNodeVector");
+DUMPER7_ASSERTS_UFieldNodeVector;
 
 // Class FieldSystemEngine.UniformInteger
 // 0x0008 (0x00B8 - 0x00B0)
@@ -281,16 +304,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UniformInteger">();
+		STATIC_CLASS_IMPL("UniformInteger")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UniformInteger")
 	}
 	static class UUniformInteger* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUniformInteger>();
 	}
 };
-static_assert(alignof(UUniformInteger) == 0x000008, "Wrong alignment on UUniformInteger");
-static_assert(sizeof(UUniformInteger) == 0x0000B8, "Wrong size on UUniformInteger");
-static_assert(offsetof(UUniformInteger, Magnitude) == 0x0000B0, "Member 'UUniformInteger::Magnitude' has a wrong offset!");
+DUMPER7_ASSERTS_UUniformInteger;
 
 // Class FieldSystemEngine.RadialIntMask
 // 0x0020 (0x00D0 - 0x00B0)
@@ -310,20 +335,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RadialIntMask">();
+		STATIC_CLASS_IMPL("RadialIntMask")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RadialIntMask")
 	}
 	static class URadialIntMask* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URadialIntMask>();
 	}
 };
-static_assert(alignof(URadialIntMask) == 0x000008, "Wrong alignment on URadialIntMask");
-static_assert(sizeof(URadialIntMask) == 0x0000D0, "Wrong size on URadialIntMask");
-static_assert(offsetof(URadialIntMask, Radius) == 0x0000B0, "Member 'URadialIntMask::Radius' has a wrong offset!");
-static_assert(offsetof(URadialIntMask, Position) == 0x0000B4, "Member 'URadialIntMask::Position' has a wrong offset!");
-static_assert(offsetof(URadialIntMask, InteriorValue) == 0x0000C0, "Member 'URadialIntMask::InteriorValue' has a wrong offset!");
-static_assert(offsetof(URadialIntMask, ExteriorValue) == 0x0000C4, "Member 'URadialIntMask::ExteriorValue' has a wrong offset!");
-static_assert(offsetof(URadialIntMask, SetMaskCondition) == 0x0000C8, "Member 'URadialIntMask::SetMaskCondition' has a wrong offset!");
+DUMPER7_ASSERTS_URadialIntMask;
 
 // Class FieldSystemEngine.UniformScalar
 // 0x0008 (0x00B8 - 0x00B0)
@@ -339,16 +362,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UniformScalar">();
+		STATIC_CLASS_IMPL("UniformScalar")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UniformScalar")
 	}
 	static class UUniformScalar* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUniformScalar>();
 	}
 };
-static_assert(alignof(UUniformScalar) == 0x000008, "Wrong alignment on UUniformScalar");
-static_assert(sizeof(UUniformScalar) == 0x0000B8, "Wrong size on UUniformScalar");
-static_assert(offsetof(UUniformScalar, Magnitude) == 0x0000B0, "Member 'UUniformScalar::Magnitude' has a wrong offset!");
+DUMPER7_ASSERTS_UUniformScalar;
 
 // Class FieldSystemEngine.WaveScalar
 // 0x0020 (0x00D0 - 0x00B0)
@@ -369,21 +394,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WaveScalar">();
+		STATIC_CLASS_IMPL("WaveScalar")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WaveScalar")
 	}
 	static class UWaveScalar* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWaveScalar>();
 	}
 };
-static_assert(alignof(UWaveScalar) == 0x000008, "Wrong alignment on UWaveScalar");
-static_assert(sizeof(UWaveScalar) == 0x0000D0, "Wrong size on UWaveScalar");
-static_assert(offsetof(UWaveScalar, Magnitude) == 0x0000B0, "Member 'UWaveScalar::Magnitude' has a wrong offset!");
-static_assert(offsetof(UWaveScalar, Position) == 0x0000B4, "Member 'UWaveScalar::Position' has a wrong offset!");
-static_assert(offsetof(UWaveScalar, Wavelength) == 0x0000C0, "Member 'UWaveScalar::Wavelength' has a wrong offset!");
-static_assert(offsetof(UWaveScalar, Period) == 0x0000C4, "Member 'UWaveScalar::Period' has a wrong offset!");
-static_assert(offsetof(UWaveScalar, Function) == 0x0000C8, "Member 'UWaveScalar::Function' has a wrong offset!");
-static_assert(offsetof(UWaveScalar, Falloff) == 0x0000C9, "Member 'UWaveScalar::Falloff' has a wrong offset!");
+DUMPER7_ASSERTS_UWaveScalar;
 
 // Class FieldSystemEngine.RadialFalloff
 // 0x0028 (0x00D8 - 0x00B0)
@@ -405,22 +427,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RadialFalloff">();
+		STATIC_CLASS_IMPL("RadialFalloff")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RadialFalloff")
 	}
 	static class URadialFalloff* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URadialFalloff>();
 	}
 };
-static_assert(alignof(URadialFalloff) == 0x000008, "Wrong alignment on URadialFalloff");
-static_assert(sizeof(URadialFalloff) == 0x0000D8, "Wrong size on URadialFalloff");
-static_assert(offsetof(URadialFalloff, Magnitude) == 0x0000B0, "Member 'URadialFalloff::Magnitude' has a wrong offset!");
-static_assert(offsetof(URadialFalloff, MinRange) == 0x0000B4, "Member 'URadialFalloff::MinRange' has a wrong offset!");
-static_assert(offsetof(URadialFalloff, MaxRange) == 0x0000B8, "Member 'URadialFalloff::MaxRange' has a wrong offset!");
-static_assert(offsetof(URadialFalloff, Default) == 0x0000BC, "Member 'URadialFalloff::Default' has a wrong offset!");
-static_assert(offsetof(URadialFalloff, Radius) == 0x0000C0, "Member 'URadialFalloff::Radius' has a wrong offset!");
-static_assert(offsetof(URadialFalloff, Position) == 0x0000C4, "Member 'URadialFalloff::Position' has a wrong offset!");
-static_assert(offsetof(URadialFalloff, Falloff) == 0x0000D0, "Member 'URadialFalloff::Falloff' has a wrong offset!");
+DUMPER7_ASSERTS_URadialFalloff;
 
 // Class FieldSystemEngine.PlaneFalloff
 // 0x0030 (0x00E0 - 0x00B0)
@@ -443,23 +461,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PlaneFalloff">();
+		STATIC_CLASS_IMPL("PlaneFalloff")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlaneFalloff")
 	}
 	static class UPlaneFalloff* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlaneFalloff>();
 	}
 };
-static_assert(alignof(UPlaneFalloff) == 0x000008, "Wrong alignment on UPlaneFalloff");
-static_assert(sizeof(UPlaneFalloff) == 0x0000E0, "Wrong size on UPlaneFalloff");
-static_assert(offsetof(UPlaneFalloff, Magnitude) == 0x0000B0, "Member 'UPlaneFalloff::Magnitude' has a wrong offset!");
-static_assert(offsetof(UPlaneFalloff, MinRange) == 0x0000B4, "Member 'UPlaneFalloff::MinRange' has a wrong offset!");
-static_assert(offsetof(UPlaneFalloff, MaxRange) == 0x0000B8, "Member 'UPlaneFalloff::MaxRange' has a wrong offset!");
-static_assert(offsetof(UPlaneFalloff, Default) == 0x0000BC, "Member 'UPlaneFalloff::Default' has a wrong offset!");
-static_assert(offsetof(UPlaneFalloff, Distance) == 0x0000C0, "Member 'UPlaneFalloff::Distance' has a wrong offset!");
-static_assert(offsetof(UPlaneFalloff, Position) == 0x0000C4, "Member 'UPlaneFalloff::Position' has a wrong offset!");
-static_assert(offsetof(UPlaneFalloff, Normal) == 0x0000D0, "Member 'UPlaneFalloff::Normal' has a wrong offset!");
-static_assert(offsetof(UPlaneFalloff, Falloff) == 0x0000DC, "Member 'UPlaneFalloff::Falloff' has a wrong offset!");
+DUMPER7_ASSERTS_UPlaneFalloff;
 
 // Class FieldSystemEngine.BoxFalloff
 // 0x0050 (0x0100 - 0x00B0)
@@ -480,21 +493,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BoxFalloff">();
+		STATIC_CLASS_IMPL("BoxFalloff")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BoxFalloff")
 	}
 	static class UBoxFalloff* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBoxFalloff>();
 	}
 };
-static_assert(alignof(UBoxFalloff) == 0x000010, "Wrong alignment on UBoxFalloff");
-static_assert(sizeof(UBoxFalloff) == 0x000100, "Wrong size on UBoxFalloff");
-static_assert(offsetof(UBoxFalloff, Magnitude) == 0x0000B0, "Member 'UBoxFalloff::Magnitude' has a wrong offset!");
-static_assert(offsetof(UBoxFalloff, MinRange) == 0x0000B4, "Member 'UBoxFalloff::MinRange' has a wrong offset!");
-static_assert(offsetof(UBoxFalloff, MaxRange) == 0x0000B8, "Member 'UBoxFalloff::MaxRange' has a wrong offset!");
-static_assert(offsetof(UBoxFalloff, Default) == 0x0000BC, "Member 'UBoxFalloff::Default' has a wrong offset!");
-static_assert(offsetof(UBoxFalloff, Transform) == 0x0000C0, "Member 'UBoxFalloff::Transform' has a wrong offset!");
-static_assert(offsetof(UBoxFalloff, Falloff) == 0x0000F0, "Member 'UBoxFalloff::Falloff' has a wrong offset!");
+DUMPER7_ASSERTS_UBoxFalloff;
 
 // Class FieldSystemEngine.NoiseField
 // 0x0040 (0x00F0 - 0x00B0)
@@ -512,18 +522,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NoiseField">();
+		STATIC_CLASS_IMPL("NoiseField")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NoiseField")
 	}
 	static class UNoiseField* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNoiseField>();
 	}
 };
-static_assert(alignof(UNoiseField) == 0x000010, "Wrong alignment on UNoiseField");
-static_assert(sizeof(UNoiseField) == 0x0000F0, "Wrong size on UNoiseField");
-static_assert(offsetof(UNoiseField, MinRange) == 0x0000B0, "Member 'UNoiseField::MinRange' has a wrong offset!");
-static_assert(offsetof(UNoiseField, MaxRange) == 0x0000B4, "Member 'UNoiseField::MaxRange' has a wrong offset!");
-static_assert(offsetof(UNoiseField, Transform) == 0x0000C0, "Member 'UNoiseField::Transform' has a wrong offset!");
+DUMPER7_ASSERTS_UNoiseField;
 
 // Class FieldSystemEngine.UniformVector
 // 0x0010 (0x00C0 - 0x00B0)
@@ -539,17 +549,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UniformVector">();
+		STATIC_CLASS_IMPL("UniformVector")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UniformVector")
 	}
 	static class UUniformVector* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUniformVector>();
 	}
 };
-static_assert(alignof(UUniformVector) == 0x000008, "Wrong alignment on UUniformVector");
-static_assert(sizeof(UUniformVector) == 0x0000C0, "Wrong size on UUniformVector");
-static_assert(offsetof(UUniformVector, Magnitude) == 0x0000B0, "Member 'UUniformVector::Magnitude' has a wrong offset!");
-static_assert(offsetof(UUniformVector, Direction) == 0x0000B4, "Member 'UUniformVector::Direction' has a wrong offset!");
+DUMPER7_ASSERTS_UUniformVector;
 
 // Class FieldSystemEngine.RadialVector
 // 0x0010 (0x00C0 - 0x00B0)
@@ -565,17 +576,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RadialVector">();
+		STATIC_CLASS_IMPL("RadialVector")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RadialVector")
 	}
 	static class URadialVector* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URadialVector>();
 	}
 };
-static_assert(alignof(URadialVector) == 0x000008, "Wrong alignment on URadialVector");
-static_assert(sizeof(URadialVector) == 0x0000C0, "Wrong size on URadialVector");
-static_assert(offsetof(URadialVector, Magnitude) == 0x0000B0, "Member 'URadialVector::Magnitude' has a wrong offset!");
-static_assert(offsetof(URadialVector, Position) == 0x0000B4, "Member 'URadialVector::Position' has a wrong offset!");
+DUMPER7_ASSERTS_URadialVector;
 
 // Class FieldSystemEngine.RandomVector
 // 0x0008 (0x00B8 - 0x00B0)
@@ -591,16 +603,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RandomVector">();
+		STATIC_CLASS_IMPL("RandomVector")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RandomVector")
 	}
 	static class URandomVector* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URandomVector>();
 	}
 };
-static_assert(alignof(URandomVector) == 0x000008, "Wrong alignment on URandomVector");
-static_assert(sizeof(URandomVector) == 0x0000B8, "Wrong size on URandomVector");
-static_assert(offsetof(URandomVector, Magnitude) == 0x0000B0, "Member 'URandomVector::Magnitude' has a wrong offset!");
+DUMPER7_ASSERTS_URandomVector;
 
 // Class FieldSystemEngine.OperatorField
 // 0x0020 (0x00D0 - 0x00B0)
@@ -620,19 +634,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OperatorField">();
+		STATIC_CLASS_IMPL("OperatorField")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OperatorField")
 	}
 	static class UOperatorField* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOperatorField>();
 	}
 };
-static_assert(alignof(UOperatorField) == 0x000008, "Wrong alignment on UOperatorField");
-static_assert(sizeof(UOperatorField) == 0x0000D0, "Wrong size on UOperatorField");
-static_assert(offsetof(UOperatorField, Magnitude) == 0x0000B0, "Member 'UOperatorField::Magnitude' has a wrong offset!");
-static_assert(offsetof(UOperatorField, RightField) == 0x0000B8, "Member 'UOperatorField::RightField' has a wrong offset!");
-static_assert(offsetof(UOperatorField, LeftField) == 0x0000C0, "Member 'UOperatorField::LeftField' has a wrong offset!");
-static_assert(offsetof(UOperatorField, Operation) == 0x0000C8, "Member 'UOperatorField::Operation' has a wrong offset!");
+DUMPER7_ASSERTS_UOperatorField;
 
 // Class FieldSystemEngine.ToIntegerField
 // 0x0008 (0x00B8 - 0x00B0)
@@ -647,16 +660,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ToIntegerField">();
+		STATIC_CLASS_IMPL("ToIntegerField")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ToIntegerField")
 	}
 	static class UToIntegerField* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UToIntegerField>();
 	}
 };
-static_assert(alignof(UToIntegerField) == 0x000008, "Wrong alignment on UToIntegerField");
-static_assert(sizeof(UToIntegerField) == 0x0000B8, "Wrong size on UToIntegerField");
-static_assert(offsetof(UToIntegerField, FloatField) == 0x0000B0, "Member 'UToIntegerField::FloatField' has a wrong offset!");
+DUMPER7_ASSERTS_UToIntegerField;
 
 // Class FieldSystemEngine.ToFloatField
 // 0x0008 (0x00B8 - 0x00B0)
@@ -671,16 +686,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ToFloatField">();
+		STATIC_CLASS_IMPL("ToFloatField")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ToFloatField")
 	}
 	static class UToFloatField* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UToFloatField>();
 	}
 };
-static_assert(alignof(UToFloatField) == 0x000008, "Wrong alignment on UToFloatField");
-static_assert(sizeof(UToFloatField) == 0x0000B8, "Wrong size on UToFloatField");
-static_assert(offsetof(UToFloatField, IntField) == 0x0000B0, "Member 'UToFloatField::IntField' has a wrong offset!");
+DUMPER7_ASSERTS_UToFloatField;
 
 // Class FieldSystemEngine.CullingField
 // 0x0018 (0x00C8 - 0x00B0)
@@ -698,18 +715,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CullingField">();
+		STATIC_CLASS_IMPL("CullingField")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CullingField")
 	}
 	static class UCullingField* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCullingField>();
 	}
 };
-static_assert(alignof(UCullingField) == 0x000008, "Wrong alignment on UCullingField");
-static_assert(sizeof(UCullingField) == 0x0000C8, "Wrong size on UCullingField");
-static_assert(offsetof(UCullingField, Culling) == 0x0000B0, "Member 'UCullingField::Culling' has a wrong offset!");
-static_assert(offsetof(UCullingField, Field) == 0x0000B8, "Member 'UCullingField::Field' has a wrong offset!");
-static_assert(offsetof(UCullingField, Operation) == 0x0000C0, "Member 'UCullingField::Operation' has a wrong offset!");
+DUMPER7_ASSERTS_UCullingField;
 
 // Class FieldSystemEngine.ReturnResultsTerminal
 // 0x0000 (0x00B0 - 0x00B0)
@@ -721,15 +738,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ReturnResultsTerminal">();
+		STATIC_CLASS_IMPL("ReturnResultsTerminal")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ReturnResultsTerminal")
 	}
 	static class UReturnResultsTerminal* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UReturnResultsTerminal>();
 	}
 };
-static_assert(alignof(UReturnResultsTerminal) == 0x000008, "Wrong alignment on UReturnResultsTerminal");
-static_assert(sizeof(UReturnResultsTerminal) == 0x0000B0, "Wrong size on UReturnResultsTerminal");
+DUMPER7_ASSERTS_UReturnResultsTerminal;
 
 }
 

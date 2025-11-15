@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "InputSettingStruct_structs.hpp"
 #include "Engine_structs.hpp"
 #include "InputCore_structs.hpp"
+#include "InputSettingStruct_structs.hpp"
 #include "UMG_classes.hpp"
 
 
@@ -58,38 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ControlsUI_C">();
+		BP_STATIC_CLASS_IMPL("ControlsUI_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ControlsUI_C")
 	}
 	static class UControlsUI_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UControlsUI_C>();
 	}
 };
-static_assert(alignof(UControlsUI_C) == 0x000008, "Wrong alignment on UControlsUI_C");
-static_assert(sizeof(UControlsUI_C) == 0x000368, "Wrong size on UControlsUI_C");
-static_assert(offsetof(UControlsUI_C, UberGraphFrame) == 0x000260, "Member 'UControlsUI_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UControlsUI_C, Chat) == 0x000268, "Member 'UControlsUI_C::Chat' has a wrong offset!");
-static_assert(offsetof(UControlsUI_C, CloseButton) == 0x000270, "Member 'UControlsUI_C::CloseButton' has a wrong offset!");
-static_assert(offsetof(UControlsUI_C, Crouch) == 0x000278, "Member 'UControlsUI_C::Crouch' has a wrong offset!");
-static_assert(offsetof(UControlsUI_C, Emote) == 0x000280, "Member 'UControlsUI_C::Emote' has a wrong offset!");
-static_assert(offsetof(UControlsUI_C, Jump) == 0x000288, "Member 'UControlsUI_C::Jump' has a wrong offset!");
-static_assert(offsetof(UControlsUI_C, MouseAction) == 0x000290, "Member 'UControlsUI_C::MouseAction' has a wrong offset!");
-static_assert(offsetof(UControlsUI_C, Pause) == 0x000298, "Member 'UControlsUI_C::Pause' has a wrong offset!");
-static_assert(offsetof(UControlsUI_C, Reload) == 0x0002A0, "Member 'UControlsUI_C::Reload' has a wrong offset!");
-static_assert(offsetof(UControlsUI_C, ResetButton) == 0x0002A8, "Member 'UControlsUI_C::ResetButton' has a wrong offset!");
-static_assert(offsetof(UControlsUI_C, SecondMouseAction) == 0x0002B0, "Member 'UControlsUI_C::SecondMouseAction' has a wrong offset!");
-static_assert(offsetof(UControlsUI_C, Sprint) == 0x0002B8, "Member 'UControlsUI_C::Sprint' has a wrong offset!");
-static_assert(offsetof(UControlsUI_C, SwitchDown) == 0x0002C0, "Member 'UControlsUI_C::SwitchDown' has a wrong offset!");
-static_assert(offsetof(UControlsUI_C, SwitchUp) == 0x0002C8, "Member 'UControlsUI_C::SwitchUp' has a wrong offset!");
-static_assert(offsetof(UControlsUI_C, Voice) == 0x0002D0, "Member 'UControlsUI_C::Voice' has a wrong offset!");
-static_assert(offsetof(UControlsUI_C, WalkBack) == 0x0002D8, "Member 'UControlsUI_C::WalkBack' has a wrong offset!");
-static_assert(offsetof(UControlsUI_C, WalkForward) == 0x0002E0, "Member 'UControlsUI_C::WalkForward' has a wrong offset!");
-static_assert(offsetof(UControlsUI_C, WalkLeft) == 0x0002E8, "Member 'UControlsUI_C::WalkLeft' has a wrong offset!");
-static_assert(offsetof(UControlsUI_C, WalkRight) == 0x0002F0, "Member 'UControlsUI_C::WalkRight' has a wrong offset!");
-static_assert(offsetof(UControlsUI_C, InputActionDefaults) == 0x0002F8, "Member 'UControlsUI_C::InputActionDefaults' has a wrong offset!");
-static_assert(offsetof(UControlsUI_C, OwnerUi) == 0x000348, "Member 'UControlsUI_C::OwnerUi' has a wrong offset!");
-static_assert(offsetof(UControlsUI_C, InputDefaults) == 0x000350, "Member 'UControlsUI_C::InputDefaults' has a wrong offset!");
-static_assert(offsetof(UControlsUI_C, As_Robber_Controller) == 0x000360, "Member 'UControlsUI_C::As_Robber_Controller' has a wrong offset!");
+DUMPER7_ASSERTS_UControlsUI_C;
 
 }
 

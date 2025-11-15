@@ -38,20 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HoldingInteractComponent_C">();
+		BP_STATIC_CLASS_IMPL("HoldingInteractComponent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HoldingInteractComponent_C")
 	}
 	static class UHoldingInteractComponent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHoldingInteractComponent_C>();
 	}
 };
-static_assert(alignof(UHoldingInteractComponent_C) == 0x000008, "Wrong alignment on UHoldingInteractComponent_C");
-static_assert(sizeof(UHoldingInteractComponent_C) == 0x0000E8, "Wrong size on UHoldingInteractComponent_C");
-static_assert(offsetof(UHoldingInteractComponent_C, UberGraphFrame) == 0x0000B0, "Member 'UHoldingInteractComponent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UHoldingInteractComponent_C, InteractActors) == 0x0000B8, "Member 'UHoldingInteractComponent_C::InteractActors' has a wrong offset!");
-static_assert(offsetof(UHoldingInteractComponent_C, InteractDescription) == 0x0000C8, "Member 'UHoldingInteractComponent_C::InteractDescription' has a wrong offset!");
-static_assert(offsetof(UHoldingInteractComponent_C, As_Player_Character) == 0x0000D8, "Member 'UHoldingInteractComponent_C::As_Player_Character' has a wrong offset!");
-static_assert(offsetof(UHoldingInteractComponent_C, Other_Actor) == 0x0000E0, "Member 'UHoldingInteractComponent_C::Other_Actor' has a wrong offset!");
+DUMPER7_ASSERTS_UHoldingInteractComponent_C;
 
 }
 

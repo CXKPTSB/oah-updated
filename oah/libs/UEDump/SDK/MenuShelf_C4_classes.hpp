@@ -29,19 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MenuShelf_C4_C">();
+		BP_STATIC_CLASS_IMPL("MenuShelf_C4_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MenuShelf_C4_C")
 	}
 	static class AMenuShelf_C4_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMenuShelf_C4_C>();
 	}
 };
-static_assert(alignof(AMenuShelf_C4_C) == 0x000008, "Wrong alignment on AMenuShelf_C4_C");
-static_assert(sizeof(AMenuShelf_C4_C) == 0x000258, "Wrong size on AMenuShelf_C4_C");
-static_assert(offsetof(AMenuShelf_C4_C, StaticMesh4) == 0x000238, "Member 'AMenuShelf_C4_C::StaticMesh4' has a wrong offset!");
-static_assert(offsetof(AMenuShelf_C4_C, StaticMesh3) == 0x000240, "Member 'AMenuShelf_C4_C::StaticMesh3' has a wrong offset!");
-static_assert(offsetof(AMenuShelf_C4_C, StaticMesh2) == 0x000248, "Member 'AMenuShelf_C4_C::StaticMesh2' has a wrong offset!");
-static_assert(offsetof(AMenuShelf_C4_C, StaticMesh1) == 0x000250, "Member 'AMenuShelf_C4_C::StaticMesh1' has a wrong offset!");
+DUMPER7_ASSERTS_AMenuShelf_C4_C;
 
 }
 

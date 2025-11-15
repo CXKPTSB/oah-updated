@@ -21,9 +21,7 @@ struct Attachment_scope_base_C_ExecuteUbergraph_Attachment_scope_base final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Attachment_scope_base_C_ExecuteUbergraph_Attachment_scope_base) == 0x000004, "Wrong alignment on Attachment_scope_base_C_ExecuteUbergraph_Attachment_scope_base");
-static_assert(sizeof(Attachment_scope_base_C_ExecuteUbergraph_Attachment_scope_base) == 0x000004, "Wrong size on Attachment_scope_base_C_ExecuteUbergraph_Attachment_scope_base");
-static_assert(offsetof(Attachment_scope_base_C_ExecuteUbergraph_Attachment_scope_base, EntryPoint) == 0x000000, "Member 'Attachment_scope_base_C_ExecuteUbergraph_Attachment_scope_base::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_Attachment_scope_base_C_ExecuteUbergraph_Attachment_scope_base;
 
 }
 

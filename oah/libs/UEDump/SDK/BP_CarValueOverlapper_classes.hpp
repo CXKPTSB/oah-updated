@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_CarValueOverlapper_C">();
+		BP_STATIC_CLASS_IMPL("BP_CarValueOverlapper_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_CarValueOverlapper_C")
 	}
 	static class ABP_CarValueOverlapper_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_CarValueOverlapper_C>();
 	}
 };
-static_assert(alignof(ABP_CarValueOverlapper_C) == 0x000008, "Wrong alignment on ABP_CarValueOverlapper_C");
-static_assert(sizeof(ABP_CarValueOverlapper_C) == 0x000270, "Wrong size on ABP_CarValueOverlapper_C");
-static_assert(offsetof(ABP_CarValueOverlapper_C, Box) == 0x000268, "Member 'ABP_CarValueOverlapper_C::Box' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_CarValueOverlapper_C;
 
 }
 

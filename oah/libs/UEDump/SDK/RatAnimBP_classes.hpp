@@ -30,26 +30,25 @@ public:
 	float                                         Speed;                                             // 0x03E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnimGraph(struct FPoseLink* AnimGraph_0);
-	void BlueprintUpdateAnimation(float DeltaTimeX);
 	void ExecuteUbergraph_RatAnimBP(int32 EntryPoint);
+	void BlueprintUpdateAnimation(float DeltaTimeX);
+	void AnimGraph(struct FPoseLink* AnimGraph_0);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RatAnimBP_C">();
+		BP_STATIC_CLASS_IMPL("RatAnimBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RatAnimBP_C")
 	}
 	static class URatAnimBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URatAnimBP_C>();
 	}
 };
-static_assert(alignof(URatAnimBP_C) == 0x000010, "Wrong alignment on URatAnimBP_C");
-static_assert(sizeof(URatAnimBP_C) == 0x0003F0, "Wrong size on URatAnimBP_C");
-static_assert(offsetof(URatAnimBP_C, UberGraphFrame) == 0x0002C0, "Member 'URatAnimBP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(URatAnimBP_C, AnimGraphNode_Root) == 0x0002C8, "Member 'URatAnimBP_C::AnimGraphNode_Root' has a wrong offset!");
-static_assert(offsetof(URatAnimBP_C, AnimGraphNode_BlendSpacePlayer) == 0x0002F8, "Member 'URatAnimBP_C::AnimGraphNode_BlendSpacePlayer' has a wrong offset!");
-static_assert(offsetof(URatAnimBP_C, Speed) == 0x0003E0, "Member 'URatAnimBP_C::Speed' has a wrong offset!");
+DUMPER7_ASSERTS_URatAnimBP_C;
 
 }
 

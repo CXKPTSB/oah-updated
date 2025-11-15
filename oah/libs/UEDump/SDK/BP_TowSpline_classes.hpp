@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_TowSpline_C">();
+		BP_STATIC_CLASS_IMPL("BP_TowSpline_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_TowSpline_C")
 	}
 	static class ABP_TowSpline_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_TowSpline_C>();
 	}
 };
-static_assert(alignof(ABP_TowSpline_C) == 0x000008, "Wrong alignment on ABP_TowSpline_C");
-static_assert(sizeof(ABP_TowSpline_C) == 0x000228, "Wrong size on ABP_TowSpline_C");
-static_assert(offsetof(ABP_TowSpline_C, Spline) == 0x000220, "Member 'ABP_TowSpline_C::Spline' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_TowSpline_C;
 
 }
 

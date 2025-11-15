@@ -109,83 +109,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RobberTruck_C">();
+		BP_STATIC_CLASS_IMPL("RobberTruck_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RobberTruck_C")
 	}
 	static class ARobberTruck_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ARobberTruck_C>();
 	}
 };
-static_assert(alignof(ARobberTruck_C) == 0x000008, "Wrong alignment on ARobberTruck_C");
-static_assert(sizeof(ARobberTruck_C) == 0x000430, "Wrong size on ARobberTruck_C");
-static_assert(offsetof(ARobberTruck_C, UberGraphFrame) == 0x000220, "Member 'ARobberTruck_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, Box) == 0x000228, "Member 'ARobberTruck_C::Box' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, SteamAchievementComponent) == 0x000230, "Member 'ARobberTruck_C::SteamAchievementComponent' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, Camera) == 0x000238, "Member 'ARobberTruck_C::Camera' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, LeaveButton) == 0x000240, "Member 'ARobberTruck_C::LeaveButton' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, Plane1) == 0x000248, "Member 'ARobberTruck_C::Plane1' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, WhiteBoardText2) == 0x000250, "Member 'ARobberTruck_C::WhiteBoardText2' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, MoneyOverlapper) == 0x000258, "Member 'ARobberTruck_C::MoneyOverlapper' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, EndOfTruck) == 0x000260, "Member 'ARobberTruck_C::EndOfTruck' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, SM_Item_AmmoPack_013) == 0x000268, "Member 'ARobberTruck_C::SM_Item_AmmoPack_013' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, SM_Item_AmmoPack_012) == 0x000270, "Member 'ARobberTruck_C::SM_Item_AmmoPack_012' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, SM_Item_AmmoPack_011) == 0x000278, "Member 'ARobberTruck_C::SM_Item_AmmoPack_011' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, Box3) == 0x000280, "Member 'ARobberTruck_C::Box3' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, SM_Item_AmmoPack_09) == 0x000288, "Member 'ARobberTruck_C::SM_Item_AmmoPack_09' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, WallLamp3) == 0x000290, "Member 'ARobberTruck_C::WallLamp3' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, WallLamp2) == 0x000298, "Member 'ARobberTruck_C::WallLamp2' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, WallLamp1) == 0x0002A0, "Member 'ARobberTruck_C::WallLamp1' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, WallLamp) == 0x0002A8, "Member 'ARobberTruck_C::WallLamp' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, Clock1) == 0x0002B0, "Member 'ARobberTruck_C::Clock1' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, ladder) == 0x0002B8, "Member 'ARobberTruck_C::ladder' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, Socket) == 0x0002C0, "Member 'ARobberTruck_C::Socket' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, WalkWay4) == 0x0002C8, "Member 'ARobberTruck_C::WalkWay4' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, WalkWay3) == 0x0002D0, "Member 'ARobberTruck_C::WalkWay3' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, WalkWay5) == 0x0002D8, "Member 'ARobberTruck_C::WalkWay5' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, Clock) == 0x0002E0, "Member 'ARobberTruck_C::Clock' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, SM_Item_AmmoPack_08) == 0x0002E8, "Member 'ARobberTruck_C::SM_Item_AmmoPack_08' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, SM_Item_AmmoPack_07) == 0x0002F0, "Member 'ARobberTruck_C::SM_Item_AmmoPack_07' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, SM_Item_AmmoPack_06) == 0x0002F8, "Member 'ARobberTruck_C::SM_Item_AmmoPack_06' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, SM_Item_AmmoPack_05) == 0x000300, "Member 'ARobberTruck_C::SM_Item_AmmoPack_05' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, SM_Item_AmmoPack_04) == 0x000308, "Member 'ARobberTruck_C::SM_Item_AmmoPack_04' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, SM_Item_AmmoPack_03) == 0x000310, "Member 'ARobberTruck_C::SM_Item_AmmoPack_03' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, SM_Item_AmmoPack_02) == 0x000318, "Member 'ARobberTruck_C::SM_Item_AmmoPack_02' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, SM_Item_AmmoPack_01) == 0x000320, "Member 'ARobberTruck_C::SM_Item_AmmoPack_01' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, Plane) == 0x000328, "Member 'ARobberTruck_C::Plane' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, MinTakeText) == 0x000330, "Member 'ARobberTruck_C::MinTakeText' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, WhiteBoardText) == 0x000338, "Member 'ARobberTruck_C::WhiteBoardText' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, WalkWay2) == 0x000340, "Member 'ARobberTruck_C::WalkWay2' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, WalkWay1) == 0x000348, "Member 'ARobberTruck_C::WalkWay1' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, WalkWay) == 0x000350, "Member 'ARobberTruck_C::WalkWay' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, Vent) == 0x000358, "Member 'ARobberTruck_C::Vent' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, Whiteboard) == 0x000360, "Member 'ARobberTruck_C::Whiteboard' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, FanShell) == 0x000368, "Member 'ARobberTruck_C::FanShell' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, Fan) == 0x000370, "Member 'ARobberTruck_C::Fan' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, FanBase) == 0x000378, "Member 'ARobberTruck_C::FanBase' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, Shelf3) == 0x000380, "Member 'ARobberTruck_C::Shelf3' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, Shelf2) == 0x000388, "Member 'ARobberTruck_C::Shelf2' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, Shelf1) == 0x000390, "Member 'ARobberTruck_C::Shelf1' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, Shelf) == 0x000398, "Member 'ARobberTruck_C::Shelf' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, Poster) == 0x0003A0, "Member 'ARobberTruck_C::Poster' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, Table4) == 0x0003A8, "Member 'ARobberTruck_C::Table4' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, Table3) == 0x0003B0, "Member 'ARobberTruck_C::Table3' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, Table2) == 0x0003B8, "Member 'ARobberTruck_C::Table2' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, Playerstart3) == 0x0003C0, "Member 'ARobberTruck_C::Playerstart3' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, Playerstart2) == 0x0003C8, "Member 'ARobberTruck_C::Playerstart2' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, Playerstart1) == 0x0003D0, "Member 'ARobberTruck_C::Playerstart1' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, PlayerStart) == 0x0003D8, "Member 'ARobberTruck_C::PlayerStart' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, WeaponBoard) == 0x0003E0, "Member 'ARobberTruck_C::WeaponBoard' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, PointLight2) == 0x0003E8, "Member 'ARobberTruck_C::PointLight2' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, PointLight1) == 0x0003F0, "Member 'ARobberTruck_C::PointLight1' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, PointLight) == 0x0003F8, "Member 'ARobberTruck_C::PointLight' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, TruckMesh) == 0x000400, "Member 'ARobberTruck_C::TruckMesh' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, DefaultSceneRoot) == 0x000408, "Member 'ARobberTruck_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, TotalTake) == 0x000410, "Member 'ARobberTruck_C::TotalTake' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, MinimumTake) == 0x000414, "Member 'ARobberTruck_C::MinimumTake' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, OverlappingPlayers) == 0x000418, "Member 'ARobberTruck_C::OverlappingPlayers' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, CanEndGame_) == 0x00041C, "Member 'ARobberTruck_C::CanEndGame_' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, Timer) == 0x000420, "Member 'ARobberTruck_C::Timer' has a wrong offset!");
-static_assert(offsetof(ARobberTruck_C, ms) == 0x000428, "Member 'ARobberTruck_C::ms' has a wrong offset!");
+DUMPER7_ASSERTS_ARobberTruck_C;
 
 }
 

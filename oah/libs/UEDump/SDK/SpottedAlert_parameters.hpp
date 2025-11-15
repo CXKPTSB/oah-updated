@@ -24,11 +24,7 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SpottedAlert_C_ExecuteUbergraph_SpottedAlert) == 0x000008, "Wrong alignment on SpottedAlert_C_ExecuteUbergraph_SpottedAlert");
-static_assert(sizeof(SpottedAlert_C_ExecuteUbergraph_SpottedAlert) == 0x000018, "Wrong size on SpottedAlert_C_ExecuteUbergraph_SpottedAlert");
-static_assert(offsetof(SpottedAlert_C_ExecuteUbergraph_SpottedAlert, EntryPoint) == 0x000000, "Member 'SpottedAlert_C_ExecuteUbergraph_SpottedAlert::EntryPoint' has a wrong offset!");
-static_assert(offsetof(SpottedAlert_C_ExecuteUbergraph_SpottedAlert, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'SpottedAlert_C_ExecuteUbergraph_SpottedAlert::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SpottedAlert_C_ExecuteUbergraph_SpottedAlert, CallFunc_PlayAnimation_ReturnValue_1) == 0x000010, "Member 'SpottedAlert_C_ExecuteUbergraph_SpottedAlert::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_SpottedAlert_C_ExecuteUbergraph_SpottedAlert;
 
 }
 

@@ -43,24 +43,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ControlsChild_C">();
+		BP_STATIC_CLASS_IMPL("ControlsChild_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ControlsChild_C")
 	}
 	static class UControlsChild_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UControlsChild_C>();
 	}
 };
-static_assert(alignof(UControlsChild_C) == 0x000008, "Wrong alignment on UControlsChild_C");
-static_assert(sizeof(UControlsChild_C) == 0x0002F8, "Wrong size on UControlsChild_C");
-static_assert(offsetof(UControlsChild_C, UberGraphFrame) == 0x000260, "Member 'UControlsChild_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UControlsChild_C, InputKeySelector_133) == 0x000268, "Member 'UControlsChild_C::InputKeySelector_133' has a wrong offset!");
-static_assert(offsetof(UControlsChild_C, InputName) == 0x000270, "Member 'UControlsChild_C::InputName' has a wrong offset!");
-static_assert(offsetof(UControlsChild_C, Display_name) == 0x000278, "Member 'UControlsChild_C::Display_name' has a wrong offset!");
-static_assert(offsetof(UControlsChild_C, Input_name) == 0x000288, "Member 'UControlsChild_C::Input_name' has a wrong offset!");
-static_assert(offsetof(UControlsChild_C, InputAction) == 0x000298, "Member 'UControlsChild_C::InputAction' has a wrong offset!");
-static_assert(offsetof(UControlsChild_C, Axis_mapping_) == 0x0002C0, "Member 'UControlsChild_C::Axis_mapping_' has a wrong offset!");
-static_assert(offsetof(UControlsChild_C, Input_axis) == 0x0002C8, "Member 'UControlsChild_C::Input_axis' has a wrong offset!");
-static_assert(offsetof(UControlsChild_C, Inpus_axis_scale) == 0x0002F0, "Member 'UControlsChild_C::Inpus_axis_scale' has a wrong offset!");
+DUMPER7_ASSERTS_UControlsChild_C;
 
 }
 

@@ -32,16 +32,7 @@ public:
 	class AInstruction_base_C*                    CallFunc_GetActorOfClass_ReturnValue_1;            // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Instructioncomponent_C_ExecuteUbergraph_Instructioncomponent) == 0x000008, "Wrong alignment on Instructioncomponent_C_ExecuteUbergraph_Instructioncomponent");
-static_assert(sizeof(Instructioncomponent_C_ExecuteUbergraph_Instructioncomponent) == 0x000038, "Wrong size on Instructioncomponent_C_ExecuteUbergraph_Instructioncomponent");
-static_assert(offsetof(Instructioncomponent_C_ExecuteUbergraph_Instructioncomponent, EntryPoint) == 0x000000, "Member 'Instructioncomponent_C_ExecuteUbergraph_Instructioncomponent::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Instructioncomponent_C_ExecuteUbergraph_Instructioncomponent, K2Node_Event_Title) == 0x000008, "Member 'Instructioncomponent_C_ExecuteUbergraph_Instructioncomponent::K2Node_Event_Title' has a wrong offset!");
-static_assert(offsetof(Instructioncomponent_C_ExecuteUbergraph_Instructioncomponent, CallFunc_GetActorOfClass_ReturnValue) == 0x000018, "Member 'Instructioncomponent_C_ExecuteUbergraph_Instructioncomponent::CallFunc_GetActorOfClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Instructioncomponent_C_ExecuteUbergraph_Instructioncomponent, CallFunc_Next_Instruction_NextInstrFound_) == 0x000020, "Member 'Instructioncomponent_C_ExecuteUbergraph_Instructioncomponent::CallFunc_Next_Instruction_NextInstrFound_' has a wrong offset!");
-static_assert(offsetof(Instructioncomponent_C_ExecuteUbergraph_Instructioncomponent, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000021, "Member 'Instructioncomponent_C_ExecuteUbergraph_Instructioncomponent::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Instructioncomponent_C_ExecuteUbergraph_Instructioncomponent, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x000022, "Member 'Instructioncomponent_C_ExecuteUbergraph_Instructioncomponent::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Instructioncomponent_C_ExecuteUbergraph_Instructioncomponent, CallFunc_GetActorOfClass_ReturnValue_1) == 0x000028, "Member 'Instructioncomponent_C_ExecuteUbergraph_Instructioncomponent::CallFunc_GetActorOfClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Instructioncomponent_C_ExecuteUbergraph_Instructioncomponent, CallFunc_IsValid_ReturnValue) == 0x000030, "Member 'Instructioncomponent_C_ExecuteUbergraph_Instructioncomponent::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_Instructioncomponent_C_ExecuteUbergraph_Instructioncomponent;
 
 // Function Instructioncomponent.Instructioncomponent_C.AnnounceNewInstructionWidget
 // 0x0010 (0x0010 - 0x0000)
@@ -50,9 +41,7 @@ struct Instructioncomponent_C_AnnounceNewInstructionWidget final
 public:
 	class FString                                 Title;                                             // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Instructioncomponent_C_AnnounceNewInstructionWidget) == 0x000008, "Wrong alignment on Instructioncomponent_C_AnnounceNewInstructionWidget");
-static_assert(sizeof(Instructioncomponent_C_AnnounceNewInstructionWidget) == 0x000010, "Wrong size on Instructioncomponent_C_AnnounceNewInstructionWidget");
-static_assert(offsetof(Instructioncomponent_C_AnnounceNewInstructionWidget, Title) == 0x000000, "Member 'Instructioncomponent_C_AnnounceNewInstructionWidget::Title' has a wrong offset!");
+DUMPER7_ASSERTS_Instructioncomponent_C_AnnounceNewInstructionWidget;
 
 // Function Instructioncomponent.Instructioncomponent_C.GetCurrentInstruction
 // 0x0030 (0x0030 - 0x0000)
@@ -61,9 +50,7 @@ struct Instructioncomponent_C_GetCurrentInstruction final
 public:
 	struct FInstructionStruct                     Instruction;                                       // 0x0000(0x0030)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Instructioncomponent_C_GetCurrentInstruction) == 0x000008, "Wrong alignment on Instructioncomponent_C_GetCurrentInstruction");
-static_assert(sizeof(Instructioncomponent_C_GetCurrentInstruction) == 0x000030, "Wrong size on Instructioncomponent_C_GetCurrentInstruction");
-static_assert(offsetof(Instructioncomponent_C_GetCurrentInstruction, Instruction) == 0x000000, "Member 'Instructioncomponent_C_GetCurrentInstruction::Instruction' has a wrong offset!");
+DUMPER7_ASSERTS_Instructioncomponent_C_GetCurrentInstruction;
 
 }
 

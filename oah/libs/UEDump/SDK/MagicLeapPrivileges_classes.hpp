@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MagicLeapPrivilegesFunctionLibrary">();
+		STATIC_CLASS_IMPL("MagicLeapPrivilegesFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MagicLeapPrivilegesFunctionLibrary")
 	}
 	static class UMagicLeapPrivilegesFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMagicLeapPrivilegesFunctionLibrary>();
 	}
 };
-static_assert(alignof(UMagicLeapPrivilegesFunctionLibrary) == 0x000008, "Wrong alignment on UMagicLeapPrivilegesFunctionLibrary");
-static_assert(sizeof(UMagicLeapPrivilegesFunctionLibrary) == 0x000028, "Wrong size on UMagicLeapPrivilegesFunctionLibrary");
+DUMPER7_ASSERTS_UMagicLeapPrivilegesFunctionLibrary;
 
 }
 

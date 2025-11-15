@@ -31,12 +31,12 @@ public:
 	int32                                         BloodHits;                                         // 0x04E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Dead_;                                             // 0x04E8(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_4E9[0x7];                                      // 0x04E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(class AActor* Player)> Death;                                             // 0x04F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(class AActor* Player)> Death;                                      // 0x04F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	TMulticastInlineDelegate<void()>              NPCDamage;                                         // 0x0500(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          CanBePushed_;                                      // 0x0510(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	bool                                          PickedUp_;                                         // 0x0511(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_512[0x6];                                      // 0x0512(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(class UAnimSequenceBase* Anim, bool Loops_)> CallGesture;                                       // 0x0518(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(class UAnimSequenceBase* Anim, bool Loops_)> CallGesture;          // 0x0518(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	TMulticastInlineDelegate<void()>              CallStopGesture;                                   // 0x0528(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          PoliceAlerted_;                                    // 0x0538(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          TiedUp_;                                           // 0x0539(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -62,30 +62,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"NPCBase_C">();
+		BP_STATIC_CLASS_IMPL("NPCBase_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NPCBase_C")
 	}
 	static class ANPCBase_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ANPCBase_C>();
 	}
 };
-static_assert(alignof(ANPCBase_C) == 0x000010, "Wrong alignment on ANPCBase_C");
-static_assert(sizeof(ANPCBase_C) == 0x000540, "Wrong size on ANPCBase_C");
-static_assert(offsetof(ANPCBase_C, UberGraphFrame) == 0x0004C0, "Member 'ANPCBase_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ANPCBase_C, Arrow1) == 0x0004C8, "Member 'ANPCBase_C::Arrow1' has a wrong offset!");
-static_assert(offsetof(ANPCBase_C, DamageComponent) == 0x0004D0, "Member 'ANPCBase_C::DamageComponent' has a wrong offset!");
-static_assert(offsetof(ANPCBase_C, PhysicalAnimation) == 0x0004D8, "Member 'ANPCBase_C::PhysicalAnimation' has a wrong offset!");
-static_assert(offsetof(ANPCBase_C, Health) == 0x0004E0, "Member 'ANPCBase_C::Health' has a wrong offset!");
-static_assert(offsetof(ANPCBase_C, BloodHits) == 0x0004E4, "Member 'ANPCBase_C::BloodHits' has a wrong offset!");
-static_assert(offsetof(ANPCBase_C, Dead_) == 0x0004E8, "Member 'ANPCBase_C::Dead_' has a wrong offset!");
-static_assert(offsetof(ANPCBase_C, Death) == 0x0004F0, "Member 'ANPCBase_C::Death' has a wrong offset!");
-static_assert(offsetof(ANPCBase_C, NPCDamage) == 0x000500, "Member 'ANPCBase_C::NPCDamage' has a wrong offset!");
-static_assert(offsetof(ANPCBase_C, CanBePushed_) == 0x000510, "Member 'ANPCBase_C::CanBePushed_' has a wrong offset!");
-static_assert(offsetof(ANPCBase_C, PickedUp_) == 0x000511, "Member 'ANPCBase_C::PickedUp_' has a wrong offset!");
-static_assert(offsetof(ANPCBase_C, CallGesture) == 0x000518, "Member 'ANPCBase_C::CallGesture' has a wrong offset!");
-static_assert(offsetof(ANPCBase_C, CallStopGesture) == 0x000528, "Member 'ANPCBase_C::CallStopGesture' has a wrong offset!");
-static_assert(offsetof(ANPCBase_C, PoliceAlerted_) == 0x000538, "Member 'ANPCBase_C::PoliceAlerted_' has a wrong offset!");
-static_assert(offsetof(ANPCBase_C, TiedUp_) == 0x000539, "Member 'ANPCBase_C::TiedUp_' has a wrong offset!");
+DUMPER7_ASSERTS_ANPCBase_C;
 
 }
 

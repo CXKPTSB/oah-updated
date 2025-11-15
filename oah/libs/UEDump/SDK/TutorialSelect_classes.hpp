@@ -46,24 +46,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TutorialSelect_C">();
+		BP_STATIC_CLASS_IMPL("TutorialSelect_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TutorialSelect_C")
 	}
 	static class UTutorialSelect_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTutorialSelect_C>();
 	}
 };
-static_assert(alignof(UTutorialSelect_C) == 0x000008, "Wrong alignment on UTutorialSelect_C");
-static_assert(sizeof(UTutorialSelect_C) == 0x0002A8, "Wrong size on UTutorialSelect_C");
-static_assert(offsetof(UTutorialSelect_C, UberGraphFrame) == 0x000260, "Member 'UTutorialSelect_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTutorialSelect_C, Button_74) == 0x000268, "Member 'UTutorialSelect_C::Button_74' has a wrong offset!");
-static_assert(offsetof(UTutorialSelect_C, Image) == 0x000270, "Member 'UTutorialSelect_C::Image' has a wrong offset!");
-static_assert(offsetof(UTutorialSelect_C, Image_1) == 0x000278, "Member 'UTutorialSelect_C::Image_1' has a wrong offset!");
-static_assert(offsetof(UTutorialSelect_C, Image_84) == 0x000280, "Member 'UTutorialSelect_C::Image_84' has a wrong offset!");
-static_assert(offsetof(UTutorialSelect_C, Image_226) == 0x000288, "Member 'UTutorialSelect_C::Image_226' has a wrong offset!");
-static_assert(offsetof(UTutorialSelect_C, MoreButton) == 0x000290, "Member 'UTutorialSelect_C::MoreButton' has a wrong offset!");
-static_assert(offsetof(UTutorialSelect_C, TutorialButton) == 0x000298, "Member 'UTutorialSelect_C::TutorialButton' has a wrong offset!");
-static_assert(offsetof(UTutorialSelect_C, TutorialButton_1) == 0x0002A0, "Member 'UTutorialSelect_C::TutorialButton_1' has a wrong offset!");
+DUMPER7_ASSERTS_UTutorialSelect_C;
 
 }
 

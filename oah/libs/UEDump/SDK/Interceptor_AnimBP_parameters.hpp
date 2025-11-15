@@ -35,18 +35,7 @@ public:
 	float                                         CallFunc_Dot_VectorVector_ReturnValue_1;           // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_DeltaTimeX;                           // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Interceptor_AnimBP_C_ExecuteUbergraph_Interceptor_AnimBP) == 0x000008, "Wrong alignment on Interceptor_AnimBP_C_ExecuteUbergraph_Interceptor_AnimBP");
-static_assert(sizeof(Interceptor_AnimBP_C_ExecuteUbergraph_Interceptor_AnimBP) == 0x000050, "Wrong size on Interceptor_AnimBP_C_ExecuteUbergraph_Interceptor_AnimBP");
-static_assert(offsetof(Interceptor_AnimBP_C_ExecuteUbergraph_Interceptor_AnimBP, EntryPoint) == 0x000000, "Member 'Interceptor_AnimBP_C_ExecuteUbergraph_Interceptor_AnimBP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Interceptor_AnimBP_C_ExecuteUbergraph_Interceptor_AnimBP, CallFunc_TryGetPawnOwner_ReturnValue) == 0x000008, "Member 'Interceptor_AnimBP_C_ExecuteUbergraph_Interceptor_AnimBP::CallFunc_TryGetPawnOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Interceptor_AnimBP_C_ExecuteUbergraph_Interceptor_AnimBP, K2Node_DynamicCast_AsNPC_Interceptor) == 0x000010, "Member 'Interceptor_AnimBP_C_ExecuteUbergraph_Interceptor_AnimBP::K2Node_DynamicCast_AsNPC_Interceptor' has a wrong offset!");
-static_assert(offsetof(Interceptor_AnimBP_C_ExecuteUbergraph_Interceptor_AnimBP, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'Interceptor_AnimBP_C_ExecuteUbergraph_Interceptor_AnimBP::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Interceptor_AnimBP_C_ExecuteUbergraph_Interceptor_AnimBP, CallFunc_GetActorRightVector_ReturnValue) == 0x00001C, "Member 'Interceptor_AnimBP_C_ExecuteUbergraph_Interceptor_AnimBP::CallFunc_GetActorRightVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Interceptor_AnimBP_C_ExecuteUbergraph_Interceptor_AnimBP, CallFunc_GetVelocity_ReturnValue) == 0x000028, "Member 'Interceptor_AnimBP_C_ExecuteUbergraph_Interceptor_AnimBP::CallFunc_GetVelocity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Interceptor_AnimBP_C_ExecuteUbergraph_Interceptor_AnimBP, CallFunc_Dot_VectorVector_ReturnValue) == 0x000034, "Member 'Interceptor_AnimBP_C_ExecuteUbergraph_Interceptor_AnimBP::CallFunc_Dot_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Interceptor_AnimBP_C_ExecuteUbergraph_Interceptor_AnimBP, CallFunc_GetActorForwardVector_ReturnValue) == 0x000038, "Member 'Interceptor_AnimBP_C_ExecuteUbergraph_Interceptor_AnimBP::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Interceptor_AnimBP_C_ExecuteUbergraph_Interceptor_AnimBP, CallFunc_Dot_VectorVector_ReturnValue_1) == 0x000044, "Member 'Interceptor_AnimBP_C_ExecuteUbergraph_Interceptor_AnimBP::CallFunc_Dot_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Interceptor_AnimBP_C_ExecuteUbergraph_Interceptor_AnimBP, K2Node_Event_DeltaTimeX) == 0x000048, "Member 'Interceptor_AnimBP_C_ExecuteUbergraph_Interceptor_AnimBP::K2Node_Event_DeltaTimeX' has a wrong offset!");
+DUMPER7_ASSERTS_Interceptor_AnimBP_C_ExecuteUbergraph_Interceptor_AnimBP;
 
 // Function Interceptor_AnimBP.Interceptor_AnimBP_C.BlueprintUpdateAnimation
 // 0x0004 (0x0004 - 0x0000)
@@ -55,9 +44,7 @@ struct Interceptor_AnimBP_C_BlueprintUpdateAnimation final
 public:
 	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Interceptor_AnimBP_C_BlueprintUpdateAnimation) == 0x000004, "Wrong alignment on Interceptor_AnimBP_C_BlueprintUpdateAnimation");
-static_assert(sizeof(Interceptor_AnimBP_C_BlueprintUpdateAnimation) == 0x000004, "Wrong size on Interceptor_AnimBP_C_BlueprintUpdateAnimation");
-static_assert(offsetof(Interceptor_AnimBP_C_BlueprintUpdateAnimation, DeltaTimeX) == 0x000000, "Member 'Interceptor_AnimBP_C_BlueprintUpdateAnimation::DeltaTimeX' has a wrong offset!");
+DUMPER7_ASSERTS_Interceptor_AnimBP_C_BlueprintUpdateAnimation;
 
 // Function Interceptor_AnimBP.Interceptor_AnimBP_C.AnimGraph
 // 0x0010 (0x0010 - 0x0000)
@@ -66,9 +53,7 @@ struct Interceptor_AnimBP_C_AnimGraph final
 public:
 	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Interceptor_AnimBP_C_AnimGraph) == 0x000008, "Wrong alignment on Interceptor_AnimBP_C_AnimGraph");
-static_assert(sizeof(Interceptor_AnimBP_C_AnimGraph) == 0x000010, "Wrong size on Interceptor_AnimBP_C_AnimGraph");
-static_assert(offsetof(Interceptor_AnimBP_C_AnimGraph, AnimGraph_0) == 0x000000, "Member 'Interceptor_AnimBP_C_AnimGraph::AnimGraph_0' has a wrong offset!");
+DUMPER7_ASSERTS_Interceptor_AnimBP_C_AnimGraph;
 
 }
 

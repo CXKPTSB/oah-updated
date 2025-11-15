@@ -39,21 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PoliceHelmet_C">();
+		BP_STATIC_CLASS_IMPL("PoliceHelmet_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PoliceHelmet_C")
 	}
 	static class APoliceHelmet_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APoliceHelmet_C>();
 	}
 };
-static_assert(alignof(APoliceHelmet_C) == 0x000008, "Wrong alignment on APoliceHelmet_C");
-static_assert(sizeof(APoliceHelmet_C) == 0x000258, "Wrong size on APoliceHelmet_C");
-static_assert(offsetof(APoliceHelmet_C, UberGraphFrame) == 0x000220, "Member 'APoliceHelmet_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(APoliceHelmet_C, DamageComponent) == 0x000228, "Member 'APoliceHelmet_C::DamageComponent' has a wrong offset!");
-static_assert(offsetof(APoliceHelmet_C, Sphere) == 0x000230, "Member 'APoliceHelmet_C::Sphere' has a wrong offset!");
-static_assert(offsetof(APoliceHelmet_C, Health) == 0x000238, "Member 'APoliceHelmet_C::Health' has a wrong offset!");
-static_assert(offsetof(APoliceHelmet_C, As_Robber_Game_State) == 0x000240, "Member 'APoliceHelmet_C::As_Robber_Game_State' has a wrong offset!");
-static_assert(offsetof(APoliceHelmet_C, HelmetDestroyed) == 0x000248, "Member 'APoliceHelmet_C::HelmetDestroyed' has a wrong offset!");
+DUMPER7_ASSERTS_APoliceHelmet_C;
 
 }
 

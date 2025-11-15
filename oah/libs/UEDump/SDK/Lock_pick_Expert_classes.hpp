@@ -23,15 +23,18 @@ class ALock_pick_Expert_C final : public ALock_pick_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Lock_pick_Expert_C">();
+		BP_STATIC_CLASS_IMPL("Lock_pick_Expert_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Lock_pick_Expert_C")
 	}
 	static class ALock_pick_Expert_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ALock_pick_Expert_C>();
 	}
 };
-static_assert(alignof(ALock_pick_Expert_C) == 0x000008, "Wrong alignment on ALock_pick_Expert_C");
-static_assert(sizeof(ALock_pick_Expert_C) == 0x0002A8, "Wrong size on ALock_pick_Expert_C");
+DUMPER7_ASSERTS_ALock_pick_Expert_C;
 
 }
 

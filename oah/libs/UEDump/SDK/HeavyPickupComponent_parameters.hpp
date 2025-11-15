@@ -43,37 +43,14 @@ public:
 	class ANPCBase_C*                             K2Node_DynamicCast_AsNPCBase;                      // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_99[0x3];                                       // 0x0099(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class AActor* Player, const struct FVector& Pickuplocation, const struct FRotator& PickupRotation, const struct FVector& HitLocation)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x009C(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class AActor* Player, const struct FVector& Pickuplocation, const struct FRotator& PickupRotation, const struct FVector& HitLocation)> K2Node_CreateDelegate_OutputDelegate_1; // 0x009C(0x0010)(ZeroConstructor, NoDestructor)
 	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x00AC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_CustomEvent_Player;                         // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult;       // 0x00C0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	struct FHitResult                             CallFunc_K2_SetActorLocation_SweepHitResult;       // 0x0148(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_K2_SetActorLocation_ReturnValue;          // 0x01D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent) == 0x000008, "Wrong alignment on HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent");
-static_assert(sizeof(HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent) == 0x0001D8, "Wrong size on HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent");
-static_assert(offsetof(HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent, EntryPoint) == 0x000000, "Member 'HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent::EntryPoint' has a wrong offset!");
-static_assert(offsetof(HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent, CallFunc_GetOwner_ReturnValue) == 0x000018, "Member 'HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent, K2Node_CustomEvent_Player_1) == 0x000020, "Member 'HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent::K2Node_CustomEvent_Player_1' has a wrong offset!");
-static_assert(offsetof(HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent, K2Node_CustomEvent_Pickuplocation) == 0x000028, "Member 'HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent::K2Node_CustomEvent_Pickuplocation' has a wrong offset!");
-static_assert(offsetof(HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent, K2Node_CustomEvent_PickupRotation) == 0x000034, "Member 'HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent::K2Node_CustomEvent_PickupRotation' has a wrong offset!");
-static_assert(offsetof(HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent, K2Node_CustomEvent_HitLocation) == 0x000040, "Member 'HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent::K2Node_CustomEvent_HitLocation' has a wrong offset!");
-static_assert(offsetof(HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent, K2Node_DynamicCast_AsNPCInterface) == 0x000050, "Member 'HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent::K2Node_DynamicCast_AsNPCInterface' has a wrong offset!");
-static_assert(offsetof(HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent, K2Node_DynamicCast_bSuccess) == 0x000060, "Member 'HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent, K2Node_DynamicCast_AsNPCInterface_1) == 0x000068, "Member 'HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent::K2Node_DynamicCast_AsNPCInterface_1' has a wrong offset!");
-static_assert(offsetof(HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent, K2Node_DynamicCast_bSuccess_1) == 0x000078, "Member 'HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent, CallFunc_DoesImplementInterface_ReturnValue) == 0x000079, "Member 'HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent::CallFunc_DoesImplementInterface_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent, CallFunc_GetComponentByClass_ReturnValue) == 0x000080, "Member 'HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent, CallFunc_GetOwner_ReturnValue_1) == 0x000088, "Member 'HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent::CallFunc_GetOwner_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent, K2Node_DynamicCast_AsNPCBase) == 0x000090, "Member 'HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent::K2Node_DynamicCast_AsNPCBase' has a wrong offset!");
-static_assert(offsetof(HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent, K2Node_DynamicCast_bSuccess_2) == 0x000098, "Member 'HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent, K2Node_CreateDelegate_OutputDelegate_1) == 0x00009C, "Member 'HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent, CallFunc_GetSocketLocation_ReturnValue) == 0x0000AC, "Member 'HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent::CallFunc_GetSocketLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent, K2Node_CustomEvent_Player) == 0x0000B8, "Member 'HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent::K2Node_CustomEvent_Player' has a wrong offset!");
-static_assert(offsetof(HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent, CallFunc_K2_SetWorldLocation_SweepHitResult) == 0x0000C0, "Member 'HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent::CallFunc_K2_SetWorldLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent, CallFunc_K2_SetActorLocation_SweepHitResult) == 0x000148, "Member 'HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent::CallFunc_K2_SetActorLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent, CallFunc_K2_SetActorLocation_ReturnValue) == 0x0001D0, "Member 'HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent::CallFunc_K2_SetActorLocation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HeavyPickupComponent_C_ExecuteUbergraph_HeavyPickupComponent;
 
 // Function HeavyPickupComponent.HeavyPickupComponent_C.DroppedRagdoll
 // 0x0008 (0x0008 - 0x0000)
@@ -82,9 +59,7 @@ struct HeavyPickupComponent_C_DroppedRagdoll final
 public:
 	class AActor*                                 Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HeavyPickupComponent_C_DroppedRagdoll) == 0x000008, "Wrong alignment on HeavyPickupComponent_C_DroppedRagdoll");
-static_assert(sizeof(HeavyPickupComponent_C_DroppedRagdoll) == 0x000008, "Wrong size on HeavyPickupComponent_C_DroppedRagdoll");
-static_assert(offsetof(HeavyPickupComponent_C_DroppedRagdoll, Player) == 0x000000, "Member 'HeavyPickupComponent_C_DroppedRagdoll::Player' has a wrong offset!");
+DUMPER7_ASSERTS_HeavyPickupComponent_C_DroppedRagdoll;
 
 // Function HeavyPickupComponent.HeavyPickupComponent_C.SetBoneLocation
 // 0x0030 (0x0030 - 0x0000)
@@ -96,12 +71,7 @@ public:
 	struct FRotator                               PickupRotation;                                    // 0x0014(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FVector                                HitLocation;                                       // 0x0020(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HeavyPickupComponent_C_SetBoneLocation) == 0x000008, "Wrong alignment on HeavyPickupComponent_C_SetBoneLocation");
-static_assert(sizeof(HeavyPickupComponent_C_SetBoneLocation) == 0x000030, "Wrong size on HeavyPickupComponent_C_SetBoneLocation");
-static_assert(offsetof(HeavyPickupComponent_C_SetBoneLocation, Player) == 0x000000, "Member 'HeavyPickupComponent_C_SetBoneLocation::Player' has a wrong offset!");
-static_assert(offsetof(HeavyPickupComponent_C_SetBoneLocation, Pickuplocation) == 0x000008, "Member 'HeavyPickupComponent_C_SetBoneLocation::Pickuplocation' has a wrong offset!");
-static_assert(offsetof(HeavyPickupComponent_C_SetBoneLocation, PickupRotation) == 0x000014, "Member 'HeavyPickupComponent_C_SetBoneLocation::PickupRotation' has a wrong offset!");
-static_assert(offsetof(HeavyPickupComponent_C_SetBoneLocation, HitLocation) == 0x000020, "Member 'HeavyPickupComponent_C_SetBoneLocation::HitLocation' has a wrong offset!");
+DUMPER7_ASSERTS_HeavyPickupComponent_C_SetBoneLocation;
 
 }
 

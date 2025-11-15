@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Mag_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Mag_Empty_C">();
+		BP_STATIC_CLASS_IMPL("Mag_Empty_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Mag_Empty_C")
 	}
 	static class AMag_Empty_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMag_Empty_C>();
 	}
 };
-static_assert(alignof(AMag_Empty_C) == 0x000008, "Wrong alignment on AMag_Empty_C");
-static_assert(sizeof(AMag_Empty_C) == 0x000238, "Wrong size on AMag_Empty_C");
-static_assert(offsetof(AMag_Empty_C, UberGraphFrame) == 0x000230, "Member 'AMag_Empty_C::UberGraphFrame' has a wrong offset!");
+DUMPER7_ASSERTS_AMag_Empty_C;
 
 }
 

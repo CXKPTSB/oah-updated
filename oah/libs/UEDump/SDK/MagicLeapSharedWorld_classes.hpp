@@ -36,19 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MagicLeapSharedWorldGameMode">();
+		STATIC_CLASS_IMPL("MagicLeapSharedWorldGameMode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MagicLeapSharedWorldGameMode")
 	}
 	static class AMagicLeapSharedWorldGameMode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMagicLeapSharedWorldGameMode>();
 	}
 };
-static_assert(alignof(AMagicLeapSharedWorldGameMode) == 0x000008, "Wrong alignment on AMagicLeapSharedWorldGameMode");
-static_assert(sizeof(AMagicLeapSharedWorldGameMode) == 0x0003D8, "Wrong size on AMagicLeapSharedWorldGameMode");
-static_assert(offsetof(AMagicLeapSharedWorldGameMode, SharedWorldData) == 0x000308, "Member 'AMagicLeapSharedWorldGameMode::SharedWorldData' has a wrong offset!");
-static_assert(offsetof(AMagicLeapSharedWorldGameMode, OnNewLocalDataFromClients) == 0x000318, "Member 'AMagicLeapSharedWorldGameMode::OnNewLocalDataFromClients' has a wrong offset!");
-static_assert(offsetof(AMagicLeapSharedWorldGameMode, PinSelectionConfidenceThreshold) == 0x000328, "Member 'AMagicLeapSharedWorldGameMode::PinSelectionConfidenceThreshold' has a wrong offset!");
-static_assert(offsetof(AMagicLeapSharedWorldGameMode, ChosenOne) == 0x0003D0, "Member 'AMagicLeapSharedWorldGameMode::ChosenOne' has a wrong offset!");
+DUMPER7_ASSERTS_AMagicLeapSharedWorldGameMode;
 
 // Class MagicLeapSharedWorld.MagicLeapSharedWorldGameState
 // 0x0040 (0x02D0 - 0x0290)
@@ -56,7 +55,7 @@ class AMagicLeapSharedWorldGameState final : public AGameState
 {
 public:
 	struct FMagicLeapSharedWorldSharedData        SharedWorldData;                                   // 0x0290(0x0010)(BlueprintVisible, BlueprintReadOnly, Net, RepNotify, NativeAccessSpecifierPublic)
-	struct FMagicLeapSharedWorldAlignmentTransforms AlignmentTransforms;                               // 0x02A0(0x0010)(BlueprintVisible, BlueprintReadOnly, Net, RepNotify, NativeAccessSpecifierPublic)
+	struct FMagicLeapSharedWorldAlignmentTransforms AlignmentTransforms;                             // 0x02A0(0x0010)(BlueprintVisible, BlueprintReadOnly, Net, RepNotify, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void()>              OnSharedWorldDataUpdated;                          // 0x02B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void()>              OnAlignmentTransformsUpdated;                      // 0x02C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
@@ -69,19 +68,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MagicLeapSharedWorldGameState">();
+		STATIC_CLASS_IMPL("MagicLeapSharedWorldGameState")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MagicLeapSharedWorldGameState")
 	}
 	static class AMagicLeapSharedWorldGameState* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMagicLeapSharedWorldGameState>();
 	}
 };
-static_assert(alignof(AMagicLeapSharedWorldGameState) == 0x000008, "Wrong alignment on AMagicLeapSharedWorldGameState");
-static_assert(sizeof(AMagicLeapSharedWorldGameState) == 0x0002D0, "Wrong size on AMagicLeapSharedWorldGameState");
-static_assert(offsetof(AMagicLeapSharedWorldGameState, SharedWorldData) == 0x000290, "Member 'AMagicLeapSharedWorldGameState::SharedWorldData' has a wrong offset!");
-static_assert(offsetof(AMagicLeapSharedWorldGameState, AlignmentTransforms) == 0x0002A0, "Member 'AMagicLeapSharedWorldGameState::AlignmentTransforms' has a wrong offset!");
-static_assert(offsetof(AMagicLeapSharedWorldGameState, OnSharedWorldDataUpdated) == 0x0002B0, "Member 'AMagicLeapSharedWorldGameState::OnSharedWorldDataUpdated' has a wrong offset!");
-static_assert(offsetof(AMagicLeapSharedWorldGameState, OnAlignmentTransformsUpdated) == 0x0002C0, "Member 'AMagicLeapSharedWorldGameState::OnAlignmentTransformsUpdated' has a wrong offset!");
+DUMPER7_ASSERTS_AMagicLeapSharedWorldGameState;
 
 // Class MagicLeapSharedWorld.MagicLeapSharedWorldPlayerController
 // 0x0018 (0x0588 - 0x0570)
@@ -102,15 +100,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MagicLeapSharedWorldPlayerController">();
+		STATIC_CLASS_IMPL("MagicLeapSharedWorldPlayerController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MagicLeapSharedWorldPlayerController")
 	}
 	static class AMagicLeapSharedWorldPlayerController* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMagicLeapSharedWorldPlayerController>();
 	}
 };
-static_assert(alignof(AMagicLeapSharedWorldPlayerController) == 0x000008, "Wrong alignment on AMagicLeapSharedWorldPlayerController");
-static_assert(sizeof(AMagicLeapSharedWorldPlayerController) == 0x000588, "Wrong size on AMagicLeapSharedWorldPlayerController");
+DUMPER7_ASSERTS_AMagicLeapSharedWorldPlayerController;
 
 }
 

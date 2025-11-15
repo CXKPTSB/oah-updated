@@ -27,7 +27,7 @@ public:
 	class ABP_TowSpline_C*                        TowSpline;                                         // 0x0208(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Distance;                                          // 0x0210(0x0004)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_214[0x4];                                      // 0x0214(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(class ABP_HitchHook_C* Hitch)> EnableHitch;                                       // 0x0218(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(class ABP_HitchHook_C* Hitch)> EnableHitch;                        // 0x0218(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          IsBeingTowed_;                                     // 0x0228(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_229[0x3];                                      // 0x0229(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         TowSpeed;                                          // 0x022C(0x0004)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -50,24 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HitchComponent_C">();
+		BP_STATIC_CLASS_IMPL("HitchComponent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HitchComponent_C")
 	}
 	static class UHitchComponent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHitchComponent_C>();
 	}
 };
-static_assert(alignof(UHitchComponent_C) == 0x000010, "Wrong alignment on UHitchComponent_C");
-static_assert(sizeof(UHitchComponent_C) == 0x000240, "Wrong size on UHitchComponent_C");
-static_assert(offsetof(UHitchComponent_C, UberGraphFrame) == 0x000200, "Member 'UHitchComponent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UHitchComponent_C, TowSpline) == 0x000208, "Member 'UHitchComponent_C::TowSpline' has a wrong offset!");
-static_assert(offsetof(UHitchComponent_C, Distance) == 0x000210, "Member 'UHitchComponent_C::Distance' has a wrong offset!");
-static_assert(offsetof(UHitchComponent_C, EnableHitch) == 0x000218, "Member 'UHitchComponent_C::EnableHitch' has a wrong offset!");
-static_assert(offsetof(UHitchComponent_C, IsBeingTowed_) == 0x000228, "Member 'UHitchComponent_C::IsBeingTowed_' has a wrong offset!");
-static_assert(offsetof(UHitchComponent_C, TowSpeed) == 0x00022C, "Member 'UHitchComponent_C::TowSpeed' has a wrong offset!");
-static_assert(offsetof(UHitchComponent_C, Value) == 0x000230, "Member 'UHitchComponent_C::Value' has a wrong offset!");
-static_assert(offsetof(UHitchComponent_C, ShouldSpinWheels_) == 0x000234, "Member 'UHitchComponent_C::ShouldSpinWheels_' has a wrong offset!");
-static_assert(offsetof(UHitchComponent_C, TowPaused_) == 0x000235, "Member 'UHitchComponent_C::TowPaused_' has a wrong offset!");
+DUMPER7_ASSERTS_UHitchComponent_C;
 
 }
 

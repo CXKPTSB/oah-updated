@@ -48,38 +48,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EndOfTruck_Default_C">();
+		BP_STATIC_CLASS_IMPL("EndOfTruck_Default_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EndOfTruck_Default_C")
 	}
 	static class AEndOfTruck_Default_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AEndOfTruck_Default_C>();
 	}
 };
-static_assert(alignof(AEndOfTruck_Default_C) == 0x000008, "Wrong alignment on AEndOfTruck_Default_C");
-static_assert(sizeof(AEndOfTruck_Default_C) == 0x0002E8, "Wrong size on AEndOfTruck_Default_C");
-static_assert(offsetof(AEndOfTruck_Default_C, Table2) == 0x000230, "Member 'AEndOfTruck_Default_C::Table2' has a wrong offset!");
-static_assert(offsetof(AEndOfTruck_Default_C, Table22) == 0x000238, "Member 'AEndOfTruck_Default_C::Table22' has a wrong offset!");
-static_assert(offsetof(AEndOfTruck_Default_C, Table21) == 0x000240, "Member 'AEndOfTruck_Default_C::Table21' has a wrong offset!");
-static_assert(offsetof(AEndOfTruck_Default_C, Table13) == 0x000248, "Member 'AEndOfTruck_Default_C::Table13' has a wrong offset!");
-static_assert(offsetof(AEndOfTruck_Default_C, TextRender) == 0x000250, "Member 'AEndOfTruck_Default_C::TextRender' has a wrong offset!");
-static_assert(offsetof(AEndOfTruck_Default_C, Lamp1) == 0x000258, "Member 'AEndOfTruck_Default_C::Lamp1' has a wrong offset!");
-static_assert(offsetof(AEndOfTruck_Default_C, Table8) == 0x000260, "Member 'AEndOfTruck_Default_C::Table8' has a wrong offset!");
-static_assert(offsetof(AEndOfTruck_Default_C, Table20) == 0x000268, "Member 'AEndOfTruck_Default_C::Table20' has a wrong offset!");
-static_assert(offsetof(AEndOfTruck_Default_C, Lamp) == 0x000270, "Member 'AEndOfTruck_Default_C::Lamp' has a wrong offset!");
-static_assert(offsetof(AEndOfTruck_Default_C, Table9) == 0x000278, "Member 'AEndOfTruck_Default_C::Table9' has a wrong offset!");
-static_assert(offsetof(AEndOfTruck_Default_C, Table18) == 0x000280, "Member 'AEndOfTruck_Default_C::Table18' has a wrong offset!");
-static_assert(offsetof(AEndOfTruck_Default_C, Table19) == 0x000288, "Member 'AEndOfTruck_Default_C::Table19' has a wrong offset!");
-static_assert(offsetof(AEndOfTruck_Default_C, Table17) == 0x000290, "Member 'AEndOfTruck_Default_C::Table17' has a wrong offset!");
-static_assert(offsetof(AEndOfTruck_Default_C, Table10) == 0x000298, "Member 'AEndOfTruck_Default_C::Table10' has a wrong offset!");
-static_assert(offsetof(AEndOfTruck_Default_C, Table15) == 0x0002A0, "Member 'AEndOfTruck_Default_C::Table15' has a wrong offset!");
-static_assert(offsetof(AEndOfTruck_Default_C, Table14) == 0x0002A8, "Member 'AEndOfTruck_Default_C::Table14' has a wrong offset!");
-static_assert(offsetof(AEndOfTruck_Default_C, Table16) == 0x0002B0, "Member 'AEndOfTruck_Default_C::Table16' has a wrong offset!");
-static_assert(offsetof(AEndOfTruck_Default_C, Table12) == 0x0002B8, "Member 'AEndOfTruck_Default_C::Table12' has a wrong offset!");
-static_assert(offsetof(AEndOfTruck_Default_C, Table11) == 0x0002C0, "Member 'AEndOfTruck_Default_C::Table11' has a wrong offset!");
-static_assert(offsetof(AEndOfTruck_Default_C, Box) == 0x0002C8, "Member 'AEndOfTruck_Default_C::Box' has a wrong offset!");
-static_assert(offsetof(AEndOfTruck_Default_C, Box1) == 0x0002D0, "Member 'AEndOfTruck_Default_C::Box1' has a wrong offset!");
-static_assert(offsetof(AEndOfTruck_Default_C, Box2) == 0x0002D8, "Member 'AEndOfTruck_Default_C::Box2' has a wrong offset!");
-static_assert(offsetof(AEndOfTruck_Default_C, Table1) == 0x0002E0, "Member 'AEndOfTruck_Default_C::Table1' has a wrong offset!");
+DUMPER7_ASSERTS_AEndOfTruck_Default_C;
 
 }
 

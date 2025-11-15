@@ -17,8 +17,8 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass NPCInterface.NPCInterface_C
-// 0x0000 (0x0028 - 0x0028)
-class INPCInterface_C final : public IInterface
+// 0x0000 (0x0000 - 0x0000)
+class INPCInterface_C final
 {
 public:
 	void CantOpenDoor();
@@ -30,15 +30,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"NPCInterface_C">();
+		BP_STATIC_CLASS_IMPL("NPCInterface_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NPCInterface_C")
 	}
 	static class INPCInterface_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<INPCInterface_C>();
 	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
 };
-static_assert(alignof(INPCInterface_C) == 0x000008, "Wrong alignment on INPCInterface_C");
-static_assert(sizeof(INPCInterface_C) == 0x000028, "Wrong size on INPCInterface_C");
+DUMPER7_ASSERTS_INPCInterface_C;
 
 }
 

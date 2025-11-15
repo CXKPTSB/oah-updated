@@ -45,11 +45,7 @@ public:
 	struct FVector                                Location;                                          // 0x0004(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FRotator                               Rotation;                                          // 0x0010(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMagicLeapImageTargetState) == 0x000004, "Wrong alignment on FMagicLeapImageTargetState");
-static_assert(sizeof(FMagicLeapImageTargetState) == 0x00001C, "Wrong size on FMagicLeapImageTargetState");
-static_assert(offsetof(FMagicLeapImageTargetState, TrackingStatus) == 0x000000, "Member 'FMagicLeapImageTargetState::TrackingStatus' has a wrong offset!");
-static_assert(offsetof(FMagicLeapImageTargetState, Location) == 0x000004, "Member 'FMagicLeapImageTargetState::Location' has a wrong offset!");
-static_assert(offsetof(FMagicLeapImageTargetState, Rotation) == 0x000010, "Member 'FMagicLeapImageTargetState::Rotation' has a wrong offset!");
+DUMPER7_ASSERTS_FMagicLeapImageTargetState;
 
 // ScriptStruct MagicLeapImageTracker.MagicLeapImageTargetSettings
 // 0x0020 (0x0020 - 0x0000)
@@ -63,13 +59,7 @@ public:
 	bool                                          BIsEnabled;                                        // 0x001D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1E[0x2];                                       // 0x001E(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMagicLeapImageTargetSettings) == 0x000008, "Wrong alignment on FMagicLeapImageTargetSettings");
-static_assert(sizeof(FMagicLeapImageTargetSettings) == 0x000020, "Wrong size on FMagicLeapImageTargetSettings");
-static_assert(offsetof(FMagicLeapImageTargetSettings, ImageTexture) == 0x000000, "Member 'FMagicLeapImageTargetSettings::ImageTexture' has a wrong offset!");
-static_assert(offsetof(FMagicLeapImageTargetSettings, Name) == 0x000008, "Member 'FMagicLeapImageTargetSettings::Name' has a wrong offset!");
-static_assert(offsetof(FMagicLeapImageTargetSettings, LongerDimension) == 0x000018, "Member 'FMagicLeapImageTargetSettings::LongerDimension' has a wrong offset!");
-static_assert(offsetof(FMagicLeapImageTargetSettings, bIsStationary) == 0x00001C, "Member 'FMagicLeapImageTargetSettings::bIsStationary' has a wrong offset!");
-static_assert(offsetof(FMagicLeapImageTargetSettings, BIsEnabled) == 0x00001D, "Member 'FMagicLeapImageTargetSettings::BIsEnabled' has a wrong offset!");
+DUMPER7_ASSERTS_FMagicLeapImageTargetSettings;
 
 }
 

@@ -36,19 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SpottedHighlightcomponent_C">();
+		BP_STATIC_CLASS_IMPL("SpottedHighlightcomponent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SpottedHighlightcomponent_C")
 	}
 	static class USpottedHighlightcomponent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USpottedHighlightcomponent_C>();
 	}
 };
-static_assert(alignof(USpottedHighlightcomponent_C) == 0x000008, "Wrong alignment on USpottedHighlightcomponent_C");
-static_assert(sizeof(USpottedHighlightcomponent_C) == 0x0000C0, "Wrong size on USpottedHighlightcomponent_C");
-static_assert(offsetof(USpottedHighlightcomponent_C, UberGraphFrame) == 0x0000B0, "Member 'USpottedHighlightcomponent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USpottedHighlightcomponent_C, CanHighlight_) == 0x0000B8, "Member 'USpottedHighlightcomponent_C::CanHighlight_' has a wrong offset!");
-static_assert(offsetof(USpottedHighlightcomponent_C, WarningHighlight_) == 0x0000B9, "Member 'USpottedHighlightcomponent_C::WarningHighlight_' has a wrong offset!");
-static_assert(offsetof(USpottedHighlightcomponent_C, AlarmWarning_) == 0x0000BA, "Member 'USpottedHighlightcomponent_C::AlarmWarning_' has a wrong offset!");
+DUMPER7_ASSERTS_USpottedHighlightcomponent_C;
 
 }
 

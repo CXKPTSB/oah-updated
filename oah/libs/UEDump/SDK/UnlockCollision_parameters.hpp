@@ -31,15 +31,7 @@ public:
 	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x002C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UnlockCollision_C_ExecuteUbergraph_UnlockCollision) == 0x000008, "Wrong alignment on UnlockCollision_C_ExecuteUbergraph_UnlockCollision");
-static_assert(sizeof(UnlockCollision_C_ExecuteUbergraph_UnlockCollision) == 0x000038, "Wrong size on UnlockCollision_C_ExecuteUbergraph_UnlockCollision");
-static_assert(offsetof(UnlockCollision_C_ExecuteUbergraph_UnlockCollision, EntryPoint) == 0x000000, "Member 'UnlockCollision_C_ExecuteUbergraph_UnlockCollision::EntryPoint' has a wrong offset!");
-static_assert(offsetof(UnlockCollision_C_ExecuteUbergraph_UnlockCollision, K2Node_ComponentBoundEvent_Player) == 0x000008, "Member 'UnlockCollision_C_ExecuteUbergraph_UnlockCollision::K2Node_ComponentBoundEvent_Player' has a wrong offset!");
-static_assert(offsetof(UnlockCollision_C_ExecuteUbergraph_UnlockCollision, K2Node_ComponentBoundEvent_HitComponent) == 0x000010, "Member 'UnlockCollision_C_ExecuteUbergraph_UnlockCollision::K2Node_ComponentBoundEvent_HitComponent' has a wrong offset!");
-static_assert(offsetof(UnlockCollision_C_ExecuteUbergraph_UnlockCollision, CallFunc_GetParentActor_ReturnValue) == 0x000018, "Member 'UnlockCollision_C_ExecuteUbergraph_UnlockCollision::CallFunc_GetParentActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(UnlockCollision_C_ExecuteUbergraph_UnlockCollision, K2Node_DynamicCast_AsDoor_BP) == 0x000020, "Member 'UnlockCollision_C_ExecuteUbergraph_UnlockCollision::K2Node_DynamicCast_AsDoor_BP' has a wrong offset!");
-static_assert(offsetof(UnlockCollision_C_ExecuteUbergraph_UnlockCollision, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'UnlockCollision_C_ExecuteUbergraph_UnlockCollision::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(UnlockCollision_C_ExecuteUbergraph_UnlockCollision, CallFunc_K2_GetActorLocation_ReturnValue) == 0x00002C, "Member 'UnlockCollision_C_ExecuteUbergraph_UnlockCollision::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnlockCollision_C_ExecuteUbergraph_UnlockCollision;
 
 // Function UnlockCollision.UnlockCollision_C.BndEvt__UnlockCollision_InteractComponent_K2Node_ComponentBoundEvent_0_Interact__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
@@ -49,10 +41,7 @@ public:
 	class AActor*                                 Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    HitComponent;                                      // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UnlockCollision_C_BndEvt__UnlockCollision_InteractComponent_K2Node_ComponentBoundEvent_0_Interact__DelegateSignature) == 0x000008, "Wrong alignment on UnlockCollision_C_BndEvt__UnlockCollision_InteractComponent_K2Node_ComponentBoundEvent_0_Interact__DelegateSignature");
-static_assert(sizeof(UnlockCollision_C_BndEvt__UnlockCollision_InteractComponent_K2Node_ComponentBoundEvent_0_Interact__DelegateSignature) == 0x000010, "Wrong size on UnlockCollision_C_BndEvt__UnlockCollision_InteractComponent_K2Node_ComponentBoundEvent_0_Interact__DelegateSignature");
-static_assert(offsetof(UnlockCollision_C_BndEvt__UnlockCollision_InteractComponent_K2Node_ComponentBoundEvent_0_Interact__DelegateSignature, Player) == 0x000000, "Member 'UnlockCollision_C_BndEvt__UnlockCollision_InteractComponent_K2Node_ComponentBoundEvent_0_Interact__DelegateSignature::Player' has a wrong offset!");
-static_assert(offsetof(UnlockCollision_C_BndEvt__UnlockCollision_InteractComponent_K2Node_ComponentBoundEvent_0_Interact__DelegateSignature, HitComponent) == 0x000008, "Member 'UnlockCollision_C_BndEvt__UnlockCollision_InteractComponent_K2Node_ComponentBoundEvent_0_Interact__DelegateSignature::HitComponent' has a wrong offset!");
+DUMPER7_ASSERTS_UnlockCollision_C_BndEvt__UnlockCollision_InteractComponent_K2Node_ComponentBoundEvent_0_Interact__DelegateSignature;
 
 }
 

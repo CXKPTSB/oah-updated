@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "ShopItemCategory_structs.hpp"
 #include "Engine_structs.hpp"
+#include "ShopItemCategory_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "UMG_classes.hpp"
 
@@ -65,31 +65,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EquippedWeaponSlot_C">();
+		BP_STATIC_CLASS_IMPL("EquippedWeaponSlot_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EquippedWeaponSlot_C")
 	}
 	static class UEquippedWeaponSlot_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEquippedWeaponSlot_C>();
 	}
 };
-static_assert(alignof(UEquippedWeaponSlot_C) == 0x000008, "Wrong alignment on UEquippedWeaponSlot_C");
-static_assert(sizeof(UEquippedWeaponSlot_C) == 0x0002E0, "Wrong size on UEquippedWeaponSlot_C");
-static_assert(offsetof(UEquippedWeaponSlot_C, UberGraphFrame) == 0x000260, "Member 'UEquippedWeaponSlot_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UEquippedWeaponSlot_C, HighlightFadeAway) == 0x000268, "Member 'UEquippedWeaponSlot_C::HighlightFadeAway' has a wrong offset!");
-static_assert(offsetof(UEquippedWeaponSlot_C, ButtonFadeIn) == 0x000270, "Member 'UEquippedWeaponSlot_C::ButtonFadeIn' has a wrong offset!");
-static_assert(offsetof(UEquippedWeaponSlot_C, HighlightFadeIn) == 0x000278, "Member 'UEquippedWeaponSlot_C::HighlightFadeIn' has a wrong offset!");
-static_assert(offsetof(UEquippedWeaponSlot_C, Border_85) == 0x000280, "Member 'UEquippedWeaponSlot_C::Border_85' has a wrong offset!");
-static_assert(offsetof(UEquippedWeaponSlot_C, Button_300) == 0x000288, "Member 'UEquippedWeaponSlot_C::Button_300' has a wrong offset!");
-static_assert(offsetof(UEquippedWeaponSlot_C, ItemName) == 0x000290, "Member 'UEquippedWeaponSlot_C::ItemName' has a wrong offset!");
-static_assert(offsetof(UEquippedWeaponSlot_C, SizeBoxRef) == 0x000298, "Member 'UEquippedWeaponSlot_C::SizeBoxRef' has a wrong offset!");
-static_assert(offsetof(UEquippedWeaponSlot_C, Category) == 0x0002A0, "Member 'UEquippedWeaponSlot_C::Category' has a wrong offset!");
-static_assert(offsetof(UEquippedWeaponSlot_C, IndexReference) == 0x0002A4, "Member 'UEquippedWeaponSlot_C::IndexReference' has a wrong offset!");
-static_assert(offsetof(UEquippedWeaponSlot_C, As_Robber_Controller) == 0x0002A8, "Member 'UEquippedWeaponSlot_C::As_Robber_Controller' has a wrong offset!");
-static_assert(offsetof(UEquippedWeaponSlot_C, Item) == 0x0002B0, "Member 'UEquippedWeaponSlot_C::Item' has a wrong offset!");
-static_assert(offsetof(UEquippedWeaponSlot_C, Location) == 0x0002B8, "Member 'UEquippedWeaponSlot_C::Location' has a wrong offset!");
-static_assert(offsetof(UEquippedWeaponSlot_C, GunActor) == 0x0002C8, "Member 'UEquippedWeaponSlot_C::GunActor' has a wrong offset!");
-static_assert(offsetof(UEquippedWeaponSlot_C, Child) == 0x0002D0, "Member 'UEquippedWeaponSlot_C::Child' has a wrong offset!");
-static_assert(offsetof(UEquippedWeaponSlot_C, Highlighed_) == 0x0002D8, "Member 'UEquippedWeaponSlot_C::Highlighed_' has a wrong offset!");
+DUMPER7_ASSERTS_UEquippedWeaponSlot_C;
 
 }
 

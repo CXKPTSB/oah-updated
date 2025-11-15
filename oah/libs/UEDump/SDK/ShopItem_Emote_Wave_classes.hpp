@@ -23,15 +23,18 @@ class AShopItem_Emote_Wave_C final : public AShopItem_Emote_base_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ShopItem_Emote_Wave_C">();
+		BP_STATIC_CLASS_IMPL("ShopItem_Emote_Wave_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ShopItem_Emote_Wave_C")
 	}
 	static class AShopItem_Emote_Wave_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AShopItem_Emote_Wave_C>();
 	}
 };
-static_assert(alignof(AShopItem_Emote_Wave_C) == 0x000008, "Wrong alignment on AShopItem_Emote_Wave_C");
-static_assert(sizeof(AShopItem_Emote_Wave_C) == 0x000290, "Wrong size on AShopItem_Emote_Wave_C");
+DUMPER7_ASSERTS_AShopItem_Emote_Wave_C;
 
 }
 

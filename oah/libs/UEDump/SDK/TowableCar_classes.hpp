@@ -54,32 +54,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TowableCar_C">();
+		BP_STATIC_CLASS_IMPL("TowableCar_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TowableCar_C")
 	}
 	static class ATowableCar_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ATowableCar_C>();
 	}
 };
-static_assert(alignof(ATowableCar_C) == 0x000008, "Wrong alignment on ATowableCar_C");
-static_assert(sizeof(ATowableCar_C) == 0x000308, "Wrong size on ATowableCar_C");
-static_assert(offsetof(ATowableCar_C, UberGraphFrame) == 0x000280, "Member 'ATowableCar_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ATowableCar_C, Sound_FX_TireRolling) == 0x000288, "Member 'ATowableCar_C::Sound_FX_TireRolling' has a wrong offset!");
-static_assert(offsetof(ATowableCar_C, CarPauseOverlapper) == 0x000290, "Member 'ATowableCar_C::CarPauseOverlapper' has a wrong offset!");
-static_assert(offsetof(ATowableCar_C, FrontBumper) == 0x000298, "Member 'ATowableCar_C::FrontBumper' has a wrong offset!");
-static_assert(offsetof(ATowableCar_C, HitchComponent) == 0x0002A0, "Member 'ATowableCar_C::HitchComponent' has a wrong offset!");
-static_assert(offsetof(ATowableCar_C, CarMesh) == 0x0002A8, "Member 'ATowableCar_C::CarMesh' has a wrong offset!");
-static_assert(offsetof(ATowableCar_C, Wheel_FL) == 0x0002B0, "Member 'ATowableCar_C::Wheel_FL' has a wrong offset!");
-static_assert(offsetof(ATowableCar_C, Wheel_RL) == 0x0002B8, "Member 'ATowableCar_C::Wheel_RL' has a wrong offset!");
-static_assert(offsetof(ATowableCar_C, Wheel_RR) == 0x0002C0, "Member 'ATowableCar_C::Wheel_RR' has a wrong offset!");
-static_assert(offsetof(ATowableCar_C, Wheel_FR) == 0x0002C8, "Member 'ATowableCar_C::Wheel_FR' has a wrong offset!");
-static_assert(offsetof(ATowableCar_C, Box) == 0x0002D0, "Member 'ATowableCar_C::Box' has a wrong offset!");
-static_assert(offsetof(ATowableCar_C, NavModifier) == 0x0002D8, "Member 'ATowableCar_C::NavModifier' has a wrong offset!");
-static_assert(offsetof(ATowableCar_C, SM_Veh_Attach_Tyre_04) == 0x0002E0, "Member 'ATowableCar_C::SM_Veh_Attach_Tyre_04' has a wrong offset!");
-static_assert(offsetof(ATowableCar_C, SM_Veh_Attach_Tyre_03) == 0x0002E8, "Member 'ATowableCar_C::SM_Veh_Attach_Tyre_03' has a wrong offset!");
-static_assert(offsetof(ATowableCar_C, SM_Veh_Attach_Tyre_02) == 0x0002F0, "Member 'ATowableCar_C::SM_Veh_Attach_Tyre_02' has a wrong offset!");
-static_assert(offsetof(ATowableCar_C, SM_Veh_Attach_Tyre_01) == 0x0002F8, "Member 'ATowableCar_C::SM_Veh_Attach_Tyre_01' has a wrong offset!");
-static_assert(offsetof(ATowableCar_C, SmoothSync) == 0x000300, "Member 'ATowableCar_C::SmoothSync' has a wrong offset!");
+DUMPER7_ASSERTS_ATowableCar_C;
 
 }
 

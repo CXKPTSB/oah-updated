@@ -29,16 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Pistol_11A1_C">();
+		BP_STATIC_CLASS_IMPL("Pistol_11A1_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Pistol_11A1_C")
 	}
 	static class APistol_11A1_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APistol_11A1_C>();
 	}
 };
-static_assert(alignof(APistol_11A1_C) == 0x000008, "Wrong alignment on APistol_11A1_C");
-static_assert(sizeof(APistol_11A1_C) == 0x000338, "Wrong size on APistol_11A1_C");
-static_assert(offsetof(APistol_11A1_C, CollisionBox1) == 0x000330, "Member 'APistol_11A1_C::CollisionBox1' has a wrong offset!");
+DUMPER7_ASSERTS_APistol_11A1_C;
 
 }
 

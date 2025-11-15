@@ -53,28 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BreakableGlass_C">();
+		BP_STATIC_CLASS_IMPL("BreakableGlass_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BreakableGlass_C")
 	}
 	static class ABreakableGlass_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABreakableGlass_C>();
 	}
 };
-static_assert(alignof(ABreakableGlass_C) == 0x000008, "Wrong alignment on ABreakableGlass_C");
-static_assert(sizeof(ABreakableGlass_C) == 0x000280, "Wrong size on ABreakableGlass_C");
-static_assert(offsetof(ABreakableGlass_C, UberGraphFrame) == 0x000220, "Member 'ABreakableGlass_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABreakableGlass_C, NavModifier) == 0x000228, "Member 'ABreakableGlass_C::NavModifier' has a wrong offset!");
-static_assert(offsetof(ABreakableGlass_C, Glass) == 0x000230, "Member 'ABreakableGlass_C::Glass' has a wrong offset!");
-static_assert(offsetof(ABreakableGlass_C, Niagara) == 0x000238, "Member 'ABreakableGlass_C::Niagara' has a wrong offset!");
-static_assert(offsetof(ABreakableGlass_C, AlertComponent) == 0x000240, "Member 'ABreakableGlass_C::AlertComponent' has a wrong offset!");
-static_assert(offsetof(ABreakableGlass_C, DamageComponent) == 0x000248, "Member 'ABreakableGlass_C::DamageComponent' has a wrong offset!");
-static_assert(offsetof(ABreakableGlass_C, BreakSound) == 0x000250, "Member 'ABreakableGlass_C::BreakSound' has a wrong offset!");
-static_assert(offsetof(ABreakableGlass_C, TwoHitBreak_) == 0x000258, "Member 'ABreakableGlass_C::TwoHitBreak_' has a wrong offset!");
-static_assert(offsetof(ABreakableGlass_C, GlassDestroyed) == 0x000260, "Member 'ABreakableGlass_C::GlassDestroyed' has a wrong offset!");
-static_assert(offsetof(ABreakableGlass_C, Alarm_) == 0x000270, "Member 'ABreakableGlass_C::Alarm_' has a wrong offset!");
-static_assert(offsetof(ABreakableGlass_C, ParticleAmount) == 0x000274, "Member 'ABreakableGlass_C::ParticleAmount' has a wrong offset!");
-static_assert(offsetof(ABreakableGlass_C, Broken_) == 0x000278, "Member 'ABreakableGlass_C::Broken_' has a wrong offset!");
-static_assert(offsetof(ABreakableGlass_C, Health) == 0x00027C, "Member 'ABreakableGlass_C::Health' has a wrong offset!");
+DUMPER7_ASSERTS_ABreakableGlass_C;
 
 }
 

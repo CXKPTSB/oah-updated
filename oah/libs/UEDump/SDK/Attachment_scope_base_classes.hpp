@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "AttachmentBase_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -36,19 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Attachment_scope_base_C">();
+		BP_STATIC_CLASS_IMPL("Attachment_scope_base_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Attachment_scope_base_C")
 	}
 	static class AAttachment_scope_base_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAttachment_scope_base_C>();
 	}
 };
-static_assert(alignof(AAttachment_scope_base_C) == 0x000008, "Wrong alignment on AAttachment_scope_base_C");
-static_assert(sizeof(AAttachment_scope_base_C) == 0x000270, "Wrong size on AAttachment_scope_base_C");
-static_assert(offsetof(AAttachment_scope_base_C, UberGraphFrame) == 0x000250, "Member 'AAttachment_scope_base_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AAttachment_scope_base_C, ScopeCam) == 0x000258, "Member 'AAttachment_scope_base_C::ScopeCam' has a wrong offset!");
-static_assert(offsetof(AAttachment_scope_base_C, SpringArm) == 0x000260, "Member 'AAttachment_scope_base_C::SpringArm' has a wrong offset!");
-static_assert(offsetof(AAttachment_scope_base_C, ScopeCameraLocation) == 0x000268, "Member 'AAttachment_scope_base_C::ScopeCameraLocation' has a wrong offset!");
+DUMPER7_ASSERTS_AAttachment_scope_base_C;
 
 }
 

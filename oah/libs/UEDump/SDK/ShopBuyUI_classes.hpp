@@ -66,34 +66,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ShopBuyUI_C">();
+		BP_STATIC_CLASS_IMPL("ShopBuyUI_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ShopBuyUI_C")
 	}
 	static class UShopBuyUI_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UShopBuyUI_C>();
 	}
 };
-static_assert(alignof(UShopBuyUI_C) == 0x000008, "Wrong alignment on UShopBuyUI_C");
-static_assert(sizeof(UShopBuyUI_C) == 0x0002E8, "Wrong size on UShopBuyUI_C");
-static_assert(offsetof(UShopBuyUI_C, UberGraphFrame) == 0x000260, "Member 'UShopBuyUI_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UShopBuyUI_C, Button_629) == 0x000268, "Member 'UShopBuyUI_C::Button_629' has a wrong offset!");
-static_assert(offsetof(UShopBuyUI_C, CashBuyButton) == 0x000270, "Member 'UShopBuyUI_C::CashBuyButton' has a wrong offset!");
-static_assert(offsetof(UShopBuyUI_C, CloseButton) == 0x000278, "Member 'UShopBuyUI_C::CloseButton' has a wrong offset!");
-static_assert(offsetof(UShopBuyUI_C, Image_0) == 0x000280, "Member 'UShopBuyUI_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UShopBuyUI_C, Image_223) == 0x000288, "Member 'UShopBuyUI_C::Image_223' has a wrong offset!");
-static_assert(offsetof(UShopBuyUI_C, TextBlock) == 0x000290, "Member 'UShopBuyUI_C::TextBlock' has a wrong offset!");
-static_assert(offsetof(UShopBuyUI_C, TextBlock_79) == 0x000298, "Member 'UShopBuyUI_C::TextBlock_79' has a wrong offset!");
-static_assert(offsetof(UShopBuyUI_C, TextBlock_343) == 0x0002A0, "Member 'UShopBuyUI_C::TextBlock_343' has a wrong offset!");
-static_assert(offsetof(UShopBuyUI_C, Throbber_49) == 0x0002A8, "Member 'UShopBuyUI_C::Throbber_49' has a wrong offset!");
-static_assert(offsetof(UShopBuyUI_C, Item) == 0x0002B0, "Member 'UShopBuyUI_C::Item' has a wrong offset!");
-static_assert(offsetof(UShopBuyUI_C, Coin_) == 0x0002B8, "Member 'UShopBuyUI_C::Coin_' has a wrong offset!");
-static_assert(offsetof(UShopBuyUI_C, As_Robber_Controller) == 0x0002C0, "Member 'UShopBuyUI_C::As_Robber_Controller' has a wrong offset!");
-static_assert(offsetof(UShopBuyUI_C, Purchased_) == 0x0002C8, "Member 'UShopBuyUI_C::Purchased_' has a wrong offset!");
-static_assert(offsetof(UShopBuyUI_C, ParentWidget) == 0x0002D0, "Member 'UShopBuyUI_C::ParentWidget' has a wrong offset!");
-static_assert(offsetof(UShopBuyUI_C, ItemIndexReference) == 0x0002D8, "Member 'UShopBuyUI_C::ItemIndexReference' has a wrong offset!");
-static_assert(offsetof(UShopBuyUI_C, AutoEquip_) == 0x0002DC, "Member 'UShopBuyUI_C::AutoEquip_' has a wrong offset!");
-static_assert(offsetof(UShopBuyUI_C, Map_) == 0x0002DD, "Member 'UShopBuyUI_C::Map_' has a wrong offset!");
-static_assert(offsetof(UShopBuyUI_C, SalePrice) == 0x0002E0, "Member 'UShopBuyUI_C::SalePrice' has a wrong offset!");
+DUMPER7_ASSERTS_UShopBuyUI_C;
 
 }
 

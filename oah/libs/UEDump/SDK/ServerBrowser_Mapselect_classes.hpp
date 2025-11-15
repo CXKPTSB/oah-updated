@@ -55,28 +55,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ServerBrowser_Mapselect_C">();
+		BP_STATIC_CLASS_IMPL("ServerBrowser_Mapselect_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ServerBrowser_Mapselect_C")
 	}
 	static class UServerBrowser_Mapselect_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UServerBrowser_Mapselect_C>();
 	}
 };
-static_assert(alignof(UServerBrowser_Mapselect_C) == 0x000008, "Wrong alignment on UServerBrowser_Mapselect_C");
-static_assert(sizeof(UServerBrowser_Mapselect_C) == 0x0002D0, "Wrong size on UServerBrowser_Mapselect_C");
-static_assert(offsetof(UServerBrowser_Mapselect_C, UberGraphFrame) == 0x000260, "Member 'UServerBrowser_Mapselect_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UServerBrowser_Mapselect_C, Hover) == 0x000268, "Member 'UServerBrowser_Mapselect_C::Hover' has a wrong offset!");
-static_assert(offsetof(UServerBrowser_Mapselect_C, Border_57) == 0x000270, "Member 'UServerBrowser_Mapselect_C::Border_57' has a wrong offset!");
-static_assert(offsetof(UServerBrowser_Mapselect_C, Border_199) == 0x000278, "Member 'UServerBrowser_Mapselect_C::Border_199' has a wrong offset!");
-static_assert(offsetof(UServerBrowser_Mapselect_C, Button_59) == 0x000280, "Member 'UServerBrowser_Mapselect_C::Button_59' has a wrong offset!");
-static_assert(offsetof(UServerBrowser_Mapselect_C, TextBlock_69) == 0x000288, "Member 'UServerBrowser_Mapselect_C::TextBlock_69' has a wrong offset!");
-static_assert(offsetof(UServerBrowser_Mapselect_C, TextBlock_149) == 0x000290, "Member 'UServerBrowser_Mapselect_C::TextBlock_149' has a wrong offset!");
-static_assert(offsetof(UServerBrowser_Mapselect_C, MapInfo) == 0x000298, "Member 'UServerBrowser_Mapselect_C::MapInfo' has a wrong offset!");
-static_assert(offsetof(UServerBrowser_Mapselect_C, LobbiesFound) == 0x0002A0, "Member 'UServerBrowser_Mapselect_C::LobbiesFound' has a wrong offset!");
-static_assert(offsetof(UServerBrowser_Mapselect_C, Unlocked_) == 0x0002B0, "Member 'UServerBrowser_Mapselect_C::Unlocked_' has a wrong offset!");
-static_assert(offsetof(UServerBrowser_Mapselect_C, OwningWidget) == 0x0002B8, "Member 'UServerBrowser_Mapselect_C::OwningWidget' has a wrong offset!");
-static_assert(offsetof(UServerBrowser_Mapselect_C, ValidLobbies) == 0x0002C0, "Member 'UServerBrowser_Mapselect_C::ValidLobbies' has a wrong offset!");
-static_assert(offsetof(UServerBrowser_Mapselect_C, As_Robber_Controller) == 0x0002C8, "Member 'UServerBrowser_Mapselect_C::As_Robber_Controller' has a wrong offset!");
+DUMPER7_ASSERTS_UServerBrowser_Mapselect_C;
 
 }
 

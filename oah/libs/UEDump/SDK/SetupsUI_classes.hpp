@@ -92,46 +92,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SetupsUI_C">();
+		BP_STATIC_CLASS_IMPL("SetupsUI_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SetupsUI_C")
 	}
 	static class USetupsUI_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USetupsUI_C>();
 	}
 };
-static_assert(alignof(USetupsUI_C) == 0x000008, "Wrong alignment on USetupsUI_C");
-static_assert(sizeof(USetupsUI_C) == 0x000360, "Wrong size on USetupsUI_C");
-static_assert(offsetof(USetupsUI_C, UberGraphFrame) == 0x000260, "Member 'USetupsUI_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USetupsUI_C, HoverBackButton) == 0x000268, "Member 'USetupsUI_C::HoverBackButton' has a wrong offset!");
-static_assert(offsetof(USetupsUI_C, HoverSelectSetup) == 0x000270, "Member 'USetupsUI_C::HoverSelectSetup' has a wrong offset!");
-static_assert(offsetof(USetupsUI_C, Button) == 0x000278, "Member 'USetupsUI_C::Button' has a wrong offset!");
-static_assert(offsetof(USetupsUI_C, Button_0) == 0x000280, "Member 'USetupsUI_C::Button_0' has a wrong offset!");
-static_assert(offsetof(USetupsUI_C, Image_1) == 0x000288, "Member 'USetupsUI_C::Image_1' has a wrong offset!");
-static_assert(offsetof(USetupsUI_C, Image_2) == 0x000290, "Member 'USetupsUI_C::Image_2' has a wrong offset!");
-static_assert(offsetof(USetupsUI_C, Image_87) == 0x000298, "Member 'USetupsUI_C::Image_87' has a wrong offset!");
-static_assert(offsetof(USetupsUI_C, Image_295) == 0x0002A0, "Member 'USetupsUI_C::Image_295' has a wrong offset!");
-static_assert(offsetof(USetupsUI_C, SelectSetupButton) == 0x0002A8, "Member 'USetupsUI_C::SelectSetupButton' has a wrong offset!");
-static_assert(offsetof(USetupsUI_C, SelectSetupUnderline) == 0x0002B0, "Member 'USetupsUI_C::SelectSetupUnderline' has a wrong offset!");
-static_assert(offsetof(USetupsUI_C, SetupComplete) == 0x0002B8, "Member 'USetupsUI_C::SetupComplete' has a wrong offset!");
-static_assert(offsetof(USetupsUI_C, SetupHeader) == 0x0002C0, "Member 'USetupsUI_C::SetupHeader' has a wrong offset!");
-static_assert(offsetof(USetupsUI_C, SetupHeader_2) == 0x0002C8, "Member 'USetupsUI_C::SetupHeader_2' has a wrong offset!");
-static_assert(offsetof(USetupsUI_C, SetupsWrap) == 0x0002D0, "Member 'USetupsUI_C::SetupsWrap' has a wrong offset!");
-static_assert(offsetof(USetupsUI_C, SetupTitle) == 0x0002D8, "Member 'USetupsUI_C::SetupTitle' has a wrong offset!");
-static_assert(offsetof(USetupsUI_C, SetupTitle_1) == 0x0002E0, "Member 'USetupsUI_C::SetupTitle_1' has a wrong offset!");
-static_assert(offsetof(USetupsUI_C, TextBlock_1) == 0x0002E8, "Member 'USetupsUI_C::TextBlock_1' has a wrong offset!");
-static_assert(offsetof(USetupsUI_C, TextBlock_225) == 0x0002F0, "Member 'USetupsUI_C::TextBlock_225' has a wrong offset!");
-static_assert(offsetof(USetupsUI_C, UnlockPrevious) == 0x0002F8, "Member 'USetupsUI_C::UnlockPrevious' has a wrong offset!");
-static_assert(offsetof(USetupsUI_C, VerticalBox_1) == 0x000300, "Member 'USetupsUI_C::VerticalBox_1' has a wrong offset!");
-static_assert(offsetof(USetupsUI_C, VerticalBox_134) == 0x000308, "Member 'USetupsUI_C::VerticalBox_134' has a wrong offset!");
-static_assert(offsetof(USetupsUI_C, Map) == 0x000310, "Member 'USetupsUI_C::Map' has a wrong offset!");
-static_assert(offsetof(USetupsUI_C, SelectedSetup) == 0x000318, "Member 'USetupsUI_C::SelectedSetup' has a wrong offset!");
-static_assert(offsetof(USetupsUI_C, As_Robber_Controller) == 0x000320, "Member 'USetupsUI_C::As_Robber_Controller' has a wrong offset!");
-static_assert(offsetof(USetupsUI_C, CompletedSetups) == 0x000328, "Member 'USetupsUI_C::CompletedSetups' has a wrong offset!");
-static_assert(offsetof(USetupsUI_C, TotalAddedValue) == 0x000338, "Member 'USetupsUI_C::TotalAddedValue' has a wrong offset!");
-static_assert(offsetof(USetupsUI_C, MainMenuPlayer) == 0x000340, "Member 'USetupsUI_C::MainMenuPlayer' has a wrong offset!");
-static_assert(offsetof(USetupsUI_C, MainMenuWidget) == 0x000348, "Member 'USetupsUI_C::MainMenuWidget' has a wrong offset!");
-static_assert(offsetof(USetupsUI_C, NoSetups_) == 0x000350, "Member 'USetupsUI_C::NoSetups_' has a wrong offset!");
-static_assert(offsetof(USetupsUI_C, LobbyManager) == 0x000358, "Member 'USetupsUI_C::LobbyManager' has a wrong offset!");
+DUMPER7_ASSERTS_USetupsUI_C;
 
 }
 

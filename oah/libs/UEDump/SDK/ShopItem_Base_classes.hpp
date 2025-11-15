@@ -40,26 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ShopItem_Base_C">();
+		BP_STATIC_CLASS_IMPL("ShopItem_Base_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ShopItem_Base_C")
 	}
 	static class AShopItem_Base_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AShopItem_Base_C>();
 	}
 };
-static_assert(alignof(AShopItem_Base_C) == 0x000008, "Wrong alignment on AShopItem_Base_C");
-static_assert(sizeof(AShopItem_Base_C) == 0x000270, "Wrong size on AShopItem_Base_C");
-static_assert(offsetof(AShopItem_Base_C, DefaultSceneRoot) == 0x000220, "Member 'AShopItem_Base_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AShopItem_Base_C, Name_0) == 0x000228, "Member 'AShopItem_Base_C::Name_0' has a wrong offset!");
-static_assert(offsetof(AShopItem_Base_C, Description) == 0x000238, "Member 'AShopItem_Base_C::Description' has a wrong offset!");
-static_assert(offsetof(AShopItem_Base_C, Icon) == 0x000248, "Member 'AShopItem_Base_C::Icon' has a wrong offset!");
-static_assert(offsetof(AShopItem_Base_C, UnlockLevel) == 0x000250, "Member 'AShopItem_Base_C::UnlockLevel' has a wrong offset!");
-static_assert(offsetof(AShopItem_Base_C, CashCost) == 0x000254, "Member 'AShopItem_Base_C::CashCost' has a wrong offset!");
-static_assert(offsetof(AShopItem_Base_C, CoinCost) == 0x000258, "Member 'AShopItem_Base_C::CoinCost' has a wrong offset!");
-static_assert(offsetof(AShopItem_Base_C, Item_category) == 0x00025C, "Member 'AShopItem_Base_C::Item_category' has a wrong offset!");
-static_assert(offsetof(AShopItem_Base_C, ItemBP) == 0x000260, "Member 'AShopItem_Base_C::ItemBP' has a wrong offset!");
-static_assert(offsetof(AShopItem_Base_C, Rarity) == 0x000268, "Member 'AShopItem_Base_C::Rarity' has a wrong offset!");
-static_assert(offsetof(AShopItem_Base_C, SteamItemDefID) == 0x00026C, "Member 'AShopItem_Base_C::SteamItemDefID' has a wrong offset!");
+DUMPER7_ASSERTS_AShopItem_Base_C;
 
 }
 

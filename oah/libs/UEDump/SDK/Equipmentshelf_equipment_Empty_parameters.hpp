@@ -21,9 +21,7 @@ struct Equipmentshelf_equipment_Empty_C_ExecuteUbergraph_Equipmentshelf_equipmen
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Equipmentshelf_equipment_Empty_C_ExecuteUbergraph_Equipmentshelf_equipment_Empty) == 0x000004, "Wrong alignment on Equipmentshelf_equipment_Empty_C_ExecuteUbergraph_Equipmentshelf_equipment_Empty");
-static_assert(sizeof(Equipmentshelf_equipment_Empty_C_ExecuteUbergraph_Equipmentshelf_equipment_Empty) == 0x000004, "Wrong size on Equipmentshelf_equipment_Empty_C_ExecuteUbergraph_Equipmentshelf_equipment_Empty");
-static_assert(offsetof(Equipmentshelf_equipment_Empty_C_ExecuteUbergraph_Equipmentshelf_equipment_Empty, EntryPoint) == 0x000000, "Member 'Equipmentshelf_equipment_Empty_C_ExecuteUbergraph_Equipmentshelf_equipment_Empty::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_Equipmentshelf_equipment_Empty_C_ExecuteUbergraph_Equipmentshelf_equipment_Empty;
 
 // Function Equipmentshelf_equipment_Empty.Equipmentshelf_equipment_Empty_C.RandomizeProps
 // 0x0040 (0x0040 - 0x0000)
@@ -43,18 +41,7 @@ public:
 	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x003D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Equipmentshelf_equipment_Empty_C_RandomizeProps) == 0x000008, "Wrong alignment on Equipmentshelf_equipment_Empty_C_RandomizeProps");
-static_assert(sizeof(Equipmentshelf_equipment_Empty_C_RandomizeProps) == 0x000040, "Wrong size on Equipmentshelf_equipment_Empty_C_RandomizeProps");
-static_assert(offsetof(Equipmentshelf_equipment_Empty_C_RandomizeProps, Temp_int_Array_Index_Variable) == 0x000000, "Member 'Equipmentshelf_equipment_Empty_C_RandomizeProps::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(Equipmentshelf_equipment_Empty_C_RandomizeProps, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'Equipmentshelf_equipment_Empty_C_RandomizeProps::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(Equipmentshelf_equipment_Empty_C_RandomizeProps, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'Equipmentshelf_equipment_Empty_C_RandomizeProps::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Equipmentshelf_equipment_Empty_C_RandomizeProps, CallFunc_K2_GetComponentsByClass_ReturnValue) == 0x000010, "Member 'Equipmentshelf_equipment_Empty_C_RandomizeProps::CallFunc_K2_GetComponentsByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Equipmentshelf_equipment_Empty_C_RandomizeProps, CallFunc_Array_Random_OutItem) == 0x000020, "Member 'Equipmentshelf_equipment_Empty_C_RandomizeProps::CallFunc_Array_Random_OutItem' has a wrong offset!");
-static_assert(offsetof(Equipmentshelf_equipment_Empty_C_RandomizeProps, CallFunc_Array_Random_OutIndex) == 0x000028, "Member 'Equipmentshelf_equipment_Empty_C_RandomizeProps::CallFunc_Array_Random_OutIndex' has a wrong offset!");
-static_assert(offsetof(Equipmentshelf_equipment_Empty_C_RandomizeProps, CallFunc_Array_Get_Item) == 0x000030, "Member 'Equipmentshelf_equipment_Empty_C_RandomizeProps::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Equipmentshelf_equipment_Empty_C_RandomizeProps, CallFunc_Array_Length_ReturnValue) == 0x000038, "Member 'Equipmentshelf_equipment_Empty_C_RandomizeProps::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Equipmentshelf_equipment_Empty_C_RandomizeProps, CallFunc_SetStaticMesh_ReturnValue) == 0x00003C, "Member 'Equipmentshelf_equipment_Empty_C_RandomizeProps::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Equipmentshelf_equipment_Empty_C_RandomizeProps, CallFunc_Less_IntInt_ReturnValue) == 0x00003D, "Member 'Equipmentshelf_equipment_Empty_C_RandomizeProps::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_Equipmentshelf_equipment_Empty_C_RandomizeProps;
 
 }
 

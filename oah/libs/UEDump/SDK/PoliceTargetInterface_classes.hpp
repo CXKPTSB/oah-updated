@@ -17,8 +17,8 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass PoliceTargetInterface.PoliceTargetInterface_C
-// 0x0000 (0x0028 - 0x0028)
-class IPoliceTargetInterface_C final : public IInterface
+// 0x0000 (0x0000 - 0x0000)
+class IPoliceTargetInterface_C final
 {
 public:
 	void TakeDamageInterface(int32 DamageTaken, const struct FVector& Attacker_location, bool ShowDirection_);
@@ -34,15 +34,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PoliceTargetInterface_C">();
+		BP_STATIC_CLASS_IMPL("PoliceTargetInterface_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PoliceTargetInterface_C")
 	}
 	static class IPoliceTargetInterface_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<IPoliceTargetInterface_C>();
 	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
 };
-static_assert(alignof(IPoliceTargetInterface_C) == 0x000008, "Wrong alignment on IPoliceTargetInterface_C");
-static_assert(sizeof(IPoliceTargetInterface_C) == 0x000028, "Wrong size on IPoliceTargetInterface_C");
+DUMPER7_ASSERTS_IPoliceTargetInterface_C;
 
 }
 

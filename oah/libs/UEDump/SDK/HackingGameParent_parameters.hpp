@@ -32,14 +32,7 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue_1;        // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HackingGameParent_C_ExecuteUbergraph_HackingGameParent) == 0x000008, "Wrong alignment on HackingGameParent_C_ExecuteUbergraph_HackingGameParent");
-static_assert(sizeof(HackingGameParent_C_ExecuteUbergraph_HackingGameParent) == 0x000030, "Wrong size on HackingGameParent_C_ExecuteUbergraph_HackingGameParent");
-static_assert(offsetof(HackingGameParent_C_ExecuteUbergraph_HackingGameParent, EntryPoint) == 0x000000, "Member 'HackingGameParent_C_ExecuteUbergraph_HackingGameParent::EntryPoint' has a wrong offset!");
-static_assert(offsetof(HackingGameParent_C_ExecuteUbergraph_HackingGameParent, CallFunc_GetPlayerController_ReturnValue) == 0x000008, "Member 'HackingGameParent_C_ExecuteUbergraph_HackingGameParent::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HackingGameParent_C_ExecuteUbergraph_HackingGameParent, CallFunc_Create_ReturnValue) == 0x000010, "Member 'HackingGameParent_C_ExecuteUbergraph_HackingGameParent::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HackingGameParent_C_ExecuteUbergraph_HackingGameParent, CallFunc_AddChild_ReturnValue) == 0x000018, "Member 'HackingGameParent_C_ExecuteUbergraph_HackingGameParent::CallFunc_AddChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HackingGameParent_C_ExecuteUbergraph_HackingGameParent, CallFunc_PlayAnimation_ReturnValue) == 0x000020, "Member 'HackingGameParent_C_ExecuteUbergraph_HackingGameParent::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HackingGameParent_C_ExecuteUbergraph_HackingGameParent, CallFunc_GetPlayerController_ReturnValue_1) == 0x000028, "Member 'HackingGameParent_C_ExecuteUbergraph_HackingGameParent::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_HackingGameParent_C_ExecuteUbergraph_HackingGameParent;
 
 // Function HackingGameParent.HackingGameParent_C.OnKeyDown
 // 0x0278 (0x0278 - 0x0000)
@@ -63,22 +56,7 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0270(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x0271(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HackingGameParent_C_OnKeyDown) == 0x000008, "Wrong alignment on HackingGameParent_C_OnKeyDown");
-static_assert(sizeof(HackingGameParent_C_OnKeyDown) == 0x000278, "Wrong size on HackingGameParent_C_OnKeyDown");
-static_assert(offsetof(HackingGameParent_C_OnKeyDown, MyGeometry) == 0x000000, "Member 'HackingGameParent_C_OnKeyDown::MyGeometry' has a wrong offset!");
-static_assert(offsetof(HackingGameParent_C_OnKeyDown, InKeyEvent) == 0x000038, "Member 'HackingGameParent_C_OnKeyDown::InKeyEvent' has a wrong offset!");
-static_assert(offsetof(HackingGameParent_C_OnKeyDown, ReturnValue) == 0x000070, "Member 'HackingGameParent_C_OnKeyDown::ReturnValue' has a wrong offset!");
-static_assert(offsetof(HackingGameParent_C_OnKeyDown, CallFunc_GetInputSettings_ReturnValue) == 0x000128, "Member 'HackingGameParent_C_OnKeyDown::CallFunc_GetInputSettings_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HackingGameParent_C_OnKeyDown, CallFunc_GetKey_ReturnValue) == 0x000130, "Member 'HackingGameParent_C_OnKeyDown::CallFunc_GetKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HackingGameParent_C_OnKeyDown, CallFunc_GetActionMappingByName_OutMappings) == 0x000148, "Member 'HackingGameParent_C_OnKeyDown::CallFunc_GetActionMappingByName_OutMappings' has a wrong offset!");
-static_assert(offsetof(HackingGameParent_C_OnKeyDown, CallFunc_EqualEqual_KeyKey_ReturnValue) == 0x000158, "Member 'HackingGameParent_C_OnKeyDown::CallFunc_EqualEqual_KeyKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HackingGameParent_C_OnKeyDown, CallFunc_Array_Get_Item) == 0x000160, "Member 'HackingGameParent_C_OnKeyDown::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(HackingGameParent_C_OnKeyDown, CallFunc_Array_Get_Item_1) == 0x000188, "Member 'HackingGameParent_C_OnKeyDown::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(HackingGameParent_C_OnKeyDown, CallFunc_EqualEqual_KeyKey_ReturnValue_1) == 0x0001B0, "Member 'HackingGameParent_C_OnKeyDown::CallFunc_EqualEqual_KeyKey_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HackingGameParent_C_OnKeyDown, CallFunc_EqualEqual_KeyKey_ReturnValue_2) == 0x0001B1, "Member 'HackingGameParent_C_OnKeyDown::CallFunc_EqualEqual_KeyKey_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(HackingGameParent_C_OnKeyDown, K2Node_MakeStruct_EventReply) == 0x0001B8, "Member 'HackingGameParent_C_OnKeyDown::K2Node_MakeStruct_EventReply' has a wrong offset!");
-static_assert(offsetof(HackingGameParent_C_OnKeyDown, CallFunc_BooleanOR_ReturnValue) == 0x000270, "Member 'HackingGameParent_C_OnKeyDown::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HackingGameParent_C_OnKeyDown, CallFunc_BooleanOR_ReturnValue_1) == 0x000271, "Member 'HackingGameParent_C_OnKeyDown::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_HackingGameParent_C_OnKeyDown;
 
 }
 

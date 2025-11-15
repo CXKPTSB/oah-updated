@@ -36,19 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BulletCasing_C">();
+		BP_STATIC_CLASS_IMPL("BulletCasing_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BulletCasing_C")
 	}
 	static class ABulletCasing_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABulletCasing_C>();
 	}
 };
-static_assert(alignof(ABulletCasing_C) == 0x000008, "Wrong alignment on ABulletCasing_C");
-static_assert(sizeof(ABulletCasing_C) == 0x000240, "Wrong size on ABulletCasing_C");
-static_assert(offsetof(ABulletCasing_C, UberGraphFrame) == 0x000220, "Member 'ABulletCasing_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABulletCasing_C, Casing) == 0x000228, "Member 'ABulletCasing_C::Casing' has a wrong offset!");
-static_assert(offsetof(ABulletCasing_C, CasingMesh) == 0x000230, "Member 'ABulletCasing_C::CasingMesh' has a wrong offset!");
-static_assert(offsetof(ABulletCasing_C, CasingSound) == 0x000238, "Member 'ABulletCasing_C::CasingSound' has a wrong offset!");
+DUMPER7_ASSERTS_ABulletCasing_C;
 
 }
 

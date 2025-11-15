@@ -32,17 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Skill_ComDelay_Tier1_C">();
+		BP_STATIC_CLASS_IMPL("Skill_ComDelay_Tier1_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Skill_ComDelay_Tier1_C")
 	}
 	static class USkill_ComDelay_Tier1_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USkill_ComDelay_Tier1_C>();
 	}
 };
-static_assert(alignof(USkill_ComDelay_Tier1_C) == 0x000008, "Wrong alignment on USkill_ComDelay_Tier1_C");
-static_assert(sizeof(USkill_ComDelay_Tier1_C) == 0x0000E0, "Wrong size on USkill_ComDelay_Tier1_C");
-static_assert(offsetof(USkill_ComDelay_Tier1_C, UberGraphFrame_Skill_ComDelay_Tier1_C) == 0x0000D0, "Member 'USkill_ComDelay_Tier1_C::UberGraphFrame_Skill_ComDelay_Tier1_C' has a wrong offset!");
-static_assert(offsetof(USkill_ComDelay_Tier1_C, Added_Guard_Phone_Time) == 0x0000D8, "Member 'USkill_ComDelay_Tier1_C::Added_Guard_Phone_Time' has a wrong offset!");
+DUMPER7_ASSERTS_USkill_ComDelay_Tier1_C;
 
 }
 

@@ -11,14 +11,14 @@
 #include "Basic.hpp"
 
 #include "SteamCore_structs.hpp"
-#include "SkillSaveStruct_structs.hpp"
-#include "CoreUObject_structs.hpp"
-#include "SkillProgressStruct_structs.hpp"
 #include "Engine_structs.hpp"
-#include "InputSettingStruct_structs.hpp"
-#include "AttachmentArrayStructure_structs.hpp"
+#include "SkillSaveStruct_structs.hpp"
+#include "SkillProgressStruct_structs.hpp"
 #include "ShopItemCategory_structs.hpp"
+#include "InputSettingStruct_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "AdvancedSessions_structs.hpp"
+#include "AttachmentArrayStructure_structs.hpp"
 
 
 namespace SDK::Params
@@ -31,13 +31,13 @@ struct RobberController_C_ExecuteUbergraph_RobberController final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(const struct FRemoteStorageFileWriteAsyncComplete& Data, bool bWasSuccessful)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x0014(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FRemoteStorageFileWriteAsyncComplete& Data, bool bWasSuccessful)> K2Node_CreateDelegate_OutputDelegate_1; // 0x0014(0x0010)(ZeroConstructor, NoDestructor)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class URemoteStorage*                         CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class URemoteStorage*                         CallFunc_GetGameInstanceSubsystem_ReturnValue_1;   // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const struct FRemoteStorageFileWriteAsyncComplete& Data, bool bWasSuccessful)> K2Node_CreateDelegate_OutputDelegate_2;            // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FRemoteStorageFileWriteAsyncComplete& Data, bool bWasSuccessful)> K2Node_CreateDelegate_OutputDelegate_2; // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
 	class UInventory*                             CallFunc_GetGameInstanceSubsystem_ReturnValue_2;   // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const struct FSteamInventoryFullUpdate& Data)> K2Node_CreateDelegate_OutputDelegate_3;            // 0x0050(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FSteamInventoryFullUpdate& Data)> K2Node_CreateDelegate_OutputDelegate_3; // 0x0050(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_HasAuthority_ReturnValue;                 // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0068(0x0010)(ZeroConstructor, HasGetValueTypeHash)
@@ -240,7 +240,7 @@ public:
 	class FString                                 CallFunc_Conv_IntToString_ReturnValue_3;           // 0x0700(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue_13;             // 0x0710(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue_14;             // 0x0720(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	TDelegate<void(const class FString& Data, bool bWasSuccessful)> K2Node_CreateDelegate_OutputDelegate_4;            // 0x0730(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const class FString& Data, bool bWasSuccessful)> K2Node_CreateDelegate_OutputDelegate_4; // 0x0730(0x0010)(ZeroConstructor, NoDestructor)
 	class FString                                 CallFunc_Conv_IntToString_ReturnValue_4;           // 0x0740(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue_15;             // 0x0750(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Conv_IntToString_ReturnValue_5;           // 0x0760(0x0010)(ZeroConstructor, HasGetValueTypeHash)
@@ -274,7 +274,7 @@ public:
 	bool                                          CallFunc_LoadItemDefinitions_ReturnValue;          // 0x087C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_87D[0x3];                                      // 0x087D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<int32>                                 K2Node_MakeArray_Array;                            // 0x0880(0x0010)(ReferenceParm)
-	class USteamCoreInventoryAsyncActionRequestPricesResult* CallFunc_RequestPricesAsync_ReturnValue;           // 0x0890(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USteamCoreInventoryAsyncActionRequestPricesResult* CallFunc_RequestPricesAsync_ReturnValue; // 0x0890(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<int32>                                 K2Node_MakeArray_Array_1;                          // 0x0898(0x0010)(ReferenceParm)
 	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x08A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_8A9[0x3];                                      // 0x08A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -457,7 +457,7 @@ public:
 	bool                                          CallFunc_SetStatInt_ReturnValue;                   // 0x0F59(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsLocalController_ReturnValue_9;          // 0x0F5A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_F5B[0x1];                                      // 0x0F5B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FSteamInventoryRequestPricesResult& Data, bool bWasSuccessful)> K2Node_CreateDelegate_OutputDelegate_5;            // 0x0F5C(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FSteamInventoryRequestPricesResult& Data, bool bWasSuccessful)> K2Node_CreateDelegate_OutputDelegate_5; // 0x0F5C(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_IsLocalController_ReturnValue_10;         // 0x0F6C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_StoreStats_ReturnValue_1;                 // 0x0F6D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_F6E[0x2];                                      // 0x0F6E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
@@ -521,7 +521,7 @@ public:
 	class UUserWidget*                            CallFunc_Array_Get_Item_10;                        // 0x10C0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue_20;              // 0x10C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_10CC[0x4];                                     // 0x10CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IControllerInterface_C> K2Node_DynamicCast_AsController_Interface;         // 0x10D0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TScriptInterface<class IControllerInterface_C> K2Node_DynamicCast_AsController_Interface;        // 0x10D0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess_18;                    // 0x10E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_9;                // 0x10E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_10E2[0x2];                                     // 0x10E2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
@@ -550,430 +550,14 @@ public:
 	struct FSteamInventoryResult                  CallFunc_UpdateSteamInventoryFromActionResult_Result_out; // 0x1158(0x0004)(NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsLocalController_ReturnValue_11;         // 0x115C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_115D[0x3];                                     // 0x115D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const class FString& Save_name)> K2Node_CreateDelegate_OutputDelegate_7;            // 0x1160(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const class FString& Save_name)> K2Node_CreateDelegate_OutputDelegate_7;          // 0x1160(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_IsLocalController_ReturnValue_12;         // 0x1170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1171[0x7];                                     // 0x1171(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_GetCurrentLevelName_ReturnValue_3;        // 0x1178(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsLocalController_ReturnValue_13;         // 0x1188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_StrStr_ReturnValue_6;          // 0x1189(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RobberController_C_ExecuteUbergraph_RobberController) == 0x000008, "Wrong alignment on RobberController_C_ExecuteUbergraph_RobberController");
-static_assert(sizeof(RobberController_C_ExecuteUbergraph_RobberController) == 0x001190, "Wrong size on RobberController_C_ExecuteUbergraph_RobberController");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, EntryPoint) == 0x000000, "Member 'RobberController_C_ExecuteUbergraph_RobberController::EntryPoint' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_CreateDelegate_OutputDelegate_1) == 0x000014, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000028, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetGameInstanceSubsystem_ReturnValue_1) == 0x000030, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetGameInstanceSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_CreateDelegate_OutputDelegate_2) == 0x000038, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetGameInstanceSubsystem_ReturnValue_2) == 0x000048, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetGameInstanceSubsystem_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_CreateDelegate_OutputDelegate_3) == 0x000050, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_HasAuthority_ReturnValue) == 0x000060, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Concat_StrStr_ReturnValue) == 0x000068, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, Temp_bool_IsClosed_Variable) == 0x000078, "Member 'RobberController_C_ExecuteUbergraph_RobberController::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, Temp_bool_Has_Been_Initd_Variable) == 0x000079, "Member 'RobberController_C_ExecuteUbergraph_RobberController::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000080, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, Temp_int_Loop_Counter_Variable) == 0x000090, "Member 'RobberController_C_ExecuteUbergraph_RobberController::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, Temp_int_Loop_Counter_Variable_1) == 0x000094, "Member 'RobberController_C_ExecuteUbergraph_RobberController::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Add_IntInt_ReturnValue) == 0x000098, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Add_IntInt_ReturnValue_1) == 0x00009C, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, Temp_int_Array_Index_Variable) == 0x0000A0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_Event_Items) == 0x0000A8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_Event_Items' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_CreateSaveGameObject_ReturnValue) == 0x0000B8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_CreateSaveGameObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Array_Length_ReturnValue) == 0x0000C0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Convert_Save_Info_To_Bytes_Bytes) == 0x0000C8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Convert_Save_Info_To_Bytes_Bytes' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetUniqueNetIDFromPlayerState_UniqueNetId) == 0x0000D8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetUniqueNetIDFromPlayerState_UniqueNetId' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_UniqueNetIdToString_String) == 0x0000F8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_UniqueNetIdToString_String' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Concat_StrStr_ReturnValue_2) == 0x000108, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_LoadGameFromSlot_ReturnValue) == 0x000118, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_LoadGameFromSlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_DoesSaveGameExist_ReturnValue) == 0x000120, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_DoesSaveGameExist_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_DynamicCast_AsOAR_Savegame) == 0x000128, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_DynamicCast_AsOAR_Savegame' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_DynamicCast_bSuccess) == 0x000130, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_SaveGameToSlot_ReturnValue) == 0x000131, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_SaveGameToSlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Array_Length_ReturnValue_1) == 0x000134, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Convert_Save_Info_To_Bytes_Bytes_1) == 0x000138, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Convert_Save_Info_To_Bytes_Bytes_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_CreateSaveGameObject_ReturnValue_1) == 0x000148, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_CreateSaveGameObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Array_Length_ReturnValue_2) == 0x000150, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetUniqueNetIDFromPlayerState_UniqueNetId_1) == 0x000158, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetUniqueNetIDFromPlayerState_UniqueNetId_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Convert_Save_Info_To_Bytes_Bytes_2) == 0x000178, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Convert_Save_Info_To_Bytes_Bytes_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_UniqueNetIdToString_String_1) == 0x000188, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_UniqueNetIdToString_String_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Concat_StrStr_ReturnValue_3) == 0x000198, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Concat_StrStr_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_DoesSaveGameExist_ReturnValue_1) == 0x0001A8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_DoesSaveGameExist_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_LoadGameFromSlot_ReturnValue_1) == 0x0001B0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_LoadGameFromSlot_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_DynamicCast_AsOAR_Savegame_1) == 0x0001B8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_DynamicCast_AsOAR_Savegame_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_DynamicCast_bSuccess_1) == 0x0001C0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_SaveGameToSlot_ReturnValue_1) == 0x0001C1, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_SaveGameToSlot_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, Temp_int_Array_Index_Variable_1) == 0x0001C4, "Member 'RobberController_C_ExecuteUbergraph_RobberController::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_IsValid_ReturnValue) == 0x0001C8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Array_Length_ReturnValue_3) == 0x0001CC, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Convert_Save_Info_To_Bytes_Bytes_3) == 0x0001D0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Convert_Save_Info_To_Bytes_Bytes_3' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetAllActorsWithInterface_OutActors) == 0x0001E0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetAllActorsWithInterface_OutActors' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, Temp_int_Array_Index_Variable_2) == 0x0001F0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Array_Length_ReturnValue_4) == 0x0001F4, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Array_Length_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Concat_StrStr_ReturnValue_4) == 0x0001F8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Concat_StrStr_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_CreateSaveGameObject_ReturnValue_2) == 0x000208, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_CreateSaveGameObject_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetUniqueNetIDFromPlayerState_UniqueNetId_2) == 0x000210, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetUniqueNetIDFromPlayerState_UniqueNetId_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Array_Length_ReturnValue_5) == 0x000230, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Array_Length_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_UniqueNetIdToString_String_2) == 0x000238, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_UniqueNetIdToString_String_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Convert_Save_Info_To_Bytes_Bytes_4) == 0x000248, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Convert_Save_Info_To_Bytes_Bytes_4' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Concat_StrStr_ReturnValue_5) == 0x000258, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Concat_StrStr_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_DoesSaveGameExist_ReturnValue_2) == 0x000268, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_DoesSaveGameExist_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_LoadGameFromSlot_ReturnValue_2) == 0x000270, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_LoadGameFromSlot_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_DynamicCast_AsOAR_Savegame_2) == 0x000278, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_DynamicCast_AsOAR_Savegame_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_DynamicCast_bSuccess_2) == 0x000280, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_SaveGameToSlot_ReturnValue_2) == 0x000281, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_SaveGameToSlot_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, Temp_int_Loop_Counter_Variable_2) == 0x000284, "Member 'RobberController_C_ExecuteUbergraph_RobberController::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Add_IntInt_ReturnValue_2) == 0x000288, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_CustomEvent_Masks) == 0x000290, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_CustomEvent_Masks' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_CustomEvent_Outfits) == 0x0002A0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_CustomEvent_Outfits' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_CustomEvent_Emote) == 0x0002B0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_CustomEvent_Emote' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_CustomEvent_Armor) == 0x0002C0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_CustomEvent_Armor' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_CustomEvent_SkinColor) == 0x0002D0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_CustomEvent_SkinColor' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_CreateSaveGameObject_ReturnValue_3) == 0x0002D8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_CreateSaveGameObject_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetUniqueNetIDFromPlayerState_UniqueNetId_3) == 0x0002E0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetUniqueNetIDFromPlayerState_UniqueNetId_3' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Array_Length_ReturnValue_6) == 0x000300, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Array_Length_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_UniqueNetIdToString_String_3) == 0x000308, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_UniqueNetIdToString_String_3' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Convert_Save_Info_To_Bytes_Bytes_5) == 0x000318, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Convert_Save_Info_To_Bytes_Bytes_5' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Concat_StrStr_ReturnValue_6) == 0x000328, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Concat_StrStr_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_LoadGameFromSlot_ReturnValue_3) == 0x000338, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_LoadGameFromSlot_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_DoesSaveGameExist_ReturnValue_3) == 0x000340, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_DoesSaveGameExist_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_DynamicCast_AsOAR_Savegame_3) == 0x000348, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_DynamicCast_AsOAR_Savegame_3' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_DynamicCast_bSuccess_3) == 0x000350, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_SaveGameToSlot_ReturnValue_3) == 0x000351, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_SaveGameToSlot_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Concat_StrStr_ReturnValue_7) == 0x000358, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Concat_StrStr_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_CreateSaveGameObject_ReturnValue_4) == 0x000368, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_CreateSaveGameObject_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetUniqueNetIDFromPlayerState_UniqueNetId_4) == 0x000370, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetUniqueNetIDFromPlayerState_UniqueNetId_4' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_UniqueNetIdToString_String_4) == 0x000390, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_UniqueNetIdToString_String_4' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Concat_StrStr_ReturnValue_8) == 0x0003A0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Concat_StrStr_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Convert_Save_Info_To_Bytes_Bytes_6) == 0x0003B0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Convert_Save_Info_To_Bytes_Bytes_6' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_LoadGameFromSlot_ReturnValue_4) == 0x0003C0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_LoadGameFromSlot_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_DoesSaveGameExist_ReturnValue_4) == 0x0003C8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_DoesSaveGameExist_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_DynamicCast_AsOAR_Savegame_4) == 0x0003D0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_DynamicCast_AsOAR_Savegame_4' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_DynamicCast_bSuccess_4) == 0x0003D8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Map_Keys_Keys) == 0x0003E0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Map_Keys_Keys' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Array_Get_Item) == 0x0003F0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_SaveGameToSlot_ReturnValue_4) == 0x0003F4, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_SaveGameToSlot_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Convert_Save_Info_To_Bytes_Bytes_7) == 0x0003F8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Convert_Save_Info_To_Bytes_Bytes_7' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Greater_IntInt_ReturnValue) == 0x000408, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_CreateSaveGameObject_ReturnValue_5) == 0x000410, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_CreateSaveGameObject_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetUniqueNetIDFromPlayerState_UniqueNetId_5) == 0x000418, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetUniqueNetIDFromPlayerState_UniqueNetId_5' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Convert_Save_Info_To_Bytes_Bytes_8) == 0x000438, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Convert_Save_Info_To_Bytes_Bytes_8' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_UniqueNetIdToString_String_5) == 0x000448, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_UniqueNetIdToString_String_5' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Concat_StrStr_ReturnValue_9) == 0x000458, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Concat_StrStr_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_LoadGameFromSlot_ReturnValue_5) == 0x000468, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_LoadGameFromSlot_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_DoesSaveGameExist_ReturnValue_5) == 0x000470, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_DoesSaveGameExist_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_DynamicCast_AsOAR_Savegame_5) == 0x000478, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_DynamicCast_AsOAR_Savegame_5' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_DynamicCast_bSuccess_5) == 0x000480, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Map_Keys_Keys_1) == 0x000488, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Map_Keys_Keys_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Array_Get_Item_1) == 0x000498, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Convert_Save_Info_To_Bytes_Bytes_9) == 0x0004A0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Convert_Save_Info_To_Bytes_Bytes_9' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Greater_IntInt_ReturnValue_1) == 0x0004B0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_SaveGameToSlot_ReturnValue_5) == 0x0004B1, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_SaveGameToSlot_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, Temp_bool_Has_Been_Initd_Variable_1) == 0x0004B2, "Member 'RobberController_C_ExecuteUbergraph_RobberController::Temp_bool_Has_Been_Initd_Variable_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, Temp_string_Variable) == 0x0004B8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::Temp_string_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, Temp_bool_Variable) == 0x0004C8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_CustomEvent_Weapons) == 0x0004D0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_CustomEvent_Weapons' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_CustomEvent_Mods) == 0x0004E0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_CustomEvent_Mods' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_CustomEvent_Message) == 0x0004F0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_CustomEvent_Message' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_CustomEvent_Name) == 0x000500, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_CustomEvent_Name' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_CustomEvent_ChatLog) == 0x000510, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_CustomEvent_ChatLog' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_CustomEvent_NameLog) == 0x000520, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_CustomEvent_NameLog' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetAllWidgetsWithInterface_FoundWidgets) == 0x000530, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetAllWidgetsWithInterface_FoundWidgets' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Array_Length_ReturnValue_7) == 0x000540, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Array_Length_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetAllActorsOfClass_OutActors) == 0x000548, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Array_Add_ReturnValue) == 0x000558, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Array_Get_Item_2) == 0x000560, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Array_Length_ReturnValue_8) == 0x000568, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Array_Length_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, Temp_bool_IsClosed_Variable_1) == 0x00056C, "Member 'RobberController_C_ExecuteUbergraph_RobberController::Temp_bool_IsClosed_Variable_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetUniqueNetID_UniqueNetId) == 0x000570, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetUniqueNetID_UniqueNetId' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_FilterText_FilteredText) == 0x000590, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_FilterText_FilteredText' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_FilterText_ReturnValue) == 0x0005A0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_FilterText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_InitFilterText_ReturnValue) == 0x0005A1, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_InitFilterText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_CustomEvent_Tools) == 0x0005A8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_CustomEvent_Tools' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_CustomEvent_Player_1) == 0x0005B8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_CustomEvent_Player_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Array_Length_ReturnValue_9) == 0x0005C0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Array_Length_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetAllActorsOfClass_OutActors_1) == 0x0005C8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetAllActorsOfClass_OutActors_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetCurrentLevelName_ReturnValue) == 0x0005D8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetCurrentLevelName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Array_Length_ReturnValue_10) == 0x0005E8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Array_Length_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Conv_StringToName_ReturnValue) == 0x0005EC, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Concat_StrStr_ReturnValue_10) == 0x0005F8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Concat_StrStr_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Array_Length_ReturnValue_11) == 0x000608, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Array_Length_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00060C, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x00060D, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, Temp_int_Loop_Counter_Variable_3) == 0x000610, "Member 'RobberController_C_ExecuteUbergraph_RobberController::Temp_int_Loop_Counter_Variable_3' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Less_IntInt_ReturnValue) == 0x000614, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Array_Length_ReturnValue_12) == 0x000618, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Array_Length_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Convert_Save_Info_To_Bytes_Bytes_10) == 0x000620, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Convert_Save_Info_To_Bytes_Bytes_10' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Add_IntInt_ReturnValue_3) == 0x000630, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetAllActorsOfClass_OutActors_2) == 0x000638, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetAllActorsOfClass_OutActors_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_CustomEvent_Player) == 0x000648, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_CustomEvent_Player' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Array_Length_ReturnValue_13) == 0x000650, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Array_Length_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Array_Contains_ReturnValue) == 0x000654, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Array_Add_ReturnValue_1) == 0x000658, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_DoesSaveGameExist_ReturnValue_6) == 0x00065C, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_DoesSaveGameExist_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_CreateSaveGameObject_ReturnValue_6) == 0x000660, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_CreateSaveGameObject_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_SaveGameToSlot_ReturnValue_6) == 0x000668, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_SaveGameToSlot_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_LoadGameFromSlot_ReturnValue_6) == 0x000670, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_LoadGameFromSlot_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_DynamicCast_AsOAR_Savegame_6) == 0x000678, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_DynamicCast_AsOAR_Savegame_6' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_DynamicCast_bSuccess_6) == 0x000680, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_DynamicCast_bSuccess_6' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Create_ReturnValue) == 0x000688, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_CustomEvent_Data_3) == 0x000690, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_CustomEvent_Data_3' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_CustomEvent_bWasSuccessful_2) == 0x0006A0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_CustomEvent_bWasSuccessful_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Conv_IntToString_ReturnValue) == 0x0006A8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Round_ReturnValue) == 0x0006B8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Round_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Concat_StrStr_ReturnValue_11) == 0x0006C0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Concat_StrStr_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Conv_IntToString_ReturnValue_1) == 0x0006D0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Conv_IntToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Concat_StrStr_ReturnValue_12) == 0x0006E0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Concat_StrStr_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Conv_IntToString_ReturnValue_2) == 0x0006F0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Conv_IntToString_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Conv_IntToString_ReturnValue_3) == 0x000700, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Conv_IntToString_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Concat_StrStr_ReturnValue_13) == 0x000710, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Concat_StrStr_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Concat_StrStr_ReturnValue_14) == 0x000720, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Concat_StrStr_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_CreateDelegate_OutputDelegate_4) == 0x000730, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Conv_IntToString_ReturnValue_4) == 0x000740, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Conv_IntToString_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Concat_StrStr_ReturnValue_15) == 0x000750, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Concat_StrStr_ReturnValue_15' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Conv_IntToString_ReturnValue_5) == 0x000760, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Conv_IntToString_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Concat_StrStr_ReturnValue_16) == 0x000770, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Concat_StrStr_ReturnValue_16' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_CustomEvent_SaveName) == 0x000780, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_CustomEvent_SaveName' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Concat_StrStr_ReturnValue_17) == 0x000790, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Concat_StrStr_ReturnValue_17' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_IsValid_ReturnValue_1) == 0x0007A0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_EncryptString_ReturnValue) == 0x0007A8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_EncryptString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Concat_StrStr_ReturnValue_18) == 0x0007B8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Concat_StrStr_ReturnValue_18' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetProjectSavedDirectory_ReturnValue) == 0x0007C8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetProjectSavedDirectory_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Concat_StrStr_ReturnValue_19) == 0x0007D8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Concat_StrStr_ReturnValue_19' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Concat_StrStr_ReturnValue_20) == 0x0007E8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Concat_StrStr_ReturnValue_20' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, Temp_int_Array_Index_Variable_3) == 0x0007F8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::Temp_int_Array_Index_Variable_3' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Concat_StrStr_ReturnValue_21) == 0x000800, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Concat_StrStr_ReturnValue_21' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_ReadFileToBytes_ReturnValue) == 0x000810, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_ReadFileToBytes_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetCurrentLevelName_ReturnValue_1) == 0x000820, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetCurrentLevelName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_EqualEqual_StrStr_ReturnValue) == 0x000830, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_EqualEqual_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_EqualEqual_StrStr_ReturnValue_1) == 0x000831, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_EqualEqual_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_CustomEvent_Save_name) == 0x000838, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_CustomEvent_Save_name' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_SwitchString_CmpSuccess) == 0x000848, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_SwitchString_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetAllActorsWithInterface_OutActors_1) == 0x000850, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetAllActorsWithInterface_OutActors_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, Temp_bool_Variable_1) == 0x000860, "Member 'RobberController_C_ExecuteUbergraph_RobberController::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Array_Length_ReturnValue_14) == 0x000864, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Array_Length_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_Select_Default) == 0x000868, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Array_Add_ReturnValue_2) == 0x000878, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Array_Add_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_LoadItemDefinitions_ReturnValue) == 0x00087C, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_LoadItemDefinitions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_MakeArray_Array) == 0x000880, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_RequestPricesAsync_ReturnValue) == 0x000890, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_RequestPricesAsync_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_MakeArray_Array_1) == 0x000898, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_IsValid_ReturnValue_2) == 0x0008A8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_Event_DeltaSeconds) == 0x0008AC, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, Temp_int_Loop_Counter_Variable_4) == 0x0008B0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::Temp_int_Loop_Counter_Variable_4' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetCurrentLevelName_ReturnValue_2) == 0x0008B8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetCurrentLevelName_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_EqualEqual_StrStr_ReturnValue_2) == 0x0008C8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_EqualEqual_StrStr_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Less_IntInt_ReturnValue_1) == 0x0008C9, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Add_IntInt_ReturnValue_4) == 0x0008CC, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_BLoggedOn_ReturnValue) == 0x0008D0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_BLoggedOn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetSteamID_Pure_ReturnValue) == 0x0008D8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetSteamID_Pure_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_BreakSteamID_ReturnValue) == 0x0008E0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_BreakSteamID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_MakeLiteralString_ReturnValue) == 0x0008F0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_MakeLiteralString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetUserInfoAsync_ReturnValue) == 0x000900, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetUserInfoAsync_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Len_ReturnValue) == 0x000908, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Len_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_IsValid_ReturnValue_3) == 0x00090C, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_FindSubstring_ReturnValue) == 0x000910, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_FindSubstring_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Add_IntInt_ReturnValue_5) == 0x000914, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Add_IntInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetSubstring_ReturnValue) == 0x000918, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetSubstring_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetUniqueNetIDFromPlayerState_UniqueNetId_6) == 0x000928, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetUniqueNetIDFromPlayerState_UniqueNetId_6' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, Temp_int_Loop_Counter_Variable_5) == 0x000948, "Member 'RobberController_C_ExecuteUbergraph_RobberController::Temp_int_Loop_Counter_Variable_5' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_UniqueNetIdToString_String_6) == 0x000950, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_UniqueNetIdToString_String_6' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Concat_StrStr_ReturnValue_22) == 0x000960, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Concat_StrStr_ReturnValue_22' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Add_IntInt_ReturnValue_6) == 0x000970, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Add_IntInt_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_LoadGameFromSlot_ReturnValue_7) == 0x000978, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_LoadGameFromSlot_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_DynamicCast_AsOAR_Savegame_7) == 0x000980, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_DynamicCast_AsOAR_Savegame_7' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_DynamicCast_bSuccess_7) == 0x000988, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_DynamicCast_bSuccess_7' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_DoesSaveGameExist_ReturnValue_7) == 0x000989, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_DoesSaveGameExist_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, Temp_struct_Variable) == 0x000990, "Member 'RobberController_C_ExecuteUbergraph_RobberController::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_IsLocalController_ReturnValue) == 0x0009A8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_IsLocalController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_IsLocalController_ReturnValue_1) == 0x0009A9, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_IsLocalController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_DoesSaveGameExist_ReturnValue_8) == 0x0009AA, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_DoesSaveGameExist_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_LoadGameFromSlot_ReturnValue_8) == 0x0009B0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_LoadGameFromSlot_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_DynamicCast_AsOAR_Savegame_8) == 0x0009B8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_DynamicCast_AsOAR_Savegame_8' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_DynamicCast_bSuccess_8) == 0x0009C0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_DynamicCast_bSuccess_8' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Conv_IntToString_ReturnValue_6) == 0x0009C8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Conv_IntToString_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Concat_StrStr_ReturnValue_23) == 0x0009D8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Concat_StrStr_ReturnValue_23' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_MakeLiteralString_ReturnValue_1) == 0x0009E8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_MakeLiteralString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_DeleteGameInSlot_ReturnValue) == 0x0009F8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_DeleteGameInSlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_LoadGameFromSlot_ReturnValue_9) == 0x000A00, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_LoadGameFromSlot_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_DoesSaveGameExist_ReturnValue_9) == 0x000A08, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_DoesSaveGameExist_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_DynamicCast_AsOAR_Savegame_9) == 0x000A10, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_DynamicCast_AsOAR_Savegame_9' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_DynamicCast_bSuccess_9) == 0x000A18, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_DynamicCast_bSuccess_9' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_CreateSaveGameObject_ReturnValue_7) == 0x000A20, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_CreateSaveGameObject_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_SaveGameToSlot_ReturnValue_7) == 0x000A28, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_SaveGameToSlot_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_CreateSaveGameObject_ReturnValue_8) == 0x000A30, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_CreateSaveGameObject_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_SaveGameToSlot_ReturnValue_8) == 0x000A38, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_SaveGameToSlot_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetAllActorsWithInterface_OutActors_2) == 0x000A40, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetAllActorsWithInterface_OutActors_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Array_Get_Item_3) == 0x000A50, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Array_Length_ReturnValue_15) == 0x000A58, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Array_Length_ReturnValue_15' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_DynamicCast_AsMenu_UIInteraface) == 0x000A60, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_DynamicCast_AsMenu_UIInteraface' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_DynamicCast_bSuccess_10) == 0x000A70, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_DynamicCast_bSuccess_10' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Convert_Save_Info_To_Bytes_Bytes_11) == 0x000A78, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Convert_Save_Info_To_Bytes_Bytes_11' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Array_Length_ReturnValue_16) == 0x000A88, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Array_Length_ReturnValue_16' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, Temp_bool_Variable_2) == 0x000A8C, "Member 'RobberController_C_ExecuteUbergraph_RobberController::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Less_IntInt_ReturnValue_2) == 0x000A8D, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetAllWidgetsWithInterface_FoundWidgets_1) == 0x000A90, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetAllWidgetsWithInterface_FoundWidgets_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Array_Length_ReturnValue_17) == 0x000AA0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Array_Length_ReturnValue_17' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetUniqueNetIDFromPlayerState_UniqueNetId_7) == 0x000AA8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetUniqueNetIDFromPlayerState_UniqueNetId_7' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Less_IntInt_ReturnValue_3) == 0x000AC8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_UniqueNetIdToString_String_7) == 0x000AD0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_UniqueNetIdToString_String_7' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_EqualEqual_StrStr_ReturnValue_3) == 0x000AE0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_EqualEqual_StrStr_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_IsLocalController_ReturnValue_2) == 0x000AE1, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_IsLocalController_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, Temp_int_Array_Index_Variable_4) == 0x000AE4, "Member 'RobberController_C_ExecuteUbergraph_RobberController::Temp_int_Array_Index_Variable_4' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Array_Get_Item_4) == 0x000AE8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_DynamicCast_AsMenu_UIInteraface_1) == 0x000AF0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_DynamicCast_AsMenu_UIInteraface_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_DynamicCast_bSuccess_11) == 0x000B00, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_DynamicCast_bSuccess_11' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_RandomInteger64InRange_ReturnValue) == 0x000B08, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_RandomInteger64InRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, Temp_int_Array_Index_Variable_5) == 0x000B10, "Member 'RobberController_C_ExecuteUbergraph_RobberController::Temp_int_Array_Index_Variable_5' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_IsLocalController_ReturnValue_3) == 0x000B14, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_IsLocalController_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Array_Get_Item_5) == 0x000B18, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Array_Get_Item_5' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_DynamicCast_AsChat_Interface) == 0x000B20, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_DynamicCast_AsChat_Interface' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_DynamicCast_bSuccess_12) == 0x000B30, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_DynamicCast_bSuccess_12' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_IsLocalController_ReturnValue_4) == 0x000B31, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_IsLocalController_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_MakeMap_Map) == 0x000B38, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_MakeMap_Map' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_MakeMap_Map_1) == 0x000B88, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_MakeMap_Map_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetSteamID_Pure_ReturnValue_1) == 0x000BD8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetSteamID_Pure_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetSteamID_Pure_ReturnValue_2) == 0x000BE0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetSteamID_Pure_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_BreakSteamID_ReturnValue_1) == 0x000BE8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_BreakSteamID_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_BreakSteamID_ReturnValue_2) == 0x000BF8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_BreakSteamID_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_MakeMap_Map_2) == 0x000C08, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_MakeMap_Map_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_MakeMap_Map_3) == 0x000C58, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_MakeMap_Map_3' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_IsLocalController_ReturnValue_5) == 0x000CA8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_IsLocalController_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_CreateSaveGameObject_ReturnValue_9) == 0x000CB0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_CreateSaveGameObject_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_SaveGameToSlot_ReturnValue_9) == 0x000CB8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_SaveGameToSlot_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_DoesSaveGameExist_ReturnValue_10) == 0x000CB9, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_DoesSaveGameExist_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_IsLocalController_ReturnValue_6) == 0x000CBA, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_IsLocalController_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_LoadGameFromSlot_ReturnValue_10) == 0x000CC0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_LoadGameFromSlot_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_FindSkinTimeLeft_RotationNumber) == 0x000CC8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_FindSkinTimeLeft_RotationNumber' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_FindSkinTimeLeft_ReturnValue) == 0x000CD0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_FindSkinTimeLeft_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_DynamicCast_AsOAR_Savegame_10) == 0x000CD8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_DynamicCast_AsOAR_Savegame_10' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_DynamicCast_bSuccess_13) == 0x000CE0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_DynamicCast_bSuccess_13' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_FindSkinTimeLeft_RotationNumber_1) == 0x000CE4, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_FindSkinTimeLeft_RotationNumber_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_FindSkinTimeLeft_ReturnValue_1) == 0x000CE8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_FindSkinTimeLeft_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Greater_IntInt_ReturnValue_2) == 0x000CF0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Greater_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Greater_IntInt_ReturnValue_3) == 0x000CF1, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Greater_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_FindSkinTimeLeft_RotationNumber_2) == 0x000CF4, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_FindSkinTimeLeft_RotationNumber_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_FindSkinTimeLeft_ReturnValue_2) == 0x000CF8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_FindSkinTimeLeft_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetSteamID_Pure_ReturnValue_3) == 0x000D00, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetSteamID_Pure_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetSteamID_Pure_ReturnValue_4) == 0x000D08, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetSteamID_Pure_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_BreakSteamID_ReturnValue_3) == 0x000D10, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_BreakSteamID_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_BreakSteamID_ReturnValue_4) == 0x000D20, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_BreakSteamID_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_MakeMap_Map_4) == 0x000D30, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_MakeMap_Map_4' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_MakeMap_Map_5) == 0x000D80, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_MakeMap_Map_5' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetSteamID_Pure_ReturnValue_5) == 0x000DD0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetSteamID_Pure_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetSteamID_Pure_ReturnValue_6) == 0x000DD8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetSteamID_Pure_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_BreakSteamID_ReturnValue_5) == 0x000DE0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_BreakSteamID_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_BreakSteamID_ReturnValue_6) == 0x000DF0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_BreakSteamID_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_MakeMap_Map_6) == 0x000E00, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_MakeMap_Map_6' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_MakeMap_Map_7) == 0x000E50, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_MakeMap_Map_7' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, Temp_int_Loop_Counter_Variable_6) == 0x000EA0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::Temp_int_Loop_Counter_Variable_6' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_CustomEvent_Setups) == 0x000EA8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_CustomEvent_Setups' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Less_IntInt_ReturnValue_4) == 0x000EB8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Less_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Add_IntInt_ReturnValue_7) == 0x000EBC, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Add_IntInt_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetActorOfClass_ReturnValue) == 0x000EC0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetActorOfClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, Temp_int_Loop_Counter_Variable_7) == 0x000EC8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::Temp_int_Loop_Counter_Variable_7' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Less_IntInt_ReturnValue_5) == 0x000ECC, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Less_IntInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Add_IntInt_ReturnValue_8) == 0x000ED0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Add_IntInt_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_CustomEvent_Data_4) == 0x000ED8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_CustomEvent_Data_4' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_CustomEvent_bWasSuccessful_3) == 0x000EF0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_CustomEvent_bWasSuccessful_3' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, Temp_int_Array_Index_Variable_6) == 0x000EF4, "Member 'RobberController_C_ExecuteUbergraph_RobberController::Temp_int_Array_Index_Variable_6' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Array_Get_Item_6) == 0x000EF8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Array_Get_Item_6' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_IsValid_ReturnValue_4) == 0x000F00, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, Temp_int_Array_Index_Variable_7) == 0x000F04, "Member 'RobberController_C_ExecuteUbergraph_RobberController::Temp_int_Array_Index_Variable_7' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Array_Get_Item_7) == 0x000F08, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Array_Get_Item_7' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_DynamicCast_AsMenu_UIInteraface_2) == 0x000F10, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_DynamicCast_AsMenu_UIInteraface_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_DynamicCast_bSuccess_14) == 0x000F20, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_DynamicCast_bSuccess_14' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_CreateSaveGameObject_ReturnValue_10) == 0x000F28, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_CreateSaveGameObject_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_IsLocalController_ReturnValue_7) == 0x000F30, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_IsLocalController_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_SaveGameToSlot_ReturnValue_10) == 0x000F31, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_SaveGameToSlot_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_IsLocalController_ReturnValue_8) == 0x000F32, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_IsLocalController_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_DoesSaveGameExist_ReturnValue_11) == 0x000F33, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_DoesSaveGameExist_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_LoadGameFromSlot_ReturnValue_11) == 0x000F38, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_LoadGameFromSlot_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_DynamicCast_AsOAR_Savegame_11) == 0x000F40, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_DynamicCast_AsOAR_Savegame_11' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_DynamicCast_bSuccess_15) == 0x000F48, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_DynamicCast_bSuccess_15' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_StoreStats_ReturnValue) == 0x000F49, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_StoreStats_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_RequestCurrentStats_ReturnValue) == 0x000F4A, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_RequestCurrentStats_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetStatInt_Data) == 0x000F4C, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetStatInt_Data' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetStatInt_ReturnValue) == 0x000F50, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetStatInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Add_IntInt_ReturnValue_9) == 0x000F54, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Add_IntInt_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Greater_IntInt_ReturnValue_4) == 0x000F58, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Greater_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_SetStatInt_ReturnValue) == 0x000F59, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_SetStatInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_IsLocalController_ReturnValue_9) == 0x000F5A, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_IsLocalController_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_CreateDelegate_OutputDelegate_5) == 0x000F5C, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_IsLocalController_ReturnValue_10) == 0x000F6C, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_IsLocalController_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_StoreStats_ReturnValue_1) == 0x000F6D, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_StoreStats_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetGameInstance_ReturnValue) == 0x000F70, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetGameInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_DynamicCast_AsRobber_GI) == 0x000F78, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_DynamicCast_AsRobber_GI' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_DynamicCast_bSuccess_16) == 0x000F80, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_DynamicCast_bSuccess_16' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetResultItems_Items) == 0x000F88, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetResultItems_Items' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetResultItems_ReturnValue) == 0x000F98, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetResultItems_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_EqualEqual_StrStr_ReturnValue_4) == 0x000F99, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_EqualEqual_StrStr_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Create_ReturnValue_1) == 0x000FA0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Create_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, Temp_int_Loop_Counter_Variable_8) == 0x000FA8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::Temp_int_Loop_Counter_Variable_8' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Less_IntInt_ReturnValue_6) == 0x000FAC, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Less_IntInt_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Add_IntInt_ReturnValue_10) == 0x000FB0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Add_IntInt_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, Temp_int_Loop_Counter_Variable_9) == 0x000FB4, "Member 'RobberController_C_ExecuteUbergraph_RobberController::Temp_int_Loop_Counter_Variable_9' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Array_Length_ReturnValue_18) == 0x000FB8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Array_Length_ReturnValue_18' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Less_IntInt_ReturnValue_7) == 0x000FBC, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Less_IntInt_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Convert_Save_Info_To_Bytes_Bytes_12) == 0x000FC0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Convert_Save_Info_To_Bytes_Bytes_12' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Add_IntInt_ReturnValue_11) == 0x000FD0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Add_IntInt_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_CustomEvent_Data_2) == 0x000FD4, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_CustomEvent_Data_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_CustomEvent_bWasSuccessful_1) == 0x000FD5, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_CustomEvent_bWasSuccessful_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_CreateDelegate_OutputDelegate_6) == 0x000FD8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_CustomEvent_Data_1) == 0x000FE8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_CustomEvent_Data_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_CustomEvent_bWasSuccessful) == 0x000FE9, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_CustomEvent_bWasSuccessful' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetGameInstanceSubsystem_ReturnValue_3) == 0x000FF0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetGameInstanceSubsystem_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetGameInstance_ReturnValue_1) == 0x000FF8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetGameInstance_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_DynamicCast_AsRobber_GI_1) == 0x001000, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_DynamicCast_AsRobber_GI_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_DynamicCast_bSuccess_17) == 0x001008, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_DynamicCast_bSuccess_17' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetActorOfClass_ReturnValue_1) == 0x001010, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetActorOfClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetTotalSeconds_ReturnValue) == 0x001018, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetTotalSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, Temp_int_Array_Index_Variable_8) == 0x00101C, "Member 'RobberController_C_ExecuteUbergraph_RobberController::Temp_int_Array_Index_Variable_8' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_FTrunc_ReturnValue) == 0x001020, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Array_Get_Item_8) == 0x001028, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Array_Get_Item_8' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_IsValid_ReturnValue_5) == 0x001030, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Array_Get_Item_9) == 0x001038, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Array_Get_Item_9' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Array_Length_ReturnValue_19) == 0x001058, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Array_Length_ReturnValue_19' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Less_IntInt_ReturnValue_8) == 0x00105C, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Less_IntInt_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetItemDefinitionProperty_Value) == 0x001060, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetItemDefinitionProperty_Value' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetItemDefinitionProperty_ReturnValue) == 0x001070, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetItemDefinitionProperty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_EqualEqual_StrStr_ReturnValue_5) == 0x001071, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_EqualEqual_StrStr_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Add_IntInt_ReturnValue_12) == 0x001074, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Add_IntInt_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_MakeArray_Array_2) == 0x001078, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_MakeArray_Array_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_MakeStruct_SteamItemDef) == 0x001088, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_MakeStruct_SteamItemDef' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_MakeArray_Array_3) == 0x001090, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_MakeArray_Array_3' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_CustomEvent_InventoryHandle) == 0x0010A0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_CustomEvent_InventoryHandle' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_ExchangeItems_Result) == 0x0010A4, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_ExchangeItems_Result' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_ExchangeItems_ReturnValue) == 0x0010A8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_ExchangeItems_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetAllWidgetsWithInterface_FoundWidgets_2) == 0x0010B0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetAllWidgetsWithInterface_FoundWidgets_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Array_Get_Item_10) == 0x0010C0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Array_Get_Item_10' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Array_Length_ReturnValue_20) == 0x0010C8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Array_Length_ReturnValue_20' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_DynamicCast_AsController_Interface) == 0x0010D0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_DynamicCast_AsController_Interface' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_DynamicCast_bSuccess_18) == 0x0010E0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_DynamicCast_bSuccess_18' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Less_IntInt_ReturnValue_9) == 0x0010E1, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Less_IntInt_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_Event_Result) == 0x0010E4, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_Event_Result' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, Temp_int_Array_Index_Variable_9) == 0x0010E8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::Temp_int_Array_Index_Variable_9' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_Array_Get_Item_11) == 0x0010F0, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_Array_Get_Item_11' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_DynamicCast_AsMenu_UIInteraface_3) == 0x0010F8, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_DynamicCast_AsMenu_UIInteraface_3' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_DynamicCast_bSuccess_19) == 0x001108, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_DynamicCast_bSuccess_19' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetResultStatus_ReturnValue) == 0x001109, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetResultStatus_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_CustomEvent_Data) == 0x00110C, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_CustomEvent_Data' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue) == 0x001110, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x001120, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetResultStatus_ReturnValue_1) == 0x001121, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetResultStatus_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x001122, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_1) == 0x001128, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetAllItems_Handle) == 0x001138, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetAllItems_Handle' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetAllItems_ReturnValue) == 0x00113C, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetAllItems_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetAllItems_Handle_1) == 0x001140, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetAllItems_Handle_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetAllItems_ReturnValue_1) == 0x001144, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetAllItems_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_UpdateSteamInventoryFromActionResult_UpdatedInventory) == 0x001148, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_UpdateSteamInventoryFromActionResult_UpdatedInventory' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_UpdateSteamInventoryFromActionResult_Result_out) == 0x001158, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_UpdateSteamInventoryFromActionResult_Result_out' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_IsLocalController_ReturnValue_11) == 0x00115C, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_IsLocalController_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, K2Node_CreateDelegate_OutputDelegate_7) == 0x001160, "Member 'RobberController_C_ExecuteUbergraph_RobberController::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_IsLocalController_ReturnValue_12) == 0x001170, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_IsLocalController_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_GetCurrentLevelName_ReturnValue_3) == 0x001178, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_GetCurrentLevelName_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_IsLocalController_ReturnValue_13) == 0x001188, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_IsLocalController_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ExecuteUbergraph_RobberController, CallFunc_EqualEqual_StrStr_ReturnValue_6) == 0x001189, "Member 'RobberController_C_ExecuteUbergraph_RobberController::CallFunc_EqualEqual_StrStr_ReturnValue_6' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_ExecuteUbergraph_RobberController;
 
 // Function RobberController.RobberController_C.OnFullUpdate
 // 0x0004 (0x0004 - 0x0000)
@@ -982,9 +566,7 @@ struct RobberController_C_OnFullUpdate final
 public:
 	struct FSteamInventoryFullUpdate              Data;                                              // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(RobberController_C_OnFullUpdate) == 0x000004, "Wrong alignment on RobberController_C_OnFullUpdate");
-static_assert(sizeof(RobberController_C_OnFullUpdate) == 0x000004, "Wrong size on RobberController_C_OnFullUpdate");
-static_assert(offsetof(RobberController_C_OnFullUpdate, Data) == 0x000000, "Member 'RobberController_C_OnFullUpdate::Data' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_OnFullUpdate;
 
 // Function RobberController.RobberController_C.UpdateWhenResultIsFinished
 // 0x0004 (0x0004 - 0x0000)
@@ -993,9 +575,7 @@ struct RobberController_C_UpdateWhenResultIsFinished final
 public:
 	struct FSteamInventoryResult                  Result;                                            // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RobberController_C_UpdateWhenResultIsFinished) == 0x000004, "Wrong alignment on RobberController_C_UpdateWhenResultIsFinished");
-static_assert(sizeof(RobberController_C_UpdateWhenResultIsFinished) == 0x000004, "Wrong size on RobberController_C_UpdateWhenResultIsFinished");
-static_assert(offsetof(RobberController_C_UpdateWhenResultIsFinished, Result) == 0x000000, "Member 'RobberController_C_UpdateWhenResultIsFinished::Result' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_UpdateWhenResultIsFinished;
 
 // Function RobberController.RobberController_C.UpdateSteamItemsEvent
 // 0x0004 (0x0004 - 0x0000)
@@ -1004,9 +584,7 @@ struct RobberController_C_UpdateSteamItemsEvent final
 public:
 	struct FSteamInventoryResult                  InventoryHandle_0;                                 // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RobberController_C_UpdateSteamItemsEvent) == 0x000004, "Wrong alignment on RobberController_C_UpdateSteamItemsEvent");
-static_assert(sizeof(RobberController_C_UpdateSteamItemsEvent) == 0x000004, "Wrong size on RobberController_C_UpdateSteamItemsEvent");
-static_assert(offsetof(RobberController_C_UpdateSteamItemsEvent, InventoryHandle_0) == 0x000000, "Member 'RobberController_C_UpdateSteamItemsEvent::InventoryHandle_0' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_UpdateSteamItemsEvent;
 
 // Function RobberController.RobberController_C.OnBackupFileUploaded
 // 0x0002 (0x0002 - 0x0000)
@@ -1016,10 +594,7 @@ public:
 	struct FRemoteStorageFileWriteAsyncComplete   Data;                                              // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 	bool                                          bWasSuccessful;                                    // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RobberController_C_OnBackupFileUploaded) == 0x000001, "Wrong alignment on RobberController_C_OnBackupFileUploaded");
-static_assert(sizeof(RobberController_C_OnBackupFileUploaded) == 0x000002, "Wrong size on RobberController_C_OnBackupFileUploaded");
-static_assert(offsetof(RobberController_C_OnBackupFileUploaded, Data) == 0x000000, "Member 'RobberController_C_OnBackupFileUploaded::Data' has a wrong offset!");
-static_assert(offsetof(RobberController_C_OnBackupFileUploaded, bWasSuccessful) == 0x000001, "Member 'RobberController_C_OnBackupFileUploaded::bWasSuccessful' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_OnBackupFileUploaded;
 
 // Function RobberController.RobberController_C.OnCloudFilesSaves
 // 0x0002 (0x0002 - 0x0000)
@@ -1029,10 +604,7 @@ public:
 	struct FRemoteStorageFileWriteAsyncComplete   Data;                                              // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 	bool                                          bWasSuccessful;                                    // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RobberController_C_OnCloudFilesSaves) == 0x000001, "Wrong alignment on RobberController_C_OnCloudFilesSaves");
-static_assert(sizeof(RobberController_C_OnCloudFilesSaves) == 0x000002, "Wrong size on RobberController_C_OnCloudFilesSaves");
-static_assert(offsetof(RobberController_C_OnCloudFilesSaves, Data) == 0x000000, "Member 'RobberController_C_OnCloudFilesSaves::Data' has a wrong offset!");
-static_assert(offsetof(RobberController_C_OnCloudFilesSaves, bWasSuccessful) == 0x000001, "Member 'RobberController_C_OnCloudFilesSaves::bWasSuccessful' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_OnCloudFilesSaves;
 
 // Function RobberController.RobberController_C.SetCompletedSetupsServer
 // 0x0010 (0x0010 - 0x0000)
@@ -1041,9 +613,7 @@ struct RobberController_C_SetCompletedSetupsServer final
 public:
 	TArray<class UClass*>                         Setups;                                            // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(RobberController_C_SetCompletedSetupsServer) == 0x000008, "Wrong alignment on RobberController_C_SetCompletedSetupsServer");
-static_assert(sizeof(RobberController_C_SetCompletedSetupsServer) == 0x000010, "Wrong size on RobberController_C_SetCompletedSetupsServer");
-static_assert(offsetof(RobberController_C_SetCompletedSetupsServer, Setups) == 0x000000, "Member 'RobberController_C_SetCompletedSetupsServer::Setups' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_SetCompletedSetupsServer;
 
 // Function RobberController.RobberController_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -1052,9 +622,7 @@ struct RobberController_C_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RobberController_C_ReceiveTick) == 0x000004, "Wrong alignment on RobberController_C_ReceiveTick");
-static_assert(sizeof(RobberController_C_ReceiveTick) == 0x000004, "Wrong size on RobberController_C_ReceiveTick");
-static_assert(offsetof(RobberController_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'RobberController_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_ReceiveTick;
 
 // Function RobberController.RobberController_C.LoadSavefromCloud
 // 0x0010 (0x0010 - 0x0000)
@@ -1063,9 +631,7 @@ struct RobberController_C_LoadSavefromCloud final
 public:
 	class FString                                 Save_name;                                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RobberController_C_LoadSavefromCloud) == 0x000008, "Wrong alignment on RobberController_C_LoadSavefromCloud");
-static_assert(sizeof(RobberController_C_LoadSavefromCloud) == 0x000010, "Wrong size on RobberController_C_LoadSavefromCloud");
-static_assert(offsetof(RobberController_C_LoadSavefromCloud, Save_name) == 0x000000, "Member 'RobberController_C_LoadSavefromCloud::Save_name' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_LoadSavefromCloud;
 
 // Function RobberController.RobberController_C.UploadToCloud
 // 0x0010 (0x0010 - 0x0000)
@@ -1074,9 +640,7 @@ struct RobberController_C_UploadToCloud final
 public:
 	class FString                                 SaveName;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RobberController_C_UploadToCloud) == 0x000008, "Wrong alignment on RobberController_C_UploadToCloud");
-static_assert(sizeof(RobberController_C_UploadToCloud) == 0x000010, "Wrong size on RobberController_C_UploadToCloud");
-static_assert(offsetof(RobberController_C_UploadToCloud, SaveName) == 0x000000, "Member 'RobberController_C_UploadToCloud::SaveName' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_UploadToCloud;
 
 // Function RobberController.RobberController_C.UpdateVotes
 // 0x0008 (0x0008 - 0x0000)
@@ -1085,9 +649,7 @@ struct RobberController_C_UpdateVotes final
 public:
 	class ARobberController_C*                    Player_0;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RobberController_C_UpdateVotes) == 0x000008, "Wrong alignment on RobberController_C_UpdateVotes");
-static_assert(sizeof(RobberController_C_UpdateVotes) == 0x000008, "Wrong size on RobberController_C_UpdateVotes");
-static_assert(offsetof(RobberController_C_UpdateVotes, Player_0) == 0x000000, "Member 'RobberController_C_UpdateVotes::Player_0' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_UpdateVotes;
 
 // Function RobberController.RobberController_C.VoteRestart
 // 0x0008 (0x0008 - 0x0000)
@@ -1096,9 +658,7 @@ struct RobberController_C_VoteRestart final
 public:
 	class ARobberController_C*                    Player_0;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RobberController_C_VoteRestart) == 0x000008, "Wrong alignment on RobberController_C_VoteRestart");
-static_assert(sizeof(RobberController_C_VoteRestart) == 0x000008, "Wrong size on RobberController_C_VoteRestart");
-static_assert(offsetof(RobberController_C_VoteRestart, Player_0) == 0x000000, "Member 'RobberController_C_VoteRestart::Player_0' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_VoteRestart;
 
 // Function RobberController.RobberController_C.SetToolsServer
 // 0x0010 (0x0010 - 0x0000)
@@ -1107,9 +667,7 @@ struct RobberController_C_SetToolsServer final
 public:
 	TArray<class UClass*>                         Tools;                                             // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(RobberController_C_SetToolsServer) == 0x000008, "Wrong alignment on RobberController_C_SetToolsServer");
-static_assert(sizeof(RobberController_C_SetToolsServer) == 0x000010, "Wrong size on RobberController_C_SetToolsServer");
-static_assert(offsetof(RobberController_C_SetToolsServer, Tools) == 0x000000, "Member 'RobberController_C_SetToolsServer::Tools' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_SetToolsServer;
 
 // Function RobberController.RobberController_C.UpdateMessages
 // 0x0020 (0x0020 - 0x0000)
@@ -1119,10 +677,7 @@ public:
 	class FString                                 ChatLog_0;                                         // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 NameLog;                                           // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RobberController_C_UpdateMessages) == 0x000008, "Wrong alignment on RobberController_C_UpdateMessages");
-static_assert(sizeof(RobberController_C_UpdateMessages) == 0x000020, "Wrong size on RobberController_C_UpdateMessages");
-static_assert(offsetof(RobberController_C_UpdateMessages, ChatLog_0) == 0x000000, "Member 'RobberController_C_UpdateMessages::ChatLog_0' has a wrong offset!");
-static_assert(offsetof(RobberController_C_UpdateMessages, NameLog) == 0x000010, "Member 'RobberController_C_UpdateMessages::NameLog' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_UpdateMessages;
 
 // Function RobberController.RobberController_C.ChatMessageController
 // 0x0020 (0x0020 - 0x0000)
@@ -1132,10 +687,7 @@ public:
 	class FString                                 Message;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 Name_0;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RobberController_C_ChatMessageController) == 0x000008, "Wrong alignment on RobberController_C_ChatMessageController");
-static_assert(sizeof(RobberController_C_ChatMessageController) == 0x000020, "Wrong size on RobberController_C_ChatMessageController");
-static_assert(offsetof(RobberController_C_ChatMessageController, Message) == 0x000000, "Member 'RobberController_C_ChatMessageController::Message' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ChatMessageController, Name_0) == 0x000010, "Member 'RobberController_C_ChatMessageController::Name_0' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_ChatMessageController;
 
 // Function RobberController.RobberController_C.SetWeaponsServer
 // 0x0020 (0x0020 - 0x0000)
@@ -1145,10 +697,7 @@ public:
 	TArray<class UClass*>                         Weapons;                                           // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	TArray<struct FAttachmentArrayStructure>      Mods;                                              // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(RobberController_C_SetWeaponsServer) == 0x000008, "Wrong alignment on RobberController_C_SetWeaponsServer");
-static_assert(sizeof(RobberController_C_SetWeaponsServer) == 0x000020, "Wrong size on RobberController_C_SetWeaponsServer");
-static_assert(offsetof(RobberController_C_SetWeaponsServer, Weapons) == 0x000000, "Member 'RobberController_C_SetWeaponsServer::Weapons' has a wrong offset!");
-static_assert(offsetof(RobberController_C_SetWeaponsServer, Mods) == 0x000010, "Member 'RobberController_C_SetWeaponsServer::Mods' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_SetWeaponsServer;
 
 // Function RobberController.RobberController_C.UpdateAppearance
 // 0x0048 (0x0048 - 0x0000)
@@ -1161,13 +710,7 @@ public:
 	TArray<class UClass*>                         Armor;                                             // 0x0030(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	class UMaterialInterface*                     SkinColor_0;                                       // 0x0040(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RobberController_C_UpdateAppearance) == 0x000008, "Wrong alignment on RobberController_C_UpdateAppearance");
-static_assert(sizeof(RobberController_C_UpdateAppearance) == 0x000048, "Wrong size on RobberController_C_UpdateAppearance");
-static_assert(offsetof(RobberController_C_UpdateAppearance, Masks) == 0x000000, "Member 'RobberController_C_UpdateAppearance::Masks' has a wrong offset!");
-static_assert(offsetof(RobberController_C_UpdateAppearance, Outfits) == 0x000010, "Member 'RobberController_C_UpdateAppearance::Outfits' has a wrong offset!");
-static_assert(offsetof(RobberController_C_UpdateAppearance, Emote) == 0x000020, "Member 'RobberController_C_UpdateAppearance::Emote' has a wrong offset!");
-static_assert(offsetof(RobberController_C_UpdateAppearance, Armor) == 0x000030, "Member 'RobberController_C_UpdateAppearance::Armor' has a wrong offset!");
-static_assert(offsetof(RobberController_C_UpdateAppearance, SkinColor_0) == 0x000040, "Member 'RobberController_C_UpdateAppearance::SkinColor_0' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_UpdateAppearance;
 
 // Function RobberController.RobberController_C.OnSteamInventoryUpdated
 // 0x0010 (0x0010 - 0x0000)
@@ -1176,9 +719,7 @@ struct RobberController_C_OnSteamInventoryUpdated final
 public:
 	TArray<struct FSteamItemDetails>              Items;                                             // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(RobberController_C_OnSteamInventoryUpdated) == 0x000008, "Wrong alignment on RobberController_C_OnSteamInventoryUpdated");
-static_assert(sizeof(RobberController_C_OnSteamInventoryUpdated) == 0x000010, "Wrong size on RobberController_C_OnSteamInventoryUpdated");
-static_assert(offsetof(RobberController_C_OnSteamInventoryUpdated, Items) == 0x000000, "Member 'RobberController_C_OnSteamInventoryUpdated::Items' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_OnSteamInventoryUpdated;
 
 // Function RobberController.RobberController_C.OnCallback_AD45EEAC44D55B89E3CC16A1A002AE23
 // 0x0018 (0x0018 - 0x0000)
@@ -1188,10 +729,7 @@ public:
 	class FString                                 Data;                                              // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          bWasSuccessful;                                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RobberController_C_OnCallback_AD45EEAC44D55B89E3CC16A1A002AE23) == 0x000008, "Wrong alignment on RobberController_C_OnCallback_AD45EEAC44D55B89E3CC16A1A002AE23");
-static_assert(sizeof(RobberController_C_OnCallback_AD45EEAC44D55B89E3CC16A1A002AE23) == 0x000018, "Wrong size on RobberController_C_OnCallback_AD45EEAC44D55B89E3CC16A1A002AE23");
-static_assert(offsetof(RobberController_C_OnCallback_AD45EEAC44D55B89E3CC16A1A002AE23, Data) == 0x000000, "Member 'RobberController_C_OnCallback_AD45EEAC44D55B89E3CC16A1A002AE23::Data' has a wrong offset!");
-static_assert(offsetof(RobberController_C_OnCallback_AD45EEAC44D55B89E3CC16A1A002AE23, bWasSuccessful) == 0x000010, "Member 'RobberController_C_OnCallback_AD45EEAC44D55B89E3CC16A1A002AE23::bWasSuccessful' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_OnCallback_AD45EEAC44D55B89E3CC16A1A002AE23;
 
 // Function RobberController.RobberController_C.OnCallback_0D5D0EC4428E0E8C7A5C85ACACEA797E
 // 0x0020 (0x0020 - 0x0000)
@@ -1201,10 +739,7 @@ public:
 	struct FSteamInventoryRequestPricesResult     Data;                                              // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	bool                                          bWasSuccessful;                                    // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RobberController_C_OnCallback_0D5D0EC4428E0E8C7A5C85ACACEA797E) == 0x000008, "Wrong alignment on RobberController_C_OnCallback_0D5D0EC4428E0E8C7A5C85ACACEA797E");
-static_assert(sizeof(RobberController_C_OnCallback_0D5D0EC4428E0E8C7A5C85ACACEA797E) == 0x000020, "Wrong size on RobberController_C_OnCallback_0D5D0EC4428E0E8C7A5C85ACACEA797E");
-static_assert(offsetof(RobberController_C_OnCallback_0D5D0EC4428E0E8C7A5C85ACACEA797E, Data) == 0x000000, "Member 'RobberController_C_OnCallback_0D5D0EC4428E0E8C7A5C85ACACEA797E::Data' has a wrong offset!");
-static_assert(offsetof(RobberController_C_OnCallback_0D5D0EC4428E0E8C7A5C85ACACEA797E, bWasSuccessful) == 0x000018, "Member 'RobberController_C_OnCallback_0D5D0EC4428E0E8C7A5C85ACACEA797E::bWasSuccessful' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_OnCallback_0D5D0EC4428E0E8C7A5C85ACACEA797E;
 
 // Function RobberController.RobberController_C.Find Equipped Item from Category Function
 // 0x00A0 (0x00A0 - 0x0000)
@@ -1227,21 +762,7 @@ public:
 	TArray<class UClass*>                         K2Node_Select_Default;                             // 0x0088(0x0010)(ReferenceParm)
 	class UClass*                                 CallFunc_Array_Get_Item;                           // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RobberController_C_Find_Equipped_Item_from_Category_Function) == 0x000008, "Wrong alignment on RobberController_C_Find_Equipped_Item_from_Category_Function");
-static_assert(sizeof(RobberController_C_Find_Equipped_Item_from_Category_Function) == 0x0000A0, "Wrong size on RobberController_C_Find_Equipped_Item_from_Category_Function");
-static_assert(offsetof(RobberController_C_Find_Equipped_Item_from_Category_Function, Category) == 0x000000, "Member 'RobberController_C_Find_Equipped_Item_from_Category_Function::Category' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Find_Equipped_Item_from_Category_Function, Index_0) == 0x000004, "Member 'RobberController_C_Find_Equipped_Item_from_Category_Function::Index_0' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Find_Equipped_Item_from_Category_Function, Item) == 0x000008, "Member 'RobberController_C_Find_Equipped_Item_from_Category_Function::Item' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Find_Equipped_Item_from_Category_Function, Temp_class_Variable) == 0x000010, "Member 'RobberController_C_Find_Equipped_Item_from_Category_Function::Temp_class_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Find_Equipped_Item_from_Category_Function, Temp_class_Variable_1) == 0x000020, "Member 'RobberController_C_Find_Equipped_Item_from_Category_Function::Temp_class_Variable_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Find_Equipped_Item_from_Category_Function, Temp_class_Variable_2) == 0x000030, "Member 'RobberController_C_Find_Equipped_Item_from_Category_Function::Temp_class_Variable_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Find_Equipped_Item_from_Category_Function, Temp_class_Variable_3) == 0x000040, "Member 'RobberController_C_Find_Equipped_Item_from_Category_Function::Temp_class_Variable_3' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Find_Equipped_Item_from_Category_Function, Temp_class_Variable_4) == 0x000050, "Member 'RobberController_C_Find_Equipped_Item_from_Category_Function::Temp_class_Variable_4' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Find_Equipped_Item_from_Category_Function, Temp_class_Variable_5) == 0x000060, "Member 'RobberController_C_Find_Equipped_Item_from_Category_Function::Temp_class_Variable_5' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Find_Equipped_Item_from_Category_Function, Temp_byte_Variable) == 0x000070, "Member 'RobberController_C_Find_Equipped_Item_from_Category_Function::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Find_Equipped_Item_from_Category_Function, Temp_class_Variable_6) == 0x000078, "Member 'RobberController_C_Find_Equipped_Item_from_Category_Function::Temp_class_Variable_6' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Find_Equipped_Item_from_Category_Function, K2Node_Select_Default) == 0x000088, "Member 'RobberController_C_Find_Equipped_Item_from_Category_Function::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Find_Equipped_Item_from_Category_Function, CallFunc_Array_Get_Item) == 0x000098, "Member 'RobberController_C_Find_Equipped_Item_from_Category_Function::CallFunc_Array_Get_Item' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_Find_Equipped_Item_from_Category_Function;
 
 // Function RobberController.RobberController_C.OverrideIndexFromCategory
 // 0x0098 (0x0098 - 0x0000)
@@ -1263,20 +784,7 @@ public:
 	TArray<class UClass*>                         Temp_class_Variable_6;                             // 0x0078(0x0010)(ReferenceParm)
 	TArray<class UClass*>                         K2Node_Select_Default;                             // 0x0088(0x0010)(ReferenceParm)
 };
-static_assert(alignof(RobberController_C_OverrideIndexFromCategory) == 0x000008, "Wrong alignment on RobberController_C_OverrideIndexFromCategory");
-static_assert(sizeof(RobberController_C_OverrideIndexFromCategory) == 0x000098, "Wrong size on RobberController_C_OverrideIndexFromCategory");
-static_assert(offsetof(RobberController_C_OverrideIndexFromCategory, Category) == 0x000000, "Member 'RobberController_C_OverrideIndexFromCategory::Category' has a wrong offset!");
-static_assert(offsetof(RobberController_C_OverrideIndexFromCategory, Index_0) == 0x000004, "Member 'RobberController_C_OverrideIndexFromCategory::Index_0' has a wrong offset!");
-static_assert(offsetof(RobberController_C_OverrideIndexFromCategory, Item) == 0x000008, "Member 'RobberController_C_OverrideIndexFromCategory::Item' has a wrong offset!");
-static_assert(offsetof(RobberController_C_OverrideIndexFromCategory, Temp_byte_Variable) == 0x000010, "Member 'RobberController_C_OverrideIndexFromCategory::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_OverrideIndexFromCategory, Temp_class_Variable) == 0x000018, "Member 'RobberController_C_OverrideIndexFromCategory::Temp_class_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_OverrideIndexFromCategory, Temp_class_Variable_1) == 0x000028, "Member 'RobberController_C_OverrideIndexFromCategory::Temp_class_Variable_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_OverrideIndexFromCategory, Temp_class_Variable_2) == 0x000038, "Member 'RobberController_C_OverrideIndexFromCategory::Temp_class_Variable_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_OverrideIndexFromCategory, Temp_class_Variable_3) == 0x000048, "Member 'RobberController_C_OverrideIndexFromCategory::Temp_class_Variable_3' has a wrong offset!");
-static_assert(offsetof(RobberController_C_OverrideIndexFromCategory, Temp_class_Variable_4) == 0x000058, "Member 'RobberController_C_OverrideIndexFromCategory::Temp_class_Variable_4' has a wrong offset!");
-static_assert(offsetof(RobberController_C_OverrideIndexFromCategory, Temp_class_Variable_5) == 0x000068, "Member 'RobberController_C_OverrideIndexFromCategory::Temp_class_Variable_5' has a wrong offset!");
-static_assert(offsetof(RobberController_C_OverrideIndexFromCategory, Temp_class_Variable_6) == 0x000078, "Member 'RobberController_C_OverrideIndexFromCategory::Temp_class_Variable_6' has a wrong offset!");
-static_assert(offsetof(RobberController_C_OverrideIndexFromCategory, K2Node_Select_Default) == 0x000088, "Member 'RobberController_C_OverrideIndexFromCategory::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_OverrideIndexFromCategory;
 
 // Function RobberController.RobberController_C.RemoveInventoryItem
 // 0x0018 (0x0018 - 0x0000)
@@ -1289,12 +797,7 @@ public:
 	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RobberController_C_RemoveInventoryItem) == 0x000008, "Wrong alignment on RobberController_C_RemoveInventoryItem");
-static_assert(sizeof(RobberController_C_RemoveInventoryItem) == 0x000018, "Wrong size on RobberController_C_RemoveInventoryItem");
-static_assert(offsetof(RobberController_C_RemoveInventoryItem, Item) == 0x000000, "Member 'RobberController_C_RemoveInventoryItem::Item' has a wrong offset!");
-static_assert(offsetof(RobberController_C_RemoveInventoryItem, Success_) == 0x000008, "Member 'RobberController_C_RemoveInventoryItem::Success_' has a wrong offset!");
-static_assert(offsetof(RobberController_C_RemoveInventoryItem, CallFunc_Array_Find_ReturnValue) == 0x00000C, "Member 'RobberController_C_RemoveInventoryItem::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_RemoveInventoryItem, CallFunc_Array_Contains_ReturnValue) == 0x000010, "Member 'RobberController_C_RemoveInventoryItem::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_RemoveInventoryItem;
 
 // Function RobberController.RobberController_C.AddInventoryItem
 // 0x0010 (0x0010 - 0x0000)
@@ -1305,11 +808,7 @@ public:
 	int32                                         Index_0;                                           // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RobberController_C_AddInventoryItem) == 0x000008, "Wrong alignment on RobberController_C_AddInventoryItem");
-static_assert(sizeof(RobberController_C_AddInventoryItem) == 0x000010, "Wrong size on RobberController_C_AddInventoryItem");
-static_assert(offsetof(RobberController_C_AddInventoryItem, Item) == 0x000000, "Member 'RobberController_C_AddInventoryItem::Item' has a wrong offset!");
-static_assert(offsetof(RobberController_C_AddInventoryItem, Index_0) == 0x000008, "Member 'RobberController_C_AddInventoryItem::Index_0' has a wrong offset!");
-static_assert(offsetof(RobberController_C_AddInventoryItem, CallFunc_Array_Add_ReturnValue) == 0x00000C, "Member 'RobberController_C_AddInventoryItem::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_AddInventoryItem;
 
 // Function RobberController.RobberController_C.GetInventoryItemsInCategory
 // 0x00E0 (0x00E0 - 0x0000)
@@ -1344,30 +843,7 @@ public:
 	TArray<class UClass*>                         K2Node_Select_Default;                             // 0x00C8(0x0010)(ReferenceParm)
 	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RobberController_C_GetInventoryItemsInCategory) == 0x000008, "Wrong alignment on RobberController_C_GetInventoryItemsInCategory");
-static_assert(sizeof(RobberController_C_GetInventoryItemsInCategory) == 0x0000E0, "Wrong size on RobberController_C_GetInventoryItemsInCategory");
-static_assert(offsetof(RobberController_C_GetInventoryItemsInCategory, Category) == 0x000000, "Member 'RobberController_C_GetInventoryItemsInCategory::Category' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetInventoryItemsInCategory, Include_equipped_) == 0x000001, "Member 'RobberController_C_GetInventoryItemsInCategory::Include_equipped_' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetInventoryItemsInCategory, Inventory) == 0x000008, "Member 'RobberController_C_GetInventoryItemsInCategory::Inventory' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetInventoryItemsInCategory, InventoryReturn) == 0x000018, "Member 'RobberController_C_GetInventoryItemsInCategory::InventoryReturn' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetInventoryItemsInCategory, Temp_class_Variable) == 0x000028, "Member 'RobberController_C_GetInventoryItemsInCategory::Temp_class_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetInventoryItemsInCategory, Temp_class_Variable_1) == 0x000038, "Member 'RobberController_C_GetInventoryItemsInCategory::Temp_class_Variable_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetInventoryItemsInCategory, Temp_class_Variable_2) == 0x000048, "Member 'RobberController_C_GetInventoryItemsInCategory::Temp_class_Variable_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetInventoryItemsInCategory, Temp_class_Variable_3) == 0x000058, "Member 'RobberController_C_GetInventoryItemsInCategory::Temp_class_Variable_3' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetInventoryItemsInCategory, Temp_class_Variable_4) == 0x000068, "Member 'RobberController_C_GetInventoryItemsInCategory::Temp_class_Variable_4' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetInventoryItemsInCategory, Temp_class_Variable_5) == 0x000078, "Member 'RobberController_C_GetInventoryItemsInCategory::Temp_class_Variable_5' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetInventoryItemsInCategory, Temp_int_Loop_Counter_Variable) == 0x000088, "Member 'RobberController_C_GetInventoryItemsInCategory::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetInventoryItemsInCategory, CallFunc_Add_IntInt_ReturnValue) == 0x00008C, "Member 'RobberController_C_GetInventoryItemsInCategory::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetInventoryItemsInCategory, Temp_int_Array_Index_Variable) == 0x000090, "Member 'RobberController_C_GetInventoryItemsInCategory::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetInventoryItemsInCategory, Temp_class_Variable_6) == 0x000098, "Member 'RobberController_C_GetInventoryItemsInCategory::Temp_class_Variable_6' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetInventoryItemsInCategory, Temp_byte_Variable) == 0x0000A8, "Member 'RobberController_C_GetInventoryItemsInCategory::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetInventoryItemsInCategory, CallFunc_Array_Length_ReturnValue) == 0x0000AC, "Member 'RobberController_C_GetInventoryItemsInCategory::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetInventoryItemsInCategory, CallFunc_Array_Get_Item) == 0x0000B0, "Member 'RobberController_C_GetInventoryItemsInCategory::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetInventoryItemsInCategory, CallFunc_Less_IntInt_ReturnValue) == 0x0000B8, "Member 'RobberController_C_GetInventoryItemsInCategory::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetInventoryItemsInCategory, CallFunc_Array_Add_ReturnValue) == 0x0000BC, "Member 'RobberController_C_GetInventoryItemsInCategory::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetInventoryItemsInCategory, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000C0, "Member 'RobberController_C_GetInventoryItemsInCategory::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetInventoryItemsInCategory, K2Node_Select_Default) == 0x0000C8, "Member 'RobberController_C_GetInventoryItemsInCategory::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetInventoryItemsInCategory, CallFunc_Array_Contains_ReturnValue) == 0x0000D8, "Member 'RobberController_C_GetInventoryItemsInCategory::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_GetInventoryItemsInCategory;
 
 // Function RobberController.RobberController_C.UpdateNewWeapon
 // 0x0050 (0x0050 - 0x0000)
@@ -1387,25 +863,14 @@ public:
 	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAttachmentArrayStructure              CallFunc_Update_Attachment_New_attachments_structure; // 0x0040(0x0010)(HasGetValueTypeHash)
 };
-static_assert(alignof(RobberController_C_UpdateNewWeapon) == 0x000008, "Wrong alignment on RobberController_C_UpdateNewWeapon");
-static_assert(sizeof(RobberController_C_UpdateNewWeapon) == 0x000050, "Wrong size on RobberController_C_UpdateNewWeapon");
-static_assert(offsetof(RobberController_C_UpdateNewWeapon, Index_0) == 0x000000, "Member 'RobberController_C_UpdateNewWeapon::Index_0' has a wrong offset!");
-static_assert(offsetof(RobberController_C_UpdateNewWeapon, Temp_int_Array_Index_Variable) == 0x000004, "Member 'RobberController_C_UpdateNewWeapon::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_UpdateNewWeapon, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'RobberController_C_UpdateNewWeapon::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_UpdateNewWeapon, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'RobberController_C_UpdateNewWeapon::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_UpdateNewWeapon, Temp_class_Variable) == 0x000010, "Member 'RobberController_C_UpdateNewWeapon::Temp_class_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_UpdateNewWeapon, CallFunc_Array_Get_Item) == 0x000020, "Member 'RobberController_C_UpdateNewWeapon::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(RobberController_C_UpdateNewWeapon, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'RobberController_C_UpdateNewWeapon::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_UpdateNewWeapon, CallFunc_Array_Get_Item_1) == 0x000030, "Member 'RobberController_C_UpdateNewWeapon::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_UpdateNewWeapon, CallFunc_Less_IntInt_ReturnValue) == 0x000038, "Member 'RobberController_C_UpdateNewWeapon::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_UpdateNewWeapon, CallFunc_Update_Attachment_New_attachments_structure) == 0x000040, "Member 'RobberController_C_UpdateNewWeapon::CallFunc_Update_Attachment_New_attachments_structure' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_UpdateNewWeapon;
 
 // Function RobberController.RobberController_C.Update Attachment
 // 0x00A0 (0x00A0 - 0x0000)
 struct RobberController_C_Update_Attachment final
 {
 public:
-	class UClass*                                 Item_info;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 Item_Info;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Weaponindex;                                       // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAttachmentArrayStructure              New_attachments_structure;                         // 0x0010(0x0010)(Parm, OutParm, HasGetValueTypeHash)
@@ -1431,27 +896,7 @@ public:
 	struct FAttachmentArrayStructure              CallFunc_Array_Get_Item_1;                         // 0x0080(0x0010)(HasGetValueTypeHash)
 	struct FAttachmentArrayStructure              CallFunc_Array_Get_Item_2;                         // 0x0090(0x0010)(HasGetValueTypeHash)
 };
-static_assert(alignof(RobberController_C_Update_Attachment) == 0x000008, "Wrong alignment on RobberController_C_Update_Attachment");
-static_assert(sizeof(RobberController_C_Update_Attachment) == 0x0000A0, "Wrong size on RobberController_C_Update_Attachment");
-static_assert(offsetof(RobberController_C_Update_Attachment, Item_info) == 0x000000, "Member 'RobberController_C_Update_Attachment::Item_info' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Update_Attachment, Weaponindex) == 0x000008, "Member 'RobberController_C_Update_Attachment::Weaponindex' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Update_Attachment, New_attachments_structure) == 0x000010, "Member 'RobberController_C_Update_Attachment::New_attachments_structure' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Update_Attachment, FoundIndex_) == 0x000020, "Member 'RobberController_C_Update_Attachment::FoundIndex_' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Update_Attachment, Array) == 0x000028, "Member 'RobberController_C_Update_Attachment::Array' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Update_Attachment, WeaponIndexVar) == 0x000038, "Member 'RobberController_C_Update_Attachment::WeaponIndexVar' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Update_Attachment, K2Node_ClassDynamicCast_AsShop_Item_Weapon_Mod_Base) == 0x000040, "Member 'RobberController_C_Update_Attachment::K2Node_ClassDynamicCast_AsShop_Item_Weapon_Mod_Base' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Update_Attachment, K2Node_ClassDynamicCast_bSuccess) == 0x000048, "Member 'RobberController_C_Update_Attachment::K2Node_ClassDynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Update_Attachment, Temp_int_Array_Index_Variable) == 0x00004C, "Member 'RobberController_C_Update_Attachment::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Update_Attachment, Temp_int_Loop_Counter_Variable) == 0x000050, "Member 'RobberController_C_Update_Attachment::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Update_Attachment, CallFunc_Array_Add_ReturnValue) == 0x000054, "Member 'RobberController_C_Update_Attachment::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Update_Attachment, CallFunc_Add_IntInt_ReturnValue) == 0x000058, "Member 'RobberController_C_Update_Attachment::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Update_Attachment, K2Node_MakeStruct_AttachmentArrayStructure) == 0x000060, "Member 'RobberController_C_Update_Attachment::K2Node_MakeStruct_AttachmentArrayStructure' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Update_Attachment, CallFunc_Array_Get_Item) == 0x000070, "Member 'RobberController_C_Update_Attachment::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Update_Attachment, CallFunc_Array_Length_ReturnValue) == 0x000078, "Member 'RobberController_C_Update_Attachment::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Update_Attachment, CallFunc_Less_IntInt_ReturnValue) == 0x00007C, "Member 'RobberController_C_Update_Attachment::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Update_Attachment, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00007D, "Member 'RobberController_C_Update_Attachment::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Update_Attachment, CallFunc_Array_Get_Item_1) == 0x000080, "Member 'RobberController_C_Update_Attachment::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Update_Attachment, CallFunc_Array_Get_Item_2) == 0x000090, "Member 'RobberController_C_Update_Attachment::CallFunc_Array_Get_Item_2' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_Update_Attachment;
 
 // Function RobberController.RobberController_C.FindEquppedAttachmentFunc
 // 0x0048 (0x0048 - 0x0000)
@@ -1473,19 +918,7 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RobberController_C_FindEquppedAttachmentFunc) == 0x000008, "Wrong alignment on RobberController_C_FindEquppedAttachmentFunc");
-static_assert(sizeof(RobberController_C_FindEquppedAttachmentFunc) == 0x000048, "Wrong size on RobberController_C_FindEquppedAttachmentFunc");
-static_assert(offsetof(RobberController_C_FindEquppedAttachmentFunc, Category) == 0x000000, "Member 'RobberController_C_FindEquppedAttachmentFunc::Category' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindEquppedAttachmentFunc, Index_0) == 0x000004, "Member 'RobberController_C_FindEquppedAttachmentFunc::Index_0' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindEquppedAttachmentFunc, Attachment) == 0x000008, "Member 'RobberController_C_FindEquppedAttachmentFunc::Attachment' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindEquppedAttachmentFunc, Temp_int_Array_Index_Variable) == 0x000010, "Member 'RobberController_C_FindEquppedAttachmentFunc::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindEquppedAttachmentFunc, Temp_int_Loop_Counter_Variable) == 0x000014, "Member 'RobberController_C_FindEquppedAttachmentFunc::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindEquppedAttachmentFunc, CallFunc_Add_IntInt_ReturnValue) == 0x000018, "Member 'RobberController_C_FindEquppedAttachmentFunc::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindEquppedAttachmentFunc, CallFunc_Array_Get_Item) == 0x000020, "Member 'RobberController_C_FindEquppedAttachmentFunc::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindEquppedAttachmentFunc, CallFunc_Array_Length_ReturnValue) == 0x000030, "Member 'RobberController_C_FindEquppedAttachmentFunc::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindEquppedAttachmentFunc, CallFunc_Array_Get_Item_1) == 0x000038, "Member 'RobberController_C_FindEquppedAttachmentFunc::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindEquppedAttachmentFunc, CallFunc_Less_IntInt_ReturnValue) == 0x000040, "Member 'RobberController_C_FindEquppedAttachmentFunc::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindEquppedAttachmentFunc, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000041, "Member 'RobberController_C_FindEquppedAttachmentFunc::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_FindEquppedAttachmentFunc;
 
 // Function RobberController.RobberController_C.IsItemInInventory?
 // 0x0010 (0x0010 - 0x0000)
@@ -1496,11 +929,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RobberController_C_IsItemInInventory_) == 0x000008, "Wrong alignment on RobberController_C_IsItemInInventory_");
-static_assert(sizeof(RobberController_C_IsItemInInventory_) == 0x000010, "Wrong size on RobberController_C_IsItemInInventory_");
-static_assert(offsetof(RobberController_C_IsItemInInventory_, Item) == 0x000000, "Member 'RobberController_C_IsItemInInventory_::Item' has a wrong offset!");
-static_assert(offsetof(RobberController_C_IsItemInInventory_, ReturnValue) == 0x000008, "Member 'RobberController_C_IsItemInInventory_::ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_IsItemInInventory_, CallFunc_Array_Contains_ReturnValue) == 0x000009, "Member 'RobberController_C_IsItemInInventory_::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_IsItemInInventory_;
 
 // Function RobberController.RobberController_C.Savecategory
 // 0x0002 (0x0002 - 0x0000)
@@ -1510,10 +939,7 @@ public:
 	EShopItemCategory                             Category;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RobberController_C_Savecategory) == 0x000001, "Wrong alignment on RobberController_C_Savecategory");
-static_assert(sizeof(RobberController_C_Savecategory) == 0x000002, "Wrong size on RobberController_C_Savecategory");
-static_assert(offsetof(RobberController_C_Savecategory, Category) == 0x000000, "Member 'RobberController_C_Savecategory::Category' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Savecategory, K2Node_SwitchEnum_CmpSuccess) == 0x000001, "Member 'RobberController_C_Savecategory::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_Savecategory;
 
 // Function RobberController.RobberController_C.SortItemsByUnlockLevel
 // 0x0078 (0x0078 - 0x0000)
@@ -1542,26 +968,7 @@ public:
 	uint8                                         Pad_6E[0x2];                                       // 0x006E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RobberController_C_SortItemsByUnlockLevel) == 0x000008, "Wrong alignment on RobberController_C_SortItemsByUnlockLevel");
-static_assert(sizeof(RobberController_C_SortItemsByUnlockLevel) == 0x000078, "Wrong size on RobberController_C_SortItemsByUnlockLevel");
-static_assert(offsetof(RobberController_C_SortItemsByUnlockLevel, Items) == 0x000000, "Member 'RobberController_C_SortItemsByUnlockLevel::Items' has a wrong offset!");
-static_assert(offsetof(RobberController_C_SortItemsByUnlockLevel, Sorted_items) == 0x000010, "Member 'RobberController_C_SortItemsByUnlockLevel::Sorted_items' has a wrong offset!");
-static_assert(offsetof(RobberController_C_SortItemsByUnlockLevel, WasAdded_) == 0x000020, "Member 'RobberController_C_SortItemsByUnlockLevel::WasAdded_' has a wrong offset!");
-static_assert(offsetof(RobberController_C_SortItemsByUnlockLevel, SortedArray) == 0x000028, "Member 'RobberController_C_SortItemsByUnlockLevel::SortedArray' has a wrong offset!");
-static_assert(offsetof(RobberController_C_SortItemsByUnlockLevel, CallFunc_Array_Length_ReturnValue) == 0x000038, "Member 'RobberController_C_SortItemsByUnlockLevel::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_SortItemsByUnlockLevel, Temp_int_Loop_Counter_Variable) == 0x00003C, "Member 'RobberController_C_SortItemsByUnlockLevel::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_SortItemsByUnlockLevel, CallFunc_Less_IntInt_ReturnValue) == 0x000040, "Member 'RobberController_C_SortItemsByUnlockLevel::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_SortItemsByUnlockLevel, CallFunc_Add_IntInt_ReturnValue) == 0x000044, "Member 'RobberController_C_SortItemsByUnlockLevel::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_SortItemsByUnlockLevel, Temp_int_Array_Index_Variable) == 0x000048, "Member 'RobberController_C_SortItemsByUnlockLevel::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_SortItemsByUnlockLevel, Temp_int_Array_Index_Variable_1) == 0x00004C, "Member 'RobberController_C_SortItemsByUnlockLevel::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_SortItemsByUnlockLevel, CallFunc_Array_Get_Item) == 0x000050, "Member 'RobberController_C_SortItemsByUnlockLevel::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(RobberController_C_SortItemsByUnlockLevel, CallFunc_Array_Add_ReturnValue) == 0x000058, "Member 'RobberController_C_SortItemsByUnlockLevel::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_SortItemsByUnlockLevel, Temp_int_Loop_Counter_Variable_1) == 0x00005C, "Member 'RobberController_C_SortItemsByUnlockLevel::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_SortItemsByUnlockLevel, CallFunc_Array_Get_Item_1) == 0x000060, "Member 'RobberController_C_SortItemsByUnlockLevel::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_SortItemsByUnlockLevel, CallFunc_Array_Length_ReturnValue_1) == 0x000068, "Member 'RobberController_C_SortItemsByUnlockLevel::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_SortItemsByUnlockLevel, CallFunc_Less_IntInt_ReturnValue_1) == 0x00006C, "Member 'RobberController_C_SortItemsByUnlockLevel::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_SortItemsByUnlockLevel, CallFunc_Less_IntInt_ReturnValue_2) == 0x00006D, "Member 'RobberController_C_SortItemsByUnlockLevel::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_SortItemsByUnlockLevel, CallFunc_Add_IntInt_ReturnValue_1) == 0x000070, "Member 'RobberController_C_SortItemsByUnlockLevel::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_SortItemsByUnlockLevel;
 
 // Function RobberController.RobberController_C.SpendCash
 // 0x0010 (0x0010 - 0x0000)
@@ -1574,12 +981,7 @@ public:
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RobberController_C_SpendCash) == 0x000004, "Wrong alignment on RobberController_C_SpendCash");
-static_assert(sizeof(RobberController_C_SpendCash) == 0x000010, "Wrong size on RobberController_C_SpendCash");
-static_assert(offsetof(RobberController_C_SpendCash, Amount) == 0x000000, "Member 'RobberController_C_SpendCash::Amount' has a wrong offset!");
-static_assert(offsetof(RobberController_C_SpendCash, Success_) == 0x000004, "Member 'RobberController_C_SpendCash::Success_' has a wrong offset!");
-static_assert(offsetof(RobberController_C_SpendCash, CallFunc_Subtract_IntInt_ReturnValue) == 0x000008, "Member 'RobberController_C_SpendCash::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_SpendCash, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x00000C, "Member 'RobberController_C_SpendCash::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_SpendCash;
 
 // Function RobberController.RobberController_C.AddEXP
 // 0x0034 (0x0034 - 0x0000)
@@ -1603,21 +1005,7 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RobberController_C_AddEXP) == 0x000004, "Wrong alignment on RobberController_C_AddEXP");
-static_assert(sizeof(RobberController_C_AddEXP) == 0x000034, "Wrong size on RobberController_C_AddEXP");
-static_assert(offsetof(RobberController_C_AddEXP, Amount) == 0x000000, "Member 'RobberController_C_AddEXP::Amount' has a wrong offset!");
-static_assert(offsetof(RobberController_C_AddEXP, LevelUp_) == 0x000004, "Member 'RobberController_C_AddEXP::LevelUp_' has a wrong offset!");
-static_assert(offsetof(RobberController_C_AddEXP, RecordedEXP) == 0x000008, "Member 'RobberController_C_AddEXP::RecordedEXP' has a wrong offset!");
-static_assert(offsetof(RobberController_C_AddEXP, RecordedLevel) == 0x00000C, "Member 'RobberController_C_AddEXP::RecordedLevel' has a wrong offset!");
-static_assert(offsetof(RobberController_C_AddEXP, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000010, "Member 'RobberController_C_AddEXP::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_AddEXP, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000014, "Member 'RobberController_C_AddEXP::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_AddEXP, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue) == 0x000018, "Member 'RobberController_C_AddEXP::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_AddEXP, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x00001C, "Member 'RobberController_C_AddEXP::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_AddEXP, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x000020, "Member 'RobberController_C_AddEXP::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_AddEXP, CallFunc_Subtract_FloatFloat_ReturnValue_1) == 0x000024, "Member 'RobberController_C_AddEXP::CallFunc_Subtract_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_AddEXP, CallFunc_AddEXP_LevelUp_) == 0x000028, "Member 'RobberController_C_AddEXP::CallFunc_AddEXP_LevelUp_' has a wrong offset!");
-static_assert(offsetof(RobberController_C_AddEXP, CallFunc_Add_IntInt_ReturnValue) == 0x00002C, "Member 'RobberController_C_AddEXP::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_AddEXP, CallFunc_Add_FloatFloat_ReturnValue) == 0x000030, "Member 'RobberController_C_AddEXP::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_AddEXP;
 
 // Function RobberController.RobberController_C.GetRequiredEXP
 // 0x0014 (0x0014 - 0x0000)
@@ -1630,13 +1018,7 @@ public:
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue;  // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RobberController_C_GetRequiredEXP) == 0x000004, "Wrong alignment on RobberController_C_GetRequiredEXP");
-static_assert(sizeof(RobberController_C_GetRequiredEXP) == 0x000014, "Wrong size on RobberController_C_GetRequiredEXP");
-static_assert(offsetof(RobberController_C_GetRequiredEXP, Level_0) == 0x000000, "Member 'RobberController_C_GetRequiredEXP::Level_0' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetRequiredEXP, EXP_required_for_levelup) == 0x000004, "Member 'RobberController_C_GetRequiredEXP::EXP_required_for_levelup' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetRequiredEXP, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000008, "Member 'RobberController_C_GetRequiredEXP::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetRequiredEXP, CallFunc_Divide_FloatFloat_ReturnValue) == 0x00000C, "Member 'RobberController_C_GetRequiredEXP::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetRequiredEXP, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue) == 0x000010, "Member 'RobberController_C_GetRequiredEXP::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_GetRequiredEXP;
 
 // Function RobberController.RobberController_C.GetEXPForLevel
 // 0x0014 (0x0014 - 0x0000)
@@ -1649,13 +1031,7 @@ public:
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue;  // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RobberController_C_GetEXPForLevel) == 0x000004, "Wrong alignment on RobberController_C_GetEXPForLevel");
-static_assert(sizeof(RobberController_C_GetEXPForLevel) == 0x000014, "Wrong size on RobberController_C_GetEXPForLevel");
-static_assert(offsetof(RobberController_C_GetEXPForLevel, Level_0) == 0x000000, "Member 'RobberController_C_GetEXPForLevel::Level_0' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetEXPForLevel, Exp_0) == 0x000004, "Member 'RobberController_C_GetEXPForLevel::Exp_0' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetEXPForLevel, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000008, "Member 'RobberController_C_GetEXPForLevel::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetEXPForLevel, CallFunc_Divide_FloatFloat_ReturnValue) == 0x00000C, "Member 'RobberController_C_GetEXPForLevel::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetEXPForLevel, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue) == 0x000010, "Member 'RobberController_C_GetEXPForLevel::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_GetEXPForLevel;
 
 // Function RobberController.RobberController_C.RandomMaskOnBegin
 // 0x0028 (0x0028 - 0x0000)
@@ -1668,13 +1044,7 @@ public:
 	int32                                         CallFunc_Array_Random_OutIndex;                    // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_AddInventoryItem_Index;                   // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RobberController_C_RandomMaskOnBegin) == 0x000008, "Wrong alignment on RobberController_C_RandomMaskOnBegin");
-static_assert(sizeof(RobberController_C_RandomMaskOnBegin) == 0x000028, "Wrong size on RobberController_C_RandomMaskOnBegin");
-static_assert(offsetof(RobberController_C_RandomMaskOnBegin, Mask) == 0x000000, "Member 'RobberController_C_RandomMaskOnBegin::Mask' has a wrong offset!");
-static_assert(offsetof(RobberController_C_RandomMaskOnBegin, K2Node_MakeArray_Array) == 0x000008, "Member 'RobberController_C_RandomMaskOnBegin::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(RobberController_C_RandomMaskOnBegin, CallFunc_Array_Random_OutItem) == 0x000018, "Member 'RobberController_C_RandomMaskOnBegin::CallFunc_Array_Random_OutItem' has a wrong offset!");
-static_assert(offsetof(RobberController_C_RandomMaskOnBegin, CallFunc_Array_Random_OutIndex) == 0x000020, "Member 'RobberController_C_RandomMaskOnBegin::CallFunc_Array_Random_OutIndex' has a wrong offset!");
-static_assert(offsetof(RobberController_C_RandomMaskOnBegin, CallFunc_AddInventoryItem_Index) == 0x000024, "Member 'RobberController_C_RandomMaskOnBegin::CallFunc_AddInventoryItem_Index' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_RandomMaskOnBegin;
 
 // Function RobberController.RobberController_C.Load All Saved From Remote
 // 0x0048 (0x0048 - 0x0000)
@@ -1691,16 +1061,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RobberController_C_Load_All_Saved_From_Remote) == 0x000008, "Wrong alignment on RobberController_C_Load_All_Saved_From_Remote");
-static_assert(sizeof(RobberController_C_Load_All_Saved_From_Remote) == 0x000048, "Wrong size on RobberController_C_Load_All_Saved_From_Remote");
-static_assert(offsetof(RobberController_C_Load_All_Saved_From_Remote, SaveNames) == 0x000000, "Member 'RobberController_C_Load_All_Saved_From_Remote::SaveNames' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Load_All_Saved_From_Remote, Temp_int_Array_Index_Variable) == 0x000010, "Member 'RobberController_C_Load_All_Saved_From_Remote::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Load_All_Saved_From_Remote, Temp_int_Loop_Counter_Variable) == 0x000014, "Member 'RobberController_C_Load_All_Saved_From_Remote::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Load_All_Saved_From_Remote, CallFunc_Add_IntInt_ReturnValue) == 0x000018, "Member 'RobberController_C_Load_All_Saved_From_Remote::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Load_All_Saved_From_Remote, K2Node_MakeArray_Array) == 0x000020, "Member 'RobberController_C_Load_All_Saved_From_Remote::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Load_All_Saved_From_Remote, CallFunc_Array_Get_Item) == 0x000030, "Member 'RobberController_C_Load_All_Saved_From_Remote::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Load_All_Saved_From_Remote, CallFunc_Array_Length_ReturnValue) == 0x000040, "Member 'RobberController_C_Load_All_Saved_From_Remote::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Load_All_Saved_From_Remote, CallFunc_Less_IntInt_ReturnValue) == 0x000044, "Member 'RobberController_C_Load_All_Saved_From_Remote::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_Load_All_Saved_From_Remote;
 
 // Function RobberController.RobberController_C.DownloadFromCloudFunc
 // 0x00C8 (0x00C8 - 0x0000)
@@ -1726,24 +1087,7 @@ public:
 	int32                                         CallFunc_FileRead_ReturnValue;                     // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_WriteBytesToFile_ReturnValue;             // 0x00C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RobberController_C_DownloadFromCloudFunc) == 0x000008, "Wrong alignment on RobberController_C_DownloadFromCloudFunc");
-static_assert(sizeof(RobberController_C_DownloadFromCloudFunc) == 0x0000C8, "Wrong size on RobberController_C_DownloadFromCloudFunc");
-static_assert(offsetof(RobberController_C_DownloadFromCloudFunc, Save_name) == 0x000000, "Member 'RobberController_C_DownloadFromCloudFunc::Save_name' has a wrong offset!");
-static_assert(offsetof(RobberController_C_DownloadFromCloudFunc, CallFunc_GetUniqueNetIDFromPlayerState_UniqueNetId) == 0x000010, "Member 'RobberController_C_DownloadFromCloudFunc::CallFunc_GetUniqueNetIDFromPlayerState_UniqueNetId' has a wrong offset!");
-static_assert(offsetof(RobberController_C_DownloadFromCloudFunc, CallFunc_GetProjectSavedDirectory_ReturnValue) == 0x000030, "Member 'RobberController_C_DownloadFromCloudFunc::CallFunc_GetProjectSavedDirectory_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_DownloadFromCloudFunc, CallFunc_UniqueNetIdToString_String) == 0x000040, "Member 'RobberController_C_DownloadFromCloudFunc::CallFunc_UniqueNetIdToString_String' has a wrong offset!");
-static_assert(offsetof(RobberController_C_DownloadFromCloudFunc, CallFunc_Concat_StrStr_ReturnValue) == 0x000050, "Member 'RobberController_C_DownloadFromCloudFunc::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_DownloadFromCloudFunc, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000060, "Member 'RobberController_C_DownloadFromCloudFunc::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_DownloadFromCloudFunc, CallFunc_Concat_StrStr_ReturnValue_2) == 0x000070, "Member 'RobberController_C_DownloadFromCloudFunc::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_DownloadFromCloudFunc, CallFunc_IsValid_ReturnValue) == 0x000080, "Member 'RobberController_C_DownloadFromCloudFunc::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_DownloadFromCloudFunc, CallFunc_Concat_StrStr_ReturnValue_3) == 0x000088, "Member 'RobberController_C_DownloadFromCloudFunc::CallFunc_Concat_StrStr_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(RobberController_C_DownloadFromCloudFunc, CallFunc_Concat_StrStr_ReturnValue_4) == 0x000098, "Member 'RobberController_C_DownloadFromCloudFunc::CallFunc_Concat_StrStr_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(RobberController_C_DownloadFromCloudFunc, CallFunc_GetFileSize_ReturnValue) == 0x0000A8, "Member 'RobberController_C_DownloadFromCloudFunc::CallFunc_GetFileSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_DownloadFromCloudFunc, CallFunc_FileExists_ReturnValue) == 0x0000AC, "Member 'RobberController_C_DownloadFromCloudFunc::CallFunc_FileExists_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_DownloadFromCloudFunc, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0000AD, "Member 'RobberController_C_DownloadFromCloudFunc::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_DownloadFromCloudFunc, CallFunc_FileRead_Buffer) == 0x0000B0, "Member 'RobberController_C_DownloadFromCloudFunc::CallFunc_FileRead_Buffer' has a wrong offset!");
-static_assert(offsetof(RobberController_C_DownloadFromCloudFunc, CallFunc_FileRead_ReturnValue) == 0x0000C0, "Member 'RobberController_C_DownloadFromCloudFunc::CallFunc_FileRead_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_DownloadFromCloudFunc, CallFunc_WriteBytesToFile_ReturnValue) == 0x0000C4, "Member 'RobberController_C_DownloadFromCloudFunc::CallFunc_WriteBytesToFile_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_DownloadFromCloudFunc;
 
 // Function RobberController.RobberController_C.RandomSkinColorOnNewSave
 // 0x0020 (0x0020 - 0x0000)
@@ -1754,11 +1098,7 @@ public:
 	class UMaterialInterface*                     CallFunc_Array_Random_OutItem;                     // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Random_OutIndex;                    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RobberController_C_RandomSkinColorOnNewSave) == 0x000008, "Wrong alignment on RobberController_C_RandomSkinColorOnNewSave");
-static_assert(sizeof(RobberController_C_RandomSkinColorOnNewSave) == 0x000020, "Wrong size on RobberController_C_RandomSkinColorOnNewSave");
-static_assert(offsetof(RobberController_C_RandomSkinColorOnNewSave, K2Node_MakeArray_Array) == 0x000000, "Member 'RobberController_C_RandomSkinColorOnNewSave::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(RobberController_C_RandomSkinColorOnNewSave, CallFunc_Array_Random_OutItem) == 0x000010, "Member 'RobberController_C_RandomSkinColorOnNewSave::CallFunc_Array_Random_OutItem' has a wrong offset!");
-static_assert(offsetof(RobberController_C_RandomSkinColorOnNewSave, CallFunc_Array_Random_OutIndex) == 0x000018, "Member 'RobberController_C_RandomSkinColorOnNewSave::CallFunc_Array_Random_OutIndex' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_RandomSkinColorOnNewSave;
 
 // Function RobberController.RobberController_C.Update Coins
 // 0x0040 (0x0040 - 0x0000)
@@ -1778,18 +1118,7 @@ public:
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x003D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_NotEqual_IntInt_ReturnValue_1;            // 0x003E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RobberController_C_Update_Coins) == 0x000008, "Wrong alignment on RobberController_C_Update_Coins");
-static_assert(sizeof(RobberController_C_Update_Coins) == 0x000040, "Wrong size on RobberController_C_Update_Coins");
-static_assert(offsetof(RobberController_C_Update_Coins, HasCoins_) == 0x000000, "Member 'RobberController_C_Update_Coins::HasCoins_' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Update_Coins, Temp_int_Array_Index_Variable) == 0x000004, "Member 'RobberController_C_Update_Coins::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Update_Coins, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'RobberController_C_Update_Coins::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Update_Coins, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'RobberController_C_Update_Coins::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Update_Coins, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000010, "Member 'RobberController_C_Update_Coins::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Update_Coins, CallFunc_Array_Get_Item) == 0x000018, "Member 'RobberController_C_Update_Coins::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Update_Coins, CallFunc_Array_Length_ReturnValue) == 0x000038, "Member 'RobberController_C_Update_Coins::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Update_Coins, CallFunc_Less_IntInt_ReturnValue) == 0x00003C, "Member 'RobberController_C_Update_Coins::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Update_Coins, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00003D, "Member 'RobberController_C_Update_Coins::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Update_Coins, CallFunc_NotEqual_IntInt_ReturnValue_1) == 0x00003E, "Member 'RobberController_C_Update_Coins::CallFunc_NotEqual_IntInt_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_Update_Coins;
 
 // Function RobberController.RobberController_C.Consume Coins
 // 0x0050 (0x0050 - 0x0000)
@@ -1817,23 +1146,7 @@ public:
 	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_IsClosed_Variable;                       // 0x004D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RobberController_C_Consume_Coins) == 0x000008, "Wrong alignment on RobberController_C_Consume_Coins");
-static_assert(sizeof(RobberController_C_Consume_Coins) == 0x000050, "Wrong size on RobberController_C_Consume_Coins");
-static_assert(offsetof(RobberController_C_Consume_Coins, Amount) == 0x000000, "Member 'RobberController_C_Consume_Coins::Amount' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Consume_Coins, Success_) == 0x000004, "Member 'RobberController_C_Consume_Coins::Success_' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Consume_Coins, Temp_int_Array_Index_Variable) == 0x000008, "Member 'RobberController_C_Consume_Coins::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Consume_Coins, CallFunc_Array_Get_Item) == 0x000010, "Member 'RobberController_C_Consume_Coins::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Consume_Coins, CallFunc_Array_Length_ReturnValue) == 0x000030, "Member 'RobberController_C_Consume_Coins::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Consume_Coins, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000034, "Member 'RobberController_C_Consume_Coins::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Consume_Coins, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000035, "Member 'RobberController_C_Consume_Coins::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Consume_Coins, CallFunc_ConsumeItem_Result) == 0x000038, "Member 'RobberController_C_Consume_Coins::CallFunc_ConsumeItem_Result' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Consume_Coins, CallFunc_ConsumeItem_ReturnValue) == 0x00003C, "Member 'RobberController_C_Consume_Coins::CallFunc_ConsumeItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Consume_Coins, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00003D, "Member 'RobberController_C_Consume_Coins::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Consume_Coins, Temp_int_Loop_Counter_Variable) == 0x000040, "Member 'RobberController_C_Consume_Coins::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Consume_Coins, CallFunc_Less_IntInt_ReturnValue) == 0x000044, "Member 'RobberController_C_Consume_Coins::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Consume_Coins, CallFunc_Add_IntInt_ReturnValue) == 0x000048, "Member 'RobberController_C_Consume_Coins::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Consume_Coins, Temp_bool_Has_Been_Initd_Variable) == 0x00004C, "Member 'RobberController_C_Consume_Coins::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Consume_Coins, Temp_bool_IsClosed_Variable) == 0x00004D, "Member 'RobberController_C_Consume_Coins::Temp_bool_IsClosed_Variable' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_Consume_Coins;
 
 // Function RobberController.RobberController_C.AddMap
 // 0x0010 (0x0010 - 0x0000)
@@ -1843,10 +1156,7 @@ public:
 	class UClass*                                 Map;                                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RobberController_C_AddMap) == 0x000008, "Wrong alignment on RobberController_C_AddMap");
-static_assert(sizeof(RobberController_C_AddMap) == 0x000010, "Wrong size on RobberController_C_AddMap");
-static_assert(offsetof(RobberController_C_AddMap, Map) == 0x000000, "Member 'RobberController_C_AddMap::Map' has a wrong offset!");
-static_assert(offsetof(RobberController_C_AddMap, CallFunc_Array_Add_ReturnValue) == 0x000008, "Member 'RobberController_C_AddMap::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_AddMap;
 
 // Function RobberController.RobberController_C.Post Coin Analytics
 // 0x0028 (0x0028 - 0x0000)
@@ -1858,12 +1168,7 @@ public:
 	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RobberController_C_Post_Coin_Analytics) == 0x000008, "Wrong alignment on RobberController_C_Post_Coin_Analytics");
-static_assert(sizeof(RobberController_C_Post_Coin_Analytics) == 0x000028, "Wrong size on RobberController_C_Post_Coin_Analytics");
-static_assert(offsetof(RobberController_C_Post_Coin_Analytics, DefID) == 0x000000, "Member 'RobberController_C_Post_Coin_Analytics::DefID' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Post_Coin_Analytics, Price) == 0x000004, "Member 'RobberController_C_Post_Coin_Analytics::Price' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Post_Coin_Analytics, CallFunc_Conv_IntToString_ReturnValue) == 0x000008, "Member 'RobberController_C_Post_Coin_Analytics::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Post_Coin_Analytics, CallFunc_Concat_StrStr_ReturnValue) == 0x000018, "Member 'RobberController_C_Post_Coin_Analytics::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_Post_Coin_Analytics;
 
 // Function RobberController.RobberController_C.SwitchLoadout
 // 0x000C (0x000C - 0x0000)
@@ -1875,12 +1180,7 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RobberController_C_SwitchLoadout) == 0x000004, "Wrong alignment on RobberController_C_SwitchLoadout");
-static_assert(sizeof(RobberController_C_SwitchLoadout) == 0x00000C, "Wrong size on RobberController_C_SwitchLoadout");
-static_assert(offsetof(RobberController_C_SwitchLoadout, Amount) == 0x000000, "Member 'RobberController_C_SwitchLoadout::Amount' has a wrong offset!");
-static_assert(offsetof(RobberController_C_SwitchLoadout, CallFunc_Add_IntInt_ReturnValue) == 0x000004, "Member 'RobberController_C_SwitchLoadout::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_SwitchLoadout, CallFunc_Less_IntInt_ReturnValue) == 0x000008, "Member 'RobberController_C_SwitchLoadout::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_SwitchLoadout, CallFunc_Greater_IntInt_ReturnValue) == 0x000009, "Member 'RobberController_C_SwitchLoadout::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_SwitchLoadout;
 
 // Function RobberController.RobberController_C.Set Multiply Value
 // 0x0018 (0x0018 - 0x0000)
@@ -1892,11 +1192,7 @@ public:
 	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int64                                         CallFunc_Multiply_Int64Int64_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RobberController_C_Set_Multiply_Value) == 0x000008, "Wrong alignment on RobberController_C_Set_Multiply_Value");
-static_assert(sizeof(RobberController_C_Set_Multiply_Value) == 0x000018, "Wrong size on RobberController_C_Set_Multiply_Value");
-static_assert(offsetof(RobberController_C_Set_Multiply_Value, Integer) == 0x000000, "Member 'RobberController_C_Set_Multiply_Value::Integer' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Set_Multiply_Value, CallFunc_Conv_IntToInt64_ReturnValue) == 0x000008, "Member 'RobberController_C_Set_Multiply_Value::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Set_Multiply_Value, CallFunc_Multiply_Int64Int64_ReturnValue) == 0x000010, "Member 'RobberController_C_Set_Multiply_Value::CallFunc_Multiply_Int64Int64_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_Set_Multiply_Value;
 
 // Function RobberController.RobberController_C.Check Multiplied Value
 // 0x0020 (0x0020 - 0x0000)
@@ -1910,13 +1206,7 @@ public:
 	int64                                         CallFunc_Multiply_Int64Int64_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_Int64Int64_ReturnValue;        // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RobberController_C_Check_Multiplied_Value) == 0x000008, "Wrong alignment on RobberController_C_Check_Multiplied_Value");
-static_assert(sizeof(RobberController_C_Check_Multiplied_Value) == 0x000020, "Wrong size on RobberController_C_Check_Multiplied_Value");
-static_assert(offsetof(RobberController_C_Check_Multiplied_Value, Check) == 0x000000, "Member 'RobberController_C_Check_Multiplied_Value::Check' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Check_Multiplied_Value, Can_purchase_) == 0x000004, "Member 'RobberController_C_Check_Multiplied_Value::Can_purchase_' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Check_Multiplied_Value, CallFunc_Conv_IntToInt64_ReturnValue) == 0x000008, "Member 'RobberController_C_Check_Multiplied_Value::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Check_Multiplied_Value, CallFunc_Multiply_Int64Int64_ReturnValue) == 0x000010, "Member 'RobberController_C_Check_Multiplied_Value::CallFunc_Multiply_Int64Int64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Check_Multiplied_Value, CallFunc_EqualEqual_Int64Int64_ReturnValue) == 0x000018, "Member 'RobberController_C_Check_Multiplied_Value::CallFunc_EqualEqual_Int64Int64_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_Check_Multiplied_Value;
 
 // Function RobberController.RobberController_C.FindEquippedArrayFromCategoryFunction
 // 0x00A0 (0x00A0 - 0x0000)
@@ -1937,19 +1227,7 @@ public:
 	TArray<class UClass*>                         Temp_class_Variable_6;                             // 0x0080(0x0010)(ReferenceParm)
 	TArray<class UClass*>                         K2Node_Select_Default;                             // 0x0090(0x0010)(ReferenceParm)
 };
-static_assert(alignof(RobberController_C_FindEquippedArrayFromCategoryFunction) == 0x000008, "Wrong alignment on RobberController_C_FindEquippedArrayFromCategoryFunction");
-static_assert(sizeof(RobberController_C_FindEquippedArrayFromCategoryFunction) == 0x0000A0, "Wrong size on RobberController_C_FindEquippedArrayFromCategoryFunction");
-static_assert(offsetof(RobberController_C_FindEquippedArrayFromCategoryFunction, Category) == 0x000000, "Member 'RobberController_C_FindEquippedArrayFromCategoryFunction::Category' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindEquippedArrayFromCategoryFunction, Array) == 0x000008, "Member 'RobberController_C_FindEquippedArrayFromCategoryFunction::Array' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindEquippedArrayFromCategoryFunction, Temp_byte_Variable) == 0x000018, "Member 'RobberController_C_FindEquippedArrayFromCategoryFunction::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindEquippedArrayFromCategoryFunction, Temp_class_Variable) == 0x000020, "Member 'RobberController_C_FindEquippedArrayFromCategoryFunction::Temp_class_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindEquippedArrayFromCategoryFunction, Temp_class_Variable_1) == 0x000030, "Member 'RobberController_C_FindEquippedArrayFromCategoryFunction::Temp_class_Variable_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindEquippedArrayFromCategoryFunction, Temp_class_Variable_2) == 0x000040, "Member 'RobberController_C_FindEquippedArrayFromCategoryFunction::Temp_class_Variable_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindEquippedArrayFromCategoryFunction, Temp_class_Variable_3) == 0x000050, "Member 'RobberController_C_FindEquippedArrayFromCategoryFunction::Temp_class_Variable_3' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindEquippedArrayFromCategoryFunction, Temp_class_Variable_4) == 0x000060, "Member 'RobberController_C_FindEquippedArrayFromCategoryFunction::Temp_class_Variable_4' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindEquippedArrayFromCategoryFunction, Temp_class_Variable_5) == 0x000070, "Member 'RobberController_C_FindEquippedArrayFromCategoryFunction::Temp_class_Variable_5' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindEquippedArrayFromCategoryFunction, Temp_class_Variable_6) == 0x000080, "Member 'RobberController_C_FindEquippedArrayFromCategoryFunction::Temp_class_Variable_6' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindEquippedArrayFromCategoryFunction, K2Node_Select_Default) == 0x000090, "Member 'RobberController_C_FindEquippedArrayFromCategoryFunction::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_FindEquippedArrayFromCategoryFunction;
 
 // Function RobberController.RobberController_C.FindSkinTimeLeft
 // 0x0080 (0x0080 - 0x0000)
@@ -1979,25 +1257,7 @@ public:
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RobberController_C_FindSkinTimeLeft) == 0x000008, "Wrong alignment on RobberController_C_FindSkinTimeLeft");
-static_assert(sizeof(RobberController_C_FindSkinTimeLeft) == 0x000080, "Wrong size on RobberController_C_FindSkinTimeLeft");
-static_assert(offsetof(RobberController_C_FindSkinTimeLeft, RotationNumber) == 0x000000, "Member 'RobberController_C_FindSkinTimeLeft::RotationNumber' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindSkinTimeLeft, ReturnValue) == 0x000008, "Member 'RobberController_C_FindSkinTimeLeft::ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindSkinTimeLeft, Rotation) == 0x000010, "Member 'RobberController_C_FindSkinTimeLeft::Rotation' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindSkinTimeLeft, CallFunc_MakeDateTime_ReturnValue) == 0x000018, "Member 'RobberController_C_FindSkinTimeLeft::CallFunc_MakeDateTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindSkinTimeLeft, CallFunc_Multiply_IntInt_ReturnValue) == 0x000020, "Member 'RobberController_C_FindSkinTimeLeft::CallFunc_Multiply_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindSkinTimeLeft, CallFunc_MakeDateTime_ReturnValue_1) == 0x000028, "Member 'RobberController_C_FindSkinTimeLeft::CallFunc_MakeDateTime_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindSkinTimeLeft, CallFunc_Add_IntInt_ReturnValue) == 0x000030, "Member 'RobberController_C_FindSkinTimeLeft::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindSkinTimeLeft, CallFunc_Subtract_DateTimeDateTime_ReturnValue) == 0x000038, "Member 'RobberController_C_FindSkinTimeLeft::CallFunc_Subtract_DateTimeDateTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindSkinTimeLeft, CallFunc_MakeTimespan_ReturnValue) == 0x000040, "Member 'RobberController_C_FindSkinTimeLeft::CallFunc_MakeTimespan_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindSkinTimeLeft, CallFunc_GetServerRealTime_ReturnValue) == 0x000048, "Member 'RobberController_C_FindSkinTimeLeft::CallFunc_GetServerRealTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindSkinTimeLeft, CallFunc_Add_TimespanTimespan_ReturnValue) == 0x000050, "Member 'RobberController_C_FindSkinTimeLeft::CallFunc_Add_TimespanTimespan_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindSkinTimeLeft, CallFunc_MakeTimespan_ReturnValue_1) == 0x000058, "Member 'RobberController_C_FindSkinTimeLeft::CallFunc_MakeTimespan_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindSkinTimeLeft, CallFunc_Subtract_TimespanTimespan_ReturnValue) == 0x000060, "Member 'RobberController_C_FindSkinTimeLeft::CallFunc_Subtract_TimespanTimespan_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindSkinTimeLeft, CallFunc_Subtract_TimespanTimespan_ReturnValue_1) == 0x000068, "Member 'RobberController_C_FindSkinTimeLeft::CallFunc_Subtract_TimespanTimespan_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindSkinTimeLeft, CallFunc_GetTotalDays_ReturnValue) == 0x000070, "Member 'RobberController_C_FindSkinTimeLeft::CallFunc_GetTotalDays_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindSkinTimeLeft, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000074, "Member 'RobberController_C_FindSkinTimeLeft::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindSkinTimeLeft, CallFunc_FTrunc_ReturnValue) == 0x000078, "Member 'RobberController_C_FindSkinTimeLeft::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_FindSkinTimeLeft;
 
 // Function RobberController.RobberController_C.CheckSteamID
 // 0x00A0 (0x00A0 - 0x0000)
@@ -2030,28 +1290,7 @@ public:
 	bool                                          CallFunc_EqualEqual_StrStr_ReturnValue_1;          // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RobberController_C_CheckSteamID) == 0x000008, "Wrong alignment on RobberController_C_CheckSteamID");
-static_assert(sizeof(RobberController_C_CheckSteamID) == 0x0000A0, "Wrong size on RobberController_C_CheckSteamID");
-static_assert(offsetof(RobberController_C_CheckSteamID, SaveGame) == 0x000000, "Member 'RobberController_C_CheckSteamID::SaveGame' has a wrong offset!");
-static_assert(offsetof(RobberController_C_CheckSteamID, SaveName) == 0x000008, "Member 'RobberController_C_CheckSteamID::SaveName' has a wrong offset!");
-static_assert(offsetof(RobberController_C_CheckSteamID, LoadedBytes) == 0x000018, "Member 'RobberController_C_CheckSteamID::LoadedBytes' has a wrong offset!");
-static_assert(offsetof(RobberController_C_CheckSteamID, CallFunc_GetCurrentLevelName_ReturnValue) == 0x000028, "Member 'RobberController_C_CheckSteamID::CallFunc_GetCurrentLevelName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_CheckSteamID, CallFunc_LoadFileFromBackup_Success_) == 0x000038, "Member 'RobberController_C_CheckSteamID::CallFunc_LoadFileFromBackup_Success_' has a wrong offset!");
-static_assert(offsetof(RobberController_C_CheckSteamID, CallFunc_EqualEqual_StrStr_ReturnValue) == 0x000039, "Member 'RobberController_C_CheckSteamID::CallFunc_EqualEqual_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_CheckSteamID, CallFunc_IsServer_ReturnValue) == 0x00003A, "Member 'RobberController_C_CheckSteamID::CallFunc_IsServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_CheckSteamID, CallFunc_Map_Keys_Keys) == 0x000040, "Member 'RobberController_C_CheckSteamID::CallFunc_Map_Keys_Keys' has a wrong offset!");
-static_assert(offsetof(RobberController_C_CheckSteamID, CallFunc_IsLocalController_ReturnValue) == 0x000050, "Member 'RobberController_C_CheckSteamID::CallFunc_IsLocalController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_CheckSteamID, CallFunc_Array_Get_Item) == 0x000058, "Member 'RobberController_C_CheckSteamID::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(RobberController_C_CheckSteamID, CallFunc_BooleanAND_ReturnValue) == 0x000068, "Member 'RobberController_C_CheckSteamID::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_CheckSteamID, CallFunc_Array_Length_ReturnValue) == 0x00006C, "Member 'RobberController_C_CheckSteamID::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_CheckSteamID, CallFunc_BooleanAND_ReturnValue_1) == 0x000070, "Member 'RobberController_C_CheckSteamID::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_CheckSteamID, CallFunc_Greater_IntInt_ReturnValue) == 0x000071, "Member 'RobberController_C_CheckSteamID::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_CheckSteamID, CallFunc_GetSteamID_Pure_ReturnValue) == 0x000078, "Member 'RobberController_C_CheckSteamID::CallFunc_GetSteamID_Pure_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_CheckSteamID, CallFunc_GetStatInt_Data) == 0x000080, "Member 'RobberController_C_CheckSteamID::CallFunc_GetStatInt_Data' has a wrong offset!");
-static_assert(offsetof(RobberController_C_CheckSteamID, CallFunc_GetStatInt_ReturnValue) == 0x000084, "Member 'RobberController_C_CheckSteamID::CallFunc_GetStatInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_CheckSteamID, CallFunc_BreakSteamID_ReturnValue) == 0x000088, "Member 'RobberController_C_CheckSteamID::CallFunc_BreakSteamID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_CheckSteamID, CallFunc_EqualEqual_StrStr_ReturnValue_1) == 0x000098, "Member 'RobberController_C_CheckSteamID::CallFunc_EqualEqual_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_CheckSteamID, CallFunc_Greater_IntInt_ReturnValue_1) == 0x000099, "Member 'RobberController_C_CheckSteamID::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_CheckSteamID;
 
 // Function RobberController.RobberController_C.LockUserSteamID
 // 0x0020 (0x0020 - 0x0000)
@@ -2065,14 +1304,7 @@ public:
 	bool                                          CallFunc_SetStatInt_ReturnValue;                   // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RobberController_C_LockUserSteamID) == 0x000008, "Wrong alignment on RobberController_C_LockUserSteamID");
-static_assert(sizeof(RobberController_C_LockUserSteamID) == 0x000020, "Wrong size on RobberController_C_LockUserSteamID");
-static_assert(offsetof(RobberController_C_LockUserSteamID, CallFunc_MakeLiteralString_ReturnValue) == 0x000000, "Member 'RobberController_C_LockUserSteamID::CallFunc_MakeLiteralString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LockUserSteamID, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'RobberController_C_LockUserSteamID::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LockUserSteamID, CallFunc_GetStatInt_Data) == 0x000014, "Member 'RobberController_C_LockUserSteamID::CallFunc_GetStatInt_Data' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LockUserSteamID, CallFunc_GetStatInt_ReturnValue) == 0x000018, "Member 'RobberController_C_LockUserSteamID::CallFunc_GetStatInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LockUserSteamID, CallFunc_SetStatInt_ReturnValue) == 0x000019, "Member 'RobberController_C_LockUserSteamID::CallFunc_SetStatInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LockUserSteamID, CallFunc_Greater_IntInt_ReturnValue) == 0x00001A, "Member 'RobberController_C_LockUserSteamID::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_LockUserSteamID;
 
 // Function RobberController.RobberController_C.SaveFileByName
 // 0x0018 (0x0018 - 0x0000)
@@ -2082,10 +1314,7 @@ public:
 	class FString                                 SaveName;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchString_CmpSuccess;                    // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RobberController_C_SaveFileByName) == 0x000008, "Wrong alignment on RobberController_C_SaveFileByName");
-static_assert(sizeof(RobberController_C_SaveFileByName) == 0x000018, "Wrong size on RobberController_C_SaveFileByName");
-static_assert(offsetof(RobberController_C_SaveFileByName, SaveName) == 0x000000, "Member 'RobberController_C_SaveFileByName::SaveName' has a wrong offset!");
-static_assert(offsetof(RobberController_C_SaveFileByName, K2Node_SwitchString_CmpSuccess) == 0x000010, "Member 'RobberController_C_SaveFileByName::K2Node_SwitchString_CmpSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_SaveFileByName;
 
 // Function RobberController.RobberController_C.AddSetup
 // 0x0010 (0x0010 - 0x0000)
@@ -2095,10 +1324,7 @@ public:
 	class UClass*                                 Setup;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RobberController_C_AddSetup) == 0x000008, "Wrong alignment on RobberController_C_AddSetup");
-static_assert(sizeof(RobberController_C_AddSetup) == 0x000010, "Wrong size on RobberController_C_AddSetup");
-static_assert(offsetof(RobberController_C_AddSetup, Setup) == 0x000000, "Member 'RobberController_C_AddSetup::Setup' has a wrong offset!");
-static_assert(offsetof(RobberController_C_AddSetup, CallFunc_Array_Add_ReturnValue) == 0x000008, "Member 'RobberController_C_AddSetup::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_AddSetup;
 
 // Function RobberController.RobberController_C.ApplySavedInputSettings
 // 0x0178 (0x0178 - 0x0000)
@@ -2134,31 +1360,7 @@ public:
 	struct FInputActionKeyMapping                 CallFunc_Array_Get_Item_2;                         // 0x0148(0x0028)()
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RobberController_C_ApplySavedInputSettings) == 0x000008, "Wrong alignment on RobberController_C_ApplySavedInputSettings");
-static_assert(sizeof(RobberController_C_ApplySavedInputSettings) == 0x000178, "Wrong size on RobberController_C_ApplySavedInputSettings");
-static_assert(offsetof(RobberController_C_ApplySavedInputSettings, Temp_int_Loop_Counter_Variable) == 0x000000, "Member 'RobberController_C_ApplySavedInputSettings::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ApplySavedInputSettings, CallFunc_Add_IntInt_ReturnValue) == 0x000004, "Member 'RobberController_C_ApplySavedInputSettings::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ApplySavedInputSettings, Temp_int_Array_Index_Variable) == 0x000008, "Member 'RobberController_C_ApplySavedInputSettings::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ApplySavedInputSettings, Temp_int_Array_Index_Variable_1) == 0x00000C, "Member 'RobberController_C_ApplySavedInputSettings::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ApplySavedInputSettings, Temp_int_Loop_Counter_Variable_1) == 0x000010, "Member 'RobberController_C_ApplySavedInputSettings::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ApplySavedInputSettings, CallFunc_GetInputSettings_ReturnValue) == 0x000018, "Member 'RobberController_C_ApplySavedInputSettings::CallFunc_GetInputSettings_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ApplySavedInputSettings, CallFunc_Add_IntInt_ReturnValue_1) == 0x000020, "Member 'RobberController_C_ApplySavedInputSettings::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ApplySavedInputSettings, CallFunc_GetInputSettings_ReturnValue_1) == 0x000028, "Member 'RobberController_C_ApplySavedInputSettings::CallFunc_GetInputSettings_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ApplySavedInputSettings, CallFunc_GetInputSettings_ReturnValue_2) == 0x000030, "Member 'RobberController_C_ApplySavedInputSettings::CallFunc_GetInputSettings_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ApplySavedInputSettings, CallFunc_Array_Get_Item) == 0x000038, "Member 'RobberController_C_ApplySavedInputSettings::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ApplySavedInputSettings, CallFunc_Array_Length_ReturnValue) == 0x000098, "Member 'RobberController_C_ApplySavedInputSettings::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ApplySavedInputSettings, CallFunc_Greater_IntInt_ReturnValue) == 0x00009C, "Member 'RobberController_C_ApplySavedInputSettings::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ApplySavedInputSettings, K2Node_MakeStruct_InputAxisKeyMapping) == 0x0000A0, "Member 'RobberController_C_ApplySavedInputSettings::K2Node_MakeStruct_InputAxisKeyMapping' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ApplySavedInputSettings, CallFunc_GetAxisMappingByName_OutMappings) == 0x0000C8, "Member 'RobberController_C_ApplySavedInputSettings::CallFunc_GetAxisMappingByName_OutMappings' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ApplySavedInputSettings, K2Node_MakeStruct_InputActionKeyMapping) == 0x0000D8, "Member 'RobberController_C_ApplySavedInputSettings::K2Node_MakeStruct_InputActionKeyMapping' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ApplySavedInputSettings, CallFunc_Array_Get_Item_1) == 0x000100, "Member 'RobberController_C_ApplySavedInputSettings::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ApplySavedInputSettings, CallFunc_Array_Length_ReturnValue_1) == 0x000128, "Member 'RobberController_C_ApplySavedInputSettings::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ApplySavedInputSettings, CallFunc_EqualEqual_FloatFloat_ReturnValue) == 0x00012C, "Member 'RobberController_C_ApplySavedInputSettings::CallFunc_EqualEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ApplySavedInputSettings, CallFunc_Less_IntInt_ReturnValue) == 0x00012D, "Member 'RobberController_C_ApplySavedInputSettings::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ApplySavedInputSettings, CallFunc_GetActionMappingByName_OutMappings) == 0x000130, "Member 'RobberController_C_ApplySavedInputSettings::CallFunc_GetActionMappingByName_OutMappings' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ApplySavedInputSettings, CallFunc_Array_Length_ReturnValue_2) == 0x000140, "Member 'RobberController_C_ApplySavedInputSettings::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ApplySavedInputSettings, CallFunc_Array_Get_Item_2) == 0x000148, "Member 'RobberController_C_ApplySavedInputSettings::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ApplySavedInputSettings, CallFunc_Less_IntInt_ReturnValue_1) == 0x000170, "Member 'RobberController_C_ApplySavedInputSettings::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_ApplySavedInputSettings;
 
 // Function RobberController.RobberController_C.GetSkillTier
 // 0x0038 (0x0038 - 0x0000)
@@ -2176,17 +1378,7 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ClassClass_ReturnValue;        // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RobberController_C_GetSkillTier) == 0x000008, "Wrong alignment on RobberController_C_GetSkillTier");
-static_assert(sizeof(RobberController_C_GetSkillTier) == 0x000038, "Wrong size on RobberController_C_GetSkillTier");
-static_assert(offsetof(RobberController_C_GetSkillTier, Skill) == 0x000000, "Member 'RobberController_C_GetSkillTier::Skill' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetSkillTier, Tier) == 0x000008, "Member 'RobberController_C_GetSkillTier::Tier' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetSkillTier, Temp_int_Array_Index_Variable) == 0x00000C, "Member 'RobberController_C_GetSkillTier::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetSkillTier, Temp_int_Loop_Counter_Variable) == 0x000010, "Member 'RobberController_C_GetSkillTier::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetSkillTier, CallFunc_Add_IntInt_ReturnValue) == 0x000014, "Member 'RobberController_C_GetSkillTier::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetSkillTier, CallFunc_Array_Length_ReturnValue) == 0x000018, "Member 'RobberController_C_GetSkillTier::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetSkillTier, CallFunc_Array_Get_Item) == 0x000020, "Member 'RobberController_C_GetSkillTier::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetSkillTier, CallFunc_Less_IntInt_ReturnValue) == 0x000030, "Member 'RobberController_C_GetSkillTier::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetSkillTier, CallFunc_EqualEqual_ClassClass_ReturnValue) == 0x000031, "Member 'RobberController_C_GetSkillTier::CallFunc_EqualEqual_ClassClass_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_GetSkillTier;
 
 // Function RobberController.RobberController_C.FindResearchingSkill
 // 0x0058 (0x0058 - 0x0000)
@@ -2205,18 +1397,7 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ClassClass_ReturnValue;        // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RobberController_C_FindResearchingSkill) == 0x000008, "Wrong alignment on RobberController_C_FindResearchingSkill");
-static_assert(sizeof(RobberController_C_FindResearchingSkill) == 0x000058, "Wrong size on RobberController_C_FindResearchingSkill");
-static_assert(offsetof(RobberController_C_FindResearchingSkill, Skill) == 0x000000, "Member 'RobberController_C_FindResearchingSkill::Skill' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindResearchingSkill, Is_researching_) == 0x000008, "Member 'RobberController_C_FindResearchingSkill::Is_researching_' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindResearchingSkill, Array_Element) == 0x000010, "Member 'RobberController_C_FindResearchingSkill::Array_Element' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindResearchingSkill, Temp_int_Array_Index_Variable) == 0x000028, "Member 'RobberController_C_FindResearchingSkill::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindResearchingSkill, Temp_int_Loop_Counter_Variable) == 0x00002C, "Member 'RobberController_C_FindResearchingSkill::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindResearchingSkill, CallFunc_Add_IntInt_ReturnValue) == 0x000030, "Member 'RobberController_C_FindResearchingSkill::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindResearchingSkill, CallFunc_Array_Length_ReturnValue) == 0x000034, "Member 'RobberController_C_FindResearchingSkill::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindResearchingSkill, CallFunc_Array_Get_Item) == 0x000038, "Member 'RobberController_C_FindResearchingSkill::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindResearchingSkill, CallFunc_Less_IntInt_ReturnValue) == 0x000050, "Member 'RobberController_C_FindResearchingSkill::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_FindResearchingSkill, CallFunc_EqualEqual_ClassClass_ReturnValue) == 0x000051, "Member 'RobberController_C_FindResearchingSkill::CallFunc_EqualEqual_ClassClass_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_FindResearchingSkill;
 
 // Function RobberController.RobberController_C.ProgressSkills
 // 0x00B0 (0x00B0 - 0x0000)
@@ -2254,32 +1435,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RobberController_C_ProgressSkills) == 0x000008, "Wrong alignment on RobberController_C_ProgressSkills");
-static_assert(sizeof(RobberController_C_ProgressSkills) == 0x0000B0, "Wrong size on RobberController_C_ProgressSkills");
-static_assert(offsetof(RobberController_C_ProgressSkills, XP) == 0x000000, "Member 'RobberController_C_ProgressSkills::XP' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ProgressSkills, AlreadyHasSkill_) == 0x000004, "Member 'RobberController_C_ProgressSkills::AlreadyHasSkill_' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ProgressSkills, DivisionFactor) == 0x000008, "Member 'RobberController_C_ProgressSkills::DivisionFactor' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ProgressSkills, Temp_int_Array_Index_Variable) == 0x00000C, "Member 'RobberController_C_ProgressSkills::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ProgressSkills, Temp_int_Loop_Counter_Variable) == 0x000010, "Member 'RobberController_C_ProgressSkills::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ProgressSkills, CallFunc_Add_IntInt_ReturnValue) == 0x000014, "Member 'RobberController_C_ProgressSkills::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ProgressSkills, Temp_int_Array_Index_Variable_1) == 0x000018, "Member 'RobberController_C_ProgressSkills::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ProgressSkills, Temp_int_Loop_Counter_Variable_1) == 0x00001C, "Member 'RobberController_C_ProgressSkills::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ProgressSkills, CallFunc_Add_IntInt_ReturnValue_1) == 0x000020, "Member 'RobberController_C_ProgressSkills::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ProgressSkills, CallFunc_Array_Get_Item) == 0x000028, "Member 'RobberController_C_ProgressSkills::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ProgressSkills, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000038, "Member 'RobberController_C_ProgressSkills::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ProgressSkills, CallFunc_Divide_FloatFloat_ReturnValue) == 0x00003C, "Member 'RobberController_C_ProgressSkills::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ProgressSkills, CallFunc_Array_Length_ReturnValue) == 0x000040, "Member 'RobberController_C_ProgressSkills::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ProgressSkills, CallFunc_Less_IntInt_ReturnValue) == 0x000044, "Member 'RobberController_C_ProgressSkills::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ProgressSkills, CallFunc_Array_Get_Item_1) == 0x000048, "Member 'RobberController_C_ProgressSkills::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ProgressSkills, CallFunc_Array_Length_ReturnValue_1) == 0x000060, "Member 'RobberController_C_ProgressSkills::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ProgressSkills, CallFunc_Add_FloatFloat_ReturnValue) == 0x000064, "Member 'RobberController_C_ProgressSkills::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ProgressSkills, CallFunc_Less_IntInt_ReturnValue_1) == 0x000068, "Member 'RobberController_C_ProgressSkills::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ProgressSkills, K2Node_SetFieldsInStruct_StructOut) == 0x000070, "Member 'RobberController_C_ProgressSkills::K2Node_SetFieldsInStruct_StructOut' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ProgressSkills, CallFunc_Array_Add_ReturnValue) == 0x000088, "Member 'RobberController_C_ProgressSkills::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ProgressSkills, K2Node_SetFieldsInStruct_StructOut_1) == 0x000090, "Member 'RobberController_C_ProgressSkills::K2Node_SetFieldsInStruct_StructOut_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ProgressSkills, CallFunc_EqualEqual_ClassClass_ReturnValue) == 0x0000A0, "Member 'RobberController_C_ProgressSkills::CallFunc_EqualEqual_ClassClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ProgressSkills, CallFunc_Array_Length_ReturnValue_2) == 0x0000A4, "Member 'RobberController_C_ProgressSkills::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_ProgressSkills, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x0000A8, "Member 'RobberController_C_ProgressSkills::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_ProgressSkills;
 
 // Function RobberController.RobberController_C.GetCompletedSetupsForMap
 // 0x0058 (0x0058 - 0x0000)
@@ -2306,23 +1462,7 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RobberController_C_GetCompletedSetupsForMap) == 0x000008, "Wrong alignment on RobberController_C_GetCompletedSetupsForMap");
-static_assert(sizeof(RobberController_C_GetCompletedSetupsForMap) == 0x000058, "Wrong size on RobberController_C_GetCompletedSetupsForMap");
-static_assert(offsetof(RobberController_C_GetCompletedSetupsForMap, Map) == 0x000000, "Member 'RobberController_C_GetCompletedSetupsForMap::Map' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetCompletedSetupsForMap, SetupsCompleted) == 0x000008, "Member 'RobberController_C_GetCompletedSetupsForMap::SetupsCompleted' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetCompletedSetupsForMap, Completed_min_) == 0x00000C, "Member 'RobberController_C_GetCompletedSetupsForMap::Completed_min_' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetCompletedSetupsForMap, SetupsCompleteAmount) == 0x000010, "Member 'RobberController_C_GetCompletedSetupsForMap::SetupsCompleteAmount' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetCompletedSetupsForMap, Temp_class_Variable) == 0x000018, "Member 'RobberController_C_GetCompletedSetupsForMap::Temp_class_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetCompletedSetupsForMap, Temp_int_Loop_Counter_Variable) == 0x000028, "Member 'RobberController_C_GetCompletedSetupsForMap::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetCompletedSetupsForMap, CallFunc_Add_IntInt_ReturnValue) == 0x00002C, "Member 'RobberController_C_GetCompletedSetupsForMap::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetCompletedSetupsForMap, CallFunc_Array_Length_ReturnValue) == 0x000030, "Member 'RobberController_C_GetCompletedSetupsForMap::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetCompletedSetupsForMap, CallFunc_Less_IntInt_ReturnValue) == 0x000034, "Member 'RobberController_C_GetCompletedSetupsForMap::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetCompletedSetupsForMap, Temp_int_Array_Index_Variable) == 0x000038, "Member 'RobberController_C_GetCompletedSetupsForMap::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetCompletedSetupsForMap, Temp_int_Variable) == 0x00003C, "Member 'RobberController_C_GetCompletedSetupsForMap::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetCompletedSetupsForMap, CallFunc_Array_Get_Item) == 0x000040, "Member 'RobberController_C_GetCompletedSetupsForMap::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetCompletedSetupsForMap, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000048, "Member 'RobberController_C_GetCompletedSetupsForMap::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetCompletedSetupsForMap, CallFunc_Add_IntInt_ReturnValue_1) == 0x00004C, "Member 'RobberController_C_GetCompletedSetupsForMap::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetCompletedSetupsForMap, CallFunc_Array_Contains_ReturnValue) == 0x000050, "Member 'RobberController_C_GetCompletedSetupsForMap::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_GetCompletedSetupsForMap;
 
 // Function RobberController.RobberController_C.LoadFileFromBackup
 // 0x01D0 (0x01D0 - 0x0000)
@@ -2382,49 +1522,7 @@ public:
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue_6;              // 0x01B0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_EncryptString_ReturnValue;                // 0x01C0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RobberController_C_LoadFileFromBackup) == 0x000008, "Wrong alignment on RobberController_C_LoadFileFromBackup");
-static_assert(sizeof(RobberController_C_LoadFileFromBackup) == 0x0001D0, "Wrong size on RobberController_C_LoadFileFromBackup");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, SaveName) == 0x000000, "Member 'RobberController_C_LoadFileFromBackup::SaveName' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, LoadedBytes) == 0x000010, "Member 'RobberController_C_LoadFileFromBackup::LoadedBytes' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, Success_) == 0x000020, "Member 'RobberController_C_LoadFileFromBackup::Success_' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, RegularSaveName) == 0x000028, "Member 'RobberController_C_LoadFileFromBackup::RegularSaveName' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, BackupFileName) == 0x000038, "Member 'RobberController_C_LoadFileFromBackup::BackupFileName' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, CallFunc_GetGameInstance_ReturnValue) == 0x000048, "Member 'RobberController_C_LoadFileFromBackup::CallFunc_GetGameInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, CallFunc_IsLocalController_ReturnValue) == 0x000050, "Member 'RobberController_C_LoadFileFromBackup::CallFunc_IsLocalController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, K2Node_DynamicCast_AsRobber_GI) == 0x000058, "Member 'RobberController_C_LoadFileFromBackup::K2Node_DynamicCast_AsRobber_GI' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, K2Node_DynamicCast_bSuccess) == 0x000060, "Member 'RobberController_C_LoadFileFromBackup::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, CallFunc_GetSteamID_Pure_ReturnValue) == 0x000068, "Member 'RobberController_C_LoadFileFromBackup::CallFunc_GetSteamID_Pure_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, CallFunc_BreakSteamID_ReturnValue) == 0x000070, "Member 'RobberController_C_LoadFileFromBackup::CallFunc_BreakSteamID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, CallFunc_GetSteamID_Pure_ReturnValue_1) == 0x000080, "Member 'RobberController_C_LoadFileFromBackup::CallFunc_GetSteamID_Pure_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, CallFunc_GetGameInstance_ReturnValue_1) == 0x000088, "Member 'RobberController_C_LoadFileFromBackup::CallFunc_GetGameInstance_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, CallFunc_BreakSteamID_ReturnValue_1) == 0x000090, "Member 'RobberController_C_LoadFileFromBackup::CallFunc_BreakSteamID_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, K2Node_DynamicCast_AsRobber_GI_1) == 0x0000A0, "Member 'RobberController_C_LoadFileFromBackup::K2Node_DynamicCast_AsRobber_GI_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, K2Node_DynamicCast_bSuccess_1) == 0x0000A8, "Member 'RobberController_C_LoadFileFromBackup::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, CallFunc_Concat_StrStr_ReturnValue) == 0x0000B0, "Member 'RobberController_C_LoadFileFromBackup::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, CallFunc_LoadGameFromSlot_ReturnValue) == 0x0000C0, "Member 'RobberController_C_LoadFileFromBackup::CallFunc_LoadGameFromSlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, CallFunc_DoesSaveGameExist_ReturnValue) == 0x0000C8, "Member 'RobberController_C_LoadFileFromBackup::CallFunc_DoesSaveGameExist_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, K2Node_DynamicCast_AsOAR_Savegame) == 0x0000D0, "Member 'RobberController_C_LoadFileFromBackup::K2Node_DynamicCast_AsOAR_Savegame' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, K2Node_DynamicCast_bSuccess_2) == 0x0000D8, "Member 'RobberController_C_LoadFileFromBackup::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, CallFunc_SaveGameToSlot_ReturnValue) == 0x0000D9, "Member 'RobberController_C_LoadFileFromBackup::CallFunc_SaveGameToSlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, CallFunc_Map_Keys_Keys) == 0x0000E0, "Member 'RobberController_C_LoadFileFromBackup::CallFunc_Map_Keys_Keys' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, CallFunc_Array_Get_Item) == 0x0000F0, "Member 'RobberController_C_LoadFileFromBackup::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, CallFunc_EqualEqual_StrStr_ReturnValue) == 0x000100, "Member 'RobberController_C_LoadFileFromBackup::CallFunc_EqualEqual_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, CallFunc_GetProjectSavedDirectory_ReturnValue) == 0x000108, "Member 'RobberController_C_LoadFileFromBackup::CallFunc_GetProjectSavedDirectory_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000118, "Member 'RobberController_C_LoadFileFromBackup::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, CallFunc_Concat_StrStr_ReturnValue_2) == 0x000128, "Member 'RobberController_C_LoadFileFromBackup::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, CallFunc_FileExists_ReturnValue) == 0x000138, "Member 'RobberController_C_LoadFileFromBackup::CallFunc_FileExists_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, CallFunc_Concat_StrStr_ReturnValue_3) == 0x000140, "Member 'RobberController_C_LoadFileFromBackup::CallFunc_Concat_StrStr_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, CallFunc_Concat_StrStr_ReturnValue_4) == 0x000150, "Member 'RobberController_C_LoadFileFromBackup::CallFunc_Concat_StrStr_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, CallFunc_GetFileSize_ReturnValue) == 0x000160, "Member 'RobberController_C_LoadFileFromBackup::CallFunc_GetFileSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, CallFunc_Concat_StrStr_ReturnValue_5) == 0x000168, "Member 'RobberController_C_LoadFileFromBackup::CallFunc_Concat_StrStr_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000178, "Member 'RobberController_C_LoadFileFromBackup::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, CallFunc_FileRead_Buffer) == 0x000180, "Member 'RobberController_C_LoadFileFromBackup::CallFunc_FileRead_Buffer' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, CallFunc_FileRead_ReturnValue) == 0x000190, "Member 'RobberController_C_LoadFileFromBackup::CallFunc_FileRead_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, CallFunc_WriteBytesToFile_ReturnValue) == 0x000194, "Member 'RobberController_C_LoadFileFromBackup::CallFunc_WriteBytesToFile_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, CallFunc_GetSteamID_Pure_ReturnValue_2) == 0x000198, "Member 'RobberController_C_LoadFileFromBackup::CallFunc_GetSteamID_Pure_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, CallFunc_BreakSteamID_ReturnValue_2) == 0x0001A0, "Member 'RobberController_C_LoadFileFromBackup::CallFunc_BreakSteamID_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, CallFunc_Concat_StrStr_ReturnValue_6) == 0x0001B0, "Member 'RobberController_C_LoadFileFromBackup::CallFunc_Concat_StrStr_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(RobberController_C_LoadFileFromBackup, CallFunc_EncryptString_ReturnValue) == 0x0001C0, "Member 'RobberController_C_LoadFileFromBackup::CallFunc_EncryptString_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_LoadFileFromBackup;
 
 // Function RobberController.RobberController_C.Convert Save Info To Bytes
 // 0x00C8 (0x00C8 - 0x0000)
@@ -2455,26 +1553,7 @@ public:
 	class FText                                   CallFunc_Conv_Int64ToText_ReturnValue;             // 0x00A0(0x0018)()
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x00B8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RobberController_C_Convert_Save_Info_To_Bytes) == 0x000008, "Wrong alignment on RobberController_C_Convert_Save_Info_To_Bytes");
-static_assert(sizeof(RobberController_C_Convert_Save_Info_To_Bytes) == 0x0000C8, "Wrong size on RobberController_C_Convert_Save_Info_To_Bytes");
-static_assert(offsetof(RobberController_C_Convert_Save_Info_To_Bytes, IntIn) == 0x000000, "Member 'RobberController_C_Convert_Save_Info_To_Bytes::IntIn' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Convert_Save_Info_To_Bytes, Bytes) == 0x000008, "Member 'RobberController_C_Convert_Save_Info_To_Bytes::Bytes' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Convert_Save_Info_To_Bytes, SaveInt) == 0x000018, "Member 'RobberController_C_Convert_Save_Info_To_Bytes::SaveInt' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Convert_Save_Info_To_Bytes, SaveString) == 0x000020, "Member 'RobberController_C_Convert_Save_Info_To_Bytes::SaveString' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Convert_Save_Info_To_Bytes, CallFunc_Conv_IntToInt64_ReturnValue) == 0x000030, "Member 'RobberController_C_Convert_Save_Info_To_Bytes::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Convert_Save_Info_To_Bytes, CallFunc_BP_StringToBytes_ReturnValue) == 0x000038, "Member 'RobberController_C_Convert_Save_Info_To_Bytes::CallFunc_BP_StringToBytes_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Convert_Save_Info_To_Bytes, CallFunc_GetCurrentLevelName_ReturnValue) == 0x000048, "Member 'RobberController_C_Convert_Save_Info_To_Bytes::CallFunc_GetCurrentLevelName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Convert_Save_Info_To_Bytes, CallFunc_EqualEqual_StrStr_ReturnValue) == 0x000058, "Member 'RobberController_C_Convert_Save_Info_To_Bytes::CallFunc_EqualEqual_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Convert_Save_Info_To_Bytes, CallFunc_GetSteamID_Pure_ReturnValue) == 0x000060, "Member 'RobberController_C_Convert_Save_Info_To_Bytes::CallFunc_GetSteamID_Pure_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Convert_Save_Info_To_Bytes, CallFunc_BreakSteamID_ReturnValue) == 0x000068, "Member 'RobberController_C_Convert_Save_Info_To_Bytes::CallFunc_BreakSteamID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Convert_Save_Info_To_Bytes, CallFunc_IsLocalController_ReturnValue) == 0x000078, "Member 'RobberController_C_Convert_Save_Info_To_Bytes::CallFunc_IsLocalController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Convert_Save_Info_To_Bytes, CallFunc_Conv_StringToInt_ReturnValue) == 0x00007C, "Member 'RobberController_C_Convert_Save_Info_To_Bytes::CallFunc_Conv_StringToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Convert_Save_Info_To_Bytes, CallFunc_IsServer_ReturnValue) == 0x000080, "Member 'RobberController_C_Convert_Save_Info_To_Bytes::CallFunc_IsServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Convert_Save_Info_To_Bytes, CallFunc_Conv_IntToInt64_ReturnValue_1) == 0x000088, "Member 'RobberController_C_Convert_Save_Info_To_Bytes::CallFunc_Conv_IntToInt64_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Convert_Save_Info_To_Bytes, CallFunc_BooleanAND_ReturnValue) == 0x000090, "Member 'RobberController_C_Convert_Save_Info_To_Bytes::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Convert_Save_Info_To_Bytes, CallFunc_Add_Int64Int64_ReturnValue) == 0x000098, "Member 'RobberController_C_Convert_Save_Info_To_Bytes::CallFunc_Add_Int64Int64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Convert_Save_Info_To_Bytes, CallFunc_Conv_Int64ToText_ReturnValue) == 0x0000A0, "Member 'RobberController_C_Convert_Save_Info_To_Bytes::CallFunc_Conv_Int64ToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_Convert_Save_Info_To_Bytes, CallFunc_Conv_TextToString_ReturnValue) == 0x0000B8, "Member 'RobberController_C_Convert_Save_Info_To_Bytes::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_Convert_Save_Info_To_Bytes;
 
 // Function RobberController.RobberController_C.MapsToInventory
 // 0x00A8 (0x00A8 - 0x0000)
@@ -2511,30 +1590,7 @@ public:
 	uint8                                         Pad_A1[0x3];                                       // 0x00A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_DoesItemExistInSteamInventory__Index;     // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RobberController_C_MapsToInventory) == 0x000008, "Wrong alignment on RobberController_C_MapsToInventory");
-static_assert(sizeof(RobberController_C_MapsToInventory) == 0x0000A8, "Wrong size on RobberController_C_MapsToInventory");
-static_assert(offsetof(RobberController_C_MapsToInventory, UserMaps) == 0x000000, "Member 'RobberController_C_MapsToInventory::UserMaps' has a wrong offset!");
-static_assert(offsetof(RobberController_C_MapsToInventory, Temp_int_Loop_Counter_Variable) == 0x000010, "Member 'RobberController_C_MapsToInventory::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_MapsToInventory, CallFunc_Add_IntInt_ReturnValue) == 0x000014, "Member 'RobberController_C_MapsToInventory::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_MapsToInventory, Temp_int_Array_Index_Variable) == 0x000018, "Member 'RobberController_C_MapsToInventory::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_MapsToInventory, Temp_int_Array_Index_Variable_1) == 0x00001C, "Member 'RobberController_C_MapsToInventory::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_MapsToInventory, Temp_int_Loop_Counter_Variable_1) == 0x000020, "Member 'RobberController_C_MapsToInventory::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_MapsToInventory, CallFunc_Array_Get_Item) == 0x000028, "Member 'RobberController_C_MapsToInventory::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(RobberController_C_MapsToInventory, CallFunc_Add_IntInt_ReturnValue_1) == 0x000048, "Member 'RobberController_C_MapsToInventory::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_MapsToInventory, CallFunc_GetItemDefinitionProperty_Value) == 0x000050, "Member 'RobberController_C_MapsToInventory::CallFunc_GetItemDefinitionProperty_Value' has a wrong offset!");
-static_assert(offsetof(RobberController_C_MapsToInventory, CallFunc_GetItemDefinitionProperty_ReturnValue) == 0x000060, "Member 'RobberController_C_MapsToInventory::CallFunc_GetItemDefinitionProperty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_MapsToInventory, CallFunc_EqualEqual_StrStr_ReturnValue) == 0x000061, "Member 'RobberController_C_MapsToInventory::CallFunc_EqualEqual_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_MapsToInventory, CallFunc_Array_Length_ReturnValue) == 0x000064, "Member 'RobberController_C_MapsToInventory::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_MapsToInventory, CallFunc_Less_IntInt_ReturnValue) == 0x000068, "Member 'RobberController_C_MapsToInventory::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_MapsToInventory, CallFunc_Array_Get_Item_1) == 0x000070, "Member 'RobberController_C_MapsToInventory::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_MapsToInventory, CallFunc_Array_Length_ReturnValue_1) == 0x000078, "Member 'RobberController_C_MapsToInventory::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_MapsToInventory, CallFunc_Less_IntInt_ReturnValue_1) == 0x00007C, "Member 'RobberController_C_MapsToInventory::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RobberController_C_MapsToInventory, K2Node_MakeStruct_SteamItemDef) == 0x000080, "Member 'RobberController_C_MapsToInventory::K2Node_MakeStruct_SteamItemDef' has a wrong offset!");
-static_assert(offsetof(RobberController_C_MapsToInventory, CallFunc_AddPromoItem_Result) == 0x000084, "Member 'RobberController_C_MapsToInventory::CallFunc_AddPromoItem_Result' has a wrong offset!");
-static_assert(offsetof(RobberController_C_MapsToInventory, CallFunc_AddPromoItem_ReturnValue) == 0x000088, "Member 'RobberController_C_MapsToInventory::CallFunc_AddPromoItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_MapsToInventory, CallFunc_Concat_StrStr_ReturnValue) == 0x000090, "Member 'RobberController_C_MapsToInventory::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_MapsToInventory, CallFunc_DoesItemExistInSteamInventory__Exists_) == 0x0000A0, "Member 'RobberController_C_MapsToInventory::CallFunc_DoesItemExistInSteamInventory__Exists_' has a wrong offset!");
-static_assert(offsetof(RobberController_C_MapsToInventory, CallFunc_DoesItemExistInSteamInventory__Index) == 0x0000A4, "Member 'RobberController_C_MapsToInventory::CallFunc_DoesItemExistInSteamInventory__Index' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_MapsToInventory;
 
 // Function RobberController.RobberController_C.DoesItemExistInSteamInventory?
 // 0x0040 (0x0040 - 0x0000)
@@ -2557,19 +1613,7 @@ public:
 	uint8                                         Pad_3A[0x2];                                       // 0x003A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RobberController_C_DoesItemExistInSteamInventory_) == 0x000008, "Wrong alignment on RobberController_C_DoesItemExistInSteamInventory_");
-static_assert(sizeof(RobberController_C_DoesItemExistInSteamInventory_) == 0x000040, "Wrong size on RobberController_C_DoesItemExistInSteamInventory_");
-static_assert(offsetof(RobberController_C_DoesItemExistInSteamInventory_, SteamDefID) == 0x000000, "Member 'RobberController_C_DoesItemExistInSteamInventory_::SteamDefID' has a wrong offset!");
-static_assert(offsetof(RobberController_C_DoesItemExistInSteamInventory_, Items) == 0x000008, "Member 'RobberController_C_DoesItemExistInSteamInventory_::Items' has a wrong offset!");
-static_assert(offsetof(RobberController_C_DoesItemExistInSteamInventory_, Exists_) == 0x000018, "Member 'RobberController_C_DoesItemExistInSteamInventory_::Exists_' has a wrong offset!");
-static_assert(offsetof(RobberController_C_DoesItemExistInSteamInventory_, Index_0) == 0x00001C, "Member 'RobberController_C_DoesItemExistInSteamInventory_::Index_0' has a wrong offset!");
-static_assert(offsetof(RobberController_C_DoesItemExistInSteamInventory_, CallFunc_Array_Length_ReturnValue) == 0x000020, "Member 'RobberController_C_DoesItemExistInSteamInventory_::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_DoesItemExistInSteamInventory_, Temp_int_Array_Index_Variable) == 0x000024, "Member 'RobberController_C_DoesItemExistInSteamInventory_::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_DoesItemExistInSteamInventory_, Temp_int_Loop_Counter_Variable) == 0x000028, "Member 'RobberController_C_DoesItemExistInSteamInventory_::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_DoesItemExistInSteamInventory_, CallFunc_Array_Get_Item) == 0x000030, "Member 'RobberController_C_DoesItemExistInSteamInventory_::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(RobberController_C_DoesItemExistInSteamInventory_, CallFunc_Less_IntInt_ReturnValue) == 0x000038, "Member 'RobberController_C_DoesItemExistInSteamInventory_::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_DoesItemExistInSteamInventory_, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000039, "Member 'RobberController_C_DoesItemExistInSteamInventory_::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_DoesItemExistInSteamInventory_, CallFunc_Add_IntInt_ReturnValue) == 0x00003C, "Member 'RobberController_C_DoesItemExistInSteamInventory_::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_DoesItemExistInSteamInventory_;
 
 // Function RobberController.RobberController_C.GetSteamItemsInCategory
 // 0x00A0 (0x00A0 - 0x0000)
@@ -2599,24 +1643,7 @@ public:
 	uint8                                         Pad_9A[0x2];                                       // 0x009A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RobberController_C_GetSteamItemsInCategory) == 0x000008, "Wrong alignment on RobberController_C_GetSteamItemsInCategory");
-static_assert(sizeof(RobberController_C_GetSteamItemsInCategory) == 0x0000A0, "Wrong size on RobberController_C_GetSteamItemsInCategory");
-static_assert(offsetof(RobberController_C_GetSteamItemsInCategory, Category) == 0x000000, "Member 'RobberController_C_GetSteamItemsInCategory::Category' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetSteamItemsInCategory, Inventory) == 0x000010, "Member 'RobberController_C_GetSteamItemsInCategory::Inventory' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetSteamItemsInCategory, Items) == 0x000018, "Member 'RobberController_C_GetSteamItemsInCategory::Items' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetSteamItemsInCategory, ItemsDefs) == 0x000028, "Member 'RobberController_C_GetSteamItemsInCategory::ItemsDefs' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetSteamItemsInCategory, CallFunc_GetResultItems_Items) == 0x000038, "Member 'RobberController_C_GetSteamItemsInCategory::CallFunc_GetResultItems_Items' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetSteamItemsInCategory, CallFunc_GetResultItems_ReturnValue) == 0x000048, "Member 'RobberController_C_GetSteamItemsInCategory::CallFunc_GetResultItems_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetSteamItemsInCategory, Temp_int_Array_Index_Variable) == 0x00004C, "Member 'RobberController_C_GetSteamItemsInCategory::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetSteamItemsInCategory, CallFunc_Array_Length_ReturnValue) == 0x000050, "Member 'RobberController_C_GetSteamItemsInCategory::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetSteamItemsInCategory, CallFunc_Array_Get_Item) == 0x000058, "Member 'RobberController_C_GetSteamItemsInCategory::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetSteamItemsInCategory, Temp_int_Loop_Counter_Variable) == 0x000078, "Member 'RobberController_C_GetSteamItemsInCategory::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetSteamItemsInCategory, CallFunc_Less_IntInt_ReturnValue) == 0x00007C, "Member 'RobberController_C_GetSteamItemsInCategory::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetSteamItemsInCategory, CallFunc_Add_IntInt_ReturnValue) == 0x000080, "Member 'RobberController_C_GetSteamItemsInCategory::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetSteamItemsInCategory, CallFunc_GetItemDefinitionProperty_Value) == 0x000088, "Member 'RobberController_C_GetSteamItemsInCategory::CallFunc_GetItemDefinitionProperty_Value' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetSteamItemsInCategory, CallFunc_GetItemDefinitionProperty_ReturnValue) == 0x000098, "Member 'RobberController_C_GetSteamItemsInCategory::CallFunc_GetItemDefinitionProperty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetSteamItemsInCategory, CallFunc_EqualEqual_StrStr_ReturnValue) == 0x000099, "Member 'RobberController_C_GetSteamItemsInCategory::CallFunc_EqualEqual_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RobberController_C_GetSteamItemsInCategory, CallFunc_Array_Add_ReturnValue) == 0x00009C, "Member 'RobberController_C_GetSteamItemsInCategory::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_GetSteamItemsInCategory;
 
 // Function RobberController.RobberController_C.OnGetSteamInventoryItems
 // 0x0010 (0x0010 - 0x0000)
@@ -2625,9 +1652,7 @@ struct RobberController_C_OnGetSteamInventoryItems final
 public:
 	TArray<struct FSteamItemDetails>              Items;                                             // 0x0000(0x0010)(Parm, OutParm)
 };
-static_assert(alignof(RobberController_C_OnGetSteamInventoryItems) == 0x000008, "Wrong alignment on RobberController_C_OnGetSteamInventoryItems");
-static_assert(sizeof(RobberController_C_OnGetSteamInventoryItems) == 0x000010, "Wrong size on RobberController_C_OnGetSteamInventoryItems");
-static_assert(offsetof(RobberController_C_OnGetSteamInventoryItems, Items) == 0x000000, "Member 'RobberController_C_OnGetSteamInventoryItems::Items' has a wrong offset!");
+DUMPER7_ASSERTS_RobberController_C_OnGetSteamInventoryItems;
 
 }
 

@@ -33,18 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ReviveProgressUI_C">();
+		BP_STATIC_CLASS_IMPL("ReviveProgressUI_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ReviveProgressUI_C")
 	}
 	static class UReviveProgressUI_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UReviveProgressUI_C>();
 	}
 };
-static_assert(alignof(UReviveProgressUI_C) == 0x000008, "Wrong alignment on UReviveProgressUI_C");
-static_assert(sizeof(UReviveProgressUI_C) == 0x000278, "Wrong size on UReviveProgressUI_C");
-static_assert(offsetof(UReviveProgressUI_C, UberGraphFrame) == 0x000260, "Member 'UReviveProgressUI_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UReviveProgressUI_C, Progress) == 0x000268, "Member 'UReviveProgressUI_C::Progress' has a wrong offset!");
-static_assert(offsetof(UReviveProgressUI_C, ReviveProgress) == 0x000270, "Member 'UReviveProgressUI_C::ReviveProgress' has a wrong offset!");
+DUMPER7_ASSERTS_UReviveProgressUI_C;
 
 }
 

@@ -27,9 +27,9 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FBlueprintSessionResult>        K2Node_CustomEvent_SessionInfo_1;                  // 0x0008(0x0010)(ConstParm, ReferenceParm)
-	TDelegate<void(const TArray<struct FBlueprintSessionResult>& SessionInfo)> K2Node_CreateDelegate_OutputDelegate;              // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const TArray<struct FBlueprintSessionResult>& SessionInfo)> K2Node_CreateDelegate_OutputDelegate; // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
 	TArray<struct FBlueprintSessionResult>        K2Node_CustomEvent_SessionInfo;                    // 0x0028(0x0010)(ConstParm, ReferenceParm)
-	TDelegate<void(const TArray<struct FBlueprintSessionResult>& SessionInfo)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const TArray<struct FBlueprintSessionResult>& SessionInfo)> K2Node_CreateDelegate_OutputDelegate_1; // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
 	TArray<struct FBlueprintSessionResult>        Temp_struct_Variable;                              // 0x0048(0x0010)(ReferenceParm)
 	class UMessagePopup_C*                        CallFunc_Create_ReturnValue;                       // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FBlueprintSessionResult                CallFunc_Array_Get_Item;                           // 0x0060(0x0108)()
@@ -74,47 +74,7 @@ public:
 	class FString                                 CallFunc_GetCurrentSessionID_AsString_SessionID;   // 0x02A0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_StrStr_ReturnValue_1;          // 0x02B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions) == 0x000008, "Wrong alignment on SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions");
-static_assert(sizeof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions) == 0x0002B8, "Wrong size on SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions");
-static_assert(offsetof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions, EntryPoint) == 0x000000, "Member 'SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions::EntryPoint' has a wrong offset!");
-static_assert(offsetof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions, K2Node_CustomEvent_SessionInfo_1) == 0x000008, "Member 'SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions::K2Node_CustomEvent_SessionInfo_1' has a wrong offset!");
-static_assert(offsetof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions, K2Node_CreateDelegate_OutputDelegate) == 0x000018, "Member 'SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions, K2Node_CustomEvent_SessionInfo) == 0x000028, "Member 'SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions::K2Node_CustomEvent_SessionInfo' has a wrong offset!");
-static_assert(offsetof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions, K2Node_CreateDelegate_OutputDelegate_1) == 0x000038, "Member 'SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions, Temp_struct_Variable) == 0x000048, "Member 'SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions, CallFunc_Create_ReturnValue) == 0x000058, "Member 'SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions, CallFunc_Array_Get_Item) == 0x000060, "Member 'SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions, CallFunc_Array_Length_ReturnValue) == 0x000168, "Member 'SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions, CallFunc_GetExtraSettings_ExtraSettings) == 0x000170, "Member 'SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions::CallFunc_GetExtraSettings_ExtraSettings' has a wrong offset!");
-static_assert(offsetof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions, CallFunc_Conv_IntToString_ReturnValue) == 0x000180, "Member 'SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions, CallFunc_GetSessionPropertyString_SearchResult) == 0x000190, "Member 'SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions::CallFunc_GetSessionPropertyString_SearchResult' has a wrong offset!");
-static_assert(offsetof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions, CallFunc_GetSessionPropertyString_SettingValue) == 0x000198, "Member 'SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions::CallFunc_GetSessionPropertyString_SettingValue' has a wrong offset!");
-static_assert(offsetof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions, CallFunc_EqualEqual_StrStr_ReturnValue) == 0x0001A8, "Member 'SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions::CallFunc_EqualEqual_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions, K2Node_SwitchEnum_CmpSuccess) == 0x0001A9, "Member 'SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions, CallFunc_GetSessionID_AsString_SessionID) == 0x0001B0, "Member 'SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions::CallFunc_GetSessionID_AsString_SessionID' has a wrong offset!");
-static_assert(offsetof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions, Temp_bool_Has_Been_Initd_Variable) == 0x0001C0, "Member 'SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions, K2Node_Event_InFocusEvent) == 0x0001C4, "Member 'SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions::K2Node_Event_InFocusEvent' has a wrong offset!");
-static_assert(offsetof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions, K2Node_Event_MouseEvent) == 0x0001D0, "Member 'SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions::K2Node_Event_MouseEvent' has a wrong offset!");
-static_assert(offsetof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions, CallFunc_GetPlayerController_ReturnValue) == 0x000240, "Member 'SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions, CallFunc_GetMousePositionScaledByDPI_LocationX) == 0x000248, "Member 'SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions::CallFunc_GetMousePositionScaledByDPI_LocationX' has a wrong offset!");
-static_assert(offsetof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions, CallFunc_GetMousePositionScaledByDPI_LocationY) == 0x00024C, "Member 'SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions::CallFunc_GetMousePositionScaledByDPI_LocationY' has a wrong offset!");
-static_assert(offsetof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions, CallFunc_GetMousePositionScaledByDPI_ReturnValue) == 0x000250, "Member 'SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions::CallFunc_GetMousePositionScaledByDPI_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000254, "Member 'SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions, CallFunc_Subtract_FloatFloat_ReturnValue_1) == 0x000258, "Member 'SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions::CallFunc_Subtract_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions, CallFunc_GetPlayerController_ReturnValue_1) == 0x000260, "Member 'SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions, CallFunc_MakeVector2D_ReturnValue) == 0x000268, "Member 'SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions, CallFunc_SendSessionInviteToFriend_Result) == 0x000270, "Member 'SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions::CallFunc_SendSessionInviteToFriend_Result' has a wrong offset!");
-static_assert(offsetof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions, K2Node_SwitchEnum_CmpSuccess_1) == 0x000271, "Member 'SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions, CallFunc_GetPlayerController_ReturnValue_2) == 0x000278, "Member 'SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions::CallFunc_GetPlayerController_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions, CallFunc_GetGameInstance_ReturnValue) == 0x000280, "Member 'SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions::CallFunc_GetGameInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions, CallFunc_FindFriendSession_ReturnValue) == 0x000288, "Member 'SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions::CallFunc_FindFriendSession_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions, K2Node_DynamicCast_AsRobber_GI) == 0x000290, "Member 'SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions::K2Node_DynamicCast_AsRobber_GI' has a wrong offset!");
-static_assert(offsetof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions, K2Node_DynamicCast_bSuccess) == 0x000298, "Member 'SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions, CallFunc_IsValid_ReturnValue) == 0x000299, "Member 'SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions, Temp_bool_IsClosed_Variable) == 0x00029A, "Member 'SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions, CallFunc_OpenSteamUserOverlay_ReturnValue) == 0x00029B, "Member 'SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions::CallFunc_OpenSteamUserOverlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions, CallFunc_GetCurrentSessionID_AsString_SessionID) == 0x0002A0, "Member 'SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions::CallFunc_GetCurrentSessionID_AsString_SessionID' has a wrong offset!");
-static_assert(offsetof(SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions, CallFunc_EqualEqual_StrStr_ReturnValue_1) == 0x0002B0, "Member 'SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions::CallFunc_EqualEqual_StrStr_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_SteamFriendOptions_C_ExecuteUbergraph_SteamFriendOptions;
 
 // Function SteamFriendOptions.SteamFriendOptions_C.OnMouseLeave
 // 0x0070 (0x0070 - 0x0000)
@@ -123,9 +83,7 @@ struct SteamFriendOptions_C_OnMouseLeave final
 public:
 	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(SteamFriendOptions_C_OnMouseLeave) == 0x000008, "Wrong alignment on SteamFriendOptions_C_OnMouseLeave");
-static_assert(sizeof(SteamFriendOptions_C_OnMouseLeave) == 0x000070, "Wrong size on SteamFriendOptions_C_OnMouseLeave");
-static_assert(offsetof(SteamFriendOptions_C_OnMouseLeave, MouseEvent) == 0x000000, "Member 'SteamFriendOptions_C_OnMouseLeave::MouseEvent' has a wrong offset!");
+DUMPER7_ASSERTS_SteamFriendOptions_C_OnMouseLeave;
 
 // Function SteamFriendOptions.SteamFriendOptions_C.OnFocusLost
 // 0x0008 (0x0008 - 0x0000)
@@ -134,9 +92,7 @@ struct SteamFriendOptions_C_OnFocusLost final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(SteamFriendOptions_C_OnFocusLost) == 0x000004, "Wrong alignment on SteamFriendOptions_C_OnFocusLost");
-static_assert(sizeof(SteamFriendOptions_C_OnFocusLost) == 0x000008, "Wrong size on SteamFriendOptions_C_OnFocusLost");
-static_assert(offsetof(SteamFriendOptions_C_OnFocusLost, InFocusEvent) == 0x000000, "Member 'SteamFriendOptions_C_OnFocusLost::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_SteamFriendOptions_C_OnFocusLost;
 
 // Function SteamFriendOptions.SteamFriendOptions_C.OnSuccess_1783753349D322B589CE1C8EB8F80925
 // 0x0010 (0x0010 - 0x0000)
@@ -145,9 +101,7 @@ struct SteamFriendOptions_C_OnSuccess_1783753349D322B589CE1C8EB8F80925 final
 public:
 	TArray<struct FBlueprintSessionResult>        SessionInfo;                                       // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(SteamFriendOptions_C_OnSuccess_1783753349D322B589CE1C8EB8F80925) == 0x000008, "Wrong alignment on SteamFriendOptions_C_OnSuccess_1783753349D322B589CE1C8EB8F80925");
-static_assert(sizeof(SteamFriendOptions_C_OnSuccess_1783753349D322B589CE1C8EB8F80925) == 0x000010, "Wrong size on SteamFriendOptions_C_OnSuccess_1783753349D322B589CE1C8EB8F80925");
-static_assert(offsetof(SteamFriendOptions_C_OnSuccess_1783753349D322B589CE1C8EB8F80925, SessionInfo) == 0x000000, "Member 'SteamFriendOptions_C_OnSuccess_1783753349D322B589CE1C8EB8F80925::SessionInfo' has a wrong offset!");
+DUMPER7_ASSERTS_SteamFriendOptions_C_OnSuccess_1783753349D322B589CE1C8EB8F80925;
 
 // Function SteamFriendOptions.SteamFriendOptions_C.OnFailure_1783753349D322B589CE1C8EB8F80925
 // 0x0010 (0x0010 - 0x0000)
@@ -156,9 +110,7 @@ struct SteamFriendOptions_C_OnFailure_1783753349D322B589CE1C8EB8F80925 final
 public:
 	TArray<struct FBlueprintSessionResult>        SessionInfo;                                       // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(SteamFriendOptions_C_OnFailure_1783753349D322B589CE1C8EB8F80925) == 0x000008, "Wrong alignment on SteamFriendOptions_C_OnFailure_1783753349D322B589CE1C8EB8F80925");
-static_assert(sizeof(SteamFriendOptions_C_OnFailure_1783753349D322B589CE1C8EB8F80925) == 0x000010, "Wrong size on SteamFriendOptions_C_OnFailure_1783753349D322B589CE1C8EB8F80925");
-static_assert(offsetof(SteamFriendOptions_C_OnFailure_1783753349D322B589CE1C8EB8F80925, SessionInfo) == 0x000000, "Member 'SteamFriendOptions_C_OnFailure_1783753349D322B589CE1C8EB8F80925::SessionInfo' has a wrong offset!");
+DUMPER7_ASSERTS_SteamFriendOptions_C_OnFailure_1783753349D322B589CE1C8EB8F80925;
 
 }
 

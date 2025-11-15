@@ -36,24 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ShopItem_Map_base_C">();
+		BP_STATIC_CLASS_IMPL("ShopItem_Map_base_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ShopItem_Map_base_C")
 	}
 	static class AShopItem_Map_base_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AShopItem_Map_base_C>();
 	}
 };
-static_assert(alignof(AShopItem_Map_base_C) == 0x000008, "Wrong alignment on AShopItem_Map_base_C");
-static_assert(sizeof(AShopItem_Map_base_C) == 0x0002C0, "Wrong size on AShopItem_Map_base_C");
-static_assert(offsetof(AShopItem_Map_base_C, Filename) == 0x000270, "Member 'AShopItem_Map_base_C::Filename' has a wrong offset!");
-static_assert(offsetof(AShopItem_Map_base_C, Cash_low_estimate) == 0x000280, "Member 'AShopItem_Map_base_C::Cash_low_estimate' has a wrong offset!");
-static_assert(offsetof(AShopItem_Map_base_C, Cash_high_estimate) == 0x000284, "Member 'AShopItem_Map_base_C::Cash_high_estimate' has a wrong offset!");
-static_assert(offsetof(AShopItem_Map_base_C, Difficulty) == 0x000288, "Member 'AShopItem_Map_base_C::Difficulty' has a wrong offset!");
-static_assert(offsetof(AShopItem_Map_base_C, MainObjectiveIcon) == 0x000290, "Member 'AShopItem_Map_base_C::MainObjectiveIcon' has a wrong offset!");
-static_assert(offsetof(AShopItem_Map_base_C, SketchIcon) == 0x000298, "Member 'AShopItem_Map_base_C::SketchIcon' has a wrong offset!");
-static_assert(offsetof(AShopItem_Map_base_C, MapTrailerMedia) == 0x0002A0, "Member 'AShopItem_Map_base_C::MapTrailerMedia' has a wrong offset!");
-static_assert(offsetof(AShopItem_Map_base_C, Setups) == 0x0002A8, "Member 'AShopItem_Map_base_C::Setups' has a wrong offset!");
-static_assert(offsetof(AShopItem_Map_base_C, MinSetupsRequired) == 0x0002B8, "Member 'AShopItem_Map_base_C::MinSetupsRequired' has a wrong offset!");
+DUMPER7_ASSERTS_AShopItem_Map_base_C;
 
 }
 

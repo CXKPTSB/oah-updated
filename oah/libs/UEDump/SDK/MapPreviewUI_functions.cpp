@@ -82,7 +82,7 @@ void UMapPreviewUI_C::BndEvt__MapPreviewUI_CoinBuyButton_K2Node_ComponentBoundEv
 // Function MapPreviewUI.MapPreviewUI_C.MediaOpened
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FString                           OpenedUrl                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    OpenedUrl                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
 void UMapPreviewUI_C::MediaOpened(const class FString& OpenedUrl)
 {

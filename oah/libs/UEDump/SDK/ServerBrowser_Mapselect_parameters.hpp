@@ -56,33 +56,7 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect) == 0x000008, "Wrong alignment on ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect");
-static_assert(sizeof(ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect) == 0x000090, "Wrong size on ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect");
-static_assert(offsetof(ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect, EntryPoint) == 0x000000, "Member 'ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect, Temp_int_Array_Index_Variable) == 0x000004, "Member 'ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect, CallFunc_Create_ReturnValue) == 0x000008, "Member 'ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect, Temp_int_Variable) == 0x000010, "Member 'ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect, CallFunc_Array_Get_Item) == 0x000018, "Member 'ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect, CallFunc_GetLobbyData_ReturnValue) == 0x000020, "Member 'ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect::CallFunc_GetLobbyData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect, CallFunc_Array_Length_ReturnValue) == 0x000030, "Member 'ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect, CallFunc_EqualEqual_StrStr_ReturnValue) == 0x000034, "Member 'ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect::CallFunc_EqualEqual_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect, CallFunc_Add_IntInt_ReturnValue) == 0x000038, "Member 'ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect, CallFunc_GetActorOfClass_ReturnValue) == 0x000040, "Member 'ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect::CallFunc_GetActorOfClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect, CallFunc_GetPlayerController_ReturnValue) == 0x000048, "Member 'ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect, CallFunc_HasAuthority_ReturnValue) == 0x000050, "Member 'ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000051, "Member 'ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect, CallFunc_GetPlayerController_ReturnValue_1) == 0x000058, "Member 'ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect, K2Node_DynamicCast_AsRobber_Controller) == 0x000060, "Member 'ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect::K2Node_DynamicCast_AsRobber_Controller' has a wrong offset!");
-static_assert(offsetof(ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect, K2Node_DynamicCast_bSuccess) == 0x000068, "Member 'ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000069, "Member 'ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect, CallFunc_BooleanAND_ReturnValue) == 0x00006A, "Member 'ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect, CallFunc_Array_Contains_ReturnValue) == 0x00006B, "Member 'ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect, CallFunc_BooleanOR_ReturnValue) == 0x00006C, "Member 'ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect, Temp_int_Loop_Counter_Variable) == 0x000070, "Member 'ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect, CallFunc_PlayAnimation_ReturnValue) == 0x000078, "Member 'ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect, CallFunc_Less_IntInt_ReturnValue) == 0x000080, "Member 'ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect, CallFunc_Add_IntInt_ReturnValue_1) == 0x000084, "Member 'ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect, CallFunc_PlayAnimation_ReturnValue_1) == 0x000088, "Member 'ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_ServerBrowser_Mapselect_C_ExecuteUbergraph_ServerBrowser_Mapselect;
 
 // Function ServerBrowser_Mapselect.ServerBrowser_Mapselect_C.GetBackground_0
 // 0x0110 (0x0110 - 0x0000)
@@ -92,10 +66,7 @@ public:
 	struct FSlateBrush                            ReturnValue;                                       // 0x0000(0x0088)(Parm, OutParm, ReturnParm)
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0088(0x0088)()
 };
-static_assert(alignof(ServerBrowser_Mapselect_C_GetBackground_0) == 0x000008, "Wrong alignment on ServerBrowser_Mapselect_C_GetBackground_0");
-static_assert(sizeof(ServerBrowser_Mapselect_C_GetBackground_0) == 0x000110, "Wrong size on ServerBrowser_Mapselect_C_GetBackground_0");
-static_assert(offsetof(ServerBrowser_Mapselect_C_GetBackground_0, ReturnValue) == 0x000000, "Member 'ServerBrowser_Mapselect_C_GetBackground_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(ServerBrowser_Mapselect_C_GetBackground_0, K2Node_MakeStruct_SlateBrush) == 0x000088, "Member 'ServerBrowser_Mapselect_C_GetBackground_0::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
+DUMPER7_ASSERTS_ServerBrowser_Mapselect_C_GetBackground_0;
 
 // Function ServerBrowser_Mapselect.ServerBrowser_Mapselect_C.GetText_0
 // 0x0030 (0x0030 - 0x0000)
@@ -105,10 +76,7 @@ public:
 	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0018(0x0018)()
 };
-static_assert(alignof(ServerBrowser_Mapselect_C_GetText_0) == 0x000008, "Wrong alignment on ServerBrowser_Mapselect_C_GetText_0");
-static_assert(sizeof(ServerBrowser_Mapselect_C_GetText_0) == 0x000030, "Wrong size on ServerBrowser_Mapselect_C_GetText_0");
-static_assert(offsetof(ServerBrowser_Mapselect_C_GetText_0, ReturnValue) == 0x000000, "Member 'ServerBrowser_Mapselect_C_GetText_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(ServerBrowser_Mapselect_C_GetText_0, CallFunc_Conv_StringToText_ReturnValue) == 0x000018, "Member 'ServerBrowser_Mapselect_C_GetText_0::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ServerBrowser_Mapselect_C_GetText_0;
 
 // Function ServerBrowser_Mapselect.ServerBrowser_Mapselect_C.GetText_1
 // 0x0050 (0x0050 - 0x0000)
@@ -120,12 +88,7 @@ public:
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0038(0x0018)()
 };
-static_assert(alignof(ServerBrowser_Mapselect_C_GetText_1) == 0x000008, "Wrong alignment on ServerBrowser_Mapselect_C_GetText_1");
-static_assert(sizeof(ServerBrowser_Mapselect_C_GetText_1) == 0x000050, "Wrong size on ServerBrowser_Mapselect_C_GetText_1");
-static_assert(offsetof(ServerBrowser_Mapselect_C_GetText_1, ReturnValue) == 0x000000, "Member 'ServerBrowser_Mapselect_C_GetText_1::ReturnValue' has a wrong offset!");
-static_assert(offsetof(ServerBrowser_Mapselect_C_GetText_1, CallFunc_Conv_IntToString_ReturnValue) == 0x000018, "Member 'ServerBrowser_Mapselect_C_GetText_1::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ServerBrowser_Mapselect_C_GetText_1, CallFunc_Concat_StrStr_ReturnValue) == 0x000028, "Member 'ServerBrowser_Mapselect_C_GetText_1::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ServerBrowser_Mapselect_C_GetText_1, CallFunc_Conv_StringToText_ReturnValue) == 0x000038, "Member 'ServerBrowser_Mapselect_C_GetText_1::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ServerBrowser_Mapselect_C_GetText_1;
 
 // Function ServerBrowser_Mapselect.ServerBrowser_Mapselect_C.GetVisibility_0
 // 0x0001 (0x0001 - 0x0000)
@@ -134,9 +97,7 @@ struct ServerBrowser_Mapselect_C_GetVisibility_0 final
 public:
 	ESlateVisibility                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ServerBrowser_Mapselect_C_GetVisibility_0) == 0x000001, "Wrong alignment on ServerBrowser_Mapselect_C_GetVisibility_0");
-static_assert(sizeof(ServerBrowser_Mapselect_C_GetVisibility_0) == 0x000001, "Wrong size on ServerBrowser_Mapselect_C_GetVisibility_0");
-static_assert(offsetof(ServerBrowser_Mapselect_C_GetVisibility_0, ReturnValue) == 0x000000, "Member 'ServerBrowser_Mapselect_C_GetVisibility_0::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ServerBrowser_Mapselect_C_GetVisibility_0;
 
 }
 

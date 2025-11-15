@@ -21,9 +21,7 @@ struct Mask_Bucket_C_ExecuteUbergraph_Mask_Bucket final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Mask_Bucket_C_ExecuteUbergraph_Mask_Bucket) == 0x000004, "Wrong alignment on Mask_Bucket_C_ExecuteUbergraph_Mask_Bucket");
-static_assert(sizeof(Mask_Bucket_C_ExecuteUbergraph_Mask_Bucket) == 0x000004, "Wrong size on Mask_Bucket_C_ExecuteUbergraph_Mask_Bucket");
-static_assert(offsetof(Mask_Bucket_C_ExecuteUbergraph_Mask_Bucket, EntryPoint) == 0x000000, "Member 'Mask_Bucket_C_ExecuteUbergraph_Mask_Bucket::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_Mask_Bucket_C_ExecuteUbergraph_Mask_Bucket;
 
 }
 

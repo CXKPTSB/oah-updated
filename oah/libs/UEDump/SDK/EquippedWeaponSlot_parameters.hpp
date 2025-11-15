@@ -109,78 +109,7 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_6;              // 0x0208(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_7;              // 0x0210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot) == 0x000008, "Wrong alignment on EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot");
-static_assert(sizeof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot) == 0x000218, "Wrong size on EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, EntryPoint) == 0x000000, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::EntryPoint' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, Temp_int_Array_Index_Variable) == 0x000004, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, Temp_int_Array_Index_Variable_1) == 0x000010, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, Temp_int_Loop_Counter_Variable_1) == 0x000014, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_Add_IntInt_ReturnValue_1) == 0x000018, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, K2Node_Event_Category_1) == 0x00001C, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::K2Node_Event_Category_1' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, K2Node_Event_ItemInfo) == 0x000020, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::K2Node_Event_ItemInfo' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, K2Node_Event_SalePrice) == 0x000028, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::K2Node_Event_SalePrice' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_GetPlayerController_ReturnValue) == 0x000030, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, K2Node_DynamicCast_AsRobber_Controller) == 0x000038, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::K2Node_DynamicCast_AsRobber_Controller' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, K2Node_DynamicCast_bSuccess) == 0x000040, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, K2Node_CustomEvent_ItemInfo) == 0x000048, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::K2Node_CustomEvent_ItemInfo' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_Find_Equipped_Item_from_Category_Function_Item) == 0x000050, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_Find_Equipped_Item_from_Category_Function_Item' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_GetAllWidgetsWithInterface_FoundWidgets) == 0x000058, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_GetAllWidgetsWithInterface_FoundWidgets' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, Temp_int_Loop_Counter_Variable_2) == 0x000068, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_Array_Length_ReturnValue) == 0x00006C, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_Less_IntInt_ReturnValue) == 0x000070, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_Add_IntInt_ReturnValue_2) == 0x000074, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_GetAllActorsWithInterface_OutActors) == 0x000078, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_GetAllActorsWithInterface_OutActors' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_Array_Get_Item) == 0x000088, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_Array_Length_ReturnValue_1) == 0x000090, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, K2Node_DynamicCast_AsMenu_UIInteraface) == 0x000098, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::K2Node_DynamicCast_AsMenu_UIInteraface' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, K2Node_DynamicCast_bSuccess_1) == 0x0000A8, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_Less_IntInt_ReturnValue_1) == 0x0000A9, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_GetPlayerCharacter_ReturnValue) == 0x0000B0, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_GetPlayerCharacter_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_GetAllWidgetsWithInterface_FoundWidgets_1) == 0x0000B8, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_GetAllWidgetsWithInterface_FoundWidgets_1' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, K2Node_DynamicCast_AsMain_Menu_Player) == 0x0000C8, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::K2Node_DynamicCast_AsMain_Menu_Player' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, K2Node_DynamicCast_bSuccess_2) == 0x0000D0, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_Array_Get_Item_1) == 0x0000D8, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, K2Node_DynamicCast_AsMenu_UIInteraface_1) == 0x0000E0, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::K2Node_DynamicCast_AsMenu_UIInteraface_1' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, K2Node_DynamicCast_bSuccess_3) == 0x0000F0, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_Array_Length_ReturnValue_2) == 0x0000F4, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_Less_IntInt_ReturnValue_2) == 0x0000F8, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_GetActorOfClass_ReturnValue) == 0x000100, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_GetActorOfClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_FindGun_Gun_actor) == 0x000108, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_FindGun_Gun_actor' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_FindGun_Child) == 0x000110, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_FindGun_Child' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_Create_ReturnValue) == 0x000118, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_GetActorOfClass_ReturnValue_1) == 0x000120, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_GetActorOfClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_FindGun_Gun_actor_1) == 0x000128, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_FindGun_Gun_actor_1' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_FindGun_Child_1) == 0x000130, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_FindGun_Child_1' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_GetOwningPlayer_ReturnValue) == 0x000138, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, Temp_int_Array_Index_Variable_2) == 0x000140, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, K2Node_Event_Category) == 0x000144, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::K2Node_Event_Category' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_Array_Get_Item_2) == 0x000148, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, K2Node_DynamicCast_AsMenu_UIInteraface_2) == 0x000150, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::K2Node_DynamicCast_AsMenu_UIInteraface_2' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, K2Node_DynamicCast_bSuccess_4) == 0x000160, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_PlayAnimation_ReturnValue) == 0x000168, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000170, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_PlayAnimation_ReturnValue_1) == 0x000178, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_GetActorOfClass_ReturnValue_2) == 0x000180, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_GetActorOfClass_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_FindGun_Gun_actor_2) == 0x000188, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_FindGun_Gun_actor_2' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_FindGun_Child_2) == 0x000190, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_FindGun_Child_2' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_IsValid_ReturnValue) == 0x000198, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_GetActorBounds_Origin) == 0x00019C, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_GetActorBounds_Origin' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_GetActorBounds_BoxExtent) == 0x0001A8, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_GetActorBounds_BoxExtent' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_VSize_ReturnValue) == 0x0001B4, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_VSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0001B8, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_IsValid_ReturnValue_1) == 0x0001BC, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_GetActorBounds_Origin_1) == 0x0001C0, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_GetActorBounds_Origin_1' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_GetActorBounds_BoxExtent_1) == 0x0001CC, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_GetActorBounds_BoxExtent_1' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_ProjectWorldLocationToWidgetPosition_ScreenPosition) == 0x0001D8, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_ProjectWorldLocationToWidgetPosition_ScreenPosition' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_ProjectWorldLocationToWidgetPosition_ReturnValue) == 0x0001E0, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_ProjectWorldLocationToWidgetPosition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_PlayAnimation_ReturnValue_2) == 0x0001E8, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_PlayAnimation_ReturnValue_3) == 0x0001F0, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_PlayAnimation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_PlayAnimation_ReturnValue_4) == 0x0001F8, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_PlayAnimation_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_PlayAnimation_ReturnValue_5) == 0x000200, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_PlayAnimation_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_PlayAnimation_ReturnValue_6) == 0x000208, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_PlayAnimation_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot, CallFunc_PlayAnimation_ReturnValue_7) == 0x000210, "Member 'EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot::CallFunc_PlayAnimation_ReturnValue_7' has a wrong offset!");
+DUMPER7_ASSERTS_EquippedWeaponSlot_C_ExecuteUbergraph_EquippedWeaponSlot;
 
 // Function EquippedWeaponSlot.EquippedWeaponSlot_C.DragItemFromCategory
 // 0x0001 (0x0001 - 0x0000)
@@ -189,9 +118,7 @@ struct EquippedWeaponSlot_C_DragItemFromCategory final
 public:
 	EShopItemCategory                             Category_0;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EquippedWeaponSlot_C_DragItemFromCategory) == 0x000001, "Wrong alignment on EquippedWeaponSlot_C_DragItemFromCategory");
-static_assert(sizeof(EquippedWeaponSlot_C_DragItemFromCategory) == 0x000001, "Wrong size on EquippedWeaponSlot_C_DragItemFromCategory");
-static_assert(offsetof(EquippedWeaponSlot_C_DragItemFromCategory, Category_0) == 0x000000, "Member 'EquippedWeaponSlot_C_DragItemFromCategory::Category_0' has a wrong offset!");
+DUMPER7_ASSERTS_EquippedWeaponSlot_C_DragItemFromCategory;
 
 // Function EquippedWeaponSlot.EquippedWeaponSlot_C.SetNewItem
 // 0x0008 (0x0008 - 0x0000)
@@ -200,9 +127,7 @@ struct EquippedWeaponSlot_C_SetNewItem final
 public:
 	class UClass*                                 ItemInfo;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EquippedWeaponSlot_C_SetNewItem) == 0x000008, "Wrong alignment on EquippedWeaponSlot_C_SetNewItem");
-static_assert(sizeof(EquippedWeaponSlot_C_SetNewItem) == 0x000008, "Wrong size on EquippedWeaponSlot_C_SetNewItem");
-static_assert(offsetof(EquippedWeaponSlot_C_SetNewItem, ItemInfo) == 0x000000, "Member 'EquippedWeaponSlot_C_SetNewItem::ItemInfo' has a wrong offset!");
+DUMPER7_ASSERTS_EquippedWeaponSlot_C_SetNewItem;
 
 // Function EquippedWeaponSlot.EquippedWeaponSlot_C.PreviewItem
 // 0x0010 (0x0010 - 0x0000)
@@ -212,10 +137,7 @@ public:
 	class UClass*                                 ItemInfo;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         SalePrice;                                         // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EquippedWeaponSlot_C_PreviewItem) == 0x000008, "Wrong alignment on EquippedWeaponSlot_C_PreviewItem");
-static_assert(sizeof(EquippedWeaponSlot_C_PreviewItem) == 0x000010, "Wrong size on EquippedWeaponSlot_C_PreviewItem");
-static_assert(offsetof(EquippedWeaponSlot_C_PreviewItem, ItemInfo) == 0x000000, "Member 'EquippedWeaponSlot_C_PreviewItem::ItemInfo' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_PreviewItem, SalePrice) == 0x000008, "Member 'EquippedWeaponSlot_C_PreviewItem::SalePrice' has a wrong offset!");
+DUMPER7_ASSERTS_EquippedWeaponSlot_C_PreviewItem;
 
 // Function EquippedWeaponSlot.EquippedWeaponSlot_C.ChangeCategory
 // 0x0001 (0x0001 - 0x0000)
@@ -224,9 +146,7 @@ struct EquippedWeaponSlot_C_ChangeCategory final
 public:
 	EShopItemCategory                             Category_0;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EquippedWeaponSlot_C_ChangeCategory) == 0x000001, "Wrong alignment on EquippedWeaponSlot_C_ChangeCategory");
-static_assert(sizeof(EquippedWeaponSlot_C_ChangeCategory) == 0x000001, "Wrong size on EquippedWeaponSlot_C_ChangeCategory");
-static_assert(offsetof(EquippedWeaponSlot_C_ChangeCategory, Category_0) == 0x000000, "Member 'EquippedWeaponSlot_C_ChangeCategory::Category_0' has a wrong offset!");
+DUMPER7_ASSERTS_EquippedWeaponSlot_C_ChangeCategory;
 
 // Function EquippedWeaponSlot.EquippedWeaponSlot_C.OnDragOver
 // 0x00B8 (0x00B8 - 0x0000)
@@ -238,12 +158,7 @@ public:
 	class UDragDropOperation*                     Operation;                                         // 0x00A8(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x00B0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(EquippedWeaponSlot_C_OnDragOver) == 0x000008, "Wrong alignment on EquippedWeaponSlot_C_OnDragOver");
-static_assert(sizeof(EquippedWeaponSlot_C_OnDragOver) == 0x0000B8, "Wrong size on EquippedWeaponSlot_C_OnDragOver");
-static_assert(offsetof(EquippedWeaponSlot_C_OnDragOver, MyGeometry) == 0x000000, "Member 'EquippedWeaponSlot_C_OnDragOver::MyGeometry' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_OnDragOver, PointerEvent) == 0x000038, "Member 'EquippedWeaponSlot_C_OnDragOver::PointerEvent' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_OnDragOver, Operation) == 0x0000A8, "Member 'EquippedWeaponSlot_C_OnDragOver::Operation' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_OnDragOver, ReturnValue) == 0x0000B0, "Member 'EquippedWeaponSlot_C_OnDragOver::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_EquippedWeaponSlot_C_OnDragOver;
 
 // Function EquippedWeaponSlot.EquippedWeaponSlot_C.OnDrop
 // 0x00C8 (0x00C8 - 0x0000)
@@ -259,15 +174,7 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(EquippedWeaponSlot_C_OnDrop) == 0x000008, "Wrong alignment on EquippedWeaponSlot_C_OnDrop");
-static_assert(sizeof(EquippedWeaponSlot_C_OnDrop) == 0x0000C8, "Wrong size on EquippedWeaponSlot_C_OnDrop");
-static_assert(offsetof(EquippedWeaponSlot_C_OnDrop, MyGeometry) == 0x000000, "Member 'EquippedWeaponSlot_C_OnDrop::MyGeometry' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_OnDrop, PointerEvent) == 0x000038, "Member 'EquippedWeaponSlot_C_OnDrop::PointerEvent' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_OnDrop, Operation) == 0x0000A8, "Member 'EquippedWeaponSlot_C_OnDrop::Operation' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_OnDrop, ReturnValue) == 0x0000B0, "Member 'EquippedWeaponSlot_C_OnDrop::ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_OnDrop, K2Node_DynamicCast_AsInventory_Item) == 0x0000B8, "Member 'EquippedWeaponSlot_C_OnDrop::K2Node_DynamicCast_AsInventory_Item' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_OnDrop, K2Node_DynamicCast_bSuccess) == 0x0000C0, "Member 'EquippedWeaponSlot_C_OnDrop::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(EquippedWeaponSlot_C_OnDrop, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000C1, "Member 'EquippedWeaponSlot_C_OnDrop::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_EquippedWeaponSlot_C_OnDrop;
 
 // Function EquippedWeaponSlot.EquippedWeaponSlot_C.UpdateItemInfo
 // 0x0018 (0x0018 - 0x0000)
@@ -276,9 +183,7 @@ struct EquippedWeaponSlot_C_UpdateItemInfo final
 public:
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0000(0x0018)()
 };
-static_assert(alignof(EquippedWeaponSlot_C_UpdateItemInfo) == 0x000008, "Wrong alignment on EquippedWeaponSlot_C_UpdateItemInfo");
-static_assert(sizeof(EquippedWeaponSlot_C_UpdateItemInfo) == 0x000018, "Wrong size on EquippedWeaponSlot_C_UpdateItemInfo");
-static_assert(offsetof(EquippedWeaponSlot_C_UpdateItemInfo, CallFunc_Conv_StringToText_ReturnValue) == 0x000000, "Member 'EquippedWeaponSlot_C_UpdateItemInfo::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_EquippedWeaponSlot_C_UpdateItemInfo;
 
 }
 

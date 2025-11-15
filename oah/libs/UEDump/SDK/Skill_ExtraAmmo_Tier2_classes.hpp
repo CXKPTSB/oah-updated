@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Skill_ExtraAmmo_Tier2_C">();
+		BP_STATIC_CLASS_IMPL("Skill_ExtraAmmo_Tier2_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Skill_ExtraAmmo_Tier2_C")
 	}
 	static class USkill_ExtraAmmo_Tier2_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USkill_ExtraAmmo_Tier2_C>();
 	}
 };
-static_assert(alignof(USkill_ExtraAmmo_Tier2_C) == 0x000008, "Wrong alignment on USkill_ExtraAmmo_Tier2_C");
-static_assert(sizeof(USkill_ExtraAmmo_Tier2_C) == 0x0000D8, "Wrong size on USkill_ExtraAmmo_Tier2_C");
-static_assert(offsetof(USkill_ExtraAmmo_Tier2_C, UberGraphFrame_Skill_ExtraAmmo_Tier2_C) == 0x0000D0, "Member 'USkill_ExtraAmmo_Tier2_C::UberGraphFrame_Skill_ExtraAmmo_Tier2_C' has a wrong offset!");
+DUMPER7_ASSERTS_USkill_ExtraAmmo_Tier2_C;
 
 }
 

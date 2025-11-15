@@ -27,17 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MK47Scope_PrecisionReddot_C">();
+		BP_STATIC_CLASS_IMPL("MK47Scope_PrecisionReddot_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MK47Scope_PrecisionReddot_C")
 	}
 	static class AMK47Scope_PrecisionReddot_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMK47Scope_PrecisionReddot_C>();
 	}
 };
-static_assert(alignof(AMK47Scope_PrecisionReddot_C) == 0x000008, "Wrong alignment on AMK47Scope_PrecisionReddot_C");
-static_assert(sizeof(AMK47Scope_PrecisionReddot_C) == 0x000280, "Wrong size on AMK47Scope_PrecisionReddot_C");
-static_assert(offsetof(AMK47Scope_PrecisionReddot_C, SM_Wep_Mod_B_Rail_01) == 0x000270, "Member 'AMK47Scope_PrecisionReddot_C::SM_Wep_Mod_B_Rail_01' has a wrong offset!");
-static_assert(offsetof(AMK47Scope_PrecisionReddot_C, Plane) == 0x000278, "Member 'AMK47Scope_PrecisionReddot_C::Plane' has a wrong offset!");
+DUMPER7_ASSERTS_AMK47Scope_PrecisionReddot_C;
 
 }
 

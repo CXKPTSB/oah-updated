@@ -31,20 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Setup_base_C">();
+		BP_STATIC_CLASS_IMPL("Setup_base_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Setup_base_C")
 	}
 	static class ASetup_base_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASetup_base_C>();
 	}
 };
-static_assert(alignof(ASetup_base_C) == 0x000008, "Wrong alignment on ASetup_base_C");
-static_assert(sizeof(ASetup_base_C) == 0x0002A0, "Wrong size on ASetup_base_C");
-static_assert(offsetof(ASetup_base_C, SetupOwnerMap) == 0x000270, "Member 'ASetup_base_C::SetupOwnerMap' has a wrong offset!");
-static_assert(offsetof(ASetup_base_C, PreviousSetup) == 0x000278, "Member 'ASetup_base_C::PreviousSetup' has a wrong offset!");
-static_assert(offsetof(ASetup_base_C, Estimated_added_value) == 0x000280, "Member 'ASetup_base_C::Estimated_added_value' has a wrong offset!");
-static_assert(offsetof(ASetup_base_C, SetupMapBP) == 0x000288, "Member 'ASetup_base_C::SetupMapBP' has a wrong offset!");
-static_assert(offsetof(ASetup_base_C, SetupScreenshots) == 0x000290, "Member 'ASetup_base_C::SetupScreenshots' has a wrong offset!");
+DUMPER7_ASSERTS_ASetup_base_C;
 
 }
 

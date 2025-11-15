@@ -36,24 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AttachmentBase_C">();
+		BP_STATIC_CLASS_IMPL("AttachmentBase_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AttachmentBase_C")
 	}
 	static class AAttachmentBase_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAttachmentBase_C>();
 	}
 };
-static_assert(alignof(AAttachmentBase_C) == 0x000008, "Wrong alignment on AAttachmentBase_C");
-static_assert(sizeof(AAttachmentBase_C) == 0x000250, "Wrong size on AAttachmentBase_C");
-static_assert(offsetof(AAttachmentBase_C, AttachmentMesh) == 0x000220, "Member 'AAttachmentBase_C::AttachmentMesh' has a wrong offset!");
-static_assert(offsetof(AAttachmentBase_C, DefaultSceneRoot) == 0x000228, "Member 'AAttachmentBase_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AAttachmentBase_C, Category) == 0x000230, "Member 'AAttachmentBase_C::Category' has a wrong offset!");
-static_assert(offsetof(AAttachmentBase_C, ZoomFOVIn_) == 0x000234, "Member 'AAttachmentBase_C::ZoomFOVIn_' has a wrong offset!");
-static_assert(offsetof(AAttachmentBase_C, RecoilChange_) == 0x000238, "Member 'AAttachmentBase_C::RecoilChange_' has a wrong offset!");
-static_assert(offsetof(AAttachmentBase_C, AccuracyChange_) == 0x00023C, "Member 'AAttachmentBase_C::AccuracyChange_' has a wrong offset!");
-static_assert(offsetof(AAttachmentBase_C, BulletsChangeAmount) == 0x000240, "Member 'AAttachmentBase_C::BulletsChangeAmount' has a wrong offset!");
-static_assert(offsetof(AAttachmentBase_C, ReloadTimeChange_) == 0x000244, "Member 'AAttachmentBase_C::ReloadTimeChange_' has a wrong offset!");
-static_assert(offsetof(AAttachmentBase_C, DamageChange_) == 0x000248, "Member 'AAttachmentBase_C::DamageChange_' has a wrong offset!");
+DUMPER7_ASSERTS_AAttachmentBase_C;
 
 }
 

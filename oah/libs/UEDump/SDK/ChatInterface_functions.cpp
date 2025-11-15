@@ -24,9 +24,9 @@ void IChatInterface_C::NewChat()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ChatInterface_C", "NewChat");
+		Func = AsUObject()->Class->GetFunction("ChatInterface_C", "NewChat");
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 }

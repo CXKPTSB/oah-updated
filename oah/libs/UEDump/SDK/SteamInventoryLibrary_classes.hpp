@@ -32,15 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SteamInventoryLibrary_C">();
+		BP_STATIC_CLASS_IMPL("SteamInventoryLibrary_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamInventoryLibrary_C")
 	}
 	static class USteamInventoryLibrary_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamInventoryLibrary_C>();
 	}
 };
-static_assert(alignof(USteamInventoryLibrary_C) == 0x000008, "Wrong alignment on USteamInventoryLibrary_C");
-static_assert(sizeof(USteamInventoryLibrary_C) == 0x000028, "Wrong size on USteamInventoryLibrary_C");
+DUMPER7_ASSERTS_USteamInventoryLibrary_C;
 
 }
 

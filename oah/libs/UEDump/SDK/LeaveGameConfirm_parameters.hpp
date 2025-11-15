@@ -21,9 +21,7 @@ struct LeaveGameConfirm_C_ExecuteUbergraph_LeaveGameConfirm final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LeaveGameConfirm_C_ExecuteUbergraph_LeaveGameConfirm) == 0x000004, "Wrong alignment on LeaveGameConfirm_C_ExecuteUbergraph_LeaveGameConfirm");
-static_assert(sizeof(LeaveGameConfirm_C_ExecuteUbergraph_LeaveGameConfirm) == 0x000004, "Wrong size on LeaveGameConfirm_C_ExecuteUbergraph_LeaveGameConfirm");
-static_assert(offsetof(LeaveGameConfirm_C_ExecuteUbergraph_LeaveGameConfirm, EntryPoint) == 0x000000, "Member 'LeaveGameConfirm_C_ExecuteUbergraph_LeaveGameConfirm::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_LeaveGameConfirm_C_ExecuteUbergraph_LeaveGameConfirm;
 
 }
 

@@ -17,8 +17,8 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass ControllerInterface.ControllerInterface_C
-// 0x0000 (0x0028 - 0x0028)
-class IControllerInterface_C final : public IInterface
+// 0x0000 (0x0000 - 0x0000)
+class IControllerInterface_C final
 {
 public:
 	void OnUpdateAllSteamInventory();
@@ -30,15 +30,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ControllerInterface_C">();
+		BP_STATIC_CLASS_IMPL("ControllerInterface_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ControllerInterface_C")
 	}
 	static class IControllerInterface_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<IControllerInterface_C>();
 	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
 };
-static_assert(alignof(IControllerInterface_C) == 0x000008, "Wrong alignment on IControllerInterface_C");
-static_assert(sizeof(IControllerInterface_C) == 0x000028, "Wrong size on IControllerInterface_C");
+DUMPER7_ASSERTS_IControllerInterface_C;
 
 }
 

@@ -25,11 +25,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GuardPatrolPoint_C_ExecuteUbergraph_GuardPatrolPoint) == 0x000004, "Wrong alignment on GuardPatrolPoint_C_ExecuteUbergraph_GuardPatrolPoint");
-static_assert(sizeof(GuardPatrolPoint_C_ExecuteUbergraph_GuardPatrolPoint) == 0x000008, "Wrong size on GuardPatrolPoint_C_ExecuteUbergraph_GuardPatrolPoint");
-static_assert(offsetof(GuardPatrolPoint_C_ExecuteUbergraph_GuardPatrolPoint, EntryPoint) == 0x000000, "Member 'GuardPatrolPoint_C_ExecuteUbergraph_GuardPatrolPoint::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GuardPatrolPoint_C_ExecuteUbergraph_GuardPatrolPoint, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'GuardPatrolPoint_C_ExecuteUbergraph_GuardPatrolPoint::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GuardPatrolPoint_C_ExecuteUbergraph_GuardPatrolPoint, CallFunc_IsValid_ReturnValue_1) == 0x000005, "Member 'GuardPatrolPoint_C_ExecuteUbergraph_GuardPatrolPoint::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_GuardPatrolPoint_C_ExecuteUbergraph_GuardPatrolPoint;
 
 // Function GuardPatrolPoint.GuardPatrolPoint_C.UserConstructionScript
 // 0x0098 (0x0098 - 0x0000)
@@ -63,29 +59,7 @@ public:
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue_1;    // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0091(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GuardPatrolPoint_C_UserConstructionScript) == 0x000008, "Wrong alignment on GuardPatrolPoint_C_UserConstructionScript");
-static_assert(sizeof(GuardPatrolPoint_C_UserConstructionScript) == 0x000098, "Wrong size on GuardPatrolPoint_C_UserConstructionScript");
-static_assert(offsetof(GuardPatrolPoint_C_UserConstructionScript, patrolArray) == 0x000000, "Member 'GuardPatrolPoint_C_UserConstructionScript::patrolArray' has a wrong offset!");
-static_assert(offsetof(GuardPatrolPoint_C_UserConstructionScript, Temp_int_Array_Index_Variable) == 0x000010, "Member 'GuardPatrolPoint_C_UserConstructionScript::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(GuardPatrolPoint_C_UserConstructionScript, Temp_int_Loop_Counter_Variable) == 0x000014, "Member 'GuardPatrolPoint_C_UserConstructionScript::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(GuardPatrolPoint_C_UserConstructionScript, CallFunc_Add_IntInt_ReturnValue) == 0x000018, "Member 'GuardPatrolPoint_C_UserConstructionScript::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GuardPatrolPoint_C_UserConstructionScript, CallFunc_K2_GetComponentRotation_ReturnValue) == 0x00001C, "Member 'GuardPatrolPoint_C_UserConstructionScript::CallFunc_K2_GetComponentRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GuardPatrolPoint_C_UserConstructionScript, CallFunc_RandomFloatInRangeFromStream_ReturnValue) == 0x000028, "Member 'GuardPatrolPoint_C_UserConstructionScript::CallFunc_RandomFloatInRangeFromStream_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GuardPatrolPoint_C_UserConstructionScript, CallFunc_RandomFloatInRangeFromStream_ReturnValue_1) == 0x00002C, "Member 'GuardPatrolPoint_C_UserConstructionScript::CallFunc_RandomFloatInRangeFromStream_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GuardPatrolPoint_C_UserConstructionScript, CallFunc_RandomFloatInRangeFromStream_ReturnValue_2) == 0x000030, "Member 'GuardPatrolPoint_C_UserConstructionScript::CallFunc_RandomFloatInRangeFromStream_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(GuardPatrolPoint_C_UserConstructionScript, CallFunc_MakeColor_ReturnValue) == 0x000034, "Member 'GuardPatrolPoint_C_UserConstructionScript::CallFunc_MakeColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GuardPatrolPoint_C_UserConstructionScript, CallFunc_Array_Get_Item) == 0x000048, "Member 'GuardPatrolPoint_C_UserConstructionScript::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(GuardPatrolPoint_C_UserConstructionScript, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000050, "Member 'GuardPatrolPoint_C_UserConstructionScript::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GuardPatrolPoint_C_UserConstructionScript, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000058, "Member 'GuardPatrolPoint_C_UserConstructionScript::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GuardPatrolPoint_C_UserConstructionScript, CallFunc_Array_Length_ReturnValue) == 0x00005C, "Member 'GuardPatrolPoint_C_UserConstructionScript::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GuardPatrolPoint_C_UserConstructionScript, CallFunc_Greater_IntInt_ReturnValue) == 0x000060, "Member 'GuardPatrolPoint_C_UserConstructionScript::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GuardPatrolPoint_C_UserConstructionScript, CallFunc_GetAllActorsOfClass_OutActors) == 0x000068, "Member 'GuardPatrolPoint_C_UserConstructionScript::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(GuardPatrolPoint_C_UserConstructionScript, CallFunc_Array_Length_ReturnValue_1) == 0x000078, "Member 'GuardPatrolPoint_C_UserConstructionScript::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GuardPatrolPoint_C_UserConstructionScript, CallFunc_Array_Get_Item_1) == 0x000080, "Member 'GuardPatrolPoint_C_UserConstructionScript::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(GuardPatrolPoint_C_UserConstructionScript, CallFunc_Less_IntInt_ReturnValue) == 0x000088, "Member 'GuardPatrolPoint_C_UserConstructionScript::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GuardPatrolPoint_C_UserConstructionScript, CallFunc_Array_Add_ReturnValue) == 0x00008C, "Member 'GuardPatrolPoint_C_UserConstructionScript::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GuardPatrolPoint_C_UserConstructionScript, CallFunc_EqualEqual_ObjectObject_ReturnValue_1) == 0x000090, "Member 'GuardPatrolPoint_C_UserConstructionScript::CallFunc_EqualEqual_ObjectObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GuardPatrolPoint_C_UserConstructionScript, CallFunc_IsValid_ReturnValue) == 0x000091, "Member 'GuardPatrolPoint_C_UserConstructionScript::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GuardPatrolPoint_C_UserConstructionScript;
 
 }
 

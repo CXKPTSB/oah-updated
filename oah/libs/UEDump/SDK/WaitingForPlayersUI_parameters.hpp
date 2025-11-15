@@ -33,18 +33,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WaitingForPlayersUI_C_ExecuteUbergraph_WaitingForPlayersUI) == 0x000008, "Wrong alignment on WaitingForPlayersUI_C_ExecuteUbergraph_WaitingForPlayersUI");
-static_assert(sizeof(WaitingForPlayersUI_C_ExecuteUbergraph_WaitingForPlayersUI) == 0x000050, "Wrong size on WaitingForPlayersUI_C_ExecuteUbergraph_WaitingForPlayersUI");
-static_assert(offsetof(WaitingForPlayersUI_C_ExecuteUbergraph_WaitingForPlayersUI, EntryPoint) == 0x000000, "Member 'WaitingForPlayersUI_C_ExecuteUbergraph_WaitingForPlayersUI::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WaitingForPlayersUI_C_ExecuteUbergraph_WaitingForPlayersUI, CallFunc_GetOwningPlayerPawn_ReturnValue) == 0x000008, "Member 'WaitingForPlayersUI_C_ExecuteUbergraph_WaitingForPlayersUI::CallFunc_GetOwningPlayerPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WaitingForPlayersUI_C_ExecuteUbergraph_WaitingForPlayersUI, K2Node_DynamicCast_AsPlayer_Character) == 0x000010, "Member 'WaitingForPlayersUI_C_ExecuteUbergraph_WaitingForPlayersUI::K2Node_DynamicCast_AsPlayer_Character' has a wrong offset!");
-static_assert(offsetof(WaitingForPlayersUI_C_ExecuteUbergraph_WaitingForPlayersUI, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'WaitingForPlayersUI_C_ExecuteUbergraph_WaitingForPlayersUI::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WaitingForPlayersUI_C_ExecuteUbergraph_WaitingForPlayersUI, CallFunc_GetGameInstance_ReturnValue) == 0x000020, "Member 'WaitingForPlayersUI_C_ExecuteUbergraph_WaitingForPlayersUI::CallFunc_GetGameInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WaitingForPlayersUI_C_ExecuteUbergraph_WaitingForPlayersUI, K2Node_DynamicCast_AsRobber_GI) == 0x000028, "Member 'WaitingForPlayersUI_C_ExecuteUbergraph_WaitingForPlayersUI::K2Node_DynamicCast_AsRobber_GI' has a wrong offset!");
-static_assert(offsetof(WaitingForPlayersUI_C_ExecuteUbergraph_WaitingForPlayersUI, K2Node_DynamicCast_bSuccess_1) == 0x000030, "Member 'WaitingForPlayersUI_C_ExecuteUbergraph_WaitingForPlayersUI::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WaitingForPlayersUI_C_ExecuteUbergraph_WaitingForPlayersUI, CallFunc_GetAllActorsOfClass_OutActors) == 0x000038, "Member 'WaitingForPlayersUI_C_ExecuteUbergraph_WaitingForPlayersUI::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(WaitingForPlayersUI_C_ExecuteUbergraph_WaitingForPlayersUI, CallFunc_Array_Length_ReturnValue) == 0x000048, "Member 'WaitingForPlayersUI_C_ExecuteUbergraph_WaitingForPlayersUI::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WaitingForPlayersUI_C_ExecuteUbergraph_WaitingForPlayersUI, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x00004C, "Member 'WaitingForPlayersUI_C_ExecuteUbergraph_WaitingForPlayersUI::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WaitingForPlayersUI_C_ExecuteUbergraph_WaitingForPlayersUI;
 
 }
 

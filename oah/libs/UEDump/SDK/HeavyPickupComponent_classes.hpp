@@ -39,21 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HeavyPickupComponent_C">();
+		BP_STATIC_CLASS_IMPL("HeavyPickupComponent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HeavyPickupComponent_C")
 	}
 	static class UHeavyPickupComponent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHeavyPickupComponent_C>();
 	}
 };
-static_assert(alignof(UHeavyPickupComponent_C) == 0x000008, "Wrong alignment on UHeavyPickupComponent_C");
-static_assert(sizeof(UHeavyPickupComponent_C) == 0x0000E8, "Wrong size on UHeavyPickupComponent_C");
-static_assert(offsetof(UHeavyPickupComponent_C, UberGraphFrame) == 0x0000B0, "Member 'UHeavyPickupComponent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UHeavyPickupComponent_C, NPC) == 0x0000B8, "Member 'UHeavyPickupComponent_C::NPC' has a wrong offset!");
-static_assert(offsetof(UHeavyPickupComponent_C, PickedUp) == 0x0000C0, "Member 'UHeavyPickupComponent_C::PickedUp' has a wrong offset!");
-static_assert(offsetof(UHeavyPickupComponent_C, Dropped) == 0x0000D0, "Member 'UHeavyPickupComponent_C::Dropped' has a wrong offset!");
-static_assert(offsetof(UHeavyPickupComponent_C, ShouldCrouch_) == 0x0000E0, "Member 'UHeavyPickupComponent_C::ShouldCrouch_' has a wrong offset!");
-static_assert(offsetof(UHeavyPickupComponent_C, MaxPullStrength) == 0x0000E4, "Member 'UHeavyPickupComponent_C::MaxPullStrength' has a wrong offset!");
+DUMPER7_ASSERTS_UHeavyPickupComponent_C;
 
 }
 

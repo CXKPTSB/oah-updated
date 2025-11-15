@@ -32,17 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Mask_Bucket_C">();
+		BP_STATIC_CLASS_IMPL("Mask_Bucket_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Mask_Bucket_C")
 	}
 	static class AMask_Bucket_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMask_Bucket_C>();
 	}
 };
-static_assert(alignof(AMask_Bucket_C) == 0x000008, "Wrong alignment on AMask_Bucket_C");
-static_assert(sizeof(AMask_Bucket_C) == 0x000240, "Wrong size on AMask_Bucket_C");
-static_assert(offsetof(AMask_Bucket_C, UberGraphFrame) == 0x000230, "Member 'AMask_Bucket_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AMask_Bucket_C, Mask_Bucket_Hank) == 0x000238, "Member 'AMask_Bucket_C::Mask_Bucket_Hank' has a wrong offset!");
+DUMPER7_ASSERTS_AMask_Bucket_C;
 
 }
 

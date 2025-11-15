@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "GunBase_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MS950_C">();
+		BP_STATIC_CLASS_IMPL("MS950_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MS950_C")
 	}
 	static class AMS950_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMS950_C>();
 	}
 };
-static_assert(alignof(AMS950_C) == 0x000008, "Wrong alignment on AMS950_C");
-static_assert(sizeof(AMS950_C) == 0x000338, "Wrong size on AMS950_C");
-static_assert(offsetof(AMS950_C, UberGraphFrame_MS950_C) == 0x000330, "Member 'AMS950_C::UberGraphFrame_MS950_C' has a wrong offset!");
+DUMPER7_ASSERTS_AMS950_C;
 
 }
 

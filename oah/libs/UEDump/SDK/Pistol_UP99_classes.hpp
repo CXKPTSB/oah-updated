@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "GunBase_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -32,17 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Pistol_UP99_C">();
+		BP_STATIC_CLASS_IMPL("Pistol_UP99_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Pistol_UP99_C")
 	}
 	static class APistol_UP99_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APistol_UP99_C>();
 	}
 };
-static_assert(alignof(APistol_UP99_C) == 0x000008, "Wrong alignment on APistol_UP99_C");
-static_assert(sizeof(APistol_UP99_C) == 0x000340, "Wrong size on APistol_UP99_C");
-static_assert(offsetof(APistol_UP99_C, UberGraphFrame_Pistol_UP99_C) == 0x000330, "Member 'APistol_UP99_C::UberGraphFrame_Pistol_UP99_C' has a wrong offset!");
-static_assert(offsetof(APistol_UP99_C, CollisionBox1) == 0x000338, "Member 'APistol_UP99_C::CollisionBox1' has a wrong offset!");
+DUMPER7_ASSERTS_APistol_UP99_C;
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "ShopItemCategory_structs.hpp"
 #include "Engine_structs.hpp"
+#include "ShopItemCategory_structs.hpp"
 #include "UMG_classes.hpp"
 #include "RarityNum_structs.hpp"
 
@@ -59,26 +59,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EquippedInventorySlot_C">();
+		BP_STATIC_CLASS_IMPL("EquippedInventorySlot_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EquippedInventorySlot_C")
 	}
 	static class UEquippedInventorySlot_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEquippedInventorySlot_C>();
 	}
 };
-static_assert(alignof(UEquippedInventorySlot_C) == 0x000008, "Wrong alignment on UEquippedInventorySlot_C");
-static_assert(sizeof(UEquippedInventorySlot_C) == 0x0002C0, "Wrong size on UEquippedInventorySlot_C");
-static_assert(offsetof(UEquippedInventorySlot_C, UberGraphFrame) == 0x000260, "Member 'UEquippedInventorySlot_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UEquippedInventorySlot_C, HighlightAnim) == 0x000268, "Member 'UEquippedInventorySlot_C::HighlightAnim' has a wrong offset!");
-static_assert(offsetof(UEquippedInventorySlot_C, Border_85) == 0x000270, "Member 'UEquippedInventorySlot_C::Border_85' has a wrong offset!");
-static_assert(offsetof(UEquippedInventorySlot_C, Image_101) == 0x000278, "Member 'UEquippedInventorySlot_C::Image_101' has a wrong offset!");
-static_assert(offsetof(UEquippedInventorySlot_C, ItemName) == 0x000280, "Member 'UEquippedInventorySlot_C::ItemName' has a wrong offset!");
-static_assert(offsetof(UEquippedInventorySlot_C, Rarity) == 0x000288, "Member 'UEquippedInventorySlot_C::Rarity' has a wrong offset!");
-static_assert(offsetof(UEquippedInventorySlot_C, Categories) == 0x000290, "Member 'UEquippedInventorySlot_C::Categories' has a wrong offset!");
-static_assert(offsetof(UEquippedInventorySlot_C, IndexReference) == 0x0002A0, "Member 'UEquippedInventorySlot_C::IndexReference' has a wrong offset!");
-static_assert(offsetof(UEquippedInventorySlot_C, As_Robber_Controller) == 0x0002A8, "Member 'UEquippedInventorySlot_C::As_Robber_Controller' has a wrong offset!");
-static_assert(offsetof(UEquippedInventorySlot_C, Item) == 0x0002B0, "Member 'UEquippedInventorySlot_C::Item' has a wrong offset!");
-static_assert(offsetof(UEquippedInventorySlot_C, Selected_) == 0x0002B8, "Member 'UEquippedInventorySlot_C::Selected_' has a wrong offset!");
+DUMPER7_ASSERTS_UEquippedInventorySlot_C;
 
 }
 

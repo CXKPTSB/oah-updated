@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "PhysicsCore_structs.hpp"
 #include "SettingsStruct_structs.hpp"
+#include "PhysicsCore_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "CoreUObject_structs.hpp"
 #include "AttachmentArrayStructure_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "SteamCore_structs.hpp"
 
 
@@ -78,7 +78,7 @@ public:
 	bool                                          Unarmed_;                                          // 0x0688(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_689[0x7];                                      // 0x0689(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 HoldingActor;                                      // 0x0690(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TMulticastInlineDelegate<void(const struct FLinearColor& Color)> Hitmarker;                                         // 0x0698(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(const struct FLinearColor& Color)> Hitmarker;                      // 0x0698(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	int32                                         Health;                                            // 0x06A8(0x0004)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Loaded;                                            // 0x06AC(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          Downed_;                                           // 0x06AD(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -110,7 +110,7 @@ public:
 	bool                                          AllConnected_;                                     // 0x074B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          DragginBody_;                                      // 0x074C(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_74D[0x3];                                      // 0x074D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(class ARestrictedAreaVolume_C* Area, bool Exit_)> WarningAreaDisp;                                   // 0x0750(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(class ARestrictedAreaVolume_C* Area, bool Exit_)> WarningAreaDisp; // 0x0750(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          Dancing_;                                          // 0x0760(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
 	uint8                                         Pad_761[0x3];                                      // 0x0761(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         GainedEXP;                                         // 0x0764(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -232,7 +232,7 @@ public:
 	void PutMaskOn();
 	void SetPlayerLoaded();
 	void ForceSwitch(int32 Slot);
-	void Interactholding();
+	void InteractHolding();
 	void BndEvt__PlayerCharacter_DamageComponent_K2Node_ComponentBoundEvent_1_Damage__DelegateSignature(int32 Amount, class FName Bone, const struct FVector& HitLocation, const struct FVector& StartLocation, class AActor* Instigator_0);
 	void Temp();
 	void StartRevive();
@@ -334,123 +334,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerCharacter_C">();
+		BP_STATIC_CLASS_IMPL("PlayerCharacter_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerCharacter_C")
 	}
 	static class APlayerCharacter_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APlayerCharacter_C>();
 	}
 };
-static_assert(alignof(APlayerCharacter_C) == 0x000010, "Wrong alignment on APlayerCharacter_C");
-static_assert(sizeof(APlayerCharacter_C) == 0x000860, "Wrong size on APlayerCharacter_C");
-static_assert(offsetof(APlayerCharacter_C, UberGraphFrame) == 0x0004C0, "Member 'APlayerCharacter_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, SteamAchievementComponent) == 0x0004C8, "Member 'APlayerCharacter_C::SteamAchievementComponent' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, EmoteChildActor) == 0x0004D0, "Member 'APlayerCharacter_C::EmoteChildActor' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, SpottedHighlightcomponent) == 0x0004D8, "Member 'APlayerCharacter_C::SpottedHighlightcomponent' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, VoiceComponent) == 0x0004E0, "Member 'APlayerCharacter_C::VoiceComponent' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, HeadArrow) == 0x0004E8, "Member 'APlayerCharacter_C::HeadArrow' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, Arrow1) == 0x0004F0, "Member 'APlayerCharacter_C::Arrow1' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, PhysicsHandle) == 0x0004F8, "Member 'APlayerCharacter_C::PhysicsHandle' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, SmoothSync) == 0x000500, "Member 'APlayerCharacter_C::SmoothSync' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, ArmorChildActor) == 0x000508, "Member 'APlayerCharacter_C::ArmorChildActor' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, CamDefaultLocation) == 0x000510, "Member 'APlayerCharacter_C::CamDefaultLocation' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, MaskBP) == 0x000518, "Member 'APlayerCharacter_C::MaskBP' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, DamageComponent) == 0x000520, "Member 'APlayerCharacter_C::DamageComponent' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, InteractComponent) == 0x000528, "Member 'APlayerCharacter_C::InteractComponent' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, PawnNoiseEmitter) == 0x000530, "Member 'APlayerCharacter_C::PawnNoiseEmitter' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, PickupConstraint) == 0x000538, "Member 'APlayerCharacter_C::PickupConstraint' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, HipConstraint) == 0x000540, "Member 'APlayerCharacter_C::HipConstraint' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, BackConstraint) == 0x000548, "Member 'APlayerCharacter_C::BackConstraint' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, GunConstraint) == 0x000550, "Member 'APlayerCharacter_C::GunConstraint' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, PhysicalAnimation) == 0x000558, "Member 'APlayerCharacter_C::PhysicalAnimation' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, Camera) == 0x000560, "Member 'APlayerCharacter_C::Camera' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, AlphaRecoil_Alpha_3D9F04844465BEA1882C02A3FE74F206) == 0x000568, "Member 'APlayerCharacter_C::AlphaRecoil_Alpha_3D9F04844465BEA1882C02A3FE74F206' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, AlphaRecoil__Direction_3D9F04844465BEA1882C02A3FE74F206) == 0x00056C, "Member 'APlayerCharacter_C::AlphaRecoil__Direction_3D9F04844465BEA1882C02A3FE74F206' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, AlphaRecoil) == 0x000570, "Member 'APlayerCharacter_C::AlphaRecoil' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, interpRagdoll_Alpha_AB6FC0D041E17D5C68A457A22ACD5368) == 0x000578, "Member 'APlayerCharacter_C::interpRagdoll_Alpha_AB6FC0D041E17D5C68A457A22ACD5368' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, interpRagdoll__Direction_AB6FC0D041E17D5C68A457A22ACD5368) == 0x00057C, "Member 'APlayerCharacter_C::interpRagdoll__Direction_AB6FC0D041E17D5C68A457A22ACD5368' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, interpRagdoll) == 0x000580, "Member 'APlayerCharacter_C::interpRagdoll' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, LocalRotation) == 0x000588, "Member 'APlayerCharacter_C::LocalRotation' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, CameraRotation) == 0x000594, "Member 'APlayerCharacter_C::CameraRotation' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, HoldingGun) == 0x0005A0, "Member 'APlayerCharacter_C::HoldingGun' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, ShootHit) == 0x0005A8, "Member 'APlayerCharacter_C::ShootHit' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, Shooting_) == 0x000630, "Member 'APlayerCharacter_C::Shooting_' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, Reloading_) == 0x000631, "Member 'APlayerCharacter_C::Reloading_' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, EquippedGuns) == 0x000638, "Member 'APlayerCharacter_C::EquippedGuns' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, EquippedSlot) == 0x000648, "Member 'APlayerCharacter_C::EquippedSlot' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, SwitchingGun_) == 0x00064C, "Member 'APlayerCharacter_C::SwitchingGun_' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, StoredGuns) == 0x000650, "Member 'APlayerCharacter_C::StoredGuns' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, StartFOV) == 0x000660, "Member 'APlayerCharacter_C::StartFOV' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, Aimed_) == 0x000664, "Member 'APlayerCharacter_C::Aimed_' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, Sprinting_) == 0x000665, "Member 'APlayerCharacter_C::Sprinting_' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, GunAmmos) == 0x000668, "Member 'APlayerCharacter_C::GunAmmos' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, ReserveAmmo) == 0x000678, "Member 'APlayerCharacter_C::ReserveAmmo' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, Unarmed_) == 0x000688, "Member 'APlayerCharacter_C::Unarmed_' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, HoldingActor) == 0x000690, "Member 'APlayerCharacter_C::HoldingActor' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, Hitmarker) == 0x000698, "Member 'APlayerCharacter_C::Hitmarker' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, Health) == 0x0006A8, "Member 'APlayerCharacter_C::Health' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, Loaded) == 0x0006AC, "Member 'APlayerCharacter_C::Loaded' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, Downed_) == 0x0006AD, "Member 'APlayerCharacter_C::Downed_' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, LookingAtName) == 0x0006B0, "Member 'APlayerCharacter_C::LookingAtName' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, LeftMouseDown_) == 0x0006C0, "Member 'APlayerCharacter_C::LeftMouseDown_' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, MouseButton) == 0x0006C8, "Member 'APlayerCharacter_C::MouseButton' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, Reviving_) == 0x0006D8, "Member 'APlayerCharacter_C::Reviving_' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, GunAttachments) == 0x0006E0, "Member 'APlayerCharacter_C::GunAttachments' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, Mask) == 0x0006F0, "Member 'APlayerCharacter_C::Mask' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, ToggleFlash) == 0x0006F8, "Member 'APlayerCharacter_C::ToggleFlash' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, BurstAmount) == 0x000708, "Member 'APlayerCharacter_C::BurstAmount' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, InWarning_) == 0x00070C, "Member 'APlayerCharacter_C::InWarning_' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, IsSpotted_) == 0x00070D, "Member 'APlayerCharacter_C::IsSpotted_' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, CurrentWarningTime) == 0x000710, "Member 'APlayerCharacter_C::CurrentWarningTime' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, Armor) == 0x000718, "Member 'APlayerCharacter_C::Armor' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, HUDUI) == 0x000720, "Member 'APlayerCharacter_C::HUDUI' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, Crouching_) == 0x000728, "Member 'APlayerCharacter_C::Crouching_' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, PCController) == 0x000730, "Member 'APlayerCharacter_C::PCController' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, InteractDescription) == 0x000738, "Member 'APlayerCharacter_C::InteractDescription' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, Sus_) == 0x000748, "Member 'APlayerCharacter_C::Sus_' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, CopsAlerted_) == 0x000749, "Member 'APlayerCharacter_C::CopsAlerted_' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, Vaulting_) == 0x00074A, "Member 'APlayerCharacter_C::Vaulting_' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, AllConnected_) == 0x00074B, "Member 'APlayerCharacter_C::AllConnected_' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, DragginBody_) == 0x00074C, "Member 'APlayerCharacter_C::DragginBody_' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, WarningAreaDisp) == 0x000750, "Member 'APlayerCharacter_C::WarningAreaDisp' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, Dancing_) == 0x000760, "Member 'APlayerCharacter_C::Dancing_' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, GainedEXP) == 0x000764, "Member 'APlayerCharacter_C::GainedEXP' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, HasLoaded_) == 0x000768, "Member 'APlayerCharacter_C::HasLoaded_' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, PauseWidget) == 0x000770, "Member 'APlayerCharacter_C::PauseWidget' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, ChatWidget) == 0x000778, "Member 'APlayerCharacter_C::ChatWidget' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, SwitchedGun) == 0x000780, "Member 'APlayerCharacter_C::SwitchedGun' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, EquippedTools) == 0x000790, "Member 'APlayerCharacter_C::EquippedTools' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, Escorted_) == 0x0007A0, "Member 'APlayerCharacter_C::Escorted_' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, ArrestWarning_) == 0x0007A1, "Member 'APlayerCharacter_C::ArrestWarning_' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, Settings_Struct) == 0x0007A4, "Member 'APlayerCharacter_C::Settings_Struct' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, VoiceObj) == 0x0007D0, "Member 'APlayerCharacter_C::VoiceObj' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, SampleRate) == 0x0007D8, "Member 'APlayerCharacter_C::SampleRate' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, Outfit) == 0x0007E0, "Member 'APlayerCharacter_C::Outfit' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, SkinColorPlayer) == 0x0007E8, "Member 'APlayerCharacter_C::SkinColorPlayer' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, Emote) == 0x0007F0, "Member 'APlayerCharacter_C::Emote' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, NameTaggedPlayerstates) == 0x0007F8, "Member 'APlayerCharacter_C::NameTaggedPlayerstates' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, Assisting_Player) == 0x000808, "Member 'APlayerCharacter_C::Assisting_Player' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, Emoting_) == 0x000810, "Member 'APlayerCharacter_C::Emoting_' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, LoadedWeapons_) == 0x000811, "Member 'APlayerCharacter_C::LoadedWeapons_' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, Slowed_) == 0x000812, "Member 'APlayerCharacter_C::Slowed_' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, ExtraAmmo_) == 0x000814, "Member 'APlayerCharacter_C::ExtraAmmo_' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, AddedAccuracy) == 0x000818, "Member 'APlayerCharacter_C::AddedAccuracy' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, AddedAimDamage_) == 0x00081C, "Member 'APlayerCharacter_C::AddedAimDamage_' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, LastBulletsExtraDamage) == 0x000820, "Member 'APlayerCharacter_C::LastBulletsExtraDamage' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, SpeedLoader_) == 0x000824, "Member 'APlayerCharacter_C::SpeedLoader_' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, ReviveTime) == 0x000828, "Member 'APlayerCharacter_C::ReviveTime' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, MaxHealth) == 0x00082C, "Member 'APlayerCharacter_C::MaxHealth' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, AddedHealSpeed_) == 0x000830, "Member 'APlayerCharacter_C::AddedHealSpeed_' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, AddedArmorHP_) == 0x000834, "Member 'APlayerCharacter_C::AddedArmorHP_' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, AddedPowerboxSpeed_) == 0x000838, "Member 'APlayerCharacter_C::AddedPowerboxSpeed_' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, BarbedWireAddedSpeed_) == 0x00083C, "Member 'APlayerCharacter_C::BarbedWireAddedSpeed_' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, DamageImmunity) == 0x000840, "Member 'APlayerCharacter_C::DamageImmunity' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, DrillImmunityTime) == 0x000844, "Member 'APlayerCharacter_C::DrillImmunityTime' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, AddedGuardPhoneTime) == 0x000848, "Member 'APlayerCharacter_C::AddedGuardPhoneTime' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, AddedCamSpotTime_) == 0x00084C, "Member 'APlayerCharacter_C::AddedCamSpotTime_' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, AddedGuardSpotTime_) == 0x000850, "Member 'APlayerCharacter_C::AddedGuardSpotTime_' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, AddedHacking_) == 0x000854, "Member 'APlayerCharacter_C::AddedHacking_' has a wrong offset!");
-static_assert(offsetof(APlayerCharacter_C, ReducedReviveDamage_) == 0x000858, "Member 'APlayerCharacter_C::ReducedReviveDamage_' has a wrong offset!");
+DUMPER7_ASSERTS_APlayerCharacter_C;
 
 }
 

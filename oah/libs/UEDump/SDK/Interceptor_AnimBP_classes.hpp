@@ -45,27 +45,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Interceptor_AnimBP_C">();
+		BP_STATIC_CLASS_IMPL("Interceptor_AnimBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Interceptor_AnimBP_C")
 	}
 	static class UInterceptor_AnimBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterceptor_AnimBP_C>();
 	}
 };
-static_assert(alignof(UInterceptor_AnimBP_C) == 0x000010, "Wrong alignment on UInterceptor_AnimBP_C");
-static_assert(sizeof(UInterceptor_AnimBP_C) == 0x0005D0, "Wrong size on UInterceptor_AnimBP_C");
-static_assert(offsetof(UInterceptor_AnimBP_C, UberGraphFrame) == 0x0002C0, "Member 'UInterceptor_AnimBP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UInterceptor_AnimBP_C, AnimGraphNode_Root) == 0x0002C8, "Member 'UInterceptor_AnimBP_C::AnimGraphNode_Root' has a wrong offset!");
-static_assert(offsetof(UInterceptor_AnimBP_C, AnimGraphNode_TransitionResult_1) == 0x0002F8, "Member 'UInterceptor_AnimBP_C::AnimGraphNode_TransitionResult_1' has a wrong offset!");
-static_assert(offsetof(UInterceptor_AnimBP_C, AnimGraphNode_TransitionResult) == 0x000320, "Member 'UInterceptor_AnimBP_C::AnimGraphNode_TransitionResult' has a wrong offset!");
-static_assert(offsetof(UInterceptor_AnimBP_C, AnimGraphNode_SequencePlayer) == 0x000348, "Member 'UInterceptor_AnimBP_C::AnimGraphNode_SequencePlayer' has a wrong offset!");
-static_assert(offsetof(UInterceptor_AnimBP_C, AnimGraphNode_StateResult_1) == 0x0003C8, "Member 'UInterceptor_AnimBP_C::AnimGraphNode_StateResult_1' has a wrong offset!");
-static_assert(offsetof(UInterceptor_AnimBP_C, AnimGraphNode_BlendSpacePlayer) == 0x0003F8, "Member 'UInterceptor_AnimBP_C::AnimGraphNode_BlendSpacePlayer' has a wrong offset!");
-static_assert(offsetof(UInterceptor_AnimBP_C, AnimGraphNode_StateResult) == 0x0004E0, "Member 'UInterceptor_AnimBP_C::AnimGraphNode_StateResult' has a wrong offset!");
-static_assert(offsetof(UInterceptor_AnimBP_C, AnimGraphNode_StateMachine) == 0x000510, "Member 'UInterceptor_AnimBP_C::AnimGraphNode_StateMachine' has a wrong offset!");
-static_assert(offsetof(UInterceptor_AnimBP_C, ForwardSpeed) == 0x0005C0, "Member 'UInterceptor_AnimBP_C::ForwardSpeed' has a wrong offset!");
-static_assert(offsetof(UInterceptor_AnimBP_C, RightSpeed) == 0x0005C4, "Member 'UInterceptor_AnimBP_C::RightSpeed' has a wrong offset!");
-static_assert(offsetof(UInterceptor_AnimBP_C, PlacingItem_) == 0x0005C8, "Member 'UInterceptor_AnimBP_C::PlacingItem_' has a wrong offset!");
+DUMPER7_ASSERTS_UInterceptor_AnimBP_C;
 
 }
 

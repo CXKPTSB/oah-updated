@@ -22,7 +22,7 @@ struct SusItemComponent_C_ExecuteUbergraph_SusItemComponent final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class AActor* Player, const struct FVector& Pickuplocation, const struct FRotator& PickupRotation, const struct FVector& HitLocation)> K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class AActor* Player, const struct FVector& Pickuplocation, const struct FRotator& PickupRotation, const struct FVector& HitLocation)> K2Node_CreateDelegate_OutputDelegate; // 0x0004(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(class AActor* Player)>         K2Node_CreateDelegate_OutputDelegate_1;            // 0x0014(0x0010)(ZeroConstructor, NoDestructor)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -42,24 +42,7 @@ public:
 	uint8                                         Pad_94[0x4];                                       // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 K2Node_CustomEvent_Player;                         // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SusItemComponent_C_ExecuteUbergraph_SusItemComponent) == 0x000008, "Wrong alignment on SusItemComponent_C_ExecuteUbergraph_SusItemComponent");
-static_assert(sizeof(SusItemComponent_C_ExecuteUbergraph_SusItemComponent) == 0x0000A0, "Wrong size on SusItemComponent_C_ExecuteUbergraph_SusItemComponent");
-static_assert(offsetof(SusItemComponent_C_ExecuteUbergraph_SusItemComponent, EntryPoint) == 0x000000, "Member 'SusItemComponent_C_ExecuteUbergraph_SusItemComponent::EntryPoint' has a wrong offset!");
-static_assert(offsetof(SusItemComponent_C_ExecuteUbergraph_SusItemComponent, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'SusItemComponent_C_ExecuteUbergraph_SusItemComponent::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(SusItemComponent_C_ExecuteUbergraph_SusItemComponent, K2Node_CreateDelegate_OutputDelegate_1) == 0x000014, "Member 'SusItemComponent_C_ExecuteUbergraph_SusItemComponent::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(SusItemComponent_C_ExecuteUbergraph_SusItemComponent, CallFunc_GetOwner_ReturnValue) == 0x000028, "Member 'SusItemComponent_C_ExecuteUbergraph_SusItemComponent::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SusItemComponent_C_ExecuteUbergraph_SusItemComponent, CallFunc_GetOwner_ReturnValue_1) == 0x000030, "Member 'SusItemComponent_C_ExecuteUbergraph_SusItemComponent::CallFunc_GetOwner_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SusItemComponent_C_ExecuteUbergraph_SusItemComponent, CallFunc_GetOwner_ReturnValue_2) == 0x000038, "Member 'SusItemComponent_C_ExecuteUbergraph_SusItemComponent::CallFunc_GetOwner_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(SusItemComponent_C_ExecuteUbergraph_SusItemComponent, CallFunc_GetComponentByClass_ReturnValue) == 0x000040, "Member 'SusItemComponent_C_ExecuteUbergraph_SusItemComponent::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SusItemComponent_C_ExecuteUbergraph_SusItemComponent, K2Node_DynamicCast_AsPlayer_Character) == 0x000048, "Member 'SusItemComponent_C_ExecuteUbergraph_SusItemComponent::K2Node_DynamicCast_AsPlayer_Character' has a wrong offset!");
-static_assert(offsetof(SusItemComponent_C_ExecuteUbergraph_SusItemComponent, K2Node_DynamicCast_bSuccess) == 0x000050, "Member 'SusItemComponent_C_ExecuteUbergraph_SusItemComponent::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(SusItemComponent_C_ExecuteUbergraph_SusItemComponent, K2Node_DynamicCast_AsPlayer_Character_1) == 0x000058, "Member 'SusItemComponent_C_ExecuteUbergraph_SusItemComponent::K2Node_DynamicCast_AsPlayer_Character_1' has a wrong offset!");
-static_assert(offsetof(SusItemComponent_C_ExecuteUbergraph_SusItemComponent, K2Node_DynamicCast_bSuccess_1) == 0x000060, "Member 'SusItemComponent_C_ExecuteUbergraph_SusItemComponent::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(SusItemComponent_C_ExecuteUbergraph_SusItemComponent, K2Node_CustomEvent_Player_1) == 0x000068, "Member 'SusItemComponent_C_ExecuteUbergraph_SusItemComponent::K2Node_CustomEvent_Player_1' has a wrong offset!");
-static_assert(offsetof(SusItemComponent_C_ExecuteUbergraph_SusItemComponent, K2Node_CustomEvent_Pickuplocation) == 0x000070, "Member 'SusItemComponent_C_ExecuteUbergraph_SusItemComponent::K2Node_CustomEvent_Pickuplocation' has a wrong offset!");
-static_assert(offsetof(SusItemComponent_C_ExecuteUbergraph_SusItemComponent, K2Node_CustomEvent_PickupRotation) == 0x00007C, "Member 'SusItemComponent_C_ExecuteUbergraph_SusItemComponent::K2Node_CustomEvent_PickupRotation' has a wrong offset!");
-static_assert(offsetof(SusItemComponent_C_ExecuteUbergraph_SusItemComponent, K2Node_CustomEvent_HitLocation) == 0x000088, "Member 'SusItemComponent_C_ExecuteUbergraph_SusItemComponent::K2Node_CustomEvent_HitLocation' has a wrong offset!");
-static_assert(offsetof(SusItemComponent_C_ExecuteUbergraph_SusItemComponent, K2Node_CustomEvent_Player) == 0x000098, "Member 'SusItemComponent_C_ExecuteUbergraph_SusItemComponent::K2Node_CustomEvent_Player' has a wrong offset!");
+DUMPER7_ASSERTS_SusItemComponent_C_ExecuteUbergraph_SusItemComponent;
 
 // Function SusItemComponent.SusItemComponent_C.StopSusBind
 // 0x0008 (0x0008 - 0x0000)
@@ -68,9 +51,7 @@ struct SusItemComponent_C_StopSusBind final
 public:
 	class AActor*                                 Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SusItemComponent_C_StopSusBind) == 0x000008, "Wrong alignment on SusItemComponent_C_StopSusBind");
-static_assert(sizeof(SusItemComponent_C_StopSusBind) == 0x000008, "Wrong size on SusItemComponent_C_StopSusBind");
-static_assert(offsetof(SusItemComponent_C_StopSusBind, Player) == 0x000000, "Member 'SusItemComponent_C_StopSusBind::Player' has a wrong offset!");
+DUMPER7_ASSERTS_SusItemComponent_C_StopSusBind;
 
 // Function SusItemComponent.SusItemComponent_C.StartSusBind
 // 0x0030 (0x0030 - 0x0000)
@@ -82,12 +63,7 @@ public:
 	struct FRotator                               PickupRotation;                                    // 0x0014(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FVector                                HitLocation;                                       // 0x0020(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SusItemComponent_C_StartSusBind) == 0x000008, "Wrong alignment on SusItemComponent_C_StartSusBind");
-static_assert(sizeof(SusItemComponent_C_StartSusBind) == 0x000030, "Wrong size on SusItemComponent_C_StartSusBind");
-static_assert(offsetof(SusItemComponent_C_StartSusBind, Player) == 0x000000, "Member 'SusItemComponent_C_StartSusBind::Player' has a wrong offset!");
-static_assert(offsetof(SusItemComponent_C_StartSusBind, Pickuplocation) == 0x000008, "Member 'SusItemComponent_C_StartSusBind::Pickuplocation' has a wrong offset!");
-static_assert(offsetof(SusItemComponent_C_StartSusBind, PickupRotation) == 0x000014, "Member 'SusItemComponent_C_StartSusBind::PickupRotation' has a wrong offset!");
-static_assert(offsetof(SusItemComponent_C_StartSusBind, HitLocation) == 0x000020, "Member 'SusItemComponent_C_StartSusBind::HitLocation' has a wrong offset!");
+DUMPER7_ASSERTS_SusItemComponent_C_StartSusBind;
 
 }
 

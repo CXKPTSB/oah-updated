@@ -50,8 +50,8 @@ public:
 	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<int32>                                 K2Node_MakeArray_Array;                            // 0x00C0(0x0010)(ConstParm, ReferenceParm)
 	TArray<struct FSteamItemDef>                  K2Node_MakeArray_Array_1;                          // 0x00D0(0x0010)(ConstParm, ReferenceParm)
-	class USteamCoreInventoryAsyncActionStartPurchaseResult* CallFunc_StartPurchaseAsync_ReturnValue;           // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const struct FSteamInventoryStartPurchaseResult& Data, bool bWasSuccessful)> K2Node_CreateDelegate_OutputDelegate;              // 0x00E8(0x0010)(ZeroConstructor, NoDestructor)
+	class USteamCoreInventoryAsyncActionStartPurchaseResult* CallFunc_StartPurchaseAsync_ReturnValue; // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(const struct FSteamInventoryStartPurchaseResult& Data, bool bWasSuccessful)> K2Node_CreateDelegate_OutputDelegate; // 0x00E8(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BLoggedOn_ReturnValue_1;                  // 0x00F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsLocalController_ReturnValue;            // 0x00FA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -65,40 +65,7 @@ public:
 	struct FSteamInventoryResult                  CallFunc_GetAllItems_Handle;                       // 0x010C(0x0004)(NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GetAllItems_ReturnValue;                  // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild) == 0x000008, "Wrong alignment on CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild");
-static_assert(sizeof(CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild) == 0x000118, "Wrong size on CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild");
-static_assert(offsetof(CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild, EntryPoint) == 0x000000, "Member 'CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild::EntryPoint' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild, K2Node_CustomEvent_Data) == 0x000008, "Member 'CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild::K2Node_CustomEvent_Data' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild, K2Node_CustomEvent_bWasSuccessful) == 0x000030, "Member 'CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild::K2Node_CustomEvent_bWasSuccessful' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild, Temp_bool_Variable) == 0x000031, "Member 'CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild, Temp_struct_Variable) == 0x000038, "Member 'CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild, Temp_bool_Has_Been_Initd_Variable) == 0x000060, "Member 'CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild, CallFunc_GetPlayerController_ReturnValue) == 0x000068, "Member 'CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild, K2Node_DynamicCast_AsRobber_Controller) == 0x000070, "Member 'CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild::K2Node_DynamicCast_AsRobber_Controller' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild, K2Node_DynamicCast_bSuccess) == 0x000078, "Member 'CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild, CallFunc_BLoggedOn_ReturnValue) == 0x000079, "Member 'CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild::CallFunc_BLoggedOn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild, K2Node_Event_IsDesignTime) == 0x00007A, "Member 'CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild, CallFunc_IsValid_ReturnValue) == 0x00007B, "Member 'CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild, CallFunc_Conv_IntToText_ReturnValue) == 0x000080, "Member 'CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild, CallFunc_GetAnimationCurrentTime_ReturnValue) == 0x000098, "Member 'CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild::CallFunc_GetAnimationCurrentTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild, CallFunc_PlayAnimation_ReturnValue) == 0x0000A0, "Member 'CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild, CallFunc_PlayAnimation_ReturnValue_1) == 0x0000A8, "Member 'CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild, CallFunc_PlayAnimation_ReturnValue_2) == 0x0000B0, "Member 'CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild, K2Node_MakeStruct_SteamItemDef) == 0x0000B8, "Member 'CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild::K2Node_MakeStruct_SteamItemDef' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild, K2Node_MakeArray_Array) == 0x0000C0, "Member 'CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild, K2Node_MakeArray_Array_1) == 0x0000D0, "Member 'CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild, CallFunc_StartPurchaseAsync_ReturnValue) == 0x0000E0, "Member 'CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild::CallFunc_StartPurchaseAsync_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild, K2Node_CreateDelegate_OutputDelegate) == 0x0000E8, "Member 'CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild, CallFunc_IsValid_ReturnValue_1) == 0x0000F8, "Member 'CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild, CallFunc_BLoggedOn_ReturnValue_1) == 0x0000F9, "Member 'CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild::CallFunc_BLoggedOn_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild, CallFunc_IsLocalController_ReturnValue) == 0x0000FA, "Member 'CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild::CallFunc_IsLocalController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild, K2Node_MakeStruct_SteamItemDef_1) == 0x0000FC, "Member 'CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild::K2Node_MakeStruct_SteamItemDef_1' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild, CallFunc_GetItemPrice_Price) == 0x000100, "Member 'CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild::CallFunc_GetItemPrice_Price' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild, CallFunc_GetItemPrice_BasePrice) == 0x000104, "Member 'CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild::CallFunc_GetItemPrice_BasePrice' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild, CallFunc_GetItemPrice_ReturnValue) == 0x000108, "Member 'CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild::CallFunc_GetItemPrice_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild, Temp_bool_IsClosed_Variable) == 0x000109, "Member 'CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild, CallFunc_GetAllItems_Handle) == 0x00010C, "Member 'CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild::CallFunc_GetAllItems_Handle' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild, CallFunc_GetAllItems_ReturnValue) == 0x000110, "Member 'CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild::CallFunc_GetAllItems_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CoinShopUIChild_C_ExecuteUbergraph_CoinShopUIChild;
 
 // Function CoinShopUIChild.CoinShopUIChild_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -107,9 +74,7 @@ struct CoinShopUIChild_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(CoinShopUIChild_C_PreConstruct) == 0x000001, "Wrong alignment on CoinShopUIChild_C_PreConstruct");
-static_assert(sizeof(CoinShopUIChild_C_PreConstruct) == 0x000001, "Wrong size on CoinShopUIChild_C_PreConstruct");
-static_assert(offsetof(CoinShopUIChild_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'CoinShopUIChild_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_CoinShopUIChild_C_PreConstruct;
 
 // Function CoinShopUIChild.CoinShopUIChild_C.OnCallback_71615A47482C10CA30D0A8830244AEBB
 // 0x0030 (0x0030 - 0x0000)
@@ -119,10 +84,7 @@ public:
 	struct FSteamInventoryStartPurchaseResult     Data;                                              // 0x0000(0x0028)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	bool                                          bWasSuccessful;                                    // 0x0028(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(CoinShopUIChild_C_OnCallback_71615A47482C10CA30D0A8830244AEBB) == 0x000008, "Wrong alignment on CoinShopUIChild_C_OnCallback_71615A47482C10CA30D0A8830244AEBB");
-static_assert(sizeof(CoinShopUIChild_C_OnCallback_71615A47482C10CA30D0A8830244AEBB) == 0x000030, "Wrong size on CoinShopUIChild_C_OnCallback_71615A47482C10CA30D0A8830244AEBB");
-static_assert(offsetof(CoinShopUIChild_C_OnCallback_71615A47482C10CA30D0A8830244AEBB, Data) == 0x000000, "Member 'CoinShopUIChild_C_OnCallback_71615A47482C10CA30D0A8830244AEBB::Data' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_OnCallback_71615A47482C10CA30D0A8830244AEBB, bWasSuccessful) == 0x000028, "Member 'CoinShopUIChild_C_OnCallback_71615A47482C10CA30D0A8830244AEBB::bWasSuccessful' has a wrong offset!");
+DUMPER7_ASSERTS_CoinShopUIChild_C_OnCallback_71615A47482C10CA30D0A8830244AEBB;
 
 // Function CoinShopUIChild.CoinShopUIChild_C.SetPrice
 // 0x0078 (0x0078 - 0x0000)
@@ -140,17 +102,7 @@ public:
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0050(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0060(0x0018)()
 };
-static_assert(alignof(CoinShopUIChild_C_SetPrice) == 0x000008, "Wrong alignment on CoinShopUIChild_C_SetPrice");
-static_assert(sizeof(CoinShopUIChild_C_SetPrice) == 0x000078, "Wrong size on CoinShopUIChild_C_SetPrice");
-static_assert(offsetof(CoinShopUIChild_C_SetPrice, ItemDef) == 0x000000, "Member 'CoinShopUIChild_C_SetPrice::ItemDef' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_SetPrice, Text_object) == 0x000008, "Member 'CoinShopUIChild_C_SetPrice::Text_object' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_SetPrice, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000010, "Member 'CoinShopUIChild_C_SetPrice::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_SetPrice, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000014, "Member 'CoinShopUIChild_C_SetPrice::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_SetPrice, CallFunc_Conv_FloatToText_ReturnValue) == 0x000018, "Member 'CoinShopUIChild_C_SetPrice::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_SetPrice, CallFunc_Conv_TextToString_ReturnValue) == 0x000030, "Member 'CoinShopUIChild_C_SetPrice::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_SetPrice, CallFunc_Concat_StrStr_ReturnValue) == 0x000040, "Member 'CoinShopUIChild_C_SetPrice::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_SetPrice, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000050, "Member 'CoinShopUIChild_C_SetPrice::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_SetPrice, CallFunc_Conv_StringToText_ReturnValue) == 0x000060, "Member 'CoinShopUIChild_C_SetPrice::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CoinShopUIChild_C_SetPrice;
 
 // Function CoinShopUIChild.CoinShopUIChild_C.GetBrush_0
 // 0x0110 (0x0110 - 0x0000)
@@ -160,10 +112,7 @@ public:
 	struct FSlateBrush                            ReturnValue;                                       // 0x0000(0x0088)(Parm, OutParm, ReturnParm)
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0088(0x0088)()
 };
-static_assert(alignof(CoinShopUIChild_C_GetBrush_0) == 0x000008, "Wrong alignment on CoinShopUIChild_C_GetBrush_0");
-static_assert(sizeof(CoinShopUIChild_C_GetBrush_0) == 0x000110, "Wrong size on CoinShopUIChild_C_GetBrush_0");
-static_assert(offsetof(CoinShopUIChild_C_GetBrush_0, ReturnValue) == 0x000000, "Member 'CoinShopUIChild_C_GetBrush_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_GetBrush_0, K2Node_MakeStruct_SlateBrush) == 0x000088, "Member 'CoinShopUIChild_C_GetBrush_0::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
+DUMPER7_ASSERTS_CoinShopUIChild_C_GetBrush_0;
 
 // Function CoinShopUIChild.CoinShopUIChild_C.FindItemprices
 // 0x0078 (0x0078 - 0x0000)
@@ -189,23 +138,7 @@ public:
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0074(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(CoinShopUIChild_C_FindItemprices) == 0x000008, "Wrong alignment on CoinShopUIChild_C_FindItemprices");
-static_assert(sizeof(CoinShopUIChild_C_FindItemprices) == 0x000078, "Wrong size on CoinShopUIChild_C_FindItemprices");
-static_assert(offsetof(CoinShopUIChild_C_FindItemprices, Data) == 0x000000, "Member 'CoinShopUIChild_C_FindItemprices::Data' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_FindItemprices, Key) == 0x000010, "Member 'CoinShopUIChild_C_FindItemprices::Key' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_FindItemprices, Price_Array_0) == 0x000020, "Member 'CoinShopUIChild_C_FindItemprices::Price_Array_0' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_FindItemprices, Items) == 0x000030, "Member 'CoinShopUIChild_C_FindItemprices::Items' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_FindItemprices, CallFunc_FindJsonNumbers_Values) == 0x000040, "Member 'CoinShopUIChild_C_FindItemprices::CallFunc_FindJsonNumbers_Values' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_FindItemprices, CallFunc_FindJsonNumbers_Result) == 0x000050, "Member 'CoinShopUIChild_C_FindItemprices::CallFunc_FindJsonNumbers_Result' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_FindItemprices, Temp_int_Array_Index_Variable) == 0x000054, "Member 'CoinShopUIChild_C_FindItemprices::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_FindItemprices, K2Node_SwitchEnum_CmpSuccess) == 0x000058, "Member 'CoinShopUIChild_C_FindItemprices::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_FindItemprices, CallFunc_Array_Get_Item) == 0x00005C, "Member 'CoinShopUIChild_C_FindItemprices::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_FindItemprices, CallFunc_Array_Length_ReturnValue) == 0x000060, "Member 'CoinShopUIChild_C_FindItemprices::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_FindItemprices, Temp_int_Loop_Counter_Variable) == 0x000064, "Member 'CoinShopUIChild_C_FindItemprices::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_FindItemprices, CallFunc_Less_IntInt_ReturnValue) == 0x000068, "Member 'CoinShopUIChild_C_FindItemprices::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_FindItemprices, CallFunc_Add_IntInt_ReturnValue) == 0x00006C, "Member 'CoinShopUIChild_C_FindItemprices::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_FindItemprices, CallFunc_Array_Add_ReturnValue) == 0x000070, "Member 'CoinShopUIChild_C_FindItemprices::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_FindItemprices, CallFunc_Array_Contains_ReturnValue) == 0x000074, "Member 'CoinShopUIChild_C_FindItemprices::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CoinShopUIChild_C_FindItemprices;
 
 // Function CoinShopUIChild.CoinShopUIChild_C.GetVisibility_0
 // 0x0005 (0x0005 - 0x0000)
@@ -218,13 +151,7 @@ public:
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(CoinShopUIChild_C_GetVisibility_0) == 0x000001, "Wrong alignment on CoinShopUIChild_C_GetVisibility_0");
-static_assert(sizeof(CoinShopUIChild_C_GetVisibility_0) == 0x000005, "Wrong size on CoinShopUIChild_C_GetVisibility_0");
-static_assert(offsetof(CoinShopUIChild_C_GetVisibility_0, ReturnValue) == 0x000000, "Member 'CoinShopUIChild_C_GetVisibility_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_GetVisibility_0, Temp_bool_Variable) == 0x000001, "Member 'CoinShopUIChild_C_GetVisibility_0::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_GetVisibility_0, Temp_byte_Variable) == 0x000002, "Member 'CoinShopUIChild_C_GetVisibility_0::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_GetVisibility_0, Temp_byte_Variable_1) == 0x000003, "Member 'CoinShopUIChild_C_GetVisibility_0::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_GetVisibility_0, K2Node_Select_Default) == 0x000004, "Member 'CoinShopUIChild_C_GetVisibility_0::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_CoinShopUIChild_C_GetVisibility_0;
 
 // Function CoinShopUIChild.CoinShopUIChild_C.GetText_0
 // 0x0050 (0x0050 - 0x0000)
@@ -236,12 +163,7 @@ public:
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0038(0x0018)()
 };
-static_assert(alignof(CoinShopUIChild_C_GetText_0) == 0x000008, "Wrong alignment on CoinShopUIChild_C_GetText_0");
-static_assert(sizeof(CoinShopUIChild_C_GetText_0) == 0x000050, "Wrong size on CoinShopUIChild_C_GetText_0");
-static_assert(offsetof(CoinShopUIChild_C_GetText_0, ReturnValue) == 0x000000, "Member 'CoinShopUIChild_C_GetText_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_GetText_0, CallFunc_Conv_IntToString_ReturnValue) == 0x000018, "Member 'CoinShopUIChild_C_GetText_0::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_GetText_0, CallFunc_Concat_StrStr_ReturnValue) == 0x000028, "Member 'CoinShopUIChild_C_GetText_0::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_GetText_0, CallFunc_Conv_StringToText_ReturnValue) == 0x000038, "Member 'CoinShopUIChild_C_GetText_0::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CoinShopUIChild_C_GetText_0;
 
 // Function CoinShopUIChild.CoinShopUIChild_C.GetVisibility_1
 // 0x0006 (0x0006 - 0x0000)
@@ -255,14 +177,7 @@ public:
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(CoinShopUIChild_C_GetVisibility_1) == 0x000001, "Wrong alignment on CoinShopUIChild_C_GetVisibility_1");
-static_assert(sizeof(CoinShopUIChild_C_GetVisibility_1) == 0x000006, "Wrong size on CoinShopUIChild_C_GetVisibility_1");
-static_assert(offsetof(CoinShopUIChild_C_GetVisibility_1, ReturnValue) == 0x000000, "Member 'CoinShopUIChild_C_GetVisibility_1::ReturnValue' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_GetVisibility_1, Temp_bool_Variable) == 0x000001, "Member 'CoinShopUIChild_C_GetVisibility_1::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_GetVisibility_1, Temp_byte_Variable) == 0x000002, "Member 'CoinShopUIChild_C_GetVisibility_1::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_GetVisibility_1, Temp_byte_Variable_1) == 0x000003, "Member 'CoinShopUIChild_C_GetVisibility_1::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_GetVisibility_1, CallFunc_Greater_IntInt_ReturnValue) == 0x000004, "Member 'CoinShopUIChild_C_GetVisibility_1::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_GetVisibility_1, K2Node_Select_Default) == 0x000005, "Member 'CoinShopUIChild_C_GetVisibility_1::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_CoinShopUIChild_C_GetVisibility_1;
 
 // Function CoinShopUIChild.CoinShopUIChild_C.GetText_1
 // 0x0068 (0x0068 - 0x0000)
@@ -277,14 +192,7 @@ public:
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0040(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0050(0x0018)()
 };
-static_assert(alignof(CoinShopUIChild_C_GetText_1) == 0x000008, "Wrong alignment on CoinShopUIChild_C_GetText_1");
-static_assert(sizeof(CoinShopUIChild_C_GetText_1) == 0x000068, "Wrong size on CoinShopUIChild_C_GetText_1");
-static_assert(offsetof(CoinShopUIChild_C_GetText_1, ReturnValue) == 0x000000, "Member 'CoinShopUIChild_C_GetText_1::ReturnValue' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_GetText_1, CallFunc_Array_Length_ReturnValue) == 0x000018, "Member 'CoinShopUIChild_C_GetText_1::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_GetText_1, CallFunc_Conv_IntToString_ReturnValue) == 0x000020, "Member 'CoinShopUIChild_C_GetText_1::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_GetText_1, CallFunc_Concat_StrStr_ReturnValue) == 0x000030, "Member 'CoinShopUIChild_C_GetText_1::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_GetText_1, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000040, "Member 'CoinShopUIChild_C_GetText_1::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_GetText_1, CallFunc_Conv_StringToText_ReturnValue) == 0x000050, "Member 'CoinShopUIChild_C_GetText_1::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CoinShopUIChild_C_GetText_1;
 
 // Function CoinShopUIChild.CoinShopUIChild_C.Get_SkinBundleBorder_Visibility_0
 // 0x000C (0x000C - 0x0000)
@@ -299,15 +207,7 @@ public:
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(CoinShopUIChild_C_Get_SkinBundleBorder_Visibility_0) == 0x000004, "Wrong alignment on CoinShopUIChild_C_Get_SkinBundleBorder_Visibility_0");
-static_assert(sizeof(CoinShopUIChild_C_Get_SkinBundleBorder_Visibility_0) == 0x00000C, "Wrong size on CoinShopUIChild_C_Get_SkinBundleBorder_Visibility_0");
-static_assert(offsetof(CoinShopUIChild_C_Get_SkinBundleBorder_Visibility_0, ReturnValue) == 0x000000, "Member 'CoinShopUIChild_C_Get_SkinBundleBorder_Visibility_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_Get_SkinBundleBorder_Visibility_0, Temp_bool_Variable) == 0x000001, "Member 'CoinShopUIChild_C_Get_SkinBundleBorder_Visibility_0::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_Get_SkinBundleBorder_Visibility_0, Temp_byte_Variable) == 0x000002, "Member 'CoinShopUIChild_C_Get_SkinBundleBorder_Visibility_0::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_Get_SkinBundleBorder_Visibility_0, Temp_byte_Variable_1) == 0x000003, "Member 'CoinShopUIChild_C_Get_SkinBundleBorder_Visibility_0::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_Get_SkinBundleBorder_Visibility_0, CallFunc_Array_Length_ReturnValue) == 0x000004, "Member 'CoinShopUIChild_C_Get_SkinBundleBorder_Visibility_0::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_Get_SkinBundleBorder_Visibility_0, CallFunc_Greater_IntInt_ReturnValue) == 0x000008, "Member 'CoinShopUIChild_C_Get_SkinBundleBorder_Visibility_0::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CoinShopUIChild_C_Get_SkinBundleBorder_Visibility_0, K2Node_Select_Default) == 0x000009, "Member 'CoinShopUIChild_C_Get_SkinBundleBorder_Visibility_0::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_CoinShopUIChild_C_Get_SkinBundleBorder_Visibility_0;
 
 }
 

@@ -29,16 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MotoSynthPreset">();
+		STATIC_CLASS_IMPL("MotoSynthPreset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MotoSynthPreset")
 	}
 	static class UMotoSynthPreset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMotoSynthPreset>();
 	}
 };
-static_assert(alignof(UMotoSynthPreset) == 0x000008, "Wrong alignment on UMotoSynthPreset");
-static_assert(sizeof(UMotoSynthPreset) == 0x000090, "Wrong size on UMotoSynthPreset");
-static_assert(offsetof(UMotoSynthPreset, Settings) == 0x000028, "Member 'UMotoSynthPreset::Settings' has a wrong offset!");
+DUMPER7_ASSERTS_UMotoSynthPreset;
 
 // Class MotoSynth.MotoSynthSource
 // 0x00D0 (0x00F8 - 0x0028)
@@ -59,22 +61,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MotoSynthSource">();
+		STATIC_CLASS_IMPL("MotoSynthSource")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MotoSynthSource")
 	}
 	static class UMotoSynthSource* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMotoSynthSource>();
 	}
 };
-static_assert(alignof(UMotoSynthSource) == 0x000008, "Wrong alignment on UMotoSynthSource");
-static_assert(sizeof(UMotoSynthSource) == 0x0000F8, "Wrong size on UMotoSynthSource");
-static_assert(offsetof(UMotoSynthSource, bConvertTo8Bit) == 0x000028, "Member 'UMotoSynthSource::bConvertTo8Bit' has a wrong offset!");
-static_assert(offsetof(UMotoSynthSource, DownSampleFactor) == 0x00002C, "Member 'UMotoSynthSource::DownSampleFactor' has a wrong offset!");
-static_assert(offsetof(UMotoSynthSource, RPMCurve) == 0x000030, "Member 'UMotoSynthSource::RPMCurve' has a wrong offset!");
-static_assert(offsetof(UMotoSynthSource, SourceData) == 0x0000B8, "Member 'UMotoSynthSource::SourceData' has a wrong offset!");
-static_assert(offsetof(UMotoSynthSource, SourceDataPCM) == 0x0000C8, "Member 'UMotoSynthSource::SourceDataPCM' has a wrong offset!");
-static_assert(offsetof(UMotoSynthSource, SourceSampleRate) == 0x0000D8, "Member 'UMotoSynthSource::SourceSampleRate' has a wrong offset!");
-static_assert(offsetof(UMotoSynthSource, GrainTable) == 0x0000E0, "Member 'UMotoSynthSource::GrainTable' has a wrong offset!");
+DUMPER7_ASSERTS_UMotoSynthSource;
 
 // Class MotoSynth.SynthComponentMoto
 // 0x00C0 (0x0780 - 0x06C0)
@@ -95,17 +93,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SynthComponentMoto">();
+		STATIC_CLASS_IMPL("SynthComponentMoto")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SynthComponentMoto")
 	}
 	static class USynthComponentMoto* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USynthComponentMoto>();
 	}
 };
-static_assert(alignof(USynthComponentMoto) == 0x000010, "Wrong alignment on USynthComponentMoto");
-static_assert(sizeof(USynthComponentMoto) == 0x000780, "Wrong size on USynthComponentMoto");
-static_assert(offsetof(USynthComponentMoto, MotoSynthPreset) == 0x0006C0, "Member 'USynthComponentMoto::MotoSynthPreset' has a wrong offset!");
-static_assert(offsetof(USynthComponentMoto, RPM) == 0x0006C8, "Member 'USynthComponentMoto::RPM' has a wrong offset!");
+DUMPER7_ASSERTS_USynthComponentMoto;
 
 }
 

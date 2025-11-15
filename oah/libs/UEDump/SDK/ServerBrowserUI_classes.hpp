@@ -57,30 +57,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ServerBrowserUI_C">();
+		BP_STATIC_CLASS_IMPL("ServerBrowserUI_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ServerBrowserUI_C")
 	}
 	static class UServerBrowserUI_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UServerBrowserUI_C>();
 	}
 };
-static_assert(alignof(UServerBrowserUI_C) == 0x000008, "Wrong alignment on UServerBrowserUI_C");
-static_assert(sizeof(UServerBrowserUI_C) == 0x0003E8, "Wrong size on UServerBrowserUI_C");
-static_assert(offsetof(UServerBrowserUI_C, UberGraphFrame) == 0x000260, "Member 'UServerBrowserUI_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UServerBrowserUI_C, Button_157) == 0x000268, "Member 'UServerBrowserUI_C::Button_157' has a wrong offset!");
-static_assert(offsetof(UServerBrowserUI_C, CloseButton) == 0x000270, "Member 'UServerBrowserUI_C::CloseButton' has a wrong offset!");
-static_assert(offsetof(UServerBrowserUI_C, RandomMapUI) == 0x000278, "Member 'UServerBrowserUI_C::RandomMapUI' has a wrong offset!");
-static_assert(offsetof(UServerBrowserUI_C, ServerMapWrap) == 0x000280, "Member 'UServerBrowserUI_C::ServerMapWrap' has a wrong offset!");
-static_assert(offsetof(UServerBrowserUI_C, PublicSessions) == 0x000288, "Member 'UServerBrowserUI_C::PublicSessions' has a wrong offset!");
-static_assert(offsetof(UServerBrowserUI_C, As_Robber_GI) == 0x000298, "Member 'UServerBrowserUI_C::As_Robber_GI' has a wrong offset!");
-static_assert(offsetof(UServerBrowserUI_C, PlayersConnected) == 0x0002A0, "Member 'UServerBrowserUI_C::PlayersConnected' has a wrong offset!");
-static_assert(offsetof(UServerBrowserUI_C, JoinedSession) == 0x0002A8, "Member 'UServerBrowserUI_C::JoinedSession' has a wrong offset!");
-static_assert(offsetof(UServerBrowserUI_C, SessionsAvailable_) == 0x0003B0, "Member 'UServerBrowserUI_C::SessionsAvailable_' has a wrong offset!");
-static_assert(offsetof(UServerBrowserUI_C, Lobby) == 0x0003B8, "Member 'UServerBrowserUI_C::Lobby' has a wrong offset!");
-static_assert(offsetof(UServerBrowserUI_C, SteamIDLobbyFound) == 0x0003C0, "Member 'UServerBrowserUI_C::SteamIDLobbyFound' has a wrong offset!");
-static_assert(offsetof(UServerBrowserUI_C, LobbiesFound) == 0x0003C8, "Member 'UServerBrowserUI_C::LobbiesFound' has a wrong offset!");
-static_assert(offsetof(UServerBrowserUI_C, LookingForServers_) == 0x0003D8, "Member 'UServerBrowserUI_C::LookingForServers_' has a wrong offset!");
-static_assert(offsetof(UServerBrowserUI_C, As_Robber_Controller) == 0x0003E0, "Member 'UServerBrowserUI_C::As_Robber_Controller' has a wrong offset!");
+DUMPER7_ASSERTS_UServerBrowserUI_C;
 
 }
 

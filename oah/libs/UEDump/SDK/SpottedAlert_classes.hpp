@@ -35,20 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SpottedAlert_C">();
+		BP_STATIC_CLASS_IMPL("SpottedAlert_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SpottedAlert_C")
 	}
 	static class USpottedAlert_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USpottedAlert_C>();
 	}
 };
-static_assert(alignof(USpottedAlert_C) == 0x000008, "Wrong alignment on USpottedAlert_C");
-static_assert(sizeof(USpottedAlert_C) == 0x000290, "Wrong size on USpottedAlert_C");
-static_assert(offsetof(USpottedAlert_C, UberGraphFrame) == 0x000260, "Member 'USpottedAlert_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USpottedAlert_C, FadeOut) == 0x000268, "Member 'USpottedAlert_C::FadeOut' has a wrong offset!");
-static_assert(offsetof(USpottedAlert_C, popIn) == 0x000270, "Member 'USpottedAlert_C::popIn' has a wrong offset!");
-static_assert(offsetof(USpottedAlert_C, TextBlock_171) == 0x000278, "Member 'USpottedAlert_C::TextBlock_171' has a wrong offset!");
-static_assert(offsetof(USpottedAlert_C, Message) == 0x000280, "Member 'USpottedAlert_C::Message' has a wrong offset!");
+DUMPER7_ASSERTS_USpottedAlert_C;
 
 }
 

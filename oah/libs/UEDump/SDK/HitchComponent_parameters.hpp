@@ -75,62 +75,14 @@ public:
 	class UActorComponent*                        CallFunc_Array_Get_Item;                           // 0x0270(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0278(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_27C[0x4];                                      // 0x027C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IInstructionInterface_C> K2Node_DynamicCast_AsInstruction_Interface;        // 0x0280(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TScriptInterface<class IInstructionInterface_C> K2Node_DynamicCast_AsInstruction_Interface;      // 0x0280(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0290(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0291(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_292[0x2];                                      // 0x0292(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0294(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0298(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HitchComponent_C_ExecuteUbergraph_HitchComponent) == 0x000010, "Wrong alignment on HitchComponent_C_ExecuteUbergraph_HitchComponent");
-static_assert(sizeof(HitchComponent_C_ExecuteUbergraph_HitchComponent) == 0x0002A0, "Wrong size on HitchComponent_C_ExecuteUbergraph_HitchComponent");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, EntryPoint) == 0x000000, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::EntryPoint' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, Temp_int_Loop_Counter_Variable) == 0x000014, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, CallFunc_Add_IntInt_ReturnValue) == 0x000018, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, Temp_int_Array_Index_Variable) == 0x00001C, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, CallFunc_GetSplineLength_ReturnValue) == 0x000020, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::CallFunc_GetSplineLength_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, CallFunc_GetRotationAtDistanceAlongSpline_ReturnValue) == 0x000024, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::CallFunc_GetRotationAtDistanceAlongSpline_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, CallFunc_GetLocationAtDistanceAlongSpline_ReturnValue) == 0x000030, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::CallFunc_GetLocationAtDistanceAlongSpline_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, K2Node_Event_DeltaSeconds) == 0x00003C, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x000040, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, CallFunc_GetOwner_ReturnValue) == 0x000048, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, CallFunc_K2_SetActorLocationAndRotation_SweepHitResult) == 0x000050, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::CallFunc_K2_SetActorLocationAndRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, CallFunc_K2_SetActorLocationAndRotation_ReturnValue) == 0x0000D8, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::CallFunc_K2_SetActorLocationAndRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, K2Node_CustomEvent_Hitch_1) == 0x0000E0, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::K2Node_CustomEvent_Hitch_1' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, CallFunc_FInterpTo_Constant_ReturnValue) == 0x0000E8, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::CallFunc_FInterpTo_Constant_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, CallFunc_GetComponentByClass_ReturnValue) == 0x0000F0, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, CallFunc_GetOwner_ReturnValue_1) == 0x0000F8, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::CallFunc_GetOwner_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, K2Node_DynamicCast_AsPlayer_Character) == 0x000100, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::K2Node_DynamicCast_AsPlayer_Character' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, K2Node_DynamicCast_bSuccess) == 0x000108, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x00010C, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, CallFunc_K2_SetActorLocation_SweepHitResult) == 0x000118, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::CallFunc_K2_SetActorLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, CallFunc_K2_SetActorLocation_ReturnValue) == 0x0001A0, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::CallFunc_K2_SetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, CallFunc_GetOwner_ReturnValue_2) == 0x0001A8, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::CallFunc_GetOwner_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, Temp_byte_Variable) == 0x0001B0, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, CallFunc_K2_GetRootComponent_ReturnValue) == 0x0001B8, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::CallFunc_K2_GetRootComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, K2Node_CustomEvent_Hitch) == 0x0001C0, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::K2Node_CustomEvent_Hitch' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, CallFunc_GetRotationAtDistanceAlongSpline_ReturnValue_1) == 0x0001C8, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::CallFunc_GetRotationAtDistanceAlongSpline_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, CallFunc_GetLocationAtDistanceAlongSpline_ReturnValue_1) == 0x0001D4, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::CallFunc_GetLocationAtDistanceAlongSpline_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, Temp_bool_IsClosed_Variable) == 0x0001E0, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, CallFunc_GetActorOfClass_ReturnValue) == 0x0001E8, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::CallFunc_GetActorOfClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0001F0, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, CallFunc_MakeTransform_ReturnValue) == 0x000200, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000230, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, CallFunc_FinishSpawningActor_ReturnValue) == 0x000238, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, Temp_bool_Has_Been_Initd_Variable) == 0x000240, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000244, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, CallFunc_GetActorOfClass_ReturnValue_1) == 0x000248, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::CallFunc_GetActorOfClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, CallFunc_GetOwner_ReturnValue_3) == 0x000250, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::CallFunc_GetOwner_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x000258, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, CallFunc_GetComponentsByTag_ReturnValue) == 0x000260, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::CallFunc_GetComponentsByTag_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, CallFunc_Array_Get_Item) == 0x000270, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, CallFunc_Array_Length_ReturnValue) == 0x000278, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, K2Node_DynamicCast_AsInstruction_Interface) == 0x000280, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::K2Node_DynamicCast_AsInstruction_Interface' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, K2Node_DynamicCast_bSuccess_1) == 0x000290, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, CallFunc_Less_IntInt_ReturnValue) == 0x000291, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, CallFunc_Array_Length_ReturnValue_1) == 0x000294, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HitchComponent_C_ExecuteUbergraph_HitchComponent, CallFunc_Greater_IntInt_ReturnValue) == 0x000298, "Member 'HitchComponent_C_ExecuteUbergraph_HitchComponent::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HitchComponent_C_ExecuteUbergraph_HitchComponent;
 
 // Function HitchComponent.HitchComponent_C.AttachHitch
 // 0x0008 (0x0008 - 0x0000)
@@ -139,9 +91,7 @@ struct HitchComponent_C_AttachHitch final
 public:
 	class ABP_HitchHook_C*                        Hitch;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HitchComponent_C_AttachHitch) == 0x000008, "Wrong alignment on HitchComponent_C_AttachHitch");
-static_assert(sizeof(HitchComponent_C_AttachHitch) == 0x000008, "Wrong size on HitchComponent_C_AttachHitch");
-static_assert(offsetof(HitchComponent_C_AttachHitch, Hitch) == 0x000000, "Member 'HitchComponent_C_AttachHitch::Hitch' has a wrong offset!");
+DUMPER7_ASSERTS_HitchComponent_C_AttachHitch;
 
 // Function HitchComponent.HitchComponent_C.HitchMulticast
 // 0x0008 (0x0008 - 0x0000)
@@ -150,9 +100,7 @@ struct HitchComponent_C_HitchMulticast final
 public:
 	class ABP_HitchHook_C*                        Hitch;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HitchComponent_C_HitchMulticast) == 0x000008, "Wrong alignment on HitchComponent_C_HitchMulticast");
-static_assert(sizeof(HitchComponent_C_HitchMulticast) == 0x000008, "Wrong size on HitchComponent_C_HitchMulticast");
-static_assert(offsetof(HitchComponent_C_HitchMulticast, Hitch) == 0x000000, "Member 'HitchComponent_C_HitchMulticast::Hitch' has a wrong offset!");
+DUMPER7_ASSERTS_HitchComponent_C_HitchMulticast;
 
 // Function HitchComponent.HitchComponent_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -161,9 +109,7 @@ struct HitchComponent_C_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HitchComponent_C_ReceiveTick) == 0x000004, "Wrong alignment on HitchComponent_C_ReceiveTick");
-static_assert(sizeof(HitchComponent_C_ReceiveTick) == 0x000004, "Wrong size on HitchComponent_C_ReceiveTick");
-static_assert(offsetof(HitchComponent_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'HitchComponent_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_HitchComponent_C_ReceiveTick;
 
 }
 

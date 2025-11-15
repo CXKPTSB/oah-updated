@@ -23,15 +23,18 @@ class ULoadingUI_C final : public UUserWidget
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LoadingUI_C">();
+		BP_STATIC_CLASS_IMPL("LoadingUI_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LoadingUI_C")
 	}
 	static class ULoadingUI_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULoadingUI_C>();
 	}
 };
-static_assert(alignof(ULoadingUI_C) == 0x000008, "Wrong alignment on ULoadingUI_C");
-static_assert(sizeof(ULoadingUI_C) == 0x000260, "Wrong size on ULoadingUI_C");
+DUMPER7_ASSERTS_ULoadingUI_C;
 
 }
 

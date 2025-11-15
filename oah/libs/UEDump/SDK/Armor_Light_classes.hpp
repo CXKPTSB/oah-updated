@@ -46,26 +46,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Armor_Light_C">();
+		BP_STATIC_CLASS_IMPL("Armor_Light_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Armor_Light_C")
 	}
 	static class AArmor_Light_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AArmor_Light_C>();
 	}
 };
-static_assert(alignof(AArmor_Light_C) == 0x000008, "Wrong alignment on AArmor_Light_C");
-static_assert(sizeof(AArmor_Light_C) == 0x000270, "Wrong size on AArmor_Light_C");
-static_assert(offsetof(AArmor_Light_C, UberGraphFrame) == 0x000220, "Member 'AArmor_Light_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AArmor_Light_C, ArmorMesh) == 0x000228, "Member 'AArmor_Light_C::ArmorMesh' has a wrong offset!");
-static_assert(offsetof(AArmor_Light_C, DefaultSceneRoot) == 0x000230, "Member 'AArmor_Light_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AArmor_Light_C, HangingMesh) == 0x000238, "Member 'AArmor_Light_C::HangingMesh' has a wrong offset!");
-static_assert(offsetof(AArmor_Light_C, ArmorMaxHealth) == 0x000240, "Member 'AArmor_Light_C::ArmorMaxHealth' has a wrong offset!");
-static_assert(offsetof(AArmor_Light_C, HealthProtection_) == 0x000244, "Member 'AArmor_Light_C::HealthProtection_' has a wrong offset!");
-static_assert(offsetof(AArmor_Light_C, ArmorHealth) == 0x000248, "Member 'AArmor_Light_C::ArmorHealth' has a wrong offset!");
-static_assert(offsetof(AArmor_Light_C, ArmorStage) == 0x00024C, "Member 'AArmor_Light_C::ArmorStage' has a wrong offset!");
-static_assert(offsetof(AArmor_Light_C, Destroyed_) == 0x000250, "Member 'AArmor_Light_C::Destroyed_' has a wrong offset!");
-static_assert(offsetof(AArmor_Light_C, InitiateHeal) == 0x000258, "Member 'AArmor_Light_C::InitiateHeal' has a wrong offset!");
-static_assert(offsetof(AArmor_Light_C, ArmorSK_mesh) == 0x000268, "Member 'AArmor_Light_C::ArmorSK_mesh' has a wrong offset!");
+DUMPER7_ASSERTS_AArmor_Light_C;
 
 }
 

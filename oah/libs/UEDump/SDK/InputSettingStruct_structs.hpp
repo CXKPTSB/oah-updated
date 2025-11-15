@@ -27,12 +27,7 @@ public:
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FInputAxisKeyMapping                   Axismapping_5_01C53C8D4B29FF1852A9FF8CF3A7A89F;    // 0x0038(0x0028)(Edit, BlueprintVisible)
 };
-static_assert(alignof(FInputSettingStruct) == 0x000008, "Wrong alignment on FInputSettingStruct");
-static_assert(sizeof(FInputSettingStruct) == 0x000060, "Wrong size on FInputSettingStruct");
-static_assert(offsetof(FInputSettingStruct, Name_2_182CE6524D0CEC7F4B50F99E0F6756F9) == 0x000000, "Member 'FInputSettingStruct::Name_2_182CE6524D0CEC7F4B50F99E0F6756F9' has a wrong offset!");
-static_assert(offsetof(FInputSettingStruct, Actionmapping_11_421EA37C495365BF9098908EE354C38D) == 0x000008, "Member 'FInputSettingStruct::Actionmapping_11_421EA37C495365BF9098908EE354C38D' has a wrong offset!");
-static_assert(offsetof(FInputSettingStruct, IsAxis__8_3FA115DA4EB5868C1F265EAB9A2C533F) == 0x000030, "Member 'FInputSettingStruct::IsAxis__8_3FA115DA4EB5868C1F265EAB9A2C533F' has a wrong offset!");
-static_assert(offsetof(FInputSettingStruct, Axismapping_5_01C53C8D4B29FF1852A9FF8CF3A7A89F) == 0x000038, "Member 'FInputSettingStruct::Axismapping_5_01C53C8D4B29FF1852A9FF8CF3A7A89F' has a wrong offset!");
+DUMPER7_ASSERTS_FInputSettingStruct;
 
 }
 

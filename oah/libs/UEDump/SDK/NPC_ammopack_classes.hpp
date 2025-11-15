@@ -55,37 +55,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"NPC_ammopack_C">();
+		BP_STATIC_CLASS_IMPL("NPC_ammopack_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NPC_ammopack_C")
 	}
 	static class ANPC_ammopack_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ANPC_ammopack_C>();
 	}
 };
-static_assert(alignof(ANPC_ammopack_C) == 0x000008, "Wrong alignment on ANPC_ammopack_C");
-static_assert(sizeof(ANPC_ammopack_C) == 0x0002D0, "Wrong size on ANPC_ammopack_C");
-static_assert(offsetof(ANPC_ammopack_C, UberGraphFrame) == 0x000220, "Member 'ANPC_ammopack_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ANPC_ammopack_C, LookatInfoComponent) == 0x000228, "Member 'ANPC_ammopack_C::LookatInfoComponent' has a wrong offset!");
-static_assert(offsetof(ANPC_ammopack_C, Box) == 0x000230, "Member 'ANPC_ammopack_C::Box' has a wrong offset!");
-static_assert(offsetof(ANPC_ammopack_C, StaticMesh15) == 0x000238, "Member 'ANPC_ammopack_C::StaticMesh15' has a wrong offset!");
-static_assert(offsetof(ANPC_ammopack_C, StaticMesh14) == 0x000240, "Member 'ANPC_ammopack_C::StaticMesh14' has a wrong offset!");
-static_assert(offsetof(ANPC_ammopack_C, StaticMesh13) == 0x000248, "Member 'ANPC_ammopack_C::StaticMesh13' has a wrong offset!");
-static_assert(offsetof(ANPC_ammopack_C, StaticMesh12) == 0x000250, "Member 'ANPC_ammopack_C::StaticMesh12' has a wrong offset!");
-static_assert(offsetof(ANPC_ammopack_C, StaticMesh11) == 0x000258, "Member 'ANPC_ammopack_C::StaticMesh11' has a wrong offset!");
-static_assert(offsetof(ANPC_ammopack_C, StaticMesh10) == 0x000260, "Member 'ANPC_ammopack_C::StaticMesh10' has a wrong offset!");
-static_assert(offsetof(ANPC_ammopack_C, StaticMesh9) == 0x000268, "Member 'ANPC_ammopack_C::StaticMesh9' has a wrong offset!");
-static_assert(offsetof(ANPC_ammopack_C, StaticMesh8) == 0x000270, "Member 'ANPC_ammopack_C::StaticMesh8' has a wrong offset!");
-static_assert(offsetof(ANPC_ammopack_C, StaticMesh7) == 0x000278, "Member 'ANPC_ammopack_C::StaticMesh7' has a wrong offset!");
-static_assert(offsetof(ANPC_ammopack_C, StaticMesh6) == 0x000280, "Member 'ANPC_ammopack_C::StaticMesh6' has a wrong offset!");
-static_assert(offsetof(ANPC_ammopack_C, StaticMesh5) == 0x000288, "Member 'ANPC_ammopack_C::StaticMesh5' has a wrong offset!");
-static_assert(offsetof(ANPC_ammopack_C, StaticMesh4) == 0x000290, "Member 'ANPC_ammopack_C::StaticMesh4' has a wrong offset!");
-static_assert(offsetof(ANPC_ammopack_C, StaticMesh3) == 0x000298, "Member 'ANPC_ammopack_C::StaticMesh3' has a wrong offset!");
-static_assert(offsetof(ANPC_ammopack_C, StaticMesh2) == 0x0002A0, "Member 'ANPC_ammopack_C::StaticMesh2' has a wrong offset!");
-static_assert(offsetof(ANPC_ammopack_C, StaticMesh16) == 0x0002A8, "Member 'ANPC_ammopack_C::StaticMesh16' has a wrong offset!");
-static_assert(offsetof(ANPC_ammopack_C, StaticMesh1) == 0x0002B0, "Member 'ANPC_ammopack_C::StaticMesh1' has a wrong offset!");
-static_assert(offsetof(ANPC_ammopack_C, StaticMesh) == 0x0002B8, "Member 'ANPC_ammopack_C::StaticMesh' has a wrong offset!");
-static_assert(offsetof(ANPC_ammopack_C, DefaultSceneRoot) == 0x0002C0, "Member 'ANPC_ammopack_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ANPC_ammopack_C, Amount) == 0x0002C8, "Member 'ANPC_ammopack_C::Amount' has a wrong offset!");
+DUMPER7_ASSERTS_ANPC_ammopack_C;
 
 }
 

@@ -142,65 +142,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MainMenuUI_C">();
+		BP_STATIC_CLASS_IMPL("MainMenuUI_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MainMenuUI_C")
 	}
 	static class UMainMenuUI_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMainMenuUI_C>();
 	}
 };
-static_assert(alignof(UMainMenuUI_C) == 0x000008, "Wrong alignment on UMainMenuUI_C");
-static_assert(sizeof(UMainMenuUI_C) == 0x0003E8, "Wrong size on UMainMenuUI_C");
-static_assert(offsetof(UMainMenuUI_C, UberGraphFrame) == 0x000260, "Member 'UMainMenuUI_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, TutorialButtonAnim) == 0x000268, "Member 'UMainMenuUI_C::TutorialButtonAnim' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, HoverOnCoins) == 0x000270, "Member 'UMainMenuUI_C::HoverOnCoins' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, HideTitleAnim) == 0x000278, "Member 'UMainMenuUI_C::HideTitleAnim' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, FlyIn) == 0x000280, "Member 'UMainMenuUI_C::FlyIn' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, HideMenu) == 0x000288, "Member 'UMainMenuUI_C::HideMenu' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, ADDcoins) == 0x000290, "Member 'UMainMenuUI_C::ADDcoins' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, AppearencesWrapBox) == 0x000298, "Member 'UMainMenuUI_C::AppearencesWrapBox' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, Button) == 0x0002A0, "Member 'UMainMenuUI_C::Button' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, Button_0) == 0x0002A8, "Member 'UMainMenuUI_C::Button_0' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, Button_1) == 0x0002B0, "Member 'UMainMenuUI_C::Button_1' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, CloseNotifButton) == 0x0002B8, "Member 'UMainMenuUI_C::CloseNotifButton' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, CoinButton) == 0x0002C0, "Member 'UMainMenuUI_C::CoinButton' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, Image_162) == 0x0002C8, "Member 'UMainMenuUI_C::Image_162' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, Image_189) == 0x0002D0, "Member 'UMainMenuUI_C::Image_189' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, Loadout_Button) == 0x0002D8, "Member 'UMainMenuUI_C::Loadout_Button' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, MenuChat) == 0x0002E0, "Member 'UMainMenuUI_C::MenuChat' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, MoreButton) == 0x0002E8, "Member 'UMainMenuUI_C::MoreButton' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, Play_Button) == 0x0002F0, "Member 'UMainMenuUI_C::Play_Button' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, ProgressBar_106) == 0x0002F8, "Member 'UMainMenuUI_C::ProgressBar_106' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, SaleButton) == 0x000300, "Member 'UMainMenuUI_C::SaleButton' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, SelectedMapBox) == 0x000308, "Member 'UMainMenuUI_C::SelectedMapBox' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, Setup_button) == 0x000310, "Member 'UMainMenuUI_C::Setup_button' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, Shop_button) == 0x000318, "Member 'UMainMenuUI_C::Shop_button' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, ShopNotifButton) == 0x000320, "Member 'UMainMenuUI_C::ShopNotifButton' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, Skill_button) == 0x000328, "Member 'UMainMenuUI_C::Skill_button' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, SkinRotationPopup) == 0x000330, "Member 'UMainMenuUI_C::SkinRotationPopup' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, SteamFriend_parent) == 0x000338, "Member 'UMainMenuUI_C::SteamFriend_parent' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, TextBlock_0) == 0x000340, "Member 'UMainMenuUI_C::TextBlock_0' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, TextBlock_1) == 0x000348, "Member 'UMainMenuUI_C::TextBlock_1' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, TextBlock_3) == 0x000350, "Member 'UMainMenuUI_C::TextBlock_3' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, TextBlock_4) == 0x000358, "Member 'UMainMenuUI_C::TextBlock_4' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, TextBlock_5) == 0x000360, "Member 'UMainMenuUI_C::TextBlock_5' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, TextBlock_6) == 0x000368, "Member 'UMainMenuUI_C::TextBlock_6' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, TextBlock_7) == 0x000370, "Member 'UMainMenuUI_C::TextBlock_7' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, TextBlock_13) == 0x000378, "Member 'UMainMenuUI_C::TextBlock_13' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, TextBlock_15) == 0x000380, "Member 'UMainMenuUI_C::TextBlock_15' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, TextBlock_559) == 0x000388, "Member 'UMainMenuUI_C::TextBlock_559' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, Title) == 0x000390, "Member 'UMainMenuUI_C::Title' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, TutorialButton) == 0x000398, "Member 'UMainMenuUI_C::TutorialButton' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, TutorialText) == 0x0003A0, "Member 'UMainMenuUI_C::TutorialText' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, LobbyType) == 0x0003A8, "Member 'UMainMenuUI_C::LobbyType' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, OwnerPlayer) == 0x0003B8, "Member 'UMainMenuUI_C::OwnerPlayer' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, As_Robber_Controller) == 0x0003C0, "Member 'UMainMenuUI_C::As_Robber_Controller' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, TitleHidden_) == 0x0003C8, "Member 'UMainMenuUI_C::TitleHidden_' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, Countdown) == 0x0003CC, "Member 'UMainMenuUI_C::Countdown' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, As_Robber_GI) == 0x0003D0, "Member 'UMainMenuUI_C::As_Robber_GI' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, LobbyManager) == 0x0003D8, "Member 'UMainMenuUI_C::LobbyManager' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, MapSale_) == 0x0003E0, "Member 'UMainMenuUI_C::MapSale_' has a wrong offset!");
-static_assert(offsetof(UMainMenuUI_C, SaleAmount) == 0x0003E4, "Member 'UMainMenuUI_C::SaleAmount' has a wrong offset!");
+DUMPER7_ASSERTS_UMainMenuUI_C;
 
 }
 

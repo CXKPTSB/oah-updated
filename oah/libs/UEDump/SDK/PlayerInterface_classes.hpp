@@ -17,8 +17,8 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass PlayerInterface.PlayerInterface_C
-// 0x0000 (0x0028 - 0x0028)
-class IPlayerInterface_C final : public IInterface
+// 0x0000 (0x0000 - 0x0000)
+class IPlayerInterface_C final
 {
 public:
 	void AddEXP(float Amount);
@@ -26,15 +26,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerInterface_C">();
+		BP_STATIC_CLASS_IMPL("PlayerInterface_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerInterface_C")
 	}
 	static class IPlayerInterface_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<IPlayerInterface_C>();
 	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
 };
-static_assert(alignof(IPlayerInterface_C) == 0x000008, "Wrong alignment on IPlayerInterface_C");
-static_assert(sizeof(IPlayerInterface_C) == 0x000028, "Wrong size on IPlayerInterface_C");
+DUMPER7_ASSERTS_IPlayerInterface_C;
 
 }
 

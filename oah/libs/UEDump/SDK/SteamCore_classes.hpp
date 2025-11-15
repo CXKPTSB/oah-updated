@@ -29,23 +29,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreAsyncAction">();
+		STATIC_CLASS_IMPL("SteamCoreAsyncAction")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreAsyncAction")
 	}
 	static class USteamCoreAsyncAction* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreAsyncAction>();
 	}
 };
-static_assert(alignof(USteamCoreAsyncAction) == 0x000008, "Wrong alignment on USteamCoreAsyncAction");
-static_assert(sizeof(USteamCoreAsyncAction) == 0x000038, "Wrong size on USteamCoreAsyncAction");
-static_assert(offsetof(USteamCoreAsyncAction, m_WorldContextObject) == 0x000030, "Member 'USteamCoreAsyncAction::m_WorldContextObject' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreAsyncAction;
 
 // Class SteamCore.SteamCoreUGCAsyncActionGetUserItemVote
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreUGCAsyncActionGetUserItemVote final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FGetUserItemVoteResult& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FGetUserItemVoteResult& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreUGCAsyncActionGetUserItemVote* GetUserItemVoteAsync(class UObject* WorldContextObject, const struct FPublishedFileID& PublishedFileID, float Timeout);
@@ -55,16 +57,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreUGCAsyncActionGetUserItemVote">();
+		STATIC_CLASS_IMPL("SteamCoreUGCAsyncActionGetUserItemVote")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreUGCAsyncActionGetUserItemVote")
 	}
 	static class USteamCoreUGCAsyncActionGetUserItemVote* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreUGCAsyncActionGetUserItemVote>();
 	}
 };
-static_assert(alignof(USteamCoreUGCAsyncActionGetUserItemVote) == 0x000008, "Wrong alignment on USteamCoreUGCAsyncActionGetUserItemVote");
-static_assert(sizeof(USteamCoreUGCAsyncActionGetUserItemVote) == 0x000048, "Wrong size on USteamCoreUGCAsyncActionGetUserItemVote");
-static_assert(offsetof(USteamCoreUGCAsyncActionGetUserItemVote, OnCallback) == 0x000038, "Member 'USteamCoreUGCAsyncActionGetUserItemVote::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreUGCAsyncActionGetUserItemVote;
 
 // Class SteamCore.SteamCoreSubsystem
 // 0x0038 (0x0068 - 0x0030)
@@ -76,22 +80,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreSubsystem">();
+		STATIC_CLASS_IMPL("SteamCoreSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreSubsystem")
 	}
 	static class USteamCoreSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreSubsystem>();
 	}
 };
-static_assert(alignof(USteamCoreSubsystem) == 0x000008, "Wrong alignment on USteamCoreSubsystem");
-static_assert(sizeof(USteamCoreSubsystem) == 0x000068, "Wrong size on USteamCoreSubsystem");
+DUMPER7_ASSERTS_USteamCoreSubsystem;
 
 // Class SteamCore.SteamCoreUGCAsyncActionSetUserItemVote
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreUGCAsyncActionSetUserItemVote final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FSetUserItemVoteResult& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FSetUserItemVoteResult& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreUGCAsyncActionSetUserItemVote* SetUserItemVoteAsync(class UObject* WorldContextObject, const struct FPublishedFileID& PublishedFileID, bool bVoteUp, float Timeout);
@@ -101,24 +108,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreUGCAsyncActionSetUserItemVote">();
+		STATIC_CLASS_IMPL("SteamCoreUGCAsyncActionSetUserItemVote")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreUGCAsyncActionSetUserItemVote")
 	}
 	static class USteamCoreUGCAsyncActionSetUserItemVote* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreUGCAsyncActionSetUserItemVote>();
 	}
 };
-static_assert(alignof(USteamCoreUGCAsyncActionSetUserItemVote) == 0x000008, "Wrong alignment on USteamCoreUGCAsyncActionSetUserItemVote");
-static_assert(sizeof(USteamCoreUGCAsyncActionSetUserItemVote) == 0x000048, "Wrong size on USteamCoreUGCAsyncActionSetUserItemVote");
-static_assert(offsetof(USteamCoreUGCAsyncActionSetUserItemVote, OnCallback) == 0x000038, "Member 'USteamCoreUGCAsyncActionSetUserItemVote::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreUGCAsyncActionSetUserItemVote;
 
 // Class SteamCore.AppList
 // 0x0060 (0x00C8 - 0x0068)
 class UAppList final : public USteamCoreSubsystem
 {
 public:
-	TMulticastInlineDelegate<void(const struct FSteamAppInstalled& Data)> SteamAppInstalled;                                 // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FSteamAppUninstalled& Data)> SteamAppUninstalled;                               // 0x0078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FSteamAppInstalled& Data)> SteamAppInstalled;         // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FSteamAppUninstalled& Data)> SteamAppUninstalled;     // 0x0078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_88[0x40];                                      // 0x0088(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -131,17 +140,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AppList">();
+		STATIC_CLASS_IMPL("AppList")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AppList")
 	}
 	static class UAppList* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAppList>();
 	}
 };
-static_assert(alignof(UAppList) == 0x000008, "Wrong alignment on UAppList");
-static_assert(sizeof(UAppList) == 0x0000C8, "Wrong size on UAppList");
-static_assert(offsetof(UAppList, SteamAppInstalled) == 0x000068, "Member 'UAppList::SteamAppInstalled' has a wrong offset!");
-static_assert(offsetof(UAppList, SteamAppUninstalled) == 0x000078, "Member 'UAppList::SteamAppUninstalled' has a wrong offset!");
+DUMPER7_ASSERTS_UAppList;
 
 // Class SteamCore.SteamCoreGameMode
 // 0x0000 (0x0308 - 0x0308)
@@ -150,22 +160,25 @@ class ASteamCoreGameMode final : public AGameMode
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreGameMode">();
+		STATIC_CLASS_IMPL("SteamCoreGameMode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreGameMode")
 	}
 	static class ASteamCoreGameMode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASteamCoreGameMode>();
 	}
 };
-static_assert(alignof(ASteamCoreGameMode) == 0x000008, "Wrong alignment on ASteamCoreGameMode");
-static_assert(sizeof(ASteamCoreGameMode) == 0x000308, "Wrong size on ASteamCoreGameMode");
+DUMPER7_ASSERTS_ASteamCoreGameMode;
 
 // Class SteamCore.SteamCoreUGCAsyncActionSubmitItemUpdate
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreUGCAsyncActionSubmitItemUpdate final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FSubmitItemUpdateResult& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FSubmitItemUpdateResult& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreUGCAsyncActionSubmitItemUpdate* SubmitItemUpdateAsync(class UObject* WorldContextObject, const struct FUGCUpdateHandle& Handle, const class FString& ChangeNote, float Timeout);
@@ -175,24 +188,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreUGCAsyncActionSubmitItemUpdate">();
+		STATIC_CLASS_IMPL("SteamCoreUGCAsyncActionSubmitItemUpdate")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreUGCAsyncActionSubmitItemUpdate")
 	}
 	static class USteamCoreUGCAsyncActionSubmitItemUpdate* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreUGCAsyncActionSubmitItemUpdate>();
 	}
 };
-static_assert(alignof(USteamCoreUGCAsyncActionSubmitItemUpdate) == 0x000008, "Wrong alignment on USteamCoreUGCAsyncActionSubmitItemUpdate");
-static_assert(sizeof(USteamCoreUGCAsyncActionSubmitItemUpdate) == 0x000048, "Wrong size on USteamCoreUGCAsyncActionSubmitItemUpdate");
-static_assert(offsetof(USteamCoreUGCAsyncActionSubmitItemUpdate, OnCallback) == 0x000038, "Member 'USteamCoreUGCAsyncActionSubmitItemUpdate::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreUGCAsyncActionSubmitItemUpdate;
 
 // Class SteamCore.Apps
 // 0x0060 (0x00C8 - 0x0068)
 class UApps final : public USteamCoreSubsystem
 {
 public:
-	TMulticastInlineDelegate<void(const struct FDLCInstalled& Data)> DLCInstalled;                                      // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FFileDetailsResult& Data)> FileDetailsResultDelegate;                         // 0x0078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FDLCInstalled& Data)> DLCInstalled;                   // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FFileDetailsResult& Data)> FileDetailsResultDelegate; // 0x0078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_88[0x40];                                      // 0x0088(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -228,24 +243,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Apps">();
+		STATIC_CLASS_IMPL("Apps")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Apps")
 	}
 	static class UApps* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UApps>();
 	}
 };
-static_assert(alignof(UApps) == 0x000008, "Wrong alignment on UApps");
-static_assert(sizeof(UApps) == 0x0000C8, "Wrong size on UApps");
-static_assert(offsetof(UApps, DLCInstalled) == 0x000068, "Member 'UApps::DLCInstalled' has a wrong offset!");
-static_assert(offsetof(UApps, FileDetailsResultDelegate) == 0x000078, "Member 'UApps::FileDetailsResultDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_UApps;
 
 // Class SteamCore.SteamCoreUGCAsyncActionSendQueryUGCRequest
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreUGCAsyncActionSendQueryUGCRequest final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FSteamUGCQueryCompleted& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FSteamUGCQueryCompleted& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreUGCAsyncActionSendQueryUGCRequest* SendQueryUGCRequestAsync(class UObject* WorldContextObject, const struct FUGCQueryHandle& Handle, float Timeout);
@@ -255,23 +271,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreUGCAsyncActionSendQueryUGCRequest">();
+		STATIC_CLASS_IMPL("SteamCoreUGCAsyncActionSendQueryUGCRequest")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreUGCAsyncActionSendQueryUGCRequest")
 	}
 	static class USteamCoreUGCAsyncActionSendQueryUGCRequest* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreUGCAsyncActionSendQueryUGCRequest>();
 	}
 };
-static_assert(alignof(USteamCoreUGCAsyncActionSendQueryUGCRequest) == 0x000008, "Wrong alignment on USteamCoreUGCAsyncActionSendQueryUGCRequest");
-static_assert(sizeof(USteamCoreUGCAsyncActionSendQueryUGCRequest) == 0x000048, "Wrong size on USteamCoreUGCAsyncActionSendQueryUGCRequest");
-static_assert(offsetof(USteamCoreUGCAsyncActionSendQueryUGCRequest, OnCallback) == 0x000038, "Member 'USteamCoreUGCAsyncActionSendQueryUGCRequest::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreUGCAsyncActionSendQueryUGCRequest;
 
 // Class SteamCore.SteamCoreUGCAsyncActionAddAppDependency
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreUGCAsyncActionAddAppDependency final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FAddAppDependencyResult& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FAddAppDependencyResult& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreUGCAsyncActionAddAppDependency* AddAppDependencyAsync(class UObject* WorldContextObject, const struct FPublishedFileID& PublishedFileID, int32 AppID, float Timeout);
@@ -281,23 +299,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreUGCAsyncActionAddAppDependency">();
+		STATIC_CLASS_IMPL("SteamCoreUGCAsyncActionAddAppDependency")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreUGCAsyncActionAddAppDependency")
 	}
 	static class USteamCoreUGCAsyncActionAddAppDependency* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreUGCAsyncActionAddAppDependency>();
 	}
 };
-static_assert(alignof(USteamCoreUGCAsyncActionAddAppDependency) == 0x000008, "Wrong alignment on USteamCoreUGCAsyncActionAddAppDependency");
-static_assert(sizeof(USteamCoreUGCAsyncActionAddAppDependency) == 0x000048, "Wrong size on USteamCoreUGCAsyncActionAddAppDependency");
-static_assert(offsetof(USteamCoreUGCAsyncActionAddAppDependency, OnCallback) == 0x000038, "Member 'USteamCoreUGCAsyncActionAddAppDependency::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreUGCAsyncActionAddAppDependency;
 
 // Class SteamCore.SteamCoreAppsAsyncActionGetFileDetails
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreAppsAsyncActionGetFileDetails final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FFileDetailsResult& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FFileDetailsResult& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreAppsAsyncActionGetFileDetails* GetFileDetailsAsync(class UObject* WorldContextObject, const class FString& Filename, float Timeout);
@@ -307,16 +327,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreAppsAsyncActionGetFileDetails">();
+		STATIC_CLASS_IMPL("SteamCoreAppsAsyncActionGetFileDetails")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreAppsAsyncActionGetFileDetails")
 	}
 	static class USteamCoreAppsAsyncActionGetFileDetails* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreAppsAsyncActionGetFileDetails>();
 	}
 };
-static_assert(alignof(USteamCoreAppsAsyncActionGetFileDetails) == 0x000008, "Wrong alignment on USteamCoreAppsAsyncActionGetFileDetails");
-static_assert(sizeof(USteamCoreAppsAsyncActionGetFileDetails) == 0x000048, "Wrong size on USteamCoreAppsAsyncActionGetFileDetails");
-static_assert(offsetof(USteamCoreAppsAsyncActionGetFileDetails, OnCallback) == 0x000038, "Member 'USteamCoreAppsAsyncActionGetFileDetails::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreAppsAsyncActionGetFileDetails;
 
 // Class SteamCore.SteamCore
 // 0x0000 (0x0028 - 0x0028)
@@ -325,15 +347,18 @@ class USteamCore final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCore">();
+		STATIC_CLASS_IMPL("SteamCore")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCore")
 	}
 	static class USteamCore* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCore>();
 	}
 };
-static_assert(alignof(USteamCore) == 0x000008, "Wrong alignment on USteamCore");
-static_assert(sizeof(USteamCore) == 0x000028, "Wrong size on USteamCore");
+DUMPER7_ASSERTS_USteamCore;
 
 // Class SteamCore.SteamCoreSettings
 // 0x0028 (0x0060 - 0x0038)
@@ -354,46 +379,39 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreSettings">();
+		STATIC_CLASS_IMPL("SteamCoreSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreSettings")
 	}
 	static class USteamCoreSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreSettings>();
 	}
 };
-static_assert(alignof(USteamCoreSettings) == 0x000008, "Wrong alignment on USteamCoreSettings");
-static_assert(sizeof(USteamCoreSettings) == 0x000060, "Wrong size on USteamCoreSettings");
-static_assert(offsetof(USteamCoreSettings, bEnabled) == 0x000038, "Member 'USteamCoreSettings::bEnabled' has a wrong offset!");
-static_assert(offsetof(USteamCoreSettings, bRelaunchInSteam) == 0x000039, "Member 'USteamCoreSettings::bRelaunchInSteam' has a wrong offset!");
-static_assert(offsetof(USteamCoreSettings, bVACEnabled) == 0x00003A, "Member 'USteamCoreSettings::bVACEnabled' has a wrong offset!");
-static_assert(offsetof(USteamCoreSettings, bAllowP2PPacketRelay) == 0x00003B, "Member 'USteamCoreSettings::bAllowP2PPacketRelay' has a wrong offset!");
-static_assert(offsetof(USteamCoreSettings, P2PConnectionTimeout) == 0x00003C, "Member 'USteamCoreSettings::P2PConnectionTimeout' has a wrong offset!");
-static_assert(offsetof(USteamCoreSettings, SteamAppId) == 0x000040, "Member 'USteamCoreSettings::SteamAppId' has a wrong offset!");
-static_assert(offsetof(USteamCoreSettings, SteamDevAppId) == 0x000044, "Member 'USteamCoreSettings::SteamDevAppId' has a wrong offset!");
-static_assert(offsetof(USteamCoreSettings, Port) == 0x000048, "Member 'USteamCoreSettings::Port' has a wrong offset!");
-static_assert(offsetof(USteamCoreSettings, GameServerQueryPort) == 0x00004C, "Member 'USteamCoreSettings::GameServerQueryPort' has a wrong offset!");
-static_assert(offsetof(USteamCoreSettings, GameVersion) == 0x000050, "Member 'USteamCoreSettings::GameVersion' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreSettings;
 
 // Class SteamCore.Friends
 // 0x02D0 (0x0338 - 0x0068)
 class UFriends final : public USteamCoreSubsystem
 {
 public:
-	TMulticastInlineDelegate<void(const struct FAvatarImageLoaded& Data)> AvatarImageLoaded;                                 // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FFriendRichPresenceUpdate& Data)> FriendRichPresenceUpdate;                          // 0x0078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FGameConnectedChatJoin& Data)> GameConnectedChatJoin;                             // 0x0088(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FGameConnectedChatLeave& Data)> GameConnectedChatLeave;                            // 0x0098(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FGameConnectedClanChatMsg& Data)> GameConnectedClanChatMsg;                          // 0x00A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FGameConnectedFriendChatMsg& Data)> GameConnectedFriendChatMsg;                        // 0x00B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FGameLobbyJoinRequested& Data)> GameLobbyJoinRequested;                            // 0x00C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FGameOverlayActivated& Data)> GameOverlayActivated;                              // 0x00D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FGameRichPresenceJoinRequested& Data)> GameRichPresenceJoinRequested;                     // 0x00E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FGameServerChangeRequested& Data)> GameServerChangeRequested;                         // 0x00F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FPersonaStateChange& Data)> PersonaStateChange;                                // 0x0108(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FSetPersonaNameResponse& Data)> SetPersonaNameResponse;                            // 0x0118(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FJoinClanChatRoomCompletionResult& Data)> JoinClanChatRoomCompletionResult;                  // 0x0128(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FClanOfficerListResponse& Data)> ClanOfficerListResponse;                           // 0x0138(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FDownloadClanActivityCountsResult& Data)> DownloadClanActivityCountsResult;                  // 0x0148(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FAvatarImageLoaded& Data)> AvatarImageLoaded;         // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FFriendRichPresenceUpdate& Data)> FriendRichPresenceUpdate; // 0x0078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FGameConnectedChatJoin& Data)> GameConnectedChatJoin; // 0x0088(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FGameConnectedChatLeave& Data)> GameConnectedChatLeave; // 0x0098(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FGameConnectedClanChatMsg& Data)> GameConnectedClanChatMsg; // 0x00A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FGameConnectedFriendChatMsg& Data)> GameConnectedFriendChatMsg; // 0x00B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FGameLobbyJoinRequested& Data)> GameLobbyJoinRequested; // 0x00C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FGameOverlayActivated& Data)> GameOverlayActivated;   // 0x00D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FGameRichPresenceJoinRequested& Data)> GameRichPresenceJoinRequested; // 0x00E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FGameServerChangeRequested& Data)> GameServerChangeRequested; // 0x00F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FPersonaStateChange& Data)> PersonaStateChange;       // 0x0108(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FSetPersonaNameResponse& Data)> SetPersonaNameResponse; // 0x0118(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FJoinClanChatRoomCompletionResult& Data)> JoinClanChatRoomCompletionResult; // 0x0128(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FClanOfficerListResponse& Data)> ClanOfficerListResponse; // 0x0138(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FDownloadClanActivityCountsResult& Data)> DownloadClanActivityCountsResult; // 0x0148(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_158[0x1E0];                                    // 0x0158(0x01E0)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -479,37 +497,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Friends">();
+		STATIC_CLASS_IMPL("Friends")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Friends")
 	}
 	static class UFriends* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFriends>();
 	}
 };
-static_assert(alignof(UFriends) == 0x000008, "Wrong alignment on UFriends");
-static_assert(sizeof(UFriends) == 0x000338, "Wrong size on UFriends");
-static_assert(offsetof(UFriends, AvatarImageLoaded) == 0x000068, "Member 'UFriends::AvatarImageLoaded' has a wrong offset!");
-static_assert(offsetof(UFriends, FriendRichPresenceUpdate) == 0x000078, "Member 'UFriends::FriendRichPresenceUpdate' has a wrong offset!");
-static_assert(offsetof(UFriends, GameConnectedChatJoin) == 0x000088, "Member 'UFriends::GameConnectedChatJoin' has a wrong offset!");
-static_assert(offsetof(UFriends, GameConnectedChatLeave) == 0x000098, "Member 'UFriends::GameConnectedChatLeave' has a wrong offset!");
-static_assert(offsetof(UFriends, GameConnectedClanChatMsg) == 0x0000A8, "Member 'UFriends::GameConnectedClanChatMsg' has a wrong offset!");
-static_assert(offsetof(UFriends, GameConnectedFriendChatMsg) == 0x0000B8, "Member 'UFriends::GameConnectedFriendChatMsg' has a wrong offset!");
-static_assert(offsetof(UFriends, GameLobbyJoinRequested) == 0x0000C8, "Member 'UFriends::GameLobbyJoinRequested' has a wrong offset!");
-static_assert(offsetof(UFriends, GameOverlayActivated) == 0x0000D8, "Member 'UFriends::GameOverlayActivated' has a wrong offset!");
-static_assert(offsetof(UFriends, GameRichPresenceJoinRequested) == 0x0000E8, "Member 'UFriends::GameRichPresenceJoinRequested' has a wrong offset!");
-static_assert(offsetof(UFriends, GameServerChangeRequested) == 0x0000F8, "Member 'UFriends::GameServerChangeRequested' has a wrong offset!");
-static_assert(offsetof(UFriends, PersonaStateChange) == 0x000108, "Member 'UFriends::PersonaStateChange' has a wrong offset!");
-static_assert(offsetof(UFriends, SetPersonaNameResponse) == 0x000118, "Member 'UFriends::SetPersonaNameResponse' has a wrong offset!");
-static_assert(offsetof(UFriends, JoinClanChatRoomCompletionResult) == 0x000128, "Member 'UFriends::JoinClanChatRoomCompletionResult' has a wrong offset!");
-static_assert(offsetof(UFriends, ClanOfficerListResponse) == 0x000138, "Member 'UFriends::ClanOfficerListResponse' has a wrong offset!");
-static_assert(offsetof(UFriends, DownloadClanActivityCountsResult) == 0x000148, "Member 'UFriends::DownloadClanActivityCountsResult' has a wrong offset!");
+DUMPER7_ASSERTS_UFriends;
 
 // Class SteamCore.SteamCoreFriendsAsyncActionSetPersonaName
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreFriendsAsyncActionSetPersonaName final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FSetPersonaNameResponse& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FSetPersonaNameResponse& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreFriendsAsyncActionSetPersonaName* SetPersonaNameAsync(class UObject* WorldContextObject, const class FString& Name_0, float Timeout);
@@ -519,23 +525,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreFriendsAsyncActionSetPersonaName">();
+		STATIC_CLASS_IMPL("SteamCoreFriendsAsyncActionSetPersonaName")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreFriendsAsyncActionSetPersonaName")
 	}
 	static class USteamCoreFriendsAsyncActionSetPersonaName* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreFriendsAsyncActionSetPersonaName>();
 	}
 };
-static_assert(alignof(USteamCoreFriendsAsyncActionSetPersonaName) == 0x000008, "Wrong alignment on USteamCoreFriendsAsyncActionSetPersonaName");
-static_assert(sizeof(USteamCoreFriendsAsyncActionSetPersonaName) == 0x000048, "Wrong size on USteamCoreFriendsAsyncActionSetPersonaName");
-static_assert(offsetof(USteamCoreFriendsAsyncActionSetPersonaName, OnCallback) == 0x000038, "Member 'USteamCoreFriendsAsyncActionSetPersonaName::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreFriendsAsyncActionSetPersonaName;
 
 // Class SteamCore.SteamCoreFriendsAsyncActionDownloadClanActivityCounts
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreFriendsAsyncActionDownloadClanActivityCounts final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FDownloadClanActivityCountsResult& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FDownloadClanActivityCountsResult& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreFriendsAsyncActionDownloadClanActivityCounts* DownloadClanActivityCountsAsync(class UObject* WorldContextObject, const TArray<struct FSteamID>& SteamIDClans, float Timeout);
@@ -545,23 +553,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreFriendsAsyncActionDownloadClanActivityCounts">();
+		STATIC_CLASS_IMPL("SteamCoreFriendsAsyncActionDownloadClanActivityCounts")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreFriendsAsyncActionDownloadClanActivityCounts")
 	}
 	static class USteamCoreFriendsAsyncActionDownloadClanActivityCounts* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreFriendsAsyncActionDownloadClanActivityCounts>();
 	}
 };
-static_assert(alignof(USteamCoreFriendsAsyncActionDownloadClanActivityCounts) == 0x000008, "Wrong alignment on USteamCoreFriendsAsyncActionDownloadClanActivityCounts");
-static_assert(sizeof(USteamCoreFriendsAsyncActionDownloadClanActivityCounts) == 0x000048, "Wrong size on USteamCoreFriendsAsyncActionDownloadClanActivityCounts");
-static_assert(offsetof(USteamCoreFriendsAsyncActionDownloadClanActivityCounts, OnCallback) == 0x000038, "Member 'USteamCoreFriendsAsyncActionDownloadClanActivityCounts::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreFriendsAsyncActionDownloadClanActivityCounts;
 
 // Class SteamCore.SteamCoreFriendsAsyncActionRequestClanOfficerList
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreFriendsAsyncActionRequestClanOfficerList final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FClanOfficerListResponse& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FClanOfficerListResponse& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreFriendsAsyncActionRequestClanOfficerList* RequestClanOfficerListAsync(class UObject* WorldContextObject, const struct FSteamID& SteamIDClan, float Timeout);
@@ -571,23 +581,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreFriendsAsyncActionRequestClanOfficerList">();
+		STATIC_CLASS_IMPL("SteamCoreFriendsAsyncActionRequestClanOfficerList")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreFriendsAsyncActionRequestClanOfficerList")
 	}
 	static class USteamCoreFriendsAsyncActionRequestClanOfficerList* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreFriendsAsyncActionRequestClanOfficerList>();
 	}
 };
-static_assert(alignof(USteamCoreFriendsAsyncActionRequestClanOfficerList) == 0x000008, "Wrong alignment on USteamCoreFriendsAsyncActionRequestClanOfficerList");
-static_assert(sizeof(USteamCoreFriendsAsyncActionRequestClanOfficerList) == 0x000048, "Wrong size on USteamCoreFriendsAsyncActionRequestClanOfficerList");
-static_assert(offsetof(USteamCoreFriendsAsyncActionRequestClanOfficerList, OnCallback) == 0x000038, "Member 'USteamCoreFriendsAsyncActionRequestClanOfficerList::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreFriendsAsyncActionRequestClanOfficerList;
 
 // Class SteamCore.SteamCoreFriendsAsyncActionJoinClanChatRoom
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreFriendsAsyncActionJoinClanChatRoom final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FJoinClanChatRoomCompletionResult& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FJoinClanChatRoomCompletionResult& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreFriendsAsyncActionJoinClanChatRoom* JoinClanChatRoomAsync(class UObject* WorldContextObject, const struct FSteamID& SteamIDClan, float Timeout);
@@ -597,23 +609,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreFriendsAsyncActionJoinClanChatRoom">();
+		STATIC_CLASS_IMPL("SteamCoreFriendsAsyncActionJoinClanChatRoom")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreFriendsAsyncActionJoinClanChatRoom")
 	}
 	static class USteamCoreFriendsAsyncActionJoinClanChatRoom* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreFriendsAsyncActionJoinClanChatRoom>();
 	}
 };
-static_assert(alignof(USteamCoreFriendsAsyncActionJoinClanChatRoom) == 0x000008, "Wrong alignment on USteamCoreFriendsAsyncActionJoinClanChatRoom");
-static_assert(sizeof(USteamCoreFriendsAsyncActionJoinClanChatRoom) == 0x000048, "Wrong size on USteamCoreFriendsAsyncActionJoinClanChatRoom");
-static_assert(offsetof(USteamCoreFriendsAsyncActionJoinClanChatRoom, OnCallback) == 0x000038, "Member 'USteamCoreFriendsAsyncActionJoinClanChatRoom::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreFriendsAsyncActionJoinClanChatRoom;
 
 // Class SteamCore.SteamCoreFriendsAsyncActionEnumerateFollowingList
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreFriendsAsyncActionEnumerateFollowingList final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FFriendsEnumerateFollowingList& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FFriendsEnumerateFollowingList& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreFriendsAsyncActionEnumerateFollowingList* EnumerateFollowingListAsync(class UObject* WorldContextObject, int32 StartIndex, float Timeout);
@@ -623,23 +637,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreFriendsAsyncActionEnumerateFollowingList">();
+		STATIC_CLASS_IMPL("SteamCoreFriendsAsyncActionEnumerateFollowingList")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreFriendsAsyncActionEnumerateFollowingList")
 	}
 	static class USteamCoreFriendsAsyncActionEnumerateFollowingList* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreFriendsAsyncActionEnumerateFollowingList>();
 	}
 };
-static_assert(alignof(USteamCoreFriendsAsyncActionEnumerateFollowingList) == 0x000008, "Wrong alignment on USteamCoreFriendsAsyncActionEnumerateFollowingList");
-static_assert(sizeof(USteamCoreFriendsAsyncActionEnumerateFollowingList) == 0x000048, "Wrong size on USteamCoreFriendsAsyncActionEnumerateFollowingList");
-static_assert(offsetof(USteamCoreFriendsAsyncActionEnumerateFollowingList, OnCallback) == 0x000038, "Member 'USteamCoreFriendsAsyncActionEnumerateFollowingList::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreFriendsAsyncActionEnumerateFollowingList;
 
 // Class SteamCore.SteamCoreFriendsAsyncActionIsFollowing
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreFriendsAsyncActionIsFollowing final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FFriendsIsFollowing& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FFriendsIsFollowing& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreFriendsAsyncActionIsFollowing* IsFollowingAsync(class UObject* WorldContextObject, const struct FSteamID& SteamID, float Timeout);
@@ -649,23 +665,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreFriendsAsyncActionIsFollowing">();
+		STATIC_CLASS_IMPL("SteamCoreFriendsAsyncActionIsFollowing")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreFriendsAsyncActionIsFollowing")
 	}
 	static class USteamCoreFriendsAsyncActionIsFollowing* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreFriendsAsyncActionIsFollowing>();
 	}
 };
-static_assert(alignof(USteamCoreFriendsAsyncActionIsFollowing) == 0x000008, "Wrong alignment on USteamCoreFriendsAsyncActionIsFollowing");
-static_assert(sizeof(USteamCoreFriendsAsyncActionIsFollowing) == 0x000048, "Wrong size on USteamCoreFriendsAsyncActionIsFollowing");
-static_assert(offsetof(USteamCoreFriendsAsyncActionIsFollowing, OnCallback) == 0x000038, "Member 'USteamCoreFriendsAsyncActionIsFollowing::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreFriendsAsyncActionIsFollowing;
 
 // Class SteamCore.SteamCoreFriendsAsyncActionGetFollowerCount
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreFriendsAsyncActionGetFollowerCount final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FFriendsGetFollowerCount& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FFriendsGetFollowerCount& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreFriendsAsyncActionGetFollowerCount* GetFollowerCountAsync(class UObject* WorldContextObject, const struct FSteamID& SteamID, float Timeout);
@@ -675,16 +693,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreFriendsAsyncActionGetFollowerCount">();
+		STATIC_CLASS_IMPL("SteamCoreFriendsAsyncActionGetFollowerCount")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreFriendsAsyncActionGetFollowerCount")
 	}
 	static class USteamCoreFriendsAsyncActionGetFollowerCount* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreFriendsAsyncActionGetFollowerCount>();
 	}
 };
-static_assert(alignof(USteamCoreFriendsAsyncActionGetFollowerCount) == 0x000008, "Wrong alignment on USteamCoreFriendsAsyncActionGetFollowerCount");
-static_assert(sizeof(USteamCoreFriendsAsyncActionGetFollowerCount) == 0x000048, "Wrong size on USteamCoreFriendsAsyncActionGetFollowerCount");
-static_assert(offsetof(USteamCoreFriendsAsyncActionGetFollowerCount, OnCallback) == 0x000038, "Member 'USteamCoreFriendsAsyncActionGetFollowerCount::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreFriendsAsyncActionGetFollowerCount;
 
 // Class SteamCore.SteamCoreFriendsAsyncActionRequestUserInformation
 // 0x0040 (0x0078 - 0x0038)
@@ -702,29 +722,31 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreFriendsAsyncActionRequestUserInformation">();
+		STATIC_CLASS_IMPL("SteamCoreFriendsAsyncActionRequestUserInformation")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreFriendsAsyncActionRequestUserInformation")
 	}
 	static class USteamCoreFriendsAsyncActionRequestUserInformation* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreFriendsAsyncActionRequestUserInformation>();
 	}
 };
-static_assert(alignof(USteamCoreFriendsAsyncActionRequestUserInformation) == 0x000008, "Wrong alignment on USteamCoreFriendsAsyncActionRequestUserInformation");
-static_assert(sizeof(USteamCoreFriendsAsyncActionRequestUserInformation) == 0x000078, "Wrong size on USteamCoreFriendsAsyncActionRequestUserInformation");
-static_assert(offsetof(USteamCoreFriendsAsyncActionRequestUserInformation, OnCallback) == 0x000038, "Member 'USteamCoreFriendsAsyncActionRequestUserInformation::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreFriendsAsyncActionRequestUserInformation;
 
 // Class SteamCore.SteamGameSearch
 // 0x0150 (0x01B8 - 0x0068)
 class USteamGameSearch final : public USteamCoreSubsystem
 {
 public:
-	TMulticastInlineDelegate<void(const struct FSearchForGameProgressCallback& Data)> SearchForGameProgressDelegate;                     // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FSearchForGameResultCallback& Data)> SearchForGameResultDelegate;                       // 0x0078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FRequestPlayersForGameProgressCallback& Data)> RequestPlayersForGameProgressDelegate;             // 0x0088(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FRequestPlayersForGameResultCallback& Data)> RequestPlayersForGameResultDelegate;               // 0x0098(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FRequestPlayersForGameFinalResultCallback& Data)> RequestPlayersForGameFinalResultDelegate;          // 0x00A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FSubmitPlayerResultResultCallback& Data)> SubmitPlayerResultResultDelegate;                  // 0x00B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FEndGameResultCallback& Data)> EndGameResultDelegate;                             // 0x00C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FSearchForGameProgressCallback& Data)> SearchForGameProgressDelegate; // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FSearchForGameResultCallback& Data)> SearchForGameResultDelegate; // 0x0078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FRequestPlayersForGameProgressCallback& Data)> RequestPlayersForGameProgressDelegate; // 0x0088(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FRequestPlayersForGameResultCallback& Data)> RequestPlayersForGameResultDelegate; // 0x0098(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FRequestPlayersForGameFinalResultCallback& Data)> RequestPlayersForGameFinalResultDelegate; // 0x00A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FSubmitPlayerResultResultCallback& Data)> SubmitPlayerResultResultDelegate; // 0x00B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FEndGameResultCallback& Data)> EndGameResultDelegate; // 0x00C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_D8[0xE0];                                      // 0x00D8(0x00E0)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -746,33 +768,29 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamGameSearch">();
+		STATIC_CLASS_IMPL("SteamGameSearch")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamGameSearch")
 	}
 	static class USteamGameSearch* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamGameSearch>();
 	}
 };
-static_assert(alignof(USteamGameSearch) == 0x000008, "Wrong alignment on USteamGameSearch");
-static_assert(sizeof(USteamGameSearch) == 0x0001B8, "Wrong size on USteamGameSearch");
-static_assert(offsetof(USteamGameSearch, SearchForGameProgressDelegate) == 0x000068, "Member 'USteamGameSearch::SearchForGameProgressDelegate' has a wrong offset!");
-static_assert(offsetof(USteamGameSearch, SearchForGameResultDelegate) == 0x000078, "Member 'USteamGameSearch::SearchForGameResultDelegate' has a wrong offset!");
-static_assert(offsetof(USteamGameSearch, RequestPlayersForGameProgressDelegate) == 0x000088, "Member 'USteamGameSearch::RequestPlayersForGameProgressDelegate' has a wrong offset!");
-static_assert(offsetof(USteamGameSearch, RequestPlayersForGameResultDelegate) == 0x000098, "Member 'USteamGameSearch::RequestPlayersForGameResultDelegate' has a wrong offset!");
-static_assert(offsetof(USteamGameSearch, RequestPlayersForGameFinalResultDelegate) == 0x0000A8, "Member 'USteamGameSearch::RequestPlayersForGameFinalResultDelegate' has a wrong offset!");
-static_assert(offsetof(USteamGameSearch, SubmitPlayerResultResultDelegate) == 0x0000B8, "Member 'USteamGameSearch::SubmitPlayerResultResultDelegate' has a wrong offset!");
-static_assert(offsetof(USteamGameSearch, EndGameResultDelegate) == 0x0000C8, "Member 'USteamGameSearch::EndGameResultDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_USteamGameSearch;
 
 // Class SteamCore.SteamGameServer
 // 0x00F0 (0x0158 - 0x0068)
 class USteamGameServer final : public USteamCoreSubsystem
 {
 public:
-	TMulticastInlineDelegate<void(const struct FGSPolicyResponse& Data)> GSPolicyResponse;                                  // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FGSClientGroupStatus& Data)> GSClientGroupStatus;                               // 0x0078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FValidateAuthTicketResponse& Data)> GSValidateAuthTicketResponse;                      // 0x0088(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FGSClientApprove& Data)> GSClientApprove;                                   // 0x0098(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FGSClientDeny& Data)> GSClientDeny;                                      // 0x00A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FGSPolicyResponse& Data)> GSPolicyResponse;           // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FGSClientGroupStatus& Data)> GSClientGroupStatus;     // 0x0078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FValidateAuthTicketResponse& Data)> GSValidateAuthTicketResponse; // 0x0088(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FGSClientApprove& Data)> GSClientApprove;             // 0x0098(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FGSClientDeny& Data)> GSClientDeny;                   // 0x00A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_B8[0xA0];                                      // 0x00B8(0x00A0)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -822,27 +840,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamGameServer">();
+		STATIC_CLASS_IMPL("SteamGameServer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamGameServer")
 	}
 	static class USteamGameServer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamGameServer>();
 	}
 };
-static_assert(alignof(USteamGameServer) == 0x000008, "Wrong alignment on USteamGameServer");
-static_assert(sizeof(USteamGameServer) == 0x000158, "Wrong size on USteamGameServer");
-static_assert(offsetof(USteamGameServer, GSPolicyResponse) == 0x000068, "Member 'USteamGameServer::GSPolicyResponse' has a wrong offset!");
-static_assert(offsetof(USteamGameServer, GSClientGroupStatus) == 0x000078, "Member 'USteamGameServer::GSClientGroupStatus' has a wrong offset!");
-static_assert(offsetof(USteamGameServer, GSValidateAuthTicketResponse) == 0x000088, "Member 'USteamGameServer::GSValidateAuthTicketResponse' has a wrong offset!");
-static_assert(offsetof(USteamGameServer, GSClientApprove) == 0x000098, "Member 'USteamGameServer::GSClientApprove' has a wrong offset!");
-static_assert(offsetof(USteamGameServer, GSClientDeny) == 0x0000A8, "Member 'USteamGameServer::GSClientDeny' has a wrong offset!");
+DUMPER7_ASSERTS_USteamGameServer;
 
 // Class SteamCore.GameServerStats
 // 0x0030 (0x0098 - 0x0068)
 class UGameServerStats final : public USteamCoreSubsystem
 {
 public:
-	TMulticastInlineDelegate<void(const struct FGSStatsUnloaded& Data)> GSStatsUnloaded;                                   // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FGSStatsUnloaded& Data)> GSStatsUnloaded;             // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_78[0x20];                                      // 0x0078(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -860,16 +876,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GameServerStats">();
+		STATIC_CLASS_IMPL("GameServerStats")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GameServerStats")
 	}
 	static class UGameServerStats* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGameServerStats>();
 	}
 };
-static_assert(alignof(UGameServerStats) == 0x000008, "Wrong alignment on UGameServerStats");
-static_assert(sizeof(UGameServerStats) == 0x000098, "Wrong size on UGameServerStats");
-static_assert(offsetof(UGameServerStats, GSStatsUnloaded) == 0x000068, "Member 'UGameServerStats::GSStatsUnloaded' has a wrong offset!");
+DUMPER7_ASSERTS_UGameServerStats;
 
 // Class SteamCore.Input
 // 0x0000 (0x0068 - 0x0068)
@@ -914,27 +932,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Input">();
+		STATIC_CLASS_IMPL("Input")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Input")
 	}
 	static class UInput* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInput>();
 	}
 };
-static_assert(alignof(UInput) == 0x000008, "Wrong alignment on UInput");
-static_assert(sizeof(UInput) == 0x000068, "Wrong size on UInput");
+DUMPER7_ASSERTS_UInput;
 
 // Class SteamCore.Inventory
 // 0x0120 (0x0188 - 0x0068)
 class UInventory final : public USteamCoreSubsystem
 {
 public:
-	TMulticastInlineDelegate<void(const struct FSteamInventoryResultReady& Data)> SteamInventoryResultReady;                         // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FSteamInventoryResultReady& Data)> SteamInventoryResultReady; // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void()>              SteamInventoryDefinitionUpdate;                    // 0x0078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FSteamInventoryFullUpdate& Data)> SteamInventoryFullUpdate;                          // 0x0088(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FSteamInventoryStartPurchaseResult& Data)> SteamInventoryStartPurchaseResult;                 // 0x0098(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FSteamInventoryRequestPricesResult& Data)> SteamInventoryRequestPricesResultDelegate;         // 0x00A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FSteamInventoryEligiblePromoItemDefIDs& Data)> SteamInventoryEligiblePromoItemDefIDs;             // 0x00B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FSteamInventoryFullUpdate& Data)> SteamInventoryFullUpdate; // 0x0088(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FSteamInventoryStartPurchaseResult& Data)> SteamInventoryStartPurchaseResult; // 0x0098(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FSteamInventoryRequestPricesResult& Data)> SteamInventoryRequestPricesResultDelegate; // 0x00A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FSteamInventoryEligiblePromoItemDefIDs& Data)> SteamInventoryEligiblePromoItemDefIDs; // 0x00B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C8[0xC0];                                      // 0x00C8(0x00C0)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -978,28 +999,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Inventory">();
+		STATIC_CLASS_IMPL("Inventory")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Inventory")
 	}
 	static class UInventory* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInventory>();
 	}
 };
-static_assert(alignof(UInventory) == 0x000008, "Wrong alignment on UInventory");
-static_assert(sizeof(UInventory) == 0x000188, "Wrong size on UInventory");
-static_assert(offsetof(UInventory, SteamInventoryResultReady) == 0x000068, "Member 'UInventory::SteamInventoryResultReady' has a wrong offset!");
-static_assert(offsetof(UInventory, SteamInventoryDefinitionUpdate) == 0x000078, "Member 'UInventory::SteamInventoryDefinitionUpdate' has a wrong offset!");
-static_assert(offsetof(UInventory, SteamInventoryFullUpdate) == 0x000088, "Member 'UInventory::SteamInventoryFullUpdate' has a wrong offset!");
-static_assert(offsetof(UInventory, SteamInventoryStartPurchaseResult) == 0x000098, "Member 'UInventory::SteamInventoryStartPurchaseResult' has a wrong offset!");
-static_assert(offsetof(UInventory, SteamInventoryRequestPricesResultDelegate) == 0x0000A8, "Member 'UInventory::SteamInventoryRequestPricesResultDelegate' has a wrong offset!");
-static_assert(offsetof(UInventory, SteamInventoryEligiblePromoItemDefIDs) == 0x0000B8, "Member 'UInventory::SteamInventoryEligiblePromoItemDefIDs' has a wrong offset!");
+DUMPER7_ASSERTS_UInventory;
 
 // Class SteamCore.SteamCoreInventoryAsyncActionRequestEligiblePromoItemDefinitionsIDs
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreInventoryAsyncActionRequestEligiblePromoItemDefinitionsIDs final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FSteamInventoryEligiblePromoItemDefIDs& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FSteamInventoryEligiblePromoItemDefIDs& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreInventoryAsyncActionRequestEligiblePromoItemDefinitionsIDs* RequestEligiblePromoItemDefinitionsIDsAsync(class UObject* WorldContextObject, const struct FSteamID& SteamID, float Timeout);
@@ -1009,23 +1027,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreInventoryAsyncActionRequestEligiblePromoItemDefinitionsIDs">();
+		STATIC_CLASS_IMPL("SteamCoreInventoryAsyncActionRequestEligiblePromoItemDefinitionsIDs")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreInventoryAsyncActionRequestEligiblePromoItemDefinitionsIDs")
 	}
 	static class USteamCoreInventoryAsyncActionRequestEligiblePromoItemDefinitionsIDs* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreInventoryAsyncActionRequestEligiblePromoItemDefinitionsIDs>();
 	}
 };
-static_assert(alignof(USteamCoreInventoryAsyncActionRequestEligiblePromoItemDefinitionsIDs) == 0x000008, "Wrong alignment on USteamCoreInventoryAsyncActionRequestEligiblePromoItemDefinitionsIDs");
-static_assert(sizeof(USteamCoreInventoryAsyncActionRequestEligiblePromoItemDefinitionsIDs) == 0x000048, "Wrong size on USteamCoreInventoryAsyncActionRequestEligiblePromoItemDefinitionsIDs");
-static_assert(offsetof(USteamCoreInventoryAsyncActionRequestEligiblePromoItemDefinitionsIDs, OnCallback) == 0x000038, "Member 'USteamCoreInventoryAsyncActionRequestEligiblePromoItemDefinitionsIDs::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreInventoryAsyncActionRequestEligiblePromoItemDefinitionsIDs;
 
 // Class SteamCore.SteamCoreInventoryAsyncActionRequestPricesResult
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreInventoryAsyncActionRequestPricesResult final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FSteamInventoryRequestPricesResult& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FSteamInventoryRequestPricesResult& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreInventoryAsyncActionRequestPricesResult* RequestPricesAsync(class UObject* WorldContextObject, float Timeout);
@@ -1035,23 +1055,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreInventoryAsyncActionRequestPricesResult">();
+		STATIC_CLASS_IMPL("SteamCoreInventoryAsyncActionRequestPricesResult")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreInventoryAsyncActionRequestPricesResult")
 	}
 	static class USteamCoreInventoryAsyncActionRequestPricesResult* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreInventoryAsyncActionRequestPricesResult>();
 	}
 };
-static_assert(alignof(USteamCoreInventoryAsyncActionRequestPricesResult) == 0x000008, "Wrong alignment on USteamCoreInventoryAsyncActionRequestPricesResult");
-static_assert(sizeof(USteamCoreInventoryAsyncActionRequestPricesResult) == 0x000048, "Wrong size on USteamCoreInventoryAsyncActionRequestPricesResult");
-static_assert(offsetof(USteamCoreInventoryAsyncActionRequestPricesResult, OnCallback) == 0x000038, "Member 'USteamCoreInventoryAsyncActionRequestPricesResult::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreInventoryAsyncActionRequestPricesResult;
 
 // Class SteamCore.SteamCoreInventoryAsyncActionStartPurchaseResult
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreInventoryAsyncActionStartPurchaseResult final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FSteamInventoryStartPurchaseResult& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FSteamInventoryStartPurchaseResult& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreInventoryAsyncActionStartPurchaseResult* StartPurchaseAsync(class UObject* WorldContextObject, const TArray<struct FSteamItemDef>& ItemDefs, const TArray<int32>& Quantity, float Timeout);
@@ -1061,31 +1083,33 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreInventoryAsyncActionStartPurchaseResult">();
+		STATIC_CLASS_IMPL("SteamCoreInventoryAsyncActionStartPurchaseResult")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreInventoryAsyncActionStartPurchaseResult")
 	}
 	static class USteamCoreInventoryAsyncActionStartPurchaseResult* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreInventoryAsyncActionStartPurchaseResult>();
 	}
 };
-static_assert(alignof(USteamCoreInventoryAsyncActionStartPurchaseResult) == 0x000008, "Wrong alignment on USteamCoreInventoryAsyncActionStartPurchaseResult");
-static_assert(sizeof(USteamCoreInventoryAsyncActionStartPurchaseResult) == 0x000048, "Wrong size on USteamCoreInventoryAsyncActionStartPurchaseResult");
-static_assert(offsetof(USteamCoreInventoryAsyncActionStartPurchaseResult, OnCallback) == 0x000038, "Member 'USteamCoreInventoryAsyncActionStartPurchaseResult::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreInventoryAsyncActionStartPurchaseResult;
 
 // Class SteamCore.Matchmaking
 // 0x01B0 (0x0218 - 0x0068)
 class UMatchmaking final : public USteamCoreSubsystem
 {
 public:
-	TMulticastInlineDelegate<void(const struct FFavoritesListAccountsUpdated& Data)> FavoritesListAccountsUpdated;                      // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FFavoritesListChanged& Data)> FavoritesListChanged;                              // 0x0078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FLobbyChatMsg& Data)> LobbyChatMsg;                                      // 0x0088(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FLobbyChatUpdate& Data)> LobbyChatUpdate;                                   // 0x0098(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FLobbyDataUpdate& Data)> LobbyDataUpdate;                                   // 0x00A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FLobbyEnterData& Data)> LobbyEnter;                                        // 0x00B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FLobbyGameCreated& Data)> LobbyGameCreated;                                  // 0x00C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FLobbyInviteData& Data)> LobbyInvite;                                       // 0x00D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FLobbyKickedData& Data)> LobbyKicked;                                       // 0x00E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FFavoritesListAccountsUpdated& Data)> FavoritesListAccountsUpdated; // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FFavoritesListChanged& Data)> FavoritesListChanged;   // 0x0078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FLobbyChatMsg& Data)> LobbyChatMsg;                   // 0x0088(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FLobbyChatUpdate& Data)> LobbyChatUpdate;             // 0x0098(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FLobbyDataUpdate& Data)> LobbyDataUpdate;             // 0x00A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FLobbyEnterData& Data)> LobbyEnter;                   // 0x00B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FLobbyGameCreated& Data)> LobbyGameCreated;           // 0x00C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FLobbyInviteData& Data)> LobbyInvite;                 // 0x00D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FLobbyKickedData& Data)> LobbyKicked;                 // 0x00E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_F8[0x120];                                     // 0x00F8(0x0120)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -1132,31 +1156,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Matchmaking">();
+		STATIC_CLASS_IMPL("Matchmaking")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Matchmaking")
 	}
 	static class UMatchmaking* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMatchmaking>();
 	}
 };
-static_assert(alignof(UMatchmaking) == 0x000008, "Wrong alignment on UMatchmaking");
-static_assert(sizeof(UMatchmaking) == 0x000218, "Wrong size on UMatchmaking");
-static_assert(offsetof(UMatchmaking, FavoritesListAccountsUpdated) == 0x000068, "Member 'UMatchmaking::FavoritesListAccountsUpdated' has a wrong offset!");
-static_assert(offsetof(UMatchmaking, FavoritesListChanged) == 0x000078, "Member 'UMatchmaking::FavoritesListChanged' has a wrong offset!");
-static_assert(offsetof(UMatchmaking, LobbyChatMsg) == 0x000088, "Member 'UMatchmaking::LobbyChatMsg' has a wrong offset!");
-static_assert(offsetof(UMatchmaking, LobbyChatUpdate) == 0x000098, "Member 'UMatchmaking::LobbyChatUpdate' has a wrong offset!");
-static_assert(offsetof(UMatchmaking, LobbyDataUpdate) == 0x0000A8, "Member 'UMatchmaking::LobbyDataUpdate' has a wrong offset!");
-static_assert(offsetof(UMatchmaking, LobbyEnter) == 0x0000B8, "Member 'UMatchmaking::LobbyEnter' has a wrong offset!");
-static_assert(offsetof(UMatchmaking, LobbyGameCreated) == 0x0000C8, "Member 'UMatchmaking::LobbyGameCreated' has a wrong offset!");
-static_assert(offsetof(UMatchmaking, LobbyInvite) == 0x0000D8, "Member 'UMatchmaking::LobbyInvite' has a wrong offset!");
-static_assert(offsetof(UMatchmaking, LobbyKicked) == 0x0000E8, "Member 'UMatchmaking::LobbyKicked' has a wrong offset!");
+DUMPER7_ASSERTS_UMatchmaking;
 
 // Class SteamCore.SteamCoreMatchmakingAsyncActionCreateLobby
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreMatchmakingAsyncActionCreateLobby final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FCreateLobbyData& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FCreateLobbyData& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreMatchmakingAsyncActionCreateLobby* CreateLobbyAsync(class UObject* WorldContextObject, ESteamLobbyType LobbyType, int32 MaxMembers, float Timeout);
@@ -1166,23 +1184,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreMatchmakingAsyncActionCreateLobby">();
+		STATIC_CLASS_IMPL("SteamCoreMatchmakingAsyncActionCreateLobby")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreMatchmakingAsyncActionCreateLobby")
 	}
 	static class USteamCoreMatchmakingAsyncActionCreateLobby* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreMatchmakingAsyncActionCreateLobby>();
 	}
 };
-static_assert(alignof(USteamCoreMatchmakingAsyncActionCreateLobby) == 0x000008, "Wrong alignment on USteamCoreMatchmakingAsyncActionCreateLobby");
-static_assert(sizeof(USteamCoreMatchmakingAsyncActionCreateLobby) == 0x000048, "Wrong size on USteamCoreMatchmakingAsyncActionCreateLobby");
-static_assert(offsetof(USteamCoreMatchmakingAsyncActionCreateLobby, OnCallback) == 0x000038, "Member 'USteamCoreMatchmakingAsyncActionCreateLobby::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreMatchmakingAsyncActionCreateLobby;
 
 // Class SteamCore.SteamCoreMatchmakingAsyncActionRequestLobbyList
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreMatchmakingAsyncActionRequestLobbyList final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FLobbyMatchList& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FLobbyMatchList& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreMatchmakingAsyncActionRequestLobbyList* RequestLobbyListAsync(class UObject* WorldContextObject, float Timeout);
@@ -1192,23 +1212,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreMatchmakingAsyncActionRequestLobbyList">();
+		STATIC_CLASS_IMPL("SteamCoreMatchmakingAsyncActionRequestLobbyList")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreMatchmakingAsyncActionRequestLobbyList")
 	}
 	static class USteamCoreMatchmakingAsyncActionRequestLobbyList* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreMatchmakingAsyncActionRequestLobbyList>();
 	}
 };
-static_assert(alignof(USteamCoreMatchmakingAsyncActionRequestLobbyList) == 0x000008, "Wrong alignment on USteamCoreMatchmakingAsyncActionRequestLobbyList");
-static_assert(sizeof(USteamCoreMatchmakingAsyncActionRequestLobbyList) == 0x000048, "Wrong size on USteamCoreMatchmakingAsyncActionRequestLobbyList");
-static_assert(offsetof(USteamCoreMatchmakingAsyncActionRequestLobbyList, OnCallback) == 0x000038, "Member 'USteamCoreMatchmakingAsyncActionRequestLobbyList::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreMatchmakingAsyncActionRequestLobbyList;
 
 // Class SteamCore.SteamCoreMatchmakingAsyncActionJoinLobby
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreMatchmakingAsyncActionJoinLobby final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FJoinLobbyData& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FJoinLobbyData& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreMatchmakingAsyncActionJoinLobby* JoinLobbyAsync(class UObject* WorldContextObject, const struct FSteamID& SteamIDLobby, float Timeout);
@@ -1218,16 +1240,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreMatchmakingAsyncActionJoinLobby">();
+		STATIC_CLASS_IMPL("SteamCoreMatchmakingAsyncActionJoinLobby")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreMatchmakingAsyncActionJoinLobby")
 	}
 	static class USteamCoreMatchmakingAsyncActionJoinLobby* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreMatchmakingAsyncActionJoinLobby>();
 	}
 };
-static_assert(alignof(USteamCoreMatchmakingAsyncActionJoinLobby) == 0x000008, "Wrong alignment on USteamCoreMatchmakingAsyncActionJoinLobby");
-static_assert(sizeof(USteamCoreMatchmakingAsyncActionJoinLobby) == 0x000048, "Wrong size on USteamCoreMatchmakingAsyncActionJoinLobby");
-static_assert(offsetof(USteamCoreMatchmakingAsyncActionJoinLobby, OnCallback) == 0x000038, "Member 'USteamCoreMatchmakingAsyncActionJoinLobby::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreMatchmakingAsyncActionJoinLobby;
 
 // Class SteamCore.SteamCoreCreateSession
 // 0x0108 (0x0140 - 0x0038)
@@ -1244,24 +1268,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreCreateSession">();
+		STATIC_CLASS_IMPL("SteamCoreCreateSession")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreCreateSession")
 	}
 	static class USteamCoreCreateSession* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreCreateSession>();
 	}
 };
-static_assert(alignof(USteamCoreCreateSession) == 0x000008, "Wrong alignment on USteamCoreCreateSession");
-static_assert(sizeof(USteamCoreCreateSession) == 0x000140, "Wrong size on USteamCoreCreateSession");
-static_assert(offsetof(USteamCoreCreateSession, OnSuccess) == 0x000038, "Member 'USteamCoreCreateSession::OnSuccess' has a wrong offset!");
-static_assert(offsetof(USteamCoreCreateSession, OnFailure) == 0x000048, "Member 'USteamCoreCreateSession::OnFailure' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreCreateSession;
 
 // Class SteamCore.SteamCoreFindSession
 // 0x00A0 (0x00D8 - 0x0038)
 class USteamCoreFindSession final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const TArray<struct FSteamSessionResult>& Results)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TArray<struct FSteamSessionResult>& Results)> OnCallback;    // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_48[0x90];                                      // 0x0048(0x0090)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -1272,16 +1297,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreFindSession">();
+		STATIC_CLASS_IMPL("SteamCoreFindSession")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreFindSession")
 	}
 	static class USteamCoreFindSession* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreFindSession>();
 	}
 };
-static_assert(alignof(USteamCoreFindSession) == 0x000008, "Wrong alignment on USteamCoreFindSession");
-static_assert(sizeof(USteamCoreFindSession) == 0x0000D8, "Wrong size on USteamCoreFindSession");
-static_assert(offsetof(USteamCoreFindSession, OnCallback) == 0x000038, "Member 'USteamCoreFindSession::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreFindSession;
 
 // Class SteamCore.SteamCoreDestroySession
 // 0x0040 (0x0078 - 0x0038)
@@ -1300,17 +1327,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreDestroySession">();
+		STATIC_CLASS_IMPL("SteamCoreDestroySession")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreDestroySession")
 	}
 	static class USteamCoreDestroySession* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreDestroySession>();
 	}
 };
-static_assert(alignof(USteamCoreDestroySession) == 0x000008, "Wrong alignment on USteamCoreDestroySession");
-static_assert(sizeof(USteamCoreDestroySession) == 0x000078, "Wrong size on USteamCoreDestroySession");
-static_assert(offsetof(USteamCoreDestroySession, OnSuccess) == 0x000038, "Member 'USteamCoreDestroySession::OnSuccess' has a wrong offset!");
-static_assert(offsetof(USteamCoreDestroySession, OnFailure) == 0x000048, "Member 'USteamCoreDestroySession::OnFailure' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreDestroySession;
 
 // Class SteamCore.SteamCoreUpdateSession
 // 0x0030 (0x0068 - 0x0038)
@@ -1328,16 +1356,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreUpdateSession">();
+		STATIC_CLASS_IMPL("SteamCoreUpdateSession")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreUpdateSession")
 	}
 	static class USteamCoreUpdateSession* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreUpdateSession>();
 	}
 };
-static_assert(alignof(USteamCoreUpdateSession) == 0x000008, "Wrong alignment on USteamCoreUpdateSession");
-static_assert(sizeof(USteamCoreUpdateSession) == 0x000068, "Wrong size on USteamCoreUpdateSession");
-static_assert(offsetof(USteamCoreUpdateSession, OnCallback) == 0x000038, "Member 'USteamCoreUpdateSession::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreUpdateSession;
 
 // Class SteamCore.MatchmakingServers
 // 0x0000 (0x0068 - 0x0068)
@@ -1356,22 +1386,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MatchmakingServers">();
+		STATIC_CLASS_IMPL("MatchmakingServers")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MatchmakingServers")
 	}
 	static class UMatchmakingServers* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMatchmakingServers>();
 	}
 };
-static_assert(alignof(UMatchmakingServers) == 0x000008, "Wrong alignment on UMatchmakingServers");
-static_assert(sizeof(UMatchmakingServers) == 0x000068, "Wrong size on UMatchmakingServers");
+DUMPER7_ASSERTS_UMatchmakingServers;
 
 // Class SteamCore.SteamCoreMatchmakingServersAsyncActionPingServer
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreMatchmakingServersAsyncActionPingServer final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FGameServerItem& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FGameServerItem& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static void CancelPingQueries(class UObject* WorldContextObject);
@@ -1382,23 +1415,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreMatchmakingServersAsyncActionPingServer">();
+		STATIC_CLASS_IMPL("SteamCoreMatchmakingServersAsyncActionPingServer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreMatchmakingServersAsyncActionPingServer")
 	}
 	static class USteamCoreMatchmakingServersAsyncActionPingServer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreMatchmakingServersAsyncActionPingServer>();
 	}
 };
-static_assert(alignof(USteamCoreMatchmakingServersAsyncActionPingServer) == 0x000008, "Wrong alignment on USteamCoreMatchmakingServersAsyncActionPingServer");
-static_assert(sizeof(USteamCoreMatchmakingServersAsyncActionPingServer) == 0x000048, "Wrong size on USteamCoreMatchmakingServersAsyncActionPingServer");
-static_assert(offsetof(USteamCoreMatchmakingServersAsyncActionPingServer, OnCallback) == 0x000038, "Member 'USteamCoreMatchmakingServersAsyncActionPingServer::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreMatchmakingServersAsyncActionPingServer;
 
 // Class SteamCore.SteamCoreMatchmakingServersAsyncActionRequestServerList
 // 0x0020 (0x0058 - 0x0038)
 class USteamCoreMatchmakingServersAsyncActionRequestServerList final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FGameServerItem& Data)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FGameServerItem& Data)> OnCallback;                   // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void()>              OnRefreshCompleted;                                // 0x0048(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
@@ -1416,24 +1451,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreMatchmakingServersAsyncActionRequestServerList">();
+		STATIC_CLASS_IMPL("SteamCoreMatchmakingServersAsyncActionRequestServerList")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreMatchmakingServersAsyncActionRequestServerList")
 	}
 	static class USteamCoreMatchmakingServersAsyncActionRequestServerList* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreMatchmakingServersAsyncActionRequestServerList>();
 	}
 };
-static_assert(alignof(USteamCoreMatchmakingServersAsyncActionRequestServerList) == 0x000008, "Wrong alignment on USteamCoreMatchmakingServersAsyncActionRequestServerList");
-static_assert(sizeof(USteamCoreMatchmakingServersAsyncActionRequestServerList) == 0x000058, "Wrong size on USteamCoreMatchmakingServersAsyncActionRequestServerList");
-static_assert(offsetof(USteamCoreMatchmakingServersAsyncActionRequestServerList, OnCallback) == 0x000038, "Member 'USteamCoreMatchmakingServersAsyncActionRequestServerList::OnCallback' has a wrong offset!");
-static_assert(offsetof(USteamCoreMatchmakingServersAsyncActionRequestServerList, OnRefreshCompleted) == 0x000048, "Member 'USteamCoreMatchmakingServersAsyncActionRequestServerList::OnRefreshCompleted' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreMatchmakingServersAsyncActionRequestServerList;
 
 // Class SteamCore.SteamCoreMatchmakingServersAsyncActionServerRules
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreMatchmakingServersAsyncActionServerRules final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const TArray<struct FGameServerRule>& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TArray<struct FGameServerRule>& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static void CancelServerRulesQueries(class UObject* WorldContextObject);
@@ -1444,16 +1480,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreMatchmakingServersAsyncActionServerRules">();
+		STATIC_CLASS_IMPL("SteamCoreMatchmakingServersAsyncActionServerRules")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreMatchmakingServersAsyncActionServerRules")
 	}
 	static class USteamCoreMatchmakingServersAsyncActionServerRules* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreMatchmakingServersAsyncActionServerRules>();
 	}
 };
-static_assert(alignof(USteamCoreMatchmakingServersAsyncActionServerRules) == 0x000008, "Wrong alignment on USteamCoreMatchmakingServersAsyncActionServerRules");
-static_assert(sizeof(USteamCoreMatchmakingServersAsyncActionServerRules) == 0x000048, "Wrong size on USteamCoreMatchmakingServersAsyncActionServerRules");
-static_assert(offsetof(USteamCoreMatchmakingServersAsyncActionServerRules, OnCallback) == 0x000038, "Member 'USteamCoreMatchmakingServersAsyncActionServerRules::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreMatchmakingServersAsyncActionServerRules;
 
 // Class SteamCore.ServerFilter
 // 0x0010 (0x0038 - 0x0028)
@@ -1491,23 +1529,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ServerFilter">();
+		STATIC_CLASS_IMPL("ServerFilter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ServerFilter")
 	}
 	static class UServerFilter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UServerFilter>();
 	}
 };
-static_assert(alignof(UServerFilter) == 0x000008, "Wrong alignment on UServerFilter");
-static_assert(sizeof(UServerFilter) == 0x000038, "Wrong size on UServerFilter");
+DUMPER7_ASSERTS_UServerFilter;
 
 // Class SteamCore.Music
 // 0x0060 (0x00C8 - 0x0068)
 class UMusic final : public USteamCoreSubsystem
 {
 public:
-	TMulticastInlineDelegate<void(const struct FPlaybackStatusHasChanged& Data)> PlaybackStatusHasChanged;                          // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FVolumeHasChanged& Data)> VolumeHasChanged;                                  // 0x0078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FPlaybackStatusHasChanged& Data)> PlaybackStatusHasChanged; // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FVolumeHasChanged& Data)> VolumeHasChanged;           // 0x0078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_88[0x40];                                      // 0x0088(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -1524,25 +1565,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Music">();
+		STATIC_CLASS_IMPL("Music")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Music")
 	}
 	static class UMusic* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMusic>();
 	}
 };
-static_assert(alignof(UMusic) == 0x000008, "Wrong alignment on UMusic");
-static_assert(sizeof(UMusic) == 0x0000C8, "Wrong size on UMusic");
-static_assert(offsetof(UMusic, PlaybackStatusHasChanged) == 0x000068, "Member 'UMusic::PlaybackStatusHasChanged' has a wrong offset!");
-static_assert(offsetof(UMusic, VolumeHasChanged) == 0x000078, "Member 'UMusic::VolumeHasChanged' has a wrong offset!");
+DUMPER7_ASSERTS_UMusic;
 
 // Class SteamCore.Networking
 // 0x0060 (0x00C8 - 0x0068)
 class UNetworking final : public USteamCoreSubsystem
 {
 public:
-	TMulticastInlineDelegate<void(const struct FP2PSessionRequest& Data)> OnP2PSessionRequestDelegate;                       // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FP2PSessionConnectFail& Data)> OnP2PSessionConnectFailDelegate;                   // 0x0078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FP2PSessionRequest& Data)> OnP2PSessionRequestDelegate; // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FP2PSessionConnectFail& Data)> OnP2PSessionConnectFailDelegate; // 0x0078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_88[0x40];                                      // 0x0088(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -1558,17 +1600,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Networking">();
+		STATIC_CLASS_IMPL("Networking")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Networking")
 	}
 	static class UNetworking* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNetworking>();
 	}
 };
-static_assert(alignof(UNetworking) == 0x000008, "Wrong alignment on UNetworking");
-static_assert(sizeof(UNetworking) == 0x0000C8, "Wrong size on UNetworking");
-static_assert(offsetof(UNetworking, OnP2PSessionRequestDelegate) == 0x000068, "Member 'UNetworking::OnP2PSessionRequestDelegate' has a wrong offset!");
-static_assert(offsetof(UNetworking, OnP2PSessionConnectFailDelegate) == 0x000078, "Member 'UNetworking::OnP2PSessionConnectFailDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_UNetworking;
 
 // Class SteamCore.NetworkingUtils
 // 0x0000 (0x0068 - 0x0068)
@@ -1587,15 +1630,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NetworkingUtils">();
+		STATIC_CLASS_IMPL("NetworkingUtils")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NetworkingUtils")
 	}
 	static class UNetworkingUtils* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNetworkingUtils>();
 	}
 };
-static_assert(alignof(UNetworkingUtils) == 0x000008, "Wrong alignment on UNetworkingUtils");
-static_assert(sizeof(UNetworkingUtils) == 0x000068, "Wrong size on UNetworkingUtils");
+DUMPER7_ASSERTS_UNetworkingUtils;
 
 // Class SteamCore.ParentalSettings
 // 0x0000 (0x0068 - 0x0068)
@@ -1612,25 +1658,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ParentalSettings">();
+		STATIC_CLASS_IMPL("ParentalSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ParentalSettings")
 	}
 	static class UParentalSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UParentalSettings>();
 	}
 };
-static_assert(alignof(UParentalSettings) == 0x000008, "Wrong alignment on UParentalSettings");
-static_assert(sizeof(UParentalSettings) == 0x000068, "Wrong size on UParentalSettings");
+DUMPER7_ASSERTS_UParentalSettings;
 
 // Class SteamCore.SteamParties
 // 0x0120 (0x0188 - 0x0068)
 class USteamParties final : public USteamCoreSubsystem
 {
 public:
-	TMulticastInlineDelegate<void(const struct FJoinPartyData& Data)> JoinPartyDelegate;                                 // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FCreateBeaconData& Data)> CreateBeaconDelegate;                              // 0x0078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FReservationNotificationData& Data)> ReservationNotificationDelegate;                   // 0x0088(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FChangeNumOpenSlotsData& Data)> ChangeNumOpenSlotsDelegate;                        // 0x0098(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FJoinPartyData& Data)> JoinPartyDelegate;             // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FCreateBeaconData& Data)> CreateBeaconDelegate;       // 0x0078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FReservationNotificationData& Data)> ReservationNotificationDelegate; // 0x0088(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FChangeNumOpenSlotsData& Data)> ChangeNumOpenSlotsDelegate; // 0x0098(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void()>              AvailableBeaconLocationsDelegate;                  // 0x00A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void()>              ActiveBeaconsDelegate;                             // 0x00B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C8[0xC0];                                      // 0x00C8(0x00C0)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -1653,28 +1702,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamParties">();
+		STATIC_CLASS_IMPL("SteamParties")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamParties")
 	}
 	static class USteamParties* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamParties>();
 	}
 };
-static_assert(alignof(USteamParties) == 0x000008, "Wrong alignment on USteamParties");
-static_assert(sizeof(USteamParties) == 0x000188, "Wrong size on USteamParties");
-static_assert(offsetof(USteamParties, JoinPartyDelegate) == 0x000068, "Member 'USteamParties::JoinPartyDelegate' has a wrong offset!");
-static_assert(offsetof(USteamParties, CreateBeaconDelegate) == 0x000078, "Member 'USteamParties::CreateBeaconDelegate' has a wrong offset!");
-static_assert(offsetof(USteamParties, ReservationNotificationDelegate) == 0x000088, "Member 'USteamParties::ReservationNotificationDelegate' has a wrong offset!");
-static_assert(offsetof(USteamParties, ChangeNumOpenSlotsDelegate) == 0x000098, "Member 'USteamParties::ChangeNumOpenSlotsDelegate' has a wrong offset!");
-static_assert(offsetof(USteamParties, AvailableBeaconLocationsDelegate) == 0x0000A8, "Member 'USteamParties::AvailableBeaconLocationsDelegate' has a wrong offset!");
-static_assert(offsetof(USteamParties, ActiveBeaconsDelegate) == 0x0000B8, "Member 'USteamParties::ActiveBeaconsDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_USteamParties;
 
 // Class SteamCore.SteamCoreSteamPartiesAsyncActionJoinParty
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreSteamPartiesAsyncActionJoinParty final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FJoinPartyData& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FJoinPartyData& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreSteamPartiesAsyncActionJoinParty* JoinPartyAsync(class UObject* WorldContextObject, const struct FPartyBeaconID& BeaconID, float Timeout);
@@ -1684,23 +1730,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreSteamPartiesAsyncActionJoinParty">();
+		STATIC_CLASS_IMPL("SteamCoreSteamPartiesAsyncActionJoinParty")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreSteamPartiesAsyncActionJoinParty")
 	}
 	static class USteamCoreSteamPartiesAsyncActionJoinParty* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreSteamPartiesAsyncActionJoinParty>();
 	}
 };
-static_assert(alignof(USteamCoreSteamPartiesAsyncActionJoinParty) == 0x000008, "Wrong alignment on USteamCoreSteamPartiesAsyncActionJoinParty");
-static_assert(sizeof(USteamCoreSteamPartiesAsyncActionJoinParty) == 0x000048, "Wrong size on USteamCoreSteamPartiesAsyncActionJoinParty");
-static_assert(offsetof(USteamCoreSteamPartiesAsyncActionJoinParty, OnCallback) == 0x000038, "Member 'USteamCoreSteamPartiesAsyncActionJoinParty::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreSteamPartiesAsyncActionJoinParty;
 
 // Class SteamCore.SteamCoreSteamPartiesAsyncActionCreateBeacon
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreSteamPartiesAsyncActionCreateBeacon final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FCreateBeaconData& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FCreateBeaconData& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreSteamPartiesAsyncActionCreateBeacon* CreateBeaconAsync(class UObject* WorldContextObject, int32 OpenSlots, const struct FSteamPartyBeaconLocation& BeaconLocation, const class FString& ConnectString, const class FString& MetaData, float Timeout);
@@ -1710,23 +1758,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreSteamPartiesAsyncActionCreateBeacon">();
+		STATIC_CLASS_IMPL("SteamCoreSteamPartiesAsyncActionCreateBeacon")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreSteamPartiesAsyncActionCreateBeacon")
 	}
 	static class USteamCoreSteamPartiesAsyncActionCreateBeacon* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreSteamPartiesAsyncActionCreateBeacon>();
 	}
 };
-static_assert(alignof(USteamCoreSteamPartiesAsyncActionCreateBeacon) == 0x000008, "Wrong alignment on USteamCoreSteamPartiesAsyncActionCreateBeacon");
-static_assert(sizeof(USteamCoreSteamPartiesAsyncActionCreateBeacon) == 0x000048, "Wrong size on USteamCoreSteamPartiesAsyncActionCreateBeacon");
-static_assert(offsetof(USteamCoreSteamPartiesAsyncActionCreateBeacon, OnCallback) == 0x000038, "Member 'USteamCoreSteamPartiesAsyncActionCreateBeacon::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreSteamPartiesAsyncActionCreateBeacon;
 
 // Class SteamCore.SteamCoreSteamPartiesAsyncActionChangeNumOpenSlots
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreSteamPartiesAsyncActionChangeNumOpenSlots final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FChangeNumOpenSlotsData& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FChangeNumOpenSlotsData& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreSteamPartiesAsyncActionChangeNumOpenSlots* ChangeNumOpenSlotsAsync(class UObject* WorldContextObject, const struct FPartyBeaconID& BeaconID, int32 OpenSlots, float Timeout);
@@ -1736,24 +1786,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreSteamPartiesAsyncActionChangeNumOpenSlots">();
+		STATIC_CLASS_IMPL("SteamCoreSteamPartiesAsyncActionChangeNumOpenSlots")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreSteamPartiesAsyncActionChangeNumOpenSlots")
 	}
 	static class USteamCoreSteamPartiesAsyncActionChangeNumOpenSlots* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreSteamPartiesAsyncActionChangeNumOpenSlots>();
 	}
 };
-static_assert(alignof(USteamCoreSteamPartiesAsyncActionChangeNumOpenSlots) == 0x000008, "Wrong alignment on USteamCoreSteamPartiesAsyncActionChangeNumOpenSlots");
-static_assert(sizeof(USteamCoreSteamPartiesAsyncActionChangeNumOpenSlots) == 0x000048, "Wrong size on USteamCoreSteamPartiesAsyncActionChangeNumOpenSlots");
-static_assert(offsetof(USteamCoreSteamPartiesAsyncActionChangeNumOpenSlots, OnCallback) == 0x000038, "Member 'USteamCoreSteamPartiesAsyncActionChangeNumOpenSlots::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreSteamPartiesAsyncActionChangeNumOpenSlots;
 
 // Class SteamCore.RemotePlay
 // 0x0060 (0x00C8 - 0x0068)
 class URemotePlay final : public USteamCoreSubsystem
 {
 public:
-	TMulticastInlineDelegate<void(const struct FSteamRemotePlaySessionConnected& Data)> SteamRemotePlaySessionConnected;                   // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FSteamRemotePlaySessionDisconnected& Data)> SteamRemotePlaySessionDisconnected;                // 0x0078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FSteamRemotePlaySessionConnected& Data)> SteamRemotePlaySessionConnected; // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FSteamRemotePlaySessionDisconnected& Data)> SteamRemotePlaySessionDisconnected; // 0x0078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_88[0x40];                                      // 0x0088(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -1768,27 +1820,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RemotePlay">();
+		STATIC_CLASS_IMPL("RemotePlay")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RemotePlay")
 	}
 	static class URemotePlay* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URemotePlay>();
 	}
 };
-static_assert(alignof(URemotePlay) == 0x000008, "Wrong alignment on URemotePlay");
-static_assert(sizeof(URemotePlay) == 0x0000C8, "Wrong size on URemotePlay");
-static_assert(offsetof(URemotePlay, SteamRemotePlaySessionConnected) == 0x000068, "Member 'URemotePlay::SteamRemotePlaySessionConnected' has a wrong offset!");
-static_assert(offsetof(URemotePlay, SteamRemotePlaySessionDisconnected) == 0x000078, "Member 'URemotePlay::SteamRemotePlaySessionDisconnected' has a wrong offset!");
+DUMPER7_ASSERTS_URemotePlay;
 
 // Class SteamCore.RemoteStorage
 // 0x00C0 (0x0128 - 0x0068)
 class URemoteStorage final : public USteamCoreSubsystem
 {
 public:
-	TMulticastInlineDelegate<void(const struct FRemoteStorageUnsubscribePublishedFileResult& Data)> RemoteStorageUnsubscribePublishedFileResult;       // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FRemoteStorageSubscribePublishedFileResult& Data)> RemoteStorageSubscribePublishedFileResult;         // 0x0078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FRemoteStoragePublishedFileUnsubscribed& Data)> RemoteStoragePublishedFileUnsubscribed;            // 0x0088(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FRemoteStoragePublishedFileSubscribed& Data)> RemoteStoragePublishedFileSubscribed;              // 0x0098(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FRemoteStorageUnsubscribePublishedFileResult& Data)> RemoteStorageUnsubscribePublishedFileResult; // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FRemoteStorageSubscribePublishedFileResult& Data)> RemoteStorageSubscribePublishedFileResult; // 0x0078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FRemoteStoragePublishedFileUnsubscribed& Data)> RemoteStoragePublishedFileUnsubscribed; // 0x0088(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FRemoteStoragePublishedFileSubscribed& Data)> RemoteStoragePublishedFileSubscribed; // 0x0098(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_A8[0x80];                                      // 0x00A8(0x0080)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -1828,27 +1881,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RemoteStorage">();
+		STATIC_CLASS_IMPL("RemoteStorage")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RemoteStorage")
 	}
 	static class URemoteStorage* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URemoteStorage>();
 	}
 };
-static_assert(alignof(URemoteStorage) == 0x000008, "Wrong alignment on URemoteStorage");
-static_assert(sizeof(URemoteStorage) == 0x000128, "Wrong size on URemoteStorage");
-static_assert(offsetof(URemoteStorage, RemoteStorageUnsubscribePublishedFileResult) == 0x000068, "Member 'URemoteStorage::RemoteStorageUnsubscribePublishedFileResult' has a wrong offset!");
-static_assert(offsetof(URemoteStorage, RemoteStorageSubscribePublishedFileResult) == 0x000078, "Member 'URemoteStorage::RemoteStorageSubscribePublishedFileResult' has a wrong offset!");
-static_assert(offsetof(URemoteStorage, RemoteStoragePublishedFileUnsubscribed) == 0x000088, "Member 'URemoteStorage::RemoteStoragePublishedFileUnsubscribed' has a wrong offset!");
-static_assert(offsetof(URemoteStorage, RemoteStoragePublishedFileSubscribed) == 0x000098, "Member 'URemoteStorage::RemoteStoragePublishedFileSubscribed' has a wrong offset!");
+DUMPER7_ASSERTS_URemoteStorage;
 
 // Class SteamCore.Screenshots
 // 0x0060 (0x00C8 - 0x0068)
 class UScreenshots final : public USteamCoreSubsystem
 {
 public:
-	TMulticastInlineDelegate<void(const struct FScreenshotReady& Data)> ScreenshotReady;                                   // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FScreenshotRequested& Data)> ScreenshotRequested;                               // 0x0078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FScreenshotReady& Data)> ScreenshotReady;             // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FScreenshotRequested& Data)> ScreenshotRequested;     // 0x0078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_88[0x40];                                      // 0x0088(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -1865,25 +1917,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Screenshots">();
+		STATIC_CLASS_IMPL("Screenshots")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Screenshots")
 	}
 	static class UScreenshots* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UScreenshots>();
 	}
 };
-static_assert(alignof(UScreenshots) == 0x000008, "Wrong alignment on UScreenshots");
-static_assert(sizeof(UScreenshots) == 0x0000C8, "Wrong size on UScreenshots");
-static_assert(offsetof(UScreenshots, ScreenshotReady) == 0x000068, "Member 'UScreenshots::ScreenshotReady' has a wrong offset!");
-static_assert(offsetof(UScreenshots, ScreenshotRequested) == 0x000078, "Member 'UScreenshots::ScreenshotRequested' has a wrong offset!");
+DUMPER7_ASSERTS_UScreenshots;
 
 // Class SteamCore.UGC
 // 0x0060 (0x00C8 - 0x0068)
 class UUGC final : public USteamCoreSubsystem
 {
 public:
-	TMulticastInlineDelegate<void(const struct FItemInstalled& Data)> ItemInstalled;                                     // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FDownloadItemResult& Data)> DownloadItemResult;                                // 0x0078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FItemInstalled& Data)> ItemInstalled;                 // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FDownloadItemResult& Data)> DownloadItemResult;       // 0x0078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_88[0x40];                                      // 0x0088(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -1970,24 +2023,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UGC">();
+		STATIC_CLASS_IMPL("UGC")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UGC")
 	}
 	static class UUGC* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUGC>();
 	}
 };
-static_assert(alignof(UUGC) == 0x000008, "Wrong alignment on UUGC");
-static_assert(sizeof(UUGC) == 0x0000C8, "Wrong size on UUGC");
-static_assert(offsetof(UUGC, ItemInstalled) == 0x000068, "Member 'UUGC::ItemInstalled' has a wrong offset!");
-static_assert(offsetof(UUGC, DownloadItemResult) == 0x000078, "Member 'UUGC::DownloadItemResult' has a wrong offset!");
+DUMPER7_ASSERTS_UUGC;
 
 // Class SteamCore.SteamCoreUGCAsyncActionStopPlaytimeTrackingForAllItems
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreUGCAsyncActionStopPlaytimeTrackingForAllItems final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FStopPlaytimeTrackingResult& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FStopPlaytimeTrackingResult& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreUGCAsyncActionStopPlaytimeTrackingForAllItems* StopPlaytimeTrackingForAllItemsAsync(class UObject* WorldContextObject, float Timeout);
@@ -1997,23 +2051,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreUGCAsyncActionStopPlaytimeTrackingForAllItems">();
+		STATIC_CLASS_IMPL("SteamCoreUGCAsyncActionStopPlaytimeTrackingForAllItems")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreUGCAsyncActionStopPlaytimeTrackingForAllItems")
 	}
 	static class USteamCoreUGCAsyncActionStopPlaytimeTrackingForAllItems* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreUGCAsyncActionStopPlaytimeTrackingForAllItems>();
 	}
 };
-static_assert(alignof(USteamCoreUGCAsyncActionStopPlaytimeTrackingForAllItems) == 0x000008, "Wrong alignment on USteamCoreUGCAsyncActionStopPlaytimeTrackingForAllItems");
-static_assert(sizeof(USteamCoreUGCAsyncActionStopPlaytimeTrackingForAllItems) == 0x000048, "Wrong size on USteamCoreUGCAsyncActionStopPlaytimeTrackingForAllItems");
-static_assert(offsetof(USteamCoreUGCAsyncActionStopPlaytimeTrackingForAllItems, OnCallback) == 0x000038, "Member 'USteamCoreUGCAsyncActionStopPlaytimeTrackingForAllItems::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreUGCAsyncActionStopPlaytimeTrackingForAllItems;
 
 // Class SteamCore.SteamCoreUGCAsyncActionStopPlaytimeTracking
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreUGCAsyncActionStopPlaytimeTracking final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FStopPlaytimeTrackingResult& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FStopPlaytimeTrackingResult& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreUGCAsyncActionStopPlaytimeTracking* StopPlaytimeTrackingAsync(class UObject* WorldContextObject, const TArray<struct FPublishedFileID>& PublishedFileIDs, float Timeout);
@@ -2023,23 +2079,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreUGCAsyncActionStopPlaytimeTracking">();
+		STATIC_CLASS_IMPL("SteamCoreUGCAsyncActionStopPlaytimeTracking")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreUGCAsyncActionStopPlaytimeTracking")
 	}
 	static class USteamCoreUGCAsyncActionStopPlaytimeTracking* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreUGCAsyncActionStopPlaytimeTracking>();
 	}
 };
-static_assert(alignof(USteamCoreUGCAsyncActionStopPlaytimeTracking) == 0x000008, "Wrong alignment on USteamCoreUGCAsyncActionStopPlaytimeTracking");
-static_assert(sizeof(USteamCoreUGCAsyncActionStopPlaytimeTracking) == 0x000048, "Wrong size on USteamCoreUGCAsyncActionStopPlaytimeTracking");
-static_assert(offsetof(USteamCoreUGCAsyncActionStopPlaytimeTracking, OnCallback) == 0x000038, "Member 'USteamCoreUGCAsyncActionStopPlaytimeTracking::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreUGCAsyncActionStopPlaytimeTracking;
 
 // Class SteamCore.SteamCoreUGCAsyncActionStartPlaytimeTracking
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreUGCAsyncActionStartPlaytimeTracking final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FStartPlaytimeTrackingResult& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FStartPlaytimeTrackingResult& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreUGCAsyncActionStartPlaytimeTracking* StartPlaytimeTrackingAsync(class UObject* WorldContextObject, const TArray<struct FPublishedFileID>& PublishedFileIDs, float Timeout);
@@ -2049,23 +2107,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreUGCAsyncActionStartPlaytimeTracking">();
+		STATIC_CLASS_IMPL("SteamCoreUGCAsyncActionStartPlaytimeTracking")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreUGCAsyncActionStartPlaytimeTracking")
 	}
 	static class USteamCoreUGCAsyncActionStartPlaytimeTracking* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreUGCAsyncActionStartPlaytimeTracking>();
 	}
 };
-static_assert(alignof(USteamCoreUGCAsyncActionStartPlaytimeTracking) == 0x000008, "Wrong alignment on USteamCoreUGCAsyncActionStartPlaytimeTracking");
-static_assert(sizeof(USteamCoreUGCAsyncActionStartPlaytimeTracking) == 0x000048, "Wrong size on USteamCoreUGCAsyncActionStartPlaytimeTracking");
-static_assert(offsetof(USteamCoreUGCAsyncActionStartPlaytimeTracking, OnCallback) == 0x000038, "Member 'USteamCoreUGCAsyncActionStartPlaytimeTracking::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreUGCAsyncActionStartPlaytimeTracking;
 
 // Class SteamCore.SteamCoreUGCAsyncActionUnsubscribeItem
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreUGCAsyncActionUnsubscribeItem final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FRemoteStorageSubscribePublishedFileResult& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FRemoteStorageSubscribePublishedFileResult& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreUGCAsyncActionUnsubscribeItem* UnsubscribeItemAsync(class UObject* WorldContextObject, const struct FPublishedFileID& PublishedFileIDs, float Timeout);
@@ -2075,23 +2135,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreUGCAsyncActionUnsubscribeItem">();
+		STATIC_CLASS_IMPL("SteamCoreUGCAsyncActionUnsubscribeItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreUGCAsyncActionUnsubscribeItem")
 	}
 	static class USteamCoreUGCAsyncActionUnsubscribeItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreUGCAsyncActionUnsubscribeItem>();
 	}
 };
-static_assert(alignof(USteamCoreUGCAsyncActionUnsubscribeItem) == 0x000008, "Wrong alignment on USteamCoreUGCAsyncActionUnsubscribeItem");
-static_assert(sizeof(USteamCoreUGCAsyncActionUnsubscribeItem) == 0x000048, "Wrong size on USteamCoreUGCAsyncActionUnsubscribeItem");
-static_assert(offsetof(USteamCoreUGCAsyncActionUnsubscribeItem, OnCallback) == 0x000038, "Member 'USteamCoreUGCAsyncActionUnsubscribeItem::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreUGCAsyncActionUnsubscribeItem;
 
 // Class SteamCore.SteamCoreUGCAsyncActionSubscribeItem
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreUGCAsyncActionSubscribeItem final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FRemoteStorageSubscribePublishedFileResult& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FRemoteStorageSubscribePublishedFileResult& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreUGCAsyncActionSubscribeItem* SubscribeItemAsync(class UObject* WorldContextObject, const struct FPublishedFileID& PublishedFileIDs, float Timeout);
@@ -2101,23 +2163,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreUGCAsyncActionSubscribeItem">();
+		STATIC_CLASS_IMPL("SteamCoreUGCAsyncActionSubscribeItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreUGCAsyncActionSubscribeItem")
 	}
 	static class USteamCoreUGCAsyncActionSubscribeItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreUGCAsyncActionSubscribeItem>();
 	}
 };
-static_assert(alignof(USteamCoreUGCAsyncActionSubscribeItem) == 0x000008, "Wrong alignment on USteamCoreUGCAsyncActionSubscribeItem");
-static_assert(sizeof(USteamCoreUGCAsyncActionSubscribeItem) == 0x000048, "Wrong size on USteamCoreUGCAsyncActionSubscribeItem");
-static_assert(offsetof(USteamCoreUGCAsyncActionSubscribeItem, OnCallback) == 0x000038, "Member 'USteamCoreUGCAsyncActionSubscribeItem::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreUGCAsyncActionSubscribeItem;
 
 // Class SteamCore.SteamCoreUGCAsyncActionRemoveItemFromFavorites
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreUGCAsyncActionRemoveItemFromFavorites final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FUserFavoriteItemsListChanged& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FUserFavoriteItemsListChanged& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreUGCAsyncActionRemoveItemFromFavorites* RemoveItemFromFavoritesAsync(class UObject* WorldContextObject, int32 AppID, const struct FPublishedFileID& PublishedFileID, float Timeout);
@@ -2127,23 +2191,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreUGCAsyncActionRemoveItemFromFavorites">();
+		STATIC_CLASS_IMPL("SteamCoreUGCAsyncActionRemoveItemFromFavorites")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreUGCAsyncActionRemoveItemFromFavorites")
 	}
 	static class USteamCoreUGCAsyncActionRemoveItemFromFavorites* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreUGCAsyncActionRemoveItemFromFavorites>();
 	}
 };
-static_assert(alignof(USteamCoreUGCAsyncActionRemoveItemFromFavorites) == 0x000008, "Wrong alignment on USteamCoreUGCAsyncActionRemoveItemFromFavorites");
-static_assert(sizeof(USteamCoreUGCAsyncActionRemoveItemFromFavorites) == 0x000048, "Wrong size on USteamCoreUGCAsyncActionRemoveItemFromFavorites");
-static_assert(offsetof(USteamCoreUGCAsyncActionRemoveItemFromFavorites, OnCallback) == 0x000038, "Member 'USteamCoreUGCAsyncActionRemoveItemFromFavorites::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreUGCAsyncActionRemoveItemFromFavorites;
 
 // Class SteamCore.SteamCoreUGCAsyncActionAddItemToFavorites
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreUGCAsyncActionAddItemToFavorites final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FUserFavoriteItemsListChanged& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FUserFavoriteItemsListChanged& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreUGCAsyncActionAddItemToFavorites* AddItemToFavoritesAsync(class UObject* WorldContextObject, int32 AppID, const struct FPublishedFileID& PublishedFileID, float Timeout);
@@ -2153,23 +2219,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreUGCAsyncActionAddItemToFavorites">();
+		STATIC_CLASS_IMPL("SteamCoreUGCAsyncActionAddItemToFavorites")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreUGCAsyncActionAddItemToFavorites")
 	}
 	static class USteamCoreUGCAsyncActionAddItemToFavorites* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreUGCAsyncActionAddItemToFavorites>();
 	}
 };
-static_assert(alignof(USteamCoreUGCAsyncActionAddItemToFavorites) == 0x000008, "Wrong alignment on USteamCoreUGCAsyncActionAddItemToFavorites");
-static_assert(sizeof(USteamCoreUGCAsyncActionAddItemToFavorites) == 0x000048, "Wrong size on USteamCoreUGCAsyncActionAddItemToFavorites");
-static_assert(offsetof(USteamCoreUGCAsyncActionAddItemToFavorites, OnCallback) == 0x000038, "Member 'USteamCoreUGCAsyncActionAddItemToFavorites::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreUGCAsyncActionAddItemToFavorites;
 
 // Class SteamCore.SteamCoreUGCAsyncActionCreateItem
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreUGCAsyncActionCreateItem final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FCreateItemResult& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FCreateItemResult& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreUGCAsyncActionCreateItem* CreateItemAsync(class UObject* WorldContextObject, int32 ConsumerAppID, ESteamWorkshopFileType FileType, float Timeout);
@@ -2179,23 +2247,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreUGCAsyncActionCreateItem">();
+		STATIC_CLASS_IMPL("SteamCoreUGCAsyncActionCreateItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreUGCAsyncActionCreateItem")
 	}
 	static class USteamCoreUGCAsyncActionCreateItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreUGCAsyncActionCreateItem>();
 	}
 };
-static_assert(alignof(USteamCoreUGCAsyncActionCreateItem) == 0x000008, "Wrong alignment on USteamCoreUGCAsyncActionCreateItem");
-static_assert(sizeof(USteamCoreUGCAsyncActionCreateItem) == 0x000048, "Wrong size on USteamCoreUGCAsyncActionCreateItem");
-static_assert(offsetof(USteamCoreUGCAsyncActionCreateItem, OnCallback) == 0x000038, "Member 'USteamCoreUGCAsyncActionCreateItem::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreUGCAsyncActionCreateItem;
 
 // Class SteamCore.SteamCoreUGCAsyncActionRemoveAppDependency
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreUGCAsyncActionRemoveAppDependency final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FRemoveAppDependencyResult& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FRemoveAppDependencyResult& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreUGCAsyncActionRemoveAppDependency* RemoveAppDependencyAsync(class UObject* WorldContextObject, const struct FPublishedFileID& PublishedFileID, int32 AppID, float Timeout);
@@ -2205,23 +2275,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreUGCAsyncActionRemoveAppDependency">();
+		STATIC_CLASS_IMPL("SteamCoreUGCAsyncActionRemoveAppDependency")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreUGCAsyncActionRemoveAppDependency")
 	}
 	static class USteamCoreUGCAsyncActionRemoveAppDependency* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreUGCAsyncActionRemoveAppDependency>();
 	}
 };
-static_assert(alignof(USteamCoreUGCAsyncActionRemoveAppDependency) == 0x000008, "Wrong alignment on USteamCoreUGCAsyncActionRemoveAppDependency");
-static_assert(sizeof(USteamCoreUGCAsyncActionRemoveAppDependency) == 0x000048, "Wrong size on USteamCoreUGCAsyncActionRemoveAppDependency");
-static_assert(offsetof(USteamCoreUGCAsyncActionRemoveAppDependency, OnCallback) == 0x000038, "Member 'USteamCoreUGCAsyncActionRemoveAppDependency::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreUGCAsyncActionRemoveAppDependency;
 
 // Class SteamCore.SteamCoreUGCAsyncActionAddUGCDependency
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreUGCAsyncActionAddUGCDependency final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FAddUGCDependencyResult& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FAddUGCDependencyResult& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreUGCAsyncActionAddUGCDependency* AddDependencyAsync(class UObject* WorldContextObject, const struct FPublishedFileID& PublishedFileID, const struct FPublishedFileID& ChildPublishedFileId, float Timeout);
@@ -2231,23 +2303,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreUGCAsyncActionAddUGCDependency">();
+		STATIC_CLASS_IMPL("SteamCoreUGCAsyncActionAddUGCDependency")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreUGCAsyncActionAddUGCDependency")
 	}
 	static class USteamCoreUGCAsyncActionAddUGCDependency* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreUGCAsyncActionAddUGCDependency>();
 	}
 };
-static_assert(alignof(USteamCoreUGCAsyncActionAddUGCDependency) == 0x000008, "Wrong alignment on USteamCoreUGCAsyncActionAddUGCDependency");
-static_assert(sizeof(USteamCoreUGCAsyncActionAddUGCDependency) == 0x000048, "Wrong size on USteamCoreUGCAsyncActionAddUGCDependency");
-static_assert(offsetof(USteamCoreUGCAsyncActionAddUGCDependency, OnCallback) == 0x000038, "Member 'USteamCoreUGCAsyncActionAddUGCDependency::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreUGCAsyncActionAddUGCDependency;
 
 // Class SteamCore.SteamCoreUGCAsyncActionRemoveUGCDependency
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreUGCAsyncActionRemoveUGCDependency final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FRemoveUGCDependencyResult& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FRemoveUGCDependencyResult& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreUGCAsyncActionRemoveUGCDependency* RemoveDependencyAsync(class UObject* WorldContextObject, const struct FPublishedFileID& PublishedFileID, const struct FPublishedFileID& ChildPublishedFileId, float Timeout);
@@ -2257,23 +2331,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreUGCAsyncActionRemoveUGCDependency">();
+		STATIC_CLASS_IMPL("SteamCoreUGCAsyncActionRemoveUGCDependency")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreUGCAsyncActionRemoveUGCDependency")
 	}
 	static class USteamCoreUGCAsyncActionRemoveUGCDependency* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreUGCAsyncActionRemoveUGCDependency>();
 	}
 };
-static_assert(alignof(USteamCoreUGCAsyncActionRemoveUGCDependency) == 0x000008, "Wrong alignment on USteamCoreUGCAsyncActionRemoveUGCDependency");
-static_assert(sizeof(USteamCoreUGCAsyncActionRemoveUGCDependency) == 0x000048, "Wrong size on USteamCoreUGCAsyncActionRemoveUGCDependency");
-static_assert(offsetof(USteamCoreUGCAsyncActionRemoveUGCDependency, OnCallback) == 0x000038, "Member 'USteamCoreUGCAsyncActionRemoveUGCDependency::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreUGCAsyncActionRemoveUGCDependency;
 
 // Class SteamCore.SteamCoreUGCAsyncActionDeleteItem
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreUGCAsyncActionDeleteItem final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FUGCDeleteItemResult& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FUGCDeleteItemResult& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreUGCAsyncActionDeleteItem* DeleteItemAsync(class UObject* WorldContextObject, const struct FPublishedFileID& PublishedFileID, float Timeout);
@@ -2283,23 +2359,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreUGCAsyncActionDeleteItem">();
+		STATIC_CLASS_IMPL("SteamCoreUGCAsyncActionDeleteItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreUGCAsyncActionDeleteItem")
 	}
 	static class USteamCoreUGCAsyncActionDeleteItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreUGCAsyncActionDeleteItem>();
 	}
 };
-static_assert(alignof(USteamCoreUGCAsyncActionDeleteItem) == 0x000008, "Wrong alignment on USteamCoreUGCAsyncActionDeleteItem");
-static_assert(sizeof(USteamCoreUGCAsyncActionDeleteItem) == 0x000048, "Wrong size on USteamCoreUGCAsyncActionDeleteItem");
-static_assert(offsetof(USteamCoreUGCAsyncActionDeleteItem, OnCallback) == 0x000038, "Member 'USteamCoreUGCAsyncActionDeleteItem::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreUGCAsyncActionDeleteItem;
 
 // Class SteamCore.SteamCoreUGCAsyncActionGetAppDependencies
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreUGCAsyncActionGetAppDependencies final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FGetAppDependenciesResult& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FGetAppDependenciesResult& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreUGCAsyncActionGetAppDependencies* GetAppDependenciesAsync(class UObject* WorldContextObject, const struct FPublishedFileID& PublishedFileID, float Timeout);
@@ -2309,23 +2387,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreUGCAsyncActionGetAppDependencies">();
+		STATIC_CLASS_IMPL("SteamCoreUGCAsyncActionGetAppDependencies")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreUGCAsyncActionGetAppDependencies")
 	}
 	static class USteamCoreUGCAsyncActionGetAppDependencies* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreUGCAsyncActionGetAppDependencies>();
 	}
 };
-static_assert(alignof(USteamCoreUGCAsyncActionGetAppDependencies) == 0x000008, "Wrong alignment on USteamCoreUGCAsyncActionGetAppDependencies");
-static_assert(sizeof(USteamCoreUGCAsyncActionGetAppDependencies) == 0x000048, "Wrong size on USteamCoreUGCAsyncActionGetAppDependencies");
-static_assert(offsetof(USteamCoreUGCAsyncActionGetAppDependencies, OnCallback) == 0x000038, "Member 'USteamCoreUGCAsyncActionGetAppDependencies::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreUGCAsyncActionGetAppDependencies;
 
 // Class SteamCore.SteamCoreUGCAsyncActionDownloadItem
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreUGCAsyncActionDownloadItem final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FDownloadItemResult& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FDownloadItemResult& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreUGCAsyncActionDownloadItem* DownloadItemAsync(class UObject* WorldContextObject, const struct FPublishedFileID& PublishedFileID, bool bHighPriority, float Timeout);
@@ -2335,33 +2415,35 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreUGCAsyncActionDownloadItem">();
+		STATIC_CLASS_IMPL("SteamCoreUGCAsyncActionDownloadItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreUGCAsyncActionDownloadItem")
 	}
 	static class USteamCoreUGCAsyncActionDownloadItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreUGCAsyncActionDownloadItem>();
 	}
 };
-static_assert(alignof(USteamCoreUGCAsyncActionDownloadItem) == 0x000008, "Wrong alignment on USteamCoreUGCAsyncActionDownloadItem");
-static_assert(sizeof(USteamCoreUGCAsyncActionDownloadItem) == 0x000048, "Wrong size on USteamCoreUGCAsyncActionDownloadItem");
-static_assert(offsetof(USteamCoreUGCAsyncActionDownloadItem, OnCallback) == 0x000038, "Member 'USteamCoreUGCAsyncActionDownloadItem::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreUGCAsyncActionDownloadItem;
 
 // Class SteamCore.User
 // 0x0210 (0x0278 - 0x0068)
 class UUser final : public USteamCoreSubsystem
 {
 public:
-	TMulticastInlineDelegate<void(const struct FClientGameServerDeny& Data)> ClientGameServerDeny;                              // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FGameWebCallback& Data)> GameWebCallback;                                   // 0x0078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FGetAuthSessionTicketResponse& Data)> GetAuthSessionTicketResponse;                      // 0x0088(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FIPCFailure& Data)> IPCFailure;                                        // 0x0098(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FLicensesUpdated& Data)> LicensesUpdated;                                   // 0x00A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FMicroTxnAuthorizationResponse& Data)> MicroTxnAuthorizationResponse;                     // 0x00B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FSteamServerConnectFailure& Data)> SteamServerConnectFailure;                         // 0x00C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FSteamServersConnected& Data)> SteamServersConnected;                             // 0x00D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FSteamServersDisconnected& Data)> SteamServersDisconnected;                          // 0x00E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FValidateAuthTicketResponse& Data)> ValidateAuthTicketResponse;                        // 0x00F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FEncryptedAppTicketResponse& Data)> EncryptedAppTicketResponse;                        // 0x0108(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FClientGameServerDeny& Data)> ClientGameServerDeny;   // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FGameWebCallback& Data)> GameWebCallback;             // 0x0078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FGetAuthSessionTicketResponse& Data)> GetAuthSessionTicketResponse; // 0x0088(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FIPCFailure& Data)> IPCFailure;                       // 0x0098(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FLicensesUpdated& Data)> LicensesUpdated;             // 0x00A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FMicroTxnAuthorizationResponse& Data)> MicroTxnAuthorizationResponse; // 0x00B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FSteamServerConnectFailure& Data)> SteamServerConnectFailure; // 0x00C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FSteamServersConnected& Data)> SteamServersConnected; // 0x00D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FSteamServersDisconnected& Data)> SteamServersDisconnected; // 0x00E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FValidateAuthTicketResponse& Data)> ValidateAuthTicketResponse; // 0x00F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FEncryptedAppTicketResponse& Data)> EncryptedAppTicketResponse; // 0x0108(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_118[0x160];                                    // 0x0118(0x0160)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -2395,33 +2477,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"User">();
+		STATIC_CLASS_IMPL("User")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"User")
 	}
 	static class UUser* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUser>();
 	}
 };
-static_assert(alignof(UUser) == 0x000008, "Wrong alignment on UUser");
-static_assert(sizeof(UUser) == 0x000278, "Wrong size on UUser");
-static_assert(offsetof(UUser, ClientGameServerDeny) == 0x000068, "Member 'UUser::ClientGameServerDeny' has a wrong offset!");
-static_assert(offsetof(UUser, GameWebCallback) == 0x000078, "Member 'UUser::GameWebCallback' has a wrong offset!");
-static_assert(offsetof(UUser, GetAuthSessionTicketResponse) == 0x000088, "Member 'UUser::GetAuthSessionTicketResponse' has a wrong offset!");
-static_assert(offsetof(UUser, IPCFailure) == 0x000098, "Member 'UUser::IPCFailure' has a wrong offset!");
-static_assert(offsetof(UUser, LicensesUpdated) == 0x0000A8, "Member 'UUser::LicensesUpdated' has a wrong offset!");
-static_assert(offsetof(UUser, MicroTxnAuthorizationResponse) == 0x0000B8, "Member 'UUser::MicroTxnAuthorizationResponse' has a wrong offset!");
-static_assert(offsetof(UUser, SteamServerConnectFailure) == 0x0000C8, "Member 'UUser::SteamServerConnectFailure' has a wrong offset!");
-static_assert(offsetof(UUser, SteamServersConnected) == 0x0000D8, "Member 'UUser::SteamServersConnected' has a wrong offset!");
-static_assert(offsetof(UUser, SteamServersDisconnected) == 0x0000E8, "Member 'UUser::SteamServersDisconnected' has a wrong offset!");
-static_assert(offsetof(UUser, ValidateAuthTicketResponse) == 0x0000F8, "Member 'UUser::ValidateAuthTicketResponse' has a wrong offset!");
-static_assert(offsetof(UUser, EncryptedAppTicketResponse) == 0x000108, "Member 'UUser::EncryptedAppTicketResponse' has a wrong offset!");
+DUMPER7_ASSERTS_UUser;
 
 // Class SteamCore.SteamCoreUserAsyncActionRequestEncryptedAppTicket
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreUserAsyncActionRequestEncryptedAppTicket final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FEncryptedAppTicketResponse& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FEncryptedAppTicketResponse& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreUserAsyncActionRequestEncryptedAppTicket* RequestEncryptedAppTicketAsync(class UObject* WorldContextObject, const TArray<uint8>& DataToInclude, float Timeout);
@@ -2431,23 +2505,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreUserAsyncActionRequestEncryptedAppTicket">();
+		STATIC_CLASS_IMPL("SteamCoreUserAsyncActionRequestEncryptedAppTicket")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreUserAsyncActionRequestEncryptedAppTicket")
 	}
 	static class USteamCoreUserAsyncActionRequestEncryptedAppTicket* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreUserAsyncActionRequestEncryptedAppTicket>();
 	}
 };
-static_assert(alignof(USteamCoreUserAsyncActionRequestEncryptedAppTicket) == 0x000008, "Wrong alignment on USteamCoreUserAsyncActionRequestEncryptedAppTicket");
-static_assert(sizeof(USteamCoreUserAsyncActionRequestEncryptedAppTicket) == 0x000048, "Wrong size on USteamCoreUserAsyncActionRequestEncryptedAppTicket");
-static_assert(offsetof(USteamCoreUserAsyncActionRequestEncryptedAppTicket, OnCallback) == 0x000038, "Member 'USteamCoreUserAsyncActionRequestEncryptedAppTicket::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreUserAsyncActionRequestEncryptedAppTicket;
 
 // Class SteamCore.SteamCoreUserAsyncActionRequestStoreAuthURL
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreUserAsyncActionRequestStoreAuthURL final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FStoreAuthURLResponse& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FStoreAuthURLResponse& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreUserAsyncActionRequestStoreAuthURL* RequestStoreAuthURLAsync(class UObject* WorldContextObject, const class FString& RedirectURL, float Timeout);
@@ -2457,27 +2533,29 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreUserAsyncActionRequestStoreAuthURL">();
+		STATIC_CLASS_IMPL("SteamCoreUserAsyncActionRequestStoreAuthURL")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreUserAsyncActionRequestStoreAuthURL")
 	}
 	static class USteamCoreUserAsyncActionRequestStoreAuthURL* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreUserAsyncActionRequestStoreAuthURL>();
 	}
 };
-static_assert(alignof(USteamCoreUserAsyncActionRequestStoreAuthURL) == 0x000008, "Wrong alignment on USteamCoreUserAsyncActionRequestStoreAuthURL");
-static_assert(sizeof(USteamCoreUserAsyncActionRequestStoreAuthURL) == 0x000048, "Wrong size on USteamCoreUserAsyncActionRequestStoreAuthURL");
-static_assert(offsetof(USteamCoreUserAsyncActionRequestStoreAuthURL, OnCallback) == 0x000038, "Member 'USteamCoreUserAsyncActionRequestStoreAuthURL::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreUserAsyncActionRequestStoreAuthURL;
 
 // Class SteamCore.UserStats
 // 0x00F0 (0x0158 - 0x0068)
 class UUserStats final : public USteamCoreSubsystem
 {
 public:
-	TMulticastInlineDelegate<void(const struct FUserAchievementIconFetched& Data)> UserAchievementIconFetched;                        // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FUserAchievementStored& Data)> UserAchievementStored;                             // 0x0078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FUserStatsReceived& Data)> UserStatsReceived;                                 // 0x0088(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FUserStatsStored& Data)> UserStatsStored;                                   // 0x0098(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FUserStatsUnloaded& Data)> UserStatsUnloaded;                                 // 0x00A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FUserAchievementIconFetched& Data)> UserAchievementIconFetched; // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FUserAchievementStored& Data)> UserAchievementStored; // 0x0078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FUserStatsReceived& Data)> UserStatsReceived;         // 0x0088(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FUserStatsStored& Data)> UserStatsStored;             // 0x0098(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FUserStatsUnloaded& Data)> UserStatsUnloaded;         // 0x00A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_B8[0xA0];                                      // 0x00B8(0x00A0)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -2531,27 +2609,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UserStats">();
+		STATIC_CLASS_IMPL("UserStats")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UserStats")
 	}
 	static class UUserStats* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUserStats>();
 	}
 };
-static_assert(alignof(UUserStats) == 0x000008, "Wrong alignment on UUserStats");
-static_assert(sizeof(UUserStats) == 0x000158, "Wrong size on UUserStats");
-static_assert(offsetof(UUserStats, UserAchievementIconFetched) == 0x000068, "Member 'UUserStats::UserAchievementIconFetched' has a wrong offset!");
-static_assert(offsetof(UUserStats, UserAchievementStored) == 0x000078, "Member 'UUserStats::UserAchievementStored' has a wrong offset!");
-static_assert(offsetof(UUserStats, UserStatsReceived) == 0x000088, "Member 'UUserStats::UserStatsReceived' has a wrong offset!");
-static_assert(offsetof(UUserStats, UserStatsStored) == 0x000098, "Member 'UUserStats::UserStatsStored' has a wrong offset!");
-static_assert(offsetof(UUserStats, UserStatsUnloaded) == 0x0000A8, "Member 'UUserStats::UserStatsUnloaded' has a wrong offset!");
+DUMPER7_ASSERTS_UUserStats;
 
 // Class SteamCore.SteamCoreUserStatsAsyncActionFindLeaderboard
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreUserStatsAsyncActionFindLeaderboard final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FLeaderboardFindResult& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FLeaderboardFindResult& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreUserStatsAsyncActionFindLeaderboard* FindLeaderboardAsync(class UObject* WorldContextObject, const class FString& LeaderboardName, float Timeout);
@@ -2561,23 +2637,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreUserStatsAsyncActionFindLeaderboard">();
+		STATIC_CLASS_IMPL("SteamCoreUserStatsAsyncActionFindLeaderboard")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreUserStatsAsyncActionFindLeaderboard")
 	}
 	static class USteamCoreUserStatsAsyncActionFindLeaderboard* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreUserStatsAsyncActionFindLeaderboard>();
 	}
 };
-static_assert(alignof(USteamCoreUserStatsAsyncActionFindLeaderboard) == 0x000008, "Wrong alignment on USteamCoreUserStatsAsyncActionFindLeaderboard");
-static_assert(sizeof(USteamCoreUserStatsAsyncActionFindLeaderboard) == 0x000048, "Wrong size on USteamCoreUserStatsAsyncActionFindLeaderboard");
-static_assert(offsetof(USteamCoreUserStatsAsyncActionFindLeaderboard, OnCallback) == 0x000038, "Member 'USteamCoreUserStatsAsyncActionFindLeaderboard::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreUserStatsAsyncActionFindLeaderboard;
 
 // Class SteamCore.SteamCoreUserStatsAsyncActionDownloadLeaderboardEntries
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreUserStatsAsyncActionDownloadLeaderboardEntries final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FLeaderboardScoresDownloaded& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FLeaderboardScoresDownloaded& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreUserStatsAsyncActionDownloadLeaderboardEntries* DownloadLeaderboardEntriesAsync(class UObject* WorldContextObject, const struct FSteamLeaderboard& SteamLeaderboard, ESteamLeaderboardDataRequest Request, int32 RangeStart, int32 RangeEnd, float Timeout);
@@ -2587,23 +2665,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreUserStatsAsyncActionDownloadLeaderboardEntries">();
+		STATIC_CLASS_IMPL("SteamCoreUserStatsAsyncActionDownloadLeaderboardEntries")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreUserStatsAsyncActionDownloadLeaderboardEntries")
 	}
 	static class USteamCoreUserStatsAsyncActionDownloadLeaderboardEntries* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreUserStatsAsyncActionDownloadLeaderboardEntries>();
 	}
 };
-static_assert(alignof(USteamCoreUserStatsAsyncActionDownloadLeaderboardEntries) == 0x000008, "Wrong alignment on USteamCoreUserStatsAsyncActionDownloadLeaderboardEntries");
-static_assert(sizeof(USteamCoreUserStatsAsyncActionDownloadLeaderboardEntries) == 0x000048, "Wrong size on USteamCoreUserStatsAsyncActionDownloadLeaderboardEntries");
-static_assert(offsetof(USteamCoreUserStatsAsyncActionDownloadLeaderboardEntries, OnCallback) == 0x000038, "Member 'USteamCoreUserStatsAsyncActionDownloadLeaderboardEntries::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreUserStatsAsyncActionDownloadLeaderboardEntries;
 
 // Class SteamCore.SteamCoreUserStatsAsyncActionDownloadRequestGlobalStats
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreUserStatsAsyncActionDownloadRequestGlobalStats final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FGlobalStatsReceived& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FGlobalStatsReceived& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreUserStatsAsyncActionDownloadRequestGlobalStats* RequestGlobalStatsAsync(class UObject* WorldContextObject, int32 HistoryDays, float Timeout);
@@ -2613,23 +2693,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreUserStatsAsyncActionDownloadRequestGlobalStats">();
+		STATIC_CLASS_IMPL("SteamCoreUserStatsAsyncActionDownloadRequestGlobalStats")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreUserStatsAsyncActionDownloadRequestGlobalStats")
 	}
 	static class USteamCoreUserStatsAsyncActionDownloadRequestGlobalStats* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreUserStatsAsyncActionDownloadRequestGlobalStats>();
 	}
 };
-static_assert(alignof(USteamCoreUserStatsAsyncActionDownloadRequestGlobalStats) == 0x000008, "Wrong alignment on USteamCoreUserStatsAsyncActionDownloadRequestGlobalStats");
-static_assert(sizeof(USteamCoreUserStatsAsyncActionDownloadRequestGlobalStats) == 0x000048, "Wrong size on USteamCoreUserStatsAsyncActionDownloadRequestGlobalStats");
-static_assert(offsetof(USteamCoreUserStatsAsyncActionDownloadRequestGlobalStats, OnCallback) == 0x000038, "Member 'USteamCoreUserStatsAsyncActionDownloadRequestGlobalStats::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreUserStatsAsyncActionDownloadRequestGlobalStats;
 
 // Class SteamCore.SteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FGlobalAchievementPercentagesReady& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FGlobalAchievementPercentagesReady& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages* RequestGlobalAchievementPercentagesAsync(class UObject* WorldContextObject, float Timeout);
@@ -2639,23 +2721,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages">();
+		STATIC_CLASS_IMPL("SteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages")
 	}
 	static class USteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages>();
 	}
 };
-static_assert(alignof(USteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages) == 0x000008, "Wrong alignment on USteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages");
-static_assert(sizeof(USteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages) == 0x000048, "Wrong size on USteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages");
-static_assert(offsetof(USteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages, OnCallback) == 0x000038, "Member 'USteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages;
 
 // Class SteamCore.SteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FNumberOfCurrentPlayers& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FNumberOfCurrentPlayers& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers* GetNumberOfCurrentPlayersAsync(class UObject* WorldContextObject, float Timeout);
@@ -2665,23 +2749,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers">();
+		STATIC_CLASS_IMPL("SteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers")
 	}
 	static class USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers>();
 	}
 };
-static_assert(alignof(USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers) == 0x000008, "Wrong alignment on USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers");
-static_assert(sizeof(USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers) == 0x000048, "Wrong size on USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers");
-static_assert(offsetof(USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers, OnCallback) == 0x000038, "Member 'USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers;
 
 // Class SteamCore.SteamCoreUserStatsAsyncActionUploadLeaderboardScore
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreUserStatsAsyncActionUploadLeaderboardScore final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FLeaderboardScoreUploaded& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FLeaderboardScoreUploaded& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreUserStatsAsyncActionUploadLeaderboardScore* UploadLeaderboardScoreAsync(class UObject* WorldContextObject, const struct FSteamLeaderboard& SteamLeaderboard, ESteamLeaderboardUploadScoreMethod UploadScoreMethod, int32 Score, const TArray<int32>& ScoreDetails, float Timeout);
@@ -2691,23 +2777,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreUserStatsAsyncActionUploadLeaderboardScore">();
+		STATIC_CLASS_IMPL("SteamCoreUserStatsAsyncActionUploadLeaderboardScore")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreUserStatsAsyncActionUploadLeaderboardScore")
 	}
 	static class USteamCoreUserStatsAsyncActionUploadLeaderboardScore* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreUserStatsAsyncActionUploadLeaderboardScore>();
 	}
 };
-static_assert(alignof(USteamCoreUserStatsAsyncActionUploadLeaderboardScore) == 0x000008, "Wrong alignment on USteamCoreUserStatsAsyncActionUploadLeaderboardScore");
-static_assert(sizeof(USteamCoreUserStatsAsyncActionUploadLeaderboardScore) == 0x000048, "Wrong size on USteamCoreUserStatsAsyncActionUploadLeaderboardScore");
-static_assert(offsetof(USteamCoreUserStatsAsyncActionUploadLeaderboardScore, OnCallback) == 0x000038, "Member 'USteamCoreUserStatsAsyncActionUploadLeaderboardScore::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreUserStatsAsyncActionUploadLeaderboardScore;
 
 // Class SteamCore.SteamCoreUserStatsAsyncActionFindOrCreateLeaderboard
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FFindOrCreateLeaderboardData& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FFindOrCreateLeaderboardData& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard* FindOrCreateLeaderboardAsync(class UObject* WorldContextObject, const class FString& LeaderboardName, ESteamLeaderboardSortMethod SortMethod, ESteamLeaderboardDisplayType DisplayType, float Timeout);
@@ -2717,23 +2805,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreUserStatsAsyncActionFindOrCreateLeaderboard">();
+		STATIC_CLASS_IMPL("SteamCoreUserStatsAsyncActionFindOrCreateLeaderboard")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreUserStatsAsyncActionFindOrCreateLeaderboard")
 	}
 	static class USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard>();
 	}
 };
-static_assert(alignof(USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard) == 0x000008, "Wrong alignment on USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard");
-static_assert(sizeof(USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard) == 0x000048, "Wrong size on USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard");
-static_assert(offsetof(USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard, OnCallback) == 0x000038, "Member 'USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard;
 
 // Class SteamCore.SteamCoreUserStatsAsyncActionRequestUserStats
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreUserStatsAsyncActionRequestUserStats final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FRequestUserStatsData& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FRequestUserStatsData& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreUserStatsAsyncActionRequestUserStats* RequestUserStatsAsync(class UObject* WorldContextObject, const struct FSteamID& SteamID, float Timeout);
@@ -2743,23 +2833,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreUserStatsAsyncActionRequestUserStats">();
+		STATIC_CLASS_IMPL("SteamCoreUserStatsAsyncActionRequestUserStats")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreUserStatsAsyncActionRequestUserStats")
 	}
 	static class USteamCoreUserStatsAsyncActionRequestUserStats* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreUserStatsAsyncActionRequestUserStats>();
 	}
 };
-static_assert(alignof(USteamCoreUserStatsAsyncActionRequestUserStats) == 0x000008, "Wrong alignment on USteamCoreUserStatsAsyncActionRequestUserStats");
-static_assert(sizeof(USteamCoreUserStatsAsyncActionRequestUserStats) == 0x000048, "Wrong size on USteamCoreUserStatsAsyncActionRequestUserStats");
-static_assert(offsetof(USteamCoreUserStatsAsyncActionRequestUserStats, OnCallback) == 0x000038, "Member 'USteamCoreUserStatsAsyncActionRequestUserStats::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreUserStatsAsyncActionRequestUserStats;
 
 // Class SteamCore.SteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FLeaderboardScoresDownloadedForUsers& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FLeaderboardScoresDownloadedForUsers& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers* DownloadLeaderboardEntriesForUsersAsync(class UObject* WorldContextObject, const struct FSteamLeaderboard& SteamLeaderboard, const TArray<struct FSteamID>& Users, float Timeout);
@@ -2769,23 +2861,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers">();
+		STATIC_CLASS_IMPL("SteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers")
 	}
 	static class USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers>();
 	}
 };
-static_assert(alignof(USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers) == 0x000008, "Wrong alignment on USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers");
-static_assert(sizeof(USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers) == 0x000048, "Wrong size on USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers");
-static_assert(offsetof(USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers, OnCallback) == 0x000038, "Member 'USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers;
 
 // Class SteamCore.SteamCoreUserStatsAsyncActionAttachLeaderboardUGC
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreUserStatsAsyncActionAttachLeaderboardUGC final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(const struct FAttachLeaderboardUGCData& Data, bool bWasSuccessful)> OnCallback;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FAttachLeaderboardUGCData& Data, bool bWasSuccessful)> OnCallback; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreUserStatsAsyncActionAttachLeaderboardUGC* AttachLeaderboardUGCAsync(class UObject* WorldContextObject, const struct FSteamLeaderboard& SteamLeaderboard, const struct FSteamUGCHandle& Handle, float Timeout);
@@ -2795,16 +2889,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreUserStatsAsyncActionAttachLeaderboardUGC">();
+		STATIC_CLASS_IMPL("SteamCoreUserStatsAsyncActionAttachLeaderboardUGC")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreUserStatsAsyncActionAttachLeaderboardUGC")
 	}
 	static class USteamCoreUserStatsAsyncActionAttachLeaderboardUGC* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreUserStatsAsyncActionAttachLeaderboardUGC>();
 	}
 };
-static_assert(alignof(USteamCoreUserStatsAsyncActionAttachLeaderboardUGC) == 0x000008, "Wrong alignment on USteamCoreUserStatsAsyncActionAttachLeaderboardUGC");
-static_assert(sizeof(USteamCoreUserStatsAsyncActionAttachLeaderboardUGC) == 0x000048, "Wrong size on USteamCoreUserStatsAsyncActionAttachLeaderboardUGC");
-static_assert(offsetof(USteamCoreUserStatsAsyncActionAttachLeaderboardUGC, OnCallback) == 0x000038, "Member 'USteamCoreUserStatsAsyncActionAttachLeaderboardUGC::OnCallback' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreUserStatsAsyncActionAttachLeaderboardUGC;
 
 // Class SteamCore.SteamCoreVoice
 // 0x0000 (0x03C0 - 0x03C0)
@@ -2819,22 +2915,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreVoice">();
+		STATIC_CLASS_IMPL("SteamCoreVoice")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreVoice")
 	}
 	static class USteamCoreVoice* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreVoice>();
 	}
 };
-static_assert(alignof(USteamCoreVoice) == 0x000008, "Wrong alignment on USteamCoreVoice");
-static_assert(sizeof(USteamCoreVoice) == 0x0003C0, "Wrong size on USteamCoreVoice");
+DUMPER7_ASSERTS_USteamCoreVoice;
 
 // Class SteamCore.SteamCoreAsyncActionListenForControllerChange
 // 0x0010 (0x0048 - 0x0038)
 class USteamCoreAsyncActionListenForControllerChange final : public USteamCoreAsyncAction
 {
 public:
-	TMulticastInlineDelegate<void(bool bIsConnected, int32 UserId)> OnControllerChanged;                               // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool bIsConnected, int32 UserId)> OnControllerChanged;             // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class USteamCoreAsyncActionListenForControllerChange* ListenForControllerChange(class UObject* WorldContextObject);
@@ -2844,16 +2943,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamCoreAsyncActionListenForControllerChange">();
+		STATIC_CLASS_IMPL("SteamCoreAsyncActionListenForControllerChange")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamCoreAsyncActionListenForControllerChange")
 	}
 	static class USteamCoreAsyncActionListenForControllerChange* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamCoreAsyncActionListenForControllerChange>();
 	}
 };
-static_assert(alignof(USteamCoreAsyncActionListenForControllerChange) == 0x000008, "Wrong alignment on USteamCoreAsyncActionListenForControllerChange");
-static_assert(sizeof(USteamCoreAsyncActionListenForControllerChange) == 0x000048, "Wrong size on USteamCoreAsyncActionListenForControllerChange");
-static_assert(offsetof(USteamCoreAsyncActionListenForControllerChange, OnControllerChanged) == 0x000038, "Member 'USteamCoreAsyncActionListenForControllerChange::OnControllerChanged' has a wrong offset!");
+DUMPER7_ASSERTS_USteamCoreAsyncActionListenForControllerChange;
 
 // Class SteamCore.SteamUtilities
 // 0x0000 (0x0028 - 0x0028)
@@ -2928,26 +3029,29 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamUtilities">();
+		STATIC_CLASS_IMPL("SteamUtilities")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamUtilities")
 	}
 	static class USteamUtilities* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamUtilities>();
 	}
 };
-static_assert(alignof(USteamUtilities) == 0x000008, "Wrong alignment on USteamUtilities");
-static_assert(sizeof(USteamUtilities) == 0x000028, "Wrong size on USteamUtilities");
+DUMPER7_ASSERTS_USteamUtilities;
 
 // Class SteamCore.Utils
 // 0x00F0 (0x0158 - 0x0068)
 class UUtils final : public USteamCoreSubsystem
 {
 public:
-	TMulticastInlineDelegate<void(const struct FCheckFileSignature& Data)> CheckFileSignature;                                // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FGamepadTextInputDismissed& Data)> GamepadTextInputDismissed;                         // 0x0078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FIPCountry& Data)> IPCountry;                                         // 0x0088(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FLowBatteryPower& Data)> LowBatteryPower;                                   // 0x0098(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FSteamShutdown& Data)> SteamShutdown;                                     // 0x00A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FCheckFileSignature& Data)> CheckFileSignature;       // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FGamepadTextInputDismissed& Data)> GamepadTextInputDismissed; // 0x0078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FIPCountry& Data)> IPCountry;                         // 0x0088(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FLowBatteryPower& Data)> LowBatteryPower;             // 0x0098(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FSteamShutdown& Data)> SteamShutdown;                 // 0x00A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_B8[0xA0];                                      // 0x00B8(0x00A0)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -2983,28 +3087,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Utils">();
+		STATIC_CLASS_IMPL("Utils")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Utils")
 	}
 	static class UUtils* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUtils>();
 	}
 };
-static_assert(alignof(UUtils) == 0x000008, "Wrong alignment on UUtils");
-static_assert(sizeof(UUtils) == 0x000158, "Wrong size on UUtils");
-static_assert(offsetof(UUtils, CheckFileSignature) == 0x000068, "Member 'UUtils::CheckFileSignature' has a wrong offset!");
-static_assert(offsetof(UUtils, GamepadTextInputDismissed) == 0x000078, "Member 'UUtils::GamepadTextInputDismissed' has a wrong offset!");
-static_assert(offsetof(UUtils, IPCountry) == 0x000088, "Member 'UUtils::IPCountry' has a wrong offset!");
-static_assert(offsetof(UUtils, LowBatteryPower) == 0x000098, "Member 'UUtils::LowBatteryPower' has a wrong offset!");
-static_assert(offsetof(UUtils, SteamShutdown) == 0x0000A8, "Member 'UUtils::SteamShutdown' has a wrong offset!");
+DUMPER7_ASSERTS_UUtils;
 
 // Class SteamCore.Video
 // 0x0060 (0x00C8 - 0x0068)
 class UVideo final : public USteamCoreSubsystem
 {
 public:
-	TMulticastInlineDelegate<void(const struct FGetOPFSettingsResult& Data)> GetOPFSettingsResult;                              // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FGetVideoURLResult& Data)> GetVideoURLResult;                                 // 0x0078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FGetOPFSettingsResult& Data)> GetOPFSettingsResult;   // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FGetVideoURLResult& Data)> GetVideoURLResult;         // 0x0078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_88[0x40];                                      // 0x0088(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -3016,17 +3118,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Video">();
+		STATIC_CLASS_IMPL("Video")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Video")
 	}
 	static class UVideo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UVideo>();
 	}
 };
-static_assert(alignof(UVideo) == 0x000008, "Wrong alignment on UVideo");
-static_assert(sizeof(UVideo) == 0x0000C8, "Wrong size on UVideo");
-static_assert(offsetof(UVideo, GetOPFSettingsResult) == 0x000068, "Member 'UVideo::GetOPFSettingsResult' has a wrong offset!");
-static_assert(offsetof(UVideo, GetVideoURLResult) == 0x000078, "Member 'UVideo::GetVideoURLResult' has a wrong offset!");
+DUMPER7_ASSERTS_UVideo;
 
 }
 

@@ -38,21 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HighlightWhenHolding_C">();
+		BP_STATIC_CLASS_IMPL("HighlightWhenHolding_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HighlightWhenHolding_C")
 	}
 	static class UHighlightWhenHolding_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHighlightWhenHolding_C>();
 	}
 };
-static_assert(alignof(UHighlightWhenHolding_C) == 0x000008, "Wrong alignment on UHighlightWhenHolding_C");
-static_assert(sizeof(UHighlightWhenHolding_C) == 0x0000C8, "Wrong size on UHighlightWhenHolding_C");
-static_assert(offsetof(UHighlightWhenHolding_C, UberGraphFrame) == 0x0000B0, "Member 'UHighlightWhenHolding_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UHighlightWhenHolding_C, highlightActorClass) == 0x0000B8, "Member 'UHighlightWhenHolding_C::highlightActorClass' has a wrong offset!");
-static_assert(offsetof(UHighlightWhenHolding_C, Distance) == 0x0000C0, "Member 'UHighlightWhenHolding_C::Distance' has a wrong offset!");
-static_assert(offsetof(UHighlightWhenHolding_C, MustBeVisible_) == 0x0000C4, "Member 'UHighlightWhenHolding_C::MustBeVisible_' has a wrong offset!");
-static_assert(offsetof(UHighlightWhenHolding_C, Enabled_) == 0x0000C5, "Member 'UHighlightWhenHolding_C::Enabled_' has a wrong offset!");
-static_assert(offsetof(UHighlightWhenHolding_C, HighlightParent_) == 0x0000C6, "Member 'UHighlightWhenHolding_C::HighlightParent_' has a wrong offset!");
+DUMPER7_ASSERTS_UHighlightWhenHolding_C;
 
 }
 

@@ -30,17 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ToolprogressUI_C">();
+		BP_STATIC_CLASS_IMPL("ToolprogressUI_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ToolprogressUI_C")
 	}
 	static class UToolprogressUI_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UToolprogressUI_C>();
 	}
 };
-static_assert(alignof(UToolprogressUI_C) == 0x000008, "Wrong alignment on UToolprogressUI_C");
-static_assert(sizeof(UToolprogressUI_C) == 0x000270, "Wrong size on UToolprogressUI_C");
-static_assert(offsetof(UToolprogressUI_C, ProgressBar_0) == 0x000260, "Member 'UToolprogressUI_C::ProgressBar_0' has a wrong offset!");
-static_assert(offsetof(UToolprogressUI_C, Spot) == 0x000268, "Member 'UToolprogressUI_C::Spot' has a wrong offset!");
+DUMPER7_ASSERTS_UToolprogressUI_C;
 
 }
 

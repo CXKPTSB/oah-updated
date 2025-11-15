@@ -45,27 +45,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CoinShopUI_C">();
+		BP_STATIC_CLASS_IMPL("CoinShopUI_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CoinShopUI_C")
 	}
 	static class UCoinShopUI_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCoinShopUI_C>();
 	}
 };
-static_assert(alignof(UCoinShopUI_C) == 0x000008, "Wrong alignment on UCoinShopUI_C");
-static_assert(sizeof(UCoinShopUI_C) == 0x0002C0, "Wrong size on UCoinShopUI_C");
-static_assert(offsetof(UCoinShopUI_C, UberGraphFrame) == 0x000260, "Member 'UCoinShopUI_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UCoinShopUI_C, One500Purchase) == 0x000268, "Member 'UCoinShopUI_C::One500Purchase' has a wrong offset!");
-static_assert(offsetof(UCoinShopUI_C, One500Scale) == 0x000270, "Member 'UCoinShopUI_C::One500Scale' has a wrong offset!");
-static_assert(offsetof(UCoinShopUI_C, BackButton) == 0x000278, "Member 'UCoinShopUI_C::BackButton' has a wrong offset!");
-static_assert(offsetof(UCoinShopUI_C, CoinShopUIChild) == 0x000280, "Member 'UCoinShopUI_C::CoinShopUIChild' has a wrong offset!");
-static_assert(offsetof(UCoinShopUI_C, CoinShopUIChild_1) == 0x000288, "Member 'UCoinShopUI_C::CoinShopUIChild_1' has a wrong offset!");
-static_assert(offsetof(UCoinShopUI_C, CoinShopUIChild_2) == 0x000290, "Member 'UCoinShopUI_C::CoinShopUIChild_2' has a wrong offset!");
-static_assert(offsetof(UCoinShopUI_C, CoinShopUIChild1500) == 0x000298, "Member 'UCoinShopUI_C::CoinShopUIChild1500' has a wrong offset!");
-static_assert(offsetof(UCoinShopUI_C, Image_190) == 0x0002A0, "Member 'UCoinShopUI_C::Image_190' has a wrong offset!");
-static_assert(offsetof(UCoinShopUI_C, Image_203) == 0x0002A8, "Member 'UCoinShopUI_C::Image_203' has a wrong offset!");
-static_assert(offsetof(UCoinShopUI_C, TextBlock_196) == 0x0002B0, "Member 'UCoinShopUI_C::TextBlock_196' has a wrong offset!");
-static_assert(offsetof(UCoinShopUI_C, As_Robber_Controller) == 0x0002B8, "Member 'UCoinShopUI_C::As_Robber_Controller' has a wrong offset!");
+DUMPER7_ASSERTS_UCoinShopUI_C;
 
 }
 

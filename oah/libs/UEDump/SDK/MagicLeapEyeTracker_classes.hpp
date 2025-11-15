@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MagicLeapEyeTrackerFunctionLibrary">();
+		STATIC_CLASS_IMPL("MagicLeapEyeTrackerFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MagicLeapEyeTrackerFunctionLibrary")
 	}
 	static class UMagicLeapEyeTrackerFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMagicLeapEyeTrackerFunctionLibrary>();
 	}
 };
-static_assert(alignof(UMagicLeapEyeTrackerFunctionLibrary) == 0x000008, "Wrong alignment on UMagicLeapEyeTrackerFunctionLibrary");
-static_assert(sizeof(UMagicLeapEyeTrackerFunctionLibrary) == 0x000028, "Wrong size on UMagicLeapEyeTrackerFunctionLibrary");
+DUMPER7_ASSERTS_UMagicLeapEyeTrackerFunctionLibrary;
 
 }
 

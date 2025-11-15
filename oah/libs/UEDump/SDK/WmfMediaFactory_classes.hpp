@@ -30,19 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WmfMediaSettings">();
+		STATIC_CLASS_IMPL("WmfMediaSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WmfMediaSettings")
 	}
 	static class UWmfMediaSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWmfMediaSettings>();
 	}
 };
-static_assert(alignof(UWmfMediaSettings) == 0x000008, "Wrong alignment on UWmfMediaSettings");
-static_assert(sizeof(UWmfMediaSettings) == 0x000030, "Wrong size on UWmfMediaSettings");
-static_assert(offsetof(UWmfMediaSettings, AllowNonStandardCodecs) == 0x000028, "Member 'UWmfMediaSettings::AllowNonStandardCodecs' has a wrong offset!");
-static_assert(offsetof(UWmfMediaSettings, LowLatency) == 0x000029, "Member 'UWmfMediaSettings::LowLatency' has a wrong offset!");
-static_assert(offsetof(UWmfMediaSettings, NativeAudioOut) == 0x00002A, "Member 'UWmfMediaSettings::NativeAudioOut' has a wrong offset!");
-static_assert(offsetof(UWmfMediaSettings, HardwareAcceleratedVideoDecoding) == 0x00002B, "Member 'UWmfMediaSettings::HardwareAcceleratedVideoDecoding' has a wrong offset!");
+DUMPER7_ASSERTS_UWmfMediaSettings;
 
 }
 

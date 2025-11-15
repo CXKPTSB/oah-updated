@@ -67,13 +67,7 @@ public:
 	bool                                          bSorted;                                           // 0x0064(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_65[0x3];                                       // 0x0065(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMagicLeapARPinQuery) == 0x000008, "Wrong alignment on FMagicLeapARPinQuery");
-static_assert(sizeof(FMagicLeapARPinQuery) == 0x000068, "Wrong size on FMagicLeapARPinQuery");
-static_assert(offsetof(FMagicLeapARPinQuery, Types) == 0x000000, "Member 'FMagicLeapARPinQuery::Types' has a wrong offset!");
-static_assert(offsetof(FMagicLeapARPinQuery, MaxResults) == 0x000050, "Member 'FMagicLeapARPinQuery::MaxResults' has a wrong offset!");
-static_assert(offsetof(FMagicLeapARPinQuery, TargetPoint) == 0x000054, "Member 'FMagicLeapARPinQuery::TargetPoint' has a wrong offset!");
-static_assert(offsetof(FMagicLeapARPinQuery, Radius) == 0x000060, "Member 'FMagicLeapARPinQuery::Radius' has a wrong offset!");
-static_assert(offsetof(FMagicLeapARPinQuery, bSorted) == 0x000064, "Member 'FMagicLeapARPinQuery::bSorted' has a wrong offset!");
+DUMPER7_ASSERTS_FMagicLeapARPinQuery;
 
 // ScriptStruct MagicLeapARPin.MagicLeapARPinState
 // 0x0014 (0x0014 - 0x0000)
@@ -87,13 +81,7 @@ public:
 	EMagicLeapARPinType                           PinType;                                           // 0x0010(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMagicLeapARPinState) == 0x000004, "Wrong alignment on FMagicLeapARPinState");
-static_assert(sizeof(FMagicLeapARPinState) == 0x000014, "Wrong size on FMagicLeapARPinState");
-static_assert(offsetof(FMagicLeapARPinState, Confidence) == 0x000000, "Member 'FMagicLeapARPinState::Confidence' has a wrong offset!");
-static_assert(offsetof(FMagicLeapARPinState, ValidRadius) == 0x000004, "Member 'FMagicLeapARPinState::ValidRadius' has a wrong offset!");
-static_assert(offsetof(FMagicLeapARPinState, RotationError) == 0x000008, "Member 'FMagicLeapARPinState::RotationError' has a wrong offset!");
-static_assert(offsetof(FMagicLeapARPinState, TranslationError) == 0x00000C, "Member 'FMagicLeapARPinState::TranslationError' has a wrong offset!");
-static_assert(offsetof(FMagicLeapARPinState, PinType) == 0x000010, "Member 'FMagicLeapARPinState::PinType' has a wrong offset!");
+DUMPER7_ASSERTS_FMagicLeapARPinState;
 
 // ScriptStruct MagicLeapARPin.MagicLeapARPinObjectIdList
 // 0x0050 (0x0050 - 0x0000)
@@ -102,9 +90,7 @@ struct FMagicLeapARPinObjectIdList final
 public:
 	TSet<class FString>                           ObjectIdList;                                      // 0x0000(0x0050)(Edit, EditConst, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMagicLeapARPinObjectIdList) == 0x000008, "Wrong alignment on FMagicLeapARPinObjectIdList");
-static_assert(sizeof(FMagicLeapARPinObjectIdList) == 0x000050, "Wrong size on FMagicLeapARPinObjectIdList");
-static_assert(offsetof(FMagicLeapARPinObjectIdList, ObjectIdList) == 0x000000, "Member 'FMagicLeapARPinObjectIdList::ObjectIdList' has a wrong offset!");
+DUMPER7_ASSERTS_FMagicLeapARPinObjectIdList;
 
 }
 

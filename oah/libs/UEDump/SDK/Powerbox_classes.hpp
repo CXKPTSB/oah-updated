@@ -51,7 +51,7 @@ public:
 	bool                                          Targeted_;                                         // 0x02DB(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          CanActivate_;                                      // 0x02DC(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2DD[0x3];                                      // 0x02DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(class APowerbox_C* Powerbox)> PowerboxActivated;                                 // 0x02E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(class APowerbox_C* Powerbox)> PowerboxActivated;                   // 0x02E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	TMulticastInlineDelegate<void()>              PowerboxFinished;                                  // 0x02F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	TMulticastInlineDelegate<void()>              PowerboxSabotaged;                                 // 0x0300(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	int32                                         OrderIndex;                                        // 0x0310(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
@@ -78,47 +78,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Powerbox_C">();
+		BP_STATIC_CLASS_IMPL("Powerbox_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Powerbox_C")
 	}
 	static class APowerbox_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APowerbox_C>();
 	}
 };
-static_assert(alignof(APowerbox_C) == 0x000008, "Wrong alignment on APowerbox_C");
-static_assert(sizeof(APowerbox_C) == 0x000318, "Wrong size on APowerbox_C");
-static_assert(offsetof(APowerbox_C, UberGraphFrame) == 0x000220, "Member 'APowerbox_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(APowerbox_C, SteamAchievementComponent) == 0x000228, "Member 'APowerbox_C::SteamAchievementComponent' has a wrong offset!");
-static_assert(offsetof(APowerbox_C, SteamStatComponent) == 0x000230, "Member 'APowerbox_C::SteamStatComponent' has a wrong offset!");
-static_assert(offsetof(APowerbox_C, Instructioncomponent) == 0x000238, "Member 'APowerbox_C::Instructioncomponent' has a wrong offset!");
-static_assert(offsetof(APowerbox_C, CrossedWires) == 0x000240, "Member 'APowerbox_C::CrossedWires' has a wrong offset!");
-static_assert(offsetof(APowerbox_C, MoveToPoint) == 0x000248, "Member 'APowerbox_C::MoveToPoint' has a wrong offset!");
-static_assert(offsetof(APowerbox_C, Burning) == 0x000250, "Member 'APowerbox_C::Burning' has a wrong offset!");
-static_assert(offsetof(APowerbox_C, Decal1) == 0x000258, "Member 'APowerbox_C::Decal1' has a wrong offset!");
-static_assert(offsetof(APowerbox_C, Decal) == 0x000260, "Member 'APowerbox_C::Decal' has a wrong offset!");
-static_assert(offsetof(APowerbox_C, PowerboxFire) == 0x000268, "Member 'APowerbox_C::PowerboxFire' has a wrong offset!");
-static_assert(offsetof(APowerbox_C, PowerboxSparks) == 0x000270, "Member 'APowerbox_C::PowerboxSparks' has a wrong offset!");
-static_assert(offsetof(APowerbox_C, Sphere) == 0x000278, "Member 'APowerbox_C::Sphere' has a wrong offset!");
-static_assert(offsetof(APowerbox_C, UILocation) == 0x000280, "Member 'APowerbox_C::UILocation' has a wrong offset!");
-static_assert(offsetof(APowerbox_C, LookatInfoComponent) == 0x000288, "Member 'APowerbox_C::LookatInfoComponent' has a wrong offset!");
-static_assert(offsetof(APowerbox_C, InteractComponent) == 0x000290, "Member 'APowerbox_C::InteractComponent' has a wrong offset!");
-static_assert(offsetof(APowerbox_C, SpottedHighlightcomponent) == 0x000298, "Member 'APowerbox_C::SpottedHighlightcomponent' has a wrong offset!");
-static_assert(offsetof(APowerbox_C, Wires) == 0x0002A0, "Member 'APowerbox_C::Wires' has a wrong offset!");
-static_assert(offsetof(APowerbox_C, Door) == 0x0002A8, "Member 'APowerbox_C::Door' has a wrong offset!");
-static_assert(offsetof(APowerbox_C, Box) == 0x0002B0, "Member 'APowerbox_C::Box' has a wrong offset!");
-static_assert(offsetof(APowerbox_C, DefaultSceneRoot) == 0x0002B8, "Member 'APowerbox_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(APowerbox_C, DamageAmount) == 0x0002C0, "Member 'APowerbox_C::DamageAmount' has a wrong offset!");
-static_assert(offsetof(APowerbox_C, DestroyTime) == 0x0002C4, "Member 'APowerbox_C::DestroyTime' has a wrong offset!");
-static_assert(offsetof(APowerbox_C, AffectedActors) == 0x0002C8, "Member 'APowerbox_C::AffectedActors' has a wrong offset!");
-static_assert(offsetof(APowerbox_C, Open_) == 0x0002D8, "Member 'APowerbox_C::Open_' has a wrong offset!");
-static_assert(offsetof(APowerbox_C, IsEnabled_) == 0x0002D9, "Member 'APowerbox_C::IsEnabled_' has a wrong offset!");
-static_assert(offsetof(APowerbox_C, Destroyed_) == 0x0002DA, "Member 'APowerbox_C::Destroyed_' has a wrong offset!");
-static_assert(offsetof(APowerbox_C, Targeted_) == 0x0002DB, "Member 'APowerbox_C::Targeted_' has a wrong offset!");
-static_assert(offsetof(APowerbox_C, CanActivate_) == 0x0002DC, "Member 'APowerbox_C::CanActivate_' has a wrong offset!");
-static_assert(offsetof(APowerbox_C, PowerboxActivated) == 0x0002E0, "Member 'APowerbox_C::PowerboxActivated' has a wrong offset!");
-static_assert(offsetof(APowerbox_C, PowerboxFinished) == 0x0002F0, "Member 'APowerbox_C::PowerboxFinished' has a wrong offset!");
-static_assert(offsetof(APowerbox_C, PowerboxSabotaged) == 0x000300, "Member 'APowerbox_C::PowerboxSabotaged' has a wrong offset!");
-static_assert(offsetof(APowerbox_C, OrderIndex) == 0x000310, "Member 'APowerbox_C::OrderIndex' has a wrong offset!");
+DUMPER7_ASSERTS_APowerbox_C;
 
 }
 

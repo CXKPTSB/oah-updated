@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "NPCBase_classes.hpp"
 #include "CoreUObject_structs.hpp"
+#include "NPCBase_classes.hpp"
 #include "AIModule_structs.hpp"
 
 
@@ -59,6 +59,7 @@ public:
 	float                                         HeadStunChanceVar;                                 // 0x05E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         BodyStunChance;                                    // 0x05EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          canGoCover_;                                       // 0x05F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5F1[0x7];                                      // 0x05F1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ExecuteUbergraph_NPC_Police_base(int32 EntryPoint);
@@ -81,6 +82,7 @@ public:
 	void Shoot();
 	void SetTarget(class AActor* Target);
 	void BndEvt__NPC_Police_PawnSensing_K2Node_ComponentBoundEvent_0_SeePawnDelegate__DelegateSignature(class APawn* Pawn);
+	void ReceiveBeginPlay();
 	void OnSuccess_D72A09BB4846C507EDCEE78EF2293331(EPathFollowingResult MovementResult);
 	void OnFail_D72A09BB4846C507EDCEE78EF2293331(EPathFollowingResult MovementResult);
 	void OnSuccess_FFD927C649BBA39C366E5BA4336B9B80(EPathFollowingResult MovementResult);
@@ -94,12 +96,15 @@ public:
 	void CheckClearView();
 	void CheckIfPointIsOnPlayerLevel(const struct FVector& Player_location, const struct FVector& PointLocation, bool* OnLevel_);
 	void findActivePowerbox();
-	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"NPC_Police_base_C">();
+		BP_STATIC_CLASS_IMPL("NPC_Police_base_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NPC_Police_base_C")
 	}
 	static class ANPC_Police_base_C* GetDefaultObj()
 	{
@@ -107,38 +112,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(ANPC_Police_base_C) == 0x000010, "Wrong alignment on ANPC_Police_base_C");
-static_assert(sizeof(ANPC_Police_base_C) == 0x000600, "Wrong size on ANPC_Police_base_C");
-static_assert(offsetof(ANPC_Police_base_C, UberGraphFrame_NPC_Police_base_C) == 0x000540, "Member 'ANPC_Police_base_C::UberGraphFrame_NPC_Police_base_C' has a wrong offset!");
-static_assert(offsetof(ANPC_Police_base_C, SteamStatComponent) == 0x000548, "Member 'ANPC_Police_base_C::SteamStatComponent' has a wrong offset!");
-static_assert(offsetof(ANPC_Police_base_C, Head) == 0x000550, "Member 'ANPC_Police_base_C::Head' has a wrong offset!");
-static_assert(offsetof(ANPC_Police_base_C, Sphere) == 0x000558, "Member 'ANPC_Police_base_C::Sphere' has a wrong offset!");
-static_assert(offsetof(ANPC_Police_base_C, StunArrow) == 0x000560, "Member 'ANPC_Police_base_C::StunArrow' has a wrong offset!");
-static_assert(offsetof(ANPC_Police_base_C, GunActor) == 0x000568, "Member 'ANPC_Police_base_C::GunActor' has a wrong offset!");
-static_assert(offsetof(ANPC_Police_base_C, GunLocation) == 0x000570, "Member 'ANPC_Police_base_C::GunLocation' has a wrong offset!");
-static_assert(offsetof(ANPC_Police_base_C, PawnSensing) == 0x000578, "Member 'ANPC_Police_base_C::PawnSensing' has a wrong offset!");
-static_assert(offsetof(ANPC_Police_base_C, Timeline_0_Alpha_E96F43CF40DEF6227CC9E1889C83F4E0) == 0x000580, "Member 'ANPC_Police_base_C::Timeline_0_Alpha_E96F43CF40DEF6227CC9E1889C83F4E0' has a wrong offset!");
-static_assert(offsetof(ANPC_Police_base_C, Timeline_0__Direction_E96F43CF40DEF6227CC9E1889C83F4E0) == 0x000584, "Member 'ANPC_Police_base_C::Timeline_0__Direction_E96F43CF40DEF6227CC9E1889C83F4E0' has a wrong offset!");
-static_assert(offsetof(ANPC_Police_base_C, Timeline_0) == 0x000588, "Member 'ANPC_Police_base_C::Timeline_0' has a wrong offset!");
-static_assert(offsetof(ANPC_Police_base_C, TargetPlayer) == 0x000590, "Member 'ANPC_Police_base_C::TargetPlayer' has a wrong offset!");
-static_assert(offsetof(ANPC_Police_base_C, Sensing_) == 0x000598, "Member 'ANPC_Police_base_C::Sensing_' has a wrong offset!");
-static_assert(offsetof(ANPC_Police_base_C, Rifle_) == 0x000599, "Member 'ANPC_Police_base_C::Rifle_' has a wrong offset!");
-static_assert(offsetof(ANPC_Police_base_C, Shooting_) == 0x00059A, "Member 'ANPC_Police_base_C::Shooting_' has a wrong offset!");
-static_assert(offsetof(ANPC_Police_base_C, Gun) == 0x0005A0, "Member 'ANPC_Police_base_C::Gun' has a wrong offset!");
-static_assert(offsetof(ANPC_Police_base_C, HitChance) == 0x0005A8, "Member 'ANPC_Police_base_C::HitChance' has a wrong offset!");
-static_assert(offsetof(ANPC_Police_base_C, PoliceGun) == 0x0005B0, "Member 'ANPC_Police_base_C::PoliceGun' has a wrong offset!");
-static_assert(offsetof(ANPC_Police_base_C, HeadStunned_) == 0x0005B8, "Member 'ANPC_Police_base_C::HeadStunned_' has a wrong offset!");
-static_assert(offsetof(ANPC_Police_base_C, InCover_) == 0x0005B9, "Member 'ANPC_Police_base_C::InCover_' has a wrong offset!");
-static_assert(offsetof(ANPC_Police_base_C, GoingCover_) == 0x0005BA, "Member 'ANPC_Police_base_C::GoingCover_' has a wrong offset!");
-static_assert(offsetof(ANPC_Police_base_C, BodyStunned_) == 0x0005BB, "Member 'ANPC_Police_base_C::BodyStunned_' has a wrong offset!");
-static_assert(offsetof(ANPC_Police_base_C, StunLocation) == 0x0005BC, "Member 'ANPC_Police_base_C::StunLocation' has a wrong offset!");
-static_assert(offsetof(ANPC_Police_base_C, DroppedAmmo) == 0x0005C8, "Member 'ANPC_Police_base_C::DroppedAmmo' has a wrong offset!");
-static_assert(offsetof(ANPC_Police_base_C, TargetPowerBox) == 0x0005D0, "Member 'ANPC_Police_base_C::TargetPowerBox' has a wrong offset!");
-static_assert(offsetof(ANPC_Police_base_C, OverlappedPlayer) == 0x0005D8, "Member 'ANPC_Police_base_C::OverlappedPlayer' has a wrong offset!");
-static_assert(offsetof(ANPC_Police_base_C, As_Robber_Game_State) == 0x0005E0, "Member 'ANPC_Police_base_C::As_Robber_Game_State' has a wrong offset!");
-static_assert(offsetof(ANPC_Police_base_C, HeadStunChanceVar) == 0x0005E8, "Member 'ANPC_Police_base_C::HeadStunChanceVar' has a wrong offset!");
-static_assert(offsetof(ANPC_Police_base_C, BodyStunChance) == 0x0005EC, "Member 'ANPC_Police_base_C::BodyStunChance' has a wrong offset!");
-static_assert(offsetof(ANPC_Police_base_C, canGoCover_) == 0x0005F0, "Member 'ANPC_Police_base_C::canGoCover_' has a wrong offset!");
+DUMPER7_ASSERTS_ANPC_Police_base_C;
 
 }
 

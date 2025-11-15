@@ -38,18 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Instructioncomponent_C">();
+		BP_STATIC_CLASS_IMPL("Instructioncomponent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Instructioncomponent_C")
 	}
 	static class UInstructioncomponent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInstructioncomponent_C>();
 	}
 };
-static_assert(alignof(UInstructioncomponent_C) == 0x000008, "Wrong alignment on UInstructioncomponent_C");
-static_assert(sizeof(UInstructioncomponent_C) == 0x0000C0, "Wrong size on UInstructioncomponent_C");
-static_assert(offsetof(UInstructioncomponent_C, UberGraphFrame) == 0x0000B0, "Member 'UInstructioncomponent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UInstructioncomponent_C, Completed_) == 0x0000B8, "Member 'UInstructioncomponent_C::Completed_' has a wrong offset!");
-static_assert(offsetof(UInstructioncomponent_C, InstructionID) == 0x0000BC, "Member 'UInstructioncomponent_C::InstructionID' has a wrong offset!");
+DUMPER7_ASSERTS_UInstructioncomponent_C;
 
 }
 

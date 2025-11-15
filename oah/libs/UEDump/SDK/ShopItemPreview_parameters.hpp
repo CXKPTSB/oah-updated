@@ -107,74 +107,7 @@ public:
 	uint8                                         Pad_62C[0x4];                                      // 0x062C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 CallFunc_Array_Get_Item_3;                         // 0x0630(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview) == 0x000008, "Wrong alignment on ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview");
-static_assert(sizeof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview) == 0x000638, "Wrong size on ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, EntryPoint) == 0x000000, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, K2Node_Event_Category_1) == 0x000004, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::K2Node_Event_Category_1' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, K2Node_Event_Category) == 0x000005, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::K2Node_Event_Category' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, K2Node_Event_ItemInfo) == 0x000008, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::K2Node_Event_ItemInfo' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, K2Node_Event_SalePrice) == 0x000010, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::K2Node_Event_SalePrice' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_K2_GetRootComponent_ReturnValue) == 0x000018, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_K2_GetRootComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, K2Node_DynamicCast_AsStatic_Mesh_Component) == 0x000020, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::K2Node_DynamicCast_AsStatic_Mesh_Component' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, K2Node_DynamicCast_AsBox_Collision) == 0x000030, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::K2Node_DynamicCast_AsBox_Collision' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, K2Node_DynamicCast_bSuccess_1) == 0x000038, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, K2Node_Event_DeltaSeconds) == 0x00003C, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_GetPlayerController_ReturnValue) == 0x000040, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_GetInputMouseDelta_DeltaX) == 0x000048, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_GetInputMouseDelta_DeltaX' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_GetInputMouseDelta_DeltaY) == 0x00004C, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_GetInputMouseDelta_DeltaY' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_IsInputKeyDown_ReturnValue) == 0x000050, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_IsInputKeyDown_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_MakeLiteralFloat_ReturnValue) == 0x000054, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_MakeLiteralFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000058, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x00005C, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_Multiply_FloatFloat_ReturnValue_2) == 0x000060, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_Multiply_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_MakeRotator_ReturnValue) == 0x000064, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_MakeRotator_ReturnValue_1) == 0x000070, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_MakeRotator_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_K2_AddWorldRotation_SweepHitResult) == 0x00007C, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_K2_AddWorldRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_IsValid_ReturnValue) == 0x000104, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_GetActorBounds_Origin) == 0x000108, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_GetActorBounds_Origin' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_GetActorBounds_BoxExtent) == 0x000114, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_GetActorBounds_BoxExtent' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_VSize_ReturnValue) == 0x000120, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_VSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000124, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_Conv_FloatToVector_ReturnValue) == 0x000128, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_Conv_FloatToVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_K2_AddWorldRotation_SweepHitResult_1) == 0x000134, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_K2_AddWorldRotation_SweepHitResult_1' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x0001BC, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_K2_AddWorldRotation_SweepHitResult_2) == 0x0001C8, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_K2_AddWorldRotation_SweepHitResult_2' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000250, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_K2_AddActorWorldOffset_SweepHitResult) == 0x00025C, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_K2_AddActorWorldOffset_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_K2_AddWorldRotation_SweepHitResult_3) == 0x0002E4, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_K2_AddWorldRotation_SweepHitResult_3' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_K2_SetWorldRotation_SweepHitResult) == 0x00036C, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_K2_SetWorldRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_K2_SetWorldTransform_SweepHitResult) == 0x0003F4, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_K2_SetWorldTransform_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_K2_SetRelativeRotation_SweepHitResult) == 0x00047C, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_K2_SetRelativeRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_SetStaticMesh_ReturnValue) == 0x000504, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_GetPlayerController_ReturnValue_1) == 0x000508, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_IsValid_ReturnValue_1) == 0x000510, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_IsLocalController_ReturnValue) == 0x000511, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_IsLocalController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, K2Node_DynamicCast_AsRobber_Controller) == 0x000518, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::K2Node_DynamicCast_AsRobber_Controller' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, K2Node_DynamicCast_bSuccess_2) == 0x000520, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_Array_Get_Item) == 0x000528, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_Array_Get_Item_1) == 0x000530, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_Array_Get_Item_2) == 0x000538, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_IsValid_ReturnValue_2) == 0x000540, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, K2Node_DynamicCast_AsEmote_BPBase) == 0x000548, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::K2Node_DynamicCast_AsEmote_BPBase' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, K2Node_DynamicCast_bSuccess_3) == 0x000550, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_IsValid_ReturnValue_3) == 0x000551, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, K2Node_ClassDynamicCast_AsShop_Item_Mask_Base) == 0x000558, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::K2Node_ClassDynamicCast_AsShop_Item_Mask_Base' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, K2Node_ClassDynamicCast_bSuccess) == 0x000560, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::K2Node_ClassDynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_IsValid_ReturnValue_4) == 0x000561, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, K2Node_ClassDynamicCast_AsShop_Item_Armor_Base) == 0x000568, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::K2Node_ClassDynamicCast_AsShop_Item_Armor_Base' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, K2Node_ClassDynamicCast_bSuccess_1) == 0x000570, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::K2Node_ClassDynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, K2Node_ClassDynamicCast_AsArmor_Light) == 0x000578, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::K2Node_ClassDynamicCast_AsArmor_Light' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, K2Node_ClassDynamicCast_bSuccess_2) == 0x000580, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::K2Node_ClassDynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_SetStaticMesh_ReturnValue_1) == 0x000581, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_SetStaticMesh_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_IsValidClass_ReturnValue) == 0x000582, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, K2Node_ClassDynamicCast_AsShop_Item_Emote_Base) == 0x000588, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::K2Node_ClassDynamicCast_AsShop_Item_Emote_Base' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, K2Node_ClassDynamicCast_bSuccess_3) == 0x000590, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::K2Node_ClassDynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, K2Node_ClassDynamicCast_AsShop_Item_Outfit_Abase) == 0x000598, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::K2Node_ClassDynamicCast_AsShop_Item_Outfit_Abase' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, K2Node_ClassDynamicCast_bSuccess_4) == 0x0005A0, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::K2Node_ClassDynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_IsValidClass_ReturnValue_1) == 0x0005A1, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_IsValidClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_K2_SetRelativeRotation_SweepHitResult_1) == 0x0005A4, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_K2_SetRelativeRotation_SweepHitResult_1' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview, CallFunc_Array_Get_Item_3) == 0x000630, "Member 'ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview::CallFunc_Array_Get_Item_3' has a wrong offset!");
+DUMPER7_ASSERTS_ShopItemPreview_C_ExecuteUbergraph_ShopItemPreview;
 
 // Function ShopItemPreview.ShopItemPreview_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -183,9 +116,7 @@ struct ShopItemPreview_C_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ShopItemPreview_C_ReceiveTick) == 0x000004, "Wrong alignment on ShopItemPreview_C_ReceiveTick");
-static_assert(sizeof(ShopItemPreview_C_ReceiveTick) == 0x000004, "Wrong size on ShopItemPreview_C_ReceiveTick");
-static_assert(offsetof(ShopItemPreview_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'ShopItemPreview_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_ShopItemPreview_C_ReceiveTick;
 
 // Function ShopItemPreview.ShopItemPreview_C.PreviewItem
 // 0x0010 (0x0010 - 0x0000)
@@ -195,10 +126,7 @@ public:
 	class UClass*                                 ItemInfo;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         SalePrice;                                         // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ShopItemPreview_C_PreviewItem) == 0x000008, "Wrong alignment on ShopItemPreview_C_PreviewItem");
-static_assert(sizeof(ShopItemPreview_C_PreviewItem) == 0x000010, "Wrong size on ShopItemPreview_C_PreviewItem");
-static_assert(offsetof(ShopItemPreview_C_PreviewItem, ItemInfo) == 0x000000, "Member 'ShopItemPreview_C_PreviewItem::ItemInfo' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_PreviewItem, SalePrice) == 0x000008, "Member 'ShopItemPreview_C_PreviewItem::SalePrice' has a wrong offset!");
+DUMPER7_ASSERTS_ShopItemPreview_C_PreviewItem;
 
 // Function ShopItemPreview.ShopItemPreview_C.DragItemFromCategory
 // 0x0001 (0x0001 - 0x0000)
@@ -207,9 +135,7 @@ struct ShopItemPreview_C_DragItemFromCategory final
 public:
 	EShopItemCategory                             Category;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ShopItemPreview_C_DragItemFromCategory) == 0x000001, "Wrong alignment on ShopItemPreview_C_DragItemFromCategory");
-static_assert(sizeof(ShopItemPreview_C_DragItemFromCategory) == 0x000001, "Wrong size on ShopItemPreview_C_DragItemFromCategory");
-static_assert(offsetof(ShopItemPreview_C_DragItemFromCategory, Category) == 0x000000, "Member 'ShopItemPreview_C_DragItemFromCategory::Category' has a wrong offset!");
+DUMPER7_ASSERTS_ShopItemPreview_C_DragItemFromCategory;
 
 // Function ShopItemPreview.ShopItemPreview_C.ChangeCategory
 // 0x0001 (0x0001 - 0x0000)
@@ -218,9 +144,7 @@ struct ShopItemPreview_C_ChangeCategory final
 public:
 	EShopItemCategory                             Category;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ShopItemPreview_C_ChangeCategory) == 0x000001, "Wrong alignment on ShopItemPreview_C_ChangeCategory");
-static_assert(sizeof(ShopItemPreview_C_ChangeCategory) == 0x000001, "Wrong size on ShopItemPreview_C_ChangeCategory");
-static_assert(offsetof(ShopItemPreview_C_ChangeCategory, Category) == 0x000000, "Member 'ShopItemPreview_C_ChangeCategory::Category' has a wrong offset!");
+DUMPER7_ASSERTS_ShopItemPreview_C_ChangeCategory;
 
 // Function ShopItemPreview.ShopItemPreview_C.UserConstructionScript
 // 0x00D0 (0x00D0 - 0x0000)
@@ -232,11 +156,7 @@ public:
 	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0010(0x0030)(IsPlainOldData, NoDestructor)
 	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0040(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(ShopItemPreview_C_UserConstructionScript) == 0x000010, "Wrong alignment on ShopItemPreview_C_UserConstructionScript");
-static_assert(sizeof(ShopItemPreview_C_UserConstructionScript) == 0x0000D0, "Wrong size on ShopItemPreview_C_UserConstructionScript");
-static_assert(offsetof(ShopItemPreview_C_UserConstructionScript, CallFunc_K2_AttachToComponent_ReturnValue) == 0x000000, "Member 'ShopItemPreview_C_UserConstructionScript::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_UserConstructionScript, CallFunc_K2_GetComponentToWorld_ReturnValue) == 0x000010, "Member 'ShopItemPreview_C_UserConstructionScript::CallFunc_K2_GetComponentToWorld_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShopItemPreview_C_UserConstructionScript, CallFunc_K2_SetRelativeLocation_SweepHitResult) == 0x000040, "Member 'ShopItemPreview_C_UserConstructionScript::CallFunc_K2_SetRelativeLocation_SweepHitResult' has a wrong offset!");
+DUMPER7_ASSERTS_ShopItemPreview_C_UserConstructionScript;
 
 }
 

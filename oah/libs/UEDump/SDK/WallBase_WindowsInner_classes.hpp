@@ -23,15 +23,18 @@ class AWallBase_WindowsInner_C final : public AWallBase_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WallBase_WindowsInner_C">();
+		BP_STATIC_CLASS_IMPL("WallBase_WindowsInner_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WallBase_WindowsInner_C")
 	}
 	static class AWallBase_WindowsInner_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AWallBase_WindowsInner_C>();
 	}
 };
-static_assert(alignof(AWallBase_WindowsInner_C) == 0x000008, "Wrong alignment on AWallBase_WindowsInner_C");
-static_assert(sizeof(AWallBase_WindowsInner_C) == 0x0002D8, "Wrong size on AWallBase_WindowsInner_C");
+DUMPER7_ASSERTS_AWallBase_WindowsInner_C;
 
 }
 

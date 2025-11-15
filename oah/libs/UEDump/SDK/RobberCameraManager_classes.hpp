@@ -23,15 +23,18 @@ class ARobberCameraManager_C final : public APlayerCameraManager
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RobberCameraManager_C">();
+		BP_STATIC_CLASS_IMPL("RobberCameraManager_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RobberCameraManager_C")
 	}
 	static class ARobberCameraManager_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ARobberCameraManager_C>();
 	}
 };
-static_assert(alignof(ARobberCameraManager_C) == 0x000010, "Wrong alignment on ARobberCameraManager_C");
-static_assert(sizeof(ARobberCameraManager_C) == 0x002810, "Wrong size on ARobberCameraManager_C");
+DUMPER7_ASSERTS_ARobberCameraManager_C;
 
 }
 

@@ -24,11 +24,7 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTextureRenderTarget2D*                 CallFunc_CreateRenderTarget2D_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Scope_Acog_2x_C_ExecuteUbergraph_Scope_Acog_2x) == 0x000008, "Wrong alignment on Scope_Acog_2x_C_ExecuteUbergraph_Scope_Acog_2x");
-static_assert(sizeof(Scope_Acog_2x_C_ExecuteUbergraph_Scope_Acog_2x) == 0x000018, "Wrong size on Scope_Acog_2x_C_ExecuteUbergraph_Scope_Acog_2x");
-static_assert(offsetof(Scope_Acog_2x_C_ExecuteUbergraph_Scope_Acog_2x, EntryPoint) == 0x000000, "Member 'Scope_Acog_2x_C_ExecuteUbergraph_Scope_Acog_2x::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Scope_Acog_2x_C_ExecuteUbergraph_Scope_Acog_2x, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000008, "Member 'Scope_Acog_2x_C_ExecuteUbergraph_Scope_Acog_2x::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Scope_Acog_2x_C_ExecuteUbergraph_Scope_Acog_2x, CallFunc_CreateRenderTarget2D_ReturnValue) == 0x000010, "Member 'Scope_Acog_2x_C_ExecuteUbergraph_Scope_Acog_2x::CallFunc_CreateRenderTarget2D_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_Scope_Acog_2x_C_ExecuteUbergraph_Scope_Acog_2x;
 
 }
 

@@ -21,9 +21,7 @@ struct Skill_Sabotager_Tier1_C_ExecuteUbergraph_Skill_Sabotager_Tier1 final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Skill_Sabotager_Tier1_C_ExecuteUbergraph_Skill_Sabotager_Tier1) == 0x000004, "Wrong alignment on Skill_Sabotager_Tier1_C_ExecuteUbergraph_Skill_Sabotager_Tier1");
-static_assert(sizeof(Skill_Sabotager_Tier1_C_ExecuteUbergraph_Skill_Sabotager_Tier1) == 0x000004, "Wrong size on Skill_Sabotager_Tier1_C_ExecuteUbergraph_Skill_Sabotager_Tier1");
-static_assert(offsetof(Skill_Sabotager_Tier1_C_ExecuteUbergraph_Skill_Sabotager_Tier1, EntryPoint) == 0x000000, "Member 'Skill_Sabotager_Tier1_C_ExecuteUbergraph_Skill_Sabotager_Tier1::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_Skill_Sabotager_Tier1_C_ExecuteUbergraph_Skill_Sabotager_Tier1;
 
 }
 

@@ -316,7 +316,7 @@ void APlayerCharacter_C::CheckLose()
 // Function PlayerCharacter.PlayerCharacter_C.SendAudioData
 // (Net, NetReliable, NetServer, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<uint8>                           CompressedBuffer                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const TArray<uint8>&                    CompressedBuffer                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
 void APlayerCharacter_C::SendAudioData(const TArray<uint8>& CompressedBuffer)
 {
@@ -350,8 +350,8 @@ void APlayerCharacter_C::GetAvailableVoice()
 // Function PlayerCharacter.PlayerCharacter_C.replicateAudio
 // (Net, NetReliable, NetMulticast, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<uint8>                           Compressed_buffer                                      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// int32                                   Desired_sample_rate                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const TArray<uint8>&                    Compressed_buffer                                      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const int32                             Desired_sample_rate                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void APlayerCharacter_C::replicateAudio(const TArray<uint8>& Compressed_buffer, const int32 Desired_sample_rate)
 {
@@ -386,7 +386,7 @@ void APlayerCharacter_C::ReceiveDestroyed()
 // Function PlayerCharacter.PlayerCharacter_C.SetInteractDescriptionInterfaceCall
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FString                           InteractDescription_0                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    InteractDescription_0                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
 void APlayerCharacter_C::SetInteractDescriptionInterfaceCall(const class FString& InteractDescription_0)
 {
@@ -406,7 +406,7 @@ void APlayerCharacter_C::SetInteractDescriptionInterfaceCall(const class FString
 // Function PlayerCharacter.PlayerCharacter_C.HitmarkerInterfaceCall
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FLinearColor                     Color                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FLinearColor&              Color                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void APlayerCharacter_C::HitmarkerInterfaceCall(const struct FLinearColor& Color)
 {
@@ -427,7 +427,7 @@ void APlayerCharacter_C::HitmarkerInterfaceCall(const struct FLinearColor& Color
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   DamageTaken                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          Attacker_location                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   Attacker_location                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    ShowDirection_                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void APlayerCharacter_C::TakeDamageInterface(int32 DamageTaken, const struct FVector& Attacker_location, bool ShowDirection_)
@@ -450,7 +450,7 @@ void APlayerCharacter_C::TakeDamageInterface(int32 DamageTaken, const struct FVe
 // Function PlayerCharacter.PlayerCharacter_C.SpawnToolsServer
 // (Net, NetReliable, NetServer, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UClass*>                   Tools                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const TArray<class UClass*>&            Tools                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
 void APlayerCharacter_C::SpawnToolsServer(const TArray<class UClass*>& Tools)
 {
@@ -526,7 +526,7 @@ void APlayerCharacter_C::LoadOnServer()
 // Function PlayerCharacter.PlayerCharacter_C.InteractCustom
 // (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FHitResult                       Hit_result                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// const struct FHitResult&                Hit_result                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
 void APlayerCharacter_C::InteractCustom(const struct FHitResult& Hit_result)
 {
@@ -622,7 +622,7 @@ void APlayerCharacter_C::Dance()
 // Function PlayerCharacter.PlayerCharacter_C.PickupItemMultiHost
 // (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// const struct FHitResult&                Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
 void APlayerCharacter_C::PickupItemMultiHost(const struct FHitResult& Hit)
 {
@@ -656,9 +656,9 @@ void APlayerCharacter_C::Recoil()
 // Function PlayerCharacter.PlayerCharacter_C.OnWalkingOffLedge
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FVector                          PreviousFloorImpactNormal                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          PreviousFloorContactNormal                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          PreviousLocation                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   PreviousFloorImpactNormal                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   PreviousFloorContactNormal                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   PreviousLocation                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                                   TimeDelta                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void APlayerCharacter_C::OnWalkingOffLedge(const struct FVector& PreviousFloorImpactNormal, const struct FVector& PreviousFloorContactNormal, const struct FVector& PreviousLocation, float TimeDelta)
@@ -802,7 +802,7 @@ void APlayerCharacter_C::SetReserveBulletsServer(int32 Slot, int32 Amount)
 // Function PlayerCharacter.PlayerCharacter_C.OnLanded
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FHitResult                       Hit                                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// const struct FHitResult&                Hit                                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
 void APlayerCharacter_C::OnLanded(const struct FHitResult& Hit)
 {
@@ -974,7 +974,7 @@ void APlayerCharacter_C::ServerCrouch(bool Crouch_)
 // Function PlayerCharacter.PlayerCharacter_C.ShootMulti
 // (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FHitResult                       Hit_result                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// const struct FHitResult&                Hit_result                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
 void APlayerCharacter_C::ShootMulti(const struct FHitResult& Hit_result)
 {
@@ -1273,15 +1273,15 @@ void APlayerCharacter_C::ForceSwitch(int32 Slot)
 }
 
 
-// Function PlayerCharacter.PlayerCharacter_C.Interactholding
+// Function PlayerCharacter.PlayerCharacter_C.InteractHolding
 // (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
 
-void APlayerCharacter_C::Interactholding()
+void APlayerCharacter_C::InteractHolding()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerCharacter_C", "Interactholding");
+		Func = Class->GetFunction("PlayerCharacter_C", "InteractHolding");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1292,8 +1292,8 @@ void APlayerCharacter_C::Interactholding()
 // Parameters:
 // int32                                   Amount                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FName                             Bone                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          HitLocation                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          StartLocation                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   HitLocation                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   StartLocation                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           Instigator_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void APlayerCharacter_C::BndEvt__PlayerCharacter_DamageComponent_K2Node_ComponentBoundEvent_1_Damage__DelegateSignature(int32 Amount, class FName Bone, const struct FVector& HitLocation, const struct FVector& StartLocation, class AActor* Instigator_0)
@@ -1533,7 +1533,7 @@ void APlayerCharacter_C::SwitchGunEvent(int32 Slot)
 // (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          AttackerLocation                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   AttackerLocation                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    indicate_direction_                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class AActor*                           Instigator_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -1612,7 +1612,7 @@ void APlayerCharacter_C::Rel_Item_server(class AActor* Actor)
 // Function PlayerCharacter.PlayerCharacter_C.PickupItemClient
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// const struct FHitResult&                Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
 void APlayerCharacter_C::PickupItemClient(const struct FHitResult& Hit)
 {
@@ -1632,7 +1632,7 @@ void APlayerCharacter_C::PickupItemClient(const struct FHitResult& Hit)
 // Function PlayerCharacter.PlayerCharacter_C.InteractServer
 // (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FHitResult                       Hit_result                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// const struct FHitResult&                Hit_result                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
 void APlayerCharacter_C::InteractServer(const struct FHitResult& Hit_result)
 {
@@ -1804,7 +1804,7 @@ void APlayerCharacter_C::Setup_gun(int32 Slot)
 // Function PlayerCharacter.PlayerCharacter_C.ShootServer
 // (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FHitResult                       Hit_result                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// const struct FHitResult&                Hit_result                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
 void APlayerCharacter_C::ShootServer(const struct FHitResult& Hit_result)
 {
@@ -1852,7 +1852,7 @@ void APlayerCharacter_C::ReceiveBeginPlay()
 // Function PlayerCharacter.PlayerCharacter_C.CameraRot
 // (Net, NetServer, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FRotator                         Rotation                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// const struct FRotator&                  Rotation                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void APlayerCharacter_C::CameraRot(const struct FRotator& Rotation)
 {
@@ -1972,7 +1972,7 @@ void APlayerCharacter_C::InpAxisEvt_MoveForward_K2Node_InputAxisEvent_0(float Ax
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_PlayerInfo_K2Node_InputActionEvent_0
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
 void APlayerCharacter_C::InpActEvt_PlayerInfo_K2Node_InputActionEvent_0(const struct FKey& Key)
 {
@@ -1992,7 +1992,7 @@ void APlayerCharacter_C::InpActEvt_PlayerInfo_K2Node_InputActionEvent_0(const st
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_PlayerInfo_K2Node_InputActionEvent_1
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
 void APlayerCharacter_C::InpActEvt_PlayerInfo_K2Node_InputActionEvent_1(const struct FKey& Key)
 {
@@ -2012,7 +2012,7 @@ void APlayerCharacter_C::InpActEvt_PlayerInfo_K2Node_InputActionEvent_1(const st
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_Emote_K2Node_InputActionEvent_2
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
 void APlayerCharacter_C::InpActEvt_Emote_K2Node_InputActionEvent_2(const struct FKey& Key)
 {
@@ -2032,7 +2032,7 @@ void APlayerCharacter_C::InpActEvt_Emote_K2Node_InputActionEvent_2(const struct 
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_Voice_K2Node_InputActionEvent_3
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
 void APlayerCharacter_C::InpActEvt_Voice_K2Node_InputActionEvent_3(const struct FKey& Key)
 {
@@ -2052,7 +2052,7 @@ void APlayerCharacter_C::InpActEvt_Voice_K2Node_InputActionEvent_3(const struct 
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_Voice_K2Node_InputActionEvent_4
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
 void APlayerCharacter_C::InpActEvt_Voice_K2Node_InputActionEvent_4(const struct FKey& Key)
 {
@@ -2072,7 +2072,7 @@ void APlayerCharacter_C::InpActEvt_Voice_K2Node_InputActionEvent_4(const struct 
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_Chat_K2Node_InputActionEvent_5
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
 void APlayerCharacter_C::InpActEvt_Chat_K2Node_InputActionEvent_5(const struct FKey& Key)
 {
@@ -2092,7 +2092,7 @@ void APlayerCharacter_C::InpActEvt_Chat_K2Node_InputActionEvent_5(const struct F
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_AnyKey_K2Node_InputKeyEvent_0
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
 void APlayerCharacter_C::InpActEvt_AnyKey_K2Node_InputKeyEvent_0(const struct FKey& Key)
 {
@@ -2112,7 +2112,7 @@ void APlayerCharacter_C::InpActEvt_AnyKey_K2Node_InputKeyEvent_0(const struct FK
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_Pause_K2Node_InputActionEvent_6
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
 void APlayerCharacter_C::InpActEvt_Pause_K2Node_InputActionEvent_6(const struct FKey& Key)
 {
@@ -2132,7 +2132,7 @@ void APlayerCharacter_C::InpActEvt_Pause_K2Node_InputActionEvent_6(const struct 
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_Flashlight_K2Node_InputActionEvent_7
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
 void APlayerCharacter_C::InpActEvt_Flashlight_K2Node_InputActionEvent_7(const struct FKey& Key)
 {
@@ -2152,7 +2152,7 @@ void APlayerCharacter_C::InpActEvt_Flashlight_K2Node_InputActionEvent_7(const st
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_Crouch_K2Node_InputActionEvent_8
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
 void APlayerCharacter_C::InpActEvt_Crouch_K2Node_InputActionEvent_8(const struct FKey& Key)
 {
@@ -2172,7 +2172,7 @@ void APlayerCharacter_C::InpActEvt_Crouch_K2Node_InputActionEvent_8(const struct
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_SecondMouseAction_K2Node_InputActionEvent_9
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
 void APlayerCharacter_C::InpActEvt_SecondMouseAction_K2Node_InputActionEvent_9(const struct FKey& Key)
 {
@@ -2192,7 +2192,7 @@ void APlayerCharacter_C::InpActEvt_SecondMouseAction_K2Node_InputActionEvent_9(c
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_SecondMouseAction_K2Node_InputActionEvent_10
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
 void APlayerCharacter_C::InpActEvt_SecondMouseAction_K2Node_InputActionEvent_10(const struct FKey& Key)
 {
@@ -2212,7 +2212,7 @@ void APlayerCharacter_C::InpActEvt_SecondMouseAction_K2Node_InputActionEvent_10(
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_Sprint_K2Node_InputActionEvent_11
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
 void APlayerCharacter_C::InpActEvt_Sprint_K2Node_InputActionEvent_11(const struct FKey& Key)
 {
@@ -2232,7 +2232,7 @@ void APlayerCharacter_C::InpActEvt_Sprint_K2Node_InputActionEvent_11(const struc
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_Sprint_K2Node_InputActionEvent_12
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
 void APlayerCharacter_C::InpActEvt_Sprint_K2Node_InputActionEvent_12(const struct FKey& Key)
 {
@@ -2252,7 +2252,7 @@ void APlayerCharacter_C::InpActEvt_Sprint_K2Node_InputActionEvent_12(const struc
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_Jump_K2Node_InputActionEvent_13
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
 void APlayerCharacter_C::InpActEvt_Jump_K2Node_InputActionEvent_13(const struct FKey& Key)
 {
@@ -2272,7 +2272,7 @@ void APlayerCharacter_C::InpActEvt_Jump_K2Node_InputActionEvent_13(const struct 
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_Three_K2Node_InputKeyEvent_1
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
 void APlayerCharacter_C::InpActEvt_Three_K2Node_InputKeyEvent_1(const struct FKey& Key)
 {
@@ -2292,7 +2292,7 @@ void APlayerCharacter_C::InpActEvt_Three_K2Node_InputKeyEvent_1(const struct FKe
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_Two_K2Node_InputKeyEvent_2
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
 void APlayerCharacter_C::InpActEvt_Two_K2Node_InputKeyEvent_2(const struct FKey& Key)
 {
@@ -2312,7 +2312,7 @@ void APlayerCharacter_C::InpActEvt_Two_K2Node_InputKeyEvent_2(const struct FKey&
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_One_K2Node_InputKeyEvent_3
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
 void APlayerCharacter_C::InpActEvt_One_K2Node_InputKeyEvent_3(const struct FKey& Key)
 {
@@ -2332,7 +2332,7 @@ void APlayerCharacter_C::InpActEvt_One_K2Node_InputKeyEvent_3(const struct FKey&
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_SwitchDown_K2Node_InputActionEvent_14
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
 void APlayerCharacter_C::InpActEvt_SwitchDown_K2Node_InputActionEvent_14(const struct FKey& Key)
 {
@@ -2352,7 +2352,7 @@ void APlayerCharacter_C::InpActEvt_SwitchDown_K2Node_InputActionEvent_14(const s
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_SwitchUp_K2Node_InputActionEvent_15
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
 void APlayerCharacter_C::InpActEvt_SwitchUp_K2Node_InputActionEvent_15(const struct FKey& Key)
 {
@@ -2372,7 +2372,7 @@ void APlayerCharacter_C::InpActEvt_SwitchUp_K2Node_InputActionEvent_15(const str
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_Reload_K2Node_InputActionEvent_16
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
 void APlayerCharacter_C::InpActEvt_Reload_K2Node_InputActionEvent_16(const struct FKey& Key)
 {
@@ -2392,7 +2392,7 @@ void APlayerCharacter_C::InpActEvt_Reload_K2Node_InputActionEvent_16(const struc
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_MouseAction_K2Node_InputActionEvent_17
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
 void APlayerCharacter_C::InpActEvt_MouseAction_K2Node_InputActionEvent_17(const struct FKey& Key)
 {
@@ -2412,7 +2412,7 @@ void APlayerCharacter_C::InpActEvt_MouseAction_K2Node_InputActionEvent_17(const 
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_MouseAction_K2Node_InputActionEvent_18
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
 void APlayerCharacter_C::InpActEvt_MouseAction_K2Node_InputActionEvent_18(const struct FKey& Key)
 {
@@ -2530,7 +2530,7 @@ void APlayerCharacter_C::OnRep_ShootHit()
 // Function PlayerCharacter.PlayerCharacter_C.ShootFunction
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// const struct FHitResult&                Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
 void APlayerCharacter_C::ShootFunction(const struct FHitResult& Hit)
 {
@@ -2551,7 +2551,7 @@ void APlayerCharacter_C::ShootFunction(const struct FHitResult& Hit)
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   Number                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    Willswitch_                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Willswitch_                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void APlayerCharacter_C::SwitchGun(int32 Number, bool* Willswitch_)
 {
@@ -2616,7 +2616,7 @@ void APlayerCharacter_C::SetupGunAmmo()
 // Function PlayerCharacter.PlayerCharacter_C.InteractFunction
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FHitResult                       Hit_result                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// const struct FHitResult&                Hit_result                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
 void APlayerCharacter_C::InteractFunction(const struct FHitResult& Hit_result)
 {
@@ -2636,7 +2636,7 @@ void APlayerCharacter_C::InteractFunction(const struct FHitResult& Hit_result)
 // Function PlayerCharacter.PlayerCharacter_C.Pick up item
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FHitResult                       Hit_result                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// const struct FHitResult&                Hit_result                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
 void APlayerCharacter_C::Pick_up_item(const struct FHitResult& Hit_result)
 {
@@ -2716,10 +2716,10 @@ void APlayerCharacter_C::SetupGunFunc(int32 Slot)
 // Function PlayerCharacter.PlayerCharacter_C.CheckCanVault
 // (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Can_vault_                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    Vault_over_                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FVector                          VaultLocation                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    WillCrouch_                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Can_vault_                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Vault_over_                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FVector*                         VaultLocation                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   WillCrouch_                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void APlayerCharacter_C::CheckCanVault(bool* Can_vault_, bool* Vault_over_, struct FVector* VaultLocation, bool* WillCrouch_)
 {
@@ -2749,7 +2749,7 @@ void APlayerCharacter_C::CheckCanVault(bool* Can_vault_, bool* Vault_over_, stru
 // Function PlayerCharacter.PlayerCharacter_C.CanUncrouch?
 // (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Can_                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Can_                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void APlayerCharacter_C::CanUncrouch_(bool* Can_)
 {
@@ -2770,14 +2770,14 @@ void APlayerCharacter_C::CanUncrouch_(bool* Can_)
 // Function PlayerCharacter.PlayerCharacter_C.Get Any Gun Stats
 // (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FAttachmentArrayStructure        AttachmentArrayStructure                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+// const struct FAttachmentArrayStructure& AttachmentArrayStructure                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 // class UClass*                           GunClass                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Zoom                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Recoil                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Accuracy                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Reload_time                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Damage                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Bullets                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float*                                  Zoom                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float*                                  Recoil                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float*                                  Accuracy                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float*                                  Reload_time                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float*                                  Damage                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Bullets                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void APlayerCharacter_C::Get_Any_Gun_Stats(const struct FAttachmentArrayStructure& AttachmentArrayStructure, class UClass* GunClass, float* Zoom, float* Recoil, float* Accuracy, float* Reload_time, float* Damage, int32* Bullets)
 {
@@ -2878,7 +2878,7 @@ void APlayerCharacter_C::OnRep_EquippedTools()
 // Function PlayerCharacter.PlayerCharacter_C.CheckLoseFunc
 // (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Game_over_                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Game_over_                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void APlayerCharacter_C::CheckLoseFunc(bool* Game_over_)
 {
@@ -2969,7 +2969,7 @@ void APlayerCharacter_C::SetupControllerSkills()
 // Function PlayerCharacter.PlayerCharacter_C.BulletTraceVisuals
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FHitResult                       HitResult                                              (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// const struct FHitResult&                HitResult                                              (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
 void APlayerCharacter_C::BulletTraceVisuals(const struct FHitResult& HitResult)
 {
@@ -2989,7 +2989,7 @@ void APlayerCharacter_C::BulletTraceVisuals(const struct FHitResult& HitResult)
 // Function PlayerCharacter.PlayerCharacter_C.CheckIfDowned?
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Downed__0                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Downed__0                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void APlayerCharacter_C::CheckIfDowned_(bool* Downed__0)
 {
@@ -3011,7 +3011,7 @@ void APlayerCharacter_C::CheckIfDowned_(bool* Downed__0)
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   Amount                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    DidAddAmmo_                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   DidAddAmmo_                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void APlayerCharacter_C::AddAmmoInterfaceCall(int32 Amount, bool* DidAddAmmo_)
 {
@@ -3034,7 +3034,7 @@ void APlayerCharacter_C::AddAmmoInterfaceCall(int32 Amount, bool* DidAddAmmo_)
 // Function PlayerCharacter.PlayerCharacter_C.CheckHoldingItemInterfaceCall
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AActor*                           HoldingItem                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor**                          HoldingItem                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void APlayerCharacter_C::CheckHoldingItemInterfaceCall(class AActor** HoldingItem)
 {
@@ -3055,7 +3055,7 @@ void APlayerCharacter_C::CheckHoldingItemInterfaceCall(class AActor** HoldingIte
 // Function PlayerCharacter.PlayerCharacter_C.GetHoldingActor
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AActor*                           HoldingActor_0                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor**                          HoldingActor_0                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void APlayerCharacter_C::GetHoldingActor(class AActor** HoldingActor_0)
 {

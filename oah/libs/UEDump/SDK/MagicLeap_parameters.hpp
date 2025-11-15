@@ -26,10 +26,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(InAppPurchaseComponent_TryGetItemsDetailsAsync) == 0x000008, "Wrong alignment on InAppPurchaseComponent_TryGetItemsDetailsAsync");
-static_assert(sizeof(InAppPurchaseComponent_TryGetItemsDetailsAsync) == 0x000018, "Wrong size on InAppPurchaseComponent_TryGetItemsDetailsAsync");
-static_assert(offsetof(InAppPurchaseComponent_TryGetItemsDetailsAsync, ItemIDs) == 0x000000, "Member 'InAppPurchaseComponent_TryGetItemsDetailsAsync::ItemIDs' has a wrong offset!");
-static_assert(offsetof(InAppPurchaseComponent_TryGetItemsDetailsAsync, ReturnValue) == 0x000010, "Member 'InAppPurchaseComponent_TryGetItemsDetailsAsync::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_InAppPurchaseComponent_TryGetItemsDetailsAsync;
 
 // Function MagicLeap.InAppPurchaseComponent.TryGetPurchaseHistoryAsync
 // 0x0008 (0x0008 - 0x0000)
@@ -40,10 +37,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(InAppPurchaseComponent_TryGetPurchaseHistoryAsync) == 0x000004, "Wrong alignment on InAppPurchaseComponent_TryGetPurchaseHistoryAsync");
-static_assert(sizeof(InAppPurchaseComponent_TryGetPurchaseHistoryAsync) == 0x000008, "Wrong size on InAppPurchaseComponent_TryGetPurchaseHistoryAsync");
-static_assert(offsetof(InAppPurchaseComponent_TryGetPurchaseHistoryAsync, InNumPages) == 0x000000, "Member 'InAppPurchaseComponent_TryGetPurchaseHistoryAsync::InNumPages' has a wrong offset!");
-static_assert(offsetof(InAppPurchaseComponent_TryGetPurchaseHistoryAsync, ReturnValue) == 0x000004, "Member 'InAppPurchaseComponent_TryGetPurchaseHistoryAsync::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_InAppPurchaseComponent_TryGetPurchaseHistoryAsync;
 
 // Function MagicLeap.InAppPurchaseComponent.TryPurchaseItemAsync
 // 0x0048 (0x0048 - 0x0000)
@@ -54,10 +48,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(InAppPurchaseComponent_TryPurchaseItemAsync) == 0x000008, "Wrong alignment on InAppPurchaseComponent_TryPurchaseItemAsync");
-static_assert(sizeof(InAppPurchaseComponent_TryPurchaseItemAsync) == 0x000048, "Wrong size on InAppPurchaseComponent_TryPurchaseItemAsync");
-static_assert(offsetof(InAppPurchaseComponent_TryPurchaseItemAsync, ItemDetails) == 0x000000, "Member 'InAppPurchaseComponent_TryPurchaseItemAsync::ItemDetails' has a wrong offset!");
-static_assert(offsetof(InAppPurchaseComponent_TryPurchaseItemAsync, ReturnValue) == 0x000040, "Member 'InAppPurchaseComponent_TryPurchaseItemAsync::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_InAppPurchaseComponent_TryPurchaseItemAsync;
 
 // Function MagicLeap.MagicLeapRaycastComponent.RequestRaycast
 // 0x004C (0x004C - 0x0000)
@@ -65,29 +56,22 @@ struct MagicLeapRaycastComponent_RequestRaycast final
 {
 public:
 	struct FMagicLeapRaycastQueryParams           RequestParams;                                     // 0x0000(0x0038)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FMagicLeapRaycastHitResult& HitResult)> ResultDelegate;                                    // 0x0038(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FMagicLeapRaycastHitResult& HitResult)> ResultDelegate;              // 0x0038(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapRaycastComponent_RequestRaycast) == 0x000004, "Wrong alignment on MagicLeapRaycastComponent_RequestRaycast");
-static_assert(sizeof(MagicLeapRaycastComponent_RequestRaycast) == 0x00004C, "Wrong size on MagicLeapRaycastComponent_RequestRaycast");
-static_assert(offsetof(MagicLeapRaycastComponent_RequestRaycast, RequestParams) == 0x000000, "Member 'MagicLeapRaycastComponent_RequestRaycast::RequestParams' has a wrong offset!");
-static_assert(offsetof(MagicLeapRaycastComponent_RequestRaycast, ResultDelegate) == 0x000038, "Member 'MagicLeapRaycastComponent_RequestRaycast::ResultDelegate' has a wrong offset!");
-static_assert(offsetof(MagicLeapRaycastComponent_RequestRaycast, ReturnValue) == 0x000048, "Member 'MagicLeapRaycastComponent_RequestRaycast::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapRaycastComponent_RequestRaycast;
 
 // Function MagicLeap.MagicLeapHMDFunctionLibrary.GetGraphicsClientPerformanceInfo
 // 0x0020 (0x0020 - 0x0000)
 struct MagicLeapHMDFunctionLibrary_GetGraphicsClientPerformanceInfo final
 {
 public:
-	struct FMagicLeapGraphicsClientPerformanceInfo PerformanceInfo;                                   // 0x0000(0x001C)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMagicLeapGraphicsClientPerformanceInfo PerformanceInfo;                                  // 0x0000(0x001C)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x001C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapHMDFunctionLibrary_GetGraphicsClientPerformanceInfo) == 0x000004, "Wrong alignment on MagicLeapHMDFunctionLibrary_GetGraphicsClientPerformanceInfo");
-static_assert(sizeof(MagicLeapHMDFunctionLibrary_GetGraphicsClientPerformanceInfo) == 0x000020, "Wrong size on MagicLeapHMDFunctionLibrary_GetGraphicsClientPerformanceInfo");
-static_assert(offsetof(MagicLeapHMDFunctionLibrary_GetGraphicsClientPerformanceInfo, PerformanceInfo) == 0x000000, "Member 'MagicLeapHMDFunctionLibrary_GetGraphicsClientPerformanceInfo::PerformanceInfo' has a wrong offset!");
-static_assert(offsetof(MagicLeapHMDFunctionLibrary_GetGraphicsClientPerformanceInfo, ReturnValue) == 0x00001C, "Member 'MagicLeapHMDFunctionLibrary_GetGraphicsClientPerformanceInfo::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapHMDFunctionLibrary_GetGraphicsClientPerformanceInfo;
 
 // Function MagicLeap.MagicLeapHMDFunctionLibrary.GetHeadTrackingMapEvents
 // 0x0058 (0x0058 - 0x0000)
@@ -98,10 +82,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0050(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapHMDFunctionLibrary_GetHeadTrackingMapEvents) == 0x000008, "Wrong alignment on MagicLeapHMDFunctionLibrary_GetHeadTrackingMapEvents");
-static_assert(sizeof(MagicLeapHMDFunctionLibrary_GetHeadTrackingMapEvents) == 0x000058, "Wrong size on MagicLeapHMDFunctionLibrary_GetHeadTrackingMapEvents");
-static_assert(offsetof(MagicLeapHMDFunctionLibrary_GetHeadTrackingMapEvents, MapEvents) == 0x000000, "Member 'MagicLeapHMDFunctionLibrary_GetHeadTrackingMapEvents::MapEvents' has a wrong offset!");
-static_assert(offsetof(MagicLeapHMDFunctionLibrary_GetHeadTrackingMapEvents, ReturnValue) == 0x000050, "Member 'MagicLeapHMDFunctionLibrary_GetHeadTrackingMapEvents::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapHMDFunctionLibrary_GetHeadTrackingMapEvents;
 
 // Function MagicLeap.MagicLeapHMDFunctionLibrary.GetHeadTrackingState
 // 0x000C (0x000C - 0x0000)
@@ -112,10 +93,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapHMDFunctionLibrary_GetHeadTrackingState) == 0x000004, "Wrong alignment on MagicLeapHMDFunctionLibrary_GetHeadTrackingState");
-static_assert(sizeof(MagicLeapHMDFunctionLibrary_GetHeadTrackingState) == 0x00000C, "Wrong size on MagicLeapHMDFunctionLibrary_GetHeadTrackingState");
-static_assert(offsetof(MagicLeapHMDFunctionLibrary_GetHeadTrackingState, State) == 0x000000, "Member 'MagicLeapHMDFunctionLibrary_GetHeadTrackingState::State' has a wrong offset!");
-static_assert(offsetof(MagicLeapHMDFunctionLibrary_GetHeadTrackingState, ReturnValue) == 0x000008, "Member 'MagicLeapHMDFunctionLibrary_GetHeadTrackingState::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapHMDFunctionLibrary_GetHeadTrackingState;
 
 // Function MagicLeap.MagicLeapHMDFunctionLibrary.GetMinimumAPILevel
 // 0x0004 (0x0004 - 0x0000)
@@ -124,9 +102,7 @@ struct MagicLeapHMDFunctionLibrary_GetMinimumAPILevel final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MagicLeapHMDFunctionLibrary_GetMinimumAPILevel) == 0x000004, "Wrong alignment on MagicLeapHMDFunctionLibrary_GetMinimumAPILevel");
-static_assert(sizeof(MagicLeapHMDFunctionLibrary_GetMinimumAPILevel) == 0x000004, "Wrong size on MagicLeapHMDFunctionLibrary_GetMinimumAPILevel");
-static_assert(offsetof(MagicLeapHMDFunctionLibrary_GetMinimumAPILevel, ReturnValue) == 0x000000, "Member 'MagicLeapHMDFunctionLibrary_GetMinimumAPILevel::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapHMDFunctionLibrary_GetMinimumAPILevel;
 
 // Function MagicLeap.MagicLeapHMDFunctionLibrary.GetMLSDKVersion
 // 0x0010 (0x0010 - 0x0000)
@@ -135,9 +111,7 @@ struct MagicLeapHMDFunctionLibrary_GetMLSDKVersion final
 public:
 	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MagicLeapHMDFunctionLibrary_GetMLSDKVersion) == 0x000008, "Wrong alignment on MagicLeapHMDFunctionLibrary_GetMLSDKVersion");
-static_assert(sizeof(MagicLeapHMDFunctionLibrary_GetMLSDKVersion) == 0x000010, "Wrong size on MagicLeapHMDFunctionLibrary_GetMLSDKVersion");
-static_assert(offsetof(MagicLeapHMDFunctionLibrary_GetMLSDKVersion, ReturnValue) == 0x000000, "Member 'MagicLeapHMDFunctionLibrary_GetMLSDKVersion::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapHMDFunctionLibrary_GetMLSDKVersion;
 
 // Function MagicLeap.MagicLeapHMDFunctionLibrary.GetMLSDKVersionMajor
 // 0x0004 (0x0004 - 0x0000)
@@ -146,9 +120,7 @@ struct MagicLeapHMDFunctionLibrary_GetMLSDKVersionMajor final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MagicLeapHMDFunctionLibrary_GetMLSDKVersionMajor) == 0x000004, "Wrong alignment on MagicLeapHMDFunctionLibrary_GetMLSDKVersionMajor");
-static_assert(sizeof(MagicLeapHMDFunctionLibrary_GetMLSDKVersionMajor) == 0x000004, "Wrong size on MagicLeapHMDFunctionLibrary_GetMLSDKVersionMajor");
-static_assert(offsetof(MagicLeapHMDFunctionLibrary_GetMLSDKVersionMajor, ReturnValue) == 0x000000, "Member 'MagicLeapHMDFunctionLibrary_GetMLSDKVersionMajor::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapHMDFunctionLibrary_GetMLSDKVersionMajor;
 
 // Function MagicLeap.MagicLeapHMDFunctionLibrary.GetMLSDKVersionMinor
 // 0x0004 (0x0004 - 0x0000)
@@ -157,9 +129,7 @@ struct MagicLeapHMDFunctionLibrary_GetMLSDKVersionMinor final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MagicLeapHMDFunctionLibrary_GetMLSDKVersionMinor) == 0x000004, "Wrong alignment on MagicLeapHMDFunctionLibrary_GetMLSDKVersionMinor");
-static_assert(sizeof(MagicLeapHMDFunctionLibrary_GetMLSDKVersionMinor) == 0x000004, "Wrong size on MagicLeapHMDFunctionLibrary_GetMLSDKVersionMinor");
-static_assert(offsetof(MagicLeapHMDFunctionLibrary_GetMLSDKVersionMinor, ReturnValue) == 0x000000, "Member 'MagicLeapHMDFunctionLibrary_GetMLSDKVersionMinor::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapHMDFunctionLibrary_GetMLSDKVersionMinor;
 
 // Function MagicLeap.MagicLeapHMDFunctionLibrary.GetMLSDKVersionRevision
 // 0x0004 (0x0004 - 0x0000)
@@ -168,9 +138,7 @@ struct MagicLeapHMDFunctionLibrary_GetMLSDKVersionRevision final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MagicLeapHMDFunctionLibrary_GetMLSDKVersionRevision) == 0x000004, "Wrong alignment on MagicLeapHMDFunctionLibrary_GetMLSDKVersionRevision");
-static_assert(sizeof(MagicLeapHMDFunctionLibrary_GetMLSDKVersionRevision) == 0x000004, "Wrong size on MagicLeapHMDFunctionLibrary_GetMLSDKVersionRevision");
-static_assert(offsetof(MagicLeapHMDFunctionLibrary_GetMLSDKVersionRevision, ReturnValue) == 0x000000, "Member 'MagicLeapHMDFunctionLibrary_GetMLSDKVersionRevision::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapHMDFunctionLibrary_GetMLSDKVersionRevision;
 
 // Function MagicLeap.MagicLeapHMDFunctionLibrary.GetPlatformAPILevel
 // 0x0004 (0x0004 - 0x0000)
@@ -179,9 +147,7 @@ struct MagicLeapHMDFunctionLibrary_GetPlatformAPILevel final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MagicLeapHMDFunctionLibrary_GetPlatformAPILevel) == 0x000004, "Wrong alignment on MagicLeapHMDFunctionLibrary_GetPlatformAPILevel");
-static_assert(sizeof(MagicLeapHMDFunctionLibrary_GetPlatformAPILevel) == 0x000004, "Wrong size on MagicLeapHMDFunctionLibrary_GetPlatformAPILevel");
-static_assert(offsetof(MagicLeapHMDFunctionLibrary_GetPlatformAPILevel, ReturnValue) == 0x000000, "Member 'MagicLeapHMDFunctionLibrary_GetPlatformAPILevel::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapHMDFunctionLibrary_GetPlatformAPILevel;
 
 // Function MagicLeap.MagicLeapHMDFunctionLibrary.IsRunningOnMagicLeapHMD
 // 0x0001 (0x0001 - 0x0000)
@@ -190,9 +156,7 @@ struct MagicLeapHMDFunctionLibrary_IsRunningOnMagicLeapHMD final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MagicLeapHMDFunctionLibrary_IsRunningOnMagicLeapHMD) == 0x000001, "Wrong alignment on MagicLeapHMDFunctionLibrary_IsRunningOnMagicLeapHMD");
-static_assert(sizeof(MagicLeapHMDFunctionLibrary_IsRunningOnMagicLeapHMD) == 0x000001, "Wrong size on MagicLeapHMDFunctionLibrary_IsRunningOnMagicLeapHMD");
-static_assert(offsetof(MagicLeapHMDFunctionLibrary_IsRunningOnMagicLeapHMD, ReturnValue) == 0x000000, "Member 'MagicLeapHMDFunctionLibrary_IsRunningOnMagicLeapHMD::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapHMDFunctionLibrary_IsRunningOnMagicLeapHMD;
 
 // Function MagicLeap.MagicLeapHMDFunctionLibrary.SetAppReady
 // 0x0001 (0x0001 - 0x0000)
@@ -201,9 +165,7 @@ struct MagicLeapHMDFunctionLibrary_SetAppReady final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MagicLeapHMDFunctionLibrary_SetAppReady) == 0x000001, "Wrong alignment on MagicLeapHMDFunctionLibrary_SetAppReady");
-static_assert(sizeof(MagicLeapHMDFunctionLibrary_SetAppReady) == 0x000001, "Wrong size on MagicLeapHMDFunctionLibrary_SetAppReady");
-static_assert(offsetof(MagicLeapHMDFunctionLibrary_SetAppReady, ReturnValue) == 0x000000, "Member 'MagicLeapHMDFunctionLibrary_SetAppReady::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapHMDFunctionLibrary_SetAppReady;
 
 // Function MagicLeap.MagicLeapHMDFunctionLibrary.SetBaseOrientation
 // 0x0010 (0x0010 - 0x0000)
@@ -212,9 +174,7 @@ struct MagicLeapHMDFunctionLibrary_SetBaseOrientation final
 public:
 	struct FQuat                                  InBaseOrientation;                                 // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MagicLeapHMDFunctionLibrary_SetBaseOrientation) == 0x000010, "Wrong alignment on MagicLeapHMDFunctionLibrary_SetBaseOrientation");
-static_assert(sizeof(MagicLeapHMDFunctionLibrary_SetBaseOrientation) == 0x000010, "Wrong size on MagicLeapHMDFunctionLibrary_SetBaseOrientation");
-static_assert(offsetof(MagicLeapHMDFunctionLibrary_SetBaseOrientation, InBaseOrientation) == 0x000000, "Member 'MagicLeapHMDFunctionLibrary_SetBaseOrientation::InBaseOrientation' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapHMDFunctionLibrary_SetBaseOrientation;
 
 // Function MagicLeap.MagicLeapHMDFunctionLibrary.SetBasePosition
 // 0x000C (0x000C - 0x0000)
@@ -223,9 +183,7 @@ struct MagicLeapHMDFunctionLibrary_SetBasePosition final
 public:
 	struct FVector                                InBasePosition;                                    // 0x0000(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MagicLeapHMDFunctionLibrary_SetBasePosition) == 0x000004, "Wrong alignment on MagicLeapHMDFunctionLibrary_SetBasePosition");
-static_assert(sizeof(MagicLeapHMDFunctionLibrary_SetBasePosition) == 0x00000C, "Wrong size on MagicLeapHMDFunctionLibrary_SetBasePosition");
-static_assert(offsetof(MagicLeapHMDFunctionLibrary_SetBasePosition, InBasePosition) == 0x000000, "Member 'MagicLeapHMDFunctionLibrary_SetBasePosition::InBasePosition' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapHMDFunctionLibrary_SetBasePosition;
 
 // Function MagicLeap.MagicLeapHMDFunctionLibrary.SetBaseRotation
 // 0x000C (0x000C - 0x0000)
@@ -234,9 +192,7 @@ struct MagicLeapHMDFunctionLibrary_SetBaseRotation final
 public:
 	struct FRotator                               InBaseRotation;                                    // 0x0000(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MagicLeapHMDFunctionLibrary_SetBaseRotation) == 0x000004, "Wrong alignment on MagicLeapHMDFunctionLibrary_SetBaseRotation");
-static_assert(sizeof(MagicLeapHMDFunctionLibrary_SetBaseRotation) == 0x00000C, "Wrong size on MagicLeapHMDFunctionLibrary_SetBaseRotation");
-static_assert(offsetof(MagicLeapHMDFunctionLibrary_SetBaseRotation, InBaseRotation) == 0x000000, "Member 'MagicLeapHMDFunctionLibrary_SetBaseRotation::InBaseRotation' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapHMDFunctionLibrary_SetBaseRotation;
 
 // Function MagicLeap.MagicLeapHMDFunctionLibrary.SetFocusActor
 // 0x0010 (0x0010 - 0x0000)
@@ -247,10 +203,7 @@ public:
 	bool                                          bSetStabilizationActor;                            // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapHMDFunctionLibrary_SetFocusActor) == 0x000008, "Wrong alignment on MagicLeapHMDFunctionLibrary_SetFocusActor");
-static_assert(sizeof(MagicLeapHMDFunctionLibrary_SetFocusActor) == 0x000010, "Wrong size on MagicLeapHMDFunctionLibrary_SetFocusActor");
-static_assert(offsetof(MagicLeapHMDFunctionLibrary_SetFocusActor, InFocusActor) == 0x000000, "Member 'MagicLeapHMDFunctionLibrary_SetFocusActor::InFocusActor' has a wrong offset!");
-static_assert(offsetof(MagicLeapHMDFunctionLibrary_SetFocusActor, bSetStabilizationActor) == 0x000008, "Member 'MagicLeapHMDFunctionLibrary_SetFocusActor::bSetStabilizationActor' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapHMDFunctionLibrary_SetFocusActor;
 
 // Function MagicLeap.MagicLeapHMDFunctionLibrary.SetStabilizationDepthActor
 // 0x0010 (0x0010 - 0x0000)
@@ -261,21 +214,16 @@ public:
 	bool                                          bSetFocusActor;                                    // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapHMDFunctionLibrary_SetStabilizationDepthActor) == 0x000008, "Wrong alignment on MagicLeapHMDFunctionLibrary_SetStabilizationDepthActor");
-static_assert(sizeof(MagicLeapHMDFunctionLibrary_SetStabilizationDepthActor) == 0x000010, "Wrong size on MagicLeapHMDFunctionLibrary_SetStabilizationDepthActor");
-static_assert(offsetof(MagicLeapHMDFunctionLibrary_SetStabilizationDepthActor, InStabilizationDepthActor) == 0x000000, "Member 'MagicLeapHMDFunctionLibrary_SetStabilizationDepthActor::InStabilizationDepthActor' has a wrong offset!");
-static_assert(offsetof(MagicLeapHMDFunctionLibrary_SetStabilizationDepthActor, bSetFocusActor) == 0x000008, "Member 'MagicLeapHMDFunctionLibrary_SetStabilizationDepthActor::bSetFocusActor' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapHMDFunctionLibrary_SetStabilizationDepthActor;
 
 // Function MagicLeap.MagicLeapMeshTrackerComponent.ConnectBlockSelector
 // 0x0010 (0x0010 - 0x0000)
 struct MagicLeapMeshTrackerComponent_ConnectBlockSelector final
 {
 public:
-	TScriptInterface<class IMagicLeapMeshBlockSelectorInterface> Selector;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, NativeAccessSpecifierPublic)
+	TScriptInterface<class IMagicLeapMeshBlockSelectorInterface> Selector;                           // 0x0000(0x0010)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MagicLeapMeshTrackerComponent_ConnectBlockSelector) == 0x000008, "Wrong alignment on MagicLeapMeshTrackerComponent_ConnectBlockSelector");
-static_assert(sizeof(MagicLeapMeshTrackerComponent_ConnectBlockSelector) == 0x000010, "Wrong size on MagicLeapMeshTrackerComponent_ConnectBlockSelector");
-static_assert(offsetof(MagicLeapMeshTrackerComponent_ConnectBlockSelector, Selector) == 0x000000, "Member 'MagicLeapMeshTrackerComponent_ConnectBlockSelector::Selector' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapMeshTrackerComponent_ConnectBlockSelector;
 
 // Function MagicLeap.MagicLeapMeshTrackerComponent.ConnectMRMesh
 // 0x0008 (0x0008 - 0x0000)
@@ -284,9 +232,7 @@ struct MagicLeapMeshTrackerComponent_ConnectMRMesh final
 public:
 	class UMRMeshComponent*                       InMRMeshPtr;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MagicLeapMeshTrackerComponent_ConnectMRMesh) == 0x000008, "Wrong alignment on MagicLeapMeshTrackerComponent_ConnectMRMesh");
-static_assert(sizeof(MagicLeapMeshTrackerComponent_ConnectMRMesh) == 0x000008, "Wrong size on MagicLeapMeshTrackerComponent_ConnectMRMesh");
-static_assert(offsetof(MagicLeapMeshTrackerComponent_ConnectMRMesh, InMRMeshPtr) == 0x000000, "Member 'MagicLeapMeshTrackerComponent_ConnectMRMesh::InMRMeshPtr' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapMeshTrackerComponent_ConnectMRMesh;
 
 // Function MagicLeap.MagicLeapMeshTrackerComponent.DisconnectMRMesh
 // 0x0008 (0x0008 - 0x0000)
@@ -295,9 +241,7 @@ struct MagicLeapMeshTrackerComponent_DisconnectMRMesh final
 public:
 	class UMRMeshComponent*                       InMRMeshPtr;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MagicLeapMeshTrackerComponent_DisconnectMRMesh) == 0x000008, "Wrong alignment on MagicLeapMeshTrackerComponent_DisconnectMRMesh");
-static_assert(sizeof(MagicLeapMeshTrackerComponent_DisconnectMRMesh) == 0x000008, "Wrong size on MagicLeapMeshTrackerComponent_DisconnectMRMesh");
-static_assert(offsetof(MagicLeapMeshTrackerComponent_DisconnectMRMesh, InMRMeshPtr) == 0x000000, "Member 'MagicLeapMeshTrackerComponent_DisconnectMRMesh::InMRMeshPtr' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapMeshTrackerComponent_DisconnectMRMesh;
 
 // Function MagicLeap.MagicLeapMeshTrackerComponent.GetNumQueuedBlockUpdates
 // 0x0004 (0x0004 - 0x0000)
@@ -306,9 +250,7 @@ struct MagicLeapMeshTrackerComponent_GetNumQueuedBlockUpdates final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MagicLeapMeshTrackerComponent_GetNumQueuedBlockUpdates) == 0x000004, "Wrong alignment on MagicLeapMeshTrackerComponent_GetNumQueuedBlockUpdates");
-static_assert(sizeof(MagicLeapMeshTrackerComponent_GetNumQueuedBlockUpdates) == 0x000004, "Wrong size on MagicLeapMeshTrackerComponent_GetNumQueuedBlockUpdates");
-static_assert(offsetof(MagicLeapMeshTrackerComponent_GetNumQueuedBlockUpdates, ReturnValue) == 0x000000, "Member 'MagicLeapMeshTrackerComponent_GetNumQueuedBlockUpdates::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapMeshTrackerComponent_GetNumQueuedBlockUpdates;
 
 // Function MagicLeap.MagicLeapMeshTrackerComponent.SelectMeshBlocks
 // 0x0028 (0x0028 - 0x0000)
@@ -318,10 +260,7 @@ public:
 	struct FMagicLeapTrackingMeshInfo             NewMeshInfo;                                       // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	TArray<struct FMagicLeapMeshBlockRequest>     RequestedMesh;                                     // 0x0018(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MagicLeapMeshTrackerComponent_SelectMeshBlocks) == 0x000008, "Wrong alignment on MagicLeapMeshTrackerComponent_SelectMeshBlocks");
-static_assert(sizeof(MagicLeapMeshTrackerComponent_SelectMeshBlocks) == 0x000028, "Wrong size on MagicLeapMeshTrackerComponent_SelectMeshBlocks");
-static_assert(offsetof(MagicLeapMeshTrackerComponent_SelectMeshBlocks, NewMeshInfo) == 0x000000, "Member 'MagicLeapMeshTrackerComponent_SelectMeshBlocks::NewMeshInfo' has a wrong offset!");
-static_assert(offsetof(MagicLeapMeshTrackerComponent_SelectMeshBlocks, RequestedMesh) == 0x000018, "Member 'MagicLeapMeshTrackerComponent_SelectMeshBlocks::RequestedMesh' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapMeshTrackerComponent_SelectMeshBlocks;
 
 // Function MagicLeap.MagicLeapMeshBlockSelectorInterface.SelectMeshBlocks
 // 0x0028 (0x0028 - 0x0000)
@@ -331,10 +270,7 @@ public:
 	struct FMagicLeapTrackingMeshInfo             NewMeshInfo;                                       // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	TArray<struct FMagicLeapMeshBlockRequest>     RequestedMesh;                                     // 0x0018(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MagicLeapMeshBlockSelectorInterface_SelectMeshBlocks) == 0x000008, "Wrong alignment on MagicLeapMeshBlockSelectorInterface_SelectMeshBlocks");
-static_assert(sizeof(MagicLeapMeshBlockSelectorInterface_SelectMeshBlocks) == 0x000028, "Wrong size on MagicLeapMeshBlockSelectorInterface_SelectMeshBlocks");
-static_assert(offsetof(MagicLeapMeshBlockSelectorInterface_SelectMeshBlocks, NewMeshInfo) == 0x000000, "Member 'MagicLeapMeshBlockSelectorInterface_SelectMeshBlocks::NewMeshInfo' has a wrong offset!");
-static_assert(offsetof(MagicLeapMeshBlockSelectorInterface_SelectMeshBlocks, RequestedMesh) == 0x000018, "Member 'MagicLeapMeshBlockSelectorInterface_SelectMeshBlocks::RequestedMesh' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapMeshBlockSelectorInterface_SelectMeshBlocks;
 
 // Function MagicLeap.MagicLeapRaycastFunctionLibrary.MakeRaycastQueryParams
 // 0x0070 (0x0070 - 0x0000)
@@ -352,17 +288,7 @@ public:
 	int32                                         UserData;                                          // 0x0034(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FMagicLeapRaycastQueryParams           ReturnValue;                                       // 0x0038(0x0038)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MagicLeapRaycastFunctionLibrary_MakeRaycastQueryParams) == 0x000004, "Wrong alignment on MagicLeapRaycastFunctionLibrary_MakeRaycastQueryParams");
-static_assert(sizeof(MagicLeapRaycastFunctionLibrary_MakeRaycastQueryParams) == 0x000070, "Wrong size on MagicLeapRaycastFunctionLibrary_MakeRaycastQueryParams");
-static_assert(offsetof(MagicLeapRaycastFunctionLibrary_MakeRaycastQueryParams, Position) == 0x000000, "Member 'MagicLeapRaycastFunctionLibrary_MakeRaycastQueryParams::Position' has a wrong offset!");
-static_assert(offsetof(MagicLeapRaycastFunctionLibrary_MakeRaycastQueryParams, Direction) == 0x00000C, "Member 'MagicLeapRaycastFunctionLibrary_MakeRaycastQueryParams::Direction' has a wrong offset!");
-static_assert(offsetof(MagicLeapRaycastFunctionLibrary_MakeRaycastQueryParams, UpVector) == 0x000018, "Member 'MagicLeapRaycastFunctionLibrary_MakeRaycastQueryParams::UpVector' has a wrong offset!");
-static_assert(offsetof(MagicLeapRaycastFunctionLibrary_MakeRaycastQueryParams, Width) == 0x000024, "Member 'MagicLeapRaycastFunctionLibrary_MakeRaycastQueryParams::Width' has a wrong offset!");
-static_assert(offsetof(MagicLeapRaycastFunctionLibrary_MakeRaycastQueryParams, Height) == 0x000028, "Member 'MagicLeapRaycastFunctionLibrary_MakeRaycastQueryParams::Height' has a wrong offset!");
-static_assert(offsetof(MagicLeapRaycastFunctionLibrary_MakeRaycastQueryParams, HorizontalFovDegrees) == 0x00002C, "Member 'MagicLeapRaycastFunctionLibrary_MakeRaycastQueryParams::HorizontalFovDegrees' has a wrong offset!");
-static_assert(offsetof(MagicLeapRaycastFunctionLibrary_MakeRaycastQueryParams, CollideWithUnobserved) == 0x000030, "Member 'MagicLeapRaycastFunctionLibrary_MakeRaycastQueryParams::CollideWithUnobserved' has a wrong offset!");
-static_assert(offsetof(MagicLeapRaycastFunctionLibrary_MakeRaycastQueryParams, UserData) == 0x000034, "Member 'MagicLeapRaycastFunctionLibrary_MakeRaycastQueryParams::UserData' has a wrong offset!");
-static_assert(offsetof(MagicLeapRaycastFunctionLibrary_MakeRaycastQueryParams, ReturnValue) == 0x000038, "Member 'MagicLeapRaycastFunctionLibrary_MakeRaycastQueryParams::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapRaycastFunctionLibrary_MakeRaycastQueryParams;
 
 }
 

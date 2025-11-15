@@ -34,18 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Skill_base_C">();
+		BP_STATIC_CLASS_IMPL("Skill_base_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Skill_base_C")
 	}
 	static class USkill_base_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USkill_base_C>();
 	}
 };
-static_assert(alignof(USkill_base_C) == 0x000008, "Wrong alignment on USkill_base_C");
-static_assert(sizeof(USkill_base_C) == 0x0000D0, "Wrong size on USkill_base_C");
-static_assert(offsetof(USkill_base_C, UberGraphFrame) == 0x0000B0, "Member 'USkill_base_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USkill_base_C, As_Player_Character) == 0x0000B8, "Member 'USkill_base_C::As_Player_Character' has a wrong offset!");
-static_assert(offsetof(USkill_base_C, Description) == 0x0000C0, "Member 'USkill_base_C::Description' has a wrong offset!");
+DUMPER7_ASSERTS_USkill_base_C;
 
 }
 

@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "InputSettingStruct_structs.hpp"
 #include "SettingsStruct_structs.hpp"
+#include "SkillSaveStruct_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "SteamCore_structs.hpp"
-#include "ShopItemCategory_structs.hpp"
 #include "AttachmentArrayStructure_structs.hpp"
-#include "SkillSaveStruct_structs.hpp"
+#include "ShopItemCategory_structs.hpp"
+#include "InputSettingStruct_structs.hpp"
 #include "SkillProgressStruct_structs.hpp"
 
 
@@ -61,7 +61,7 @@ public:
 	int32                                         GraphicsNum;                                       // 0x0700(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_704[0x4];                                      // 0x0704(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TMulticastInlineDelegate<void()>              UploadedToCloud;                                   // 0x0708(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void(const class FString& Save_name)> DownloadedFromCloud;                               // 0x0718(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(const class FString& Save_name)> DownloadedFromCloud;              // 0x0718(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class UMaterialInterface*                     SkinColor;                                         // 0x0728(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          RedeemedRecently_;                                 // 0x0730(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_731[0x3];                                      // 0x0731(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -156,7 +156,7 @@ public:
 	void AddInventoryItem(class UClass* Item, int32* Index_0);
 	void GetInventoryItemsInCategory(EShopItemCategory Category, bool Include_equipped_, TArray<class UClass*>* Inventory);
 	void UpdateNewWeapon(int32 Index_0);
-	void Update_Attachment(class UClass* Item_info, int32 Weaponindex, struct FAttachmentArrayStructure* New_attachments_structure);
+	void Update_Attachment(class UClass* Item_Info, int32 Weaponindex, struct FAttachmentArrayStructure* New_attachments_structure);
 	void FindEquppedAttachmentFunc(EShopItemCategory Category, int32 Index_0, class UClass** Attachment);
 	bool IsItemInInventory_(class UClass* Item);
 	void Savecategory(EShopItemCategory Category);
@@ -197,69 +197,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RobberController_C">();
+		BP_STATIC_CLASS_IMPL("RobberController_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RobberController_C")
 	}
 	static class ARobberController_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ARobberController_C>();
 	}
 };
-static_assert(alignof(ARobberController_C) == 0x000008, "Wrong alignment on ARobberController_C");
-static_assert(sizeof(ARobberController_C) == 0x000840, "Wrong size on ARobberController_C");
-static_assert(offsetof(ARobberController_C, UberGraphFrame) == 0x000570, "Member 'ARobberController_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, ItemInventory) == 0x000578, "Member 'ARobberController_C::ItemInventory' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, Tools_Equipped) == 0x000588, "Member 'ARobberController_C::Tools_Equipped' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, Weapons_Equipped) == 0x000598, "Member 'ARobberController_C::Weapons_Equipped' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, WeaponMods_Equipped) == 0x0005A8, "Member 'ARobberController_C::WeaponMods_Equipped' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, Level) == 0x0005B8, "Member 'ARobberController_C::Level' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, Exp) == 0x0005BC, "Member 'ARobberController_C::Exp' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, Cash) == 0x0005C0, "Member 'ARobberController_C::Cash' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, LoadedAll) == 0x0005C8, "Member 'ARobberController_C::LoadedAll' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, Mask_equipped) == 0x0005D8, "Member 'ARobberController_C::Mask_equipped' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, OutfitEquipped) == 0x0005E8, "Member 'ARobberController_C::OutfitEquipped' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, EmoteEquipped) == 0x0005F8, "Member 'ARobberController_C::EmoteEquipped' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, ArmorEquipped) == 0x000608, "Member 'ARobberController_C::ArmorEquipped' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, CashLoaded) == 0x000618, "Member 'ARobberController_C::CashLoaded' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, WeaponsLoaded) == 0x000628, "Member 'ARobberController_C::WeaponsLoaded' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, AppearanceLoaded) == 0x000638, "Member 'ARobberController_C::AppearanceLoaded' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, AppearanceSetOnServer) == 0x000648, "Member 'ARobberController_C::AppearanceSetOnServer' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, WeaponsSetOnServer) == 0x000658, "Member 'ARobberController_C::WeaponsSetOnServer' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, ChatLog) == 0x000668, "Member 'ARobberController_C::ChatLog' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, ChatNameLog) == 0x000678, "Member 'ARobberController_C::ChatNameLog' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, ToolsSetOnServer) == 0x000688, "Member 'ARobberController_C::ToolsSetOnServer' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, FilterInititated_) == 0x000698, "Member 'ARobberController_C::FilterInititated_' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, RestartVotes) == 0x0006A0, "Member 'ARobberController_C::RestartVotes' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, ToolsLoaded) == 0x0006B0, "Member 'ARobberController_C::ToolsLoaded' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, SettingsStruct) == 0x0006C0, "Member 'ARobberController_C::SettingsStruct' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, SettingsApplied) == 0x0006F0, "Member 'ARobberController_C::SettingsApplied' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, GraphicsNum) == 0x000700, "Member 'ARobberController_C::GraphicsNum' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, UploadedToCloud) == 0x000708, "Member 'ARobberController_C::UploadedToCloud' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, DownloadedFromCloud) == 0x000718, "Member 'ARobberController_C::DownloadedFromCloud' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, SkinColor) == 0x000728, "Member 'ARobberController_C::SkinColor' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, RedeemedRecently_) == 0x000730, "Member 'ARobberController_C::RedeemedRecently_' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, InventoryHandle) == 0x000734, "Member 'ARobberController_C::InventoryHandle' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, Coins) == 0x000738, "Member 'ARobberController_C::Coins' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, LocalCurrency) == 0x000740, "Member 'ARobberController_C::LocalCurrency' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, UnlockedMaps) == 0x000750, "Member 'ARobberController_C::UnlockedMaps' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, Loadout_Equipped) == 0x000760, "Member 'ARobberController_C::Loadout_Equipped' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, RandomMultiplier) == 0x000768, "Member 'ARobberController_C::RandomMultiplier' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, MultipliedValue) == 0x000770, "Member 'ARobberController_C::MultipliedValue' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, ShowSkinPopup) == 0x000778, "Member 'ARobberController_C::ShowSkinPopup' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, CivCasualty) == 0x00077C, "Member 'ARobberController_C::CivCasualty' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, UnlockedSetups) == 0x000780, "Member 'ARobberController_C::UnlockedSetups' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, CompletedSetups) == 0x000790, "Member 'ARobberController_C::CompletedSetups' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, Input_Settings) == 0x0007A0, "Member 'ARobberController_C::Input_Settings' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, CoinsChanged) == 0x0007B0, "Member 'ARobberController_C::CoinsChanged' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, UnlockedSkills) == 0x0007C0, "Member 'ARobberController_C::UnlockedSkills' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, ResearchingSkills) == 0x0007D0, "Member 'ARobberController_C::ResearchingSkills' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, LevelLoaded) == 0x0007E0, "Member 'ARobberController_C::LevelLoaded' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, PlaySetups) == 0x0007F0, "Member 'ARobberController_C::PlaySetups' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, SetupsLoaded) == 0x000800, "Member 'ARobberController_C::SetupsLoaded' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, PlayerLoggedVersion) == 0x000810, "Member 'ARobberController_C::PlayerLoggedVersion' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, IsLogged_) == 0x000814, "Member 'ARobberController_C::IsLogged_' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, LoadedAllFromCloud) == 0x000818, "Member 'ARobberController_C::LoadedAllFromCloud' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, InventoryResultItems) == 0x000828, "Member 'ARobberController_C::InventoryResultItems' has a wrong offset!");
-static_assert(offsetof(ARobberController_C, HasFullyUpdated_) == 0x000838, "Member 'ARobberController_C::HasFullyUpdated_' has a wrong offset!");
+DUMPER7_ASSERTS_ARobberController_C;
 
 }
 

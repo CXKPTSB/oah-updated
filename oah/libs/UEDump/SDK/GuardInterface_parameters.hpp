@@ -22,10 +22,7 @@ public:
 	class AActor*                                 GuardActor;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Distance;                                          // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GuardInterface_C_FindNearestGuardAsActor) == 0x000008, "Wrong alignment on GuardInterface_C_FindNearestGuardAsActor");
-static_assert(sizeof(GuardInterface_C_FindNearestGuardAsActor) == 0x000010, "Wrong size on GuardInterface_C_FindNearestGuardAsActor");
-static_assert(offsetof(GuardInterface_C_FindNearestGuardAsActor, GuardActor) == 0x000000, "Member 'GuardInterface_C_FindNearestGuardAsActor::GuardActor' has a wrong offset!");
-static_assert(offsetof(GuardInterface_C_FindNearestGuardAsActor, Distance) == 0x000008, "Member 'GuardInterface_C_FindNearestGuardAsActor::Distance' has a wrong offset!");
+DUMPER7_ASSERTS_GuardInterface_C_FindNearestGuardAsActor;
 
 }
 

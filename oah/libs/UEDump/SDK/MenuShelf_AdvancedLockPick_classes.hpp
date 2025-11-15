@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MenuShelf_AdvancedLockPick_C">();
+		BP_STATIC_CLASS_IMPL("MenuShelf_AdvancedLockPick_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MenuShelf_AdvancedLockPick_C")
 	}
 	static class AMenuShelf_AdvancedLockPick_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMenuShelf_AdvancedLockPick_C>();
 	}
 };
-static_assert(alignof(AMenuShelf_AdvancedLockPick_C) == 0x000008, "Wrong alignment on AMenuShelf_AdvancedLockPick_C");
-static_assert(sizeof(AMenuShelf_AdvancedLockPick_C) == 0x000240, "Wrong size on AMenuShelf_AdvancedLockPick_C");
-static_assert(offsetof(AMenuShelf_AdvancedLockPick_C, StaticMesh1) == 0x000238, "Member 'AMenuShelf_AdvancedLockPick_C::StaticMesh1' has a wrong offset!");
+DUMPER7_ASSERTS_AMenuShelf_AdvancedLockPick_C;
 
 }
 

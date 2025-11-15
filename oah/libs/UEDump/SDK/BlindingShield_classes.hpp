@@ -25,7 +25,7 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0220(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class USteamAchievementComponent_C*           SteamAchievementComponent;                         // 0x0228(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UAudioComponent*                        LightSound;                                        // 0x0230(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USpotLightComponent*                    SpotLight;                                         // 0x0238(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USpotLightComponent*                    Spotlight;                                         // 0x0238(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UChildActorComponent*                   Glass;                                             // 0x0240(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   ShieldMesh;                                        // 0x0248(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	bool                                          LightActive_;                                      // 0x0250(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -45,25 +45,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BlindingShield_C">();
+		BP_STATIC_CLASS_IMPL("BlindingShield_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BlindingShield_C")
 	}
 	static class ABlindingShield_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABlindingShield_C>();
 	}
 };
-static_assert(alignof(ABlindingShield_C) == 0x000008, "Wrong alignment on ABlindingShield_C");
-static_assert(sizeof(ABlindingShield_C) == 0x000260, "Wrong size on ABlindingShield_C");
-static_assert(offsetof(ABlindingShield_C, UberGraphFrame) == 0x000220, "Member 'ABlindingShield_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABlindingShield_C, SteamAchievementComponent) == 0x000228, "Member 'ABlindingShield_C::SteamAchievementComponent' has a wrong offset!");
-static_assert(offsetof(ABlindingShield_C, LightSound) == 0x000230, "Member 'ABlindingShield_C::LightSound' has a wrong offset!");
-static_assert(offsetof(ABlindingShield_C, SpotLight) == 0x000238, "Member 'ABlindingShield_C::SpotLight' has a wrong offset!");
-static_assert(offsetof(ABlindingShield_C, Glass) == 0x000240, "Member 'ABlindingShield_C::Glass' has a wrong offset!");
-static_assert(offsetof(ABlindingShield_C, ShieldMesh) == 0x000248, "Member 'ABlindingShield_C::ShieldMesh' has a wrong offset!");
-static_assert(offsetof(ABlindingShield_C, LightActive_) == 0x000250, "Member 'ABlindingShield_C::LightActive_' has a wrong offset!");
-static_assert(offsetof(ABlindingShield_C, Cooldown_) == 0x000251, "Member 'ABlindingShield_C::Cooldown_' has a wrong offset!");
-static_assert(offsetof(ABlindingShield_C, Disabled_) == 0x000252, "Member 'ABlindingShield_C::Disabled_' has a wrong offset!");
-static_assert(offsetof(ABlindingShield_C, Hit_Player) == 0x000258, "Member 'ABlindingShield_C::Hit_Player' has a wrong offset!");
+DUMPER7_ASSERTS_ABlindingShield_C;
 
 }
 

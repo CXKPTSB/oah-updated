@@ -27,12 +27,7 @@ public:
 	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0018(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ConcreteBreaker_C_ExecuteUbergraph_ConcreteBreaker) == 0x000008, "Wrong alignment on ConcreteBreaker_C_ExecuteUbergraph_ConcreteBreaker");
-static_assert(sizeof(ConcreteBreaker_C_ExecuteUbergraph_ConcreteBreaker) == 0x000028, "Wrong size on ConcreteBreaker_C_ExecuteUbergraph_ConcreteBreaker");
-static_assert(offsetof(ConcreteBreaker_C_ExecuteUbergraph_ConcreteBreaker, EntryPoint) == 0x000000, "Member 'ConcreteBreaker_C_ExecuteUbergraph_ConcreteBreaker::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ConcreteBreaker_C_ExecuteUbergraph_ConcreteBreaker, CallFunc_GetPlayerController_ReturnValue) == 0x000008, "Member 'ConcreteBreaker_C_ExecuteUbergraph_ConcreteBreaker::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ConcreteBreaker_C_ExecuteUbergraph_ConcreteBreaker, CallFunc_GetOwner_ReturnValue) == 0x000010, "Member 'ConcreteBreaker_C_ExecuteUbergraph_ConcreteBreaker::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ConcreteBreaker_C_ExecuteUbergraph_ConcreteBreaker, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000018, "Member 'ConcreteBreaker_C_ExecuteUbergraph_ConcreteBreaker::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ConcreteBreaker_C_ExecuteUbergraph_ConcreteBreaker;
 
 }
 

@@ -368,7 +368,7 @@ void UMainMenuUI_C::CheckReady()
 // Function MainMenuUI.MainMenuUI_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 // float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UMainMenuUI_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
@@ -840,7 +840,7 @@ float UMainMenuUI_C::GetPercent_0()
 // Function MainMenuUI.MainMenuUI_C.CheckPlayersReady
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    All_ready_                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   All_ready_                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UMainMenuUI_C::CheckPlayersReady(bool* All_ready_)
 {
@@ -901,7 +901,7 @@ class FText UMainMenuUI_C::GetText_3()
 // Function MainMenuUI.MainMenuUI_C.SetTutorialButton
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FString                           TutorialLevel                                          (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+// class FString*                          TutorialLevel                                          (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 
 void UMainMenuUI_C::SetTutorialButton(class FString* TutorialLevel)
 {

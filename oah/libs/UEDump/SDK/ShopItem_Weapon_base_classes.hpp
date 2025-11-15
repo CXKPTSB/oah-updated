@@ -28,18 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ShopItem_Weapon_base_C">();
+		BP_STATIC_CLASS_IMPL("ShopItem_Weapon_base_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ShopItem_Weapon_base_C")
 	}
 	static class AShopItem_Weapon_base_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AShopItem_Weapon_base_C>();
 	}
 };
-static_assert(alignof(AShopItem_Weapon_base_C) == 0x000008, "Wrong alignment on AShopItem_Weapon_base_C");
-static_assert(sizeof(AShopItem_Weapon_base_C) == 0x000298, "Wrong size on AShopItem_Weapon_base_C");
-static_assert(offsetof(AShopItem_Weapon_base_C, GunBP) == 0x000270, "Member 'AShopItem_Weapon_base_C::GunBP' has a wrong offset!");
-static_assert(offsetof(AShopItem_Weapon_base_C, AvailableAttachments) == 0x000278, "Member 'AShopItem_Weapon_base_C::AvailableAttachments' has a wrong offset!");
-static_assert(offsetof(AShopItem_Weapon_base_C, DefaultAttachments) == 0x000288, "Member 'AShopItem_Weapon_base_C::DefaultAttachments' has a wrong offset!");
+DUMPER7_ASSERTS_AShopItem_Weapon_base_C;
 
 }
 

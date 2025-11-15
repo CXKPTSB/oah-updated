@@ -36,20 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"UnlockCollision_C">();
+		BP_STATIC_CLASS_IMPL("UnlockCollision_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnlockCollision_C")
 	}
 	static class AUnlockCollision_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AUnlockCollision_C>();
 	}
 };
-static_assert(alignof(AUnlockCollision_C) == 0x000008, "Wrong alignment on AUnlockCollision_C");
-static_assert(sizeof(AUnlockCollision_C) == 0x000248, "Wrong size on AUnlockCollision_C");
-static_assert(offsetof(AUnlockCollision_C, UberGraphFrame) == 0x000220, "Member 'AUnlockCollision_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AUnlockCollision_C, LookatInfoComponent) == 0x000228, "Member 'AUnlockCollision_C::LookatInfoComponent' has a wrong offset!");
-static_assert(offsetof(AUnlockCollision_C, InteractComponent) == 0x000230, "Member 'AUnlockCollision_C::InteractComponent' has a wrong offset!");
-static_assert(offsetof(AUnlockCollision_C, Box) == 0x000238, "Member 'AUnlockCollision_C::Box' has a wrong offset!");
-static_assert(offsetof(AUnlockCollision_C, DefaultSceneRoot) == 0x000240, "Member 'AUnlockCollision_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_AUnlockCollision_C;
 
 }
 

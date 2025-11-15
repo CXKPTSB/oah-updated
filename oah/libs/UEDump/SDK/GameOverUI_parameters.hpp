@@ -49,31 +49,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GameOverUI_C_ExecuteUbergraph_GameOverUI) == 0x000008, "Wrong alignment on GameOverUI_C_ExecuteUbergraph_GameOverUI");
-static_assert(sizeof(GameOverUI_C_ExecuteUbergraph_GameOverUI) == 0x0000A8, "Wrong size on GameOverUI_C_ExecuteUbergraph_GameOverUI");
-static_assert(offsetof(GameOverUI_C_ExecuteUbergraph_GameOverUI, EntryPoint) == 0x000000, "Member 'GameOverUI_C_ExecuteUbergraph_GameOverUI::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GameOverUI_C_ExecuteUbergraph_GameOverUI, CallFunc_GetAllActorsOfClass_OutActors) == 0x000008, "Member 'GameOverUI_C_ExecuteUbergraph_GameOverUI::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(GameOverUI_C_ExecuteUbergraph_GameOverUI, CallFunc_Array_Length_ReturnValue) == 0x000018, "Member 'GameOverUI_C_ExecuteUbergraph_GameOverUI::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GameOverUI_C_ExecuteUbergraph_GameOverUI, CallFunc_Greater_IntInt_ReturnValue) == 0x00001C, "Member 'GameOverUI_C_ExecuteUbergraph_GameOverUI::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GameOverUI_C_ExecuteUbergraph_GameOverUI, Temp_int_Loop_Counter_Variable) == 0x000020, "Member 'GameOverUI_C_ExecuteUbergraph_GameOverUI::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(GameOverUI_C_ExecuteUbergraph_GameOverUI, CallFunc_Add_IntInt_ReturnValue) == 0x000024, "Member 'GameOverUI_C_ExecuteUbergraph_GameOverUI::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GameOverUI_C_ExecuteUbergraph_GameOverUI, Temp_int_Array_Index_Variable) == 0x000028, "Member 'GameOverUI_C_ExecuteUbergraph_GameOverUI::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(GameOverUI_C_ExecuteUbergraph_GameOverUI, CallFunc_IsServer_ReturnValue) == 0x00002C, "Member 'GameOverUI_C_ExecuteUbergraph_GameOverUI::CallFunc_IsServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GameOverUI_C_ExecuteUbergraph_GameOverUI, CallFunc_GetPlayerController_ReturnValue) == 0x000030, "Member 'GameOverUI_C_ExecuteUbergraph_GameOverUI::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GameOverUI_C_ExecuteUbergraph_GameOverUI, CallFunc_IsLocalPlayerController_ReturnValue) == 0x000038, "Member 'GameOverUI_C_ExecuteUbergraph_GameOverUI::CallFunc_IsLocalPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GameOverUI_C_ExecuteUbergraph_GameOverUI, CallFunc_BooleanAND_ReturnValue) == 0x000039, "Member 'GameOverUI_C_ExecuteUbergraph_GameOverUI::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GameOverUI_C_ExecuteUbergraph_GameOverUI, CallFunc_GetPlayerController_ReturnValue_1) == 0x000040, "Member 'GameOverUI_C_ExecuteUbergraph_GameOverUI::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GameOverUI_C_ExecuteUbergraph_GameOverUI, K2Node_DynamicCast_AsRobber_Controller) == 0x000048, "Member 'GameOverUI_C_ExecuteUbergraph_GameOverUI::K2Node_DynamicCast_AsRobber_Controller' has a wrong offset!");
-static_assert(offsetof(GameOverUI_C_ExecuteUbergraph_GameOverUI, K2Node_DynamicCast_bSuccess) == 0x000050, "Member 'GameOverUI_C_ExecuteUbergraph_GameOverUI::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GameOverUI_C_ExecuteUbergraph_GameOverUI, CallFunc_GetPlayerName_ReturnValue) == 0x000058, "Member 'GameOverUI_C_ExecuteUbergraph_GameOverUI::CallFunc_GetPlayerName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GameOverUI_C_ExecuteUbergraph_GameOverUI, CallFunc_Concat_StrStr_ReturnValue) == 0x000068, "Member 'GameOverUI_C_ExecuteUbergraph_GameOverUI::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GameOverUI_C_ExecuteUbergraph_GameOverUI, Temp_bool_IsClosed_Variable) == 0x000078, "Member 'GameOverUI_C_ExecuteUbergraph_GameOverUI::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(GameOverUI_C_ExecuteUbergraph_GameOverUI, Temp_bool_Has_Been_Initd_Variable) == 0x000079, "Member 'GameOverUI_C_ExecuteUbergraph_GameOverUI::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(GameOverUI_C_ExecuteUbergraph_GameOverUI, CallFunc_GetPlayerController_ReturnValue_2) == 0x000080, "Member 'GameOverUI_C_ExecuteUbergraph_GameOverUI::CallFunc_GetPlayerController_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(GameOverUI_C_ExecuteUbergraph_GameOverUI, CallFunc_GetAllActorsOfClass_OutActors_1) == 0x000088, "Member 'GameOverUI_C_ExecuteUbergraph_GameOverUI::CallFunc_GetAllActorsOfClass_OutActors_1' has a wrong offset!");
-static_assert(offsetof(GameOverUI_C_ExecuteUbergraph_GameOverUI, CallFunc_Array_Get_Item) == 0x000098, "Member 'GameOverUI_C_ExecuteUbergraph_GameOverUI::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(GameOverUI_C_ExecuteUbergraph_GameOverUI, CallFunc_Array_Length_ReturnValue_1) == 0x0000A0, "Member 'GameOverUI_C_ExecuteUbergraph_GameOverUI::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GameOverUI_C_ExecuteUbergraph_GameOverUI, CallFunc_Less_IntInt_ReturnValue) == 0x0000A4, "Member 'GameOverUI_C_ExecuteUbergraph_GameOverUI::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GameOverUI_C_ExecuteUbergraph_GameOverUI;
 
 // Function GameOverUI.GameOverUI_C.GetText_0
 // 0x0078 (0x0078 - 0x0000)
@@ -92,17 +68,7 @@ public:
 	uint8                                         Pad_5B[0x5];                                       // 0x005B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Select_Default;                             // 0x0060(0x0018)()
 };
-static_assert(alignof(GameOverUI_C_GetText_0) == 0x000008, "Wrong alignment on GameOverUI_C_GetText_0");
-static_assert(sizeof(GameOverUI_C_GetText_0) == 0x000078, "Wrong size on GameOverUI_C_GetText_0");
-static_assert(offsetof(GameOverUI_C_GetText_0, ReturnValue) == 0x000000, "Member 'GameOverUI_C_GetText_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(GameOverUI_C_GetText_0, Temp_bool_Variable) == 0x000018, "Member 'GameOverUI_C_GetText_0::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(GameOverUI_C_GetText_0, Temp_text_Variable) == 0x000020, "Member 'GameOverUI_C_GetText_0::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(GameOverUI_C_GetText_0, Temp_text_Variable_1) == 0x000038, "Member 'GameOverUI_C_GetText_0::Temp_text_Variable_1' has a wrong offset!");
-static_assert(offsetof(GameOverUI_C_GetText_0, CallFunc_GetPlayerController_ReturnValue) == 0x000050, "Member 'GameOverUI_C_GetText_0::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GameOverUI_C_GetText_0, CallFunc_IsServer_ReturnValue) == 0x000058, "Member 'GameOverUI_C_GetText_0::CallFunc_IsServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GameOverUI_C_GetText_0, CallFunc_IsLocalPlayerController_ReturnValue) == 0x000059, "Member 'GameOverUI_C_GetText_0::CallFunc_IsLocalPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GameOverUI_C_GetText_0, CallFunc_BooleanAND_ReturnValue) == 0x00005A, "Member 'GameOverUI_C_GetText_0::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GameOverUI_C_GetText_0, K2Node_Select_Default) == 0x000060, "Member 'GameOverUI_C_GetText_0::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_GameOverUI_C_GetText_0;
 
 }
 

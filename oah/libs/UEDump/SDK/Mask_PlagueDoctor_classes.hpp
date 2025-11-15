@@ -23,15 +23,18 @@ class AMask_PlagueDoctor_C final : public AMask_base_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Mask_PlagueDoctor_C">();
+		BP_STATIC_CLASS_IMPL("Mask_PlagueDoctor_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Mask_PlagueDoctor_C")
 	}
 	static class AMask_PlagueDoctor_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMask_PlagueDoctor_C>();
 	}
 };
-static_assert(alignof(AMask_PlagueDoctor_C) == 0x000008, "Wrong alignment on AMask_PlagueDoctor_C");
-static_assert(sizeof(AMask_PlagueDoctor_C) == 0x000230, "Wrong size on AMask_PlagueDoctor_C");
+DUMPER7_ASSERTS_AMask_PlagueDoctor_C;
 
 }
 

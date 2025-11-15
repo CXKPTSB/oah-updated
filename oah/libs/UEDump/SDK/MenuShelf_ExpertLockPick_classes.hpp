@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MenuShelf_ExpertLockPick_C">();
+		BP_STATIC_CLASS_IMPL("MenuShelf_ExpertLockPick_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MenuShelf_ExpertLockPick_C")
 	}
 	static class AMenuShelf_ExpertLockPick_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMenuShelf_ExpertLockPick_C>();
 	}
 };
-static_assert(alignof(AMenuShelf_ExpertLockPick_C) == 0x000008, "Wrong alignment on AMenuShelf_ExpertLockPick_C");
-static_assert(sizeof(AMenuShelf_ExpertLockPick_C) == 0x000240, "Wrong size on AMenuShelf_ExpertLockPick_C");
-static_assert(offsetof(AMenuShelf_ExpertLockPick_C, StaticMesh1) == 0x000238, "Member 'AMenuShelf_ExpertLockPick_C::StaticMesh1' has a wrong offset!");
+DUMPER7_ASSERTS_AMenuShelf_ExpertLockPick_C;
 
 }
 

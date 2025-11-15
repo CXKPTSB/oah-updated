@@ -116,7 +116,7 @@ void AMainMenuPlayer_C::Setup()
 // Function MainMenuPlayer.MainMenuPlayer_C.LeaveGame
 // (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FString                           Reason                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    Reason                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
 void AMainMenuPlayer_C::LeaveGame(const class FString& Reason)
 {
@@ -136,7 +136,7 @@ void AMainMenuPlayer_C::LeaveGame(const class FString& Reason)
 // Function MainMenuPlayer.MainMenuPlayer_C.SetCurrentTabName
 // (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FString                           Name_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    Name_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
 void AMainMenuPlayer_C::SetCurrentTabName(const class FString& Name_0)
 {
@@ -280,7 +280,7 @@ void AMainMenuPlayer_C::OpenLoadout()
 // Function MainMenuPlayer.MainMenuPlayer_C.InpActEvt_Emote_K2Node_InputActionEvent_0
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
 void AMainMenuPlayer_C::InpActEvt_Emote_K2Node_InputActionEvent_0(const struct FKey& Key)
 {
@@ -300,7 +300,7 @@ void AMainMenuPlayer_C::InpActEvt_Emote_K2Node_InputActionEvent_0(const struct F
 // Function MainMenuPlayer.MainMenuPlayer_C.SetViewToCam
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FString                           CamName                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    CamName                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
 void AMainMenuPlayer_C::SetViewToCam(const class FString& CamName)
 {

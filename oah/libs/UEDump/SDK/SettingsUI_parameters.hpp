@@ -60,39 +60,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x00E2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SettingsUI_C_ExecuteUbergraph_SettingsUI) == 0x000008, "Wrong alignment on SettingsUI_C_ExecuteUbergraph_SettingsUI");
-static_assert(sizeof(SettingsUI_C_ExecuteUbergraph_SettingsUI) == 0x0000E8, "Wrong size on SettingsUI_C_ExecuteUbergraph_SettingsUI");
-static_assert(offsetof(SettingsUI_C_ExecuteUbergraph_SettingsUI, EntryPoint) == 0x000000, "Member 'SettingsUI_C_ExecuteUbergraph_SettingsUI::EntryPoint' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_ExecuteUbergraph_SettingsUI, CallFunc_Conv_IntToString_ReturnValue) == 0x000008, "Member 'SettingsUI_C_ExecuteUbergraph_SettingsUI::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_ExecuteUbergraph_SettingsUI, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000018, "Member 'SettingsUI_C_ExecuteUbergraph_SettingsUI::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_ExecuteUbergraph_SettingsUI, K2Node_ComponentBoundEvent_Value_6) == 0x00001C, "Member 'SettingsUI_C_ExecuteUbergraph_SettingsUI::K2Node_ComponentBoundEvent_Value_6' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_ExecuteUbergraph_SettingsUI, CallFunc_GetPlayerController_ReturnValue) == 0x000020, "Member 'SettingsUI_C_ExecuteUbergraph_SettingsUI::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_ExecuteUbergraph_SettingsUI, K2Node_DynamicCast_AsRobber_Controller) == 0x000028, "Member 'SettingsUI_C_ExecuteUbergraph_SettingsUI::K2Node_DynamicCast_AsRobber_Controller' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_ExecuteUbergraph_SettingsUI, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'SettingsUI_C_ExecuteUbergraph_SettingsUI::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_ExecuteUbergraph_SettingsUI, K2Node_ComponentBoundEvent_Value_5) == 0x000034, "Member 'SettingsUI_C_ExecuteUbergraph_SettingsUI::K2Node_ComponentBoundEvent_Value_5' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_ExecuteUbergraph_SettingsUI, K2Node_ComponentBoundEvent_Value_4) == 0x000038, "Member 'SettingsUI_C_ExecuteUbergraph_SettingsUI::K2Node_ComponentBoundEvent_Value_4' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_ExecuteUbergraph_SettingsUI, K2Node_ComponentBoundEvent_Value_3) == 0x00003C, "Member 'SettingsUI_C_ExecuteUbergraph_SettingsUI::K2Node_ComponentBoundEvent_Value_3' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_ExecuteUbergraph_SettingsUI, K2Node_ComponentBoundEvent_Value_2) == 0x000040, "Member 'SettingsUI_C_ExecuteUbergraph_SettingsUI::K2Node_ComponentBoundEvent_Value_2' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_ExecuteUbergraph_SettingsUI, K2Node_ComponentBoundEvent_Value_1) == 0x000044, "Member 'SettingsUI_C_ExecuteUbergraph_SettingsUI::K2Node_ComponentBoundEvent_Value_1' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_ExecuteUbergraph_SettingsUI, CallFunc_FTrunc_ReturnValue) == 0x000048, "Member 'SettingsUI_C_ExecuteUbergraph_SettingsUI::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_ExecuteUbergraph_SettingsUI, K2Node_ComponentBoundEvent_SelectedItem_1) == 0x000050, "Member 'SettingsUI_C_ExecuteUbergraph_SettingsUI::K2Node_ComponentBoundEvent_SelectedItem_1' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_ExecuteUbergraph_SettingsUI, K2Node_ComponentBoundEvent_SelectionType_1) == 0x000060, "Member 'SettingsUI_C_ExecuteUbergraph_SettingsUI::K2Node_ComponentBoundEvent_SelectionType_1' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_ExecuteUbergraph_SettingsUI, CallFunc_GetSelectedIndex_ReturnValue) == 0x000064, "Member 'SettingsUI_C_ExecuteUbergraph_SettingsUI::CallFunc_GetSelectedIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_ExecuteUbergraph_SettingsUI, CallFunc_IsGamePaused_ReturnValue) == 0x000068, "Member 'SettingsUI_C_ExecuteUbergraph_SettingsUI::CallFunc_IsGamePaused_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_ExecuteUbergraph_SettingsUI, CallFunc_SetGamePaused_ReturnValue) == 0x000069, "Member 'SettingsUI_C_ExecuteUbergraph_SettingsUI::CallFunc_SetGamePaused_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_ExecuteUbergraph_SettingsUI, CallFunc_SetGamePaused_ReturnValue_1) == 0x00006A, "Member 'SettingsUI_C_ExecuteUbergraph_SettingsUI::CallFunc_SetGamePaused_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_ExecuteUbergraph_SettingsUI, K2Node_Event_MyGeometry) == 0x00006C, "Member 'SettingsUI_C_ExecuteUbergraph_SettingsUI::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_ExecuteUbergraph_SettingsUI, K2Node_Event_InDeltaTime) == 0x0000A4, "Member 'SettingsUI_C_ExecuteUbergraph_SettingsUI::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_ExecuteUbergraph_SettingsUI, K2Node_ComponentBoundEvent_Value) == 0x0000A8, "Member 'SettingsUI_C_ExecuteUbergraph_SettingsUI::K2Node_ComponentBoundEvent_Value' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_ExecuteUbergraph_SettingsUI, K2Node_ComponentBoundEvent_SelectedItem) == 0x0000B0, "Member 'SettingsUI_C_ExecuteUbergraph_SettingsUI::K2Node_ComponentBoundEvent_SelectedItem' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_ExecuteUbergraph_SettingsUI, K2Node_ComponentBoundEvent_SelectionType) == 0x0000C0, "Member 'SettingsUI_C_ExecuteUbergraph_SettingsUI::K2Node_ComponentBoundEvent_SelectionType' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_ExecuteUbergraph_SettingsUI, CallFunc_Not_PreBool_ReturnValue) == 0x0000C1, "Member 'SettingsUI_C_ExecuteUbergraph_SettingsUI::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_ExecuteUbergraph_SettingsUI, CallFunc_Conv_StringToInt_ReturnValue) == 0x0000C4, "Member 'SettingsUI_C_ExecuteUbergraph_SettingsUI::CallFunc_Conv_StringToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_ExecuteUbergraph_SettingsUI, CallFunc_Create_ReturnValue) == 0x0000C8, "Member 'SettingsUI_C_ExecuteUbergraph_SettingsUI::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_ExecuteUbergraph_SettingsUI, CallFunc_GetCurrentLevelName_ReturnValue) == 0x0000D0, "Member 'SettingsUI_C_ExecuteUbergraph_SettingsUI::CallFunc_GetCurrentLevelName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_ExecuteUbergraph_SettingsUI, CallFunc_EqualEqual_StrStr_ReturnValue) == 0x0000E0, "Member 'SettingsUI_C_ExecuteUbergraph_SettingsUI::CallFunc_EqualEqual_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_ExecuteUbergraph_SettingsUI, CallFunc_IsValid_ReturnValue) == 0x0000E1, "Member 'SettingsUI_C_ExecuteUbergraph_SettingsUI::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_ExecuteUbergraph_SettingsUI, CallFunc_Not_PreBool_ReturnValue_1) == 0x0000E2, "Member 'SettingsUI_C_ExecuteUbergraph_SettingsUI::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_SettingsUI_C_ExecuteUbergraph_SettingsUI;
 
 // Function SettingsUI.SettingsUI_C.BndEvt__SettingsUI_ComboBoxString_K2Node_ComponentBoundEvent_10_OnSelectionChangedEvent__DelegateSignature
 // 0x0018 (0x0018 - 0x0000)
@@ -102,10 +70,7 @@ public:
 	class FString                                 SelectedItem;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	ESelectInfo                                   SelectionType;                                     // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SettingsUI_C_BndEvt__SettingsUI_ComboBoxString_K2Node_ComponentBoundEvent_10_OnSelectionChangedEvent__DelegateSignature) == 0x000008, "Wrong alignment on SettingsUI_C_BndEvt__SettingsUI_ComboBoxString_K2Node_ComponentBoundEvent_10_OnSelectionChangedEvent__DelegateSignature");
-static_assert(sizeof(SettingsUI_C_BndEvt__SettingsUI_ComboBoxString_K2Node_ComponentBoundEvent_10_OnSelectionChangedEvent__DelegateSignature) == 0x000018, "Wrong size on SettingsUI_C_BndEvt__SettingsUI_ComboBoxString_K2Node_ComponentBoundEvent_10_OnSelectionChangedEvent__DelegateSignature");
-static_assert(offsetof(SettingsUI_C_BndEvt__SettingsUI_ComboBoxString_K2Node_ComponentBoundEvent_10_OnSelectionChangedEvent__DelegateSignature, SelectedItem) == 0x000000, "Member 'SettingsUI_C_BndEvt__SettingsUI_ComboBoxString_K2Node_ComponentBoundEvent_10_OnSelectionChangedEvent__DelegateSignature::SelectedItem' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_BndEvt__SettingsUI_ComboBoxString_K2Node_ComponentBoundEvent_10_OnSelectionChangedEvent__DelegateSignature, SelectionType) == 0x000010, "Member 'SettingsUI_C_BndEvt__SettingsUI_ComboBoxString_K2Node_ComponentBoundEvent_10_OnSelectionChangedEvent__DelegateSignature::SelectionType' has a wrong offset!");
+DUMPER7_ASSERTS_SettingsUI_C_BndEvt__SettingsUI_ComboBoxString_K2Node_ComponentBoundEvent_10_OnSelectionChangedEvent__DelegateSignature;
 
 // Function SettingsUI.SettingsUI_C.BndEvt__SettingsUI_ResScaleSlider_K2Node_ComponentBoundEvent_8_OnFloatValueChangedEvent__DelegateSignature
 // 0x0004 (0x0004 - 0x0000)
@@ -114,9 +79,7 @@ struct SettingsUI_C_BndEvt__SettingsUI_ResScaleSlider_K2Node_ComponentBoundEvent
 public:
 	float                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SettingsUI_C_BndEvt__SettingsUI_ResScaleSlider_K2Node_ComponentBoundEvent_8_OnFloatValueChangedEvent__DelegateSignature) == 0x000004, "Wrong alignment on SettingsUI_C_BndEvt__SettingsUI_ResScaleSlider_K2Node_ComponentBoundEvent_8_OnFloatValueChangedEvent__DelegateSignature");
-static_assert(sizeof(SettingsUI_C_BndEvt__SettingsUI_ResScaleSlider_K2Node_ComponentBoundEvent_8_OnFloatValueChangedEvent__DelegateSignature) == 0x000004, "Wrong size on SettingsUI_C_BndEvt__SettingsUI_ResScaleSlider_K2Node_ComponentBoundEvent_8_OnFloatValueChangedEvent__DelegateSignature");
-static_assert(offsetof(SettingsUI_C_BndEvt__SettingsUI_ResScaleSlider_K2Node_ComponentBoundEvent_8_OnFloatValueChangedEvent__DelegateSignature, Value) == 0x000000, "Member 'SettingsUI_C_BndEvt__SettingsUI_ResScaleSlider_K2Node_ComponentBoundEvent_8_OnFloatValueChangedEvent__DelegateSignature::Value' has a wrong offset!");
+DUMPER7_ASSERTS_SettingsUI_C_BndEvt__SettingsUI_ResScaleSlider_K2Node_ComponentBoundEvent_8_OnFloatValueChangedEvent__DelegateSignature;
 
 // Function SettingsUI.SettingsUI_C.Tick
 // 0x003C (0x003C - 0x0000)
@@ -126,10 +89,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SettingsUI_C_Tick) == 0x000004, "Wrong alignment on SettingsUI_C_Tick");
-static_assert(sizeof(SettingsUI_C_Tick) == 0x00003C, "Wrong size on SettingsUI_C_Tick");
-static_assert(offsetof(SettingsUI_C_Tick, MyGeometry) == 0x000000, "Member 'SettingsUI_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_Tick, InDeltaTime) == 0x000038, "Member 'SettingsUI_C_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_SettingsUI_C_Tick;
 
 // Function SettingsUI.SettingsUI_C.BndEvt__SettingsUI_ComboBoxString_164_K2Node_ComponentBoundEvent_5_OnSelectionChangedEvent__DelegateSignature
 // 0x0018 (0x0018 - 0x0000)
@@ -139,10 +99,7 @@ public:
 	class FString                                 SelectedItem;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	ESelectInfo                                   SelectionType;                                     // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SettingsUI_C_BndEvt__SettingsUI_ComboBoxString_164_K2Node_ComponentBoundEvent_5_OnSelectionChangedEvent__DelegateSignature) == 0x000008, "Wrong alignment on SettingsUI_C_BndEvt__SettingsUI_ComboBoxString_164_K2Node_ComponentBoundEvent_5_OnSelectionChangedEvent__DelegateSignature");
-static_assert(sizeof(SettingsUI_C_BndEvt__SettingsUI_ComboBoxString_164_K2Node_ComponentBoundEvent_5_OnSelectionChangedEvent__DelegateSignature) == 0x000018, "Wrong size on SettingsUI_C_BndEvt__SettingsUI_ComboBoxString_164_K2Node_ComponentBoundEvent_5_OnSelectionChangedEvent__DelegateSignature");
-static_assert(offsetof(SettingsUI_C_BndEvt__SettingsUI_ComboBoxString_164_K2Node_ComponentBoundEvent_5_OnSelectionChangedEvent__DelegateSignature, SelectedItem) == 0x000000, "Member 'SettingsUI_C_BndEvt__SettingsUI_ComboBoxString_164_K2Node_ComponentBoundEvent_5_OnSelectionChangedEvent__DelegateSignature::SelectedItem' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_BndEvt__SettingsUI_ComboBoxString_164_K2Node_ComponentBoundEvent_5_OnSelectionChangedEvent__DelegateSignature, SelectionType) == 0x000010, "Member 'SettingsUI_C_BndEvt__SettingsUI_ComboBoxString_164_K2Node_ComponentBoundEvent_5_OnSelectionChangedEvent__DelegateSignature::SelectionType' has a wrong offset!");
+DUMPER7_ASSERTS_SettingsUI_C_BndEvt__SettingsUI_ComboBoxString_164_K2Node_ComponentBoundEvent_5_OnSelectionChangedEvent__DelegateSignature;
 
 // Function SettingsUI.SettingsUI_C.BndEvt__SettingsUI_FOVSlider_K2Node_ComponentBoundEvent_7_OnFloatValueChangedEvent__DelegateSignature
 // 0x0004 (0x0004 - 0x0000)
@@ -151,9 +108,7 @@ struct SettingsUI_C_BndEvt__SettingsUI_FOVSlider_K2Node_ComponentBoundEvent_7_On
 public:
 	float                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SettingsUI_C_BndEvt__SettingsUI_FOVSlider_K2Node_ComponentBoundEvent_7_OnFloatValueChangedEvent__DelegateSignature) == 0x000004, "Wrong alignment on SettingsUI_C_BndEvt__SettingsUI_FOVSlider_K2Node_ComponentBoundEvent_7_OnFloatValueChangedEvent__DelegateSignature");
-static_assert(sizeof(SettingsUI_C_BndEvt__SettingsUI_FOVSlider_K2Node_ComponentBoundEvent_7_OnFloatValueChangedEvent__DelegateSignature) == 0x000004, "Wrong size on SettingsUI_C_BndEvt__SettingsUI_FOVSlider_K2Node_ComponentBoundEvent_7_OnFloatValueChangedEvent__DelegateSignature");
-static_assert(offsetof(SettingsUI_C_BndEvt__SettingsUI_FOVSlider_K2Node_ComponentBoundEvent_7_OnFloatValueChangedEvent__DelegateSignature, Value) == 0x000000, "Member 'SettingsUI_C_BndEvt__SettingsUI_FOVSlider_K2Node_ComponentBoundEvent_7_OnFloatValueChangedEvent__DelegateSignature::Value' has a wrong offset!");
+DUMPER7_ASSERTS_SettingsUI_C_BndEvt__SettingsUI_FOVSlider_K2Node_ComponentBoundEvent_7_OnFloatValueChangedEvent__DelegateSignature;
 
 // Function SettingsUI.SettingsUI_C.BndEvt__SettingsUI_VoiceeSlider_K2Node_ComponentBoundEvent_6_OnFloatValueChangedEvent__DelegateSignature
 // 0x0004 (0x0004 - 0x0000)
@@ -162,9 +117,7 @@ struct SettingsUI_C_BndEvt__SettingsUI_VoiceeSlider_K2Node_ComponentBoundEvent_6
 public:
 	float                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SettingsUI_C_BndEvt__SettingsUI_VoiceeSlider_K2Node_ComponentBoundEvent_6_OnFloatValueChangedEvent__DelegateSignature) == 0x000004, "Wrong alignment on SettingsUI_C_BndEvt__SettingsUI_VoiceeSlider_K2Node_ComponentBoundEvent_6_OnFloatValueChangedEvent__DelegateSignature");
-static_assert(sizeof(SettingsUI_C_BndEvt__SettingsUI_VoiceeSlider_K2Node_ComponentBoundEvent_6_OnFloatValueChangedEvent__DelegateSignature) == 0x000004, "Wrong size on SettingsUI_C_BndEvt__SettingsUI_VoiceeSlider_K2Node_ComponentBoundEvent_6_OnFloatValueChangedEvent__DelegateSignature");
-static_assert(offsetof(SettingsUI_C_BndEvt__SettingsUI_VoiceeSlider_K2Node_ComponentBoundEvent_6_OnFloatValueChangedEvent__DelegateSignature, Value) == 0x000000, "Member 'SettingsUI_C_BndEvt__SettingsUI_VoiceeSlider_K2Node_ComponentBoundEvent_6_OnFloatValueChangedEvent__DelegateSignature::Value' has a wrong offset!");
+DUMPER7_ASSERTS_SettingsUI_C_BndEvt__SettingsUI_VoiceeSlider_K2Node_ComponentBoundEvent_6_OnFloatValueChangedEvent__DelegateSignature;
 
 // Function SettingsUI.SettingsUI_C.BndEvt__SettingsUI_MusicVolumeSlider_1_K2Node_ComponentBoundEvent_4_OnFloatValueChangedEvent__DelegateSignature
 // 0x0004 (0x0004 - 0x0000)
@@ -173,9 +126,7 @@ struct SettingsUI_C_BndEvt__SettingsUI_MusicVolumeSlider_1_K2Node_ComponentBound
 public:
 	float                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SettingsUI_C_BndEvt__SettingsUI_MusicVolumeSlider_1_K2Node_ComponentBoundEvent_4_OnFloatValueChangedEvent__DelegateSignature) == 0x000004, "Wrong alignment on SettingsUI_C_BndEvt__SettingsUI_MusicVolumeSlider_1_K2Node_ComponentBoundEvent_4_OnFloatValueChangedEvent__DelegateSignature");
-static_assert(sizeof(SettingsUI_C_BndEvt__SettingsUI_MusicVolumeSlider_1_K2Node_ComponentBoundEvent_4_OnFloatValueChangedEvent__DelegateSignature) == 0x000004, "Wrong size on SettingsUI_C_BndEvt__SettingsUI_MusicVolumeSlider_1_K2Node_ComponentBoundEvent_4_OnFloatValueChangedEvent__DelegateSignature");
-static_assert(offsetof(SettingsUI_C_BndEvt__SettingsUI_MusicVolumeSlider_1_K2Node_ComponentBoundEvent_4_OnFloatValueChangedEvent__DelegateSignature, Value) == 0x000000, "Member 'SettingsUI_C_BndEvt__SettingsUI_MusicVolumeSlider_1_K2Node_ComponentBoundEvent_4_OnFloatValueChangedEvent__DelegateSignature::Value' has a wrong offset!");
+DUMPER7_ASSERTS_SettingsUI_C_BndEvt__SettingsUI_MusicVolumeSlider_1_K2Node_ComponentBoundEvent_4_OnFloatValueChangedEvent__DelegateSignature;
 
 // Function SettingsUI.SettingsUI_C.BndEvt__SettingsUI_MasterVolumeSlider_K2Node_ComponentBoundEvent_3_OnFloatValueChangedEvent__DelegateSignature
 // 0x0004 (0x0004 - 0x0000)
@@ -184,9 +135,7 @@ struct SettingsUI_C_BndEvt__SettingsUI_MasterVolumeSlider_K2Node_ComponentBoundE
 public:
 	float                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SettingsUI_C_BndEvt__SettingsUI_MasterVolumeSlider_K2Node_ComponentBoundEvent_3_OnFloatValueChangedEvent__DelegateSignature) == 0x000004, "Wrong alignment on SettingsUI_C_BndEvt__SettingsUI_MasterVolumeSlider_K2Node_ComponentBoundEvent_3_OnFloatValueChangedEvent__DelegateSignature");
-static_assert(sizeof(SettingsUI_C_BndEvt__SettingsUI_MasterVolumeSlider_K2Node_ComponentBoundEvent_3_OnFloatValueChangedEvent__DelegateSignature) == 0x000004, "Wrong size on SettingsUI_C_BndEvt__SettingsUI_MasterVolumeSlider_K2Node_ComponentBoundEvent_3_OnFloatValueChangedEvent__DelegateSignature");
-static_assert(offsetof(SettingsUI_C_BndEvt__SettingsUI_MasterVolumeSlider_K2Node_ComponentBoundEvent_3_OnFloatValueChangedEvent__DelegateSignature, Value) == 0x000000, "Member 'SettingsUI_C_BndEvt__SettingsUI_MasterVolumeSlider_K2Node_ComponentBoundEvent_3_OnFloatValueChangedEvent__DelegateSignature::Value' has a wrong offset!");
+DUMPER7_ASSERTS_SettingsUI_C_BndEvt__SettingsUI_MasterVolumeSlider_K2Node_ComponentBoundEvent_3_OnFloatValueChangedEvent__DelegateSignature;
 
 // Function SettingsUI.SettingsUI_C.BndEvt__SettingsUI_AimSensSlider_K2Node_ComponentBoundEvent_2_OnFloatValueChangedEvent__DelegateSignature
 // 0x0004 (0x0004 - 0x0000)
@@ -195,9 +144,7 @@ struct SettingsUI_C_BndEvt__SettingsUI_AimSensSlider_K2Node_ComponentBoundEvent_
 public:
 	float                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SettingsUI_C_BndEvt__SettingsUI_AimSensSlider_K2Node_ComponentBoundEvent_2_OnFloatValueChangedEvent__DelegateSignature) == 0x000004, "Wrong alignment on SettingsUI_C_BndEvt__SettingsUI_AimSensSlider_K2Node_ComponentBoundEvent_2_OnFloatValueChangedEvent__DelegateSignature");
-static_assert(sizeof(SettingsUI_C_BndEvt__SettingsUI_AimSensSlider_K2Node_ComponentBoundEvent_2_OnFloatValueChangedEvent__DelegateSignature) == 0x000004, "Wrong size on SettingsUI_C_BndEvt__SettingsUI_AimSensSlider_K2Node_ComponentBoundEvent_2_OnFloatValueChangedEvent__DelegateSignature");
-static_assert(offsetof(SettingsUI_C_BndEvt__SettingsUI_AimSensSlider_K2Node_ComponentBoundEvent_2_OnFloatValueChangedEvent__DelegateSignature, Value) == 0x000000, "Member 'SettingsUI_C_BndEvt__SettingsUI_AimSensSlider_K2Node_ComponentBoundEvent_2_OnFloatValueChangedEvent__DelegateSignature::Value' has a wrong offset!");
+DUMPER7_ASSERTS_SettingsUI_C_BndEvt__SettingsUI_AimSensSlider_K2Node_ComponentBoundEvent_2_OnFloatValueChangedEvent__DelegateSignature;
 
 // Function SettingsUI.SettingsUI_C.BndEvt__SettingsUI_LookSensSlider_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature
 // 0x0004 (0x0004 - 0x0000)
@@ -206,9 +153,7 @@ struct SettingsUI_C_BndEvt__SettingsUI_LookSensSlider_K2Node_ComponentBoundEvent
 public:
 	float                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SettingsUI_C_BndEvt__SettingsUI_LookSensSlider_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature) == 0x000004, "Wrong alignment on SettingsUI_C_BndEvt__SettingsUI_LookSensSlider_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature");
-static_assert(sizeof(SettingsUI_C_BndEvt__SettingsUI_LookSensSlider_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature) == 0x000004, "Wrong size on SettingsUI_C_BndEvt__SettingsUI_LookSensSlider_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature");
-static_assert(offsetof(SettingsUI_C_BndEvt__SettingsUI_LookSensSlider_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature, Value) == 0x000000, "Member 'SettingsUI_C_BndEvt__SettingsUI_LookSensSlider_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature::Value' has a wrong offset!");
+DUMPER7_ASSERTS_SettingsUI_C_BndEvt__SettingsUI_LookSensSlider_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature;
 
 // Function SettingsUI.SettingsUI_C.Get_lookSensText_Text_0
 // 0x0038 (0x0038 - 0x0000)
@@ -220,12 +165,7 @@ public:
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_FloatToText_ReturnValue;             // 0x0020(0x0018)()
 };
-static_assert(alignof(SettingsUI_C_Get_lookSensText_Text_0) == 0x000008, "Wrong alignment on SettingsUI_C_Get_lookSensText_Text_0");
-static_assert(sizeof(SettingsUI_C_Get_lookSensText_Text_0) == 0x000038, "Wrong size on SettingsUI_C_Get_lookSensText_Text_0");
-static_assert(offsetof(SettingsUI_C_Get_lookSensText_Text_0, ReturnValue) == 0x000000, "Member 'SettingsUI_C_Get_lookSensText_Text_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_Get_lookSensText_Text_0, CallFunc_GetValue_ReturnValue) == 0x000018, "Member 'SettingsUI_C_Get_lookSensText_Text_0::CallFunc_GetValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_Get_lookSensText_Text_0, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00001C, "Member 'SettingsUI_C_Get_lookSensText_Text_0::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_Get_lookSensText_Text_0, CallFunc_Conv_FloatToText_ReturnValue) == 0x000020, "Member 'SettingsUI_C_Get_lookSensText_Text_0::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SettingsUI_C_Get_lookSensText_Text_0;
 
 // Function SettingsUI.SettingsUI_C.Get_lookSensText_1_Text_0
 // 0x0038 (0x0038 - 0x0000)
@@ -237,12 +177,7 @@ public:
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_FloatToText_ReturnValue;             // 0x0020(0x0018)()
 };
-static_assert(alignof(SettingsUI_C_Get_lookSensText_1_Text_0) == 0x000008, "Wrong alignment on SettingsUI_C_Get_lookSensText_1_Text_0");
-static_assert(sizeof(SettingsUI_C_Get_lookSensText_1_Text_0) == 0x000038, "Wrong size on SettingsUI_C_Get_lookSensText_1_Text_0");
-static_assert(offsetof(SettingsUI_C_Get_lookSensText_1_Text_0, ReturnValue) == 0x000000, "Member 'SettingsUI_C_Get_lookSensText_1_Text_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_Get_lookSensText_1_Text_0, CallFunc_GetValue_ReturnValue) == 0x000018, "Member 'SettingsUI_C_Get_lookSensText_1_Text_0::CallFunc_GetValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_Get_lookSensText_1_Text_0, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00001C, "Member 'SettingsUI_C_Get_lookSensText_1_Text_0::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_Get_lookSensText_1_Text_0, CallFunc_Conv_FloatToText_ReturnValue) == 0x000020, "Member 'SettingsUI_C_Get_lookSensText_1_Text_0::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SettingsUI_C_Get_lookSensText_1_Text_0;
 
 // Function SettingsUI.SettingsUI_C.Get_MasterVolText_Text_0
 // 0x0038 (0x0038 - 0x0000)
@@ -254,12 +189,7 @@ public:
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_FloatToText_ReturnValue;             // 0x0020(0x0018)()
 };
-static_assert(alignof(SettingsUI_C_Get_MasterVolText_Text_0) == 0x000008, "Wrong alignment on SettingsUI_C_Get_MasterVolText_Text_0");
-static_assert(sizeof(SettingsUI_C_Get_MasterVolText_Text_0) == 0x000038, "Wrong size on SettingsUI_C_Get_MasterVolText_Text_0");
-static_assert(offsetof(SettingsUI_C_Get_MasterVolText_Text_0, ReturnValue) == 0x000000, "Member 'SettingsUI_C_Get_MasterVolText_Text_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_Get_MasterVolText_Text_0, CallFunc_GetValue_ReturnValue) == 0x000018, "Member 'SettingsUI_C_Get_MasterVolText_Text_0::CallFunc_GetValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_Get_MasterVolText_Text_0, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00001C, "Member 'SettingsUI_C_Get_MasterVolText_Text_0::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_Get_MasterVolText_Text_0, CallFunc_Conv_FloatToText_ReturnValue) == 0x000020, "Member 'SettingsUI_C_Get_MasterVolText_Text_0::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SettingsUI_C_Get_MasterVolText_Text_0;
 
 // Function SettingsUI.SettingsUI_C.Get_MasterVolText_1_Text_0
 // 0x0038 (0x0038 - 0x0000)
@@ -271,12 +201,7 @@ public:
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_FloatToText_ReturnValue;             // 0x0020(0x0018)()
 };
-static_assert(alignof(SettingsUI_C_Get_MasterVolText_1_Text_0) == 0x000008, "Wrong alignment on SettingsUI_C_Get_MasterVolText_1_Text_0");
-static_assert(sizeof(SettingsUI_C_Get_MasterVolText_1_Text_0) == 0x000038, "Wrong size on SettingsUI_C_Get_MasterVolText_1_Text_0");
-static_assert(offsetof(SettingsUI_C_Get_MasterVolText_1_Text_0, ReturnValue) == 0x000000, "Member 'SettingsUI_C_Get_MasterVolText_1_Text_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_Get_MasterVolText_1_Text_0, CallFunc_GetValue_ReturnValue) == 0x000018, "Member 'SettingsUI_C_Get_MasterVolText_1_Text_0::CallFunc_GetValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_Get_MasterVolText_1_Text_0, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00001C, "Member 'SettingsUI_C_Get_MasterVolText_1_Text_0::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_Get_MasterVolText_1_Text_0, CallFunc_Conv_FloatToText_ReturnValue) == 0x000020, "Member 'SettingsUI_C_Get_MasterVolText_1_Text_0::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SettingsUI_C_Get_MasterVolText_1_Text_0;
 
 // Function SettingsUI.SettingsUI_C.Get_MasterVolText_2_Text_0
 // 0x0038 (0x0038 - 0x0000)
@@ -288,12 +213,7 @@ public:
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_FloatToText_ReturnValue;             // 0x0020(0x0018)()
 };
-static_assert(alignof(SettingsUI_C_Get_MasterVolText_2_Text_0) == 0x000008, "Wrong alignment on SettingsUI_C_Get_MasterVolText_2_Text_0");
-static_assert(sizeof(SettingsUI_C_Get_MasterVolText_2_Text_0) == 0x000038, "Wrong size on SettingsUI_C_Get_MasterVolText_2_Text_0");
-static_assert(offsetof(SettingsUI_C_Get_MasterVolText_2_Text_0, ReturnValue) == 0x000000, "Member 'SettingsUI_C_Get_MasterVolText_2_Text_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_Get_MasterVolText_2_Text_0, CallFunc_GetValue_ReturnValue) == 0x000018, "Member 'SettingsUI_C_Get_MasterVolText_2_Text_0::CallFunc_GetValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_Get_MasterVolText_2_Text_0, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00001C, "Member 'SettingsUI_C_Get_MasterVolText_2_Text_0::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_Get_MasterVolText_2_Text_0, CallFunc_Conv_FloatToText_ReturnValue) == 0x000020, "Member 'SettingsUI_C_Get_MasterVolText_2_Text_0::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SettingsUI_C_Get_MasterVolText_2_Text_0;
 
 // Function SettingsUI.SettingsUI_C.Get_MasterVolText_3_Text_0
 // 0x0038 (0x0038 - 0x0000)
@@ -305,11 +225,7 @@ public:
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_FloatToText_ReturnValue;             // 0x0020(0x0018)()
 };
-static_assert(alignof(SettingsUI_C_Get_MasterVolText_3_Text_0) == 0x000008, "Wrong alignment on SettingsUI_C_Get_MasterVolText_3_Text_0");
-static_assert(sizeof(SettingsUI_C_Get_MasterVolText_3_Text_0) == 0x000038, "Wrong size on SettingsUI_C_Get_MasterVolText_3_Text_0");
-static_assert(offsetof(SettingsUI_C_Get_MasterVolText_3_Text_0, ReturnValue) == 0x000000, "Member 'SettingsUI_C_Get_MasterVolText_3_Text_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_Get_MasterVolText_3_Text_0, CallFunc_GetValue_ReturnValue) == 0x000018, "Member 'SettingsUI_C_Get_MasterVolText_3_Text_0::CallFunc_GetValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_Get_MasterVolText_3_Text_0, CallFunc_Conv_FloatToText_ReturnValue) == 0x000020, "Member 'SettingsUI_C_Get_MasterVolText_3_Text_0::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SettingsUI_C_Get_MasterVolText_3_Text_0;
 
 // Function SettingsUI.SettingsUI_C.Get_MasterVolText_4_Text_0
 // 0x0038 (0x0038 - 0x0000)
@@ -321,11 +237,7 @@ public:
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_FloatToText_ReturnValue;             // 0x0020(0x0018)()
 };
-static_assert(alignof(SettingsUI_C_Get_MasterVolText_4_Text_0) == 0x000008, "Wrong alignment on SettingsUI_C_Get_MasterVolText_4_Text_0");
-static_assert(sizeof(SettingsUI_C_Get_MasterVolText_4_Text_0) == 0x000038, "Wrong size on SettingsUI_C_Get_MasterVolText_4_Text_0");
-static_assert(offsetof(SettingsUI_C_Get_MasterVolText_4_Text_0, ReturnValue) == 0x000000, "Member 'SettingsUI_C_Get_MasterVolText_4_Text_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_Get_MasterVolText_4_Text_0, CallFunc_GetValue_ReturnValue) == 0x000018, "Member 'SettingsUI_C_Get_MasterVolText_4_Text_0::CallFunc_GetValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_Get_MasterVolText_4_Text_0, CallFunc_Conv_FloatToText_ReturnValue) == 0x000020, "Member 'SettingsUI_C_Get_MasterVolText_4_Text_0::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SettingsUI_C_Get_MasterVolText_4_Text_0;
 
 // Function SettingsUI.SettingsUI_C.Get_MotionBlurText_Text_0
 // 0x0068 (0x0068 - 0x0000)
@@ -339,13 +251,7 @@ public:
 	class FText                                   Temp_text_Variable_1;                              // 0x0038(0x0018)()
 	class FText                                   K2Node_Select_Default;                             // 0x0050(0x0018)()
 };
-static_assert(alignof(SettingsUI_C_Get_MotionBlurText_Text_0) == 0x000008, "Wrong alignment on SettingsUI_C_Get_MotionBlurText_Text_0");
-static_assert(sizeof(SettingsUI_C_Get_MotionBlurText_Text_0) == 0x000068, "Wrong size on SettingsUI_C_Get_MotionBlurText_Text_0");
-static_assert(offsetof(SettingsUI_C_Get_MotionBlurText_Text_0, ReturnValue) == 0x000000, "Member 'SettingsUI_C_Get_MotionBlurText_Text_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_Get_MotionBlurText_Text_0, Temp_bool_Variable) == 0x000018, "Member 'SettingsUI_C_Get_MotionBlurText_Text_0::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_Get_MotionBlurText_Text_0, Temp_text_Variable) == 0x000020, "Member 'SettingsUI_C_Get_MotionBlurText_Text_0::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_Get_MotionBlurText_Text_0, Temp_text_Variable_1) == 0x000038, "Member 'SettingsUI_C_Get_MotionBlurText_Text_0::Temp_text_Variable_1' has a wrong offset!");
-static_assert(offsetof(SettingsUI_C_Get_MotionBlurText_Text_0, K2Node_Select_Default) == 0x000050, "Member 'SettingsUI_C_Get_MotionBlurText_Text_0::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_SettingsUI_C_Get_MotionBlurText_Text_0;
 
 // Function SettingsUI.SettingsUI_C.GetText_0
 // 0x0018 (0x0018 - 0x0000)
@@ -354,9 +260,7 @@ struct SettingsUI_C_GetText_0 final
 public:
 	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(SettingsUI_C_GetText_0) == 0x000008, "Wrong alignment on SettingsUI_C_GetText_0");
-static_assert(sizeof(SettingsUI_C_GetText_0) == 0x000018, "Wrong size on SettingsUI_C_GetText_0");
-static_assert(offsetof(SettingsUI_C_GetText_0, ReturnValue) == 0x000000, "Member 'SettingsUI_C_GetText_0::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SettingsUI_C_GetText_0;
 
 }
 

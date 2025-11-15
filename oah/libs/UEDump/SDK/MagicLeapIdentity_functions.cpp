@@ -20,7 +20,7 @@ namespace SDK
 // Function MagicLeapIdentity.MagicLeapIdentity.GetAllAvailableAttributes
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// TArray<EMagicLeapIdentityKey>           AvailableAttributes                                    (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+// TArray<EMagicLeapIdentityKey>*          AvailableAttributes                                    (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 // EMagicLeapIdentityError                 ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 EMagicLeapIdentityError UMagicLeapIdentity::GetAllAvailableAttributes(TArray<EMagicLeapIdentityKey>* AvailableAttributes)
@@ -49,7 +49,7 @@ EMagicLeapIdentityError UMagicLeapIdentity::GetAllAvailableAttributes(TArray<EMa
 // Function MagicLeapIdentity.MagicLeapIdentity.GetAllAvailableAttributesAsync
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// TDelegate<void(EMagicLeapIdentityError ResultCode, const TArray<EMagicLeapIdentityKey>& AvailableAttributes)>ResultDelegate                                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+// const TDelegate<void(EMagicLeapIdentityError ResultCode, const TArray<EMagicLeapIdentityKey>& AvailableAttributes)>&ResultDelegate                                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 
 void UMagicLeapIdentity::GetAllAvailableAttributesAsync(const TDelegate<void(EMagicLeapIdentityError ResultCode, const TArray<EMagicLeapIdentityKey>& AvailableAttributes)>& ResultDelegate)
 {
@@ -74,8 +74,8 @@ void UMagicLeapIdentity::GetAllAvailableAttributesAsync(const TDelegate<void(EMa
 // Function MagicLeapIdentity.MagicLeapIdentity.RequestAttributeValue
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// TArray<EMagicLeapIdentityKey>           RequestedAttributeList                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-// TArray<struct FMagicLeapIdentityAttribute>RequestedAttributeValues                               (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+// const TArray<EMagicLeapIdentityKey>&    RequestedAttributeList                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// TArray<struct FMagicLeapIdentityAttribute>*RequestedAttributeValues                               (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 // EMagicLeapIdentityError                 ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 EMagicLeapIdentityError UMagicLeapIdentity::RequestAttributeValue(const TArray<EMagicLeapIdentityKey>& RequestedAttributeList, TArray<struct FMagicLeapIdentityAttribute>* RequestedAttributeValues)
@@ -106,8 +106,8 @@ EMagicLeapIdentityError UMagicLeapIdentity::RequestAttributeValue(const TArray<E
 // Function MagicLeapIdentity.MagicLeapIdentity.RequestAttributeValueAsync
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// TArray<EMagicLeapIdentityKey>           RequestedAttributeList                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-// TDelegate<void(EMagicLeapIdentityError ResultCode, const TArray<struct FMagicLeapIdentityAttribute>& AttributeValue)>ResultDelegate                                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+// const TArray<EMagicLeapIdentityKey>&    RequestedAttributeList                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// const TDelegate<void(EMagicLeapIdentityError ResultCode, const TArray<struct FMagicLeapIdentityAttribute>& AttributeValue)>&ResultDelegate                                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 // EMagicLeapIdentityError                 ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 EMagicLeapIdentityError UMagicLeapIdentity::RequestAttributeValueAsync(const TArray<EMagicLeapIdentityKey>& RequestedAttributeList, const TDelegate<void(EMagicLeapIdentityError ResultCode, const TArray<struct FMagicLeapIdentityAttribute>& AttributeValue)>& ResultDelegate)

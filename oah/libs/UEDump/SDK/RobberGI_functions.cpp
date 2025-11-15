@@ -144,7 +144,7 @@ void URobberGI_C::HandleNetworkError(ENetworkFailure FailureType, bool bIsServer
 // Function RobberGI.RobberGI_C.MessagePopup
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FString                           Message                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    Message                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
 void URobberGI_C::MessagePopup(const class FString& Message)
 {
@@ -218,7 +218,7 @@ void URobberGI_C::UpdateSession(bool AllowJoinInProgress_)
 // Function RobberGI.RobberGI_C.invited
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FLobbyInviteData                 Data                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+// const struct FLobbyInviteData&          Data                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 
 void URobberGI_C::invited(const struct FLobbyInviteData& Data)
 {
@@ -253,8 +253,8 @@ void URobberGI_C::ReceiveInit()
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
 // int32                                   LocalPlayerNum                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FBPUniqueNetId                   PersonInvited                                          (BlueprintVisible, BlueprintReadOnly, Parm)
-// struct FBlueprintSessionResult          SessionToJoin                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const struct FBPUniqueNetId&            PersonInvited                                          (BlueprintVisible, BlueprintReadOnly, Parm)
+// const struct FBlueprintSessionResult&   SessionToJoin                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
 void URobberGI_C::OnSessionInviteAccepted(int32 LocalPlayerNum, const struct FBPUniqueNetId& PersonInvited, const struct FBlueprintSessionResult& SessionToJoin)
 {
@@ -276,7 +276,7 @@ void URobberGI_C::OnSessionInviteAccepted(int32 LocalPlayerNum, const struct FBP
 // Function RobberGI.RobberGI_C.JoinGame
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FBlueprintSessionResult          Result                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
+// const struct FBlueprintSessionResult&   Result                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
 
 void URobberGI_C::JoinGame(const struct FBlueprintSessionResult& Result)
 {
@@ -330,7 +330,7 @@ void URobberGI_C::NewChat()
 // Function RobberGI.RobberGI_C.OnSuccess_A110421C4837192EE5791EA86298FC0A
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<struct FBlueprintSessionResult>  Results_0                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const TArray<struct FBlueprintSessionResult>&Results_0                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
 void URobberGI_C::OnSuccess_A110421C4837192EE5791EA86298FC0A(const TArray<struct FBlueprintSessionResult>& Results_0)
 {
@@ -350,7 +350,7 @@ void URobberGI_C::OnSuccess_A110421C4837192EE5791EA86298FC0A(const TArray<struct
 // Function RobberGI.RobberGI_C.OnFailure_A110421C4837192EE5791EA86298FC0A
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<struct FBlueprintSessionResult>  Results_0                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const TArray<struct FBlueprintSessionResult>&Results_0                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
 void URobberGI_C::OnFailure_A110421C4837192EE5791EA86298FC0A(const TArray<struct FBlueprintSessionResult>& Results_0)
 {
@@ -426,7 +426,7 @@ void URobberGI_C::OnFailure_7BBB03BC4A1765E9DE1E50A77D6BA9CF()
 // Function RobberGI.RobberGI_C.OnCallback_D0E7F30247E9855852002CA389609FEF
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FCreateLobbyData                 Data                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+// const struct FCreateLobbyData&          Data                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 // bool                                    bWasSuccessful                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void URobberGI_C::OnCallback_D0E7F30247E9855852002CA389609FEF(const struct FCreateLobbyData& Data, bool bWasSuccessful)
@@ -532,7 +532,7 @@ void URobberGI_C::OnFailure_1FA9A5214F6702DEF08981BF01CD27D6()
 // Function RobberGI.RobberGI_C.OnSuccess_40CC732343607C4A3B0198893B9834D6
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<struct FBPFriendInfo>            Results_0                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const TArray<struct FBPFriendInfo>&     Results_0                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
 void URobberGI_C::OnSuccess_40CC732343607C4A3B0198893B9834D6(const TArray<struct FBPFriendInfo>& Results_0)
 {
@@ -552,7 +552,7 @@ void URobberGI_C::OnSuccess_40CC732343607C4A3B0198893B9834D6(const TArray<struct
 // Function RobberGI.RobberGI_C.OnFailure_40CC732343607C4A3B0198893B9834D6
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<struct FBPFriendInfo>            Results_0                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const TArray<struct FBPFriendInfo>&     Results_0                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
 void URobberGI_C::OnFailure_40CC732343607C4A3B0198893B9834D6(const TArray<struct FBPFriendInfo>& Results_0)
 {
@@ -670,7 +670,7 @@ void URobberGI_C::SwitchLobbyType()
 // Function RobberGI.RobberGI_C.SetLobbyType
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FString                           Lobby_type                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    Lobby_type                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 // bool                                    AllowJoin_                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void URobberGI_C::SetLobbyType(const class FString& Lobby_type, bool AllowJoin_)

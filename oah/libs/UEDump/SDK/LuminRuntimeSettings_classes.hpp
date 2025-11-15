@@ -55,39 +55,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LuminRuntimeSettings">();
+		STATIC_CLASS_IMPL("LuminRuntimeSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LuminRuntimeSettings")
 	}
 	static class ULuminRuntimeSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULuminRuntimeSettings>();
 	}
 };
-static_assert(alignof(ULuminRuntimeSettings) == 0x000008, "Wrong alignment on ULuminRuntimeSettings");
-static_assert(sizeof(ULuminRuntimeSettings) == 0x000148, "Wrong size on ULuminRuntimeSettings");
-static_assert(offsetof(ULuminRuntimeSettings, PackageName) == 0x000028, "Member 'ULuminRuntimeSettings::PackageName' has a wrong offset!");
-static_assert(offsetof(ULuminRuntimeSettings, ApplicationDisplayName) == 0x000038, "Member 'ULuminRuntimeSettings::ApplicationDisplayName' has a wrong offset!");
-static_assert(offsetof(ULuminRuntimeSettings, FrameTimingHint) == 0x000048, "Member 'ULuminRuntimeSettings::FrameTimingHint' has a wrong offset!");
-static_assert(offsetof(ULuminRuntimeSettings, bProtectedContent) == 0x000049, "Member 'ULuminRuntimeSettings::bProtectedContent' has a wrong offset!");
-static_assert(offsetof(ULuminRuntimeSettings, bManualCallToAppReady) == 0x00004A, "Member 'ULuminRuntimeSettings::bManualCallToAppReady' has a wrong offset!");
-static_assert(offsetof(ULuminRuntimeSettings, bUseMobileRendering) == 0x00004B, "Member 'ULuminRuntimeSettings::bUseMobileRendering' has a wrong offset!");
-static_assert(offsetof(ULuminRuntimeSettings, bUseVulkan) == 0x00004C, "Member 'ULuminRuntimeSettings::bUseVulkan' has a wrong offset!");
-static_assert(offsetof(ULuminRuntimeSettings, Certificate) == 0x000050, "Member 'ULuminRuntimeSettings::Certificate' has a wrong offset!");
-static_assert(offsetof(ULuminRuntimeSettings, IconModelPath) == 0x000060, "Member 'ULuminRuntimeSettings::IconModelPath' has a wrong offset!");
-static_assert(offsetof(ULuminRuntimeSettings, IconPortalPath) == 0x000070, "Member 'ULuminRuntimeSettings::IconPortalPath' has a wrong offset!");
-static_assert(offsetof(ULuminRuntimeSettings, LocalizedIconInfos) == 0x000080, "Member 'ULuminRuntimeSettings::LocalizedIconInfos' has a wrong offset!");
-static_assert(offsetof(ULuminRuntimeSettings, VersionCode) == 0x000090, "Member 'ULuminRuntimeSettings::VersionCode' has a wrong offset!");
-static_assert(offsetof(ULuminRuntimeSettings, MinimumAPILevel) == 0x000094, "Member 'ULuminRuntimeSettings::MinimumAPILevel' has a wrong offset!");
-static_assert(offsetof(ULuminRuntimeSettings, AppPrivileges) == 0x000098, "Member 'ULuminRuntimeSettings::AppPrivileges' has a wrong offset!");
-static_assert(offsetof(ULuminRuntimeSettings, ExtraComponentSubElements) == 0x0000A8, "Member 'ULuminRuntimeSettings::ExtraComponentSubElements' has a wrong offset!");
-static_assert(offsetof(ULuminRuntimeSettings, ExtraComponentElements) == 0x0000B8, "Member 'ULuminRuntimeSettings::ExtraComponentElements' has a wrong offset!");
-static_assert(offsetof(ULuminRuntimeSettings, SpatializationPlugin) == 0x0000C8, "Member 'ULuminRuntimeSettings::SpatializationPlugin' has a wrong offset!");
-static_assert(offsetof(ULuminRuntimeSettings, ReverbPlugin) == 0x0000D8, "Member 'ULuminRuntimeSettings::ReverbPlugin' has a wrong offset!");
-static_assert(offsetof(ULuminRuntimeSettings, OcclusionPlugin) == 0x0000E8, "Member 'ULuminRuntimeSettings::OcclusionPlugin' has a wrong offset!");
-static_assert(offsetof(ULuminRuntimeSettings, SoundCueCookQualityIndex) == 0x0000F8, "Member 'ULuminRuntimeSettings::SoundCueCookQualityIndex' has a wrong offset!");
-static_assert(offsetof(ULuminRuntimeSettings, bRemoveDebugInfo) == 0x0000FC, "Member 'ULuminRuntimeSettings::bRemoveDebugInfo' has a wrong offset!");
-static_assert(offsetof(ULuminRuntimeSettings, VulkanValidationLayerLibs) == 0x000100, "Member 'ULuminRuntimeSettings::VulkanValidationLayerLibs' has a wrong offset!");
-static_assert(offsetof(ULuminRuntimeSettings, bFrameVignette) == 0x000110, "Member 'ULuminRuntimeSettings::bFrameVignette' has a wrong offset!");
-static_assert(offsetof(ULuminRuntimeSettings, LocalizedAppNames) == 0x000118, "Member 'ULuminRuntimeSettings::LocalizedAppNames' has a wrong offset!");
+DUMPER7_ASSERTS_ULuminRuntimeSettings;
 
 }
 

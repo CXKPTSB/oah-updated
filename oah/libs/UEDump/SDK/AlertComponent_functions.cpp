@@ -40,7 +40,7 @@ void UAlertComponent_C::ExecuteUbergraph_AlertComponent(int32 EntryPoint)
 // Function AlertComponent.AlertComponent_C.AlertNearestGuard
 // (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector                          AlertLocation                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   AlertLocation                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UAlertComponent_C::AlertNearestGuard(const struct FVector& AlertLocation)
 {
@@ -90,7 +90,7 @@ void UAlertComponent_C::TriggerAlarm()
 // Parameters:
 // float                                   max_distance                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    MustBeVisible_                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FVector                          Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UAlertComponent_C::AlertNearbyGuards(float max_distance, bool MustBeVisible_, const struct FVector& Location)
 {
@@ -140,7 +140,7 @@ void UAlertComponent_C::ReceiveBeginPlay()
 // Function AlertComponent.AlertComponent_C.AlertAllGuards
 // (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FString                           Alert_reason                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    Alert_reason                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
 void UAlertComponent_C::AlertAllGuards(const class FString& Alert_reason)
 {

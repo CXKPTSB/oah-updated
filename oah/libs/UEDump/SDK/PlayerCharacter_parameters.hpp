@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "InputCore_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "AttachmentArrayStructure_structs.hpp"
+#include "SkillSaveStruct_structs.hpp"
 #include "PhysicsCore_structs.hpp"
 #include "Engine_structs.hpp"
-#include "SkillSaveStruct_structs.hpp"
-#include "CoreUObject_structs.hpp"
+#include "InputCore_structs.hpp"
 #include "SteamCore_structs.hpp"
 
 
@@ -818,645 +818,7 @@ public:
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_2;           // 0x1788(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsLocallyControlled_ReturnValue_25;       // 0x1789(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter) == 0x000010, "Wrong alignment on PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter");
-static_assert(sizeof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter) == 0x001790, "Wrong size on PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, EntryPoint) == 0x000000, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::EntryPoint' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Create_ReturnValue) == 0x000008, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_InputActionEvent_Key_2) == 0x000020, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_InputActionEvent_Key_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Create_ReturnValue_1) == 0x000038, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Create_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_InputActionEvent_Key_1) == 0x000040, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_InputActionEvent_Key_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_InputActionEvent_Key) == 0x000058, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_InputActionEvent_Key' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_struct_Variable) == 0x000070, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Create_ReturnValue_2) == 0x000088, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Create_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsValid_ReturnValue) == 0x000090, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Create_ReturnValue_3) == 0x000098, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Create_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CreateDelegate_OutputDelegate_1) == 0x0000A0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Not_PreBool_ReturnValue) == 0x0000B0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetGrabbedComponent_ReturnValue) == 0x0000B8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetGrabbedComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_byte_Variable) == 0x0000C0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsValid_ReturnValue_1) == 0x0000C1, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Not_PreBool_ReturnValue_1) == 0x0000C2, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_bool_IsClosed_Variable) == 0x0000C3, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BooleanAND_ReturnValue) == 0x0000C4, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_InputActionEvent_Key_6) == 0x0000C8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_InputActionEvent_Key_6' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_bool_Has_Been_Initd_Variable) == 0x0000E0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_bool_IsClosed_Variable_1) == 0x0000E1, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_bool_IsClosed_Variable_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0000E4, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_bool_Has_Been_Initd_Variable_1) == 0x0000E8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_bool_Has_Been_Initd_Variable_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_HasAuthority_ReturnValue) == 0x0000E9, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_int_Loop_Counter_Variable) == 0x0000EC, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Add_IntInt_ReturnValue) == 0x0000F0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_int_Array_Index_Variable) == 0x0000F4, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_int_Array_Index_Variable_1) == 0x0000F8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_float_Variable) == 0x0000FC, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_int_Loop_Counter_Variable_1) == 0x000100, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Add_IntInt_ReturnValue_1) == 0x000104, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_int_Array_Index_Variable_2) == 0x000108, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_float_Variable_1) == 0x00010C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_float_Variable_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_bool_IsClosed_Variable_2) == 0x000110, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_bool_IsClosed_Variable_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_bool_Has_Been_Initd_Variable_2) == 0x000111, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_bool_Has_Been_Initd_Variable_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_bool_Variable) == 0x000112, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_bool_IsClosed_Variable_3) == 0x000113, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_bool_IsClosed_Variable_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_bool_Has_Been_Initd_Variable_3) == 0x000114, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_bool_Has_Been_Initd_Variable_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_int_Loop_Counter_Variable_2) == 0x000118, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Add_IntInt_ReturnValue_2) == 0x00011C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_int_Array_Index_Variable_3) == 0x000120, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_int_Array_Index_Variable_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_struct_Variable_1) == 0x000128, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_InputActionEvent_Key_7) == 0x000140, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_InputActionEvent_Key_7' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_int_Loop_Counter_Variable_3) == 0x000158, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_int_Loop_Counter_Variable_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Add_IntInt_ReturnValue_3) == 0x00015C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_int_Array_Index_Variable_4) == 0x000160, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_int_Array_Index_Variable_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_InputActionEvent_Key_3) == 0x000168, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_InputActionEvent_Key_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Create_ReturnValue_4) == 0x000180, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Create_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_int_Loop_Counter_Variable_4) == 0x000188, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_int_Loop_Counter_Variable_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Add_IntInt_ReturnValue_4) == 0x00018C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_bool_Has_Been_Initd_Variable_4) == 0x000190, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_bool_Has_Been_Initd_Variable_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_bool_Variable_1) == 0x000191, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Not_PreBool_ReturnValue_2) == 0x000192, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Create_ReturnValue_5) == 0x000198, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Create_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_bool_IsClosed_Variable_4) == 0x0001A0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_bool_IsClosed_Variable_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_object_Variable) == 0x0001A8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CreateDelegate_OutputDelegate_2) == 0x0001B8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_bool_IsClosed_Variable_5) == 0x0001C8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_bool_IsClosed_Variable_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_bool_Has_Been_Initd_Variable_5) == 0x0001C9, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_bool_Has_Been_Initd_Variable_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_MakeLiteralFloat_ReturnValue) == 0x0001CC, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_MakeLiteralFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Divide_FloatFloat_ReturnValue) == 0x0001D0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_HasAuthority_ReturnValue_1) == 0x0001D4, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_HasAuthority_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x0001D8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_FClamp_ReturnValue) == 0x0001DC, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_FClamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_object_Variable_1) == 0x0001E0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_int_Variable) == 0x0001F0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Add_IntInt_ReturnValue_5) == 0x0001F4, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Add_IntInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_InputAxisEvent_AxisValue_3) == 0x0001F8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_InputAxisEvent_AxisValue_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetActorForwardVector_ReturnValue) == 0x0001FC, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_InputAxisEvent_AxisValue_2) == 0x000208, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_InputAxisEvent_AxisValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetActorRightVector_ReturnValue) == 0x00020C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetActorRightVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_InputActionEvent_Key_8) == 0x000218, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_InputActionEvent_Key_8' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_InputAxisEvent_AxisValue_1) == 0x000230, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_InputAxisEvent_AxisValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_InputAxisEvent_AxisValue) == 0x000234, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_InputAxisEvent_AxisValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_Event_DeltaSeconds) == 0x000238, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_Rotation) == 0x00023C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_Rotation' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetControlRotation_ReturnValue) == 0x000248, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetControlRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_MakeStruct_PhysicalAnimationData) == 0x000254, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_MakeStruct_PhysicalAnimationData' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_MakeLiteralName_ReturnValue) == 0x000278, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_MakeLiteralName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_Hit_result_3) == 0x000280, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_Hit_result_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_Slot_5) == 0x000308, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_Slot_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsValid_ReturnValue_2) == 0x00030C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Greater_IntInt_ReturnValue) == 0x00030D, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000310, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BooleanAND_ReturnValue_1) == 0x00031C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Create_ReturnValue_6) == 0x000320, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Create_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_K2_GetComponentRotation_ReturnValue) == 0x000328, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_K2_GetComponentRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_K2_GetComponentLocation_ReturnValue_1) == 0x000334, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_K2_GetComponentLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_MakeStruct_PhysicalAnimationData_1) == 0x000340, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_MakeStruct_PhysicalAnimationData_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsValid_ReturnValue_3) == 0x000364, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_MakeLiteralName_ReturnValue_1) == 0x000368, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_MakeLiteralName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000370, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_struct_Variable_2) == 0x000378, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_struct_Variable_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Add_IntInt_ReturnValue_6) == 0x000390, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Add_IntInt_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Subtract_IntInt_ReturnValue) == 0x000394, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_SwitchGun_Willswitch_) == 0x000398, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_SwitchGun_Willswitch_' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_SwitchGun_Willswitch__1) == 0x000399, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_SwitchGun_Willswitch__1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsLocallyControlled_ReturnValue) == 0x00039A, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsLocallyControlled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetVelocity_ReturnValue) == 0x00039C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetVelocity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BreakVector_X) == 0x0003A8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BreakVector_Y) == 0x0003AC, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BreakVector_Z) == 0x0003B0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Abs_ReturnValue) == 0x0003B4, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Abs_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x0003B8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Divide_FloatFloat_ReturnValue_2) == 0x0003BC, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Divide_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Greater_FloatFloat_ReturnValue) == 0x0003C0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue) == 0x0003C4, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_FTrunc_ReturnValue) == 0x0003C8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Not_PreBool_ReturnValue_3) == 0x0003CC, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Not_PreBool_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BooleanAND_ReturnValue_2) == 0x0003CD, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Not_PreBool_ReturnValue_4) == 0x0003CE, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Not_PreBool_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BooleanAND_ReturnValue_3) == 0x0003CF, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BooleanAND_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsValid_ReturnValue_4) == 0x0003D0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsValid_ReturnValue_5) == 0x0003D1, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsValid_ReturnValue_6) == 0x0003D2, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsValid_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Array_Get_Item) == 0x0003D8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsValid_ReturnValue_7) == 0x0003E0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsValid_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_InputActionEvent_Key_4) == 0x0003E8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_InputActionEvent_Key_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_InputActionEvent_Key_9) == 0x000400, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_InputActionEvent_Key_9' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Array_Length_ReturnValue) == 0x000418, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00041C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_InputActionEvent_Key_10) == 0x000420, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_InputActionEvent_Key_10' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CreateDelegate_OutputDelegate_3) == 0x000438, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_Sprint_) == 0x000448, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_Sprint_' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_struct_Variable_3) == 0x000450, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_struct_Variable_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsLocallyControlled_ReturnValue_1) == 0x000468, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsLocallyControlled_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_InputActionEvent_Key_11) == 0x000470, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_InputActionEvent_Key_11' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_float_Variable_2) == 0x000488, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_float_Variable_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_InputActionEvent_Key_12) == 0x000490, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_InputActionEvent_Key_12' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Array_Get_Item_1) == 0x0004A8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_K2_GetComponentLocation_ReturnValue_2) == 0x0004AC, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_K2_GetComponentLocation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetForwardVector_ReturnValue) == 0x0004B8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_Hit_result_2) == 0x0004C4, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_Hit_result_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x00054C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Add_VectorVector_ReturnValue) == 0x000558, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_Hit_1) == 0x000564, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_Hit_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_LineTraceSingle_OutHit) == 0x0005EC, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_LineTraceSingle_OutHit' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_LineTraceSingle_ReturnValue) == 0x000674, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_LineTraceSingle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_int_Array_Index_Variable_5) == 0x000678, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_int_Array_Index_Variable_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_Actor_1) == 0x000680, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_Actor_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_Actor) == 0x000688, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_Actor' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsValid_ReturnValue_8) == 0x000690, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsValid_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_float_Variable_3) == 0x000694, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_float_Variable_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_Damage_1) == 0x000698, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_Damage_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_AttackerLocation) == 0x00069C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_AttackerLocation' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_indicate_direction_) == 0x0006A8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_indicate_direction_' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_Instigator) == 0x0006B0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_Instigator' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_DynamicCast_AsC4) == 0x0006B8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_DynamicCast_AsC4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_DynamicCast_bSuccess) == 0x0006C0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Conv_IntToFloat_ReturnValue) == 0x0006C4, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x0006C8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsLocallyControlled_ReturnValue_2) == 0x0006CC, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsLocallyControlled_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Round_ReturnValue) == 0x0006D0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Round_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Subtract_IntInt_ReturnValue_1) == 0x0006D4, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Subtract_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_Slot_4) == 0x0006D8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_Slot_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_SwitchGun_Willswitch__2) == 0x0006DC, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_SwitchGun_Willswitch__2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetActorOfClass_ReturnValue) == 0x0006E0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetActorOfClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsValid_ReturnValue_9) == 0x0006E8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsValid_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_K2_GetActorRotation_ReturnValue) == 0x0006EC, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_K2_GetActorRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0006F8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_MakeTransform_ReturnValue) == 0x000710, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsLocallyControlled_ReturnValue_3) == 0x000740, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsLocallyControlled_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_MakeVector4_ReturnValue) == 0x000750, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_MakeVector4_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x000760, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_DynamicCast_AsRobber_Camera_Manager) == 0x000768, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_DynamicCast_AsRobber_Camera_Manager' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_DynamicCast_bSuccess_1) == 0x000770, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Add_IntInt_ReturnValue_7) == 0x000774, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Add_IntInt_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_bool_Variable_2) == 0x000778, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_AssistingPlayer) == 0x000780, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_AssistingPlayer' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_MakeVector4_ReturnValue_1) == 0x000790, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_MakeVector4_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetPlayerCameraManager_ReturnValue_1) == 0x0007A0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetPlayerCameraManager_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_DynamicCast_AsRobber_Camera_Manager_1) == 0x0007A8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_DynamicCast_AsRobber_Camera_Manager_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_DynamicCast_bSuccess_2) == 0x0007B0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_ComponentBoundEvent_Player) == 0x0007B8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_ComponentBoundEvent_Player' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_ComponentBoundEvent_HitComponent) == 0x0007C0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_ComponentBoundEvent_HitComponent' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_DynamicCast_AsPlayer_Character) == 0x0007C8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_DynamicCast_AsPlayer_Character' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_DynamicCast_bSuccess_3) == 0x0007D0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetController_ReturnValue) == 0x0007D8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsValid_ReturnValue_10) == 0x0007E0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsValid_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetAllActorsOfClass_OutActors) == 0x0007E8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_bool_Has_Been_Initd_Variable_6) == 0x0007F8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_bool_Has_Been_Initd_Variable_6' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Array_Length_ReturnValue_1) == 0x0007FC, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_K2_GetComponentLocation_ReturnValue_3) == 0x000800, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_K2_GetComponentLocation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetForwardVector_ReturnValue_1) == 0x00080C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetForwardVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Multiply_VectorFloat_ReturnValue_1) == 0x000818, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Multiply_VectorFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Add_VectorVector_ReturnValue_1) == 0x000824, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_LineTraceSingle_OutHit_1) == 0x000830, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_LineTraceSingle_OutHit_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_LineTraceSingle_ReturnValue_1) == 0x0008B8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_LineTraceSingle_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_int_Loop_Counter_Variable_5) == 0x0008BC, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_int_Loop_Counter_Variable_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Add_IntInt_ReturnValue_8) == 0x0008C0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Add_IntInt_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BreakHitResult_bBlockingHit) == 0x0008C4, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BreakHitResult_bInitialOverlap) == 0x0008C5, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BreakHitResult_Time) == 0x0008C8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BreakHitResult_Distance) == 0x0008CC, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BreakHitResult_Location) == 0x0008D0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BreakHitResult_ImpactPoint) == 0x0008DC, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BreakHitResult_Normal) == 0x0008E8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BreakHitResult_ImpactNormal) == 0x0008F4, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BreakHitResult_PhysMat) == 0x000900, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BreakHitResult_HitActor) == 0x000908, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BreakHitResult_HitComponent) == 0x000910, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BreakHitResult_HitBoneName) == 0x000918, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BreakHitResult_HitItem) == 0x000920, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BreakHitResult_ElementIndex) == 0x000924, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BreakHitResult_FaceIndex) == 0x000928, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BreakHitResult_TraceStart) == 0x00092C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BreakHitResult_TraceEnd) == 0x000938, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000944, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetComponentByClass_ReturnValue) == 0x000948, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsValid_ReturnValue_11) == 0x000950, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsValid_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_InputActionEvent_Key_13) == 0x000958, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_InputActionEvent_Key_13' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_Clicked_) == 0x000970, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_Clicked_' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BooleanOR_ReturnValue) == 0x000971, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BooleanOR_ReturnValue_1) == 0x000972, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_InputKeyEvent_Key_1) == 0x000978, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_InputKeyEvent_Key_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_Down_) == 0x000990, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_Down_' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsLocallyControlled_ReturnValue_4) == 0x000991, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsLocallyControlled_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_InputKeyEvent_Key_2) == 0x000998, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_InputKeyEvent_Key_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsLocallyControlled_ReturnValue_5) == 0x0009B0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsLocallyControlled_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetAllWidgetsOfClass_FoundWidgets) == 0x0009B8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetAllWidgetsOfClass_FoundWidgets' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Array_Get_Item_2) == 0x0009C8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Array_Length_ReturnValue_2) == 0x0009D0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Less_IntInt_ReturnValue) == 0x0009D4, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_bool_IsClosed_Variable_6) == 0x0009D5, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_bool_IsClosed_Variable_6' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_InputKeyEvent_Key_3) == 0x0009D8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_InputKeyEvent_Key_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_ComponentBoundEvent_Amount) == 0x0009F0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_ComponentBoundEvent_Amount' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_ComponentBoundEvent_Bone) == 0x0009F4, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_ComponentBoundEvent_Bone' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_ComponentBoundEvent_HitLocation) == 0x0009FC, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_ComponentBoundEvent_HitLocation' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_ComponentBoundEvent_StartLocation) == 0x000A08, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_ComponentBoundEvent_StartLocation' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_ComponentBoundEvent_Instigator) == 0x000A18, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_ComponentBoundEvent_Instigator' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_DynamicCast_AsPlayer_Character_1) == 0x000A20, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_DynamicCast_AsPlayer_Character_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_DynamicCast_bSuccess_4) == 0x000A28, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsValid_ReturnValue_12) == 0x000A29, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsValid_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetComponentByClass_ReturnValue_1) == 0x000A30, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetComponentByClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsValid_ReturnValue_13) == 0x000A38, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsValid_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_Slot_3) == 0x000A3C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_Slot_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_SwitchGun_Willswitch__3) == 0x000A40, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_SwitchGun_Willswitch__3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_MakeLiteralFloat_ReturnValue_1) == 0x000A44, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_MakeLiteralFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsLocallyControlled_ReturnValue_6) == 0x000A48, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsLocallyControlled_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_InputActionEvent_Key_14) == 0x000A50, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_InputActionEvent_Key_14' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BooleanAND_ReturnValue_4) == 0x000A68, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BooleanAND_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsValid_ReturnValue_14) == 0x000A69, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsValid_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_K2_SetActorLocationAndRotation_SweepHitResult) == 0x000A6C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_K2_SetActorLocationAndRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_K2_SetActorLocationAndRotation_ReturnValue) == 0x000AF4, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_K2_SetActorLocationAndRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsValid_ReturnValue_15) == 0x000AF5, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsValid_ReturnValue_15' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_InputActionEvent_Key_15) == 0x000AF8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_InputActionEvent_Key_15' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_HasAuthority_ReturnValue_2) == 0x000B10, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_HasAuthority_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Not_PreBool_ReturnValue_5) == 0x000B11, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Not_PreBool_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_int_Array_Index_Variable_6) == 0x000B14, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_int_Array_Index_Variable_6' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Array_Get_Item_3) == 0x000B18, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x000B20, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Multiply_FloatFloat_ReturnValue_2) == 0x000B24, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Multiply_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_Select_Default) == 0x000B28, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Add_FloatFloat_ReturnValue) == 0x000B2C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsValid_ReturnValue_16) == 0x000B30, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsValid_ReturnValue_16' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_DynamicCast_AsAttachment_Scope_Base) == 0x000B38, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_DynamicCast_AsAttachment_Scope_Base' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_DynamicCast_bSuccess_5) == 0x000B40, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetPlayerController_ReturnValue) == 0x000B48, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetPlayerController_ReturnValue_1) == 0x000B50, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Not_PreBool_ReturnValue_6) == 0x000B58, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Not_PreBool_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetPlayerController_ReturnValue_2) == 0x000B60, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetPlayerController_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BooleanAND_ReturnValue_5) == 0x000B68, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BooleanAND_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetViewTarget_ReturnValue) == 0x000B70, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetViewTarget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_Aim_) == 0x000B78, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_Aim_' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetComponentByClass_ReturnValue_2) == 0x000B80, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetComponentByClass_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetForwardVector_ReturnValue_2) == 0x000B88, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetForwardVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_K2_GetComponentLocation_ReturnValue_4) == 0x000B94, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_K2_GetComponentLocation_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_Speed) == 0x000BA0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_Speed' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsValid_ReturnValue_17) == 0x000BA4, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsValid_ReturnValue_17' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_DynamicCast_AsAttachment_Scope_Base_1) == 0x000BA8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_DynamicCast_AsAttachment_Scope_Base_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_DynamicCast_bSuccess_6) == 0x000BB0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_DynamicCast_bSuccess_6' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_InputActionEvent_Key_16) == 0x000BB8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_InputActionEvent_Key_16' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_Arrest__1) == 0x000BD0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_Arrest__1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_Arrest_) == 0x000BD1, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_Arrest_' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetOverlappingActors_OverlappingActors) == 0x000BD8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetOverlappingActors_OverlappingActors' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Array_Length_ReturnValue_3) == 0x000BE8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_Guard) == 0x000BF0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_Guard' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_WarningTime) == 0x000BF8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_WarningTime' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000BFC, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetComponentByClass_ReturnValue_3) == 0x000C00, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetComponentByClass_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsLocallyControlled_ReturnValue_7) == 0x000C08, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsLocallyControlled_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsValid_ReturnValue_18) == 0x000C09, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsValid_ReturnValue_18' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_int_Variable_1) == 0x000C0C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetAllWidgetsOfClass_FoundWidgets_1) == 0x000C10, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetAllWidgetsOfClass_FoundWidgets_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Array_Length_ReturnValue_4) == 0x000C20, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Array_Length_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsLocallyControlled_ReturnValue_8) == 0x000C24, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsLocallyControlled_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetAllWidgetsOfClass_FoundWidgets_2) == 0x000C28, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetAllWidgetsOfClass_FoundWidgets_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Array_Length_ReturnValue_5) == 0x000C38, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Array_Length_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsLocallyControlled_ReturnValue_9) == 0x000C3C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsLocallyControlled_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_Widget) == 0x000C40, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_Widget' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsValid_ReturnValue_19) == 0x000C48, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsValid_ReturnValue_19' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetPlayerController_ReturnValue_3) == 0x000C50, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetPlayerController_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Create_ReturnValue_7) == 0x000C58, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Create_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Array_Get_Item_4) == 0x000C60, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000C64, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Greater_IntInt_ReturnValue_1) == 0x000C65, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_LessEqual_IntInt_ReturnValue_1) == 0x000C66, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_LessEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_DynamicCast_AsArmor_Light) == 0x000C68, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_DynamicCast_AsArmor_Light' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_DynamicCast_bSuccess_7) == 0x000C70, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_DynamicCast_bSuccess_7' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_DamageArmor_HealthDamage) == 0x000C74, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_DamageArmor_HealthDamage' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Subtract_IntInt_ReturnValue_2) == 0x000C78, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Subtract_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetPlayerController_ReturnValue_4) == 0x000C80, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetPlayerController_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_DynamicCast_AsArmor_Light_1) == 0x000C88, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_DynamicCast_AsArmor_Light_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_DynamicCast_bSuccess_8) == 0x000C90, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_DynamicCast_bSuccess_8' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000C98, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_FinishSpawningActor_ReturnValue) == 0x000CA0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_Hit_result_1) == 0x000CA8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_Hit_result_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsLocallyControlled_ReturnValue_10) == 0x000D30, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsLocallyControlled_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsLocallyControlled_ReturnValue_11) == 0x000D31, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsLocallyControlled_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetControlRotation_ReturnValue_1) == 0x000D34, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetControlRotation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_Crouch_) == 0x000D40, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_Crouch_' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_NotEqual_RotatorRotator_ReturnValue) == 0x000D41, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_NotEqual_RotatorRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BooleanAND_ReturnValue_6) == 0x000D42, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BooleanAND_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsLocallyControlled_ReturnValue_12) == 0x000D43, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsLocallyControlled_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_Slot_2) == 0x000D44, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_Slot_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsLocallyControlled_ReturnValue_13) == 0x000D48, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsLocallyControlled_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_Slot_1) == 0x000D4C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_Slot_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsValid_ReturnValue_20) == 0x000D50, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsValid_ReturnValue_20' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsValid_ReturnValue_21) == 0x000D51, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsValid_ReturnValue_21' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_int_Loop_Counter_Variable_6) == 0x000D54, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_int_Loop_Counter_Variable_6' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Less_IntInt_ReturnValue_1) == 0x000D58, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Add_IntInt_ReturnValue_9) == 0x000D5C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Add_IntInt_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_bool_Variable_3) == 0x000D60, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_Select_Default_1) == 0x000D64, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CreateDelegate_OutputDelegate_4) == 0x000D68, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsValid_ReturnValue_22) == 0x000D78, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsValid_ReturnValue_22' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetAllActorsOfClass_OutActors_1) == 0x000D80, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetAllActorsOfClass_OutActors_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Array_Get_Item_5) == 0x000D90, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Array_Get_Item_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CreateDelegate_OutputDelegate_5) == 0x000D98, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_MakeArray_Array) == 0x000DA8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Array_Length_ReturnValue_6) == 0x000DB8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Array_Length_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Array_Get_Item_6) == 0x000DC0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Array_Get_Item_6' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Less_IntInt_ReturnValue_2) == 0x000DC8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Array_Get_Item_7) == 0x000DD0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Array_Get_Item_7' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Array_Length_ReturnValue_7) == 0x000DD8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Array_Length_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Less_IntInt_ReturnValue_3) == 0x000DDC, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetGrabbedComponent_ReturnValue_1) == 0x000DE0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetGrabbedComponent_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_K2_GetComponentLocation_ReturnValue_5) == 0x000DE8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_K2_GetComponentLocation_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsValid_ReturnValue_23) == 0x000DF4, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsValid_ReturnValue_23' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Not_PreBool_ReturnValue_7) == 0x000DF5, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Not_PreBool_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_ShouldCrouch_) == 0x000DF6, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_ShouldCrouch_' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_Max_strength) == 0x000DF8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_Max_strength' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BooleanAND_ReturnValue_7) == 0x000DFC, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BooleanAND_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Multiply_FloatFloat_ReturnValue_3) == 0x000E00, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Multiply_FloatFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_bool_Variable_4) == 0x000E04, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_bool_Variable_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetPlayerController_ReturnValue_5) == 0x000E08, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetPlayerController_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetPlayerController_ReturnValue_6) == 0x000E10, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetPlayerController_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BooleanOR_ReturnValue_2) == 0x000E18, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BooleanOR_ReturnValue_3) == 0x000E19, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BooleanOR_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetPlayerController_ReturnValue_7) == 0x000E20, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetPlayerController_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_Event_Hit) == 0x000E28, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_Event_Hit' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_object_Variable_2) == 0x000EB0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_object_Variable_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_object_Variable_3) == 0x000EC0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_object_Variable_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_Slot) == 0x000ED0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_Slot' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_Amount) == 0x000ED4, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_Amount' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsFalling_ReturnValue) == 0x000ED8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsFalling_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_struct_Variable_4) == 0x000EE0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_struct_Variable_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_InputActionEvent_Key_5) == 0x000EF8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_InputActionEvent_Key_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_InputActionEvent_Key_17) == 0x000F10, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_InputActionEvent_Key_17' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000F28, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetVelocity_ReturnValue_1) == 0x000F34, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetVelocity_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_VSize_ReturnValue) == 0x000F40, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_VSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Greater_FloatFloat_ReturnValue_1) == 0x000F44, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Greater_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_CheckCanVault_Can_vault_) == 0x000F45, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_CheckCanVault_Can_vault_' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_CheckCanVault_Vault_over_) == 0x000F46, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_CheckCanVault_Vault_over_' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_CheckCanVault_VaultLocation) == 0x000F48, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_CheckCanVault_VaultLocation' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_CheckCanVault_WillCrouch_) == 0x000F54, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_CheckCanVault_WillCrouch_' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetScaledCapsuleHalfHeight_ReturnValue) == 0x000F58, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetScaledCapsuleHalfHeight_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_K2_GetComponentRotation_ReturnValue_1) == 0x000F5C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_K2_GetComponentRotation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_MakeVector_ReturnValue) == 0x000F68, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Add_VectorVector_ReturnValue_2) == 0x000F74, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Add_VectorVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsFalling_ReturnValue_1) == 0x000F80, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsFalling_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_MakeLiteralName_ReturnValue_2) == 0x000F84, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_MakeLiteralName_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_MakeLiteralName_ReturnValue_3) == 0x000F8C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_MakeLiteralName_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_MakeLiteralName_ReturnValue_4) == 0x000F94, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_MakeLiteralName_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_MakeLiteralName_ReturnValue_5) == 0x000F9C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_MakeLiteralName_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_CanUncrouch__Can_) == 0x000FA4, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_CanUncrouch__Can_' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_Event_PreviousFloorImpactNormal) == 0x000FA8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_Event_PreviousFloorImpactNormal' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_Event_PreviousFloorContactNormal) == 0x000FB4, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_Event_PreviousFloorContactNormal' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_Event_PreviousLocation) == 0x000FC0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_Event_PreviousLocation' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_Event_TimeDelta) == 0x000FCC, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_Event_TimeDelta' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetGrabbedComponent_ReturnValue_2) == 0x000FD0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetGrabbedComponent_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Create_ReturnValue_8) == 0x000FD8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Create_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsValid_ReturnValue_24) == 0x000FE0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsValid_ReturnValue_24' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Not_PreBool_ReturnValue_8) == 0x000FE1, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Not_PreBool_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_InputActionEvent_Key_18) == 0x000FE8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_InputActionEvent_Key_18' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_Hit) == 0x001000, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_Hit' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsLocallyControlled_ReturnValue_14) == 0x001088, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsLocallyControlled_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_K2_GetComponentRotation_ReturnValue_2) == 0x00108C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_K2_GetComponentRotation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_K2_GetComponentLocation_ReturnValue_6) == 0x001098, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_K2_GetComponentLocation_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetPlayerController_ReturnValue_8) == 0x0010A8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetPlayerController_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsValid_ReturnValue_25) == 0x0010B0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsValid_ReturnValue_25' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetThisGunStats_Zoom) == 0x0010B4, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetThisGunStats_Zoom' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetThisGunStats_Recoil) == 0x0010B8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetThisGunStats_Recoil' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetThisGunStats_Accuracy) == 0x0010BC, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetThisGunStats_Accuracy' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetThisGunStats_Reload_time) == 0x0010C0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetThisGunStats_Reload_time' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetThisGunStats_Damage) == 0x0010C4, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetThisGunStats_Damage' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetThisGunStats_Bullets) == 0x0010C8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetThisGunStats_Bullets' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetThisGunStats_Zoom_1) == 0x0010CC, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetThisGunStats_Zoom_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetThisGunStats_Recoil_1) == 0x0010D0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetThisGunStats_Recoil_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetThisGunStats_Accuracy_1) == 0x0010D4, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetThisGunStats_Accuracy_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetThisGunStats_Reload_time_1) == 0x0010D8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetThisGunStats_Reload_time_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetThisGunStats_Damage_1) == 0x0010DC, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetThisGunStats_Damage_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetThisGunStats_Bullets_1) == 0x0010E0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetThisGunStats_Bullets_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Multiply_FloatFloat_ReturnValue_4) == 0x0010E4, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Multiply_FloatFloat_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetThisGunStats_Zoom_2) == 0x0010E8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetThisGunStats_Zoom_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetThisGunStats_Recoil_2) == 0x0010EC, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetThisGunStats_Recoil_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetThisGunStats_Accuracy_2) == 0x0010F0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetThisGunStats_Accuracy_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetThisGunStats_Reload_time_2) == 0x0010F4, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetThisGunStats_Reload_time_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetThisGunStats_Damage_2) == 0x0010F8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetThisGunStats_Damage_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetThisGunStats_Bullets_2) == 0x0010FC, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetThisGunStats_Bullets_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Multiply_FloatFloat_ReturnValue_5) == 0x001100, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Multiply_FloatFloat_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_RandomFloatInRange_ReturnValue) == 0x001104, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_InaccuracyFunc_ReturnValue) == 0x001108, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_InaccuracyFunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_bool_Has_Been_Initd_Variable_7) == 0x00110C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_bool_Has_Been_Initd_Variable_7' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable) == 0x00110D, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetVelocity_ReturnValue_2) == 0x001110, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetVelocity_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_VSize_ReturnValue_1) == 0x00111C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_VSize_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Greater_FloatFloat_ReturnValue_2) == 0x001120, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Greater_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_int_Loop_Counter_Variable_7) == 0x001124, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_int_Loop_Counter_Variable_7' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Less_IntInt_ReturnValue_4) == 0x001128, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Less_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Add_IntInt_ReturnValue_10) == 0x00112C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Add_IntInt_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_InaccuracyFunc_ReturnValue_1) == 0x001130, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_InaccuracyFunc_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_InaccuracyFunc_ReturnValue_2) == 0x001134, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_InaccuracyFunc_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetController_ReturnValue_1) == 0x001138, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_MakeVector_ReturnValue_1) == 0x001140, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_MakeVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_DynamicCast_AsRobber_Controller) == 0x001150, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_DynamicCast_AsRobber_Controller' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_DynamicCast_bSuccess_9) == 0x001158, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_DynamicCast_bSuccess_9' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Add_VectorVector_ReturnValue_3) == 0x00115C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Add_VectorVector_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Multiply_VectorFloat_ReturnValue_2) == 0x001168, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Multiply_VectorFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Add_VectorVector_ReturnValue_4) == 0x001174, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Add_VectorVector_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsLocallyControlled_ReturnValue_15) == 0x001180, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsLocallyControlled_ReturnValue_15' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_LineTraceSingle_OutHit_2) == 0x001184, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_LineTraceSingle_OutHit_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_LineTraceSingle_ReturnValue_2) == 0x00120C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_LineTraceSingle_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BreakHitResult_bBlockingHit_1) == 0x00120D, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BreakHitResult_bBlockingHit_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BreakHitResult_bInitialOverlap_1) == 0x00120E, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BreakHitResult_bInitialOverlap_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BreakHitResult_Time_1) == 0x001210, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BreakHitResult_Time_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BreakHitResult_Distance_1) == 0x001214, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BreakHitResult_Distance_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BreakHitResult_Location_1) == 0x001218, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BreakHitResult_Location_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BreakHitResult_ImpactPoint_1) == 0x001224, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BreakHitResult_ImpactPoint_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BreakHitResult_Normal_1) == 0x001230, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BreakHitResult_Normal_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BreakHitResult_ImpactNormal_1) == 0x00123C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BreakHitResult_ImpactNormal_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BreakHitResult_PhysMat_1) == 0x001248, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BreakHitResult_PhysMat_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BreakHitResult_HitActor_1) == 0x001250, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BreakHitResult_HitActor_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BreakHitResult_HitComponent_1) == 0x001258, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BreakHitResult_HitComponent_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BreakHitResult_HitBoneName_1) == 0x001260, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BreakHitResult_HitBoneName_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BreakHitResult_HitItem_1) == 0x001268, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BreakHitResult_HitItem_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BreakHitResult_ElementIndex_1) == 0x00126C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BreakHitResult_ElementIndex_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BreakHitResult_FaceIndex_1) == 0x001270, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BreakHitResult_FaceIndex_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BreakHitResult_TraceStart_1) == 0x001274, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BreakHitResult_TraceStart_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BreakHitResult_TraceEnd_1) == 0x001280, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BreakHitResult_TraceEnd_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetController_ReturnValue_2) == 0x001290, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetController_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_FindLookAtRotation_ReturnValue) == 0x001298, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_FindLookAtRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_DynamicCast_AsRobber_Controller_1) == 0x0012A8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_DynamicCast_AsRobber_Controller_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_DynamicCast_bSuccess_10) == 0x0012B0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_DynamicCast_bSuccess_10' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetForwardVector_ReturnValue_3) == 0x0012B4, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetForwardVector_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Multiply_VectorFloat_ReturnValue_3) == 0x0012C0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Multiply_VectorFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_float_Variable_4) == 0x0012CC, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_float_Variable_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_Select_Default_2) == 0x0012D0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Add_VectorVector_ReturnValue_5) == 0x0012DC, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Add_VectorVector_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_SphereTraceSingle_OutHit) == 0x0012E8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_SphereTraceSingle_OutHit' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_SphereTraceSingle_ReturnValue) == 0x001370, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_SphereTraceSingle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_Event_Amount) == 0x001374, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_Event_Amount' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Add_FloatFloat_ReturnValue_1) == 0x001378, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Add_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CreateDelegate_OutputDelegate_6) == 0x00137C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_Hit_result) == 0x00138C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_Hit_result' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_bool_IsClosed_Variable_7) == 0x001414, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_bool_IsClosed_Variable_7' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetController_ReturnValue_3) == 0x001418, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetController_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_DynamicCast_AsRobber_Controller_2) == 0x001420, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_DynamicCast_AsRobber_Controller_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_DynamicCast_bSuccess_11) == 0x001428, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_DynamicCast_bSuccess_11' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_float_Variable_5) == 0x00142C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_float_Variable_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsValid_ReturnValue_26) == 0x001430, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsValid_ReturnValue_26' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsInViewport_ReturnValue) == 0x001431, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsInViewport_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_bool_Variable_5) == 0x001432, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_bool_Variable_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_Select_Default_3) == 0x001434, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetPlayerController_ReturnValue_9) == 0x001438, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetPlayerController_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetAllActorsOfClass_OutActors_2) == 0x001440, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetAllActorsOfClass_OutActors_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Array_Find_ReturnValue) == 0x001450, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x001454, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_Tools) == 0x001458, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_Tools' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Array_Get_Item_8) == 0x001468, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Array_Get_Item_8' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BooleanOR_ReturnValue_4) == 0x001470, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BooleanOR_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Array_Length_ReturnValue_8) == 0x001474, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Array_Length_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Create_ReturnValue_9) == 0x001478, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Create_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Less_IntInt_ReturnValue_5) == 0x001480, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Less_IntInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Not_PreBool_ReturnValue_9) == 0x001481, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Not_PreBool_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BooleanAND_ReturnValue_8) == 0x001482, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BooleanAND_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_Event_DamageTaken) == 0x001484, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_Event_DamageTaken' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_Event_Attacker_location) == 0x001488, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_Event_Attacker_location' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_Event_ShowDirection_) == 0x001494, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_Event_ShowDirection_' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_Event_Color) == 0x001498, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_Event_Color' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_Event_InteractDescription) == 0x0014A8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_Event_InteractDescription' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Conv_IntToFloat_ReturnValue_1) == 0x0014B8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Conv_IntToFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_Select_Default_4) == 0x0014BC, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_Select_Default_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsServer_ReturnValue) == 0x0014C0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsValid_ReturnValue_27) == 0x0014C1, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsValid_ReturnValue_27' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_bool_Variable_6) == 0x0014C2, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_bool_Variable_6' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_Compressed_buffer) == 0x0014C8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_Compressed_buffer' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_Desired_sample_rate) == 0x0014D8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_Desired_sample_rate' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_Select_Default_5) == 0x0014DC, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_Select_Default_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_DecompressVoice_DestBuffer) == 0x0014E0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_DecompressVoice_DestBuffer' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_DecompressVoice_ReturnValue) == 0x0014F0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_DecompressVoice_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Multiply_FloatFloat_ReturnValue_6) == 0x0014F4, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Multiply_FloatFloat_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0014F8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Multiply_FloatFloat_ReturnValue_7) == 0x0014FC, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Multiply_FloatFloat_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Multiply_FloatFloat_ReturnValue_8) == 0x001500, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Multiply_FloatFloat_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CreateDelegate_OutputDelegate_7) == 0x001504, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetVoiceOptimalSampleRate_ReturnValue) == 0x001514, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetVoiceOptimalSampleRate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_ConstructSteamCoreVoice_ReturnValue) == 0x001518, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_ConstructSteamCoreVoice_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_int_Array_Index_Variable_7) == 0x001520, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_int_Array_Index_Variable_7' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Array_Get_Item_9) == 0x001528, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Array_Get_Item_9' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetSteamID_Pure_ReturnValue) == 0x001530, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetSteamID_Pure_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsLocallyControlled_ReturnValue_16) == 0x001538, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsLocallyControlled_ReturnValue_16' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetAvailableVoice_CompressedBytes) == 0x00153C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetAvailableVoice_CompressedBytes' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetAvailableVoice_UncompressedBytes) == 0x001540, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetAvailableVoice_UncompressedBytes' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetAvailableVoice_ReturnValue) == 0x001544, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetAvailableVoice_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_CompressedBuffer) == 0x001548, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_CompressedBuffer' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x001558, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetVoice_DestBuffer) == 0x001560, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetVoice_DestBuffer' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetVoice_BytesWritten) == 0x001570, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetVoice_BytesWritten' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetVoice_ReturnValue) == 0x001574, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetVoice_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_InputKeyEvent_Key) == 0x001578, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_InputKeyEvent_Key' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x001590, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BLoggedOn_ReturnValue) == 0x001591, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BLoggedOn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_CheckLoseFunc_Game_over_) == 0x001592, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_CheckLoseFunc_Game_over_' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_Damage) == 0x001594, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_Damage' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BooleanOR_ReturnValue_5) == 0x001598, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BooleanOR_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Not_PreBool_ReturnValue_10) == 0x001599, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Not_PreBool_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BooleanOR_ReturnValue_6) == 0x00159A, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BooleanOR_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BooleanAND_ReturnValue_9) == 0x00159B, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BooleanAND_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_bool_Variable_7) == 0x00159C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_bool_Variable_7' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_EqualEqual_IntInt_ReturnValue_2) == 0x00159D, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_EqualEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_Select_Default_6) == 0x0015A0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_Select_Default_6' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Array_Length_ReturnValue_9) == 0x0015AC, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Array_Length_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Greater_IntInt_ReturnValue_2) == 0x0015B0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Greater_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Array_Length_ReturnValue_10) == 0x0015B4, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Array_Length_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Greater_IntInt_ReturnValue_3) == 0x0015B8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Greater_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Create_ReturnValue_10) == 0x0015C0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Create_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetAllWidgetsOfClass_FoundWidgets_3) == 0x0015C8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetAllWidgetsOfClass_FoundWidgets_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsLocallyControlled_ReturnValue_17) == 0x0015D8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsLocallyControlled_ReturnValue_17' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Array_Get_Item_10) == 0x0015E0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Array_Get_Item_10' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Array_Length_ReturnValue_11) == 0x0015E8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Array_Length_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_int_Loop_Counter_Variable_8) == 0x0015EC, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_int_Loop_Counter_Variable_8' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Less_IntInt_ReturnValue_6) == 0x0015F0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Less_IntInt_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Less_IntInt_ReturnValue_7) == 0x0015F1, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Less_IntInt_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Add_IntInt_ReturnValue_11) == 0x0015F4, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Add_IntInt_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetAllActorsOfClass_OutActors_3) == 0x0015F8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetAllActorsOfClass_OutActors_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Array_Get_Item_11) == 0x001608, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Array_Get_Item_11' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Array_Length_ReturnValue_12) == 0x001610, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Array_Length_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Less_IntInt_ReturnValue_8) == 0x001614, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Less_IntInt_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Array_Find_ReturnValue_1) == 0x001618, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Array_Find_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Array_Get_Item_12) == 0x001620, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Array_Get_Item_12' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_EqualEqual_ObjectObject_ReturnValue_1) == 0x001628, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_EqualEqual_ObjectObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetDistanceTo_ReturnValue) == 0x00162C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetDistanceTo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_DynamicCast_AsRobber_Player_State) == 0x001630, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_DynamicCast_AsRobber_Player_State' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_DynamicCast_bSuccess_12) == 0x001638, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_DynamicCast_bSuccess_12' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x001639, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Array_Contains_ReturnValue) == 0x00163A, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Array_Add_ReturnValue) == 0x00163C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_Event_Alerted_) == 0x001640, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_Event_Alerted_' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_NotEqual_ObjectObject_ReturnValue) == 0x001641, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_NotEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BooleanAND_ReturnValue_10) == 0x001642, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BooleanAND_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsValid_ReturnValue_28) == 0x001643, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsValid_ReturnValue_28' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsValid_ReturnValue_29) == 0x001644, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsValid_ReturnValue_29' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsValid_ReturnValue_30) == 0x001645, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsValid_ReturnValue_30' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsLocallyControlled_ReturnValue_18) == 0x001646, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsLocallyControlled_ReturnValue_18' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_Speaking_) == 0x001647, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_Speaking_' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_DynamicCast_AsRobber_Player_State_1) == 0x001648, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_DynamicCast_AsRobber_Player_State_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_DynamicCast_bSuccess_13) == 0x001650, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_DynamicCast_bSuccess_13' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetVelocity_ReturnValue_3) == 0x001654, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetVelocity_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_VSize_ReturnValue_2) == 0x001660, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_VSize_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Greater_FloatFloat_ReturnValue_3) == 0x001664, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Greater_FloatFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_float_Variable_6) == 0x001668, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_float_Variable_6' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetVelocity_ReturnValue_4) == 0x00166C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetVelocity_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_VSize_ReturnValue_3) == 0x001678, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_VSize_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsLocallyControlled_ReturnValue_19) == 0x00167C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsLocallyControlled_ReturnValue_19' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Greater_FloatFloat_ReturnValue_4) == 0x00167D, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Greater_FloatFloat_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsLocallyControlled_ReturnValue_20) == 0x00167E, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsLocallyControlled_ReturnValue_20' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsLocallyControlled_ReturnValue_21) == 0x00167F, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsLocallyControlled_ReturnValue_21' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetSteamID_Pure_ReturnValue_1) == 0x001680, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetSteamID_Pure_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_CheckLoseFunc_Game_over__1) == 0x001688, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_CheckLoseFunc_Game_over__1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsValid_ReturnValue_31) == 0x001689, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsValid_ReturnValue_31' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_DynamicCast_AsRobber_Player_State_2) == 0x001690, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_DynamicCast_AsRobber_Player_State_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_DynamicCast_bSuccess_14) == 0x001698, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_DynamicCast_bSuccess_14' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_DynamicCast_AsRobber_Player_State_3) == 0x0016A0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_DynamicCast_AsRobber_Player_State_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_DynamicCast_bSuccess_15) == 0x0016A8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_DynamicCast_bSuccess_15' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetGameInstance_ReturnValue) == 0x0016B0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetGameInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_DynamicCast_AsRobber_GI) == 0x0016B8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_DynamicCast_AsRobber_GI' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_DynamicCast_bSuccess_16) == 0x0016C0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_DynamicCast_bSuccess_16' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetController_ReturnValue_4) == 0x0016C8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetController_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Greater_IntInt_ReturnValue_4) == 0x0016D0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Greater_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsValid_ReturnValue_32) == 0x0016D1, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsValid_ReturnValue_32' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_DynamicCast_AsRobber_Controller_3) == 0x0016D8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_DynamicCast_AsRobber_Controller_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_DynamicCast_bSuccess_17) == 0x0016E0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_DynamicCast_bSuccess_17' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_float_Variable_7) == 0x0016E4, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_float_Variable_7' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsLocallyControlled_ReturnValue_22) == 0x0016E8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsLocallyControlled_ReturnValue_22' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_int_Array_Index_Variable_8) == 0x0016EC, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_int_Array_Index_Variable_8' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsValid_ReturnValue_33) == 0x0016F0, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsValid_ReturnValue_33' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Array_Get_Item_13) == 0x0016F8, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Array_Get_Item_13' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Not_PreBool_ReturnValue_11) == 0x001700, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Not_PreBool_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BooleanOR_ReturnValue_7) == 0x001701, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BooleanOR_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_BooleanAND_ReturnValue_11) == 0x001702, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_BooleanAND_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsLocallyControlled_ReturnValue_23) == 0x001703, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsLocallyControlled_ReturnValue_23' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_bool_Has_Been_Initd_Variable_8) == 0x001704, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_bool_Has_Been_Initd_Variable_8' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_bool_Variable_8) == 0x001705, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_bool_Variable_8' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_Select_Default_7) == 0x001708, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_Select_Default_7' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsLocallyControlled_ReturnValue_24) == 0x00170C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsLocallyControlled_ReturnValue_24' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_StoreStats_ReturnValue) == 0x00170D, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_StoreStats_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Add_IntInt_ReturnValue_12) == 0x001710, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Add_IntInt_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_StoreStats_ReturnValue_1) == 0x001714, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_StoreStats_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Multiply_FloatFloat_ReturnValue_9) == 0x001718, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Multiply_FloatFloat_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Multiply_FloatFloat_ReturnValue_10) == 0x00171C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Multiply_FloatFloat_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Multiply_FloatFloat_ReturnValue_11) == 0x001720, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Multiply_FloatFloat_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GreaterEqual_IntInt_ReturnValue_1) == 0x001724, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GreaterEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_MakeLiteralFloat_ReturnValue_2) == 0x001728, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_MakeLiteralFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Divide_FloatFloat_ReturnValue_3) == 0x00172C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Divide_FloatFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Multiply_FloatFloat_ReturnValue_12) == 0x001730, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Multiply_FloatFloat_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Divide_FloatFloat_ReturnValue_4) == 0x001734, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Divide_FloatFloat_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Subtract_FloatFloat_ReturnValue_1) == 0x001738, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Subtract_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_DynamicCast_AsArmor_Light_2) == 0x001740, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_DynamicCast_AsArmor_Light_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_DynamicCast_bSuccess_18) == 0x001748, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_DynamicCast_bSuccess_18' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Greater_IntInt_ReturnValue_5) == 0x001749, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Greater_IntInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Multiply_IntFloat_ReturnValue) == 0x00174C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Multiply_IntFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Round_ReturnValue_1) == 0x001750, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Round_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_CustomEvent_Duration) == 0x001754, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_CustomEvent_Duration' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_Add_IntInt_ReturnValue_13) == 0x001758, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_Add_IntInt_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, Temp_bool_IsClosed_Variable_8) == 0x00175C, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::Temp_bool_IsClosed_Variable_8' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetGameInstance_ReturnValue_1) == 0x001760, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetGameInstance_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_DynamicCast_AsRobber_GI_1) == 0x001768, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_DynamicCast_AsRobber_GI_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, K2Node_DynamicCast_bSuccess_19) == 0x001770, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::K2Node_DynamicCast_bSuccess_19' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsValidClass_ReturnValue) == 0x001771, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetActorOfClass_ReturnValue_1) == 0x001778, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetActorOfClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_GetTotalSeconds_ReturnValue) == 0x001780, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_GetTotalSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_FTrunc_ReturnValue_1) == 0x001784, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_FTrunc_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_LessEqual_IntInt_ReturnValue_2) == 0x001788, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_LessEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter, CallFunc_IsLocallyControlled_ReturnValue_25) == 0x001789, "Member 'PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter::CallFunc_IsLocallyControlled_ReturnValue_25' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_ExecuteUbergraph_PlayerCharacter;
 
 // Function PlayerCharacter.PlayerCharacter_C.GiveImmunityLevel
 // 0x0004 (0x0004 - 0x0000)
@@ -1465,9 +827,7 @@ struct PlayerCharacter_C_GiveImmunityLevel final
 public:
 	float                                         Duration;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_GiveImmunityLevel) == 0x000004, "Wrong alignment on PlayerCharacter_C_GiveImmunityLevel");
-static_assert(sizeof(PlayerCharacter_C_GiveImmunityLevel) == 0x000004, "Wrong size on PlayerCharacter_C_GiveImmunityLevel");
-static_assert(offsetof(PlayerCharacter_C_GiveImmunityLevel, Duration) == 0x000000, "Member 'PlayerCharacter_C_GiveImmunityLevel::Duration' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_GiveImmunityLevel;
 
 // Function PlayerCharacter.PlayerCharacter_C.SetSpeaking
 // 0x0001 (0x0001 - 0x0000)
@@ -1476,9 +836,7 @@ struct PlayerCharacter_C_SetSpeaking final
 public:
 	bool                                          Speaking_;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerCharacter_C_SetSpeaking) == 0x000001, "Wrong alignment on PlayerCharacter_C_SetSpeaking");
-static_assert(sizeof(PlayerCharacter_C_SetSpeaking) == 0x000001, "Wrong size on PlayerCharacter_C_SetSpeaking");
-static_assert(offsetof(PlayerCharacter_C_SetSpeaking, Speaking_) == 0x000000, "Member 'PlayerCharacter_C_SetSpeaking::Speaking_' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_SetSpeaking;
 
 // Function PlayerCharacter.PlayerCharacter_C.SetPoliceAlerted
 // 0x0001 (0x0001 - 0x0000)
@@ -1487,9 +845,7 @@ struct PlayerCharacter_C_SetPoliceAlerted final
 public:
 	bool                                          Alerted_;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerCharacter_C_SetPoliceAlerted) == 0x000001, "Wrong alignment on PlayerCharacter_C_SetPoliceAlerted");
-static_assert(sizeof(PlayerCharacter_C_SetPoliceAlerted) == 0x000001, "Wrong size on PlayerCharacter_C_SetPoliceAlerted");
-static_assert(offsetof(PlayerCharacter_C_SetPoliceAlerted, Alerted_) == 0x000000, "Member 'PlayerCharacter_C_SetPoliceAlerted::Alerted_' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_SetPoliceAlerted;
 
 // Function PlayerCharacter.PlayerCharacter_C.FallDamage
 // 0x0004 (0x0004 - 0x0000)
@@ -1498,9 +854,7 @@ struct PlayerCharacter_C_FallDamage final
 public:
 	int32                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_FallDamage) == 0x000004, "Wrong alignment on PlayerCharacter_C_FallDamage");
-static_assert(sizeof(PlayerCharacter_C_FallDamage) == 0x000004, "Wrong size on PlayerCharacter_C_FallDamage");
-static_assert(offsetof(PlayerCharacter_C_FallDamage, Damage) == 0x000000, "Member 'PlayerCharacter_C_FallDamage::Damage' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_FallDamage;
 
 // Function PlayerCharacter.PlayerCharacter_C.SendAudioData
 // 0x0010 (0x0010 - 0x0000)
@@ -1509,9 +863,7 @@ struct PlayerCharacter_C_SendAudioData final
 public:
 	TArray<uint8>                                 CompressedBuffer;                                  // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PlayerCharacter_C_SendAudioData) == 0x000008, "Wrong alignment on PlayerCharacter_C_SendAudioData");
-static_assert(sizeof(PlayerCharacter_C_SendAudioData) == 0x000010, "Wrong size on PlayerCharacter_C_SendAudioData");
-static_assert(offsetof(PlayerCharacter_C_SendAudioData, CompressedBuffer) == 0x000000, "Member 'PlayerCharacter_C_SendAudioData::CompressedBuffer' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_SendAudioData;
 
 // Function PlayerCharacter.PlayerCharacter_C.replicateAudio
 // 0x0018 (0x0018 - 0x0000)
@@ -1521,10 +873,7 @@ public:
 	TArray<uint8>                                 Compressed_buffer;                                 // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	int32                                         Desired_sample_rate;                               // 0x0010(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_replicateAudio) == 0x000008, "Wrong alignment on PlayerCharacter_C_replicateAudio");
-static_assert(sizeof(PlayerCharacter_C_replicateAudio) == 0x000018, "Wrong size on PlayerCharacter_C_replicateAudio");
-static_assert(offsetof(PlayerCharacter_C_replicateAudio, Compressed_buffer) == 0x000000, "Member 'PlayerCharacter_C_replicateAudio::Compressed_buffer' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_replicateAudio, Desired_sample_rate) == 0x000010, "Member 'PlayerCharacter_C_replicateAudio::Desired_sample_rate' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_replicateAudio;
 
 // Function PlayerCharacter.PlayerCharacter_C.SetInteractDescriptionInterfaceCall
 // 0x0010 (0x0010 - 0x0000)
@@ -1533,9 +882,7 @@ struct PlayerCharacter_C_SetInteractDescriptionInterfaceCall final
 public:
 	class FString                                 InteractDescription_0;                             // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_SetInteractDescriptionInterfaceCall) == 0x000008, "Wrong alignment on PlayerCharacter_C_SetInteractDescriptionInterfaceCall");
-static_assert(sizeof(PlayerCharacter_C_SetInteractDescriptionInterfaceCall) == 0x000010, "Wrong size on PlayerCharacter_C_SetInteractDescriptionInterfaceCall");
-static_assert(offsetof(PlayerCharacter_C_SetInteractDescriptionInterfaceCall, InteractDescription_0) == 0x000000, "Member 'PlayerCharacter_C_SetInteractDescriptionInterfaceCall::InteractDescription_0' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_SetInteractDescriptionInterfaceCall;
 
 // Function PlayerCharacter.PlayerCharacter_C.HitmarkerInterfaceCall
 // 0x0010 (0x0010 - 0x0000)
@@ -1544,9 +891,7 @@ struct PlayerCharacter_C_HitmarkerInterfaceCall final
 public:
 	struct FLinearColor                           Color;                                             // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_HitmarkerInterfaceCall) == 0x000004, "Wrong alignment on PlayerCharacter_C_HitmarkerInterfaceCall");
-static_assert(sizeof(PlayerCharacter_C_HitmarkerInterfaceCall) == 0x000010, "Wrong size on PlayerCharacter_C_HitmarkerInterfaceCall");
-static_assert(offsetof(PlayerCharacter_C_HitmarkerInterfaceCall, Color) == 0x000000, "Member 'PlayerCharacter_C_HitmarkerInterfaceCall::Color' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_HitmarkerInterfaceCall;
 
 // Function PlayerCharacter.PlayerCharacter_C.TakeDamageInterface
 // 0x0014 (0x0014 - 0x0000)
@@ -1557,11 +902,7 @@ public:
 	struct FVector                                Attacker_location;                                 // 0x0004(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ShowDirection_;                                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerCharacter_C_TakeDamageInterface) == 0x000004, "Wrong alignment on PlayerCharacter_C_TakeDamageInterface");
-static_assert(sizeof(PlayerCharacter_C_TakeDamageInterface) == 0x000014, "Wrong size on PlayerCharacter_C_TakeDamageInterface");
-static_assert(offsetof(PlayerCharacter_C_TakeDamageInterface, DamageTaken) == 0x000000, "Member 'PlayerCharacter_C_TakeDamageInterface::DamageTaken' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_TakeDamageInterface, Attacker_location) == 0x000004, "Member 'PlayerCharacter_C_TakeDamageInterface::Attacker_location' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_TakeDamageInterface, ShowDirection_) == 0x000010, "Member 'PlayerCharacter_C_TakeDamageInterface::ShowDirection_' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_TakeDamageInterface;
 
 // Function PlayerCharacter.PlayerCharacter_C.SpawnToolsServer
 // 0x0010 (0x0010 - 0x0000)
@@ -1570,9 +911,7 @@ struct PlayerCharacter_C_SpawnToolsServer final
 public:
 	TArray<class UClass*>                         Tools;                                             // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PlayerCharacter_C_SpawnToolsServer) == 0x000008, "Wrong alignment on PlayerCharacter_C_SpawnToolsServer");
-static_assert(sizeof(PlayerCharacter_C_SpawnToolsServer) == 0x000010, "Wrong size on PlayerCharacter_C_SpawnToolsServer");
-static_assert(offsetof(PlayerCharacter_C_SpawnToolsServer, Tools) == 0x000000, "Member 'PlayerCharacter_C_SpawnToolsServer::Tools' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_SpawnToolsServer;
 
 // Function PlayerCharacter.PlayerCharacter_C.InteractCustom
 // 0x0088 (0x0088 - 0x0000)
@@ -1581,9 +920,7 @@ struct PlayerCharacter_C_InteractCustom final
 public:
 	struct FHitResult                             Hit_result;                                        // 0x0000(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(PlayerCharacter_C_InteractCustom) == 0x000004, "Wrong alignment on PlayerCharacter_C_InteractCustom");
-static_assert(sizeof(PlayerCharacter_C_InteractCustom) == 0x000088, "Wrong size on PlayerCharacter_C_InteractCustom");
-static_assert(offsetof(PlayerCharacter_C_InteractCustom, Hit_result) == 0x000000, "Member 'PlayerCharacter_C_InteractCustom::Hit_result' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_InteractCustom;
 
 // Function PlayerCharacter.PlayerCharacter_C.AddEXP
 // 0x0004 (0x0004 - 0x0000)
@@ -1592,9 +929,7 @@ struct PlayerCharacter_C_AddEXP final
 public:
 	float                                         Amount;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_AddEXP) == 0x000004, "Wrong alignment on PlayerCharacter_C_AddEXP");
-static_assert(sizeof(PlayerCharacter_C_AddEXP) == 0x000004, "Wrong size on PlayerCharacter_C_AddEXP");
-static_assert(offsetof(PlayerCharacter_C_AddEXP, Amount) == 0x000000, "Member 'PlayerCharacter_C_AddEXP::Amount' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_AddEXP;
 
 // Function PlayerCharacter.PlayerCharacter_C.PickupItemMultiHost
 // 0x0088 (0x0088 - 0x0000)
@@ -1603,9 +938,7 @@ struct PlayerCharacter_C_PickupItemMultiHost final
 public:
 	struct FHitResult                             Hit;                                               // 0x0000(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(PlayerCharacter_C_PickupItemMultiHost) == 0x000004, "Wrong alignment on PlayerCharacter_C_PickupItemMultiHost");
-static_assert(sizeof(PlayerCharacter_C_PickupItemMultiHost) == 0x000088, "Wrong size on PlayerCharacter_C_PickupItemMultiHost");
-static_assert(offsetof(PlayerCharacter_C_PickupItemMultiHost, Hit) == 0x000000, "Member 'PlayerCharacter_C_PickupItemMultiHost::Hit' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_PickupItemMultiHost;
 
 // Function PlayerCharacter.PlayerCharacter_C.OnWalkingOffLedge
 // 0x0028 (0x0028 - 0x0000)
@@ -1617,12 +950,7 @@ public:
 	struct FVector                                PreviousLocation;                                  // 0x0018(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TimeDelta;                                         // 0x0024(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_OnWalkingOffLedge) == 0x000004, "Wrong alignment on PlayerCharacter_C_OnWalkingOffLedge");
-static_assert(sizeof(PlayerCharacter_C_OnWalkingOffLedge) == 0x000028, "Wrong size on PlayerCharacter_C_OnWalkingOffLedge");
-static_assert(offsetof(PlayerCharacter_C_OnWalkingOffLedge, PreviousFloorImpactNormal) == 0x000000, "Member 'PlayerCharacter_C_OnWalkingOffLedge::PreviousFloorImpactNormal' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_OnWalkingOffLedge, PreviousFloorContactNormal) == 0x00000C, "Member 'PlayerCharacter_C_OnWalkingOffLedge::PreviousFloorContactNormal' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_OnWalkingOffLedge, PreviousLocation) == 0x000018, "Member 'PlayerCharacter_C_OnWalkingOffLedge::PreviousLocation' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_OnWalkingOffLedge, TimeDelta) == 0x000024, "Member 'PlayerCharacter_C_OnWalkingOffLedge::TimeDelta' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_OnWalkingOffLedge;
 
 // Function PlayerCharacter.PlayerCharacter_C.SetReserveBulletsServer
 // 0x0008 (0x0008 - 0x0000)
@@ -1632,10 +960,7 @@ public:
 	int32                                         Slot;                                              // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Amount;                                            // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_SetReserveBulletsServer) == 0x000004, "Wrong alignment on PlayerCharacter_C_SetReserveBulletsServer");
-static_assert(sizeof(PlayerCharacter_C_SetReserveBulletsServer) == 0x000008, "Wrong size on PlayerCharacter_C_SetReserveBulletsServer");
-static_assert(offsetof(PlayerCharacter_C_SetReserveBulletsServer, Slot) == 0x000000, "Member 'PlayerCharacter_C_SetReserveBulletsServer::Slot' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetReserveBulletsServer, Amount) == 0x000004, "Member 'PlayerCharacter_C_SetReserveBulletsServer::Amount' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_SetReserveBulletsServer;
 
 // Function PlayerCharacter.PlayerCharacter_C.OnLanded
 // 0x0088 (0x0088 - 0x0000)
@@ -1644,9 +969,7 @@ struct PlayerCharacter_C_OnLanded final
 public:
 	struct FHitResult                             Hit;                                               // 0x0000(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(PlayerCharacter_C_OnLanded) == 0x000004, "Wrong alignment on PlayerCharacter_C_OnLanded");
-static_assert(sizeof(PlayerCharacter_C_OnLanded) == 0x000088, "Wrong size on PlayerCharacter_C_OnLanded");
-static_assert(offsetof(PlayerCharacter_C_OnLanded, Hit) == 0x000000, "Member 'PlayerCharacter_C_OnLanded::Hit' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_OnLanded;
 
 // Function PlayerCharacter.PlayerCharacter_C.InterpolateRagdollToTarget
 // 0x0008 (0x0008 - 0x0000)
@@ -1657,10 +980,7 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Max_strength;                                      // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_InterpolateRagdollToTarget) == 0x000004, "Wrong alignment on PlayerCharacter_C_InterpolateRagdollToTarget");
-static_assert(sizeof(PlayerCharacter_C_InterpolateRagdollToTarget) == 0x000008, "Wrong size on PlayerCharacter_C_InterpolateRagdollToTarget");
-static_assert(offsetof(PlayerCharacter_C_InterpolateRagdollToTarget, ShouldCrouch_) == 0x000000, "Member 'PlayerCharacter_C_InterpolateRagdollToTarget::ShouldCrouch_' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InterpolateRagdollToTarget, Max_strength) == 0x000004, "Member 'PlayerCharacter_C_InterpolateRagdollToTarget::Max_strength' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_InterpolateRagdollToTarget;
 
 // Function PlayerCharacter.PlayerCharacter_C.SetupGunMulti
 // 0x0004 (0x0004 - 0x0000)
@@ -1669,9 +989,7 @@ struct PlayerCharacter_C_SetupGunMulti final
 public:
 	int32                                         Slot;                                              // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_SetupGunMulti) == 0x000004, "Wrong alignment on PlayerCharacter_C_SetupGunMulti");
-static_assert(sizeof(PlayerCharacter_C_SetupGunMulti) == 0x000004, "Wrong size on PlayerCharacter_C_SetupGunMulti");
-static_assert(offsetof(PlayerCharacter_C_SetupGunMulti, Slot) == 0x000000, "Member 'PlayerCharacter_C_SetupGunMulti::Slot' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_SetupGunMulti;
 
 // Function PlayerCharacter.PlayerCharacter_C.SetupGunServer
 // 0x0004 (0x0004 - 0x0000)
@@ -1680,9 +998,7 @@ struct PlayerCharacter_C_SetupGunServer final
 public:
 	int32                                         Slot;                                              // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_SetupGunServer) == 0x000004, "Wrong alignment on PlayerCharacter_C_SetupGunServer");
-static_assert(sizeof(PlayerCharacter_C_SetupGunServer) == 0x000004, "Wrong size on PlayerCharacter_C_SetupGunServer");
-static_assert(offsetof(PlayerCharacter_C_SetupGunServer, Slot) == 0x000000, "Member 'PlayerCharacter_C_SetupGunServer::Slot' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_SetupGunServer;
 
 // Function PlayerCharacter.PlayerCharacter_C.ServerCrouch
 // 0x0001 (0x0001 - 0x0000)
@@ -1691,9 +1007,7 @@ struct PlayerCharacter_C_ServerCrouch final
 public:
 	bool                                          Crouch_;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerCharacter_C_ServerCrouch) == 0x000001, "Wrong alignment on PlayerCharacter_C_ServerCrouch");
-static_assert(sizeof(PlayerCharacter_C_ServerCrouch) == 0x000001, "Wrong size on PlayerCharacter_C_ServerCrouch");
-static_assert(offsetof(PlayerCharacter_C_ServerCrouch, Crouch_) == 0x000000, "Member 'PlayerCharacter_C_ServerCrouch::Crouch_' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_ServerCrouch;
 
 // Function PlayerCharacter.PlayerCharacter_C.ShootMulti
 // 0x0088 (0x0088 - 0x0000)
@@ -1702,9 +1016,7 @@ struct PlayerCharacter_C_ShootMulti final
 public:
 	struct FHitResult                             Hit_result;                                        // 0x0000(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(PlayerCharacter_C_ShootMulti) == 0x000004, "Wrong alignment on PlayerCharacter_C_ShootMulti");
-static_assert(sizeof(PlayerCharacter_C_ShootMulti) == 0x000088, "Wrong size on PlayerCharacter_C_ShootMulti");
-static_assert(offsetof(PlayerCharacter_C_ShootMulti, Hit_result) == 0x000000, "Member 'PlayerCharacter_C_ShootMulti::Hit_result' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_ShootMulti;
 
 // Function PlayerCharacter.PlayerCharacter_C.RemoveWarning
 // 0x0008 (0x0008 - 0x0000)
@@ -1713,9 +1025,7 @@ struct PlayerCharacter_C_RemoveWarning final
 public:
 	class UWarningDirectionIndicator_C*           Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_RemoveWarning) == 0x000008, "Wrong alignment on PlayerCharacter_C_RemoveWarning");
-static_assert(sizeof(PlayerCharacter_C_RemoveWarning) == 0x000008, "Wrong size on PlayerCharacter_C_RemoveWarning");
-static_assert(offsetof(PlayerCharacter_C_RemoveWarning, Widget) == 0x000000, "Member 'PlayerCharacter_C_RemoveWarning::Widget' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_RemoveWarning;
 
 // Function PlayerCharacter.PlayerCharacter_C.ShowWarning
 // 0x0010 (0x0010 - 0x0000)
@@ -1725,10 +1035,7 @@ public:
 	class AActor*                                 Guard;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         WarningTime;                                       // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_ShowWarning) == 0x000008, "Wrong alignment on PlayerCharacter_C_ShowWarning");
-static_assert(sizeof(PlayerCharacter_C_ShowWarning) == 0x000010, "Wrong size on PlayerCharacter_C_ShowWarning");
-static_assert(offsetof(PlayerCharacter_C_ShowWarning, Guard) == 0x000000, "Member 'PlayerCharacter_C_ShowWarning::Guard' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShowWarning, WarningTime) == 0x000008, "Member 'PlayerCharacter_C_ShowWarning::WarningTime' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_ShowWarning;
 
 // Function PlayerCharacter.PlayerCharacter_C.ExitWarningArea
 // 0x0001 (0x0001 - 0x0000)
@@ -1737,9 +1044,7 @@ struct PlayerCharacter_C_ExitWarningArea final
 public:
 	bool                                          Arrest_;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerCharacter_C_ExitWarningArea) == 0x000001, "Wrong alignment on PlayerCharacter_C_ExitWarningArea");
-static_assert(sizeof(PlayerCharacter_C_ExitWarningArea) == 0x000001, "Wrong size on PlayerCharacter_C_ExitWarningArea");
-static_assert(offsetof(PlayerCharacter_C_ExitWarningArea, Arrest_) == 0x000000, "Member 'PlayerCharacter_C_ExitWarningArea::Arrest_' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_ExitWarningArea;
 
 // Function PlayerCharacter.PlayerCharacter_C.EnterWarningArea
 // 0x0001 (0x0001 - 0x0000)
@@ -1748,9 +1053,7 @@ struct PlayerCharacter_C_EnterWarningArea final
 public:
 	bool                                          Arrest_;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerCharacter_C_EnterWarningArea) == 0x000001, "Wrong alignment on PlayerCharacter_C_EnterWarningArea");
-static_assert(sizeof(PlayerCharacter_C_EnterWarningArea) == 0x000001, "Wrong size on PlayerCharacter_C_EnterWarningArea");
-static_assert(offsetof(PlayerCharacter_C_EnterWarningArea, Arrest_) == 0x000000, "Member 'PlayerCharacter_C_EnterWarningArea::Arrest_' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_EnterWarningArea;
 
 // Function PlayerCharacter.PlayerCharacter_C.ChangeMovementSpeed_Server
 // 0x0004 (0x0004 - 0x0000)
@@ -1759,9 +1062,7 @@ struct PlayerCharacter_C_ChangeMovementSpeed_Server final
 public:
 	float                                         Speed;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_ChangeMovementSpeed_Server) == 0x000004, "Wrong alignment on PlayerCharacter_C_ChangeMovementSpeed_Server");
-static_assert(sizeof(PlayerCharacter_C_ChangeMovementSpeed_Server) == 0x000004, "Wrong size on PlayerCharacter_C_ChangeMovementSpeed_Server");
-static_assert(offsetof(PlayerCharacter_C_ChangeMovementSpeed_Server, Speed) == 0x000000, "Member 'PlayerCharacter_C_ChangeMovementSpeed_Server::Speed' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_ChangeMovementSpeed_Server;
 
 // Function PlayerCharacter.PlayerCharacter_C.AimServer
 // 0x0001 (0x0001 - 0x0000)
@@ -1770,9 +1071,7 @@ struct PlayerCharacter_C_AimServer final
 public:
 	bool                                          Aim_;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerCharacter_C_AimServer) == 0x000001, "Wrong alignment on PlayerCharacter_C_AimServer");
-static_assert(sizeof(PlayerCharacter_C_AimServer) == 0x000001, "Wrong size on PlayerCharacter_C_AimServer");
-static_assert(offsetof(PlayerCharacter_C_AimServer, Aim_) == 0x000000, "Member 'PlayerCharacter_C_AimServer::Aim_' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_AimServer;
 
 // Function PlayerCharacter.PlayerCharacter_C.ForceSwitch
 // 0x0004 (0x0004 - 0x0000)
@@ -1781,9 +1080,7 @@ struct PlayerCharacter_C_ForceSwitch final
 public:
 	int32                                         Slot;                                              // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_ForceSwitch) == 0x000004, "Wrong alignment on PlayerCharacter_C_ForceSwitch");
-static_assert(sizeof(PlayerCharacter_C_ForceSwitch) == 0x000004, "Wrong size on PlayerCharacter_C_ForceSwitch");
-static_assert(offsetof(PlayerCharacter_C_ForceSwitch, Slot) == 0x000000, "Member 'PlayerCharacter_C_ForceSwitch::Slot' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_ForceSwitch;
 
 // Function PlayerCharacter.PlayerCharacter_C.BndEvt__PlayerCharacter_DamageComponent_K2Node_ComponentBoundEvent_1_Damage__DelegateSignature
 // 0x0030 (0x0030 - 0x0000)
@@ -1797,13 +1094,7 @@ public:
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Instigator_0;                                      // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_BndEvt__PlayerCharacter_DamageComponent_K2Node_ComponentBoundEvent_1_Damage__DelegateSignature) == 0x000008, "Wrong alignment on PlayerCharacter_C_BndEvt__PlayerCharacter_DamageComponent_K2Node_ComponentBoundEvent_1_Damage__DelegateSignature");
-static_assert(sizeof(PlayerCharacter_C_BndEvt__PlayerCharacter_DamageComponent_K2Node_ComponentBoundEvent_1_Damage__DelegateSignature) == 0x000030, "Wrong size on PlayerCharacter_C_BndEvt__PlayerCharacter_DamageComponent_K2Node_ComponentBoundEvent_1_Damage__DelegateSignature");
-static_assert(offsetof(PlayerCharacter_C_BndEvt__PlayerCharacter_DamageComponent_K2Node_ComponentBoundEvent_1_Damage__DelegateSignature, Amount) == 0x000000, "Member 'PlayerCharacter_C_BndEvt__PlayerCharacter_DamageComponent_K2Node_ComponentBoundEvent_1_Damage__DelegateSignature::Amount' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BndEvt__PlayerCharacter_DamageComponent_K2Node_ComponentBoundEvent_1_Damage__DelegateSignature, Bone) == 0x000004, "Member 'PlayerCharacter_C_BndEvt__PlayerCharacter_DamageComponent_K2Node_ComponentBoundEvent_1_Damage__DelegateSignature::Bone' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BndEvt__PlayerCharacter_DamageComponent_K2Node_ComponentBoundEvent_1_Damage__DelegateSignature, HitLocation) == 0x00000C, "Member 'PlayerCharacter_C_BndEvt__PlayerCharacter_DamageComponent_K2Node_ComponentBoundEvent_1_Damage__DelegateSignature::HitLocation' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BndEvt__PlayerCharacter_DamageComponent_K2Node_ComponentBoundEvent_1_Damage__DelegateSignature, StartLocation) == 0x000018, "Member 'PlayerCharacter_C_BndEvt__PlayerCharacter_DamageComponent_K2Node_ComponentBoundEvent_1_Damage__DelegateSignature::StartLocation' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BndEvt__PlayerCharacter_DamageComponent_K2Node_ComponentBoundEvent_1_Damage__DelegateSignature, Instigator_0) == 0x000028, "Member 'PlayerCharacter_C_BndEvt__PlayerCharacter_DamageComponent_K2Node_ComponentBoundEvent_1_Damage__DelegateSignature::Instigator_0' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_BndEvt__PlayerCharacter_DamageComponent_K2Node_ComponentBoundEvent_1_Damage__DelegateSignature;
 
 // Function PlayerCharacter.PlayerCharacter_C.SetLeftMouse
 // 0x0001 (0x0001 - 0x0000)
@@ -1812,9 +1103,7 @@ struct PlayerCharacter_C_SetLeftMouse final
 public:
 	bool                                          Down_;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerCharacter_C_SetLeftMouse) == 0x000001, "Wrong alignment on PlayerCharacter_C_SetLeftMouse");
-static_assert(sizeof(PlayerCharacter_C_SetLeftMouse) == 0x000001, "Wrong size on PlayerCharacter_C_SetLeftMouse");
-static_assert(offsetof(PlayerCharacter_C_SetLeftMouse, Down_) == 0x000000, "Member 'PlayerCharacter_C_SetLeftMouse::Down_' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_SetLeftMouse;
 
 // Function PlayerCharacter.PlayerCharacter_C.Mousestate
 // 0x0001 (0x0001 - 0x0000)
@@ -1823,9 +1112,7 @@ struct PlayerCharacter_C_Mousestate final
 public:
 	bool                                          Clicked_;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerCharacter_C_Mousestate) == 0x000001, "Wrong alignment on PlayerCharacter_C_Mousestate");
-static_assert(sizeof(PlayerCharacter_C_Mousestate) == 0x000001, "Wrong size on PlayerCharacter_C_Mousestate");
-static_assert(offsetof(PlayerCharacter_C_Mousestate, Clicked_) == 0x000000, "Member 'PlayerCharacter_C_Mousestate::Clicked_' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_Mousestate;
 
 // Function PlayerCharacter.PlayerCharacter_C.BndEvt__PlayerCharacter_InteractComponent_K2Node_ComponentBoundEvent_0_Interact__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
@@ -1835,10 +1122,7 @@ public:
 	class AActor*                                 Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    HitComponent;                                      // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_BndEvt__PlayerCharacter_InteractComponent_K2Node_ComponentBoundEvent_0_Interact__DelegateSignature) == 0x000008, "Wrong alignment on PlayerCharacter_C_BndEvt__PlayerCharacter_InteractComponent_K2Node_ComponentBoundEvent_0_Interact__DelegateSignature");
-static_assert(sizeof(PlayerCharacter_C_BndEvt__PlayerCharacter_InteractComponent_K2Node_ComponentBoundEvent_0_Interact__DelegateSignature) == 0x000010, "Wrong size on PlayerCharacter_C_BndEvt__PlayerCharacter_InteractComponent_K2Node_ComponentBoundEvent_0_Interact__DelegateSignature");
-static_assert(offsetof(PlayerCharacter_C_BndEvt__PlayerCharacter_InteractComponent_K2Node_ComponentBoundEvent_0_Interact__DelegateSignature, Player) == 0x000000, "Member 'PlayerCharacter_C_BndEvt__PlayerCharacter_InteractComponent_K2Node_ComponentBoundEvent_0_Interact__DelegateSignature::Player' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BndEvt__PlayerCharacter_InteractComponent_K2Node_ComponentBoundEvent_0_Interact__DelegateSignature, HitComponent) == 0x000008, "Member 'PlayerCharacter_C_BndEvt__PlayerCharacter_InteractComponent_K2Node_ComponentBoundEvent_0_Interact__DelegateSignature::HitComponent' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_BndEvt__PlayerCharacter_InteractComponent_K2Node_ComponentBoundEvent_0_Interact__DelegateSignature;
 
 // Function PlayerCharacter.PlayerCharacter_C.RevivePlayer
 // 0x0008 (0x0008 - 0x0000)
@@ -1847,9 +1131,7 @@ struct PlayerCharacter_C_RevivePlayer final
 public:
 	class APlayerCharacter_C*                     AssistingPlayer;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_RevivePlayer) == 0x000008, "Wrong alignment on PlayerCharacter_C_RevivePlayer");
-static_assert(sizeof(PlayerCharacter_C_RevivePlayer) == 0x000008, "Wrong size on PlayerCharacter_C_RevivePlayer");
-static_assert(offsetof(PlayerCharacter_C_RevivePlayer, AssistingPlayer) == 0x000000, "Member 'PlayerCharacter_C_RevivePlayer::AssistingPlayer' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_RevivePlayer;
 
 // Function PlayerCharacter.PlayerCharacter_C.SwitchGunEvent
 // 0x0004 (0x0004 - 0x0000)
@@ -1858,9 +1140,7 @@ struct PlayerCharacter_C_SwitchGunEvent final
 public:
 	int32                                         Slot;                                              // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_SwitchGunEvent) == 0x000004, "Wrong alignment on PlayerCharacter_C_SwitchGunEvent");
-static_assert(sizeof(PlayerCharacter_C_SwitchGunEvent) == 0x000004, "Wrong size on PlayerCharacter_C_SwitchGunEvent");
-static_assert(offsetof(PlayerCharacter_C_SwitchGunEvent, Slot) == 0x000000, "Member 'PlayerCharacter_C_SwitchGunEvent::Slot' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_SwitchGunEvent;
 
 // Function PlayerCharacter.PlayerCharacter_C.TakeDamage
 // 0x0020 (0x0020 - 0x0000)
@@ -1873,12 +1153,7 @@ public:
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Instigator_0;                                      // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_TakeDamage) == 0x000008, "Wrong alignment on PlayerCharacter_C_TakeDamage");
-static_assert(sizeof(PlayerCharacter_C_TakeDamage) == 0x000020, "Wrong size on PlayerCharacter_C_TakeDamage");
-static_assert(offsetof(PlayerCharacter_C_TakeDamage, Damage) == 0x000000, "Member 'PlayerCharacter_C_TakeDamage::Damage' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_TakeDamage, AttackerLocation) == 0x000004, "Member 'PlayerCharacter_C_TakeDamage::AttackerLocation' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_TakeDamage, indicate_direction_) == 0x000010, "Member 'PlayerCharacter_C_TakeDamage::indicate_direction_' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_TakeDamage, Instigator_0) == 0x000018, "Member 'PlayerCharacter_C_TakeDamage::Instigator_0' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_TakeDamage;
 
 // Function PlayerCharacter.PlayerCharacter_C.Rel_item_multi
 // 0x0008 (0x0008 - 0x0000)
@@ -1887,9 +1162,7 @@ struct PlayerCharacter_C_Rel_item_multi final
 public:
 	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_Rel_item_multi) == 0x000008, "Wrong alignment on PlayerCharacter_C_Rel_item_multi");
-static_assert(sizeof(PlayerCharacter_C_Rel_item_multi) == 0x000008, "Wrong size on PlayerCharacter_C_Rel_item_multi");
-static_assert(offsetof(PlayerCharacter_C_Rel_item_multi, Actor) == 0x000000, "Member 'PlayerCharacter_C_Rel_item_multi::Actor' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_Rel_item_multi;
 
 // Function PlayerCharacter.PlayerCharacter_C.Rel_Item_server
 // 0x0008 (0x0008 - 0x0000)
@@ -1898,9 +1171,7 @@ struct PlayerCharacter_C_Rel_Item_server final
 public:
 	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_Rel_Item_server) == 0x000008, "Wrong alignment on PlayerCharacter_C_Rel_Item_server");
-static_assert(sizeof(PlayerCharacter_C_Rel_Item_server) == 0x000008, "Wrong size on PlayerCharacter_C_Rel_Item_server");
-static_assert(offsetof(PlayerCharacter_C_Rel_Item_server, Actor) == 0x000000, "Member 'PlayerCharacter_C_Rel_Item_server::Actor' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_Rel_Item_server;
 
 // Function PlayerCharacter.PlayerCharacter_C.PickupItemClient
 // 0x0088 (0x0088 - 0x0000)
@@ -1909,9 +1180,7 @@ struct PlayerCharacter_C_PickupItemClient final
 public:
 	struct FHitResult                             Hit;                                               // 0x0000(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(PlayerCharacter_C_PickupItemClient) == 0x000004, "Wrong alignment on PlayerCharacter_C_PickupItemClient");
-static_assert(sizeof(PlayerCharacter_C_PickupItemClient) == 0x000088, "Wrong size on PlayerCharacter_C_PickupItemClient");
-static_assert(offsetof(PlayerCharacter_C_PickupItemClient, Hit) == 0x000000, "Member 'PlayerCharacter_C_PickupItemClient::Hit' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_PickupItemClient;
 
 // Function PlayerCharacter.PlayerCharacter_C.InteractServer
 // 0x0088 (0x0088 - 0x0000)
@@ -1920,9 +1189,7 @@ struct PlayerCharacter_C_InteractServer final
 public:
 	struct FHitResult                             Hit_result;                                        // 0x0000(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(PlayerCharacter_C_InteractServer) == 0x000004, "Wrong alignment on PlayerCharacter_C_InteractServer");
-static_assert(sizeof(PlayerCharacter_C_InteractServer) == 0x000088, "Wrong size on PlayerCharacter_C_InteractServer");
-static_assert(offsetof(PlayerCharacter_C_InteractServer, Hit_result) == 0x000000, "Member 'PlayerCharacter_C_InteractServer::Hit_result' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_InteractServer;
 
 // Function PlayerCharacter.PlayerCharacter_C.SprintServer
 // 0x0001 (0x0001 - 0x0000)
@@ -1931,9 +1198,7 @@ struct PlayerCharacter_C_SprintServer final
 public:
 	bool                                          Sprint_;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerCharacter_C_SprintServer) == 0x000001, "Wrong alignment on PlayerCharacter_C_SprintServer");
-static_assert(sizeof(PlayerCharacter_C_SprintServer) == 0x000001, "Wrong size on PlayerCharacter_C_SprintServer");
-static_assert(offsetof(PlayerCharacter_C_SprintServer, Sprint_) == 0x000000, "Member 'PlayerCharacter_C_SprintServer::Sprint_' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_SprintServer;
 
 // Function PlayerCharacter.PlayerCharacter_C.Setup gun
 // 0x0004 (0x0004 - 0x0000)
@@ -1942,9 +1207,7 @@ struct PlayerCharacter_C_Setup_gun final
 public:
 	int32                                         Slot;                                              // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_Setup_gun) == 0x000004, "Wrong alignment on PlayerCharacter_C_Setup_gun");
-static_assert(sizeof(PlayerCharacter_C_Setup_gun) == 0x000004, "Wrong size on PlayerCharacter_C_Setup_gun");
-static_assert(offsetof(PlayerCharacter_C_Setup_gun, Slot) == 0x000000, "Member 'PlayerCharacter_C_Setup_gun::Slot' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_Setup_gun;
 
 // Function PlayerCharacter.PlayerCharacter_C.ShootServer
 // 0x0088 (0x0088 - 0x0000)
@@ -1953,9 +1216,7 @@ struct PlayerCharacter_C_ShootServer final
 public:
 	struct FHitResult                             Hit_result;                                        // 0x0000(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(PlayerCharacter_C_ShootServer) == 0x000004, "Wrong alignment on PlayerCharacter_C_ShootServer");
-static_assert(sizeof(PlayerCharacter_C_ShootServer) == 0x000088, "Wrong size on PlayerCharacter_C_ShootServer");
-static_assert(offsetof(PlayerCharacter_C_ShootServer, Hit_result) == 0x000000, "Member 'PlayerCharacter_C_ShootServer::Hit_result' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_ShootServer;
 
 // Function PlayerCharacter.PlayerCharacter_C.CameraRot
 // 0x000C (0x000C - 0x0000)
@@ -1964,9 +1225,7 @@ struct PlayerCharacter_C_CameraRot final
 public:
 	struct FRotator                               Rotation;                                          // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerCharacter_C_CameraRot) == 0x000004, "Wrong alignment on PlayerCharacter_C_CameraRot");
-static_assert(sizeof(PlayerCharacter_C_CameraRot) == 0x00000C, "Wrong size on PlayerCharacter_C_CameraRot");
-static_assert(offsetof(PlayerCharacter_C_CameraRot, Rotation) == 0x000000, "Member 'PlayerCharacter_C_CameraRot::Rotation' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_CameraRot;
 
 // Function PlayerCharacter.PlayerCharacter_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -1975,9 +1234,7 @@ struct PlayerCharacter_C_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_ReceiveTick) == 0x000004, "Wrong alignment on PlayerCharacter_C_ReceiveTick");
-static_assert(sizeof(PlayerCharacter_C_ReceiveTick) == 0x000004, "Wrong size on PlayerCharacter_C_ReceiveTick");
-static_assert(offsetof(PlayerCharacter_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PlayerCharacter_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_ReceiveTick;
 
 // Function PlayerCharacter.PlayerCharacter_C.InpAxisEvt_LookUp_K2Node_InputAxisEvent_3
 // 0x0004 (0x0004 - 0x0000)
@@ -1986,9 +1243,7 @@ struct PlayerCharacter_C_InpAxisEvt_LookUp_K2Node_InputAxisEvent_3 final
 public:
 	float                                         AxisValue;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_InpAxisEvt_LookUp_K2Node_InputAxisEvent_3) == 0x000004, "Wrong alignment on PlayerCharacter_C_InpAxisEvt_LookUp_K2Node_InputAxisEvent_3");
-static_assert(sizeof(PlayerCharacter_C_InpAxisEvt_LookUp_K2Node_InputAxisEvent_3) == 0x000004, "Wrong size on PlayerCharacter_C_InpAxisEvt_LookUp_K2Node_InputAxisEvent_3");
-static_assert(offsetof(PlayerCharacter_C_InpAxisEvt_LookUp_K2Node_InputAxisEvent_3, AxisValue) == 0x000000, "Member 'PlayerCharacter_C_InpAxisEvt_LookUp_K2Node_InputAxisEvent_3::AxisValue' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_InpAxisEvt_LookUp_K2Node_InputAxisEvent_3;
 
 // Function PlayerCharacter.PlayerCharacter_C.InpAxisEvt_LookRight_K2Node_InputAxisEvent_2
 // 0x0004 (0x0004 - 0x0000)
@@ -1997,9 +1252,7 @@ struct PlayerCharacter_C_InpAxisEvt_LookRight_K2Node_InputAxisEvent_2 final
 public:
 	float                                         AxisValue;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_InpAxisEvt_LookRight_K2Node_InputAxisEvent_2) == 0x000004, "Wrong alignment on PlayerCharacter_C_InpAxisEvt_LookRight_K2Node_InputAxisEvent_2");
-static_assert(sizeof(PlayerCharacter_C_InpAxisEvt_LookRight_K2Node_InputAxisEvent_2) == 0x000004, "Wrong size on PlayerCharacter_C_InpAxisEvt_LookRight_K2Node_InputAxisEvent_2");
-static_assert(offsetof(PlayerCharacter_C_InpAxisEvt_LookRight_K2Node_InputAxisEvent_2, AxisValue) == 0x000000, "Member 'PlayerCharacter_C_InpAxisEvt_LookRight_K2Node_InputAxisEvent_2::AxisValue' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_InpAxisEvt_LookRight_K2Node_InputAxisEvent_2;
 
 // Function PlayerCharacter.PlayerCharacter_C.InpAxisEvt_MoveRight_K2Node_InputAxisEvent_1
 // 0x0004 (0x0004 - 0x0000)
@@ -2008,9 +1261,7 @@ struct PlayerCharacter_C_InpAxisEvt_MoveRight_K2Node_InputAxisEvent_1 final
 public:
 	float                                         AxisValue;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_InpAxisEvt_MoveRight_K2Node_InputAxisEvent_1) == 0x000004, "Wrong alignment on PlayerCharacter_C_InpAxisEvt_MoveRight_K2Node_InputAxisEvent_1");
-static_assert(sizeof(PlayerCharacter_C_InpAxisEvt_MoveRight_K2Node_InputAxisEvent_1) == 0x000004, "Wrong size on PlayerCharacter_C_InpAxisEvt_MoveRight_K2Node_InputAxisEvent_1");
-static_assert(offsetof(PlayerCharacter_C_InpAxisEvt_MoveRight_K2Node_InputAxisEvent_1, AxisValue) == 0x000000, "Member 'PlayerCharacter_C_InpAxisEvt_MoveRight_K2Node_InputAxisEvent_1::AxisValue' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_InpAxisEvt_MoveRight_K2Node_InputAxisEvent_1;
 
 // Function PlayerCharacter.PlayerCharacter_C.InpAxisEvt_MoveForward_K2Node_InputAxisEvent_0
 // 0x0004 (0x0004 - 0x0000)
@@ -2019,9 +1270,7 @@ struct PlayerCharacter_C_InpAxisEvt_MoveForward_K2Node_InputAxisEvent_0 final
 public:
 	float                                         AxisValue;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_InpAxisEvt_MoveForward_K2Node_InputAxisEvent_0) == 0x000004, "Wrong alignment on PlayerCharacter_C_InpAxisEvt_MoveForward_K2Node_InputAxisEvent_0");
-static_assert(sizeof(PlayerCharacter_C_InpAxisEvt_MoveForward_K2Node_InputAxisEvent_0) == 0x000004, "Wrong size on PlayerCharacter_C_InpAxisEvt_MoveForward_K2Node_InputAxisEvent_0");
-static_assert(offsetof(PlayerCharacter_C_InpAxisEvt_MoveForward_K2Node_InputAxisEvent_0, AxisValue) == 0x000000, "Member 'PlayerCharacter_C_InpAxisEvt_MoveForward_K2Node_InputAxisEvent_0::AxisValue' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_InpAxisEvt_MoveForward_K2Node_InputAxisEvent_0;
 
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_PlayerInfo_K2Node_InputActionEvent_0
 // 0x0018 (0x0018 - 0x0000)
@@ -2030,9 +1279,7 @@ struct PlayerCharacter_C_InpActEvt_PlayerInfo_K2Node_InputActionEvent_0 final
 public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_InpActEvt_PlayerInfo_K2Node_InputActionEvent_0) == 0x000008, "Wrong alignment on PlayerCharacter_C_InpActEvt_PlayerInfo_K2Node_InputActionEvent_0");
-static_assert(sizeof(PlayerCharacter_C_InpActEvt_PlayerInfo_K2Node_InputActionEvent_0) == 0x000018, "Wrong size on PlayerCharacter_C_InpActEvt_PlayerInfo_K2Node_InputActionEvent_0");
-static_assert(offsetof(PlayerCharacter_C_InpActEvt_PlayerInfo_K2Node_InputActionEvent_0, Key) == 0x000000, "Member 'PlayerCharacter_C_InpActEvt_PlayerInfo_K2Node_InputActionEvent_0::Key' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_InpActEvt_PlayerInfo_K2Node_InputActionEvent_0;
 
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_PlayerInfo_K2Node_InputActionEvent_1
 // 0x0018 (0x0018 - 0x0000)
@@ -2041,9 +1288,7 @@ struct PlayerCharacter_C_InpActEvt_PlayerInfo_K2Node_InputActionEvent_1 final
 public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_InpActEvt_PlayerInfo_K2Node_InputActionEvent_1) == 0x000008, "Wrong alignment on PlayerCharacter_C_InpActEvt_PlayerInfo_K2Node_InputActionEvent_1");
-static_assert(sizeof(PlayerCharacter_C_InpActEvt_PlayerInfo_K2Node_InputActionEvent_1) == 0x000018, "Wrong size on PlayerCharacter_C_InpActEvt_PlayerInfo_K2Node_InputActionEvent_1");
-static_assert(offsetof(PlayerCharacter_C_InpActEvt_PlayerInfo_K2Node_InputActionEvent_1, Key) == 0x000000, "Member 'PlayerCharacter_C_InpActEvt_PlayerInfo_K2Node_InputActionEvent_1::Key' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_InpActEvt_PlayerInfo_K2Node_InputActionEvent_1;
 
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_Emote_K2Node_InputActionEvent_2
 // 0x0018 (0x0018 - 0x0000)
@@ -2052,9 +1297,7 @@ struct PlayerCharacter_C_InpActEvt_Emote_K2Node_InputActionEvent_2 final
 public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_InpActEvt_Emote_K2Node_InputActionEvent_2) == 0x000008, "Wrong alignment on PlayerCharacter_C_InpActEvt_Emote_K2Node_InputActionEvent_2");
-static_assert(sizeof(PlayerCharacter_C_InpActEvt_Emote_K2Node_InputActionEvent_2) == 0x000018, "Wrong size on PlayerCharacter_C_InpActEvt_Emote_K2Node_InputActionEvent_2");
-static_assert(offsetof(PlayerCharacter_C_InpActEvt_Emote_K2Node_InputActionEvent_2, Key) == 0x000000, "Member 'PlayerCharacter_C_InpActEvt_Emote_K2Node_InputActionEvent_2::Key' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_InpActEvt_Emote_K2Node_InputActionEvent_2;
 
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_Voice_K2Node_InputActionEvent_3
 // 0x0018 (0x0018 - 0x0000)
@@ -2063,9 +1306,7 @@ struct PlayerCharacter_C_InpActEvt_Voice_K2Node_InputActionEvent_3 final
 public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_InpActEvt_Voice_K2Node_InputActionEvent_3) == 0x000008, "Wrong alignment on PlayerCharacter_C_InpActEvt_Voice_K2Node_InputActionEvent_3");
-static_assert(sizeof(PlayerCharacter_C_InpActEvt_Voice_K2Node_InputActionEvent_3) == 0x000018, "Wrong size on PlayerCharacter_C_InpActEvt_Voice_K2Node_InputActionEvent_3");
-static_assert(offsetof(PlayerCharacter_C_InpActEvt_Voice_K2Node_InputActionEvent_3, Key) == 0x000000, "Member 'PlayerCharacter_C_InpActEvt_Voice_K2Node_InputActionEvent_3::Key' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_InpActEvt_Voice_K2Node_InputActionEvent_3;
 
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_Voice_K2Node_InputActionEvent_4
 // 0x0018 (0x0018 - 0x0000)
@@ -2074,9 +1315,7 @@ struct PlayerCharacter_C_InpActEvt_Voice_K2Node_InputActionEvent_4 final
 public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_InpActEvt_Voice_K2Node_InputActionEvent_4) == 0x000008, "Wrong alignment on PlayerCharacter_C_InpActEvt_Voice_K2Node_InputActionEvent_4");
-static_assert(sizeof(PlayerCharacter_C_InpActEvt_Voice_K2Node_InputActionEvent_4) == 0x000018, "Wrong size on PlayerCharacter_C_InpActEvt_Voice_K2Node_InputActionEvent_4");
-static_assert(offsetof(PlayerCharacter_C_InpActEvt_Voice_K2Node_InputActionEvent_4, Key) == 0x000000, "Member 'PlayerCharacter_C_InpActEvt_Voice_K2Node_InputActionEvent_4::Key' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_InpActEvt_Voice_K2Node_InputActionEvent_4;
 
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_Chat_K2Node_InputActionEvent_5
 // 0x0018 (0x0018 - 0x0000)
@@ -2085,9 +1324,7 @@ struct PlayerCharacter_C_InpActEvt_Chat_K2Node_InputActionEvent_5 final
 public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_InpActEvt_Chat_K2Node_InputActionEvent_5) == 0x000008, "Wrong alignment on PlayerCharacter_C_InpActEvt_Chat_K2Node_InputActionEvent_5");
-static_assert(sizeof(PlayerCharacter_C_InpActEvt_Chat_K2Node_InputActionEvent_5) == 0x000018, "Wrong size on PlayerCharacter_C_InpActEvt_Chat_K2Node_InputActionEvent_5");
-static_assert(offsetof(PlayerCharacter_C_InpActEvt_Chat_K2Node_InputActionEvent_5, Key) == 0x000000, "Member 'PlayerCharacter_C_InpActEvt_Chat_K2Node_InputActionEvent_5::Key' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_InpActEvt_Chat_K2Node_InputActionEvent_5;
 
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_AnyKey_K2Node_InputKeyEvent_0
 // 0x0018 (0x0018 - 0x0000)
@@ -2096,9 +1333,7 @@ struct PlayerCharacter_C_InpActEvt_AnyKey_K2Node_InputKeyEvent_0 final
 public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_InpActEvt_AnyKey_K2Node_InputKeyEvent_0) == 0x000008, "Wrong alignment on PlayerCharacter_C_InpActEvt_AnyKey_K2Node_InputKeyEvent_0");
-static_assert(sizeof(PlayerCharacter_C_InpActEvt_AnyKey_K2Node_InputKeyEvent_0) == 0x000018, "Wrong size on PlayerCharacter_C_InpActEvt_AnyKey_K2Node_InputKeyEvent_0");
-static_assert(offsetof(PlayerCharacter_C_InpActEvt_AnyKey_K2Node_InputKeyEvent_0, Key) == 0x000000, "Member 'PlayerCharacter_C_InpActEvt_AnyKey_K2Node_InputKeyEvent_0::Key' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_InpActEvt_AnyKey_K2Node_InputKeyEvent_0;
 
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_Pause_K2Node_InputActionEvent_6
 // 0x0018 (0x0018 - 0x0000)
@@ -2107,9 +1342,7 @@ struct PlayerCharacter_C_InpActEvt_Pause_K2Node_InputActionEvent_6 final
 public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_InpActEvt_Pause_K2Node_InputActionEvent_6) == 0x000008, "Wrong alignment on PlayerCharacter_C_InpActEvt_Pause_K2Node_InputActionEvent_6");
-static_assert(sizeof(PlayerCharacter_C_InpActEvt_Pause_K2Node_InputActionEvent_6) == 0x000018, "Wrong size on PlayerCharacter_C_InpActEvt_Pause_K2Node_InputActionEvent_6");
-static_assert(offsetof(PlayerCharacter_C_InpActEvt_Pause_K2Node_InputActionEvent_6, Key) == 0x000000, "Member 'PlayerCharacter_C_InpActEvt_Pause_K2Node_InputActionEvent_6::Key' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_InpActEvt_Pause_K2Node_InputActionEvent_6;
 
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_Flashlight_K2Node_InputActionEvent_7
 // 0x0018 (0x0018 - 0x0000)
@@ -2118,9 +1351,7 @@ struct PlayerCharacter_C_InpActEvt_Flashlight_K2Node_InputActionEvent_7 final
 public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_InpActEvt_Flashlight_K2Node_InputActionEvent_7) == 0x000008, "Wrong alignment on PlayerCharacter_C_InpActEvt_Flashlight_K2Node_InputActionEvent_7");
-static_assert(sizeof(PlayerCharacter_C_InpActEvt_Flashlight_K2Node_InputActionEvent_7) == 0x000018, "Wrong size on PlayerCharacter_C_InpActEvt_Flashlight_K2Node_InputActionEvent_7");
-static_assert(offsetof(PlayerCharacter_C_InpActEvt_Flashlight_K2Node_InputActionEvent_7, Key) == 0x000000, "Member 'PlayerCharacter_C_InpActEvt_Flashlight_K2Node_InputActionEvent_7::Key' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_InpActEvt_Flashlight_K2Node_InputActionEvent_7;
 
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_Crouch_K2Node_InputActionEvent_8
 // 0x0018 (0x0018 - 0x0000)
@@ -2129,9 +1360,7 @@ struct PlayerCharacter_C_InpActEvt_Crouch_K2Node_InputActionEvent_8 final
 public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_InpActEvt_Crouch_K2Node_InputActionEvent_8) == 0x000008, "Wrong alignment on PlayerCharacter_C_InpActEvt_Crouch_K2Node_InputActionEvent_8");
-static_assert(sizeof(PlayerCharacter_C_InpActEvt_Crouch_K2Node_InputActionEvent_8) == 0x000018, "Wrong size on PlayerCharacter_C_InpActEvt_Crouch_K2Node_InputActionEvent_8");
-static_assert(offsetof(PlayerCharacter_C_InpActEvt_Crouch_K2Node_InputActionEvent_8, Key) == 0x000000, "Member 'PlayerCharacter_C_InpActEvt_Crouch_K2Node_InputActionEvent_8::Key' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_InpActEvt_Crouch_K2Node_InputActionEvent_8;
 
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_SecondMouseAction_K2Node_InputActionEvent_9
 // 0x0018 (0x0018 - 0x0000)
@@ -2140,9 +1369,7 @@ struct PlayerCharacter_C_InpActEvt_SecondMouseAction_K2Node_InputActionEvent_9 f
 public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_InpActEvt_SecondMouseAction_K2Node_InputActionEvent_9) == 0x000008, "Wrong alignment on PlayerCharacter_C_InpActEvt_SecondMouseAction_K2Node_InputActionEvent_9");
-static_assert(sizeof(PlayerCharacter_C_InpActEvt_SecondMouseAction_K2Node_InputActionEvent_9) == 0x000018, "Wrong size on PlayerCharacter_C_InpActEvt_SecondMouseAction_K2Node_InputActionEvent_9");
-static_assert(offsetof(PlayerCharacter_C_InpActEvt_SecondMouseAction_K2Node_InputActionEvent_9, Key) == 0x000000, "Member 'PlayerCharacter_C_InpActEvt_SecondMouseAction_K2Node_InputActionEvent_9::Key' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_InpActEvt_SecondMouseAction_K2Node_InputActionEvent_9;
 
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_SecondMouseAction_K2Node_InputActionEvent_10
 // 0x0018 (0x0018 - 0x0000)
@@ -2151,9 +1378,7 @@ struct PlayerCharacter_C_InpActEvt_SecondMouseAction_K2Node_InputActionEvent_10 
 public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_InpActEvt_SecondMouseAction_K2Node_InputActionEvent_10) == 0x000008, "Wrong alignment on PlayerCharacter_C_InpActEvt_SecondMouseAction_K2Node_InputActionEvent_10");
-static_assert(sizeof(PlayerCharacter_C_InpActEvt_SecondMouseAction_K2Node_InputActionEvent_10) == 0x000018, "Wrong size on PlayerCharacter_C_InpActEvt_SecondMouseAction_K2Node_InputActionEvent_10");
-static_assert(offsetof(PlayerCharacter_C_InpActEvt_SecondMouseAction_K2Node_InputActionEvent_10, Key) == 0x000000, "Member 'PlayerCharacter_C_InpActEvt_SecondMouseAction_K2Node_InputActionEvent_10::Key' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_InpActEvt_SecondMouseAction_K2Node_InputActionEvent_10;
 
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_Sprint_K2Node_InputActionEvent_11
 // 0x0018 (0x0018 - 0x0000)
@@ -2162,9 +1387,7 @@ struct PlayerCharacter_C_InpActEvt_Sprint_K2Node_InputActionEvent_11 final
 public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_InpActEvt_Sprint_K2Node_InputActionEvent_11) == 0x000008, "Wrong alignment on PlayerCharacter_C_InpActEvt_Sprint_K2Node_InputActionEvent_11");
-static_assert(sizeof(PlayerCharacter_C_InpActEvt_Sprint_K2Node_InputActionEvent_11) == 0x000018, "Wrong size on PlayerCharacter_C_InpActEvt_Sprint_K2Node_InputActionEvent_11");
-static_assert(offsetof(PlayerCharacter_C_InpActEvt_Sprint_K2Node_InputActionEvent_11, Key) == 0x000000, "Member 'PlayerCharacter_C_InpActEvt_Sprint_K2Node_InputActionEvent_11::Key' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_InpActEvt_Sprint_K2Node_InputActionEvent_11;
 
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_Sprint_K2Node_InputActionEvent_12
 // 0x0018 (0x0018 - 0x0000)
@@ -2173,9 +1396,7 @@ struct PlayerCharacter_C_InpActEvt_Sprint_K2Node_InputActionEvent_12 final
 public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_InpActEvt_Sprint_K2Node_InputActionEvent_12) == 0x000008, "Wrong alignment on PlayerCharacter_C_InpActEvt_Sprint_K2Node_InputActionEvent_12");
-static_assert(sizeof(PlayerCharacter_C_InpActEvt_Sprint_K2Node_InputActionEvent_12) == 0x000018, "Wrong size on PlayerCharacter_C_InpActEvt_Sprint_K2Node_InputActionEvent_12");
-static_assert(offsetof(PlayerCharacter_C_InpActEvt_Sprint_K2Node_InputActionEvent_12, Key) == 0x000000, "Member 'PlayerCharacter_C_InpActEvt_Sprint_K2Node_InputActionEvent_12::Key' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_InpActEvt_Sprint_K2Node_InputActionEvent_12;
 
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_Jump_K2Node_InputActionEvent_13
 // 0x0018 (0x0018 - 0x0000)
@@ -2184,9 +1405,7 @@ struct PlayerCharacter_C_InpActEvt_Jump_K2Node_InputActionEvent_13 final
 public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_InpActEvt_Jump_K2Node_InputActionEvent_13) == 0x000008, "Wrong alignment on PlayerCharacter_C_InpActEvt_Jump_K2Node_InputActionEvent_13");
-static_assert(sizeof(PlayerCharacter_C_InpActEvt_Jump_K2Node_InputActionEvent_13) == 0x000018, "Wrong size on PlayerCharacter_C_InpActEvt_Jump_K2Node_InputActionEvent_13");
-static_assert(offsetof(PlayerCharacter_C_InpActEvt_Jump_K2Node_InputActionEvent_13, Key) == 0x000000, "Member 'PlayerCharacter_C_InpActEvt_Jump_K2Node_InputActionEvent_13::Key' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_InpActEvt_Jump_K2Node_InputActionEvent_13;
 
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_Three_K2Node_InputKeyEvent_1
 // 0x0018 (0x0018 - 0x0000)
@@ -2195,9 +1414,7 @@ struct PlayerCharacter_C_InpActEvt_Three_K2Node_InputKeyEvent_1 final
 public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_InpActEvt_Three_K2Node_InputKeyEvent_1) == 0x000008, "Wrong alignment on PlayerCharacter_C_InpActEvt_Three_K2Node_InputKeyEvent_1");
-static_assert(sizeof(PlayerCharacter_C_InpActEvt_Three_K2Node_InputKeyEvent_1) == 0x000018, "Wrong size on PlayerCharacter_C_InpActEvt_Three_K2Node_InputKeyEvent_1");
-static_assert(offsetof(PlayerCharacter_C_InpActEvt_Three_K2Node_InputKeyEvent_1, Key) == 0x000000, "Member 'PlayerCharacter_C_InpActEvt_Three_K2Node_InputKeyEvent_1::Key' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_InpActEvt_Three_K2Node_InputKeyEvent_1;
 
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_Two_K2Node_InputKeyEvent_2
 // 0x0018 (0x0018 - 0x0000)
@@ -2206,9 +1423,7 @@ struct PlayerCharacter_C_InpActEvt_Two_K2Node_InputKeyEvent_2 final
 public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_InpActEvt_Two_K2Node_InputKeyEvent_2) == 0x000008, "Wrong alignment on PlayerCharacter_C_InpActEvt_Two_K2Node_InputKeyEvent_2");
-static_assert(sizeof(PlayerCharacter_C_InpActEvt_Two_K2Node_InputKeyEvent_2) == 0x000018, "Wrong size on PlayerCharacter_C_InpActEvt_Two_K2Node_InputKeyEvent_2");
-static_assert(offsetof(PlayerCharacter_C_InpActEvt_Two_K2Node_InputKeyEvent_2, Key) == 0x000000, "Member 'PlayerCharacter_C_InpActEvt_Two_K2Node_InputKeyEvent_2::Key' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_InpActEvt_Two_K2Node_InputKeyEvent_2;
 
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_One_K2Node_InputKeyEvent_3
 // 0x0018 (0x0018 - 0x0000)
@@ -2217,9 +1432,7 @@ struct PlayerCharacter_C_InpActEvt_One_K2Node_InputKeyEvent_3 final
 public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_InpActEvt_One_K2Node_InputKeyEvent_3) == 0x000008, "Wrong alignment on PlayerCharacter_C_InpActEvt_One_K2Node_InputKeyEvent_3");
-static_assert(sizeof(PlayerCharacter_C_InpActEvt_One_K2Node_InputKeyEvent_3) == 0x000018, "Wrong size on PlayerCharacter_C_InpActEvt_One_K2Node_InputKeyEvent_3");
-static_assert(offsetof(PlayerCharacter_C_InpActEvt_One_K2Node_InputKeyEvent_3, Key) == 0x000000, "Member 'PlayerCharacter_C_InpActEvt_One_K2Node_InputKeyEvent_3::Key' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_InpActEvt_One_K2Node_InputKeyEvent_3;
 
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_SwitchDown_K2Node_InputActionEvent_14
 // 0x0018 (0x0018 - 0x0000)
@@ -2228,9 +1441,7 @@ struct PlayerCharacter_C_InpActEvt_SwitchDown_K2Node_InputActionEvent_14 final
 public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_InpActEvt_SwitchDown_K2Node_InputActionEvent_14) == 0x000008, "Wrong alignment on PlayerCharacter_C_InpActEvt_SwitchDown_K2Node_InputActionEvent_14");
-static_assert(sizeof(PlayerCharacter_C_InpActEvt_SwitchDown_K2Node_InputActionEvent_14) == 0x000018, "Wrong size on PlayerCharacter_C_InpActEvt_SwitchDown_K2Node_InputActionEvent_14");
-static_assert(offsetof(PlayerCharacter_C_InpActEvt_SwitchDown_K2Node_InputActionEvent_14, Key) == 0x000000, "Member 'PlayerCharacter_C_InpActEvt_SwitchDown_K2Node_InputActionEvent_14::Key' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_InpActEvt_SwitchDown_K2Node_InputActionEvent_14;
 
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_SwitchUp_K2Node_InputActionEvent_15
 // 0x0018 (0x0018 - 0x0000)
@@ -2239,9 +1450,7 @@ struct PlayerCharacter_C_InpActEvt_SwitchUp_K2Node_InputActionEvent_15 final
 public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_InpActEvt_SwitchUp_K2Node_InputActionEvent_15) == 0x000008, "Wrong alignment on PlayerCharacter_C_InpActEvt_SwitchUp_K2Node_InputActionEvent_15");
-static_assert(sizeof(PlayerCharacter_C_InpActEvt_SwitchUp_K2Node_InputActionEvent_15) == 0x000018, "Wrong size on PlayerCharacter_C_InpActEvt_SwitchUp_K2Node_InputActionEvent_15");
-static_assert(offsetof(PlayerCharacter_C_InpActEvt_SwitchUp_K2Node_InputActionEvent_15, Key) == 0x000000, "Member 'PlayerCharacter_C_InpActEvt_SwitchUp_K2Node_InputActionEvent_15::Key' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_InpActEvt_SwitchUp_K2Node_InputActionEvent_15;
 
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_Reload_K2Node_InputActionEvent_16
 // 0x0018 (0x0018 - 0x0000)
@@ -2250,9 +1459,7 @@ struct PlayerCharacter_C_InpActEvt_Reload_K2Node_InputActionEvent_16 final
 public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_InpActEvt_Reload_K2Node_InputActionEvent_16) == 0x000008, "Wrong alignment on PlayerCharacter_C_InpActEvt_Reload_K2Node_InputActionEvent_16");
-static_assert(sizeof(PlayerCharacter_C_InpActEvt_Reload_K2Node_InputActionEvent_16) == 0x000018, "Wrong size on PlayerCharacter_C_InpActEvt_Reload_K2Node_InputActionEvent_16");
-static_assert(offsetof(PlayerCharacter_C_InpActEvt_Reload_K2Node_InputActionEvent_16, Key) == 0x000000, "Member 'PlayerCharacter_C_InpActEvt_Reload_K2Node_InputActionEvent_16::Key' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_InpActEvt_Reload_K2Node_InputActionEvent_16;
 
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_MouseAction_K2Node_InputActionEvent_17
 // 0x0018 (0x0018 - 0x0000)
@@ -2261,9 +1468,7 @@ struct PlayerCharacter_C_InpActEvt_MouseAction_K2Node_InputActionEvent_17 final
 public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_InpActEvt_MouseAction_K2Node_InputActionEvent_17) == 0x000008, "Wrong alignment on PlayerCharacter_C_InpActEvt_MouseAction_K2Node_InputActionEvent_17");
-static_assert(sizeof(PlayerCharacter_C_InpActEvt_MouseAction_K2Node_InputActionEvent_17) == 0x000018, "Wrong size on PlayerCharacter_C_InpActEvt_MouseAction_K2Node_InputActionEvent_17");
-static_assert(offsetof(PlayerCharacter_C_InpActEvt_MouseAction_K2Node_InputActionEvent_17, Key) == 0x000000, "Member 'PlayerCharacter_C_InpActEvt_MouseAction_K2Node_InputActionEvent_17::Key' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_InpActEvt_MouseAction_K2Node_InputActionEvent_17;
 
 // Function PlayerCharacter.PlayerCharacter_C.InpActEvt_MouseAction_K2Node_InputActionEvent_18
 // 0x0018 (0x0018 - 0x0000)
@@ -2272,9 +1477,7 @@ struct PlayerCharacter_C_InpActEvt_MouseAction_K2Node_InputActionEvent_18 final
 public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_InpActEvt_MouseAction_K2Node_InputActionEvent_18) == 0x000008, "Wrong alignment on PlayerCharacter_C_InpActEvt_MouseAction_K2Node_InputActionEvent_18");
-static_assert(sizeof(PlayerCharacter_C_InpActEvt_MouseAction_K2Node_InputActionEvent_18) == 0x000018, "Wrong size on PlayerCharacter_C_InpActEvt_MouseAction_K2Node_InputActionEvent_18");
-static_assert(offsetof(PlayerCharacter_C_InpActEvt_MouseAction_K2Node_InputActionEvent_18, Key) == 0x000000, "Member 'PlayerCharacter_C_InpActEvt_MouseAction_K2Node_InputActionEvent_18::Key' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_InpActEvt_MouseAction_K2Node_InputActionEvent_18;
 
 // Function PlayerCharacter.PlayerCharacter_C.UserConstructionScript
 // 0x00C0 (0x00C0 - 0x0000)
@@ -2284,10 +1487,7 @@ public:
 	struct FTransform                             CallFunc_GetRelativeTransform_ReturnValue;         // 0x0000(0x0030)(IsPlainOldData, NoDestructor)
 	struct FHitResult                             CallFunc_K2_SetRelativeTransform_SweepHitResult;   // 0x0030(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(PlayerCharacter_C_UserConstructionScript) == 0x000010, "Wrong alignment on PlayerCharacter_C_UserConstructionScript");
-static_assert(sizeof(PlayerCharacter_C_UserConstructionScript) == 0x0000C0, "Wrong size on PlayerCharacter_C_UserConstructionScript");
-static_assert(offsetof(PlayerCharacter_C_UserConstructionScript, CallFunc_GetRelativeTransform_ReturnValue) == 0x000000, "Member 'PlayerCharacter_C_UserConstructionScript::CallFunc_GetRelativeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_UserConstructionScript, CallFunc_K2_SetRelativeTransform_SweepHitResult) == 0x000030, "Member 'PlayerCharacter_C_UserConstructionScript::CallFunc_K2_SetRelativeTransform_SweepHitResult' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_UserConstructionScript;
 
 // Function PlayerCharacter.PlayerCharacter_C.Shootvisuals
 // 0x0030 (0x0030 - 0x0000)
@@ -2305,16 +1505,7 @@ public:
 	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class USoundBase*                             K2Node_Select_Default;                             // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_Shootvisuals) == 0x000008, "Wrong alignment on PlayerCharacter_C_Shootvisuals");
-static_assert(sizeof(PlayerCharacter_C_Shootvisuals) == 0x000030, "Wrong size on PlayerCharacter_C_Shootvisuals");
-static_assert(offsetof(PlayerCharacter_C_Shootvisuals, CallFunc_GetAttachmentFromCategory_Class) == 0x000000, "Member 'PlayerCharacter_C_Shootvisuals::CallFunc_GetAttachmentFromCategory_Class' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Shootvisuals, K2Node_ClassDynamicCast_AsAttachment_Barrel_Base) == 0x000008, "Member 'PlayerCharacter_C_Shootvisuals::K2Node_ClassDynamicCast_AsAttachment_Barrel_Base' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Shootvisuals, K2Node_ClassDynamicCast_bSuccess) == 0x000010, "Member 'PlayerCharacter_C_Shootvisuals::K2Node_ClassDynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Shootvisuals, CallFunc_IsValid_ReturnValue) == 0x000011, "Member 'PlayerCharacter_C_Shootvisuals::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Shootvisuals, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000014, "Member 'PlayerCharacter_C_Shootvisuals::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Shootvisuals, CallFunc_IsValid_ReturnValue_1) == 0x000020, "Member 'PlayerCharacter_C_Shootvisuals::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Shootvisuals, Temp_bool_Variable) == 0x000021, "Member 'PlayerCharacter_C_Shootvisuals::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Shootvisuals, K2Node_Select_Default) == 0x000028, "Member 'PlayerCharacter_C_Shootvisuals::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_Shootvisuals;
 
 // Function PlayerCharacter.PlayerCharacter_C.ShootFunction
 // 0x0180 (0x0180 - 0x0000)
@@ -2372,51 +1563,7 @@ public:
 	float                                         CallFunc_Add_FloatFloat_ReturnValue_1;             // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x017C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_ShootFunction) == 0x000008, "Wrong alignment on PlayerCharacter_C_ShootFunction");
-static_assert(sizeof(PlayerCharacter_C_ShootFunction) == 0x000180, "Wrong size on PlayerCharacter_C_ShootFunction");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, Hit) == 0x000000, "Member 'PlayerCharacter_C_ShootFunction::Hit' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, Temp_float_Variable) == 0x000088, "Member 'PlayerCharacter_C_ShootFunction::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, CallFunc_BreakHitResult_bBlockingHit) == 0x00008C, "Member 'PlayerCharacter_C_ShootFunction::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, CallFunc_BreakHitResult_bInitialOverlap) == 0x00008D, "Member 'PlayerCharacter_C_ShootFunction::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, CallFunc_BreakHitResult_Time) == 0x000090, "Member 'PlayerCharacter_C_ShootFunction::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, CallFunc_BreakHitResult_Distance) == 0x000094, "Member 'PlayerCharacter_C_ShootFunction::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, CallFunc_BreakHitResult_Location) == 0x000098, "Member 'PlayerCharacter_C_ShootFunction::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, CallFunc_BreakHitResult_ImpactPoint) == 0x0000A4, "Member 'PlayerCharacter_C_ShootFunction::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, CallFunc_BreakHitResult_Normal) == 0x0000B0, "Member 'PlayerCharacter_C_ShootFunction::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, CallFunc_BreakHitResult_ImpactNormal) == 0x0000BC, "Member 'PlayerCharacter_C_ShootFunction::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, CallFunc_BreakHitResult_PhysMat) == 0x0000C8, "Member 'PlayerCharacter_C_ShootFunction::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, CallFunc_BreakHitResult_HitActor) == 0x0000D0, "Member 'PlayerCharacter_C_ShootFunction::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, CallFunc_BreakHitResult_HitComponent) == 0x0000D8, "Member 'PlayerCharacter_C_ShootFunction::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, CallFunc_BreakHitResult_HitBoneName) == 0x0000E0, "Member 'PlayerCharacter_C_ShootFunction::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, CallFunc_BreakHitResult_HitItem) == 0x0000E8, "Member 'PlayerCharacter_C_ShootFunction::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, CallFunc_BreakHitResult_ElementIndex) == 0x0000EC, "Member 'PlayerCharacter_C_ShootFunction::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, CallFunc_BreakHitResult_FaceIndex) == 0x0000F0, "Member 'PlayerCharacter_C_ShootFunction::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, CallFunc_BreakHitResult_TraceStart) == 0x0000F4, "Member 'PlayerCharacter_C_ShootFunction::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, CallFunc_BreakHitResult_TraceEnd) == 0x000100, "Member 'PlayerCharacter_C_ShootFunction::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, CallFunc_IsValid_ReturnValue) == 0x00010C, "Member 'PlayerCharacter_C_ShootFunction::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, CallFunc_GetComponentByClass_ReturnValue) == 0x000110, "Member 'PlayerCharacter_C_ShootFunction::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, CallFunc_IsValid_ReturnValue_1) == 0x000118, "Member 'PlayerCharacter_C_ShootFunction::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, Temp_bool_Variable) == 0x000119, "Member 'PlayerCharacter_C_ShootFunction::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, Temp_float_Variable_1) == 0x00011C, "Member 'PlayerCharacter_C_ShootFunction::Temp_float_Variable_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000120, "Member 'PlayerCharacter_C_ShootFunction::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000124, "Member 'PlayerCharacter_C_ShootFunction::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, CallFunc_GetThisGunStats_Zoom) == 0x000128, "Member 'PlayerCharacter_C_ShootFunction::CallFunc_GetThisGunStats_Zoom' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, CallFunc_GetThisGunStats_Recoil) == 0x00012C, "Member 'PlayerCharacter_C_ShootFunction::CallFunc_GetThisGunStats_Recoil' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, CallFunc_GetThisGunStats_Accuracy) == 0x000130, "Member 'PlayerCharacter_C_ShootFunction::CallFunc_GetThisGunStats_Accuracy' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, CallFunc_GetThisGunStats_Reload_time) == 0x000134, "Member 'PlayerCharacter_C_ShootFunction::CallFunc_GetThisGunStats_Reload_time' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, CallFunc_GetThisGunStats_Damage) == 0x000138, "Member 'PlayerCharacter_C_ShootFunction::CallFunc_GetThisGunStats_Damage' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, CallFunc_GetThisGunStats_Bullets) == 0x00013C, "Member 'PlayerCharacter_C_ShootFunction::CallFunc_GetThisGunStats_Bullets' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, K2Node_Select_Default) == 0x000140, "Member 'PlayerCharacter_C_ShootFunction::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000144, "Member 'PlayerCharacter_C_ShootFunction::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, CallFunc_GetAttachmentFromCategory_Class) == 0x000148, "Member 'PlayerCharacter_C_ShootFunction::CallFunc_GetAttachmentFromCategory_Class' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, CallFunc_Add_FloatFloat_ReturnValue) == 0x000150, "Member 'PlayerCharacter_C_ShootFunction::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, K2Node_ClassDynamicCast_AsAttachment_Barrel_Base) == 0x000158, "Member 'PlayerCharacter_C_ShootFunction::K2Node_ClassDynamicCast_AsAttachment_Barrel_Base' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, K2Node_ClassDynamicCast_bSuccess) == 0x000160, "Member 'PlayerCharacter_C_ShootFunction::K2Node_ClassDynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000164, "Member 'PlayerCharacter_C_ShootFunction::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, Temp_bool_Variable_1) == 0x000170, "Member 'PlayerCharacter_C_ShootFunction::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, K2Node_Select_Default_1) == 0x000174, "Member 'PlayerCharacter_C_ShootFunction::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, CallFunc_Add_FloatFloat_ReturnValue_1) == 0x000178, "Member 'PlayerCharacter_C_ShootFunction::CallFunc_Add_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_ShootFunction, CallFunc_FTrunc_ReturnValue) == 0x00017C, "Member 'PlayerCharacter_C_ShootFunction::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_ShootFunction;
 
 // Function PlayerCharacter.PlayerCharacter_C.SwitchGun
 // 0x0060 (0x0060 - 0x0000)
@@ -2454,32 +1601,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerCharacter_C_SwitchGun) == 0x000008, "Wrong alignment on PlayerCharacter_C_SwitchGun");
-static_assert(sizeof(PlayerCharacter_C_SwitchGun) == 0x000060, "Wrong size on PlayerCharacter_C_SwitchGun");
-static_assert(offsetof(PlayerCharacter_C_SwitchGun, Number) == 0x000000, "Member 'PlayerCharacter_C_SwitchGun::Number' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SwitchGun, Willswitch_) == 0x000004, "Member 'PlayerCharacter_C_SwitchGun::Willswitch_' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SwitchGun, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000005, "Member 'PlayerCharacter_C_SwitchGun::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SwitchGun, CallFunc_SelectFloat_ReturnValue) == 0x000008, "Member 'PlayerCharacter_C_SwitchGun::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SwitchGun, CallFunc_Less_IntInt_ReturnValue) == 0x00000C, "Member 'PlayerCharacter_C_SwitchGun::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SwitchGun, Temp_int_Loop_Counter_Variable) == 0x000010, "Member 'PlayerCharacter_C_SwitchGun::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SwitchGun, CallFunc_Add_IntInt_ReturnValue) == 0x000014, "Member 'PlayerCharacter_C_SwitchGun::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SwitchGun, Temp_int_Array_Index_Variable) == 0x000018, "Member 'PlayerCharacter_C_SwitchGun::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SwitchGun, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x000020, "Member 'PlayerCharacter_C_SwitchGun::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SwitchGun, K2Node_DynamicCast_AsRobber_Camera_Manager) == 0x000028, "Member 'PlayerCharacter_C_SwitchGun::K2Node_DynamicCast_AsRobber_Camera_Manager' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SwitchGun, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'PlayerCharacter_C_SwitchGun::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SwitchGun, CallFunc_Not_PreBool_ReturnValue) == 0x000031, "Member 'PlayerCharacter_C_SwitchGun::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SwitchGun, CallFunc_Not_PreBool_ReturnValue_1) == 0x000032, "Member 'PlayerCharacter_C_SwitchGun::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SwitchGun, CallFunc_BooleanAND_ReturnValue) == 0x000033, "Member 'PlayerCharacter_C_SwitchGun::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SwitchGun, CallFunc_BooleanAND_ReturnValue_1) == 0x000034, "Member 'PlayerCharacter_C_SwitchGun::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SwitchGun, CallFunc_IsValid_ReturnValue) == 0x000035, "Member 'PlayerCharacter_C_SwitchGun::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SwitchGun, CallFunc_GetObjectClass_ReturnValue) == 0x000038, "Member 'PlayerCharacter_C_SwitchGun::CallFunc_GetObjectClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SwitchGun, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x000040, "Member 'PlayerCharacter_C_SwitchGun::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SwitchGun, CallFunc_Array_Length_ReturnValue) == 0x000044, "Member 'PlayerCharacter_C_SwitchGun::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SwitchGun, CallFunc_Array_Get_Item) == 0x000048, "Member 'PlayerCharacter_C_SwitchGun::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SwitchGun, CallFunc_EqualEqual_ClassClass_ReturnValue) == 0x000050, "Member 'PlayerCharacter_C_SwitchGun::CallFunc_EqualEqual_ClassClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SwitchGun, CallFunc_Greater_IntInt_ReturnValue) == 0x000051, "Member 'PlayerCharacter_C_SwitchGun::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SwitchGun, CallFunc_Array_Length_ReturnValue_1) == 0x000054, "Member 'PlayerCharacter_C_SwitchGun::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SwitchGun, CallFunc_Less_IntInt_ReturnValue_1) == 0x000058, "Member 'PlayerCharacter_C_SwitchGun::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_SwitchGun;
 
 // Function PlayerCharacter.PlayerCharacter_C.SpawnUnequippedGuns
 // 0x00D0 (0x00D0 - 0x0000)
@@ -2516,32 +1638,7 @@ public:
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_SpawnUnequippedGuns) == 0x000010, "Wrong alignment on PlayerCharacter_C_SpawnUnequippedGuns");
-static_assert(sizeof(PlayerCharacter_C_SpawnUnequippedGuns) == 0x0000D0, "Wrong size on PlayerCharacter_C_SpawnUnequippedGuns");
-static_assert(offsetof(PlayerCharacter_C_SpawnUnequippedGuns, StoredGunsLocal) == 0x000000, "Member 'PlayerCharacter_C_SpawnUnequippedGuns::StoredGunsLocal' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SpawnUnequippedGuns, Temp_int_Loop_Counter_Variable) == 0x000010, "Member 'PlayerCharacter_C_SpawnUnequippedGuns::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SpawnUnequippedGuns, CallFunc_Add_IntInt_ReturnValue) == 0x000014, "Member 'PlayerCharacter_C_SpawnUnequippedGuns::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SpawnUnequippedGuns, Temp_int_Array_Index_Variable) == 0x000018, "Member 'PlayerCharacter_C_SpawnUnequippedGuns::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SpawnUnequippedGuns, Temp_int_Loop_Counter_Variable_1) == 0x00001C, "Member 'PlayerCharacter_C_SpawnUnequippedGuns::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SpawnUnequippedGuns, CallFunc_Add_IntInt_ReturnValue_1) == 0x000020, "Member 'PlayerCharacter_C_SpawnUnequippedGuns::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SpawnUnequippedGuns, Temp_int_Array_Index_Variable_1) == 0x000024, "Member 'PlayerCharacter_C_SpawnUnequippedGuns::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SpawnUnequippedGuns, CallFunc_Array_Get_Item) == 0x000028, "Member 'PlayerCharacter_C_SpawnUnequippedGuns::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SpawnUnequippedGuns, CallFunc_Array_Get_Item_1) == 0x000038, "Member 'PlayerCharacter_C_SpawnUnequippedGuns::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SpawnUnequippedGuns, CallFunc_Array_Length_ReturnValue) == 0x000040, "Member 'PlayerCharacter_C_SpawnUnequippedGuns::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SpawnUnequippedGuns, CallFunc_IsValid_ReturnValue) == 0x000044, "Member 'PlayerCharacter_C_SpawnUnequippedGuns::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SpawnUnequippedGuns, CallFunc_Less_IntInt_ReturnValue) == 0x000045, "Member 'PlayerCharacter_C_SpawnUnequippedGuns::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SpawnUnequippedGuns, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000048, "Member 'PlayerCharacter_C_SpawnUnequippedGuns::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SpawnUnequippedGuns, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000054, "Member 'PlayerCharacter_C_SpawnUnequippedGuns::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SpawnUnequippedGuns, CallFunc_MakeTransform_ReturnValue) == 0x000060, "Member 'PlayerCharacter_C_SpawnUnequippedGuns::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SpawnUnequippedGuns, CallFunc_Array_Length_ReturnValue_1) == 0x000090, "Member 'PlayerCharacter_C_SpawnUnequippedGuns::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SpawnUnequippedGuns, CallFunc_Array_Get_Item_2) == 0x000098, "Member 'PlayerCharacter_C_SpawnUnequippedGuns::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SpawnUnequippedGuns, CallFunc_Less_IntInt_ReturnValue_1) == 0x0000A0, "Member 'PlayerCharacter_C_SpawnUnequippedGuns::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SpawnUnequippedGuns, K2Node_ClassDynamicCast_AsGun_Base) == 0x0000A8, "Member 'PlayerCharacter_C_SpawnUnequippedGuns::K2Node_ClassDynamicCast_AsGun_Base' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SpawnUnequippedGuns, K2Node_ClassDynamicCast_bSuccess) == 0x0000B0, "Member 'PlayerCharacter_C_SpawnUnequippedGuns::K2Node_ClassDynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SpawnUnequippedGuns, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0000B8, "Member 'PlayerCharacter_C_SpawnUnequippedGuns::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SpawnUnequippedGuns, CallFunc_FinishSpawningActor_ReturnValue) == 0x0000C0, "Member 'PlayerCharacter_C_SpawnUnequippedGuns::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SpawnUnequippedGuns, CallFunc_Array_Add_ReturnValue) == 0x0000C8, "Member 'PlayerCharacter_C_SpawnUnequippedGuns::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SpawnUnequippedGuns, CallFunc_Array_Add_ReturnValue_1) == 0x0000CC, "Member 'PlayerCharacter_C_SpawnUnequippedGuns::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_SpawnUnequippedGuns;
 
 // Function PlayerCharacter.PlayerCharacter_C.AttachUnequippedGuns
 // 0x0168 (0x0168 - 0x0000)
@@ -2568,23 +1665,7 @@ public:
 	uint8                                         Pad_162[0x2];                                      // 0x0162(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0164(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_AttachUnequippedGuns) == 0x000008, "Wrong alignment on PlayerCharacter_C_AttachUnequippedGuns");
-static_assert(sizeof(PlayerCharacter_C_AttachUnequippedGuns) == 0x000168, "Wrong size on PlayerCharacter_C_AttachUnequippedGuns");
-static_assert(offsetof(PlayerCharacter_C_AttachUnequippedGuns, Temp_int_Array_Index_Variable) == 0x000000, "Member 'PlayerCharacter_C_AttachUnequippedGuns::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AttachUnequippedGuns, CallFunc_Array_Get_Item) == 0x000008, "Member 'PlayerCharacter_C_AttachUnequippedGuns::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AttachUnequippedGuns, CallFunc_Array_Length_ReturnValue) == 0x000010, "Member 'PlayerCharacter_C_AttachUnequippedGuns::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AttachUnequippedGuns, CallFunc_IsValid_ReturnValue) == 0x000014, "Member 'PlayerCharacter_C_AttachUnequippedGuns::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AttachUnequippedGuns, CallFunc_K2_GetComponentRotation_ReturnValue) == 0x000018, "Member 'PlayerCharacter_C_AttachUnequippedGuns::CallFunc_K2_GetComponentRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AttachUnequippedGuns, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000024, "Member 'PlayerCharacter_C_AttachUnequippedGuns::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AttachUnequippedGuns, CallFunc_K2_SetActorLocationAndRotation_SweepHitResult) == 0x000030, "Member 'PlayerCharacter_C_AttachUnequippedGuns::CallFunc_K2_SetActorLocationAndRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AttachUnequippedGuns, CallFunc_K2_SetActorLocationAndRotation_ReturnValue) == 0x0000B8, "Member 'PlayerCharacter_C_AttachUnequippedGuns::CallFunc_K2_SetActorLocationAndRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AttachUnequippedGuns, CallFunc_K2_GetComponentRotation_ReturnValue_1) == 0x0000BC, "Member 'PlayerCharacter_C_AttachUnequippedGuns::CallFunc_K2_GetComponentRotation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AttachUnequippedGuns, CallFunc_K2_GetComponentLocation_ReturnValue_1) == 0x0000C8, "Member 'PlayerCharacter_C_AttachUnequippedGuns::CallFunc_K2_GetComponentLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AttachUnequippedGuns, Temp_int_Loop_Counter_Variable) == 0x0000D4, "Member 'PlayerCharacter_C_AttachUnequippedGuns::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AttachUnequippedGuns, CallFunc_K2_SetActorLocationAndRotation_SweepHitResult_1) == 0x0000D8, "Member 'PlayerCharacter_C_AttachUnequippedGuns::CallFunc_K2_SetActorLocationAndRotation_SweepHitResult_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AttachUnequippedGuns, CallFunc_K2_SetActorLocationAndRotation_ReturnValue_1) == 0x000160, "Member 'PlayerCharacter_C_AttachUnequippedGuns::CallFunc_K2_SetActorLocationAndRotation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AttachUnequippedGuns, CallFunc_Less_IntInt_ReturnValue) == 0x000161, "Member 'PlayerCharacter_C_AttachUnequippedGuns::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AttachUnequippedGuns, CallFunc_Add_IntInt_ReturnValue) == 0x000164, "Member 'PlayerCharacter_C_AttachUnequippedGuns::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_AttachUnequippedGuns;
 
 // Function PlayerCharacter.PlayerCharacter_C.SetupGunAmmo
 // 0x0068 (0x0068 - 0x0000)
@@ -2614,26 +1695,7 @@ public:
 	int32                                         CallFunc_Multiply_IntInt_ReturnValue;              // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_SetupGunAmmo) == 0x000008, "Wrong alignment on PlayerCharacter_C_SetupGunAmmo");
-static_assert(sizeof(PlayerCharacter_C_SetupGunAmmo) == 0x000068, "Wrong size on PlayerCharacter_C_SetupGunAmmo");
-static_assert(offsetof(PlayerCharacter_C_SetupGunAmmo, Temp_int_Array_Index_Variable) == 0x000000, "Member 'PlayerCharacter_C_SetupGunAmmo::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupGunAmmo, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'PlayerCharacter_C_SetupGunAmmo::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupGunAmmo, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'PlayerCharacter_C_SetupGunAmmo::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupGunAmmo, CallFunc_Array_Get_Item) == 0x000010, "Member 'PlayerCharacter_C_SetupGunAmmo::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupGunAmmo, CallFunc_Array_Length_ReturnValue) == 0x000020, "Member 'PlayerCharacter_C_SetupGunAmmo::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupGunAmmo, CallFunc_Array_Get_Item_1) == 0x000028, "Member 'PlayerCharacter_C_SetupGunAmmo::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupGunAmmo, CallFunc_Less_IntInt_ReturnValue) == 0x000030, "Member 'PlayerCharacter_C_SetupGunAmmo::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupGunAmmo, K2Node_ClassDynamicCast_AsGun_Base) == 0x000038, "Member 'PlayerCharacter_C_SetupGunAmmo::K2Node_ClassDynamicCast_AsGun_Base' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupGunAmmo, K2Node_ClassDynamicCast_bSuccess) == 0x000040, "Member 'PlayerCharacter_C_SetupGunAmmo::K2Node_ClassDynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupGunAmmo, CallFunc_Get_Any_Gun_Stats_Zoom) == 0x000044, "Member 'PlayerCharacter_C_SetupGunAmmo::CallFunc_Get_Any_Gun_Stats_Zoom' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupGunAmmo, CallFunc_Get_Any_Gun_Stats_Recoil) == 0x000048, "Member 'PlayerCharacter_C_SetupGunAmmo::CallFunc_Get_Any_Gun_Stats_Recoil' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupGunAmmo, CallFunc_Get_Any_Gun_Stats_Accuracy) == 0x00004C, "Member 'PlayerCharacter_C_SetupGunAmmo::CallFunc_Get_Any_Gun_Stats_Accuracy' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupGunAmmo, CallFunc_Get_Any_Gun_Stats_Reload_time) == 0x000050, "Member 'PlayerCharacter_C_SetupGunAmmo::CallFunc_Get_Any_Gun_Stats_Reload_time' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupGunAmmo, CallFunc_Get_Any_Gun_Stats_Damage) == 0x000054, "Member 'PlayerCharacter_C_SetupGunAmmo::CallFunc_Get_Any_Gun_Stats_Damage' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupGunAmmo, CallFunc_Get_Any_Gun_Stats_Bullets) == 0x000058, "Member 'PlayerCharacter_C_SetupGunAmmo::CallFunc_Get_Any_Gun_Stats_Bullets' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupGunAmmo, CallFunc_Array_Add_ReturnValue) == 0x00005C, "Member 'PlayerCharacter_C_SetupGunAmmo::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupGunAmmo, CallFunc_Multiply_IntInt_ReturnValue) == 0x000060, "Member 'PlayerCharacter_C_SetupGunAmmo::CallFunc_Multiply_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupGunAmmo, CallFunc_Array_Add_ReturnValue_1) == 0x000064, "Member 'PlayerCharacter_C_SetupGunAmmo::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_SetupGunAmmo;
 
 // Function PlayerCharacter.PlayerCharacter_C.InteractFunction
 // 0x01F8 (0x01F8 - 0x0000)
@@ -2687,7 +1749,7 @@ public:
 	struct FVector                                CallFunc_BreakHitResult_TraceStart_1;              // 0x0194(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_TraceEnd_1;                // 0x01A0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1AC[0x4];                                      // 0x01AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IPickupItemBaseInterface_C> K2Node_DynamicCast_AsPickup_Item_Base_Interface;   // 0x01B0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TScriptInterface<class IPickupItemBaseInterface_C> K2Node_DynamicCast_AsPickup_Item_Base_Interface; // 0x01B0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_DoesImplementInterface_ReturnValue;       // 0x01C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x01C2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -2701,60 +1763,7 @@ public:
 	struct FRotator                               CallFunc_K2_GetComponentRotation_ReturnValue;      // 0x01DC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x01E8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_InteractFunction) == 0x000008, "Wrong alignment on PlayerCharacter_C_InteractFunction");
-static_assert(sizeof(PlayerCharacter_C_InteractFunction) == 0x0001F8, "Wrong size on PlayerCharacter_C_InteractFunction");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, Hit_result) == 0x000000, "Member 'PlayerCharacter_C_InteractFunction::Hit_result' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_BreakHitResult_bBlockingHit) == 0x000088, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_BreakHitResult_bInitialOverlap) == 0x000089, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_BreakHitResult_Time) == 0x00008C, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_BreakHitResult_Distance) == 0x000090, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_BreakHitResult_Location) == 0x000094, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_BreakHitResult_ImpactPoint) == 0x0000A0, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_BreakHitResult_Normal) == 0x0000AC, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_BreakHitResult_ImpactNormal) == 0x0000B8, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_BreakHitResult_PhysMat) == 0x0000C8, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_BreakHitResult_HitActor) == 0x0000D0, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_BreakHitResult_HitComponent) == 0x0000D8, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_BreakHitResult_HitBoneName) == 0x0000E0, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_BreakHitResult_HitItem) == 0x0000E8, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_BreakHitResult_ElementIndex) == 0x0000EC, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_BreakHitResult_FaceIndex) == 0x0000F0, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_BreakHitResult_TraceStart) == 0x0000F4, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_BreakHitResult_TraceEnd) == 0x000100, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_GetOwner_ReturnValue) == 0x000110, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_IsValid_ReturnValue) == 0x000118, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, K2Node_DynamicCast_AsPlayer_Character) == 0x000120, "Member 'PlayerCharacter_C_InteractFunction::K2Node_DynamicCast_AsPlayer_Character' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, K2Node_DynamicCast_bSuccess) == 0x000128, "Member 'PlayerCharacter_C_InteractFunction::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000129, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_EqualEqual_ObjectObject_ReturnValue_1) == 0x00012A, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_EqualEqual_ObjectObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_BreakHitResult_bBlockingHit_1) == 0x00012B, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_BreakHitResult_bBlockingHit_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_BreakHitResult_bInitialOverlap_1) == 0x00012C, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_BreakHitResult_bInitialOverlap_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_BreakHitResult_Time_1) == 0x000130, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_BreakHitResult_Time_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_BreakHitResult_Distance_1) == 0x000134, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_BreakHitResult_Distance_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_BreakHitResult_Location_1) == 0x000138, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_BreakHitResult_Location_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_BreakHitResult_ImpactPoint_1) == 0x000144, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_BreakHitResult_ImpactPoint_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_BreakHitResult_Normal_1) == 0x000150, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_BreakHitResult_Normal_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_BreakHitResult_ImpactNormal_1) == 0x00015C, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_BreakHitResult_ImpactNormal_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_BreakHitResult_PhysMat_1) == 0x000168, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_BreakHitResult_PhysMat_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_BreakHitResult_HitActor_1) == 0x000170, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_BreakHitResult_HitActor_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_BreakHitResult_HitComponent_1) == 0x000178, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_BreakHitResult_HitComponent_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_BreakHitResult_HitBoneName_1) == 0x000180, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_BreakHitResult_HitBoneName_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_BreakHitResult_HitItem_1) == 0x000188, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_BreakHitResult_HitItem_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_BreakHitResult_ElementIndex_1) == 0x00018C, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_BreakHitResult_ElementIndex_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_BreakHitResult_FaceIndex_1) == 0x000190, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_BreakHitResult_FaceIndex_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_BreakHitResult_TraceStart_1) == 0x000194, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_BreakHitResult_TraceStart_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_BreakHitResult_TraceEnd_1) == 0x0001A0, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_BreakHitResult_TraceEnd_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, K2Node_DynamicCast_AsPickup_Item_Base_Interface) == 0x0001B0, "Member 'PlayerCharacter_C_InteractFunction::K2Node_DynamicCast_AsPickup_Item_Base_Interface' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, K2Node_DynamicCast_bSuccess_1) == 0x0001C0, "Member 'PlayerCharacter_C_InteractFunction::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_DoesImplementInterface_ReturnValue) == 0x0001C1, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_DoesImplementInterface_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_IsValid_ReturnValue_1) == 0x0001C2, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_IsValid_ReturnValue_2) == 0x0001C3, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_GetComponentByClass_ReturnValue) == 0x0001C8, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_GetComponentByClass_ReturnValue_1) == 0x0001D0, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_GetComponentByClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_IsValid_ReturnValue_3) == 0x0001D8, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_IsValid_ReturnValue_4) == 0x0001D9, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_K2_GetComponentRotation_ReturnValue) == 0x0001DC, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_K2_GetComponentRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InteractFunction, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x0001E8, "Member 'PlayerCharacter_C_InteractFunction::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_InteractFunction;
 
 // Function PlayerCharacter.PlayerCharacter_C.Pick up item
 // 0x03B8 (0x03B8 - 0x0000)
@@ -2845,78 +1854,7 @@ public:
 	struct FHitResult                             CallFunc_K2_SetActorLocationAndRotation_SweepHitResult_1; // 0x0328(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_K2_SetActorLocationAndRotation_ReturnValue_1; // 0x03B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerCharacter_C_Pick_up_item) == 0x000008, "Wrong alignment on PlayerCharacter_C_Pick_up_item");
-static_assert(sizeof(PlayerCharacter_C_Pick_up_item) == 0x0003B8, "Wrong size on PlayerCharacter_C_Pick_up_item");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, Hit_result) == 0x000000, "Member 'PlayerCharacter_C_Pick_up_item::Hit_result' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, HitComponent) == 0x000088, "Member 'PlayerCharacter_C_Pick_up_item::HitComponent' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, hit_actor) == 0x000090, "Member 'PlayerCharacter_C_Pick_up_item::hit_actor' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_BreakHitResult_bBlockingHit) == 0x000098, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_BreakHitResult_bInitialOverlap) == 0x000099, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_BreakHitResult_Time) == 0x00009C, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_BreakHitResult_Distance) == 0x0000A0, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_BreakHitResult_Location) == 0x0000A4, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_BreakHitResult_ImpactPoint) == 0x0000B0, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_BreakHitResult_Normal) == 0x0000BC, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_BreakHitResult_ImpactNormal) == 0x0000C8, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_BreakHitResult_PhysMat) == 0x0000D8, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_BreakHitResult_HitActor) == 0x0000E0, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_BreakHitResult_HitComponent) == 0x0000E8, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_BreakHitResult_HitBoneName) == 0x0000F0, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_BreakHitResult_HitItem) == 0x0000F8, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_BreakHitResult_ElementIndex) == 0x0000FC, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_BreakHitResult_FaceIndex) == 0x000100, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_BreakHitResult_TraceStart) == 0x000104, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_BreakHitResult_TraceEnd) == 0x000110, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, Temp_bool_Variable) == 0x00011C, "Member 'PlayerCharacter_C_Pick_up_item::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_MakeLiteralFloat_ReturnValue) == 0x000120, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_MakeLiteralFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, Temp_name_Variable) == 0x000124, "Member 'PlayerCharacter_C_Pick_up_item::Temp_name_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, Temp_name_Variable_1) == 0x00012C, "Member 'PlayerCharacter_C_Pick_up_item::Temp_name_Variable_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, K2Node_DynamicCast_AsStatic_Mesh_Component) == 0x000138, "Member 'PlayerCharacter_C_Pick_up_item::K2Node_DynamicCast_AsStatic_Mesh_Component' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, K2Node_DynamicCast_bSuccess) == 0x000140, "Member 'PlayerCharacter_C_Pick_up_item::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_GetLocalBounds_Min) == 0x000144, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_GetLocalBounds_Min' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_GetLocalBounds_Max) == 0x000150, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_GetLocalBounds_Max' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_GetRightVector_ReturnValue) == 0x00015C, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_GetRightVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_BreakVector_X) == 0x000168, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_BreakVector_Y) == 0x00016C, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_BreakVector_Z) == 0x000170, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000174, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000180, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_GetComponentBounds_Origin) == 0x00018C, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_GetComponentBounds_Origin' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_GetComponentBounds_BoxExtent) == 0x000198, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_GetComponentBounds_BoxExtent' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_GetComponentBounds_SphereRadius) == 0x0001A4, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_GetComponentBounds_SphereRadius' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_Subtract_VectorVector_ReturnValue) == 0x0001A8, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_IsFalling_ReturnValue) == 0x0001B4, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_IsFalling_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_GetSocketLocation_ReturnValue) == 0x0001B8, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_GetSocketLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_GetSocketLocation_ReturnValue_1) == 0x0001C4, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_GetSocketLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_Vector_Distance_ReturnValue) == 0x0001D0, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_Vector_Distance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_Vector_Distance_ReturnValue_1) == 0x0001D4, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_Vector_Distance_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_Less_FloatFloat_ReturnValue) == 0x0001D8, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_IsSimulatingPhysics_ReturnValue) == 0x0001D9, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_IsSimulatingPhysics_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, K2Node_DynamicCast_AsPickup_Item_Base) == 0x0001E0, "Member 'PlayerCharacter_C_Pick_up_item::K2Node_DynamicCast_AsPickup_Item_Base' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, K2Node_DynamicCast_bSuccess_1) == 0x0001E8, "Member 'PlayerCharacter_C_Pick_up_item::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_GetComponentsByTag_ReturnValue) == 0x0001F0, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_GetComponentsByTag_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_Array_Get_Item) == 0x000200, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, K2Node_DynamicCast_AsNPCBase) == 0x000208, "Member 'PlayerCharacter_C_Pick_up_item::K2Node_DynamicCast_AsNPCBase' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, K2Node_DynamicCast_bSuccess_2) == 0x000210, "Member 'PlayerCharacter_C_Pick_up_item::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_K2_GetComponentRotation_ReturnValue) == 0x000214, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_K2_GetComponentRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_K2_GetComponentLocation_ReturnValue_1) == 0x000220, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_K2_GetComponentLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_GetComponentByClass_ReturnValue) == 0x000230, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_IsValid_ReturnValue) == 0x000238, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_GetComponentByClass_ReturnValue_1) == 0x000240, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_GetComponentByClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_IsValid_ReturnValue_1) == 0x000248, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, Temp_bool_Variable_1) == 0x000249, "Member 'PlayerCharacter_C_Pick_up_item::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, Temp_bool_Variable_2) == 0x00024A, "Member 'PlayerCharacter_C_Pick_up_item::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, K2Node_Select_Default) == 0x00024C, "Member 'PlayerCharacter_C_Pick_up_item::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, K2Node_Select_Default_1) == 0x000254, "Member 'PlayerCharacter_C_Pick_up_item::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_K2_GetComponentRotation_ReturnValue_1) == 0x000260, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_K2_GetComponentRotation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_K2_GetComponentLocation_ReturnValue_2) == 0x00026C, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_K2_GetComponentLocation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_K2_SetActorLocationAndRotation_SweepHitResult) == 0x000278, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_K2_SetActorLocationAndRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_K2_SetActorLocationAndRotation_ReturnValue) == 0x000300, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_K2_SetActorLocationAndRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_Add_VectorVector_ReturnValue) == 0x000304, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_Add_VectorVector_ReturnValue_1) == 0x000310, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, K2Node_Select_Default_2) == 0x00031C, "Member 'PlayerCharacter_C_Pick_up_item::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_K2_SetActorLocationAndRotation_SweepHitResult_1) == 0x000328, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_K2_SetActorLocationAndRotation_SweepHitResult_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Pick_up_item, CallFunc_K2_SetActorLocationAndRotation_ReturnValue_1) == 0x0003B0, "Member 'PlayerCharacter_C_Pick_up_item::CallFunc_K2_SetActorLocationAndRotation_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_Pick_up_item;
 
 // Function PlayerCharacter.PlayerCharacter_C.Release item
 // 0x0058 (0x0058 - 0x0000)
@@ -2942,23 +1880,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsOverlappingActor_ReturnValue;           // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerCharacter_C_Release_item) == 0x000008, "Wrong alignment on PlayerCharacter_C_Release_item");
-static_assert(sizeof(PlayerCharacter_C_Release_item) == 0x000058, "Wrong size on PlayerCharacter_C_Release_item");
-static_assert(offsetof(PlayerCharacter_C_Release_item, Actor) == 0x000000, "Member 'PlayerCharacter_C_Release_item::Actor' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Release_item, CallFunc_K2_GetRootComponent_ReturnValue) == 0x000008, "Member 'PlayerCharacter_C_Release_item::CallFunc_K2_GetRootComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Release_item, K2Node_DynamicCast_AsStatic_Mesh_Component) == 0x000010, "Member 'PlayerCharacter_C_Release_item::K2Node_DynamicCast_AsStatic_Mesh_Component' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Release_item, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'PlayerCharacter_C_Release_item::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Release_item, CallFunc_IsSimulatingPhysics_ReturnValue) == 0x000019, "Member 'PlayerCharacter_C_Release_item::CallFunc_IsSimulatingPhysics_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Release_item, CallFunc_GetComponentByClass_ReturnValue) == 0x000020, "Member 'PlayerCharacter_C_Release_item::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Release_item, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'PlayerCharacter_C_Release_item::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Release_item, CallFunc_IsValid_ReturnValue_1) == 0x000029, "Member 'PlayerCharacter_C_Release_item::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Release_item, CallFunc_GetComponentByClass_ReturnValue_1) == 0x000030, "Member 'PlayerCharacter_C_Release_item::CallFunc_GetComponentByClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Release_item, CallFunc_GetComponentByClass_ReturnValue_2) == 0x000038, "Member 'PlayerCharacter_C_Release_item::CallFunc_GetComponentByClass_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Release_item, CallFunc_IsValid_ReturnValue_2) == 0x000040, "Member 'PlayerCharacter_C_Release_item::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Release_item, CallFunc_IsValid_ReturnValue_3) == 0x000041, "Member 'PlayerCharacter_C_Release_item::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Release_item, CallFunc_GetGrabbedComponent_ReturnValue) == 0x000048, "Member 'PlayerCharacter_C_Release_item::CallFunc_GetGrabbedComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Release_item, CallFunc_IsValid_ReturnValue_4) == 0x000050, "Member 'PlayerCharacter_C_Release_item::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Release_item, CallFunc_IsOverlappingActor_ReturnValue) == 0x000051, "Member 'PlayerCharacter_C_Release_item::CallFunc_IsOverlappingActor_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_Release_item;
 
 // Function PlayerCharacter.PlayerCharacter_C.SetMeshCrouchLocation
 // 0x009C (0x009C - 0x0000)
@@ -2971,12 +1893,7 @@ public:
 	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0008(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0014(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(PlayerCharacter_C_SetMeshCrouchLocation) == 0x000004, "Wrong alignment on PlayerCharacter_C_SetMeshCrouchLocation");
-static_assert(sizeof(PlayerCharacter_C_SetMeshCrouchLocation) == 0x00009C, "Wrong size on PlayerCharacter_C_SetMeshCrouchLocation");
-static_assert(offsetof(PlayerCharacter_C_SetMeshCrouchLocation, Crouched_) == 0x000000, "Member 'PlayerCharacter_C_SetMeshCrouchLocation::Crouched_' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetMeshCrouchLocation, CallFunc_SelectFloat_ReturnValue) == 0x000004, "Member 'PlayerCharacter_C_SetMeshCrouchLocation::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetMeshCrouchLocation, CallFunc_MakeVector_ReturnValue) == 0x000008, "Member 'PlayerCharacter_C_SetMeshCrouchLocation::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetMeshCrouchLocation, CallFunc_K2_SetRelativeLocation_SweepHitResult) == 0x000014, "Member 'PlayerCharacter_C_SetMeshCrouchLocation::CallFunc_K2_SetRelativeLocation_SweepHitResult' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_SetMeshCrouchLocation;
 
 // Function PlayerCharacter.PlayerCharacter_C.SetupGunFunc
 // 0x0090 (0x0090 - 0x0000)
@@ -2999,22 +1916,7 @@ public:
 	class AGunBase_C*                             K2Node_DynamicCast_AsGun_Base;                     // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerCharacter_C_SetupGunFunc) == 0x000010, "Wrong alignment on PlayerCharacter_C_SetupGunFunc");
-static_assert(sizeof(PlayerCharacter_C_SetupGunFunc) == 0x000090, "Wrong size on PlayerCharacter_C_SetupGunFunc");
-static_assert(offsetof(PlayerCharacter_C_SetupGunFunc, Slot) == 0x000000, "Member 'PlayerCharacter_C_SetupGunFunc::Slot' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupGunFunc, CallFunc_MakeLiteralInt_ReturnValue) == 0x000004, "Member 'PlayerCharacter_C_SetupGunFunc::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupGunFunc, CallFunc_Array_Get_Item) == 0x000008, "Member 'PlayerCharacter_C_SetupGunFunc::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupGunFunc, CallFunc_Array_Length_ReturnValue) == 0x000018, "Member 'PlayerCharacter_C_SetupGunFunc::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupGunFunc, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00001C, "Member 'PlayerCharacter_C_SetupGunFunc::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupGunFunc, CallFunc_IsValid_ReturnValue) == 0x00001D, "Member 'PlayerCharacter_C_SetupGunFunc::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupGunFunc, CallFunc_Array_Get_Item_1) == 0x000020, "Member 'PlayerCharacter_C_SetupGunFunc::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupGunFunc, CallFunc_K2_GetComponentRotation_ReturnValue) == 0x000028, "Member 'PlayerCharacter_C_SetupGunFunc::CallFunc_K2_GetComponentRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupGunFunc, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000034, "Member 'PlayerCharacter_C_SetupGunFunc::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupGunFunc, CallFunc_MakeTransform_ReturnValue) == 0x000040, "Member 'PlayerCharacter_C_SetupGunFunc::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupGunFunc, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000070, "Member 'PlayerCharacter_C_SetupGunFunc::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupGunFunc, CallFunc_FinishSpawningActor_ReturnValue) == 0x000078, "Member 'PlayerCharacter_C_SetupGunFunc::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupGunFunc, K2Node_DynamicCast_AsGun_Base) == 0x000080, "Member 'PlayerCharacter_C_SetupGunFunc::K2Node_DynamicCast_AsGun_Base' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupGunFunc, K2Node_DynamicCast_bSuccess) == 0x000088, "Member 'PlayerCharacter_C_SetupGunFunc::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_SetupGunFunc;
 
 // Function PlayerCharacter.PlayerCharacter_C.CheckCanVault
 // 0x06B8 (0x06B8 - 0x0000)
@@ -3178,149 +2080,7 @@ public:
 	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x06B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Less_FloatFloat_ReturnValue_1;            // 0x06B5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerCharacter_C_CheckCanVault) == 0x000008, "Wrong alignment on PlayerCharacter_C_CheckCanVault");
-static_assert(sizeof(PlayerCharacter_C_CheckCanVault) == 0x0006B8, "Wrong size on PlayerCharacter_C_CheckCanVault");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, Can_vault_) == 0x000000, "Member 'PlayerCharacter_C_CheckCanVault::Can_vault_' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, Vault_over_) == 0x000001, "Member 'PlayerCharacter_C_CheckCanVault::Vault_over_' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, VaultLocation) == 0x000004, "Member 'PlayerCharacter_C_CheckCanVault::VaultLocation' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, WillCrouch_) == 0x000010, "Member 'PlayerCharacter_C_CheckCanVault::WillCrouch_' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, GroundLocation) == 0x000014, "Member 'PlayerCharacter_C_CheckCanVault::GroundLocation' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, HitGorund_) == 0x000020, "Member 'PlayerCharacter_C_CheckCanVault::HitGorund_' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, ShouldCrouch_) == 0x000021, "Member 'PlayerCharacter_C_CheckCanVault::ShouldCrouch_' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, Temp_object_Variable) == 0x000028, "Member 'PlayerCharacter_C_CheckCanVault::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, Temp_bool_Variable) == 0x000038, "Member 'PlayerCharacter_C_CheckCanVault::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, Temp_object_Variable_1) == 0x000040, "Member 'PlayerCharacter_C_CheckCanVault::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, Temp_object_Variable_2) == 0x000050, "Member 'PlayerCharacter_C_CheckCanVault::Temp_object_Variable_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, Temp_bool_Variable_1) == 0x000060, "Member 'PlayerCharacter_C_CheckCanVault::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, Temp_bool_Variable_2) == 0x000061, "Member 'PlayerCharacter_C_CheckCanVault::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, Temp_object_Variable_3) == 0x000068, "Member 'PlayerCharacter_C_CheckCanVault::Temp_object_Variable_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, Temp_object_Variable_4) == 0x000078, "Member 'PlayerCharacter_C_CheckCanVault::Temp_object_Variable_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakRotator_Roll) == 0x000088, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakRotator_Roll' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakRotator_Pitch) == 0x00008C, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakRotator_Pitch' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakRotator_Yaw) == 0x000090, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakRotator_Yaw' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_MakeRotator_ReturnValue) == 0x000094, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_GetForwardVector_ReturnValue) == 0x0000A0, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_GetForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0000AC, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x0000B0, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_MakeVector_ReturnValue) == 0x0000BC, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_Multiply_VectorFloat_ReturnValue_1) == 0x0000C8, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_Multiply_VectorFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_Multiply_VectorFloat_ReturnValue_2) == 0x0000D4, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_Multiply_VectorFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x0000E0, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_Multiply_FloatFloat_ReturnValue_2) == 0x0000E4, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_Multiply_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x0000E8, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_Add_VectorVector_ReturnValue) == 0x0000F4, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_SphereTraceSingle_OutHit) == 0x000100, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_SphereTraceSingle_OutHit' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_SphereTraceSingle_ReturnValue) == 0x000188, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_SphereTraceSingle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_bBlockingHit) == 0x000189, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_bInitialOverlap) == 0x00018A, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_Time) == 0x00018C, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_Distance) == 0x000190, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_Location) == 0x000194, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_ImpactPoint) == 0x0001A0, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_Normal) == 0x0001AC, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_ImpactNormal) == 0x0001B8, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_PhysMat) == 0x0001C8, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_HitActor) == 0x0001D0, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_HitComponent) == 0x0001D8, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_HitBoneName) == 0x0001E0, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_HitItem) == 0x0001E8, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_ElementIndex) == 0x0001EC, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_FaceIndex) == 0x0001F0, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_TraceStart) == 0x0001F4, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_TraceEnd) == 0x000200, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, K2Node_Select_Default) == 0x00020C, "Member 'PlayerCharacter_C_CheckCanVault::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000218, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_Subtract_VectorVector_ReturnValue_1) == 0x000224, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_Subtract_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_SphereTraceSingle_OutHit_1) == 0x000230, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_SphereTraceSingle_OutHit_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_SphereTraceSingle_ReturnValue_1) == 0x0002B8, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_SphereTraceSingle_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_bBlockingHit_1) == 0x0002B9, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_bBlockingHit_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_bInitialOverlap_1) == 0x0002BA, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_bInitialOverlap_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_Time_1) == 0x0002BC, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_Time_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_Distance_1) == 0x0002C0, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_Distance_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_Location_1) == 0x0002C4, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_Location_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_ImpactPoint_1) == 0x0002D0, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_ImpactPoint_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_Normal_1) == 0x0002DC, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_Normal_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_ImpactNormal_1) == 0x0002E8, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_ImpactNormal_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_PhysMat_1) == 0x0002F8, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_PhysMat_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_HitActor_1) == 0x000300, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_HitActor_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_HitComponent_1) == 0x000308, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_HitComponent_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_HitBoneName_1) == 0x000310, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_HitBoneName_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_HitItem_1) == 0x000318, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_HitItem_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_ElementIndex_1) == 0x00031C, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_ElementIndex_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_FaceIndex_1) == 0x000320, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_FaceIndex_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_TraceStart_1) == 0x000324, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_TraceStart_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_TraceEnd_1) == 0x000330, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_TraceEnd_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakVector_X) == 0x00033C, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakVector_Y) == 0x000340, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakVector_Z) == 0x000344, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakVector_X_1) == 0x000348, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakVector_X_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakVector_Y_1) == 0x00034C, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakVector_Y_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakVector_Z_1) == 0x000350, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakVector_Z_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_Add_VectorVector_ReturnValue_1) == 0x000354, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000360, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_SphereTraceSingle_OutHit_2) == 0x000364, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_SphereTraceSingle_OutHit_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_SphereTraceSingle_ReturnValue_2) == 0x0003EC, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_SphereTraceSingle_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_bBlockingHit_2) == 0x0003ED, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_bBlockingHit_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_bInitialOverlap_2) == 0x0003EE, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_bInitialOverlap_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_Time_2) == 0x0003F0, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_Time_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_Distance_2) == 0x0003F4, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_Distance_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_Location_2) == 0x0003F8, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_Location_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_ImpactPoint_2) == 0x000404, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_ImpactPoint_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_Normal_2) == 0x000410, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_Normal_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_ImpactNormal_2) == 0x00041C, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_ImpactNormal_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_PhysMat_2) == 0x000428, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_PhysMat_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_HitActor_2) == 0x000430, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_HitActor_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_HitComponent_2) == 0x000438, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_HitComponent_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_HitBoneName_2) == 0x000440, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_HitBoneName_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_HitItem_2) == 0x000448, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_HitItem_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_ElementIndex_2) == 0x00044C, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_ElementIndex_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_FaceIndex_2) == 0x000450, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_FaceIndex_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_TraceStart_2) == 0x000454, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_TraceStart_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_TraceEnd_2) == 0x000460, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_TraceEnd_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_Subtract_VectorVector_ReturnValue_2) == 0x00046C, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_Subtract_VectorVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, K2Node_Select_Default_1) == 0x000478, "Member 'PlayerCharacter_C_CheckCanVault::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_LineTraceSingle_OutHit) == 0x000484, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_LineTraceSingle_OutHit' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_LineTraceSingle_ReturnValue) == 0x00050C, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_LineTraceSingle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_Add_VectorVector_ReturnValue_2) == 0x000510, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_Add_VectorVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_LineTraceSingle_OutHit_1) == 0x00051C, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_LineTraceSingle_OutHit_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_LineTraceSingle_ReturnValue_1) == 0x0005A4, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_LineTraceSingle_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_bBlockingHit_3) == 0x0005A5, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_bBlockingHit_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_bInitialOverlap_3) == 0x0005A6, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_bInitialOverlap_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_Time_3) == 0x0005A8, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_Time_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_Distance_3) == 0x0005AC, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_Distance_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_Location_3) == 0x0005B0, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_Location_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_ImpactPoint_3) == 0x0005BC, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_ImpactPoint_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_Normal_3) == 0x0005C8, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_Normal_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_ImpactNormal_3) == 0x0005D4, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_ImpactNormal_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_PhysMat_3) == 0x0005E0, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_PhysMat_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_HitActor_3) == 0x0005E8, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_HitActor_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_HitComponent_3) == 0x0005F0, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_HitComponent_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_HitBoneName_3) == 0x0005F8, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_HitBoneName_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_HitItem_3) == 0x000600, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_HitItem_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_ElementIndex_3) == 0x000604, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_ElementIndex_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_FaceIndex_3) == 0x000608, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_FaceIndex_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_TraceStart_3) == 0x00060C, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_TraceStart_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_TraceEnd_3) == 0x000618, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_TraceEnd_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, K2Node_Select_Default_2) == 0x000624, "Member 'PlayerCharacter_C_CheckCanVault::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_bBlockingHit_4) == 0x000630, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_bBlockingHit_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_bInitialOverlap_4) == 0x000631, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_bInitialOverlap_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_Time_4) == 0x000634, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_Time_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_Distance_4) == 0x000638, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_Distance_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_Location_4) == 0x00063C, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_Location_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_ImpactPoint_4) == 0x000648, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_ImpactPoint_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_Normal_4) == 0x000654, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_Normal_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_ImpactNormal_4) == 0x000660, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_ImpactNormal_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_PhysMat_4) == 0x000670, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_PhysMat_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_HitActor_4) == 0x000678, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_HitActor_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_HitComponent_4) == 0x000680, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_HitComponent_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_HitBoneName_4) == 0x000688, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_HitBoneName_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_HitItem_4) == 0x000690, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_HitItem_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_ElementIndex_4) == 0x000694, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_ElementIndex_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_FaceIndex_4) == 0x000698, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_FaceIndex_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_TraceStart_4) == 0x00069C, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_TraceStart_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_BreakHitResult_TraceEnd_4) == 0x0006A8, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_BreakHitResult_TraceEnd_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_Less_FloatFloat_ReturnValue) == 0x0006B4, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckCanVault, CallFunc_Less_FloatFloat_ReturnValue_1) == 0x0006B5, "Member 'PlayerCharacter_C_CheckCanVault::CallFunc_Less_FloatFloat_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_CheckCanVault;
 
 // Function PlayerCharacter.PlayerCharacter_C.CanUncrouch?
 // 0x00D8 (0x00D8 - 0x0000)
@@ -3340,18 +2100,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x00D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerCharacter_C_CanUncrouch_) == 0x000008, "Wrong alignment on PlayerCharacter_C_CanUncrouch_");
-static_assert(sizeof(PlayerCharacter_C_CanUncrouch_) == 0x0000D8, "Wrong size on PlayerCharacter_C_CanUncrouch_");
-static_assert(offsetof(PlayerCharacter_C_CanUncrouch_, Can_) == 0x000000, "Member 'PlayerCharacter_C_CanUncrouch_::Can_' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CanUncrouch_, Temp_object_Variable) == 0x000008, "Member 'PlayerCharacter_C_CanUncrouch_::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CanUncrouch_, CallFunc_MakeVector_ReturnValue) == 0x000018, "Member 'PlayerCharacter_C_CanUncrouch_::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CanUncrouch_, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000024, "Member 'PlayerCharacter_C_CanUncrouch_::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CanUncrouch_, CallFunc_Add_VectorVector_ReturnValue) == 0x000030, "Member 'PlayerCharacter_C_CanUncrouch_::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CanUncrouch_, CallFunc_SphereTraceSingle_OutHit) == 0x00003C, "Member 'PlayerCharacter_C_CanUncrouch_::CallFunc_SphereTraceSingle_OutHit' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CanUncrouch_, CallFunc_SphereTraceSingle_ReturnValue) == 0x0000C4, "Member 'PlayerCharacter_C_CanUncrouch_::CallFunc_SphereTraceSingle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CanUncrouch_, CallFunc_GetGrabbedComponent_ReturnValue) == 0x0000C8, "Member 'PlayerCharacter_C_CanUncrouch_::CallFunc_GetGrabbedComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CanUncrouch_, CallFunc_IsValid_ReturnValue) == 0x0000D0, "Member 'PlayerCharacter_C_CanUncrouch_::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CanUncrouch_, CallFunc_Not_PreBool_ReturnValue) == 0x0000D1, "Member 'PlayerCharacter_C_CanUncrouch_::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_CanUncrouch_;
 
 // Function PlayerCharacter.PlayerCharacter_C.Get Any Gun Stats
 // 0x00B0 (0x00B0 - 0x0000)
@@ -3398,45 +2147,7 @@ public:
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_9;        // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue_4;             // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_Get_Any_Gun_Stats) == 0x000008, "Wrong alignment on PlayerCharacter_C_Get_Any_Gun_Stats");
-static_assert(sizeof(PlayerCharacter_C_Get_Any_Gun_Stats) == 0x0000B0, "Wrong size on PlayerCharacter_C_Get_Any_Gun_Stats");
-static_assert(offsetof(PlayerCharacter_C_Get_Any_Gun_Stats, AttachmentArrayStructure) == 0x000000, "Member 'PlayerCharacter_C_Get_Any_Gun_Stats::AttachmentArrayStructure' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Get_Any_Gun_Stats, GunClass) == 0x000010, "Member 'PlayerCharacter_C_Get_Any_Gun_Stats::GunClass' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Get_Any_Gun_Stats, Zoom) == 0x000018, "Member 'PlayerCharacter_C_Get_Any_Gun_Stats::Zoom' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Get_Any_Gun_Stats, Recoil) == 0x00001C, "Member 'PlayerCharacter_C_Get_Any_Gun_Stats::Recoil' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Get_Any_Gun_Stats, Accuracy) == 0x000020, "Member 'PlayerCharacter_C_Get_Any_Gun_Stats::Accuracy' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Get_Any_Gun_Stats, Reload_time) == 0x000024, "Member 'PlayerCharacter_C_Get_Any_Gun_Stats::Reload_time' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Get_Any_Gun_Stats, Damage) == 0x000028, "Member 'PlayerCharacter_C_Get_Any_Gun_Stats::Damage' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Get_Any_Gun_Stats, Bullets) == 0x00002C, "Member 'PlayerCharacter_C_Get_Any_Gun_Stats::Bullets' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Get_Any_Gun_Stats, Bullelt) == 0x000030, "Member 'PlayerCharacter_C_Get_Any_Gun_Stats::Bullelt' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Get_Any_Gun_Stats, DamageChanged) == 0x000034, "Member 'PlayerCharacter_C_Get_Any_Gun_Stats::DamageChanged' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Get_Any_Gun_Stats, RedloadTime) == 0x000038, "Member 'PlayerCharacter_C_Get_Any_Gun_Stats::RedloadTime' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Get_Any_Gun_Stats, AccuracyC) == 0x00003C, "Member 'PlayerCharacter_C_Get_Any_Gun_Stats::AccuracyC' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Get_Any_Gun_Stats, RecoilChange) == 0x000040, "Member 'PlayerCharacter_C_Get_Any_Gun_Stats::RecoilChange' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Get_Any_Gun_Stats, ZoomFOV) == 0x000044, "Member 'PlayerCharacter_C_Get_Any_Gun_Stats::ZoomFOV' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Get_Any_Gun_Stats, CallFunc_Array_Length_ReturnValue) == 0x000048, "Member 'PlayerCharacter_C_Get_Any_Gun_Stats::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Get_Any_Gun_Stats, CallFunc_Conv_IntToFloat_ReturnValue) == 0x00004C, "Member 'PlayerCharacter_C_Get_Any_Gun_Stats::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Get_Any_Gun_Stats, Temp_int_Array_Index_Variable) == 0x000050, "Member 'PlayerCharacter_C_Get_Any_Gun_Stats::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Get_Any_Gun_Stats, CallFunc_Array_Get_Item) == 0x000058, "Member 'PlayerCharacter_C_Get_Any_Gun_Stats::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Get_Any_Gun_Stats, Temp_int_Loop_Counter_Variable) == 0x000060, "Member 'PlayerCharacter_C_Get_Any_Gun_Stats::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Get_Any_Gun_Stats, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000064, "Member 'PlayerCharacter_C_Get_Any_Gun_Stats::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Get_Any_Gun_Stats, CallFunc_Less_IntInt_ReturnValue) == 0x000068, "Member 'PlayerCharacter_C_Get_Any_Gun_Stats::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Get_Any_Gun_Stats, CallFunc_Add_IntInt_ReturnValue) == 0x00006C, "Member 'PlayerCharacter_C_Get_Any_Gun_Stats::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Get_Any_Gun_Stats, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x000070, "Member 'PlayerCharacter_C_Get_Any_Gun_Stats::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Get_Any_Gun_Stats, CallFunc_Multiply_FloatFloat_ReturnValue_2) == 0x000074, "Member 'PlayerCharacter_C_Get_Any_Gun_Stats::CallFunc_Multiply_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Get_Any_Gun_Stats, CallFunc_Multiply_FloatFloat_ReturnValue_3) == 0x000078, "Member 'PlayerCharacter_C_Get_Any_Gun_Stats::CallFunc_Multiply_FloatFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Get_Any_Gun_Stats, CallFunc_Multiply_FloatFloat_ReturnValue_4) == 0x00007C, "Member 'PlayerCharacter_C_Get_Any_Gun_Stats::CallFunc_Multiply_FloatFloat_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Get_Any_Gun_Stats, CallFunc_Add_IntInt_ReturnValue_1) == 0x000080, "Member 'PlayerCharacter_C_Get_Any_Gun_Stats::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Get_Any_Gun_Stats, CallFunc_Multiply_FloatFloat_ReturnValue_5) == 0x000084, "Member 'PlayerCharacter_C_Get_Any_Gun_Stats::CallFunc_Multiply_FloatFloat_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Get_Any_Gun_Stats, CallFunc_Add_FloatFloat_ReturnValue) == 0x000088, "Member 'PlayerCharacter_C_Get_Any_Gun_Stats::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Get_Any_Gun_Stats, CallFunc_Multiply_FloatFloat_ReturnValue_6) == 0x00008C, "Member 'PlayerCharacter_C_Get_Any_Gun_Stats::CallFunc_Multiply_FloatFloat_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Get_Any_Gun_Stats, CallFunc_Add_FloatFloat_ReturnValue_1) == 0x000090, "Member 'PlayerCharacter_C_Get_Any_Gun_Stats::CallFunc_Add_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Get_Any_Gun_Stats, CallFunc_Multiply_FloatFloat_ReturnValue_7) == 0x000094, "Member 'PlayerCharacter_C_Get_Any_Gun_Stats::CallFunc_Multiply_FloatFloat_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Get_Any_Gun_Stats, CallFunc_Add_FloatFloat_ReturnValue_2) == 0x000098, "Member 'PlayerCharacter_C_Get_Any_Gun_Stats::CallFunc_Add_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Get_Any_Gun_Stats, CallFunc_Multiply_FloatFloat_ReturnValue_8) == 0x00009C, "Member 'PlayerCharacter_C_Get_Any_Gun_Stats::CallFunc_Multiply_FloatFloat_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Get_Any_Gun_Stats, CallFunc_Add_FloatFloat_ReturnValue_3) == 0x0000A0, "Member 'PlayerCharacter_C_Get_Any_Gun_Stats::CallFunc_Add_FloatFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Get_Any_Gun_Stats, CallFunc_Multiply_FloatFloat_ReturnValue_9) == 0x0000A4, "Member 'PlayerCharacter_C_Get_Any_Gun_Stats::CallFunc_Multiply_FloatFloat_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_Get_Any_Gun_Stats, CallFunc_Add_FloatFloat_ReturnValue_4) == 0x0000A8, "Member 'PlayerCharacter_C_Get_Any_Gun_Stats::CallFunc_Add_FloatFloat_ReturnValue_4' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_Get_Any_Gun_Stats;
 
 // Function PlayerCharacter.PlayerCharacter_C.InaccuracyFunc
 // 0x005C (0x005C - 0x0000)
@@ -3467,31 +2178,7 @@ public:
 	float                                         CallFunc_Add_FloatFloat_ReturnValue_2;             // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_InaccuracyFunc) == 0x000004, "Wrong alignment on PlayerCharacter_C_InaccuracyFunc");
-static_assert(sizeof(PlayerCharacter_C_InaccuracyFunc) == 0x00005C, "Wrong size on PlayerCharacter_C_InaccuracyFunc");
-static_assert(offsetof(PlayerCharacter_C_InaccuracyFunc, ReturnValue) == 0x000000, "Member 'PlayerCharacter_C_InaccuracyFunc::ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InaccuracyFunc, CallFunc_MakeLiteralFloat_ReturnValue) == 0x000004, "Member 'PlayerCharacter_C_InaccuracyFunc::CallFunc_MakeLiteralFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InaccuracyFunc, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000008, "Member 'PlayerCharacter_C_InaccuracyFunc::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InaccuracyFunc, CallFunc_RandomFloatInRange_ReturnValue) == 0x00000C, "Member 'PlayerCharacter_C_InaccuracyFunc::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InaccuracyFunc, CallFunc_GetThisGunStats_Zoom) == 0x000010, "Member 'PlayerCharacter_C_InaccuracyFunc::CallFunc_GetThisGunStats_Zoom' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InaccuracyFunc, CallFunc_GetThisGunStats_Recoil) == 0x000014, "Member 'PlayerCharacter_C_InaccuracyFunc::CallFunc_GetThisGunStats_Recoil' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InaccuracyFunc, CallFunc_GetThisGunStats_Accuracy) == 0x000018, "Member 'PlayerCharacter_C_InaccuracyFunc::CallFunc_GetThisGunStats_Accuracy' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InaccuracyFunc, CallFunc_GetThisGunStats_Reload_time) == 0x00001C, "Member 'PlayerCharacter_C_InaccuracyFunc::CallFunc_GetThisGunStats_Reload_time' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InaccuracyFunc, CallFunc_GetThisGunStats_Damage) == 0x000020, "Member 'PlayerCharacter_C_InaccuracyFunc::CallFunc_GetThisGunStats_Damage' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InaccuracyFunc, CallFunc_GetThisGunStats_Bullets) == 0x000024, "Member 'PlayerCharacter_C_InaccuracyFunc::CallFunc_GetThisGunStats_Bullets' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InaccuracyFunc, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000028, "Member 'PlayerCharacter_C_InaccuracyFunc::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InaccuracyFunc, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x00002C, "Member 'PlayerCharacter_C_InaccuracyFunc::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InaccuracyFunc, CallFunc_Add_FloatFloat_ReturnValue) == 0x000030, "Member 'PlayerCharacter_C_InaccuracyFunc::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InaccuracyFunc, CallFunc_FClamp_ReturnValue) == 0x000034, "Member 'PlayerCharacter_C_InaccuracyFunc::CallFunc_FClamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InaccuracyFunc, CallFunc_Add_FloatFloat_ReturnValue_1) == 0x000038, "Member 'PlayerCharacter_C_InaccuracyFunc::CallFunc_Add_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InaccuracyFunc, CallFunc_Lerp_ReturnValue) == 0x00003C, "Member 'PlayerCharacter_C_InaccuracyFunc::CallFunc_Lerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InaccuracyFunc, CallFunc_Multiply_FloatFloat_ReturnValue_2) == 0x000040, "Member 'PlayerCharacter_C_InaccuracyFunc::CallFunc_Multiply_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InaccuracyFunc, CallFunc_Multiply_FloatFloat_ReturnValue_3) == 0x000044, "Member 'PlayerCharacter_C_InaccuracyFunc::CallFunc_Multiply_FloatFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InaccuracyFunc, CallFunc_Multiply_FloatFloat_ReturnValue_4) == 0x000048, "Member 'PlayerCharacter_C_InaccuracyFunc::CallFunc_Multiply_FloatFloat_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InaccuracyFunc, CallFunc_Multiply_FloatFloat_ReturnValue_5) == 0x00004C, "Member 'PlayerCharacter_C_InaccuracyFunc::CallFunc_Multiply_FloatFloat_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InaccuracyFunc, CallFunc_Multiply_FloatFloat_ReturnValue_6) == 0x000050, "Member 'PlayerCharacter_C_InaccuracyFunc::CallFunc_Multiply_FloatFloat_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InaccuracyFunc, CallFunc_Add_FloatFloat_ReturnValue_2) == 0x000054, "Member 'PlayerCharacter_C_InaccuracyFunc::CallFunc_Add_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_InaccuracyFunc, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000058, "Member 'PlayerCharacter_C_InaccuracyFunc::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_InaccuracyFunc;
 
 // Function PlayerCharacter.PlayerCharacter_C.SetupControllerGuns
 // 0x0060 (0x0060 - 0x0000)
@@ -3516,22 +2203,7 @@ public:
 	uint8                                         Pad_55[0x3];                                       // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_SetupControllerGuns) == 0x000008, "Wrong alignment on PlayerCharacter_C_SetupControllerGuns");
-static_assert(sizeof(PlayerCharacter_C_SetupControllerGuns) == 0x000060, "Wrong size on PlayerCharacter_C_SetupControllerGuns");
-static_assert(offsetof(PlayerCharacter_C_SetupControllerGuns, Temp_int_Array_Index_Variable) == 0x000000, "Member 'PlayerCharacter_C_SetupControllerGuns::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupControllerGuns, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'PlayerCharacter_C_SetupControllerGuns::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupControllerGuns, CallFunc_Array_Get_Item) == 0x000008, "Member 'PlayerCharacter_C_SetupControllerGuns::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupControllerGuns, CallFunc_Array_Get_Item_1) == 0x000010, "Member 'PlayerCharacter_C_SetupControllerGuns::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupControllerGuns, CallFunc_Array_Get_Item_2) == 0x000018, "Member 'PlayerCharacter_C_SetupControllerGuns::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupControllerGuns, K2Node_ClassDynamicCast_AsArmor_Light) == 0x000020, "Member 'PlayerCharacter_C_SetupControllerGuns::K2Node_ClassDynamicCast_AsArmor_Light' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupControllerGuns, K2Node_ClassDynamicCast_bSuccess) == 0x000028, "Member 'PlayerCharacter_C_SetupControllerGuns::K2Node_ClassDynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupControllerGuns, CallFunc_Array_Get_Item_3) == 0x000030, "Member 'PlayerCharacter_C_SetupControllerGuns::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupControllerGuns, K2Node_ClassDynamicCast_AsMask_Base) == 0x000038, "Member 'PlayerCharacter_C_SetupControllerGuns::K2Node_ClassDynamicCast_AsMask_Base' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupControllerGuns, K2Node_ClassDynamicCast_bSuccess_1) == 0x000040, "Member 'PlayerCharacter_C_SetupControllerGuns::K2Node_ClassDynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupControllerGuns, CallFunc_Array_Get_Item_4) == 0x000048, "Member 'PlayerCharacter_C_SetupControllerGuns::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupControllerGuns, CallFunc_Array_Length_ReturnValue) == 0x000050, "Member 'PlayerCharacter_C_SetupControllerGuns::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupControllerGuns, CallFunc_Less_IntInt_ReturnValue) == 0x000054, "Member 'PlayerCharacter_C_SetupControllerGuns::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupControllerGuns, CallFunc_Add_IntInt_ReturnValue) == 0x000058, "Member 'PlayerCharacter_C_SetupControllerGuns::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_SetupControllerGuns;
 
 // Function PlayerCharacter.PlayerCharacter_C.SetupControllerTools
 // 0x0030 (0x0030 - 0x0000)
@@ -3547,15 +2219,7 @@ public:
 	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_SetupControllerTools) == 0x000008, "Wrong alignment on PlayerCharacter_C_SetupControllerTools");
-static_assert(sizeof(PlayerCharacter_C_SetupControllerTools) == 0x000030, "Wrong size on PlayerCharacter_C_SetupControllerTools");
-static_assert(offsetof(PlayerCharacter_C_SetupControllerTools, ToolFunc) == 0x000000, "Member 'PlayerCharacter_C_SetupControllerTools::ToolFunc' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupControllerTools, Temp_int_Array_Index_Variable) == 0x000010, "Member 'PlayerCharacter_C_SetupControllerTools::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupControllerTools, Temp_int_Loop_Counter_Variable) == 0x000014, "Member 'PlayerCharacter_C_SetupControllerTools::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupControllerTools, CallFunc_Array_Get_Item) == 0x000018, "Member 'PlayerCharacter_C_SetupControllerTools::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupControllerTools, CallFunc_Array_Length_ReturnValue) == 0x000020, "Member 'PlayerCharacter_C_SetupControllerTools::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupControllerTools, CallFunc_Less_IntInt_ReturnValue) == 0x000024, "Member 'PlayerCharacter_C_SetupControllerTools::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupControllerTools, CallFunc_Add_IntInt_ReturnValue) == 0x000028, "Member 'PlayerCharacter_C_SetupControllerTools::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_SetupControllerTools;
 
 // Function PlayerCharacter.PlayerCharacter_C.CheckLoseFunc
 // 0x0050 (0x0050 - 0x0000)
@@ -3574,24 +2238,11 @@ public:
 	class AActor*                                 CallFunc_Array_Get_Item;                           // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IPoliceTargetInterface_C> K2Node_DynamicCast_AsPolice_Target_Interface;      // 0x0038(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TScriptInterface<class IPoliceTargetInterface_C> K2Node_DynamicCast_AsPolice_Target_Interface;   // 0x0038(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_CheckIfDowned__Downed_;                   // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerCharacter_C_CheckLoseFunc) == 0x000008, "Wrong alignment on PlayerCharacter_C_CheckLoseFunc");
-static_assert(sizeof(PlayerCharacter_C_CheckLoseFunc) == 0x000050, "Wrong size on PlayerCharacter_C_CheckLoseFunc");
-static_assert(offsetof(PlayerCharacter_C_CheckLoseFunc, Game_over_) == 0x000000, "Member 'PlayerCharacter_C_CheckLoseFunc::Game_over_' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckLoseFunc, AllDowned_) == 0x000001, "Member 'PlayerCharacter_C_CheckLoseFunc::AllDowned_' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckLoseFunc, Temp_int_Array_Index_Variable) == 0x000004, "Member 'PlayerCharacter_C_CheckLoseFunc::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckLoseFunc, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'PlayerCharacter_C_CheckLoseFunc::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckLoseFunc, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'PlayerCharacter_C_CheckLoseFunc::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckLoseFunc, CallFunc_GetAllActorsWithInterface_OutActors) == 0x000010, "Member 'PlayerCharacter_C_CheckLoseFunc::CallFunc_GetAllActorsWithInterface_OutActors' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckLoseFunc, CallFunc_Array_Length_ReturnValue) == 0x000020, "Member 'PlayerCharacter_C_CheckLoseFunc::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckLoseFunc, CallFunc_Array_Get_Item) == 0x000028, "Member 'PlayerCharacter_C_CheckLoseFunc::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckLoseFunc, CallFunc_Less_IntInt_ReturnValue) == 0x000030, "Member 'PlayerCharacter_C_CheckLoseFunc::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckLoseFunc, K2Node_DynamicCast_AsPolice_Target_Interface) == 0x000038, "Member 'PlayerCharacter_C_CheckLoseFunc::K2Node_DynamicCast_AsPolice_Target_Interface' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckLoseFunc, K2Node_DynamicCast_bSuccess) == 0x000048, "Member 'PlayerCharacter_C_CheckLoseFunc::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_CheckLoseFunc, CallFunc_CheckIfDowned__Downed_) == 0x000049, "Member 'PlayerCharacter_C_CheckLoseFunc::CallFunc_CheckIfDowned__Downed_' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_CheckLoseFunc;
 
 // Function PlayerCharacter.PlayerCharacter_C.SetupControllerAppearance
 // 0x0008 (0x0008 - 0x0000)
@@ -3600,9 +2251,7 @@ struct PlayerCharacter_C_SetupControllerAppearance final
 public:
 	class UClass*                                 CallFunc_Array_Get_Item;                           // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_SetupControllerAppearance) == 0x000008, "Wrong alignment on PlayerCharacter_C_SetupControllerAppearance");
-static_assert(sizeof(PlayerCharacter_C_SetupControllerAppearance) == 0x000008, "Wrong size on PlayerCharacter_C_SetupControllerAppearance");
-static_assert(offsetof(PlayerCharacter_C_SetupControllerAppearance, CallFunc_Array_Get_Item) == 0x000000, "Member 'PlayerCharacter_C_SetupControllerAppearance::CallFunc_Array_Get_Item' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_SetupControllerAppearance;
 
 // Function PlayerCharacter.PlayerCharacter_C.OnRep_Dancing?
 // 0x0030 (0x0030 - 0x0000)
@@ -3619,15 +2268,7 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerCharacter_C_OnRep_Dancing_) == 0x000008, "Wrong alignment on PlayerCharacter_C_OnRep_Dancing_");
-static_assert(sizeof(PlayerCharacter_C_OnRep_Dancing_) == 0x000030, "Wrong size on PlayerCharacter_C_OnRep_Dancing_");
-static_assert(offsetof(PlayerCharacter_C_OnRep_Dancing_, CallFunc_GetVelocity_ReturnValue) == 0x000000, "Member 'PlayerCharacter_C_OnRep_Dancing_::CallFunc_GetVelocity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_OnRep_Dancing_, CallFunc_VSize_ReturnValue) == 0x00000C, "Member 'PlayerCharacter_C_OnRep_Dancing_::CallFunc_VSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_OnRep_Dancing_, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000010, "Member 'PlayerCharacter_C_OnRep_Dancing_::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_OnRep_Dancing_, CallFunc_MakeLiteralName_ReturnValue) == 0x000014, "Member 'PlayerCharacter_C_OnRep_Dancing_::CallFunc_MakeLiteralName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_OnRep_Dancing_, K2Node_DynamicCast_AsEmote_BPBase) == 0x000020, "Member 'PlayerCharacter_C_OnRep_Dancing_::K2Node_DynamicCast_AsEmote_BPBase' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_OnRep_Dancing_, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'PlayerCharacter_C_OnRep_Dancing_::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_OnRep_Dancing_, CallFunc_IsValid_ReturnValue) == 0x000029, "Member 'PlayerCharacter_C_OnRep_Dancing_::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_OnRep_Dancing_;
 
 // Function PlayerCharacter.PlayerCharacter_C.SetupControllerSkills
 // 0x0048 (0x0048 - 0x0000)
@@ -3646,18 +2287,7 @@ public:
 	class UClass*                                 CallFunc_Array_Get_Item_1;                         // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USkill_base_C*                          CallFunc_AddComponentByClass_ReturnValue;          // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_SetupControllerSkills) == 0x000008, "Wrong alignment on PlayerCharacter_C_SetupControllerSkills");
-static_assert(sizeof(PlayerCharacter_C_SetupControllerSkills) == 0x000048, "Wrong size on PlayerCharacter_C_SetupControllerSkills");
-static_assert(offsetof(PlayerCharacter_C_SetupControllerSkills, Temp_class_Variable) == 0x000000, "Member 'PlayerCharacter_C_SetupControllerSkills::Temp_class_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupControllerSkills, Temp_int_Array_Index_Variable) == 0x000010, "Member 'PlayerCharacter_C_SetupControllerSkills::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupControllerSkills, Temp_int_Loop_Counter_Variable) == 0x000014, "Member 'PlayerCharacter_C_SetupControllerSkills::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupControllerSkills, CallFunc_Add_IntInt_ReturnValue) == 0x000018, "Member 'PlayerCharacter_C_SetupControllerSkills::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupControllerSkills, CallFunc_Array_Length_ReturnValue) == 0x00001C, "Member 'PlayerCharacter_C_SetupControllerSkills::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupControllerSkills, CallFunc_Array_Get_Item) == 0x000020, "Member 'PlayerCharacter_C_SetupControllerSkills::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupControllerSkills, CallFunc_Less_IntInt_ReturnValue) == 0x000030, "Member 'PlayerCharacter_C_SetupControllerSkills::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupControllerSkills, CallFunc_Subtract_IntInt_ReturnValue) == 0x000034, "Member 'PlayerCharacter_C_SetupControllerSkills::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupControllerSkills, CallFunc_Array_Get_Item_1) == 0x000038, "Member 'PlayerCharacter_C_SetupControllerSkills::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_SetupControllerSkills, CallFunc_AddComponentByClass_ReturnValue) == 0x000040, "Member 'PlayerCharacter_C_SetupControllerSkills::CallFunc_AddComponentByClass_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_SetupControllerSkills;
 
 // Function PlayerCharacter.PlayerCharacter_C.BulletTraceVisuals
 // 0x0590 (0x0590 - 0x0000)
@@ -3863,178 +2493,7 @@ public:
 	class UDecalComponent*                        CallFunc_SpawnDecalAttached_ReturnValue;           // 0x0578(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_8;                    // 0x0580(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerCharacter_C_BulletTraceVisuals) == 0x000010, "Wrong alignment on PlayerCharacter_C_BulletTraceVisuals");
-static_assert(sizeof(PlayerCharacter_C_BulletTraceVisuals) == 0x000590, "Wrong size on PlayerCharacter_C_BulletTraceVisuals");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, HitResult) == 0x000000, "Member 'PlayerCharacter_C_BulletTraceVisuals::HitResult' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, Temp_object_Variable) == 0x000088, "Member 'PlayerCharacter_C_BulletTraceVisuals::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_bBlockingHit) == 0x000090, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_bInitialOverlap) == 0x000091, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_Time) == 0x000094, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_Distance) == 0x000098, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_Location) == 0x00009C, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_ImpactPoint) == 0x0000A8, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_Normal) == 0x0000B4, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_ImpactNormal) == 0x0000C0, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_PhysMat) == 0x0000D0, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_HitActor) == 0x0000D8, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_HitComponent) == 0x0000E0, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_HitBoneName) == 0x0000E8, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_HitItem) == 0x0000F0, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_ElementIndex) == 0x0000F4, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_FaceIndex) == 0x0000F8, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_TraceStart) == 0x0000FC, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_TraceEnd) == 0x000108, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_FindLookAtRotation_ReturnValue) == 0x000114, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_FindLookAtRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_IsSimulatingPhysics_ReturnValue) == 0x000120, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_IsSimulatingPhysics_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_GetForwardVector_ReturnValue) == 0x000124, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_GetForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_IsValid_ReturnValue) == 0x000130, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_bBlockingHit_1) == 0x000131, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_bBlockingHit_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_bInitialOverlap_1) == 0x000132, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_bInitialOverlap_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_Time_1) == 0x000134, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_Time_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_Distance_1) == 0x000138, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_Distance_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_Location_1) == 0x00013C, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_Location_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_ImpactPoint_1) == 0x000148, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_ImpactPoint_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_Normal_1) == 0x000154, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_Normal_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_ImpactNormal_1) == 0x000160, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_ImpactNormal_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_PhysMat_1) == 0x000170, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_PhysMat_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_HitActor_1) == 0x000178, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_HitActor_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_HitComponent_1) == 0x000180, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_HitComponent_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_HitBoneName_1) == 0x000188, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_HitBoneName_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_HitItem_1) == 0x000190, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_HitItem_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_ElementIndex_1) == 0x000194, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_ElementIndex_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_FaceIndex_1) == 0x000198, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_FaceIndex_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_TraceStart_1) == 0x00019C, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_TraceStart_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_TraceEnd_1) == 0x0001A8, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_TraceEnd_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_IsValid_ReturnValue_1) == 0x0001B4, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, K2Node_DynamicCast_AsStatic_Mesh_Actor) == 0x0001B8, "Member 'PlayerCharacter_C_BulletTraceVisuals::K2Node_DynamicCast_AsStatic_Mesh_Actor' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, K2Node_DynamicCast_bSuccess) == 0x0001C0, "Member 'PlayerCharacter_C_BulletTraceVisuals::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_GetComponentByClass_ReturnValue) == 0x0001C8, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_IsValid_ReturnValue_2) == 0x0001D0, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_IsValid_ReturnValue_3) == 0x0001D1, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_bBlockingHit_2) == 0x0001D2, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_bBlockingHit_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_bInitialOverlap_2) == 0x0001D3, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_bInitialOverlap_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_Time_2) == 0x0001D4, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_Time_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_Distance_2) == 0x0001D8, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_Distance_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_Location_2) == 0x0001DC, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_Location_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_ImpactPoint_2) == 0x0001E8, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_ImpactPoint_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_Normal_2) == 0x0001F4, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_Normal_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_ImpactNormal_2) == 0x000200, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_ImpactNormal_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_PhysMat_2) == 0x000210, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_PhysMat_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_HitActor_2) == 0x000218, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_HitActor_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_HitComponent_2) == 0x000220, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_HitComponent_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_HitBoneName_2) == 0x000228, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_HitBoneName_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_HitItem_2) == 0x000230, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_HitItem_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_ElementIndex_2) == 0x000234, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_ElementIndex_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_FaceIndex_2) == 0x000238, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_FaceIndex_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_TraceStart_2) == 0x00023C, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_TraceStart_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_TraceEnd_2) == 0x000248, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_TraceEnd_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_bBlockingHit_3) == 0x000254, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_bBlockingHit_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_bInitialOverlap_3) == 0x000255, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_bInitialOverlap_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_Time_3) == 0x000258, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_Time_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_Distance_3) == 0x00025C, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_Distance_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_Location_3) == 0x000260, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_Location_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_ImpactPoint_3) == 0x00026C, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_ImpactPoint_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_Normal_3) == 0x000278, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_Normal_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_ImpactNormal_3) == 0x000284, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_ImpactNormal_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_PhysMat_3) == 0x000290, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_PhysMat_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_HitActor_3) == 0x000298, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_HitActor_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_HitComponent_3) == 0x0002A0, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_HitComponent_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_HitBoneName_3) == 0x0002A8, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_HitBoneName_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_HitItem_3) == 0x0002B0, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_HitItem_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_ElementIndex_3) == 0x0002B4, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_ElementIndex_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_FaceIndex_3) == 0x0002B8, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_FaceIndex_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_TraceStart_3) == 0x0002BC, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_TraceStart_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_TraceEnd_3) == 0x0002C8, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_TraceEnd_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_IsValid_ReturnValue_4) == 0x0002D4, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, K2Node_DynamicCast_AsNPCBase) == 0x0002D8, "Member 'PlayerCharacter_C_BulletTraceVisuals::K2Node_DynamicCast_AsNPCBase' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, K2Node_DynamicCast_bSuccess_1) == 0x0002E0, "Member 'PlayerCharacter_C_BulletTraceVisuals::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_GetComponentByClass_ReturnValue_1) == 0x0002E8, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_GetComponentByClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_IsValid_ReturnValue_5) == 0x0002F0, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_bBlockingHit_4) == 0x0002F1, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_bBlockingHit_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_bInitialOverlap_4) == 0x0002F2, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_bInitialOverlap_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_Time_4) == 0x0002F4, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_Time_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_Distance_4) == 0x0002F8, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_Distance_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_Location_4) == 0x0002FC, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_Location_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_ImpactPoint_4) == 0x000308, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_ImpactPoint_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_Normal_4) == 0x000314, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_Normal_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_ImpactNormal_4) == 0x000320, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_ImpactNormal_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_PhysMat_4) == 0x000330, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_PhysMat_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_HitActor_4) == 0x000338, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_HitActor_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_HitComponent_4) == 0x000340, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_HitComponent_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_HitBoneName_4) == 0x000348, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_HitBoneName_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_HitItem_4) == 0x000350, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_HitItem_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_ElementIndex_4) == 0x000354, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_ElementIndex_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_FaceIndex_4) == 0x000358, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_FaceIndex_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_TraceStart_4) == 0x00035C, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_TraceStart_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_TraceEnd_4) == 0x000368, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_TraceEnd_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_IsValid_ReturnValue_6) == 0x000374, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_IsValid_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000375, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_MakeRotFromX_ReturnValue) == 0x000378, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_MakeRotFromX_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_bBlockingHit_5) == 0x000384, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_bBlockingHit_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_bInitialOverlap_5) == 0x000385, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_bInitialOverlap_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_Time_5) == 0x000388, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_Time_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_Distance_5) == 0x00038C, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_Distance_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_Location_5) == 0x000390, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_Location_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_ImpactPoint_5) == 0x00039C, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_ImpactPoint_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_Normal_5) == 0x0003A8, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_Normal_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_ImpactNormal_5) == 0x0003B4, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_ImpactNormal_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_PhysMat_5) == 0x0003C0, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_PhysMat_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_HitActor_5) == 0x0003C8, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_HitActor_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_HitComponent_5) == 0x0003D0, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_HitComponent_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_HitBoneName_5) == 0x0003D8, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_HitBoneName_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_HitItem_5) == 0x0003E0, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_HitItem_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_ElementIndex_5) == 0x0003E4, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_ElementIndex_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_FaceIndex_5) == 0x0003E8, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_FaceIndex_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_TraceStart_5) == 0x0003EC, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_TraceStart_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakHitResult_TraceEnd_5) == 0x0003F8, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakHitResult_TraceEnd_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakRotator_Roll) == 0x000404, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakRotator_Roll' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakRotator_Pitch) == 0x000408, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakRotator_Pitch' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BreakRotator_Yaw) == 0x00040C, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BreakRotator_Yaw' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, Temp_object_Variable_1) == 0x000410, "Member 'PlayerCharacter_C_BulletTraceVisuals::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, Temp_bool_Variable) == 0x000418, "Member 'PlayerCharacter_C_BulletTraceVisuals::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, Temp_object_Variable_2) == 0x000420, "Member 'PlayerCharacter_C_BulletTraceVisuals::Temp_object_Variable_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, Temp_bool_Variable_1) == 0x000428, "Member 'PlayerCharacter_C_BulletTraceVisuals::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, Temp_bool_Variable_2) == 0x000429, "Member 'PlayerCharacter_C_BulletTraceVisuals::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, K2Node_Select_Default) == 0x00042C, "Member 'PlayerCharacter_C_BulletTraceVisuals::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_FindLookAtRotation_ReturnValue_1) == 0x000438, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_FindLookAtRotation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, Temp_float_Variable) == 0x000444, "Member 'PlayerCharacter_C_BulletTraceVisuals::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, Temp_float_Variable_1) == 0x000448, "Member 'PlayerCharacter_C_BulletTraceVisuals::Temp_float_Variable_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, Temp_bool_Variable_3) == 0x00044C, "Member 'PlayerCharacter_C_BulletTraceVisuals::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, K2Node_Select_Default_1) == 0x000450, "Member 'PlayerCharacter_C_BulletTraceVisuals::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, Temp_bool_Variable_4) == 0x000454, "Member 'PlayerCharacter_C_BulletTraceVisuals::Temp_bool_Variable_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, Temp_object_Variable_3) == 0x000458, "Member 'PlayerCharacter_C_BulletTraceVisuals::Temp_object_Variable_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, Temp_object_Variable_4) == 0x000460, "Member 'PlayerCharacter_C_BulletTraceVisuals::Temp_object_Variable_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, Temp_bool_Variable_5) == 0x000468, "Member 'PlayerCharacter_C_BulletTraceVisuals::Temp_bool_Variable_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, K2Node_Select_Default_2) == 0x000470, "Member 'PlayerCharacter_C_BulletTraceVisuals::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, K2Node_Select_Default_3) == 0x000478, "Member 'PlayerCharacter_C_BulletTraceVisuals::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, Temp_object_Variable_5) == 0x000488, "Member 'PlayerCharacter_C_BulletTraceVisuals::Temp_object_Variable_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_FindLookAtRotation_ReturnValue_2) == 0x000490, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_FindLookAtRotation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_MakeTransform_ReturnValue) == 0x0004A0, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, Temp_object_Variable_6) == 0x0004D0, "Member 'PlayerCharacter_C_BulletTraceVisuals::Temp_object_Variable_6' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0004D8, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_FinishSpawningActor_ReturnValue) == 0x0004E0, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x0004E8, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, Temp_object_Variable_7) == 0x0004F0, "Member 'PlayerCharacter_C_BulletTraceVisuals::Temp_object_Variable_7' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_Divide_FloatFloat_ReturnValue) == 0x0004F8, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0004FC, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000500, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, Temp_object_Variable_8) == 0x000510, "Member 'PlayerCharacter_C_BulletTraceVisuals::Temp_object_Variable_8' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, Temp_object_Variable_9) == 0x000518, "Member 'PlayerCharacter_C_BulletTraceVisuals::Temp_object_Variable_9' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_IsLocallyControlled_ReturnValue) == 0x000520, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_IsLocallyControlled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, Temp_byte_Variable) == 0x000521, "Member 'PlayerCharacter_C_BulletTraceVisuals::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_IsValid_ReturnValue_7) == 0x000522, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_IsValid_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_RandomFloatInRange_ReturnValue) == 0x000524, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, Temp_object_Variable_10) == 0x000528, "Member 'PlayerCharacter_C_BulletTraceVisuals::Temp_object_Variable_10' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x000530, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, K2Node_Select_Default_4) == 0x000534, "Member 'PlayerCharacter_C_BulletTraceVisuals::K2Node_Select_Default_4' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, K2Node_Select_Default_5) == 0x000538, "Member 'PlayerCharacter_C_BulletTraceVisuals::K2Node_Select_Default_5' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_MakeVector_ReturnValue) == 0x000540, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, K2Node_Select_Default_6) == 0x000550, "Member 'PlayerCharacter_C_BulletTraceVisuals::K2Node_Select_Default_6' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_RandomFloatInRange_ReturnValue_2) == 0x000558, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_RandomFloatInRange_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_SpawnEmitterAtLocation_ReturnValue) == 0x000560, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_SpawnEmitterAtLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_MakeRotator_ReturnValue) == 0x000568, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_SpawnDecalAttached_ReturnValue) == 0x000578, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_SpawnDecalAttached_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_BulletTraceVisuals, CallFunc_IsValid_ReturnValue_8) == 0x000580, "Member 'PlayerCharacter_C_BulletTraceVisuals::CallFunc_IsValid_ReturnValue_8' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_BulletTraceVisuals;
 
 // Function PlayerCharacter.PlayerCharacter_C.CheckIfDowned?
 // 0x0001 (0x0001 - 0x0000)
@@ -4043,9 +2502,7 @@ struct PlayerCharacter_C_CheckIfDowned_ final
 public:
 	bool                                          Downed__0;                                         // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerCharacter_C_CheckIfDowned_) == 0x000001, "Wrong alignment on PlayerCharacter_C_CheckIfDowned_");
-static_assert(sizeof(PlayerCharacter_C_CheckIfDowned_) == 0x000001, "Wrong size on PlayerCharacter_C_CheckIfDowned_");
-static_assert(offsetof(PlayerCharacter_C_CheckIfDowned_, Downed__0) == 0x000000, "Member 'PlayerCharacter_C_CheckIfDowned_::Downed__0' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_CheckIfDowned_;
 
 // Function PlayerCharacter.PlayerCharacter_C.AddAmmoInterfaceCall
 // 0x00B8 (0x00B8 - 0x0000)
@@ -4095,46 +2552,7 @@ public:
 	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Conv_BoolToString_ReturnValue;            // 0x00A8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_AddAmmoInterfaceCall) == 0x000008, "Wrong alignment on PlayerCharacter_C_AddAmmoInterfaceCall");
-static_assert(sizeof(PlayerCharacter_C_AddAmmoInterfaceCall) == 0x0000B8, "Wrong size on PlayerCharacter_C_AddAmmoInterfaceCall");
-static_assert(offsetof(PlayerCharacter_C_AddAmmoInterfaceCall, Amount) == 0x000000, "Member 'PlayerCharacter_C_AddAmmoInterfaceCall::Amount' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AddAmmoInterfaceCall, DidAddAmmo_) == 0x000004, "Member 'PlayerCharacter_C_AddAmmoInterfaceCall::DidAddAmmo_' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AddAmmoInterfaceCall, BulletsAmount) == 0x000008, "Member 'PlayerCharacter_C_AddAmmoInterfaceCall::BulletsAmount' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AddAmmoInterfaceCall, Temp_int_Array_Index_Variable) == 0x00000C, "Member 'PlayerCharacter_C_AddAmmoInterfaceCall::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AddAmmoInterfaceCall, Temp_int_Loop_Counter_Variable) == 0x000010, "Member 'PlayerCharacter_C_AddAmmoInterfaceCall::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AddAmmoInterfaceCall, CallFunc_Add_IntInt_ReturnValue) == 0x000014, "Member 'PlayerCharacter_C_AddAmmoInterfaceCall::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AddAmmoInterfaceCall, CallFunc_Add_IntInt_ReturnValue_1) == 0x000018, "Member 'PlayerCharacter_C_AddAmmoInterfaceCall::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AddAmmoInterfaceCall, CallFunc_Divide_FloatFloat_ReturnValue) == 0x00001C, "Member 'PlayerCharacter_C_AddAmmoInterfaceCall::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AddAmmoInterfaceCall, CallFunc_Multiply_IntFloat_ReturnValue) == 0x000020, "Member 'PlayerCharacter_C_AddAmmoInterfaceCall::CallFunc_Multiply_IntFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AddAmmoInterfaceCall, CallFunc_Round_ReturnValue) == 0x000024, "Member 'PlayerCharacter_C_AddAmmoInterfaceCall::CallFunc_Round_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AddAmmoInterfaceCall, CallFunc_Divide_IntInt_ReturnValue) == 0x000028, "Member 'PlayerCharacter_C_AddAmmoInterfaceCall::CallFunc_Divide_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AddAmmoInterfaceCall, CallFunc_Add_IntInt_ReturnValue_2) == 0x00002C, "Member 'PlayerCharacter_C_AddAmmoInterfaceCall::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AddAmmoInterfaceCall, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x000030, "Member 'PlayerCharacter_C_AddAmmoInterfaceCall::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AddAmmoInterfaceCall, CallFunc_Multiply_IntFloat_ReturnValue_1) == 0x000034, "Member 'PlayerCharacter_C_AddAmmoInterfaceCall::CallFunc_Multiply_IntFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AddAmmoInterfaceCall, CallFunc_Array_Get_Item) == 0x000038, "Member 'PlayerCharacter_C_AddAmmoInterfaceCall::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AddAmmoInterfaceCall, CallFunc_Round_ReturnValue_1) == 0x000048, "Member 'PlayerCharacter_C_AddAmmoInterfaceCall::CallFunc_Round_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AddAmmoInterfaceCall, CallFunc_Add_IntInt_ReturnValue_3) == 0x00004C, "Member 'PlayerCharacter_C_AddAmmoInterfaceCall::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AddAmmoInterfaceCall, CallFunc_Array_Get_Item_1) == 0x000050, "Member 'PlayerCharacter_C_AddAmmoInterfaceCall::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AddAmmoInterfaceCall, CallFunc_Array_Length_ReturnValue) == 0x000058, "Member 'PlayerCharacter_C_AddAmmoInterfaceCall::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AddAmmoInterfaceCall, K2Node_ClassDynamicCast_AsGun_Base) == 0x000060, "Member 'PlayerCharacter_C_AddAmmoInterfaceCall::K2Node_ClassDynamicCast_AsGun_Base' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AddAmmoInterfaceCall, K2Node_ClassDynamicCast_bSuccess) == 0x000068, "Member 'PlayerCharacter_C_AddAmmoInterfaceCall::K2Node_ClassDynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AddAmmoInterfaceCall, CallFunc_Less_IntInt_ReturnValue) == 0x000069, "Member 'PlayerCharacter_C_AddAmmoInterfaceCall::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AddAmmoInterfaceCall, CallFunc_IsValid_ReturnValue) == 0x00006A, "Member 'PlayerCharacter_C_AddAmmoInterfaceCall::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AddAmmoInterfaceCall, CallFunc_GetThisGunStats_Zoom) == 0x00006C, "Member 'PlayerCharacter_C_AddAmmoInterfaceCall::CallFunc_GetThisGunStats_Zoom' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AddAmmoInterfaceCall, CallFunc_GetThisGunStats_Recoil) == 0x000070, "Member 'PlayerCharacter_C_AddAmmoInterfaceCall::CallFunc_GetThisGunStats_Recoil' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AddAmmoInterfaceCall, CallFunc_GetThisGunStats_Accuracy) == 0x000074, "Member 'PlayerCharacter_C_AddAmmoInterfaceCall::CallFunc_GetThisGunStats_Accuracy' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AddAmmoInterfaceCall, CallFunc_GetThisGunStats_Reload_time) == 0x000078, "Member 'PlayerCharacter_C_AddAmmoInterfaceCall::CallFunc_GetThisGunStats_Reload_time' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AddAmmoInterfaceCall, CallFunc_GetThisGunStats_Damage) == 0x00007C, "Member 'PlayerCharacter_C_AddAmmoInterfaceCall::CallFunc_GetThisGunStats_Damage' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AddAmmoInterfaceCall, CallFunc_GetThisGunStats_Bullets) == 0x000080, "Member 'PlayerCharacter_C_AddAmmoInterfaceCall::CallFunc_GetThisGunStats_Bullets' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AddAmmoInterfaceCall, CallFunc_Clamp_ReturnValue) == 0x000084, "Member 'PlayerCharacter_C_AddAmmoInterfaceCall::CallFunc_Clamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AddAmmoInterfaceCall, CallFunc_Get_Any_Gun_Stats_Zoom) == 0x000088, "Member 'PlayerCharacter_C_AddAmmoInterfaceCall::CallFunc_Get_Any_Gun_Stats_Zoom' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AddAmmoInterfaceCall, CallFunc_Get_Any_Gun_Stats_Recoil) == 0x00008C, "Member 'PlayerCharacter_C_AddAmmoInterfaceCall::CallFunc_Get_Any_Gun_Stats_Recoil' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AddAmmoInterfaceCall, CallFunc_Get_Any_Gun_Stats_Accuracy) == 0x000090, "Member 'PlayerCharacter_C_AddAmmoInterfaceCall::CallFunc_Get_Any_Gun_Stats_Accuracy' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AddAmmoInterfaceCall, CallFunc_Get_Any_Gun_Stats_Reload_time) == 0x000094, "Member 'PlayerCharacter_C_AddAmmoInterfaceCall::CallFunc_Get_Any_Gun_Stats_Reload_time' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AddAmmoInterfaceCall, CallFunc_Get_Any_Gun_Stats_Damage) == 0x000098, "Member 'PlayerCharacter_C_AddAmmoInterfaceCall::CallFunc_Get_Any_Gun_Stats_Damage' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AddAmmoInterfaceCall, CallFunc_Get_Any_Gun_Stats_Bullets) == 0x00009C, "Member 'PlayerCharacter_C_AddAmmoInterfaceCall::CallFunc_Get_Any_Gun_Stats_Bullets' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AddAmmoInterfaceCall, CallFunc_AddAmmoToGun_Ammo_added_) == 0x0000A0, "Member 'PlayerCharacter_C_AddAmmoInterfaceCall::CallFunc_AddAmmoToGun_Ammo_added_' has a wrong offset!");
-static_assert(offsetof(PlayerCharacter_C_AddAmmoInterfaceCall, CallFunc_Conv_BoolToString_ReturnValue) == 0x0000A8, "Member 'PlayerCharacter_C_AddAmmoInterfaceCall::CallFunc_Conv_BoolToString_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_AddAmmoInterfaceCall;
 
 // Function PlayerCharacter.PlayerCharacter_C.CheckHoldingItemInterfaceCall
 // 0x0008 (0x0008 - 0x0000)
@@ -4143,9 +2561,7 @@ struct PlayerCharacter_C_CheckHoldingItemInterfaceCall final
 public:
 	class AActor*                                 HoldingItem;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_CheckHoldingItemInterfaceCall) == 0x000008, "Wrong alignment on PlayerCharacter_C_CheckHoldingItemInterfaceCall");
-static_assert(sizeof(PlayerCharacter_C_CheckHoldingItemInterfaceCall) == 0x000008, "Wrong size on PlayerCharacter_C_CheckHoldingItemInterfaceCall");
-static_assert(offsetof(PlayerCharacter_C_CheckHoldingItemInterfaceCall, HoldingItem) == 0x000000, "Member 'PlayerCharacter_C_CheckHoldingItemInterfaceCall::HoldingItem' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_CheckHoldingItemInterfaceCall;
 
 // Function PlayerCharacter.PlayerCharacter_C.GetHoldingActor
 // 0x0008 (0x0008 - 0x0000)
@@ -4154,9 +2570,7 @@ struct PlayerCharacter_C_GetHoldingActor final
 public:
 	class AActor*                                 HoldingActor_0;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerCharacter_C_GetHoldingActor) == 0x000008, "Wrong alignment on PlayerCharacter_C_GetHoldingActor");
-static_assert(sizeof(PlayerCharacter_C_GetHoldingActor) == 0x000008, "Wrong size on PlayerCharacter_C_GetHoldingActor");
-static_assert(offsetof(PlayerCharacter_C_GetHoldingActor, HoldingActor_0) == 0x000000, "Member 'PlayerCharacter_C_GetHoldingActor::HoldingActor_0' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerCharacter_C_GetHoldingActor;
 
 }
 

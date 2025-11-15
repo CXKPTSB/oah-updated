@@ -93,42 +93,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MapSelectUI_C">();
+		BP_STATIC_CLASS_IMPL("MapSelectUI_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MapSelectUI_C")
 	}
 	static class UMapSelectUI_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMapSelectUI_C>();
 	}
 };
-static_assert(alignof(UMapSelectUI_C) == 0x000008, "Wrong alignment on UMapSelectUI_C");
-static_assert(sizeof(UMapSelectUI_C) == 0x000340, "Wrong size on UMapSelectUI_C");
-static_assert(offsetof(UMapSelectUI_C, UberGraphFrame) == 0x000260, "Member 'UMapSelectUI_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMapSelectUI_C, PreviewMap) == 0x000268, "Member 'UMapSelectUI_C::PreviewMap' has a wrong offset!");
-static_assert(offsetof(UMapSelectUI_C, OutAnim) == 0x000270, "Member 'UMapSelectUI_C::OutAnim' has a wrong offset!");
-static_assert(offsetof(UMapSelectUI_C, Button_69) == 0x000278, "Member 'UMapSelectUI_C::Button_69' has a wrong offset!");
-static_assert(offsetof(UMapSelectUI_C, CoinBuyButton) == 0x000280, "Member 'UMapSelectUI_C::CoinBuyButton' has a wrong offset!");
-static_assert(offsetof(UMapSelectUI_C, DifficultiText) == 0x000288, "Member 'UMapSelectUI_C::DifficultiText' has a wrong offset!");
-static_assert(offsetof(UMapSelectUI_C, EstimatedTake) == 0x000290, "Member 'UMapSelectUI_C::EstimatedTake' has a wrong offset!");
-static_assert(offsetof(UMapSelectUI_C, Image_124) == 0x000298, "Member 'UMapSelectUI_C::Image_124' has a wrong offset!");
-static_assert(offsetof(UMapSelectUI_C, Image_579) == 0x0002A0, "Member 'UMapSelectUI_C::Image_579' has a wrong offset!");
-static_assert(offsetof(UMapSelectUI_C, LockedBorder) == 0x0002A8, "Member 'UMapSelectUI_C::LockedBorder' has a wrong offset!");
-static_assert(offsetof(UMapSelectUI_C, MapImage) == 0x0002B0, "Member 'UMapSelectUI_C::MapImage' has a wrong offset!");
-static_assert(offsetof(UMapSelectUI_C, MapScrollBox) == 0x0002B8, "Member 'UMapSelectUI_C::MapScrollBox' has a wrong offset!");
-static_assert(offsetof(UMapSelectUI_C, MapVignette) == 0x0002C0, "Member 'UMapSelectUI_C::MapVignette' has a wrong offset!");
-static_assert(offsetof(UMapSelectUI_C, PreviewMapButton) == 0x0002C8, "Member 'UMapSelectUI_C::PreviewMapButton' has a wrong offset!");
-static_assert(offsetof(UMapSelectUI_C, SaleOverlay) == 0x0002D0, "Member 'UMapSelectUI_C::SaleOverlay' has a wrong offset!");
-static_assert(offsetof(UMapSelectUI_C, TextBlock) == 0x0002D8, "Member 'UMapSelectUI_C::TextBlock' has a wrong offset!");
-static_assert(offsetof(UMapSelectUI_C, TextBlock_0) == 0x0002E0, "Member 'UMapSelectUI_C::TextBlock_0' has a wrong offset!");
-static_assert(offsetof(UMapSelectUI_C, TextBlock_1) == 0x0002E8, "Member 'UMapSelectUI_C::TextBlock_1' has a wrong offset!");
-static_assert(offsetof(UMapSelectUI_C, TextBlock_4) == 0x0002F0, "Member 'UMapSelectUI_C::TextBlock_4' has a wrong offset!");
-static_assert(offsetof(UMapSelectUI_C, TextBlock_131) == 0x0002F8, "Member 'UMapSelectUI_C::TextBlock_131' has a wrong offset!");
-static_assert(offsetof(UMapSelectUI_C, WrapBox_0) == 0x000300, "Member 'UMapSelectUI_C::WrapBox_0' has a wrong offset!");
-static_assert(offsetof(UMapSelectUI_C, FocusedMapInfo) == 0x000308, "Member 'UMapSelectUI_C::FocusedMapInfo' has a wrong offset!");
-static_assert(offsetof(UMapSelectUI_C, Maps) == 0x000310, "Member 'UMapSelectUI_C::Maps' has a wrong offset!");
-static_assert(offsetof(UMapSelectUI_C, As_Robber_Controller) == 0x000320, "Member 'UMapSelectUI_C::As_Robber_Controller' has a wrong offset!");
-static_assert(offsetof(UMapSelectUI_C, Multiplier) == 0x000328, "Member 'UMapSelectUI_C::Multiplier' has a wrong offset!");
-static_assert(offsetof(UMapSelectUI_C, InitialMultipluerValue) == 0x000330, "Member 'UMapSelectUI_C::InitialMultipluerValue' has a wrong offset!");
-static_assert(offsetof(UMapSelectUI_C, Sale_Price) == 0x000338, "Member 'UMapSelectUI_C::Sale_Price' has a wrong offset!");
+DUMPER7_ASSERTS_UMapSelectUI_C;
 
 }
 

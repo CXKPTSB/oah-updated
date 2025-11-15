@@ -50,37 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HouseBase_C">();
+		BP_STATIC_CLASS_IMPL("HouseBase_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HouseBase_C")
 	}
 	static class AHouseBase_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AHouseBase_C>();
 	}
 };
-static_assert(alignof(AHouseBase_C) == 0x000008, "Wrong alignment on AHouseBase_C");
-static_assert(sizeof(AHouseBase_C) == 0x0002D8, "Wrong size on AHouseBase_C");
-static_assert(offsetof(AHouseBase_C, SM_Bld_Wall_Brick_Window_03__3__StaticMeshComponent0) == 0x000220, "Member 'AHouseBase_C::SM_Bld_Wall_Brick_Window_03__3__StaticMeshComponent0' has a wrong offset!");
-static_assert(offsetof(AHouseBase_C, SM_Bld_Wall_Brick_Window_02__5__StaticMeshComponent0) == 0x000228, "Member 'AHouseBase_C::SM_Bld_Wall_Brick_Window_02__5__StaticMeshComponent0' has a wrong offset!");
-static_assert(offsetof(AHouseBase_C, SM_Bld_Wall_Brick_Window_03__4__StaticMeshComponent0) == 0x000230, "Member 'AHouseBase_C::SM_Bld_Wall_Brick_Window_03__4__StaticMeshComponent0' has a wrong offset!");
-static_assert(offsetof(AHouseBase_C, SM_Bld_Wall_Brick_01__4_19_StaticMeshComponent0) == 0x000238, "Member 'AHouseBase_C::SM_Bld_Wall_Brick_01__4_19_StaticMeshComponent0' has a wrong offset!");
-static_assert(offsetof(AHouseBase_C, SM_Bld_Wall_Brick_01__10__StaticMeshComponent0) == 0x000240, "Member 'AHouseBase_C::SM_Bld_Wall_Brick_01__10__StaticMeshComponent0' has a wrong offset!");
-static_assert(offsetof(AHouseBase_C, SM_Bld_Wall_Brick_01__25__StaticMeshComponent0) == 0x000248, "Member 'AHouseBase_C::SM_Bld_Wall_Brick_01__25__StaticMeshComponent0' has a wrong offset!");
-static_assert(offsetof(AHouseBase_C, SM_Bld_Wall_Brick_01__26__StaticMeshComponent0) == 0x000250, "Member 'AHouseBase_C::SM_Bld_Wall_Brick_01__26__StaticMeshComponent0' has a wrong offset!");
-static_assert(offsetof(AHouseBase_C, SM_Bld_Wall_Brick_01__4_20_StaticMeshComponent0) == 0x000258, "Member 'AHouseBase_C::SM_Bld_Wall_Brick_01__4_20_StaticMeshComponent0' has a wrong offset!");
-static_assert(offsetof(AHouseBase_C, SM_Bld_Wall_Brick_Window_02__2__StaticMeshComponent0) == 0x000260, "Member 'AHouseBase_C::SM_Bld_Wall_Brick_Window_02__2__StaticMeshComponent0' has a wrong offset!");
-static_assert(offsetof(AHouseBase_C, SM_Bld_Wall_Brick_Window_03__1__StaticMeshComponent0) == 0x000268, "Member 'AHouseBase_C::SM_Bld_Wall_Brick_Window_03__1__StaticMeshComponent0' has a wrong offset!");
-static_assert(offsetof(AHouseBase_C, SM_Bld_Wall_Brick_Window_02__1__StaticMeshComponent0) == 0x000270, "Member 'AHouseBase_C::SM_Bld_Wall_Brick_Window_02__1__StaticMeshComponent0' has a wrong offset!");
-static_assert(offsetof(AHouseBase_C, SM_Bld_Wall_Brick_01__4__StaticMeshComponent0) == 0x000278, "Member 'AHouseBase_C::SM_Bld_Wall_Brick_01__4__StaticMeshComponent0' has a wrong offset!");
-static_assert(offsetof(AHouseBase_C, SM_Bld_Wall_Brick_01__4_3_StaticMeshComponent0) == 0x000280, "Member 'AHouseBase_C::SM_Bld_Wall_Brick_01__4_3_StaticMeshComponent0' has a wrong offset!");
-static_assert(offsetof(AHouseBase_C, SM_Bld_Wall_Brick_01__4_5_StaticMeshComponent0) == 0x000288, "Member 'AHouseBase_C::SM_Bld_Wall_Brick_01__4_5_StaticMeshComponent0' has a wrong offset!");
-static_assert(offsetof(AHouseBase_C, SM_Bld_Wall_Brick_01__5__StaticMeshComponent0) == 0x000290, "Member 'AHouseBase_C::SM_Bld_Wall_Brick_01__5__StaticMeshComponent0' has a wrong offset!");
-static_assert(offsetof(AHouseBase_C, SM_Bld_Wall_Brick_Window_02__3__StaticMeshComponent0) == 0x000298, "Member 'AHouseBase_C::SM_Bld_Wall_Brick_Window_02__3__StaticMeshComponent0' has a wrong offset!");
-static_assert(offsetof(AHouseBase_C, SM_Bld_Wall_Brick_Door_4_StaticMeshComponent0) == 0x0002A0, "Member 'AHouseBase_C::SM_Bld_Wall_Brick_Door_4_StaticMeshComponent0' has a wrong offset!");
-static_assert(offsetof(AHouseBase_C, SM_Bld_Wall_Brick_Door_3_StaticMeshComponent0) == 0x0002A8, "Member 'AHouseBase_C::SM_Bld_Wall_Brick_Door_3_StaticMeshComponent0' has a wrong offset!");
-static_assert(offsetof(AHouseBase_C, SM_Bld_Wall_Brick_Door_02_StaticMeshComponent0) == 0x0002B0, "Member 'AHouseBase_C::SM_Bld_Wall_Brick_Door_02_StaticMeshComponent0' has a wrong offset!");
-static_assert(offsetof(AHouseBase_C, SM_Bld_Wall_Brick_Window_02__3_2_StaticMeshComponent0) == 0x0002B8, "Member 'AHouseBase_C::SM_Bld_Wall_Brick_Window_02__3_2_StaticMeshComponent0' has a wrong offset!");
-static_assert(offsetof(AHouseBase_C, SharedRoot) == 0x0002C0, "Member 'AHouseBase_C::SharedRoot' has a wrong offset!");
-static_assert(offsetof(AHouseBase_C, WallOptions) == 0x0002C8, "Member 'AHouseBase_C::WallOptions' has a wrong offset!");
+DUMPER7_ASSERTS_AHouseBase_C;
 
 }
 

@@ -27,17 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EmoteBPBase_Guitar_C">();
+		BP_STATIC_CLASS_IMPL("EmoteBPBase_Guitar_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EmoteBPBase_Guitar_C")
 	}
 	static class AEmoteBPBase_Guitar_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AEmoteBPBase_Guitar_C>();
 	}
 };
-static_assert(alignof(AEmoteBPBase_Guitar_C) == 0x000008, "Wrong alignment on AEmoteBPBase_Guitar_C");
-static_assert(sizeof(AEmoteBPBase_Guitar_C) == 0x000250, "Wrong size on AEmoteBPBase_Guitar_C");
-static_assert(offsetof(AEmoteBPBase_Guitar_C, Audio) == 0x000240, "Member 'AEmoteBPBase_Guitar_C::Audio' has a wrong offset!");
-static_assert(offsetof(AEmoteBPBase_Guitar_C, StaticMesh) == 0x000248, "Member 'AEmoteBPBase_Guitar_C::StaticMesh' has a wrong offset!");
+DUMPER7_ASSERTS_AEmoteBPBase_Guitar_C;
 
 }
 

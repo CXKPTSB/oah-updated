@@ -17,8 +17,8 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass ChatInterface.ChatInterface_C
-// 0x0000 (0x0028 - 0x0028)
-class IChatInterface_C final : public IInterface
+// 0x0000 (0x0000 - 0x0000)
+class IChatInterface_C final
 {
 public:
 	void NewChat();
@@ -26,15 +26,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ChatInterface_C">();
+		BP_STATIC_CLASS_IMPL("ChatInterface_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChatInterface_C")
 	}
 	static class IChatInterface_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<IChatInterface_C>();
 	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
 };
-static_assert(alignof(IChatInterface_C) == 0x000008, "Wrong alignment on IChatInterface_C");
-static_assert(sizeof(IChatInterface_C) == 0x000028, "Wrong size on IChatInterface_C");
+DUMPER7_ASSERTS_IChatInterface_C;
 
 }
 

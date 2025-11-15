@@ -82,8 +82,8 @@ void ARobberGameState_C::SpawnToolsWhenConnected()
 // Function RobberGameState.RobberGameState_C.GetTotalPlayerPower
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Total_Power_0                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   MinimumPower_0                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Total_Power_0                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  MinimumPower_0                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ARobberGameState_C::GetTotalPlayerPower(int32* Total_Power_0, int32* MinimumPower_0)
 {
@@ -107,7 +107,7 @@ void ARobberGameState_C::GetTotalPlayerPower(int32* Total_Power_0, int32* Minimu
 // Function RobberGameState.RobberGameState_C.CheckPlayersLoaded
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Loaded_                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Loaded_                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void ARobberGameState_C::CheckPlayersLoaded(bool* Loaded_)
 {

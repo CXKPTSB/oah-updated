@@ -21,10 +21,10 @@ namespace SDK
 // (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UClass*                           BoughtSteamItem                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FSteamItemDetails>        Result_items                                           (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// TArray<struct FSteamItemDetails>&       Result_items                                           (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FSteamInventoryResult            Result                                                 (Parm, OutParm, NoDestructor, HasGetValueTypeHash)
-// bool                                    Success_                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FSteamInventoryResult*           Result                                                 (Parm, OutParm, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Success_                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void USteamInventoryLibrary_C::PurchaseSteamItem(class UClass* BoughtSteamItem, TArray<struct FSteamItemDetails>& Result_items, class UObject* __WorldContext, struct FSteamInventoryResult* Result, bool* Success_)
 {
@@ -55,9 +55,9 @@ void USteamInventoryLibrary_C::PurchaseSteamItem(class UClass* BoughtSteamItem, 
 // (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class UClass*                           Inventory_item                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FSteamItemDetails>        ResultItems                                            (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// TArray<struct FSteamItemDetails>&       ResultItems                                            (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void USteamInventoryLibrary_C::DoesSteamInventoryContainItem_(class UClass* Inventory_item, TArray<struct FSteamItemDetails>& ResultItems, class UObject* __WorldContext, bool* Return)
 {
@@ -84,10 +84,10 @@ void USteamInventoryLibrary_C::DoesSteamInventoryContainItem_(class UClass* Inve
 // Function SteamInventoryLibrary.SteamInventoryLibrary_C.GetSteamItemsByCat
 // (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FString                           Item_cat                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    Item_cat                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FSteamItemDetails>        Items                                                  (Parm, OutParm)
-// bool                                    Success_                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// TArray<struct FSteamItemDetails>*       Items                                                  (Parm, OutParm)
+// bool*                                   Success_                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void USteamInventoryLibrary_C::GetSteamItemsByCat(const class FString& Item_cat, class UObject* __WorldContext, TArray<struct FSteamItemDetails>* Items, bool* Success_)
 {
@@ -116,8 +116,8 @@ void USteamInventoryLibrary_C::GetSteamItemsByCat(const class FString& Item_cat,
 // Parameters:
 // int32                                   ID                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FSteamItemDetails>        Items                                                  (Parm, OutParm)
-// bool                                    Success_                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// TArray<struct FSteamItemDetails>*       Items                                                  (Parm, OutParm)
+// bool*                                   Success_                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void USteamInventoryLibrary_C::GetSteamItemsByID(int32 ID, class UObject* __WorldContext, TArray<struct FSteamItemDetails>* Items, bool* Success_)
 {
@@ -144,11 +144,11 @@ void USteamInventoryLibrary_C::GetSteamItemsByID(int32 ID, class UObject* __Worl
 // Function SteamInventoryLibrary.SteamInventoryLibrary_C.UpdateSteamInventoryFromActionResult
 // (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FSteamInventoryResult            Result                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FSteamItemDetails>        CurrentInventory                                       (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const struct FSteamInventoryResult&     Result                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+// TArray<struct FSteamItemDetails>&       CurrentInventory                                       (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FSteamItemDetails>        UpdatedInventory                                       (Parm, OutParm)
-// struct FSteamInventoryResult            Result_out                                             (Parm, OutParm, NoDestructor, HasGetValueTypeHash)
+// TArray<struct FSteamItemDetails>*       UpdatedInventory                                       (Parm, OutParm)
+// struct FSteamInventoryResult*           Result_out                                             (Parm, OutParm, NoDestructor, HasGetValueTypeHash)
 
 void USteamInventoryLibrary_C::UpdateSteamInventoryFromActionResult(const struct FSteamInventoryResult& Result, TArray<struct FSteamItemDetails>& CurrentInventory, class UObject* __WorldContext, TArray<struct FSteamItemDetails>* UpdatedInventory, struct FSteamInventoryResult* Result_out)
 {
@@ -180,7 +180,7 @@ void USteamInventoryLibrary_C::UpdateSteamInventoryFromActionResult(const struct
 // Parameters:
 // class UClass*                           Item                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Price                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Price                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void USteamInventoryLibrary_C::Get_Steam_Item_Coin_Price(class UClass* Item, class UObject* __WorldContext, int32* Price)
 {

@@ -47,8 +47,8 @@ public:
 	bool                                          Destroyed_;                                        // 0x0306(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_307[0x1];                                      // 0x0307(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerCharacter_C*                     Possessed_Player;                                  // 0x0308(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TMulticastInlineDelegate<void(const struct FVector& Location, const class FString& SpotReason)> SeenArmedPlayer;                                   // 0x0310(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void(const struct FVector& Location, class ACameraBP_C* Camera)> CamDestroyed;                                      // 0x0320(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(const struct FVector& Location, const class FString& SpotReason)> SeenArmedPlayer; // 0x0310(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(const struct FVector& Location, class ACameraBP_C* Camera)> CamDestroyed; // 0x0320(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	TArray<class APlayerCharacter_C*>             SpottedPlayers;                                    // 0x0330(0x0010)(Edit, BlueprintVisible, Net, DisableEditOnTemplate, DisableEditOnInstance)
 	bool                                          Ignored_;                                          // 0x0340(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_341[0x3];                                      // 0x0341(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -81,42 +81,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CameraBP_C">();
+		BP_STATIC_CLASS_IMPL("CameraBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CameraBP_C")
 	}
 	static class ACameraBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACameraBP_C>();
 	}
 };
-static_assert(alignof(ACameraBP_C) == 0x000008, "Wrong alignment on ACameraBP_C");
-static_assert(sizeof(ACameraBP_C) == 0x000350, "Wrong size on ACameraBP_C");
-static_assert(offsetof(ACameraBP_C, UberGraphFrame) == 0x000280, "Member 'ACameraBP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ACameraBP_C, AlertComponent) == 0x000288, "Member 'ACameraBP_C::AlertComponent' has a wrong offset!");
-static_assert(offsetof(ACameraBP_C, PointLight) == 0x000290, "Member 'ACameraBP_C::PointLight' has a wrong offset!");
-static_assert(offsetof(ACameraBP_C, SpotPlayerComponent) == 0x000298, "Member 'ACameraBP_C::SpotPlayerComponent' has a wrong offset!");
-static_assert(offsetof(ACameraBP_C, SpottedHighlightcomponent) == 0x0002A0, "Member 'ACameraBP_C::SpottedHighlightcomponent' has a wrong offset!");
-static_assert(offsetof(ACameraBP_C, DamageComponent) == 0x0002A8, "Member 'ACameraBP_C::DamageComponent' has a wrong offset!");
-static_assert(offsetof(ACameraBP_C, CameraViewCollision) == 0x0002B0, "Member 'ACameraBP_C::CameraViewCollision' has a wrong offset!");
-static_assert(offsetof(ACameraBP_C, Arrow) == 0x0002B8, "Member 'ACameraBP_C::Arrow' has a wrong offset!");
-static_assert(offsetof(ACameraBP_C, Camera) == 0x0002C0, "Member 'ACameraBP_C::Camera' has a wrong offset!");
-static_assert(offsetof(ACameraBP_C, CameraHead) == 0x0002C8, "Member 'ACameraBP_C::CameraHead' has a wrong offset!");
-static_assert(offsetof(ACameraBP_C, CameraArm) == 0x0002D0, "Member 'ACameraBP_C::CameraArm' has a wrong offset!");
-static_assert(offsetof(ACameraBP_C, DefaultSceneRoot) == 0x0002D8, "Member 'ACameraBP_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ACameraBP_C, Roofcam_) == 0x0002E0, "Member 'ACameraBP_C::Roofcam_' has a wrong offset!");
-static_assert(offsetof(ACameraBP_C, CamStartRotation) == 0x0002E4, "Member 'ACameraBP_C::CamStartRotation' has a wrong offset!");
-static_assert(offsetof(ACameraBP_C, DoesRotate_) == 0x0002F0, "Member 'ACameraBP_C::DoesRotate_' has a wrong offset!");
-static_assert(offsetof(ACameraBP_C, CamEndRotation) == 0x0002F4, "Member 'ACameraBP_C::CamEndRotation' has a wrong offset!");
-static_assert(offsetof(ACameraBP_C, RotationDelay) == 0x000300, "Member 'ACameraBP_C::RotationDelay' has a wrong offset!");
-static_assert(offsetof(ACameraBP_C, CollisionVisibleInEditor_) == 0x000304, "Member 'ACameraBP_C::CollisionVisibleInEditor_' has a wrong offset!");
-static_assert(offsetof(ACameraBP_C, Possessed_) == 0x000305, "Member 'ACameraBP_C::Possessed_' has a wrong offset!");
-static_assert(offsetof(ACameraBP_C, Destroyed_) == 0x000306, "Member 'ACameraBP_C::Destroyed_' has a wrong offset!");
-static_assert(offsetof(ACameraBP_C, Possessed_Player) == 0x000308, "Member 'ACameraBP_C::Possessed_Player' has a wrong offset!");
-static_assert(offsetof(ACameraBP_C, SeenArmedPlayer) == 0x000310, "Member 'ACameraBP_C::SeenArmedPlayer' has a wrong offset!");
-static_assert(offsetof(ACameraBP_C, CamDestroyed) == 0x000320, "Member 'ACameraBP_C::CamDestroyed' has a wrong offset!");
-static_assert(offsetof(ACameraBP_C, SpottedPlayers) == 0x000330, "Member 'ACameraBP_C::SpottedPlayers' has a wrong offset!");
-static_assert(offsetof(ACameraBP_C, Ignored_) == 0x000340, "Member 'ACameraBP_C::Ignored_' has a wrong offset!");
-static_assert(offsetof(ACameraBP_C, CamNumber) == 0x000344, "Member 'ACameraBP_C::CamNumber' has a wrong offset!");
-static_assert(offsetof(ACameraBP_C, HasRotated_) == 0x000348, "Member 'ACameraBP_C::HasRotated_' has a wrong offset!");
+DUMPER7_ASSERTS_ACameraBP_C;
 
 }
 

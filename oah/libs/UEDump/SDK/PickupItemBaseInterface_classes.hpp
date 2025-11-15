@@ -17,8 +17,8 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass PickupItemBaseInterface.PickupItemBaseInterface_C
-// 0x0000 (0x0028 - 0x0028)
-class IPickupItemBaseInterface_C final : public IInterface
+// 0x0000 (0x0000 - 0x0000)
+class IPickupItemBaseInterface_C final
 {
 public:
 	void OnPickupInterfaceCall();
@@ -26,15 +26,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PickupItemBaseInterface_C">();
+		BP_STATIC_CLASS_IMPL("PickupItemBaseInterface_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PickupItemBaseInterface_C")
 	}
 	static class IPickupItemBaseInterface_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<IPickupItemBaseInterface_C>();
 	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
 };
-static_assert(alignof(IPickupItemBaseInterface_C) == 0x000008, "Wrong alignment on IPickupItemBaseInterface_C");
-static_assert(sizeof(IPickupItemBaseInterface_C) == 0x000028, "Wrong size on IPickupItemBaseInterface_C");
+DUMPER7_ASSERTS_IPickupItemBaseInterface_C;
 
 }
 

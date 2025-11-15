@@ -36,21 +36,7 @@ public:
 	class UDestroySessionCallbackProxy*           CallFunc_DestroySession_ReturnValue_1;             // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TutorialSelect_C_ExecuteUbergraph_TutorialSelect) == 0x000008, "Wrong alignment on TutorialSelect_C_ExecuteUbergraph_TutorialSelect");
-static_assert(sizeof(TutorialSelect_C_ExecuteUbergraph_TutorialSelect) == 0x000088, "Wrong size on TutorialSelect_C_ExecuteUbergraph_TutorialSelect");
-static_assert(offsetof(TutorialSelect_C_ExecuteUbergraph_TutorialSelect, EntryPoint) == 0x000000, "Member 'TutorialSelect_C_ExecuteUbergraph_TutorialSelect::EntryPoint' has a wrong offset!");
-static_assert(offsetof(TutorialSelect_C_ExecuteUbergraph_TutorialSelect, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'TutorialSelect_C_ExecuteUbergraph_TutorialSelect::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(TutorialSelect_C_ExecuteUbergraph_TutorialSelect, K2Node_CreateDelegate_OutputDelegate_1) == 0x000014, "Member 'TutorialSelect_C_ExecuteUbergraph_TutorialSelect::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(TutorialSelect_C_ExecuteUbergraph_TutorialSelect, K2Node_CreateDelegate_OutputDelegate_2) == 0x000024, "Member 'TutorialSelect_C_ExecuteUbergraph_TutorialSelect::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(TutorialSelect_C_ExecuteUbergraph_TutorialSelect, CallFunc_Create_ReturnValue) == 0x000038, "Member 'TutorialSelect_C_ExecuteUbergraph_TutorialSelect::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TutorialSelect_C_ExecuteUbergraph_TutorialSelect, CallFunc_Create_ReturnValue_1) == 0x000040, "Member 'TutorialSelect_C_ExecuteUbergraph_TutorialSelect::CallFunc_Create_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TutorialSelect_C_ExecuteUbergraph_TutorialSelect, CallFunc_GetPlayerController_ReturnValue) == 0x000048, "Member 'TutorialSelect_C_ExecuteUbergraph_TutorialSelect::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TutorialSelect_C_ExecuteUbergraph_TutorialSelect, CallFunc_DestroySession_ReturnValue) == 0x000050, "Member 'TutorialSelect_C_ExecuteUbergraph_TutorialSelect::CallFunc_DestroySession_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TutorialSelect_C_ExecuteUbergraph_TutorialSelect, CallFunc_IsValid_ReturnValue) == 0x000058, "Member 'TutorialSelect_C_ExecuteUbergraph_TutorialSelect::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TutorialSelect_C_ExecuteUbergraph_TutorialSelect, K2Node_CreateDelegate_OutputDelegate_3) == 0x00005C, "Member 'TutorialSelect_C_ExecuteUbergraph_TutorialSelect::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(TutorialSelect_C_ExecuteUbergraph_TutorialSelect, CallFunc_GetPlayerController_ReturnValue_1) == 0x000070, "Member 'TutorialSelect_C_ExecuteUbergraph_TutorialSelect::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TutorialSelect_C_ExecuteUbergraph_TutorialSelect, CallFunc_DestroySession_ReturnValue_1) == 0x000078, "Member 'TutorialSelect_C_ExecuteUbergraph_TutorialSelect::CallFunc_DestroySession_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TutorialSelect_C_ExecuteUbergraph_TutorialSelect, CallFunc_IsValid_ReturnValue_1) == 0x000080, "Member 'TutorialSelect_C_ExecuteUbergraph_TutorialSelect::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_TutorialSelect_C_ExecuteUbergraph_TutorialSelect;
 
 }
 

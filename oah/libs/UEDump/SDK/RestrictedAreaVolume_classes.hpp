@@ -37,19 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RestrictedAreaVolume_C">();
+		BP_STATIC_CLASS_IMPL("RestrictedAreaVolume_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RestrictedAreaVolume_C")
 	}
 	static class ARestrictedAreaVolume_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ARestrictedAreaVolume_C>();
 	}
 };
-static_assert(alignof(ARestrictedAreaVolume_C) == 0x000008, "Wrong alignment on ARestrictedAreaVolume_C");
-static_assert(sizeof(ARestrictedAreaVolume_C) == 0x000240, "Wrong size on ARestrictedAreaVolume_C");
-static_assert(offsetof(ARestrictedAreaVolume_C, UberGraphFrame) == 0x000220, "Member 'ARestrictedAreaVolume_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ARestrictedAreaVolume_C, Box) == 0x000228, "Member 'ARestrictedAreaVolume_C::Box' has a wrong offset!");
-static_assert(offsetof(ARestrictedAreaVolume_C, DefaultSceneRoot) == 0x000230, "Member 'ARestrictedAreaVolume_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ARestrictedAreaVolume_C, ArrestWarning_) == 0x000238, "Member 'ARestrictedAreaVolume_C::ArrestWarning_' has a wrong offset!");
+DUMPER7_ASSERTS_ARestrictedAreaVolume_C;
 
 }
 

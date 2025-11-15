@@ -70,46 +70,7 @@ public:
 	class FName                                   CallFunc_MakeLiteralName_ReturnValue;              // 0x00FC(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   CallFunc_MakeLiteralName_ReturnValue_1;            // 0x0104(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Duffelbag_C_ExecuteUbergraph_Duffelbag) == 0x000008, "Wrong alignment on Duffelbag_C_ExecuteUbergraph_Duffelbag");
-static_assert(sizeof(Duffelbag_C_ExecuteUbergraph_Duffelbag) == 0x000110, "Wrong size on Duffelbag_C_ExecuteUbergraph_Duffelbag");
-static_assert(offsetof(Duffelbag_C_ExecuteUbergraph_Duffelbag, EntryPoint) == 0x000000, "Member 'Duffelbag_C_ExecuteUbergraph_Duffelbag::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Duffelbag_C_ExecuteUbergraph_Duffelbag, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'Duffelbag_C_ExecuteUbergraph_Duffelbag::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(Duffelbag_C_ExecuteUbergraph_Duffelbag, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'Duffelbag_C_ExecuteUbergraph_Duffelbag::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Duffelbag_C_ExecuteUbergraph_Duffelbag, Temp_int_Array_Index_Variable) == 0x00000C, "Member 'Duffelbag_C_ExecuteUbergraph_Duffelbag::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(Duffelbag_C_ExecuteUbergraph_Duffelbag, Temp_int_Loop_Counter_Variable_1) == 0x000010, "Member 'Duffelbag_C_ExecuteUbergraph_Duffelbag::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(Duffelbag_C_ExecuteUbergraph_Duffelbag, CallFunc_Add_IntInt_ReturnValue_1) == 0x000014, "Member 'Duffelbag_C_ExecuteUbergraph_Duffelbag::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Duffelbag_C_ExecuteUbergraph_Duffelbag, K2Node_ComponentBoundEvent_Player_1) == 0x000018, "Member 'Duffelbag_C_ExecuteUbergraph_Duffelbag::K2Node_ComponentBoundEvent_Player_1' has a wrong offset!");
-static_assert(offsetof(Duffelbag_C_ExecuteUbergraph_Duffelbag, K2Node_ComponentBoundEvent_Pickuplocation) == 0x000020, "Member 'Duffelbag_C_ExecuteUbergraph_Duffelbag::K2Node_ComponentBoundEvent_Pickuplocation' has a wrong offset!");
-static_assert(offsetof(Duffelbag_C_ExecuteUbergraph_Duffelbag, K2Node_ComponentBoundEvent_PickupRotation) == 0x00002C, "Member 'Duffelbag_C_ExecuteUbergraph_Duffelbag::K2Node_ComponentBoundEvent_PickupRotation' has a wrong offset!");
-static_assert(offsetof(Duffelbag_C_ExecuteUbergraph_Duffelbag, K2Node_ComponentBoundEvent_HitLocation) == 0x000038, "Member 'Duffelbag_C_ExecuteUbergraph_Duffelbag::K2Node_ComponentBoundEvent_HitLocation' has a wrong offset!");
-static_assert(offsetof(Duffelbag_C_ExecuteUbergraph_Duffelbag, K2Node_CustomEvent_Player) == 0x000048, "Member 'Duffelbag_C_ExecuteUbergraph_Duffelbag::K2Node_CustomEvent_Player' has a wrong offset!");
-static_assert(offsetof(Duffelbag_C_ExecuteUbergraph_Duffelbag, CallFunc_GetOverlappingActors_OverlappingActors) == 0x000050, "Member 'Duffelbag_C_ExecuteUbergraph_Duffelbag::CallFunc_GetOverlappingActors_OverlappingActors' has a wrong offset!");
-static_assert(offsetof(Duffelbag_C_ExecuteUbergraph_Duffelbag, K2Node_ComponentBoundEvent_Player) == 0x000060, "Member 'Duffelbag_C_ExecuteUbergraph_Duffelbag::K2Node_ComponentBoundEvent_Player' has a wrong offset!");
-static_assert(offsetof(Duffelbag_C_ExecuteUbergraph_Duffelbag, CallFunc_Array_Length_ReturnValue) == 0x000068, "Member 'Duffelbag_C_ExecuteUbergraph_Duffelbag::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Duffelbag_C_ExecuteUbergraph_Duffelbag, CallFunc_Less_IntInt_ReturnValue) == 0x00006C, "Member 'Duffelbag_C_ExecuteUbergraph_Duffelbag::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Duffelbag_C_ExecuteUbergraph_Duffelbag, Temp_int_Array_Index_Variable_1) == 0x000070, "Member 'Duffelbag_C_ExecuteUbergraph_Duffelbag::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(Duffelbag_C_ExecuteUbergraph_Duffelbag, CallFunc_Array_Get_Item) == 0x000078, "Member 'Duffelbag_C_ExecuteUbergraph_Duffelbag::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Duffelbag_C_ExecuteUbergraph_Duffelbag, CallFunc_Array_Get_Item_1) == 0x000080, "Member 'Duffelbag_C_ExecuteUbergraph_Duffelbag::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(Duffelbag_C_ExecuteUbergraph_Duffelbag, CallFunc_K2_GetRootComponent_ReturnValue) == 0x000088, "Member 'Duffelbag_C_ExecuteUbergraph_Duffelbag::CallFunc_K2_GetRootComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Duffelbag_C_ExecuteUbergraph_Duffelbag, K2Node_DynamicCast_AsStatic_Mesh_Actor) == 0x000090, "Member 'Duffelbag_C_ExecuteUbergraph_Duffelbag::K2Node_DynamicCast_AsStatic_Mesh_Actor' has a wrong offset!");
-static_assert(offsetof(Duffelbag_C_ExecuteUbergraph_Duffelbag, K2Node_DynamicCast_bSuccess) == 0x000098, "Member 'Duffelbag_C_ExecuteUbergraph_Duffelbag::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Duffelbag_C_ExecuteUbergraph_Duffelbag, K2Node_DynamicCast_AsStatic_Mesh_Component) == 0x0000A0, "Member 'Duffelbag_C_ExecuteUbergraph_Duffelbag::K2Node_DynamicCast_AsStatic_Mesh_Component' has a wrong offset!");
-static_assert(offsetof(Duffelbag_C_ExecuteUbergraph_Duffelbag, K2Node_DynamicCast_bSuccess_1) == 0x0000A8, "Member 'Duffelbag_C_ExecuteUbergraph_Duffelbag::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(Duffelbag_C_ExecuteUbergraph_Duffelbag, CallFunc_GetComponentByClass_ReturnValue) == 0x0000B0, "Member 'Duffelbag_C_ExecuteUbergraph_Duffelbag::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Duffelbag_C_ExecuteUbergraph_Duffelbag, CallFunc_Array_Add_ReturnValue) == 0x0000B8, "Member 'Duffelbag_C_ExecuteUbergraph_Duffelbag::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Duffelbag_C_ExecuteUbergraph_Duffelbag, CallFunc_IsValid_ReturnValue) == 0x0000BC, "Member 'Duffelbag_C_ExecuteUbergraph_Duffelbag::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Duffelbag_C_ExecuteUbergraph_Duffelbag, CallFunc_GetComponentByClass_ReturnValue_1) == 0x0000C0, "Member 'Duffelbag_C_ExecuteUbergraph_Duffelbag::CallFunc_GetComponentByClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Duffelbag_C_ExecuteUbergraph_Duffelbag, CallFunc_IsValid_ReturnValue_1) == 0x0000C8, "Member 'Duffelbag_C_ExecuteUbergraph_Duffelbag::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Duffelbag_C_ExecuteUbergraph_Duffelbag, CallFunc_IsValid_ReturnValue_2) == 0x0000C9, "Member 'Duffelbag_C_ExecuteUbergraph_Duffelbag::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Duffelbag_C_ExecuteUbergraph_Duffelbag, K2Node_DynamicCast_AsStatic_Mesh_Actor_1) == 0x0000D0, "Member 'Duffelbag_C_ExecuteUbergraph_Duffelbag::K2Node_DynamicCast_AsStatic_Mesh_Actor_1' has a wrong offset!");
-static_assert(offsetof(Duffelbag_C_ExecuteUbergraph_Duffelbag, K2Node_DynamicCast_bSuccess_2) == 0x0000D8, "Member 'Duffelbag_C_ExecuteUbergraph_Duffelbag::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(Duffelbag_C_ExecuteUbergraph_Duffelbag, CallFunc_GetComponentByClass_ReturnValue_2) == 0x0000E0, "Member 'Duffelbag_C_ExecuteUbergraph_Duffelbag::CallFunc_GetComponentByClass_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Duffelbag_C_ExecuteUbergraph_Duffelbag, CallFunc_GetComponentByClass_ReturnValue_3) == 0x0000E8, "Member 'Duffelbag_C_ExecuteUbergraph_Duffelbag::CallFunc_GetComponentByClass_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Duffelbag_C_ExecuteUbergraph_Duffelbag, CallFunc_IsValid_ReturnValue_3) == 0x0000F0, "Member 'Duffelbag_C_ExecuteUbergraph_Duffelbag::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Duffelbag_C_ExecuteUbergraph_Duffelbag, CallFunc_Array_Length_ReturnValue_1) == 0x0000F4, "Member 'Duffelbag_C_ExecuteUbergraph_Duffelbag::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Duffelbag_C_ExecuteUbergraph_Duffelbag, CallFunc_Less_IntInt_ReturnValue_1) == 0x0000F8, "Member 'Duffelbag_C_ExecuteUbergraph_Duffelbag::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Duffelbag_C_ExecuteUbergraph_Duffelbag, CallFunc_MakeLiteralName_ReturnValue) == 0x0000FC, "Member 'Duffelbag_C_ExecuteUbergraph_Duffelbag::CallFunc_MakeLiteralName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Duffelbag_C_ExecuteUbergraph_Duffelbag, CallFunc_MakeLiteralName_ReturnValue_1) == 0x000104, "Member 'Duffelbag_C_ExecuteUbergraph_Duffelbag::CallFunc_MakeLiteralName_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_Duffelbag_C_ExecuteUbergraph_Duffelbag;
 
 // Function Duffelbag.Duffelbag_C.BndEvt__Duffelbag_PickupItemComponent_K2Node_ComponentBoundEvent_2_DropItem__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -118,9 +79,7 @@ struct Duffelbag_C_BndEvt__Duffelbag_PickupItemComponent_K2Node_ComponentBoundEv
 public:
 	class AActor*                                 Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Duffelbag_C_BndEvt__Duffelbag_PickupItemComponent_K2Node_ComponentBoundEvent_2_DropItem__DelegateSignature) == 0x000008, "Wrong alignment on Duffelbag_C_BndEvt__Duffelbag_PickupItemComponent_K2Node_ComponentBoundEvent_2_DropItem__DelegateSignature");
-static_assert(sizeof(Duffelbag_C_BndEvt__Duffelbag_PickupItemComponent_K2Node_ComponentBoundEvent_2_DropItem__DelegateSignature) == 0x000008, "Wrong size on Duffelbag_C_BndEvt__Duffelbag_PickupItemComponent_K2Node_ComponentBoundEvent_2_DropItem__DelegateSignature");
-static_assert(offsetof(Duffelbag_C_BndEvt__Duffelbag_PickupItemComponent_K2Node_ComponentBoundEvent_2_DropItem__DelegateSignature, Player) == 0x000000, "Member 'Duffelbag_C_BndEvt__Duffelbag_PickupItemComponent_K2Node_ComponentBoundEvent_2_DropItem__DelegateSignature::Player' has a wrong offset!");
+DUMPER7_ASSERTS_Duffelbag_C_BndEvt__Duffelbag_PickupItemComponent_K2Node_ComponentBoundEvent_2_DropItem__DelegateSignature;
 
 // Function Duffelbag.Duffelbag_C.AttachMoney
 // 0x0008 (0x0008 - 0x0000)
@@ -129,9 +88,7 @@ struct Duffelbag_C_AttachMoney final
 public:
 	class AActor*                                 Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Duffelbag_C_AttachMoney) == 0x000008, "Wrong alignment on Duffelbag_C_AttachMoney");
-static_assert(sizeof(Duffelbag_C_AttachMoney) == 0x000008, "Wrong size on Duffelbag_C_AttachMoney");
-static_assert(offsetof(Duffelbag_C_AttachMoney, Player) == 0x000000, "Member 'Duffelbag_C_AttachMoney::Player' has a wrong offset!");
+DUMPER7_ASSERTS_Duffelbag_C_AttachMoney;
 
 // Function Duffelbag.Duffelbag_C.BndEvt__Duffelbag_PickupItemComponent_K2Node_ComponentBoundEvent_0_PickUpItem__DelegateSignature
 // 0x0030 (0x0030 - 0x0000)
@@ -143,12 +100,7 @@ public:
 	struct FRotator                               PickupRotation;                                    // 0x0014(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FVector                                HitLocation;                                       // 0x0020(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Duffelbag_C_BndEvt__Duffelbag_PickupItemComponent_K2Node_ComponentBoundEvent_0_PickUpItem__DelegateSignature) == 0x000008, "Wrong alignment on Duffelbag_C_BndEvt__Duffelbag_PickupItemComponent_K2Node_ComponentBoundEvent_0_PickUpItem__DelegateSignature");
-static_assert(sizeof(Duffelbag_C_BndEvt__Duffelbag_PickupItemComponent_K2Node_ComponentBoundEvent_0_PickUpItem__DelegateSignature) == 0x000030, "Wrong size on Duffelbag_C_BndEvt__Duffelbag_PickupItemComponent_K2Node_ComponentBoundEvent_0_PickUpItem__DelegateSignature");
-static_assert(offsetof(Duffelbag_C_BndEvt__Duffelbag_PickupItemComponent_K2Node_ComponentBoundEvent_0_PickUpItem__DelegateSignature, Player) == 0x000000, "Member 'Duffelbag_C_BndEvt__Duffelbag_PickupItemComponent_K2Node_ComponentBoundEvent_0_PickUpItem__DelegateSignature::Player' has a wrong offset!");
-static_assert(offsetof(Duffelbag_C_BndEvt__Duffelbag_PickupItemComponent_K2Node_ComponentBoundEvent_0_PickUpItem__DelegateSignature, Pickuplocation) == 0x000008, "Member 'Duffelbag_C_BndEvt__Duffelbag_PickupItemComponent_K2Node_ComponentBoundEvent_0_PickUpItem__DelegateSignature::Pickuplocation' has a wrong offset!");
-static_assert(offsetof(Duffelbag_C_BndEvt__Duffelbag_PickupItemComponent_K2Node_ComponentBoundEvent_0_PickUpItem__DelegateSignature, PickupRotation) == 0x000014, "Member 'Duffelbag_C_BndEvt__Duffelbag_PickupItemComponent_K2Node_ComponentBoundEvent_0_PickUpItem__DelegateSignature::PickupRotation' has a wrong offset!");
-static_assert(offsetof(Duffelbag_C_BndEvt__Duffelbag_PickupItemComponent_K2Node_ComponentBoundEvent_0_PickUpItem__DelegateSignature, HitLocation) == 0x000020, "Member 'Duffelbag_C_BndEvt__Duffelbag_PickupItemComponent_K2Node_ComponentBoundEvent_0_PickUpItem__DelegateSignature::HitLocation' has a wrong offset!");
+DUMPER7_ASSERTS_Duffelbag_C_BndEvt__Duffelbag_PickupItemComponent_K2Node_ComponentBoundEvent_0_PickUpItem__DelegateSignature;
 
 }
 

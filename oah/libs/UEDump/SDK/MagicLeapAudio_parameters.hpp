@@ -21,9 +21,7 @@ struct MagicLeapAudioFunctionLibrary_IsMicMuted final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MagicLeapAudioFunctionLibrary_IsMicMuted) == 0x000001, "Wrong alignment on MagicLeapAudioFunctionLibrary_IsMicMuted");
-static_assert(sizeof(MagicLeapAudioFunctionLibrary_IsMicMuted) == 0x000001, "Wrong size on MagicLeapAudioFunctionLibrary_IsMicMuted");
-static_assert(offsetof(MagicLeapAudioFunctionLibrary_IsMicMuted, ReturnValue) == 0x000000, "Member 'MagicLeapAudioFunctionLibrary_IsMicMuted::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapAudioFunctionLibrary_IsMicMuted;
 
 // Function MagicLeapAudio.MagicLeapAudioFunctionLibrary.SetMicMute
 // 0x0002 (0x0002 - 0x0000)
@@ -33,10 +31,7 @@ public:
 	bool                                          IsMuted;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MagicLeapAudioFunctionLibrary_SetMicMute) == 0x000001, "Wrong alignment on MagicLeapAudioFunctionLibrary_SetMicMute");
-static_assert(sizeof(MagicLeapAudioFunctionLibrary_SetMicMute) == 0x000002, "Wrong size on MagicLeapAudioFunctionLibrary_SetMicMute");
-static_assert(offsetof(MagicLeapAudioFunctionLibrary_SetMicMute, IsMuted) == 0x000000, "Member 'MagicLeapAudioFunctionLibrary_SetMicMute::IsMuted' has a wrong offset!");
-static_assert(offsetof(MagicLeapAudioFunctionLibrary_SetMicMute, ReturnValue) == 0x000001, "Member 'MagicLeapAudioFunctionLibrary_SetMicMute::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapAudioFunctionLibrary_SetMicMute;
 
 // Function MagicLeapAudio.MagicLeapAudioFunctionLibrary.SetOnAudioJackPluggedDelegate
 // 0x0014 (0x0014 - 0x0000)
@@ -47,10 +42,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapAudioFunctionLibrary_SetOnAudioJackPluggedDelegate) == 0x000004, "Wrong alignment on MagicLeapAudioFunctionLibrary_SetOnAudioJackPluggedDelegate");
-static_assert(sizeof(MagicLeapAudioFunctionLibrary_SetOnAudioJackPluggedDelegate) == 0x000014, "Wrong size on MagicLeapAudioFunctionLibrary_SetOnAudioJackPluggedDelegate");
-static_assert(offsetof(MagicLeapAudioFunctionLibrary_SetOnAudioJackPluggedDelegate, ResultDelegate) == 0x000000, "Member 'MagicLeapAudioFunctionLibrary_SetOnAudioJackPluggedDelegate::ResultDelegate' has a wrong offset!");
-static_assert(offsetof(MagicLeapAudioFunctionLibrary_SetOnAudioJackPluggedDelegate, ReturnValue) == 0x000010, "Member 'MagicLeapAudioFunctionLibrary_SetOnAudioJackPluggedDelegate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapAudioFunctionLibrary_SetOnAudioJackPluggedDelegate;
 
 // Function MagicLeapAudio.MagicLeapAudioFunctionLibrary.SetOnAudioJackUnpluggedDelegate
 // 0x0014 (0x0014 - 0x0000)
@@ -61,10 +53,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapAudioFunctionLibrary_SetOnAudioJackUnpluggedDelegate) == 0x000004, "Wrong alignment on MagicLeapAudioFunctionLibrary_SetOnAudioJackUnpluggedDelegate");
-static_assert(sizeof(MagicLeapAudioFunctionLibrary_SetOnAudioJackUnpluggedDelegate) == 0x000014, "Wrong size on MagicLeapAudioFunctionLibrary_SetOnAudioJackUnpluggedDelegate");
-static_assert(offsetof(MagicLeapAudioFunctionLibrary_SetOnAudioJackUnpluggedDelegate, ResultDelegate) == 0x000000, "Member 'MagicLeapAudioFunctionLibrary_SetOnAudioJackUnpluggedDelegate::ResultDelegate' has a wrong offset!");
-static_assert(offsetof(MagicLeapAudioFunctionLibrary_SetOnAudioJackUnpluggedDelegate, ReturnValue) == 0x000010, "Member 'MagicLeapAudioFunctionLibrary_SetOnAudioJackUnpluggedDelegate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapAudioFunctionLibrary_SetOnAudioJackUnpluggedDelegate;
 
 }
 

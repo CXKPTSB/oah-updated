@@ -38,42 +38,33 @@ public:
 	bool                                          Purchased_;                                        // 0x02B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
-	ESlateVisibility HiddenWhenPurchased();
-	ESlateVisibility VisibleWhenPurchased();
-	class FText GetText_2();
-	class FText GetText_1();
-	struct FSlateBrush GetBrush_0();
-	class FText GetText_0();
-	void Construct();
-	void BndEvt__BuySkillUI_CashBuyButton_K2Node_ComponentBoundEvent_3_OnButtonClickedEvent__DelegateSignature();
-	void BndEvt__BuySkillUI_Button_629_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature();
-	void BndEvt__BuySkillUI_CloseButton_K2Node_ComponentBoundEvent_5_OnButtonClickedEvent__DelegateSignature();
 	void ExecuteUbergraph_BuySkillUI(int32 EntryPoint);
+	void BndEvt__BuySkillUI_CloseButton_K2Node_ComponentBoundEvent_5_OnButtonClickedEvent__DelegateSignature();
+	void BndEvt__BuySkillUI_Button_629_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature();
+	void BndEvt__BuySkillUI_CashBuyButton_K2Node_ComponentBoundEvent_3_OnButtonClickedEvent__DelegateSignature();
+	void Construct();
+	class FText GetText_0();
+	struct FSlateBrush GetBrush_0();
+	class FText GetText_1();
+	class FText GetText_2();
+	ESlateVisibility VisibleWhenPurchased();
+	ESlateVisibility HiddenWhenPurchased();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BuySkillUI_C">();
+		BP_STATIC_CLASS_IMPL("BuySkillUI_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuySkillUI_C")
 	}
 	static class UBuySkillUI_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuySkillUI_C>();
 	}
 };
-static_assert(alignof(UBuySkillUI_C) == 0x000008, "Wrong alignment on UBuySkillUI_C");
-static_assert(sizeof(UBuySkillUI_C) == 0x0002C0, "Wrong size on UBuySkillUI_C");
-static_assert(offsetof(UBuySkillUI_C, UberGraphFrame) == 0x000260, "Member 'UBuySkillUI_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBuySkillUI_C, Button_629) == 0x000268, "Member 'UBuySkillUI_C::Button_629' has a wrong offset!");
-static_assert(offsetof(UBuySkillUI_C, CashBuyButton) == 0x000270, "Member 'UBuySkillUI_C::CashBuyButton' has a wrong offset!");
-static_assert(offsetof(UBuySkillUI_C, CloseButton) == 0x000278, "Member 'UBuySkillUI_C::CloseButton' has a wrong offset!");
-static_assert(offsetof(UBuySkillUI_C, Image_0) == 0x000280, "Member 'UBuySkillUI_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UBuySkillUI_C, TextBlock) == 0x000288, "Member 'UBuySkillUI_C::TextBlock' has a wrong offset!");
-static_assert(offsetof(UBuySkillUI_C, TextBlock_79) == 0x000290, "Member 'UBuySkillUI_C::TextBlock_79' has a wrong offset!");
-static_assert(offsetof(UBuySkillUI_C, TextBlock_343) == 0x000298, "Member 'UBuySkillUI_C::TextBlock_343' has a wrong offset!");
-static_assert(offsetof(UBuySkillUI_C, Item) == 0x0002A0, "Member 'UBuySkillUI_C::Item' has a wrong offset!");
-static_assert(offsetof(UBuySkillUI_C, Tier) == 0x0002A8, "Member 'UBuySkillUI_C::Tier' has a wrong offset!");
-static_assert(offsetof(UBuySkillUI_C, As_Robber_Controller) == 0x0002B0, "Member 'UBuySkillUI_C::As_Robber_Controller' has a wrong offset!");
-static_assert(offsetof(UBuySkillUI_C, Purchased_) == 0x0002B8, "Member 'UBuySkillUI_C::Purchased_' has a wrong offset!");
+DUMPER7_ASSERTS_UBuySkillUI_C;
 
 }
 

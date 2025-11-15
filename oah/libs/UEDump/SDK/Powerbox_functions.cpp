@@ -129,7 +129,7 @@ void APowerbox_C::FinishDestroyServer()
 // class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   OtherBodyIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    bFromSweep                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FHitResult                       SweepResult                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// const struct FHitResult&                SweepResult                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
 void APowerbox_C::BndEvt__Powerbox_Sphere_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
@@ -252,7 +252,7 @@ void APowerbox_C::AlarmDisabledInterfaceCall()
 // Function Powerbox.Powerbox_C.CheckIfAllDoorsArelocked
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    ShouldHighlight_                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   ShouldHighlight_                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void APowerbox_C::CheckIfAllDoorsArelocked(bool* ShouldHighlight_)
 {
@@ -287,7 +287,7 @@ void APowerbox_C::HighlightNextPowerbox()
 // Function Powerbox.Powerbox_C.CheckIfAllDestroyed
 // (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    AllDestroyed_                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   AllDestroyed_                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void APowerbox_C::CheckIfAllDestroyed(bool* AllDestroyed_)
 {

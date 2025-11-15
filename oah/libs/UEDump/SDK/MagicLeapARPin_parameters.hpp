@@ -24,9 +24,7 @@ struct MagicLeapARPinComponent_AttemptPinDataRestoration final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MagicLeapARPinComponent_AttemptPinDataRestoration) == 0x000001, "Wrong alignment on MagicLeapARPinComponent_AttemptPinDataRestoration");
-static_assert(sizeof(MagicLeapARPinComponent_AttemptPinDataRestoration) == 0x000001, "Wrong size on MagicLeapARPinComponent_AttemptPinDataRestoration");
-static_assert(offsetof(MagicLeapARPinComponent_AttemptPinDataRestoration, ReturnValue) == 0x000000, "Member 'MagicLeapARPinComponent_AttemptPinDataRestoration::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapARPinComponent_AttemptPinDataRestoration;
 
 // Function MagicLeapARPin.MagicLeapARPinComponent.GetPinData
 // 0x0010 (0x0010 - 0x0000)
@@ -36,10 +34,7 @@ public:
 	TSubclassOf<class UMagicLeapARPinSaveGame>    PinDataClass_0;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UMagicLeapARPinSaveGame*                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MagicLeapARPinComponent_GetPinData) == 0x000008, "Wrong alignment on MagicLeapARPinComponent_GetPinData");
-static_assert(sizeof(MagicLeapARPinComponent_GetPinData) == 0x000010, "Wrong size on MagicLeapARPinComponent_GetPinData");
-static_assert(offsetof(MagicLeapARPinComponent_GetPinData, PinDataClass_0) == 0x000000, "Member 'MagicLeapARPinComponent_GetPinData::PinDataClass_0' has a wrong offset!");
-static_assert(offsetof(MagicLeapARPinComponent_GetPinData, ReturnValue) == 0x000008, "Member 'MagicLeapARPinComponent_GetPinData::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapARPinComponent_GetPinData;
 
 // Function MagicLeapARPin.MagicLeapARPinComponent.PinActor
 // 0x0010 (0x0010 - 0x0000)
@@ -50,10 +45,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapARPinComponent_PinActor) == 0x000008, "Wrong alignment on MagicLeapARPinComponent_PinActor");
-static_assert(sizeof(MagicLeapARPinComponent_PinActor) == 0x000010, "Wrong size on MagicLeapARPinComponent_PinActor");
-static_assert(offsetof(MagicLeapARPinComponent_PinActor, ActorToPin) == 0x000000, "Member 'MagicLeapARPinComponent_PinActor::ActorToPin' has a wrong offset!");
-static_assert(offsetof(MagicLeapARPinComponent_PinActor, ReturnValue) == 0x000008, "Member 'MagicLeapARPinComponent_PinActor::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapARPinComponent_PinActor;
 
 // Function MagicLeapARPin.MagicLeapARPinComponent.PinSceneComponent
 // 0x0010 (0x0010 - 0x0000)
@@ -64,10 +56,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapARPinComponent_PinSceneComponent) == 0x000008, "Wrong alignment on MagicLeapARPinComponent_PinSceneComponent");
-static_assert(sizeof(MagicLeapARPinComponent_PinSceneComponent) == 0x000010, "Wrong size on MagicLeapARPinComponent_PinSceneComponent");
-static_assert(offsetof(MagicLeapARPinComponent_PinSceneComponent, ComponentToPin) == 0x000000, "Member 'MagicLeapARPinComponent_PinSceneComponent::ComponentToPin' has a wrong offset!");
-static_assert(offsetof(MagicLeapARPinComponent_PinSceneComponent, ReturnValue) == 0x000008, "Member 'MagicLeapARPinComponent_PinSceneComponent::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapARPinComponent_PinSceneComponent;
 
 // Function MagicLeapARPin.MagicLeapARPinComponent.PinToID
 // 0x0014 (0x0014 - 0x0000)
@@ -78,10 +67,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapARPinComponent_PinToID) == 0x000004, "Wrong alignment on MagicLeapARPinComponent_PinToID");
-static_assert(sizeof(MagicLeapARPinComponent_PinToID) == 0x000014, "Wrong size on MagicLeapARPinComponent_PinToID");
-static_assert(offsetof(MagicLeapARPinComponent_PinToID, PinId) == 0x000000, "Member 'MagicLeapARPinComponent_PinToID::PinId' has a wrong offset!");
-static_assert(offsetof(MagicLeapARPinComponent_PinToID, ReturnValue) == 0x000010, "Member 'MagicLeapARPinComponent_PinToID::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapARPinComponent_PinToID;
 
 // Function MagicLeapARPin.MagicLeapARPinComponent.PinToRestoredOrSyncedID
 // 0x0001 (0x0001 - 0x0000)
@@ -90,9 +76,7 @@ struct MagicLeapARPinComponent_PinToRestoredOrSyncedID final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MagicLeapARPinComponent_PinToRestoredOrSyncedID) == 0x000001, "Wrong alignment on MagicLeapARPinComponent_PinToRestoredOrSyncedID");
-static_assert(sizeof(MagicLeapARPinComponent_PinToRestoredOrSyncedID) == 0x000001, "Wrong size on MagicLeapARPinComponent_PinToRestoredOrSyncedID");
-static_assert(offsetof(MagicLeapARPinComponent_PinToRestoredOrSyncedID, ReturnValue) == 0x000000, "Member 'MagicLeapARPinComponent_PinToRestoredOrSyncedID::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapARPinComponent_PinToRestoredOrSyncedID;
 
 // Function MagicLeapARPin.MagicLeapARPinComponent.TryGetPinData
 // 0x0018 (0x0018 - 0x0000)
@@ -104,11 +88,7 @@ public:
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMagicLeapARPinSaveGame*                ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MagicLeapARPinComponent_TryGetPinData) == 0x000008, "Wrong alignment on MagicLeapARPinComponent_TryGetPinData");
-static_assert(sizeof(MagicLeapARPinComponent_TryGetPinData) == 0x000018, "Wrong size on MagicLeapARPinComponent_TryGetPinData");
-static_assert(offsetof(MagicLeapARPinComponent_TryGetPinData, InPinDataClass) == 0x000000, "Member 'MagicLeapARPinComponent_TryGetPinData::InPinDataClass' has a wrong offset!");
-static_assert(offsetof(MagicLeapARPinComponent_TryGetPinData, OutPinDataValid) == 0x000008, "Member 'MagicLeapARPinComponent_TryGetPinData::OutPinDataValid' has a wrong offset!");
-static_assert(offsetof(MagicLeapARPinComponent_TryGetPinData, ReturnValue) == 0x000010, "Member 'MagicLeapARPinComponent_TryGetPinData::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapARPinComponent_TryGetPinData;
 
 // Function MagicLeapARPin.MagicLeapARPinComponent.GetPinnedPinID
 // 0x0014 (0x0014 - 0x0000)
@@ -119,10 +99,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapARPinComponent_GetPinnedPinID) == 0x000004, "Wrong alignment on MagicLeapARPinComponent_GetPinnedPinID");
-static_assert(sizeof(MagicLeapARPinComponent_GetPinnedPinID) == 0x000014, "Wrong size on MagicLeapARPinComponent_GetPinnedPinID");
-static_assert(offsetof(MagicLeapARPinComponent_GetPinnedPinID, PinId) == 0x000000, "Member 'MagicLeapARPinComponent_GetPinnedPinID::PinId' has a wrong offset!");
-static_assert(offsetof(MagicLeapARPinComponent_GetPinnedPinID, ReturnValue) == 0x000010, "Member 'MagicLeapARPinComponent_GetPinnedPinID::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapARPinComponent_GetPinnedPinID;
 
 // Function MagicLeapARPin.MagicLeapARPinComponent.GetPinState
 // 0x0018 (0x0018 - 0x0000)
@@ -133,10 +110,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapARPinComponent_GetPinState) == 0x000004, "Wrong alignment on MagicLeapARPinComponent_GetPinState");
-static_assert(sizeof(MagicLeapARPinComponent_GetPinState) == 0x000018, "Wrong size on MagicLeapARPinComponent_GetPinState");
-static_assert(offsetof(MagicLeapARPinComponent_GetPinState, State) == 0x000000, "Member 'MagicLeapARPinComponent_GetPinState::State' has a wrong offset!");
-static_assert(offsetof(MagicLeapARPinComponent_GetPinState, ReturnValue) == 0x000014, "Member 'MagicLeapARPinComponent_GetPinState::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapARPinComponent_GetPinState;
 
 // Function MagicLeapARPin.MagicLeapARPinComponent.IsPinned
 // 0x0001 (0x0001 - 0x0000)
@@ -145,9 +119,7 @@ struct MagicLeapARPinComponent_IsPinned final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MagicLeapARPinComponent_IsPinned) == 0x000001, "Wrong alignment on MagicLeapARPinComponent_IsPinned");
-static_assert(sizeof(MagicLeapARPinComponent_IsPinned) == 0x000001, "Wrong size on MagicLeapARPinComponent_IsPinned");
-static_assert(offsetof(MagicLeapARPinComponent_IsPinned, ReturnValue) == 0x000000, "Member 'MagicLeapARPinComponent_IsPinned::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapARPinComponent_IsPinned;
 
 // Function MagicLeapARPin.MagicLeapARPinComponent.PinRestoredOrSynced
 // 0x0001 (0x0001 - 0x0000)
@@ -156,9 +128,7 @@ struct MagicLeapARPinComponent_PinRestoredOrSynced final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MagicLeapARPinComponent_PinRestoredOrSynced) == 0x000001, "Wrong alignment on MagicLeapARPinComponent_PinRestoredOrSynced");
-static_assert(sizeof(MagicLeapARPinComponent_PinRestoredOrSynced) == 0x000001, "Wrong size on MagicLeapARPinComponent_PinRestoredOrSynced");
-static_assert(offsetof(MagicLeapARPinComponent_PinRestoredOrSynced, ReturnValue) == 0x000000, "Member 'MagicLeapARPinComponent_PinRestoredOrSynced::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapARPinComponent_PinRestoredOrSynced;
 
 // Function MagicLeapARPin.MagicLeapARPinFunctionLibrary.ARPinIdToString
 // 0x0020 (0x0020 - 0x0000)
@@ -168,32 +138,25 @@ public:
 	struct FGuid                                  ARPinId;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MagicLeapARPinFunctionLibrary_ARPinIdToString) == 0x000008, "Wrong alignment on MagicLeapARPinFunctionLibrary_ARPinIdToString");
-static_assert(sizeof(MagicLeapARPinFunctionLibrary_ARPinIdToString) == 0x000020, "Wrong size on MagicLeapARPinFunctionLibrary_ARPinIdToString");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_ARPinIdToString, ARPinId) == 0x000000, "Member 'MagicLeapARPinFunctionLibrary_ARPinIdToString::ARPinId' has a wrong offset!");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_ARPinIdToString, ReturnValue) == 0x000010, "Member 'MagicLeapARPinFunctionLibrary_ARPinIdToString::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapARPinFunctionLibrary_ARPinIdToString;
 
 // Function MagicLeapARPin.MagicLeapARPinFunctionLibrary.BindToOnMagicLeapARPinUpdatedDelegate
 // 0x0010 (0x0010 - 0x0000)
 struct MagicLeapARPinFunctionLibrary_BindToOnMagicLeapARPinUpdatedDelegate final
 {
 public:
-	TDelegate<void(const TArray<struct FGuid>& Added, const TArray<struct FGuid>& Updated, const TArray<struct FGuid>& Deleted)> Delegate;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const TArray<struct FGuid>& Added, const TArray<struct FGuid>& Updated, const TArray<struct FGuid>& Deleted)> Delegate; // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MagicLeapARPinFunctionLibrary_BindToOnMagicLeapARPinUpdatedDelegate) == 0x000004, "Wrong alignment on MagicLeapARPinFunctionLibrary_BindToOnMagicLeapARPinUpdatedDelegate");
-static_assert(sizeof(MagicLeapARPinFunctionLibrary_BindToOnMagicLeapARPinUpdatedDelegate) == 0x000010, "Wrong size on MagicLeapARPinFunctionLibrary_BindToOnMagicLeapARPinUpdatedDelegate");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_BindToOnMagicLeapARPinUpdatedDelegate, Delegate) == 0x000000, "Member 'MagicLeapARPinFunctionLibrary_BindToOnMagicLeapARPinUpdatedDelegate::Delegate' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapARPinFunctionLibrary_BindToOnMagicLeapARPinUpdatedDelegate;
 
 // Function MagicLeapARPin.MagicLeapARPinFunctionLibrary.BindToOnMagicLeapContentBindingFoundDelegate
 // 0x0010 (0x0010 - 0x0000)
 struct MagicLeapARPinFunctionLibrary_BindToOnMagicLeapContentBindingFoundDelegate final
 {
 public:
-	TDelegate<void(const struct FGuid& PinId, const TSet<class FString>& PinnedObjectIds)> Delegate;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FGuid& PinId, const TSet<class FString>& PinnedObjectIds)> Delegate; // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MagicLeapARPinFunctionLibrary_BindToOnMagicLeapContentBindingFoundDelegate) == 0x000004, "Wrong alignment on MagicLeapARPinFunctionLibrary_BindToOnMagicLeapContentBindingFoundDelegate");
-static_assert(sizeof(MagicLeapARPinFunctionLibrary_BindToOnMagicLeapContentBindingFoundDelegate) == 0x000010, "Wrong size on MagicLeapARPinFunctionLibrary_BindToOnMagicLeapContentBindingFoundDelegate");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_BindToOnMagicLeapContentBindingFoundDelegate, Delegate) == 0x000000, "Member 'MagicLeapARPinFunctionLibrary_BindToOnMagicLeapContentBindingFoundDelegate::Delegate' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapARPinFunctionLibrary_BindToOnMagicLeapContentBindingFoundDelegate;
 
 // Function MagicLeapARPin.MagicLeapARPinFunctionLibrary.CreateTracker
 // 0x0001 (0x0001 - 0x0000)
@@ -202,9 +165,7 @@ struct MagicLeapARPinFunctionLibrary_CreateTracker final
 public:
 	EMagicLeapPassableWorldError                  ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MagicLeapARPinFunctionLibrary_CreateTracker) == 0x000001, "Wrong alignment on MagicLeapARPinFunctionLibrary_CreateTracker");
-static_assert(sizeof(MagicLeapARPinFunctionLibrary_CreateTracker) == 0x000001, "Wrong size on MagicLeapARPinFunctionLibrary_CreateTracker");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_CreateTracker, ReturnValue) == 0x000000, "Member 'MagicLeapARPinFunctionLibrary_CreateTracker::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapARPinFunctionLibrary_CreateTracker;
 
 // Function MagicLeapARPin.MagicLeapARPinFunctionLibrary.DestroyTracker
 // 0x0001 (0x0001 - 0x0000)
@@ -213,9 +174,7 @@ struct MagicLeapARPinFunctionLibrary_DestroyTracker final
 public:
 	EMagicLeapPassableWorldError                  ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MagicLeapARPinFunctionLibrary_DestroyTracker) == 0x000001, "Wrong alignment on MagicLeapARPinFunctionLibrary_DestroyTracker");
-static_assert(sizeof(MagicLeapARPinFunctionLibrary_DestroyTracker) == 0x000001, "Wrong size on MagicLeapARPinFunctionLibrary_DestroyTracker");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_DestroyTracker, ReturnValue) == 0x000000, "Member 'MagicLeapARPinFunctionLibrary_DestroyTracker::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapARPinFunctionLibrary_DestroyTracker;
 
 // Function MagicLeapARPin.MagicLeapARPinFunctionLibrary.GetARPinPositionAndOrientation
 // 0x002C (0x002C - 0x0000)
@@ -229,13 +188,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0029(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_2A[0x2];                                       // 0x002A(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapARPinFunctionLibrary_GetARPinPositionAndOrientation) == 0x000004, "Wrong alignment on MagicLeapARPinFunctionLibrary_GetARPinPositionAndOrientation");
-static_assert(sizeof(MagicLeapARPinFunctionLibrary_GetARPinPositionAndOrientation) == 0x00002C, "Wrong size on MagicLeapARPinFunctionLibrary_GetARPinPositionAndOrientation");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_GetARPinPositionAndOrientation, PinId) == 0x000000, "Member 'MagicLeapARPinFunctionLibrary_GetARPinPositionAndOrientation::PinId' has a wrong offset!");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_GetARPinPositionAndOrientation, Position) == 0x000010, "Member 'MagicLeapARPinFunctionLibrary_GetARPinPositionAndOrientation::Position' has a wrong offset!");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_GetARPinPositionAndOrientation, Orientation) == 0x00001C, "Member 'MagicLeapARPinFunctionLibrary_GetARPinPositionAndOrientation::Orientation' has a wrong offset!");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_GetARPinPositionAndOrientation, PinFoundInEnvironment) == 0x000028, "Member 'MagicLeapARPinFunctionLibrary_GetARPinPositionAndOrientation::PinFoundInEnvironment' has a wrong offset!");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_GetARPinPositionAndOrientation, ReturnValue) == 0x000029, "Member 'MagicLeapARPinFunctionLibrary_GetARPinPositionAndOrientation::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapARPinFunctionLibrary_GetARPinPositionAndOrientation;
 
 // Function MagicLeapARPin.MagicLeapARPinFunctionLibrary.GetARPinPositionAndOrientation_TrackingSpace
 // 0x002C (0x002C - 0x0000)
@@ -249,13 +202,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0029(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_2A[0x2];                                       // 0x002A(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapARPinFunctionLibrary_GetARPinPositionAndOrientation_TrackingSpace) == 0x000004, "Wrong alignment on MagicLeapARPinFunctionLibrary_GetARPinPositionAndOrientation_TrackingSpace");
-static_assert(sizeof(MagicLeapARPinFunctionLibrary_GetARPinPositionAndOrientation_TrackingSpace) == 0x00002C, "Wrong size on MagicLeapARPinFunctionLibrary_GetARPinPositionAndOrientation_TrackingSpace");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_GetARPinPositionAndOrientation_TrackingSpace, PinId) == 0x000000, "Member 'MagicLeapARPinFunctionLibrary_GetARPinPositionAndOrientation_TrackingSpace::PinId' has a wrong offset!");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_GetARPinPositionAndOrientation_TrackingSpace, Position) == 0x000010, "Member 'MagicLeapARPinFunctionLibrary_GetARPinPositionAndOrientation_TrackingSpace::Position' has a wrong offset!");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_GetARPinPositionAndOrientation_TrackingSpace, Orientation) == 0x00001C, "Member 'MagicLeapARPinFunctionLibrary_GetARPinPositionAndOrientation_TrackingSpace::Orientation' has a wrong offset!");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_GetARPinPositionAndOrientation_TrackingSpace, PinFoundInEnvironment) == 0x000028, "Member 'MagicLeapARPinFunctionLibrary_GetARPinPositionAndOrientation_TrackingSpace::PinFoundInEnvironment' has a wrong offset!");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_GetARPinPositionAndOrientation_TrackingSpace, ReturnValue) == 0x000029, "Member 'MagicLeapARPinFunctionLibrary_GetARPinPositionAndOrientation_TrackingSpace::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapARPinFunctionLibrary_GetARPinPositionAndOrientation_TrackingSpace;
 
 // Function MagicLeapARPin.MagicLeapARPinFunctionLibrary.GetARPinState
 // 0x0028 (0x0028 - 0x0000)
@@ -267,11 +214,7 @@ public:
 	EMagicLeapPassableWorldError                  ReturnValue;                                       // 0x0024(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapARPinFunctionLibrary_GetARPinState) == 0x000004, "Wrong alignment on MagicLeapARPinFunctionLibrary_GetARPinState");
-static_assert(sizeof(MagicLeapARPinFunctionLibrary_GetARPinState) == 0x000028, "Wrong size on MagicLeapARPinFunctionLibrary_GetARPinState");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_GetARPinState, PinId) == 0x000000, "Member 'MagicLeapARPinFunctionLibrary_GetARPinState::PinId' has a wrong offset!");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_GetARPinState, State) == 0x000010, "Member 'MagicLeapARPinFunctionLibrary_GetARPinState::State' has a wrong offset!");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_GetARPinState, ReturnValue) == 0x000024, "Member 'MagicLeapARPinFunctionLibrary_GetARPinState::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapARPinFunctionLibrary_GetARPinState;
 
 // Function MagicLeapARPin.MagicLeapARPinFunctionLibrary.GetARPinStateToString
 // 0x0028 (0x0028 - 0x0000)
@@ -282,10 +225,7 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ReturnValue;                                       // 0x0018(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MagicLeapARPinFunctionLibrary_GetARPinStateToString) == 0x000008, "Wrong alignment on MagicLeapARPinFunctionLibrary_GetARPinStateToString");
-static_assert(sizeof(MagicLeapARPinFunctionLibrary_GetARPinStateToString) == 0x000028, "Wrong size on MagicLeapARPinFunctionLibrary_GetARPinStateToString");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_GetARPinStateToString, State) == 0x000000, "Member 'MagicLeapARPinFunctionLibrary_GetARPinStateToString::State' has a wrong offset!");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_GetARPinStateToString, ReturnValue) == 0x000018, "Member 'MagicLeapARPinFunctionLibrary_GetARPinStateToString::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapARPinFunctionLibrary_GetARPinStateToString;
 
 // Function MagicLeapARPin.MagicLeapARPinFunctionLibrary.GetAvailableARPins
 // 0x0020 (0x0020 - 0x0000)
@@ -298,11 +238,7 @@ public:
 	EMagicLeapPassableWorldError                  ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapARPinFunctionLibrary_GetAvailableARPins) == 0x000008, "Wrong alignment on MagicLeapARPinFunctionLibrary_GetAvailableARPins");
-static_assert(sizeof(MagicLeapARPinFunctionLibrary_GetAvailableARPins) == 0x000020, "Wrong size on MagicLeapARPinFunctionLibrary_GetAvailableARPins");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_GetAvailableARPins, NumRequested) == 0x000000, "Member 'MagicLeapARPinFunctionLibrary_GetAvailableARPins::NumRequested' has a wrong offset!");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_GetAvailableARPins, Pins) == 0x000008, "Member 'MagicLeapARPinFunctionLibrary_GetAvailableARPins::Pins' has a wrong offset!");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_GetAvailableARPins, ReturnValue) == 0x000018, "Member 'MagicLeapARPinFunctionLibrary_GetAvailableARPins::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapARPinFunctionLibrary_GetAvailableARPins;
 
 // Function MagicLeapARPin.MagicLeapARPinFunctionLibrary.GetClosestARPin
 // 0x0020 (0x0020 - 0x0000)
@@ -314,11 +250,7 @@ public:
 	EMagicLeapPassableWorldError                  ReturnValue;                                       // 0x001C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapARPinFunctionLibrary_GetClosestARPin) == 0x000004, "Wrong alignment on MagicLeapARPinFunctionLibrary_GetClosestARPin");
-static_assert(sizeof(MagicLeapARPinFunctionLibrary_GetClosestARPin) == 0x000020, "Wrong size on MagicLeapARPinFunctionLibrary_GetClosestARPin");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_GetClosestARPin, SearchPoint) == 0x000000, "Member 'MagicLeapARPinFunctionLibrary_GetClosestARPin::SearchPoint' has a wrong offset!");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_GetClosestARPin, PinId) == 0x00000C, "Member 'MagicLeapARPinFunctionLibrary_GetClosestARPin::PinId' has a wrong offset!");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_GetClosestARPin, ReturnValue) == 0x00001C, "Member 'MagicLeapARPinFunctionLibrary_GetClosestARPin::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapARPinFunctionLibrary_GetClosestARPin;
 
 // Function MagicLeapARPin.MagicLeapARPinFunctionLibrary.GetContentBindingSaveGameUserIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -327,9 +259,7 @@ struct MagicLeapARPinFunctionLibrary_GetContentBindingSaveGameUserIndex final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MagicLeapARPinFunctionLibrary_GetContentBindingSaveGameUserIndex) == 0x000004, "Wrong alignment on MagicLeapARPinFunctionLibrary_GetContentBindingSaveGameUserIndex");
-static_assert(sizeof(MagicLeapARPinFunctionLibrary_GetContentBindingSaveGameUserIndex) == 0x000004, "Wrong size on MagicLeapARPinFunctionLibrary_GetContentBindingSaveGameUserIndex");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_GetContentBindingSaveGameUserIndex, ReturnValue) == 0x000000, "Member 'MagicLeapARPinFunctionLibrary_GetContentBindingSaveGameUserIndex::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapARPinFunctionLibrary_GetContentBindingSaveGameUserIndex;
 
 // Function MagicLeapARPin.MagicLeapARPinFunctionLibrary.GetGlobalQueryFilter
 // 0x0070 (0x0070 - 0x0000)
@@ -340,10 +270,7 @@ public:
 	EMagicLeapPassableWorldError                  ReturnValue;                                       // 0x0068(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapARPinFunctionLibrary_GetGlobalQueryFilter) == 0x000008, "Wrong alignment on MagicLeapARPinFunctionLibrary_GetGlobalQueryFilter");
-static_assert(sizeof(MagicLeapARPinFunctionLibrary_GetGlobalQueryFilter) == 0x000070, "Wrong size on MagicLeapARPinFunctionLibrary_GetGlobalQueryFilter");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_GetGlobalQueryFilter, CurrentGlobalFilter) == 0x000000, "Member 'MagicLeapARPinFunctionLibrary_GetGlobalQueryFilter::CurrentGlobalFilter' has a wrong offset!");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_GetGlobalQueryFilter, ReturnValue) == 0x000068, "Member 'MagicLeapARPinFunctionLibrary_GetGlobalQueryFilter::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapARPinFunctionLibrary_GetGlobalQueryFilter;
 
 // Function MagicLeapARPin.MagicLeapARPinFunctionLibrary.GetNumAvailableARPins
 // 0x0008 (0x0008 - 0x0000)
@@ -354,10 +281,7 @@ public:
 	EMagicLeapPassableWorldError                  ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapARPinFunctionLibrary_GetNumAvailableARPins) == 0x000004, "Wrong alignment on MagicLeapARPinFunctionLibrary_GetNumAvailableARPins");
-static_assert(sizeof(MagicLeapARPinFunctionLibrary_GetNumAvailableARPins) == 0x000008, "Wrong size on MagicLeapARPinFunctionLibrary_GetNumAvailableARPins");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_GetNumAvailableARPins, Count) == 0x000000, "Member 'MagicLeapARPinFunctionLibrary_GetNumAvailableARPins::Count' has a wrong offset!");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_GetNumAvailableARPins, ReturnValue) == 0x000004, "Member 'MagicLeapARPinFunctionLibrary_GetNumAvailableARPins::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapARPinFunctionLibrary_GetNumAvailableARPins;
 
 // Function MagicLeapARPin.MagicLeapARPinFunctionLibrary.IsTrackerValid
 // 0x0001 (0x0001 - 0x0000)
@@ -366,9 +290,7 @@ struct MagicLeapARPinFunctionLibrary_IsTrackerValid final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MagicLeapARPinFunctionLibrary_IsTrackerValid) == 0x000001, "Wrong alignment on MagicLeapARPinFunctionLibrary_IsTrackerValid");
-static_assert(sizeof(MagicLeapARPinFunctionLibrary_IsTrackerValid) == 0x000001, "Wrong size on MagicLeapARPinFunctionLibrary_IsTrackerValid");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_IsTrackerValid, ReturnValue) == 0x000000, "Member 'MagicLeapARPinFunctionLibrary_IsTrackerValid::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapARPinFunctionLibrary_IsTrackerValid;
 
 // Function MagicLeapARPin.MagicLeapARPinFunctionLibrary.ParseStringToARPinId
 // 0x0028 (0x0028 - 0x0000)
@@ -380,11 +302,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapARPinFunctionLibrary_ParseStringToARPinId) == 0x000008, "Wrong alignment on MagicLeapARPinFunctionLibrary_ParseStringToARPinId");
-static_assert(sizeof(MagicLeapARPinFunctionLibrary_ParseStringToARPinId) == 0x000028, "Wrong size on MagicLeapARPinFunctionLibrary_ParseStringToARPinId");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_ParseStringToARPinId, PinIdString) == 0x000000, "Member 'MagicLeapARPinFunctionLibrary_ParseStringToARPinId::PinIdString' has a wrong offset!");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_ParseStringToARPinId, ARPinId) == 0x000010, "Member 'MagicLeapARPinFunctionLibrary_ParseStringToARPinId::ARPinId' has a wrong offset!");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_ParseStringToARPinId, ReturnValue) == 0x000020, "Member 'MagicLeapARPinFunctionLibrary_ParseStringToARPinId::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapARPinFunctionLibrary_ParseStringToARPinId;
 
 // Function MagicLeapARPin.MagicLeapARPinFunctionLibrary.QueryARPins
 // 0x0080 (0x0080 - 0x0000)
@@ -396,11 +314,7 @@ public:
 	EMagicLeapPassableWorldError                  ReturnValue;                                       // 0x0078(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapARPinFunctionLibrary_QueryARPins) == 0x000008, "Wrong alignment on MagicLeapARPinFunctionLibrary_QueryARPins");
-static_assert(sizeof(MagicLeapARPinFunctionLibrary_QueryARPins) == 0x000080, "Wrong size on MagicLeapARPinFunctionLibrary_QueryARPins");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_QueryARPins, Query) == 0x000000, "Member 'MagicLeapARPinFunctionLibrary_QueryARPins::Query' has a wrong offset!");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_QueryARPins, Pins) == 0x000068, "Member 'MagicLeapARPinFunctionLibrary_QueryARPins::Pins' has a wrong offset!");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_QueryARPins, ReturnValue) == 0x000078, "Member 'MagicLeapARPinFunctionLibrary_QueryARPins::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapARPinFunctionLibrary_QueryARPins;
 
 // Function MagicLeapARPin.MagicLeapARPinFunctionLibrary.SetContentBindingSaveGameUserIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -409,9 +323,7 @@ struct MagicLeapARPinFunctionLibrary_SetContentBindingSaveGameUserIndex final
 public:
 	int32                                         UserIndex;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MagicLeapARPinFunctionLibrary_SetContentBindingSaveGameUserIndex) == 0x000004, "Wrong alignment on MagicLeapARPinFunctionLibrary_SetContentBindingSaveGameUserIndex");
-static_assert(sizeof(MagicLeapARPinFunctionLibrary_SetContentBindingSaveGameUserIndex) == 0x000004, "Wrong size on MagicLeapARPinFunctionLibrary_SetContentBindingSaveGameUserIndex");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_SetContentBindingSaveGameUserIndex, UserIndex) == 0x000000, "Member 'MagicLeapARPinFunctionLibrary_SetContentBindingSaveGameUserIndex::UserIndex' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapARPinFunctionLibrary_SetContentBindingSaveGameUserIndex;
 
 // Function MagicLeapARPin.MagicLeapARPinFunctionLibrary.SetGlobalQueryFilter
 // 0x0070 (0x0070 - 0x0000)
@@ -422,32 +334,25 @@ public:
 	EMagicLeapPassableWorldError                  ReturnValue;                                       // 0x0068(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MagicLeapARPinFunctionLibrary_SetGlobalQueryFilter) == 0x000008, "Wrong alignment on MagicLeapARPinFunctionLibrary_SetGlobalQueryFilter");
-static_assert(sizeof(MagicLeapARPinFunctionLibrary_SetGlobalQueryFilter) == 0x000070, "Wrong size on MagicLeapARPinFunctionLibrary_SetGlobalQueryFilter");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_SetGlobalQueryFilter, InGlobalFilter) == 0x000000, "Member 'MagicLeapARPinFunctionLibrary_SetGlobalQueryFilter::InGlobalFilter' has a wrong offset!");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_SetGlobalQueryFilter, ReturnValue) == 0x000068, "Member 'MagicLeapARPinFunctionLibrary_SetGlobalQueryFilter::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapARPinFunctionLibrary_SetGlobalQueryFilter;
 
 // Function MagicLeapARPin.MagicLeapARPinFunctionLibrary.UnBindToOnMagicLeapARPinUpdatedDelegate
 // 0x0010 (0x0010 - 0x0000)
 struct MagicLeapARPinFunctionLibrary_UnBindToOnMagicLeapARPinUpdatedDelegate final
 {
 public:
-	TDelegate<void(const TArray<struct FGuid>& Added, const TArray<struct FGuid>& Updated, const TArray<struct FGuid>& Deleted)> Delegate;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const TArray<struct FGuid>& Added, const TArray<struct FGuid>& Updated, const TArray<struct FGuid>& Deleted)> Delegate; // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MagicLeapARPinFunctionLibrary_UnBindToOnMagicLeapARPinUpdatedDelegate) == 0x000004, "Wrong alignment on MagicLeapARPinFunctionLibrary_UnBindToOnMagicLeapARPinUpdatedDelegate");
-static_assert(sizeof(MagicLeapARPinFunctionLibrary_UnBindToOnMagicLeapARPinUpdatedDelegate) == 0x000010, "Wrong size on MagicLeapARPinFunctionLibrary_UnBindToOnMagicLeapARPinUpdatedDelegate");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_UnBindToOnMagicLeapARPinUpdatedDelegate, Delegate) == 0x000000, "Member 'MagicLeapARPinFunctionLibrary_UnBindToOnMagicLeapARPinUpdatedDelegate::Delegate' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapARPinFunctionLibrary_UnBindToOnMagicLeapARPinUpdatedDelegate;
 
 // Function MagicLeapARPin.MagicLeapARPinFunctionLibrary.UnBindToOnMagicLeapContentBindingFoundDelegate
 // 0x0010 (0x0010 - 0x0000)
 struct MagicLeapARPinFunctionLibrary_UnBindToOnMagicLeapContentBindingFoundDelegate final
 {
 public:
-	TDelegate<void(const struct FGuid& PinId, const TSet<class FString>& PinnedObjectIds)> Delegate;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FGuid& PinId, const TSet<class FString>& PinnedObjectIds)> Delegate; // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MagicLeapARPinFunctionLibrary_UnBindToOnMagicLeapContentBindingFoundDelegate) == 0x000004, "Wrong alignment on MagicLeapARPinFunctionLibrary_UnBindToOnMagicLeapContentBindingFoundDelegate");
-static_assert(sizeof(MagicLeapARPinFunctionLibrary_UnBindToOnMagicLeapContentBindingFoundDelegate) == 0x000010, "Wrong size on MagicLeapARPinFunctionLibrary_UnBindToOnMagicLeapContentBindingFoundDelegate");
-static_assert(offsetof(MagicLeapARPinFunctionLibrary_UnBindToOnMagicLeapContentBindingFoundDelegate, Delegate) == 0x000000, "Member 'MagicLeapARPinFunctionLibrary_UnBindToOnMagicLeapContentBindingFoundDelegate::Delegate' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapARPinFunctionLibrary_UnBindToOnMagicLeapContentBindingFoundDelegate;
 
 // Function MagicLeapARPin.MagicLeapARPinRenderer.SetVisibilityOverride
 // 0x0001 (0x0001 - 0x0000)
@@ -456,9 +361,7 @@ struct MagicLeapARPinRenderer_SetVisibilityOverride final
 public:
 	bool                                          InVisibilityOverride;                              // 0x0000(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MagicLeapARPinRenderer_SetVisibilityOverride) == 0x000001, "Wrong alignment on MagicLeapARPinRenderer_SetVisibilityOverride");
-static_assert(sizeof(MagicLeapARPinRenderer_SetVisibilityOverride) == 0x000001, "Wrong size on MagicLeapARPinRenderer_SetVisibilityOverride");
-static_assert(offsetof(MagicLeapARPinRenderer_SetVisibilityOverride, InVisibilityOverride) == 0x000000, "Member 'MagicLeapARPinRenderer_SetVisibilityOverride::InVisibilityOverride' has a wrong offset!");
+DUMPER7_ASSERTS_MagicLeapARPinRenderer_SetVisibilityOverride;
 
 }
 

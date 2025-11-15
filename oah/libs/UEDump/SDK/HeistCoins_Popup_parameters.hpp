@@ -23,9 +23,7 @@ struct HeistCoins_Popup_C_ExecuteUbergraph_HeistCoins_Popup final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HeistCoins_Popup_C_ExecuteUbergraph_HeistCoins_Popup) == 0x000004, "Wrong alignment on HeistCoins_Popup_C_ExecuteUbergraph_HeistCoins_Popup");
-static_assert(sizeof(HeistCoins_Popup_C_ExecuteUbergraph_HeistCoins_Popup) == 0x000004, "Wrong size on HeistCoins_Popup_C_ExecuteUbergraph_HeistCoins_Popup");
-static_assert(offsetof(HeistCoins_Popup_C_ExecuteUbergraph_HeistCoins_Popup, EntryPoint) == 0x000000, "Member 'HeistCoins_Popup_C_ExecuteUbergraph_HeistCoins_Popup::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_HeistCoins_Popup_C_ExecuteUbergraph_HeistCoins_Popup;
 
 // Function HeistCoins_Popup.HeistCoins_Popup_C.GetText_0
 // 0x0060 (0x0060 - 0x0000)
@@ -38,13 +36,7 @@ public:
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0038(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0048(0x0018)()
 };
-static_assert(alignof(HeistCoins_Popup_C_GetText_0) == 0x000008, "Wrong alignment on HeistCoins_Popup_C_GetText_0");
-static_assert(sizeof(HeistCoins_Popup_C_GetText_0) == 0x000060, "Wrong size on HeistCoins_Popup_C_GetText_0");
-static_assert(offsetof(HeistCoins_Popup_C_GetText_0, ReturnValue) == 0x000000, "Member 'HeistCoins_Popup_C_GetText_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeistCoins_Popup_C_GetText_0, CallFunc_Conv_IntToString_ReturnValue) == 0x000018, "Member 'HeistCoins_Popup_C_GetText_0::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeistCoins_Popup_C_GetText_0, CallFunc_Concat_StrStr_ReturnValue) == 0x000028, "Member 'HeistCoins_Popup_C_GetText_0::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeistCoins_Popup_C_GetText_0, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000038, "Member 'HeistCoins_Popup_C_GetText_0::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HeistCoins_Popup_C_GetText_0, CallFunc_Conv_StringToText_ReturnValue) == 0x000048, "Member 'HeistCoins_Popup_C_GetText_0::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HeistCoins_Popup_C_GetText_0;
 
 // Function HeistCoins_Popup.HeistCoins_Popup_C.GetBrush_0
 // 0x0188 (0x0188 - 0x0000)
@@ -77,27 +69,7 @@ public:
 	class UObject*                                K2Node_Select_Default_3;                           // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0100(0x0088)()
 };
-static_assert(alignof(HeistCoins_Popup_C_GetBrush_0) == 0x000008, "Wrong alignment on HeistCoins_Popup_C_GetBrush_0");
-static_assert(sizeof(HeistCoins_Popup_C_GetBrush_0) == 0x000188, "Wrong size on HeistCoins_Popup_C_GetBrush_0");
-static_assert(offsetof(HeistCoins_Popup_C_GetBrush_0, ReturnValue) == 0x000000, "Member 'HeistCoins_Popup_C_GetBrush_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeistCoins_Popup_C_GetBrush_0, Temp_bool_Variable) == 0x000088, "Member 'HeistCoins_Popup_C_GetBrush_0::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(HeistCoins_Popup_C_GetBrush_0, Temp_object_Variable) == 0x000090, "Member 'HeistCoins_Popup_C_GetBrush_0::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(HeistCoins_Popup_C_GetBrush_0, Temp_object_Variable_1) == 0x000098, "Member 'HeistCoins_Popup_C_GetBrush_0::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(HeistCoins_Popup_C_GetBrush_0, Temp_bool_Variable_1) == 0x0000A0, "Member 'HeistCoins_Popup_C_GetBrush_0::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(HeistCoins_Popup_C_GetBrush_0, Temp_object_Variable_2) == 0x0000A8, "Member 'HeistCoins_Popup_C_GetBrush_0::Temp_object_Variable_2' has a wrong offset!");
-static_assert(offsetof(HeistCoins_Popup_C_GetBrush_0, Temp_bool_Variable_2) == 0x0000B0, "Member 'HeistCoins_Popup_C_GetBrush_0::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(HeistCoins_Popup_C_GetBrush_0, Temp_object_Variable_3) == 0x0000B8, "Member 'HeistCoins_Popup_C_GetBrush_0::Temp_object_Variable_3' has a wrong offset!");
-static_assert(offsetof(HeistCoins_Popup_C_GetBrush_0, Temp_bool_Variable_3) == 0x0000C0, "Member 'HeistCoins_Popup_C_GetBrush_0::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(HeistCoins_Popup_C_GetBrush_0, Temp_object_Variable_4) == 0x0000C8, "Member 'HeistCoins_Popup_C_GetBrush_0::Temp_object_Variable_4' has a wrong offset!");
-static_assert(offsetof(HeistCoins_Popup_C_GetBrush_0, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0000D0, "Member 'HeistCoins_Popup_C_GetBrush_0::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeistCoins_Popup_C_GetBrush_0, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x0000D1, "Member 'HeistCoins_Popup_C_GetBrush_0::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HeistCoins_Popup_C_GetBrush_0, K2Node_Select_Default) == 0x0000D8, "Member 'HeistCoins_Popup_C_GetBrush_0::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(HeistCoins_Popup_C_GetBrush_0, K2Node_Select_Default_1) == 0x0000E0, "Member 'HeistCoins_Popup_C_GetBrush_0::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(HeistCoins_Popup_C_GetBrush_0, CallFunc_EqualEqual_IntInt_ReturnValue_2) == 0x0000E8, "Member 'HeistCoins_Popup_C_GetBrush_0::CallFunc_EqualEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(HeistCoins_Popup_C_GetBrush_0, CallFunc_EqualEqual_IntInt_ReturnValue_3) == 0x0000E9, "Member 'HeistCoins_Popup_C_GetBrush_0::CallFunc_EqualEqual_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(HeistCoins_Popup_C_GetBrush_0, K2Node_Select_Default_2) == 0x0000F0, "Member 'HeistCoins_Popup_C_GetBrush_0::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(HeistCoins_Popup_C_GetBrush_0, K2Node_Select_Default_3) == 0x0000F8, "Member 'HeistCoins_Popup_C_GetBrush_0::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(HeistCoins_Popup_C_GetBrush_0, K2Node_MakeStruct_SlateBrush) == 0x000100, "Member 'HeistCoins_Popup_C_GetBrush_0::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
+DUMPER7_ASSERTS_HeistCoins_Popup_C_GetBrush_0;
 
 }
 

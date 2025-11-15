@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DuffelbagStuckComponent_C">();
+		BP_STATIC_CLASS_IMPL("DuffelbagStuckComponent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DuffelbagStuckComponent_C")
 	}
 	static class UDuffelbagStuckComponent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDuffelbagStuckComponent_C>();
 	}
 };
-static_assert(alignof(UDuffelbagStuckComponent_C) == 0x000008, "Wrong alignment on UDuffelbagStuckComponent_C");
-static_assert(sizeof(UDuffelbagStuckComponent_C) == 0x0000B8, "Wrong size on UDuffelbagStuckComponent_C");
-static_assert(offsetof(UDuffelbagStuckComponent_C, Enabled_) == 0x0000B0, "Member 'UDuffelbagStuckComponent_C::Enabled_' has a wrong offset!");
+DUMPER7_ASSERTS_UDuffelbagStuckComponent_C;
 
 }
 

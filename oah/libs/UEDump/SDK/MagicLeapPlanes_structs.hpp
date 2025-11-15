@@ -48,9 +48,7 @@ struct FMagicLeapPolygon final
 public:
 	TArray<struct FVector>                        Vertices;                                          // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMagicLeapPolygon) == 0x000008, "Wrong alignment on FMagicLeapPolygon");
-static_assert(sizeof(FMagicLeapPolygon) == 0x000010, "Wrong size on FMagicLeapPolygon");
-static_assert(offsetof(FMagicLeapPolygon, Vertices) == 0x000000, "Member 'FMagicLeapPolygon::Vertices' has a wrong offset!");
+DUMPER7_ASSERTS_FMagicLeapPolygon;
 
 // ScriptStruct MagicLeapPlanes.MagicLeapPlaneBoundary
 // 0x0020 (0x0020 - 0x0000)
@@ -60,10 +58,7 @@ public:
 	struct FMagicLeapPolygon                      Polygon;                                           // 0x0000(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	TArray<struct FMagicLeapPolygon>              Holes;                                             // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMagicLeapPlaneBoundary) == 0x000008, "Wrong alignment on FMagicLeapPlaneBoundary");
-static_assert(sizeof(FMagicLeapPlaneBoundary) == 0x000020, "Wrong size on FMagicLeapPlaneBoundary");
-static_assert(offsetof(FMagicLeapPlaneBoundary, Polygon) == 0x000000, "Member 'FMagicLeapPlaneBoundary::Polygon' has a wrong offset!");
-static_assert(offsetof(FMagicLeapPlaneBoundary, Holes) == 0x000010, "Member 'FMagicLeapPlaneBoundary::Holes' has a wrong offset!");
+DUMPER7_ASSERTS_FMagicLeapPlaneBoundary;
 
 // ScriptStruct MagicLeapPlanes.MagicLeapPlaneBoundaries
 // 0x0020 (0x0020 - 0x0000)
@@ -73,10 +68,7 @@ public:
 	struct FGuid                                  ID;                                                // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FMagicLeapPlaneBoundary>        Boundaries;                                        // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMagicLeapPlaneBoundaries) == 0x000008, "Wrong alignment on FMagicLeapPlaneBoundaries");
-static_assert(sizeof(FMagicLeapPlaneBoundaries) == 0x000020, "Wrong size on FMagicLeapPlaneBoundaries");
-static_assert(offsetof(FMagicLeapPlaneBoundaries, ID) == 0x000000, "Member 'FMagicLeapPlaneBoundaries::ID' has a wrong offset!");
-static_assert(offsetof(FMagicLeapPlaneBoundaries, Boundaries) == 0x000010, "Member 'FMagicLeapPlaneBoundaries::Boundaries' has a wrong offset!");
+DUMPER7_ASSERTS_FMagicLeapPlaneBoundaries;
 
 // ScriptStruct MagicLeapPlanes.MagicLeapPlaneResult
 // 0x0060 (0x0060 - 0x0000)
@@ -92,15 +84,7 @@ public:
 	struct FGuid                                  ID;                                                // 0x0040(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FGuid                                  InnerID;                                           // 0x0050(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMagicLeapPlaneResult) == 0x000008, "Wrong alignment on FMagicLeapPlaneResult");
-static_assert(sizeof(FMagicLeapPlaneResult) == 0x000060, "Wrong size on FMagicLeapPlaneResult");
-static_assert(offsetof(FMagicLeapPlaneResult, PlanePosition) == 0x000000, "Member 'FMagicLeapPlaneResult::PlanePosition' has a wrong offset!");
-static_assert(offsetof(FMagicLeapPlaneResult, PlaneOrientation) == 0x00000C, "Member 'FMagicLeapPlaneResult::PlaneOrientation' has a wrong offset!");
-static_assert(offsetof(FMagicLeapPlaneResult, ContentOrientation) == 0x000018, "Member 'FMagicLeapPlaneResult::ContentOrientation' has a wrong offset!");
-static_assert(offsetof(FMagicLeapPlaneResult, PlaneDimensions) == 0x000024, "Member 'FMagicLeapPlaneResult::PlaneDimensions' has a wrong offset!");
-static_assert(offsetof(FMagicLeapPlaneResult, PlaneFlags) == 0x000030, "Member 'FMagicLeapPlaneResult::PlaneFlags' has a wrong offset!");
-static_assert(offsetof(FMagicLeapPlaneResult, ID) == 0x000040, "Member 'FMagicLeapPlaneResult::ID' has a wrong offset!");
-static_assert(offsetof(FMagicLeapPlaneResult, InnerID) == 0x000050, "Member 'FMagicLeapPlaneResult::InnerID' has a wrong offset!");
+DUMPER7_ASSERTS_FMagicLeapPlaneResult;
 
 // ScriptStruct MagicLeapPlanes.MagicLeapPlanesQuery
 // 0x0060 (0x0060 - 0x0000)
@@ -120,19 +104,7 @@ public:
 	bool                                          bResultTrackingSpace;                              // 0x0051(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_52[0xE];                                       // 0x0052(0x000E)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMagicLeapPlanesQuery) == 0x000010, "Wrong alignment on FMagicLeapPlanesQuery");
-static_assert(sizeof(FMagicLeapPlanesQuery) == 0x000060, "Wrong size on FMagicLeapPlanesQuery");
-static_assert(offsetof(FMagicLeapPlanesQuery, Flags) == 0x000000, "Member 'FMagicLeapPlanesQuery::Flags' has a wrong offset!");
-static_assert(offsetof(FMagicLeapPlanesQuery, SearchVolume) == 0x000010, "Member 'FMagicLeapPlanesQuery::SearchVolume' has a wrong offset!");
-static_assert(offsetof(FMagicLeapPlanesQuery, MaxResults) == 0x000018, "Member 'FMagicLeapPlanesQuery::MaxResults' has a wrong offset!");
-static_assert(offsetof(FMagicLeapPlanesQuery, MinHoleLength) == 0x00001C, "Member 'FMagicLeapPlanesQuery::MinHoleLength' has a wrong offset!");
-static_assert(offsetof(FMagicLeapPlanesQuery, MinPlaneArea) == 0x000020, "Member 'FMagicLeapPlanesQuery::MinPlaneArea' has a wrong offset!");
-static_assert(offsetof(FMagicLeapPlanesQuery, SearchVolumePosition) == 0x000024, "Member 'FMagicLeapPlanesQuery::SearchVolumePosition' has a wrong offset!");
-static_assert(offsetof(FMagicLeapPlanesQuery, SearchVolumeOrientation) == 0x000030, "Member 'FMagicLeapPlanesQuery::SearchVolumeOrientation' has a wrong offset!");
-static_assert(offsetof(FMagicLeapPlanesQuery, SearchVolumeExtents) == 0x000040, "Member 'FMagicLeapPlanesQuery::SearchVolumeExtents' has a wrong offset!");
-static_assert(offsetof(FMagicLeapPlanesQuery, SimilarityThreshold) == 0x00004C, "Member 'FMagicLeapPlanesQuery::SimilarityThreshold' has a wrong offset!");
-static_assert(offsetof(FMagicLeapPlanesQuery, bSearchVolumeTrackingSpace) == 0x000050, "Member 'FMagicLeapPlanesQuery::bSearchVolumeTrackingSpace' has a wrong offset!");
-static_assert(offsetof(FMagicLeapPlanesQuery, bResultTrackingSpace) == 0x000051, "Member 'FMagicLeapPlanesQuery::bResultTrackingSpace' has a wrong offset!");
+DUMPER7_ASSERTS_FMagicLeapPlanesQuery;
 
 }
 

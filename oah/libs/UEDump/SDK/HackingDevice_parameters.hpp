@@ -47,30 +47,7 @@ public:
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HackingDevice_C_ExecuteUbergraph_HackingDevice) == 0x000008, "Wrong alignment on HackingDevice_C_ExecuteUbergraph_HackingDevice");
-static_assert(sizeof(HackingDevice_C_ExecuteUbergraph_HackingDevice) == 0x0000A0, "Wrong size on HackingDevice_C_ExecuteUbergraph_HackingDevice");
-static_assert(offsetof(HackingDevice_C_ExecuteUbergraph_HackingDevice, EntryPoint) == 0x000000, "Member 'HackingDevice_C_ExecuteUbergraph_HackingDevice::EntryPoint' has a wrong offset!");
-static_assert(offsetof(HackingDevice_C_ExecuteUbergraph_HackingDevice, Temp_int_Array_Index_Variable) == 0x000004, "Member 'HackingDevice_C_ExecuteUbergraph_HackingDevice::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(HackingDevice_C_ExecuteUbergraph_HackingDevice, CallFunc_Create_ReturnValue) == 0x000008, "Member 'HackingDevice_C_ExecuteUbergraph_HackingDevice::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HackingDevice_C_ExecuteUbergraph_HackingDevice, K2Node_ComponentBoundEvent_Instigator) == 0x000010, "Member 'HackingDevice_C_ExecuteUbergraph_HackingDevice::K2Node_ComponentBoundEvent_Instigator' has a wrong offset!");
-static_assert(offsetof(HackingDevice_C_ExecuteUbergraph_HackingDevice, K2Node_ComponentBoundEvent_Overlap) == 0x000018, "Member 'HackingDevice_C_ExecuteUbergraph_HackingDevice::K2Node_ComponentBoundEvent_Overlap' has a wrong offset!");
-static_assert(offsetof(HackingDevice_C_ExecuteUbergraph_HackingDevice, K2Node_DynamicCast_AsHacking_Point) == 0x000020, "Member 'HackingDevice_C_ExecuteUbergraph_HackingDevice::K2Node_DynamicCast_AsHacking_Point' has a wrong offset!");
-static_assert(offsetof(HackingDevice_C_ExecuteUbergraph_HackingDevice, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'HackingDevice_C_ExecuteUbergraph_HackingDevice::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(HackingDevice_C_ExecuteUbergraph_HackingDevice, K2Node_DynamicCast_AsPlayer_Character) == 0x000030, "Member 'HackingDevice_C_ExecuteUbergraph_HackingDevice::K2Node_DynamicCast_AsPlayer_Character' has a wrong offset!");
-static_assert(offsetof(HackingDevice_C_ExecuteUbergraph_HackingDevice, K2Node_DynamicCast_bSuccess_1) == 0x000038, "Member 'HackingDevice_C_ExecuteUbergraph_HackingDevice::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(HackingDevice_C_ExecuteUbergraph_HackingDevice, CallFunc_IsLocallyControlled_ReturnValue) == 0x000039, "Member 'HackingDevice_C_ExecuteUbergraph_HackingDevice::CallFunc_IsLocallyControlled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HackingDevice_C_ExecuteUbergraph_HackingDevice, K2Node_CustomEvent_HackingPoint) == 0x000040, "Member 'HackingDevice_C_ExecuteUbergraph_HackingDevice::K2Node_CustomEvent_HackingPoint' has a wrong offset!");
-static_assert(offsetof(HackingDevice_C_ExecuteUbergraph_HackingDevice, Temp_int_Loop_Counter_Variable) == 0x000048, "Member 'HackingDevice_C_ExecuteUbergraph_HackingDevice::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(HackingDevice_C_ExecuteUbergraph_HackingDevice, CallFunc_Add_IntInt_ReturnValue) == 0x00004C, "Member 'HackingDevice_C_ExecuteUbergraph_HackingDevice::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HackingDevice_C_ExecuteUbergraph_HackingDevice, K2Node_ComponentBoundEvent_Player) == 0x000050, "Member 'HackingDevice_C_ExecuteUbergraph_HackingDevice::K2Node_ComponentBoundEvent_Player' has a wrong offset!");
-static_assert(offsetof(HackingDevice_C_ExecuteUbergraph_HackingDevice, K2Node_DynamicCast_AsPawn) == 0x000058, "Member 'HackingDevice_C_ExecuteUbergraph_HackingDevice::K2Node_DynamicCast_AsPawn' has a wrong offset!");
-static_assert(offsetof(HackingDevice_C_ExecuteUbergraph_HackingDevice, K2Node_DynamicCast_bSuccess_2) == 0x000060, "Member 'HackingDevice_C_ExecuteUbergraph_HackingDevice::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(HackingDevice_C_ExecuteUbergraph_HackingDevice, CallFunc_GetAllWidgetsOfClass_FoundWidgets) == 0x000068, "Member 'HackingDevice_C_ExecuteUbergraph_HackingDevice::CallFunc_GetAllWidgetsOfClass_FoundWidgets' has a wrong offset!");
-static_assert(offsetof(HackingDevice_C_ExecuteUbergraph_HackingDevice, CallFunc_IsLocallyControlled_ReturnValue_1) == 0x000078, "Member 'HackingDevice_C_ExecuteUbergraph_HackingDevice::CallFunc_IsLocallyControlled_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HackingDevice_C_ExecuteUbergraph_HackingDevice, CallFunc_Array_Get_Item) == 0x000080, "Member 'HackingDevice_C_ExecuteUbergraph_HackingDevice::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(HackingDevice_C_ExecuteUbergraph_HackingDevice, CallFunc_Array_Length_ReturnValue) == 0x000088, "Member 'HackingDevice_C_ExecuteUbergraph_HackingDevice::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HackingDevice_C_ExecuteUbergraph_HackingDevice, CallFunc_GetPlayerController_ReturnValue) == 0x000090, "Member 'HackingDevice_C_ExecuteUbergraph_HackingDevice::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HackingDevice_C_ExecuteUbergraph_HackingDevice, CallFunc_Less_IntInt_ReturnValue) == 0x000098, "Member 'HackingDevice_C_ExecuteUbergraph_HackingDevice::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HackingDevice_C_ExecuteUbergraph_HackingDevice;
 
 // Function HackingDevice.HackingDevice_C.BndEvt__HackingDevice_PickupItemComponent_K2Node_ComponentBoundEvent_1_DropItem__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -79,9 +56,7 @@ struct HackingDevice_C_BndEvt__HackingDevice_PickupItemComponent_K2Node_Componen
 public:
 	class AActor*                                 Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HackingDevice_C_BndEvt__HackingDevice_PickupItemComponent_K2Node_ComponentBoundEvent_1_DropItem__DelegateSignature) == 0x000008, "Wrong alignment on HackingDevice_C_BndEvt__HackingDevice_PickupItemComponent_K2Node_ComponentBoundEvent_1_DropItem__DelegateSignature");
-static_assert(sizeof(HackingDevice_C_BndEvt__HackingDevice_PickupItemComponent_K2Node_ComponentBoundEvent_1_DropItem__DelegateSignature) == 0x000008, "Wrong size on HackingDevice_C_BndEvt__HackingDevice_PickupItemComponent_K2Node_ComponentBoundEvent_1_DropItem__DelegateSignature");
-static_assert(offsetof(HackingDevice_C_BndEvt__HackingDevice_PickupItemComponent_K2Node_ComponentBoundEvent_1_DropItem__DelegateSignature, Player) == 0x000000, "Member 'HackingDevice_C_BndEvt__HackingDevice_PickupItemComponent_K2Node_ComponentBoundEvent_1_DropItem__DelegateSignature::Player' has a wrong offset!");
+DUMPER7_ASSERTS_HackingDevice_C_BndEvt__HackingDevice_PickupItemComponent_K2Node_ComponentBoundEvent_1_DropItem__DelegateSignature;
 
 // Function HackingDevice.HackingDevice_C.SethackingPoint
 // 0x0008 (0x0008 - 0x0000)
@@ -90,9 +65,7 @@ struct HackingDevice_C_SethackingPoint final
 public:
 	class AHackingPoint_C*                        HackingPoint_0;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HackingDevice_C_SethackingPoint) == 0x000008, "Wrong alignment on HackingDevice_C_SethackingPoint");
-static_assert(sizeof(HackingDevice_C_SethackingPoint) == 0x000008, "Wrong size on HackingDevice_C_SethackingPoint");
-static_assert(offsetof(HackingDevice_C_SethackingPoint, HackingPoint_0) == 0x000000, "Member 'HackingDevice_C_SethackingPoint::HackingPoint_0' has a wrong offset!");
+DUMPER7_ASSERTS_HackingDevice_C_SethackingPoint;
 
 // Function HackingDevice.HackingDevice_C.BndEvt__HackingDevice_PickupItemComponent_K2Node_ComponentBoundEvent_0_InteractHolding__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
@@ -102,10 +75,7 @@ public:
 	class AActor*                                 Instigator_0;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 Overlap;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HackingDevice_C_BndEvt__HackingDevice_PickupItemComponent_K2Node_ComponentBoundEvent_0_InteractHolding__DelegateSignature) == 0x000008, "Wrong alignment on HackingDevice_C_BndEvt__HackingDevice_PickupItemComponent_K2Node_ComponentBoundEvent_0_InteractHolding__DelegateSignature");
-static_assert(sizeof(HackingDevice_C_BndEvt__HackingDevice_PickupItemComponent_K2Node_ComponentBoundEvent_0_InteractHolding__DelegateSignature) == 0x000010, "Wrong size on HackingDevice_C_BndEvt__HackingDevice_PickupItemComponent_K2Node_ComponentBoundEvent_0_InteractHolding__DelegateSignature");
-static_assert(offsetof(HackingDevice_C_BndEvt__HackingDevice_PickupItemComponent_K2Node_ComponentBoundEvent_0_InteractHolding__DelegateSignature, Instigator_0) == 0x000000, "Member 'HackingDevice_C_BndEvt__HackingDevice_PickupItemComponent_K2Node_ComponentBoundEvent_0_InteractHolding__DelegateSignature::Instigator_0' has a wrong offset!");
-static_assert(offsetof(HackingDevice_C_BndEvt__HackingDevice_PickupItemComponent_K2Node_ComponentBoundEvent_0_InteractHolding__DelegateSignature, Overlap) == 0x000008, "Member 'HackingDevice_C_BndEvt__HackingDevice_PickupItemComponent_K2Node_ComponentBoundEvent_0_InteractHolding__DelegateSignature::Overlap' has a wrong offset!");
+DUMPER7_ASSERTS_HackingDevice_C_BndEvt__HackingDevice_PickupItemComponent_K2Node_ComponentBoundEvent_0_InteractHolding__DelegateSignature;
 
 }
 

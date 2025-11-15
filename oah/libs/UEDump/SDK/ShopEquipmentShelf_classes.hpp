@@ -49,25 +49,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ShopEquipmentShelf_C">();
+		BP_STATIC_CLASS_IMPL("ShopEquipmentShelf_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ShopEquipmentShelf_C")
 	}
 	static class AShopEquipmentShelf_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AShopEquipmentShelf_C>();
 	}
 };
-static_assert(alignof(AShopEquipmentShelf_C) == 0x000008, "Wrong alignment on AShopEquipmentShelf_C");
-static_assert(sizeof(AShopEquipmentShelf_C) == 0x000278, "Wrong size on AShopEquipmentShelf_C");
-static_assert(offsetof(AShopEquipmentShelf_C, UberGraphFrame) == 0x000220, "Member 'AShopEquipmentShelf_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AShopEquipmentShelf_C, ShelfEnd) == 0x000228, "Member 'AShopEquipmentShelf_C::ShelfEnd' has a wrong offset!");
-static_assert(offsetof(AShopEquipmentShelf_C, Duffelbag) == 0x000230, "Member 'AShopEquipmentShelf_C::Duffelbag' has a wrong offset!");
-static_assert(offsetof(AShopEquipmentShelf_C, Shelf_Bot) == 0x000238, "Member 'AShopEquipmentShelf_C::Shelf_Bot' has a wrong offset!");
-static_assert(offsetof(AShopEquipmentShelf_C, Shelf_Mid) == 0x000240, "Member 'AShopEquipmentShelf_C::Shelf_Mid' has a wrong offset!");
-static_assert(offsetof(AShopEquipmentShelf_C, Shelf_Top) == 0x000248, "Member 'AShopEquipmentShelf_C::Shelf_Top' has a wrong offset!");
-static_assert(offsetof(AShopEquipmentShelf_C, Arrow) == 0x000250, "Member 'AShopEquipmentShelf_C::Arrow' has a wrong offset!");
-static_assert(offsetof(AShopEquipmentShelf_C, SM_Prop_WorkShelf_01) == 0x000258, "Member 'AShopEquipmentShelf_C::SM_Prop_WorkShelf_01' has a wrong offset!");
-static_assert(offsetof(AShopEquipmentShelf_C, DefaultSceneRoot) == 0x000260, "Member 'AShopEquipmentShelf_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AShopEquipmentShelf_C, ChildArray) == 0x000268, "Member 'AShopEquipmentShelf_C::ChildArray' has a wrong offset!");
+DUMPER7_ASSERTS_AShopEquipmentShelf_C;
 
 }
 

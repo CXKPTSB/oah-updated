@@ -34,20 +34,7 @@ public:
 	class APlayerCharacter_C*                     K2Node_DynamicCast_AsPlayer_Character;             // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Armor_Light_C_ExecuteUbergraph_Armor_Light) == 0x000008, "Wrong alignment on Armor_Light_C_ExecuteUbergraph_Armor_Light");
-static_assert(sizeof(Armor_Light_C_ExecuteUbergraph_Armor_Light) == 0x000040, "Wrong size on Armor_Light_C_ExecuteUbergraph_Armor_Light");
-static_assert(offsetof(Armor_Light_C_ExecuteUbergraph_Armor_Light, EntryPoint) == 0x000000, "Member 'Armor_Light_C_ExecuteUbergraph_Armor_Light::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Armor_Light_C_ExecuteUbergraph_Armor_Light, Temp_bool_Has_Been_Initd_Variable) == 0x000004, "Member 'Armor_Light_C_ExecuteUbergraph_Armor_Light::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(Armor_Light_C_ExecuteUbergraph_Armor_Light, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'Armor_Light_C_ExecuteUbergraph_Armor_Light::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Armor_Light_C_ExecuteUbergraph_Armor_Light, Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable) == 0x000018, "Member 'Armor_Light_C_ExecuteUbergraph_Armor_Light::Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable' has a wrong offset!");
-static_assert(offsetof(Armor_Light_C_ExecuteUbergraph_Armor_Light, Temp_bool_Has_Been_Initd_Variable_1) == 0x000019, "Member 'Armor_Light_C_ExecuteUbergraph_Armor_Light::Temp_bool_Has_Been_Initd_Variable_1' has a wrong offset!");
-static_assert(offsetof(Armor_Light_C_ExecuteUbergraph_Armor_Light, Temp_bool_IsClosed_Variable) == 0x00001A, "Member 'Armor_Light_C_ExecuteUbergraph_Armor_Light::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(Armor_Light_C_ExecuteUbergraph_Armor_Light, Temp_bool_IsClosed_Variable_1) == 0x00001B, "Member 'Armor_Light_C_ExecuteUbergraph_Armor_Light::Temp_bool_IsClosed_Variable_1' has a wrong offset!");
-static_assert(offsetof(Armor_Light_C_ExecuteUbergraph_Armor_Light, CallFunc_Add_IntInt_ReturnValue) == 0x00001C, "Member 'Armor_Light_C_ExecuteUbergraph_Armor_Light::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Armor_Light_C_ExecuteUbergraph_Armor_Light, CallFunc_GetParentActor_ReturnValue) == 0x000020, "Member 'Armor_Light_C_ExecuteUbergraph_Armor_Light::CallFunc_GetParentActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Armor_Light_C_ExecuteUbergraph_Armor_Light, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000028, "Member 'Armor_Light_C_ExecuteUbergraph_Armor_Light::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Armor_Light_C_ExecuteUbergraph_Armor_Light, K2Node_DynamicCast_AsPlayer_Character) == 0x000030, "Member 'Armor_Light_C_ExecuteUbergraph_Armor_Light::K2Node_DynamicCast_AsPlayer_Character' has a wrong offset!");
-static_assert(offsetof(Armor_Light_C_ExecuteUbergraph_Armor_Light, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'Armor_Light_C_ExecuteUbergraph_Armor_Light::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_Armor_Light_C_ExecuteUbergraph_Armor_Light;
 
 // Function Armor_Light.Armor_Light_C.DamageArmor
 // 0x0024 (0x0024 - 0x0000)
@@ -66,18 +53,7 @@ public:
 	float                                         CallFunc_Multiply_IntFloat_ReturnValue;            // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Armor_Light_C_DamageArmor) == 0x000004, "Wrong alignment on Armor_Light_C_DamageArmor");
-static_assert(sizeof(Armor_Light_C_DamageArmor) == 0x000024, "Wrong size on Armor_Light_C_DamageArmor");
-static_assert(offsetof(Armor_Light_C_DamageArmor, Damage) == 0x000000, "Member 'Armor_Light_C_DamageArmor::Damage' has a wrong offset!");
-static_assert(offsetof(Armor_Light_C_DamageArmor, HealthDamage) == 0x000004, "Member 'Armor_Light_C_DamageArmor::HealthDamage' has a wrong offset!");
-static_assert(offsetof(Armor_Light_C_DamageArmor, Temp_int_Variable) == 0x000008, "Member 'Armor_Light_C_DamageArmor::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(Armor_Light_C_DamageArmor, CallFunc_Subtract_IntInt_ReturnValue) == 0x00000C, "Member 'Armor_Light_C_DamageArmor::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Armor_Light_C_DamageArmor, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000010, "Member 'Armor_Light_C_DamageArmor::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Armor_Light_C_DamageArmor, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000011, "Member 'Armor_Light_C_DamageArmor::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Armor_Light_C_DamageArmor, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000014, "Member 'Armor_Light_C_DamageArmor::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Armor_Light_C_DamageArmor, CallFunc_Subtract_IntInt_ReturnValue_1) == 0x000018, "Member 'Armor_Light_C_DamageArmor::CallFunc_Subtract_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Armor_Light_C_DamageArmor, CallFunc_Multiply_IntFloat_ReturnValue) == 0x00001C, "Member 'Armor_Light_C_DamageArmor::CallFunc_Multiply_IntFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Armor_Light_C_DamageArmor, CallFunc_FTrunc_ReturnValue) == 0x000020, "Member 'Armor_Light_C_DamageArmor::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_Armor_Light_C_DamageArmor;
 
 // Function Armor_Light.Armor_Light_C.ChangeState
 // 0x0020 (0x0020 - 0x0000)
@@ -90,12 +66,7 @@ public:
 	class APlayerCharacter_C*                     K2Node_DynamicCast_AsPlayer_Character;             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Armor_Light_C_ChangeState) == 0x000008, "Wrong alignment on Armor_Light_C_ChangeState");
-static_assert(sizeof(Armor_Light_C_ChangeState) == 0x000020, "Wrong size on Armor_Light_C_ChangeState");
-static_assert(offsetof(Armor_Light_C_ChangeState, State) == 0x000000, "Member 'Armor_Light_C_ChangeState::State' has a wrong offset!");
-static_assert(offsetof(Armor_Light_C_ChangeState, CallFunc_GetParentActor_ReturnValue) == 0x000008, "Member 'Armor_Light_C_ChangeState::CallFunc_GetParentActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Armor_Light_C_ChangeState, K2Node_DynamicCast_AsPlayer_Character) == 0x000010, "Member 'Armor_Light_C_ChangeState::K2Node_DynamicCast_AsPlayer_Character' has a wrong offset!");
-static_assert(offsetof(Armor_Light_C_ChangeState, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'Armor_Light_C_ChangeState::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_Armor_Light_C_ChangeState;
 
 }
 

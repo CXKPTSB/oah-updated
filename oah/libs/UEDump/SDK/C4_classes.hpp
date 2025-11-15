@@ -57,33 +57,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"C4_C">();
+		BP_STATIC_CLASS_IMPL("C4_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"C4_C")
 	}
 	static class AC4_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AC4_C>();
 	}
 };
-static_assert(alignof(AC4_C) == 0x000008, "Wrong alignment on AC4_C");
-static_assert(sizeof(AC4_C) == 0x0002E0, "Wrong size on AC4_C");
-static_assert(offsetof(AC4_C, UberGraphFrame_C4_C) == 0x000258, "Member 'AC4_C::UberGraphFrame_C4_C' has a wrong offset!");
-static_assert(offsetof(AC4_C, HighlightInRangeComponent) == 0x000260, "Member 'AC4_C::HighlightInRangeComponent' has a wrong offset!");
-static_assert(offsetof(AC4_C, Beep) == 0x000268, "Member 'AC4_C::Beep' has a wrong offset!");
-static_assert(offsetof(AC4_C, HighlightWhenHolding) == 0x000270, "Member 'AC4_C::HighlightWhenHolding' has a wrong offset!");
-static_assert(offsetof(AC4_C, AlertComponent) == 0x000278, "Member 'AC4_C::AlertComponent' has a wrong offset!");
-static_assert(offsetof(AC4_C, SusItemComponent) == 0x000280, "Member 'AC4_C::SusItemComponent' has a wrong offset!");
-static_assert(offsetof(AC4_C, Sphere) == 0x000288, "Member 'AC4_C::Sphere' has a wrong offset!");
-static_assert(offsetof(AC4_C, Arrow) == 0x000290, "Member 'AC4_C::Arrow' has a wrong offset!");
-static_assert(offsetof(AC4_C, PointLight) == 0x000298, "Member 'AC4_C::PointLight' has a wrong offset!");
-static_assert(offsetof(AC4_C, ToolComponent) == 0x0002A0, "Member 'AC4_C::ToolComponent' has a wrong offset!");
-static_assert(offsetof(AC4_C, PawnNoiseEmitter) == 0x0002A8, "Member 'AC4_C::PawnNoiseEmitter' has a wrong offset!");
-static_assert(offsetof(AC4_C, DamageComponent) == 0x0002B0, "Member 'AC4_C::DamageComponent' has a wrong offset!");
-static_assert(offsetof(AC4_C, Picked_up_) == 0x0002B8, "Member 'AC4_C::Picked_up_' has a wrong offset!");
-static_assert(offsetof(AC4_C, UpRotation) == 0x0002BC, "Member 'AC4_C::UpRotation' has a wrong offset!");
-static_assert(offsetof(AC4_C, ExplosionRadius) == 0x0002C0, "Member 'AC4_C::ExplosionRadius' has a wrong offset!");
-static_assert(offsetof(AC4_C, ExplosionDamage) == 0x0002C4, "Member 'AC4_C::ExplosionDamage' has a wrong offset!");
-static_assert(offsetof(AC4_C, hitActors) == 0x0002C8, "Member 'AC4_C::hitActors' has a wrong offset!");
-static_assert(offsetof(AC4_C, Timer) == 0x0002D8, "Member 'AC4_C::Timer' has a wrong offset!");
+DUMPER7_ASSERTS_AC4_C;
 
 }
 

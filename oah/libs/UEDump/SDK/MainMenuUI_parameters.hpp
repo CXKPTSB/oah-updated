@@ -197,144 +197,7 @@ public:
 	uint8                                         Pad_4A5[0x3];                                      // 0x04A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_5;                 // 0x04A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI) == 0x000008, "Wrong alignment on MainMenuUI_C_ExecuteUbergraph_MainMenuUI");
-static_assert(sizeof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI) == 0x0004B0, "Wrong size on MainMenuUI_C_ExecuteUbergraph_MainMenuUI");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, EntryPoint) == 0x000000, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::EntryPoint' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, Temp_bool_Variable) == 0x000004, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, Temp_string_Variable) == 0x000008, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::Temp_string_Variable' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, Temp_string_Variable_1) == 0x000018, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::Temp_string_Variable_1' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Create_ReturnValue) == 0x000028, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, Temp_bool_IsClosed_Variable) == 0x000030, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, Temp_bool_Has_Been_Initd_Variable) == 0x000031, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, K2Node_CreateDelegate_OutputDelegate) == 0x000034, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, Temp_int_Array_Index_Variable) == 0x000044, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, Temp_int_Loop_Counter_Variable) == 0x000048, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Add_IntInt_ReturnValue) == 0x00004C, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, Temp_int_Array_Index_Variable_1) == 0x000050, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Create_ReturnValue_1) == 0x000058, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Create_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Create_ReturnValue_2) == 0x000060, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Create_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, Temp_int_Array_Index_Variable_2) == 0x000068, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, Temp_int_Loop_Counter_Variable_1) == 0x00006C, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Add_IntInt_ReturnValue_1) == 0x000070, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, Temp_int_Loop_Counter_Variable_2) == 0x000074, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Add_IntInt_ReturnValue_2) == 0x000078, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, Temp_int_Array_Index_Variable_3) == 0x00007C, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::Temp_int_Array_Index_Variable_3' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Create_ReturnValue_3) == 0x000080, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Create_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, K2Node_Event_Category_1) == 0x000088, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::K2Node_Event_Category_1' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, K2Node_Event_Category) == 0x000089, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::K2Node_Event_Category' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, K2Node_Event_ItemInfo) == 0x000090, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::K2Node_Event_ItemInfo' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, K2Node_Event_SalePrice) == 0x000098, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::K2Node_Event_SalePrice' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_GetAllActorsOfClass_OutActors) == 0x0000A0, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Array_Get_Item) == 0x0000B0, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Array_Length_ReturnValue) == 0x0000B8, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Create_ReturnValue_4) == 0x0000C0, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Create_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_GetPlayerController_ReturnValue) == 0x0000C8, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_GetOwningPlayer_ReturnValue) == 0x0000D0, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_IsServer_ReturnValue) == 0x0000D8, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_IsServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_IsLocalPlayerController_ReturnValue) == 0x0000D9, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_IsLocalPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_BooleanAND_ReturnValue) == 0x0000DA, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Create_ReturnValue_5) == 0x0000E0, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Create_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_PlayAnimation_ReturnValue) == 0x0000E8, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_PlayAnimation_ReturnValue_1) == 0x0000F0, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, K2Node_SwitchString_CmpSuccess) == 0x0000F8, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::K2Node_SwitchString_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_EqualEqual_StrStr_ReturnValue) == 0x0000F9, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_EqualEqual_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_EqualEqual_StrStr_ReturnValue_1) == 0x0000FA, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_EqualEqual_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_GetAllWidgetsWithInterface_FoundWidgets) == 0x000100, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_GetAllWidgetsWithInterface_FoundWidgets' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Array_Length_ReturnValue_1) == 0x000110, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_EqualEqual_StrStr_ReturnValue_2) == 0x000114, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_EqualEqual_StrStr_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Create_ReturnValue_6) == 0x000118, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Create_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_GetAllActorsWithInterface_OutActors) == 0x000120, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_GetAllActorsWithInterface_OutActors' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_PlayAnimation_ReturnValue_2) == 0x000130, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Array_Length_ReturnValue_2) == 0x000138, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_GetPlayerController_ReturnValue_1) == 0x000140, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000148, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, K2Node_DynamicCast_AsRobber_Controller) == 0x000150, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::K2Node_DynamicCast_AsRobber_Controller' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, K2Node_DynamicCast_bSuccess) == 0x000158, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, Temp_int_Array_Index_Variable_4) == 0x00015C, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::Temp_int_Array_Index_Variable_4' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Array_Get_Item_1) == 0x000160, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, K2Node_DynamicCast_AsMenu_UIInteraface) == 0x000168, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::K2Node_DynamicCast_AsMenu_UIInteraface' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, K2Node_DynamicCast_bSuccess_1) == 0x000178, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, K2Node_CustomEvent_Button) == 0x000180, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::K2Node_CustomEvent_Button' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, K2Node_MakeStruct_SlateBrush) == 0x000188, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, K2Node_CustomEvent_Hide_) == 0x000210, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::K2Node_CustomEvent_Hide_' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_PlayAnimation_ReturnValue_3) == 0x000218, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_PlayAnimation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_GetAllWidgetsOfClass_FoundWidgets) == 0x000220, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_GetAllWidgetsOfClass_FoundWidgets' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Array_Length_ReturnValue_3) == 0x000230, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_PlayAnimation_ReturnValue_4) == 0x000238, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_PlayAnimation_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Greater_IntInt_ReturnValue) == 0x000240, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_CheckPlayersReady_All_ready_) == 0x000241, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_CheckPlayersReady_All_ready_' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_GetAllActorsOfClass_OutActors_1) == 0x000248, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_GetAllActorsOfClass_OutActors_1' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Array_Length_ReturnValue_4) == 0x000258, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Array_Length_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Greater_IntInt_ReturnValue_1) == 0x00025C, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Not_PreBool_ReturnValue) == 0x00025D, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, K2Node_Event_MyGeometry) == 0x000260, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, K2Node_Event_InDeltaTime) == 0x000298, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_CheckPlayersReady_All_ready__1) == 0x00029C, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_CheckPlayersReady_All_ready__1' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Subtract_IntInt_ReturnValue) == 0x0002A0, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_GetAllActorsOfClass_OutActors_2) == 0x0002A8, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_GetAllActorsOfClass_OutActors_2' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Array_Length_ReturnValue_5) == 0x0002B8, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Array_Length_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Greater_IntInt_ReturnValue_2) == 0x0002BC, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Greater_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, Temp_int_Loop_Counter_Variable_3) == 0x0002C0, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::Temp_int_Loop_Counter_Variable_3' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_HasAuthority_ReturnValue) == 0x0002C4, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Less_IntInt_ReturnValue) == 0x0002C5, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Add_IntInt_ReturnValue_3) == 0x0002C8, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_GetGameInstance_ReturnValue) == 0x0002D0, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_GetGameInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, K2Node_DynamicCast_AsRobber_GI) == 0x0002D8, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::K2Node_DynamicCast_AsRobber_GI' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, K2Node_DynamicCast_bSuccess_2) == 0x0002E0, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_GetActorOfClass_ReturnValue) == 0x0002E8, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_GetActorOfClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Concat_StrStr_ReturnValue) == 0x0002F0, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_AddChild_ReturnValue) == 0x000300, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_AddChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_GetPlayerController_ReturnValue_2) == 0x000308, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_GetPlayerController_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_HasAuthority_ReturnValue_1) == 0x000310, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_HasAuthority_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_GetAllActorsOfClass_OutActors_3) == 0x000318, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_GetAllActorsOfClass_OutActors_3' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, Temp_int_Loop_Counter_Variable_4) == 0x000328, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::Temp_int_Loop_Counter_Variable_4' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Array_Get_Item_2) == 0x000330, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Less_IntInt_ReturnValue_1) == 0x000338, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Add_IntInt_ReturnValue_4) == 0x00033C, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Array_Length_ReturnValue_6) == 0x000340, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Array_Length_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Array_Length_ReturnValue_7) == 0x000344, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Array_Length_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Less_IntInt_ReturnValue_2) == 0x000348, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Greater_IntInt_ReturnValue_3) == 0x000349, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Greater_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, K2Node_Select_Default) == 0x000350, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_PlayAnimation_ReturnValue_5) == 0x000360, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_PlayAnimation_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_PlayAnimation_ReturnValue_6) == 0x000368, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_PlayAnimation_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_SetTutorialButton_TutorialLevel) == 0x000370, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_SetTutorialButton_TutorialLevel' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_SetTutorialButton_TutorialLevel_1) == 0x000380, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_SetTutorialButton_TutorialLevel_1' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Conv_StringToName_ReturnValue) == 0x000390, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_CreateSaveGameObject_ReturnValue) == 0x000398, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_CreateSaveGameObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_SaveGameToSlot_ReturnValue) == 0x0003A0, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_SaveGameToSlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Create_ReturnValue_7) == 0x0003A8, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Create_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_GetCurrentSkinsInRotation_Array) == 0x0003B0, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_GetCurrentSkinsInRotation_Array' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_PlayAnimation_ReturnValue_7) == 0x0003C0, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_PlayAnimation_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Array_Get_Item_3) == 0x0003C8, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Array_Get_Item_4) == 0x0003D0, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Array_Length_ReturnValue_8) == 0x0003D8, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Array_Length_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Less_IntInt_ReturnValue_3) == 0x0003DC, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, K2Node_CreateDelegate_OutputDelegate_1) == 0x0003E0, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, Temp_int_Array_Index_Variable_5) == 0x0003F0, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::Temp_int_Array_Index_Variable_5' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Array_Get_Item_5) == 0x0003F8, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Array_Get_Item_5' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, K2Node_DynamicCast_AsMenu_UIInteraface_1) == 0x000400, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::K2Node_DynamicCast_AsMenu_UIInteraface_1' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, K2Node_DynamicCast_bSuccess_3) == 0x000410, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, K2Node_CustomEvent_Widget) == 0x000418, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::K2Node_CustomEvent_Widget' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Create_ReturnValue_8) == 0x000420, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Create_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_AddChild_ReturnValue_1) == 0x000428, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_AddChild_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_EqualEqual_StrStr_ReturnValue_3) == 0x000430, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_EqualEqual_StrStr_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, K2Node_MakeArray_Array) == 0x000438, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Array_Get_Item_6) == 0x000448, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Array_Get_Item_6' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Array_Length_ReturnValue_9) == 0x000450, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Array_Length_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Less_IntInt_ReturnValue_4) == 0x000454, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Less_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_IsRemoteConfigsReady_ReturnValue) == 0x000455, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_IsRemoteConfigsReady_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_GetRemoteConfigsValueAsString_ReturnValue) == 0x000458, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_GetRemoteConfigsValueAsString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Conv_StringToFloat_ReturnValue) == 0x000468, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Conv_StringToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_FTrunc_ReturnValue) == 0x00046C, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000470, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_GetAllWidgetsOfClass_FoundWidgets_1) == 0x000478, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_GetAllWidgetsOfClass_FoundWidgets_1' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Array_Get_Item_7) == 0x000488, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Array_Get_Item_7' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_EqualEqual_StrStr_ReturnValue_4) == 0x000490, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_EqualEqual_StrStr_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_GetActorOfClass_ReturnValue_1) == 0x000498, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_GetActorOfClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, Temp_int_Loop_Counter_Variable_5) == 0x0004A0, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::Temp_int_Loop_Counter_Variable_5' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Less_IntInt_ReturnValue_5) == 0x0004A4, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Less_IntInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_ExecuteUbergraph_MainMenuUI, CallFunc_Add_IntInt_ReturnValue_5) == 0x0004A8, "Member 'MainMenuUI_C_ExecuteUbergraph_MainMenuUI::CallFunc_Add_IntInt_ReturnValue_5' has a wrong offset!");
+DUMPER7_ASSERTS_MainMenuUI_C_ExecuteUbergraph_MainMenuUI;
 
 // Function MainMenuUI.MainMenuUI_C.ShopOpened
 // 0x0008 (0x0008 - 0x0000)
@@ -343,9 +206,7 @@ struct MainMenuUI_C_ShopOpened final
 public:
 	class UShopUI_C*                              Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenuUI_C_ShopOpened) == 0x000008, "Wrong alignment on MainMenuUI_C_ShopOpened");
-static_assert(sizeof(MainMenuUI_C_ShopOpened) == 0x000008, "Wrong size on MainMenuUI_C_ShopOpened");
-static_assert(offsetof(MainMenuUI_C_ShopOpened, Widget) == 0x000000, "Member 'MainMenuUI_C_ShopOpened::Widget' has a wrong offset!");
+DUMPER7_ASSERTS_MainMenuUI_C_ShopOpened;
 
 // Function MainMenuUI.MainMenuUI_C.Tick
 // 0x003C (0x003C - 0x0000)
@@ -355,10 +216,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenuUI_C_Tick) == 0x000004, "Wrong alignment on MainMenuUI_C_Tick");
-static_assert(sizeof(MainMenuUI_C_Tick) == 0x00003C, "Wrong size on MainMenuUI_C_Tick");
-static_assert(offsetof(MainMenuUI_C_Tick, MyGeometry) == 0x000000, "Member 'MainMenuUI_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_Tick, InDeltaTime) == 0x000038, "Member 'MainMenuUI_C_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_MainMenuUI_C_Tick;
 
 // Function MainMenuUI.MainMenuUI_C.HideTitle
 // 0x0001 (0x0001 - 0x0000)
@@ -367,9 +225,7 @@ struct MainMenuUI_C_HideTitle final
 public:
 	bool                                          Hide_;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MainMenuUI_C_HideTitle) == 0x000001, "Wrong alignment on MainMenuUI_C_HideTitle");
-static_assert(sizeof(MainMenuUI_C_HideTitle) == 0x000001, "Wrong size on MainMenuUI_C_HideTitle");
-static_assert(offsetof(MainMenuUI_C_HideTitle, Hide_) == 0x000000, "Member 'MainMenuUI_C_HideTitle::Hide_' has a wrong offset!");
+DUMPER7_ASSERTS_MainMenuUI_C_HideTitle;
 
 // Function MainMenuUI.MainMenuUI_C.HighlightButton
 // 0x0008 (0x0008 - 0x0000)
@@ -378,9 +234,7 @@ struct MainMenuUI_C_HighlightButton final
 public:
 	class UButton*                                Button_0;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenuUI_C_HighlightButton) == 0x000008, "Wrong alignment on MainMenuUI_C_HighlightButton");
-static_assert(sizeof(MainMenuUI_C_HighlightButton) == 0x000008, "Wrong size on MainMenuUI_C_HighlightButton");
-static_assert(offsetof(MainMenuUI_C_HighlightButton, Button_0) == 0x000000, "Member 'MainMenuUI_C_HighlightButton::Button_0' has a wrong offset!");
+DUMPER7_ASSERTS_MainMenuUI_C_HighlightButton;
 
 // Function MainMenuUI.MainMenuUI_C.PreviewItem
 // 0x0010 (0x0010 - 0x0000)
@@ -390,10 +244,7 @@ public:
 	class UClass*                                 ItemInfo;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         SalePrice;                                         // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenuUI_C_PreviewItem) == 0x000008, "Wrong alignment on MainMenuUI_C_PreviewItem");
-static_assert(sizeof(MainMenuUI_C_PreviewItem) == 0x000010, "Wrong size on MainMenuUI_C_PreviewItem");
-static_assert(offsetof(MainMenuUI_C_PreviewItem, ItemInfo) == 0x000000, "Member 'MainMenuUI_C_PreviewItem::ItemInfo' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_PreviewItem, SalePrice) == 0x000008, "Member 'MainMenuUI_C_PreviewItem::SalePrice' has a wrong offset!");
+DUMPER7_ASSERTS_MainMenuUI_C_PreviewItem;
 
 // Function MainMenuUI.MainMenuUI_C.DragItemFromCategory
 // 0x0001 (0x0001 - 0x0000)
@@ -402,9 +253,7 @@ struct MainMenuUI_C_DragItemFromCategory final
 public:
 	EShopItemCategory                             Category;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenuUI_C_DragItemFromCategory) == 0x000001, "Wrong alignment on MainMenuUI_C_DragItemFromCategory");
-static_assert(sizeof(MainMenuUI_C_DragItemFromCategory) == 0x000001, "Wrong size on MainMenuUI_C_DragItemFromCategory");
-static_assert(offsetof(MainMenuUI_C_DragItemFromCategory, Category) == 0x000000, "Member 'MainMenuUI_C_DragItemFromCategory::Category' has a wrong offset!");
+DUMPER7_ASSERTS_MainMenuUI_C_DragItemFromCategory;
 
 // Function MainMenuUI.MainMenuUI_C.ChangeCategory
 // 0x0001 (0x0001 - 0x0000)
@@ -413,9 +262,7 @@ struct MainMenuUI_C_ChangeCategory final
 public:
 	EShopItemCategory                             Category;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenuUI_C_ChangeCategory) == 0x000001, "Wrong alignment on MainMenuUI_C_ChangeCategory");
-static_assert(sizeof(MainMenuUI_C_ChangeCategory) == 0x000001, "Wrong size on MainMenuUI_C_ChangeCategory");
-static_assert(offsetof(MainMenuUI_C_ChangeCategory, Category) == 0x000000, "Member 'MainMenuUI_C_ChangeCategory::Category' has a wrong offset!");
+DUMPER7_ASSERTS_MainMenuUI_C_ChangeCategory;
 
 // Function MainMenuUI.MainMenuUI_C.leaveLobbytext
 // 0x0030 (0x0030 - 0x0000)
@@ -429,13 +276,7 @@ public:
 	bool                                          CallFunc_IsLocalPlayerController_ReturnValue;      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MainMenuUI_C_leaveLobbytext) == 0x000008, "Wrong alignment on MainMenuUI_C_leaveLobbytext");
-static_assert(sizeof(MainMenuUI_C_leaveLobbytext) == 0x000030, "Wrong size on MainMenuUI_C_leaveLobbytext");
-static_assert(offsetof(MainMenuUI_C_leaveLobbytext, ReturnValue) == 0x000000, "Member 'MainMenuUI_C_leaveLobbytext::ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_leaveLobbytext, CallFunc_IsServer_ReturnValue) == 0x000018, "Member 'MainMenuUI_C_leaveLobbytext::CallFunc_IsServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_leaveLobbytext, CallFunc_GetOwningPlayer_ReturnValue) == 0x000020, "Member 'MainMenuUI_C_leaveLobbytext::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_leaveLobbytext, CallFunc_IsLocalPlayerController_ReturnValue) == 0x000028, "Member 'MainMenuUI_C_leaveLobbytext::CallFunc_IsLocalPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_leaveLobbytext, CallFunc_BooleanAND_ReturnValue) == 0x000029, "Member 'MainMenuUI_C_leaveLobbytext::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MainMenuUI_C_leaveLobbytext;
 
 // Function MainMenuUI.MainMenuUI_C.LobbyType_Text
 // 0x0040 (0x0040 - 0x0000)
@@ -446,11 +287,7 @@ public:
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0028(0x0018)()
 };
-static_assert(alignof(MainMenuUI_C_LobbyType_Text) == 0x000008, "Wrong alignment on MainMenuUI_C_LobbyType_Text");
-static_assert(sizeof(MainMenuUI_C_LobbyType_Text) == 0x000040, "Wrong size on MainMenuUI_C_LobbyType_Text");
-static_assert(offsetof(MainMenuUI_C_LobbyType_Text, ReturnValue) == 0x000000, "Member 'MainMenuUI_C_LobbyType_Text::ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_LobbyType_Text, CallFunc_Concat_StrStr_ReturnValue) == 0x000018, "Member 'MainMenuUI_C_LobbyType_Text::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_LobbyType_Text, CallFunc_Conv_StringToText_ReturnValue) == 0x000028, "Member 'MainMenuUI_C_LobbyType_Text::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MainMenuUI_C_LobbyType_Text;
 
 // Function MainMenuUI.MainMenuUI_C.CollapsedOnClient
 // 0x0018 (0x0018 - 0x0000)
@@ -464,13 +301,7 @@ public:
 	bool                                          CallFunc_IsLocalPlayerController_ReturnValue;      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MainMenuUI_C_CollapsedOnClient) == 0x000008, "Wrong alignment on MainMenuUI_C_CollapsedOnClient");
-static_assert(sizeof(MainMenuUI_C_CollapsedOnClient) == 0x000018, "Wrong size on MainMenuUI_C_CollapsedOnClient");
-static_assert(offsetof(MainMenuUI_C_CollapsedOnClient, ReturnValue) == 0x000000, "Member 'MainMenuUI_C_CollapsedOnClient::ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_CollapsedOnClient, CallFunc_IsServer_ReturnValue) == 0x000001, "Member 'MainMenuUI_C_CollapsedOnClient::CallFunc_IsServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_CollapsedOnClient, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'MainMenuUI_C_CollapsedOnClient::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_CollapsedOnClient, CallFunc_IsLocalPlayerController_ReturnValue) == 0x000010, "Member 'MainMenuUI_C_CollapsedOnClient::CallFunc_IsLocalPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_CollapsedOnClient, CallFunc_BooleanAND_ReturnValue) == 0x000011, "Member 'MainMenuUI_C_CollapsedOnClient::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MainMenuUI_C_CollapsedOnClient;
 
 // Function MainMenuUI.MainMenuUI_C.CollapsedOnHost
 // 0x0018 (0x0018 - 0x0000)
@@ -484,13 +315,7 @@ public:
 	bool                                          CallFunc_IsLocalPlayerController_ReturnValue;      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MainMenuUI_C_CollapsedOnHost) == 0x000008, "Wrong alignment on MainMenuUI_C_CollapsedOnHost");
-static_assert(sizeof(MainMenuUI_C_CollapsedOnHost) == 0x000018, "Wrong size on MainMenuUI_C_CollapsedOnHost");
-static_assert(offsetof(MainMenuUI_C_CollapsedOnHost, ReturnValue) == 0x000000, "Member 'MainMenuUI_C_CollapsedOnHost::ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_CollapsedOnHost, CallFunc_IsServer_ReturnValue) == 0x000001, "Member 'MainMenuUI_C_CollapsedOnHost::CallFunc_IsServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_CollapsedOnHost, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'MainMenuUI_C_CollapsedOnHost::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_CollapsedOnHost, CallFunc_IsLocalPlayerController_ReturnValue) == 0x000010, "Member 'MainMenuUI_C_CollapsedOnHost::CallFunc_IsLocalPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_CollapsedOnHost, CallFunc_BooleanAND_ReturnValue) == 0x000011, "Member 'MainMenuUI_C_CollapsedOnHost::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MainMenuUI_C_CollapsedOnHost;
 
 // Function MainMenuUI.MainMenuUI_C.GetText_0
 // 0x0030 (0x0030 - 0x0000)
@@ -502,12 +327,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MainMenuUI_C_GetText_0) == 0x000008, "Wrong alignment on MainMenuUI_C_GetText_0");
-static_assert(sizeof(MainMenuUI_C_GetText_0) == 0x000030, "Wrong size on MainMenuUI_C_GetText_0");
-static_assert(offsetof(MainMenuUI_C_GetText_0, ReturnValue) == 0x000000, "Member 'MainMenuUI_C_GetText_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_GetText_0, CallFunc_GetAllActorsOfClass_OutActors) == 0x000018, "Member 'MainMenuUI_C_GetText_0::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_GetText_0, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'MainMenuUI_C_GetText_0::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_GetText_0, CallFunc_Greater_IntInt_ReturnValue) == 0x00002C, "Member 'MainMenuUI_C_GetText_0::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MainMenuUI_C_GetText_0;
 
 // Function MainMenuUI.MainMenuUI_C.GetText_1
 // 0x0068 (0x0068 - 0x0000)
@@ -520,13 +340,7 @@ public:
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0040(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0050(0x0018)()
 };
-static_assert(alignof(MainMenuUI_C_GetText_1) == 0x000008, "Wrong alignment on MainMenuUI_C_GetText_1");
-static_assert(sizeof(MainMenuUI_C_GetText_1) == 0x000068, "Wrong size on MainMenuUI_C_GetText_1");
-static_assert(offsetof(MainMenuUI_C_GetText_1, ReturnValue) == 0x000000, "Member 'MainMenuUI_C_GetText_1::ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_GetText_1, CallFunc_Conv_IntToText_ReturnValue) == 0x000018, "Member 'MainMenuUI_C_GetText_1::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_GetText_1, CallFunc_Conv_TextToString_ReturnValue) == 0x000030, "Member 'MainMenuUI_C_GetText_1::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_GetText_1, CallFunc_Concat_StrStr_ReturnValue) == 0x000040, "Member 'MainMenuUI_C_GetText_1::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_GetText_1, CallFunc_Conv_StringToText_ReturnValue) == 0x000050, "Member 'MainMenuUI_C_GetText_1::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MainMenuUI_C_GetText_1;
 
 // Function MainMenuUI.MainMenuUI_C.GetBrush_0
 // 0x01B8 (0x01B8 - 0x0000)
@@ -542,15 +356,7 @@ public:
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush_1;                    // 0x0128(0x0088)()
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MainMenuUI_C_GetBrush_0) == 0x000008, "Wrong alignment on MainMenuUI_C_GetBrush_0");
-static_assert(sizeof(MainMenuUI_C_GetBrush_0) == 0x0001B8, "Wrong size on MainMenuUI_C_GetBrush_0");
-static_assert(offsetof(MainMenuUI_C_GetBrush_0, ReturnValue) == 0x000000, "Member 'MainMenuUI_C_GetBrush_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_GetBrush_0, K2Node_MakeStruct_SlateBrush) == 0x000088, "Member 'MainMenuUI_C_GetBrush_0::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_GetBrush_0, CallFunc_IsValid_ReturnValue) == 0x000110, "Member 'MainMenuUI_C_GetBrush_0::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_GetBrush_0, CallFunc_GetSteamIdFromPlayerState_ReturnValue) == 0x000118, "Member 'MainMenuUI_C_GetBrush_0::CallFunc_GetSteamIdFromPlayerState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_GetBrush_0, CallFunc_GetLargeFriendAvatar_ReturnValue) == 0x000120, "Member 'MainMenuUI_C_GetBrush_0::CallFunc_GetLargeFriendAvatar_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_GetBrush_0, K2Node_MakeStruct_SlateBrush_1) == 0x000128, "Member 'MainMenuUI_C_GetBrush_0::K2Node_MakeStruct_SlateBrush_1' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_GetBrush_0, CallFunc_IsValid_ReturnValue_1) == 0x0001B0, "Member 'MainMenuUI_C_GetBrush_0::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_MainMenuUI_C_GetBrush_0;
 
 // Function MainMenuUI.MainMenuUI_C.GetText_2
 // 0x0030 (0x0030 - 0x0000)
@@ -560,10 +366,7 @@ public:
 	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0018(0x0018)()
 };
-static_assert(alignof(MainMenuUI_C_GetText_2) == 0x000008, "Wrong alignment on MainMenuUI_C_GetText_2");
-static_assert(sizeof(MainMenuUI_C_GetText_2) == 0x000030, "Wrong size on MainMenuUI_C_GetText_2");
-static_assert(offsetof(MainMenuUI_C_GetText_2, ReturnValue) == 0x000000, "Member 'MainMenuUI_C_GetText_2::ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_GetText_2, CallFunc_Conv_IntToText_ReturnValue) == 0x000018, "Member 'MainMenuUI_C_GetText_2::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MainMenuUI_C_GetText_2;
 
 // Function MainMenuUI.MainMenuUI_C.GetPercent_0
 // 0x000C (0x000C - 0x0000)
@@ -574,11 +377,7 @@ public:
 	float                                         CallFunc_GetRequiredEXP_EXP_required_for_levelup;  // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenuUI_C_GetPercent_0) == 0x000004, "Wrong alignment on MainMenuUI_C_GetPercent_0");
-static_assert(sizeof(MainMenuUI_C_GetPercent_0) == 0x00000C, "Wrong size on MainMenuUI_C_GetPercent_0");
-static_assert(offsetof(MainMenuUI_C_GetPercent_0, ReturnValue) == 0x000000, "Member 'MainMenuUI_C_GetPercent_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_GetPercent_0, CallFunc_GetRequiredEXP_EXP_required_for_levelup) == 0x000004, "Member 'MainMenuUI_C_GetPercent_0::CallFunc_GetRequiredEXP_EXP_required_for_levelup' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_GetPercent_0, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000008, "Member 'MainMenuUI_C_GetPercent_0::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MainMenuUI_C_GetPercent_0;
 
 // Function MainMenuUI.MainMenuUI_C.CheckPlayersReady
 // 0x0040 (0x0040 - 0x0000)
@@ -600,19 +399,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MainMenuUI_C_CheckPlayersReady) == 0x000008, "Wrong alignment on MainMenuUI_C_CheckPlayersReady");
-static_assert(sizeof(MainMenuUI_C_CheckPlayersReady) == 0x000040, "Wrong size on MainMenuUI_C_CheckPlayersReady");
-static_assert(offsetof(MainMenuUI_C_CheckPlayersReady, All_ready_) == 0x000000, "Member 'MainMenuUI_C_CheckPlayersReady::All_ready_' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_CheckPlayersReady, Readyall) == 0x000001, "Member 'MainMenuUI_C_CheckPlayersReady::Readyall' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_CheckPlayersReady, Temp_int_Array_Index_Variable) == 0x000004, "Member 'MainMenuUI_C_CheckPlayersReady::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_CheckPlayersReady, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'MainMenuUI_C_CheckPlayersReady::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_CheckPlayersReady, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'MainMenuUI_C_CheckPlayersReady::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_CheckPlayersReady, CallFunc_GetAllActorsOfClass_OutActors) == 0x000010, "Member 'MainMenuUI_C_CheckPlayersReady::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_CheckPlayersReady, CallFunc_Array_Length_ReturnValue) == 0x000020, "Member 'MainMenuUI_C_CheckPlayersReady::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_CheckPlayersReady, CallFunc_Array_Get_Item) == 0x000028, "Member 'MainMenuUI_C_CheckPlayersReady::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_CheckPlayersReady, CallFunc_Greater_IntInt_ReturnValue) == 0x000030, "Member 'MainMenuUI_C_CheckPlayersReady::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_CheckPlayersReady, CallFunc_Array_Length_ReturnValue_1) == 0x000034, "Member 'MainMenuUI_C_CheckPlayersReady::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_CheckPlayersReady, CallFunc_Less_IntInt_ReturnValue) == 0x000038, "Member 'MainMenuUI_C_CheckPlayersReady::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MainMenuUI_C_CheckPlayersReady;
 
 // Function MainMenuUI.MainMenuUI_C.Get_CountdownText_Visibility_0
 // 0x0004 (0x0004 - 0x0000)
@@ -624,12 +411,7 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MainMenuUI_C_Get_CountdownText_Visibility_0) == 0x000001, "Wrong alignment on MainMenuUI_C_Get_CountdownText_Visibility_0");
-static_assert(sizeof(MainMenuUI_C_Get_CountdownText_Visibility_0) == 0x000004, "Wrong size on MainMenuUI_C_Get_CountdownText_Visibility_0");
-static_assert(offsetof(MainMenuUI_C_Get_CountdownText_Visibility_0, ReturnValue) == 0x000000, "Member 'MainMenuUI_C_Get_CountdownText_Visibility_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_Get_CountdownText_Visibility_0, CallFunc_Greater_IntInt_ReturnValue) == 0x000001, "Member 'MainMenuUI_C_Get_CountdownText_Visibility_0::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_Get_CountdownText_Visibility_0, CallFunc_Less_IntInt_ReturnValue) == 0x000002, "Member 'MainMenuUI_C_Get_CountdownText_Visibility_0::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_Get_CountdownText_Visibility_0, CallFunc_BooleanAND_ReturnValue) == 0x000003, "Member 'MainMenuUI_C_Get_CountdownText_Visibility_0::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MainMenuUI_C_Get_CountdownText_Visibility_0;
 
 // Function MainMenuUI.MainMenuUI_C.GetText_3
 // 0x0070 (0x0070 - 0x0000)
@@ -645,14 +427,7 @@ public:
 	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Select_Default;                             // 0x0058(0x0018)()
 };
-static_assert(alignof(MainMenuUI_C_GetText_3) == 0x000008, "Wrong alignment on MainMenuUI_C_GetText_3");
-static_assert(sizeof(MainMenuUI_C_GetText_3) == 0x000070, "Wrong size on MainMenuUI_C_GetText_3");
-static_assert(offsetof(MainMenuUI_C_GetText_3, ReturnValue) == 0x000000, "Member 'MainMenuUI_C_GetText_3::ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_GetText_3, Temp_bool_Variable) == 0x000018, "Member 'MainMenuUI_C_GetText_3::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_GetText_3, Temp_text_Variable) == 0x000020, "Member 'MainMenuUI_C_GetText_3::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_GetText_3, CallFunc_Conv_IntToText_ReturnValue) == 0x000038, "Member 'MainMenuUI_C_GetText_3::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_GetText_3, CallFunc_Greater_IntInt_ReturnValue) == 0x000050, "Member 'MainMenuUI_C_GetText_3::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_GetText_3, K2Node_Select_Default) == 0x000058, "Member 'MainMenuUI_C_GetText_3::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_MainMenuUI_C_GetText_3;
 
 // Function MainMenuUI.MainMenuUI_C.SetTutorialButton
 // 0x0018 (0x0018 - 0x0000)
@@ -663,11 +438,7 @@ public:
 	bool                                          CallFunc_DoesSaveGameExist_ReturnValue;            // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_DoesSaveGameExist_ReturnValue_1;          // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MainMenuUI_C_SetTutorialButton) == 0x000008, "Wrong alignment on MainMenuUI_C_SetTutorialButton");
-static_assert(sizeof(MainMenuUI_C_SetTutorialButton) == 0x000018, "Wrong size on MainMenuUI_C_SetTutorialButton");
-static_assert(offsetof(MainMenuUI_C_SetTutorialButton, TutorialLevel) == 0x000000, "Member 'MainMenuUI_C_SetTutorialButton::TutorialLevel' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_SetTutorialButton, CallFunc_DoesSaveGameExist_ReturnValue) == 0x000010, "Member 'MainMenuUI_C_SetTutorialButton::CallFunc_DoesSaveGameExist_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_SetTutorialButton, CallFunc_DoesSaveGameExist_ReturnValue_1) == 0x000011, "Member 'MainMenuUI_C_SetTutorialButton::CallFunc_DoesSaveGameExist_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_MainMenuUI_C_SetTutorialButton;
 
 // Function MainMenuUI.MainMenuUI_C.Get_SkinRotationPopup_Visibility_0
 // 0x0001 (0x0001 - 0x0000)
@@ -676,9 +447,7 @@ struct MainMenuUI_C_Get_SkinRotationPopup_Visibility_0 final
 public:
 	ESlateVisibility                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenuUI_C_Get_SkinRotationPopup_Visibility_0) == 0x000001, "Wrong alignment on MainMenuUI_C_Get_SkinRotationPopup_Visibility_0");
-static_assert(sizeof(MainMenuUI_C_Get_SkinRotationPopup_Visibility_0) == 0x000001, "Wrong size on MainMenuUI_C_Get_SkinRotationPopup_Visibility_0");
-static_assert(offsetof(MainMenuUI_C_Get_SkinRotationPopup_Visibility_0, ReturnValue) == 0x000000, "Member 'MainMenuUI_C_Get_SkinRotationPopup_Visibility_0::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MainMenuUI_C_Get_SkinRotationPopup_Visibility_0;
 
 // Function MainMenuUI.MainMenuUI_C.GetVisibility_0
 // 0x0001 (0x0001 - 0x0000)
@@ -687,9 +456,7 @@ struct MainMenuUI_C_GetVisibility_0 final
 public:
 	ESlateVisibility                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenuUI_C_GetVisibility_0) == 0x000001, "Wrong alignment on MainMenuUI_C_GetVisibility_0");
-static_assert(sizeof(MainMenuUI_C_GetVisibility_0) == 0x000001, "Wrong size on MainMenuUI_C_GetVisibility_0");
-static_assert(offsetof(MainMenuUI_C_GetVisibility_0, ReturnValue) == 0x000000, "Member 'MainMenuUI_C_GetVisibility_0::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MainMenuUI_C_GetVisibility_0;
 
 // Function MainMenuUI.MainMenuUI_C.GetText_4
 // 0x0060 (0x0060 - 0x0000)
@@ -702,13 +469,7 @@ public:
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0038(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0048(0x0018)()
 };
-static_assert(alignof(MainMenuUI_C_GetText_4) == 0x000008, "Wrong alignment on MainMenuUI_C_GetText_4");
-static_assert(sizeof(MainMenuUI_C_GetText_4) == 0x000060, "Wrong size on MainMenuUI_C_GetText_4");
-static_assert(offsetof(MainMenuUI_C_GetText_4, ReturnValue) == 0x000000, "Member 'MainMenuUI_C_GetText_4::ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_GetText_4, CallFunc_Conv_IntToString_ReturnValue) == 0x000018, "Member 'MainMenuUI_C_GetText_4::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_GetText_4, CallFunc_Concat_StrStr_ReturnValue) == 0x000028, "Member 'MainMenuUI_C_GetText_4::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_GetText_4, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000038, "Member 'MainMenuUI_C_GetText_4::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_GetText_4, CallFunc_Conv_StringToText_ReturnValue) == 0x000048, "Member 'MainMenuUI_C_GetText_4::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MainMenuUI_C_GetText_4;
 
 // Function MainMenuUI.MainMenuUI_C.Get_Setup_button_Visibility_0
 // 0x0020 (0x0020 - 0x0000)
@@ -721,12 +482,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MainMenuUI_C_Get_Setup_button_Visibility_0) == 0x000008, "Wrong alignment on MainMenuUI_C_Get_Setup_button_Visibility_0");
-static_assert(sizeof(MainMenuUI_C_Get_Setup_button_Visibility_0) == 0x000020, "Wrong size on MainMenuUI_C_Get_Setup_button_Visibility_0");
-static_assert(offsetof(MainMenuUI_C_Get_Setup_button_Visibility_0, ReturnValue) == 0x000000, "Member 'MainMenuUI_C_Get_Setup_button_Visibility_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_Get_Setup_button_Visibility_0, Temp_class_Variable) == 0x000008, "Member 'MainMenuUI_C_Get_Setup_button_Visibility_0::Temp_class_Variable' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_Get_Setup_button_Visibility_0, CallFunc_Array_Length_ReturnValue) == 0x000018, "Member 'MainMenuUI_C_Get_Setup_button_Visibility_0::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_Get_Setup_button_Visibility_0, CallFunc_Greater_IntInt_ReturnValue) == 0x00001C, "Member 'MainMenuUI_C_Get_Setup_button_Visibility_0::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MainMenuUI_C_Get_Setup_button_Visibility_0;
 
 // Function MainMenuUI.MainMenuUI_C.GetText_5
 // 0x0058 (0x0058 - 0x0000)
@@ -741,14 +497,7 @@ public:
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0030(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0040(0x0018)()
 };
-static_assert(alignof(MainMenuUI_C_GetText_5) == 0x000008, "Wrong alignment on MainMenuUI_C_GetText_5");
-static_assert(sizeof(MainMenuUI_C_GetText_5) == 0x000058, "Wrong size on MainMenuUI_C_GetText_5");
-static_assert(offsetof(MainMenuUI_C_GetText_5, ReturnValue) == 0x000000, "Member 'MainMenuUI_C_GetText_5::ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_GetText_5, CallFunc_GetCompletedSetupsForMap_SetupsCompleted) == 0x000018, "Member 'MainMenuUI_C_GetText_5::CallFunc_GetCompletedSetupsForMap_SetupsCompleted' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_GetText_5, CallFunc_GetCompletedSetupsForMap_Completed_min_) == 0x00001C, "Member 'MainMenuUI_C_GetText_5::CallFunc_GetCompletedSetupsForMap_Completed_min_' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_GetText_5, CallFunc_Conv_IntToString_ReturnValue) == 0x000020, "Member 'MainMenuUI_C_GetText_5::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_GetText_5, CallFunc_Concat_StrStr_ReturnValue) == 0x000030, "Member 'MainMenuUI_C_GetText_5::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenuUI_C_GetText_5, CallFunc_Conv_StringToText_ReturnValue) == 0x000040, "Member 'MainMenuUI_C_GetText_5::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MainMenuUI_C_GetText_5;
 
 }
 

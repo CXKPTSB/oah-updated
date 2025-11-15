@@ -80,52 +80,7 @@ public:
 	uint8                                         Pad_191[0x7];                                      // 0x0191(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AAmbienceSoundController_C*             CallFunc_GetActorOfClass_ReturnValue;              // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone) == 0x000008, "Wrong alignment on AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone");
-static_assert(sizeof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone) == 0x0001A0, "Wrong size on AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, EntryPoint) == 0x000000, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, Temp_int_Loop_Counter_Variable_1) == 0x000008, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, CallFunc_Add_IntInt_ReturnValue_1) == 0x000010, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, Temp_int_Array_Index_Variable) == 0x000014, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, Temp_int_Loop_Counter_Variable_2) == 0x000018, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, CallFunc_Add_IntInt_ReturnValue_2) == 0x00001C, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, Temp_int_Array_Index_Variable_1) == 0x000020, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, K2Node_ComponentBoundEvent_OverlappedComponent_1) == 0x000028, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::K2Node_ComponentBoundEvent_OverlappedComponent_1' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, K2Node_ComponentBoundEvent_OtherActor_1) == 0x000030, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::K2Node_ComponentBoundEvent_OtherActor_1' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, K2Node_ComponentBoundEvent_OtherComp_1) == 0x000038, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::K2Node_ComponentBoundEvent_OtherComp_1' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, K2Node_ComponentBoundEvent_OtherBodyIndex_1) == 0x000040, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::K2Node_ComponentBoundEvent_OtherBodyIndex_1' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, K2Node_ComponentBoundEvent_bFromSweep) == 0x000044, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::K2Node_ComponentBoundEvent_bFromSweep' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, K2Node_ComponentBoundEvent_SweepResult) == 0x000048, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::K2Node_ComponentBoundEvent_SweepResult' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, K2Node_ComponentBoundEvent_OverlappedComponent) == 0x0000D0, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::K2Node_ComponentBoundEvent_OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, K2Node_ComponentBoundEvent_OtherActor) == 0x0000D8, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::K2Node_ComponentBoundEvent_OtherActor' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, K2Node_ComponentBoundEvent_OtherComp) == 0x0000E0, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::K2Node_ComponentBoundEvent_OtherComp' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, K2Node_ComponentBoundEvent_OtherBodyIndex) == 0x0000E8, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::K2Node_ComponentBoundEvent_OtherBodyIndex' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, K2Node_DynamicCast_AsPlayer_Character) == 0x0000F0, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::K2Node_DynamicCast_AsPlayer_Character' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, K2Node_DynamicCast_bSuccess) == 0x0000F8, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, K2Node_DynamicCast_AsPlayer_Character_1) == 0x000100, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::K2Node_DynamicCast_AsPlayer_Character_1' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, K2Node_DynamicCast_bSuccess_1) == 0x000108, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, K2Node_CustomEvent_Player_1) == 0x000110, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::K2Node_CustomEvent_Player_1' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, K2Node_CustomEvent_Player) == 0x000118, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::K2Node_CustomEvent_Player' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, CallFunc_IsLocallyControlled_ReturnValue) == 0x000120, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::CallFunc_IsLocallyControlled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, CallFunc_IsLocallyControlled_ReturnValue_1) == 0x000121, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::CallFunc_IsLocallyControlled_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, CallFunc_Array_Length_ReturnValue) == 0x000124, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, CallFunc_Less_IntInt_ReturnValue) == 0x000128, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, CallFunc_Array_Get_Item) == 0x000130, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, CallFunc_Array_Length_ReturnValue_1) == 0x000140, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, CallFunc_Less_IntInt_ReturnValue_1) == 0x000144, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, CallFunc_SpawnSound2D_ReturnValue) == 0x000148, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::CallFunc_SpawnSound2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, CallFunc_Array_Add_ReturnValue) == 0x000150, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, CallFunc_BooleanAND_ReturnValue) == 0x000154, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, Temp_int_Array_Index_Variable_2) == 0x000158, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, CallFunc_Array_Get_Item_1) == 0x000160, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, CallFunc_IsValid_ReturnValue) == 0x000168, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, CallFunc_Array_Get_Item_2) == 0x000170, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, CallFunc_Array_Get_Item_3) == 0x000180, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, CallFunc_IsValid_ReturnValue_1) == 0x000188, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, CallFunc_Array_Length_ReturnValue_2) == 0x00018C, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, CallFunc_Less_IntInt_ReturnValue_2) == 0x000190, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone, CallFunc_GetActorOfClass_ReturnValue) == 0x000198, "Member 'AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone::CallFunc_GetActorOfClass_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AmbientSoundZone_C_ExecuteUbergraph_AmbientSoundZone;
 
 // Function AmbientSoundZone.AmbientSoundZone_C.StopAllSounds
 // 0x0008 (0x0008 - 0x0000)
@@ -134,9 +89,7 @@ struct AmbientSoundZone_C_StopAllSounds final
 public:
 	class APlayerCharacter_C*                     Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AmbientSoundZone_C_StopAllSounds) == 0x000008, "Wrong alignment on AmbientSoundZone_C_StopAllSounds");
-static_assert(sizeof(AmbientSoundZone_C_StopAllSounds) == 0x000008, "Wrong size on AmbientSoundZone_C_StopAllSounds");
-static_assert(offsetof(AmbientSoundZone_C_StopAllSounds, Player) == 0x000000, "Member 'AmbientSoundZone_C_StopAllSounds::Player' has a wrong offset!");
+DUMPER7_ASSERTS_AmbientSoundZone_C_StopAllSounds;
 
 // Function AmbientSoundZone.AmbientSoundZone_C.SpawnSounds
 // 0x0008 (0x0008 - 0x0000)
@@ -145,9 +98,7 @@ struct AmbientSoundZone_C_SpawnSounds final
 public:
 	class APlayerCharacter_C*                     Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AmbientSoundZone_C_SpawnSounds) == 0x000008, "Wrong alignment on AmbientSoundZone_C_SpawnSounds");
-static_assert(sizeof(AmbientSoundZone_C_SpawnSounds) == 0x000008, "Wrong size on AmbientSoundZone_C_SpawnSounds");
-static_assert(offsetof(AmbientSoundZone_C_SpawnSounds, Player) == 0x000000, "Member 'AmbientSoundZone_C_SpawnSounds::Player' has a wrong offset!");
+DUMPER7_ASSERTS_AmbientSoundZone_C_SpawnSounds;
 
 // Function AmbientSoundZone.AmbientSoundZone_C.BndEvt__AmbientSoundZone_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature
 // 0x0020 (0x0020 - 0x0000)
@@ -159,12 +110,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AmbientSoundZone_C_BndEvt__AmbientSoundZone_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on AmbientSoundZone_C_BndEvt__AmbientSoundZone_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature");
-static_assert(sizeof(AmbientSoundZone_C_BndEvt__AmbientSoundZone_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature) == 0x000020, "Wrong size on AmbientSoundZone_C_BndEvt__AmbientSoundZone_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature");
-static_assert(offsetof(AmbientSoundZone_C_BndEvt__AmbientSoundZone_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'AmbientSoundZone_C_BndEvt__AmbientSoundZone_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_BndEvt__AmbientSoundZone_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'AmbientSoundZone_C_BndEvt__AmbientSoundZone_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_BndEvt__AmbientSoundZone_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'AmbientSoundZone_C_BndEvt__AmbientSoundZone_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_BndEvt__AmbientSoundZone_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'AmbientSoundZone_C_BndEvt__AmbientSoundZone_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
+DUMPER7_ASSERTS_AmbientSoundZone_C_BndEvt__AmbientSoundZone_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature;
 
 // Function AmbientSoundZone.AmbientSoundZone_C.BndEvt__AmbientSoundZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
 // 0x00A8 (0x00A8 - 0x0000)
@@ -179,14 +125,7 @@ public:
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(AmbientSoundZone_C_BndEvt__AmbientSoundZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on AmbientSoundZone_C_BndEvt__AmbientSoundZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
-static_assert(sizeof(AmbientSoundZone_C_BndEvt__AmbientSoundZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature) == 0x0000A8, "Wrong size on AmbientSoundZone_C_BndEvt__AmbientSoundZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
-static_assert(offsetof(AmbientSoundZone_C_BndEvt__AmbientSoundZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'AmbientSoundZone_C_BndEvt__AmbientSoundZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_BndEvt__AmbientSoundZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'AmbientSoundZone_C_BndEvt__AmbientSoundZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_BndEvt__AmbientSoundZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'AmbientSoundZone_C_BndEvt__AmbientSoundZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_BndEvt__AmbientSoundZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'AmbientSoundZone_C_BndEvt__AmbientSoundZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_BndEvt__AmbientSoundZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, bFromSweep) == 0x00001C, "Member 'AmbientSoundZone_C_BndEvt__AmbientSoundZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::bFromSweep' has a wrong offset!");
-static_assert(offsetof(AmbientSoundZone_C_BndEvt__AmbientSoundZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, SweepResult) == 0x000020, "Member 'AmbientSoundZone_C_BndEvt__AmbientSoundZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::SweepResult' has a wrong offset!");
+DUMPER7_ASSERTS_AmbientSoundZone_C_BndEvt__AmbientSoundZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature;
 
 }
 

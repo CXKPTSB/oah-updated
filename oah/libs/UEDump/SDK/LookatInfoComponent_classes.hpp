@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LookatInfoComponent_C">();
+		BP_STATIC_CLASS_IMPL("LookatInfoComponent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LookatInfoComponent_C")
 	}
 	static class ULookatInfoComponent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULookatInfoComponent_C>();
 	}
 };
-static_assert(alignof(ULookatInfoComponent_C) == 0x000008, "Wrong alignment on ULookatInfoComponent_C");
-static_assert(sizeof(ULookatInfoComponent_C) == 0x0000C0, "Wrong size on ULookatInfoComponent_C");
-static_assert(offsetof(ULookatInfoComponent_C, Name_0) == 0x0000B0, "Member 'ULookatInfoComponent_C::Name_0' has a wrong offset!");
+DUMPER7_ASSERTS_ULookatInfoComponent_C;
 
 }
 

@@ -32,9 +32,9 @@ public:
 	TSubclassOf<class UMagicLeapARPinSaveGame>    PinDataClass;                                      // 0x0210(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSet<EMagicLeapARPinType>                     SearchPinTypes;                                    // 0x0218(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	class USphereComponent*                       SearchVolume;                                      // 0x0268(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool bRestoredOrSynced)> OnPersistentEntityPinned;                          // 0x0270(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool bRestoredOrSynced)> OnPersistentEntityPinned;                 // 0x0270(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void()>              OnPersistentEntityPinLost;                         // 0x0280(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool bDataRestored)> OnPinDataLoadAttemptCompleted;                     // 0x0290(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool bDataRestored)> OnPinDataLoadAttemptCompleted;                // 0x0290(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	struct FGuid                                  PinnedCFUID;                                       // 0x02A0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class USceneComponent*                        PinnedSceneComponent;                              // 0x02B0(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UMagicLeapARPinSaveGame*                PinData;                                           // 0x02B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -60,28 +60,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MagicLeapARPinComponent">();
+		STATIC_CLASS_IMPL("MagicLeapARPinComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MagicLeapARPinComponent")
 	}
 	static class UMagicLeapARPinComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMagicLeapARPinComponent>();
 	}
 };
-static_assert(alignof(UMagicLeapARPinComponent) == 0x000010, "Wrong alignment on UMagicLeapARPinComponent");
-static_assert(sizeof(UMagicLeapARPinComponent) == 0x0003B0, "Wrong size on UMagicLeapARPinComponent");
-static_assert(offsetof(UMagicLeapARPinComponent, ObjectUID) == 0x0001F8, "Member 'UMagicLeapARPinComponent::ObjectUID' has a wrong offset!");
-static_assert(offsetof(UMagicLeapARPinComponent, UserIndex) == 0x000208, "Member 'UMagicLeapARPinComponent::UserIndex' has a wrong offset!");
-static_assert(offsetof(UMagicLeapARPinComponent, AutoPinType) == 0x00020C, "Member 'UMagicLeapARPinComponent::AutoPinType' has a wrong offset!");
-static_assert(offsetof(UMagicLeapARPinComponent, bShouldPinActor) == 0x00020D, "Member 'UMagicLeapARPinComponent::bShouldPinActor' has a wrong offset!");
-static_assert(offsetof(UMagicLeapARPinComponent, PinDataClass) == 0x000210, "Member 'UMagicLeapARPinComponent::PinDataClass' has a wrong offset!");
-static_assert(offsetof(UMagicLeapARPinComponent, SearchPinTypes) == 0x000218, "Member 'UMagicLeapARPinComponent::SearchPinTypes' has a wrong offset!");
-static_assert(offsetof(UMagicLeapARPinComponent, SearchVolume) == 0x000268, "Member 'UMagicLeapARPinComponent::SearchVolume' has a wrong offset!");
-static_assert(offsetof(UMagicLeapARPinComponent, OnPersistentEntityPinned) == 0x000270, "Member 'UMagicLeapARPinComponent::OnPersistentEntityPinned' has a wrong offset!");
-static_assert(offsetof(UMagicLeapARPinComponent, OnPersistentEntityPinLost) == 0x000280, "Member 'UMagicLeapARPinComponent::OnPersistentEntityPinLost' has a wrong offset!");
-static_assert(offsetof(UMagicLeapARPinComponent, OnPinDataLoadAttemptCompleted) == 0x000290, "Member 'UMagicLeapARPinComponent::OnPinDataLoadAttemptCompleted' has a wrong offset!");
-static_assert(offsetof(UMagicLeapARPinComponent, PinnedCFUID) == 0x0002A0, "Member 'UMagicLeapARPinComponent::PinnedCFUID' has a wrong offset!");
-static_assert(offsetof(UMagicLeapARPinComponent, PinnedSceneComponent) == 0x0002B0, "Member 'UMagicLeapARPinComponent::PinnedSceneComponent' has a wrong offset!");
-static_assert(offsetof(UMagicLeapARPinComponent, PinData) == 0x0002B8, "Member 'UMagicLeapARPinComponent::PinData' has a wrong offset!");
+DUMPER7_ASSERTS_UMagicLeapARPinComponent;
 
 // Class MagicLeapARPin.MagicLeapARPinFunctionLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -113,15 +103,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MagicLeapARPinFunctionLibrary">();
+		STATIC_CLASS_IMPL("MagicLeapARPinFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MagicLeapARPinFunctionLibrary")
 	}
 	static class UMagicLeapARPinFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMagicLeapARPinFunctionLibrary>();
 	}
 };
-static_assert(alignof(UMagicLeapARPinFunctionLibrary) == 0x000008, "Wrong alignment on UMagicLeapARPinFunctionLibrary");
-static_assert(sizeof(UMagicLeapARPinFunctionLibrary) == 0x000028, "Wrong size on UMagicLeapARPinFunctionLibrary");
+DUMPER7_ASSERTS_UMagicLeapARPinFunctionLibrary;
 
 // Class MagicLeapARPin.MagicLeapARPinInfoActorBase
 // 0x0018 (0x0238 - 0x0220)
@@ -138,17 +131,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MagicLeapARPinInfoActorBase">();
+		STATIC_CLASS_IMPL("MagicLeapARPinInfoActorBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MagicLeapARPinInfoActorBase")
 	}
 	static class AMagicLeapARPinInfoActorBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMagicLeapARPinInfoActorBase>();
 	}
 };
-static_assert(alignof(AMagicLeapARPinInfoActorBase) == 0x000008, "Wrong alignment on AMagicLeapARPinInfoActorBase");
-static_assert(sizeof(AMagicLeapARPinInfoActorBase) == 0x000238, "Wrong size on AMagicLeapARPinInfoActorBase");
-static_assert(offsetof(AMagicLeapARPinInfoActorBase, PinId) == 0x000220, "Member 'AMagicLeapARPinInfoActorBase::PinId' has a wrong offset!");
-static_assert(offsetof(AMagicLeapARPinInfoActorBase, bVisibilityOverride) == 0x000230, "Member 'AMagicLeapARPinInfoActorBase::bVisibilityOverride' has a wrong offset!");
+DUMPER7_ASSERTS_AMagicLeapARPinInfoActorBase;
 
 // Class MagicLeapARPin.MagicLeapARPinRenderer
 // 0x0068 (0x0288 - 0x0220)
@@ -157,9 +151,9 @@ class AMagicLeapARPinRenderer final : public AActor
 public:
 	bool                                          bInfoActorsVisibilityOverride;                     // 0x0220(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_221[0x7];                                      // 0x0221(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<struct FGuid, class AMagicLeapARPinInfoActorBase*> AllInfoActors;                                     // 0x0228(0x0050)(NativeAccessSpecifierPrivate)
+	TMap<struct FGuid, class AMagicLeapARPinInfoActorBase*> AllInfoActors;                           // 0x0228(0x0050)(NativeAccessSpecifierPrivate)
 	uint8                                         Pad_278[0x8];                                      // 0x0278(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class AMagicLeapARPinInfoActorBase> ClassToSpawn;                                      // 0x0280(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TSubclassOf<class AMagicLeapARPinInfoActorBase> ClassToSpawn;                                    // 0x0280(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	void SetVisibilityOverride(const bool InVisibilityOverride);
@@ -167,18 +161,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MagicLeapARPinRenderer">();
+		STATIC_CLASS_IMPL("MagicLeapARPinRenderer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MagicLeapARPinRenderer")
 	}
 	static class AMagicLeapARPinRenderer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMagicLeapARPinRenderer>();
 	}
 };
-static_assert(alignof(AMagicLeapARPinRenderer) == 0x000008, "Wrong alignment on AMagicLeapARPinRenderer");
-static_assert(sizeof(AMagicLeapARPinRenderer) == 0x000288, "Wrong size on AMagicLeapARPinRenderer");
-static_assert(offsetof(AMagicLeapARPinRenderer, bInfoActorsVisibilityOverride) == 0x000220, "Member 'AMagicLeapARPinRenderer::bInfoActorsVisibilityOverride' has a wrong offset!");
-static_assert(offsetof(AMagicLeapARPinRenderer, AllInfoActors) == 0x000228, "Member 'AMagicLeapARPinRenderer::AllInfoActors' has a wrong offset!");
-static_assert(offsetof(AMagicLeapARPinRenderer, ClassToSpawn) == 0x000280, "Member 'AMagicLeapARPinRenderer::ClassToSpawn' has a wrong offset!");
+DUMPER7_ASSERTS_AMagicLeapARPinRenderer;
 
 // Class MagicLeapARPin.MagicLeapARPinSettings
 // 0x0018 (0x0040 - 0x0028)
@@ -191,17 +185,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MagicLeapARPinSettings">();
+		STATIC_CLASS_IMPL("MagicLeapARPinSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MagicLeapARPinSettings")
 	}
 	static class UMagicLeapARPinSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMagicLeapARPinSettings>();
 	}
 };
-static_assert(alignof(UMagicLeapARPinSettings) == 0x000008, "Wrong alignment on UMagicLeapARPinSettings");
-static_assert(sizeof(UMagicLeapARPinSettings) == 0x000040, "Wrong size on UMagicLeapARPinSettings");
-static_assert(offsetof(UMagicLeapARPinSettings, UpdateCheckFrequency) == 0x000028, "Member 'UMagicLeapARPinSettings::UpdateCheckFrequency' has a wrong offset!");
-static_assert(offsetof(UMagicLeapARPinSettings, OnUpdatedEventTriggerDelta) == 0x00002C, "Member 'UMagicLeapARPinSettings::OnUpdatedEventTriggerDelta' has a wrong offset!");
+DUMPER7_ASSERTS_UMagicLeapARPinSettings;
 
 // Class MagicLeapARPin.MagicLeapARPinSaveGame
 // 0x0088 (0x00B0 - 0x0028)
@@ -218,40 +213,41 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MagicLeapARPinSaveGame">();
+		STATIC_CLASS_IMPL("MagicLeapARPinSaveGame")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MagicLeapARPinSaveGame")
 	}
 	static class UMagicLeapARPinSaveGame* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMagicLeapARPinSaveGame>();
 	}
 };
-static_assert(alignof(UMagicLeapARPinSaveGame) == 0x000010, "Wrong alignment on UMagicLeapARPinSaveGame");
-static_assert(sizeof(UMagicLeapARPinSaveGame) == 0x0000B0, "Wrong size on UMagicLeapARPinSaveGame");
-static_assert(offsetof(UMagicLeapARPinSaveGame, PinnedID) == 0x000028, "Member 'UMagicLeapARPinSaveGame::PinnedID' has a wrong offset!");
-static_assert(offsetof(UMagicLeapARPinSaveGame, ComponentWorldTransform) == 0x000040, "Member 'UMagicLeapARPinSaveGame::ComponentWorldTransform' has a wrong offset!");
-static_assert(offsetof(UMagicLeapARPinSaveGame, PinTransform) == 0x000070, "Member 'UMagicLeapARPinSaveGame::PinTransform' has a wrong offset!");
-static_assert(offsetof(UMagicLeapARPinSaveGame, bShouldPinActor) == 0x0000A0, "Member 'UMagicLeapARPinSaveGame::bShouldPinActor' has a wrong offset!");
+DUMPER7_ASSERTS_UMagicLeapARPinSaveGame;
 
 // Class MagicLeapARPin.MagicLeapARPinContentBindings
 // 0x0050 (0x0078 - 0x0028)
 class UMagicLeapARPinContentBindings final : public USaveGame
 {
 public:
-	TMap<struct FGuid, struct FMagicLeapARPinObjectIdList> AllContentBindings;                                // 0x0028(0x0050)(Edit, EditConst, NativeAccessSpecifierPublic)
+	TMap<struct FGuid, struct FMagicLeapARPinObjectIdList> AllContentBindings;                       // 0x0028(0x0050)(Edit, EditConst, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MagicLeapARPinContentBindings">();
+		STATIC_CLASS_IMPL("MagicLeapARPinContentBindings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MagicLeapARPinContentBindings")
 	}
 	static class UMagicLeapARPinContentBindings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMagicLeapARPinContentBindings>();
 	}
 };
-static_assert(alignof(UMagicLeapARPinContentBindings) == 0x000008, "Wrong alignment on UMagicLeapARPinContentBindings");
-static_assert(sizeof(UMagicLeapARPinContentBindings) == 0x000078, "Wrong size on UMagicLeapARPinContentBindings");
-static_assert(offsetof(UMagicLeapARPinContentBindings, AllContentBindings) == 0x000028, "Member 'UMagicLeapARPinContentBindings::AllContentBindings' has a wrong offset!");
+DUMPER7_ASSERTS_UMagicLeapARPinContentBindings;
 
 }
 

@@ -26,12 +26,7 @@ public:
 	TArray<struct FVector>                        Vertex;                                            // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<int32>                                 Index;                                             // 0x0018(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMagicLeapHandMeshBlock) == 0x000008, "Wrong alignment on FMagicLeapHandMeshBlock");
-static_assert(sizeof(FMagicLeapHandMeshBlock) == 0x000028, "Wrong size on FMagicLeapHandMeshBlock");
-static_assert(offsetof(FMagicLeapHandMeshBlock, IndexCount) == 0x000000, "Member 'FMagicLeapHandMeshBlock::IndexCount' has a wrong offset!");
-static_assert(offsetof(FMagicLeapHandMeshBlock, VertexCount) == 0x000004, "Member 'FMagicLeapHandMeshBlock::VertexCount' has a wrong offset!");
-static_assert(offsetof(FMagicLeapHandMeshBlock, Vertex) == 0x000008, "Member 'FMagicLeapHandMeshBlock::Vertex' has a wrong offset!");
-static_assert(offsetof(FMagicLeapHandMeshBlock, Index) == 0x000018, "Member 'FMagicLeapHandMeshBlock::Index' has a wrong offset!");
+DUMPER7_ASSERTS_FMagicLeapHandMeshBlock;
 
 // ScriptStruct MagicLeapHandMeshing.MagicLeapHandMesh
 // 0x0018 (0x0018 - 0x0000)
@@ -42,11 +37,7 @@ public:
 	int32                                         DataCount;                                         // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FMagicLeapHandMeshBlock>        Data;                                              // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMagicLeapHandMesh) == 0x000008, "Wrong alignment on FMagicLeapHandMesh");
-static_assert(sizeof(FMagicLeapHandMesh) == 0x000018, "Wrong size on FMagicLeapHandMesh");
-static_assert(offsetof(FMagicLeapHandMesh, Version) == 0x000000, "Member 'FMagicLeapHandMesh::Version' has a wrong offset!");
-static_assert(offsetof(FMagicLeapHandMesh, DataCount) == 0x000004, "Member 'FMagicLeapHandMesh::DataCount' has a wrong offset!");
-static_assert(offsetof(FMagicLeapHandMesh, Data) == 0x000008, "Member 'FMagicLeapHandMesh::Data' has a wrong offset!");
+DUMPER7_ASSERTS_FMagicLeapHandMesh;
 
 }
 

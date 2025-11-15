@@ -50,29 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MapPreviewUI_C">();
+		BP_STATIC_CLASS_IMPL("MapPreviewUI_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MapPreviewUI_C")
 	}
 	static class UMapPreviewUI_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMapPreviewUI_C>();
 	}
 };
-static_assert(alignof(UMapPreviewUI_C) == 0x000008, "Wrong alignment on UMapPreviewUI_C");
-static_assert(sizeof(UMapPreviewUI_C) == 0x0002D0, "Wrong size on UMapPreviewUI_C");
-static_assert(offsetof(UMapPreviewUI_C, UberGraphFrame) == 0x000260, "Member 'UMapPreviewUI_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMapPreviewUI_C, Button_134) == 0x000268, "Member 'UMapPreviewUI_C::Button_134' has a wrong offset!");
-static_assert(offsetof(UMapPreviewUI_C, CoinBuyButton) == 0x000270, "Member 'UMapPreviewUI_C::CoinBuyButton' has a wrong offset!");
-static_assert(offsetof(UMapPreviewUI_C, Image_124) == 0x000278, "Member 'UMapPreviewUI_C::Image_124' has a wrong offset!");
-static_assert(offsetof(UMapPreviewUI_C, LoadingBar) == 0x000280, "Member 'UMapPreviewUI_C::LoadingBar' has a wrong offset!");
-static_assert(offsetof(UMapPreviewUI_C, mediaImage) == 0x000288, "Member 'UMapPreviewUI_C::mediaImage' has a wrong offset!");
-static_assert(offsetof(UMapPreviewUI_C, PreviewMapButton) == 0x000290, "Member 'UMapPreviewUI_C::PreviewMapButton' has a wrong offset!");
-static_assert(offsetof(UMapPreviewUI_C, TextBlock_4) == 0x000298, "Member 'UMapPreviewUI_C::TextBlock_4' has a wrong offset!");
-static_assert(offsetof(UMapPreviewUI_C, TextBlock_330) == 0x0002A0, "Member 'UMapPreviewUI_C::TextBlock_330' has a wrong offset!");
-static_assert(offsetof(UMapPreviewUI_C, Vignette) == 0x0002A8, "Member 'UMapPreviewUI_C::Vignette' has a wrong offset!");
-static_assert(offsetof(UMapPreviewUI_C, MediaPlayer) == 0x0002B0, "Member 'UMapPreviewUI_C::MediaPlayer' has a wrong offset!");
-static_assert(offsetof(UMapPreviewUI_C, MapInfo) == 0x0002B8, "Member 'UMapPreviewUI_C::MapInfo' has a wrong offset!");
-static_assert(offsetof(UMapPreviewUI_C, Parent) == 0x0002C0, "Member 'UMapPreviewUI_C::Parent' has a wrong offset!");
-static_assert(offsetof(UMapPreviewUI_C, SalePrice) == 0x0002C8, "Member 'UMapPreviewUI_C::SalePrice' has a wrong offset!");
+DUMPER7_ASSERTS_UMapPreviewUI_C;
 
 }
 

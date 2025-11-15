@@ -17,8 +17,8 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GuardInterface.GuardInterface_C
-// 0x0000 (0x0028 - 0x0028)
-class IGuardInterface_C final : public IInterface
+// 0x0000 (0x0000 - 0x0000)
+class IGuardInterface_C final
 {
 public:
 	void FindNearestGuardAsActor(class AActor* GuardActor, float Distance);
@@ -26,15 +26,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GuardInterface_C">();
+		BP_STATIC_CLASS_IMPL("GuardInterface_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GuardInterface_C")
 	}
 	static class IGuardInterface_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<IGuardInterface_C>();
 	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
 };
-static_assert(alignof(IGuardInterface_C) == 0x000008, "Wrong alignment on IGuardInterface_C");
-static_assert(sizeof(IGuardInterface_C) == 0x000028, "Wrong size on IGuardInterface_C");
+DUMPER7_ASSERTS_IGuardInterface_C;
 
 }
 

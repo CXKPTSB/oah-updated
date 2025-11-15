@@ -62,41 +62,7 @@ public:
 	float                                         CallFunc_FClamp_ReturnValue;                       // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue_1;             // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Lock_pick_C_ExecuteUbergraph_Lock_pick) == 0x000008, "Wrong alignment on Lock_pick_C_ExecuteUbergraph_Lock_pick");
-static_assert(sizeof(Lock_pick_C_ExecuteUbergraph_Lock_pick) == 0x0000C0, "Wrong size on Lock_pick_C_ExecuteUbergraph_Lock_pick");
-static_assert(offsetof(Lock_pick_C_ExecuteUbergraph_Lock_pick, EntryPoint) == 0x000000, "Member 'Lock_pick_C_ExecuteUbergraph_Lock_pick::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Lock_pick_C_ExecuteUbergraph_Lock_pick, CallFunc_GetOwner_ReturnValue) == 0x000008, "Member 'Lock_pick_C_ExecuteUbergraph_Lock_pick::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Lock_pick_C_ExecuteUbergraph_Lock_pick, K2Node_DynamicCast_AsPlayer_Character) == 0x000010, "Member 'Lock_pick_C_ExecuteUbergraph_Lock_pick::K2Node_DynamicCast_AsPlayer_Character' has a wrong offset!");
-static_assert(offsetof(Lock_pick_C_ExecuteUbergraph_Lock_pick, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'Lock_pick_C_ExecuteUbergraph_Lock_pick::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Lock_pick_C_ExecuteUbergraph_Lock_pick, K2Node_CustomEvent_Player) == 0x000020, "Member 'Lock_pick_C_ExecuteUbergraph_Lock_pick::K2Node_CustomEvent_Player' has a wrong offset!");
-static_assert(offsetof(Lock_pick_C_ExecuteUbergraph_Lock_pick, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'Lock_pick_C_ExecuteUbergraph_Lock_pick::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Lock_pick_C_ExecuteUbergraph_Lock_pick, CallFunc_GetOwner_ReturnValue_1) == 0x000030, "Member 'Lock_pick_C_ExecuteUbergraph_Lock_pick::CallFunc_GetOwner_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Lock_pick_C_ExecuteUbergraph_Lock_pick, CallFunc_Create_ReturnValue) == 0x000038, "Member 'Lock_pick_C_ExecuteUbergraph_Lock_pick::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Lock_pick_C_ExecuteUbergraph_Lock_pick, K2Node_DynamicCast_AsPlayer_Character_1) == 0x000040, "Member 'Lock_pick_C_ExecuteUbergraph_Lock_pick::K2Node_DynamicCast_AsPlayer_Character_1' has a wrong offset!");
-static_assert(offsetof(Lock_pick_C_ExecuteUbergraph_Lock_pick, K2Node_DynamicCast_bSuccess_1) == 0x000048, "Member 'Lock_pick_C_ExecuteUbergraph_Lock_pick::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(Lock_pick_C_ExecuteUbergraph_Lock_pick, CallFunc_IsLocallyControlled_ReturnValue) == 0x000049, "Member 'Lock_pick_C_ExecuteUbergraph_Lock_pick::CallFunc_IsLocallyControlled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Lock_pick_C_ExecuteUbergraph_Lock_pick, CallFunc_GetOwner_ReturnValue_2) == 0x000050, "Member 'Lock_pick_C_ExecuteUbergraph_Lock_pick::CallFunc_GetOwner_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Lock_pick_C_ExecuteUbergraph_Lock_pick, K2Node_DynamicCast_AsPlayer_Character_2) == 0x000058, "Member 'Lock_pick_C_ExecuteUbergraph_Lock_pick::K2Node_DynamicCast_AsPlayer_Character_2' has a wrong offset!");
-static_assert(offsetof(Lock_pick_C_ExecuteUbergraph_Lock_pick, K2Node_DynamicCast_bSuccess_2) == 0x000060, "Member 'Lock_pick_C_ExecuteUbergraph_Lock_pick::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(Lock_pick_C_ExecuteUbergraph_Lock_pick, CallFunc_BreakRotator_Roll) == 0x000064, "Member 'Lock_pick_C_ExecuteUbergraph_Lock_pick::CallFunc_BreakRotator_Roll' has a wrong offset!");
-static_assert(offsetof(Lock_pick_C_ExecuteUbergraph_Lock_pick, CallFunc_BreakRotator_Pitch) == 0x000068, "Member 'Lock_pick_C_ExecuteUbergraph_Lock_pick::CallFunc_BreakRotator_Pitch' has a wrong offset!");
-static_assert(offsetof(Lock_pick_C_ExecuteUbergraph_Lock_pick, CallFunc_BreakRotator_Yaw) == 0x00006C, "Member 'Lock_pick_C_ExecuteUbergraph_Lock_pick::CallFunc_BreakRotator_Yaw' has a wrong offset!");
-static_assert(offsetof(Lock_pick_C_ExecuteUbergraph_Lock_pick, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x000070, "Member 'Lock_pick_C_ExecuteUbergraph_Lock_pick::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Lock_pick_C_ExecuteUbergraph_Lock_pick, CallFunc_Add_FloatFloat_ReturnValue) == 0x000074, "Member 'Lock_pick_C_ExecuteUbergraph_Lock_pick::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Lock_pick_C_ExecuteUbergraph_Lock_pick, CallFunc_Abs_ReturnValue) == 0x000078, "Member 'Lock_pick_C_ExecuteUbergraph_Lock_pick::CallFunc_Abs_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Lock_pick_C_ExecuteUbergraph_Lock_pick, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x00007C, "Member 'Lock_pick_C_ExecuteUbergraph_Lock_pick::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Lock_pick_C_ExecuteUbergraph_Lock_pick, CallFunc_Abs_ReturnValue_1) == 0x000080, "Member 'Lock_pick_C_ExecuteUbergraph_Lock_pick::CallFunc_Abs_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Lock_pick_C_ExecuteUbergraph_Lock_pick, CallFunc_GetOwner_ReturnValue_3) == 0x000088, "Member 'Lock_pick_C_ExecuteUbergraph_Lock_pick::CallFunc_GetOwner_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Lock_pick_C_ExecuteUbergraph_Lock_pick, K2Node_DynamicCast_AsPlayer_Character_3) == 0x000090, "Member 'Lock_pick_C_ExecuteUbergraph_Lock_pick::K2Node_DynamicCast_AsPlayer_Character_3' has a wrong offset!");
-static_assert(offsetof(Lock_pick_C_ExecuteUbergraph_Lock_pick, K2Node_DynamicCast_bSuccess_3) == 0x000098, "Member 'Lock_pick_C_ExecuteUbergraph_Lock_pick::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(Lock_pick_C_ExecuteUbergraph_Lock_pick, CallFunc_IsValid_ReturnValue_1) == 0x000099, "Member 'Lock_pick_C_ExecuteUbergraph_Lock_pick::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Lock_pick_C_ExecuteUbergraph_Lock_pick, CallFunc_IsLocallyControlled_ReturnValue_1) == 0x00009A, "Member 'Lock_pick_C_ExecuteUbergraph_Lock_pick::CallFunc_IsLocallyControlled_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Lock_pick_C_ExecuteUbergraph_Lock_pick, K2Node_CreateDelegate_OutputDelegate) == 0x00009C, "Member 'Lock_pick_C_ExecuteUbergraph_Lock_pick::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Lock_pick_C_ExecuteUbergraph_Lock_pick, CallFunc_IsValid_ReturnValue_2) == 0x0000AC, "Member 'Lock_pick_C_ExecuteUbergraph_Lock_pick::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Lock_pick_C_ExecuteUbergraph_Lock_pick, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0000B0, "Member 'Lock_pick_C_ExecuteUbergraph_Lock_pick::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Lock_pick_C_ExecuteUbergraph_Lock_pick, CallFunc_Divide_FloatFloat_ReturnValue) == 0x0000B4, "Member 'Lock_pick_C_ExecuteUbergraph_Lock_pick::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Lock_pick_C_ExecuteUbergraph_Lock_pick, CallFunc_FClamp_ReturnValue) == 0x0000B8, "Member 'Lock_pick_C_ExecuteUbergraph_Lock_pick::CallFunc_FClamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Lock_pick_C_ExecuteUbergraph_Lock_pick, CallFunc_Add_FloatFloat_ReturnValue_1) == 0x0000BC, "Member 'Lock_pick_C_ExecuteUbergraph_Lock_pick::CallFunc_Add_FloatFloat_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_Lock_pick_C_ExecuteUbergraph_Lock_pick;
 
 // Function Lock_pick.Lock_pick_C.ReleaseFromSpot
 // 0x0008 (0x0008 - 0x0000)
@@ -105,9 +71,7 @@ struct Lock_pick_C_ReleaseFromSpot final
 public:
 	class AActor*                                 Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Lock_pick_C_ReleaseFromSpot) == 0x000008, "Wrong alignment on Lock_pick_C_ReleaseFromSpot");
-static_assert(sizeof(Lock_pick_C_ReleaseFromSpot) == 0x000008, "Wrong size on Lock_pick_C_ReleaseFromSpot");
-static_assert(offsetof(Lock_pick_C_ReleaseFromSpot, Player) == 0x000000, "Member 'Lock_pick_C_ReleaseFromSpot::Player' has a wrong offset!");
+DUMPER7_ASSERTS_Lock_pick_C_ReleaseFromSpot;
 
 }
 

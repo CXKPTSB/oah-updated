@@ -23,15 +23,18 @@ class USkill_Regen_Tier2_C final : public USkill_Regen_Tier1_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Skill_Regen_Tier2_C">();
+		BP_STATIC_CLASS_IMPL("Skill_Regen_Tier2_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Skill_Regen_Tier2_C")
 	}
 	static class USkill_Regen_Tier2_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USkill_Regen_Tier2_C>();
 	}
 };
-static_assert(alignof(USkill_Regen_Tier2_C) == 0x000008, "Wrong alignment on USkill_Regen_Tier2_C");
-static_assert(sizeof(USkill_Regen_Tier2_C) == 0x0000E0, "Wrong size on USkill_Regen_Tier2_C");
+DUMPER7_ASSERTS_USkill_Regen_Tier2_C;
 
 }
 

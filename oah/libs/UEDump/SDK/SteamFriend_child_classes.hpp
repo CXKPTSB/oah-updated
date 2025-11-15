@@ -47,23 +47,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SteamFriend_child_C">();
+		BP_STATIC_CLASS_IMPL("SteamFriend_child_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamFriend_child_C")
 	}
 	static class USteamFriend_child_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamFriend_child_C>();
 	}
 };
-static_assert(alignof(USteamFriend_child_C) == 0x000008, "Wrong alignment on USteamFriend_child_C");
-static_assert(sizeof(USteamFriend_child_C) == 0x000300, "Wrong size on USteamFriend_child_C");
-static_assert(offsetof(USteamFriend_child_C, UberGraphFrame) == 0x000260, "Member 'USteamFriend_child_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USteamFriend_child_C, HoverName) == 0x000268, "Member 'USteamFriend_child_C::HoverName' has a wrong offset!");
-static_assert(offsetof(USteamFriend_child_C, Button_238) == 0x000270, "Member 'USteamFriend_child_C::Button_238' has a wrong offset!");
-static_assert(offsetof(USteamFriend_child_C, Friendimage) == 0x000278, "Member 'USteamFriend_child_C::Friendimage' has a wrong offset!");
-static_assert(offsetof(USteamFriend_child_C, FriendName) == 0x000280, "Member 'USteamFriend_child_C::FriendName' has a wrong offset!");
-static_assert(offsetof(USteamFriend_child_C, TextBlock_348) == 0x000288, "Member 'USteamFriend_child_C::TextBlock_348' has a wrong offset!");
-static_assert(offsetof(USteamFriend_child_C, FriendInfo) == 0x000290, "Member 'USteamFriend_child_C::FriendInfo' has a wrong offset!");
-static_assert(offsetof(USteamFriend_child_C, FriendID) == 0x0002F8, "Member 'USteamFriend_child_C::FriendID' has a wrong offset!");
+DUMPER7_ASSERTS_USteamFriend_child_C;
 
 }
 

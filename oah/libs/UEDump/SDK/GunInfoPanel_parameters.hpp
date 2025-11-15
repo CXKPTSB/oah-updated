@@ -45,32 +45,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel) == 0x000008, "Wrong alignment on GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel");
-static_assert(sizeof(GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel) == 0x000070, "Wrong size on GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel");
-static_assert(offsetof(GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel, EntryPoint) == 0x000000, "Member 'GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel, Temp_int_Array_Index_Variable) == 0x000004, "Member 'GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000014, "Member 'GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel, CallFunc_GetThisGunStats_Zoom) == 0x000018, "Member 'GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel::CallFunc_GetThisGunStats_Zoom' has a wrong offset!");
-static_assert(offsetof(GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel, CallFunc_GetThisGunStats_Recoil) == 0x00001C, "Member 'GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel::CallFunc_GetThisGunStats_Recoil' has a wrong offset!");
-static_assert(offsetof(GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel, CallFunc_GetThisGunStats_Accuracy) == 0x000020, "Member 'GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel::CallFunc_GetThisGunStats_Accuracy' has a wrong offset!");
-static_assert(offsetof(GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel, CallFunc_GetThisGunStats_Reload_time) == 0x000024, "Member 'GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel::CallFunc_GetThisGunStats_Reload_time' has a wrong offset!");
-static_assert(offsetof(GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel, CallFunc_GetThisGunStats_Damage) == 0x000028, "Member 'GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel::CallFunc_GetThisGunStats_Damage' has a wrong offset!");
-static_assert(offsetof(GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel, CallFunc_GetThisGunStats_Bullets) == 0x00002C, "Member 'GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel::CallFunc_GetThisGunStats_Bullets' has a wrong offset!");
-static_assert(offsetof(GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000030, "Member 'GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel, K2Node_Event_Accuracy) == 0x000034, "Member 'GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel::K2Node_Event_Accuracy' has a wrong offset!");
-static_assert(offsetof(GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel, K2Node_Event_Capacity) == 0x000038, "Member 'GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel::K2Node_Event_Capacity' has a wrong offset!");
-static_assert(offsetof(GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel, K2Node_Event_Damage) == 0x00003C, "Member 'GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel::K2Node_Event_Damage' has a wrong offset!");
-static_assert(offsetof(GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel, K2Node_Event_Firerate) == 0x000040, "Member 'GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel::K2Node_Event_Firerate' has a wrong offset!");
-static_assert(offsetof(GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel, K2Node_Event_Recoil) == 0x000044, "Member 'GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel::K2Node_Event_Recoil' has a wrong offset!");
-static_assert(offsetof(GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel, K2Node_Event_ReloadTime) == 0x000048, "Member 'GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel::K2Node_Event_ReloadTime' has a wrong offset!");
-static_assert(offsetof(GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x00004C, "Member 'GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel, CallFunc_GetAllWidgetsOfClass_FoundWidgets) == 0x000050, "Member 'GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel::CallFunc_GetAllWidgetsOfClass_FoundWidgets' has a wrong offset!");
-static_assert(offsetof(GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel, CallFunc_Array_Get_Item) == 0x000060, "Member 'GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel, CallFunc_Array_Length_ReturnValue) == 0x000068, "Member 'GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel, CallFunc_Less_IntInt_ReturnValue) == 0x00006C, "Member 'GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GunInfoPanel_C_ExecuteUbergraph_GunInfoPanel;
 
 // Function GunInfoPanel.GunInfoPanel_C.CompareStats
 // 0x0018 (0x0018 - 0x0000)
@@ -84,14 +59,7 @@ public:
 	float                                         Recoil_0;                                          // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         ReloadTime_0;                                      // 0x0014(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GunInfoPanel_C_CompareStats) == 0x000004, "Wrong alignment on GunInfoPanel_C_CompareStats");
-static_assert(sizeof(GunInfoPanel_C_CompareStats) == 0x000018, "Wrong size on GunInfoPanel_C_CompareStats");
-static_assert(offsetof(GunInfoPanel_C_CompareStats, Accuracy_0) == 0x000000, "Member 'GunInfoPanel_C_CompareStats::Accuracy_0' has a wrong offset!");
-static_assert(offsetof(GunInfoPanel_C_CompareStats, Capacity_0) == 0x000004, "Member 'GunInfoPanel_C_CompareStats::Capacity_0' has a wrong offset!");
-static_assert(offsetof(GunInfoPanel_C_CompareStats, Damage_0) == 0x000008, "Member 'GunInfoPanel_C_CompareStats::Damage_0' has a wrong offset!");
-static_assert(offsetof(GunInfoPanel_C_CompareStats, Firerate_0) == 0x00000C, "Member 'GunInfoPanel_C_CompareStats::Firerate_0' has a wrong offset!");
-static_assert(offsetof(GunInfoPanel_C_CompareStats, Recoil_0) == 0x000010, "Member 'GunInfoPanel_C_CompareStats::Recoil_0' has a wrong offset!");
-static_assert(offsetof(GunInfoPanel_C_CompareStats, ReloadTime_0) == 0x000014, "Member 'GunInfoPanel_C_CompareStats::ReloadTime_0' has a wrong offset!");
+DUMPER7_ASSERTS_GunInfoPanel_C_CompareStats;
 
 }
 

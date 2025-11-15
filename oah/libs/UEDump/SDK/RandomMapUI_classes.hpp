@@ -35,18 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RandomMapUI_C">();
+		BP_STATIC_CLASS_IMPL("RandomMapUI_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RandomMapUI_C")
 	}
 	static class URandomMapUI_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URandomMapUI_C>();
 	}
 };
-static_assert(alignof(URandomMapUI_C) == 0x000008, "Wrong alignment on URandomMapUI_C");
-static_assert(sizeof(URandomMapUI_C) == 0x000278, "Wrong size on URandomMapUI_C");
-static_assert(offsetof(URandomMapUI_C, UberGraphFrame) == 0x000260, "Member 'URandomMapUI_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(URandomMapUI_C, Hover) == 0x000268, "Member 'URandomMapUI_C::Hover' has a wrong offset!");
-static_assert(offsetof(URandomMapUI_C, Button_56) == 0x000270, "Member 'URandomMapUI_C::Button_56' has a wrong offset!");
+DUMPER7_ASSERTS_URandomMapUI_C;
 
 }
 

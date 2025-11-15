@@ -45,27 +45,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ConcreteBreaker_C">();
+		BP_STATIC_CLASS_IMPL("ConcreteBreaker_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ConcreteBreaker_C")
 	}
 	static class AConcreteBreaker_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AConcreteBreaker_C>();
 	}
 };
-static_assert(alignof(AConcreteBreaker_C) == 0x000008, "Wrong alignment on AConcreteBreaker_C");
-static_assert(sizeof(AConcreteBreaker_C) == 0x0002B8, "Wrong size on AConcreteBreaker_C");
-static_assert(offsetof(AConcreteBreaker_C, UberGraphFrame_ConcreteBreaker_C) == 0x000258, "Member 'AConcreteBreaker_C::UberGraphFrame_ConcreteBreaker_C' has a wrong offset!");
-static_assert(offsetof(AConcreteBreaker_C, HighlightInRangeComponent) == 0x000260, "Member 'AConcreteBreaker_C::HighlightInRangeComponent' has a wrong offset!");
-static_assert(offsetof(AConcreteBreaker_C, DrillSound) == 0x000268, "Member 'AConcreteBreaker_C::DrillSound' has a wrong offset!");
-static_assert(offsetof(AConcreteBreaker_C, Drill_Drill3) == 0x000270, "Member 'AConcreteBreaker_C::Drill_Drill3' has a wrong offset!");
-static_assert(offsetof(AConcreteBreaker_C, Drill_Drill2) == 0x000278, "Member 'AConcreteBreaker_C::Drill_Drill2' has a wrong offset!");
-static_assert(offsetof(AConcreteBreaker_C, Drill_Drill1) == 0x000280, "Member 'AConcreteBreaker_C::Drill_Drill1' has a wrong offset!");
-static_assert(offsetof(AConcreteBreaker_C, Arrow) == 0x000288, "Member 'AConcreteBreaker_C::Arrow' has a wrong offset!");
-static_assert(offsetof(AConcreteBreaker_C, ParticleSystem) == 0x000290, "Member 'AConcreteBreaker_C::ParticleSystem' has a wrong offset!");
-static_assert(offsetof(AConcreteBreaker_C, AlertComponent) == 0x000298, "Member 'AConcreteBreaker_C::AlertComponent' has a wrong offset!");
-static_assert(offsetof(AConcreteBreaker_C, HighlightWhenHolding) == 0x0002A0, "Member 'AConcreteBreaker_C::HighlightWhenHolding' has a wrong offset!");
-static_assert(offsetof(AConcreteBreaker_C, SusItemComponent) == 0x0002A8, "Member 'AConcreteBreaker_C::SusItemComponent' has a wrong offset!");
-static_assert(offsetof(AConcreteBreaker_C, ToolComponent) == 0x0002B0, "Member 'AConcreteBreaker_C::ToolComponent' has a wrong offset!");
+DUMPER7_ASSERTS_AConcreteBreaker_C;
 
 }
 

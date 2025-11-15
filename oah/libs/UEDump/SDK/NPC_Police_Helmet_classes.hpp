@@ -21,24 +21,24 @@ namespace SDK
 class ANPC_Police_Helmet_C final : public ANPC_Police_base_C
 {
 public:
-	uint8                                         Pad_5F1[0x7];                                      // 0x05F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UChildActorComponent*                   Helmet;                                            // 0x05F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0600(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"NPC_Police_Helmet_C">();
+		BP_STATIC_CLASS_IMPL("NPC_Police_Helmet_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NPC_Police_Helmet_C")
 	}
 	static class ANPC_Police_Helmet_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ANPC_Police_Helmet_C>();
 	}
 };
-static_assert(alignof(ANPC_Police_Helmet_C) == 0x000010, "Wrong alignment on ANPC_Police_Helmet_C");
-static_assert(sizeof(ANPC_Police_Helmet_C) == 0x000610, "Wrong size on ANPC_Police_Helmet_C");
-static_assert(offsetof(ANPC_Police_Helmet_C, Helmet) == 0x0005F8, "Member 'ANPC_Police_Helmet_C::Helmet' has a wrong offset!");
-static_assert(offsetof(ANPC_Police_Helmet_C, StaticMesh) == 0x000600, "Member 'ANPC_Police_Helmet_C::StaticMesh' has a wrong offset!");
+DUMPER7_ASSERTS_ANPC_Police_Helmet_C;
 
 }
 

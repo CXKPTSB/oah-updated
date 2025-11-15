@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MainMenuGM_C">();
+		BP_STATIC_CLASS_IMPL("MainMenuGM_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MainMenuGM_C")
 	}
 	static class AMainMenuGM_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMainMenuGM_C>();
 	}
 };
-static_assert(alignof(AMainMenuGM_C) == 0x000008, "Wrong alignment on AMainMenuGM_C");
-static_assert(sizeof(AMainMenuGM_C) == 0x0002C8, "Wrong size on AMainMenuGM_C");
-static_assert(offsetof(AMainMenuGM_C, DefaultSceneRoot) == 0x0002C0, "Member 'AMainMenuGM_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_AMainMenuGM_C;
 
 }
 

@@ -23,15 +23,18 @@ class AAttachment_Barrel_muzzleBrake_Large_C final : public AAttachment_Barrel_b
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Attachment_Barrel_muzzleBrake_Large_C">();
+		BP_STATIC_CLASS_IMPL("Attachment_Barrel_muzzleBrake_Large_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Attachment_Barrel_muzzleBrake_Large_C")
 	}
 	static class AAttachment_Barrel_muzzleBrake_Large_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAttachment_Barrel_muzzleBrake_Large_C>();
 	}
 };
-static_assert(alignof(AAttachment_Barrel_muzzleBrake_Large_C) == 0x000008, "Wrong alignment on AAttachment_Barrel_muzzleBrake_Large_C");
-static_assert(sizeof(AAttachment_Barrel_muzzleBrake_Large_C) == 0x000260, "Wrong size on AAttachment_Barrel_muzzleBrake_Large_C");
+DUMPER7_ASSERTS_AAttachment_Barrel_muzzleBrake_Large_C;
 
 }
 

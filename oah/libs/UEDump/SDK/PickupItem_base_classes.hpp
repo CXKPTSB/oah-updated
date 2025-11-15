@@ -40,20 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PickupItem_base_C">();
+		BP_STATIC_CLASS_IMPL("PickupItem_base_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PickupItem_base_C")
 	}
 	static class APickupItem_base_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APickupItem_base_C>();
 	}
 };
-static_assert(alignof(APickupItem_base_C) == 0x000008, "Wrong alignment on APickupItem_base_C");
-static_assert(sizeof(APickupItem_base_C) == 0x000258, "Wrong size on APickupItem_base_C");
-static_assert(offsetof(APickupItem_base_C, UberGraphFrame) == 0x000230, "Member 'APickupItem_base_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(APickupItem_base_C, DuffelbagStuckComponent) == 0x000238, "Member 'APickupItem_base_C::DuffelbagStuckComponent' has a wrong offset!");
-static_assert(offsetof(APickupItem_base_C, LookatInfoComponent) == 0x000240, "Member 'APickupItem_base_C::LookatInfoComponent' has a wrong offset!");
-static_assert(offsetof(APickupItem_base_C, PickupItemComponent) == 0x000248, "Member 'APickupItem_base_C::PickupItemComponent' has a wrong offset!");
-static_assert(offsetof(APickupItem_base_C, SmoothSync) == 0x000250, "Member 'APickupItem_base_C::SmoothSync' has a wrong offset!");
+DUMPER7_ASSERTS_APickupItem_base_C;
 
 }
 

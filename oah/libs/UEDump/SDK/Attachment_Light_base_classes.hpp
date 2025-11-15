@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "AttachmentBase_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -34,17 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Attachment_Light_base_C">();
+		BP_STATIC_CLASS_IMPL("Attachment_Light_base_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Attachment_Light_base_C")
 	}
 	static class AAttachment_Light_base_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAttachment_Light_base_C>();
 	}
 };
-static_assert(alignof(AAttachment_Light_base_C) == 0x000008, "Wrong alignment on AAttachment_Light_base_C");
-static_assert(sizeof(AAttachment_Light_base_C) == 0x000260, "Wrong size on AAttachment_Light_base_C");
-static_assert(offsetof(AAttachment_Light_base_C, UberGraphFrame) == 0x000250, "Member 'AAttachment_Light_base_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AAttachment_Light_base_C, ToggleSound) == 0x000258, "Member 'AAttachment_Light_base_C::ToggleSound' has a wrong offset!");
+DUMPER7_ASSERTS_AAttachment_Light_base_C;
 
 }
 

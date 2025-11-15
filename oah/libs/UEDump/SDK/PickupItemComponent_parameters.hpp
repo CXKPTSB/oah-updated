@@ -57,7 +57,7 @@ public:
 	class AActor*                                 K2Node_CustomEvent_OtherActor_1;                   // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IPoliceTargetInterface_C> K2Node_DynamicCast_AsPolice_Target_Interface;      // 0x00A8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TScriptInterface<class IPoliceTargetInterface_C> K2Node_DynamicCast_AsPolice_Target_Interface;   // 0x00A8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_CheckHoldingItemInterfaceCall_HoldingItem; // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -87,7 +87,7 @@ public:
 	bool                                          CallFunc_DoesImplementInterface_ReturnValue_3;     // 0x01C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1C9[0x7];                                      // 0x01C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_GetOwner_ReturnValue_7;                   // 0x01D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IPoliceTargetInterface_C> K2Node_DynamicCast_AsPolice_Target_Interface_1;    // 0x01D8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TScriptInterface<class IPoliceTargetInterface_C> K2Node_DynamicCast_AsPolice_Target_Interface_1; // 0x01D8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x01E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_DoesImplementInterface_ReturnValue_4;     // 0x01E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1EA[0x6];                                      // 0x01EA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
@@ -132,13 +132,13 @@ public:
 	float                                         CallFunc_VSize_ReturnValue_2;                      // 0x02B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_FloatFloat_ReturnValue_1;            // 0x02BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2BD[0x3];                                      // 0x02BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class AActor* SelfActor, class AActor* OtherActor, const struct FVector& NormalImpulse, const struct FHitResult& Hit)> K2Node_CreateDelegate_OutputDelegate;              // 0x02C0(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class AActor* SelfActor, class AActor* OtherActor, const struct FVector& NormalImpulse, const struct FHitResult& Hit)> K2Node_CreateDelegate_OutputDelegate; // 0x02C0(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_Less_FloatFloat_ReturnValue_2;            // 0x02D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2D1[0x7];                                      // 0x02D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_GetOwner_ReturnValue_12;                  // 0x02D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_DoesImplementInterface_ReturnValue_7;     // 0x02E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2E1[0x3];                                      // 0x02E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class AActor* OverlappedActor, class AActor* OtherActor)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x02E4(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class AActor* OverlappedActor, class AActor* OtherActor)> K2Node_CreateDelegate_OutputDelegate_1; // 0x02E4(0x0010)(ZeroConstructor, NoDestructor)
 	uint8                                         Pad_2F4[0x4];                                      // 0x02F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AStaticMeshActor*                       K2Node_DynamicCast_AsStatic_Mesh_Actor;            // 0x02F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0300(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -148,101 +148,7 @@ public:
 	class USoundBase*                             K2Node_Select_Default_1;                           // 0x0318(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0320(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent) == 0x000008, "Wrong alignment on PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent");
-static_assert(sizeof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent) == 0x000328, "Wrong size on PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, EntryPoint) == 0x000000, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::EntryPoint' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_GetOwner_ReturnValue) == 0x000008, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, Temp_bool_Has_Been_Initd_Variable) == 0x000010, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, Temp_bool_IsClosed_Variable) == 0x000011, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, Temp_bool_Has_Been_Initd_Variable_1) == 0x000012, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::Temp_bool_Has_Been_Initd_Variable_1' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, Temp_object_Variable) == 0x000018, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, Temp_bool_Variable) == 0x000020, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, Temp_int_Array_Index_Variable) == 0x000024, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, Temp_bool_IsClosed_Variable_1) == 0x000028, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::Temp_bool_IsClosed_Variable_1' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, Temp_bool_Has_Been_Initd_Variable_2) == 0x000029, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::Temp_bool_Has_Been_Initd_Variable_2' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, Temp_object_Variable_1) == 0x000030, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, K2Node_CustomEvent_Instigator) == 0x000038, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::K2Node_CustomEvent_Instigator' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_GetOwner_ReturnValue_1) == 0x000040, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_GetOwner_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_GetOwner_ReturnValue_2) == 0x000048, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_GetOwner_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_GetOverlappingActors_OverlappingActors) == 0x000050, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_GetOverlappingActors_OverlappingActors' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_GetOwner_ReturnValue_3) == 0x000060, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_GetOwner_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_Array_Get_Item) == 0x000068, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_DoesImplementInterface_ReturnValue) == 0x000070, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_DoesImplementInterface_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_GetComponentByClass_ReturnValue) == 0x000078, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_DoesImplementInterface_ReturnValue_1) == 0x000080, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_DoesImplementInterface_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_IsValid_ReturnValue) == 0x000081, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_CheckCanInteract_Can_interact) == 0x000082, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_CheckCanInteract_Can_interact' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_Array_Length_ReturnValue) == 0x000084, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_Array_Length_ReturnValue_1) == 0x000088, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, K2Node_CustomEvent_OverlappedActor) == 0x000090, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::K2Node_CustomEvent_OverlappedActor' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, K2Node_CustomEvent_OtherActor_1) == 0x000098, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::K2Node_CustomEvent_OtherActor_1' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_Greater_IntInt_ReturnValue) == 0x0000A0, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, K2Node_DynamicCast_AsPolice_Target_Interface) == 0x0000A8, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::K2Node_DynamicCast_AsPolice_Target_Interface' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, K2Node_DynamicCast_bSuccess) == 0x0000B8, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_CheckHoldingItemInterfaceCall_HoldingItem) == 0x0000C0, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_CheckHoldingItemInterfaceCall_HoldingItem' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_DoesImplementInterface_ReturnValue_2) == 0x0000C8, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_DoesImplementInterface_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_GetOwner_ReturnValue_4) == 0x0000D0, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_GetOwner_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x0000D8, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_GetComponentByClass_ReturnValue_1) == 0x0000E0, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_GetComponentByClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_IsValid_ReturnValue_1) == 0x0000E8, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_GetOwner_ReturnValue_5) == 0x0000F0, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_GetOwner_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, Temp_bool_IsClosed_Variable_2) == 0x0000F8, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::Temp_bool_IsClosed_Variable_2' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_GetComponentByClass_ReturnValue_2) == 0x000100, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_GetComponentByClass_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_IsValid_ReturnValue_2) == 0x000108, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_GetMass_ReturnValue) == 0x00010C, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_GetMass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000110, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, K2Node_CustomEvent_SelfActor) == 0x000118, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::K2Node_CustomEvent_SelfActor' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, K2Node_CustomEvent_OtherActor) == 0x000120, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::K2Node_CustomEvent_OtherActor' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, K2Node_CustomEvent_NormalImpulse) == 0x000128, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::K2Node_CustomEvent_NormalImpulse' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, K2Node_CustomEvent_Hit) == 0x000134, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::K2Node_CustomEvent_Hit' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_GetOwner_ReturnValue_6) == 0x0001C0, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_GetOwner_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_DoesImplementInterface_ReturnValue_3) == 0x0001C8, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_DoesImplementInterface_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_GetOwner_ReturnValue_7) == 0x0001D0, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_GetOwner_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, K2Node_DynamicCast_AsPolice_Target_Interface_1) == 0x0001D8, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::K2Node_DynamicCast_AsPolice_Target_Interface_1' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, K2Node_DynamicCast_bSuccess_1) == 0x0001E8, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_DoesImplementInterface_ReturnValue_4) == 0x0001E9, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_DoesImplementInterface_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_CheckHoldingItemInterfaceCall_HoldingItem_1) == 0x0001F0, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_CheckHoldingItemInterfaceCall_HoldingItem_1' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_GetVelocity_ReturnValue) == 0x0001F8, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_GetVelocity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_GetComponentByClass_ReturnValue_3) == 0x000208, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_GetComponentByClass_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_VSize_ReturnValue) == 0x000210, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_VSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_Less_FloatFloat_ReturnValue) == 0x000214, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_IsValid_ReturnValue_3) == 0x000215, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, Temp_int_Loop_Counter_Variable) == 0x000218, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_EqualEqual_ObjectObject_ReturnValue_1) == 0x00021C, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_EqualEqual_ObjectObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_Less_IntInt_ReturnValue) == 0x00021D, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_Add_IntInt_ReturnValue) == 0x000220, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, Temp_bool_Variable_1) == 0x000224, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_GetOwner_ReturnValue_8) == 0x000228, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_GetOwner_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_GetOwner_ReturnValue_9) == 0x000230, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_GetOwner_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_AddComponentByClass_ReturnValue) == 0x000238, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_AddComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_DoesImplementInterface_ReturnValue_5) == 0x000240, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_DoesImplementInterface_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_DoesImplementInterface_ReturnValue_6) == 0x000241, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_DoesImplementInterface_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_GetOwner_ReturnValue_10) == 0x000248, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_GetOwner_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_GetVelocity_ReturnValue_1) == 0x000250, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_GetVelocity_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_IsValid_ReturnValue_4) == 0x00025C, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_VSize_ReturnValue_1) == 0x000260, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_VSize_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000264, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, K2Node_CustomEvent_Normal_impulse) == 0x000270, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::K2Node_CustomEvent_Normal_impulse' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_GetOwner_ReturnValue_11) == 0x000280, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_GetOwner_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_IsValid_ReturnValue_5) == 0x000288, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_GetComponentByClass_ReturnValue_4) == 0x000290, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_GetComponentByClass_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_IsValid_ReturnValue_6) == 0x000298, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_IsValid_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_GetComponentBounds_Origin) == 0x00029C, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_GetComponentBounds_Origin' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_GetComponentBounds_BoxExtent) == 0x0002A8, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_GetComponentBounds_BoxExtent' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_GetComponentBounds_SphereRadius) == 0x0002B4, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_GetComponentBounds_SphereRadius' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_VSize_ReturnValue_2) == 0x0002B8, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_VSize_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_Less_FloatFloat_ReturnValue_1) == 0x0002BC, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_Less_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, K2Node_CreateDelegate_OutputDelegate) == 0x0002C0, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_Less_FloatFloat_ReturnValue_2) == 0x0002D0, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_Less_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_GetOwner_ReturnValue_12) == 0x0002D8, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_GetOwner_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_DoesImplementInterface_ReturnValue_7) == 0x0002E0, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_DoesImplementInterface_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, K2Node_CreateDelegate_OutputDelegate_1) == 0x0002E4, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, K2Node_DynamicCast_AsStatic_Mesh_Actor) == 0x0002F8, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::K2Node_DynamicCast_AsStatic_Mesh_Actor' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, K2Node_DynamicCast_bSuccess_2) == 0x000300, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, Temp_object_Variable_2) == 0x000308, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::Temp_object_Variable_2' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, K2Node_Select_Default) == 0x000310, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, K2Node_Select_Default_1) == 0x000318, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000320, "Member 'PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PickupItemComponent_C_ExecuteUbergraph_PickupItemComponent;
 
 // Function PickupItemComponent.PickupItemComponent_C.ImpactSound
 // 0x000C (0x000C - 0x0000)
@@ -251,9 +157,7 @@ struct PickupItemComponent_C_ImpactSound final
 public:
 	struct FVector                                Normal_impulse;                                    // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PickupItemComponent_C_ImpactSound) == 0x000004, "Wrong alignment on PickupItemComponent_C_ImpactSound");
-static_assert(sizeof(PickupItemComponent_C_ImpactSound) == 0x00000C, "Wrong size on PickupItemComponent_C_ImpactSound");
-static_assert(offsetof(PickupItemComponent_C_ImpactSound, Normal_impulse) == 0x000000, "Member 'PickupItemComponent_C_ImpactSound::Normal_impulse' has a wrong offset!");
+DUMPER7_ASSERTS_PickupItemComponent_C_ImpactSound;
 
 // Function PickupItemComponent.PickupItemComponent_C.OnHit
 // 0x00A8 (0x00A8 - 0x0000)
@@ -265,12 +169,7 @@ public:
 	struct FVector                                NormalImpulse;                                     // 0x0010(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x001C(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(PickupItemComponent_C_OnHit) == 0x000008, "Wrong alignment on PickupItemComponent_C_OnHit");
-static_assert(sizeof(PickupItemComponent_C_OnHit) == 0x0000A8, "Wrong size on PickupItemComponent_C_OnHit");
-static_assert(offsetof(PickupItemComponent_C_OnHit, SelfActor) == 0x000000, "Member 'PickupItemComponent_C_OnHit::SelfActor' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_OnHit, OtherActor) == 0x000008, "Member 'PickupItemComponent_C_OnHit::OtherActor' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_OnHit, NormalImpulse) == 0x000010, "Member 'PickupItemComponent_C_OnHit::NormalImpulse' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_OnHit, Hit) == 0x00001C, "Member 'PickupItemComponent_C_OnHit::Hit' has a wrong offset!");
+DUMPER7_ASSERTS_PickupItemComponent_C_OnHit;
 
 // Function PickupItemComponent.PickupItemComponent_C.EndOverlap
 // 0x0010 (0x0010 - 0x0000)
@@ -280,10 +179,7 @@ public:
 	class AActor*                                 OverlappedActor;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PickupItemComponent_C_EndOverlap) == 0x000008, "Wrong alignment on PickupItemComponent_C_EndOverlap");
-static_assert(sizeof(PickupItemComponent_C_EndOverlap) == 0x000010, "Wrong size on PickupItemComponent_C_EndOverlap");
-static_assert(offsetof(PickupItemComponent_C_EndOverlap, OverlappedActor) == 0x000000, "Member 'PickupItemComponent_C_EndOverlap::OverlappedActor' has a wrong offset!");
-static_assert(offsetof(PickupItemComponent_C_EndOverlap, OtherActor) == 0x000008, "Member 'PickupItemComponent_C_EndOverlap::OtherActor' has a wrong offset!");
+DUMPER7_ASSERTS_PickupItemComponent_C_EndOverlap;
 
 // Function PickupItemComponent.PickupItemComponent_C.InteractHoldingEvent
 // 0x0008 (0x0008 - 0x0000)
@@ -292,9 +188,7 @@ struct PickupItemComponent_C_InteractHoldingEvent final
 public:
 	class AActor*                                 Instigator;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PickupItemComponent_C_InteractHoldingEvent) == 0x000008, "Wrong alignment on PickupItemComponent_C_InteractHoldingEvent");
-static_assert(sizeof(PickupItemComponent_C_InteractHoldingEvent) == 0x000008, "Wrong size on PickupItemComponent_C_InteractHoldingEvent");
-static_assert(offsetof(PickupItemComponent_C_InteractHoldingEvent, Instigator) == 0x000000, "Member 'PickupItemComponent_C_InteractHoldingEvent::Instigator' has a wrong offset!");
+DUMPER7_ASSERTS_PickupItemComponent_C_InteractHoldingEvent;
 
 }
 

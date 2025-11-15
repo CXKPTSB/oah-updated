@@ -28,18 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MenuShelf_base_C">();
+		BP_STATIC_CLASS_IMPL("MenuShelf_base_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MenuShelf_base_C")
 	}
 	static class AMenuShelf_base_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMenuShelf_base_C>();
 	}
 };
-static_assert(alignof(AMenuShelf_base_C) == 0x000008, "Wrong alignment on AMenuShelf_base_C");
-static_assert(sizeof(AMenuShelf_base_C) == 0x000238, "Wrong size on AMenuShelf_base_C");
-static_assert(offsetof(AMenuShelf_base_C, Arrow) == 0x000220, "Member 'AMenuShelf_base_C::Arrow' has a wrong offset!");
-static_assert(offsetof(AMenuShelf_base_C, StaticMesh) == 0x000228, "Member 'AMenuShelf_base_C::StaticMesh' has a wrong offset!");
-static_assert(offsetof(AMenuShelf_base_C, DefaultSceneRoot) == 0x000230, "Member 'AMenuShelf_base_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_AMenuShelf_base_C;
 
 }
 

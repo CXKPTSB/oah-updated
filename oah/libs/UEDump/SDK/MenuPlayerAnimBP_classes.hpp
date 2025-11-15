@@ -45,26 +45,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"menuPlayerAnimBP_C">();
+		BP_STATIC_CLASS_IMPL("menuPlayerAnimBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"menuPlayerAnimBP_C")
 	}
 	static class UmenuPlayerAnimBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UmenuPlayerAnimBP_C>();
 	}
 };
-static_assert(alignof(UmenuPlayerAnimBP_C) == 0x000010, "Wrong alignment on UmenuPlayerAnimBP_C");
-static_assert(sizeof(UmenuPlayerAnimBP_C) == 0x000570, "Wrong size on UmenuPlayerAnimBP_C");
-static_assert(offsetof(UmenuPlayerAnimBP_C, UberGraphFrame) == 0x0002C0, "Member 'UmenuPlayerAnimBP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UmenuPlayerAnimBP_C, AnimGraphNode_Root) == 0x0002C8, "Member 'UmenuPlayerAnimBP_C::AnimGraphNode_Root' has a wrong offset!");
-static_assert(offsetof(UmenuPlayerAnimBP_C, AnimGraphNode_TransitionResult_1) == 0x0002F8, "Member 'UmenuPlayerAnimBP_C::AnimGraphNode_TransitionResult_1' has a wrong offset!");
-static_assert(offsetof(UmenuPlayerAnimBP_C, AnimGraphNode_TransitionResult) == 0x000320, "Member 'UmenuPlayerAnimBP_C::AnimGraphNode_TransitionResult' has a wrong offset!");
-static_assert(offsetof(UmenuPlayerAnimBP_C, AnimGraphNode_SequencePlayer_1) == 0x000348, "Member 'UmenuPlayerAnimBP_C::AnimGraphNode_SequencePlayer_1' has a wrong offset!");
-static_assert(offsetof(UmenuPlayerAnimBP_C, AnimGraphNode_StateResult_1) == 0x0003C8, "Member 'UmenuPlayerAnimBP_C::AnimGraphNode_StateResult_1' has a wrong offset!");
-static_assert(offsetof(UmenuPlayerAnimBP_C, AnimGraphNode_SequencePlayer) == 0x0003F8, "Member 'UmenuPlayerAnimBP_C::AnimGraphNode_SequencePlayer' has a wrong offset!");
-static_assert(offsetof(UmenuPlayerAnimBP_C, AnimGraphNode_StateResult) == 0x000478, "Member 'UmenuPlayerAnimBP_C::AnimGraphNode_StateResult' has a wrong offset!");
-static_assert(offsetof(UmenuPlayerAnimBP_C, AnimGraphNode_StateMachine) == 0x0004A8, "Member 'UmenuPlayerAnimBP_C::AnimGraphNode_StateMachine' has a wrong offset!");
-static_assert(offsetof(UmenuPlayerAnimBP_C, Emoting_) == 0x000558, "Member 'UmenuPlayerAnimBP_C::Emoting_' has a wrong offset!");
-static_assert(offsetof(UmenuPlayerAnimBP_C, Emote_Anim) == 0x000560, "Member 'UmenuPlayerAnimBP_C::Emote_Anim' has a wrong offset!");
+DUMPER7_ASSERTS_UmenuPlayerAnimBP_C;
 
 }
 

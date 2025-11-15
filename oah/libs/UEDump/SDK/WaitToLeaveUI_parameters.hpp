@@ -30,15 +30,7 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WaitToLeaveUI_C_ExecuteUbergraph_WaitToLeaveUI) == 0x000008, "Wrong alignment on WaitToLeaveUI_C_ExecuteUbergraph_WaitToLeaveUI");
-static_assert(sizeof(WaitToLeaveUI_C_ExecuteUbergraph_WaitToLeaveUI) == 0x000068, "Wrong size on WaitToLeaveUI_C_ExecuteUbergraph_WaitToLeaveUI");
-static_assert(offsetof(WaitToLeaveUI_C_ExecuteUbergraph_WaitToLeaveUI, EntryPoint) == 0x000000, "Member 'WaitToLeaveUI_C_ExecuteUbergraph_WaitToLeaveUI::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WaitToLeaveUI_C_ExecuteUbergraph_WaitToLeaveUI, K2Node_Event_MyGeometry) == 0x000004, "Member 'WaitToLeaveUI_C_ExecuteUbergraph_WaitToLeaveUI::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(WaitToLeaveUI_C_ExecuteUbergraph_WaitToLeaveUI, K2Node_Event_InDeltaTime) == 0x00003C, "Member 'WaitToLeaveUI_C_ExecuteUbergraph_WaitToLeaveUI::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(WaitToLeaveUI_C_ExecuteUbergraph_WaitToLeaveUI, CallFunc_GetAllActorsOfClass_OutActors) == 0x000040, "Member 'WaitToLeaveUI_C_ExecuteUbergraph_WaitToLeaveUI::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(WaitToLeaveUI_C_ExecuteUbergraph_WaitToLeaveUI, CallFunc_Array_Length_ReturnValue) == 0x000050, "Member 'WaitToLeaveUI_C_ExecuteUbergraph_WaitToLeaveUI::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WaitToLeaveUI_C_ExecuteUbergraph_WaitToLeaveUI, CallFunc_PlayAnimation_ReturnValue) == 0x000058, "Member 'WaitToLeaveUI_C_ExecuteUbergraph_WaitToLeaveUI::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WaitToLeaveUI_C_ExecuteUbergraph_WaitToLeaveUI, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000060, "Member 'WaitToLeaveUI_C_ExecuteUbergraph_WaitToLeaveUI::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WaitToLeaveUI_C_ExecuteUbergraph_WaitToLeaveUI;
 
 // Function WaitToLeaveUI.WaitToLeaveUI_C.Tick
 // 0x003C (0x003C - 0x0000)
@@ -48,10 +40,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WaitToLeaveUI_C_Tick) == 0x000004, "Wrong alignment on WaitToLeaveUI_C_Tick");
-static_assert(sizeof(WaitToLeaveUI_C_Tick) == 0x00003C, "Wrong size on WaitToLeaveUI_C_Tick");
-static_assert(offsetof(WaitToLeaveUI_C_Tick, MyGeometry) == 0x000000, "Member 'WaitToLeaveUI_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WaitToLeaveUI_C_Tick, InDeltaTime) == 0x000038, "Member 'WaitToLeaveUI_C_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_WaitToLeaveUI_C_Tick;
 
 // Function WaitToLeaveUI.WaitToLeaveUI_C.GetText_0
 // 0x0080 (0x0080 - 0x0000)
@@ -66,15 +55,7 @@ public:
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue_2;              // 0x0058(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0068(0x0018)()
 };
-static_assert(alignof(WaitToLeaveUI_C_GetText_0) == 0x000008, "Wrong alignment on WaitToLeaveUI_C_GetText_0");
-static_assert(sizeof(WaitToLeaveUI_C_GetText_0) == 0x000080, "Wrong size on WaitToLeaveUI_C_GetText_0");
-static_assert(offsetof(WaitToLeaveUI_C_GetText_0, ReturnValue) == 0x000000, "Member 'WaitToLeaveUI_C_GetText_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WaitToLeaveUI_C_GetText_0, CallFunc_Conv_IntToString_ReturnValue) == 0x000018, "Member 'WaitToLeaveUI_C_GetText_0::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WaitToLeaveUI_C_GetText_0, CallFunc_Conv_IntToString_ReturnValue_1) == 0x000028, "Member 'WaitToLeaveUI_C_GetText_0::CallFunc_Conv_IntToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WaitToLeaveUI_C_GetText_0, CallFunc_Concat_StrStr_ReturnValue) == 0x000038, "Member 'WaitToLeaveUI_C_GetText_0::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WaitToLeaveUI_C_GetText_0, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000048, "Member 'WaitToLeaveUI_C_GetText_0::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WaitToLeaveUI_C_GetText_0, CallFunc_Concat_StrStr_ReturnValue_2) == 0x000058, "Member 'WaitToLeaveUI_C_GetText_0::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WaitToLeaveUI_C_GetText_0, CallFunc_Conv_StringToText_ReturnValue) == 0x000068, "Member 'WaitToLeaveUI_C_GetText_0::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WaitToLeaveUI_C_GetText_0;
 
 }
 

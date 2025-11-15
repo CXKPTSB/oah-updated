@@ -31,7 +31,7 @@ public:
 	class AActor*                                 K2Node_CustomEvent_Player_1;                       // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IPoliceTargetInterface_C> K2Node_DynamicCast_AsPolice_Target_Interface;      // 0x0030(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TScriptInterface<class IPoliceTargetInterface_C> K2Node_DynamicCast_AsPolice_Target_Interface;   // 0x0030(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_DoesImplementInterface_ReturnValue;       // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_42[0x6];                                       // 0x0042(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
@@ -97,68 +97,7 @@ public:
 	class FName                                   CallFunc_Array_Get_Item_1;                         // 0x019C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_Picked_up_;                           // 0x01A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(NPCBase_C_ExecuteUbergraph_NPCBase) == 0x000008, "Wrong alignment on NPCBase_C_ExecuteUbergraph_NPCBase");
-static_assert(sizeof(NPCBase_C_ExecuteUbergraph_NPCBase) == 0x0001A8, "Wrong size on NPCBase_C_ExecuteUbergraph_NPCBase");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, EntryPoint) == 0x000000, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::EntryPoint' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, K2Node_Event_location) == 0x000004, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::K2Node_Event_location' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, K2Node_Event_Amount) == 0x000010, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::K2Node_Event_Amount' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, Temp_int_Loop_Counter_Variable) == 0x000014, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, K2Node_CustomEvent_Damage) == 0x000018, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::K2Node_CustomEvent_Damage' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, K2Node_CustomEvent_Player_1) == 0x000020, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::K2Node_CustomEvent_Player_1' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, CallFunc_Add_IntInt_ReturnValue) == 0x000028, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, K2Node_DynamicCast_AsPolice_Target_Interface) == 0x000030, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::K2Node_DynamicCast_AsPolice_Target_Interface' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, K2Node_DynamicCast_bSuccess) == 0x000040, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, CallFunc_DoesImplementInterface_ReturnValue) == 0x000041, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::CallFunc_DoesImplementInterface_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, K2Node_CustomEvent_Player) == 0x000048, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::K2Node_CustomEvent_Player' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, CallFunc_Subtract_IntInt_ReturnValue) == 0x000050, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000054, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, K2Node_ComponentBoundEvent_Amount) == 0x000058, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::K2Node_ComponentBoundEvent_Amount' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, K2Node_ComponentBoundEvent_Bone) == 0x00005C, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::K2Node_ComponentBoundEvent_Bone' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, K2Node_ComponentBoundEvent_HitLocation) == 0x000064, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::K2Node_ComponentBoundEvent_HitLocation' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, K2Node_ComponentBoundEvent_StartLocation) == 0x000070, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::K2Node_ComponentBoundEvent_StartLocation' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, K2Node_ComponentBoundEvent_Instigator) == 0x000080, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::K2Node_ComponentBoundEvent_Instigator' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, CallFunc_DamageMultiplier_Multiplier) == 0x000088, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::CallFunc_DamageMultiplier_Multiplier' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, CallFunc_HasAuthority_ReturnValue) == 0x00008C, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, CallFunc_Multiply_IntFloat_ReturnValue) == 0x000090, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::CallFunc_Multiply_IntFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, CallFunc_FTrunc_ReturnValue) == 0x000094, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, Temp_int_Array_Index_Variable) == 0x000098, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, K2Node_CustomEvent_HitLocation) == 0x00009C, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::K2Node_CustomEvent_HitLocation' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, K2Node_CustomEvent_StartLocation) == 0x0000A8, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::K2Node_CustomEvent_StartLocation' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, K2Node_CustomEvent_Downsplat_) == 0x0000B4, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::K2Node_CustomEvent_Downsplat_' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, CallFunc_Greater_IntInt_ReturnValue) == 0x0000B5, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, CallFunc_Subtract_IntInt_ReturnValue_1) == 0x0000B8, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::CallFunc_Subtract_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, Temp_int_Variable) == 0x0000BC, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0000C0, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, K2Node_Event_DeltaSeconds) == 0x0000CC, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, CallFunc_GetComponentVelocity_ReturnValue) == 0x0000D0, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::CallFunc_GetComponentVelocity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, CallFunc_GetAllSocketNames_ReturnValue) == 0x0000E0, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::CallFunc_GetAllSocketNames_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, CallFunc_VSize_ReturnValue) == 0x0000F0, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::CallFunc_VSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, CallFunc_Array_Length_ReturnValue) == 0x0000F4, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, CallFunc_Less_FloatFloat_ReturnValue) == 0x0000F8, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, CallFunc_Less_IntInt_ReturnValue) == 0x0000F9, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, CallFunc_GetOverlappingActors_OverlappingActors) == 0x000100, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::CallFunc_GetOverlappingActors_OverlappingActors' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, CallFunc_Array_Get_Item) == 0x000110, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, CallFunc_Array_Length_ReturnValue_1) == 0x000118, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, K2Node_DynamicCast_AsCharacter) == 0x000120, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::K2Node_DynamicCast_AsCharacter' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, K2Node_DynamicCast_bSuccess_1) == 0x000128, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x00012C, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, CallFunc_FindLookAtRotation_ReturnValue) == 0x000138, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::CallFunc_FindLookAtRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, CallFunc_GetDistanceTo_ReturnValue) == 0x000144, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::CallFunc_GetDistanceTo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, CallFunc_GetForwardVector_ReturnValue) == 0x000148, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::CallFunc_GetForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000154, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000158, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000164, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, K2Node_DynamicCast_AsNPCBase) == 0x000168, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::K2Node_DynamicCast_AsNPCBase' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, K2Node_DynamicCast_bSuccess_2) == 0x000170, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, CallFunc_Multiply_VectorFloat_ReturnValue_1) == 0x000174, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::CallFunc_Multiply_VectorFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, K2Node_CustomEvent_Anim) == 0x000180, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::K2Node_CustomEvent_Anim' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, K2Node_CustomEvent_Loops_) == 0x000188, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::K2Node_CustomEvent_Loops_' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, Temp_int_Loop_Counter_Variable_1) == 0x00018C, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, CallFunc_Less_IntInt_ReturnValue_1) == 0x000190, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, CallFunc_Add_IntInt_ReturnValue_1) == 0x000194, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, Temp_int_Array_Index_Variable_1) == 0x000198, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, CallFunc_Array_Get_Item_1) == 0x00019C, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_ExecuteUbergraph_NPCBase, K2Node_Event_Picked_up_) == 0x0001A4, "Member 'NPCBase_C_ExecuteUbergraph_NPCBase::K2Node_Event_Picked_up_' has a wrong offset!");
+DUMPER7_ASSERTS_NPCBase_C_ExecuteUbergraph_NPCBase;
 
 // Function NPCBase.NPCBase_C.RagdollPickedUp
 // 0x0001 (0x0001 - 0x0000)
@@ -167,9 +106,7 @@ struct NPCBase_C_RagdollPickedUp final
 public:
 	bool                                          Picked_up_;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(NPCBase_C_RagdollPickedUp) == 0x000001, "Wrong alignment on NPCBase_C_RagdollPickedUp");
-static_assert(sizeof(NPCBase_C_RagdollPickedUp) == 0x000001, "Wrong size on NPCBase_C_RagdollPickedUp");
-static_assert(offsetof(NPCBase_C_RagdollPickedUp, Picked_up_) == 0x000000, "Member 'NPCBase_C_RagdollPickedUp::Picked_up_' has a wrong offset!");
+DUMPER7_ASSERTS_NPCBase_C_RagdollPickedUp;
 
 // Function NPCBase.NPCBase_C.PlayAnimGesture
 // 0x0010 (0x0010 - 0x0000)
@@ -179,10 +116,7 @@ public:
 	class UAnimSequenceBase*                      Anim;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Loops_;                                            // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(NPCBase_C_PlayAnimGesture) == 0x000008, "Wrong alignment on NPCBase_C_PlayAnimGesture");
-static_assert(sizeof(NPCBase_C_PlayAnimGesture) == 0x000010, "Wrong size on NPCBase_C_PlayAnimGesture");
-static_assert(offsetof(NPCBase_C_PlayAnimGesture, Anim) == 0x000000, "Member 'NPCBase_C_PlayAnimGesture::Anim' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_PlayAnimGesture, Loops_) == 0x000008, "Member 'NPCBase_C_PlayAnimGesture::Loops_' has a wrong offset!");
+DUMPER7_ASSERTS_NPCBase_C_PlayAnimGesture;
 
 // Function NPCBase.NPCBase_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -191,9 +125,7 @@ struct NPCBase_C_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(NPCBase_C_ReceiveTick) == 0x000004, "Wrong alignment on NPCBase_C_ReceiveTick");
-static_assert(sizeof(NPCBase_C_ReceiveTick) == 0x000004, "Wrong size on NPCBase_C_ReceiveTick");
-static_assert(offsetof(NPCBase_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'NPCBase_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_NPCBase_C_ReceiveTick;
 
 // Function NPCBase.NPCBase_C.BloodSplatMulti
 // 0x001C (0x001C - 0x0000)
@@ -204,11 +136,7 @@ public:
 	struct FVector                                StartLocation;                                     // 0x000C(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Downsplat_;                                        // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(NPCBase_C_BloodSplatMulti) == 0x000004, "Wrong alignment on NPCBase_C_BloodSplatMulti");
-static_assert(sizeof(NPCBase_C_BloodSplatMulti) == 0x00001C, "Wrong size on NPCBase_C_BloodSplatMulti");
-static_assert(offsetof(NPCBase_C_BloodSplatMulti, HitLocation) == 0x000000, "Member 'NPCBase_C_BloodSplatMulti::HitLocation' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplatMulti, StartLocation) == 0x00000C, "Member 'NPCBase_C_BloodSplatMulti::StartLocation' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplatMulti, Downsplat_) == 0x000018, "Member 'NPCBase_C_BloodSplatMulti::Downsplat_' has a wrong offset!");
+DUMPER7_ASSERTS_NPCBase_C_BloodSplatMulti;
 
 // Function NPCBase.NPCBase_C.BndEvt__NPCBase_DamageComponent_K2Node_ComponentBoundEvent_0_Damage__DelegateSignature
 // 0x0030 (0x0030 - 0x0000)
@@ -222,13 +150,7 @@ public:
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Instigator_0;                                      // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(NPCBase_C_BndEvt__NPCBase_DamageComponent_K2Node_ComponentBoundEvent_0_Damage__DelegateSignature) == 0x000008, "Wrong alignment on NPCBase_C_BndEvt__NPCBase_DamageComponent_K2Node_ComponentBoundEvent_0_Damage__DelegateSignature");
-static_assert(sizeof(NPCBase_C_BndEvt__NPCBase_DamageComponent_K2Node_ComponentBoundEvent_0_Damage__DelegateSignature) == 0x000030, "Wrong size on NPCBase_C_BndEvt__NPCBase_DamageComponent_K2Node_ComponentBoundEvent_0_Damage__DelegateSignature");
-static_assert(offsetof(NPCBase_C_BndEvt__NPCBase_DamageComponent_K2Node_ComponentBoundEvent_0_Damage__DelegateSignature, Amount) == 0x000000, "Member 'NPCBase_C_BndEvt__NPCBase_DamageComponent_K2Node_ComponentBoundEvent_0_Damage__DelegateSignature::Amount' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BndEvt__NPCBase_DamageComponent_K2Node_ComponentBoundEvent_0_Damage__DelegateSignature, Bone) == 0x000004, "Member 'NPCBase_C_BndEvt__NPCBase_DamageComponent_K2Node_ComponentBoundEvent_0_Damage__DelegateSignature::Bone' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BndEvt__NPCBase_DamageComponent_K2Node_ComponentBoundEvent_0_Damage__DelegateSignature, HitLocation) == 0x00000C, "Member 'NPCBase_C_BndEvt__NPCBase_DamageComponent_K2Node_ComponentBoundEvent_0_Damage__DelegateSignature::HitLocation' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BndEvt__NPCBase_DamageComponent_K2Node_ComponentBoundEvent_0_Damage__DelegateSignature, StartLocation) == 0x000018, "Member 'NPCBase_C_BndEvt__NPCBase_DamageComponent_K2Node_ComponentBoundEvent_0_Damage__DelegateSignature::StartLocation' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BndEvt__NPCBase_DamageComponent_K2Node_ComponentBoundEvent_0_Damage__DelegateSignature, Instigator_0) == 0x000028, "Member 'NPCBase_C_BndEvt__NPCBase_DamageComponent_K2Node_ComponentBoundEvent_0_Damage__DelegateSignature::Instigator_0' has a wrong offset!");
+DUMPER7_ASSERTS_NPCBase_C_BndEvt__NPCBase_DamageComponent_K2Node_ComponentBoundEvent_0_Damage__DelegateSignature;
 
 // Function NPCBase.NPCBase_C.Die
 // 0x0008 (0x0008 - 0x0000)
@@ -237,9 +159,7 @@ struct NPCBase_C_Die final
 public:
 	class AActor*                                 Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(NPCBase_C_Die) == 0x000008, "Wrong alignment on NPCBase_C_Die");
-static_assert(sizeof(NPCBase_C_Die) == 0x000008, "Wrong size on NPCBase_C_Die");
-static_assert(offsetof(NPCBase_C_Die, Player) == 0x000000, "Member 'NPCBase_C_Die::Player' has a wrong offset!");
+DUMPER7_ASSERTS_NPCBase_C_Die;
 
 // Function NPCBase.NPCBase_C.TakeDamage
 // 0x0010 (0x0010 - 0x0000)
@@ -250,10 +170,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Player;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(NPCBase_C_TakeDamage) == 0x000008, "Wrong alignment on NPCBase_C_TakeDamage");
-static_assert(sizeof(NPCBase_C_TakeDamage) == 0x000010, "Wrong size on NPCBase_C_TakeDamage");
-static_assert(offsetof(NPCBase_C_TakeDamage, Damage) == 0x000000, "Member 'NPCBase_C_TakeDamage::Damage' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_TakeDamage, Player) == 0x000008, "Member 'NPCBase_C_TakeDamage::Player' has a wrong offset!");
+DUMPER7_ASSERTS_NPCBase_C_TakeDamage;
 
 // Function NPCBase.NPCBase_C.SpawnAmmo
 // 0x0010 (0x0010 - 0x0000)
@@ -263,10 +180,7 @@ public:
 	struct FVector                                Location;                                          // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Amount;                                            // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(NPCBase_C_SpawnAmmo) == 0x000004, "Wrong alignment on NPCBase_C_SpawnAmmo");
-static_assert(sizeof(NPCBase_C_SpawnAmmo) == 0x000010, "Wrong size on NPCBase_C_SpawnAmmo");
-static_assert(offsetof(NPCBase_C_SpawnAmmo, Location) == 0x000000, "Member 'NPCBase_C_SpawnAmmo::Location' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_SpawnAmmo, Amount) == 0x00000C, "Member 'NPCBase_C_SpawnAmmo::Amount' has a wrong offset!");
+DUMPER7_ASSERTS_NPCBase_C_SpawnAmmo;
 
 // Function NPCBase.NPCBase_C.DamageMultiplier
 // 0x0010 (0x0010 - 0x0000)
@@ -277,11 +191,7 @@ public:
 	float                                         Multiplier;                                        // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchName_CmpSuccess;                      // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(NPCBase_C_DamageMultiplier) == 0x000004, "Wrong alignment on NPCBase_C_DamageMultiplier");
-static_assert(sizeof(NPCBase_C_DamageMultiplier) == 0x000010, "Wrong size on NPCBase_C_DamageMultiplier");
-static_assert(offsetof(NPCBase_C_DamageMultiplier, Bone_name) == 0x000000, "Member 'NPCBase_C_DamageMultiplier::Bone_name' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_DamageMultiplier, Multiplier) == 0x000008, "Member 'NPCBase_C_DamageMultiplier::Multiplier' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_DamageMultiplier, K2Node_SwitchName_CmpSuccess) == 0x00000C, "Member 'NPCBase_C_DamageMultiplier::K2Node_SwitchName_CmpSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_NPCBase_C_DamageMultiplier;
 
 // Function NPCBase.NPCBase_C.BloodSplat
 // 0x0248 (0x0248 - 0x0000)
@@ -355,68 +265,7 @@ public:
 	uint8                                         Pad_23C[0x4];                                      // 0x023C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UDecalComponent*                        CallFunc_SpawnDecalAtLocation_ReturnValue;         // 0x0240(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(NPCBase_C_BloodSplat) == 0x000008, "Wrong alignment on NPCBase_C_BloodSplat");
-static_assert(sizeof(NPCBase_C_BloodSplat) == 0x000248, "Wrong size on NPCBase_C_BloodSplat");
-static_assert(offsetof(NPCBase_C_BloodSplat, HitLoc) == 0x000000, "Member 'NPCBase_C_BloodSplat::HitLoc' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, StartLoc) == 0x00000C, "Member 'NPCBase_C_BloodSplat::StartLoc' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, Downsplat_) == 0x000018, "Member 'NPCBase_C_BloodSplat::Downsplat_' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, Temp_int_Variable) == 0x00001C, "Member 'NPCBase_C_BloodSplat::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, Temp_object_Variable) == 0x000020, "Member 'NPCBase_C_BloodSplat::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, Temp_object_Variable_1) == 0x000028, "Member 'NPCBase_C_BloodSplat::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, Temp_object_Variable_2) == 0x000030, "Member 'NPCBase_C_BloodSplat::Temp_object_Variable_2' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, Temp_bool_Variable) == 0x000038, "Member 'NPCBase_C_BloodSplat::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, Temp_object_Variable_3) == 0x000040, "Member 'NPCBase_C_BloodSplat::Temp_object_Variable_3' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_GetActorUpVector_ReturnValue) == 0x000050, "Member 'NPCBase_C_BloodSplat::CallFunc_GetActorUpVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_MakeLiteralFloat_ReturnValue) == 0x00005C, "Member 'NPCBase_C_BloodSplat::CallFunc_MakeLiteralFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000060, "Member 'NPCBase_C_BloodSplat::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00006C, "Member 'NPCBase_C_BloodSplat::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_Add_VectorVector_ReturnValue) == 0x000070, "Member 'NPCBase_C_BloodSplat::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_RandomFloatInRange_ReturnValue) == 0x00007C, "Member 'NPCBase_C_BloodSplat::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, K2Node_Select_Default) == 0x000080, "Member 'NPCBase_C_BloodSplat::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x00008C, "Member 'NPCBase_C_BloodSplat::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_FindLookAtRotation_ReturnValue) == 0x000090, "Member 'NPCBase_C_BloodSplat::CallFunc_FindLookAtRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_RandomFloatInRange_ReturnValue_2) == 0x00009C, "Member 'NPCBase_C_BloodSplat::CallFunc_RandomFloatInRange_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_BreakRotator_Roll) == 0x0000A0, "Member 'NPCBase_C_BloodSplat::CallFunc_BreakRotator_Roll' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_BreakRotator_Pitch) == 0x0000A4, "Member 'NPCBase_C_BloodSplat::CallFunc_BreakRotator_Pitch' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_BreakRotator_Yaw) == 0x0000A8, "Member 'NPCBase_C_BloodSplat::CallFunc_BreakRotator_Yaw' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_RandomFloatInRange_ReturnValue_3) == 0x0000AC, "Member 'NPCBase_C_BloodSplat::CallFunc_RandomFloatInRange_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_Add_FloatFloat_ReturnValue) == 0x0000B0, "Member 'NPCBase_C_BloodSplat::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_Add_FloatFloat_ReturnValue_1) == 0x0000B4, "Member 'NPCBase_C_BloodSplat::CallFunc_Add_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_Add_FloatFloat_ReturnValue_2) == 0x0000B8, "Member 'NPCBase_C_BloodSplat::CallFunc_Add_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_RandomFloatInRange_ReturnValue_4) == 0x0000BC, "Member 'NPCBase_C_BloodSplat::CallFunc_RandomFloatInRange_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_MakeRotator_ReturnValue) == 0x0000C0, "Member 'NPCBase_C_BloodSplat::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_MakeVector_ReturnValue) == 0x0000CC, "Member 'NPCBase_C_BloodSplat::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_GetForwardVector_ReturnValue) == 0x0000D8, "Member 'NPCBase_C_BloodSplat::CallFunc_GetForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_RandomIntegerInRange_ReturnValue) == 0x0000E4, "Member 'NPCBase_C_BloodSplat::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_Multiply_VectorFloat_ReturnValue_1) == 0x0000E8, "Member 'NPCBase_C_BloodSplat::CallFunc_Multiply_VectorFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_Add_VectorVector_ReturnValue_1) == 0x0000F4, "Member 'NPCBase_C_BloodSplat::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, K2Node_Select_Default_1) == 0x000100, "Member 'NPCBase_C_BloodSplat::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_LineTraceSingle_OutHit) == 0x000108, "Member 'NPCBase_C_BloodSplat::CallFunc_LineTraceSingle_OutHit' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_LineTraceSingle_ReturnValue) == 0x000190, "Member 'NPCBase_C_BloodSplat::CallFunc_LineTraceSingle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_BreakHitResult_bBlockingHit) == 0x000191, "Member 'NPCBase_C_BloodSplat::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_BreakHitResult_bInitialOverlap) == 0x000192, "Member 'NPCBase_C_BloodSplat::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_BreakHitResult_Time) == 0x000194, "Member 'NPCBase_C_BloodSplat::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_BreakHitResult_Distance) == 0x000198, "Member 'NPCBase_C_BloodSplat::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_BreakHitResult_Location) == 0x00019C, "Member 'NPCBase_C_BloodSplat::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_BreakHitResult_ImpactPoint) == 0x0001A8, "Member 'NPCBase_C_BloodSplat::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_BreakHitResult_Normal) == 0x0001B4, "Member 'NPCBase_C_BloodSplat::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_BreakHitResult_ImpactNormal) == 0x0001C0, "Member 'NPCBase_C_BloodSplat::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_BreakHitResult_PhysMat) == 0x0001D0, "Member 'NPCBase_C_BloodSplat::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_BreakHitResult_HitActor) == 0x0001D8, "Member 'NPCBase_C_BloodSplat::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_BreakHitResult_HitComponent) == 0x0001E0, "Member 'NPCBase_C_BloodSplat::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_BreakHitResult_HitBoneName) == 0x0001E8, "Member 'NPCBase_C_BloodSplat::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_BreakHitResult_HitItem) == 0x0001F0, "Member 'NPCBase_C_BloodSplat::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_BreakHitResult_ElementIndex) == 0x0001F4, "Member 'NPCBase_C_BloodSplat::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_BreakHitResult_FaceIndex) == 0x0001F8, "Member 'NPCBase_C_BloodSplat::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_BreakHitResult_TraceStart) == 0x0001FC, "Member 'NPCBase_C_BloodSplat::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_BreakHitResult_TraceEnd) == 0x000208, "Member 'NPCBase_C_BloodSplat::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_IsSimulatingPhysics_ReturnValue) == 0x000214, "Member 'NPCBase_C_BloodSplat::CallFunc_IsSimulatingPhysics_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_MakeRotFromX_ReturnValue) == 0x000218, "Member 'NPCBase_C_BloodSplat::CallFunc_MakeRotFromX_ReturnValue' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_BreakRotator_Roll_1) == 0x000224, "Member 'NPCBase_C_BloodSplat::CallFunc_BreakRotator_Roll_1' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_BreakRotator_Pitch_1) == 0x000228, "Member 'NPCBase_C_BloodSplat::CallFunc_BreakRotator_Pitch_1' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_BreakRotator_Yaw_1) == 0x00022C, "Member 'NPCBase_C_BloodSplat::CallFunc_BreakRotator_Yaw_1' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_MakeRotator_ReturnValue_1) == 0x000230, "Member 'NPCBase_C_BloodSplat::CallFunc_MakeRotator_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(NPCBase_C_BloodSplat, CallFunc_SpawnDecalAtLocation_ReturnValue) == 0x000240, "Member 'NPCBase_C_BloodSplat::CallFunc_SpawnDecalAtLocation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NPCBase_C_BloodSplat;
 
 }
 

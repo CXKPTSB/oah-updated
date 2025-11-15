@@ -37,20 +37,7 @@ public:
 	class AMainMenuPlayer_C*                      K2Node_DynamicCast_AsMain_Menu_Player;             // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SelectedMapUI_C_ExecuteUbergraph_SelectedMapUI) == 0x000008, "Wrong alignment on SelectedMapUI_C_ExecuteUbergraph_SelectedMapUI");
-static_assert(sizeof(SelectedMapUI_C_ExecuteUbergraph_SelectedMapUI) == 0x000070, "Wrong size on SelectedMapUI_C_ExecuteUbergraph_SelectedMapUI");
-static_assert(offsetof(SelectedMapUI_C_ExecuteUbergraph_SelectedMapUI, EntryPoint) == 0x000000, "Member 'SelectedMapUI_C_ExecuteUbergraph_SelectedMapUI::EntryPoint' has a wrong offset!");
-static_assert(offsetof(SelectedMapUI_C_ExecuteUbergraph_SelectedMapUI, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'SelectedMapUI_C_ExecuteUbergraph_SelectedMapUI::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SelectedMapUI_C_ExecuteUbergraph_SelectedMapUI, CallFunc_PlayAnimation_ReturnValue_1) == 0x000010, "Member 'SelectedMapUI_C_ExecuteUbergraph_SelectedMapUI::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SelectedMapUI_C_ExecuteUbergraph_SelectedMapUI, CallFunc_GetAllWidgetsOfClass_FoundWidgets) == 0x000018, "Member 'SelectedMapUI_C_ExecuteUbergraph_SelectedMapUI::CallFunc_GetAllWidgetsOfClass_FoundWidgets' has a wrong offset!");
-static_assert(offsetof(SelectedMapUI_C_ExecuteUbergraph_SelectedMapUI, CallFunc_GetAllWidgetsOfClass_FoundWidgets_1) == 0x000028, "Member 'SelectedMapUI_C_ExecuteUbergraph_SelectedMapUI::CallFunc_GetAllWidgetsOfClass_FoundWidgets_1' has a wrong offset!");
-static_assert(offsetof(SelectedMapUI_C_ExecuteUbergraph_SelectedMapUI, CallFunc_Array_Length_ReturnValue) == 0x000038, "Member 'SelectedMapUI_C_ExecuteUbergraph_SelectedMapUI::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SelectedMapUI_C_ExecuteUbergraph_SelectedMapUI, CallFunc_Array_Get_Item) == 0x000040, "Member 'SelectedMapUI_C_ExecuteUbergraph_SelectedMapUI::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(SelectedMapUI_C_ExecuteUbergraph_SelectedMapUI, CallFunc_Greater_IntInt_ReturnValue) == 0x000048, "Member 'SelectedMapUI_C_ExecuteUbergraph_SelectedMapUI::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SelectedMapUI_C_ExecuteUbergraph_SelectedMapUI, CallFunc_Create_ReturnValue) == 0x000050, "Member 'SelectedMapUI_C_ExecuteUbergraph_SelectedMapUI::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SelectedMapUI_C_ExecuteUbergraph_SelectedMapUI, CallFunc_GetPlayerCharacter_ReturnValue) == 0x000058, "Member 'SelectedMapUI_C_ExecuteUbergraph_SelectedMapUI::CallFunc_GetPlayerCharacter_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SelectedMapUI_C_ExecuteUbergraph_SelectedMapUI, K2Node_DynamicCast_AsMain_Menu_Player) == 0x000060, "Member 'SelectedMapUI_C_ExecuteUbergraph_SelectedMapUI::K2Node_DynamicCast_AsMain_Menu_Player' has a wrong offset!");
-static_assert(offsetof(SelectedMapUI_C_ExecuteUbergraph_SelectedMapUI, K2Node_DynamicCast_bSuccess) == 0x000068, "Member 'SelectedMapUI_C_ExecuteUbergraph_SelectedMapUI::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_SelectedMapUI_C_ExecuteUbergraph_SelectedMapUI;
 
 // Function SelectedMapUI.SelectedMapUI_C.GetBackground_0
 // 0x0110 (0x0110 - 0x0000)
@@ -60,10 +47,7 @@ public:
 	struct FSlateBrush                            ReturnValue;                                       // 0x0000(0x0088)(Parm, OutParm, ReturnParm)
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0088(0x0088)()
 };
-static_assert(alignof(SelectedMapUI_C_GetBackground_0) == 0x000008, "Wrong alignment on SelectedMapUI_C_GetBackground_0");
-static_assert(sizeof(SelectedMapUI_C_GetBackground_0) == 0x000110, "Wrong size on SelectedMapUI_C_GetBackground_0");
-static_assert(offsetof(SelectedMapUI_C_GetBackground_0, ReturnValue) == 0x000000, "Member 'SelectedMapUI_C_GetBackground_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(SelectedMapUI_C_GetBackground_0, K2Node_MakeStruct_SlateBrush) == 0x000088, "Member 'SelectedMapUI_C_GetBackground_0::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
+DUMPER7_ASSERTS_SelectedMapUI_C_GetBackground_0;
 
 // Function SelectedMapUI.SelectedMapUI_C.GetText_0
 // 0x0030 (0x0030 - 0x0000)
@@ -73,10 +57,7 @@ public:
 	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0018(0x0018)()
 };
-static_assert(alignof(SelectedMapUI_C_GetText_0) == 0x000008, "Wrong alignment on SelectedMapUI_C_GetText_0");
-static_assert(sizeof(SelectedMapUI_C_GetText_0) == 0x000030, "Wrong size on SelectedMapUI_C_GetText_0");
-static_assert(offsetof(SelectedMapUI_C_GetText_0, ReturnValue) == 0x000000, "Member 'SelectedMapUI_C_GetText_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(SelectedMapUI_C_GetText_0, CallFunc_Conv_StringToText_ReturnValue) == 0x000018, "Member 'SelectedMapUI_C_GetText_0::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SelectedMapUI_C_GetText_0;
 
 }
 

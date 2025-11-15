@@ -25,7 +25,7 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor)
 	float                                         CallFunc_GetPlayLength_ReturnValue;                // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UAnimSequenceBase* Anim, bool Loops_)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class UAnimSequenceBase* Anim, bool Loops_)> K2Node_CreateDelegate_OutputDelegate_1; // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
 	float                                         K2Node_Event_DeltaTimeX;                           // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APawn*                                  CallFunc_TryGetPawnOwner_ReturnValue;              // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -45,27 +45,7 @@ public:
 	float                                         CallFunc_VSize_ReturnValue;                        // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP) == 0x000008, "Wrong alignment on Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP");
-static_assert(sizeof(Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP) == 0x0000A0, "Wrong size on Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP");
-static_assert(offsetof(Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP, EntryPoint) == 0x000000, "Member 'Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP, CallFunc_GetPlayLength_ReturnValue) == 0x000014, "Member 'Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP::CallFunc_GetPlayLength_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP, K2Node_CreateDelegate_OutputDelegate_1) == 0x000018, "Member 'Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP, K2Node_Event_DeltaTimeX) == 0x000028, "Member 'Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP::K2Node_Event_DeltaTimeX' has a wrong offset!");
-static_assert(offsetof(Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP, CallFunc_TryGetPawnOwner_ReturnValue) == 0x000030, "Member 'Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP::CallFunc_TryGetPawnOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP, K2Node_CustomEvent_Anim) == 0x000038, "Member 'Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP::K2Node_CustomEvent_Anim' has a wrong offset!");
-static_assert(offsetof(Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP, K2Node_CustomEvent_Loops_) == 0x000040, "Member 'Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP::K2Node_CustomEvent_Loops_' has a wrong offset!");
-static_assert(offsetof(Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP, K2Node_DynamicCast_AsNPC_Guard) == 0x000048, "Member 'Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP::K2Node_DynamicCast_AsNPC_Guard' has a wrong offset!");
-static_assert(offsetof(Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP, K2Node_DynamicCast_bSuccess) == 0x000050, "Member 'Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP, CallFunc_GetActorRightVector_ReturnValue) == 0x000054, "Member 'Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP::CallFunc_GetActorRightVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP, CallFunc_GetActorForwardVector_ReturnValue) == 0x000060, "Member 'Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP, CallFunc_GetVelocity_ReturnValue) == 0x00006C, "Member 'Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP::CallFunc_GetVelocity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP, CallFunc_Dot_VectorVector_ReturnValue) == 0x000078, "Member 'Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP::CallFunc_Dot_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP, CallFunc_Dot_VectorVector_ReturnValue_1) == 0x00007C, "Member 'Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP::CallFunc_Dot_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP, CallFunc_TryGetPawnOwner_ReturnValue_1) == 0x000080, "Member 'Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP::CallFunc_TryGetPawnOwner_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP, CallFunc_GetVelocity_ReturnValue_1) == 0x000088, "Member 'Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP::CallFunc_GetVelocity_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP, CallFunc_VSize_ReturnValue) == 0x000094, "Member 'Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP::CallFunc_VSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000098, "Member 'Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_Guard_AnimBP_C_ExecuteUbergraph_Guard_AnimBP;
 
 // Function Guard_AnimBP.Guard_AnimBP_C.PlayGesture
 // 0x0010 (0x0010 - 0x0000)
@@ -75,10 +55,7 @@ public:
 	class UAnimSequenceBase*                      Anim;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Loops_;                                            // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Guard_AnimBP_C_PlayGesture) == 0x000008, "Wrong alignment on Guard_AnimBP_C_PlayGesture");
-static_assert(sizeof(Guard_AnimBP_C_PlayGesture) == 0x000010, "Wrong size on Guard_AnimBP_C_PlayGesture");
-static_assert(offsetof(Guard_AnimBP_C_PlayGesture, Anim) == 0x000000, "Member 'Guard_AnimBP_C_PlayGesture::Anim' has a wrong offset!");
-static_assert(offsetof(Guard_AnimBP_C_PlayGesture, Loops_) == 0x000008, "Member 'Guard_AnimBP_C_PlayGesture::Loops_' has a wrong offset!");
+DUMPER7_ASSERTS_Guard_AnimBP_C_PlayGesture;
 
 // Function Guard_AnimBP.Guard_AnimBP_C.BlueprintUpdateAnimation
 // 0x0004 (0x0004 - 0x0000)
@@ -87,9 +64,7 @@ struct Guard_AnimBP_C_BlueprintUpdateAnimation final
 public:
 	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Guard_AnimBP_C_BlueprintUpdateAnimation) == 0x000004, "Wrong alignment on Guard_AnimBP_C_BlueprintUpdateAnimation");
-static_assert(sizeof(Guard_AnimBP_C_BlueprintUpdateAnimation) == 0x000004, "Wrong size on Guard_AnimBP_C_BlueprintUpdateAnimation");
-static_assert(offsetof(Guard_AnimBP_C_BlueprintUpdateAnimation, DeltaTimeX) == 0x000000, "Member 'Guard_AnimBP_C_BlueprintUpdateAnimation::DeltaTimeX' has a wrong offset!");
+DUMPER7_ASSERTS_Guard_AnimBP_C_BlueprintUpdateAnimation;
 
 // Function Guard_AnimBP.Guard_AnimBP_C.AnimGraph
 // 0x0010 (0x0010 - 0x0000)
@@ -98,9 +73,7 @@ struct Guard_AnimBP_C_AnimGraph final
 public:
 	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Guard_AnimBP_C_AnimGraph) == 0x000008, "Wrong alignment on Guard_AnimBP_C_AnimGraph");
-static_assert(sizeof(Guard_AnimBP_C_AnimGraph) == 0x000010, "Wrong size on Guard_AnimBP_C_AnimGraph");
-static_assert(offsetof(Guard_AnimBP_C_AnimGraph, AnimGraph_0) == 0x000000, "Member 'Guard_AnimBP_C_AnimGraph::AnimGraph_0' has a wrong offset!");
+DUMPER7_ASSERTS_Guard_AnimBP_C_AnimGraph;
 
 }
 

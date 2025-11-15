@@ -35,18 +35,7 @@ public:
 	float                                         CallFunc_Dot_VectorVector_ReturnValue_1;           // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_DeltaTimeX;                           // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PowerboxDefuser_AnimBP_C_ExecuteUbergraph_PowerboxDefuser_AnimBP) == 0x000008, "Wrong alignment on PowerboxDefuser_AnimBP_C_ExecuteUbergraph_PowerboxDefuser_AnimBP");
-static_assert(sizeof(PowerboxDefuser_AnimBP_C_ExecuteUbergraph_PowerboxDefuser_AnimBP) == 0x000050, "Wrong size on PowerboxDefuser_AnimBP_C_ExecuteUbergraph_PowerboxDefuser_AnimBP");
-static_assert(offsetof(PowerboxDefuser_AnimBP_C_ExecuteUbergraph_PowerboxDefuser_AnimBP, EntryPoint) == 0x000000, "Member 'PowerboxDefuser_AnimBP_C_ExecuteUbergraph_PowerboxDefuser_AnimBP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(PowerboxDefuser_AnimBP_C_ExecuteUbergraph_PowerboxDefuser_AnimBP, CallFunc_TryGetPawnOwner_ReturnValue) == 0x000008, "Member 'PowerboxDefuser_AnimBP_C_ExecuteUbergraph_PowerboxDefuser_AnimBP::CallFunc_TryGetPawnOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerboxDefuser_AnimBP_C_ExecuteUbergraph_PowerboxDefuser_AnimBP, K2Node_DynamicCast_AsNPC_Powerbox_Defuser) == 0x000010, "Member 'PowerboxDefuser_AnimBP_C_ExecuteUbergraph_PowerboxDefuser_AnimBP::K2Node_DynamicCast_AsNPC_Powerbox_Defuser' has a wrong offset!");
-static_assert(offsetof(PowerboxDefuser_AnimBP_C_ExecuteUbergraph_PowerboxDefuser_AnimBP, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'PowerboxDefuser_AnimBP_C_ExecuteUbergraph_PowerboxDefuser_AnimBP::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(PowerboxDefuser_AnimBP_C_ExecuteUbergraph_PowerboxDefuser_AnimBP, CallFunc_GetActorRightVector_ReturnValue) == 0x00001C, "Member 'PowerboxDefuser_AnimBP_C_ExecuteUbergraph_PowerboxDefuser_AnimBP::CallFunc_GetActorRightVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerboxDefuser_AnimBP_C_ExecuteUbergraph_PowerboxDefuser_AnimBP, CallFunc_GetVelocity_ReturnValue) == 0x000028, "Member 'PowerboxDefuser_AnimBP_C_ExecuteUbergraph_PowerboxDefuser_AnimBP::CallFunc_GetVelocity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerboxDefuser_AnimBP_C_ExecuteUbergraph_PowerboxDefuser_AnimBP, CallFunc_Dot_VectorVector_ReturnValue) == 0x000034, "Member 'PowerboxDefuser_AnimBP_C_ExecuteUbergraph_PowerboxDefuser_AnimBP::CallFunc_Dot_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerboxDefuser_AnimBP_C_ExecuteUbergraph_PowerboxDefuser_AnimBP, CallFunc_GetActorForwardVector_ReturnValue) == 0x000038, "Member 'PowerboxDefuser_AnimBP_C_ExecuteUbergraph_PowerboxDefuser_AnimBP::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerboxDefuser_AnimBP_C_ExecuteUbergraph_PowerboxDefuser_AnimBP, CallFunc_Dot_VectorVector_ReturnValue_1) == 0x000044, "Member 'PowerboxDefuser_AnimBP_C_ExecuteUbergraph_PowerboxDefuser_AnimBP::CallFunc_Dot_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PowerboxDefuser_AnimBP_C_ExecuteUbergraph_PowerboxDefuser_AnimBP, K2Node_Event_DeltaTimeX) == 0x000048, "Member 'PowerboxDefuser_AnimBP_C_ExecuteUbergraph_PowerboxDefuser_AnimBP::K2Node_Event_DeltaTimeX' has a wrong offset!");
+DUMPER7_ASSERTS_PowerboxDefuser_AnimBP_C_ExecuteUbergraph_PowerboxDefuser_AnimBP;
 
 // Function PowerboxDefuser_AnimBP.PowerboxDefuser_AnimBP_C.BlueprintUpdateAnimation
 // 0x0004 (0x0004 - 0x0000)
@@ -55,9 +44,7 @@ struct PowerboxDefuser_AnimBP_C_BlueprintUpdateAnimation final
 public:
 	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PowerboxDefuser_AnimBP_C_BlueprintUpdateAnimation) == 0x000004, "Wrong alignment on PowerboxDefuser_AnimBP_C_BlueprintUpdateAnimation");
-static_assert(sizeof(PowerboxDefuser_AnimBP_C_BlueprintUpdateAnimation) == 0x000004, "Wrong size on PowerboxDefuser_AnimBP_C_BlueprintUpdateAnimation");
-static_assert(offsetof(PowerboxDefuser_AnimBP_C_BlueprintUpdateAnimation, DeltaTimeX) == 0x000000, "Member 'PowerboxDefuser_AnimBP_C_BlueprintUpdateAnimation::DeltaTimeX' has a wrong offset!");
+DUMPER7_ASSERTS_PowerboxDefuser_AnimBP_C_BlueprintUpdateAnimation;
 
 // Function PowerboxDefuser_AnimBP.PowerboxDefuser_AnimBP_C.AnimGraph
 // 0x0010 (0x0010 - 0x0000)
@@ -66,9 +53,7 @@ struct PowerboxDefuser_AnimBP_C_AnimGraph final
 public:
 	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(PowerboxDefuser_AnimBP_C_AnimGraph) == 0x000008, "Wrong alignment on PowerboxDefuser_AnimBP_C_AnimGraph");
-static_assert(sizeof(PowerboxDefuser_AnimBP_C_AnimGraph) == 0x000010, "Wrong size on PowerboxDefuser_AnimBP_C_AnimGraph");
-static_assert(offsetof(PowerboxDefuser_AnimBP_C_AnimGraph, AnimGraph_0) == 0x000000, "Member 'PowerboxDefuser_AnimBP_C_AnimGraph::AnimGraph_0' has a wrong offset!");
+DUMPER7_ASSERTS_PowerboxDefuser_AnimBP_C_AnimGraph;
 
 }
 

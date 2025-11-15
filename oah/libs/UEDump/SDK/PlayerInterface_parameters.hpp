@@ -21,9 +21,7 @@ struct PlayerInterface_C_AddEXP final
 public:
 	float                                         Amount;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerInterface_C_AddEXP) == 0x000004, "Wrong alignment on PlayerInterface_C_AddEXP");
-static_assert(sizeof(PlayerInterface_C_AddEXP) == 0x000004, "Wrong size on PlayerInterface_C_AddEXP");
-static_assert(offsetof(PlayerInterface_C_AddEXP, Amount) == 0x000000, "Member 'PlayerInterface_C_AddEXP::Amount' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerInterface_C_AddEXP;
 
 }
 
